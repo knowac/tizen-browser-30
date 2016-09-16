@@ -40,6 +40,7 @@ enum class BookmarkManagerState {
     Edit,
     Delete,
     Reorder,
+    Share,
     HistoryView,
     HistoryDeleteView
 };
@@ -47,6 +48,12 @@ enum class BookmarkManagerState {
 enum struct BookmarkManagerView {
     Bookmarks,
     History
+};
+
+enum struct BookmarkManagerGenlistFilter : int {
+    All = -1,
+    Websites,
+    Folders
 };
 
 class BROWSER_EXPORT BookmarkManagerUI
@@ -110,10 +117,15 @@ private:
     void createGenlist();
     void createEmptyLayout();
     void createGenlistItemClasses();
+    void addFilteredBookmarkItems(BookmarkManagerGenlistFilter filter);
     void addBookmarkItem(BookmarkData* item);
-    void checkSecretMode();
+    void bookmarkItemsShare();
 
     void changeState(BookmarkManagerState state);
+    void clearSelection();
+    void showNaviframePrevButton(bool show);
+    void showToolbars(bool show);
+    void insertSelectAll();
     void reoderBookmarkItems();
     void updateNoBookmarkText();
     void updateDeleteClick(int id);
@@ -159,12 +171,13 @@ private:
 
     Elm_Genlist_Item_Class * m_bookmark_item_class;
 
+    services::SharedBookmarkItemList m_added_bookmarks;
     services::SharedBookmarkItemList m_folder_path;
     BookmarkManagerState m_state;
     bool m_reordered;
     std::map<unsigned int, Elm_Object_Item*> m_map_bookmark;
-    std::map<unsigned int, bool> m_map_delete;
-    unsigned int m_delete_count;
+    std::map<unsigned int, bool> m_map_selected;
+    unsigned int m_selected_count;
 
     const unsigned int ICON_SIZE = 64;
 };

@@ -14,6 +14,9 @@
  * limitations under the License.
  */
 
+#include <app.h>
+#include <app_common.h>
+#include <app_control.h>
 #include <Elementary.h>
 #include <boost/format.hpp>
 #include <boost/concept_check.hpp>
@@ -51,7 +54,7 @@ BookmarkManagerUI::BookmarkManagerUI()
     , m_bookmark_item_class(nullptr)
     , m_state(BookmarkManagerState::Default)
     , m_reordered(false)
-    , m_delete_count(0)
+    , m_selected_count(0)
 {
     m_edjFilePath = EDJE_DIR;
     m_edjFilePath.append("BookmarkManagerUI/BookmarkManagerUI.edj");
@@ -78,7 +81,6 @@ void BookmarkManagerUI::showUI()
     BROWSER_LOGD("[%s:%d] ", __PRETTY_FUNCTION__, __LINE__);
     M_ASSERT(m_naviframe->getLayout());
     m_naviframe->show();
-    checkSecretMode();
 }
 
 void BookmarkManagerUI::hideUI()
@@ -149,17 +151,20 @@ Evas_Object *BookmarkManagerUI::_genlist_bookmark_content_get(void *data, Evas_O
             return icon;
         } else if (!strcmp(part, "elm.swallow.end")) {
             switch (bookmarkData->bookmarkManagerUI->m_state) {
-            case BookmarkManagerState::Delete: {
+            case BookmarkManagerState::Share:
+            case BookmarkManagerState::Delete:
+                {
                 Evas_Object* checkbox = elm_check_add(obj);
                 evas_object_propagate_events_set(checkbox, EINA_FALSE);
-                elm_check_state_set(checkbox, bookmarkData->bookmarkManagerUI->m_map_delete[bookmarkData->bookmarkItem->getId()]
-                        ? EINA_TRUE : EINA_FALSE);
+                elm_check_state_set(checkbox, bookmarkData->bookmarkManagerUI->
+                    m_map_selected[bookmarkData->bookmarkItem->getId()] ? EINA_TRUE : EINA_FALSE);
                 evas_object_smart_callback_add(checkbox, "changed", _check_state_changed, bookmarkData);
                 evas_object_show(checkbox);
                 return checkbox;
                 }
                 break;
-            case BookmarkManagerState::Reorder: {
+            case BookmarkManagerState::Reorder:
+                {
                 Evas_Object *reorder_button = elm_button_add(obj);
                 elm_object_style_set(reorder_button, "icon_reorder");
                 return reorder_button;
@@ -327,13 +332,17 @@ void BookmarkManagerUI::_accept_clicked(void* data, Evas_Object*, void*)
         BookmarkManagerUI* bookmarkManagerUI = static_cast<BookmarkManagerUI*>(data);
         switch (bookmarkManagerUI->m_state) {
         case BookmarkManagerState::Delete:
-            for (auto it = bookmarkManagerUI->m_map_delete.begin(); it != bookmarkManagerUI->m_map_delete.end(); ++it)
-                if (it->second) {
-                    BookmarkData *bookmarkData = static_cast<BookmarkData*>(elm_object_item_data_get(bookmarkManagerUI->m_map_bookmark[it->first]));
+            for (const auto& it : bookmarkManagerUI->m_map_selected)
+                if (it.second) {
+                    BookmarkData *bookmarkData = static_cast<BookmarkData*>(elm_object_item_data_get(
+                        bookmarkManagerUI->m_map_bookmark[it.first]));
                     bookmarkManagerUI->bookmarkItemDeleted(bookmarkData->bookmarkItem);
-                    elm_object_item_del(bookmarkManagerUI->m_map_bookmark[it->first]);
-                    bookmarkManagerUI->m_map_bookmark.erase(it->first);
+                    elm_object_item_del(bookmarkManagerUI->m_map_bookmark[it.first]);
+                    bookmarkManagerUI->m_map_bookmark.erase(it.first);
                 }
+            break;
+        case BookmarkManagerState::Share:
+            bookmarkManagerUI->bookmarkItemsShare();
             break;
         case BookmarkManagerState::SelectFolder:
             bookmarkManagerUI->folderSelected(bookmarkManagerUI->m_folder_path.back());
@@ -437,9 +446,9 @@ void BookmarkManagerUI::_select_all_state_changed(void *data, Evas_Object *obj, 
         Elm_Object_Item *it = elm_genlist_first_item_get(bookmarkManagerUI->m_genlist);
         while (it) {
             services::SharedBookmarkItem bookmarkItem = (static_cast<BookmarkData*>(elm_object_item_data_get(it)))->bookmarkItem;
-            if (state != bookmarkManagerUI->m_map_delete[bookmarkItem->getId()]) {
-                bookmarkManagerUI->m_delete_count -= bookmarkManagerUI-> m_map_delete[bookmarkItem->getId()] ? 1 : -1;
-                bookmarkManagerUI->m_map_delete[bookmarkItem->getId()] = state;
+            if (state != bookmarkManagerUI->m_map_selected[bookmarkItem->getId()]) {
+                bookmarkManagerUI->m_selected_count -= bookmarkManagerUI-> m_map_selected[bookmarkItem->getId()] ? 1 : -1;
+                bookmarkManagerUI->m_map_selected[bookmarkItem->getId()] = state;
                 elm_genlist_item_update(bookmarkManagerUI-> m_map_bookmark[bookmarkItem->getId()]);
             }
             it = elm_genlist_item_next_get(it);
@@ -456,6 +465,7 @@ void BookmarkManagerUI::addBookmarkItems(std::shared_ptr<services::BookmarkItem>
 {
     BROWSER_LOGD("[%s:%d] ", __PRETTY_FUNCTION__, __LINE__);
 
+    m_added_bookmarks = items;
     if (parent && (m_folder_path.empty() || m_folder_path.back()->getId() != parent->getId())) {
         if (parent->getParent() == -1) {
             int count = elm_toolbar_items_count(m_navigatorToolbar);
@@ -466,12 +476,19 @@ void BookmarkManagerUI::addBookmarkItems(std::shared_ptr<services::BookmarkItem>
         m_folder_path.push_back(parent);
         elm_toolbar_item_append(m_navigatorToolbar, NULL, parent->getTitle().c_str(), _navigatorFolderClicked, this);
     }
+    addFilteredBookmarkItems(BookmarkManagerGenlistFilter::All);
+}
+
+void BookmarkManagerUI::addFilteredBookmarkItems(BookmarkManagerGenlistFilter filter) {
     elm_genlist_clear(m_genlist);
     m_map_bookmark.clear();
-    for (auto it = items.begin(); it != items.end(); ++it) {
+    for (const auto& it : m_added_bookmarks) {
+        if (filter != BookmarkManagerGenlistFilter::All
+            && static_cast<int>(filter) != (int)(*it).is_folder())
+            continue;
         BookmarkData* data = new BookmarkData();
         data->bookmarkManagerUI = this;
-        data->bookmarkItem = *it;
+        data->bookmarkItem = it;
         addBookmarkItem(data);
     }
     updateNoBookmarkText();
@@ -480,6 +497,7 @@ void BookmarkManagerUI::addBookmarkItems(std::shared_ptr<services::BookmarkItem>
 void BookmarkManagerUI::addBookmarkItemCurrentFolder(services::SharedBookmarkItem item)
 {
     BROWSER_LOGD("[%s:%d] ", __PRETTY_FUNCTION__, __LINE__);
+    m_added_bookmarks.push_back(item);
     BookmarkData* data = new BookmarkData();
     data->bookmarkManagerUI = this;
     data->bookmarkItem = item;
@@ -503,23 +521,6 @@ void BookmarkManagerUI::addBookmarkItem(BookmarkData* item)
     elm_genlist_item_selected_set(bookmarkView, EINA_FALSE);
 }
 
-void BookmarkManagerUI::checkSecretMode()
-{
-    auto secretMode = isEngineSecretMode();
-    if (!secretMode) {
-        BROWSER_LOGE("[%s:%d] Signal not found", __PRETTY_FUNCTION__, __LINE__);
-        return;
-    }
-
-    if (*secretMode) {
-        elm_object_signal_emit(m_content, "hide_modules_toolbar", "ui");
-        evas_object_hide(m_modulesToolbar);
-    } else {
-        elm_object_signal_emit(m_content, "show_toolbars", "ui");
-        evas_object_show(m_modulesToolbar);
-    }
-}
-
 void BookmarkManagerUI::onBackPressed()
 {
     BROWSER_LOGD("[%s:%d] ", __PRETTY_FUNCTION__, __LINE__);
@@ -531,6 +532,10 @@ void BookmarkManagerUI::onBackPressed()
     case BookmarkManagerState::Default:
         //TODO: We should go to the previous navigatorToolbar element if it exists.
         closeBookmarkManagerClicked();
+        break;
+    case BookmarkManagerState::Share:
+        addFilteredBookmarkItems(BookmarkManagerGenlistFilter::All);
+        changeState(BookmarkManagerState::Default);
         break;
     case BookmarkManagerState::HistoryDeleteView:
         changeState(BookmarkManagerState::HistoryView);
@@ -609,6 +614,7 @@ void BookmarkManagerUI::_cm_share_clicked(void* data, Evas_Object*, void* )
     if (data) {
         BookmarkManagerUI* bookmarkManagerUI = static_cast<BookmarkManagerUI*>(data);
         _cm_dismissed(nullptr, bookmarkManagerUI->m_ctxpopup, nullptr);
+        bookmarkManagerUI->changeState(BookmarkManagerState::Share);
     } else
         BROWSER_LOGW("[%s] data = nullptr", __PRETTY_FUNCTION__);
 }
@@ -733,6 +739,7 @@ void BookmarkManagerUI::_bookmarkItemClicked(void * data, Evas_Object *, void *)
             bookmarkData->bookmarkManagerUI->changeState(BookmarkManagerState::Default);
             break;
         case BookmarkManagerState::Delete:
+        case BookmarkManagerState::Share:
             bookmarkData->bookmarkManagerUI->updateDeleteClick(bookmarkData->bookmarkItem->getId());
             elm_genlist_item_update(bookmarkData->bookmarkManagerUI->
                     m_map_bookmark[bookmarkData->bookmarkItem->getId()]);
@@ -752,101 +759,125 @@ void BookmarkManagerUI::changeState(BookmarkManagerState state)
     switch (state) {
     case BookmarkManagerState::SelectFolder:
         elm_genlist_realized_items_update(m_genlist);
-        m_naviframe->setPrevButtonVisible(false);
-        m_naviframe->setLeftButtonVisible(true);
-        m_naviframe->setRightButtonVisible(true);
+        showNaviframePrevButton(false);
         //TODO: Missing translation. In guidelines this should be uppercase
         m_naviframe->setRightButtonText(_("IDS_BR_SK_DONE"));
-        elm_object_signal_emit(m_content, "show_toolbars", "ui");
-        evas_object_show(m_navigatorToolbar);
+        showToolbars(true);
         elm_object_signal_emit(m_content, "hide_modules_toolbar", "ui");
         evas_object_hide(m_modulesToolbar);
         break;
     case BookmarkManagerState::Edit:
         m_reordered = false;
-        m_naviframe->setLeftButtonVisible(false);
-        m_naviframe->setRightButtonVisible(false);
-        m_naviframe->setPrevButtonVisible(true);
         m_naviframe->setTitle(_("IDS_BR_HEADER_SELECT_BOOKMARK"));
-        elm_object_signal_emit(m_content, "hide_toolbars", "ui");
-        evas_object_hide(m_modulesToolbar);
+        showToolbars(false);
         evas_object_hide(m_navigatorToolbar);
         break;
     case BookmarkManagerState::Delete:
-        m_delete_count = 0;
-        m_map_delete.clear();
-        for (auto it = m_map_bookmark.begin(); it != m_map_bookmark.end(); ++it)
-            m_map_delete.insert(std::pair<unsigned int, bool>(it->first, false));
-
+        clearSelection();
         elm_genlist_realized_items_update(m_genlist);
-        m_naviframe->setPrevButtonVisible(false);
-        m_naviframe->setLeftButtonVisible(true);
-        m_naviframe->setRightButtonVisible(true);
+        showNaviframePrevButton(false);
         //TODO: Missing translation. In guidelines this should be uppercase
         m_naviframe->setRightButtonText(_("IDS_BR_SK_DELETE"));
         updateDeleteTopContent();
-        elm_object_signal_emit(m_content, "hide_toolbars", "ui");
-        evas_object_hide(m_modulesToolbar);
+        showToolbars(false);
         evas_object_hide(m_navigatorToolbar);
-        elm_check_state_set(elm_object_part_content_get(m_select_all, "elm.swallow.end"), EINA_FALSE);
-        elm_box_pack_start(m_box, m_select_all);
-        evas_object_show(m_select_all);
+        insertSelectAll();
+        break;
+    case BookmarkManagerState::Share:
+        clearSelection();
+        addFilteredBookmarkItems(BookmarkManagerGenlistFilter::Websites);
+        elm_genlist_realized_items_update(m_genlist);
+        showNaviframePrevButton(false);
+        m_naviframe->setRightButtonText(_("IDS_TPLATFORM_ACBUTTON_DONE_ABB"));
+        updateDeleteTopContent();
+        showToolbars(false);
+        evas_object_hide(m_navigatorToolbar);
+        insertSelectAll();
         break;
     case BookmarkManagerState::Reorder:
-        m_naviframe->setLeftButtonVisible(false);
-        m_naviframe->setRightButtonVisible(false);
-        m_naviframe->setPrevButtonVisible(true);
+        showNaviframePrevButton(true);
         m_naviframe->setTitle(_("IDS_BR_OPT_REORDER_ABB"));
-        elm_object_signal_emit(m_content, "hide_toolbars", "ui");
-        evas_object_hide(m_modulesToolbar);
+        showToolbars(false);
         evas_object_hide(m_navigatorToolbar);
         elm_genlist_reorder_mode_set(m_genlist, EINA_TRUE);
         break;
     case BookmarkManagerState::HistoryView:
         updateNoBookmarkText();
-        m_naviframe->setLeftButtonVisible(false);
-        m_naviframe->setRightButtonVisible(false);
-        m_naviframe->setPrevButtonVisible(true);
+        showNaviframePrevButton(true);
         m_naviframe->setTitle(_("IDS_BR_MBODY_HISTORY"));
-        elm_object_signal_emit(m_content, "show_toolbars", "ui");
+        showToolbars(true);
         evas_object_hide(m_navigatorToolbar);
         elm_object_part_content_unset(m_content, "navigator_toolbar");
         elm_object_signal_emit(m_content, "hide_navigator_toolbar", "ui");
-        evas_object_show(m_modulesToolbar);
         elm_box_unpack(m_box, m_select_all);
         evas_object_hide(m_select_all);
         break;
     case BookmarkManagerState::HistoryDeleteView:
         updateNoBookmarkText();
         m_naviframe->setTitle(_("IDS_BR_MBODY_HISTORY"));
-        m_naviframe->setPrevButtonVisible(false);
-        m_naviframe->setLeftButtonVisible(true);
-        m_naviframe->setRightButtonVisible(true);
+        showNaviframePrevButton(false);
         m_naviframe->setRightButtonText(_("IDS_BR_SK_DELETE"));
         updateDeleteTopContent();
-        elm_object_signal_emit(m_content, "hide_toolbars", "ui");
-        evas_object_hide(m_modulesToolbar);
+        showToolbars(false);
         evas_object_hide(m_navigatorToolbar);
         break;
     case BookmarkManagerState::Default:
     default:
         updateNoBookmarkText();
         reoderBookmarkItems();
-        m_naviframe->setLeftButtonVisible(false);
-        m_naviframe->setRightButtonVisible(false);
-        m_naviframe->setPrevButtonVisible(true);
+        showNaviframePrevButton(true);
         m_naviframe->setTitle(_("IDS_BR_BODY_BOOKMARKS"));
-        elm_object_signal_emit(m_content, "show_toolbars", "ui");
-        evas_object_show(m_modulesToolbar);
+        showToolbars(true);
         evas_object_show(m_navigatorToolbar);
         elm_object_part_content_set(m_content, "navigator_toolbar", m_navigatorToolbar);
-        elm_object_signal_emit(m_content, "show_toolbars", "ui");
         elm_genlist_reorder_mode_set(m_genlist, EINA_FALSE);
         elm_box_unpack(m_box, m_select_all);
         evas_object_hide(m_select_all);
         break;
     }
     elm_genlist_realized_items_update(m_genlist);
+}
+
+void BookmarkManagerUI::clearSelection()
+{
+    m_selected_count = 0;
+    m_map_selected.clear();
+    for (const auto& it : m_map_bookmark)
+        m_map_selected.insert(std::pair<unsigned int, bool>(it.first, false));
+}
+
+void BookmarkManagerUI::showNaviframePrevButton(bool show)
+{
+    m_naviframe->setLeftButtonVisible(!show);
+    m_naviframe->setRightButtonVisible(!show);
+    m_naviframe->setPrevButtonVisible(show);
+}
+
+void BookmarkManagerUI::showToolbars(bool show)
+{
+    if (show) {
+        elm_object_signal_emit(m_content, "show_toolbars", "ui");
+        evas_object_show(m_navigatorToolbar);
+        auto secret = isEngineSecretMode();
+        if (secret) {
+            if (*secret) {
+                elm_object_signal_emit(m_content, "hide_modules_toolbar", "ui");
+                evas_object_hide(m_modulesToolbar);
+            }
+        } else {
+             BROWSER_LOGE("[%s:%d] unknow isEngineSecretMode value!", __PRETTY_FUNCTION__, __LINE__);
+        }
+    } else {
+        elm_object_signal_emit(m_content, "hide_toolbars", "ui");
+        evas_object_hide(m_modulesToolbar);
+    }
+}
+
+void BookmarkManagerUI::insertSelectAll()
+{
+    elm_check_state_set(elm_object_part_content_get(m_select_all, "elm.swallow.end"), EINA_FALSE);
+    elm_box_pack_start(m_box, m_select_all);
+    evas_object_show(m_select_all);
 }
 
 void BookmarkManagerUI::reoderBookmarkItems()
@@ -883,22 +914,81 @@ void BookmarkManagerUI::updateNoBookmarkText()
 
 void BookmarkManagerUI::updateDeleteClick(int id)
 {
-    m_delete_count -= m_map_delete[id] ? 1 : -1;
-    m_map_delete[id] = !m_map_delete[id];
+    m_selected_count -= m_map_selected[id] ? 1 : -1;
+    m_map_selected[id] = !m_map_selected[id];
     elm_check_state_set(
         elm_object_part_content_get(m_select_all, "elm.swallow.end"),
-        m_delete_count == elm_genlist_items_count(m_genlist));
+        m_selected_count == elm_genlist_items_count(m_genlist));
     updateDeleteTopContent();
 }
 
 void BookmarkManagerUI::updateDeleteTopContent()
 {
-    if (m_delete_count)
-        m_naviframe->setTitle((boost::format(_("IDS_BR_HEADER_PD_SELECTED_ABB")) % m_delete_count).str());
+    if (m_selected_count)
+        m_naviframe->setTitle((boost::format(_("IDS_BR_HEADER_PD_SELECTED_ABB")) % m_selected_count).str());
     else
         //TODO: Add translation
         m_naviframe->setTitle("Select items");
-    m_naviframe->setRightButtonEnabled(m_delete_count);
+    m_naviframe->setRightButtonEnabled(m_selected_count);
+}
+
+void BookmarkManagerUI::bookmarkItemsShare()
+{
+    std::string subject = "";
+    std::string message = "";
+    std::string url = "";
+    std::string title = "";
+
+    for (const auto& it : m_map_selected)
+        if (it.second) {
+            BookmarkData *bookmarkData = static_cast<BookmarkData*>(
+                elm_object_item_data_get(m_map_bookmark[it.first]));
+
+            url = bookmarkData->bookmarkItem->getAddress();
+            title = bookmarkData->bookmarkItem->getTitle();
+            if (!title.size())
+                title = url;
+            if (m_selected_count == 1)
+                subject = title;
+
+            message.append(title);
+            message.append("\n");
+            message.append(url);
+            message.append("\n");
+        }
+
+    app_control_h app_control = NULL;
+    if (app_control_create(&app_control) < 0) {
+        BROWSER_LOGE("[%s:%d] Fail to app_control_create", __PRETTY_FUNCTION__, __LINE__);
+        return;
+    }
+    if (app_control_set_operation(app_control, APP_CONTROL_OPERATION_SHARE_TEXT) < 0) {
+        BROWSER_LOGE("[%s:%d] Fail to app_control_set_operation", __PRETTY_FUNCTION__, __LINE__);
+        app_control_destroy(app_control);
+        return;
+    }
+    if (app_control_add_extra_data(app_control, APP_CONTROL_DATA_TEXT, message.c_str()) < 0) {
+        BROWSER_LOGE("[%s:%d] Fail to app_control_add_extra_data", __PRETTY_FUNCTION__, __LINE__);
+        app_control_destroy(app_control);
+        return;
+    }
+    if (m_selected_count == 1)
+        if (app_control_add_extra_data(app_control, APP_CONTROL_DATA_SUBJECT, subject.c_str()) < 0) {
+            BROWSER_LOGE("[%s:%d] Fail to app_control_add_extra_data", __PRETTY_FUNCTION__, __LINE__);
+            app_control_destroy(app_control);
+            return;
+        }
+    if (app_control_set_app_id(app_control, "org.tizen.share-panel") < 0) {
+        BROWSER_LOGE("[%s:%d] Fail to app_control_set_app_id", __PRETTY_FUNCTION__, __LINE__);
+        app_control_destroy(app_control);
+        return;
+    }
+    if (app_control_send_launch_request(app_control, NULL, NULL) < 0) {
+        BROWSER_LOGE("[%s:%d] Fail to app_control_send_launch_request", __PRETTY_FUNCTION__, __LINE__);
+        app_control_destroy(app_control);
+        return;
+    }
+    app_control_destroy(app_control);
 }
 
 }
