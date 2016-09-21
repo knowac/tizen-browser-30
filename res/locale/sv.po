@@ -2026,6 +2026,9 @@ msgstr "Stäng av Hemligt läge"
 msgid "IDS_BR_OPT_TURN_ON_SECRET_MODE_ABB"
 msgstr "Slå på Hemligt läge"
 
+msgid "IDS_BR_OPT_SHOW_PASSWORD_ABB2"
+msgstr "Visa lösenord"
+
 msgid "IDS_BR_OPT_SECRET_MODE_SECURITY_ABB"
 msgstr "Skydd i hemligt läge"
 
@@ -2142,4 +2145,19 @@ msgstr "Historik"
 
 msgid "IDS_BR_TAB2_BOOKMARKS"
 msgstr "Bokmärken"
+
+msgid "IDS_BR_HEADER_SAVE_CONTENT_TO_ABB"
+msgstr "Spara innehåll i"
+
+msgid "IDS_BR_HEADER_SELECT_ITEMS_ABB2"
+msgstr "Välj objekt"
+
+msgid "IDS_BR_BODY_YOUR_PASSWORD_MUST_CONTAIN_AT_LEAST_PD_CHARACTERS_INCLUDING_AT_LEAST_1_LETTER"
+msgstr "Lösenordet måste innehålla minst %d tecken varav minst en bokstav."
+
+msgid "IDS_BR_BODY_AN_INCORRECT_PASSWORD_HAS_BEEN_ENTERED_TRY_AGAIN"
+msgstr "Ett felaktigt lösenord har angetts. Försök igen."
+
+msgid "IDS_BR_BODY_NO_TABS"
+msgstr "Inga flikar"
 

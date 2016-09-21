@@ -2026,6 +2026,9 @@ msgstr "Deaktiver Hemmelig tilstand"
 msgid "IDS_BR_OPT_TURN_ON_SECRET_MODE_ABB"
 msgstr "Aktiver Hemmelig tilstand"
 
+msgid "IDS_BR_OPT_SHOW_PASSWORD_ABB2"
+msgstr "Vis adgangskode"
+
 msgid "IDS_BR_OPT_SECRET_MODE_SECURITY_ABB"
 msgstr "Hemmelig tilstand-sikkerhed"
 
@@ -2142,4 +2145,19 @@ msgstr "Oversigt"
 
 msgid "IDS_BR_TAB2_BOOKMARKS"
 msgstr "Bogmærker"
+
+msgid "IDS_BR_HEADER_SAVE_CONTENT_TO_ABB"
+msgstr "Gem indhold i"
+
+msgid "IDS_BR_HEADER_SELECT_ITEMS_ABB2"
+msgstr "Vælg elementer"
+
+msgid "IDS_BR_BODY_YOUR_PASSWORD_MUST_CONTAIN_AT_LEAST_PD_CHARACTERS_INCLUDING_AT_LEAST_1_LETTER"
+msgstr "Din adgangskode skal indeholde mindst %d tegn, og heraf skal der være mindst 1 bogstav."
+
+msgid "IDS_BR_BODY_AN_INCORRECT_PASSWORD_HAS_BEEN_ENTERED_TRY_AGAIN"
+msgstr "Der er indtastet en forkert adgangskode. Prøv igen."
+
+msgid "IDS_BR_BODY_NO_TABS"
+msgstr "Ingen faner"
 

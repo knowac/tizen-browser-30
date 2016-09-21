@@ -2026,6 +2026,9 @@ msgstr "Sirli rejimni o‘chirish"
 msgid "IDS_BR_OPT_TURN_ON_SECRET_MODE_ABB"
 msgstr "Sir rejimini yoqish"
 
+msgid "IDS_BR_OPT_SHOW_PASSWORD_ABB2"
+msgstr "Parolni ko‘rsatish"
+
 msgid "IDS_BR_OPT_SECRET_MODE_SECURITY_ABB"
 msgstr "Sir rejimi xavfsizligi"
 
@@ -2142,4 +2145,19 @@ msgstr "Jurnal"
 
 msgid "IDS_BR_TAB2_BOOKMARKS"
 msgstr "Xatcho‘plar"
+
+msgid "IDS_BR_HEADER_SAVE_CONTENT_TO_ABB"
+msgstr "Tarkibni saqlash"
+
+msgid "IDS_BR_HEADER_SELECT_ITEMS_ABB2"
+msgstr "Elementlarni tanlash"
+
+msgid "IDS_BR_BODY_YOUR_PASSWORD_MUST_CONTAIN_AT_LEAST_PD_CHARACTERS_INCLUDING_AT_LEAST_1_LETTER"
+msgstr "Parolingiz kamida %d ta belgidan tashkil topishi va kamida 1 ta harfga ega bo‘lishi lozim."
+
+msgid "IDS_BR_BODY_AN_INCORRECT_PASSWORD_HAS_BEEN_ENTERED_TRY_AGAIN"
+msgstr "Noto‘g‘ri parol kiritildi. Qayta urinib ko‘ring."
+
+msgid "IDS_BR_BODY_NO_TABS"
+msgstr "Ilovalar yo‘q"
 

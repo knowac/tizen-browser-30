@@ -2026,6 +2026,9 @@ msgstr "Desactivar modo Secreto"
 msgid "IDS_BR_OPT_TURN_ON_SECRET_MODE_ABB"
 msgstr "Activar modo Secreto"
 
+msgid "IDS_BR_OPT_SHOW_PASSWORD_ABB2"
+msgstr "Mostrar contraseña"
+
 msgid "IDS_BR_OPT_SECRET_MODE_SECURITY_ABB"
 msgstr "Seguridad de modo Secreto"
 
@@ -2142,4 +2145,19 @@ msgstr "Historial"
 
 msgid "IDS_BR_TAB2_BOOKMARKS"
 msgstr "Marcadores"
+
+msgid "IDS_BR_HEADER_SAVE_CONTENT_TO_ABB"
+msgstr "Guardar contenido en"
+
+msgid "IDS_BR_HEADER_SELECT_ITEMS_ABB2"
+msgstr "Seleccionar elementos"
+
+msgid "IDS_BR_BODY_YOUR_PASSWORD_MUST_CONTAIN_AT_LEAST_PD_CHARACTERS_INCLUDING_AT_LEAST_1_LETTER"
+msgstr "Su contraseña debe contener un mínimo de %d caracteres e incluir al menos 1 letra."
+
+msgid "IDS_BR_BODY_AN_INCORRECT_PASSWORD_HAS_BEEN_ENTERED_TRY_AGAIN"
+msgstr "Se ha introducido una contraseña incorrecta. Inténtelo de nuevo."
+
+msgid "IDS_BR_BODY_NO_TABS"
+msgstr "Ninguna pestaña"
 

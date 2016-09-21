@@ -2026,6 +2026,9 @@ msgstr "Désactiver le mode Secret"
 msgid "IDS_BR_OPT_TURN_ON_SECRET_MODE_ABB"
 msgstr "Activer le mode Secret"
 
+msgid "IDS_BR_OPT_SHOW_PASSWORD_ABB2"
+msgstr "Afficher le mot de passe"
+
 msgid "IDS_BR_OPT_SECRET_MODE_SECURITY_ABB"
 msgstr "Sécurité du mode Secret"
 
@@ -2142,4 +2145,19 @@ msgstr "Historique"
 
 msgid "IDS_BR_TAB2_BOOKMARKS"
 msgstr "Favoris"
+
+msgid "IDS_BR_HEADER_SAVE_CONTENT_TO_ABB"
+msgstr "Enregistrement contenu dans"
+
+msgid "IDS_BR_HEADER_SELECT_ITEMS_ABB2"
+msgstr "Sélectionner des éléments"
+
+msgid "IDS_BR_BODY_YOUR_PASSWORD_MUST_CONTAIN_AT_LEAST_PD_CHARACTERS_INCLUDING_AT_LEAST_1_LETTER"
+msgstr "Votre mot de passe doit contenir au moins %d caractères, parmi lesquels au moins 1 lettre."
+
+msgid "IDS_BR_BODY_AN_INCORRECT_PASSWORD_HAS_BEEN_ENTERED_TRY_AGAIN"
+msgstr "Un mot de passe erroné a été saisi. Réessayez."
+
+msgid "IDS_BR_BODY_NO_TABS"
+msgstr "Aucun onglet"
 

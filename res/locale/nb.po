@@ -2026,6 +2026,9 @@ msgstr "Slå av Hemmelig modus"
 msgid "IDS_BR_OPT_TURN_ON_SECRET_MODE_ABB"
 msgstr "Slå på Hemmelig modus"
 
+msgid "IDS_BR_OPT_SHOW_PASSWORD_ABB2"
+msgstr "Vis passord"
+
 msgid "IDS_BR_OPT_SECRET_MODE_SECURITY_ABB"
 msgstr "Hemmelig modus-sikkerhet"
 
@@ -2142,4 +2145,19 @@ msgstr "Logg"
 
 msgid "IDS_BR_TAB2_BOOKMARKS"
 msgstr "Bokmerker"
+
+msgid "IDS_BR_HEADER_SAVE_CONTENT_TO_ABB"
+msgstr "Lagre innhold til"
+
+msgid "IDS_BR_HEADER_SELECT_ITEMS_ABB2"
+msgstr "Velg elementer"
+
+msgid "IDS_BR_BODY_YOUR_PASSWORD_MUST_CONTAIN_AT_LEAST_PD_CHARACTERS_INCLUDING_AT_LEAST_1_LETTER"
+msgstr "Passordet må inneholde minst %d tegn, inkludert minst 1 bokstav."
+
+msgid "IDS_BR_BODY_AN_INCORRECT_PASSWORD_HAS_BEEN_ENTERED_TRY_AGAIN"
+msgstr "Det er angitt feil passord. Prøv på nytt."
+
+msgid "IDS_BR_BODY_NO_TABS"
+msgstr "Ingen faner"
 

@@ -2026,6 +2026,9 @@ msgstr "Oprire Mod Secret"
 msgid "IDS_BR_OPT_TURN_ON_SECRET_MODE_ABB"
 msgstr "Pornire Mod Secret"
 
+msgid "IDS_BR_OPT_SHOW_PASSWORD_ABB2"
+msgstr "Afișare parolă"
+
 msgid "IDS_BR_OPT_SECRET_MODE_SECURITY_ABB"
 msgstr "Securitate Mod Secret"
 
@@ -2142,4 +2145,19 @@ msgstr "Istoric"
 
 msgid "IDS_BR_TAB2_BOOKMARKS"
 msgstr "Marcaje"
+
+msgid "IDS_BR_HEADER_SAVE_CONTENT_TO_ABB"
+msgstr "Salvare conținut în"
+
+msgid "IDS_BR_HEADER_SELECT_ITEMS_ABB2"
+msgstr "Selectare elemente"
+
+msgid "IDS_BR_BODY_YOUR_PASSWORD_MUST_CONTAIN_AT_LEAST_PD_CHARACTERS_INCLUDING_AT_LEAST_1_LETTER"
+msgstr "Parola trebuie să conțină minimum %d caractere, dintre care cel puțin 1 literă."
+
+msgid "IDS_BR_BODY_AN_INCORRECT_PASSWORD_HAS_BEEN_ENTERED_TRY_AGAIN"
+msgstr "S-a introdus o parolă greșită. Încercați din nou."
+
+msgid "IDS_BR_BODY_NO_TABS"
+msgstr "Nicio filă"
 

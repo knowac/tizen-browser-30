@@ -2026,6 +2026,9 @@ msgstr "Desaktibatu Modu sekretua"
 msgid "IDS_BR_OPT_TURN_ON_SECRET_MODE_ABB"
 msgstr "Aktibatu Modu sekretua"
 
+msgid "IDS_BR_OPT_SHOW_PASSWORD_ABB2"
+msgstr "Erakutsi pasahitza"
+
 msgid "IDS_BR_OPT_SECRET_MODE_SECURITY_ABB"
 msgstr "Modu sekretuaren segurtasuna"
 
@@ -2142,4 +2145,19 @@ msgstr "Historia"
 
 msgid "IDS_BR_TAB2_BOOKMARKS"
 msgstr "Laster markak"
+
+msgid "IDS_BR_HEADER_SAVE_CONTENT_TO_ABB"
+msgstr "Gorde edukia hemen"
+
+msgid "IDS_BR_HEADER_SELECT_ITEMS_ABB2"
+msgstr "Hautatu elementuak"
+
+msgid "IDS_BR_BODY_YOUR_PASSWORD_MUST_CONTAIN_AT_LEAST_PD_CHARACTERS_INCLUDING_AT_LEAST_1_LETTER"
+msgstr "Pasahitzak %d karaktere izan behar ditu gutxienez, letra bat barne."
+
+msgid "IDS_BR_BODY_AN_INCORRECT_PASSWORD_HAS_BEEN_ENTERED_TRY_AGAIN"
+msgstr "Pasahitz okerra adierazi duzu. Saiatu berriz."
+
+msgid "IDS_BR_BODY_NO_TABS"
+msgstr "Fitxarik ez"
 

@@ -2026,6 +2026,9 @@ msgstr "비밀 모드 해제"
 msgid "IDS_BR_OPT_TURN_ON_SECRET_MODE_ABB"
 msgstr "비밀 모드 실행"
 
+msgid "IDS_BR_OPT_SHOW_PASSWORD_ABB2"
+msgstr "비밀번호 표시"
+
 msgid "IDS_BR_OPT_SECRET_MODE_SECURITY_ABB"
 msgstr "비밀 모드 보안"
 
@@ -2142,4 +2145,19 @@ msgstr "방문기록"
 
 msgid "IDS_BR_TAB2_BOOKMARKS"
 msgstr "북마크"
+
+msgid "IDS_BR_HEADER_SAVE_CONTENT_TO_ABB"
+msgstr "컨텐츠 저장 위치"
+
+msgid "IDS_BR_HEADER_SELECT_ITEMS_ABB2"
+msgstr "항목 선택"
+
+msgid "IDS_BR_BODY_YOUR_PASSWORD_MUST_CONTAIN_AT_LEAST_PD_CHARACTERS_INCLUDING_AT_LEAST_1_LETTER"
+msgstr "비밀번호를 %d자 이상 입력하세요.(문자 1개 이상 포함)"
+
+msgid "IDS_BR_BODY_AN_INCORRECT_PASSWORD_HAS_BEEN_ENTERED_TRY_AGAIN"
+msgstr "입력된 비밀번호가 바르지 않습니다. 다시 시도하세요."
+
+msgid "IDS_BR_BODY_NO_TABS"
+msgstr "열린 탭이 없습니다"
 

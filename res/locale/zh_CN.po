@@ -2026,6 +2026,9 @@ msgstr "关闭保密模式"
 msgid "IDS_BR_OPT_TURN_ON_SECRET_MODE_ABB"
 msgstr "打开保密模式"
 
+msgid "IDS_BR_OPT_SHOW_PASSWORD_ABB2"
+msgstr "显示混合密码"
+
 msgid "IDS_BR_OPT_SECRET_MODE_SECURITY_ABB"
 msgstr "保密模式安全性"
 
@@ -2142,4 +2145,19 @@ msgstr "历史记录"
 
 msgid "IDS_BR_TAB2_BOOKMARKS"
 msgstr "书签"
+
+msgid "IDS_BR_HEADER_SAVE_CONTENT_TO_ABB"
+msgstr "保存内容至"
+
+msgid "IDS_BR_HEADER_SELECT_ITEMS_ABB2"
+msgstr "选择项目"
+
+msgid "IDS_BR_BODY_YOUR_PASSWORD_MUST_CONTAIN_AT_LEAST_PD_CHARACTERS_INCLUDING_AT_LEAST_1_LETTER"
+msgstr "您的混合密码必须包含至少 %d 个字符，其中包括至少 1 个字母。"
+
+msgid "IDS_BR_BODY_AN_INCORRECT_PASSWORD_HAS_BEEN_ENTERED_TRY_AGAIN"
+msgstr "已输入不正确的密码。请重试。"
+
+msgid "IDS_BR_BODY_NO_TABS"
+msgstr "无分页"
 

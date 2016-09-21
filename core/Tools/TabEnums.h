@@ -35,18 +35,14 @@ namespace tizen_browser
 namespace base_ui
 {
 namespace Translations {
-    //TODO: Missing translation "IDS_BR_BODY_YOUR_PASSWORD_MUST_CONTAIN_AT_LEAST_PD_CHARACTERS_INCLUDING_AT_LEAST_1_LETTER"
-    ADD_TRAN(CreatePassword,"Your password must contain at least %d characters, including at least 1 letter.")
+    ADD_TRAN(CreatePassword,"IDS_BR_BODY_YOUR_PASSWORD_MUST_CONTAIN_AT_LEAST_PD_CHARACTERS_INCLUDING_AT_LEAST_1_LETTER")
     //TODO: Missing translation
     ADD_TRAN(ConfirmCreatePassword, "Enter the password again to confirm it.")
     //TODO: Missing translation "IDS_BR_BODY_ENTER_YOUR_CURRENT_SECRET_MODE_PASSWORD"
     ADD_TRAN(ConfirmPassword, "Enter your Secret mode password.")
-    //TODO: Missing translation "IDS_BR_BODY_AN_INCORRECT_PASSWORD_HAS_BEEN_ENTERED_TRY_AGAIN"
-    ADD_TRAN(IncorrectPassword, "An incorrect password has been entered. Try again.")
-    //TODO: Missing translation "IDS_BR_OPT_SHOW_PASSWORD_ABB2"
-    ADD_TRAN(ShowPassword, "Show Password")
-    //TODO: Missing translation "IDS_BR_BUTTON_USE_PASSWORD_ABB"
-    ADD_TRAN(UsePassword, "Use Password")
+    ADD_TRAN(IncorrectPassword, "IDS_BR_BODY_AN_INCORRECT_PASSWORD_HAS_BEEN_ENTERED_TRY_AGAIN")
+    ADD_TRAN(ShowPassword, "IDS_BR_OPT_SHOW_PASSWORD_ABB2")
+    ADD_TRAN(UsePassword, "IDS_BR_BUTTON_USE_PASSWORD_ABB")
     //TODO: Missing translation "IDS_BR_TMBODY_CHANGE_PASSWORD"
     ADD_TRAN(ChangePassword, "Change Password")
 };

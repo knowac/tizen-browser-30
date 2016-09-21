@@ -2026,6 +2026,9 @@ msgstr "Izklopite skrivnostni način"
 msgid "IDS_BR_OPT_TURN_ON_SECRET_MODE_ABB"
 msgstr "Vklopite skrivnostni način"
 
+msgid "IDS_BR_OPT_SHOW_PASSWORD_ABB2"
+msgstr "Pokaži geslo"
+
 msgid "IDS_BR_OPT_SECRET_MODE_SECURITY_ABB"
 msgstr "Varnost skrivnostnega načina"
 
@@ -2142,4 +2145,19 @@ msgstr "Zgodovina"
 
 msgid "IDS_BR_TAB2_BOOKMARKS"
 msgstr "Zaznamki"
+
+msgid "IDS_BR_HEADER_SAVE_CONTENT_TO_ABB"
+msgstr "Shranite vsebino v"
+
+msgid "IDS_BR_HEADER_SELECT_ITEMS_ABB2"
+msgstr "Izberite elemente"
+
+msgid "IDS_BR_BODY_YOUR_PASSWORD_MUST_CONTAIN_AT_LEAST_PD_CHARACTERS_INCLUDING_AT_LEAST_1_LETTER"
+msgstr "Geslo mora vsebovati vsaj toliko znakov: %d (med katerimi mora biti vsaj 1 črka)."
+
+msgid "IDS_BR_BODY_AN_INCORRECT_PASSWORD_HAS_BEEN_ENTERED_TRY_AGAIN"
+msgstr "Vnesli ste napačno geslo. Poskusite znova."
+
+msgid "IDS_BR_BODY_NO_TABS"
+msgstr "Brez zavihkov"
 

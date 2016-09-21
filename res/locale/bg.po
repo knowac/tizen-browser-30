@@ -2026,6 +2026,9 @@ msgstr "Изключване на Таен режим"
 msgid "IDS_BR_OPT_TURN_ON_SECRET_MODE_ABB"
 msgstr "Включване на Таен режим"
 
+msgid "IDS_BR_OPT_SHOW_PASSWORD_ABB2"
+msgstr "Показване на паролата"
+
 msgid "IDS_BR_OPT_SECRET_MODE_SECURITY_ABB"
 msgstr "Защита на Таен режим"
 
@@ -2142,4 +2145,19 @@ msgstr "Хронология"
 
 msgid "IDS_BR_TAB2_BOOKMARKS"
 msgstr "Показалци"
+
+msgid "IDS_BR_HEADER_SAVE_CONTENT_TO_ABB"
+msgstr "Записване на съдържанието в"
+
+msgid "IDS_BR_HEADER_SELECT_ITEMS_ABB2"
+msgstr "Изберете елементи"
+
+msgid "IDS_BR_BODY_YOUR_PASSWORD_MUST_CONTAIN_AT_LEAST_PD_CHARACTERS_INCLUDING_AT_LEAST_1_LETTER"
+msgstr "Вашата парола трябва да съдържа поне %d знака, в това число поне 1 буква."
+
+msgid "IDS_BR_BODY_AN_INCORRECT_PASSWORD_HAS_BEEN_ENTERED_TRY_AGAIN"
+msgstr "Въведена е неправилна парола. Опитайте отново."
+
+msgid "IDS_BR_BODY_NO_TABS"
+msgstr "Няма раздели"
 

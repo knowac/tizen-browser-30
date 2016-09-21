@@ -390,20 +390,18 @@ void WebPageUI::showContextMenu()
         createContextMenu(*window);
 
         if (m_statesMgr->equals(WPUState::QUICK_ACCESS)) {
-            //TODO: Add translation
-            elm_ctxpopup_item_append(m_ctxpopup, "Edit Quick access", nullptr, _cm_edit_qa_clicked, this);
+            elm_ctxpopup_item_append(m_ctxpopup, _("IDS_BR_OPT_EDIT_QUICK_ACCESS_ABB"), nullptr, _cm_edit_qa_clicked, this);
         } else if (m_statesMgr->equals(WPUState::MAIN_WEB_PAGE)) {
             elm_ctxpopup_item_append(m_ctxpopup, _("IDS_BR_OPT_SHARE"), nullptr, _cm_share_clicked, this);
             elm_ctxpopup_item_append(m_ctxpopup, _("IDS_BR_OPT_FIND_ON_PAGE"), nullptr, _cm_find_on_page_clicked, this);
 
             boost::optional<bool> bookmark = isBookmark();
             if (bookmark) {
-                //TODO: Add translation
                 if (*bookmark)
-                    elm_ctxpopup_item_append(m_ctxpopup, "Remove from bookmarks", nullptr,
+                    elm_ctxpopup_item_append(m_ctxpopup, _("IDS_BR_OPT_REMOVE_FROM_BOOKMARKS_ABB"), nullptr,
                         _cm_delete_bookmark_clicked, this);
                 else
-                    elm_ctxpopup_item_append(m_ctxpopup, "Add to Bookmarks", nullptr,
+                    elm_ctxpopup_item_append(m_ctxpopup, _("IDS_BR_OPT_BOOKMARK"), nullptr,
                         _cm_bookmark_flow_clicked, this);
             } else
                 BROWSER_LOGE("[%s:%d] Signal not found", __PRETTY_FUNCTION__, __LINE__);
@@ -679,7 +677,7 @@ void WebPageUI::createActions()
     m_forward = sharedAction(new Action(_("IDS_BR_SK_NEXT")));
     m_forward->setIcon("toolbar_next");
 
-    m_addTab = sharedAction(new Action("New tab"));
+    m_addTab = sharedAction(new Action(_("IDS_BR_BUTTON_NEW_TAB_ABB2")));
     m_addTab->setIcon("add_tab");
 
     m_homePage = sharedAction(new Action("Home"));

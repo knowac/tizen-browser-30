@@ -2026,6 +2026,9 @@ msgstr "Ausschalten des geheimen Modus"
 msgid "IDS_BR_OPT_TURN_ON_SECRET_MODE_ABB"
 msgstr "Geheimen Modus einschalten"
 
+msgid "IDS_BR_OPT_SHOW_PASSWORD_ABB2"
+msgstr "Passwort anzeigen"
+
 msgid "IDS_BR_OPT_SECRET_MODE_SECURITY_ABB"
 msgstr "Geheimen Modus schützen"
 
@@ -2142,4 +2145,19 @@ msgstr "Verlauf"
 
 msgid "IDS_BR_TAB2_BOOKMARKS"
 msgstr "Lesezeichen"
+
+msgid "IDS_BR_HEADER_SAVE_CONTENT_TO_ABB"
+msgstr "Speichern von Inhalt unter"
+
+msgid "IDS_BR_HEADER_SELECT_ITEMS_ABB2"
+msgstr "Auswählen von Elementen"
+
+msgid "IDS_BR_BODY_YOUR_PASSWORD_MUST_CONTAIN_AT_LEAST_PD_CHARACTERS_INCLUDING_AT_LEAST_1_LETTER"
+msgstr "Ihr Passwort muss mindestens %d Zeichen enthalten, darunter mindestens 1 Buchstabe."
+
+msgid "IDS_BR_BODY_AN_INCORRECT_PASSWORD_HAS_BEEN_ENTERED_TRY_AGAIN"
+msgstr "Sie haben ein ungültiges Passwort eingegeben. Versuchen Sie es erneut."
+
+msgid "IDS_BR_BODY_NO_TABS"
+msgstr "Keine Registerkarten"
 

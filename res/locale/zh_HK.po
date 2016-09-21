@@ -2026,6 +2026,9 @@ msgstr "關閉保密模式"
 msgid "IDS_BR_OPT_TURN_ON_SECRET_MODE_ABB"
 msgstr "開啟保密模式"
 
+msgid "IDS_BR_OPT_SHOW_PASSWORD_ABB2"
+msgstr "顯示密碼"
+
 msgid "IDS_BR_OPT_SECRET_MODE_SECURITY_ABB"
 msgstr "保密模式安全性"
 
@@ -2142,4 +2145,19 @@ msgstr "歷程記錄"
 
 msgid "IDS_BR_TAB2_BOOKMARKS"
 msgstr "書籤"
+
+msgid "IDS_BR_HEADER_SAVE_CONTENT_TO_ABB"
+msgstr "儲存內容至"
+
+msgid "IDS_BR_HEADER_SELECT_ITEMS_ABB2"
+msgstr "選擇項目"
+
+msgid "IDS_BR_BODY_YOUR_PASSWORD_MUST_CONTAIN_AT_LEAST_PD_CHARACTERS_INCLUDING_AT_LEAST_1_LETTER"
+msgstr "您的密碼必須至少包含 %d 個字元，並至少包括 1 個字母。"
+
+msgid "IDS_BR_BODY_AN_INCORRECT_PASSWORD_HAS_BEEN_ENTERED_TRY_AGAIN"
+msgstr "已輸入錯誤的密碼。請重試。"
+
+msgid "IDS_BR_BODY_NO_TABS"
+msgstr "無標籤"
 

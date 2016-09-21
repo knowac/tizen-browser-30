@@ -2026,6 +2026,9 @@ msgstr "シークレットモードをOFF"
 msgid "IDS_BR_OPT_TURN_ON_SECRET_MODE_ABB"
 msgstr "シークレットモードをON"
 
+msgid "IDS_BR_OPT_SHOW_PASSWORD_ABB2"
+msgstr "パスワードを表示"
+
 msgid "IDS_BR_OPT_SECRET_MODE_SECURITY_ABB"
 msgstr "シークレットモードセキュリティ"
 
@@ -2142,4 +2145,19 @@ msgstr "履歴"
 
 msgid "IDS_BR_TAB2_BOOKMARKS"
 msgstr "ブックマーク"
+
+msgid "IDS_BR_HEADER_SAVE_CONTENT_TO_ABB"
+msgstr "コンテンツの保存先"
+
+msgid "IDS_BR_HEADER_SELECT_ITEMS_ABB2"
+msgstr "アイテムを選択"
+
+msgid "IDS_BR_BODY_YOUR_PASSWORD_MUST_CONTAIN_AT_LEAST_PD_CHARACTERS_INCLUDING_AT_LEAST_1_LETTER"
+msgstr "パスワードは、最低1文字以上の英字を含めて%d文字以上にする必要があります。"
+
+msgid "IDS_BR_BODY_AN_INCORRECT_PASSWORD_HAS_BEEN_ENTERED_TRY_AGAIN"
+msgstr "正しくないパスワードが入力されました。再度入力してください。"
+
+msgid "IDS_BR_BODY_NO_TABS"
+msgstr "タブがありません"
 

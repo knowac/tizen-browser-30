@@ -2026,6 +2026,9 @@ msgstr "Gizli rejimi söndür"
 msgid "IDS_BR_OPT_TURN_ON_SECRET_MODE_ABB"
 msgstr "Gizli rejimi yandır"
 
+msgid "IDS_BR_OPT_SHOW_PASSWORD_ABB2"
+msgstr "Parolu göstər"
+
 msgid "IDS_BR_OPT_SECRET_MODE_SECURITY_ABB"
 msgstr "Gizli rejimin təhlükəsizliyi"
 
@@ -2142,4 +2145,19 @@ msgstr "Tarixçə"
 
 msgid "IDS_BR_TAB2_BOOKMARKS"
 msgstr "Əlfəcinlər"
+
+msgid "IDS_BR_HEADER_SAVE_CONTENT_TO_ABB"
+msgstr "Məzmunu saxla"
+
+msgid "IDS_BR_HEADER_SELECT_ITEMS_ABB2"
+msgstr "Elementləri seç"
+
+msgid "IDS_BR_BODY_YOUR_PASSWORD_MUST_CONTAIN_AT_LEAST_PD_CHARACTERS_INCLUDING_AT_LEAST_1_LETTER"
+msgstr "Sizin parolunuz ən azı 1 hərf olan ən az %d simvoldan ibarət olmalıdır."
+
+msgid "IDS_BR_BODY_AN_INCORRECT_PASSWORD_HAS_BEEN_ENTERED_TRY_AGAIN"
+msgstr "Yanlış parol daxil edilmişdir. Yenidən cəhd edin."
+
+msgid "IDS_BR_BODY_NO_TABS"
+msgstr "Tab yoxdur"
 

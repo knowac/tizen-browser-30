@@ -152,7 +152,7 @@ msgid "IDS_BR_TPOP_WEBPAGE_ADDED_TO_QUICK_ACCESS"
 msgstr "Web-stranica je dodana na Brzi pristup."
 
 msgid "IDS_BR_TPOP_WEBPAGE_ADDED_TO_BOOKMARKS"
-msgstr "Web-stranica dodana u Favorite."
+msgstr "Web-stranica dodana u Oznake."
 
 msgid "IDS_BR_TPOP_QUICK_ACCESS_SHORTCUT_DELETED"
 msgstr "Izbrisan prečac Brzog pristupa."
@@ -182,7 +182,7 @@ msgid "IDS_BR_TPOP_DATA_SAVING_STATISTICS_RESET"
 msgstr "Ponovno postavite statistike o pohrani podataka."
 
 msgid "IDS_BR_TPOP_BOOKMARK_DELETED"
-msgstr "Favorit obrisan."
+msgstr "Oznaka obrisana."
 
 msgid "IDS_BR_TPOP_ADDED_TO_QUICK_ACCESS_LIST"
 msgstr "Dodano na popis za brzi pristup."
@@ -317,7 +317,7 @@ msgid "IDS_BR_POP_SECURITY_POLICY_RESTRICTS_USE_OF_INTERNET_BROWSER"
 msgstr "Sigurnosne odredbe ograničavaju korištenje internet preglednika."
 
 msgid "IDS_BR_POP_SAVED_TO_BOOKMARKS"
-msgstr "Spremljeno u Favorite."
+msgstr "Spremljeno u Oznake."
 
 msgid "IDS_BR_POP_RENAME_TAG"
 msgstr "Preimenuj oznaku"
@@ -365,7 +365,7 @@ msgid "IDS_BR_POP_ENTER_URL"
 msgstr "Unesite adresu."
 
 msgid "IDS_BR_POP_ENTER_BOOKMARK_NAME"
-msgstr "Unesite naziv favorita."
+msgstr "Unesite naziv oznake."
 
 msgid "IDS_BR_POP_DIALING_ING_VZW"
 msgstr "Dialing..."
@@ -380,7 +380,7 @@ msgid "IDS_BR_POP_DELETE_THIS_PAGE_Q"
 msgstr "Izbrisati ovu stranicu?"
 
 msgid "IDS_BR_POP_DELETE_THIS_BOOKMARK_Q"
-msgstr "Izbrisati ovaj favorit?"
+msgstr "Izbrisati ovu oznaku?"
 
 msgid "IDS_BR_POP_DELETE_STORED_WEBSITE_DATA_Q"
 msgstr "Izbrisati spremljene podatke web-stranice?"
@@ -398,7 +398,7 @@ msgid "IDS_BR_POP_DELETE_PD_QUICK_ACCESS_SHORTCUTS_Q"
 msgstr "Izbrisati %d prečace Brzog pristupa?"
 
 msgid "IDS_BR_POP_DELETE_PD_BOOKMARKS_Q"
-msgstr "Izbrisati %d favorita?"
+msgstr "Izbrisati %d oznaka?"
 
 msgid "IDS_BR_POP_DELETE_ALL_WEBSITE_DATA_AND_LOCATION_PERMISSIONS_Q"
 msgstr "Obrisati sve podatke o internet stranici i dozvole lokacije?"
@@ -419,7 +419,7 @@ msgid "IDS_BR_POP_CLEAR_HISTORY_Q"
 msgstr "Obrisati povijest?"
 
 msgid "IDS_BR_POP_BOOKMARK_REMOVED"
-msgstr "Favorit uklonjen."
+msgstr "Oznaka uklonjena."
 
 msgid "IDS_BR_POP_ALREADY_EXISTS"
 msgstr "Već postoji."
@@ -443,7 +443,7 @@ msgid "IDS_BR_POP_ALLOW_SITES_TO_SAVE_AND_READ_COOKIES"
 msgstr "Dopusti stranicama spremanje i čitanje kolačića."
 
 msgid "IDS_BR_POP_ADDED_TO_BOOKMARKS"
-msgstr "Dodano u Favorite."
+msgstr "Dodano u oznake."
 
 msgid "IDS_BR_OPT_WINDOWS"
 msgstr "Prozori"
@@ -677,7 +677,7 @@ msgid "IDS_BR_OPT_ADD_BOOKMARK_ABB"
 msgstr "Dodaj oznaku"
 
 msgid "IDS_BR_OPT_ADD_BOOKMARK"
-msgstr "Dodaj u favorite"
+msgstr "Dodaj oznaku"
 
 msgid "IDS_BR_OPT1_EXTENSION"
 msgstr "Ekstenzija"
@@ -785,7 +785,7 @@ msgid "IDS_BR_HEADER_UNABLE_TO_OPEN_FILE"
 msgstr "Nemoguće otvoriti datoteku"
 
 msgid "IDS_BR_HEADER_UNABLE_TO_MOVE_BOOKMARKS_ABB"
-msgstr "Nije moguće pomaknuti favorit"
+msgstr "Nije moguće pomaknuti oznaku"
 
 msgid "IDS_BR_HEADER_SITE_NOT_TRUSTED_ABB"
 msgstr "Nepouzdana stranica"
@@ -803,10 +803,10 @@ msgid "IDS_BR_HEADER_SELECT_SHORTCUTS_ABB"
 msgstr "Odaberite prečace"
 
 msgid "IDS_BR_HEADER_SELECT_BOOKMARKS"
-msgstr "Odaberi favorite"
+msgstr "Odaberi oznake"
 
 msgid "IDS_BR_HEADER_SELECT_BOOKMARK"
-msgstr "Odaberi favorit"
+msgstr "Odaberi oznaku"
 
 msgid "IDS_BR_HEADER_SECURITY_CERTIFICATE"
 msgstr "Sigurnosna potvrda"
@@ -854,7 +854,7 @@ msgid "IDS_BR_HEADER_ENABLE_WEB_SIGN_IN"
 msgstr "Uključi prijavu preko interneta"
 
 msgid "IDS_BR_HEADER_EDIT_BOOKMARK"
-msgstr "Uredi favorita"
+msgstr "Uredi oznaku"
 
 msgid "IDS_BR_HEADER_DELETE_WEBSITE_DATA_ABB"
 msgstr "Izbriši podatke web-stranice"
@@ -866,7 +866,7 @@ msgid "IDS_BR_HEADER_DELETE_PROFILE"
 msgstr "Obriši profil"
 
 msgid "IDS_BR_HEADER_DELETE_BOOKMARKS_ABB"
-msgstr "Izbriši favorite"
+msgstr "Izbriši oznake"
 
 msgid "IDS_BR_HEADER_DATA_CONNECTIVITY_PROBLEM"
 msgstr "Greška podatkovne veze"
@@ -944,7 +944,7 @@ msgid "IDS_BR_BODY_VIEW_HISTORY_T_TALKBACK"
 msgstr "Prikaz povijesti."
 
 msgid "IDS_BR_BODY_VIEW_BOOKMARKS_T_TALKBACK"
-msgstr "Prikaz favorita."
+msgstr "Prikaz oznaka."
 
 msgid "IDS_BR_BODY_VALID_CERTIFICATE"
 msgstr "Valjana potvrda"
@@ -1004,7 +1004,7 @@ msgid "IDS_BR_BODY_SYNC_INTERNET_DATA"
 msgstr "Sinkroniziraj podatke s Interneta"
 
 msgid "IDS_BR_BODY_SYNC_BOOKMARKS_ABB"
-msgstr "Sinkroniziraj favorite"
+msgstr "Sinkroniziraj oznake"
 
 msgid "IDS_BR_BODY_STREET_ADDRESS_PO_BOX_C_O_ETC_ABB"
 msgstr "Adresa ulice, poštanski sandučić, n/r, itd."
@@ -1016,7 +1016,7 @@ msgid "IDS_BR_BODY_SPLIT_BAR_HANDLE"
 msgstr "Ručica razdjelne trake"
 
 msgid "IDS_BR_BODY_SIGN_IN_TO_YOUR_SAMSUNG_ACCOUNT_TO_ACCESS_THE_BOOKMARKS_AND_TABS_ON_YOUR_OTHER_DEVICES"
-msgstr "Prijavite se u Samsung račun da biste pristupili favoritima i karticama na drugim uređajima."
+msgstr "Prijavite se u Samsung račun da biste pristupili oznakama i karticama na drugim uređajima."
 
 msgid "IDS_BR_BODY_SHOW_OVERVIEW_OF_NEWLY_OPENED_PAGES"
 msgstr "Prikaz posljednjih stranica."
@@ -1085,7 +1085,7 @@ msgid "IDS_BR_BODY_RADIO_BUTTON_T_TTS"
 msgstr "Tipka za radio"
 
 msgid "IDS_BR_BODY_PS_BOOKMARK_WILL_BE_DELETED"
-msgstr "Izbrisat će se %s favorita."
+msgstr "Izbrisat će se %s oznaka."
 
 msgid "IDS_BR_BODY_PRIVACY"
 msgstr "Privatnost"
@@ -1142,7 +1142,7 @@ msgid "IDS_BR_BODY_NO_SAVED_PAGES"
 msgstr "Nema spremljenih stranica"
 
 msgid "IDS_BR_BODY_NO_BOOKMARKS"
-msgstr "Nema favorita"
+msgstr "Nema oznaka"
 
 msgid "IDS_BR_BODY_NORMAL"
 msgstr "Normalna"
@@ -1268,7 +1268,7 @@ msgid "IDS_BR_BODY_DESKTOP_VIEW"
 msgstr "Računalna verzija"
 
 msgid "IDS_BR_BODY_DELETE_THE_SELECTED_BOOKMARKS_Q"
-msgstr "Izbrisati odabrane favorite?"
+msgstr "Izbrisati odabrane oznake?"
 
 msgid "IDS_BR_BODY_DELETE_PERSONAL_DATA"
 msgstr "Obriši osobne podatke"
@@ -1418,7 +1418,7 @@ msgid "IDS_BR_BODY_ADD_TO_CONTACT"
 msgstr "Dodaj kontaktu"
 
 msgid "IDS_BR_BODY_ADD_THIS_WEBSITE_TO_BOOKMARKS_TO_OPEN_IT_FASTER_ABB"
-msgstr "Dodajte web stranicu u favorite za brži pristup."
+msgstr "Dodajte web stranicu u oznake za brži pristup."
 
 msgid "IDS_BR_BODY_ADDRESS_LINE_2_ABB"
 msgstr "Redak adrese 2"
@@ -1697,7 +1697,7 @@ msgid "IDS_BR_POP_CLOSE_APPLICATION_Q"
 msgstr "Zatvoriti program?"
 
 msgid "IDS_BR_POP_BOOKMARK_ADDED"
-msgstr "Dodano u favorite."
+msgstr "Dodano u oznake."
 
 msgid "IDS_BR_POP_AUTOMATIC_BRIGHTNESS"
 msgstr "Auto. osvjetljenje"
@@ -1760,7 +1760,7 @@ msgid "IDS_BR_OPT_DEVICE"
 msgstr "Uređaj"
 
 msgid "IDS_BR_OPT_BOOKMARK"
-msgstr "Favorit"
+msgstr "Oznaka"
 
 msgid "IDS_BR_OPT_ADDED"
 msgstr "Dodano."
@@ -1925,7 +1925,7 @@ msgid "IDS_BR_BODY_DEFAULT"
 msgstr "Zadano"
 
 msgid "IDS_BR_BODY_BOOKMARKS"
-msgstr "Favoriti"
+msgstr "Oznake"
 
 msgid "IDS_BR_BODY_ALL"
 msgstr "Sve"
@@ -2026,6 +2026,9 @@ msgstr "Isključi Tajni način"
 msgid "IDS_BR_OPT_TURN_ON_SECRET_MODE_ABB"
 msgstr "Uključi Tajni način"
 
+msgid "IDS_BR_OPT_SHOW_PASSWORD_ABB2"
+msgstr "Prikaži lozinku"
+
 msgid "IDS_BR_OPT_SECRET_MODE_SECURITY_ABB"
 msgstr "Sigurnost Tajnog načina"
 
@@ -2057,10 +2060,10 @@ msgid "IDS_BR_OPT_AUTO_FILL_DATA"
 msgstr "Automatski popuni podatke"
 
 msgid "IDS_BR_BODY_ANY_WEBPAGES_YOU_VIEW_WHILE_SECRET_MODE_IS_TURNED_ON_WONT_APPEAR_IN_YOUR_BROWSER_OR_SEARCH_HISTORY_MSG"
-msgstr "Nijedna web-stranica kojoj pristupite dok je uključen Tajni način neće se pojaviti u vašem pregledniku ili povijesti pretraživanja dok je on isključen.\n\nNijedan favorit ni web-stranica koju spremite dok je uključen Tajni način neće se prikazati dok je taj način isključen.\n\nTakođer možete lozinkom zaštititi svoje podatke Tajnog načina."
+msgstr "Nijedna web-stranica kojoj pristupite dok je uključen Tajni način neće se pojaviti u vašem pregledniku ili povijesti pretraživanja dok je on isključen.\n\nNijedna oznaka ni web-stranica koju spremite dok je uključen Tajni način neće se prikazati dok je taj način isključen.\n\nTakođer možete lozinkom zaštititi svoje podatke Tajnog načina."
 
 msgid "IDS_BR_BODY_ANY_WEBPAGES_YOU_VIEW_WHILE_SECRET_MODE_IS_TURNED_ON_WONT_APPEAR_IN_YOUR_BROWSER_OR_SEARCH_MSG"
-msgstr "Nijedna web-stranica kojoj pristupite dok je uključen Tajni način neće se pojaviti u vašem pregledniku ili povijesti pretraživanja dok je on isključen.\n\nNijedan favorit ni web-stranica koju spremite dok je uključen Tajni način neće se prikazati dok je taj način isključen."
+msgstr "Nijedna web-stranica kojoj pristupite dok je uključen Tajni način neće se pojaviti u vašem pregledniku ili povijesti pretraživanja dok je on isključen.\n\nNijedna oznaka ni web-stranica koju spremite dok je uključen Tajni način neće se prikazati dok je taj način isključen."
 
 msgid "IDS_BR_BUTTON_SECRET_OFF_ABB"
 msgstr "Isklj. Taj."
@@ -2111,10 +2114,10 @@ msgid "IDS_BR_OPT_EDIT_QUICK_ACCESS_ABB"
 msgstr "Uredi Brzi pristup"
 
 msgid "IDS_BR_OPT_REMOVE_FROM_BOOKMARKS_ABB"
-msgstr "Ukloni iz Favorita"
+msgstr "Ukloni iz Oznaka"
 
 msgid "IDS_BR_HEADER_ADD_BOOKMARK_ABB"
-msgstr "Dodaj favorit"
+msgstr "Dodaj oznaku"
 
 msgid "IDS_BR_BODY_BROWSING_HISTORY"
 msgstr "Povijest pretraživanja"
@@ -2132,7 +2135,7 @@ msgid "IDS_BR_BUTTON_BACK_ABB3"
 msgstr "Natrag"
 
 msgid "IDS_BR_BUTTON_BOOKMARKS_ABB"
-msgstr "Favoriti"
+msgstr "Oznake"
 
 msgid "IDS_BR_NPBODY_NO_PROFILES_ABB"
 msgstr "Nema profila"
@@ -2141,5 +2144,20 @@ msgid "IDS_BR_TAB2_HISTORY"
 msgstr "Povijest"
 
 msgid "IDS_BR_TAB2_BOOKMARKS"
-msgstr "Favoriti"
+msgstr "Oznake"
+
+msgid "IDS_BR_HEADER_SAVE_CONTENT_TO_ABB"
+msgstr "Spremanje sadržaja na"
+
+msgid "IDS_BR_HEADER_SELECT_ITEMS_ABB2"
+msgstr "Odabir stavki"
+
+msgid "IDS_BR_BODY_YOUR_PASSWORD_MUST_CONTAIN_AT_LEAST_PD_CHARACTERS_INCLUDING_AT_LEAST_1_LETTER"
+msgstr "Lozinka mora sadržavati najmanje %d znaka(ov)a, uključujući barem jedno slovo."
+
+msgid "IDS_BR_BODY_AN_INCORRECT_PASSWORD_HAS_BEEN_ENTERED_TRY_AGAIN"
+msgstr "Unesena je neispravna lozinka. Pokušajte ponovno."
+
+msgid "IDS_BR_BODY_NO_TABS"
+msgstr "Bez kartica"
 

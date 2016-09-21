@@ -2026,6 +2026,9 @@ msgstr "Slökkva á leyndarstillingu"
 msgid "IDS_BR_OPT_TURN_ON_SECRET_MODE_ABB"
 msgstr "Kveikja á leyndarstillingu"
 
+msgid "IDS_BR_OPT_SHOW_PASSWORD_ABB2"
+msgstr "Sýna lykilorð"
+
 msgid "IDS_BR_OPT_SECRET_MODE_SECURITY_ABB"
 msgstr "Öryggi leyndarstillingar"
 
@@ -2142,4 +2145,19 @@ msgstr "Ferill"
 
 msgid "IDS_BR_TAB2_BOOKMARKS"
 msgstr "Bókamerki"
+
+msgid "IDS_BR_HEADER_SAVE_CONTENT_TO_ABB"
+msgstr "Vista efni á"
+
+msgid "IDS_BR_HEADER_SELECT_ITEMS_ABB2"
+msgstr "Velja atriði"
+
+msgid "IDS_BR_BODY_YOUR_PASSWORD_MUST_CONTAIN_AT_LEAST_PD_CHARACTERS_INCLUDING_AT_LEAST_1_LETTER"
+msgstr "Lykilorðið verður að innihalda a.m.k. %d stafi, þar á meðal minnst einn bókstaf."
+
+msgid "IDS_BR_BODY_AN_INCORRECT_PASSWORD_HAS_BEEN_ENTERED_TRY_AGAIN"
+msgstr "Rangt lykilorð var slegið inn. Reyndu aftur."
+
+msgid "IDS_BR_BODY_NO_TABS"
+msgstr "Engir flipar"
 

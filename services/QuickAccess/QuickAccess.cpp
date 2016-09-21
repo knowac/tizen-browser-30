@@ -547,7 +547,7 @@ void QuickAccess::showMostVisited()
 
     m_currPage = QuickAccess::MOST_VISITED_PAGE;
 
-    elm_object_translatable_part_text_set(m_layout, "screen_title", "Most visited websites");  //TODO: translate
+    elm_object_translatable_part_text_set(m_layout, "screen_title", _("IDS_BR_MBODY_MOST_VISITED_WEBSITES"));
     setIndexPage(QuickAccess::MOST_VISITED_PAGE);
 
 }
@@ -563,7 +563,7 @@ void QuickAccess::showQuickAccess()
     BROWSER_LOGD("[%s:%d] ", __PRETTY_FUNCTION__, __LINE__);
     m_currPage = QuickAccess::QUICKACCESS_PAGE;
 
-    elm_object_translatable_part_text_set(m_layout, "screen_title", "Quick access");  //TODO: translate
+    elm_object_translatable_part_text_set(m_layout, "screen_title", _("IDS_BR_OPT_QUICK_ACCESS_ABB2"));
     setIndexPage(QuickAccess::QUICKACCESS_PAGE);
 
 }
