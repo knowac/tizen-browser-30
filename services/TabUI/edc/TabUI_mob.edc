@@ -1,0 +1,577 @@
+#include "../../../core/Tools/edc/InvisibleButton.edc"
+#include "../../../core/Tools/edc/ColorClasses.edc"
+#define ON_OTHER_DEVICE 0
+
+collections { base_scale: 2.6;
+
+    group { name: "bottom_bar_with_margins";
+        parts {
+            rect { "top_left_content_spacer"; scale;
+                description { "default";
+                    min: 32 0;
+                    max: 32 0;
+                    align: 0 0;
+                    fixed: 1 1;
+                    visible: 0;
+                }
+            }
+            rect { "bottom_right_content_spacer"; scale;
+                description { "default";
+                    min: 32 0;
+                    max: 32 0;
+                    align: 1 1;
+                    fixed: 1 1;
+                    visible: 0;
+                }
+            }
+            swallow { "elm.swallow.content"; scale;
+                description { "default";
+                    rel1 {
+                        relative: 1 1;
+                        to: "top_left_content_spacer";
+                    }
+                    rel2 {
+                        relative: 0 0;
+                        to: "bottom_right_content_spacer";
+                    }
+                }
+            }
+        }
+    }
+
+    group { name: "naviframe_content";
+        parts {
+            rect { "content_top_left_spacer"; scale;
+                description { "default";
+                    min: 10 0;
+                    max: 10 0;
+                    fixed: 1 1;
+                    align: 0.0 0.0;
+                }
+                description { "landscape";
+                    inherit: "default";
+                    min: 0 0;
+                    max: 0 0;
+                }
+            }
+            rect { "content_bottom_right_spacer"; scale;
+                description { "default";
+                    min: 10 0;
+                    max: 10 0;
+                    fixed: 1 1;
+                    align: 1 1;
+                }
+                description { "landscape";
+                    inherit: "default";
+                    min: 0 0;
+                    max: 0 0;
+                }
+            }
+            swallow { "elm.swallow.content"; scale;
+                mouse_events: 1;
+                description { "default";
+                    align: 0.0 0.0;
+                    min: 0 0;
+                    max: -1 -1;
+                    fixed: 0 0;
+                    rel1 {
+                        relative: 1.0 1.0;
+                        to: "content_top_left_spacer";
+                    }
+                    rel2 {
+                        relative: 0 0;
+                        to: "content_bottom_right_spacer";
+                    }
+                }
+            }
+            swallow { "elm.swallow.content_overlay"; scale;
+                multiline: 1;
+                description { "default";
+                    visible: 0;
+                }
+                description { "visible";
+                    inherit: "default";
+                    visible: 1;
+                }
+            }
+        }
+        programs {
+            program {
+                name: "show_overlay";
+                signal: "show_overlay";
+                source: "ui";
+                action: STATE_SET "visible" 0.0;
+                target: "elm.swallow.content_overlay";
+            }
+            program {
+                name: "hide_overlay";
+                signal: "hide_overlay";
+                source: "ui";
+                action: STATE_SET "default" 0.0;
+                target: "elm.swallow.content_overlay";
+            }
+            program {
+                name: "switch_landscape";
+                signal: "switch_landscape";
+                source: "ui";
+                action: STATE_SET "landscape" 0.0;
+                target: "content_top_left_spacer";
+                target: "content_bottom_right_spacer";
+            }
+            program {
+                name: "switch_vertical";
+                signal: "switch_vertical";
+                source: "ui";
+                action: STATE_SET "default" 0.0;
+                target: "content_top_left_spacer";
+                target: "content_bottom_right_spacer";
+            }
+        }
+    }
+
+    group { name: "elm/button/base/delete_button";
+        images {
+            image: "btn_delete_nor.png" COMP;
+            image: "btn_delete_press.png" COMP;
+        }
+        parts {
+            part { name: "elm.image";
+                type: IMAGE;
+                scale: 1;
+                mouse_events: 0;
+                description { state: "default" 0.0;
+                    align: 0.5 0.5;
+                    visible: 1;
+                    min: 60 60;
+                    max: 60 60;
+                    fixed: 1 1;
+                    image.normal: "btn_delete_nor.png";
+                }
+                description { state: "pressed" 0.0;
+                    inherit: "default" 0.0;
+                    image.normal: "btn_delete_press.png";
+                }
+            }
+            rect { "over"; scale;
+                description { "default";
+                    rel1.to: "elm.image";
+                    rel2.to: "elm.image";
+                    color: 0 0 0 0;
+                }
+            }
+        }
+        programs {
+            program { name: "on_mouse_down";
+                signal: "mouse,down,1";
+                source: "over";
+                script {
+                    set_state(PART:"elm.image", "pressed", 0.0);
+                    emit("elm,action,press", "");
+                }
+             }
+            program {  name: "on_mouse_up";
+                signal: "mouse,up,1";
+                source: "over";
+                script {
+                   set_state(PART:"elm.image", "default", 0.0);
+                   emit("elm,action,unpress", "");
+                }
+            }
+            program { name: "on_mouse_click";
+                signal: "mouse,clicked,1";
+                source: "over";
+                script {
+                    emit("elm,action,click", "");
+                }
+            }
+        }
+    }
+
+    group { name: "favicon_image";
+        images.image: "internet_tabs_ic_default.png" COMP;
+        script {
+            public secret_mode = 0;
+        }
+        parts {
+            part { name: "image";
+                type: IMAGE;
+                description { state: "default" 0.0;
+                    fixed: 1 1;
+                    align: 0.5 0.5;
+                    min: 40 40;
+                    max: 40 40;
+                    visible: 1;
+                    image.normal: "internet_tabs_ic_default.png";
+                    color_class: "AO034";
+                }
+                description { state: "selected" 0.0;
+                    inherit: "default";
+                    color_class: "AO035";
+                }
+            }
+        }
+        programs {
+            program { name: "on_mouse_down";
+                signal: "on_mouse_down";
+                source: "ui";
+                action: STATE_SET "selected" 0.0;
+                target: "image";
+            }
+            program { name: "on_mouse_up";
+                signal: "on_mouse_up";
+                source: "ui";
+                script {
+                    if (get_int(secret_mode))
+                        set_state(PART:"image", "selected", 0.0);
+                    else
+                        set_state(PART:"image", "default", 0.0);
+                }
+            }
+            program { name: "state_secret";
+                signal: "state_secret";
+                source: "ui";
+                script {
+                    set_int(secret_mode, 1);
+                    set_state(PART:"image", "selected", 0.0);
+                }
+            }
+            program { name: "state_normal";
+                signal: "state_normal";
+                source: "ui";
+                script {
+                    set_int(secret_mode, 0);
+                    set_state(PART:"image", "default", 0.0);
+                }
+            }
+        }
+    }
+
+    group { name: "elm/gengrid/item/custom_tab_item/default";
+        styles {
+           style { name: "selected_text";
+              base: "font=Tizen:style=Regular font_size=36 color=#ffffff color_class=ATO015 text_class=ATO015 ellipsis=1.0";
+              tag:  "br" "\n";
+              tag:  "ps" "ps";
+              tag:  "tab" "\t";
+              tag:  "b" "+ font_weight=Bold";
+           }
+           style { name: "normal_text";
+              base: "font=Tizen:style=Regular font_size=36 color=#000000 color_class=ATO016 text_class=ATO016 ellipsis=1.0";
+              tag:  "br" "\n";
+              tag:  "ps" "ps";
+              tag:  "tab" "\t";
+              tag:  "b" "+ font_weight=Bold";
+           }
+        }
+        images.image: "internet_tabs_bg.#.png" COMP;
+        images.image: "internet_tabs_bg_ef.#.png" COMP;
+        images.image: "internet_tabs_bg_press.#.png" COMP;
+        images.image: "internet_tabs_img_mask.#.png" COMP;
+        data.item: "texts" "elm.text";
+        data.item: "contents" "elm.icon elm.button elm.thumbnail elm.overlay";
+        script {
+            public secret_mode = 0;
+        }
+        parts {
+            rect { "top_left_spacer"; scale;
+                description { "default";
+                    min: 11 0;
+                    max: 11 0;
+                    fixed: 1 1;
+                    align: 0 0;
+                    visible: 0;
+                }
+                description { "landscape";
+                    inherit: "default";
+                    min: 6 10;
+                    max: 6 10;
+                }
+            }
+            rect { "bottom_right_spacer"; scale;
+                description { "default";
+                    min: 11 21;
+                    max: 11 21;
+                    fixed: 1 1;
+                    align: 1 1;
+                    visible: 0;
+                }
+                description { "landscape";
+                    inherit: "default";
+                    min: 6 0;
+                    max: 6 0;
+                }
+            }
+            part { name: "bg";
+                scale: 1;
+                type: IMAGE;
+                description { state: "default" 0.0;
+                    rel1 {
+                        to: "top_left_spacer";
+                        relative: 1 1;
+                    }
+                    rel2 {
+                        to: "bottom_right_spacer";
+                        relative: 0 0;
+                    }
+                    image.normal: "internet_tabs_bg.#.png";
+                    color_class: "AO025";
+                }
+            }
+            rect { "top_bg"; scale;
+                description { "default";
+                    align: 0.5 0;
+                    min: 0 68;
+                    max: -1 68;
+                    fixed: 0 1;
+                    rel1 {
+                        to: "top_left_spacer";
+                        relative: 1 1;
+                    }
+                    rel2 {
+                        to: "bottom_right_spacer";
+                        relative: 0 0;
+                    }
+                    color_class: "AO026";
+                }
+                description { "secret_default";
+                    inherit: "default";
+                    color_class: "tabs_secret_bg";
+                }
+                description { "selected";
+                    inherit: "default";
+                    color_class: "AO027";
+                }
+                description { "secret_selected";
+                    inherit: "default";
+                    color_class: "AO028";
+                }
+            }
+            rect { "icon_spacer"; scale;
+                description { "default";
+                    min: 18 0;
+                    max: 18 0;
+                    align: 0 0;
+                    fixed: 1 1;
+                    visible: 0;
+                    rel1.to: "top_bg";
+                }
+            }
+            swallow { "elm.icon"; scale;
+                description { "default";
+                    min: 40 40;
+                    max: 40 40;
+                    align: 0.0 0.5;
+                    fixed: 1 1;
+                    rel1 {
+                        relative: 1.0 1.0;
+                        to: "icon_spacer";
+                    }
+                    rel2.to: "top_bg";
+                }
+            }
+            rect { "text_spacer_1"; scale;
+                description { "defalt";
+                    min: 70 8;
+                    max: 70 8;
+                    fixed: 1 1;
+                    align: 0 0;
+                    visible: 0;
+                    rel1.to: "top_bg";
+                }
+            }
+            rect { "text_spacer_2"; scale;
+                description { "defalt";
+                    min: 78 12;
+                    max: 78 12;
+                    fixed: 1 1;
+                    align: 1 1;
+                    visible: 0;
+                    rel2.to: "top_bg";
+                }
+            }
+            part { name: "elm.text";
+                type: TEXTBLOCK;
+                scale: 1;
+                description { state: "default" 0.0;
+                    min: 0 48;
+                    align: 0.0 0.0;
+                    rel1 {
+                        relative: 1 1;
+                        to: "text_spacer_1";
+                    }
+                    rel2 {
+                        relative: 0 0;
+                        to: "text_spacer_2";
+                    }
+                    text.style: "normal_text";
+                    text.min: 0 1;
+                    text.align: 0 0.5;
+                }
+                description { state: "selected" 0.0;
+                    inherit: "default";
+                    text.style: "selected_text";
+                }
+            }
+            rect { "button_spacer"; scale;
+                description { "default";
+                    min: 6 0;
+                    max: 6 0;
+                    align: 1 1;
+                    visible: 0;
+                    rel2.to: "top_bg";
+                }
+            }
+            rect { "top_left_thumbnail_spacer"; scale;
+                description { "default";
+                    min: 5 1;
+                    max: 5 1;
+                    fixed: 1 1;
+                    align: 0 0;
+                    visible: 0;
+                    rel1 {
+                        to: "top_bg";
+                        relative: 0 1;
+                    }
+                }
+            }
+            rect { "bottom_right_thumbnail_spacer"; scale;
+                description { "default";
+                    min: 5 6;
+                    max: 5 6;
+                    fixed: 1 1;
+                    align: 1 1;
+                    visible: 0;
+                    rel2.to: "bg";
+                }
+            }
+            part { name: "image_mask";
+                type: IMAGE;
+                scale: 1;
+                description { state: "default" 0.0;
+                    align: 0.5 0.0;
+                    rel1.to: "bg";
+                    rel2.to: "bg";
+                    visible: 1;
+                    image.normal: "internet_tabs_img_mask.#.png";
+                }
+                description { state: "secret" 0.0;
+                    inherit: "default";
+                    color_class: "AO033";
+                }
+            }
+            swallow { "elm.thumbnail"; scale;
+                description { "default";
+                    rel1 {
+                        relative: 1 1;
+                        to: "top_left_thumbnail_spacer";
+                    }
+                    rel2 {
+                        to: "bottom_right_thumbnail_spacer";
+                        relative: 0 0;
+                    }
+                }
+            }
+            part { name: "bg_effect";
+                scale: 1;
+                type: IMAGE;
+                description { state: "default" 0.0;
+                    rel1.to: "bg";
+                    rel2.to: "bg";
+                    image.normal: "internet_tabs_bg_ef.#.png";
+                }
+            }
+            part { name: "press_effect";
+                scale: 1;
+                type: IMAGE;
+                description { state: "default" 0.0;
+                    visible: 0;
+                    align: 0.5 0.0;
+                    rel1.to: "bg";
+                    rel2.to: "bg";
+                    image.normal: "internet_tabs_bg_press.#.png";
+                    color_class: "AO025P";
+                }
+                description { state: "selected"; 0.0;
+                    inherit: "default";
+                    visible: 1;
+                }
+            }
+            swallow { "elm.overlay"; scale;
+                mouse_events: 1;
+                description { "default";
+                }
+            }
+            swallow { "elm.button"; scale;
+                mouse_events: 1;
+                repeat_events: 0;
+                description { "default";
+                    min: 60 60;
+                    max: 60 60;
+                    align: 1 0.5;
+                    rel1.to: "top_bg";
+                    rel2.to: "button_spacer";
+                }
+            }
+        }
+        programs {
+            program { name: "state_landscape";
+                signal: "state_landscape";
+                source: "ui";
+                action: STATE_SET "landscape" 0.0;
+                target: "top_left_spacer";
+                target: "bottom_right_spacer";
+            }
+            program { name: "state_default";
+                signal: "state_default";
+                source: "ui";
+                action: STATE_SET "default" 0.0;
+                target: "top_left_spacer";
+                target: "bottom_right_spacer";
+            }
+            program { name: "selected";
+                signal: "elm,state,selected";
+                source: "elm";
+                script {
+                    if (get_int(secret_mode))
+                        set_state(PART:"top_bg", "secret_selected", 0.0);
+                    else
+                        set_state(PART:"top_bg", "selected", 0.0);
+                    set_state(PART:"elm.text", "selected", 0.0);
+                }
+            }
+            program { name: "unselected";
+                signal: "elm,state,unselected";
+                source: "elm";
+                script {
+                    if (get_int(secret_mode)) {
+                        set_state(PART:"elm.text", "selected", 0.0);
+                        set_state(PART:"top_bg", "secret_default", 0.0);
+                    } else {
+                        set_state(PART:"elm.text", "default", 0.0);
+                        set_state(PART:"top_bg", "default", 0.0);
+                    }
+                }
+            }
+            program { name: "state_secret";
+                signal: "state_secret";
+                source: "ui";
+                script {
+                    set_int(secret_mode, 1);
+                    set_state(PART:"elm.text", "selected", 0.0);
+                    set_state(PART:"top_bg", "secret_default", 0.0);
+                    set_state(PART:"image_mask", "secret", 0.0);
+                }
+            }
+            program { name: "state_normal";
+                signal: "state_normal";
+                source: "ui";
+                script {
+                    set_int(secret_mode, 0);
+                    set_state(PART:"elm.text", "default", 0.0);
+                    set_state(PART:"top_bg", "default", 0.0);
+                    set_state(PART:"image_mask", "default", 0.0);
+                }
+            }
+        }
+    }
+}

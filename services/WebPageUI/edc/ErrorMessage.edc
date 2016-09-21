@@ -1,0 +1,174 @@
+
+collections { base_scale: 2.0;
+    images {
+        image: "web_browsing_icon_error.png" COMP;
+    }
+    styles {
+        style {
+            name: "mssage_style";
+            base: "font=Sans font_size=35 color=#d3d3d3 wrap=word align=0.5";
+        }
+        style {
+            name: "mssage_hint_style";
+            base: "font=Sans font_size=24 color=#868686 wrap=word align=0.5";
+        }
+    }
+    group{
+        name: "error_message";
+        parts{
+            part{
+                name: "message_background";
+                type: RECT;
+                mouse_events: 1;
+                description{
+                    state: "default" 0.0;
+                    visible: 1;
+                    rel1.relative: 0 0;
+                    rel2.relative: 1 1;
+                    color: 42 50 64 255;
+                }
+                description{
+                    state: "visibleError" 0.0;
+                    inherit: "default" 0.0;
+                    visible: 1;
+                }
+            }
+            part{
+                name: "error_message_background";
+                type:RECT;
+                description{
+                    state: "default" 0.0;
+                    visible: 1;
+                    min: 1 1;
+                    max: -1 -1;
+                    fixed: 0 0;
+                align: 0.5 0.5;
+                color: 30 38 50 153;
+            }
+            description{
+                state: "visibleError" 0.0;
+                inherit: "default" 0.0;
+                visible: 1;
+            }
+        }
+        part{
+            name: "err_ico";
+            type: IMAGE;
+            description{
+                state: "default" 0.0;
+                visible: 1;
+                min: 140 140;
+                max:140 140;
+                fixed: 1 1;
+                align: 0.5 0;
+                rel1{
+                    relative: 0 0;
+                    offset:0 163;
+                    to: "error_message_background";
+                }
+                rel2{
+                    relative: 1 1;
+                    to: "error_message_background";
+                }
+                image{
+                    normal: "web_browsing_icon_error.png";
+                }
+            }
+            description{
+                state: "visibleError" 0.0;
+                inherit: "default" 0.0;
+                visible: 1;
+            }
+        }
+        part{
+            name: "error_text";
+            type: TEXTBLOCK;
+            description{
+                state: "default" 0.0;
+                visible: 1;
+                fixed: 0 1;
+                min: 500 96;
+                max: -1 96;
+                align: 0.5 0;
+                rel1{
+                    relative: 0 1;
+                    to_x: "error_message_background";
+                    to_y: "err_ico";
+                }
+                rel2{
+                    relative: 1 1;
+                    to: "error_message_background";
+                }
+                text{
+                    style: "mssage_style";
+                    text: "Server not found.<br/>Please check the followings:";
+                }
+            }
+            description{
+                state: "visibleError" 0.0;
+                inherit: "default" 0.0;
+                visible: 1;
+            }
+        }
+        part{
+            name: "error_hint";
+            type: TEXTBLOCK;
+            description{
+                state: "default" 0.0;
+                visible: 1;
+                fixed: 0 1;
+                min: 1 117;
+                max: -1 117;
+                color: 134 134 134 255;
+                align: 0.5 0;
+                rel1{
+                    relative: 0 1;
+                    to_x: "error_message_background";
+                    to_y: "error_text";
+                }
+                rel2{
+                    relative: 1 1;
+                    to: "error_message_background";
+                }
+                text{
+                    max: 0 1;
+                    style: "mssage_hint_style";
+                    text: "Check for any typing error in URL. <br/>"
+                    "Check your network settings.<br/>"
+                    "Try again later.<br/>"
+                    "Click refresh to reload.";
+                }
+            }
+            description{
+                state: "visibleError" 0.0;
+                inherit: "default" 0.0;
+                visible: 1;
+            }
+        }
+    }//parts
+    programs{
+        program{
+            name: "show_error";
+            signal: "show_error";
+            source: "model";
+            action: STATE_SET "visibleError" 0.0;
+            target: "message_background";
+            target: "error_message_background";
+            target: "err_ico";
+            target: "error_text";
+            target: "error_hint";
+        }
+        program{
+            name: "hide_error";
+            signal: "hide_error";
+            source: "model";
+            action: STATE_SET "default" 0.0;
+            target: "message_background";
+            target: "error_message_background";
+            target: "err_ico";
+            target: "error_text";
+            target: "error_hint";
+        }
+    }//programs
+}
+}

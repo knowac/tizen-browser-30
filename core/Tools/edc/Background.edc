@@ -1,0 +1,55 @@
+/*
+  Defines 'rect' which covers given target with a given color.
+  @param TARGET Target to cover. "" for to set parent as a target.
+  @param COLOR_CLASS Defined color class.
+*/
+#define BACKGROUND_COVER(TARGET, VISIBLE, COLOR_CLASS) \
+rect { \
+    scale: 1; \
+    mouse_events: 1; \
+    repeat_events: 1; \
+    desc { "default"; \
+           visible: VISIBLE; color_class: COLOR_CLASS; \
+           rel1 { relative: 0.0 0.0; to: TARGET; } \
+           rel2 { relative: 1.0 1.0; to: TARGET; } \
+    } \
+} \
+
+/*
+  Same as BACKGROUND_COVER, but not visible for 'default' state and
+  visible for 'visible' state.
+*/
+#define BACKGROUND_COVER_TOGGLABLE(NAME, TARGET, COLOR_CLASS) \
+rect { NAME;\
+    scale: 1; \
+    desc { "default"; \
+           visible: 0; color_class: COLOR_CLASS; \
+           rel1 { relative: 0.0 0.0; to: TARGET; } \
+           rel2 { relative: 1.0 1.0; to: TARGET; } \
+    } \
+    desc { "visible"; \
+           inherit: "default" 0.0; \
+           visible: 1; \
+    } \
+} \
+
+/*
+  Defines two programs: one whch sets target's state to 'visible' for
+  source's 'mouse,down,*' signal sent and second which sets target's
+  state to default' state for source's mouse,up,*' signal sent.
+  @param TOGGLE_SOURCE part which sends signals
+  @param TOGGLE_TARGET part which state will be to toggled
+*/
+#define PROGRAM_BACKGROUND_COVER_TOGGLABLE(TOGGLE_SOURCE, TOGGLE_TARGET) \
+program { \
+    source: TOGGLE_SOURCE; \
+    signal: "mouse,down,*"; \
+    action: STATE_SET "visible" 0.0; \
+    target: TOGGLE_TARGET; \
+} \
+program { \
+    source: TOGGLE_SOURCE; \
+    signal: "mouse,up,*"; \
+    action: STATE_SET "default" 0.0; \
+    target: TOGGLE_TARGET; \
+} \

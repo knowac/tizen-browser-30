@@ -1,0 +1,193 @@
+collections { base_scale: 2.6;
+    styles {
+        style {
+            name: "auth_text_style";
+            base: "font=Sans:style=Regular font_size=35 color=#333333 wrap=word";
+        }
+        style {
+            name: "field_text_style";
+            base: "font=Sans:style=Bold font_size=35 color=#333333 wrap=word";
+        }
+        style {
+            name: "title_text_style";
+            base: "font=Sans font_size=32 color=#333333 wrap=word";
+        }
+        style {
+            name: "value_text_style";
+            base: "font=Sans font_size=28 color=#333333 wrap=word";
+        }
+        style {
+            name: "text_style";
+            base: "font=Sans font_size=36 color=#333333 wrap=word align=0.5";
+        }
+    }
+
+    group {
+        name: "elm/genlist/item/cert_auth_text/default";
+        data.item: "texts" "auth_text";
+        parts {
+            rect {
+                name: "bg";
+                scale: 1;
+                description {
+                    min: 0 110;
+                }
+            }
+            part {
+                name: "auth_text";
+                type: TEXTBLOCK;
+                scale: 1;
+                description {
+                    state: "default" 0.0;
+                    min: 100 100;
+                    max: -1 -1;
+                    fixed: 1 0;
+                    align: 0 0;
+                    rel1 {
+                        to: "bg";
+                        relative: 0.0 0.0;
+                    }
+                    rel2 {
+                        to: "bg";
+                        relative: 1.0 1.0;
+                    }
+                    text {
+                        style: "auth_text_style";
+                        align: 0 0;
+                    }
+                }
+            }
+        }
+    }
+
+    group {
+        name: "elm/genlist/item/cert_field_text/default";
+        data.item: "texts" "field_text";
+        parts {
+            rect {
+                name: "bg";
+                scale: 1;
+                description {
+                    min: 0 70;
+                }
+            }
+            part {
+                name: "field_text";
+                type: TEXTBLOCK;
+                scale: 1;
+                description {
+                    state: "default" 0.0;
+                    min: 100 60;
+                    max: -1 -1;
+                    align: 0 0;
+                    rel1 {
+                        to: "bg";
+                        relative: 0.0 0.0;
+                    }
+                    rel2 {
+                        to: "bg";
+                        relative: 1.0 1.0;
+                    }
+                    text {
+                        style: "field_text_style";
+                    }
+                }
+            }
+        }
+    }
+
+    group {
+        name: "elm/genlist/item/cert_title_value_text/default";
+        data.item: "texts" "title_text value_text";
+        parts {
+            rect {
+                name: "bg";
+                scale: 1;
+                description {
+                    min: 0 110;
+                }
+            }
+            part {
+                name: "title_text";
+                type: TEXTBLOCK;
+                scale: 1;
+                description {
+                    state: "default" 0.0;
+                    min: 100 40;
+                    max: -1 40;
+                    fixed: 1 0;
+                    align: 0 0;
+                    color: 80 80 80 255;
+                    rel1 {
+                        to: "bg";
+                        relative: 0.0 0.0;
+                    }
+                    rel2 {
+                        to: "bg";
+                        relative: 1.0 1.0;
+                    }
+                    text {
+                        style: "title_text_style";
+                    }
+                }
+            }
+            part {
+                name: "value_text";
+                type: TEXTBLOCK;
+                scale: 1;
+                description {
+                    state: "default" 0.0;
+                    min: 100 70;
+                    max: -1 70;
+                    align: 0 0;
+                    rel1 {
+                        to: "title_text";
+                        relative: 0.0 1.0;
+                    }
+                    rel2 {
+                        to: "bg";
+                        relative: 1.0 1.0;
+                    }
+                    text {
+                        style: "value_text_style";
+                    }
+                }
+            }
+        }
+    }
+
+    group {
+        name: "label_layout";
+        parts {
+            rect {
+                name: "bg";
+                scale: 1;
+                description {
+                    min: 0 110;
+                }
+            }
+            part {
+                name: "auth_text";
+                type: TEXTBLOCK;
+                scale: 1;
+                description {
+                    state: "default" 0.0;
+                    min: 632 100;
+                    max: -1 -1;
+                    rel1 {
+                        to: "bg";
+                        relative: 0.0 0.0;
+                    }
+                    rel2 {
+                        to: "bg";
+                        relative: 1.0 1.0;
+                    }
+                    text {
+                        style: "text_style";
+                        align: 0 0;
+                    }
+                }
+            }
+        }
+    }
+}

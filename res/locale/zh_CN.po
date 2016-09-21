@@ -1,0 +1,2145 @@
+msgid "IDS_BR_POP_NETWORK_ERROR"
+msgstr "网络故障"
+
+msgid "IDS_BR_BODY_DESTINATIONS_AUTHENTICATION_REQUIRED"
+msgstr "需要认证"
+
+msgid "IDS_BR_HEADER_SECURITY_WARNING"
+msgstr "安全警告"
+
+msgid "IDS_BR_BODY_CERTIFICATES"
+msgstr "证书"
+
+msgid "IDS_BR_HEADER_ISSUED_TO_C"
+msgstr "颁发对象："
+
+msgid "IDS_BR_HEADER_COMMON_NAME_C"
+msgstr "公用名："
+
+msgid "IDS_BR_HEADER_ORGANIZATION_C"
+msgstr "组织："
+
+msgid "IDS_BR_HEADER_ORGANIZATIONAL_UNIT_C"
+msgstr "组织单位："
+
+msgid "IDS_BR_BODY_SECURITY_CERTIFICATE_PROBLEM_MSG"
+msgstr "此站点的安全证书存在问题。"
+
+msgid "IDS_BR_OPT_ALLOW"
+msgstr "允许"
+
+msgid "IDS_BR_BODY_PS_REQUESTS_YOUR_LOCATION"
+msgstr "%s请求您的位置。"
+
+msgid "IDS_BR_BODY_REMEMBER_PREFERENCE"
+msgstr "记住首选项。"
+
+msgid "IDS_BR_BODY_CERTIFICATE_SERIAL_NUMBER"
+msgstr "序列号"
+
+msgid "IDS_BR_HEADER_ISSUED_BY_C"
+msgstr "发行人："
+
+msgid "IDS_BR_HEADER_VALIDITY_C"
+msgstr "有效期:"
+
+msgid "IDS_BR_POP_CERTI_VALID_FROM_C"
+msgstr "生效日期:"
+
+msgid "IDS_BR_BODY_CERTIFICATE_VALID_TILL"
+msgstr "有效期截至"
+
+msgid "IDS_BR_BODY_ROOTCERTIFICATES_FINGER_PRINT"
+msgstr "指纹"
+
+msgid "IDS_BR_BODY_SIGNATURE_ALGORITHM_VODA"
+msgstr "签名算法"
+
+msgid "IDS_BR_BODY_DOWNLOAD"
+msgstr "下载"
+
+msgid "IDS_BR_BODY_THIS_WEBPAGE"
+msgstr "该网页"
+
+msgid "IDS_BR_BODY_AUTHUSERNAME"
+msgstr "用户名"
+
+msgid "IDS_BR_BODY_AUTHPASSWORD"
+msgstr "密码"
+
+msgid "IDS_BR_OPT_VIEW"
+msgstr "查看"
+
+msgid "IDS_BR_OPT_CANCEL"
+msgstr "取消"
+
+msgid "IDS_BR_OPT_SCREEN"
+msgstr "屏幕"
+
+msgid "IDS_BR_OPT_LTE_GSM_WCDMA_HAUTO_CONNECT"
+msgstr "LTE/GSM/WCDMA（自动连接）"
+
+msgid "IDS_BR_HEADER_MULTI_WINDOW"
+msgstr "多窗口"
+
+msgid "IDS_BR_HEADER_CERTIFICATE_INFO"
+msgstr "证书信息"
+
+msgid "IDS_BR_BODY_WEBSITE_SETTINGS"
+msgstr "网站设置"
+
+msgid "IDS_BR_POP_INVALID_CERTIFICATE"
+msgstr "无效证书。"
+
+msgid "IDS_BR_BODY_BUTTON_T_TTS"
+msgstr "按钮"
+
+msgid "IDS_BR_SK_YES"
+msgstr "是"
+
+msgid "IDS_BR_SK_NO"
+msgstr "否"
+
+msgid "IDS_BR_SK_DONE"
+msgstr "完成"
+
+msgid "IDS_BR_SK_CANCEL"
+msgstr "取消"
+
+msgid "IDS_BR_BUTTON_MORE"
+msgstr "更多"
+
+msgid "IDS_BR_BODY_NO_ITEMS"
+msgstr "没有内容"
+
+msgid "IDS_BR_MBODY_CONNECT_TO_MOBILE_NETWORK"
+msgstr "连接至移动网络"
+
+msgid "IDS_BR_OPT_DO_NOT_SHOW_AGAIN"
+msgstr "不再显示"
+
+msgid "IDS_BR_POP_ONLY_HTTP_OR_HTTPS_URLS_CAN_BE_DOWNLOADED"
+msgstr "仅可下载http或https URL。"
+
+msgid "IDS_BR_OPT_WEB_SEARCH"
+msgstr "网络搜索"
+
+msgid "IDS_BR_OPT_VIEW_IMAGE"
+msgstr "查看图片"
+
+msgid "IDS_BR_OPT_SAVE_LINK"
+msgstr "保存链接"
+
+msgid "IDS_BR_OPT_SAVE_IMAGE"
+msgstr "保存图片"
+
+msgid "IDS_BR_OPT_COPY_LINK"
+msgstr "复制链接"
+
+msgid "IDS_BR_OPT_COPY_IMAGE"
+msgstr "复制图片"
+
+msgid "IDS_BR_SK_OK"
+msgstr "确定"
+
+msgid "IDS_BR_OPT_CALL"
+msgstr "通话"
+
+msgid "IDS_BR_BUTTON_FAILED"
+msgstr "失败"
+
+msgid "IDS_BR_TPOP_WEBPAGE_ADDED_TO_QUICK_ACCESS"
+msgstr "网页已添加至快速访问"
+
+msgid "IDS_BR_TPOP_WEBPAGE_ADDED_TO_BOOKMARKS"
+msgstr "网页已添加至书签"
+
+msgid "IDS_BR_TPOP_QUICK_ACCESS_SHORTCUT_DELETED"
+msgstr "快速访问快捷方式已删除"
+
+msgid "IDS_BR_TPOP_PD_ITEMS_DELETED_FROM_BROWSING_HISTORY"
+msgstr "%d 个项目已从浏览历史记录中删除"
+
+msgid "IDS_BR_TPOP_OPENING_SAMSUNG_ACCOUNT_ING"
+msgstr "正在打开三星帐户..."
+
+msgid "IDS_BR_TPOP_LOW_DATA_USAGE_ENABLED"
+msgstr "低数据使用量已启用"
+
+msgid "IDS_BR_TPOP_LOW_DATA_USAGE_DISABLED_PDP_OF_BANDWIDTH_SAVED"
+msgstr "低数据使用量已禁用。节省了 %d% 的带宽。"
+
+msgid "IDS_BR_TPOP_IMAGE_COPIED_TO_CLIPBOARD"
+msgstr "图片已复制到剪贴板"
+
+msgid "IDS_BR_TPOP_FAILED_TO_ADD_TO_HOME_SCREEN_ABB"
+msgstr "添加至主屏幕失败"
+
+msgid "IDS_BR_TPOP_DOWNLOADING_IMAGE_ING"
+msgstr "正在下载图片..."
+
+msgid "IDS_BR_TPOP_DATA_SAVING_STATISTICS_RESET"
+msgstr "数据节省统计已重置"
+
+msgid "IDS_BR_TPOP_BOOKMARK_DELETED"
+msgstr "书签已删除"
+
+msgid "IDS_BR_TPOP_ADDED_TO_QUICK_ACCESS_LIST"
+msgstr "已添加至快速访问列表"
+
+msgid "IDS_BR_TPOP_ADDED_TO_HOME_SCREEN"
+msgstr "已添加至主屏幕"
+
+msgid "IDS_BR_TPOP_1_POP_UP_BLOCKED"
+msgstr "1 个弹出窗口已阻止"
+
+msgid "IDS_BR_TPOP_1_ITEM_DELETED_FROM_BROWSING_HISTORY"
+msgstr "1 个项目已从浏览历史记录中删除"
+
+msgid "IDS_BR_TMBODY_NOTIFICATIONS"
+msgstr "通知"
+
+msgid "IDS_BR_TAB_MOST_VISITED"
+msgstr "访问最多"
+
+msgid "IDS_BR_TAB_HISTORY"
+msgstr "历史记录"
+
+msgid "IDS_BR_SK_UNTICK_ABB"
+msgstr "取消勾选"
+
+msgid "IDS_BR_SK_TABS"
+msgstr "分类栏"
+
+msgid "IDS_BR_SK_MENU"
+msgstr "功能表"
+
+msgid "IDS_BR_SK_DELETE_ABB"
+msgstr "删除"
+
+msgid "IDS_BR_SK3_CREATE_FOLDER"
+msgstr "新文件夹"
+
+msgid "IDS_BR_SK3_CLEAR"
+msgstr "清除"
+
+msgid "IDS_BR_SBODY_VIEW_PC_WEBSITES_EASILY_ON_YOUR_MOBILE_DEVICE_THIS_FEATURE_BOOSTS_THE_TEXT_SIZE_TO_MAKE_IT_EASIER_TO_READ_NOTE_C_THE_TEXT_LAYOUT_MAY_CHANGE"
+msgstr "在您的移动设备上轻松查看 PC 网站。该功能放大文本大小以使其更易于阅读。注意：文本布局可能变化。"
+
+msgid "IDS_BR_SBODY_SET_THE_DEVICE_TO_SUGGEST_QUERIES_AND_SITES_IN_THE_WEB_ADDRESS_BAR_AS_YOU_TYPE"
+msgstr "设置设备以在您键入时在网址栏中建议查询和站点"
+
+msgid "IDS_BR_SBODY_SET_TEXT_USED_TO_FILL_IN_ONLINE_FORMS_ABB"
+msgstr "设置用于填充在线表单的文本"
+
+msgid "IDS_BR_SBODY_SET_ADVANCED_SETTINGS_FOR_INDIVIDUAL_WEBSITES"
+msgstr "设置个别网站的高级设置"
+
+msgid "IDS_BR_SBODY_REMEMBER_DATA_TYPED_IN_FORMS_FOR_LATER_USE"
+msgstr "记住在表单中键入的数据以便以后使用"
+
+msgid "IDS_BR_SBODY_PREDICT_RELATED_QUERIES_AND_POPULAR_SITES_IN_THE_NAVIGATION_BAR_AS_YOU_TYPE"
+msgstr "键入时在导航栏预测相关查询和热门站点"
+
+msgid "IDS_BR_SBODY_OVERRIDE_WEBSITE_REQUESTS_TO_CONTROL_ZOOM_LEVEL"
+msgstr "无论网页如何设置，用户可用手指放大画面"
+
+msgid "IDS_BR_SBODY_DISPLAY_IMAGES_ON_WEBPAGES"
+msgstr "在网页上显示图片"
+
+msgid "IDS_BR_SBODY_COMPRESS_CONTENT_FROM_WEBSITES_TO_USE_LESS_DATA"
+msgstr "从网站压缩内容以使用更少数据"
+
+msgid "IDS_BR_SBODY_CLEAR_NOTIFICATION_ACCESS_INFORMATION_FOR_ALL_WEBSITES"
+msgstr "清除所有网站的通知访问信息"
+
+msgid "IDS_BR_SBODY_CHANGE_THE_TEXT_SIZE_FOR_EASIER_READING_ESPECIALLY_WHEN_VIEWING_DESKTOP_VERSIONS_OF_WEBSITES_ON_YOUR_PHONE_NOTE_THAT_THE_TEXT_MSG_US"
+msgstr "更改文本大小以便于阅读，尤其是在手机上查看网站的桌面版本时。请注意，文本布局可能会因此而改变。"
+
+msgid "IDS_BR_SBODY_CHANGE_THE_TEXT_SIZE_FOR_EASIER_READING_ESPECIALLY_WHEN_VIEWING_DESKTOP_VERSIONS_OF_WEBSITES_NOTE_THAT_THE_TEXT_LAYOUT_MAY_CHANGE_AS_A_RESULT"
+msgstr "更改文本大小以便于阅读，尤其是在查看网站的桌面版本时。请注意，文本布局可能会因此而改变。"
+
+msgid "IDS_BR_SBODY_ALL_WEBSITE_NOTIFICATION_ACCESS_INFORMATION_WILL_BE_CLEARED"
+msgstr "将清除所有网站通知访问信息"
+
+msgid "IDS_BR_SBODY_ALLOW_SITES_TO_SAVE_AND_READ_COOKIES"
+msgstr "允许站点保存和读取 Cookie"
+
+msgid "IDS_BR_SBODY_ALLOW_SITES_TO_ACCESS_YOUR_LOCATION_DATA"
+msgstr "允许站点访问您的位置数据"
+
+msgid "IDS_BR_POP_YOU_MAY_NOT_BE_ABLE_TO_CLIP_SOME_WEBPAGES_ACCURATELY"
+msgstr "您可能无法精确剪辑某些网页"
+
+msgid "IDS_BR_POP_YOUR_HISTORY_WILL_BE_CLEARED"
+msgstr "您的历史记录将被清除。"
+
+msgid "IDS_BR_POP_UNABLE_TO_VIEW_THE_CERTIFICATE_THE_PAGE_INFORMATION_HAS_BEEN_CHANGED"
+msgstr "无法查看证书。页面信息已更改。"
+
+msgid "IDS_BR_POP_TO_SIGN_IN_TO_THIS_WEBSITE_USING_YOUR_FINGERPRINTS_GO_TO_SETTINGS_AND_ENABLE_WEB_SIGN_IN"
+msgstr "若要使用您的指纹登录该网站，请进入【设置】并启用【网站登录】。"
+
+msgid "IDS_BR_POP_THIS_CERTIFICATE_IS_NOT_FROM_A_TRUSTED_AUTHORITY"
+msgstr "该证书不来自受信任的颁发机构。"
+
+msgid "IDS_BR_POP_THIS_CERTIFICATE_IS_FROM_A_TRUSTED_AUTHORITY"
+msgstr "该证书来自受信任的颁发机构。"
+
+msgid "IDS_BR_POP_THE_LOCATION_PERMISSION_DATA_FOR_THIS_WEBSITE_WILL_BE_CLEARED"
+msgstr "将清除该网站的位置权限数据。"
+
+msgid "IDS_BR_POP_THE_DESTINATION_FOLDER_IS_THE_SAME_AS_THE_SOURCE_FOLDER"
+msgstr "目标文件夹与源文件夹相同。"
+
+msgid "IDS_BR_POP_THE_DESTINATION_FOLDER_IS_A_SUBFOLDER_OF_THE_SOURCE_FOLDER"
+msgstr "目标文件夹是源文件夹的子文件夹。"
+
+msgid "IDS_BR_POP_THERE_ARE_PROBLEMS_WITH_THE_SECURITY_CERTIFICATE_FOR_THIS_WEBSITE"
+msgstr "该网站的安全证书有问题。"
+
+msgid "IDS_BR_POP_STARTING_DOWNLOAD_ING"
+msgstr "正在开始下载..."
+
+msgid "IDS_BR_POP_SOME_OLD_HTML_WEBSITES_MAY_NOT_SUPPORT_THIS_FEATURE"
+msgstr "部分旧的 HTML 网站可能不支持此功能。"
+
+msgid "IDS_BR_POP_SET_AS_HOMEPAGE"
+msgstr "设为主页"
+
+msgid "IDS_BR_POP_SETTINGS_WILL_BE_RESET_TO_DEFAULTS"
+msgstr "设置将重置为默认值。"
+
+msgid "IDS_BR_POP_SETTIGS_SAVED"
+msgstr "设置已保存。"
+
+msgid "IDS_BR_POP_SECURITY_POLICY_RESTRICTS_USE_OF_INTERNET_BROWSER"
+msgstr "安全政策限制使用互联网浏览器。"
+
+msgid "IDS_BR_POP_SAVED_TO_BOOKMARKS"
+msgstr "已保存到书签"
+
+msgid "IDS_BR_POP_RENAME_TAG"
+msgstr "重命名标签"
+
+msgid "IDS_BR_POP_PD_PROFILES_WILL_BE_DELETED"
+msgstr "将删除 %d 个个人资料。"
+
+msgid "IDS_BR_POP_PAGES_THAT_YOU_VIEW_WILL_NOT_APPEAR_IN_YOUR_BROWSER_HISTORY_OR_SEARCH_HISTORY_AND_THEY_WILL_NOT_LEAVE_OTHER_TRACES_LIKE_COOKIES"
+msgstr "您查看的页面不会出现在您的浏览器历史记录或搜索历史记录中，并且不会留下类似于 Cookie 等其他痕迹。"
+
+msgid "IDS_BR_POP_P1SS_HP2SS_IS_REQUESTING_PERMISSION_TO_USE_YOUR_CAMERA"
+msgstr "%1$s (%2$s) 正在请求使用相机的许可。"
+
+msgid "IDS_BR_POP_P1SS_HP2SS_IS_REQUESTING_PERMISSION_TO_STORE_DATA_ON_YOUR_DEVICE_FOR_OFFLINE_USE"
+msgstr "%1$s (%2$s) 正在请求许可在您的设备上存储数据用于离线使用。"
+
+msgid "IDS_BR_POP_P1SS_HP2SS_IS_REQUESTING_PERMISSION_TO_SHOW_NOTIFICATIONS"
+msgstr "%1$s (%2$s) 正在请求许可显示通知。"
+
+msgid "IDS_BR_POP_P1SS_HP2SS_IS_REQUESTING_PERMISSION_TO_CHANGE_HOW_YOUR_BROWSER_WORKS_ON_MSG"
+msgstr "%1$s (%2$s) 正在请求许可更改您的浏览器在该站点的工作方式。这可能是对您系统的尝试攻击。如果您不信任该网站或知道为何出现该请求，请点击【取消】。"
+
+msgid "IDS_BR_POP_P1SS_HP2SS_IS_REQUESTING_PERMISSION_TO_ACCESS_YOUR_LOCATION"
+msgstr "%1$s (%2$s) 正在请求许可访问您的位置。"
+
+msgid "IDS_BR_POP_P1SS_HP2SS_IS_ATTEMPTING_TO_STORE_A_LARGE_AMOUNT_OF_DATA_ON_YOUR_DEVICE_FOR_OFFLINE_USE"
+msgstr "%1$s (%2$s) 正在尝试在您的设备上存储大量数据用于离线使用。"
+
+msgid "IDS_BR_POP_P1SS_HAS_BEEN_DETECTED_DETECTED_IN_C_P2SS_SOME_CONTENT_HAS_BEEN_BLOCKED_TO_PROTECT_YOUR_DEVICE"
+msgstr "已检测到“%1$s”。\n检测于：“%2$s”\n\n部分内容已被阻止以保护您的设备。"
+
+msgid "IDS_BR_POP_P1SS_HAS_BEEN_DETECTED_DETECTED_IN_C_P2SS_OPEN_WEBPAGE_ANYWAY_Q"
+msgstr "已检测到“%1$s”。\n检测于：“%2$s”\n\n是否仍打开网页？"
+
+msgid "IDS_BR_POP_NOT_ENOUGH_MEMORY_DELETE_SOME_ITEMS_AND_TRY_AGAIN"
+msgstr "内存不足。删除一些项目并重试。"
+
+msgid "IDS_BR_POP_NOT_ALLOWED"
+msgstr "不允许"
+
+msgid "IDS_BR_POP_MOVED"
+msgstr "已移动"
+
+msgid "IDS_BR_POP_ENTER_URL"
+msgstr "输入网址。"
+
+msgid "IDS_BR_POP_ENTER_BOOKMARK_NAME"
+msgstr "输入书签名称。"
+
+msgid "IDS_BR_POP_DIALING_ING_VZW"
+msgstr "正在拨号..."
+
+msgid "IDS_BR_POP_DELETE_WEBSITE_LOCATION_ACCESS_INFORMATION_Q"
+msgstr "删除网站定位信息？"
+
+msgid "IDS_BR_POP_DELETE_THIS_QUICK_ACCESS_SHORTCUT_Q"
+msgstr "是否删除该快速访问快捷方式？"
+
+msgid "IDS_BR_POP_DELETE_THIS_PAGE_Q"
+msgstr "是否删除该页面？"
+
+msgid "IDS_BR_POP_DELETE_THIS_BOOKMARK_Q"
+msgstr "是否删除该书签？"
+
+msgid "IDS_BR_POP_DELETE_STORED_WEBSITE_DATA_Q"
+msgstr "是否删除存储的网站数据？"
+
+msgid "IDS_BR_POP_DELETE_SIGN_IN_DATA_FOR_THIS_WEBSITE_Q"
+msgstr "是否删除该网站的登录数据？"
+
+msgid "IDS_BR_POP_DELETE_SIGN_IN_DATA_FOR_PD_WEBSITES_Q"
+msgstr "是否删除 %d 网站的登录数据？"
+
+msgid "IDS_BR_POP_DELETE_PD_SAVED_WEB_PAGES_Q"
+msgstr "是否删除 %d 个已保存网页？"
+
+msgid "IDS_BR_POP_DELETE_PD_QUICK_ACCESS_SHORTCUTS_Q"
+msgstr "是否删除 %d 个快速访问快捷方式？"
+
+msgid "IDS_BR_POP_DELETE_PD_BOOKMARKS_Q"
+msgstr "是否删除 %d 个书签？"
+
+msgid "IDS_BR_POP_DELETE_ALL_WEBSITE_DATA_AND_LOCATION_PERMISSIONS_Q"
+msgstr "是否删除所有网站数据和位置许可？"
+
+msgid "IDS_BR_POP_DELETEHISTORYQUESTION"
+msgstr "删除历史记录？"
+
+msgid "IDS_BR_POP_CONTINUE"
+msgstr "继续"
+
+msgid "IDS_BR_POP_CLOSE_APPLICATION"
+msgstr "关闭应用程序"
+
+msgid "IDS_BR_POP_CLEAR_Q"
+msgstr "清除？"
+
+msgid "IDS_BR_POP_CLEAR_HISTORY_Q"
+msgstr "清除历史记录？"
+
+msgid "IDS_BR_POP_BOOKMARK_REMOVED"
+msgstr "书签已移除。"
+
+msgid "IDS_BR_POP_ALREADY_EXISTS"
+msgstr "已存在。"
+
+msgid "IDS_BR_POP_ALL_STORED_DATA_FOR_THIS_WEBSITE_WILL_BE_CLEARED"
+msgstr "将清除该网站的所有已存储数据。"
+
+msgid "IDS_BR_POP_ALL_STORED_AND_LOCATION_PERMISSION_DATA_FOR_THIS_WEBSITE_WILL_BE_CLEARED"
+msgstr "将清除该网站的所有已存储数据和位置权限数据。"
+
+msgid "IDS_BR_POP_ALL_STORED_AND_LOCATION_PERMISSION_DATA_FOR_THESE_WEBSITES_WILL_BE_CLEARED"
+msgstr "将清除这些网站的所有已存储数据和位置权限数据。"
+
+msgid "IDS_BR_POP_ALL_SETTINGS_WILL_BE_RESET_TO_THEIR_DEFAULTS"
+msgstr "所有设置将重置为其默认值。"
+
+msgid "IDS_BR_POP_ALL_ITEMS_WILL_BE_DELETED_FROM_BROWSING_HISTORY"
+msgstr "所有项目将从浏览历史记录中删除。"
+
+msgid "IDS_BR_POP_ALLOW_SITES_TO_SAVE_AND_READ_COOKIES"
+msgstr "允许网站存储和读取cookies。"
+
+msgid "IDS_BR_POP_ADDED_TO_BOOKMARKS"
+msgstr "已添加到书签。"
+
+msgid "IDS_BR_OPT_WINDOWS"
+msgstr "窗口"
+
+msgid "IDS_BR_OPT_VIEW_CERTIFICATE"
+msgstr "查看证书"
+
+msgid "IDS_BR_OPT_UNICODE_HUTF_8"
+msgstr "统一码(UTF-8)"
+
+msgid "IDS_BR_OPT_THUMBNAIL_VIEW"
+msgstr "缩略图查看"
+
+msgid "IDS_BR_OPT_TEXT_ENCODING"
+msgstr "文本编码"
+
+msgid "IDS_BR_OPT_SHRINK_TEXT"
+msgstr "缩小文本"
+
+msgid "IDS_BR_OPT_SETTINGS_ABB"
+msgstr "设置"
+
+msgid "IDS_BR_OPT_SEND_MESSAGE_VODA"
+msgstr "发送信息"
+
+msgid "IDS_BR_OPT_SENDURLVIA_EMAIL"
+msgstr "电子邮件"
+
+msgid "IDS_BR_OPT_SELECT_TEXT"
+msgstr "选择文本"
+
+msgid "IDS_BR_OPT_SELECT_ALL_ABB"
+msgstr "全选"
+
+msgid "IDS_BR_OPT_SELECT_ALL"
+msgstr "全选"
+
+msgid "IDS_BR_OPT_SELECTION_MODE"
+msgstr "选择模式"
+
+msgid "IDS_BR_OPT_SELECTED"
+msgstr "已选定"
+
+msgid "IDS_BR_OPT_SAVE_TO_KEEPIT_ABB"
+msgstr "保存至 KeepIt"
+
+msgid "IDS_BR_OPT_SAVE_PAGE_FOR_OFFLINE_VIEWING_ABB"
+msgstr "保存页面以备离线查看"
+
+msgid "IDS_BR_OPT_SAVE_LINKED_ITEM_IN_KEEPIT_ABB"
+msgstr "保存链接的项目至 KeepIt"
+
+msgid "IDS_BR_OPT_SAVE_FOR_OFFLINE_VIEWING_ABB"
+msgstr "保存以备离线查看"
+
+msgid "IDS_BR_OPT_SAVEWEBPAGE"
+msgstr "网页"
+
+msgid "IDS_BR_OPT_SAVEDPAGES"
+msgstr "已保存的页面"
+
+msgid "IDS_BR_OPT_RSS_VIEW"
+msgstr "查看"
+
+msgid "IDS_BR_OPT_REORDER_ABB"
+msgstr "重新排序"
+
+msgid "IDS_BR_OPT_RENAME_FOLDER"
+msgstr "重命名文件夹"
+
+msgid "IDS_BR_OPT_REMOVE"
+msgstr "移除"
+
+msgid "IDS_BR_OPT_READER_MODE_TTS"
+msgstr "阅读器模式"
+
+msgid "IDS_BR_OPT_PASSWORDS"
+msgstr "密码"
+
+msgid "IDS_BR_OPT_OPEN_IN_NEW_WINDOW_ABB"
+msgstr "在新窗口中打开"
+
+msgid "IDS_BR_OPT_OPEN"
+msgstr "打开"
+
+msgid "IDS_BR_OPT_OFFLINE_PAGES_ABB"
+msgstr "离线页面"
+
+msgid "IDS_BR_OPT_NEW_WINDOW"
+msgstr "新窗口"
+
+msgid "IDS_BR_OPT_MINIMISE"
+msgstr "最小化"
+
+msgid "IDS_BR_OPT_MEDIUM_M_QUALITY"
+msgstr "中等"
+
+msgid "IDS_BR_OPT_LOW_M_QUALITY"
+msgstr "低"
+
+msgid "IDS_BR_OPT_LOCATION_ACCESS_PRIVILEGES"
+msgstr "位置访问权限"
+
+msgid "IDS_BR_OPT_LOAD_IMAGES"
+msgstr "载入图片"
+
+msgid "IDS_BR_OPT_LATIN_1_HISO_8859_1"
+msgstr "拉丁语-1 (ISO-8859-1)"
+
+msgid "IDS_BR_OPT_KOREAN_HEUC_KR"
+msgstr "韩文(EUC-KR)"
+
+msgid "IDS_BR_OPT_JAPANESE_HSHIFT_JIS"
+msgstr "日语 （SHIFT JIS）"
+
+msgid "IDS_BR_OPT_JAPANESE_HISO_2022_JP"
+msgstr "日语 （ISO-2022-JP）"
+
+msgid "IDS_BR_OPT_JAPANESE_HEUC_JP"
+msgstr "日语 （EUC-JP）"
+
+msgid "IDS_BR_OPT_INCOGNITO_MODE_ABB"
+msgstr "匿名模式"
+
+msgid "IDS_BR_OPT_HUGE"
+msgstr "超大"
+
+msgid "IDS_BR_OPT_HOME_SCREEN_AS_WEB_CLIP_ABB"
+msgstr "主屏幕作为网络剪辑"
+
+msgid "IDS_BR_OPT_HOME_SCREEN_AS_SHORTCUT_ABB"
+msgstr "主屏幕作为快捷方式"
+
+msgid "IDS_BR_OPT_HIGH_M_QUALITY"
+msgstr "高"
+
+msgid "IDS_BR_OPT_GOFORWARD"
+msgstr "前进"
+
+msgid "IDS_BR_OPT_GOBACKWARD"
+msgstr "后退"
+
+msgid "IDS_BR_OPT_GIANT_M_TEXTSIZE"
+msgstr "巨大"
+
+msgid "IDS_BR_OPT_FIND_ON_PAGE_ABB"
+msgstr "在页面上查找"
+
+msgid "IDS_BR_OPT_FIND_ON_PAGE"
+msgstr "在页面上查找"
+
+msgid "IDS_BR_OPT_FEEDS_SUBSCRIBED_TO_ABB"
+msgstr "已订阅的订阅源"
+
+msgid "IDS_BR_OPT_ENLARGE_TEXT"
+msgstr "放大文本"
+
+msgid "IDS_BR_OPT_ENABLE_SECRET_MODE_ABB"
+msgstr "启用保密模式"
+
+msgid "IDS_BR_OPT_ENABLE_NIGHT_MODE_ABB"
+msgstr "启用夜间模式"
+
+msgid "IDS_BR_OPT_ENABLE_LOW_DATA_USAGE_ABB"
+msgstr "启用低数据使用量"
+
+msgid "IDS_BR_OPT_DRAG_AND_DROP"
+msgstr "拖放"
+
+msgid "IDS_BR_OPT_DISABLE_SECRET_MODE_ABB"
+msgstr "禁用保密模式"
+
+msgid "IDS_BR_OPT_DISABLE_NIGHT_MODE_ABB"
+msgstr "禁用夜间模式"
+
+msgid "IDS_BR_OPT_DISABLE_LOW_DATA_USAGE_ABB"
+msgstr "禁用低数据使用量"
+
+msgid "IDS_BR_OPT_DISABLED"
+msgstr "不使用简繁转换"
+
+msgid "IDS_BR_OPT_DELETE_SAVED_PAGE_ABB"
+msgstr "删除已保存的页面"
+
+msgid "IDS_BR_OPT_DELETE_HISTORY"
+msgstr "删除历史记录"
+
+msgid "IDS_BR_OPT_DATA_NETWORK"
+msgstr "数据网络"
+
+msgid "IDS_BR_OPT_COPY_TO_CLIPBOARD"
+msgstr "复制到剪贴板"
+
+msgid "IDS_BR_OPT_COPY_LINK_URL"
+msgstr "复制链接网址"
+
+msgid "IDS_BR_OPT_COPY"
+msgstr "复制"
+
+msgid "IDS_BR_OPT_CLOSE_ALL"
+msgstr "关闭全部"
+
+msgid "IDS_BR_OPT_CLEAR_ALL"
+msgstr "全部清除"
+
+msgid "IDS_BR_OPT_CHINESE_HGBK"
+msgstr "中文(GBK)"
+
+msgid "IDS_BR_OPT_CHINESE_HBIG5"
+msgstr "中文(大5)"
+
+msgid "IDS_BR_OPT_CACHE"
+msgstr "缓存"
+
+msgid "IDS_BR_OPT_ADD_TO_WEB_CLIP"
+msgstr "添加到网页夹"
+
+msgid "IDS_BR_OPT_ADD_TO_QUICK_ACCESS"
+msgstr "添加至快速访问"
+
+msgid "IDS_BR_OPT_ADD_TO_HOME_SCREEN_ABB"
+msgstr "添加至主屏幕"
+
+msgid "IDS_BR_OPT_ADD_TO_HOME"
+msgstr "添加至主屏幕"
+
+msgid "IDS_BR_OPT_ADD_OR_REMOVE_BOOKMARK"
+msgstr "添加或移除书签"
+
+msgid "IDS_BR_OPT_ADD_BOOKMARK_ABB"
+msgstr "添加书签"
+
+msgid "IDS_BR_OPT_ADD_BOOKMARK"
+msgstr "添加书签"
+
+msgid "IDS_BR_OPT1_EXTENSION"
+msgstr "扩展"
+
+msgid "IDS_BR_NPBODY_SEARCH_OR_ENTER_URL_ABB"
+msgstr "搜索或输入网址"
+
+msgid "IDS_BR_NPBODY_NO_WEBSITE_HISTORY"
+msgstr "没有网站历史记录"
+
+msgid "IDS_BR_NPBODY_NO_WEBSITES"
+msgstr "无网站"
+
+msgid "IDS_BR_NPBODY_NO_WEBPAGES"
+msgstr "无网页"
+
+msgid "IDS_BR_NPBODY_NO_SHORTCUTS"
+msgstr "无快捷方式"
+
+msgid "IDS_BR_MBODY_WEB_ADDRESS_SUGGESTIONS"
+msgstr "网址建议"
+
+msgid "IDS_BR_MBODY_WEBSITES"
+msgstr "网站"
+
+msgid "IDS_BR_MBODY_VIEW_MORE"
+msgstr "查看更多"
+
+msgid "IDS_BR_MBODY_URL_SUGGESTIONS"
+msgstr "网址建议"
+
+msgid "IDS_BR_MBODY_TEXT_BOOSTER"
+msgstr "文本放大器"
+
+msgid "IDS_BR_MBODY_SET_HOMEPAGE"
+msgstr "设置主页"
+
+msgid "IDS_BR_MBODY_RUN_JAVASCRIPT"
+msgstr "运行 JavaScript"
+
+msgid "IDS_BR_MBODY_RESET_SETTINGS"
+msgstr "恢复默认设置"
+
+msgid "IDS_BR_MBODY_PRELOAD_WEBPAGES"
+msgstr "预载入网页"
+
+msgid "IDS_BR_MBODY_PRELOAD_LINKED_WEBPAGES"
+msgstr "预载入已链接的网页"
+
+msgid "IDS_BR_MBODY_PRELOAD_AVAILABLE_LINKS"
+msgstr "预先载入可用链接"
+
+msgid "IDS_BR_MBODY_LOW_DATA_USAGE"
+msgstr "低数据使用量"
+
+msgid "IDS_BR_MBODY_LOCATION_ACCESS"
+msgstr "位置访问"
+
+msgid "IDS_BR_MBODY_IMAGE_QUALITY"
+msgstr "画面质量"
+
+msgid "IDS_BR_MBODY_HIDE_ADDRESS_BAR"
+msgstr "隐藏地址栏"
+
+msgid "IDS_BR_MBODY_DOWNLOAD_FEED_CONTENT"
+msgstr "下载订阅源内容"
+
+msgid "IDS_BR_MBODY_DELETE_SIGN_IN_DATA"
+msgstr "删除登录数据"
+
+msgid "IDS_BR_MBODY_DATA_SAVING_STATISTICS"
+msgstr "数据节省统计"
+
+msgid "IDS_BR_MBODY_CONTENT"
+msgstr "内容"
+
+msgid "IDS_BR_MBODY_CLEAR_NOTIFICATION_DATA"
+msgstr "清除通知数据"
+
+msgid "IDS_BR_MBODY_AUTO_FILL_FORMS"
+msgstr "自动填写表格"
+
+msgid "IDS_BR_MBODY_ADD_PROFILE"
+msgstr "添加配置文件"
+
+msgid "IDS_BR_MBODY_ACCESS_LOCATION"
+msgstr "访问位置"
+
+msgid "IDS_BR_HEADER_WINDOW_LIMIT_REACHED"
+msgstr "已达到窗口数量限制"
+
+msgid "IDS_BR_HEADER_WEB_NOTIFICATIONS_ABB"
+msgstr "网络通知"
+
+msgid "IDS_BR_HEADER_WEB_NOTIFICATION"
+msgstr "网络通知"
+
+msgid "IDS_BR_HEADER_VALIDITY"
+msgstr "有效"
+
+msgid "IDS_BR_HEADER_UNABLE_TO_OPEN_WINDOW_ABB"
+msgstr "无法打开窗口"
+
+msgid "IDS_BR_HEADER_UNABLE_TO_OPEN_FILE"
+msgstr "无法打开文件"
+
+msgid "IDS_BR_HEADER_UNABLE_TO_MOVE_BOOKMARKS_ABB"
+msgstr "无法移动书签"
+
+msgid "IDS_BR_HEADER_SITE_NOT_TRUSTED_ABB"
+msgstr "站点不受信任"
+
+msgid "IDS_BR_HEADER_SET_HOMEPAGE_ABB"
+msgstr "设置主页"
+
+msgid "IDS_BR_HEADER_SERIAL_NUMBER_C_ABB"
+msgstr "序列号："
+
+msgid "IDS_BR_HEADER_SELECT_SIGN_IN_DATA_FOR_ABB"
+msgstr "选择登录数据对象"
+
+msgid "IDS_BR_HEADER_SELECT_SHORTCUTS_ABB"
+msgstr "选择快捷方式"
+
+msgid "IDS_BR_HEADER_SELECT_BOOKMARKS"
+msgstr "选择书签"
+
+msgid "IDS_BR_HEADER_SELECT_BOOKMARK"
+msgstr "选择标签"
+
+msgid "IDS_BR_HEADER_SECURITY_CERTIFICATE"
+msgstr "安全证书"
+
+msgid "IDS_BR_HEADER_REORDER_QUICK_ACCESS_SHORTCUTS_ABB"
+msgstr "重新排序快速访问快捷方式"
+
+msgid "IDS_BR_HEADER_QUICK_ACCESS_ABB"
+msgstr "快速访问"
+
+msgid "IDS_BR_HEADER_PROFILES"
+msgstr "配置"
+
+msgid "IDS_BR_HEADER_POP_UP_BLOCKED_ABB"
+msgstr "弹出窗口已阻止"
+
+msgid "IDS_BR_HEADER_POPULAR_WEBSITES_ABB"
+msgstr "受欢迎的网站"
+
+msgid "IDS_BR_HEADER_ORGANISATION_C_ABB"
+msgstr "组织："
+
+msgid "IDS_BR_HEADER_ORGANISATIONAL_UNIT_C"
+msgstr "组织单位："
+
+msgid "IDS_BR_HEADER_NEWER_M_INTERNET_HISTORY_ABB"
+msgstr "Newer"
+
+msgid "IDS_BR_HEADER_ISSUED_ON_C"
+msgstr "颁发日期："
+
+msgid "IDS_BR_HEADER_ISSUED_BY"
+msgstr "发行方"
+
+msgid "IDS_BR_HEADER_HTML5_EXTENSION"
+msgstr "HTML5 扩展名"
+
+msgid "IDS_BR_HEADER_FORM_DATA"
+msgstr "格式数据"
+
+msgid "IDS_BR_HEADER_EXPIRES_ON_C"
+msgstr "过期日期："
+
+msgid "IDS_BR_HEADER_ENABLE_WEB_SIGN_IN"
+msgstr "启用网络登录"
+
+msgid "IDS_BR_HEADER_EDIT_BOOKMARK"
+msgstr "编辑书签"
+
+msgid "IDS_BR_HEADER_DELETE_WEBSITE_DATA_ABB"
+msgstr "删除网站数据"
+
+msgid "IDS_BR_HEADER_DELETE_SIGN_IN_DATA_ABB"
+msgstr "删除登录数据"
+
+msgid "IDS_BR_HEADER_DELETE_PROFILE"
+msgstr "删除模式"
+
+msgid "IDS_BR_HEADER_DELETE_BOOKMARKS_ABB"
+msgstr "删除书签"
+
+msgid "IDS_BR_HEADER_DATA_CONNECTIVITY_PROBLEM"
+msgstr "数据连接性问题"
+
+msgid "IDS_BR_HEADER_COMMON_NAME_C_ABB"
+msgstr "公用名："
+
+msgid "IDS_BR_HEADER_CLOSE_APPLICATION"
+msgstr "关闭应用程序"
+
+msgid "IDS_BR_HEADER_CLEAR_PERSONALISED_DATA"
+msgstr "清除个性化数据"
+
+msgid "IDS_BR_HEADER_CLEAR_LOCATION_ACCESS"
+msgstr "取消定位权限"
+
+msgid "IDS_BR_HEADER_BANDWIDTH_MANAGEMENT_ABB"
+msgstr "带宽管理"
+
+msgid "IDS_BR_HEADER_ADVANCEDCERTIFICATES"
+msgstr "证书"
+
+msgid "IDS_BR_BUTTON_RESET_ABB"
+msgstr "重置"
+
+msgid "IDS_BR_BUTTON_HOMEPAGE_ABB"
+msgstr "主页"
+
+msgid "IDS_BR_BUTTON_FIND_ABB"
+msgstr "查找"
+
+msgid "IDS_BR_BUTTON_BACK_ABB"
+msgstr "返回"
+
+msgid "IDS_BR_BUTTON_ALWAYS_SHOW_ABB"
+msgstr "总是显示"
+
+msgid "IDS_BR_BUTTON2_WEB_PORTAL"
+msgstr "网站门户"
+
+msgid "IDS_BR_BUTTON2_SPORT"
+msgstr "体育"
+
+msgid "IDS_BR_BUTTON2_SOCIAL"
+msgstr "社交"
+
+msgid "IDS_BR_BUTTON2_SHOPPING"
+msgstr "购物"
+
+msgid "IDS_BR_BUTTON2_PAYMENT"
+msgstr "支付"
+
+msgid "IDS_BR_BUTTON2_HOBBIES"
+msgstr "爱好"
+
+msgid "IDS_BR_BUTTON2_GO_TO_HISTORY"
+msgstr "进入记录"
+
+msgid "IDS_BR_BUTTON2_ENTERTAINMENT"
+msgstr "娱乐"
+
+msgid "IDS_BR_BODY_WINDOW_MANAGER"
+msgstr "窗口管理器"
+
+msgid "IDS_BR_BODY_WEB_ADDRESS"
+msgstr "网址"
+
+msgid "IDS_BR_BODY_VOICE_INPUT_TTS"
+msgstr "语音输入"
+
+msgid "IDS_BR_BODY_VIEW_IMAGE"
+msgstr "查看图片"
+
+msgid "IDS_BR_BODY_VIEW_HISTORY_T_TALKBACK"
+msgstr "查看记录。"
+
+msgid "IDS_BR_BODY_VIEW_BOOKMARKS_T_TALKBACK"
+msgstr "查看书签。"
+
+msgid "IDS_BR_BODY_VALID_CERTIFICATE"
+msgstr "有效证书"
+
+msgid "IDS_BR_BODY_USE_FULL_SCREEN_MODE_TO_HIDE_THE_STATUS_BAR"
+msgstr "使用全屏模式以隐藏状态栏"
+
+msgid "IDS_BR_BODY_USE_A_PREDICTION_SERVICE_TO_DISPLAY_RELATED_QUERIES_AND_POPULAR_WEBSITES_IN_THE_ADDRESS_BAR_AS_YOU_TYPE"
+msgstr "在您输入时使用联想服务以在地址栏中显示相关查询和受欢迎的网站"
+
+msgid "IDS_BR_BODY_UPPER_FOLDER_T_TALKBACK"
+msgstr "上一级文件夹"
+
+msgid "IDS_BR_BODY_UNTAGGED"
+msgstr "未标签"
+
+msgid "IDS_BR_BODY_UNABLE_TO_OPEN_THE_FILE_AT_PS_IT_MAY_HAVE_BEEN_REMOVED_OR_RENAMED_OR_FILE_PERMISSIONS_MAY_BE_PREVENTING_ACCESS"
+msgstr "无法打开位于%s的文件。文件可能已移除或重命名，或文件权限可能阻止访问。"
+
+msgid "IDS_BR_BODY_UNABLE_TO_DISPLAY_THE_WEBPAGE_NO_RESPONSE_FROM_THE_SERVER"
+msgstr "无法显示网页。服务器无响应。"
+
+msgid "IDS_BR_BODY_TOWN_CITY_COUNTY_ABB"
+msgstr "镇/市/省"
+
+msgid "IDS_BR_BODY_THIS_SITE_IS_USING_PS"
+msgstr "该站点正在使用 %s。"
+
+msgid "IDS_BR_BODY_THIS_SITE_CAN_ACCESS_YOUR_LOCATION"
+msgstr "该站点可访问您的位置。"
+
+msgid "IDS_BR_BODY_THIS_SITE_CANNOT_ACCESS_YOUR_LOCATION"
+msgstr "该站点无法访问您的位置。"
+
+msgid "IDS_BR_BODY_THIS_BOOKMARK_WILL_BE_DELETED"
+msgstr "该书签将被删除。"
+
+msgid "IDS_BR_BODY_THE_SELECTED_PERSONAL_DATA_WILL_BE_DELETED"
+msgstr "将删除选中个人数据。"
+
+msgid "IDS_BR_BODY_TEXT_FIELD_T_TTS"
+msgstr "文本字段"
+
+msgid "IDS_BR_BODY_TARGET_FOLDER"
+msgstr "Target folder"
+
+msgid "IDS_BR_BODY_TAP_THE_WINDOW_MANAGER_ICON_AND_CLOSE_SOME_WINDOWS_THEN_TRY_AGAIN"
+msgstr "请点击窗口管理器图标并关闭部分窗口，然后重试。"
+
+msgid "IDS_BR_BODY_TAP_ONCE_MORE_TO_CLOSE_INTERNET"
+msgstr "再轻敲一次以关闭互联网。"
+
+msgid "IDS_BR_BODY_SYNC_OPEN_PAGES"
+msgstr "同步开启的页面"
+
+msgid "IDS_BR_BODY_SYNC_INTERNET_DATA"
+msgstr "同步互联网数据"
+
+msgid "IDS_BR_BODY_SYNC_BOOKMARKS_ABB"
+msgstr "同步书签"
+
+msgid "IDS_BR_BODY_STREET_ADDRESS_PO_BOX_C_O_ETC_ABB"
+msgstr "街道地址，P.O. box, c/o, 等"
+
+msgid "IDS_BR_BODY_STORED_DATA"
+msgstr "已保存数据"
+
+msgid "IDS_BR_BODY_SPLIT_BAR_HANDLE"
+msgstr "分割条边框"
+
+msgid "IDS_BR_BODY_SIGN_IN_TO_YOUR_SAMSUNG_ACCOUNT_TO_ACCESS_THE_BOOKMARKS_AND_TABS_ON_YOUR_OTHER_DEVICES"
+msgstr "请登录您的三星帐户来访问您其他设备上的书签和分页。"
+
+msgid "IDS_BR_BODY_SHOW_OVERVIEW_OF_NEWLY_OPENED_PAGES"
+msgstr "显示新开页面的缩略图"
+
+msgid "IDS_BR_BODY_SHA_256_FINGERPRINT_C"
+msgstr "SHA-256 指纹："
+
+msgid "IDS_BR_BODY_SHA_1_FINGERPRINT_C"
+msgstr "SHA-1 指纹："
+
+msgid "IDS_BR_BODY_SET_TEXT_FOR_WEB_FORM_AUTO_FILL"
+msgstr "设置网页表格自动填充的文本"
+
+msgid "IDS_BR_BODY_SET_CURRENT_PAGE_AS_HOMEPAGE"
+msgstr "将当前页面设置为主页"
+
+msgid "IDS_BR_BODY_SELECT_FOLDER"
+msgstr "选择文件夹"
+
+msgid "IDS_BR_BODY_SEARCH_OR_ENTER_URL"
+msgstr "搜索或输入网址"
+
+msgid "IDS_BR_BODY_SEARCH_FIELD_T_TTS"
+msgstr "搜索字段"
+
+msgid "IDS_BR_BODY_SEARCH_AND_URL_SUGGESTIONS"
+msgstr "搜索和 URL 建议"
+
+msgid "IDS_BR_BODY_SCREEN_AND_TEXT"
+msgstr "屏幕与文字"
+
+msgid "IDS_BR_BODY_SAVE_USER_NAMES_AND_PASSWORDS_FOR_WEBSITES"
+msgstr "保存网页用户名和密码"
+
+msgid "IDS_BR_BODY_SAVE_LINK"
+msgstr "保存链接"
+
+msgid "IDS_BR_BODY_RESTORE_DEFAULT_SETTINGS_Q"
+msgstr "恢复默认设置？"
+
+msgid "IDS_BR_BODY_RESTORE_DEFAULT_SETTINGS"
+msgstr "恢复默认设置"
+
+msgid "IDS_BR_BODY_RESET_TO_DEFAULT"
+msgstr "重置为默认值"
+
+msgid "IDS_BR_BODY_RESET_SETTINGS"
+msgstr "恢复默认设置"
+
+msgid "IDS_BR_BODY_RESET_ALL_SETTINGS_TO_THEIR_DEFAULTS"
+msgstr "将所有设置重置为其默认值。"
+
+msgid "IDS_BR_BODY_REMOVE_WEB_NOTIFICATION_ACCESS_INFORMATION_Q"
+msgstr "删除网站通知信息？"
+
+msgid "IDS_BR_BODY_REMEMBER_PASSWORDS"
+msgstr "记住密码"
+
+msgid "IDS_BR_BODY_REMEMBER_FORM_DATA"
+msgstr "记住表单数据"
+
+msgid "IDS_BR_BODY_REMEMBER_DATA_I_TYPE_IN_FORMS_FOR_LATER_USE"
+msgstr "记住我键入表单的数据以备后用"
+
+msgid "IDS_BR_BODY_RADIO_BUTTON_T_TTS"
+msgstr "单选按钮"
+
+msgid "IDS_BR_BODY_PS_BOOKMARK_WILL_BE_DELETED"
+msgstr "%s书签将被删除。"
+
+msgid "IDS_BR_BODY_PRIVACY"
+msgstr "隐私权"
+
+msgid "IDS_BR_BODY_PRINT"
+msgstr "打印"
+
+msgid "IDS_BR_BODY_PRESS_THE_MENU_KEY"
+msgstr "按菜单键。"
+
+msgid "IDS_BR_BODY_POSTCODE_ABB"
+msgstr "邮编"
+
+msgid "IDS_BR_BODY_PD_POP_UPS_BLOCKED_ABB"
+msgstr "%d 弹出窗口已被阻止。"
+
+msgid "IDS_BR_BODY_PAGE_LOADED_T_TTS"
+msgstr "页面已载入"
+
+msgid "IDS_BR_BODY_PAGES_THAT_YOU_VIEW_IN_THIS_TAB_WILL_NOT_APPEAR_IN_YOUR_BROWSER_HISTORY_OR_SEARCH_HISTORY_MSG"
+msgstr "您在该分页中查看的页面不会出现在您的浏览器历史或搜索历史中，且其不会留下其他痕迹，如 cookies。"
+
+msgid "IDS_BR_BODY_OVERRIDE_WEBSITES_REQUEST_TO_CONTROL_ZOOM"
+msgstr "无视网站限制进行缩放控制"
+
+msgid "IDS_BR_BODY_OTHER_ABB"
+msgstr "其他"
+
+msgid "IDS_BR_BODY_OPEN_WINDOWS_T_TALKBACK"
+msgstr "打开窗口。"
+
+msgid "IDS_BR_BODY_OPEN_PAGES_IN_OVERVIEW_ABB"
+msgstr "以缩略图方式打开页面"
+
+msgid "IDS_BR_BODY_ON_DEMAND"
+msgstr "在要求时"
+
+msgid "IDS_BR_BODY_ONLY_VIA_WI_FI_ABB"
+msgstr "仅通过 Wi-Fi"
+
+msgid "IDS_BR_BODY_OLDER"
+msgstr "更早"
+
+msgid "IDS_BR_BODY_NO_WINDOWS"
+msgstr "无窗口"
+
+msgid "IDS_BR_BODY_NO_VISITED_SITES"
+msgstr "没有已访问的站点"
+
+msgid "IDS_BR_BODY_NO_TITLE"
+msgstr "无标题"
+
+msgid "IDS_BR_BODY_NO_SAVED_PAGES"
+msgstr "没有已保存的页面"
+
+msgid "IDS_BR_BODY_NO_BOOKMARKS"
+msgstr "无书签"
+
+msgid "IDS_BR_BODY_NORMAL"
+msgstr "正常"
+
+msgid "IDS_BR_BODY_NEWS"
+msgstr "新闻"
+
+msgid "IDS_BR_BODY_MOVE_THE_SELECTED_BOOKMARKS_Q"
+msgstr "是否移动选中书签？"
+
+msgid "IDS_BR_BODY_MOST_VISITED_SITES"
+msgstr "访问最多的站点"
+
+msgid "IDS_BR_BODY_MOBILE_VIEW"
+msgstr "手机视图"
+
+msgid "IDS_BR_BODY_LOCATION_M_INFORMATION"
+msgstr "位置"
+
+msgid "IDS_BR_BODY_LAST_WEEK"
+msgstr "最后一周"
+
+msgid "IDS_BR_BODY_LAST_MONTH"
+msgstr "上个月"
+
+msgid "IDS_BR_BODY_LAST_7_DAYS"
+msgstr "过去 7 天"
+
+msgid "IDS_BR_BODY_LARGE"
+msgstr "大"
+
+msgid "IDS_BR_BODY_INTERNET_HISTORY_IS_NOT_STORED_ABB"
+msgstr "互联网记录未储存。"
+
+msgid "IDS_BR_BODY_INTERNET"
+msgstr "互联网"
+
+msgid "IDS_BR_BODY_IMPROVE_PERFORMANCE_WHEN_LOADING_PAGES"
+msgstr "改进载入页面时的性能"
+
+msgid "IDS_BR_BODY_HOMEPAGE"
+msgstr "主页"
+
+msgid "IDS_BR_BODY_HIDE_THE_ADDRESS_BAR_WHEN_SCROLLING_DOWN_THE_PAGE"
+msgstr "向下滚动页面时隐藏地址栏。"
+
+msgid "IDS_BR_BODY_GENERAL_M_SETTINGS"
+msgstr "常规"
+
+msgid "IDS_BR_BODY_FULL_NAME_ABB"
+msgstr "全名"
+
+msgid "IDS_BR_BODY_FORCE_ZOOM_ABB"
+msgstr "强制缩放"
+
+msgid "IDS_BR_BODY_FLAT_SUITE_UNIT_BUILDING_FLOOR_ETC_ABB"
+msgstr "单层、套房、单元、大楼、楼层等"
+
+msgid "IDS_BR_BODY_FINGERPRINTS_C"
+msgstr "指纹："
+
+msgid "IDS_BR_BODY_FAILED_TO_ADD_TO_HOME_SCREEN_ABB"
+msgstr "添加至主屏幕失败。"
+
+msgid "IDS_BR_BODY_ENTER_YOUR_NAME_ABB"
+msgstr "输入您的姓名。"
+
+msgid "IDS_BR_BODY_ENTER_TOWN_CITY_COUNTY_ABB"
+msgstr "输入乡镇/县市。"
+
+msgid "IDS_BR_BODY_ENTER_COUNTRY_REGION_ABB"
+msgstr "输入国家/地区:"
+
+msgid "IDS_BR_BODY_ENTER_COMPANY_NAME_ABB"
+msgstr "输入公司名称。"
+
+msgid "IDS_BR_BODY_ENABLE_LOCATION"
+msgstr "启用定位功能"
+
+msgid "IDS_BR_BODY_ENABLE_JAVASCRIPT"
+msgstr "启用 JavaScript"
+
+msgid "IDS_BR_BODY_DOUBLE_TAP_TO_VIEW_CERTIFICATE_TTS"
+msgstr "双击以查看证书。"
+
+msgid "IDS_BR_BODY_DOUBLE_TAP_TO_SELECT_A_SEARCH_ENGINE_T_TALKBACK"
+msgstr "双击以选择搜索引擎。"
+
+msgid "IDS_BR_BODY_DOUBLE_TAP_TO_OPEN_THE_WEBPAGE_T_TALKBACK"
+msgstr "双击以打开网页。"
+
+msgid "IDS_BR_BODY_DOUBLE_TAP_TO_OPEN_THE_LIST_T_TTS"
+msgstr "双击以打开列表。"
+
+msgid "IDS_BR_BODY_DOUBLE_TAP_TO_OPEN_THE_FOLDER_T_TTS"
+msgstr "双击以打开文件夹。"
+
+msgid "IDS_BR_BODY_DOUBLE_TAP_TO_OPEN_KEYBOARD_T_TTS"
+msgstr "双击以打开键盘。"
+
+msgid "IDS_BR_BODY_DOUBLE_TAP_TO_MOVE_TO_CONTENT_T_TTS"
+msgstr "双击以移动至内容。"
+
+msgid "IDS_BR_BODY_DOUBLE_TAP_TO_CLOSE_THE_TRAY_T_TALKBACK"
+msgstr "双击以关闭托盘。"
+
+msgid "IDS_BR_BODY_DOUBLE_TAP_TO_CANCEL_THE_SEARCH_T_TALKBACK"
+msgstr "双击以取消搜索。"
+
+msgid "IDS_BR_BODY_DOUBLE_TAP_AND_HOLD_TO_RESIZE_SPLIT_AREA_T_TTS"
+msgstr "双击并按住以调节分割区域大小。"
+
+msgid "IDS_BR_BODY_DOUBLE_TAP_AND_DRAG_TO_REORDER_TTS"
+msgstr "双击并拖动以重新排序。"
+
+msgid "IDS_BR_BODY_DISPLAY_SECURITY_WARNING_POP_UPS"
+msgstr "显示安全警告弹出窗口。"
+
+msgid "IDS_BR_BODY_DISPLAY_IMAGES_ON_WEB_PAGES"
+msgstr "显示网页上的图片。"
+
+msgid "IDS_BR_BODY_DESKTOP_VIEW"
+msgstr "桌面查看"
+
+msgid "IDS_BR_BODY_DELETE_THE_SELECTED_BOOKMARKS_Q"
+msgstr "是否删除选中书签？"
+
+msgid "IDS_BR_BODY_DELETE_PERSONAL_DATA"
+msgstr "删除个人数据"
+
+msgid "IDS_BR_BODY_DEFAULT_STORAGE"
+msgstr "默认存储器"
+
+msgid "IDS_BR_BODY_DEFAULT_PAGE_ABB"
+msgstr "默认页面"
+
+msgid "IDS_BR_BODY_DATA_USAGE_REDUCED_BY_P1SDP_HP2SD_KB_OF_P3SD_KB_RECEIVED_TAP_HERE_TO_RESET_STATISTICS"
+msgstr "数据使用量减少了 %1$d% (已接收 %2$d KB，共 %3$d KB)。点击此处以重置统计数据。"
+
+msgid "IDS_BR_BODY_CUSTOM_USER_AGENT"
+msgstr "定制用户代理"
+
+msgid "IDS_BR_BODY_CURRENT_PAGE"
+msgstr "当前页面"
+
+msgid "IDS_BR_BODY_CREATED"
+msgstr "创建"
+
+msgid "IDS_BR_BODY_COUNTY_ABB"
+msgstr "县"
+
+msgid "IDS_BR_BODY_COUNTRY_REGION_ABB2"
+msgstr "国家/区域"
+
+msgid "IDS_BR_BODY_COOKIES_AND_SITE_DATA_ABB"
+msgstr "Cookies 与站点数据"
+
+msgid "IDS_BR_BODY_COOKIES"
+msgstr "Cookies"
+
+msgid "IDS_BR_BODY_CONTENT_SETTINGS"
+msgstr "内容设置"
+
+msgid "IDS_BR_BODY_COMPANY_NAME_ABB"
+msgstr "公司名称"
+
+msgid "IDS_BR_BODY_CLOSE_TAB"
+msgstr "关闭分页。"
+
+msgid "IDS_BR_BODY_CLEAR_WEB_NOTIFICATION_PERMISSION_SETTINGS"
+msgstr "清除网络通知许可设置。"
+
+msgid "IDS_BR_BODY_CLEAR_WEB_NOTIFICATION_PERMISSIONS_Q"
+msgstr "是否清除网页通知许可？"
+
+msgid "IDS_BR_BODY_CLEAR_NOTIFICATION_ACCESS_FOR_WEBSITES"
+msgstr "清除所有网站的访问通知"
+
+msgid "IDS_BR_BODY_CLEAR_NOTIFICATIONS"
+msgstr "清除通知"
+
+msgid "IDS_BR_BODY_CLEAR_LOCATION_ACCESS"
+msgstr "取消定位权限"
+
+msgid "IDS_BR_BODY_CLEAR_HISTORY"
+msgstr "清除历史记录"
+
+msgid "IDS_BR_BODY_CLEAR_ALL_BROWSER_DATA_AND_RESET_ALL_SETTINGS_TO_DEFAULT"
+msgstr "清除所有浏览器数据并将所有设置重置为默认值。"
+
+msgid "IDS_BR_BODY_CITY_TOWN_ABB"
+msgstr "城市/城镇"
+
+msgid "IDS_BR_BODY_CHANGE_THE_TEXT_SIZE_FOR_EASIER_READING_ESPECIALLY_WHEN_VIEWING_DESKTOP_VERSIONS_OF_WEBSITES_ON_YOUR_DEVICE_MSG"
+msgstr "更改文本大小以便于阅读，尤其是在设备上查看网站的桌面版本时。请注意，文本布局可能会因此而改变。"
+
+msgid "IDS_BR_BODY_BOOKMARK_REMINDER_ABB"
+msgstr "书签提醒"
+
+msgid "IDS_BR_BODY_BLOCK_POP_UPS_ON_WEB_PAGES"
+msgstr "阻止网页上的弹出窗口"
+
+msgid "IDS_BR_BODY_BLOCK_POP_UPS_ON_WEBPAGES"
+msgstr "阻止网页上的弹出窗口。"
+
+msgid "IDS_BR_BODY_BLOCK_POP_UPS"
+msgstr "阻止弹出窗口"
+
+msgid "IDS_BR_BODY_BASIC"
+msgstr "基本"
+
+msgid "IDS_BR_BODY_AUTO_FILL_FORMS_T_TTS"
+msgstr "自动填写表格"
+
+msgid "IDS_BR_BODY_AUTO_DETECT"
+msgstr "自动检测"
+
+msgid "IDS_BR_BODY_AUTOMATIC"
+msgstr "自动"
+
+msgid "IDS_BR_BODY_ASK_WHETHER_TO_ADD_A_BOOKMARK_FOR_A_WEBSITE_WHEN_YOU_HAVE_VISITED_IT_PD_TIMES"
+msgstr "在访问网站 %d 次后询问是否为其添加书签"
+
+msgid "IDS_BR_BODY_ALWAYS_ON"
+msgstr "总是打开"
+
+msgid "IDS_BR_BODY_ALWAYS"
+msgstr "总是"
+
+msgid "IDS_BR_BODY_ALL_OPEN_WINDOWS_WILL_BE_CLOSED_AND_YOU_WILL_MOVE_TO_YOUR_HOMEPAGE"
+msgstr "所有打开的窗口将关闭且您将移动至主页。"
+
+msgid "IDS_BR_BODY_ALLOW_SITES_TO_RUN_JAVASCRIPT"
+msgstr "允许站点运行 JavaScript"
+
+msgid "IDS_BR_BODY_ALLOW_SITES_TO_REQUEST_ACCESS_TO_YOUR_LOCATION"
+msgstr "允许网站请求访问您的位置"
+
+msgid "IDS_BR_BODY_ALLOW_SITES_TO_ACCESS_YOUR_LOCATION_DATA"
+msgstr "允许站点访问您的位置数据。"
+
+msgid "IDS_BR_BODY_ALLOW_PS_TO_SHOW_NOTIFICATIONS"
+msgstr "允许%s显示通知"
+
+msgid "IDS_BR_BODY_ALLOWS_SITES_TO_SAVE_AND_READ_COOKIE_DATA"
+msgstr "允许保存站点并读取cookie数据"
+
+msgid "IDS_BR_BODY_AFTER_YOU_VISIT_WEBPAGES_THE_PAGES_YOU_HAVE_VISITED_THE_MOST_WILL_BE_SHOWN_HERE"
+msgstr "访问网页后，您访问得最多的页面将显示在此处。"
+
+msgid "IDS_BR_BODY_AFTER_YOU_VIEW_WEBSITES_THE_SIZE_OF_THEIR_STORED_DATA_AND_WHETHER_THEY_CAN_ACCESS_YOUR_LOCATION_WILL_BE_SHOWN_HERE"
+msgstr "查看网站后，它们存储的数据大小以及是否能够访问位置的信息将在此显示。"
+
+msgid "IDS_BR_BODY_AFTER_YOU_VIEW_WEBPAGES_THEY_WILL_BE_SHOWN_HERE"
+msgstr "在您查看网页后，其将显示在此处。"
+
+msgid "IDS_BR_BODY_AFTER_YOU_SAVE_WEBPAGES_TO_VIEW_OFFLINE_THEY_WILL_BE_SHOWN_HERE"
+msgstr "保存网页以离线查看后，其将显示在此处。"
+
+msgid "IDS_BR_BODY_AFTER_YOU_LOAD_PAGES_THE_PAGE_HISTORY_WILL_BE_SHOWN"
+msgstr "在您载入页面后，将显示页面历史。"
+
+msgid "IDS_BR_BODY_AFTER_YOU_ADD_WEBPAGES_TO_QUICK_ACCESS_THEY_WILL_BE_SHOWN_HERE"
+msgstr "将网页添加至快速访问后，其将显示在此处。"
+
+msgid "IDS_BR_BODY_ADVANCED_SETTINGS_FOR_INDIVIDUAL_WEBSITES"
+msgstr "个别网站的高级设置"
+
+msgid "IDS_BR_BODY_ADVANCED"
+msgstr "高级设置"
+
+msgid "IDS_BR_BODY_ADD_TO_CONTACT"
+msgstr "添加到联系人"
+
+msgid "IDS_BR_BODY_ADD_THIS_WEBSITE_TO_BOOKMARKS_TO_OPEN_IT_FASTER_ABB"
+msgstr "添加网站至书签以更快打开页面。"
+
+msgid "IDS_BR_BODY_ADDRESS_LINE_2_ABB"
+msgstr "地址行 2"
+
+msgid "IDS_BR_BODY_ADDRESS_LINE_1_ABB"
+msgstr "地址行 1"
+
+msgid "IDS_BR_BODY_ACCEPT_COOKIES"
+msgstr "接受 Cookies"
+
+msgid "IDS_BR_BODY_1_PROFILE_WILL_BE_DELETED"
+msgstr "将删除 1 个个人资料。"
+
+msgid "IDS_BR_ACBUTTON_TABS_ABB"
+msgstr "页面"
+
+msgid "IDS_BR_TPOP_STARTING_DOWNLOAD_ING"
+msgstr "正在开始下载…"
+
+msgid "IDS_BR_TPOP_FOLDER_RENAMED"
+msgstr "文件夹已重命名"
+
+msgid "IDS_BR_TMBODY_SUGGEST_SEARCH_TERMS_AND_URLS"
+msgstr "建议搜索术语和网址"
+
+msgid "IDS_BR_TMBODY_DATA_USAGE_MANAGEMENT"
+msgstr "数据使用管理"
+
+msgid "IDS_BR_SK_CANCEL_ABB"
+msgstr "取消"
+
+msgid "IDS_BR_SBODY_SET_THE_DEVICE_TO_SHOW_THE_FULL_WEBPAGE_ON_THE_SCREEN_WHEN_IT_IS_LOADED_WITHOUT_NEEDING_TO_SCROLL"
+msgstr "设置设备以在载入时在屏幕上显示整个网页，而无需滚动。"
+
+msgid "IDS_BR_POP_UNABLE_TO_RUN_INTERNET_LOW_BATTERY"
+msgstr "电量不足，无法运行互联网。"
+
+msgid "IDS_BR_POP_THE_DOWNLOAD_HAS_BEEN_STOPPED_AND_THE_DOWNLOADED_DATA_WILL_BE_DELETED"
+msgstr "下载已停止且下载的数据将被删除。"
+
+msgid "IDS_BR_POP_SEARCH_COMPLETED_JPN_SBM"
+msgstr "搜索已完成"
+
+msgid "IDS_BR_POP_READY"
+msgstr "准备"
+
+msgid "IDS_BR_POP_INFORM_MEMORY_ERROR"
+msgstr "存储器错误"
+
+msgid "IDS_BR_POP_DATA_ROAMING_IS_DISABLED_CONNECT_TO_A_WI_FI_NETWORK_OR_ENABLE_DATA_ROAMING_AND_TRY_AGAIN"
+msgstr "数据漫游已禁用。连接至 Wi-Fi 网络，或启用数据漫游并重试。"
+
+msgid "IDS_BR_POP_BROWSERERRORREQUESTTIMEOUT"
+msgstr "请求超时"
+
+msgid "IDS_BR_POP_A_WI_FI_CONNECTION_IS_REQUIRED_TAP_OK_TO_GO_TO_YOUR_WI_FI_SETTINGS"
+msgstr "需要 Wi-Fi 连接。点击【确定】可进入您的 Wi-Fi 设置。"
+
+msgid "IDS_BR_OPT_WEB_APPS_ABB"
+msgstr "网络应用程序"
+
+msgid "IDS_BR_OPT_VIEW_ONLINE"
+msgstr "在线查看"
+
+msgid "IDS_BR_OPT_READ_ON_OFFLINE_PAGES_LATER_ABB"
+msgstr "稍后在离线页面上阅读"
+
+msgid "IDS_BR_OPT_QUICK_ACCESS_ABB2"
+msgstr "快速访问"
+
+msgid "IDS_BR_OPT_ALWAYS_ENABLED_ABB"
+msgstr "总是启用"
+
+msgid "IDS_BR_NPBODY_TAP_HERE_TO_ADD_A_QUICK_ACCESS_SHORTCUT"
+msgstr "点击此处以添加【快速访问】快捷方式"
+
+msgid "IDS_BR_NPBODY_NO_HISTORY"
+msgstr "无历史记录"
+
+msgid "IDS_BR_MBODY_USER_MANUAL_ABB"
+msgstr "使用说明书"
+
+msgid "IDS_BR_MBODY_TOWN_CITY_COUNTY"
+msgstr "镇/市/省"
+
+msgid "IDS_BR_MBODY_STORED_DATA"
+msgstr "已保存数据"
+
+msgid "IDS_BR_MBODY_SEARCH_AND_URL_SUGGESTIONS_ABB"
+msgstr "搜索和网址建议"
+
+msgid "IDS_BR_MBODY_HISTORY"
+msgstr "历史"
+
+msgid "IDS_BR_MBODY_FIT_PAGE_TO_SCREEN"
+msgstr "使页面适应屏幕"
+
+msgid "IDS_BR_MBODY_DOWNLOADS"
+msgstr "下载"
+
+msgid "IDS_BR_MBODY_CUSTOM"
+msgstr "自定义"
+
+msgid "IDS_BR_MBODY_COUNTRY_REGION"
+msgstr "国家/区域"
+
+msgid "IDS_BR_HEADER_RENAME_FOLDER_ABB"
+msgstr "重命名文件夹"
+
+msgid "IDS_BR_HEADER_PERSONAL_DATA_ABB"
+msgstr "个人数据"
+
+msgid "IDS_BR_HEADER_NEWER_M_INTERNET_HISTORY"
+msgstr "更新"
+
+msgid "IDS_BR_HEADER_ISSUED_TO"
+msgstr "颁发对象"
+
+msgid "IDS_BR_HEADER_ENCODING"
+msgstr "编码"
+
+msgid "IDS_BR_HEADER_EDIT_INFO_ABB"
+msgstr "编辑信息"
+
+msgid "IDS_BR_HEADER_DOWNLOAD_STOPPED_ABB"
+msgstr "下载已停止"
+
+msgid "IDS_BR_HEADER_DEPARTMENT_C_ABB"
+msgstr "部门："
+
+msgid "IDS_BR_HEADER_ADD_INFO_ABB"
+msgstr "添加信息"
+
+msgid "IDS_BR_BUTTON_WI_FI_ABB"
+msgstr "Wi-Fi"
+
+msgid "IDS_BR_BUTTON_SETTINGS_ABB"
+msgstr "设置"
+
+msgid "IDS_BR_BUTTON2_OK"
+msgstr "确定"
+
+msgid "IDS_BR_BUTTON2_NEW"
+msgstr "新建"
+
+msgid "IDS_BR_BODY_WEB_SEARCH"
+msgstr "网络搜索"
+
+msgid "IDS_BR_BODY_UNABLE_TO_OPEN_FILE"
+msgstr "无法打开文件。"
+
+msgid "IDS_BR_BODY_UNABLE_TO_FIND_AN_APPLICATION_TO_OPEN_THIS_FILE"
+msgstr "无法找到用于打开该文件的应用程序。"
+
+msgid "IDS_BR_BODY_UNABLE_TO_CONNECT_TO_MOBILE_NETWORKS_WHILE_FLIGHT_MODE_IS_ENABLED_MSG"
+msgstr "飞行模式启用时无法连接至移动网络。改为连接至 Wi-Fi 网络，或点击【设置】以禁用飞行模式，然后重试。"
+
+msgid "IDS_BR_BODY_THIS_CERTIFICATE_IS_FROM_A_TRUSTED_AUTHORITY"
+msgstr "该证书来自受信任的颁发机构。"
+
+msgid "IDS_BR_BODY_TAP_HERE_TO_ADD_A_QUICK_ACCESS_SHORTCUT"
+msgstr "点击此处以添加【快速访问】快捷方式。"
+
+msgid "IDS_BR_BODY_PREFERENCES"
+msgstr "参数选择"
+
+msgid "IDS_BR_BODY_PERCENTAGE_M_SYMBOL"
+msgstr "% "
+
+msgid "IDS_BR_BODY_NO_MOBILE_NETWORKS_HAVE_BEEN_FOUND"
+msgstr "尚未发现移动网络。"
+
+msgid "IDS_BR_BODY_NO_MATCHES"
+msgstr "没有匹配项"
+
+msgid "IDS_BR_BODY_MOBILE_DATA_IS_TURNED_OFF_CONNECT_TO_A_WI_FI_NETWORK_INSTEAD_OR_TAP_SETTINGS_TO_TURN_ON_MOBILE_DATA_AND_THEN_TRY_AGAIN"
+msgstr "【移动数据】已关闭。请改为【连接至 Wi-Fi 网络】，或点击【设置】来打开【移动数据】，然后重试。"
+
+msgid "IDS_BR_BODY_FIT_TO_WIDTH"
+msgstr "适合宽度"
+
+msgid "IDS_BR_ACBUTTON_QUICK_ACCESS"
+msgstr "快速访问"
+
+msgid "IDS_BR_OPT_OPEN_IN_NEW_TAB"
+msgstr "从新页面打开"
+
+msgid "IDS_BR_BODY_SHARE_LINK"
+msgstr "分享链接"
+
+msgid "IDS_BR_SK_SAVE_LITE"
+msgstr "保存"
+
+msgid "IDS_BR_SK_SAVE_ABB"
+msgstr "保存"
+
+msgid "IDS_BR_SK_SAVE"
+msgstr "保存"
+
+msgid "IDS_BR_SK_PREVIOUS"
+msgstr "上一步"
+
+msgid "IDS_BR_SK_NEXT"
+msgstr "下一步"
+
+msgid "IDS_BR_SK_DELETE"
+msgstr "删除"
+
+msgid "IDS_BR_SK_CLEAR"
+msgstr "清除"
+
+msgid "IDS_BR_SK_BACK"
+msgstr "返回"
+
+msgid "IDS_BR_POP_WI_FI_CONNECTION_REQUIRED_CONNECT_TO_WI_FI_NETWORK_AND_TRY_AGAIN"
+msgstr "需要 Wi-Fi 连接。连接至 Wi-Fi 网络并重试。"
+
+msgid "IDS_BR_POP_URL_NOT_FOUND"
+msgstr "找不到网址。"
+
+msgid "IDS_BR_POP_URL"
+msgstr "网址"
+
+msgid "IDS_BR_POP_SAVED"
+msgstr "已保存"
+
+msgid "IDS_BR_POP_REMOVED"
+msgstr "已移除"
+
+msgid "IDS_BR_POP_PD_ITEMS_WILL_BE_DELETED"
+msgstr "将删除 %d 个项目。"
+
+msgid "IDS_BR_POP_PD_ITEMS_SELECTED"
+msgstr "已选择 %d 个项目。"
+
+msgid "IDS_BR_POP_NO_ITEMS_SELECTED"
+msgstr "未选择图片。"
+
+msgid "IDS_BR_POP_NOT_ENOUGH_MEMORY"
+msgstr "没有足够内存。"
+
+msgid "IDS_BR_POP_NEVER"
+msgstr "永不"
+
+msgid "IDS_BR_POP_MOBILE_DATA_IS_DISABLED_CONNECT_TO_WI_FI_NETWORK_INSTEAD_OR_ENABLE_MOBILE_DATA_AND_TRY_AGAIN"
+msgstr "移动数据已禁用。连接至 Wi-Fi 网络，或启用移动数据并重试。"
+
+msgid "IDS_BR_POP_LOADING_PLEASE_WAIT_ING"
+msgstr "加载中，请稍等…"
+
+msgid "IDS_BR_POP_INVALID_URL"
+msgstr "网址无效"
+
+msgid "IDS_BR_POP_FAIL"
+msgstr "失败"
+
+msgid "IDS_BR_POP_ENTER_TITLE_ABB"
+msgstr "输入标题"
+
+msgid "IDS_BR_POP_DO_NOT_SHOW_AGAIN"
+msgstr "不再显示"
+
+msgid "IDS_BR_POP_DOWNLOADCOMPLETE"
+msgstr "下载结束"
+
+msgid "IDS_BR_POP_DISABLED"
+msgstr "已关闭"
+
+msgid "IDS_BR_POP_DELETE_Q"
+msgstr "删除？"
+
+msgid "IDS_BR_POP_DELETED"
+msgstr "已删除"
+
+msgid "IDS_BR_POP_CLOSE_APPLICATION_Q"
+msgstr "关闭应用程序？"
+
+msgid "IDS_BR_POP_BOOKMARK_ADDED"
+msgstr "已添加书签。"
+
+msgid "IDS_BR_POP_AUTOMATIC_BRIGHTNESS"
+msgstr "自动亮度"
+
+msgid "IDS_BR_POP_ACCOUNT"
+msgstr "帐户"
+
+msgid "IDS_BR_POP_1_ITEM_WILL_BE_DELETED"
+msgstr "将删除 1 个项目。"
+
+msgid "IDS_BR_POP_1_ITEM_SELECTED"
+msgstr "已选择 1 个项目。"
+
+msgid "IDS_BR_OPT_TRANSLATE"
+msgstr "翻译"
+
+msgid "IDS_BR_OPT_STOP"
+msgstr "停止"
+
+msgid "IDS_BR_OPT_SHOW"
+msgstr "显示"
+
+msgid "IDS_BR_OPT_SHARE"
+msgstr "分享"
+
+msgid "IDS_BR_OPT_SETTINGS"
+msgstr "设置"
+
+msgid "IDS_BR_OPT_SEND_EMAIL"
+msgstr "发送邮件"
+
+msgid "IDS_BR_OPT_SELECT"
+msgstr "选择"
+
+msgid "IDS_BR_OPT_SD_CARD"
+msgstr "SD 卡"
+
+msgid "IDS_BR_OPT_RENAME"
+msgstr "重命名"
+
+msgid "IDS_BR_OPT_REFRESH"
+msgstr "刷新"
+
+msgid "IDS_BR_OPT_MOVE"
+msgstr "移动"
+
+msgid "IDS_BR_OPT_MESSAGES"
+msgstr "信息"
+
+msgid "IDS_BR_OPT_LIST_VIEW"
+msgstr "列表视图"
+
+msgid "IDS_BR_OPT_I_AGREE"
+msgstr "我同意。"
+
+msgid "IDS_BR_OPT_HELP"
+msgstr "帮助"
+
+msgid "IDS_BR_OPT_DEVICE"
+msgstr "设备"
+
+msgid "IDS_BR_OPT_BOOKMARK"
+msgstr "书签"
+
+msgid "IDS_BR_OPT_ADDED"
+msgstr "已添加"
+
+msgid "IDS_BR_OPT_ADD"
+msgstr "添加"
+
+msgid "IDS_BR_MBODY_DEFAULT_DOWNLOAD_STORAGE"
+msgstr "默认下载存储空间"
+
+msgid "IDS_BR_HEADER_SIGN_IN_TO_SAMSUNG_ACCOUNT"
+msgstr "登录三星帐户"
+
+msgid "IDS_BR_HEADER_PD_SELECTED_ABB"
+msgstr "已选择 %d"
+
+msgid "IDS_BR_HEADER_NO_NETWORK_CONNECTION"
+msgstr "无网络连接"
+
+msgid "IDS_BR_HEADER_FOLDER"
+msgstr "文件夹"
+
+msgid "IDS_BR_HEADER_EDIT_PROFILE"
+msgstr "编辑资料"
+
+msgid "IDS_BR_BUTTON_SET"
+msgstr "设置"
+
+msgid "IDS_BR_BUTTON_NOT_NOW"
+msgstr "现在不"
+
+msgid "IDS_BR_BUTTON_ENABLE_ABB"
+msgstr "启用"
+
+msgid "IDS_BR_BUTTON_EDIT"
+msgstr "编辑"
+
+msgid "IDS_BR_BUTTON_CONTINUE_ABB"
+msgstr "继续"
+
+msgid "IDS_BR_BUTTON_CONTINUE"
+msgstr "继续"
+
+msgid "IDS_BR_BUTTON_CLOSE"
+msgstr "关闭"
+
+msgid "IDS_BR_BUTTON_CANCEL_ABB"
+msgstr "取消"
+
+msgid "IDS_BR_BUTTON_CANCEL"
+msgstr "取消"
+
+msgid "IDS_BR_BUTTON_ALLOW"
+msgstr "允许"
+
+msgid "IDS_BR_BODY_YESTERDAY"
+msgstr "昨天"
+
+msgid "IDS_BR_BODY_URL"
+msgstr "网址"
+
+msgid "IDS_BR_BODY_TODAY"
+msgstr "今天"
+
+msgid "IDS_BR_BODY_TITLE"
+msgstr "标题"
+
+msgid "IDS_BR_BODY_THE_MAXIMUM_NUMBER_OF_CHARACTERS_HPD_HAS_BEEN_EXCEEDED"
+msgstr "已超过最大字符数 (%d)。"
+
+msgid "IDS_BR_BODY_STREAMING"
+msgstr "在线播放"
+
+msgid "IDS_BR_BODY_SMALL"
+msgstr "小"
+
+msgid "IDS_BR_BODY_SETTINGS"
+msgstr "设置"
+
+msgid "IDS_BR_BODY_SEARCH"
+msgstr "搜索"
+
+msgid "IDS_BR_BODY_RSS_SEARCH_RESULTS"
+msgstr "搜索结果"
+
+msgid "IDS_BR_BODY_PROFILE"
+msgstr "个人信息设置"
+
+msgid "IDS_BR_BODY_PROCESSING_ING"
+msgstr "处理中..."
+
+msgid "IDS_BR_BODY_PHONE_NUMBER_ABB"
+msgstr "电话号码"
+
+msgid "IDS_BR_BODY_PHONE"
+msgstr "电话"
+
+msgid "IDS_BR_BODY_PD_ITEMS_WILL_BE_DELETED"
+msgstr "将删除 %d 个项目。"
+
+msgid "IDS_BR_BODY_PASSWORD"
+msgstr "密码"
+
+msgid "IDS_BR_BODY_ON"
+msgstr "开"
+
+msgid "IDS_BR_BODY_OFF"
+msgstr "关"
+
+msgid "IDS_BR_BODY_NO_RESULTS_FOUND"
+msgstr "未找到结果"
+
+msgid "IDS_BR_BODY_NO_HISTORIES"
+msgstr "无历史记录"
+
+msgid "IDS_BR_BODY_NOTIFICATIONS"
+msgstr "通知"
+
+msgid "IDS_BR_BODY_MEDIUM"
+msgstr "中"
+
+msgid "IDS_BR_BODY_IMAGES"
+msgstr "图片"
+
+msgid "IDS_BR_BODY_FULL_SCREEN"
+msgstr "全屏显示"
+
+msgid "IDS_BR_BODY_FONT_SIZE"
+msgstr "字体大小"
+
+msgid "IDS_BR_BODY_FOLDER_NAME"
+msgstr "文件夹名称"
+
+msgid "IDS_BR_BODY_ENTER_POSTCODE_ABB"
+msgstr "输入邮编。"
+
+msgid "IDS_BR_BODY_ENTER_POSTCODE"
+msgstr "输入邮编。"
+
+msgid "IDS_BR_BODY_ENTER_PHONE_NUMBER"
+msgstr "输入手机号码。"
+
+msgid "IDS_BR_BODY_ENTER_NAME"
+msgstr "输入名字。"
+
+msgid "IDS_BR_BODY_ENTER_FOLDER_NAME"
+msgstr "输入文件夹名称"
+
+msgid "IDS_BR_BODY_ENTER_EMAIL_ADDRESS"
+msgstr "输入邮件地址。"
+
+msgid "IDS_BR_BODY_EMAIL_ADDRESS"
+msgstr "邮件地址"
+
+msgid "IDS_BR_BODY_DOWNLOADING_ING"
+msgstr "下载中..."
+
+msgid "IDS_BR_BODY_DEVELOPER_MODE"
+msgstr "开发模式"
+
+msgid "IDS_BR_BODY_DEFAULT"
+msgstr "默认"
+
+msgid "IDS_BR_BODY_BOOKMARKS"
+msgstr "书签"
+
+msgid "IDS_BR_BODY_ALL"
+msgstr "全部"
+
+msgid "IDS_BR_BODY_ADD_TO"
+msgstr "添加到"
+
+msgid "IDS_BR_BODY_ADDDETAILSVIEW_TAGS"
+msgstr "标签"
+
+msgid "IDS_BR_BODY_ADDBOOKMARKURL"
+msgstr "网址"
+
+msgid "IDS_BR_BODY_1_ITEM_WILL_BE_DELETED"
+msgstr "将删除 1 个项目。"
+
+msgid "IDS_BR_TPOP_MAXIMUM_NUMBER_OF_CHARACTERS_HPD_REACHED"
+msgstr "已达最大字符数（%d）"
+
+msgid "IDS_BR_POP_UNSUPPORTMEDIATYPE"
+msgstr "不支持的媒体类型"
+
+msgid "IDS_BR_POP_UNABLE_TO_CONNECT_TO_MOBILE_NETWORKS_WHILE_FLIGHT_MODE_IS_ENABLED_CONNECT_TO_WI_FI_NETWORK_INSTEAD_OR_DISABLE_FLIGHT_MODE_AND_TRY_AGAIN"
+msgstr "飞行模式启用时无法连接至移动网络。连接至 Wi-Fi 网络，或禁用飞行模式并重试。"
+
+msgid "IDS_BR_POP_INSTALL_SUCCESS"
+msgstr "安装已完成"
+
+msgid "IDS_BR_POP_INSTALLATION_FAILED"
+msgstr "安装失败"
+
+msgid "IDS_BR_POP_DELETING_ING"
+msgstr "删除中.."
+
+msgid "IDS_BR_POP_DATA_ROAMING_IS_DISABLED_CONNECT_TO_WI_FI_NETWORK_INSTEAD_OR_ENABLE_DATA_ROAMING_AND_TRY_AGAIN"
+msgstr "数据漫游已禁用。连接至 Wi-Fi 网络，或启用数据漫游并重试。"
+
+msgid "IDS_BR_OPT_SHARE_VIA"
+msgstr "分享通过"
+
+msgid "IDS_BR_OPT_PASTE"
+msgstr "粘贴"
+
+msgid "IDS_BR_MBODY_FONT_SIZE"
+msgstr "字体大小"
+
+msgid "IDS_BR_HEADER_UNABLE_TO_DOWNLOAD_ABB"
+msgstr "无法下载"
+
+msgid "IDS_BR_BUTTON_UPDATE"
+msgstr "更新"
+
+msgid "IDS_BR_BUTTON_RETRY"
+msgstr "重试"
+
+msgid "IDS_BR_BODY_REQUEST_FAILED"
+msgstr "请求失败"
+
+msgid "IDS_BR_BODY_LOGIN"
+msgstr "登录"
+
+msgid "IDS_BR_BODY_LOADING_ING"
+msgstr "载入中…"
+
+msgid "IDS_BR_BODY_FIT_TO_SCREEN"
+msgstr "适合屏幕"
+
+msgid "IDS_BR_BODY_DOWNLOADS_VODA"
+msgstr "下载列表"
+
+msgid "IDS_BR_BODY_DATA_ROAMING_IS_DISABLED_CONNECT_TO_A_WI_FI_NETWORK_INSTEAD_OR_ENABLE_DATA_ROAMING_AND_TRY_AGAIN"
+msgstr "数据漫游已禁用。改为连接至 Wi-Fi 网络，或启用数据漫游并重试。"
+
+msgid "IDS_BR_POP_DOWNLOAD_CANCELLED"
+msgstr "已取消下载"
+
+msgid "IDS_BR_BUTTON_SECRET_ON_ABB"
+msgstr "开启保密模式"
+
+msgid "IDS_BR_MBODY_PRIVACY"
+msgstr "保密"
+
+msgid "IDS_BR_MBODY_DEFAULT_STORAGE"
+msgstr "默认存储"
+
+msgid "IDS_BR_MBODY_MANUAL_ZOOM"
+msgstr "手动缩放"
+
+msgid "IDS_BR_TMBODY_DEFAULT_SEARCH_ENGINE"
+msgstr "默认搜索引擎"
+
+msgid "IDS_BR_MBODY_SAVE_SIGN_IN_INFO"
+msgstr "保存登录信息"
+
+msgid "IDS_BR_OPT_TURN_OFF_SECRET_MODE_ABB"
+msgstr "关闭保密模式"
+
+msgid "IDS_BR_OPT_TURN_ON_SECRET_MODE_ABB"
+msgstr "打开保密模式"
+
+msgid "IDS_BR_OPT_SECRET_MODE_SECURITY_ABB"
+msgstr "保密模式安全性"
+
+msgid "IDS_BR_BUTTON_USE_PASSWORD_ABB"
+msgstr "使用混合密码"
+
+msgid "IDS_BR_HEADER_DONT_USE_PASSWORD_ABB"
+msgstr "请勿使用混合密码"
+
+msgid "IDS_BR_MBODY_MOST_VISITED_WEBSITES"
+msgstr "最常访问的网站"
+
+msgid "IDS_BR_MBODY_SET_MY_PROFILE"
+msgstr "设置我的个人资料"
+
+msgid "IDS_BR_MBODY_MY_AUTO_FILL_PROFILE"
+msgstr "我的自动填写资料"
+
+msgid "IDS_BR_SBODY_MANAGE_DATA_USED_TO_FILL_IN_FORMS_ONLINE"
+msgstr "管理用于填写在线表单的数据"
+
+msgid "IDS_BR_MBODY_SAVE_SIGN_IN_INFO_ABB"
+msgstr "保存登录信息"
+
+msgid "IDS_BR_OPT_LOCATION_ACCESS_DATA"
+msgstr "位置访问数据"
+
+msgid "IDS_BR_OPT_AUTO_FILL_DATA"
+msgstr "自动填充数据"
+
+msgid "IDS_BR_BODY_ANY_WEBPAGES_YOU_VIEW_WHILE_SECRET_MODE_IS_TURNED_ON_WONT_APPEAR_IN_YOUR_BROWSER_OR_SEARCH_HISTORY_MSG"
+msgstr "启用保密模式期间查看的所有网页在关闭保密模式时不会出现在浏览器或搜索历史记录中。\n\n启用保密模式期间保存的所有书签和网页在关闭保密模式时不会显示。\n\n您还可以使用混合密码保护保密模式数据。"
+
+msgid "IDS_BR_BODY_ANY_WEBPAGES_YOU_VIEW_WHILE_SECRET_MODE_IS_TURNED_ON_WONT_APPEAR_IN_YOUR_BROWSER_OR_SEARCH_MSG"
+msgstr "启用保密模式期间查看的所有网页在关闭保密模式时不会出现在浏览器或搜索历史记录中。\n\n启用保密模式期间保存的所有书签和网页在关闭保密模式时不会显示。"
+
+msgid "IDS_BR_BUTTON_SECRET_OFF_ABB"
+msgstr "关闭保密模式"
+
+msgid "IDS_BR_BUTTON_DONT_USE_PASSWORD_ABB"
+msgstr "请勿使用混合密码"
+
+msgid "IDS_BR_BUTTON_NEW_TAB_ABB2"
+msgstr "新页面"
+
+msgid "IDS_BR_NPBODY_WEB_ADDRESS_ABB"
+msgstr "网址"
+
+msgid "IDS_BR_HEADER_ADD_WEBPAGE_TO_QUICK_ACCESS_ABB"
+msgstr "将网页添加至快速访问"
+
+msgid "IDS_BR_TMBODY_TURN_ON_JAVASCRIPT"
+msgstr "开启 JavaScript"
+
+msgid "IDS_BR_HEADER_COULDNT_OPEN_NEW_TAB_ABB"
+msgstr "无法打开新页面"
+
+msgid "IDS_BR_OPT_OPEN_IN_NEW_TAB_ABB"
+msgstr "在新页面中打开"
+
+msgid "IDS_BR_TPOP_FOLDER_NAME_ALREADY_IN_USE"
+msgstr "文件夹名称已被使用"
+
+msgid "IDS_BR_NPBODY_NEW_FOLDER_PD"
+msgstr "新建文件夹 %d"
+
+msgid "IDS_BR_NPBODY_NEW_FOLDER"
+msgstr "新建文件夹"
+
+msgid "IDS_BR_OPT_ENABLE_JAVASCRIPT"
+msgstr "启用 JavaScript"
+
+msgid "IDS_BR_TMBODY_MANAGE_WEBSITE_DATA"
+msgstr "管理网站数据"
+
+msgid "IDS_BR_HEADER_SET_HOME_PAGE_ABB"
+msgstr "设置主页"
+
+msgid "IDS_BR_TPOP_WEBPAGE_ADDED_TO_QUICK_ACCESS_LIST"
+msgstr "网页已添加至快速访问列表"
+
+msgid "IDS_BR_OPT_EDIT_QUICK_ACCESS_ABB"
+msgstr "编辑快速访问"
+
+msgid "IDS_BR_OPT_REMOVE_FROM_BOOKMARKS_ABB"
+msgstr "从书签中移除"
+
+msgid "IDS_BR_HEADER_ADD_BOOKMARK_ABB"
+msgstr "添加书签"
+
+msgid "IDS_BR_BODY_BROWSING_HISTORY"
+msgstr "浏览历史"
+
+msgid "IDS_BR_HEADER_TABS_ABB2"
+msgstr "页面"
+
+msgid "IDS_BR_OPT_NEW_TAB"
+msgstr "新页面"
+
+msgid "IDS_BR_BUTTON_FORWARD_ABB2"
+msgstr "转发"
+
+msgid "IDS_BR_BUTTON_BACK_ABB3"
+msgstr "返回"
+
+msgid "IDS_BR_BUTTON_BOOKMARKS_ABB"
+msgstr "书签"
+
+msgid "IDS_BR_NPBODY_NO_PROFILES_ABB"
+msgstr "无个人资料"
+
+msgid "IDS_BR_TAB2_HISTORY"
+msgstr "历史记录"
+
+msgid "IDS_BR_TAB2_BOOKMARKS"
+msgstr "书签"
+

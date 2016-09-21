@@ -1,0 +1,26 @@
+color_classes {
+    color_class { name: "colorMainBg";
+                  color: 244 244 244 255;
+                }
+    color_class { name: "backgroundGreen";
+                  color: 0 255 0 150;
+                }
+    color_class { name: "backgroundRed";
+                  color: 255 0 0 150;
+                }
+    color_class { name: "colorPanelListDivider";
+                  color: 0 0 0 255/10; // 10%
+                }
+    color_class { name: "colorWebsiteHistoryItem";
+                  color: 255 255 255 255;
+                }
+    color_class { name: "colorWebsiteHistoryItemTitleMouseIn";
+                  color: 224 237 251 255;
+                }
+    color_class { name: "colorButtonDelete";
+                  color: 238 28 36 255;
+                }
+    color_class { name: "colorButtonDeletePress";
+                  color: 224 19 27 255;
+                }
+}

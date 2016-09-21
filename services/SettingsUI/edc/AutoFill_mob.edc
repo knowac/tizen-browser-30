@@ -1,0 +1,1056 @@
+collections { base_scale: 2.6;
+
+group {
+    name: "affdv-layout";
+    images {
+        image: "navi_ic_back_nor.png" COMP;
+    }
+    parts {
+        part {
+            name: "bg_clipper";
+            type : RECT;
+            scale: 1;
+            description {
+                state: "default" 0.0;
+                fixed: 0 0;
+                min: 1 1;
+                max: -1 -1;
+                visible: 1;
+                align: 0 0;
+                color: 243 243 243 255;
+                rel1 { relative: 0.0 0.0; }
+                rel2 { relative: 1.0 1.0; }
+            }
+        }
+        part {
+            name: "select_all_bg";
+            type: RECT;
+            mouse_events: 1;
+            scale: 1;
+            description {
+                state: "default" 0.0;
+                visible: 1;
+                fixed: 0 1;
+                align: 0 0;
+                min: 1 72;
+                max: -1 72;
+                color: 231 231 231 255;
+                rel1 { relative: 0.0 0.0; to: "bg_clipper";}
+                rel2 { relative: 1.0 1.0; }
+            }
+        }
+        rect {
+            name: "select_all_text_spacer";
+            scale: 1;
+            description {
+                state: "default" 0.0;
+                visible: 0;
+                align: 0 0;
+                fixed: 1 1;
+                min: 24 0;
+                max: 24 0;
+                rel1 { relative: 0.0 0.0; to: "select_all_bg";}
+                rel2 { relative: 1.0 1.0; to: "select_all_bg";}
+            }
+        }
+        rect {
+            name: "select_all_text_spacer_2";
+            scale: 1;
+            description {
+                state: "default" 0.0;
+                visible: 0;
+                align: 1 1;
+                fixed: 1 1;
+                min: 72 0;
+                max: 72 0;
+                rel1 { relative: 0.0 0.0; to: "select_all_bg";}
+                rel2 { relative: 1.0 1.0; to: "select_all_bg";}
+            }
+        }
+        part {
+            name: "select_all_text";
+            type: TEXT;
+            scale: 1;
+            description {
+                state: "default" 0.0;
+                min: 56 0;
+                fixed: 1 0;
+                align: 0 0;
+                color: 64 64 64 255;
+                rel1 { relative: 1.0 1.0; to: "select_all_text_spacer";}
+                rel2 { relative: 0.0 0.0; to: "select_all_text_spacer_2";}
+                text {
+                    text: "Select all";
+                    font: "Sans";
+                    size: 30;
+                    align: 0.0 0.5;
+                }
+            }
+        }
+        rect {
+            name: "select_all_checkbox_spacer";
+            scale: 1;
+            description {
+                state: "default" 0.0;
+                visible: 0;
+                align: 1 1;
+                fixed: 1 1;
+                min: 24 0;
+                max: 24 0;
+                rel1 { relative: 0.0 0.0; to: "select_all_bg";}
+                rel2 { relative: 1.0 1.0; to: "select_all_bg";}
+            }
+        }
+        part {
+            name: "select_all_checkbox";
+            scale:1;
+            mouse_events: 1;
+            type: SWALLOW;
+            description {
+                state: "default" 0.0;
+                visible: 1;
+                align: 1 0.5;
+                fixed: 1 1;
+                min: 48 48;
+                max: 48 48;
+                rel1 { relative: 0.0 0.0; to: "select_all_bg";}
+                rel2 { relative: 0.0 0.0; to: "select_all_checkbox_spacer";}
+            }
+        }
+        part {
+            name: "select_all_checkbox_button";
+            scale:1;
+            mouse_events: 1;
+            type: SWALLOW;
+            description {
+                state: "default" 0.0;
+                visible: 1;
+                align: 0 0.5;
+                fixed: 0 0;
+                min: 0 0;
+                max: -1 -1;
+                rel1 { relative: 0.0 0.0; to: "select_all_bg";}
+                rel2 { relative: 1.0 1.0; to: "select_all_bg";}
+                color_class: transparent;
+            }
+        }
+        part {
+            name: "bottom_bar_bg";
+            type: RECT;
+            scale: 1;
+            description {
+                state: "default" 0.0;
+                visible: 1;
+                fixed: 0 1;
+                align: 0 1;
+                min: 1 100;
+                max: -1 100;
+                color: 255 255 255 255;
+                rel1 { relative: 0.0 0.0; to: "bg_clipper";}
+                rel2 { relative: 1.0 1.0; to: "bg_clipper";}
+            }
+        }
+        part {
+            name: "del_bg_border";
+            type: RECT;
+            mouse_events: 1;
+            scale: 1;
+            description {
+                state: "default" 0.0;
+                visible: 1;
+                fixed: 0 1;
+                align: 0 0.5;
+                min: 1 100;
+                max: -1 100;
+                color: 0 0 0 77;
+                rel1 { relative: 0.0 0.0; to: "bottom_bar_bg";}
+                rel2 { relative: 1.0 1.0; to: "bottom_bar_bg";}
+            }
+        }
+        part {
+            name: "del_bg";
+            type: RECT;
+            mouse_events: 1;
+            scale: 1;
+            description {
+                state: "default" 0.0;
+                visible: 1;
+                fixed: 0 0;
+                align: 0.5 0.5;
+                min: 1 1;
+                max: -1 -1;
+                color: 255 255 255 255;
+                rel1 { relative: 0+(1/720) 0+(1/100); to: "del_bg_border";}
+                rel2 { relative: 1-(1/720) 1-(1/100); to: "del_bg_border";}
+            }
+        }
+        part {
+            name: "del_text";
+            type: TEXT;
+            scale: 1;
+            description {
+                state: "default" 0.0;
+                min: 56 0;
+                fixed: 1 0;
+                align: 0 0;
+                color: 64 64 64 255;
+                rel1 { relative: 0.0 0.0; to: "del_bg";}
+                rel2 { relative: 1.0 1.0; to: "del_bg";}
+                text {
+                    text: "Delete";
+                    font: "Sans";
+                    size: 40;
+                    align: 0.5 0.5;
+                }
+            }
+            description {
+                state: "dim" 0.0;
+                inherit: "default" 0.0;
+                color: 207 207 207 255;
+            }
+        }
+        part {
+            name: "del_button";
+            scale:1;
+            type: SWALLOW;
+            description {
+                state: "default" 0.0;
+                visible: 1;
+                align: 0.5 0.5;
+                fixed: 0 1;
+                min: 1 100;
+                max: -1 100;
+                rel1 { relative: 0.0 0.0; to: "del_bg";}
+                rel2 { relative: 1.0 1.0; to: "del_bg";}
+                color_class: transparent;
+            }
+        }
+        part {
+            name: "affdv_genlist";
+            scale:1;
+            type: SWALLOW;
+            description {
+                state: "default" 0.0;
+                visible: 1;
+                align: 0 0;
+                fixed: 0 0;
+                min: 1 0;
+                max: -1 -1;
+                rel1 { relative: 0.0 1.0; to: "select_all_bg";}
+                rel2 { relative: 1.0 0.0; to: "bottom_bar_bg";}
+            }
+        }
+    }
+    programs {
+        program {
+            name: "show_del_button";
+            signal: "show,del,button,signal";
+            source: "";
+            action: STATE_SET "default" 0.0;
+            target: "del_text";
+        }
+        program {
+            name: "dim_del_button";
+            signal: "dim,del,button,signal";
+            source: "";
+            action: STATE_SET "dim" 0.0;
+            target: "del_text";
+        }
+    }
+}
+
+group {
+    name: "elm/genlist/item/affdv_item/default";
+    data.item: "texts" "item_title";
+    data.item: "contents" "checkbox";
+    parts {
+        part {
+            name: "item_bg";
+            type: RECT;
+            scale: 1;
+            description {
+                state: "default" 0.0;
+                visible: 1;
+                align: 0 0;
+                min: 1 100;
+                max: -1 100;
+                color: 247 247 247 255;
+                rel1 { relative: 0.0 0.0; }
+                rel2 { relative: 1.0 1.0; }
+            }
+        }
+        rect {
+            name: "item_title_spacer";
+            scale: 1;
+            description {
+                state: "default" 0.0;
+                visible: 0;
+                align: 0 0;
+                fixed: 1 1;
+                min: 24 0;
+                max: 24 0;
+                rel1 { relative: 0.0 0.0; to: "item_bg";}
+                rel2 { relative: 1.0 1.0; to: "item_bg";}
+            }
+        }
+        rect {
+            name: "select_all_text_spacer_2";
+            scale: 1;
+            description {
+                state: "default" 0.0;
+                visible: 0;
+                align: 1 1;
+                fixed: 1 1;
+                min: 72 0;
+                max: 72 0;
+                rel1 { relative: 0.0 0.0; to: "item_bg";}
+                rel2 { relative: 1.0 1.0; to: "item_bg";}
+            }
+        }
+        part {
+            name: "item_title";
+            type: TEXT;
+            scale: 1;
+            description {
+                state: "default" 0.0;
+                min: 350 100;
+                max: -1 -1;
+                fixed: 0 0;
+                align: 0 0;
+                color: 64 64 64 255;
+                rel1 { relative: 1.0 1.0; to: "item_title_spacer";}
+                rel2 { relative: 0.0 0.0; to: "select_all_text_spacer_2";}
+                text {
+                    text: "First name";
+                    font: "Sans";
+                    size: 36;
+                    align: 0.0 0.5;
+                }
+            }
+        }
+        rect {
+            name: "checkbox_spacer";
+            scale: 1;
+            description {
+                state: "default" 0.0;
+                visible: 0;
+                align: 1 1;
+                fixed: 1 1;
+                min: 24 0;
+                max: 24 0;
+                rel1 { relative: 0.0 0.0; to: "item_bg";}
+                rel2 { relative: 1.0 1.0; to: "item_bg";}
+            }
+        }
+        part {
+            name: "checkbox";
+            scale:1;
+            type: SWALLOW;
+            description {
+                state: "default" 0.0;
+                visible: 1;
+                align: 1 0.5;
+                min: 48 48;
+                max: 48 48;
+                rel1 { relative: 0.0 0.0; to: "item_bg";}
+                rel2 { relative: 0.0 0.0; to: "checkbox_spacer";}
+            }
+        }
+    }
+}
+
+group {
+    name: "affcv-layout";
+    images {
+        image: "navi_ic_back_nor.png" COMP;
+    }
+    parts {
+        part {
+            name: "bg_clipper";
+            type : RECT;
+            scale: 1;
+            description {
+                state: "default" 0.0;
+                min: 1 1;
+                max: -1 -1;
+                visible: 1;
+                fixed: 0 0;
+                align: 0 0;
+                color: 255 255 255 255;
+                rel1 { relative: 0.0 0.0; }
+                rel2 { relative: 1.0 1.0; }
+            }
+        }
+        part {
+            name: "affcv_genlist";
+            scale:1;
+            type: SWALLOW;
+            description {
+                state: "default" 0.0;
+                visible: 1;
+                align: 0 0;
+                fixed: 0 0;
+                min: 1 0;
+                max: -1 -1;
+                rel1 { relative: 0.0 0.0; to: "bg_clipper";}
+                rel2 { relative: 1.0 1.0; to: "bg_clipper";}
+            }
+        }
+    }
+}
+
+group {
+    name : "affcv_item";
+    data.item: "texts" "field_name";
+    data.item: "contents" "entry_swallow entry_clear_button";
+    images {
+        image: "btn_bar_stop_nor.png" COMP;
+    }
+    parts {
+        part {
+            name: "bg";
+            scale : 1;
+            type : RECT;
+            description {
+                state: "default" 0.0;
+                min: 1 150;
+                max: -1 150;
+                visible: 1;
+                align: 0 0;
+                color: 255 255 255 255;
+                rel1 { relative: 0.0 0.0; }
+                rel2 { relative: 1.0 1.0; }
+            }
+        }
+        part {
+            name: "field_name";
+            type: TEXT;
+            scale: 1;
+            description {
+                state: "default" 0.0;
+                min: 350 50;
+                max: -1 50;
+                align: 0 0;
+                color: 64 64 64 255;
+                rel1 { relative: 0.05 0.0; to: "bg"; offset: 0 15;}
+                rel2 { relative: 1.0 1.0; to: "bg";}
+                text {
+                    text: "Full name";
+                    font: "Sans";
+                    size: 30;
+                    align: 0 0.0;
+                }
+            }
+        }
+        part {
+            name: "entry_swallow";
+            scale : 1;
+            type : SWALLOW;
+            description {
+                state: "default" 0.0;
+                min: 1 80;
+                max: -1 80;
+                visible: 1;
+                align: 0 0.8;
+                rel1 { relative: 0.05 0.0; to:"bg"; }
+                rel2 { relative: 0.95 1.0; to:"bg"; }
+            }
+        }
+        part {
+            name: "line";
+            scale : 1;
+            type : RECT;
+            description {
+                state: "default" 0.0;
+                min: 1 1;
+                max: -1 1;
+                visible: 1;
+                align: 0 0;
+                color: 0 0 0 255;
+                rel1 { relative: 0.05 1.0; to: "bg"; offset: 0 -1;}
+                rel2 { relative: 0.95 1.0; to: "bg";}
+            }
+        }
+    }
+}
+
+group {
+        name: "elm/entry/selection/entry_style";
+        parts {
+            part {
+                name: "bg";
+                scale:1;
+                type: RECT;
+                mouse_events: 0;
+                description {
+                    state: "default" 0.0;
+                    color: 224 237 251 255;
+                }
+            }
+        }
+    }
+    group {
+        name: "elm/entry/cursor/entry_style";
+        parts {
+            part {
+                name: "bg";
+                scale:1;
+                type: RECT;
+                mouse_events: 0;
+                description {
+                    state: "default" 0.0;
+                    color: 10 132 229 255;
+                    min: 3 38;
+                    max: 3 38;
+                    visible: 0;
+                }
+                description {
+                    state: "focused" 0.0;
+                    inherit: "default" 0.0;
+                    visible: 1;
+                }
+            }
+        }
+        programs {
+            program {
+                name: "focused";
+                signal: "elm,action,focus";
+                source: "elm";
+                action: STATE_SET "focused" 0.0;
+                target: "bg";
+                after: "cursor_show";
+            }
+            program {
+                name: "unfocused";
+                signal: "elm,action,unfocus";
+                source: "elm";
+                action: STATE_SET "default" 0.0;
+                target: "bg";
+                after: "stop_action";
+            }
+            program { name: "cursor_show";
+                action: STATE_SET "focused" 0.0;
+                target: "bg";
+                after: "cursor_show_timer";
+            }
+            program { name: "cursor_hide";
+                action: STATE_SET "default" 0.0;
+                target: "bg";
+                transition: SINUSOIDAL 0.2;
+                after: "cursor_hide_timer";
+            }
+            program { name: "cursor_show_timer";
+                in: 0.4 0.0;
+                after: "cursor_hide";
+            }
+            program { name: "cursor_hide_timer";
+                in: 0.3 0.0;
+                after: "cursor_show";
+            }
+            program {
+                name: "stop_action";
+                action: ACTION_STOP;
+                target: "cursor_show";
+                target: "cursor_hide";
+                target: "cursor_show_timer";
+                target: "cursor_hide_timer";
+            }
+        }
+    }
+
+group {
+    name: "elm/entry/base-single/entry_style";
+    data {
+        item: focus_highlight "off";
+    }
+    styles {
+        style {
+            name: "entry-style";
+            base: "font=Sans:style=SVD_Medium font_size="42" wrap=none color=#969696";
+            tag:  "br" "";
+        }
+    }
+    parts {
+        part {
+            name: "bg";
+            type : RECT;
+            scale: 1;
+            description {
+                state: "default" 0.0;
+                min: 1 80;
+                max: -1 80;
+                visible: 1;
+                fixed: 1 1;
+                align: 0 0;
+                color: 255 255 255 255;
+                rel1 { relative: 0.0 0.0; }
+                rel2 { relative: 1.0 1.0; }
+            }
+        }
+        part {
+            name: "elm.text";
+            scale: 1;
+            multiline: 0;
+            entry_mode: EDITABLE;
+            select_mode: DEFAULT;
+            cursor_mode: BEFORE;
+            type: TEXTBLOCK;
+            source: "elm/entry/selection/entry_style";
+            source4: "elm/entry/cursor/entry_style";
+            description {
+                state: "default" 0.0;
+                max: -1 80;
+                visible: 1;
+                fixed: 0 0;
+                rel1 { relative: 0.0 0.0; to: "bg";}
+                rel2 { relative: 1.0 1.0; to: "bg";}
+                align: 0.0 0.0;
+                text {
+                    style: "entry-style";
+                    min: 0 1;
+                }
+            }
+        }
+    }
+    programs {
+        program {
+            name: "focus";
+            signal: "load";
+            source: "";
+            action: FOCUS_SET;
+            target: "elm.text";
+        }
+    }
+}
+
+group {
+    name: "edit-field";
+    data {
+        item: focus_highlight "off";
+    }
+    parts {
+        part {
+            name: "editfield_entry";
+            scale : 1;
+            type : SWALLOW;
+            description {
+                state: "default" 0.0;
+                fixed: 0 1;
+                min: 1 80;
+                max: -1 80;
+                visible: 1;
+                align: 0.0 0.0;
+                rel1 { relative: 0.0 0.0; }
+                rel2 { relative: 1.0 1.0; }
+            }
+            description {
+                state: "show" 0.0;
+                inherit: "default";
+                rel2 {
+                    relative: 0.0 1.0;
+                    to: "clear_icon";
+                }
+            }
+        }
+        part {
+            name: "clear_icon";
+            type: IMAGE;
+            mouse_events: 1;
+            scale: 1;
+            description {
+                state: "default" 0.0;
+                visible: 0;
+                fixed: 1 1;
+                align: 1 0.5;
+                min: 56 56;
+                max: 56 56;
+                rel1 { relative: 0.0 0.0;}
+                rel2 { relative: 1.0 1.0;}
+                image.normal: "btn_bar_stop_nor.png";
+            }
+            description {
+                state: "show" 0.0;
+                inherit: "default" 0.0;
+                visible: 1;
+            }
+        }
+        part {
+            name: "entry_clear_button";
+            scale : 1;
+            type : SWALLOW;
+            description {
+                state: "default" 0.0;
+                min: 56 56;
+                max: 56 56;
+                visible: 0;
+                align: 0.0 0.0;
+                rel1 { relative: 0.0 0.0; to:"clear_icon"; }
+                rel2 { relative: 1.0 1.0; to:"clear_icon"; }
+            }
+            description {
+                state: "show" 0.0;
+                inherit: "default" 0.0;
+                visible: 1;
+            }
+        }
+    }
+    programs {
+        program {
+            name: "show_clear_button";
+            signal: "show,clear,button,signal";
+            source: "";
+            action: STATE_SET "show" 0.0;
+            target: "clear_icon";
+            target: "entry_clear_button";
+            target: "editfield_entry";
+        }
+        program {
+            name: "hide_clear_button";
+            signal: "hide,clear,button,signal";
+            source: "";
+            action: STATE_SET "default" 0.0;
+            target: "clear_icon";
+            target: "entry_clear_button";
+            target: "editfield_entry";
+        }
+    }
+}
+
+group {
+    name: "afflv-layout";
+    images {
+        image: "navi_ic_back_nor.png" COMP;
+    }
+    parts {
+        part {
+            name: "bg_clipper";
+            type : RECT;
+            scale: 1;
+            description {
+                state: "default" 0.0;
+                min: 1 1;
+                max: -1 -1;
+                visible: 1;
+                fixed: 0 0;
+                align: 0 0;
+                color: 243 243 243 255;
+                rel1 { relative: 0.0 0.0; }
+                rel2 { relative: 1.0 1.0; }
+            }
+        }
+        part {
+            name: "profile_bg";
+            type: RECT;
+            scale: 1;
+            description {
+                state: "default" 0.0;
+                visible: 1;
+                fixed: 0 1;
+                align: 0 0;
+                min: 1 72;
+                max: -1 72;
+                color: 231 231 231 255;
+                rel1 { relative: 0.0 0.0; to: "bg_clipper";}
+                rel2 { relative: 1.0 1.0; }
+            }
+        }
+        rect {
+            name: "profile_text_spacer";
+            scale: 1;
+            description {
+                state: "default" 0.0;
+                visible: 0;
+                align: 0 0;
+                fixed: 1 1;
+                min: 24 0;
+                max: 24 0;
+                rel1 { relative: 0.0 0.0; to: "profile_bg";}
+                rel2 { relative: 1.0 1.0; to: "profile_bg";}
+            }
+        }
+        part {
+            name: "profile_text";
+            type: TEXT;
+            scale: 1;
+            description {
+                state: "default" 0.0;
+                min: 56 0;
+                fixed: 1 0;
+                align: 0 0;
+                color: 64 64 64 255;
+                rel1 { relative: 1.0 1.0; to: "profile_text_spacer";}
+                rel2 { relative: 1.0 1.0; to: "profile_bg";}
+                text {
+                    font: "Sans";
+                    size: 30;
+                    align: 0.0 0.5;
+                }
+            }
+        }
+        part {
+            name: "bottom_bar_bg";
+            type: RECT;
+            scale: 1;
+            description {
+                state: "default" 0.0;
+                visible: 1;
+                fixed: 0 1;
+                align: 0 1;
+                min: 1 100;
+                max: -1 100;
+                color: 255 255 255 255;
+                rel2 { relative: 1 1; to: "bg_clipper";}
+            }
+        }
+        part {
+            name: "add_profile_bg_border";
+            type: RECT;
+            mouse_events: 1;
+            scale: 1;
+            description {
+                state: "default" 0.0;
+                visible: 1;
+                fixed: 0 1;
+                align: 0 0;
+                min: 1 100;
+                max: -1 100;
+                color: 0 0 0 77;
+                rel1 { relative: 0.0 0.0; to: "bottom_bar_bg";}
+                rel2 { relative: 0.5 1.0; to: "bottom_bar_bg";}
+            }
+        }
+        part {
+            name: "add_profile_bg";
+            type: RECT;
+            mouse_events: 1;
+            scale: 1;
+            description {
+                state: "default" 0.0;
+                visible: 1;
+                fixed: 0 0;
+                align: 0 0.5;
+                min: 1 1;
+                max: -1 -1;
+                color: 255 255 255 255;
+                rel1 { relative: 0+(1/720) 0+(1/100); to: "add_profile_bg_border";}
+                rel2 { relative: 1-(1/720) 1-(1/100); to: "add_profile_bg_border";}
+            }
+        }
+        part {
+            name: "add_profile_text";
+            type: TEXT;
+            scale: 1;
+            description {
+                state: "default" 0.0;
+                min: 56 1;
+                max: -1 100;
+                fixed: 0 0;
+                align: 0 0;
+                color: 64 64 64 255;
+                rel1 { relative: 0.0 0.0; to: "add_profile_bg";}
+                rel2 { relative: 1.0 1.0; to: "add_profile_bg";}
+                text {
+                    text: "Add";
+                    font: "Sans";
+                    size: 40;
+                    align: 0.5 0.5;
+                }
+            }
+        }
+        part {
+            name: "add_profile_button";
+            scale:1;
+            type: SWALLOW;
+            description {
+                state: "default" 0.0;
+                visible: 1;
+                align: 0 0;
+                fixed: 1 1;
+                min: 1 100;
+                max: -1 100;
+                rel1 { relative: 0.0 0.0; to: "add_profile_bg";}
+                rel2 { relative: 1.0 1.0; to: "add_profile_bg";}
+                color_class: transparent;
+            }
+        }
+        part {
+            name: "delete_profile_bg_border";
+            type: RECT;
+            mouse_events: 1;
+            scale: 1;
+            description {
+                state: "default" 0.0;
+                visible: 1;
+                fixed: 0 1;
+                align: 0 0;
+                min: 1 100;
+                max: -1 100;
+                color: 0 0 0 77;
+                rel1 { relative: 0.5 0.0; to: "bottom_bar_bg";}
+                rel2 { relative: 1.0 1.0; to: "bottom_bar_bg";}
+            }
+        }
+        part {
+            name: "delete_profile_bg";
+            type: RECT;
+            mouse_events: 1;
+            scale: 1;
+            description {
+                state: "default" 0.0;
+                visible: 1;
+                fixed: 0 0;
+                align: 1 0.5;
+                min: 1 1;
+                max: -1 -1;
+                color: 255 255 255 255;
+                rel1 { relative: 0+(1/720) 0+(1/100); to: "delete_profile_bg_border";}
+                rel2 { relative: 1-(1/720) 1-(1/100); to: "delete_profile_bg_border";}
+            }
+        }
+        part {
+            name: "delete_profile_text";
+            type: TEXT;
+            scale: 1;
+            description {
+                state: "default" 0.0;
+                min: 56 0;
+                fixed: 1 0;
+                align: 0 0;
+                color: 64 64 64 255;
+                rel1 { relative: 0.0 0.0; to: "delete_profile_bg";}
+                rel2 { relative: 1.0 1.0; to: "delete_profile_bg";}
+                text {
+                    text: "Delete";
+                    font: "Sans";
+                    size: 40;
+                    align: 0.5 0.5;
+                }
+            }
+            description {
+                state: "dim" 0.0;
+                inherit: "default" 0.0;
+                color: 207 207 207 255;
+            }
+        }
+        part {
+            name: "delete_profile_button";
+            scale:1;
+            type: SWALLOW;
+            description {
+                state: "default" 0.0;
+                visible: 1;
+                align: 0 0;
+                fixed: 1 1;
+                min: 1 100;
+                max: -1 100;
+                rel1 { relative: 0.0 0.0; to: "delete_profile_bg";}
+                rel2 { relative: 1.0 1.0; to: "delete_profile_bg";}
+                color_class: transparent;
+            }
+        }
+        part {
+            name: "afflv_genlist";
+            scale:1;
+            type: SWALLOW;
+            description {
+                state: "default" 0.0;
+                visible: 1;
+                align: 0 0;
+                fixed: 0 0;
+                min: 1 1;
+                max: -1 -1;
+                rel1 { relative: 0.0 1.0; to: "profile_bg";}
+                rel2 { relative: 1.0 0.0; to: "bottom_bar_bg";}
+            }
+        }
+    }
+    programs {
+        program {
+            name: "show_del_button";
+            signal: "show,del,button,signal";
+            source: "";
+            action: STATE_SET "default" 0.0;
+            target: "delete_profile_text";
+        }
+        program {
+            name: "dim_del_button";
+            signal: "dim,del,button,signal";
+            source: "";
+            action: STATE_SET "dim" 0.0;
+            target: "delete_profile_text";
+        }
+    }
+}
+
+group {
+    name: "elm/genlist/item/afflv_item/default";
+    data.item: "texts" "item_title";
+    parts {
+        part {
+            name: "item_bg";
+            type: RECT;
+            scale: 1;
+            description {
+                state: "default" 0.0;
+                visible: 1;
+                align: 0 0;
+                min: 1 100;
+                max: -1 100;
+                color: 247 247 247 255;
+                rel1 { relative: 0.0 0.0; }
+                rel2 { relative: 1.0 1.0; }
+            }
+        }
+        rect {
+            name: "item_title_spacer";
+            scale: 1;
+            description {
+                state: "default" 0.0;
+                visible: 0;
+                align: 0 0;
+                fixed: 1 1;
+                min: 24 0;
+                max: 24 0;
+                rel1 { relative: 0.0 0.0; to: "item_bg";}
+                rel2 { relative: 1.0 1.0; to: "item_bg";}
+            }
+        }
+        rect {
+            name: "item_title_spacer_2";
+            scale: 1;
+            description {
+                state: "default" 0.0;
+                visible: 0;
+                align: 1 1;
+                fixed: 1 1;
+                min: 24 0;
+                max: 24 0;
+                rel1 { relative: 0.0 0.0; to: "item_bg";}
+                rel2 { relative: 1.0 1.0; to: "item_bg";}
+            }
+        }
+        part {
+            name: "item_title";
+            type: TEXT;
+            scale: 1;
+            description {
+                state: "default" 0.0;
+                min: 350 100;
+                max: -1 -1;
+                fixed: 0 0;
+                align: 0 0;
+                color: 64 64 64 255;
+                rel1 { relative: 1.0 1.0; to: "item_title_spacer";}
+                rel2 { relative: 0.0 0.0; to: "item_title_spacer_2";}
+                text {
+                    text: "First name";
+                    font: "Sans";
+                    size: 36;
+                    align: 0.0 0.5;
+                }
+            }
+        }
+    }
+}
+
+} // Collections

@@ -1,0 +1,39 @@
+#include "../../../core/Tools/edc/BrowserTextButton.edc"
+
+collections { base_scale: 2.0;
+    group {
+        name: "bottom_button";
+        parts {
+            part {
+                name: "spacer";
+                scale: 1;
+                type: SPACER;
+                description {
+                    state: "default" 0.0;
+                    min: 0 56;
+                    max: -1 56;
+                    fixed: 0 1;
+                    align: 0.0 0.0;
+                }
+            }
+            part {
+                name: "bookmark_manager_btn";
+                scale: 1;
+                type: SWALLOW;
+                mouse_events: 1;
+                repeat_events: 1;
+                description {
+                    state: "default" 0.0;
+                    align: 0.0 0.5;
+                    min: 348 64;
+                    max: 348 64;
+                    align: 0.5 0.0;
+                    rel1 {
+                        to: "spacer";
+                        relative: 0 1;
+                    }
+                }
+            }
+        }
+    }
+}

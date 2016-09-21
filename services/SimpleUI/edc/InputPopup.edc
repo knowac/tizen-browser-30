@@ -1,0 +1,779 @@
+#include "../../../core/Tools/edc/InvisibleButton.edc"
+
+#define DEVELOPMENT 0
+
+#define WIDTH 1920
+#define HEIGHT 1080
+#define POPUP_WIDTH 740
+#define POPUP_HEIGHT 388
+#define TITLE_HEIGHT 88
+#define INPUT_HEIGHT 210
+#define BUTTON_HEIGHT 90
+#define BUTTON_WIDTH 370
+#define TITLE_TEXT_OFFSET_X 40
+#define TITLE_TEXT_OFFSET_Y 46
+#define TITLE_TEXT_WIDTH 660
+#define TITLE_TEXT_HEIGHT 42
+#define BUTTON_TEXT_OFFSET_X 30
+#define BUTTON_TEXT_OFFSET_Y 0
+#define BUTTON_TEXT_WIDTH 310
+#define BUTTON_TEXT_HEIGHT 36
+#define MESSAGE_TEXT_OFFSET_X 40
+#define MESSAGE_TEXT_OFFSET_Y 24
+#define MESSAGE_TEXT_WIDTH 660
+#define MESSAGE_TEXT_HEIGHT 32
+#define INPUT_OFFSET_Y 88
+#define INPUT_AREA_HEIGHT 122
+#define INPUT_TEXT_WIDTH 488
+#define INPUT_TEXT_HEIGHT 68
+
+collections{
+
+#if PROFILE_MOBILE
+    base_scale: 2.6;
+#else
+    base_scale: 2.0;
+#endif
+
+    group {
+        name: "elm/entry/selection/browser_entry";
+        parts {
+            part {
+                name: "bg";
+                scale: 1;
+                type: RECT;
+                mouse_events: 0;
+                description {
+                    state: "default" 0.0;
+                    color: 255 255 255 255;
+                }
+            }
+        }
+    }
+    group {
+        name: "elm/entry/cursor/browser_entry";
+        parts {
+            part {
+                name: "bg";
+                scale: 1;
+                type: RECT;
+                mouse_events: 0;
+                description {
+                    state: "default" 0.0;
+                    color: 10 132 229 255;
+                    min: 3 60;
+                    max: 3 60;
+                    visible: 0;
+                }
+                description {
+                    state: "focused" 0.0;
+                    inherit: "default" 0.0;
+                    visible: 1;
+                }
+            }
+        }
+        programs {
+            program {
+                name: "focused";
+                signal: "elm,action,focus";
+                source: "elm";
+                action: STATE_SET "focused" 0.0;
+                target: "bg";
+            }
+            program {
+                name: "unfocused";
+                signal: "elm,action,unfocus";
+                source: "elm";
+                action: STATE_SET "default" 0.0;
+                target: "bg";
+            }
+        }
+    }
+    group {
+        name: "elm/entry/base-single/popup-input-entry";
+        styles {
+            style {
+                name: "input_text_style";
+                base: "font=BreezeSans:style=Light font_size=50 wrap=none color=#333333 align=0.0 valign=0.5 ellipsis=1.0"; //68
+                tag:  "br" "";
+            }
+            style {
+                name: "guide_text_style";
+                base: "font=BreezeSans:style=Light font_size=50 wrap=none color=#969696 align=0.0 valign=0.5 ellipsis=1.0"; //68
+                tag:  "br" "";
+            }
+        }
+        data {
+            item: focus_highlight "off";
+        }
+        parts {
+            part {
+                name: "bg";
+                scale: 1;
+                type: RECT;
+                mouse_events: 0;
+                description {
+                    state: "default" 0.0;
+                    color: 244 244 244 255;
+                }
+                description {
+                    state: "focused" 0.0;
+                    color: 224 237 251 255;
+                }
+            }
+            part {
+                name: "label.text.clip";
+                scale: 1;
+                type: RECT;
+                description {
+                    state: "default" 0.0;
+                }
+            }
+            part {
+                name: "elm.text";
+                scale: 1;
+                multiline: 0;
+                entry_mode: EDITABLE;
+                select_mode: DEFAULT;
+                cursor_mode: BEFORE;
+                type: TEXTBLOCK;
+                clip_to: "label.text.clip";
+                source: "elm/entry/selection/browser_entry";
+                source4: "elm/entry/cursor/browser_entry";
+                description {
+                    state: "default" 0.0;
+                    min: 0 INPUT_TEXT_HEIGHT;
+                    max: -1 INPUT_TEXT_HEIGHT;
+                    rel1 {
+                        to: "bg";
+                        relative: 0.0 0.0;
+                    }
+                    rel2.relative: 1.0 1.0;
+                    align: 0.0 0.0;
+                    text.style: "input_text_style";
+                }
+            }
+            part {
+                name: "elm.guide";
+                scale: 1;
+                type: TEXTBLOCK;
+                mouse_events: 0;
+                description {
+                    state: "default" 0.0;
+                    rel1 {
+                        to: "bg";
+                        relative: 0.0 0.0;
+                    }
+                    rel2.relative: 1.0 1.0;
+                    min: 0 INPUT_TEXT_HEIGHT;
+                    max: -1 INPUT_TEXT_HEIGHT;
+                    text {
+                        text: "Input folder name";
+                        style: "guide_text_style";
+                    }
+                }
+                description {
+                    state: "hidden" 0.0;
+                    inherit: "default" 0.0;
+                    visible: 0;
+                }
+            }
+        }
+        programs {
+            program {
+                name: "focus";
+                signal: "load";
+                source: "";
+                action: FOCUS_SET;
+                target: "elm.text";
+            }
+            program {
+                name: "focused";
+                signal: "focused";
+                source: "ui";
+                action: STATE_SET "focused" 0.0;
+                target: "bg";
+            }
+            program {
+                name: "unfocused";
+                signal: "unfocused";
+                source: "ui";
+                action: STATE_SET "default" 0.0;
+                target: "bg";
+            }
+            program {
+                name: "gdisabled";
+                signal: "elm,guide,disabled";
+                source: "elm";
+                action: STATE_SET "hidden" 0.0;
+                target: "elm.guide";
+            }
+            program {
+                name: "genabled";
+                signal: "elm,guide,enabled";
+                source: "elm";
+                action: STATE_SET "default" 0.0;
+                target: "elm.guide";
+            }
+        }
+    }
+    group {
+        name: "input-popup-layout";
+        styles {
+            style {
+                name: "title_text_style";
+                base: "font=BreezeSans:style=Light font_size=34 wrap=none color=#333333 align=0.5 valign=1.0 ellipsis=1.0";
+            }
+        }
+        parts {
+            part {
+                name: "dimmed-bg";
+                type: RECT;
+                scale: 1;
+                description {
+                    state: "default" 0.0;
+                    visible: 1;
+                    color: 0 0 0 102;
+                    align: 0.0 0.0;
+                    min: WIDTH HEIGHT;
+                    max: WIDTH HEIGHT;
+                    fixed: 1 1;
+                    rel1.relative: 0.0 0.0;
+                    rel2.relative: 1.0 1.0;
+                }
+            }
+            part {
+                name: "bg";
+                type: RECT;
+                scale: 1;
+                description {
+                    state: "default" 0.0;
+                    visible: DEVELOPMENT;
+                    color: 198 113 113 255; //salmon
+                    align: 0.5 0.0; //TODO: 0.5 0.5
+                    min: POPUP_WIDTH POPUP_HEIGHT;
+                    max: POPUP_WIDTH POPUP_HEIGHT;
+                    fixed: 1 1;
+                    rel1 {
+                        relative: 0.0 0.0;
+                        to: "dimmed-bg";
+                    }
+                    rel2 {
+                        relative: 1.0 1.0;
+                        to: "dimmed-bg";
+                    }
+                }
+            }
+            part {
+                name: "title_bg";
+                type: RECT;
+                scale: 1;
+                description {
+                    state: "default" 0.0;
+                    visible: 1;
+                    color: 255 255 255 255;
+                    align: 0.5 0.0;
+                    min: POPUP_WIDTH TITLE_HEIGHT;
+                    max: POPUP_WIDTH TITLE_HEIGHT;
+                    rel1 {
+                        relative: 0.0 0.0;
+                        to: "bg";
+                    }
+                    rel2 {
+                        relative: 1.0 1.0;
+                        to: "bg";
+                    }
+                }
+            }
+            part {
+                name: "title_text_spacer";
+                type: RECT;
+                scale: 1;
+                description {
+                    state: "default" 0.0;
+                    visible: DEVELOPMENT;
+                    color: 255 255 255 127;
+                    min: TITLE_TEXT_OFFSET_X TITLE_TEXT_OFFSET_Y;
+                    max: TITLE_TEXT_OFFSET_X TITLE_TEXT_OFFSET_Y;
+                    align: 0.0 0.0;
+                    rel1 {
+                        relative: 0.0 0.0;
+                        to: "title_bg";
+                    }
+                    rel2 {
+                        relative: 1.0 1.0;
+                        to: "bg";
+                    }
+                }
+            }
+            part {
+                name: "title_text_bg";
+                type: RECT;
+                scale: 1;
+                description {
+                    state: "default" 0.0;
+                    visible: DEVELOPMENT;
+                    color: 255 182 193 255; //lightpink
+                    align: 0.0 0.0;
+                    min: TITLE_TEXT_WIDTH TITLE_TEXT_HEIGHT;
+                    max: TITLE_TEXT_WIDTH TITLE_TEXT_HEIGHT;
+                    rel1 {
+                        relative: 1.0 1.0;
+                        to: "title_text_spacer";
+                    }
+                    rel2 {
+                        relative: 1.0 1.0;
+                        to: "bg";
+                    }
+                }
+            }
+            part {
+                name: "title_text";
+                type: TEXTBLOCK;
+                scale: 1;
+                description {
+                    state: "default" 0.0;
+                    visible: 1;
+                    align: 0.0 0.0;
+                    min: TITLE_TEXT_WIDTH TITLE_TEXT_HEIGHT;
+                    max: TITLE_TEXT_WIDTH TITLE_TEXT_HEIGHT;
+                    rel1 {
+                        relative: 0.0 0.0;
+                        to: "title_text_bg";
+                    }
+                    rel2 {
+                        relative: 1.0 1.0;
+                        to: "title_text_bg";
+                    }
+                    text.style: "title_text_style";
+                }
+            }
+            part {
+                name: "input_swallow";
+                type: SWALLOW;
+                scale: 1;
+                mouse_events: 1;
+                repeat_events: 1;
+                description {
+                    state: "default" 0.0;
+                    min: POPUP_WIDTH INPUT_HEIGHT;
+                    max: POPUP_WIDTH INPUT_HEIGHT;
+                    align: 0.0 0.0;
+                    visible: 1;
+                    rel1 {
+                        relative: 0.0 1.0;
+                        to: "title_bg";
+                    }
+                    rel2 {
+                        relative: 1.0 1.0;
+                        to: "bg";
+                    }
+                }
+            }
+            part {
+                name: "buttons_bg";
+                type: RECT;
+                scale: 1;
+                description {
+                    state: "default" 0.0;
+                    visible: 1;
+                    color: 0 255 255 255;
+                    align: 0.0 0.0;
+                    min: POPUP_WIDTH BUTTON_HEIGHT;
+                    max: POPUP_WIDTH BUTTON_HEIGHT;
+                    rel1 {
+                        relative: 0.0 1.0;
+                        to: "input_swallow";
+                    }
+                    rel2 {
+                        relative: 1.0 1.0;
+                        to: "bg";
+                    }
+                }
+            }
+            part {
+                name: "buttons_swallow";
+                type: SWALLOW;
+                scale: 1;
+                description {
+                    state: "default" 0.0;
+                    min: POPUP_WIDTH BUTTON_HEIGHT;
+                    max: POPUP_WIDTH BUTTON_HEIGHT;
+                    align: 0.0 0.0;
+                    rel1 {
+                        relative: 0.0 0.0;
+                        to: "buttons_bg";
+                    }
+                    rel2 {
+                        relative: 1.0 1.0;
+                        to: "buttons_bg";
+                    }
+                }
+            }
+        }
+    }
+    group {
+        name: "input-area-layout";
+        styles {
+            style {
+                name: "message_text_normal_style";
+                base: "font=Tizen:style=Regular font_size=25 wrap=none color=#686868 align=0.5 valign=1.0 ellipsis=1.0";
+            }
+            style {
+                name: "message_text_highlight_style";
+                base: "font=Tizen:style=Regular font_size=25 wrap=none color=#686868 align=0.5 valign=1.0 ellipsis=1.0";
+            }
+        }
+        parts {
+            part {
+                name: "bg";
+                type: RECT;
+                scale: 1;
+                description {
+                    state: "default" 0.0;
+                    visible: 1;
+                    color: 255 255 255 255;
+                    align: 0.0 0.0;
+                    min: POPUP_WIDTH INPUT_HEIGHT;
+                    max: POPUP_WIDTH INPUT_HEIGHT;
+                    rel1.relative: 0.0 0.0;
+                    rel2.relative: 1.0 1.0;
+                }
+            }
+            part {
+                name: "input_message_spacer";
+                type: RECT;
+                scale: 1;
+                description {
+                    state: "default" 0.0;
+                    visible: DEVELOPMENT;
+                    color: 255 0 0 127;
+                    align: 0.0 0.0;
+                    min: MESSAGE_TEXT_OFFSET_X MESSAGE_TEXT_OFFSET_Y;
+                    max: MESSAGE_TEXT_OFFSET_X MESSAGE_TEXT_OFFSET_Y;
+                    rel1 {
+                        relative: 0.0 0.0;
+                        to: "bg";
+                    }
+                    rel2.relative: 1.0 1.0;
+                }
+            }
+            part {
+                name: "input_message_bg";
+                type: RECT;
+                scale: 1;
+                description {
+                    state: "default" 0.0;
+                    visible: DEVELOPMENT;
+                    color: 202 225 255 255; //lightsteelblue
+                    align: 0.0 0.0;
+                    min: MESSAGE_TEXT_WIDTH MESSAGE_TEXT_HEIGHT;
+                    max: MESSAGE_TEXT_WIDTH MESSAGE_TEXT_HEIGHT;
+                    rel1 {
+                        relative: 1.0 1.0;
+                        to: "input_message_spacer";
+                    }
+                    rel2.relative: 1.0 1.0;
+                }
+            }
+            part {
+                name: "input_message_text";
+                type: TEXTBLOCK;
+                scale: 1;
+                description {
+                    state: "default";
+                    visible: 1;
+                    align: 0.0 0.0;
+                    min: MESSAGE_TEXT_WIDTH MESSAGE_TEXT_HEIGHT;
+                    max: MESSAGE_TEXT_WIDTH MESSAGE_TEXT_HEIGHT;
+                    rel1 {
+                        relative: 0.0 0.0;
+                        to: "input_message_bg";
+                    }
+                    rel2 {
+                        relative: 1.0 1.0;
+                        to: "input_message_bg";
+                    }
+                    text.style: "message_text_normal_style";
+                }
+                description {
+                    state: "highlighted" 0.0;
+                    inherit: "default";
+                    text.style: "message_text_highlight_style";
+                }
+            }
+            part {
+                name: "input_area_spacer";
+                type: RECT;
+                scale: 1;
+                mouse_events: 0;
+                description {
+                    state: "default" 0.0;
+                    align: 0.0 0.0;
+                    min: 0 INPUT_OFFSET_Y;
+                    max: 0 INPUT_OFFSET_Y;
+                    visible: DEVELOPMENT;
+                    color: 255 255 255 127;
+                    rel1 {
+                        relative: 0.0 0.0;
+                        to: "bg";
+                    }
+                    rel2.relative: 1.0 1.0;
+                }
+            }
+            part {
+                name: "input_area_bg";
+                type: RECT;
+                scale: 1;
+                mouse_events: 0;
+                description {
+                    state: "default" 0.0;
+                    align: 0.0 0.0;
+                    min: POPUP_WIDTH INPUT_AREA_HEIGHT;
+                    max: POPUP_WIDTH INPUT_AREA_HEIGHT;
+                    visible: 0;
+                    color: 224 237 251 255;
+                    rel1 {
+                        relative: 1.0 1.0;
+                        to: "input_area_spacer";
+                    }
+                    rel2.relative: 1.0 1.0;
+                }
+            }
+            part {
+                name: "input_text_bg";
+                type: RECT;
+                scale: 1;
+                mouse_events: 0;
+                description {
+                    state: "default" 0.0;
+                    align: 0.5 0.0;
+                    min: INPUT_TEXT_WIDTH INPUT_TEXT_HEIGHT;
+                    max: INPUT_TEXT_WIDTH INPUT_TEXT_HEIGHT;
+                    visible: DEVELOPMENT;
+                    color: 238 229 222 255; //seashell
+                    rel1 {
+                        relative: 0.0 0.0;
+                        to: "input_area_bg";
+                    }
+                    rel2 {
+                        relative: 1.0 1.0;
+                        to: "input_area_bg";
+                    }
+                }
+            }
+            part {
+                name: "input_text_swallow";
+                type: SWALLOW;
+                scale: 1;
+                mouse_events: 1;
+                description {
+                    state: "default" 0.0;
+                    align: 0.0 0.0;
+                    min: INPUT_TEXT_WIDTH INPUT_TEXT_HEIGHT;
+                    max: INPUT_TEXT_WIDTH INPUT_TEXT_HEIGHT;
+                    rel1 {
+                        relative: 0.0 0.0;
+                        to: "input_text_bg";
+                    }
+                    rel2 {
+                        relative: 1.0 1.0;
+                        to: "input_text_bg";
+                    }
+                }
+            }
+        }
+    }
+    group {
+        name: "elm/button/base/input-popup-button";
+        styles {
+            style {
+                name: "button_text_style_normal";
+                base: "font=BreezeSans:style=Light font_size=29 wrap=none color=#575757 align=0.5 valign=0.5 ellipsis=1.0"; //36
+            }
+            style {
+                name: "button_text_style_focused";
+                base: "font=BreezeSans:style=Light font_size=29 wrap=none color=#ffffff align=0.5 valign=0.5 ellipsis=1.0"; //36
+            }
+            style {
+                name: "button_text_style_dissabled";
+                base: "font=BreezeSans:style=Light font_size=29 wrap=none color=#ababab align=0.5 valign=0.5"; //36
+            }
+        }
+        parts {
+            part {
+                name: "bg";
+                type: RECT;
+                scale: 1;
+                description {
+                    state: "default" 0.0;
+                    visible: 1;
+                    align: 0.5 0.5;
+                    fixed: 1 1;
+                    color: 246 246 246 255;
+                    min: BUTTON_WIDTH BUTTON_HEIGHT;
+                    max: BUTTON_WIDTH BUTTON_HEIGHT;
+                }
+                description {
+                    state: "focused" 0.0;
+                    inherit: "default" 0.0;
+                    color: 0 119 246 255;
+                }
+            }
+            part {
+                name: "divider_horizontal";
+                type: RECT;
+                scale: 1;
+                description {
+                    state: "default" 0.0;
+                    visible: 1;
+                    align: 0.5 0.0;
+                    color: 227 227 227 255;
+                    min: BUTTON_WIDTH 1;
+                    max: BUTTON_WIDTH 1;
+                    rel1 {
+                        relative: 0.0 0.0;
+                        to: "bg";
+                    }
+                    rel2.relative: 1.0 1.0;
+                }
+            }
+            part {
+                name: "divider_vertical";
+                type: RECT;
+                scale: 1;
+                description {
+                    state: "default" 0.0;
+                    visible: 0;
+                    align: 0.0 0.0;
+                    color: 227 227 227 255;
+                    min: 1 BUTTON_HEIGHT;
+                    max: 1 BUTTON_HEIGHT;
+                    rel1 {
+                        relative: 0.0 0.0;
+                        to: "bg";
+                    }
+                    rel2.relative: 1.0 1.0;
+                }
+                description {
+                    state: "visible" 0.0;
+                    inherit: "default";
+                    visible: 1;
+                }
+            }
+            part {
+                name: "text_bg";
+                type: RECT;
+                scale: 1;
+                description {
+                    state: "default" 0.0;
+                    visible: DEVELOPMENT;
+                    align: 0.5 0.5;
+                    color: 255 0 255 255; //magenta
+                    min: BUTTON_TEXT_WIDTH BUTTON_TEXT_HEIGHT;
+                    max: BUTTON_TEXT_WIDTH BUTTON_TEXT_HEIGHT;
+                    rel1 {
+                        relative: 0.0 0.0;
+                        to: "bg";
+                    }
+                    rel2 {
+                        relative: 1.0 1.0;
+                        to: "bg";
+                    }
+                }
+            }
+            part {
+                name: "elm.text";
+                type: TEXTBLOCK;
+                scale: 1;
+                mouse_events: 0;
+                description {
+                    state: "default" 0.0;
+                    visible: 1;
+                    min: BUTTON_TEXT_WIDTH BUTTON_TEXT_HEIGHT;
+                    max: BUTTON_TEXT_WIDTH BUTTON_TEXT_HEIGHT;
+                    rel1 {
+                        relative: 0.0 0.0;
+                        to: "text_bg";
+                    }
+                    rel2 {
+                        relative: 1.0 1.0;
+                        to: "text_bg";
+                    }
+                    text.style: "button_text_style_normal";
+                }
+                description {
+                    state: "dissabled" 0.0;
+                    inherit: "default";
+                    text.style: "button_text_style_dissabled";
+                }
+                description {
+                    state: "focused" 0.0;
+                    inherit: "default";
+                    text.style: "button_text_style_focused";
+                }
+            }
+            part {
+                name: "over";
+                scale: 1;
+                mouse_events: 1;
+                repeat_events: 0;
+                type: RECT;
+                description {
+                    state: "default" 0.0;
+                    visible: 1;
+                    rel1 { relative: 0.0 0.0; to: "bg";}
+                    rel2 { relative: 1.0 1.0; to: "bg";}
+                    color: 0 0 0 0;
+                }
+            }
+        }
+        programs {
+            program {
+                name: "visible";
+                source: "ui";
+                signal: "visible";
+                action: STATE_SET "visible" 0.0;
+                target: "divider_vertical";
+            }
+            program {
+                name: "dissabled";
+                source: "ui";
+                signal: "dissabled";
+                action: STATE_SET "dissabled" 0.0;
+                target: "elm.text";
+            }
+            program {
+                name: "enabled";
+                source: "ui";
+                signal: "enabled";
+                action: STATE_SET "default" 0.0;
+                target: "elm.text";
+            }
+            program {
+                name: "down";
+                source: "over";
+                signal: "mouse,down,*";
+                action: STATE_SET "focused" 0.0;
+                target: "bg";
+                target: "elm.text";
+            }
+            program {
+                name: "up";
+                source: "over";
+                signal: "mouse,up,*";
+                action: STATE_SET "default" 0.0;
+                target: "bg";
+                target: "elm.text";
+            }
+            program {
+                name: "mouse_click";
+                signal: "mouse,clicked,1";
+                source: "over";
+                script {
+                    emit("elm,action,click", "");
+                }
+            }
+        }
+    }
+}

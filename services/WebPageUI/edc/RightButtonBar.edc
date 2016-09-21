@@ -1,0 +1,26 @@
+#include "ImageButton.edc"
+#include "../../../core/Tools/edc/Spacer.edc"
+collections { base_scale: 2.6;
+
+    IMAGE_BUTTON("add_tab", 50, 50, "internet_ic_add.png")
+
+    group {
+        name: "right_button_bar";
+        parts {
+            part {
+                name: "tab_button";
+                type : SWALLOW;
+                scale: 1;
+                description {
+                    state: "default" 0.0;
+                    visible: 1;
+                    fixed: 1 1;
+                    align: 0.0 0.0;
+                    min: 100 106;
+                    max: 100 106;
+                    rel1 { relative: 0.0 0.0; }
+                }
+            }
+        }
+    }
+}

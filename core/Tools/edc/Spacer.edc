@@ -1,0 +1,80 @@
+#define ADD_SPACER(NAME, RELATIVE_TO, WIDTH, HEIGHT)                \
+part {  name: NAME;                                                 \
+        type: SPACER;                                               \
+        scale: 1;                                                   \
+        description {                                               \
+            state: "default" 0.0;                                   \
+            rel1 { relative: 1.0 0.0; to: RELATIVE_TO; }            \
+            rel2 { relative: 1.0 1.0; to: RELATIVE_TO; offset: WIDTH 0; }\
+            fixed: 1 1;                                             \
+            align: 0.5 0.5;                                         \
+            min: WIDTH HEIGHT;                                      \
+            max: WIDTH HEIGHT;                                      \
+            }                                                       \
+    }
+
+#define ADD_SPACER_OVER(NAME, RELATIVE_TO, WIDTH, HEIGHT)           \
+part {  name: NAME;                                                 \
+        type: SPACER;                                               \
+        scale: 1;                                                   \
+        description {                                               \
+            state: "default" 0.0;                                   \
+            rel1 { relative: 0.0 0.0; to: RELATIVE_TO; }            \
+            rel2 { relative: 1.0 1.0; to: RELATIVE_TO; }            \
+            fixed: 1 1;                                             \
+            align: 0 0;                                             \
+            min: WIDTH HEIGHT;                                      \
+            max: WIDTH HEIGHT;                                      \
+            }                                                       \
+    }
+
+#define ADD_SPACER_VERTICAL(NAME, RELATIVE_TO, WIDTH, HEIGHT)       \
+part {  name: NAME;                                                 \
+        type: SPACER;                                               \
+        scale: 1;                                                   \
+        description {                                               \
+            state: "default" 0.0;                                   \
+            rel1 { relative: 0.5 1.0; to: RELATIVE_TO; }            \
+            rel2 { relative: 0.5 1.0; to: RELATIVE_TO; }            \
+            fixed: 1 1;                                             \
+            align: 0 0;                                             \
+            min: WIDTH HEIGHT;                                      \
+            max: WIDTH HEIGHT;                                      \
+            }                                                       \
+    }
+
+#define ADD_SPACER_NEXT_TO(NAME, RELATIVE_TO, WIDTH, HEIGHT, WIDTH_LANDSCAPE) \
+part {  name: NAME;                                                 \
+    type: SPACER;                                                   \
+    scale: 1;                                                       \
+    description {                                                   \
+        state: "default" 0.0;                                       \
+        rel1 { relative: 1.0 0.0; to: RELATIVE_TO; }                \
+        rel2 { relative: 1.0 1.0; }                                 \
+        fixed: 1 1;                                                 \
+        align: 0 0;                                                 \
+        min: WIDTH HEIGHT;                                          \
+        max: WIDTH HEIGHT;                                          \
+    }                                                               \
+    description {                                                   \
+        state: "landscape" 0.0;                                     \
+        inherit: "default" 0.0;                                     \
+        min: WIDTH_LANDSCAPE HEIGHT;                                \
+        max: WIDTH_LANDSCAPE HEIGHT;                                \
+    }                                                               \
+}
+
+#define ADD_SPACER_BELOW(NAME, RELATIVE_TO, WIDTH, HEIGHT)          \
+part {  name: NAME;                                                 \
+    type: SPACER;                                                   \
+    scale: 1;                                                       \
+    description {                                                   \
+        state: "default" 0.0;                                       \
+        rel1 { relative: 0.0 1.0; to: RELATIVE_TO; }                \
+        rel2 { relative: 1.0 1.0; }                                 \
+        fixed: 1 1;                                                 \
+        align: 0 0;                                                 \
+        min: WIDTH HEIGHT;                                          \
+        max: WIDTH HEIGHT;                                          \
+    }                                                               \
+}
