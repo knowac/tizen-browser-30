@@ -644,6 +644,11 @@ Evas_Object * WebView::getLayout()
     return m_ewkView;
 }
 
+Evas_Object * WebView::getWidget()
+{
+    return ewk_view_widget_get(m_ewkView);
+}
+
 void WebView::setURI(const std::string & uri)
 {
     BROWSER_LOGD("[%s:%d] uri=%s", __PRETTY_FUNCTION__, __LINE__, uri.c_str());

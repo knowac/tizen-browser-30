@@ -83,6 +83,17 @@ Evas_Object * WebEngineService::getLayout()
     return m_currentWebView->getLayout();
 }
 
+Evas_Object * WebEngineService::getWidget()
+{
+    BROWSER_LOGD("[%s:%d] ", __PRETTY_FUNCTION__, __LINE__);
+    M_ASSERT(m_currentWebView);
+    if (!m_currentWebView) {
+        BROWSER_LOGD("[%s:%d:%s] ", __PRETTY_FUNCTION__, __LINE__, "m_currentWebView is null");
+        return nullptr;
+    }
+    return m_currentWebView->getWidget();
+}
+
 void WebEngineService::init(void * guiParent)
 {
     BROWSER_LOGD("[%s:%d] ", __PRETTY_FUNCTION__, __LINE__);

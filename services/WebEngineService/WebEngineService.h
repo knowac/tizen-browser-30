@@ -50,6 +50,7 @@ public:
     virtual std::string getName();
 
     Evas_Object * getLayout();
+    Evas_Object * getWidget();
     void init(void * guiParent);
     void preinitializeWebViewCache();
 

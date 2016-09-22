@@ -53,7 +53,6 @@ public:
     UrlHistoryPtr getUrlHistoryList();
     virtual void showUI();
     virtual void hideUI();
-    void createDummyButton();
 #if PROFILE_MOBILE
     virtual void orientationChanged() override;
     void fullscreenModeSet(bool state);
@@ -121,8 +120,6 @@ private:
     static void faviconClicked(void* data, Evas_Object* obj, const char* emission, const char* source);
     static Eina_Bool _cb_down_pressed_on_urlbar(void *data, Evas_Object *obj, Evas_Object *src, Evas_Callback_Type type, void *event_info);
     static void _bookmark_manager_clicked(void * data, Evas_Object *, void *);
-    static void _dummy_button_focused(void *data, Evas_Object *, void *);
-    static void _dummy_button_unfocused(void *data, Evas_Object *, void *);
 #if PROFILE_MOBILE
     static void _more_menu_background_clicked(void* data, Evas_Object*, const char*, const char*);
     static void _content_clicked(void * data, Evas_Object *, void *);
@@ -163,7 +160,6 @@ private:
 
     Evas_Object* m_parent;
     Evas_Object* m_mainLayout;
-    Evas_Object* m_dummy_button;
     Evas_Object* m_errorLayout;
     Evas_Object* m_privateLayout;
     Evas_Object* m_bookmarkManagerButton;

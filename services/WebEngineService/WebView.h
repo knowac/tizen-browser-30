@@ -109,6 +109,7 @@ public:
     std::map<std::string, std::vector<std::string> > parse_uri(const char *uriToParse);
 
     Evas_Object * getLayout();
+    Evas_Object * getWidget();
 
     void confirmationResult(WebConfirmationPtr);
 
