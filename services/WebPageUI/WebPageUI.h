@@ -56,6 +56,7 @@ public:
     void createDummyButton();
 #if PROFILE_MOBILE
     virtual void orientationChanged() override;
+    void fullscreenModeSet(bool state);
 #endif
     void loadStarted();
     void progressChanged(double progress);
@@ -184,9 +185,12 @@ private:
 
 #if PROFILE_MOBILE && GESTURE
     Evas_Object* m_gestureLayer;
-    bool m_uriBarHidden;
     static const int SINGLE_FINGER = 1;
     static const int SWIPE_MOMENTUM_TRESHOLD = 400;
+#endif
+#if PROFILE_MOBILE
+    bool m_uriBarHidden;
+    bool m_fullscreen;
 #endif
 };
 

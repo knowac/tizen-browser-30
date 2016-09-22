@@ -329,6 +329,7 @@ void SimpleUI::connectUISignals()
     m_webPageUI->qaOrientationChanged.connect(boost::bind(&QuickAccess::orientationChanged, m_quickAccess));
     m_webPageUI->getURIEntry().secureIconClicked.connect(boost::bind(&SimpleUI::showCertificatePopup, this));
     m_webPageUI->getURIEntry().isValidCert.connect(boost::bind(&services::CertificateContents::isValidCertificate, m_certificateContents, _1));
+    m_webEngine->fullscreenModeSet.connect(boost::bind(&WebPageUI::fullscreenModeSet, m_webPageUI.get(), _1));
 #endif
 
     M_ASSERT(m_quickAccess.get());

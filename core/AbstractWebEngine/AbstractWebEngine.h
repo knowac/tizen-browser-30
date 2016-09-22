@@ -396,6 +396,11 @@ public:
     boost::signals2::signal<void ()> minimizeBrowser;
 
     /**
+    * Switch fullscreenmode.
+    */
+    boost::signals2::signal<void(bool)> fullscreenModeSet;
+
+    /**
      * FavIcon of current page changed
      */
     boost::signals2::signal<void (std::shared_ptr<tizen_browser::tools::BrowserImage>)> favIconChanged;

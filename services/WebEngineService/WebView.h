@@ -283,6 +283,7 @@ public:
 
     boost::signals2::signal<void (const std::string&, const std::string&)> redirectedWebPage;
     boost::signals2::signal<void()> unsecureConnection;
+    boost::signals2::signal<void(bool)> fullscreenModeSet;
 
 protected:
     std::string getRedirectedURL() {return m_redirectedURL;};

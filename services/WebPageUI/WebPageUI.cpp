@@ -48,7 +48,10 @@ WebPageUI::WebPageUI()
     , m_WebPageUIvisible(false)
 #if PROFILE_MOBILE && GESTURE
     , m_gestureLayer(nullptr)
+#endif
+#if PROFILE_MOBILE
     , m_uriBarHidden(false)
+    , m_fullscreen(false)
 #endif
 {
     BROWSER_LOGD("[%s:%d] ", __PRETTY_FUNCTION__, __LINE__);
@@ -417,6 +420,20 @@ void WebPageUI::orientationChanged()
 
     if (m_statesMgr->equals(WPUState::QUICK_ACCESS)) {
         qaOrientationChanged();
+    }
+}
+
+void WebPageUI::fullscreenModeSet(bool state)
+{
+    BROWSER_LOGD("[%s:%d] ", __PRETTY_FUNCTION__, __LINE__);
+    auto landscape = isLandscape();
+    m_fullscreen = state;
+    if (!state)
+        elm_object_signal_emit(m_mainLayout, "show_uri_bar", "ui");
+    else if (landscape && state) {
+        (*landscape) ?
+            elm_object_signal_emit(m_mainLayout, "hide_uri_bar_landscape", "ui") :
+            elm_object_signal_emit(m_mainLayout, "hide_uri_bar_vertical", "ui");
     }
 }
 #endif
