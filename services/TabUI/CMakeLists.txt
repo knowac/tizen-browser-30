@@ -2,7 +2,6 @@ project(TabUI)
 
 set(TabUI_SRCS
     TabUI.cpp
-    PasswordUI.cpp
     )
 
 include(Coreheaders)
@@ -26,7 +25,6 @@ include(EDCCompile)
 if (${PROFILE} MATCHES "mobile")    # mobile profile
     set(edcFiles
         TabUI_mob.edc
-        PasswordUI.edc
         )
 else (${PROFILE} MATCHES "mobile")  # tv profile
     set(edcFiles

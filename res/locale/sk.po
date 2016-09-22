@@ -1,8 +1,14 @@
 msgid "IDS_BR_POP_NETWORK_ERROR"
 msgstr "Chyba siete."
 
+msgid "IDS_BR_BODY_AUTHUSERNAME"
+msgstr "Užívateľské meno"
+
 msgid "IDS_BR_BODY_DESTINATIONS_AUTHENTICATION_REQUIRED"
 msgstr "Vyžaduje sa overenie."
+
+msgid "IDS_BR_BODY_AUTHPASSWORD"
+msgstr "Heslo"
 
 msgid "IDS_BR_HEADER_SECURITY_WARNING"
 msgstr "Bezpečnostné upozornenie"
@@ -27,6 +33,12 @@ msgstr "Vyskytli sa problémy s bezpečnostným certifikátom pre túto lokalitu
 
 msgid "IDS_BR_OPT_ALLOW"
 msgstr "Povoliť"
+
+msgid "IDS_BR_OPT_VIEW"
+msgstr "Zobraziť"
+
+msgid "IDS_BR_OPT_CANCEL"
+msgstr "Zrušiť"
 
 msgid "IDS_BR_BODY_PS_REQUESTS_YOUR_LOCATION"
 msgstr "%s žiada o vaše umiestnenie."
@@ -60,18 +72,6 @@ msgstr "Stiahnuť"
 
 msgid "IDS_BR_BODY_THIS_WEBPAGE"
 msgstr "Táto webová stránka"
-
-msgid "IDS_BR_BODY_AUTHUSERNAME"
-msgstr "Užívateľské meno"
-
-msgid "IDS_BR_BODY_AUTHPASSWORD"
-msgstr "Heslo"
-
-msgid "IDS_BR_OPT_VIEW"
-msgstr "Zobraziť"
-
-msgid "IDS_BR_OPT_CANCEL"
-msgstr "Zrušiť"
 
 msgid "IDS_BR_OPT_SCREEN"
 msgstr "Obrazovka"
@@ -109,6 +109,15 @@ msgstr "Zrušiť"
 msgid "IDS_BR_BUTTON_MORE"
 msgstr "Ďalšie"
 
+msgid "IDS_TPLATFORM_ACBUTTON_DONE_ABB"
+msgstr "HOTOVO"
+
+msgid "IDS_TPLATFORM_ACBUTTON_CANCEL_ABB"
+msgstr "ZRUŠIŤ"
+
+msgid "IDS_TPLATFORM_ACBUTTON_DELETE_ABB"
+msgstr "ODSTRÁNIŤ"
+
 msgid "IDS_BR_BODY_NO_ITEMS"
 msgstr "Žiadne položky"
 
@@ -117,6 +126,9 @@ msgstr "Pripojiť k mobilnej sieti"
 
 msgid "IDS_BR_OPT_DO_NOT_SHOW_AGAIN"
 msgstr "Nezobrazovať znova"
+
+msgid "IDS_BR_SK_OK"
+msgstr "OK"
 
 msgid "IDS_BR_POP_ONLY_HTTP_OR_HTTPS_URLS_CAN_BE_DOWNLOADED"
 msgstr "Stiahnuť možno iba adresy URL typu http alebo https."
@@ -139,11 +151,17 @@ msgstr "Kopírovať prepojenie"
 msgid "IDS_BR_OPT_COPY_IMAGE"
 msgstr "Kopírovať obrázok"
 
-msgid "IDS_BR_SK_OK"
-msgstr "OK"
-
 msgid "IDS_BR_OPT_CALL"
 msgstr "Hovor"
+
+msgid "IDS_ST_POP_PS_HAS_BEEN_DETECTED"
+msgstr "Zistil sa súbor %s."
+
+msgid "IDS_ST_POP_DETECTED_IN_C_PS"
+msgstr "Zistený v: %s"
+
+msgid "IDS_ST_HEADER_MALWARE_DETECTED_ABB"
+msgstr "Zistil sa malvér"
 
 msgid "IDS_BR_BUTTON_FAILED"
 msgstr "Zlyhanie"
@@ -211,11 +229,35 @@ msgstr "Zrušiť"
 msgid "IDS_BR_SK_TABS"
 msgstr "Karty"
 
+msgid "IDS_BR_SK_SAVE_LITE"
+msgstr "Ulož"
+
+msgid "IDS_BR_SK_SAVE_ABB"
+msgstr "Ulož"
+
+msgid "IDS_BR_SK_SAVE"
+msgstr "Uložiť"
+
+msgid "IDS_BR_SK_PREVIOUS"
+msgstr "Predch."
+
+msgid "IDS_BR_SK_NEXT"
+msgstr "Ďalej"
+
 msgid "IDS_BR_SK_MENU"
 msgstr "Menu"
 
 msgid "IDS_BR_SK_DELETE_ABB"
 msgstr "Odstrániť"
+
+msgid "IDS_BR_SK_DELETE"
+msgstr "Odstrániť"
+
+msgid "IDS_BR_SK_CLEAR"
+msgstr "Vymazať"
+
+msgid "IDS_BR_SK_BACK"
+msgstr "Späť"
 
 msgid "IDS_BR_SK3_CREATE_FOLDER"
 msgstr "Vytvoriť priečinok"
@@ -274,6 +316,15 @@ msgstr "Niektoré webové stránky sa nemusia dať vystrihnúť presne"
 msgid "IDS_BR_POP_YOUR_HISTORY_WILL_BE_CLEARED"
 msgstr "História sa vymaže."
 
+msgid "IDS_BR_POP_WI_FI_CONNECTION_REQUIRED_CONNECT_TO_WI_FI_NETWORK_AND_TRY_AGAIN"
+msgstr "Vyžaduje sa pripojenie k sieti Wi-Fi. Pripojte sa k sieti Wi-Fi a skúste to znova"
+
+msgid "IDS_BR_POP_URL_NOT_FOUND"
+msgstr "Adresa sa nenašla."
+
+msgid "IDS_BR_POP_URL"
+msgstr "URL"
+
 msgid "IDS_BR_POP_UNABLE_TO_VIEW_THE_CERTIFICATE_THE_PAGE_INFORMATION_HAS_BEEN_CHANGED"
 msgstr "Certifikát nemožno zobraziť. Informácie o stránke boli zmenené."
 
@@ -319,11 +370,23 @@ msgstr "Politika zabezpečenia obmedzuje použitie internetového prehliadača."
 msgid "IDS_BR_POP_SAVED_TO_BOOKMARKS"
 msgstr "Uložené do záložiek."
 
+msgid "IDS_BR_POP_SAVED"
+msgstr "Uložené."
+
 msgid "IDS_BR_POP_RENAME_TAG"
 msgstr "Premenovať značku"
 
+msgid "IDS_BR_POP_REMOVED"
+msgstr "Odstránené."
+
 msgid "IDS_BR_POP_PD_PROFILES_WILL_BE_DELETED"
 msgstr "Vykoná sa odstránenie %d profilov."
+
+msgid "IDS_BR_POP_PD_ITEMS_WILL_BE_DELETED"
+msgstr "%d položky sa vymažú."
+
+msgid "IDS_BR_POP_PD_ITEMS_SELECTED"
+msgstr "Vybraté položky: %d."
 
 msgid "IDS_BR_POP_PAGES_THAT_YOU_VIEW_WILL_NOT_APPEAR_IN_YOUR_BROWSER_HISTORY_OR_SEARCH_HISTORY_AND_THEY_WILL_NOT_LEAVE_OTHER_TRACES_LIKE_COOKIES"
 msgstr "Stránky, ktoré navštívite, sa nebudú zobrazovať v histórii prehliadača ani v histórii hľadaní a nezanechajú žiadne iné stopy, ako napríklad súbory „cookie“."
@@ -352,20 +415,53 @@ msgstr "Zistil sa malvér „%1$s“.\nZistil sa na stránke: „%2$s“\n\nZ d�
 msgid "IDS_BR_POP_P1SS_HAS_BEEN_DETECTED_DETECTED_IN_C_P2SS_OPEN_WEBPAGE_ANYWAY_Q"
 msgstr "Zistil sa malvér „%1$s“.\nZistil sa na stránke: „%2$s“\n\nOtvoriť webovú stránku napriek tomu?"
 
+msgid "IDS_BR_POP_NO_ITEMS_SELECTED"
+msgstr "Žiadne vybraté položky."
+
 msgid "IDS_BR_POP_NOT_ENOUGH_MEMORY_DELETE_SOME_ITEMS_AND_TRY_AGAIN"
 msgstr "Nedostatok pamäte. Odstráňte niektoré položky a skúste to znova."
+
+msgid "IDS_BR_POP_NOT_ENOUGH_MEMORY"
+msgstr "Nedostatok pamäte."
 
 msgid "IDS_BR_POP_NOT_ALLOWED"
 msgstr "Nie je povolené."
 
+msgid "IDS_BR_POP_NEVER"
+msgstr "Nikdy"
+
 msgid "IDS_BR_POP_MOVED"
 msgstr "Presunuté."
+
+msgid "IDS_BR_POP_MOBILE_DATA_IS_DISABLED_CONNECT_TO_WI_FI_NETWORK_INSTEAD_OR_ENABLE_MOBILE_DATA_AND_TRY_AGAIN"
+msgstr "Mobilné dátové pripojenie je vypnuté. Pripojte sa namiesto toho k sieti Wi-Fi alebo zapnite mobilné dátové pripojenie a skúste to znova"
+
+msgid "IDS_BR_POP_LOADING_PLEASE_WAIT_ING"
+msgstr "Načítava sa. Počkajte, prosím..."
+
+msgid "IDS_BR_POP_INVALID_URL"
+msgstr "Neplatná adresa URL."
+
+msgid "IDS_BR_POP_FAIL"
+msgstr "Nepodarilo sa."
 
 msgid "IDS_BR_POP_ENTER_URL"
 msgstr "Zadajte adresu URL."
 
+msgid "IDS_BR_POP_ENTER_TITLE_ABB"
+msgstr "Zadať názov"
+
 msgid "IDS_BR_POP_ENTER_BOOKMARK_NAME"
 msgstr "Zadajte názov záložky."
+
+msgid "IDS_BR_POP_DO_NOT_SHOW_AGAIN"
+msgstr "Už nezobrazovať"
+
+msgid "IDS_BR_POP_DOWNLOADCOMPLETE"
+msgstr "Sťahovanie dokončené."
+
+msgid "IDS_BR_POP_DISABLED"
+msgstr "Zakázané."
 
 msgid "IDS_BR_POP_DIALING_ING_VZW"
 msgstr "Dialing..."
@@ -391,6 +487,9 @@ msgstr "Odstrániť prihlasovacie údaje tejto webovej lokality?"
 msgid "IDS_BR_POP_DELETE_SIGN_IN_DATA_FOR_PD_WEBSITES_Q"
 msgstr "Odstrániť prihlasovacie údaje %d webových lokalít?"
 
+msgid "IDS_BR_POP_DELETE_Q"
+msgstr "Odstrániť?"
+
 msgid "IDS_BR_POP_DELETE_PD_SAVED_WEB_PAGES_Q"
 msgstr "Vykonať odstránenie %d uložených webových stránok?"
 
@@ -406,8 +505,14 @@ msgstr "Odstrániť všetky údaje o webových lokalitách a lokalizačné povol
 msgid "IDS_BR_POP_DELETEHISTORYQUESTION"
 msgstr "Vymazať históriu?"
 
+msgid "IDS_BR_POP_DELETED"
+msgstr "Odstránené."
+
 msgid "IDS_BR_POP_CONTINUE"
 msgstr "Pokračovať"
+
+msgid "IDS_BR_POP_CLOSE_APPLICATION_Q"
+msgstr "Zavrieť aplikáciu?"
 
 msgid "IDS_BR_POP_CLOSE_APPLICATION"
 msgstr "Ukončiť aplikáciu"
@@ -420,6 +525,12 @@ msgstr "Vymazať históriu?"
 
 msgid "IDS_BR_POP_BOOKMARK_REMOVED"
 msgstr "Záložka bola odstránená."
+
+msgid "IDS_BR_POP_BOOKMARK_ADDED"
+msgstr "Záložka je pridaná."
+
+msgid "IDS_BR_POP_AUTOMATIC_BRIGHTNESS"
+msgstr "Automatické nastavenie jasu"
 
 msgid "IDS_BR_POP_ALREADY_EXISTS"
 msgstr "Už existuje."
@@ -445,6 +556,15 @@ msgstr "Povoliť lokalitám ukladať a čítať súbory „cookie“"
 msgid "IDS_BR_POP_ADDED_TO_BOOKMARKS"
 msgstr "Pridané do záložiek."
 
+msgid "IDS_BR_POP_ACCOUNT"
+msgstr "Konto"
+
+msgid "IDS_BR_POP_1_ITEM_WILL_BE_DELETED"
+msgstr "1 položka sa vymaže."
+
+msgid "IDS_BR_POP_1_ITEM_SELECTED"
+msgstr "1 vybratá položka."
+
 msgid "IDS_BR_OPT_WINDOWS"
 msgstr "Okná"
 
@@ -454,20 +574,38 @@ msgstr "Zobraziť certifikát"
 msgid "IDS_BR_OPT_UNICODE_HUTF_8"
 msgstr "Unicode (UTF-8)"
 
+msgid "IDS_BR_OPT_TRANSLATE"
+msgstr "Preložiť"
+
 msgid "IDS_BR_OPT_THUMBNAIL_VIEW"
 msgstr "Zobrazenie miniatúr"
 
 msgid "IDS_BR_OPT_TEXT_ENCODING"
 msgstr "Kódovanie textu"
 
+msgid "IDS_BR_OPT_STOP"
+msgstr "Zastaviť"
+
 msgid "IDS_BR_OPT_SHRINK_TEXT"
 msgstr "Zmenšiť text"
+
+msgid "IDS_BR_OPT_SHOW"
+msgstr "Zobraziť"
+
+msgid "IDS_BR_OPT_SHARE"
+msgstr "Zdieľať"
 
 msgid "IDS_BR_OPT_SETTINGS_ABB"
 msgstr "Nastavenia"
 
+msgid "IDS_BR_OPT_SETTINGS"
+msgstr "Nastavenia"
+
 msgid "IDS_BR_OPT_SEND_MESSAGE_VODA"
 msgstr "Odoslať správu"
+
+msgid "IDS_BR_OPT_SEND_EMAIL"
+msgstr "Odoslať e-mail"
 
 msgid "IDS_BR_OPT_SENDURLVIA_EMAIL"
 msgstr "E-mail"
@@ -486,6 +624,12 @@ msgstr "Režim výberu"
 
 msgid "IDS_BR_OPT_SELECTED"
 msgstr "Vybrané"
+
+msgid "IDS_BR_OPT_SELECT"
+msgstr "Vyberte"
+
+msgid "IDS_BR_OPT_SD_CARD"
+msgstr "Karta SD"
 
 msgid "IDS_BR_OPT_SAVE_TO_KEEPIT_ABB"
 msgstr "Uložiť v službe KeepIt"
@@ -514,8 +658,14 @@ msgstr "Zmeniť poradie"
 msgid "IDS_BR_OPT_RENAME_FOLDER"
 msgstr "Premenovať priečinok"
 
+msgid "IDS_BR_OPT_RENAME"
+msgstr "Premenovať"
+
 msgid "IDS_BR_OPT_REMOVE"
 msgstr "Odstrániť"
+
+msgid "IDS_BR_OPT_REFRESH"
+msgstr "Obnoviť"
 
 msgid "IDS_BR_OPT_READER_MODE_TTS"
 msgstr "Režim čítačky"
@@ -535,8 +685,14 @@ msgstr "Offline stránky"
 msgid "IDS_BR_OPT_NEW_WINDOW"
 msgstr "Nové okno"
 
+msgid "IDS_BR_OPT_MOVE"
+msgstr "Presunúť"
+
 msgid "IDS_BR_OPT_MINIMISE"
 msgstr "Minimalizovať"
+
+msgid "IDS_BR_OPT_MESSAGES"
+msgstr "Správy"
 
 msgid "IDS_BR_OPT_MEDIUM_M_QUALITY"
 msgstr "Stredná"
@@ -549,6 +705,9 @@ msgstr "Oprávnenia na lokalizačný prístup"
 
 msgid "IDS_BR_OPT_LOAD_IMAGES"
 msgstr "Načítať obrázky"
+
+msgid "IDS_BR_OPT_LIST_VIEW"
+msgstr "Zobrazenie zoznamu"
 
 msgid "IDS_BR_OPT_LATIN_1_HISO_8859_1"
 msgstr "Latin-1 (ISO-8859-1)"
@@ -565,6 +724,9 @@ msgstr "Japončina (ISO-2022-JP)"
 msgid "IDS_BR_OPT_JAPANESE_HEUC_JP"
 msgstr "Japončina (EUC-JP)"
 
+msgid "IDS_BR_OPT_I_AGREE"
+msgstr "Súhlasím."
+
 msgid "IDS_BR_OPT_INCOGNITO_MODE_ABB"
 msgstr "Režim utaj. identity"
 
@@ -579,6 +741,9 @@ msgstr "Odkaz na domov. obrazovke"
 
 msgid "IDS_BR_OPT_HIGH_M_QUALITY"
 msgstr "Vysoká"
+
+msgid "IDS_BR_OPT_HELP"
+msgstr "Pomocník"
 
 msgid "IDS_BR_OPT_GOFORWARD"
 msgstr "Dopredu"
@@ -625,6 +790,9 @@ msgstr "Vypnúť nízky objem dát"
 msgid "IDS_BR_OPT_DISABLED"
 msgstr "Vypnuté"
 
+msgid "IDS_BR_OPT_DEVICE"
+msgstr "Zariadenie"
+
 msgid "IDS_BR_OPT_DELETE_SAVED_PAGE_ABB"
 msgstr "Odstrániť uloženú stránku"
 
@@ -658,6 +826,9 @@ msgstr "Čínština (Big5)"
 msgid "IDS_BR_OPT_CACHE"
 msgstr "Vyrovnávacia pamäť"
 
+msgid "IDS_BR_OPT_BOOKMARK"
+msgstr "Záložka"
+
 msgid "IDS_BR_OPT_ADD_TO_WEB_CLIP"
 msgstr "Pridať do webového klipu"
 
@@ -678,6 +849,12 @@ msgstr "Pridať záložku"
 
 msgid "IDS_BR_OPT_ADD_BOOKMARK"
 msgstr "Pridať záložku"
+
+msgid "IDS_BR_OPT_ADDED"
+msgstr "Pridané."
+
+msgid "IDS_BR_OPT_ADD"
+msgstr "Pridať"
 
 msgid "IDS_BR_OPT1_EXTENSION"
 msgstr "Doplnok"
@@ -748,6 +925,9 @@ msgstr "Stiahnuť obsah inf. kan."
 msgid "IDS_BR_MBODY_DELETE_SIGN_IN_DATA"
 msgstr "Odstrániť prihlas. údaje"
 
+msgid "IDS_BR_MBODY_DEFAULT_DOWNLOAD_STORAGE"
+msgstr "Predv. úl. priest. sťah."
+
 msgid "IDS_BR_MBODY_DATA_SAVING_STATISTICS"
 msgstr "Štatistika uklad. údajov"
 
@@ -790,6 +970,9 @@ msgstr "Záložky sa nedajú premiestniť"
 msgid "IDS_BR_HEADER_SITE_NOT_TRUSTED_ABB"
 msgstr "Lokalita je nedôveryhodná"
 
+msgid "IDS_BR_HEADER_SIGN_IN_TO_SAMSUNG_ACCOUNT"
+msgstr "Prihláste sa pomocou konta Samsung"
+
 msgid "IDS_BR_HEADER_SET_HOMEPAGE_ABB"
 msgstr "Nastavenie domovskej stránky"
 
@@ -826,11 +1009,17 @@ msgstr "Kontext. okno bolo zablokované"
 msgid "IDS_BR_HEADER_POPULAR_WEBSITES_ABB"
 msgstr "Obľúbené webové lokality"
 
+msgid "IDS_BR_HEADER_PD_SELECTED_ABB"
+msgstr "Vybraté: %d"
+
 msgid "IDS_BR_HEADER_ORGANISATION_C_ABB"
 msgstr "Organizácia:"
 
 msgid "IDS_BR_HEADER_ORGANISATIONAL_UNIT_C"
 msgstr "Organizačná jednotka:"
+
+msgid "IDS_BR_HEADER_NO_NETWORK_CONNECTION"
+msgstr "Žiadne sieťové pripojenie"
 
 msgid "IDS_BR_HEADER_NEWER_M_INTERNET_HISTORY_ABB"
 msgstr "Newer"
@@ -847,11 +1036,17 @@ msgstr "Rozšírenie HTML5"
 msgid "IDS_BR_HEADER_FORM_DATA"
 msgstr "Údaje formulára"
 
+msgid "IDS_BR_HEADER_FOLDER"
+msgstr "Priečinok"
+
 msgid "IDS_BR_HEADER_EXPIRES_ON_C"
 msgstr "Platnosť skončí dňa:"
 
 msgid "IDS_BR_HEADER_ENABLE_WEB_SIGN_IN"
 msgstr "Povolenie webového prihlásenia"
+
+msgid "IDS_BR_HEADER_EDIT_PROFILE"
+msgstr "Upraviť profil"
 
 msgid "IDS_BR_HEADER_EDIT_BOOKMARK"
 msgstr "Upraviť záložku"
@@ -889,8 +1084,14 @@ msgstr "Spravovanie šírky pásma"
 msgid "IDS_BR_HEADER_ADVANCEDCERTIFICATES"
 msgstr "Certifikáty"
 
+msgid "IDS_BR_BUTTON_SET"
+msgstr "Nastaviť"
+
 msgid "IDS_BR_BUTTON_RESET_ABB"
 msgstr "Vynulovať"
+
+msgid "IDS_BR_BUTTON_NOT_NOW"
+msgstr "Teraz nie"
 
 msgid "IDS_BR_BUTTON_HOMEPAGE_ABB"
 msgstr "Domov. str."
@@ -898,11 +1099,35 @@ msgstr "Domov. str."
 msgid "IDS_BR_BUTTON_FIND_ABB"
 msgstr "Hľad."
 
+msgid "IDS_BR_BUTTON_ENABLE_ABB"
+msgstr "Zapnúť"
+
+msgid "IDS_BR_BUTTON_EDIT"
+msgstr "Upraviť"
+
+msgid "IDS_BR_BUTTON_CONTINUE_ABB"
+msgstr "Pokrač."
+
+msgid "IDS_BR_BUTTON_CONTINUE"
+msgstr "Pokračovať"
+
+msgid "IDS_BR_BUTTON_CLOSE"
+msgstr "Zavrieť"
+
+msgid "IDS_BR_BUTTON_CANCEL_ABB"
+msgstr "Zrušiť"
+
+msgid "IDS_BR_BUTTON_CANCEL"
+msgstr "Zrušiť"
+
 msgid "IDS_BR_BUTTON_BACK_ABB"
 msgstr "Späť"
 
 msgid "IDS_BR_BUTTON_ALWAYS_SHOW_ABB"
 msgstr "Vždy zobr."
+
+msgid "IDS_BR_BUTTON_ALLOW"
+msgstr "Povoliť"
 
 msgid "IDS_BR_BUTTON2_WEB_PORTAL"
 msgstr "Webový portál"
@@ -927,6 +1152,9 @@ msgstr "Prejsť na históriu"
 
 msgid "IDS_BR_BUTTON2_ENTERTAINMENT"
 msgstr "Zábava"
+
+msgid "IDS_BR_BODY_YESTERDAY"
+msgstr "Včera"
 
 msgid "IDS_BR_BODY_WINDOW_MANAGER"
 msgstr "Správca okien"
@@ -955,6 +1183,9 @@ msgstr "Použiť režim celej obrazovky na skrytie stavového riadka"
 msgid "IDS_BR_BODY_USE_A_PREDICTION_SERVICE_TO_DISPLAY_RELATED_QUERIES_AND_POPULAR_WEBSITES_IN_THE_ADDRESS_BAR_AS_YOU_TYPE"
 msgstr "Použitím služby predpovedí môžete počas písania zobraziť na paneli s adresou súvisiace dotazy a obľúbené webové lokality."
 
+msgid "IDS_BR_BODY_URL"
+msgstr "URL"
+
 msgid "IDS_BR_BODY_UPPER_FOLDER_T_TALKBACK"
 msgstr "Vyšší priečinok"
 
@@ -970,6 +1201,12 @@ msgstr "Nemožno zobraziť webovú stránku. Žiadna odpoveď zo servera."
 msgid "IDS_BR_BODY_TOWN_CITY_COUNTY_ABB"
 msgstr "Mesto/okres/kraj"
 
+msgid "IDS_BR_BODY_TODAY"
+msgstr "Dnes"
+
+msgid "IDS_BR_BODY_TITLE"
+msgstr "Názov"
+
 msgid "IDS_BR_BODY_THIS_SITE_IS_USING_PS"
 msgstr "Táto lokalita používa: %s."
 
@@ -984,6 +1221,9 @@ msgstr "Táto záložka sa vymaže."
 
 msgid "IDS_BR_BODY_THE_SELECTED_PERSONAL_DATA_WILL_BE_DELETED"
 msgstr "Vybraté osobné údaje sa odstránia."
+
+msgid "IDS_BR_BODY_THE_MAXIMUM_NUMBER_OF_CHARACTERS_HPD_HAS_BEEN_EXCEEDED"
+msgstr "Prekročil sa maximálny počet znakov (%d)."
 
 msgid "IDS_BR_BODY_TEXT_FIELD_T_TTS"
 msgstr "Textové pole"
@@ -1009,11 +1249,17 @@ msgstr "Synchronizovať záložky"
 msgid "IDS_BR_BODY_STREET_ADDRESS_PO_BOX_C_O_ETC_ABB"
 msgstr "Ulica, poštová priehradka, príjemca atď."
 
+msgid "IDS_BR_BODY_STREAMING"
+msgstr "Streaming"
+
 msgid "IDS_BR_BODY_STORED_DATA"
 msgstr "Uložené údaje"
 
 msgid "IDS_BR_BODY_SPLIT_BAR_HANDLE"
 msgstr "Rukoväť priečky"
+
+msgid "IDS_BR_BODY_SMALL"
+msgstr "Malé"
 
 msgid "IDS_BR_BODY_SIGN_IN_TO_YOUR_SAMSUNG_ACCOUNT_TO_ACCESS_THE_BOOKMARKS_AND_TABS_ON_YOUR_OTHER_DEVICES"
 msgstr "Ak chcete mať prístup k záložkám a kartám v iných zariadeniach, prihláste sa pomocou svojho konta Samsung."
@@ -1033,6 +1279,9 @@ msgstr "Nastaviť text pre automatické vypĺňanie webových formulárov"
 msgid "IDS_BR_BODY_SET_CURRENT_PAGE_AS_HOMEPAGE"
 msgstr "Nastaviť aktuálnu stránku ako domovskú stránku"
 
+msgid "IDS_BR_BODY_SETTINGS"
+msgstr "Nastavenia"
+
 msgid "IDS_BR_BODY_SELECT_FOLDER"
 msgstr "Vybrať priečinok"
 
@@ -1045,6 +1294,9 @@ msgstr "Vyhľadávacie pole"
 msgid "IDS_BR_BODY_SEARCH_AND_URL_SUGGESTIONS"
 msgstr "Návrhy na hľadanie a adresy URL"
 
+msgid "IDS_BR_BODY_SEARCH"
+msgstr "Hľadať"
+
 msgid "IDS_BR_BODY_SCREEN_AND_TEXT"
 msgstr "Obrazovka a text"
 
@@ -1053,6 +1305,9 @@ msgstr "Uložiť mená používateľov a heslá pre webové lokality"
 
 msgid "IDS_BR_BODY_SAVE_LINK"
 msgstr "Uložiť prepojenie"
+
+msgid "IDS_BR_BODY_RSS_SEARCH_RESULTS"
+msgstr "Výsledok hľadania"
 
 msgid "IDS_BR_BODY_RESTORE_DEFAULT_SETTINGS_Q"
 msgstr "Obnoviť predvolené nastavenia?"
@@ -1087,6 +1342,12 @@ msgstr "Prepínač"
 msgid "IDS_BR_BODY_PS_BOOKMARK_WILL_BE_DELETED"
 msgstr "Záložka %s sa odstráni."
 
+msgid "IDS_BR_BODY_PROFILE"
+msgstr "Profil"
+
+msgid "IDS_BR_BODY_PROCESSING_ING"
+msgstr "Prebieha spracovanie..."
+
 msgid "IDS_BR_BODY_PRIVACY"
 msgstr "Súkromie"
 
@@ -1099,8 +1360,20 @@ msgstr "Stlačte tlačidlo menu."
 msgid "IDS_BR_BODY_POSTCODE_ABB"
 msgstr "Poštové smerovacie číslo"
 
+msgid "IDS_BR_BODY_PHONE_NUMBER_ABB"
+msgstr "Telef. číslo"
+
+msgid "IDS_BR_BODY_PHONE"
+msgstr "Telefón"
+
 msgid "IDS_BR_BODY_PD_POP_UPS_BLOCKED_ABB"
 msgstr "Blok. kont. okná: %d."
+
+msgid "IDS_BR_BODY_PD_ITEMS_WILL_BE_DELETED"
+msgstr "%d položky sa vymažú."
+
+msgid "IDS_BR_BODY_PASSWORD"
+msgstr "Heslo"
 
 msgid "IDS_BR_BODY_PAGE_LOADED_T_TTS"
 msgstr "Stránka sa načítala"
@@ -1126,8 +1399,14 @@ msgstr "Na požiadanie"
 msgid "IDS_BR_BODY_ONLY_VIA_WI_FI_ABB"
 msgstr "Iba cez Wi-Fi"
 
+msgid "IDS_BR_BODY_ON"
+msgstr "Zap."
+
 msgid "IDS_BR_BODY_OLDER"
 msgstr "Staršie"
+
+msgid "IDS_BR_BODY_OFF"
+msgstr "Vyp."
 
 msgid "IDS_BR_BODY_NO_WINDOWS"
 msgstr "Žiadne okná"
@@ -1141,8 +1420,17 @@ msgstr "Žiadny názov"
 msgid "IDS_BR_BODY_NO_SAVED_PAGES"
 msgstr "Žiadne uložené stránky"
 
+msgid "IDS_BR_BODY_NO_RESULTS_FOUND"
+msgstr "Nenašli sa žiadne výsledky."
+
+msgid "IDS_BR_BODY_NO_HISTORIES"
+msgstr "Žiadna história"
+
 msgid "IDS_BR_BODY_NO_BOOKMARKS"
 msgstr "Žiadne záložky"
+
+msgid "IDS_BR_BODY_NOTIFICATIONS"
+msgstr "Oznámenia"
 
 msgid "IDS_BR_BODY_NORMAL"
 msgstr "Normálny"
@@ -1158,6 +1446,9 @@ msgstr "Najnavštevovanejšie lokality"
 
 msgid "IDS_BR_BODY_MOBILE_VIEW"
 msgstr "Mobilné zobrazenie"
+
+msgid "IDS_BR_BODY_MEDIUM"
+msgstr "Stredná"
 
 msgid "IDS_BR_BODY_LOCATION_M_INFORMATION"
 msgstr "Poloha"
@@ -1183,6 +1474,9 @@ msgstr "Internet"
 msgid "IDS_BR_BODY_IMPROVE_PERFORMANCE_WHEN_LOADING_PAGES"
 msgstr "Zlepšenie výkonu pri načítavaní stránok."
 
+msgid "IDS_BR_BODY_IMAGES"
+msgstr "Obrázky"
+
 msgid "IDS_BR_BODY_HOMEPAGE"
 msgstr "Domovská stránka"
 
@@ -1192,11 +1486,20 @@ msgstr "Pri posúvaní stránky nadol sa skryje panel s adresou."
 msgid "IDS_BR_BODY_GENERAL_M_SETTINGS"
 msgstr "Všeobecné"
 
+msgid "IDS_BR_BODY_FULL_SCREEN"
+msgstr "Celá obrazovka"
+
 msgid "IDS_BR_BODY_FULL_NAME_ABB"
 msgstr "Celé meno"
 
 msgid "IDS_BR_BODY_FORCE_ZOOM_ABB"
 msgstr "Vynútiť zväčšenie"
+
+msgid "IDS_BR_BODY_FONT_SIZE"
+msgstr "Veľkosť písma"
+
+msgid "IDS_BR_BODY_FOLDER_NAME"
+msgstr "Názov priečinka"
 
 msgid "IDS_BR_BODY_FLAT_SUITE_UNIT_BUILDING_FLOOR_ETC_ABB"
 msgstr "Byt, apartmán, blok, budova, poschodie atď."
@@ -1213,6 +1516,24 @@ msgstr "Zadajte vaše meno."
 msgid "IDS_BR_BODY_ENTER_TOWN_CITY_COUNTY_ABB"
 msgstr "Zadajte mesto/okres/kraj."
 
+msgid "IDS_BR_BODY_ENTER_POSTCODE_ABB"
+msgstr "Zadajte poštové smerovacie číslo."
+
+msgid "IDS_BR_BODY_ENTER_POSTCODE"
+msgstr "Zadajte poštové smerovacie číslo."
+
+msgid "IDS_BR_BODY_ENTER_PHONE_NUMBER"
+msgstr "Zadajte telefónne číslo."
+
+msgid "IDS_BR_BODY_ENTER_NAME"
+msgstr "Zadať meno"
+
+msgid "IDS_BR_BODY_ENTER_FOLDER_NAME"
+msgstr "Zadajte názov priečinka."
+
+msgid "IDS_BR_BODY_ENTER_EMAIL_ADDRESS"
+msgstr "Zadajte e-mailovú adresu."
+
 msgid "IDS_BR_BODY_ENTER_COUNTRY_REGION_ABB"
 msgstr "Zadajte krajinu/oblasť."
 
@@ -1224,6 +1545,12 @@ msgstr "Povoliť umiestnenie"
 
 msgid "IDS_BR_BODY_ENABLE_JAVASCRIPT"
 msgstr "Povoliť JavaScript"
+
+msgid "IDS_BR_BODY_EMAIL_ADDRESS"
+msgstr "E-mailová adresa"
+
+msgid "IDS_BR_BODY_DOWNLOADING_ING"
+msgstr "Sťahovanie..."
 
 msgid "IDS_BR_BODY_DOUBLE_TAP_TO_VIEW_CERTIFICATE_TTS"
 msgstr "Dvojitým ťuknutím môžete zobraziť certifikát."
@@ -1264,6 +1591,9 @@ msgstr "Zobraziť kontextové okná bezpečnostných upozornení"
 msgid "IDS_BR_BODY_DISPLAY_IMAGES_ON_WEB_PAGES"
 msgstr "Zobraziť obrázky na webových stránkach"
 
+msgid "IDS_BR_BODY_DEVELOPER_MODE"
+msgstr "Vývojársky režim"
+
 msgid "IDS_BR_BODY_DESKTOP_VIEW"
 msgstr "Desktopové zobrazenie"
 
@@ -1278,6 +1608,9 @@ msgstr "Predvolené umiestnenie"
 
 msgid "IDS_BR_BODY_DEFAULT_PAGE_ABB"
 msgstr "Predvolená stránka"
+
+msgid "IDS_BR_BODY_DEFAULT"
+msgstr "Predvolený"
 
 msgid "IDS_BR_BODY_DATA_USAGE_REDUCED_BY_P1SDP_HP2SD_KB_OF_P3SD_KB_RECEIVED_TAP_HERE_TO_RESET_STATISTICS"
 msgstr "Spotreba údajov sa znížila o %1$d % (prijalo sa %2$d kB z %3$d kB). Ťuknutím sem vynulujete štatistiku."
@@ -1342,6 +1675,9 @@ msgstr "Zmenou veľkosti textu umožníte jednoduchšie čítanie, najmä pri pr
 msgid "IDS_BR_BODY_BOOKMARK_REMINDER_ABB"
 msgstr "Pripomenutie záložky"
 
+msgid "IDS_BR_BODY_BOOKMARKS"
+msgstr "Záložky"
+
 msgid "IDS_BR_BODY_BLOCK_POP_UPS_ON_WEB_PAGES"
 msgstr "Blokovať kontextové okná na webových stránkach"
 
@@ -1390,6 +1726,9 @@ msgstr "Povoliť zobrazenie oznámení pre %s"
 msgid "IDS_BR_BODY_ALLOWS_SITES_TO_SAVE_AND_READ_COOKIE_DATA"
 msgstr "Umožňuje lokalitám ukladať a čítať údaje súborov „cookie“."
 
+msgid "IDS_BR_BODY_ALL"
+msgstr "Všetky"
+
 msgid "IDS_BR_BODY_AFTER_YOU_VISIT_WEBPAGES_THE_PAGES_YOU_HAVE_VISITED_THE_MOST_WILL_BE_SHOWN_HERE"
 msgstr "Tu sa zobrazia vaše najnavštevovanejšie webové stránky."
 
@@ -1417,6 +1756,9 @@ msgstr "Pokročilé"
 msgid "IDS_BR_BODY_ADD_TO_CONTACT"
 msgstr "Pridať do kontaktu"
 
+msgid "IDS_BR_BODY_ADD_TO"
+msgstr "Pridať do"
+
 msgid "IDS_BR_BODY_ADD_THIS_WEBSITE_TO_BOOKMARKS_TO_OPEN_IT_FASTER_ABB"
 msgstr "Pridajte web. lokalitu do zálož. na rýchl. otvár."
 
@@ -1426,17 +1768,29 @@ msgstr "Riadok s adresou 2"
 msgid "IDS_BR_BODY_ADDRESS_LINE_1_ABB"
 msgstr "Riadok s adresou 1"
 
+msgid "IDS_BR_BODY_ADDDETAILSVIEW_TAGS"
+msgstr "Značky"
+
+msgid "IDS_BR_BODY_ADDBOOKMARKURL"
+msgstr "URL"
+
 msgid "IDS_BR_BODY_ACCEPT_COOKIES"
 msgstr "Prijať súbory cookie"
 
 msgid "IDS_BR_BODY_1_PROFILE_WILL_BE_DELETED"
 msgstr "Odstráni sa 1 profil."
 
+msgid "IDS_BR_BODY_1_ITEM_WILL_BE_DELETED"
+msgstr "1 položka sa vymaže."
+
 msgid "IDS_BR_ACBUTTON_TABS_ABB"
 msgstr "KARTY"
 
 msgid "IDS_BR_TPOP_STARTING_DOWNLOAD_ING"
 msgstr "Spúšťa sa sťahovanie..."
+
+msgid "IDS_BR_TPOP_MAXIMUM_NUMBER_OF_CHARACTERS_HPD_REACHED"
+msgstr "Dosiahol sa maximálny počet znakov (%d)."
 
 msgid "IDS_BR_TPOP_FOLDER_RENAMED"
 msgstr "Priečinok sa premenoval."
@@ -1453,8 +1807,14 @@ msgstr "Zruš."
 msgid "IDS_BR_SBODY_SET_THE_DEVICE_TO_SHOW_THE_FULL_WEBPAGE_ON_THE_SCREEN_WHEN_IT_IS_LOADED_WITHOUT_NEEDING_TO_SCROLL"
 msgstr "Zariadenie sa nastaví na zobrazenie celej webovej stránky na obrazovke po jej načítaní, bez potreby jej posúvania."
 
+msgid "IDS_BR_POP_UNSUPPORTMEDIATYPE"
+msgstr "Nepodporovaný typ média."
+
 msgid "IDS_BR_POP_UNABLE_TO_RUN_INTERNET_LOW_BATTERY"
 msgstr "Internet sa nedá spustiť. Vybitá batéria."
+
+msgid "IDS_BR_POP_UNABLE_TO_CONNECT_TO_MOBILE_NETWORKS_WHILE_FLIGHT_MODE_IS_ENABLED_CONNECT_TO_WI_FI_NETWORK_INSTEAD_OR_DISABLE_FLIGHT_MODE_AND_TRY_AGAIN"
+msgstr "Keď je zapnutý letový režim, nedá sa pripojiť k mobilným sieťam. Pripojte sa namiesto toho k sieti Wi-Fi alebo vypnite letový režim a skúste to znova"
 
 msgid "IDS_BR_POP_THE_DOWNLOAD_HAS_BEEN_STOPPED_AND_THE_DOWNLOADED_DATA_WILL_BE_DELETED"
 msgstr "Sťahovanie sa zastavilo a stiahnuté údaje sa odstránia."
@@ -1465,8 +1825,20 @@ msgstr "Search completed"
 msgid "IDS_BR_POP_READY"
 msgstr "Pripravené."
 
+msgid "IDS_BR_POP_INSTALL_SUCCESS"
+msgstr "Inštalácia dokončená."
+
+msgid "IDS_BR_POP_INSTALLATION_FAILED"
+msgstr "Inštalácia zlyhala."
+
 msgid "IDS_BR_POP_INFORM_MEMORY_ERROR"
 msgstr "Chyba pamäte."
+
+msgid "IDS_BR_POP_DELETING_ING"
+msgstr "Odstraňovanie..."
+
+msgid "IDS_BR_POP_DATA_ROAMING_IS_DISABLED_CONNECT_TO_WI_FI_NETWORK_INSTEAD_OR_ENABLE_DATA_ROAMING_AND_TRY_AGAIN"
+msgstr "Dátový roaming je zakázaný. Pripojte sa namiesto toho k sieti Wi-Fi alebo povoľte dátový roaming a skúste to znova"
 
 msgid "IDS_BR_POP_DATA_ROAMING_IS_DISABLED_CONNECT_TO_A_WI_FI_NETWORK_OR_ENABLE_DATA_ROAMING_AND_TRY_AGAIN"
 msgstr "Dátový roaming je vypnutý. Pripojte sa k sieti Wi-Fi alebo zapnite dátový roaming a skúste to znova."
@@ -1483,11 +1855,17 @@ msgstr "Web. apl."
 msgid "IDS_BR_OPT_VIEW_ONLINE"
 msgstr "Zobraziť online"
 
+msgid "IDS_BR_OPT_SHARE_VIA"
+msgstr "Zdieľať cez"
+
 msgid "IDS_BR_OPT_READ_ON_OFFLINE_PAGES_LATER_ABB"
 msgstr "Čítať neskôr na offline str."
 
 msgid "IDS_BR_OPT_QUICK_ACCESS_ABB2"
 msgstr "Rýchly prístup"
+
+msgid "IDS_BR_OPT_PASTE"
+msgstr "Vložiť"
 
 msgid "IDS_BR_OPT_ALWAYS_ENABLED_ABB"
 msgstr "Vždy zapnuté"
@@ -1513,6 +1891,9 @@ msgstr "Návrhy vyhľad. a adr. URL"
 msgid "IDS_BR_MBODY_HISTORY"
 msgstr "História"
 
+msgid "IDS_BR_MBODY_FONT_SIZE"
+msgstr "Veľkosť písma"
+
 msgid "IDS_BR_MBODY_FIT_PAGE_TO_SCREEN"
 msgstr "Prisp. stránku obrazovke"
 
@@ -1524,6 +1905,9 @@ msgstr "Vlastné"
 
 msgid "IDS_BR_MBODY_COUNTRY_REGION"
 msgstr "Krajina/oblasť"
+
+msgid "IDS_BR_HEADER_UNABLE_TO_DOWNLOAD_ABB"
+msgstr "Nedá sa stiahnuť"
 
 msgid "IDS_BR_HEADER_RENAME_FOLDER_ABB"
 msgstr "Premenovanie priečinka"
@@ -1555,8 +1939,14 @@ msgstr "Prid. inf."
 msgid "IDS_BR_BUTTON_WI_FI_ABB"
 msgstr "Wi-Fi"
 
+msgid "IDS_BR_BUTTON_UPDATE"
+msgstr "Aktualizovať"
+
 msgid "IDS_BR_BUTTON_SETTINGS_ABB"
 msgstr "Nast."
+
+msgid "IDS_BR_BUTTON_RETRY"
+msgstr "Opakovať"
 
 msgid "IDS_BR_BUTTON2_OK"
 msgstr "OK"
@@ -1582,6 +1972,9 @@ msgstr "Tento certifikát je od dôveryhodnej autority."
 msgid "IDS_BR_BODY_TAP_HERE_TO_ADD_A_QUICK_ACCESS_SHORTCUT"
 msgstr "Ťuknutím sem môžete pridať odkaz s rýchlym prístupom."
 
+msgid "IDS_BR_BODY_REQUEST_FAILED"
+msgstr "Požiadavka sa nepodarila."
+
 msgid "IDS_BR_BODY_PREFERENCES"
 msgstr "Predvoľby"
 
@@ -1597,398 +1990,14 @@ msgstr "Žiadne zhody"
 msgid "IDS_BR_BODY_MOBILE_DATA_IS_TURNED_OFF_CONNECT_TO_A_WI_FI_NETWORK_INSTEAD_OR_TAP_SETTINGS_TO_TURN_ON_MOBILE_DATA_AND_THEN_TRY_AGAIN"
 msgstr "Mobilné dátové pripojenie je vypnuté. Pripojte sa namiesto toho k sieti Wi-Fi alebo ťuknutím na tlačidlo Nastavenia zapnite mobilné dátové pripojenie a potom to skúste znova."
 
-msgid "IDS_BR_BODY_FIT_TO_WIDTH"
-msgstr "Prispôsobiť na šírku"
-
-msgid "IDS_BR_ACBUTTON_QUICK_ACCESS"
-msgstr "RÝCH. PRÍST."
-
-msgid "IDS_BR_OPT_OPEN_IN_NEW_TAB"
-msgstr "Otvoriť na novej karte"
-
-msgid "IDS_BR_BODY_SHARE_LINK"
-msgstr "Zdieľať prepojenie"
-
-msgid "IDS_BR_SK_SAVE_LITE"
-msgstr "Ulož"
-
-msgid "IDS_BR_SK_SAVE_ABB"
-msgstr "Ulož"
-
-msgid "IDS_BR_SK_SAVE"
-msgstr "Uložiť"
-
-msgid "IDS_BR_SK_PREVIOUS"
-msgstr "Predch."
-
-msgid "IDS_BR_SK_NEXT"
-msgstr "Ďalej"
-
-msgid "IDS_BR_SK_DELETE"
-msgstr "Odstrániť"
-
-msgid "IDS_BR_SK_CLEAR"
-msgstr "Vymazať"
-
-msgid "IDS_BR_SK_BACK"
-msgstr "Späť"
-
-msgid "IDS_BR_POP_WI_FI_CONNECTION_REQUIRED_CONNECT_TO_WI_FI_NETWORK_AND_TRY_AGAIN"
-msgstr "Vyžaduje sa pripojenie k sieti Wi-Fi. Pripojte sa k sieti Wi-Fi a skúste to znova"
-
-msgid "IDS_BR_POP_URL_NOT_FOUND"
-msgstr "Adresa sa nenašla."
-
-msgid "IDS_BR_POP_URL"
-msgstr "URL"
-
-msgid "IDS_BR_POP_SAVED"
-msgstr "Uložené."
-
-msgid "IDS_BR_POP_REMOVED"
-msgstr "Odstránené."
-
-msgid "IDS_BR_POP_PD_ITEMS_WILL_BE_DELETED"
-msgstr "%d položky sa vymažú."
-
-msgid "IDS_BR_POP_PD_ITEMS_SELECTED"
-msgstr "Vybraté položky: %d."
-
-msgid "IDS_BR_POP_NO_ITEMS_SELECTED"
-msgstr "Žiadne vybraté položky."
-
-msgid "IDS_BR_POP_NOT_ENOUGH_MEMORY"
-msgstr "Nedostatok pamäte."
-
-msgid "IDS_BR_POP_NEVER"
-msgstr "Nikdy"
-
-msgid "IDS_BR_POP_MOBILE_DATA_IS_DISABLED_CONNECT_TO_WI_FI_NETWORK_INSTEAD_OR_ENABLE_MOBILE_DATA_AND_TRY_AGAIN"
-msgstr "Mobilné dátové pripojenie je vypnuté. Pripojte sa namiesto toho k sieti Wi-Fi alebo zapnite mobilné dátové pripojenie a skúste to znova"
-
-msgid "IDS_BR_POP_LOADING_PLEASE_WAIT_ING"
-msgstr "Načítava sa. Počkajte, prosím..."
-
-msgid "IDS_BR_POP_INVALID_URL"
-msgstr "Neplatná adresa URL."
-
-msgid "IDS_BR_POP_FAIL"
-msgstr "Nepodarilo sa."
-
-msgid "IDS_BR_POP_ENTER_TITLE_ABB"
-msgstr "Zadať názov"
-
-msgid "IDS_BR_POP_DO_NOT_SHOW_AGAIN"
-msgstr "Už nezobrazovať"
-
-msgid "IDS_BR_POP_DOWNLOADCOMPLETE"
-msgstr "Sťahovanie dokončené."
-
-msgid "IDS_BR_POP_DISABLED"
-msgstr "Zakázané."
-
-msgid "IDS_BR_POP_DELETE_Q"
-msgstr "Odstrániť?"
-
-msgid "IDS_BR_POP_DELETED"
-msgstr "Odstránené."
-
-msgid "IDS_BR_POP_CLOSE_APPLICATION_Q"
-msgstr "Zavrieť aplikáciu?"
-
-msgid "IDS_BR_POP_BOOKMARK_ADDED"
-msgstr "Záložka je pridaná."
-
-msgid "IDS_BR_POP_AUTOMATIC_BRIGHTNESS"
-msgstr "Automatické nastavenie jasu"
-
-msgid "IDS_BR_POP_ACCOUNT"
-msgstr "Konto"
-
-msgid "IDS_BR_POP_1_ITEM_WILL_BE_DELETED"
-msgstr "1 položka sa vymaže."
-
-msgid "IDS_BR_POP_1_ITEM_SELECTED"
-msgstr "1 vybratá položka."
-
-msgid "IDS_BR_OPT_TRANSLATE"
-msgstr "Preložiť"
-
-msgid "IDS_BR_OPT_STOP"
-msgstr "Zastaviť"
-
-msgid "IDS_BR_OPT_SHOW"
-msgstr "Zobraziť"
-
-msgid "IDS_BR_OPT_SHARE"
-msgstr "Zdieľať"
-
-msgid "IDS_BR_OPT_SETTINGS"
-msgstr "Nastavenia"
-
-msgid "IDS_BR_OPT_SEND_EMAIL"
-msgstr "Odoslať e-mail"
-
-msgid "IDS_BR_OPT_SELECT"
-msgstr "Vyberte"
-
-msgid "IDS_BR_OPT_SD_CARD"
-msgstr "Karta SD"
-
-msgid "IDS_BR_OPT_RENAME"
-msgstr "Premenovať"
-
-msgid "IDS_BR_OPT_REFRESH"
-msgstr "Obnoviť"
-
-msgid "IDS_BR_OPT_MOVE"
-msgstr "Presunúť"
-
-msgid "IDS_BR_OPT_MESSAGES"
-msgstr "Správy"
-
-msgid "IDS_BR_OPT_LIST_VIEW"
-msgstr "Zobrazenie zoznamu"
-
-msgid "IDS_BR_OPT_I_AGREE"
-msgstr "Súhlasím."
-
-msgid "IDS_BR_OPT_HELP"
-msgstr "Pomocník"
-
-msgid "IDS_BR_OPT_DEVICE"
-msgstr "Zariadenie"
-
-msgid "IDS_BR_OPT_BOOKMARK"
-msgstr "Záložka"
-
-msgid "IDS_BR_OPT_ADDED"
-msgstr "Pridané."
-
-msgid "IDS_BR_OPT_ADD"
-msgstr "Pridať"
-
-msgid "IDS_BR_MBODY_DEFAULT_DOWNLOAD_STORAGE"
-msgstr "Predv. úl. priest. sťah."
-
-msgid "IDS_BR_HEADER_SIGN_IN_TO_SAMSUNG_ACCOUNT"
-msgstr "Prihláste sa pomocou konta Samsung"
-
-msgid "IDS_BR_HEADER_PD_SELECTED_ABB"
-msgstr "Vybraté: %d"
-
-msgid "IDS_BR_HEADER_NO_NETWORK_CONNECTION"
-msgstr "Žiadne sieťové pripojenie"
-
-msgid "IDS_BR_HEADER_FOLDER"
-msgstr "Priečinok"
-
-msgid "IDS_BR_HEADER_EDIT_PROFILE"
-msgstr "Upraviť profil"
-
-msgid "IDS_BR_BUTTON_SET"
-msgstr "Nastaviť"
-
-msgid "IDS_BR_BUTTON_NOT_NOW"
-msgstr "Teraz nie"
-
-msgid "IDS_BR_BUTTON_ENABLE_ABB"
-msgstr "Zapnúť"
-
-msgid "IDS_BR_BUTTON_EDIT"
-msgstr "Upraviť"
-
-msgid "IDS_BR_BUTTON_CONTINUE_ABB"
-msgstr "Pokrač."
-
-msgid "IDS_BR_BUTTON_CONTINUE"
-msgstr "Pokračovať"
-
-msgid "IDS_BR_BUTTON_CLOSE"
-msgstr "Zavrieť"
-
-msgid "IDS_BR_BUTTON_CANCEL_ABB"
-msgstr "Zrušiť"
-
-msgid "IDS_BR_BUTTON_CANCEL"
-msgstr "Zrušiť"
-
-msgid "IDS_BR_BUTTON_ALLOW"
-msgstr "Povoliť"
-
-msgid "IDS_BR_BODY_YESTERDAY"
-msgstr "Včera"
-
-msgid "IDS_BR_BODY_URL"
-msgstr "URL"
-
-msgid "IDS_BR_BODY_TODAY"
-msgstr "Dnes"
-
-msgid "IDS_BR_BODY_TITLE"
-msgstr "Názov"
-
-msgid "IDS_BR_BODY_THE_MAXIMUM_NUMBER_OF_CHARACTERS_HPD_HAS_BEEN_EXCEEDED"
-msgstr "Prekročil sa maximálny počet znakov (%d)."
-
-msgid "IDS_BR_BODY_STREAMING"
-msgstr "Streaming"
-
-msgid "IDS_BR_BODY_SMALL"
-msgstr "Malé"
-
-msgid "IDS_BR_BODY_SETTINGS"
-msgstr "Nastavenia"
-
-msgid "IDS_BR_BODY_SEARCH"
-msgstr "Hľadať"
-
-msgid "IDS_BR_BODY_RSS_SEARCH_RESULTS"
-msgstr "Výsledok hľadania"
-
-msgid "IDS_BR_BODY_PROFILE"
-msgstr "Profil"
-
-msgid "IDS_BR_BODY_PROCESSING_ING"
-msgstr "Prebieha spracovanie..."
-
-msgid "IDS_BR_BODY_PHONE_NUMBER_ABB"
-msgstr "Telef. číslo"
-
-msgid "IDS_BR_BODY_PHONE"
-msgstr "Telefón"
-
-msgid "IDS_BR_BODY_PD_ITEMS_WILL_BE_DELETED"
-msgstr "%d položky sa vymažú."
-
-msgid "IDS_BR_BODY_PASSWORD"
-msgstr "Heslo"
-
-msgid "IDS_BR_BODY_ON"
-msgstr "Zap."
-
-msgid "IDS_BR_BODY_OFF"
-msgstr "Vyp."
-
-msgid "IDS_BR_BODY_NO_RESULTS_FOUND"
-msgstr "Nenašli sa žiadne výsledky."
-
-msgid "IDS_BR_BODY_NO_HISTORIES"
-msgstr "Žiadna história"
-
-msgid "IDS_BR_BODY_NOTIFICATIONS"
-msgstr "Oznámenia"
-
-msgid "IDS_BR_BODY_MEDIUM"
-msgstr "Stredná"
-
-msgid "IDS_BR_BODY_IMAGES"
-msgstr "Obrázky"
-
-msgid "IDS_BR_BODY_FULL_SCREEN"
-msgstr "Celá obrazovka"
-
-msgid "IDS_BR_BODY_FONT_SIZE"
-msgstr "Veľkosť písma"
-
-msgid "IDS_BR_BODY_FOLDER_NAME"
-msgstr "Názov priečinka"
-
-msgid "IDS_BR_BODY_ENTER_POSTCODE_ABB"
-msgstr "Zadajte poštové smerovacie číslo."
-
-msgid "IDS_BR_BODY_ENTER_POSTCODE"
-msgstr "Zadajte poštové smerovacie číslo."
-
-msgid "IDS_BR_BODY_ENTER_PHONE_NUMBER"
-msgstr "Zadajte telefónne číslo."
-
-msgid "IDS_BR_BODY_ENTER_NAME"
-msgstr "Zadať meno"
-
-msgid "IDS_BR_BODY_ENTER_FOLDER_NAME"
-msgstr "Zadajte názov priečinka."
-
-msgid "IDS_BR_BODY_ENTER_EMAIL_ADDRESS"
-msgstr "Zadajte e-mailovú adresu."
-
-msgid "IDS_BR_BODY_EMAIL_ADDRESS"
-msgstr "E-mailová adresa"
-
-msgid "IDS_BR_BODY_DOWNLOADING_ING"
-msgstr "Sťahovanie..."
-
-msgid "IDS_BR_BODY_DEVELOPER_MODE"
-msgstr "Vývojársky režim"
-
-msgid "IDS_BR_BODY_DEFAULT"
-msgstr "Predvolený"
-
-msgid "IDS_BR_BODY_BOOKMARKS"
-msgstr "Záložky"
-
-msgid "IDS_BR_BODY_ALL"
-msgstr "Všetky"
-
-msgid "IDS_BR_BODY_ADD_TO"
-msgstr "Pridať do"
-
-msgid "IDS_BR_BODY_ADDDETAILSVIEW_TAGS"
-msgstr "Značky"
-
-msgid "IDS_BR_BODY_ADDBOOKMARKURL"
-msgstr "URL"
-
-msgid "IDS_BR_BODY_1_ITEM_WILL_BE_DELETED"
-msgstr "1 položka sa vymaže."
-
-msgid "IDS_BR_TPOP_MAXIMUM_NUMBER_OF_CHARACTERS_HPD_REACHED"
-msgstr "Dosiahol sa maximálny počet znakov (%d)."
-
-msgid "IDS_BR_POP_UNSUPPORTMEDIATYPE"
-msgstr "Nepodporovaný typ média."
-
-msgid "IDS_BR_POP_UNABLE_TO_CONNECT_TO_MOBILE_NETWORKS_WHILE_FLIGHT_MODE_IS_ENABLED_CONNECT_TO_WI_FI_NETWORK_INSTEAD_OR_DISABLE_FLIGHT_MODE_AND_TRY_AGAIN"
-msgstr "Keď je zapnutý letový režim, nedá sa pripojiť k mobilným sieťam. Pripojte sa namiesto toho k sieti Wi-Fi alebo vypnite letový režim a skúste to znova"
-
-msgid "IDS_BR_POP_INSTALL_SUCCESS"
-msgstr "Inštalácia dokončená."
-
-msgid "IDS_BR_POP_INSTALLATION_FAILED"
-msgstr "Inštalácia zlyhala."
-
-msgid "IDS_BR_POP_DELETING_ING"
-msgstr "Odstraňovanie..."
-
-msgid "IDS_BR_POP_DATA_ROAMING_IS_DISABLED_CONNECT_TO_WI_FI_NETWORK_INSTEAD_OR_ENABLE_DATA_ROAMING_AND_TRY_AGAIN"
-msgstr "Dátový roaming je zakázaný. Pripojte sa namiesto toho k sieti Wi-Fi alebo povoľte dátový roaming a skúste to znova"
-
-msgid "IDS_BR_OPT_SHARE_VIA"
-msgstr "Zdieľať cez"
-
-msgid "IDS_BR_OPT_PASTE"
-msgstr "Vložiť"
-
-msgid "IDS_BR_MBODY_FONT_SIZE"
-msgstr "Veľkosť písma"
-
-msgid "IDS_BR_HEADER_UNABLE_TO_DOWNLOAD_ABB"
-msgstr "Nedá sa stiahnuť"
-
-msgid "IDS_BR_BUTTON_UPDATE"
-msgstr "Aktualizovať"
-
-msgid "IDS_BR_BUTTON_RETRY"
-msgstr "Opakovať"
-
-msgid "IDS_BR_BODY_REQUEST_FAILED"
-msgstr "Požiadavka sa nepodarila."
-
 msgid "IDS_BR_BODY_LOGIN"
 msgstr "Prihlásenie"
 
 msgid "IDS_BR_BODY_LOADING_ING"
 msgstr "Načítava sa..."
+
+msgid "IDS_BR_BODY_FIT_TO_WIDTH"
+msgstr "Prispôsobiť na šírku"
 
 msgid "IDS_BR_BODY_FIT_TO_SCREEN"
 msgstr "Prispôsobiť obrazovke"
@@ -1999,165 +2008,12 @@ msgstr "Stiahnuté položky"
 msgid "IDS_BR_BODY_DATA_ROAMING_IS_DISABLED_CONNECT_TO_A_WI_FI_NETWORK_INSTEAD_OR_ENABLE_DATA_ROAMING_AND_TRY_AGAIN"
 msgstr "Dátový roaming je vypnutý. Pripojte sa namiesto toho k sieti Wi-Fi alebo povoľte dátový roaming a skúste to znova."
 
-msgid "IDS_BR_POP_DOWNLOAD_CANCELLED"
-msgstr "Sťahovanie zrušené."
+msgid "IDS_BR_ACBUTTON_QUICK_ACCESS"
+msgstr "RÝCH. PRÍST."
 
-msgid "IDS_BR_BUTTON_SECRET_ON_ABB"
-msgstr "Zapnúť utaj."
+msgid "IDS_ST_POP_SOME_CONTENT_HAS_BEEN_BLOCKED_TO_PROTECT_YOUR_DEVICE"
+msgstr "Niektorý obsah bol zablokovaný z dôvodu ochrany zariadenia."
 
-msgid "IDS_BR_MBODY_PRIVACY"
-msgstr "Ochrana osobných údajov"
-
-msgid "IDS_BR_MBODY_DEFAULT_STORAGE"
-msgstr "Predvol. úložný priestor"
-
-msgid "IDS_BR_MBODY_MANUAL_ZOOM"
-msgstr "Manuálne priblíženie"
-
-msgid "IDS_BR_TMBODY_DEFAULT_SEARCH_ENGINE"
-msgstr "Predvolený vyhľadávač"
-
-msgid "IDS_BR_MBODY_SAVE_SIGN_IN_INFO"
-msgstr "Ulož. prihlasovacie údaje"
-
-msgid "IDS_BR_OPT_TURN_OFF_SECRET_MODE_ABB"
-msgstr "Vypnúť Tajný režim"
-
-msgid "IDS_BR_OPT_TURN_ON_SECRET_MODE_ABB"
-msgstr "Zapnúť Tajný režim"
-
-msgid "IDS_BR_OPT_SHOW_PASSWORD_ABB2"
-msgstr "Zobraziť heslo"
-
-msgid "IDS_BR_OPT_SECRET_MODE_SECURITY_ABB"
-msgstr "Zabezpečenie pre Tajný režim"
-
-msgid "IDS_BR_BUTTON_USE_PASSWORD_ABB"
-msgstr "Použiť heslo"
-
-msgid "IDS_BR_HEADER_DONT_USE_PASSWORD_ABB"
-msgstr "Nepoužívať heslo"
-
-msgid "IDS_BR_MBODY_MOST_VISITED_WEBSITES"
-msgstr "Najnavštevovanejšie weby"
-
-msgid "IDS_BR_MBODY_SET_MY_PROFILE"
-msgstr "Nastaviť môj profil"
-
-msgid "IDS_BR_MBODY_MY_AUTO_FILL_PROFILE"
-msgstr "Môj profil aut. vypĺňania"
-
-msgid "IDS_BR_SBODY_MANAGE_DATA_USED_TO_FILL_IN_FORMS_ONLINE"
-msgstr "Môžete spravovať údaje používané na vypĺňanie formulárov online."
-
-msgid "IDS_BR_MBODY_SAVE_SIGN_IN_INFO_ABB"
-msgstr "Ulož. prihl. údaje"
-
-msgid "IDS_BR_OPT_LOCATION_ACCESS_DATA"
-msgstr "Lokalizačné údaje"
-
-msgid "IDS_BR_OPT_AUTO_FILL_DATA"
-msgstr "Automatické vypĺňanie údajov"
-
-msgid "IDS_BR_BODY_ANY_WEBPAGES_YOU_VIEW_WHILE_SECRET_MODE_IS_TURNED_ON_WONT_APPEAR_IN_YOUR_BROWSER_OR_SEARCH_HISTORY_MSG"
-msgstr "Webové stránky zobrazené pri zapnutej funkcii Tajný režim sa po jej vypnutí nebudú zobrazovať v histórii prehliadača ani v histórii vyhľadávania.\n\nZáložky a webové stránky uložené pri zapnutej funkcii Tajný režim sa po jej vypnutí nebudú zobrazovať.\n\nSvoje údaje v aplikácii Tajný režim môžete tiež chrániť heslom."
-
-msgid "IDS_BR_BODY_ANY_WEBPAGES_YOU_VIEW_WHILE_SECRET_MODE_IS_TURNED_ON_WONT_APPEAR_IN_YOUR_BROWSER_OR_SEARCH_MSG"
-msgstr "Webové stránky zobrazené pri zapnutej funkcii Tajný režim sa po jej vypnutí nebudú zobrazovať v histórii prehliadača ani v histórii vyhľadávania.\n\nZáložky a webové stránky uložené pri zapnutej funkcii Tajný režim sa po jej vypnutí nebudú zobrazovať."
-
-msgid "IDS_BR_BUTTON_SECRET_OFF_ABB"
-msgstr "Vypnúť utaj."
-
-msgid "IDS_BR_BUTTON_DONT_USE_PASSWORD_ABB"
-msgstr "Nepoužívať heslo"
-
-msgid "IDS_BR_BUTTON_NEW_TAB_ABB2"
-msgstr "Nová"
-
-msgid "IDS_BR_NPBODY_WEB_ADDRESS_ABB"
-msgstr "Webová adresa"
-
-msgid "IDS_BR_HEADER_ADD_WEBPAGE_TO_QUICK_ACCESS_ABB"
-msgstr "Prid. str. do: Rýchly prístup"
-
-msgid "IDS_BR_TMBODY_TURN_ON_JAVASCRIPT"
-msgstr "Zapnúť JavaScript"
-
-msgid "IDS_BR_HEADER_COULDNT_OPEN_NEW_TAB_ABB"
-msgstr "Nemožno otvoriť novú kartu"
-
-msgid "IDS_BR_OPT_OPEN_IN_NEW_TAB_ABB"
-msgstr "Otvoriť na novej karte"
-
-msgid "IDS_BR_TPOP_FOLDER_NAME_ALREADY_IN_USE"
-msgstr "Názov priečinka sa už používa."
-
-msgid "IDS_BR_NPBODY_NEW_FOLDER_PD"
-msgstr "Nový priečinok %d"
-
-msgid "IDS_BR_NPBODY_NEW_FOLDER"
-msgstr "Nový priečinok"
-
-msgid "IDS_BR_OPT_ENABLE_JAVASCRIPT"
-msgstr "Povoliť JavaScript"
-
-msgid "IDS_BR_TMBODY_MANAGE_WEBSITE_DATA"
-msgstr "Správa údajov webových lokalít"
-
-msgid "IDS_BR_HEADER_SET_HOME_PAGE_ABB"
-msgstr "Nastavenie domovskej stránky"
-
-msgid "IDS_BR_TPOP_WEBPAGE_ADDED_TO_QUICK_ACCESS_LIST"
-msgstr "Webová stránka sa pridala do zoznamu na rýchly prístup."
-
-msgid "IDS_BR_OPT_EDIT_QUICK_ACCESS_ABB"
-msgstr "Upraviť funkciu Rýchly prístup"
-
-msgid "IDS_BR_OPT_REMOVE_FROM_BOOKMARKS_ABB"
-msgstr "Odstrániť zo záložiek"
-
-msgid "IDS_BR_HEADER_ADD_BOOKMARK_ABB"
-msgstr "Pridať záložku"
-
-msgid "IDS_BR_BODY_BROWSING_HISTORY"
-msgstr "História prehliadania"
-
-msgid "IDS_BR_HEADER_TABS_ABB2"
-msgstr "Karty"
-
-msgid "IDS_BR_OPT_NEW_TAB"
-msgstr "Nová karta"
-
-msgid "IDS_BR_BUTTON_FORWARD_ABB2"
-msgstr "Dopredu"
-
-msgid "IDS_BR_BUTTON_BACK_ABB3"
-msgstr "Späť"
-
-msgid "IDS_BR_BUTTON_BOOKMARKS_ABB"
-msgstr "Záložky"
-
-msgid "IDS_BR_NPBODY_NO_PROFILES_ABB"
-msgstr "Žiadne profily"
-
-msgid "IDS_BR_TAB2_HISTORY"
-msgstr "História"
-
-msgid "IDS_BR_TAB2_BOOKMARKS"
-msgstr "Záložky"
-
-msgid "IDS_BR_HEADER_SAVE_CONTENT_TO_ABB"
-msgstr "Uložiť obsah do"
-
-msgid "IDS_BR_HEADER_SELECT_ITEMS_ABB2"
-msgstr "Vyberte položky"
-
-msgid "IDS_BR_BODY_YOUR_PASSWORD_MUST_CONTAIN_AT_LEAST_PD_CHARACTERS_INCLUDING_AT_LEAST_1_LETTER"
-msgstr "Heslo musí byť zložené z aspoň %d znakov vrátane aspoň 1 písmena."
-
-msgid "IDS_BR_BODY_AN_INCORRECT_PASSWORD_HAS_BEEN_ENTERED_TRY_AGAIN"
-msgstr "Zadali ste nesprávne heslo. Skúste to znova."
-
-msgid "IDS_BR_BODY_NO_TABS"
-msgstr "Žiadne karty"
+msgid "IDS_ST_POP_SELECT_WHETHER_TO_GO_TO_THE_WEBPAGE_ANYWAY"
+msgstr "Vyberte, či chcete prejsť na webovú stránku napriek tomu."
 

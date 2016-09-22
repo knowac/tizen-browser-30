@@ -76,7 +76,7 @@ class WebView
 public:
     WebView(Evas_Object *, TabId, const std::string& title, bool incognitoMode);
     virtual ~WebView();
-    void init(bool desktopMode, TabOrigin origin);
+    void init(bool desktopMode, TabOrigin origin, Evas_Object * view = NULL);
 
 #if PROFILE_MOBILE
     virtual void orientationChanged() override;
@@ -84,9 +84,7 @@ public:
 
     void setURI(const std::string &);
     std::string getURI(void);
-#if PWA
-    void requestManifest(void);
-#endif
+
     std::string getTitle(void);
 
     std::string getUserAgent(void);
@@ -111,9 +109,15 @@ public:
     std::map<std::string, std::vector<std::string> > parse_uri(const char *uriToParse);
 
     Evas_Object * getLayout();
-    Evas_Object * getWidget();
 
     void confirmationResult(WebConfirmationPtr);
+
+    /**
+     * @brief Get the state of private mode
+     *
+     * @return state of private mode
+     */
+    bool isPrivateMode() {return m_private;}
 
     std::shared_ptr<tizen_browser::tools::BrowserImage> captureSnapshot(int width, int height, bool async,
             tizen_browser::tools::SnapshotType snapshot_type);
@@ -233,11 +237,6 @@ public:
     void ewkSettingsAutofillPasswordFormEnabledSet(bool value);
 
     /**
-     * @brief Set enable opening of the new pages by the script flag.
-     */
-    void ewkSettingsScriptsCanOpenNewPagesEnabledSet(bool value);
-
-    /**
      * @brief Check if fullscreen mode is enabled.
      */
     bool isFullScreen() const { return m_fullscreen; };
@@ -284,11 +283,6 @@ public:
 
     boost::signals2::signal<void (const std::string&, const std::string&)> redirectedWebPage;
     boost::signals2::signal<void()> unsecureConnection;
-    boost::signals2::signal<void(bool)> fullscreenModeSet;
-#if PWA
-    boost::signals2::signal<void (std::string)> resultDataManifest;
-    boost::signals2::signal<void (std::string)> iconDownload;
-#endif
 
 protected:
     std::string getRedirectedURL() {return m_redirectedURL;};
@@ -301,11 +295,6 @@ private:
 
     static void __newWindowRequest(void * data, Evas_Object *, void *out);
     static void __closeWindowRequest(void * data, Evas_Object *, void *);
-
-#if PWA
-    static void dataSetManifest(Evas_Object* view, Ewk_View_Request_Manifest* manifest, void*);
-    static int result_cb(int ret, void *data);
-#endif
 
 #if  PROFILE_MOBILE
     context_menu_type _get_menu_type(Ewk_Context_Menu *menu);
@@ -390,9 +379,6 @@ private:
     std::map<CertificateConfirmationPtr, Ewk_Certificate_Policy_Decision *> m_confirmationCertificatenMap;
 
     static const std::string COOKIES_PATH;
-#if PWA
-    static std::string m_pwaData;
-#endif
 
 #if PROFILE_MOBILE
     int m_status_code;

@@ -118,7 +118,6 @@ static void app_control(app_control_h app_control, void* app_data){
     char *request_uri = NULL;
     char *request_mime_type = NULL;
     char *request_caller = NULL;
-    char *search_keyword = NULL;
 
     if (app_control_get_operation(app_control, &operation) != APP_CONTROL_ERROR_NONE) {
         BROWSER_LOGD("get app_control operation failed");
@@ -140,30 +139,11 @@ static void app_control(app_control_h app_control, void* app_data){
     std::string uri = request_uri != NULL ? std::string(request_uri) : DEFAULT_URL;
     std::string caller = request_caller != NULL ? std::string(request_caller) : DEFAULT_CALLER;
 
-    if((operation && !strcmp(operation, APP_CONTROL_OPERATION_VIEW)) && (request_uri != NULL)) {
+    if((operation && !strcmp(operation, "http://tizen.org/appcontrol/operation/view")) && (request_uri != NULL)) {
         if (request_uri) {
             if (!strncmp(request_uri, "/opt/", strlen("/opt/"))) {
                 uri = std::string("file://") + uri;
             }
-        }
-    }
-
-    if (app_control_get_extra_data(app_control, "search", &search_keyword) == APP_CONTROL_ERROR_NONE) {
-        BROWSER_LOGD("search keyword launching");
-
-        if (search_keyword) {
-            uri=std::string(search_keyword);
-            free(search_keyword);
-        }
-    }
-
-    if ((operation && !strcmp(operation, APP_CONTROL_OPERATION_SEARCH )) &&
-    ((app_control_get_extra_data(app_control, "http://tizen.org/appcontrol/data/keyword", &search_keyword) == APP_CONTROL_ERROR_NONE) ||
-    (app_control_get_extra_data(app_control, APP_CONTROL_DATA_TEXT, &search_keyword) == APP_CONTROL_ERROR_NONE))) { 
-        BROWSER_LOGD("APP_CONTROL_OPERATION_SEARCH");
-        if (search_keyword) {
-            uri=std::string(search_keyword);
-            free(search_keyword);
         }
     }
 

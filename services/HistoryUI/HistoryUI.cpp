@@ -16,54 +16,67 @@
 
 #include <Elementary.h>
 #include <boost/concept_check.hpp>
-#include <boost/format.hpp>
 #include <vector>
 #include <string>
 #include <string.h>
 #include <AbstractMainWindow.h>
 
-#include "app_i18n.h"
 #include "HistoryUI.h"
 #include "ServiceManager.h"
 #include "BrowserLogger.h"
 #include "Tools/EflTools.h"
 #include "Tools/GeneralTools.h"
 #include "HistoryDaysListManager/HistoryDaysListManagerMob.h"
+#include "HistoryDaysListManager/HistoryDaysListManagerTv.h"
 #include "services/HistoryService/HistoryItem.h"
+#if !PROFILE_MOBILE
+#include "HistoryUIFocusManager.h"
+#endif
 #include "HistoryDeleteManager.h"
 
 namespace tizen_browser{
 namespace base_ui{
 
-// TODO History needs solid refactoring. A lot of features are not used in any place.
-
-using namespace services;
 EXPORT_SERVICE(HistoryUI, "org.tizen.browser.historyui")
+
+typedef struct _HistoryItemData
+{
+    std::shared_ptr<tizen_browser::services::HistoryItem> item;
+    std::shared_ptr<tizen_browser::base_ui::HistoryUI> historyUI;
+} HistoryItemData;
+
+struct ItemData{
+    tizen_browser::base_ui::HistoryUI* historyUI;
+    Elm_Object_Item * e_item;
+};
+
+static std::vector<HistoryItemData*> _history_item_data;
 
 HistoryUI::HistoryUI()
     : m_parent(nullptr)
     , m_main_layout(nullptr)
+    , m_actionBar(nullptr)
     , m_buttonClose(nullptr)
     , m_buttonClear(nullptr)
     , m_daysList(nullptr)
-    , m_historyDaysListManager(nullptr)
-    , m_naviframe(nullptr)
-    , m_modulesToolbar(nullptr)
+    , m_historyDeleteManager(std::make_shared<HistoryDeleteManager>())
 {
     BROWSER_LOGD("[%s:%d] ", __PRETTY_FUNCTION__, __LINE__);
     m_edjFilePath = EDJE_DIR;
     m_edjFilePath.append("HistoryUI/History.edj");
 
-    if (!m_historyDaysListManager)
-        m_historyDaysListManager = std::make_shared<HistoryDaysListManagerMob>();
+#if PROFILE_MOBILE
+    m_historyDaysListManager = std::make_shared<HistoryDaysListManagerMob>();
+#else
+    m_historyDaysListManager = std::make_shared<HistoryDaysListManagerTv>(m_historyDeleteManager);
+#endif
 
     m_historyDaysListManager->signalHistoryItemClicked.connect(signalHistoryItemClicked);
     m_historyDaysListManager->signalDeleteHistoryItems.connect(signalDeleteHistoryItems);
-    m_historyDaysListManager->setRightButtonEnabledForHistory.connect(
-        boost::bind(&HistoryUI::setRightButtonEnabled, this, _1));
-    m_historyDaysListManager->setSelectedItemsCount.connect([this](auto count){
-        m_naviframe->setTitle((boost::format(_("IDS_BR_HEADER_PD_SELECTED_ABB")) % count).str());
-    });
+#if !PROFILE_MOBILE
+    m_focusManager = std::unique_ptr<HistoryUIFocusManager>(
+            new HistoryUIFocusManager(m_historyDaysListManager));
+#endif
 }
 
 HistoryUI::~HistoryUI()
@@ -74,24 +87,26 @@ void HistoryUI::showUI()
 {
     BROWSER_LOGD("[%s:%d] ", __PRETTY_FUNCTION__, __LINE__);
     M_ASSERT(m_main_layout);
-    m_naviframe->show();
+    evas_object_show(m_actionBar);
     evas_object_show(m_main_layout);
+#if !PROFILE_MOBILE
+    m_focusManager->refreshFocusChain();
+#endif
 }
 
 void HistoryUI::hideUI()
 {
     BROWSER_LOGD("[%s:%d] ", __PRETTY_FUNCTION__, __LINE__);
     M_ASSERT(m_main_layout);
+    evas_object_hide(m_actionBar);
     evas_object_hide(m_main_layout);
     clearItems();
-    m_naviframe->hide();
+#if !PROFILE_MOBILE
+    m_focusManager->unsetFocusChain();
+#endif
+    m_historyDeleteManager->setDeleteMode(false);
 }
 
-void HistoryUI::setRightButtonEnabled(bool enable)
-{
-    BROWSER_LOGD("[%s:%d] %d", __PRETTY_FUNCTION__, __LINE__, enable);
-    m_naviframe->setRightButtonEnabled(enable);
-}
 
 void HistoryUI::init(Evas_Object* parent)
 {
@@ -103,45 +118,49 @@ void HistoryUI::init(Evas_Object* parent)
 Evas_Object* HistoryUI::getContent()
 {
     M_ASSERT(m_parent);
-    createHistoryUILayout();
-    return m_naviframe->getLayout();
+    if (!m_main_layout)
+        createHistoryUILayout(m_parent);
+    return m_main_layout;
 }
 
-void HistoryUI::createHistoryUILayout()
+void HistoryUI::createHistoryUILayout(Evas_Object* parent)
 {
     elm_theme_extension_add(nullptr, m_edjFilePath.c_str());
-    if (!m_naviframe)
-        m_naviframe = std::make_shared<NaviframeWrapper>(m_parent);
-
-    m_main_layout = elm_layout_add(m_naviframe->getLayout());
-    m_naviframe->setContent(m_main_layout);
+    m_main_layout = elm_layout_add(parent);
 
     elm_layout_file_set(m_main_layout, m_edjFilePath.c_str(), "history-layout");
     evas_object_size_hint_weight_set(m_main_layout, EVAS_HINT_EXPAND, EVAS_HINT_EXPAND);
     evas_object_size_hint_align_set(m_main_layout, EVAS_HINT_FILL, EVAS_HINT_FILL);
 
+    m_actionBar = createActionBar(m_main_layout);
     m_daysList = createDaysList(m_main_layout);
     clearItems();
-    createTopContent();
-
-    elm_object_signal_emit(m_naviframe->getLayout(), "show_toolbars", "ui");
+#if !PROFILE_MOBILE
+    m_focusManager->setFocusObj(m_main_layout);
+#endif
 }
 
-void HistoryUI::createTopContent()
-{
-    BROWSER_LOGD("[%s:%d] ", __PRETTY_FUNCTION__, __LINE__);
-    M_ASSERT(m_naviframe->getLayout());
-
-    m_naviframe->addPrevButton(_close_clicked_cb, this);
-    m_naviframe->setPrevButtonVisible(true);
-    m_naviframe->setTitle(_("IDS_BR_TAB2_HISTORY"));
+std::map<std::string, services::HistoryItemVector>
+HistoryUI::groupItemsByDomain(const services::HistoryItemVector& historyItems) {
+    std::map<std::string, services::HistoryItemVector> groupedMap;
+    for(auto& item : historyItems) {
+        std::string domain = tools::extractDomain(item->getUrl());
+        if(groupedMap.find(domain) == groupedMap.end()) {
+            groupedMap.insert(std::pair<std::string, services::HistoryItemVector>(domain, {}));
+        }
+        groupedMap.find(domain)->second.push_back(item);
+    }
+    return groupedMap;
 }
 
-Evas_Object* HistoryUI::createDaysList(Evas_Object* parent, bool isRemoveMode)
+Evas_Object *HistoryUI::createDaysList(Evas_Object *history_layout)
 {
     M_ASSERT(history_layout);
 
-    auto list = m_historyDaysListManager->createDaysList(parent, isRemoveMode);
+    Evas_Object* list = m_historyDaysListManager->createDaysList(
+            history_layout);
+
+    elm_object_part_content_set(history_layout, "history_list", list);
 
     evas_object_size_hint_weight_set(list, EVAS_HINT_EXPAND, EVAS_HINT_EXPAND);
     evas_object_size_hint_align_set(list, EVAS_HINT_FILL, EVAS_HINT_FILL);
@@ -149,36 +168,64 @@ Evas_Object* HistoryUI::createDaysList(Evas_Object* parent, bool isRemoveMode)
     return list;
 }
 
-void HistoryUI::removeSelectedHistoryItems()
+Evas_Object* HistoryUI::createActionBar(Evas_Object* history_layout)
 {
-    if (!m_historyDaysListManager) {
-        BROWSER_LOGD("[%s:%d] No selected elements to delete");
-        return;
-    }
-    if (m_historyDaysListManager->isSelectAllChecked())
-        clearHistoryClicked();
-    m_historyDaysListManager->removeSelectedItems();
+    Evas_Object* actionBar = elm_layout_add(history_layout);
+    elm_object_part_content_set(history_layout, "action_bar_history", actionBar);
+    evas_object_size_hint_weight_set(actionBar, EVAS_HINT_EXPAND, EVAS_HINT_EXPAND);
+    evas_object_size_hint_align_set(actionBar, EVAS_HINT_FILL, EVAS_HINT_FILL);
+
+    elm_layout_file_set(actionBar, m_edjFilePath.c_str(), "action_bar");
+
+    m_buttonClear = elm_button_add(actionBar);
+    elm_object_style_set(m_buttonClear, "history_button");
+    evas_object_smart_callback_add(m_buttonClear, "clicked", HistoryUI::_clearHistory_clicked, this);
+    elm_object_part_content_set(actionBar, "clearhistory_click", m_buttonClear);
+
+    m_buttonClose = elm_button_add(actionBar);
+    elm_object_style_set(m_buttonClose, "close_history_button");
+    evas_object_smart_callback_add(m_buttonClose, "clicked", HistoryUI::_close_clicked_cb, this);
+    elm_object_part_content_set(actionBar, "close_click", m_buttonClose);
+#if !PROFILE_MOBILE
+    m_focusManager->setHistoryUIButtons(m_buttonClose, m_buttonClear);
+#endif
+    return actionBar;
 }
 
 void HistoryUI::_close_clicked_cb(void * data, Evas_Object*, void*)
 {
     BROWSER_LOGD("[%s:%d] ", __PRETTY_FUNCTION__, __LINE__);
-    if (!data) {
-        BROWSER_LOGW("[%s] data = nullptr", __PRETTY_FUNCTION__);
-        return;
+    if (data) {
+        HistoryUI *historyUI = static_cast<HistoryUI*>(data);
+        historyUI->closeHistoryUIClicked();
     }
-    auto self = static_cast<HistoryUI*>(data);
-    self->closeHistoryUIClicked();
 }
 
-void HistoryUI::addHistoryItems(
-    std::shared_ptr<HistoryItemVector> items,
-    HistoryPeriod period)
+void HistoryUI::_clearHistory_clicked(void* data, Evas_Object*, void*)
 {
     BROWSER_LOGD("[%s:%d] ", __PRETTY_FUNCTION__, __LINE__);
-    if (items->size() == 0)
-        return;
-    m_historyDaysListManager->addHistoryItems(items, period);
+    if (!data) return;
+    HistoryUI *historyUI = static_cast<HistoryUI*>(data);
+#if PROFILE_MOBILE
+    historyUI->clearItems();
+    historyUI->clearHistoryClicked();
+#else
+    historyUI->getHistoryDeleteManager()->toggleDeleteMode();
+#endif
+
+}
+
+void HistoryUI::addHistoryItems(std::shared_ptr<services::HistoryItemVector> items,
+        HistoryPeriod period)
+{
+    if(items->size() == 0) return;
+    auto grouped = groupItemsByDomain(*items);
+    m_historyDaysListManager->addHistoryItems(grouped, period);
+}
+
+void HistoryUI::removeHistoryItem(const std::string& uri)
+{
+    BROWSER_LOGD("[%s] uri=%s", __func__, uri.c_str());
 }
 
 void HistoryUI::clearItems()

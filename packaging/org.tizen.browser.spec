@@ -1,6 +1,6 @@
 Name:       org.tizen.browser
 Summary:    Tizen TV Open Browser
-Version:    2.0.0
+Version:    1.6.4
 Release:    0
 License:    Apache-2.0
 Group:      Applications/Web
@@ -52,7 +52,6 @@ BuildRequires:  pkgconfig(notification)
 BuildRequires:  pkgconfig(appsvc)
 BuildRequires:  pkgconfig(capi-appfw-app-manager)
 BuildRequires:  pkgconfig(capi-content-media-content)
-BuildRequires:  pkgconfig(shortcut)
 %endif
 
 %define BUILD_UT  %{?build_ut:ON}%{!?build_ut:OFF}

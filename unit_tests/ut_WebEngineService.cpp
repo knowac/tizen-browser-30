@@ -245,15 +245,15 @@ BOOST_AUTO_TEST_CASE(PrivateModeOnOff)
 
     tizen_browser::basic_webengine::TabId parentTabId = webEngineService->addTab("www.test.com");
 
-    BOOST_CHECK(!(webEngineService->isSecretMode()));
+    BOOST_CHECK(!(webEngineService->isPrivateMode()));
 
     webEngineService->setPrivateMode(true);
 
-    BOOST_CHECK(webEngineService->isSecretMode());
+    BOOST_CHECK(webEngineService->isPrivateMode());
 
     webEngineService->setPrivateMode(false);
 
-    BOOST_CHECK(!(webEngineService->isSecretMode()));
+    BOOST_CHECK(!(webEngineService->isPrivateMode()));
 
     BOOST_TEST_MESSAGE(TAG "Print closeTab():" << webEngineService->closeTab());
 

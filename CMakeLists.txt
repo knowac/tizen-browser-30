@@ -29,21 +29,18 @@ option(TIZEN_BUILD "Build for Tizen. Default ON" ON)
 option(DYN_INT_LIBS "Buils internal libs as dynamic" ON)
 option(COVERAGE_STATS "Code coverage" OFF)
 
-#Enable C++14 support
+#Enable C++11 support
 include(CheckCXXCompilerFlag)
-CHECK_CXX_COMPILER_FLAG("-std=c++14" COMPILER_SUPPORTS_CXX14)
 CHECK_CXX_COMPILER_FLAG("-std=c++11" COMPILER_SUPPORTS_CXX11)
 CHECK_CXX_COMPILER_FLAG("-std=c++0x" COMPILER_SUPPORTS_CXX0X)
 
 
-if(COMPILER_SUPPORTS_CXX14)
-    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++14 -O0 -g -ggdb3")
-elseif(COMPILER_SUPPORTS_CXX11)
+if (COMPILER_SUPPORTS_CXX11)
     set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -O0 -g -ggdb3")
-elseif(COMPILER_SUPPORTS_CXX0X)
+    elseif(COMPILER_SUPPORTS_CXX0X)
     set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++0x -O0 -g -ggdb3")
 else()
-    message(FATAL_ERROR "The Compiler ${CMAKE_CXX_COMPILER} doesn't support C++14 nor C++11")
+    message(FATAL_ERROR "The Compiler ${CMAKE_CXX_COMPILER} doesn't support C++11")
 endif()
 
 set(BOOST_LIBS regex filesystem system date_time)
@@ -77,7 +74,6 @@ if(TIZEN_BUILD)
         capi-media-image-util
         efl-extension
         libssl
-        shortcut
     )
 
    if (${PROFILE} MATCHES "mobile")
@@ -89,7 +85,6 @@ if(TIZEN_BUILD)
         capi-appfw-app-manager
         notification
         appsvc
-        shortcut
     )
     endif (${PROFILE} MATCHES "mobile")
 
@@ -118,7 +113,6 @@ if(TIZEN_BUILD)
 
     if (${PROFILE} MATCHES "mobile")
         ADD_DEFINITIONS(-DPROFILE_MOBILE=1)
-        ADD_DEFINITIONS(-DPWA=0)
     endif (${PROFILE} MATCHES "mobile")
 
 endif(TIZEN_BUILD)

@@ -1,8 +1,14 @@
 msgid "IDS_BR_POP_NETWORK_ERROR"
 msgstr "Erro da rede."
 
+msgid "IDS_BR_BODY_AUTHUSERNAME"
+msgstr "Nome de utilizador"
+
 msgid "IDS_BR_BODY_DESTINATIONS_AUTHENTICATION_REQUIRED"
 msgstr "Autenticação requerida."
+
+msgid "IDS_BR_BODY_AUTHPASSWORD"
+msgstr "Palavra-passe"
 
 msgid "IDS_BR_HEADER_SECURITY_WARNING"
 msgstr "Aviso de segurança"
@@ -27,6 +33,12 @@ msgstr "Existem problemas com o certificado de segurança para este site."
 
 msgid "IDS_BR_OPT_ALLOW"
 msgstr "Permitir"
+
+msgid "IDS_BR_OPT_VIEW"
+msgstr "Ver"
+
+msgid "IDS_BR_OPT_CANCEL"
+msgstr "Cancelar"
 
 msgid "IDS_BR_BODY_PS_REQUESTS_YOUR_LOCATION"
 msgstr "%s pede a sua localização."
@@ -60,18 +72,6 @@ msgstr "Transferir"
 
 msgid "IDS_BR_BODY_THIS_WEBPAGE"
 msgstr "Esta página Web"
-
-msgid "IDS_BR_BODY_AUTHUSERNAME"
-msgstr "Nome de utilizador"
-
-msgid "IDS_BR_BODY_AUTHPASSWORD"
-msgstr "Palavra-passe"
-
-msgid "IDS_BR_OPT_VIEW"
-msgstr "Ver"
-
-msgid "IDS_BR_OPT_CANCEL"
-msgstr "Cancelar"
 
 msgid "IDS_BR_OPT_SCREEN"
 msgstr "Ecrã"
@@ -109,6 +109,15 @@ msgstr "Cancelar"
 msgid "IDS_BR_BUTTON_MORE"
 msgstr "Mais"
 
+msgid "IDS_TPLATFORM_ACBUTTON_DONE_ABB"
+msgstr "CONCLUÍDO"
+
+msgid "IDS_TPLATFORM_ACBUTTON_CANCEL_ABB"
+msgstr "CANCELAR"
+
+msgid "IDS_TPLATFORM_ACBUTTON_DELETE_ABB"
+msgstr "ELIMINAR"
+
 msgid "IDS_BR_BODY_NO_ITEMS"
 msgstr "Sem itens"
 
@@ -117,6 +126,9 @@ msgstr "Ligar a rede móvel"
 
 msgid "IDS_BR_OPT_DO_NOT_SHOW_AGAIN"
 msgstr "Não mostrar novamente"
+
+msgid "IDS_BR_SK_OK"
+msgstr "OK"
 
 msgid "IDS_BR_POP_ONLY_HTTP_OR_HTTPS_URLS_CAN_BE_DOWNLOADED"
 msgstr "Só podem ser transferidos URLs http ou https."
@@ -139,11 +151,17 @@ msgstr "Copiar ligação"
 msgid "IDS_BR_OPT_COPY_IMAGE"
 msgstr "Copiar imagem"
 
-msgid "IDS_BR_SK_OK"
-msgstr "OK"
-
 msgid "IDS_BR_OPT_CALL"
 msgstr "Chamar"
+
+msgid "IDS_ST_POP_PS_HAS_BEEN_DETECTED"
+msgstr "%s foi detectado."
+
+msgid "IDS_ST_POP_DETECTED_IN_C_PS"
+msgstr "Detectado em: %s"
+
+msgid "IDS_ST_HEADER_MALWARE_DETECTED_ABB"
+msgstr "Software malicioso detectado"
 
 msgid "IDS_BR_BUTTON_FAILED"
 msgstr "Falhou"
@@ -211,11 +229,35 @@ msgstr "Desmar"
 msgid "IDS_BR_SK_TABS"
 msgstr "Separador"
 
+msgid "IDS_BR_SK_SAVE_LITE"
+msgstr "Guardar"
+
+msgid "IDS_BR_SK_SAVE_ABB"
+msgstr "Guardar"
+
+msgid "IDS_BR_SK_SAVE"
+msgstr "Guardar"
+
+msgid "IDS_BR_SK_PREVIOUS"
+msgstr "Anterior"
+
+msgid "IDS_BR_SK_NEXT"
+msgstr "Seguinte"
+
 msgid "IDS_BR_SK_MENU"
 msgstr "Menu"
 
 msgid "IDS_BR_SK_DELETE_ABB"
 msgstr "Eliminar"
+
+msgid "IDS_BR_SK_DELETE"
+msgstr "Eliminar"
+
+msgid "IDS_BR_SK_CLEAR"
+msgstr "Limpar"
+
+msgid "IDS_BR_SK_BACK"
+msgstr "Voltar"
 
 msgid "IDS_BR_SK3_CREATE_FOLDER"
 msgstr "Criar pasta"
@@ -274,6 +316,15 @@ msgstr "Pode não conseguir cortar algumas páginas da Web com exactidão"
 msgid "IDS_BR_POP_YOUR_HISTORY_WILL_BE_CLEARED"
 msgstr "O seu histórico será eliminado."
 
+msgid "IDS_BR_POP_WI_FI_CONNECTION_REQUIRED_CONNECT_TO_WI_FI_NETWORK_AND_TRY_AGAIN"
+msgstr "Ligação Wi-Fi necessária. Estabeleça a ligação à rede Wi-Fi e tente novamente."
+
+msgid "IDS_BR_POP_URL_NOT_FOUND"
+msgstr "URL não encontrado."
+
+msgid "IDS_BR_POP_URL"
+msgstr "URL"
+
 msgid "IDS_BR_POP_UNABLE_TO_VIEW_THE_CERTIFICATE_THE_PAGE_INFORMATION_HAS_BEEN_CHANGED"
 msgstr "Impossível ver o certificado. As informações da página foram alteradas."
 
@@ -319,11 +370,23 @@ msgstr "A política de segurança restringe a utilização do browser da Interne
 msgid "IDS_BR_POP_SAVED_TO_BOOKMARKS"
 msgstr "Guardado nos favoritos."
 
+msgid "IDS_BR_POP_SAVED"
+msgstr "Guardado."
+
 msgid "IDS_BR_POP_RENAME_TAG"
 msgstr "Mudar nome da etiqueta"
 
+msgid "IDS_BR_POP_REMOVED"
+msgstr "Removido."
+
 msgid "IDS_BR_POP_PD_PROFILES_WILL_BE_DELETED"
 msgstr "%d perfis serão eliminados."
+
+msgid "IDS_BR_POP_PD_ITEMS_WILL_BE_DELETED"
+msgstr "%d itens serão eliminados."
+
+msgid "IDS_BR_POP_PD_ITEMS_SELECTED"
+msgstr "%d itens seleccionados."
 
 msgid "IDS_BR_POP_PAGES_THAT_YOU_VIEW_WILL_NOT_APPEAR_IN_YOUR_BROWSER_HISTORY_OR_SEARCH_HISTORY_AND_THEY_WILL_NOT_LEAVE_OTHER_TRACES_LIKE_COOKIES"
 msgstr "As páginas que visualizar não irão aparecer no histórico do seu browser ou no histórico de procuras, nem deixarão outros vestígios, tais como cookies."
@@ -352,20 +415,53 @@ msgstr "“%1$s” foi detectado.\nDetectado em: “%2$s”\n\nAlgum conteúdo f
 msgid "IDS_BR_POP_P1SS_HAS_BEEN_DETECTED_DETECTED_IN_C_P2SS_OPEN_WEBPAGE_ANYWAY_Q"
 msgstr "“%1$s” foi detectado.\nDetectado em: “%2$s”\n\nAbrir página Web na mesma?"
 
+msgid "IDS_BR_POP_NO_ITEMS_SELECTED"
+msgstr "Sem itens seleccionados."
+
 msgid "IDS_BR_POP_NOT_ENOUGH_MEMORY_DELETE_SOME_ITEMS_AND_TRY_AGAIN"
 msgstr "Memória insuficiente. Elimine alguns itens e tente novamente."
+
+msgid "IDS_BR_POP_NOT_ENOUGH_MEMORY"
+msgstr "Memória interna cheia"
 
 msgid "IDS_BR_POP_NOT_ALLOWED"
 msgstr "Não permitido."
 
+msgid "IDS_BR_POP_NEVER"
+msgstr "Nunca"
+
 msgid "IDS_BR_POP_MOVED"
 msgstr "Movido."
+
+msgid "IDS_BR_POP_MOBILE_DATA_IS_DISABLED_CONNECT_TO_WI_FI_NETWORK_INSTEAD_OR_ENABLE_MOBILE_DATA_AND_TRY_AGAIN"
+msgstr "Os dados móveis estão desactivados. Ligue à rede Wi-Fi em substituição ou active os dados móveis e tente novamente."
+
+msgid "IDS_BR_POP_LOADING_PLEASE_WAIT_ING"
+msgstr "A carregar. Aguarde..."
+
+msgid "IDS_BR_POP_INVALID_URL"
+msgstr "URL inválido."
+
+msgid "IDS_BR_POP_FAIL"
+msgstr "Falha."
 
 msgid "IDS_BR_POP_ENTER_URL"
 msgstr "Introduzir URL."
 
+msgid "IDS_BR_POP_ENTER_TITLE_ABB"
+msgstr "Introduzir título"
+
 msgid "IDS_BR_POP_ENTER_BOOKMARK_NAME"
 msgstr "Introduzir nome do favorito."
+
+msgid "IDS_BR_POP_DO_NOT_SHOW_AGAIN"
+msgstr "Não mostrar novamente"
+
+msgid "IDS_BR_POP_DOWNLOADCOMPLETE"
+msgstr "Transferência concluída."
+
+msgid "IDS_BR_POP_DISABLED"
+msgstr "Desactivado."
 
 msgid "IDS_BR_POP_DIALING_ING_VZW"
 msgstr "Dialing..."
@@ -391,6 +487,9 @@ msgstr "Eliminar dados de início de sessão para este site da Web?"
 msgid "IDS_BR_POP_DELETE_SIGN_IN_DATA_FOR_PD_WEBSITES_Q"
 msgstr "Eliminar dados de início de sessão para %d sites da Web?"
 
+msgid "IDS_BR_POP_DELETE_Q"
+msgstr "Eliminar?"
+
 msgid "IDS_BR_POP_DELETE_PD_SAVED_WEB_PAGES_Q"
 msgstr "Eliminar %d páginas Web guardadas?"
 
@@ -406,8 +505,14 @@ msgstr "Eliminar todos os dados do site da Web e todas as autorizações de loca
 msgid "IDS_BR_POP_DELETEHISTORYQUESTION"
 msgstr "Apagar histórico?"
 
+msgid "IDS_BR_POP_DELETED"
+msgstr "Eliminado."
+
 msgid "IDS_BR_POP_CONTINUE"
 msgstr "Continuar"
+
+msgid "IDS_BR_POP_CLOSE_APPLICATION_Q"
+msgstr "Fechar aplicação?"
 
 msgid "IDS_BR_POP_CLOSE_APPLICATION"
 msgstr "Fechar aplicação"
@@ -420,6 +525,12 @@ msgstr "Limpar histórico?"
 
 msgid "IDS_BR_POP_BOOKMARK_REMOVED"
 msgstr "Favorito removido."
+
+msgid "IDS_BR_POP_BOOKMARK_ADDED"
+msgstr "Favorito adicionado."
+
+msgid "IDS_BR_POP_AUTOMATIC_BRIGHTNESS"
+msgstr "Brilho automático"
 
 msgid "IDS_BR_POP_ALREADY_EXISTS"
 msgstr "Já existe."
@@ -445,6 +556,15 @@ msgstr "Permitir que os sites guardem e leiam cookies."
 msgid "IDS_BR_POP_ADDED_TO_BOOKMARKS"
 msgstr "Adicionado aos favoritos."
 
+msgid "IDS_BR_POP_ACCOUNT"
+msgstr "Conta"
+
+msgid "IDS_BR_POP_1_ITEM_WILL_BE_DELETED"
+msgstr "1 item será eliminado."
+
+msgid "IDS_BR_POP_1_ITEM_SELECTED"
+msgstr "1 item seleccionado."
+
 msgid "IDS_BR_OPT_WINDOWS"
 msgstr "Janelas"
 
@@ -454,20 +574,38 @@ msgstr "Ver certificado"
 msgid "IDS_BR_OPT_UNICODE_HUTF_8"
 msgstr "Unicode (UTF-8)"
 
+msgid "IDS_BR_OPT_TRANSLATE"
+msgstr "Traduzir"
+
 msgid "IDS_BR_OPT_THUMBNAIL_VIEW"
 msgstr "Vista de miniatura"
 
 msgid "IDS_BR_OPT_TEXT_ENCODING"
 msgstr "Codificação de texto"
 
+msgid "IDS_BR_OPT_STOP"
+msgstr "Parar"
+
 msgid "IDS_BR_OPT_SHRINK_TEXT"
 msgstr "Reduzir texto"
+
+msgid "IDS_BR_OPT_SHOW"
+msgstr "Exibir"
+
+msgid "IDS_BR_OPT_SHARE"
+msgstr "Partilhar"
 
 msgid "IDS_BR_OPT_SETTINGS_ABB"
 msgstr "Definições"
 
+msgid "IDS_BR_OPT_SETTINGS"
+msgstr "Definições"
+
 msgid "IDS_BR_OPT_SEND_MESSAGE_VODA"
 msgstr "Enviar mensagem"
+
+msgid "IDS_BR_OPT_SEND_EMAIL"
+msgstr "Enviar e-mail"
 
 msgid "IDS_BR_OPT_SENDURLVIA_EMAIL"
 msgstr "E-mail"
@@ -486,6 +624,12 @@ msgstr "Modo de selecção"
 
 msgid "IDS_BR_OPT_SELECTED"
 msgstr "Seleccionado"
+
+msgid "IDS_BR_OPT_SELECT"
+msgstr "Seleccionar"
+
+msgid "IDS_BR_OPT_SD_CARD"
+msgstr "Cartão SD"
 
 msgid "IDS_BR_OPT_SAVE_TO_KEEPIT_ABB"
 msgstr "Guardar no KeepIt"
@@ -514,8 +658,14 @@ msgstr "Reordenar"
 msgid "IDS_BR_OPT_RENAME_FOLDER"
 msgstr "Renomear pasta"
 
+msgid "IDS_BR_OPT_RENAME"
+msgstr "Mudar nome"
+
 msgid "IDS_BR_OPT_REMOVE"
 msgstr "Remover"
+
+msgid "IDS_BR_OPT_REFRESH"
+msgstr "Actualizar"
 
 msgid "IDS_BR_OPT_READER_MODE_TTS"
 msgstr "Modo de leitor"
@@ -535,8 +685,14 @@ msgstr "Páginas offline"
 msgid "IDS_BR_OPT_NEW_WINDOW"
 msgstr "Nova janela"
 
+msgid "IDS_BR_OPT_MOVE"
+msgstr "Mover"
+
 msgid "IDS_BR_OPT_MINIMISE"
 msgstr "Minimizar"
+
+msgid "IDS_BR_OPT_MESSAGES"
+msgstr "Mensagem"
 
 msgid "IDS_BR_OPT_MEDIUM_M_QUALITY"
 msgstr "Média"
@@ -549,6 +705,9 @@ msgstr "Privilégios de acesso à localização"
 
 msgid "IDS_BR_OPT_LOAD_IMAGES"
 msgstr "Carregar imagens"
+
+msgid "IDS_BR_OPT_LIST_VIEW"
+msgstr "Vista de lista"
 
 msgid "IDS_BR_OPT_LATIN_1_HISO_8859_1"
 msgstr "Latino-1 (ISO-8859-1)"
@@ -565,6 +724,9 @@ msgstr "Japonês (ISO-2022-JP)"
 msgid "IDS_BR_OPT_JAPANESE_HEUC_JP"
 msgstr "Japonês (EUC-JP)"
 
+msgid "IDS_BR_OPT_I_AGREE"
+msgstr "Aceito."
+
 msgid "IDS_BR_OPT_INCOGNITO_MODE_ABB"
 msgstr "Modo incógnito"
 
@@ -579,6 +741,9 @@ msgstr "Ecrã principal como atalho"
 
 msgid "IDS_BR_OPT_HIGH_M_QUALITY"
 msgstr "Alta"
+
+msgid "IDS_BR_OPT_HELP"
+msgstr "Ajuda"
 
 msgid "IDS_BR_OPT_GOFORWARD"
 msgstr "Avançar"
@@ -625,6 +790,9 @@ msgstr "Desact. Utilização dados baixa"
 msgid "IDS_BR_OPT_DISABLED"
 msgstr "Desactivado"
 
+msgid "IDS_BR_OPT_DEVICE"
+msgstr "Dispositivo"
+
 msgid "IDS_BR_OPT_DELETE_SAVED_PAGE_ABB"
 msgstr "Eliminar página guardada"
 
@@ -658,6 +826,9 @@ msgstr "Chinês (Big5)"
 msgid "IDS_BR_OPT_CACHE"
 msgstr "Cache"
 
+msgid "IDS_BR_OPT_BOOKMARK"
+msgstr "Favorito"
+
 msgid "IDS_BR_OPT_ADD_TO_WEB_CLIP"
 msgstr "Adicionar a Web clip"
 
@@ -678,6 +849,12 @@ msgstr "Adicionar favor."
 
 msgid "IDS_BR_OPT_ADD_BOOKMARK"
 msgstr "Adicionar favorito"
+
+msgid "IDS_BR_OPT_ADDED"
+msgstr "Adicionado."
+
+msgid "IDS_BR_OPT_ADD"
+msgstr "Adicionar"
 
 msgid "IDS_BR_OPT1_EXTENSION"
 msgstr "Extensão"
@@ -748,6 +925,9 @@ msgstr "Transferir conteúdo feed"
 msgid "IDS_BR_MBODY_DELETE_SIGN_IN_DATA"
 msgstr "Elim. dados iníc. sessão"
 
+msgid "IDS_BR_MBODY_DEFAULT_DOWNLOAD_STORAGE"
+msgstr "Armaz. transfer. padrão"
+
 msgid "IDS_BR_MBODY_DATA_SAVING_STATISTICS"
 msgstr "Estatísticas econ. dados"
 
@@ -790,6 +970,9 @@ msgstr "Impossível mover favoritos"
 msgid "IDS_BR_HEADER_SITE_NOT_TRUSTED_ABB"
 msgstr "Site não fidedigno"
 
+msgid "IDS_BR_HEADER_SIGN_IN_TO_SAMSUNG_ACCOUNT"
+msgstr "Iniciar sessão na conta Samsung"
+
 msgid "IDS_BR_HEADER_SET_HOMEPAGE_ABB"
 msgstr "Definir homepage"
 
@@ -826,11 +1009,17 @@ msgstr "Pop-up bloqueado"
 msgid "IDS_BR_HEADER_POPULAR_WEBSITES_ABB"
 msgstr "Sites da Web populares"
 
+msgid "IDS_BR_HEADER_PD_SELECTED_ABB"
+msgstr "%d selecionado(s)"
+
 msgid "IDS_BR_HEADER_ORGANISATION_C_ABB"
 msgstr "Organização:"
 
 msgid "IDS_BR_HEADER_ORGANISATIONAL_UNIT_C"
 msgstr "Unidade organizacional:"
+
+msgid "IDS_BR_HEADER_NO_NETWORK_CONNECTION"
+msgstr "Sem ligação de rede"
 
 msgid "IDS_BR_HEADER_NEWER_M_INTERNET_HISTORY_ABB"
 msgstr "Newer"
@@ -847,11 +1036,17 @@ msgstr "Extensão HTML5"
 msgid "IDS_BR_HEADER_FORM_DATA"
 msgstr "Dados do formulário"
 
+msgid "IDS_BR_HEADER_FOLDER"
+msgstr "Pasta"
+
 msgid "IDS_BR_HEADER_EXPIRES_ON_C"
 msgstr "Expira a:"
 
 msgid "IDS_BR_HEADER_ENABLE_WEB_SIGN_IN"
 msgstr "Activar início de sessão na Web"
+
+msgid "IDS_BR_HEADER_EDIT_PROFILE"
+msgstr "Editar perfil"
 
 msgid "IDS_BR_HEADER_EDIT_BOOKMARK"
 msgstr "Editar favoritos"
@@ -889,8 +1084,14 @@ msgstr "Gestão largura de banda"
 msgid "IDS_BR_HEADER_ADVANCEDCERTIFICATES"
 msgstr "Certificados"
 
+msgid "IDS_BR_BUTTON_SET"
+msgstr "Definir"
+
 msgid "IDS_BR_BUTTON_RESET_ABB"
 msgstr "Repor"
+
+msgid "IDS_BR_BUTTON_NOT_NOW"
+msgstr "Agora não"
 
 msgid "IDS_BR_BUTTON_HOMEPAGE_ABB"
 msgstr "Pg. inicial"
@@ -898,11 +1099,35 @@ msgstr "Pg. inicial"
 msgid "IDS_BR_BUTTON_FIND_ABB"
 msgstr "Loc."
 
+msgid "IDS_BR_BUTTON_ENABLE_ABB"
+msgstr "Activar"
+
+msgid "IDS_BR_BUTTON_EDIT"
+msgstr "Editar"
+
+msgid "IDS_BR_BUTTON_CONTINUE_ABB"
+msgstr "Contin."
+
+msgid "IDS_BR_BUTTON_CONTINUE"
+msgstr "Continuar"
+
+msgid "IDS_BR_BUTTON_CLOSE"
+msgstr "Fechar"
+
+msgid "IDS_BR_BUTTON_CANCEL_ABB"
+msgstr "Cancelar"
+
+msgid "IDS_BR_BUTTON_CANCEL"
+msgstr "Cancelar"
+
 msgid "IDS_BR_BUTTON_BACK_ABB"
 msgstr "Voltar"
 
 msgid "IDS_BR_BUTTON_ALWAYS_SHOW_ABB"
 msgstr "Mos. sempre"
+
+msgid "IDS_BR_BUTTON_ALLOW"
+msgstr "Permitir"
 
 msgid "IDS_BR_BUTTON2_WEB_PORTAL"
 msgstr "Portal da Web"
@@ -927,6 +1152,9 @@ msgstr "Ir para histórico"
 
 msgid "IDS_BR_BUTTON2_ENTERTAINMENT"
 msgstr "Entreteni-\nmento"
+
+msgid "IDS_BR_BODY_YESTERDAY"
+msgstr "Ontem"
 
 msgid "IDS_BR_BODY_WINDOW_MANAGER"
 msgstr "Gestor de janelas"
@@ -955,6 +1183,9 @@ msgstr "Utilizar modo de ecrã inteiro para ocultar a barra de estado."
 msgid "IDS_BR_BODY_USE_A_PREDICTION_SERVICE_TO_DISPLAY_RELATED_QUERIES_AND_POPULAR_WEBSITES_IN_THE_ADDRESS_BAR_AS_YOU_TYPE"
 msgstr "Utilize um serviço de previsão para apresentar questões relacionadas e sites da Web populares na barra de endereços à medida que escreve."
 
+msgid "IDS_BR_BODY_URL"
+msgstr "URL"
+
 msgid "IDS_BR_BODY_UPPER_FOLDER_T_TALKBACK"
 msgstr "Pasta superior"
 
@@ -970,6 +1201,12 @@ msgstr "Impossível apresentar a página Web. Sem resposta do servidor."
 msgid "IDS_BR_BODY_TOWN_CITY_COUNTY_ABB"
 msgstr "Vila/cidade/condado"
 
+msgid "IDS_BR_BODY_TODAY"
+msgstr "Hoje"
+
+msgid "IDS_BR_BODY_TITLE"
+msgstr "Título"
+
 msgid "IDS_BR_BODY_THIS_SITE_IS_USING_PS"
 msgstr "Este site está a utilizar %s."
 
@@ -984,6 +1221,9 @@ msgstr "Este favorito será eliminado."
 
 msgid "IDS_BR_BODY_THE_SELECTED_PERSONAL_DATA_WILL_BE_DELETED"
 msgstr "Os dados pessoais seleccionados serão eliminados."
+
+msgid "IDS_BR_BODY_THE_MAXIMUM_NUMBER_OF_CHARACTERS_HPD_HAS_BEEN_EXCEEDED"
+msgstr "Foi excedido o número máximo de caracteres (%d)."
 
 msgid "IDS_BR_BODY_TEXT_FIELD_T_TTS"
 msgstr "Campo de texto"
@@ -1009,11 +1249,17 @@ msgstr "Sincronizar favoritos"
 msgid "IDS_BR_BODY_STREET_ADDRESS_PO_BOX_C_O_ETC_ABB"
 msgstr "Endereço da rua, Caixa postal, A/C, etc."
 
+msgid "IDS_BR_BODY_STREAMING"
+msgstr "Transmissão em sequência"
+
 msgid "IDS_BR_BODY_STORED_DATA"
 msgstr "Dados armazenados"
 
 msgid "IDS_BR_BODY_SPLIT_BAR_HANDLE"
 msgstr "Identificador da barra de divisão"
+
+msgid "IDS_BR_BODY_SMALL"
+msgstr "Pequeno"
 
 msgid "IDS_BR_BODY_SIGN_IN_TO_YOUR_SAMSUNG_ACCOUNT_TO_ACCESS_THE_BOOKMARKS_AND_TABS_ON_YOUR_OTHER_DEVICES"
 msgstr "Inicie uma sessão na sua conta Samsung para aceder aos favoritos e aos separadores existentes nos seus outros dispositivos."
@@ -1033,6 +1279,9 @@ msgstr "Definir texto de preenchimento automático de formulário Web."
 msgid "IDS_BR_BODY_SET_CURRENT_PAGE_AS_HOMEPAGE"
 msgstr "Definir a página actual como homepage"
 
+msgid "IDS_BR_BODY_SETTINGS"
+msgstr "Definições"
+
 msgid "IDS_BR_BODY_SELECT_FOLDER"
 msgstr "Seleccionar pasta"
 
@@ -1045,6 +1294,9 @@ msgstr "Campo de procura"
 msgid "IDS_BR_BODY_SEARCH_AND_URL_SUGGESTIONS"
 msgstr "Sugestões de pesquisa e URL"
 
+msgid "IDS_BR_BODY_SEARCH"
+msgstr "Procurar"
+
 msgid "IDS_BR_BODY_SCREEN_AND_TEXT"
 msgstr "Ecrã e texto"
 
@@ -1053,6 +1305,9 @@ msgstr "Guardar nomes de utilizador e palavras-passe para sites da Web."
 
 msgid "IDS_BR_BODY_SAVE_LINK"
 msgstr "Guardar ligação"
+
+msgid "IDS_BR_BODY_RSS_SEARCH_RESULTS"
+msgstr "Procurar resultados"
 
 msgid "IDS_BR_BODY_RESTORE_DEFAULT_SETTINGS_Q"
 msgstr "Repor definições padrão?"
@@ -1087,6 +1342,12 @@ msgstr "Botão de opção"
 msgid "IDS_BR_BODY_PS_BOOKMARK_WILL_BE_DELETED"
 msgstr "%s favorito será eliminado."
 
+msgid "IDS_BR_BODY_PROFILE"
+msgstr "Perfil"
+
+msgid "IDS_BR_BODY_PROCESSING_ING"
+msgstr "A processar..."
+
 msgid "IDS_BR_BODY_PRIVACY"
 msgstr "Privacidade"
 
@@ -1099,8 +1360,20 @@ msgstr "Prima a tecla de menu."
 msgid "IDS_BR_BODY_POSTCODE_ABB"
 msgstr "Código postal"
 
+msgid "IDS_BR_BODY_PHONE_NUMBER_ABB"
+msgstr "Número de telefone"
+
+msgid "IDS_BR_BODY_PHONE"
+msgstr "Telefone"
+
 msgid "IDS_BR_BODY_PD_POP_UPS_BLOCKED_ABB"
 msgstr "%d pop-ups bloquead."
+
+msgid "IDS_BR_BODY_PD_ITEMS_WILL_BE_DELETED"
+msgstr "%d itens serão eliminados."
+
+msgid "IDS_BR_BODY_PASSWORD"
+msgstr "Palavra-passe"
 
 msgid "IDS_BR_BODY_PAGE_LOADED_T_TTS"
 msgstr "Página carregada"
@@ -1126,8 +1399,14 @@ msgstr "A pedido"
 msgid "IDS_BR_BODY_ONLY_VIA_WI_FI_ABB"
 msgstr "Apenas via Wi-Fi"
 
+msgid "IDS_BR_BODY_ON"
+msgstr "Ligado"
+
 msgid "IDS_BR_BODY_OLDER"
 msgstr "Mais antigo"
+
+msgid "IDS_BR_BODY_OFF"
+msgstr "Desligado"
 
 msgid "IDS_BR_BODY_NO_WINDOWS"
 msgstr "Sem janelas"
@@ -1141,8 +1420,17 @@ msgstr "Sem título"
 msgid "IDS_BR_BODY_NO_SAVED_PAGES"
 msgstr "Nenhuma página guardada"
 
+msgid "IDS_BR_BODY_NO_RESULTS_FOUND"
+msgstr "Nenhuns resultados encontrados."
+
+msgid "IDS_BR_BODY_NO_HISTORIES"
+msgstr "Nenhum histórico"
+
 msgid "IDS_BR_BODY_NO_BOOKMARKS"
 msgstr "Nenhum favorito"
+
+msgid "IDS_BR_BODY_NOTIFICATIONS"
+msgstr "Notificações"
 
 msgid "IDS_BR_BODY_NORMAL"
 msgstr "Normal"
@@ -1158,6 +1446,9 @@ msgstr "Sites mais visitados"
 
 msgid "IDS_BR_BODY_MOBILE_VIEW"
 msgstr "Vista móvel"
+
+msgid "IDS_BR_BODY_MEDIUM"
+msgstr "Médio"
 
 msgid "IDS_BR_BODY_LOCATION_M_INFORMATION"
 msgstr "Localização"
@@ -1183,6 +1474,9 @@ msgstr "Internet"
 msgid "IDS_BR_BODY_IMPROVE_PERFORMANCE_WHEN_LOADING_PAGES"
 msgstr "Melhorar o desempenho ao carregar páginas."
 
+msgid "IDS_BR_BODY_IMAGES"
+msgstr "Imagens"
+
 msgid "IDS_BR_BODY_HOMEPAGE"
 msgstr "Página inicial"
 
@@ -1192,11 +1486,20 @@ msgstr "Ocultar a barra de endereços ao deslocar a página para baixo."
 msgid "IDS_BR_BODY_GENERAL_M_SETTINGS"
 msgstr "Geral"
 
+msgid "IDS_BR_BODY_FULL_SCREEN"
+msgstr "Ecrã inteiro"
+
 msgid "IDS_BR_BODY_FULL_NAME_ABB"
 msgstr "Nome completo"
 
 msgid "IDS_BR_BODY_FORCE_ZOOM_ABB"
 msgstr "Forçar zoom"
+
+msgid "IDS_BR_BODY_FONT_SIZE"
+msgstr "Tamanho da fonte"
+
+msgid "IDS_BR_BODY_FOLDER_NAME"
+msgstr "Nome da pasta"
 
 msgid "IDS_BR_BODY_FLAT_SUITE_UNIT_BUILDING_FLOOR_ETC_ABB"
 msgstr "Apartamento, suite, unidade, edifício, piso, etc."
@@ -1213,6 +1516,24 @@ msgstr "Introduza o seu nome."
 msgid "IDS_BR_BODY_ENTER_TOWN_CITY_COUNTY_ABB"
 msgstr "Introduzir vila/cidade/condado."
 
+msgid "IDS_BR_BODY_ENTER_POSTCODE_ABB"
+msgstr "Introduzir código postal."
+
+msgid "IDS_BR_BODY_ENTER_POSTCODE"
+msgstr "Introduzir código postal."
+
+msgid "IDS_BR_BODY_ENTER_PHONE_NUMBER"
+msgstr "Introduzir número de telefone."
+
+msgid "IDS_BR_BODY_ENTER_NAME"
+msgstr "Introduzir nome."
+
+msgid "IDS_BR_BODY_ENTER_FOLDER_NAME"
+msgstr "Introduzir nome da pasta."
+
+msgid "IDS_BR_BODY_ENTER_EMAIL_ADDRESS"
+msgstr "Introduzir endereço de e-mail."
+
 msgid "IDS_BR_BODY_ENTER_COUNTRY_REGION_ABB"
 msgstr "Introduza país/região."
 
@@ -1224,6 +1545,12 @@ msgstr "Activar localização"
 
 msgid "IDS_BR_BODY_ENABLE_JAVASCRIPT"
 msgstr "Activar JavaScript"
+
+msgid "IDS_BR_BODY_EMAIL_ADDRESS"
+msgstr "Endereço de e-mail"
+
+msgid "IDS_BR_BODY_DOWNLOADING_ING"
+msgstr "A transferir..."
 
 msgid "IDS_BR_BODY_DOUBLE_TAP_TO_VIEW_CERTIFICATE_TTS"
 msgstr "Toque duas vezes para ver o certificado."
@@ -1264,6 +1591,9 @@ msgstr "Apresentar pop-ups de aviso de segurança."
 msgid "IDS_BR_BODY_DISPLAY_IMAGES_ON_WEB_PAGES"
 msgstr "Apresentar imagens em páginas da Web."
 
+msgid "IDS_BR_BODY_DEVELOPER_MODE"
+msgstr "Modo de programador"
+
 msgid "IDS_BR_BODY_DESKTOP_VIEW"
 msgstr "Vista de ambiente de trabalho"
 
@@ -1278,6 +1608,9 @@ msgstr "Memória padrão"
 
 msgid "IDS_BR_BODY_DEFAULT_PAGE_ABB"
 msgstr "Página padrão"
+
+msgid "IDS_BR_BODY_DEFAULT"
+msgstr "Padrão"
 
 msgid "IDS_BR_BODY_DATA_USAGE_REDUCED_BY_P1SDP_HP2SD_KB_OF_P3SD_KB_RECEIVED_TAP_HERE_TO_RESET_STATISTICS"
 msgstr "Utilização de dados reduzida em %1$d % (%2$d KB de %3$d KB recebidos). Toque aqui para repor as estatísticas."
@@ -1342,6 +1675,9 @@ msgstr "Altere o tamanho do texto para facilitar a leitura, especialmente quando
 msgid "IDS_BR_BODY_BOOKMARK_REMINDER_ABB"
 msgstr "Lembrete de favorito"
 
+msgid "IDS_BR_BODY_BOOKMARKS"
+msgstr "Favoritos"
+
 msgid "IDS_BR_BODY_BLOCK_POP_UPS_ON_WEB_PAGES"
 msgstr "Bloquear pop-ups nas páginas da Web."
 
@@ -1390,6 +1726,9 @@ msgstr "Autorizar %s a mostrar notificações"
 msgid "IDS_BR_BODY_ALLOWS_SITES_TO_SAVE_AND_READ_COOKIE_DATA"
 msgstr "Permite que os sites guardem e leiam dados de cookies."
 
+msgid "IDS_BR_BODY_ALL"
+msgstr "Tudo"
+
 msgid "IDS_BR_BODY_AFTER_YOU_VISIT_WEBPAGES_THE_PAGES_YOU_HAVE_VISITED_THE_MOST_WILL_BE_SHOWN_HERE"
 msgstr "Depois de visitar páginas Web, as páginas mais visitadas são mostradas aqui."
 
@@ -1417,6 +1756,9 @@ msgstr "Avançado"
 msgid "IDS_BR_BODY_ADD_TO_CONTACT"
 msgstr "Adicionar a contacto"
 
+msgid "IDS_BR_BODY_ADD_TO"
+msgstr "Adicionar a"
+
 msgid "IDS_BR_BODY_ADD_THIS_WEBSITE_TO_BOOKMARKS_TO_OPEN_IT_FASTER_ABB"
 msgstr "Adicione site aos favoritos para abrir rapidamente."
 
@@ -1426,17 +1768,29 @@ msgstr "Linha de endereço 2"
 msgid "IDS_BR_BODY_ADDRESS_LINE_1_ABB"
 msgstr "Linha de endereço 1"
 
+msgid "IDS_BR_BODY_ADDDETAILSVIEW_TAGS"
+msgstr "Etiquetas"
+
+msgid "IDS_BR_BODY_ADDBOOKMARKURL"
+msgstr "URL"
+
 msgid "IDS_BR_BODY_ACCEPT_COOKIES"
 msgstr "Aceitar cookies"
 
 msgid "IDS_BR_BODY_1_PROFILE_WILL_BE_DELETED"
 msgstr "1 perfil será eliminado."
 
+msgid "IDS_BR_BODY_1_ITEM_WILL_BE_DELETED"
+msgstr "1 item será eliminado."
+
 msgid "IDS_BR_ACBUTTON_TABS_ABB"
 msgstr "SEPAR."
 
 msgid "IDS_BR_TPOP_STARTING_DOWNLOAD_ING"
 msgstr "A iniciar transferência..."
+
+msgid "IDS_BR_TPOP_MAXIMUM_NUMBER_OF_CHARACTERS_HPD_REACHED"
+msgstr "Número máximo de caracteres (%d) atingido."
 
 msgid "IDS_BR_TPOP_FOLDER_RENAMED"
 msgstr "Pasta renomeada."
@@ -1453,8 +1807,14 @@ msgstr "Canc."
 msgid "IDS_BR_SBODY_SET_THE_DEVICE_TO_SHOW_THE_FULL_WEBPAGE_ON_THE_SCREEN_WHEN_IT_IS_LOADED_WITHOUT_NEEDING_TO_SCROLL"
 msgstr "Definir o dispositivo para mostrar a página Web na totalidade no ecrã quando for carregada, sem necessidade de deslocamento."
 
+msgid "IDS_BR_POP_UNSUPPORTMEDIATYPE"
+msgstr "Tipo de multimédia não suportado."
+
 msgid "IDS_BR_POP_UNABLE_TO_RUN_INTERNET_LOW_BATTERY"
 msgstr "Impossível executar a Internet. Bateria fraca."
+
+msgid "IDS_BR_POP_UNABLE_TO_CONNECT_TO_MOBILE_NETWORKS_WHILE_FLIGHT_MODE_IS_ENABLED_CONNECT_TO_WI_FI_NETWORK_INSTEAD_OR_DISABLE_FLIGHT_MODE_AND_TRY_AGAIN"
+msgstr "Impossível ligar às redes móveis enquanto o modo de Voo está activado. Ligue à rede Wi-Fi em substituição ou desactive o modo de Voo e tente novamente."
 
 msgid "IDS_BR_POP_THE_DOWNLOAD_HAS_BEEN_STOPPED_AND_THE_DOWNLOADED_DATA_WILL_BE_DELETED"
 msgstr "A transferência foi parada e os dados transferidos serão eliminados."
@@ -1465,8 +1825,20 @@ msgstr "Procura concluída"
 msgid "IDS_BR_POP_READY"
 msgstr "Pronto."
 
+msgid "IDS_BR_POP_INSTALL_SUCCESS"
+msgstr "Instalação concluída."
+
+msgid "IDS_BR_POP_INSTALLATION_FAILED"
+msgstr "Instalação falhou."
+
 msgid "IDS_BR_POP_INFORM_MEMORY_ERROR"
 msgstr "Erro de memória."
+
+msgid "IDS_BR_POP_DELETING_ING"
+msgstr "A eliminar..."
+
+msgid "IDS_BR_POP_DATA_ROAMING_IS_DISABLED_CONNECT_TO_WI_FI_NETWORK_INSTEAD_OR_ENABLE_DATA_ROAMING_AND_TRY_AGAIN"
+msgstr "O roaming de dados está desactivado. Ligue à rede Wi-Fi em substituição ou active o roaming de dados e tente novamente."
 
 msgid "IDS_BR_POP_DATA_ROAMING_IS_DISABLED_CONNECT_TO_A_WI_FI_NETWORK_OR_ENABLE_DATA_ROAMING_AND_TRY_AGAIN"
 msgstr "Roaming de dados desactivado. Ligue a uma rede Wi-Fi ou active o roaming de dados e tente novamente."
@@ -1483,11 +1855,17 @@ msgstr "Apps Web"
 msgid "IDS_BR_OPT_VIEW_ONLINE"
 msgstr "Ver online"
 
+msgid "IDS_BR_OPT_SHARE_VIA"
+msgstr "Partilhar via"
+
 msgid "IDS_BR_OPT_READ_ON_OFFLINE_PAGES_LATER_ABB"
 msgstr "Ler nas pág offline mais tarde"
 
 msgid "IDS_BR_OPT_QUICK_ACCESS_ABB2"
 msgstr "Acesso rápido"
+
+msgid "IDS_BR_OPT_PASTE"
+msgstr "Colar"
 
 msgid "IDS_BR_OPT_ALWAYS_ENABLED_ABB"
 msgstr "Sempre activado"
@@ -1513,6 +1891,9 @@ msgstr "Sugestões pesquisa e URL"
 msgid "IDS_BR_MBODY_HISTORY"
 msgstr "Histórico"
 
+msgid "IDS_BR_MBODY_FONT_SIZE"
+msgstr "Tamanho de fonte"
+
 msgid "IDS_BR_MBODY_FIT_PAGE_TO_SCREEN"
 msgstr "Ajustar página ao ecrã"
 
@@ -1524,6 +1905,9 @@ msgstr "Personalizar"
 
 msgid "IDS_BR_MBODY_COUNTRY_REGION"
 msgstr "País/Região"
+
+msgid "IDS_BR_HEADER_UNABLE_TO_DOWNLOAD_ABB"
+msgstr "Impossível transferir"
 
 msgid "IDS_BR_HEADER_RENAME_FOLDER_ABB"
 msgstr "Renomear pasta"
@@ -1555,8 +1939,14 @@ msgstr "Adic. info"
 msgid "IDS_BR_BUTTON_WI_FI_ABB"
 msgstr "Wi-Fi"
 
+msgid "IDS_BR_BUTTON_UPDATE"
+msgstr "Actualizar"
+
 msgid "IDS_BR_BUTTON_SETTINGS_ABB"
 msgstr "Defin."
+
+msgid "IDS_BR_BUTTON_RETRY"
+msgstr "Repetir"
 
 msgid "IDS_BR_BUTTON2_OK"
 msgstr "OK"
@@ -1582,6 +1972,9 @@ msgstr "Este certificado é de uma autoridade fidedigna."
 msgid "IDS_BR_BODY_TAP_HERE_TO_ADD_A_QUICK_ACCESS_SHORTCUT"
 msgstr "Toque aqui para adicionar um atalho de Acesso rápido."
 
+msgid "IDS_BR_BODY_REQUEST_FAILED"
+msgstr "Pedido falhou."
+
 msgid "IDS_BR_BODY_PREFERENCES"
 msgstr "Preferências"
 
@@ -1597,398 +1990,14 @@ msgstr "Nenhumas correspondências"
 msgid "IDS_BR_BODY_MOBILE_DATA_IS_TURNED_OFF_CONNECT_TO_A_WI_FI_NETWORK_INSTEAD_OR_TAP_SETTINGS_TO_TURN_ON_MOBILE_DATA_AND_THEN_TRY_AGAIN"
 msgstr "Os dados móveis estão desligados. Em alternativa, ligue-se a uma rede Wi-Fi ou toque em Definições para ligar os Dados móveis e tente novamente."
 
-msgid "IDS_BR_BODY_FIT_TO_WIDTH"
-msgstr "Ajustar à largura"
-
-msgid "IDS_BR_ACBUTTON_QUICK_ACCESS"
-msgstr "ACESSO RÁPID"
-
-msgid "IDS_BR_OPT_OPEN_IN_NEW_TAB"
-msgstr "Abrir em separador novo"
-
-msgid "IDS_BR_BODY_SHARE_LINK"
-msgstr "Partilhar ligação"
-
-msgid "IDS_BR_SK_SAVE_LITE"
-msgstr "Guardar"
-
-msgid "IDS_BR_SK_SAVE_ABB"
-msgstr "Guardar"
-
-msgid "IDS_BR_SK_SAVE"
-msgstr "Guardar"
-
-msgid "IDS_BR_SK_PREVIOUS"
-msgstr "Anterior"
-
-msgid "IDS_BR_SK_NEXT"
-msgstr "Seguinte"
-
-msgid "IDS_BR_SK_DELETE"
-msgstr "Eliminar"
-
-msgid "IDS_BR_SK_CLEAR"
-msgstr "Limpar"
-
-msgid "IDS_BR_SK_BACK"
-msgstr "Voltar"
-
-msgid "IDS_BR_POP_WI_FI_CONNECTION_REQUIRED_CONNECT_TO_WI_FI_NETWORK_AND_TRY_AGAIN"
-msgstr "Ligação Wi-Fi necessária. Estabeleça a ligação à rede Wi-Fi e tente novamente."
-
-msgid "IDS_BR_POP_URL_NOT_FOUND"
-msgstr "URL não encontrado."
-
-msgid "IDS_BR_POP_URL"
-msgstr "URL"
-
-msgid "IDS_BR_POP_SAVED"
-msgstr "Guardado."
-
-msgid "IDS_BR_POP_REMOVED"
-msgstr "Removido."
-
-msgid "IDS_BR_POP_PD_ITEMS_WILL_BE_DELETED"
-msgstr "%d itens serão eliminados."
-
-msgid "IDS_BR_POP_PD_ITEMS_SELECTED"
-msgstr "%d itens seleccionados."
-
-msgid "IDS_BR_POP_NO_ITEMS_SELECTED"
-msgstr "Sem itens seleccionados."
-
-msgid "IDS_BR_POP_NOT_ENOUGH_MEMORY"
-msgstr "Memória interna cheia"
-
-msgid "IDS_BR_POP_NEVER"
-msgstr "Nunca"
-
-msgid "IDS_BR_POP_MOBILE_DATA_IS_DISABLED_CONNECT_TO_WI_FI_NETWORK_INSTEAD_OR_ENABLE_MOBILE_DATA_AND_TRY_AGAIN"
-msgstr "Os dados móveis estão desactivados. Ligue à rede Wi-Fi em substituição ou active os dados móveis e tente novamente."
-
-msgid "IDS_BR_POP_LOADING_PLEASE_WAIT_ING"
-msgstr "A carregar. Aguarde..."
-
-msgid "IDS_BR_POP_INVALID_URL"
-msgstr "URL inválido."
-
-msgid "IDS_BR_POP_FAIL"
-msgstr "Falha."
-
-msgid "IDS_BR_POP_ENTER_TITLE_ABB"
-msgstr "Introduzir título"
-
-msgid "IDS_BR_POP_DO_NOT_SHOW_AGAIN"
-msgstr "Não mostrar novamente"
-
-msgid "IDS_BR_POP_DOWNLOADCOMPLETE"
-msgstr "Transferência concluída."
-
-msgid "IDS_BR_POP_DISABLED"
-msgstr "Desactivado."
-
-msgid "IDS_BR_POP_DELETE_Q"
-msgstr "Eliminar?"
-
-msgid "IDS_BR_POP_DELETED"
-msgstr "Eliminado."
-
-msgid "IDS_BR_POP_CLOSE_APPLICATION_Q"
-msgstr "Fechar aplicação?"
-
-msgid "IDS_BR_POP_BOOKMARK_ADDED"
-msgstr "Favorito adicionado."
-
-msgid "IDS_BR_POP_AUTOMATIC_BRIGHTNESS"
-msgstr "Brilho automático"
-
-msgid "IDS_BR_POP_ACCOUNT"
-msgstr "Conta"
-
-msgid "IDS_BR_POP_1_ITEM_WILL_BE_DELETED"
-msgstr "1 item será eliminado."
-
-msgid "IDS_BR_POP_1_ITEM_SELECTED"
-msgstr "1 item seleccionado."
-
-msgid "IDS_BR_OPT_TRANSLATE"
-msgstr "Traduzir"
-
-msgid "IDS_BR_OPT_STOP"
-msgstr "Parar"
-
-msgid "IDS_BR_OPT_SHOW"
-msgstr "Exibir"
-
-msgid "IDS_BR_OPT_SHARE"
-msgstr "Partilhar"
-
-msgid "IDS_BR_OPT_SETTINGS"
-msgstr "Definições"
-
-msgid "IDS_BR_OPT_SEND_EMAIL"
-msgstr "Enviar e-mail"
-
-msgid "IDS_BR_OPT_SELECT"
-msgstr "Seleccionar"
-
-msgid "IDS_BR_OPT_SD_CARD"
-msgstr "Cartão SD"
-
-msgid "IDS_BR_OPT_RENAME"
-msgstr "Mudar nome"
-
-msgid "IDS_BR_OPT_REFRESH"
-msgstr "Actualizar"
-
-msgid "IDS_BR_OPT_MOVE"
-msgstr "Mover"
-
-msgid "IDS_BR_OPT_MESSAGES"
-msgstr "Mensagem"
-
-msgid "IDS_BR_OPT_LIST_VIEW"
-msgstr "Vista de lista"
-
-msgid "IDS_BR_OPT_I_AGREE"
-msgstr "Aceito."
-
-msgid "IDS_BR_OPT_HELP"
-msgstr "Ajuda"
-
-msgid "IDS_BR_OPT_DEVICE"
-msgstr "Dispositivo"
-
-msgid "IDS_BR_OPT_BOOKMARK"
-msgstr "Favorito"
-
-msgid "IDS_BR_OPT_ADDED"
-msgstr "Adicionado."
-
-msgid "IDS_BR_OPT_ADD"
-msgstr "Adicionar"
-
-msgid "IDS_BR_MBODY_DEFAULT_DOWNLOAD_STORAGE"
-msgstr "Armaz. transfer. padrão"
-
-msgid "IDS_BR_HEADER_SIGN_IN_TO_SAMSUNG_ACCOUNT"
-msgstr "Iniciar sessão na conta Samsung"
-
-msgid "IDS_BR_HEADER_PD_SELECTED_ABB"
-msgstr "%d selecionado(s)"
-
-msgid "IDS_BR_HEADER_NO_NETWORK_CONNECTION"
-msgstr "Sem ligação de rede"
-
-msgid "IDS_BR_HEADER_FOLDER"
-msgstr "Pasta"
-
-msgid "IDS_BR_HEADER_EDIT_PROFILE"
-msgstr "Editar perfil"
-
-msgid "IDS_BR_BUTTON_SET"
-msgstr "Definir"
-
-msgid "IDS_BR_BUTTON_NOT_NOW"
-msgstr "Agora não"
-
-msgid "IDS_BR_BUTTON_ENABLE_ABB"
-msgstr "Activar"
-
-msgid "IDS_BR_BUTTON_EDIT"
-msgstr "Editar"
-
-msgid "IDS_BR_BUTTON_CONTINUE_ABB"
-msgstr "Contin."
-
-msgid "IDS_BR_BUTTON_CONTINUE"
-msgstr "Continuar"
-
-msgid "IDS_BR_BUTTON_CLOSE"
-msgstr "Fechar"
-
-msgid "IDS_BR_BUTTON_CANCEL_ABB"
-msgstr "Cancelar"
-
-msgid "IDS_BR_BUTTON_CANCEL"
-msgstr "Cancelar"
-
-msgid "IDS_BR_BUTTON_ALLOW"
-msgstr "Permitir"
-
-msgid "IDS_BR_BODY_YESTERDAY"
-msgstr "Ontem"
-
-msgid "IDS_BR_BODY_URL"
-msgstr "URL"
-
-msgid "IDS_BR_BODY_TODAY"
-msgstr "Hoje"
-
-msgid "IDS_BR_BODY_TITLE"
-msgstr "Título"
-
-msgid "IDS_BR_BODY_THE_MAXIMUM_NUMBER_OF_CHARACTERS_HPD_HAS_BEEN_EXCEEDED"
-msgstr "Foi excedido o número máximo de caracteres (%d)."
-
-msgid "IDS_BR_BODY_STREAMING"
-msgstr "Transmissão em sequência"
-
-msgid "IDS_BR_BODY_SMALL"
-msgstr "Pequeno"
-
-msgid "IDS_BR_BODY_SETTINGS"
-msgstr "Definições"
-
-msgid "IDS_BR_BODY_SEARCH"
-msgstr "Procurar"
-
-msgid "IDS_BR_BODY_RSS_SEARCH_RESULTS"
-msgstr "Procurar resultados"
-
-msgid "IDS_BR_BODY_PROFILE"
-msgstr "Perfil"
-
-msgid "IDS_BR_BODY_PROCESSING_ING"
-msgstr "A processar..."
-
-msgid "IDS_BR_BODY_PHONE_NUMBER_ABB"
-msgstr "Número de telefone"
-
-msgid "IDS_BR_BODY_PHONE"
-msgstr "Telefone"
-
-msgid "IDS_BR_BODY_PD_ITEMS_WILL_BE_DELETED"
-msgstr "%d itens serão eliminados."
-
-msgid "IDS_BR_BODY_PASSWORD"
-msgstr "Palavra-passe"
-
-msgid "IDS_BR_BODY_ON"
-msgstr "Ligado"
-
-msgid "IDS_BR_BODY_OFF"
-msgstr "Desligado"
-
-msgid "IDS_BR_BODY_NO_RESULTS_FOUND"
-msgstr "Nenhuns resultados encontrados."
-
-msgid "IDS_BR_BODY_NO_HISTORIES"
-msgstr "Nenhum histórico"
-
-msgid "IDS_BR_BODY_NOTIFICATIONS"
-msgstr "Notificações"
-
-msgid "IDS_BR_BODY_MEDIUM"
-msgstr "Médio"
-
-msgid "IDS_BR_BODY_IMAGES"
-msgstr "Imagens"
-
-msgid "IDS_BR_BODY_FULL_SCREEN"
-msgstr "Ecrã inteiro"
-
-msgid "IDS_BR_BODY_FONT_SIZE"
-msgstr "Tamanho da fonte"
-
-msgid "IDS_BR_BODY_FOLDER_NAME"
-msgstr "Nome da pasta"
-
-msgid "IDS_BR_BODY_ENTER_POSTCODE_ABB"
-msgstr "Introduzir código postal."
-
-msgid "IDS_BR_BODY_ENTER_POSTCODE"
-msgstr "Introduzir código postal."
-
-msgid "IDS_BR_BODY_ENTER_PHONE_NUMBER"
-msgstr "Introduzir número de telefone."
-
-msgid "IDS_BR_BODY_ENTER_NAME"
-msgstr "Introduzir nome."
-
-msgid "IDS_BR_BODY_ENTER_FOLDER_NAME"
-msgstr "Introduzir nome da pasta."
-
-msgid "IDS_BR_BODY_ENTER_EMAIL_ADDRESS"
-msgstr "Introduzir endereço de e-mail."
-
-msgid "IDS_BR_BODY_EMAIL_ADDRESS"
-msgstr "Endereço de e-mail"
-
-msgid "IDS_BR_BODY_DOWNLOADING_ING"
-msgstr "A transferir..."
-
-msgid "IDS_BR_BODY_DEVELOPER_MODE"
-msgstr "Modo de programador"
-
-msgid "IDS_BR_BODY_DEFAULT"
-msgstr "Padrão"
-
-msgid "IDS_BR_BODY_BOOKMARKS"
-msgstr "Favoritos"
-
-msgid "IDS_BR_BODY_ALL"
-msgstr "Tudo"
-
-msgid "IDS_BR_BODY_ADD_TO"
-msgstr "Adicionar a"
-
-msgid "IDS_BR_BODY_ADDDETAILSVIEW_TAGS"
-msgstr "Etiquetas"
-
-msgid "IDS_BR_BODY_ADDBOOKMARKURL"
-msgstr "URL"
-
-msgid "IDS_BR_BODY_1_ITEM_WILL_BE_DELETED"
-msgstr "1 item será eliminado."
-
-msgid "IDS_BR_TPOP_MAXIMUM_NUMBER_OF_CHARACTERS_HPD_REACHED"
-msgstr "Número máximo de caracteres (%d) atingido."
-
-msgid "IDS_BR_POP_UNSUPPORTMEDIATYPE"
-msgstr "Tipo de multimédia não suportado."
-
-msgid "IDS_BR_POP_UNABLE_TO_CONNECT_TO_MOBILE_NETWORKS_WHILE_FLIGHT_MODE_IS_ENABLED_CONNECT_TO_WI_FI_NETWORK_INSTEAD_OR_DISABLE_FLIGHT_MODE_AND_TRY_AGAIN"
-msgstr "Impossível ligar às redes móveis enquanto o modo de Voo está activado. Ligue à rede Wi-Fi em substituição ou desactive o modo de Voo e tente novamente."
-
-msgid "IDS_BR_POP_INSTALL_SUCCESS"
-msgstr "Instalação concluída."
-
-msgid "IDS_BR_POP_INSTALLATION_FAILED"
-msgstr "Instalação falhou."
-
-msgid "IDS_BR_POP_DELETING_ING"
-msgstr "A eliminar..."
-
-msgid "IDS_BR_POP_DATA_ROAMING_IS_DISABLED_CONNECT_TO_WI_FI_NETWORK_INSTEAD_OR_ENABLE_DATA_ROAMING_AND_TRY_AGAIN"
-msgstr "O roaming de dados está desactivado. Ligue à rede Wi-Fi em substituição ou active o roaming de dados e tente novamente."
-
-msgid "IDS_BR_OPT_SHARE_VIA"
-msgstr "Partilhar via"
-
-msgid "IDS_BR_OPT_PASTE"
-msgstr "Colar"
-
-msgid "IDS_BR_MBODY_FONT_SIZE"
-msgstr "Tamanho de fonte"
-
-msgid "IDS_BR_HEADER_UNABLE_TO_DOWNLOAD_ABB"
-msgstr "Impossível transferir"
-
-msgid "IDS_BR_BUTTON_UPDATE"
-msgstr "Actualizar"
-
-msgid "IDS_BR_BUTTON_RETRY"
-msgstr "Repetir"
-
-msgid "IDS_BR_BODY_REQUEST_FAILED"
-msgstr "Pedido falhou."
-
 msgid "IDS_BR_BODY_LOGIN"
 msgstr "Início de sessão"
 
 msgid "IDS_BR_BODY_LOADING_ING"
 msgstr "A carregar..."
+
+msgid "IDS_BR_BODY_FIT_TO_WIDTH"
+msgstr "Ajustar à largura"
 
 msgid "IDS_BR_BODY_FIT_TO_SCREEN"
 msgstr "Ajustar ao ecrã"
@@ -1999,165 +2008,12 @@ msgstr "Transferências"
 msgid "IDS_BR_BODY_DATA_ROAMING_IS_DISABLED_CONNECT_TO_A_WI_FI_NETWORK_INSTEAD_OR_ENABLE_DATA_ROAMING_AND_TRY_AGAIN"
 msgstr "O roaming de dados está desactivado. Ligue-se a uma rede Wi-Fi em substituição ou active o roaming de dados e tente novamente."
 
-msgid "IDS_BR_POP_DOWNLOAD_CANCELLED"
-msgstr "Transferência cancelada."
+msgid "IDS_BR_ACBUTTON_QUICK_ACCESS"
+msgstr "ACESSO RÁPID"
 
-msgid "IDS_BR_BUTTON_SECRET_ON_ABB"
-msgstr "Secreto ligado"
+msgid "IDS_ST_POP_SOME_CONTENT_HAS_BEEN_BLOCKED_TO_PROTECT_YOUR_DEVICE"
+msgstr "Algum conteúdo foi bloqueado para proteger o seu dispositivo."
 
-msgid "IDS_BR_MBODY_PRIVACY"
-msgstr "Privacidade"
-
-msgid "IDS_BR_MBODY_DEFAULT_STORAGE"
-msgstr "Memória padrão"
-
-msgid "IDS_BR_MBODY_MANUAL_ZOOM"
-msgstr "Zoom manual"
-
-msgid "IDS_BR_TMBODY_DEFAULT_SEARCH_ENGINE"
-msgstr "Motor de procura padrão"
-
-msgid "IDS_BR_MBODY_SAVE_SIGN_IN_INFO"
-msgstr "Guardar info início sessão"
-
-msgid "IDS_BR_OPT_TURN_OFF_SECRET_MODE_ABB"
-msgstr "Desligar Modo secreto"
-
-msgid "IDS_BR_OPT_TURN_ON_SECRET_MODE_ABB"
-msgstr "Ligar Modo secreto"
-
-msgid "IDS_BR_OPT_SHOW_PASSWORD_ABB2"
-msgstr "Mostrar palavra-passe"
-
-msgid "IDS_BR_OPT_SECRET_MODE_SECURITY_ABB"
-msgstr "Segurança do Modo secreto"
-
-msgid "IDS_BR_BUTTON_USE_PASSWORD_ABB"
-msgstr "Utilizar palavra-passe"
-
-msgid "IDS_BR_HEADER_DONT_USE_PASSWORD_ABB"
-msgstr "Não utilizar palavra-passe"
-
-msgid "IDS_BR_MBODY_MOST_VISITED_WEBSITES"
-msgstr "Sites Web mais visitados"
-
-msgid "IDS_BR_MBODY_SET_MY_PROFILE"
-msgstr "Definir o meu perfil"
-
-msgid "IDS_BR_MBODY_MY_AUTO_FILL_PROFILE"
-msgstr "Meu perfil preenchimento"
-
-msgid "IDS_BR_SBODY_MANAGE_DATA_USED_TO_FILL_IN_FORMS_ONLINE"
-msgstr "Gerir dados utilizados para preencher formulários online."
-
-msgid "IDS_BR_MBODY_SAVE_SIGN_IN_INFO_ABB"
-msgstr "Guardar início sessão"
-
-msgid "IDS_BR_OPT_LOCATION_ACCESS_DATA"
-msgstr "Dados de acesso à localização"
-
-msgid "IDS_BR_OPT_AUTO_FILL_DATA"
-msgstr "Dados de preenchimento automático"
-
-msgid "IDS_BR_BODY_ANY_WEBPAGES_YOU_VIEW_WHILE_SECRET_MODE_IS_TURNED_ON_WONT_APPEAR_IN_YOUR_BROWSER_OR_SEARCH_HISTORY_MSG"
-msgstr "As páginas Web que visualizar quando o Modo secreto está ligado não serão mostradas no seu browser ou histórico de procuras quando o Modo secreto está desligado.\n\nNenhum dos favoritos e das páginas Web que guardar quando o Modo secreto está ligado será mostrado quando este está desligado.\n\nTambém pode proteger os seus dados do Modo secreto com uma palavra-passe."
-
-msgid "IDS_BR_BODY_ANY_WEBPAGES_YOU_VIEW_WHILE_SECRET_MODE_IS_TURNED_ON_WONT_APPEAR_IN_YOUR_BROWSER_OR_SEARCH_MSG"
-msgstr "As páginas Web que visualizar quando o Modo secreto está ligado não serão mostradas no seu browser ou histórico de procuras quando o Modo secreto está desligado.\n\nNenhum dos favoritos e das páginas Web que guardar quando o Modo secreto está ligado será mostrado quando este está desligado."
-
-msgid "IDS_BR_BUTTON_SECRET_OFF_ABB"
-msgstr "Secreto desl."
-
-msgid "IDS_BR_BUTTON_DONT_USE_PASSWORD_ABB"
-msgstr "Não usar palavra-passe"
-
-msgid "IDS_BR_BUTTON_NEW_TAB_ABB2"
-msgstr "Novo sep."
-
-msgid "IDS_BR_NPBODY_WEB_ADDRESS_ABB"
-msgstr "Endereço Web"
-
-msgid "IDS_BR_HEADER_ADD_WEBPAGE_TO_QUICK_ACCESS_ABB"
-msgstr "Adic. pág. Web ao Acesso rápido"
-
-msgid "IDS_BR_TMBODY_TURN_ON_JAVASCRIPT"
-msgstr "Ligar JavaScript"
-
-msgid "IDS_BR_HEADER_COULDNT_OPEN_NEW_TAB_ABB"
-msgstr "Impossível abrir novo separador"
-
-msgid "IDS_BR_OPT_OPEN_IN_NEW_TAB_ABB"
-msgstr "Abrir num separador novo"
-
-msgid "IDS_BR_TPOP_FOLDER_NAME_ALREADY_IN_USE"
-msgstr "Nome da pasta já utilizado."
-
-msgid "IDS_BR_NPBODY_NEW_FOLDER_PD"
-msgstr "Nova pasta %d"
-
-msgid "IDS_BR_NPBODY_NEW_FOLDER"
-msgstr "Nova pasta"
-
-msgid "IDS_BR_OPT_ENABLE_JAVASCRIPT"
-msgstr "Activar JavaScript"
-
-msgid "IDS_BR_TMBODY_MANAGE_WEBSITE_DATA"
-msgstr "Gerir dados de sites Web"
-
-msgid "IDS_BR_HEADER_SET_HOME_PAGE_ABB"
-msgstr "Definir página principal"
-
-msgid "IDS_BR_TPOP_WEBPAGE_ADDED_TO_QUICK_ACCESS_LIST"
-msgstr "Página Web adicionada à lista de acesso rápido."
-
-msgid "IDS_BR_OPT_EDIT_QUICK_ACCESS_ABB"
-msgstr "Editar Acesso rápido"
-
-msgid "IDS_BR_OPT_REMOVE_FROM_BOOKMARKS_ABB"
-msgstr "Remover dos Favoritos"
-
-msgid "IDS_BR_HEADER_ADD_BOOKMARK_ABB"
-msgstr "Adicionar favorito"
-
-msgid "IDS_BR_BODY_BROWSING_HISTORY"
-msgstr "Histórico de consultas"
-
-msgid "IDS_BR_HEADER_TABS_ABB2"
-msgstr "Separadores"
-
-msgid "IDS_BR_OPT_NEW_TAB"
-msgstr "Novo separador"
-
-msgid "IDS_BR_BUTTON_FORWARD_ABB2"
-msgstr "Reencaminhar"
-
-msgid "IDS_BR_BUTTON_BACK_ABB3"
-msgstr "Anterior"
-
-msgid "IDS_BR_BUTTON_BOOKMARKS_ABB"
-msgstr "Favoritos"
-
-msgid "IDS_BR_NPBODY_NO_PROFILES_ABB"
-msgstr "Sem perfis"
-
-msgid "IDS_BR_TAB2_HISTORY"
-msgstr "Histórico"
-
-msgid "IDS_BR_TAB2_BOOKMARKS"
-msgstr "Favoritos"
-
-msgid "IDS_BR_HEADER_SAVE_CONTENT_TO_ABB"
-msgstr "Guardar conteúdo em"
-
-msgid "IDS_BR_HEADER_SELECT_ITEMS_ABB2"
-msgstr "Seleccionar itens"
-
-msgid "IDS_BR_BODY_YOUR_PASSWORD_MUST_CONTAIN_AT_LEAST_PD_CHARACTERS_INCLUDING_AT_LEAST_1_LETTER"
-msgstr "A sua palavra-passe tem de ter pelo menos %d caracteres, incluindo pelo menos 1 letra."
-
-msgid "IDS_BR_BODY_AN_INCORRECT_PASSWORD_HAS_BEEN_ENTERED_TRY_AGAIN"
-msgstr "Foi introduzida uma palavra-passe incorrecta. Tente novamente."
-
-msgid "IDS_BR_BODY_NO_TABS"
-msgstr "Sem separadores"
+msgid "IDS_ST_POP_SELECT_WHETHER_TO_GO_TO_THE_WEBPAGE_ANYWAY"
+msgstr "Seleccione se quer ir mesmo para a página Web."
 

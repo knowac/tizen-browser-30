@@ -23,7 +23,7 @@
 namespace tizen_browser {
 namespace base_ui {
 
-using HistoryDaysListManagerEdje = struct HistoryDaysListManagerEdje_ {
+typedef struct HistoryDaysListManagerEdje_ {
     HistoryDaysListManagerEdje_()
     : historyDaysList(EDJE_DIR + std::string("HistoryUI/HistoryDaysList.edj"))
     , websiteHistoryItem(EDJE_DIR + std::string("HistoryUI/WebsiteHistoryItem.edj"))
@@ -34,9 +34,9 @@ using HistoryDaysListManagerEdje = struct HistoryDaysListManagerEdje_ {
     const std::string websiteHistoryItem;
     const std::string websiteHistoryItemTitle;
     const std::string websiteHistoryItemVisitItems;
-};
+} HistoryDaysListManagerEdje;
 
-using HistoryDaysListManagerEdjePtr = std::shared_ptr<const HistoryDaysListManagerEdje>;
+typedef std::shared_ptr<const HistoryDaysListManagerEdje> HistoryDaysListManagerEdjePtr;
 
 }
 }

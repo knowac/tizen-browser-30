@@ -1,8 +1,14 @@
 msgid "IDS_BR_POP_NETWORK_ERROR"
 msgstr "Tinklo klaida."
 
+msgid "IDS_BR_BODY_AUTHUSERNAME"
+msgstr "Naudotojo vardas"
+
 msgid "IDS_BR_BODY_DESTINATIONS_AUTHENTICATION_REQUIRED"
 msgstr "Reikalinga patvirtinti autentiškumą."
+
+msgid "IDS_BR_BODY_AUTHPASSWORD"
+msgstr "Slaptažodis"
 
 msgid "IDS_BR_HEADER_SECURITY_WARNING"
 msgstr "Saugos įspėjimas"
@@ -27,6 +33,12 @@ msgstr "Iškilo problemų dėl šios svetainės apsaugos sertifikato."
 
 msgid "IDS_BR_OPT_ALLOW"
 msgstr "Leisti"
+
+msgid "IDS_BR_OPT_VIEW"
+msgstr "Rodyti"
+
+msgid "IDS_BR_OPT_CANCEL"
+msgstr "Atšaukti"
 
 msgid "IDS_BR_BODY_PS_REQUESTS_YOUR_LOCATION"
 msgstr "%s užklausų jūsų vietai."
@@ -60,18 +72,6 @@ msgstr "Atsisiųsti"
 
 msgid "IDS_BR_BODY_THIS_WEBPAGE"
 msgstr "Ši svetainė"
-
-msgid "IDS_BR_BODY_AUTHUSERNAME"
-msgstr "Naudotojo vardas"
-
-msgid "IDS_BR_BODY_AUTHPASSWORD"
-msgstr "Slaptažodis"
-
-msgid "IDS_BR_OPT_VIEW"
-msgstr "Rodyti"
-
-msgid "IDS_BR_OPT_CANCEL"
-msgstr "Atšaukti"
 
 msgid "IDS_BR_OPT_SCREEN"
 msgstr "Ekranas"
@@ -109,6 +109,15 @@ msgstr "Atšaukti"
 msgid "IDS_BR_BUTTON_MORE"
 msgstr "Daug."
 
+msgid "IDS_TPLATFORM_ACBUTTON_DONE_ABB"
+msgstr "ATLIKTA"
+
+msgid "IDS_TPLATFORM_ACBUTTON_CANCEL_ABB"
+msgstr "ATŠAUKTI"
+
+msgid "IDS_TPLATFORM_ACBUTTON_DELETE_ABB"
+msgstr "IŠTRINTI"
+
 msgid "IDS_BR_BODY_NO_ITEMS"
 msgstr "Elementų nėra"
 
@@ -117,6 +126,9 @@ msgstr "Jungtis prie mob. tinklo"
 
 msgid "IDS_BR_OPT_DO_NOT_SHOW_AGAIN"
 msgstr "Neberodyti"
+
+msgid "IDS_BR_SK_OK"
+msgstr "Gerai"
 
 msgid "IDS_BR_POP_ONLY_HTTP_OR_HTTPS_URLS_CAN_BE_DOWNLOADED"
 msgstr "Atsisiųsti galima tik naudojant http arba https URL."
@@ -139,11 +151,17 @@ msgstr "Kopijuoti nuorodą"
 msgid "IDS_BR_OPT_COPY_IMAGE"
 msgstr "Kopijuoti vaizdą"
 
-msgid "IDS_BR_SK_OK"
-msgstr "Gerai"
-
 msgid "IDS_BR_OPT_CALL"
 msgstr "Skambutis"
+
+msgid "IDS_ST_POP_PS_HAS_BEEN_DETECTED"
+msgstr "Aptiktas %s."
+
+msgid "IDS_ST_POP_DETECTED_IN_C_PS"
+msgstr "Aptiktas: %s"
+
+msgid "IDS_ST_HEADER_MALWARE_DETECTED_ABB"
+msgstr "Aptikta kenkėjiška programa"
 
 msgid "IDS_BR_BUTTON_FAILED"
 msgstr "Nepavyko"
@@ -211,11 +229,35 @@ msgstr "Nežym."
 msgid "IDS_BR_SK_TABS"
 msgstr "Ąselės"
 
+msgid "IDS_BR_SK_SAVE_LITE"
+msgstr "Išsaug."
+
+msgid "IDS_BR_SK_SAVE_ABB"
+msgstr "Įraš."
+
+msgid "IDS_BR_SK_SAVE"
+msgstr "Išsaug."
+
+msgid "IDS_BR_SK_PREVIOUS"
+msgstr "Ankst."
+
+msgid "IDS_BR_SK_NEXT"
+msgstr "Kitas"
+
 msgid "IDS_BR_SK_MENU"
 msgstr "Meniu"
 
 msgid "IDS_BR_SK_DELETE_ABB"
 msgstr "Trinti"
+
+msgid "IDS_BR_SK_DELETE"
+msgstr "Trinti"
+
+msgid "IDS_BR_SK_CLEAR"
+msgstr "Valyti"
+
+msgid "IDS_BR_SK_BACK"
+msgstr "Atgal"
 
 msgid "IDS_BR_SK3_CREATE_FOLDER"
 msgstr "Kurti aplanką"
@@ -274,6 +316,15 @@ msgstr "Jums gali nepavykti tiksliai apkarpyti kai kurių tinklalapių"
 msgid "IDS_BR_POP_YOUR_HISTORY_WILL_BE_CLEARED"
 msgstr "Jūsų istorija bus išvalyta."
 
+msgid "IDS_BR_POP_WI_FI_CONNECTION_REQUIRED_CONNECT_TO_WI_FI_NETWORK_AND_TRY_AGAIN"
+msgstr "Reikia „Wi-Fi“ ryšio. Prisijunkite prie „ Wi-Fi“ ryšio ir pabandykite dar kartą"
+
+msgid "IDS_BR_POP_URL_NOT_FOUND"
+msgstr "URL nerastas."
+
+msgid "IDS_BR_POP_URL"
+msgstr "URL"
+
 msgid "IDS_BR_POP_UNABLE_TO_VIEW_THE_CERTIFICATE_THE_PAGE_INFORMATION_HAS_BEEN_CHANGED"
 msgstr "Neįmanoma peržiūrėti sertifikato. Puslapio informacija pakeista."
 
@@ -319,11 +370,23 @@ msgstr "Saugos strategija riboja naudojimąsi interneto naršykle."
 msgid "IDS_BR_POP_SAVED_TO_BOOKMARKS"
 msgstr "Išsaugota adresyne."
 
+msgid "IDS_BR_POP_SAVED"
+msgstr "Išsaugota."
+
 msgid "IDS_BR_POP_RENAME_TAG"
 msgstr "Pervadinkite žymą"
 
+msgid "IDS_BR_POP_REMOVED"
+msgstr "Pašalinta."
+
 msgid "IDS_BR_POP_PD_PROFILES_WILL_BE_DELETED"
 msgstr "Bus ištrinta profilių: %d."
+
+msgid "IDS_BR_POP_PD_ITEMS_WILL_BE_DELETED"
+msgstr "Bus ištrinta elementų: %d."
+
+msgid "IDS_BR_POP_PD_ITEMS_SELECTED"
+msgstr "Pasirinkta elementų: %d"
 
 msgid "IDS_BR_POP_PAGES_THAT_YOU_VIEW_WILL_NOT_APPEAR_IN_YOUR_BROWSER_HISTORY_OR_SEARCH_HISTORY_AND_THEY_WILL_NOT_LEAVE_OTHER_TRACES_LIKE_COOKIES"
 msgstr "Puslapiai, kuriuos peržiūrite, nebus rodomi jūsų naršyklės arba paieškos istorijoje, be to, jie nebus kitaip susekami, pvz., kaip slapukai."
@@ -352,20 +415,53 @@ msgstr "Aptikta „%1$s“.\nAptikta: „%2$s“\n\nSiekiant apsaugoti jūsų į
 msgid "IDS_BR_POP_P1SS_HAS_BEEN_DETECTED_DETECTED_IN_C_P2SS_OPEN_WEBPAGE_ANYWAY_Q"
 msgstr "Aptikta „%1$s“.\nAptikta: „%2$s“\n\nVis tiek atidaryti svetainę?"
 
+msgid "IDS_BR_POP_NO_ITEMS_SELECTED"
+msgstr "Nėra pasirinktų elementų."
+
 msgid "IDS_BR_POP_NOT_ENOUGH_MEMORY_DELETE_SOME_ITEMS_AND_TRY_AGAIN"
 msgstr "Nepakanka atminties. Ištrinkite kai kuriuos elementus ir bandykite dar kartą."
+
+msgid "IDS_BR_POP_NOT_ENOUGH_MEMORY"
+msgstr "Nepakanka atminties."
 
 msgid "IDS_BR_POP_NOT_ALLOWED"
 msgstr "Neleidžiama."
 
+msgid "IDS_BR_POP_NEVER"
+msgstr "Niekada"
+
 msgid "IDS_BR_POP_MOVED"
 msgstr "Perkelta."
+
+msgid "IDS_BR_POP_MOBILE_DATA_IS_DISABLED_CONNECT_TO_WI_FI_NETWORK_INSTEAD_OR_ENABLE_MOBILE_DATA_AND_TRY_AGAIN"
+msgstr "Mobiliojo telefono duomenys išjungti. Vietoj to prisijunkite prie „Wi-Fi“ tinklo arba įjunkite mobiliojo telefono duomenis ir pabandykite dar kartą"
+
+msgid "IDS_BR_POP_LOADING_PLEASE_WAIT_ING"
+msgstr "Įkeliama. Palaukite..."
+
+msgid "IDS_BR_POP_INVALID_URL"
+msgstr "Netinkamas URL."
+
+msgid "IDS_BR_POP_FAIL"
+msgstr "Nepavyko."
 
 msgid "IDS_BR_POP_ENTER_URL"
 msgstr "Įvesti URL."
 
+msgid "IDS_BR_POP_ENTER_TITLE_ABB"
+msgstr "Įvesti pavadinimą"
+
 msgid "IDS_BR_POP_ENTER_BOOKMARK_NAME"
 msgstr "Čia įveskite žymeklio pavadinimą."
+
+msgid "IDS_BR_POP_DO_NOT_SHOW_AGAIN"
+msgstr "Daugiau nerodyti"
+
+msgid "IDS_BR_POP_DOWNLOADCOMPLETE"
+msgstr "Atsisiųsta."
+
+msgid "IDS_BR_POP_DISABLED"
+msgstr "Išjungta."
 
 msgid "IDS_BR_POP_DIALING_ING_VZW"
 msgstr "Dialing..."
@@ -391,6 +487,9 @@ msgstr "Trinti šios svetainės prisijungimo duomenis?"
 msgid "IDS_BR_POP_DELETE_SIGN_IN_DATA_FOR_PD_WEBSITES_Q"
 msgstr "Trinti %d svetainių prisijungimo duomenis?"
 
+msgid "IDS_BR_POP_DELETE_Q"
+msgstr "Ar trinti?"
+
 msgid "IDS_BR_POP_DELETE_PD_SAVED_WEB_PAGES_Q"
 msgstr "Trinti %d išsaugotus tinklalapius?"
 
@@ -406,8 +505,14 @@ msgstr "Ištrinti visus svetainės duomenis ir vietos leidimus?"
 msgid "IDS_BR_POP_DELETEHISTORYQUESTION"
 msgstr "Trinti istoriją?"
 
+msgid "IDS_BR_POP_DELETED"
+msgstr "Ištrinta."
+
 msgid "IDS_BR_POP_CONTINUE"
 msgstr "Tęsti"
+
+msgid "IDS_BR_POP_CLOSE_APPLICATION_Q"
+msgstr "Uždaryti programą?"
 
 msgid "IDS_BR_POP_CLOSE_APPLICATION"
 msgstr "Uždaryti programą"
@@ -420,6 +525,12 @@ msgstr "Valyti istoriją?"
 
 msgid "IDS_BR_POP_BOOKMARK_REMOVED"
 msgstr "Adresyno įrašas pašalintas."
+
+msgid "IDS_BR_POP_BOOKMARK_ADDED"
+msgstr "Žymelė pridėta."
+
+msgid "IDS_BR_POP_AUTOMATIC_BRIGHTNESS"
+msgstr "Automatinis šviesumas"
 
 msgid "IDS_BR_POP_ALREADY_EXISTS"
 msgstr "Jau yra."
@@ -445,6 +556,15 @@ msgstr "Leisti svetainėms įrašyti ir skaityti slapukus."
 msgid "IDS_BR_POP_ADDED_TO_BOOKMARKS"
 msgstr "Įtraukta į adresyną."
 
+msgid "IDS_BR_POP_ACCOUNT"
+msgstr "Paskyra"
+
+msgid "IDS_BR_POP_1_ITEM_WILL_BE_DELETED"
+msgstr "1 elementas bus ištrintas."
+
+msgid "IDS_BR_POP_1_ITEM_SELECTED"
+msgstr "Pasirinktas 1 elementas."
+
 msgid "IDS_BR_OPT_WINDOWS"
 msgstr "Langai"
 
@@ -454,20 +574,38 @@ msgstr "Žiūrėti sertifik."
 msgid "IDS_BR_OPT_UNICODE_HUTF_8"
 msgstr "Unikodas (UTF-8)"
 
+msgid "IDS_BR_OPT_TRANSLATE"
+msgstr "Versti"
+
 msgid "IDS_BR_OPT_THUMBNAIL_VIEW"
 msgstr "Miniatiūrų rodinys"
 
 msgid "IDS_BR_OPT_TEXT_ENCODING"
 msgstr "Teksto kodavimas"
 
+msgid "IDS_BR_OPT_STOP"
+msgstr "Stabdyti"
+
 msgid "IDS_BR_OPT_SHRINK_TEXT"
 msgstr "Sutraukti tekstą"
+
+msgid "IDS_BR_OPT_SHOW"
+msgstr "Rodyti"
+
+msgid "IDS_BR_OPT_SHARE"
+msgstr "Dalytis"
 
 msgid "IDS_BR_OPT_SETTINGS_ABB"
 msgstr "Nustatymai"
 
+msgid "IDS_BR_OPT_SETTINGS"
+msgstr "Nustatymai"
+
 msgid "IDS_BR_OPT_SEND_MESSAGE_VODA"
 msgstr "Siųsti žinutę"
+
+msgid "IDS_BR_OPT_SEND_EMAIL"
+msgstr "Siųsti el. laišką"
 
 msgid "IDS_BR_OPT_SENDURLVIA_EMAIL"
 msgstr "El. paštas"
@@ -486,6 +624,12 @@ msgstr "Pasirinkimo režimas"
 
 msgid "IDS_BR_OPT_SELECTED"
 msgstr "Pasirinkta"
+
+msgid "IDS_BR_OPT_SELECT"
+msgstr "Pasirinkti"
+
+msgid "IDS_BR_OPT_SD_CARD"
+msgstr "SD kortelė"
 
 msgid "IDS_BR_OPT_SAVE_TO_KEEPIT_ABB"
 msgstr "Išsaugoti „KeepIt“"
@@ -514,8 +658,14 @@ msgstr "Pertvarkyti"
 msgid "IDS_BR_OPT_RENAME_FOLDER"
 msgstr "Pervardyti aplanką"
 
+msgid "IDS_BR_OPT_RENAME"
+msgstr "Pervardyti"
+
 msgid "IDS_BR_OPT_REMOVE"
 msgstr "Šalinti"
+
+msgid "IDS_BR_OPT_REFRESH"
+msgstr "Naujinti"
 
 msgid "IDS_BR_OPT_READER_MODE_TTS"
 msgstr "Skaitytuvo režimas"
@@ -535,8 +685,14 @@ msgstr "Atjungti puslapiai"
 msgid "IDS_BR_OPT_NEW_WINDOW"
 msgstr "Naujas langas"
 
+msgid "IDS_BR_OPT_MOVE"
+msgstr "Perkelti"
+
 msgid "IDS_BR_OPT_MINIMISE"
 msgstr "Sumažinti"
+
+msgid "IDS_BR_OPT_MESSAGES"
+msgstr "Žinutės"
 
 msgid "IDS_BR_OPT_MEDIUM_M_QUALITY"
 msgstr "Vidutinis"
@@ -549,6 +705,9 @@ msgstr "Vietovės prieigos teisės"
 
 msgid "IDS_BR_OPT_LOAD_IMAGES"
 msgstr "Įkelti vaizdus"
+
+msgid "IDS_BR_OPT_LIST_VIEW"
+msgstr "Sąrašo vaizdas"
 
 msgid "IDS_BR_OPT_LATIN_1_HISO_8859_1"
 msgstr "Lotynų-1 (ISO-8859-1)"
@@ -565,6 +724,9 @@ msgstr "Japonų (ISO-2022-JP)"
 msgid "IDS_BR_OPT_JAPANESE_HEUC_JP"
 msgstr "Japonų (EUC-JP)"
 
+msgid "IDS_BR_OPT_I_AGREE"
+msgstr "Sutinku."
+
 msgid "IDS_BR_OPT_INCOGNITO_MODE_ABB"
 msgstr "Nežinomas režimas"
 
@@ -579,6 +741,9 @@ msgstr "Pradž.ekran. kaip trumpinys"
 
 msgid "IDS_BR_OPT_HIGH_M_QUALITY"
 msgstr "Aukšta"
+
+msgid "IDS_BR_OPT_HELP"
+msgstr "Pagalba"
 
 msgid "IDS_BR_OPT_GOFORWARD"
 msgstr "Pirmyn"
@@ -625,6 +790,9 @@ msgstr "Išjungt mažą duomenų naudojimą"
 msgid "IDS_BR_OPT_DISABLED"
 msgstr "Išjungta"
 
+msgid "IDS_BR_OPT_DEVICE"
+msgstr "Įrenginys"
+
 msgid "IDS_BR_OPT_DELETE_SAVED_PAGE_ABB"
 msgstr "Ištrinti išsaugotą puslapį"
 
@@ -658,6 +826,9 @@ msgstr "Kinų („Big5“)"
 msgid "IDS_BR_OPT_CACHE"
 msgstr "Talpykla"
 
+msgid "IDS_BR_OPT_BOOKMARK"
+msgstr "Adresyno įrašas"
+
 msgid "IDS_BR_OPT_ADD_TO_WEB_CLIP"
 msgstr "Pridėti prie vaizdinės žiniatinklio nuorodos"
 
@@ -678,6 +849,12 @@ msgstr "Prid. adres. įr."
 
 msgid "IDS_BR_OPT_ADD_BOOKMARK"
 msgstr "Pridėti adresyno įrašą"
+
+msgid "IDS_BR_OPT_ADDED"
+msgstr "Pridėta."
+
+msgid "IDS_BR_OPT_ADD"
+msgstr "Pridėti"
 
 msgid "IDS_BR_OPT1_EXTENSION"
 msgstr "Plėtinys"
@@ -748,6 +925,9 @@ msgstr "Atsiųsti kanalo turinį"
 msgid "IDS_BR_MBODY_DELETE_SIGN_IN_DATA"
 msgstr "Trinti prisijung.duomenis"
 
+msgid "IDS_BR_MBODY_DEFAULT_DOWNLOAD_STORAGE"
+msgstr "Numat. atsisiunt. saugyk."
+
 msgid "IDS_BR_MBODY_DATA_SAVING_STATISTICS"
 msgstr "Duom. saugojimo statist."
 
@@ -790,6 +970,9 @@ msgstr "Negalima perkelti adres. įrašų"
 msgid "IDS_BR_HEADER_SITE_NOT_TRUSTED_ABB"
 msgstr "Nepatikima svetainė"
 
+msgid "IDS_BR_HEADER_SIGN_IN_TO_SAMSUNG_ACCOUNT"
+msgstr "Prisijunkite prie „Samsung“ paskyros"
+
 msgid "IDS_BR_HEADER_SET_HOMEPAGE_ABB"
 msgstr "Nustatyti pagrindinį puslapį"
 
@@ -826,11 +1009,17 @@ msgstr "Iškylantis langas užblokuotas"
 msgid "IDS_BR_HEADER_POPULAR_WEBSITES_ABB"
 msgstr "Populiariausios svetainės"
 
+msgid "IDS_BR_HEADER_PD_SELECTED_ABB"
+msgstr "Pasirinkta: %d"
+
 msgid "IDS_BR_HEADER_ORGANISATION_C_ABB"
 msgstr "Organizacija:"
 
 msgid "IDS_BR_HEADER_ORGANISATIONAL_UNIT_C"
 msgstr "Organizacijos skyrius:"
+
+msgid "IDS_BR_HEADER_NO_NETWORK_CONNECTION"
+msgstr "Nėra ryšio su tinklu"
 
 msgid "IDS_BR_HEADER_NEWER_M_INTERNET_HISTORY_ABB"
 msgstr "Newer"
@@ -847,11 +1036,17 @@ msgstr "HTML5 plėtinys"
 msgid "IDS_BR_HEADER_FORM_DATA"
 msgstr "Formos duomenys"
 
+msgid "IDS_BR_HEADER_FOLDER"
+msgstr "Aplankas"
+
 msgid "IDS_BR_HEADER_EXPIRES_ON_C"
 msgstr "Galiojimas baigiasi:"
 
 msgid "IDS_BR_HEADER_ENABLE_WEB_SIGN_IN"
 msgstr "Įjungti žiniatinklio registraciją"
+
+msgid "IDS_BR_HEADER_EDIT_PROFILE"
+msgstr "Redaguoti profilį"
 
 msgid "IDS_BR_HEADER_EDIT_BOOKMARK"
 msgstr "Redaguoti žymelę"
@@ -889,8 +1084,14 @@ msgstr "Pralaidumo valdymas"
 msgid "IDS_BR_HEADER_ADVANCEDCERTIFICATES"
 msgstr "Sertifikatai"
 
+msgid "IDS_BR_BUTTON_SET"
+msgstr "Nustatyti"
+
 msgid "IDS_BR_BUTTON_RESET_ABB"
 msgstr "Nust. iš naujo"
+
+msgid "IDS_BR_BUTTON_NOT_NOW"
+msgstr "Ne dabar"
 
 msgid "IDS_BR_BUTTON_HOMEPAGE_ABB"
 msgstr "Pagr. psl."
@@ -898,11 +1099,35 @@ msgstr "Pagr. psl."
 msgid "IDS_BR_BUTTON_FIND_ABB"
 msgstr "Rasti"
 
+msgid "IDS_BR_BUTTON_ENABLE_ABB"
+msgstr "Įjungti"
+
+msgid "IDS_BR_BUTTON_EDIT"
+msgstr "Redaguoti"
+
+msgid "IDS_BR_BUTTON_CONTINUE_ABB"
+msgstr "Tęsti"
+
+msgid "IDS_BR_BUTTON_CONTINUE"
+msgstr "Tęsti"
+
+msgid "IDS_BR_BUTTON_CLOSE"
+msgstr "Uždaryti"
+
+msgid "IDS_BR_BUTTON_CANCEL_ABB"
+msgstr "Atšaukti"
+
+msgid "IDS_BR_BUTTON_CANCEL"
+msgstr "Atšaukti"
+
 msgid "IDS_BR_BUTTON_BACK_ABB"
 msgstr "Atgal"
 
 msgid "IDS_BR_BUTTON_ALWAYS_SHOW_ABB"
 msgstr "Rod. visada"
+
+msgid "IDS_BR_BUTTON_ALLOW"
+msgstr "Leisti"
 
 msgid "IDS_BR_BUTTON2_WEB_PORTAL"
 msgstr "Žiniatink.\nportalas"
@@ -927,6 +1152,9 @@ msgstr "Eiti į istoriją"
 
 msgid "IDS_BR_BUTTON2_ENTERTAINMENT"
 msgstr "Pramogos"
+
+msgid "IDS_BR_BODY_YESTERDAY"
+msgstr "Vakar"
 
 msgid "IDS_BR_BODY_WINDOW_MANAGER"
 msgstr "Langų tvarkyklė"
@@ -955,6 +1183,9 @@ msgstr "Jei norite paslėpti būsenos juostą, naudokite viso ekrano režimą."
 msgid "IDS_BR_BODY_USE_A_PREDICTION_SERVICE_TO_DISPLAY_RELATED_QUERIES_AND_POPULAR_WEBSITES_IN_THE_ADDRESS_BAR_AS_YOU_TYPE"
 msgstr "Naudoti nuspėjimo paslaugą ir atvaizduoti susijusias užklausas ir populiariausias svetaines adreso juostoje, kai rašote."
 
+msgid "IDS_BR_BODY_URL"
+msgstr "URL"
+
 msgid "IDS_BR_BODY_UPPER_FOLDER_T_TALKBACK"
 msgstr "Ankstesnis aplankas"
 
@@ -970,6 +1201,12 @@ msgstr "Neįmanoma parodyti svetainės. Nėra atsakymo iš serverio."
 msgid "IDS_BR_BODY_TOWN_CITY_COUNTY_ABB"
 msgstr "Gyvenvietė / miestas / rajonas"
 
+msgid "IDS_BR_BODY_TODAY"
+msgstr "Šiandien"
+
+msgid "IDS_BR_BODY_TITLE"
+msgstr "Pavadinimas"
+
 msgid "IDS_BR_BODY_THIS_SITE_IS_USING_PS"
 msgstr "Ši svetainė naudoja %s."
 
@@ -984,6 +1221,9 @@ msgstr "Šis žymeklis bus ištrintas."
 
 msgid "IDS_BR_BODY_THE_SELECTED_PERSONAL_DATA_WILL_BE_DELETED"
 msgstr "Pasirinkti asmeniniai duomenys bus ištrinti."
+
+msgid "IDS_BR_BODY_THE_MAXIMUM_NUMBER_OF_CHARACTERS_HPD_HAS_BEEN_EXCEEDED"
+msgstr "Viršytas didžiausias simbolių skaičius (%d)."
 
 msgid "IDS_BR_BODY_TEXT_FIELD_T_TTS"
 msgstr "Teksto laukelis"
@@ -1009,11 +1249,17 @@ msgstr "Sinchronizuoti adresyno įrašus"
 msgid "IDS_BR_BODY_STREET_ADDRESS_PO_BOX_C_O_ETC_ABB"
 msgstr "Gatvės pavadinimas, pašto dėžutė, adresas ir pan."
 
+msgid "IDS_BR_BODY_STREAMING"
+msgstr "Srautas"
+
 msgid "IDS_BR_BODY_STORED_DATA"
 msgstr "Saugomi duomenys"
 
 msgid "IDS_BR_BODY_SPLIT_BAR_HANDLE"
 msgstr "Skiriamosios linijos slankiklis"
+
+msgid "IDS_BR_BODY_SMALL"
+msgstr "Mažas"
 
 msgid "IDS_BR_BODY_SIGN_IN_TO_YOUR_SAMSUNG_ACCOUNT_TO_ACCESS_THE_BOOKMARKS_AND_TABS_ON_YOUR_OTHER_DEVICES"
 msgstr "Prisijunkite prie „Samsung“ paskyros, kad galėtumėte naudotis adresyno įrašais ir skirtukais kituose savo įrenginiuose."
@@ -1033,6 +1279,9 @@ msgstr "Nustatyti tekstą, kad būtų automatiškai pildoma žiniat. forma."
 msgid "IDS_BR_BODY_SET_CURRENT_PAGE_AS_HOMEPAGE"
 msgstr "Pasirinkti dabartini puslapį kaip pagrindinį"
 
+msgid "IDS_BR_BODY_SETTINGS"
+msgstr "Nustatymai"
+
 msgid "IDS_BR_BODY_SELECT_FOLDER"
 msgstr "Pasirinkti aplanką"
 
@@ -1045,6 +1294,9 @@ msgstr "Paieškos laukelis"
 msgid "IDS_BR_BODY_SEARCH_AND_URL_SUGGESTIONS"
 msgstr "Paieškos ir URL pasiūlymai"
 
+msgid "IDS_BR_BODY_SEARCH"
+msgstr "Ieškoti"
+
 msgid "IDS_BR_BODY_SCREEN_AND_TEXT"
 msgstr "Ekranas ir tekstas"
 
@@ -1053,6 +1305,9 @@ msgstr "Išsaugoti svetainėms skirtus naudotojo vardus ir slaptažodžius."
 
 msgid "IDS_BR_BODY_SAVE_LINK"
 msgstr "Įrašyti nuorodą"
+
+msgid "IDS_BR_BODY_RSS_SEARCH_RESULTS"
+msgstr "Paieškos rezultatai"
 
 msgid "IDS_BR_BODY_RESTORE_DEFAULT_SETTINGS_Q"
 msgstr "Atkurti numatytuosius nustatymus?"
@@ -1087,6 +1342,12 @@ msgstr "Akutė"
 msgid "IDS_BR_BODY_PS_BOOKMARK_WILL_BE_DELETED"
 msgstr "%s adresyno įrašas bus ištrintas."
 
+msgid "IDS_BR_BODY_PROFILE"
+msgstr "Profilis"
+
+msgid "IDS_BR_BODY_PROCESSING_ING"
+msgstr "Apdorojama..."
+
 msgid "IDS_BR_BODY_PRIVACY"
 msgstr "Privatumas"
 
@@ -1099,8 +1360,20 @@ msgstr "Paspauskite meniu klavišą."
 msgid "IDS_BR_BODY_POSTCODE_ABB"
 msgstr "Pašto kodas"
 
+msgid "IDS_BR_BODY_PHONE_NUMBER_ABB"
+msgstr "Tel. numeris"
+
+msgid "IDS_BR_BODY_PHONE"
+msgstr "Telefonas"
+
 msgid "IDS_BR_BODY_PD_POP_UPS_BLOCKED_ABB"
 msgstr "Blok.iškyl.lang.: %d"
+
+msgid "IDS_BR_BODY_PD_ITEMS_WILL_BE_DELETED"
+msgstr "Bus ištrinta elementų: %d."
+
+msgid "IDS_BR_BODY_PASSWORD"
+msgstr "Slaptažodis"
 
 msgid "IDS_BR_BODY_PAGE_LOADED_T_TTS"
 msgstr "Puslapis įkeltas"
@@ -1126,8 +1399,14 @@ msgstr "Pagal pareikalavimą"
 msgid "IDS_BR_BODY_ONLY_VIA_WI_FI_ABB"
 msgstr "Tik per „Wi-Fi“"
 
+msgid "IDS_BR_BODY_ON"
+msgstr "Įjungta"
+
 msgid "IDS_BR_BODY_OLDER"
 msgstr "Senesnis"
+
+msgid "IDS_BR_BODY_OFF"
+msgstr "Išjungta"
 
 msgid "IDS_BR_BODY_NO_WINDOWS"
 msgstr "Langų nėra"
@@ -1141,8 +1420,17 @@ msgstr "Nėra pavadinimo"
 msgid "IDS_BR_BODY_NO_SAVED_PAGES"
 msgstr "Nėra išsaugotų puslapių"
 
+msgid "IDS_BR_BODY_NO_RESULTS_FOUND"
+msgstr "Rezultatų nerasta."
+
+msgid "IDS_BR_BODY_NO_HISTORIES"
+msgstr "Nėra istorijos"
+
 msgid "IDS_BR_BODY_NO_BOOKMARKS"
 msgstr "Žymeklių nėra"
+
+msgid "IDS_BR_BODY_NOTIFICATIONS"
+msgstr "Pranešimai"
 
 msgid "IDS_BR_BODY_NORMAL"
 msgstr "Įprastas"
@@ -1158,6 +1446,9 @@ msgstr "Dažniausiai lankomos svetainės"
 
 msgid "IDS_BR_BODY_MOBILE_VIEW"
 msgstr "Mobiliojo telefono rodinys"
+
+msgid "IDS_BR_BODY_MEDIUM"
+msgstr "Vidutinis"
 
 msgid "IDS_BR_BODY_LOCATION_M_INFORMATION"
 msgstr "Vieta"
@@ -1183,6 +1474,9 @@ msgstr "Internetas"
 msgid "IDS_BR_BODY_IMPROVE_PERFORMANCE_WHEN_LOADING_PAGES"
 msgstr "Pagerina veikimą įkeliant puslapius."
 
+msgid "IDS_BR_BODY_IMAGES"
+msgstr "Vaizdai"
+
 msgid "IDS_BR_BODY_HOMEPAGE"
 msgstr "Pradinis puslapis"
 
@@ -1192,11 +1486,20 @@ msgstr "Slėpti adreso juostą slenkant puslapiu žemyn."
 msgid "IDS_BR_BODY_GENERAL_M_SETTINGS"
 msgstr "Bendra"
 
+msgid "IDS_BR_BODY_FULL_SCREEN"
+msgstr "Visas ekranas"
+
 msgid "IDS_BR_BODY_FULL_NAME_ABB"
 msgstr "Vardas ir pavardė"
 
 msgid "IDS_BR_BODY_FORCE_ZOOM_ABB"
 msgstr "Įjungti mastelį"
+
+msgid "IDS_BR_BODY_FONT_SIZE"
+msgstr "Šrifto dydis"
+
+msgid "IDS_BR_BODY_FOLDER_NAME"
+msgstr "Aplanko pavadinimas"
 
 msgid "IDS_BR_BODY_FLAT_SUITE_UNIT_BUILDING_FLOOR_ETC_ABB"
 msgstr "Butas, apartamentai, korpusas, pastatas, aukštas ir pan."
@@ -1213,6 +1516,24 @@ msgstr "Įveskite vardą."
 msgid "IDS_BR_BODY_ENTER_TOWN_CITY_COUNTY_ABB"
 msgstr "Įveskite gyvenvietę/miestą/raj."
 
+msgid "IDS_BR_BODY_ENTER_POSTCODE_ABB"
+msgstr "Įveskite pašto kodą."
+
+msgid "IDS_BR_BODY_ENTER_POSTCODE"
+msgstr "Įveskite pašto kodą."
+
+msgid "IDS_BR_BODY_ENTER_PHONE_NUMBER"
+msgstr "Įveskite tel. numerį."
+
+msgid "IDS_BR_BODY_ENTER_NAME"
+msgstr "Įvesti vardą."
+
+msgid "IDS_BR_BODY_ENTER_FOLDER_NAME"
+msgstr "Įrašyti aplanko pavadinimą."
+
+msgid "IDS_BR_BODY_ENTER_EMAIL_ADDRESS"
+msgstr "Įveskite el. pašto adresą."
+
 msgid "IDS_BR_BODY_ENTER_COUNTRY_REGION_ABB"
 msgstr "Įveskite šalį / regioną."
 
@@ -1224,6 +1545,12 @@ msgstr "Įjungti vietą"
 
 msgid "IDS_BR_BODY_ENABLE_JAVASCRIPT"
 msgstr "Įjungti „JavaScript“"
+
+msgid "IDS_BR_BODY_EMAIL_ADDRESS"
+msgstr "El. pašto adresas"
+
+msgid "IDS_BR_BODY_DOWNLOADING_ING"
+msgstr "Atsisiunčiama..."
 
 msgid "IDS_BR_BODY_DOUBLE_TAP_TO_VIEW_CERTIFICATE_TTS"
 msgstr "Bakstelėkite dukart ir peržiūrėkite sertifikatą."
@@ -1264,6 +1591,9 @@ msgstr "Rodyti iškylančiuosius saugos įspėjimus."
 msgid "IDS_BR_BODY_DISPLAY_IMAGES_ON_WEB_PAGES"
 msgstr "Rodyti paveikslėlius tinklalapiuose."
 
+msgid "IDS_BR_BODY_DEVELOPER_MODE"
+msgstr "Kūrėjo režimas"
+
 msgid "IDS_BR_BODY_DESKTOP_VIEW"
 msgstr "Darbalaukio peržiūra"
 
@@ -1278,6 +1608,9 @@ msgstr "Numatytoji saugykla"
 
 msgid "IDS_BR_BODY_DEFAULT_PAGE_ABB"
 msgstr "Numatytasis puslapis"
+
+msgid "IDS_BR_BODY_DEFAULT"
+msgstr "Numatytoji"
 
 msgid "IDS_BR_BODY_DATA_USAGE_REDUCED_BY_P1SDP_HP2SD_KB_OF_P3SD_KB_RECEIVED_TAP_HERE_TO_RESET_STATISTICS"
 msgstr "Duomenų naudojimas sumažintas iki %1$d% (gauta %2$d KB iš %3$d KB). Bakstelėkite čia ir iš naujo nustatykite statistiką."
@@ -1342,6 +1675,9 @@ msgstr "Pakeiskite teksto dydį, kad būtų lengviau skaityti, ypač kai žiūri
 msgid "IDS_BR_BODY_BOOKMARK_REMINDER_ABB"
 msgstr "Adresyno įrašo priminimas"
 
+msgid "IDS_BR_BODY_BOOKMARKS"
+msgstr "Adresyno įrašai"
+
 msgid "IDS_BR_BODY_BLOCK_POP_UPS_ON_WEB_PAGES"
 msgstr "Blokuoti iškylančiuosius langus tinklalapiuose."
 
@@ -1390,6 +1726,9 @@ msgstr "Leisti %s rodyti pranešimus"
 msgid "IDS_BR_BODY_ALLOWS_SITES_TO_SAVE_AND_READ_COOKIE_DATA"
 msgstr "Leidžia svetainėms išsaugoti ir skaityti slapukų duomenis."
 
+msgid "IDS_BR_BODY_ALL"
+msgstr "Visos"
+
 msgid "IDS_BR_BODY_AFTER_YOU_VISIT_WEBPAGES_THE_PAGES_YOU_HAVE_VISITED_THE_MOST_WILL_BE_SHOWN_HERE"
 msgstr "Kai aplankysite tinklalapius, dažniausiai lankyti puslapiai bus rodomi čia."
 
@@ -1417,6 +1756,9 @@ msgstr "Išsamiau"
 msgid "IDS_BR_BODY_ADD_TO_CONTACT"
 msgstr "Įtraukti adresatą"
 
+msgid "IDS_BR_BODY_ADD_TO"
+msgstr "Pridėti prie"
+
 msgid "IDS_BR_BODY_ADD_THIS_WEBSITE_TO_BOOKMARKS_TO_OPEN_IT_FASTER_ABB"
 msgstr "Prid. svet. prie adr. įrašų, kad greičiau atidar."
 
@@ -1426,17 +1768,29 @@ msgstr "2 adreso eilutė"
 msgid "IDS_BR_BODY_ADDRESS_LINE_1_ABB"
 msgstr "1 adreso eilutė"
 
+msgid "IDS_BR_BODY_ADDDETAILSVIEW_TAGS"
+msgstr "Žymos"
+
+msgid "IDS_BR_BODY_ADDBOOKMARKURL"
+msgstr "URL"
+
 msgid "IDS_BR_BODY_ACCEPT_COOKIES"
 msgstr "Priimti slapukus"
 
 msgid "IDS_BR_BODY_1_PROFILE_WILL_BE_DELETED"
 msgstr "Bus ištrintas 1 profilis."
 
+msgid "IDS_BR_BODY_1_ITEM_WILL_BE_DELETED"
+msgstr "1 elementas bus ištrintas."
+
 msgid "IDS_BR_ACBUTTON_TABS_ABB"
 msgstr "SKIRT"
 
 msgid "IDS_BR_TPOP_STARTING_DOWNLOAD_ING"
 msgstr "Pradeda siųsti..."
+
+msgid "IDS_BR_TPOP_MAXIMUM_NUMBER_OF_CHARACTERS_HPD_REACHED"
+msgstr "Pasiektas didžiausias simbolių skaičius (%d)"
 
 msgid "IDS_BR_TPOP_FOLDER_RENAMED"
 msgstr "Aplankas pervardytas."
@@ -1453,8 +1807,14 @@ msgstr "Atš."
 msgid "IDS_BR_SBODY_SET_THE_DEVICE_TO_SHOW_THE_FULL_WEBPAGE_ON_THE_SCREEN_WHEN_IT_IS_LOADED_WITHOUT_NEEDING_TO_SCROLL"
 msgstr "Nustatykite įrenginį rodyti visą įkeltą tinklalapį ekrane, kad nereiktų naudoti slinkties."
 
+msgid "IDS_BR_POP_UNSUPPORTMEDIATYPE"
+msgstr "Nepalaikomas pramogos tipas."
+
 msgid "IDS_BR_POP_UNABLE_TO_RUN_INTERNET_LOW_BATTERY"
 msgstr "Neįmanoma paleisti interneto. Akumuliatorius senka."
+
+msgid "IDS_BR_POP_UNABLE_TO_CONNECT_TO_MOBILE_NETWORKS_WHILE_FLIGHT_MODE_IS_ENABLED_CONNECT_TO_WI_FI_NETWORK_INSTEAD_OR_DISABLE_FLIGHT_MODE_AND_TRY_AGAIN"
+msgstr "Neįmanoma prisijungti prie mobiliųjų tinklų, kol įjungtas skrydžio režimas. Vietoj to prisijunkite prie „Wi-Fi“ tinklo arba išjunkite skrydžio režimą ir pabandykite dar kartą"
 
 msgid "IDS_BR_POP_THE_DOWNLOAD_HAS_BEEN_STOPPED_AND_THE_DOWNLOADED_DATA_WILL_BE_DELETED"
 msgstr "Atsisiuntimas buvo sustabdytas, o atsiųsti duomenys bus ištrinti."
@@ -1465,8 +1825,20 @@ msgstr "Search completed"
 msgid "IDS_BR_POP_READY"
 msgstr "Paruošta."
 
+msgid "IDS_BR_POP_INSTALL_SUCCESS"
+msgstr "Diegimas baigtas."
+
+msgid "IDS_BR_POP_INSTALLATION_FAILED"
+msgstr "Nepavyko įdiegti."
+
 msgid "IDS_BR_POP_INFORM_MEMORY_ERROR"
 msgstr "Atminties klaida."
+
+msgid "IDS_BR_POP_DELETING_ING"
+msgstr "Trinama..."
+
+msgid "IDS_BR_POP_DATA_ROAMING_IS_DISABLED_CONNECT_TO_WI_FI_NETWORK_INSTEAD_OR_ENABLE_DATA_ROAMING_AND_TRY_AGAIN"
+msgstr "Duomenų tarptinklinis ryšys išjungtas. Vietoj to prisijunkite prie „Wi-Fi“ tinklo arba įjunkite duomenų tarptinklinį ryšį ir pabandykite dar kartą"
 
 msgid "IDS_BR_POP_DATA_ROAMING_IS_DISABLED_CONNECT_TO_A_WI_FI_NETWORK_OR_ENABLE_DATA_ROAMING_AND_TRY_AGAIN"
 msgstr "Duomenų tarptinklinis ryšys išjungtas. Prisijunkite prie „Wi-Fi“ tinklo arba įjunkite duomenų tarptinklinį ryšį ir bandykite dar kartą."
@@ -1483,11 +1855,17 @@ msgstr "Žin. prog."
 msgid "IDS_BR_OPT_VIEW_ONLINE"
 msgstr "Peržiūrėti prisijungus"
 
+msgid "IDS_BR_OPT_SHARE_VIA"
+msgstr "Bendrinti per"
+
 msgid "IDS_BR_OPT_READ_ON_OFFLINE_PAGES_LATER_ABB"
 msgstr "Atjungt. psl. skaityti vėliau"
 
 msgid "IDS_BR_OPT_QUICK_ACCESS_ABB2"
 msgstr "Sparčioji prieiga"
+
+msgid "IDS_BR_OPT_PASTE"
+msgstr "Įklijuoti"
 
 msgid "IDS_BR_OPT_ALWAYS_ENABLED_ABB"
 msgstr "Visada įjungti"
@@ -1513,6 +1891,9 @@ msgstr "Paieškos ir URL pasiūlymai"
 msgid "IDS_BR_MBODY_HISTORY"
 msgstr "Istorija"
 
+msgid "IDS_BR_MBODY_FONT_SIZE"
+msgstr "Šrifto dydis"
+
 msgid "IDS_BR_MBODY_FIT_PAGE_TO_SCREEN"
 msgstr "Talpinti puslapį ekrane"
 
@@ -1524,6 +1905,9 @@ msgstr "Pasirinktinis"
 
 msgid "IDS_BR_MBODY_COUNTRY_REGION"
 msgstr "Šalis / regionas"
+
+msgid "IDS_BR_HEADER_UNABLE_TO_DOWNLOAD_ABB"
+msgstr "Neįmanoma atsisiųsti"
 
 msgid "IDS_BR_HEADER_RENAME_FOLDER_ABB"
 msgstr "Pervardyt aplanką"
@@ -1555,8 +1939,14 @@ msgstr "Pridėt inf."
 msgid "IDS_BR_BUTTON_WI_FI_ABB"
 msgstr "Wi-Fi"
 
+msgid "IDS_BR_BUTTON_UPDATE"
+msgstr "Atnaujinti"
+
 msgid "IDS_BR_BUTTON_SETTINGS_ABB"
 msgstr "Nustat."
+
+msgid "IDS_BR_BUTTON_RETRY"
+msgstr "Band. vėl"
 
 msgid "IDS_BR_BUTTON2_OK"
 msgstr "GERAI"
@@ -1582,6 +1972,9 @@ msgstr "Tai patikimos liudijimų įstaigos sertifikatas."
 msgid "IDS_BR_BODY_TAP_HERE_TO_ADD_A_QUICK_ACCESS_SHORTCUT"
 msgstr "Bakstelėkite čia ir pridėkite sparčiosios prieigos trumpinį."
 
+msgid "IDS_BR_BODY_REQUEST_FAILED"
+msgstr "Užklausa nepavyko."
+
 msgid "IDS_BR_BODY_PREFERENCES"
 msgstr "Pirmenybės"
 
@@ -1597,398 +1990,14 @@ msgstr "Atitikmenų nėra"
 msgid "IDS_BR_BODY_MOBILE_DATA_IS_TURNED_OFF_CONNECT_TO_A_WI_FI_NETWORK_INSTEAD_OR_TAP_SETTINGS_TO_TURN_ON_MOBILE_DATA_AND_THEN_TRY_AGAIN"
 msgstr "Mobilieji duomenys išjungti. Vietoj to prisijunkite prie „Wi-Fi“ tinklo arba bakstelėkite „Nustatymai“ ir įjunkite mobiliuosius duomenis, o tada bandykite dar kartą."
 
-msgid "IDS_BR_BODY_FIT_TO_WIDTH"
-msgstr "Pritaikyti pagal plotį"
-
-msgid "IDS_BR_ACBUTTON_QUICK_ACCESS"
-msgstr "SPAR.PRIEIGA"
-
-msgid "IDS_BR_OPT_OPEN_IN_NEW_TAB"
-msgstr "Atidaryti naujoje ąselėje"
-
-msgid "IDS_BR_BODY_SHARE_LINK"
-msgstr "Dalytis nuoroda"
-
-msgid "IDS_BR_SK_SAVE_LITE"
-msgstr "Išsaug."
-
-msgid "IDS_BR_SK_SAVE_ABB"
-msgstr "Įraš."
-
-msgid "IDS_BR_SK_SAVE"
-msgstr "Išsaug."
-
-msgid "IDS_BR_SK_PREVIOUS"
-msgstr "Ankst."
-
-msgid "IDS_BR_SK_NEXT"
-msgstr "Kitas"
-
-msgid "IDS_BR_SK_DELETE"
-msgstr "Trinti"
-
-msgid "IDS_BR_SK_CLEAR"
-msgstr "Valyti"
-
-msgid "IDS_BR_SK_BACK"
-msgstr "Atgal"
-
-msgid "IDS_BR_POP_WI_FI_CONNECTION_REQUIRED_CONNECT_TO_WI_FI_NETWORK_AND_TRY_AGAIN"
-msgstr "Reikia „Wi-Fi“ ryšio. Prisijunkite prie „ Wi-Fi“ ryšio ir pabandykite dar kartą"
-
-msgid "IDS_BR_POP_URL_NOT_FOUND"
-msgstr "URL nerastas."
-
-msgid "IDS_BR_POP_URL"
-msgstr "URL"
-
-msgid "IDS_BR_POP_SAVED"
-msgstr "Išsaugota."
-
-msgid "IDS_BR_POP_REMOVED"
-msgstr "Pašalinta."
-
-msgid "IDS_BR_POP_PD_ITEMS_WILL_BE_DELETED"
-msgstr "Bus ištrinta elementų: %d."
-
-msgid "IDS_BR_POP_PD_ITEMS_SELECTED"
-msgstr "Pasirinkta elementų: %d"
-
-msgid "IDS_BR_POP_NO_ITEMS_SELECTED"
-msgstr "Nėra pasirinktų elementų."
-
-msgid "IDS_BR_POP_NOT_ENOUGH_MEMORY"
-msgstr "Nepakanka atminties."
-
-msgid "IDS_BR_POP_NEVER"
-msgstr "Niekada"
-
-msgid "IDS_BR_POP_MOBILE_DATA_IS_DISABLED_CONNECT_TO_WI_FI_NETWORK_INSTEAD_OR_ENABLE_MOBILE_DATA_AND_TRY_AGAIN"
-msgstr "Mobiliojo telefono duomenys išjungti. Vietoj to prisijunkite prie „Wi-Fi“ tinklo arba įjunkite mobiliojo telefono duomenis ir pabandykite dar kartą"
-
-msgid "IDS_BR_POP_LOADING_PLEASE_WAIT_ING"
-msgstr "Įkeliama. Palaukite..."
-
-msgid "IDS_BR_POP_INVALID_URL"
-msgstr "Netinkamas URL."
-
-msgid "IDS_BR_POP_FAIL"
-msgstr "Nepavyko."
-
-msgid "IDS_BR_POP_ENTER_TITLE_ABB"
-msgstr "Įvesti pavadinimą"
-
-msgid "IDS_BR_POP_DO_NOT_SHOW_AGAIN"
-msgstr "Daugiau nerodyti"
-
-msgid "IDS_BR_POP_DOWNLOADCOMPLETE"
-msgstr "Atsisiųsta."
-
-msgid "IDS_BR_POP_DISABLED"
-msgstr "Išjungta."
-
-msgid "IDS_BR_POP_DELETE_Q"
-msgstr "Ar trinti?"
-
-msgid "IDS_BR_POP_DELETED"
-msgstr "Ištrinta."
-
-msgid "IDS_BR_POP_CLOSE_APPLICATION_Q"
-msgstr "Uždaryti programą?"
-
-msgid "IDS_BR_POP_BOOKMARK_ADDED"
-msgstr "Žymelė pridėta."
-
-msgid "IDS_BR_POP_AUTOMATIC_BRIGHTNESS"
-msgstr "Automatinis šviesumas"
-
-msgid "IDS_BR_POP_ACCOUNT"
-msgstr "Paskyra"
-
-msgid "IDS_BR_POP_1_ITEM_WILL_BE_DELETED"
-msgstr "1 elementas bus ištrintas."
-
-msgid "IDS_BR_POP_1_ITEM_SELECTED"
-msgstr "Pasirinktas 1 elementas."
-
-msgid "IDS_BR_OPT_TRANSLATE"
-msgstr "Versti"
-
-msgid "IDS_BR_OPT_STOP"
-msgstr "Stabdyti"
-
-msgid "IDS_BR_OPT_SHOW"
-msgstr "Rodyti"
-
-msgid "IDS_BR_OPT_SHARE"
-msgstr "Dalytis"
-
-msgid "IDS_BR_OPT_SETTINGS"
-msgstr "Nustatymai"
-
-msgid "IDS_BR_OPT_SEND_EMAIL"
-msgstr "Siųsti el. laišką"
-
-msgid "IDS_BR_OPT_SELECT"
-msgstr "Pasirinkti"
-
-msgid "IDS_BR_OPT_SD_CARD"
-msgstr "SD kortelė"
-
-msgid "IDS_BR_OPT_RENAME"
-msgstr "Pervardyti"
-
-msgid "IDS_BR_OPT_REFRESH"
-msgstr "Naujinti"
-
-msgid "IDS_BR_OPT_MOVE"
-msgstr "Perkelti"
-
-msgid "IDS_BR_OPT_MESSAGES"
-msgstr "Žinutės"
-
-msgid "IDS_BR_OPT_LIST_VIEW"
-msgstr "Sąrašo vaizdas"
-
-msgid "IDS_BR_OPT_I_AGREE"
-msgstr "Sutinku."
-
-msgid "IDS_BR_OPT_HELP"
-msgstr "Pagalba"
-
-msgid "IDS_BR_OPT_DEVICE"
-msgstr "Įrenginys"
-
-msgid "IDS_BR_OPT_BOOKMARK"
-msgstr "Adresyno įrašas"
-
-msgid "IDS_BR_OPT_ADDED"
-msgstr "Pridėta."
-
-msgid "IDS_BR_OPT_ADD"
-msgstr "Pridėti"
-
-msgid "IDS_BR_MBODY_DEFAULT_DOWNLOAD_STORAGE"
-msgstr "Numat. atsisiunt. saugyk."
-
-msgid "IDS_BR_HEADER_SIGN_IN_TO_SAMSUNG_ACCOUNT"
-msgstr "Prisijunkite prie „Samsung“ paskyros"
-
-msgid "IDS_BR_HEADER_PD_SELECTED_ABB"
-msgstr "Pasirinkta: %d"
-
-msgid "IDS_BR_HEADER_NO_NETWORK_CONNECTION"
-msgstr "Nėra ryšio su tinklu"
-
-msgid "IDS_BR_HEADER_FOLDER"
-msgstr "Aplankas"
-
-msgid "IDS_BR_HEADER_EDIT_PROFILE"
-msgstr "Redaguoti profilį"
-
-msgid "IDS_BR_BUTTON_SET"
-msgstr "Nustatyti"
-
-msgid "IDS_BR_BUTTON_NOT_NOW"
-msgstr "Ne dabar"
-
-msgid "IDS_BR_BUTTON_ENABLE_ABB"
-msgstr "Įjungti"
-
-msgid "IDS_BR_BUTTON_EDIT"
-msgstr "Redaguoti"
-
-msgid "IDS_BR_BUTTON_CONTINUE_ABB"
-msgstr "Tęsti"
-
-msgid "IDS_BR_BUTTON_CONTINUE"
-msgstr "Tęsti"
-
-msgid "IDS_BR_BUTTON_CLOSE"
-msgstr "Uždaryti"
-
-msgid "IDS_BR_BUTTON_CANCEL_ABB"
-msgstr "Atšaukti"
-
-msgid "IDS_BR_BUTTON_CANCEL"
-msgstr "Atšaukti"
-
-msgid "IDS_BR_BUTTON_ALLOW"
-msgstr "Leisti"
-
-msgid "IDS_BR_BODY_YESTERDAY"
-msgstr "Vakar"
-
-msgid "IDS_BR_BODY_URL"
-msgstr "URL"
-
-msgid "IDS_BR_BODY_TODAY"
-msgstr "Šiandien"
-
-msgid "IDS_BR_BODY_TITLE"
-msgstr "Pavadinimas"
-
-msgid "IDS_BR_BODY_THE_MAXIMUM_NUMBER_OF_CHARACTERS_HPD_HAS_BEEN_EXCEEDED"
-msgstr "Viršytas didžiausias simbolių skaičius (%d)."
-
-msgid "IDS_BR_BODY_STREAMING"
-msgstr "Srautas"
-
-msgid "IDS_BR_BODY_SMALL"
-msgstr "Mažas"
-
-msgid "IDS_BR_BODY_SETTINGS"
-msgstr "Nustatymai"
-
-msgid "IDS_BR_BODY_SEARCH"
-msgstr "Ieškoti"
-
-msgid "IDS_BR_BODY_RSS_SEARCH_RESULTS"
-msgstr "Paieškos rezultatai"
-
-msgid "IDS_BR_BODY_PROFILE"
-msgstr "Profilis"
-
-msgid "IDS_BR_BODY_PROCESSING_ING"
-msgstr "Apdorojama..."
-
-msgid "IDS_BR_BODY_PHONE_NUMBER_ABB"
-msgstr "Tel. numeris"
-
-msgid "IDS_BR_BODY_PHONE"
-msgstr "Telefonas"
-
-msgid "IDS_BR_BODY_PD_ITEMS_WILL_BE_DELETED"
-msgstr "Bus ištrinta elementų: %d."
-
-msgid "IDS_BR_BODY_PASSWORD"
-msgstr "Slaptažodis"
-
-msgid "IDS_BR_BODY_ON"
-msgstr "Įjungta"
-
-msgid "IDS_BR_BODY_OFF"
-msgstr "Išjungta"
-
-msgid "IDS_BR_BODY_NO_RESULTS_FOUND"
-msgstr "Rezultatų nerasta."
-
-msgid "IDS_BR_BODY_NO_HISTORIES"
-msgstr "Nėra istorijos"
-
-msgid "IDS_BR_BODY_NOTIFICATIONS"
-msgstr "Pranešimai"
-
-msgid "IDS_BR_BODY_MEDIUM"
-msgstr "Vidutinis"
-
-msgid "IDS_BR_BODY_IMAGES"
-msgstr "Vaizdai"
-
-msgid "IDS_BR_BODY_FULL_SCREEN"
-msgstr "Visas ekranas"
-
-msgid "IDS_BR_BODY_FONT_SIZE"
-msgstr "Šrifto dydis"
-
-msgid "IDS_BR_BODY_FOLDER_NAME"
-msgstr "Aplanko pavadinimas"
-
-msgid "IDS_BR_BODY_ENTER_POSTCODE_ABB"
-msgstr "Įveskite pašto kodą."
-
-msgid "IDS_BR_BODY_ENTER_POSTCODE"
-msgstr "Įveskite pašto kodą."
-
-msgid "IDS_BR_BODY_ENTER_PHONE_NUMBER"
-msgstr "Įveskite tel. numerį."
-
-msgid "IDS_BR_BODY_ENTER_NAME"
-msgstr "Įvesti vardą."
-
-msgid "IDS_BR_BODY_ENTER_FOLDER_NAME"
-msgstr "Įrašyti aplanko pavadinimą."
-
-msgid "IDS_BR_BODY_ENTER_EMAIL_ADDRESS"
-msgstr "Įveskite el. pašto adresą."
-
-msgid "IDS_BR_BODY_EMAIL_ADDRESS"
-msgstr "El. pašto adresas"
-
-msgid "IDS_BR_BODY_DOWNLOADING_ING"
-msgstr "Atsisiunčiama..."
-
-msgid "IDS_BR_BODY_DEVELOPER_MODE"
-msgstr "Kūrėjo režimas"
-
-msgid "IDS_BR_BODY_DEFAULT"
-msgstr "Numatytoji"
-
-msgid "IDS_BR_BODY_BOOKMARKS"
-msgstr "Adresyno įrašai"
-
-msgid "IDS_BR_BODY_ALL"
-msgstr "Visos"
-
-msgid "IDS_BR_BODY_ADD_TO"
-msgstr "Pridėti prie"
-
-msgid "IDS_BR_BODY_ADDDETAILSVIEW_TAGS"
-msgstr "Žymos"
-
-msgid "IDS_BR_BODY_ADDBOOKMARKURL"
-msgstr "URL"
-
-msgid "IDS_BR_BODY_1_ITEM_WILL_BE_DELETED"
-msgstr "1 elementas bus ištrintas."
-
-msgid "IDS_BR_TPOP_MAXIMUM_NUMBER_OF_CHARACTERS_HPD_REACHED"
-msgstr "Pasiektas didžiausias simbolių skaičius (%d)"
-
-msgid "IDS_BR_POP_UNSUPPORTMEDIATYPE"
-msgstr "Nepalaikomas pramogos tipas."
-
-msgid "IDS_BR_POP_UNABLE_TO_CONNECT_TO_MOBILE_NETWORKS_WHILE_FLIGHT_MODE_IS_ENABLED_CONNECT_TO_WI_FI_NETWORK_INSTEAD_OR_DISABLE_FLIGHT_MODE_AND_TRY_AGAIN"
-msgstr "Neįmanoma prisijungti prie mobiliųjų tinklų, kol įjungtas skrydžio režimas. Vietoj to prisijunkite prie „Wi-Fi“ tinklo arba išjunkite skrydžio režimą ir pabandykite dar kartą"
-
-msgid "IDS_BR_POP_INSTALL_SUCCESS"
-msgstr "Diegimas baigtas."
-
-msgid "IDS_BR_POP_INSTALLATION_FAILED"
-msgstr "Nepavyko įdiegti."
-
-msgid "IDS_BR_POP_DELETING_ING"
-msgstr "Trinama..."
-
-msgid "IDS_BR_POP_DATA_ROAMING_IS_DISABLED_CONNECT_TO_WI_FI_NETWORK_INSTEAD_OR_ENABLE_DATA_ROAMING_AND_TRY_AGAIN"
-msgstr "Duomenų tarptinklinis ryšys išjungtas. Vietoj to prisijunkite prie „Wi-Fi“ tinklo arba įjunkite duomenų tarptinklinį ryšį ir pabandykite dar kartą"
-
-msgid "IDS_BR_OPT_SHARE_VIA"
-msgstr "Bendrinti per"
-
-msgid "IDS_BR_OPT_PASTE"
-msgstr "Įklijuoti"
-
-msgid "IDS_BR_MBODY_FONT_SIZE"
-msgstr "Šrifto dydis"
-
-msgid "IDS_BR_HEADER_UNABLE_TO_DOWNLOAD_ABB"
-msgstr "Neįmanoma atsisiųsti"
-
-msgid "IDS_BR_BUTTON_UPDATE"
-msgstr "Atnaujinti"
-
-msgid "IDS_BR_BUTTON_RETRY"
-msgstr "Band. vėl"
-
-msgid "IDS_BR_BODY_REQUEST_FAILED"
-msgstr "Užklausa nepavyko."
-
 msgid "IDS_BR_BODY_LOGIN"
 msgstr "Prisijungimas"
 
 msgid "IDS_BR_BODY_LOADING_ING"
 msgstr "Įkeliama..."
+
+msgid "IDS_BR_BODY_FIT_TO_WIDTH"
+msgstr "Pritaikyti pagal plotį"
 
 msgid "IDS_BR_BODY_FIT_TO_SCREEN"
 msgstr "Talpinti ekrane"
@@ -1999,165 +2008,12 @@ msgstr "Atsisiųsti elem."
 msgid "IDS_BR_BODY_DATA_ROAMING_IS_DISABLED_CONNECT_TO_A_WI_FI_NETWORK_INSTEAD_OR_ENABLE_DATA_ROAMING_AND_TRY_AGAIN"
 msgstr "Duomenų tarptinklinis ryšys išjungtas. Vietoj to prisijunkite prie „Wi-Fi“ tinklo arba įjunkite duomenų tarptinklinį ryšį ir bandykite dar kartą."
 
-msgid "IDS_BR_POP_DOWNLOAD_CANCELLED"
-msgstr "Atsisiuntimas atšauktas."
+msgid "IDS_BR_ACBUTTON_QUICK_ACCESS"
+msgstr "SPAR.PRIEIGA"
 
-msgid "IDS_BR_BUTTON_SECRET_ON_ABB"
-msgstr "Slapt.r.įj."
+msgid "IDS_ST_POP_SOME_CONTENT_HAS_BEEN_BLOCKED_TO_PROTECT_YOUR_DEVICE"
+msgstr "Siekiant apsaugoti jūsų įrenginį užblokuota šiek tiek turinio."
 
-msgid "IDS_BR_MBODY_PRIVACY"
-msgstr "Privatumas"
-
-msgid "IDS_BR_MBODY_DEFAULT_STORAGE"
-msgstr "Numatytoji saugykla"
-
-msgid "IDS_BR_MBODY_MANUAL_ZOOM"
-msgstr "Rank. mastelio keitimas"
-
-msgid "IDS_BR_TMBODY_DEFAULT_SEARCH_ENGINE"
-msgstr "Numatytoji paieškos sistema"
-
-msgid "IDS_BR_MBODY_SAVE_SIGN_IN_INFO"
-msgstr "Saugaus prisijungimo inf."
-
-msgid "IDS_BR_OPT_TURN_OFF_SECRET_MODE_ABB"
-msgstr "Išjungti slaptą režimą"
-
-msgid "IDS_BR_OPT_TURN_ON_SECRET_MODE_ABB"
-msgstr "Įjungti slaptą režimą"
-
-msgid "IDS_BR_OPT_SHOW_PASSWORD_ABB2"
-msgstr "Rodyti slaptažodį"
-
-msgid "IDS_BR_OPT_SECRET_MODE_SECURITY_ABB"
-msgstr "Slaptojo režimo sauga"
-
-msgid "IDS_BR_BUTTON_USE_PASSWORD_ABB"
-msgstr "Naudoti slaptažodį"
-
-msgid "IDS_BR_HEADER_DONT_USE_PASSWORD_ABB"
-msgstr "Nenaudoti slaptažodžio"
-
-msgid "IDS_BR_MBODY_MOST_VISITED_WEBSITES"
-msgstr "Lankomiausios svetainės"
-
-msgid "IDS_BR_MBODY_SET_MY_PROFILE"
-msgstr "Nustatyti mano profilį"
-
-msgid "IDS_BR_MBODY_MY_AUTO_FILL_PROFILE"
-msgstr "Mano aut. užpild. prof."
-
-msgid "IDS_BR_SBODY_MANAGE_DATA_USED_TO_FILL_IN_FORMS_ONLINE"
-msgstr "Tvarkykite duomenis, naudojamus interneto formoms pildyti."
-
-msgid "IDS_BR_MBODY_SAVE_SIGN_IN_INFO_ABB"
-msgstr "Saug.prisij. inf."
-
-msgid "IDS_BR_OPT_LOCATION_ACCESS_DATA"
-msgstr "Vietovės prieigos duomenys"
-
-msgid "IDS_BR_OPT_AUTO_FILL_DATA"
-msgstr "Automatiškai pildyti duomenis"
-
-msgid "IDS_BR_BODY_ANY_WEBPAGES_YOU_VIEW_WHILE_SECRET_MODE_IS_TURNED_ON_WONT_APPEAR_IN_YOUR_BROWSER_OR_SEARCH_HISTORY_MSG"
-msgstr "Tinklalapiai, kuriuos peržiūrėsite veikiant slaptajam režimui, nebus rodomi naršyklėje ar paieškos istorijoje, kai režimas bus išjungtas.\n\nVeikiant slaptajam režimui, išsaugoti adresyno įrašai ir tinklalapiai nebus rodomi, kai režimas bus išjungtas.\n\nBe to, slaptojo režimo duomenis galite apsaugoti slaptažodžiu."
-
-msgid "IDS_BR_BODY_ANY_WEBPAGES_YOU_VIEW_WHILE_SECRET_MODE_IS_TURNED_ON_WONT_APPEAR_IN_YOUR_BROWSER_OR_SEARCH_MSG"
-msgstr "Tinklalapiai, kuriuos peržiūrėsite veikiant slaptajam režimui, nebus rodomi naršyklėje ar paieškos istorijoje, kai režimas bus išjungtas.\n\nVeikiant slaptajam režimui, išsaugoti adresyno įrašai ir tinklalapiai nebus rodomi, kai režimas bus išjungtas."
-
-msgid "IDS_BR_BUTTON_SECRET_OFF_ABB"
-msgstr "Slap.r.išj."
-
-msgid "IDS_BR_BUTTON_DONT_USE_PASSWORD_ABB"
-msgstr "Nenaudoti slaptažodž."
-
-msgid "IDS_BR_BUTTON_NEW_TAB_ABB2"
-msgstr "Skirt."
-
-msgid "IDS_BR_NPBODY_WEB_ADDRESS_ABB"
-msgstr "Žiniatinklio adresas"
-
-msgid "IDS_BR_HEADER_ADD_WEBPAGE_TO_QUICK_ACCESS_ABB"
-msgstr "Tinklalapis sparč. prieigoje"
-
-msgid "IDS_BR_TMBODY_TURN_ON_JAVASCRIPT"
-msgstr "Įjungti „JavaScript“"
-
-msgid "IDS_BR_HEADER_COULDNT_OPEN_NEW_TAB_ABB"
-msgstr "Nepav. atidar. naujo skirt."
-
-msgid "IDS_BR_OPT_OPEN_IN_NEW_TAB_ABB"
-msgstr "Atidaryti naujame skirtuke"
-
-msgid "IDS_BR_TPOP_FOLDER_NAME_ALREADY_IN_USE"
-msgstr "Toks aplanko pavadinimas jau naudojamas."
-
-msgid "IDS_BR_NPBODY_NEW_FOLDER_PD"
-msgstr "Naujas aplankas %d"
-
-msgid "IDS_BR_NPBODY_NEW_FOLDER"
-msgstr "Naujas aplankas"
-
-msgid "IDS_BR_OPT_ENABLE_JAVASCRIPT"
-msgstr "Įjungti „JavaScript“"
-
-msgid "IDS_BR_TMBODY_MANAGE_WEBSITE_DATA"
-msgstr "Tvarkyti svetainės duomenis"
-
-msgid "IDS_BR_HEADER_SET_HOME_PAGE_ABB"
-msgstr "Nustatyti pradžios puslapį"
-
-msgid "IDS_BR_TPOP_WEBPAGE_ADDED_TO_QUICK_ACCESS_LIST"
-msgstr "Tinklalapis pridėtas prie sparčiosios prieigos sąrašo."
-
-msgid "IDS_BR_OPT_EDIT_QUICK_ACCESS_ABB"
-msgstr "Redaguoti sparčiąją prieigą"
-
-msgid "IDS_BR_OPT_REMOVE_FROM_BOOKMARKS_ABB"
-msgstr "Pašalinti iš adresyno įrašų"
-
-msgid "IDS_BR_HEADER_ADD_BOOKMARK_ABB"
-msgstr "Prid.adresyno įrašą"
-
-msgid "IDS_BR_BODY_BROWSING_HISTORY"
-msgstr "Naršymo istorija"
-
-msgid "IDS_BR_HEADER_TABS_ABB2"
-msgstr "Skirtukai"
-
-msgid "IDS_BR_OPT_NEW_TAB"
-msgstr "Naujas skirtukas"
-
-msgid "IDS_BR_BUTTON_FORWARD_ABB2"
-msgstr "Pirmyn"
-
-msgid "IDS_BR_BUTTON_BACK_ABB3"
-msgstr "Atgal"
-
-msgid "IDS_BR_BUTTON_BOOKMARKS_ABB"
-msgstr "Adres. įr."
-
-msgid "IDS_BR_NPBODY_NO_PROFILES_ABB"
-msgstr "Nėra profilių"
-
-msgid "IDS_BR_TAB2_HISTORY"
-msgstr "Istorija"
-
-msgid "IDS_BR_TAB2_BOOKMARKS"
-msgstr "Adresyno įrašai"
-
-msgid "IDS_BR_HEADER_SAVE_CONTENT_TO_ABB"
-msgstr "Išsaugoti turinį"
-
-msgid "IDS_BR_HEADER_SELECT_ITEMS_ABB2"
-msgstr "Pasirinkti elementus"
-
-msgid "IDS_BR_BODY_YOUR_PASSWORD_MUST_CONTAIN_AT_LEAST_PD_CHARACTERS_INCLUDING_AT_LEAST_1_LETTER"
-msgstr "Slaptažodis turi būti sudarytas bent iš %d simbolių, iš kurių bent 1 būtų raidė."
-
-msgid "IDS_BR_BODY_AN_INCORRECT_PASSWORD_HAS_BEEN_ENTERED_TRY_AGAIN"
-msgstr "Įvestas neteisingas slaptažodis. Bandykite dar."
-
-msgid "IDS_BR_BODY_NO_TABS"
-msgstr "Skirtukų nėra"
+msgid "IDS_ST_POP_SELECT_WHETHER_TO_GO_TO_THE_WEBPAGE_ANYWAY"
+msgstr "Pasirinkite, ar vis tiek eiti į tinklalapį."
 

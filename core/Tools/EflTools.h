@@ -45,7 +45,6 @@ namespace EflTools {
      */
     bool pointInObject(Evas_Object* object, int x, int y);
 
-    Evas_Object* createToastPopup(Evas_Object* parent, double timeout, const char* text);
 } /* end of namespace EflTools */
 } /* end of namespace tools */
 } /* end of namespace tizen_browser */

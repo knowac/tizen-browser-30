@@ -1,145 +1,305 @@
-#include "../../../core/Tools/edc/FolderImage.edc"
-#include "../../../core/Tools/edc/ColorClasses.edc"
+#define DEVELOPMENT 0
 
-#define BOOKMARK_NAVIGATOR_TOOLBAR_HEIGHT 75
-#define BOOKMARK_MODULES_TOOLBAR_HEIGHT 80
-#define INCOGNITO_IMAGE_SIZE 50
+#define LAYOUT_TITLE_HEIGHT 108
+#define TITLE_ICON_SIZE 64
+#define TITLE_BUTTON_OFFSET_X 16
+#define TITLE_BUTTON_OFFSET_Y 22
+
+#define GRID_ITEM_SPACER 18
+#define GRID_ITEM_TITLE_HEIGHT 100
+#define GRID_ITEM_ICON_SIZE 99
 
 collections {
     base_scale: 2.6;
-
     group {
-        name: "content_image";
-        parts {
-            part {
-                name: "content";
-                type: SWALLOW;
-                mouse_events: 1;
-                repeat_events: 0;
-                description {
-                    state: "default" 0.0;
-                    fixed: 1 1;
-                    align: 0.5 0.5;
-                    min: IMAGE_SIZE IMAGE_SIZE;
-                    max: IMAGE_SIZE IMAGE_SIZE;
-                    visible: 1;
-                }
+        name: "topContent";
+        images {
+            image: "navi_ic_stop.png" COMP;
+        }
+        data.item: "texts" "title_text";
+        styles {
+            style {
+                name: "title_text_style";
+                base: "font=Tizen:style=Regular font_size=45 color=#333333 align=0.5 ellipsis=1.0";
             }
         }
-    }
-
-    group {
-        name: "favicon_image";
-        images.image: "internet_ic_default.png" COMP;
-        parts {
-            part {
-                name: "image";
-                type: IMAGE;
-                mouse_events: 1;
-                repeat_events: 0;
-                description {
-                    state: "default" 0.0;
-                    fixed: 1 1;
-                    align: 0.5 0.5;
-                    min: IMAGE_SIZE IMAGE_SIZE;
-                    max: IMAGE_SIZE IMAGE_SIZE;
-                    visible: 1;
-                    image.normal: "internet_ic_default.png";
-                }
-            }
-        }
-    }
-
-    group { name: "private_image";
-        images.image: "internet_ic_private_mode.png" COMP;
-        parts {
-            part {
-                name: "image";
-                type: IMAGE;
-                mouse_events: 1;
-                repeat_events: 0;
-                description {
-                    state: "default" 0.0;
-                    fixed: 1 1;
-                    align: 0.5 0.5;
-                    min: INCOGNITO_IMAGE_SIZE INCOGNITO_IMAGE_SIZE;
-                    max: INCOGNITO_IMAGE_SIZE INCOGNITO_IMAGE_SIZE;
-                    visible: 1;
-                    image.normal: "internet_ic_private_mode.png";
-                    color_class: "AO030";
-                }
-            }
-        }
-    }
-
-    group {
-        name: "naviframe_content";
         parts {
             rect {
                 name: "bg";
                 scale: 1;
+                mouse_events: 1;
                 description {
                     state: "default" 0.0;
-                    visible: 0;
-                }
-            }
-            part {
-                name: "modules_toolbar";
-                type: SWALLOW;
-                scale: 1;
-                description {
-                    state: "default" 0.0;
-                    min: 0 BOOKMARK_MODULES_TOOLBAR_HEIGHT;
-                    max: -1 BOOKMARK_MODULES_TOOLBAR_HEIGHT;
-                    fixed: 0 1;
-                    align: 0.5 0.0;
+                    color : 255 255 255 255;
                     visible: 1;
+                    align: 0 0;
+                    fixed: 0 1;
+                    min: 0 LAYOUT_TITLE_HEIGHT;
+                    max: -1 LAYOUT_TITLE_HEIGHT;
                     rel1.relative: 0.0 0.0;
                     rel2.relative: 1.0 1.0;
-                }
-                description {
-                    state: "hidden_toolbar" 0.0;
-                    inherit: "default";
-                    visible: 0;
-                }
-                description {
-                    state: "hidden_modules_toolbar" 0.0;
-                    inherit: "hidden_toolbar";
+                    color: 255 255 255 255;
                 }
             }
             part {
-                name: "navigator_toolbar";
-                type: SWALLOW;
+                name: "title_text";
                 scale: 1;
+                type: TEXTBLOCK;
                 description {
                     state: "default" 0.0;
-                    min: 0 BOOKMARK_NAVIGATOR_TOOLBAR_HEIGHT;
-                    max: -1 BOOKMARK_NAVIGATOR_TOOLBAR_HEIGHT;
-                    fixed: 0 1;
-                    align: 0.5 0.0;
                     visible: 1;
-                    rel1 {
-                        relative: 0.0 1.0;
-                        to: "modules_toolbar";
-                    }
-                    rel2.relative: 1.0 1.0;
-                }
-                description {
-                    state: "hidden_modules_toolbar" 0.0;
-                    inherit: "default";
+                    align: 0.0 0.0;
+                    fixed: 0 0;
                     rel1 {
                         relative: 0.0 0.0;
                         to: "bg";
                     }
+                    rel2 {
+                        relative: 1.0 1.0;
+                        to: "bg";
+                    }
+                    text {
+                        style: "title_text_style";
+                        align: 0 0.5;
+                    }
+                }
+            }
+            rect {
+                name: "close_spacer";
+                scale: 1;
+                description {
+                    state: "default" 0.0;
+                    align: 0.0 0.0;
+                    min: TITLE_BUTTON_OFFSET_X TITLE_BUTTON_OFFSET_Y;
+                    max: TITLE_BUTTON_OFFSET_X TITLE_BUTTON_OFFSET_Y;
+                    visible: DEVELOPMENT;
+                    color: 255 255 255 127;
+                    rel1 {
+                        relative: 0.0 0.0;
+                        to: "bg";
+                    }
+                    rel2.relative: 1.0 1.0;
+                }
+            }
+            rect {
+                name: "close_bg";
+                scale: 1;
+                description {
+                    state: "default" 0.0;
+                    visible: 0;
+                    fixed: 1 1;
+                    align: 0 0.0;
+                    min: TITLE_ICON_SIZE TITLE_ICON_SIZE;
+                    max: TITLE_ICON_SIZE TITLE_ICON_SIZE;
+                    color: 224 237 251 255;
+                    rel1 {
+                        relative: 1.0 1.0;
+                        to: "close_spacer";
+                    }
+                    rel2 {
+                        relative: 1.0 1.0;
+                        to: "bg";
+                    }
                 }
                 description {
-                    state: "hidden_toolbar" 0.0;
+                    state: "focused" 0.0;
+                    inherit: "default";
+                    visible: 1;
+                }
+            }
+            part {
+                name: "close_icon";
+                type: IMAGE;
+                scale: 1;
+                description {
+                    state: "default" 0.0;
+                    visible: 1;
+                    fixed: 1 1;
+                    align: 0.5 0.5;
+                    min: TITLE_ICON_SIZE TITLE_ICON_SIZE;
+                    max: TITLE_ICON_SIZE TITLE_ICON_SIZE;
+                    rel1 {
+                        relative: 0 0;
+                        to: "close_bg";
+                    }
+                    rel2 {
+                        relative: 1 1;
+                        to: "close_bg";
+                    }
+                    image.normal: "navi_ic_stop.png";
+                }
+                description {
+                    state: "removal";
                     inherit: "default";
                     visible: 0;
                 }
             }
             part {
-                name: "elm.swallow.content";
+                name: "close_click";
+                scale: 1;
+                mouse_events: 1;
+                type: SWALLOW;
+                description {
+                    state: "default" 0.0;
+                    visible: 1;
+                    align: 0 0;
+                    rel1 {
+                        relative: 0.0 0.0;
+                        to: "close_icon";
+                    }
+                    rel2 {
+                        relative: 1.0 1.0;
+                        to: "close_icon";
+                    }
+                }
+                description {
+                    state: "removal";
+                    inherit: "default";
+                    visible: 0;
+                }
+            }
+            rect {
+                name: "close_over";
+                scale: 1;
+                mouse_events: 1;
+                repeat_events: 1;
+                description {
+                    state: "default" 0.0;
+                    visible: 1;
+                    align: 0 0;
+                    rel1 {
+                        relative: 0.0 0.0;
+                        to: "close_icon";
+                    }
+                    rel2 {
+                        relative: 1.0 1.0;
+                        to: "close_icon";
+                    }
+                    color: 0 0 0 0;
+                }
+                description {
+                    state: "removal";
+                    inherit: "default";
+                    visible: 0;
+                }
+            }
+        }
+        programs {
+            program {
+                name: "mouse_in_close";
+                signal: "mouse,down,*";
+                source: "close_over";
+                action: STATE_SET "focused" 0.0;
+                target: "close_bg";
+            }
+            program {
+                name: "mouse_out_close";
+                signal: "mouse,up,*";
+                source: "close_over";
+                action: STATE_SET "default" 0.0;
+                target: "close_bg";
+            }
+            program {
+                name: "close_click";
+                source: "close_click";
+                signal: "mouse,clicked,*";
+                script {
+                    emit("elm,action,click", "");
+                }
+            }
+        }
+    }
+
+    group {
+        name: "bookmarkmanager-layout";
+        data {
+            item: "highlight_focus" "off";
+        }
+        parts {
+            rect {
+                name: "window_bg";
+                scale: 1;
+                mouse_events: 0;
+                description {
+                    state: "default" 0.0;
+                    align: 0.0 0.0;
+                    visible: 1;
+                    fixed: 0 0;
+                    max: -1 -1;
+                    color: 231 231 231 255;
+                    rel1.relative: 0 0;
+                    rel2.relative: 1 1;
+                }
+            }
+            part {
+                name: "top_content";
+                type : SWALLOW;
+                scale: 1;
+                description {
+                    state: "default" 0.0;
+                    visible: 1;
+                    align: 0.0 0.0;
+                    fixed: 0 1;
+                    min: 0 LAYOUT_TITLE_HEIGHT;
+                    max: -1 LAYOUT_TITLE_HEIGHT;
+                    rel1 { relative: 0.0 0.0; to: "window_bg";}
+                    rel2 { relative: 1.0 1.0; to: "window_bg";}
+                }
+                description {
+                    state: "hidden" 0.0;
+                    inherit: "default" 0.0;
+                    visible: 0;
+                }
+                description {
+                    state: "visible" 0.0;
+                    inherit: "default" 0.0;
+                    visible: 1;
+                }
+            }
+            rect {
+                name: "gengrid_bg";
+                scale: 1;
+                mouse_events: 0;
+                description {
+                    state: "default" 0.0;
+                    visible: 1;
+                    align: 0.0 0.0;
+                    min: 0 0;
+                    max: -1 -1;
+                    color: 231 231 231 255;
+                    fixed: 0 0;
+                    rel1 {
+                        relative: 0 1;
+                        to: "top_content";
+                    }
+                    rel2.relative: 1 1;
+                }
+            }
+            rect {
+                name: "swallow_grid_spacer";
+                scale: 1;
+                description {
+                    state: "default" 0.0;
+                    visible: DEVELOPMENT;
+                    align: 0.0 0.0;
+                    color: 255 255 255 127;
+                    min: 32 40;
+                    max: 32 40;
+                    rel1 {
+                        relative: 0 0;
+                        to: "gengrid_bg";
+                    }
+                    rel2.relative: 1 1;
+                }
+                description {
+                    state: "landscape" 0.0;
+                    inherit: "default";
+                    min: 33 39;
+                    max: 33 30;
+                }
+            }
+            part {
+                name: "elm.swallow.grid";
                 type: SWALLOW;
                 scale: 1;
                 description {
@@ -150,93 +310,881 @@ collections {
                     max: -1 -1;
                     align: 0.0 0.0;
                     rel1 {
-                        relative: 0.0 1.0;
-                        to: "navigator_toolbar";
-                    }
-                    rel2.relative: 1.0 1.0;
-                }
-                description {
-                    state: "hidden_toolbar" 0.0;
-                    inherit: "default";
-                    rel1 {
-                        relative: 0.0 0.0;
-                        to: "bg";
-                    }
-                }
-            }
-            part {
-                name: "elm.swallow.content_overlay";
-                scale: 1;
-                type: SWALLOW;
-                multiline: 1;
-                description {
-                    state: "default" 0.0;
-                    visible: 0;
-                    align: 0.0 0.0;
-                    fixed: 0 0;
-                    rel1 {
-                        relative: 0.0 0.0;
-                        to: "elm.swallow.content";
+                        relative: 1.0 1.0;
+                        to: "swallow_grid_spacer";
                     }
                     rel2 {
                         relative: 1.0 1.0;
-                        to: "elm.swallow.content";
+                        to: "gengrid_bg";
                     }
                 }
                 description {
+                    state: "hidden" 0.0;
+                    inherit: "default" 0.0;
+                    visible: 0;
+                }
+                description {
                     state: "visible" 0.0;
-                    inherit: "default";
+                    inherit: "default" 0.0;
                     visible: 1;
                 }
             }
         }
         programs {
             program {
-                name: "show_overlay";
-                signal: "show_overlay";
+                name: "switch_landscape";
                 source: "ui";
-                action: STATE_SET "visible" 0.0;
-                target: "elm.swallow.content_overlay";
+                signal: "switch_landscape";
+                action: STATE_SET "landscape" 0.0;
+                target: "swallow_grid_spacer";
             }
             program {
-                name: "hide_overlay";
-                signal: "hide_overlay";
+                name: "switch_vertical";
                 source: "ui";
+                signal: "switch_vertical";
                 action: STATE_SET "default" 0.0;
-                target: "elm.swallow.content_overlay";
+                target: "swallow_grid_spacer";
+            }
+        }
+    }
+
+    group {
+        name: "elm/gengrid/item/grid_all_item/default";
+        data.item: "texts" "page_title";
+        data.item: "contents" "elm.thumbnail elm.thumbButton";
+        images {
+            image: "folder_ic_all.png" COMP;
+        }
+        parts {
+            rect {
+                name: "bg_spacer";
+                scale: 1;
+                description {
+                    state: "default" 0.0;
+                    min: GRID_ITEM_SPACER GRID_ITEM_SPACER;
+                    max: GRID_ITEM_SPACER GRID_ITEM_SPACER;
+                    fixed: 1 1;
+                    align: 1 1;
+                    visible: DEVELOPMENT;
+                    color: 255 255 255 127;
+                    rel1.relative: 0.0 0.0;
+                    rel2.relative: 1.0 1.0;
+                }
+            }
+            rect {
+                name: "bg";
+                scale: 1;
+                mouse_events: 0;
+                description {
+                    state: "default" 0.0;
+                    min: 0 0;
+                    max: -1 -1;
+                    fixed: 0 0;
+                    align: 0.0 0.0;
+                    visible: 1;
+                    color: 73 68 62 200;
+                    rel1.relative: 0 0;
+                    rel2 {
+                        relative: 1 0;
+                        to: "background";
+                    }
+                }
+                description {
+                    state: "selected";
+                    inherit: "default" 0.0;
+                    color: 73 68 62 255;
+                }
+            }
+            rect {
+                name: "background";
+                scale: 1;
+                description {
+                    state: "default" 0.0;
+                    min: 0 GRID_ITEM_TITLE_HEIGHT;
+                    max: -1 GRID_ITEM_TITLE_HEIGHT;
+                    align: 0.0 1.0;
+                    color: 73 68 62 255;
+                    fixed: 0 1;
+                    rel1.relative: 0.0 0.0;
+                    rel2 {
+                        relative: 0 0;
+                        to: "bg_spacer";
+                    }
+                }
+                description {
+                    state: "selected" 0.0;
+                    inherit: "default" 0.0;
+                    color: 73 68 62 200;
+                }
+            }
+            part {
+                name: "elm.thumbnail";
+                type: SWALLOW;
+                scale: 1;
+                description {
+                    state: "default" 0.0;
+                    fixed: 0 0;
+                    align: 0.0 0.0;
+                    color: 206 118 70 200;
+                    min: 0 0;
+                    max: -1 -1;
+                    fixed: 0 0;
+                    rel1 {
+                        relative: 0.0 0.0;
+                        to: "bg";
+                    }
+                    rel2 {
+                        relative: 1.0 0.0;
+                        to: "background";
+                    }
+                }
+            }
+            part {
+                name: "icon";
+                type: IMAGE;
+                scale: 1;
+                description {
+                    state: "default" 0.0;
+                    visible: 1;
+                    fixed: 1 1;
+                    align: 0.5 0.5;
+                    min: GRID_ITEM_ICON_SIZE GRID_ITEM_ICON_SIZE;
+                    max: GRID_ITEM_ICON_SIZE GRID_ITEM_ICON_SIZE;
+                    rel1 {
+                        relative: 0.0 0.0;
+                        to: "elm.thumbnail";
+                    }
+                    rel2 {
+                        relative: 1.0 1.0;
+                        to: "elm.thumbnail";
+                    }
+                    image.normal: "folder_ic_all.png";
+                }
+            }
+            rect {
+                name: "page_title_spacer";
+                scale: 1;
+                description {
+                    state: "default" 0.0;
+                    min: GRID_ITEM_SPACER 0;
+                    max: GRID_ITEM_SPACER 0;
+                    align: 0.0 0.0;
+                    visible: DEVELOPMENT;
+                    color: 255 255 255 127;
+                    rel1 {
+                        relative: 0.0 0.0;
+                        to: "background";
+                    }
+                    rel2.relative: 1.0 1.0;
+                }
+            }
+            rect {
+                name: "page_title_spacer2";
+                scale: 1;
+                description {
+                    state: "default" 0.0;
+                    min: GRID_ITEM_SPACER 0;
+                    max: GRID_ITEM_SPACER 0;
+                    align: 1.0 1.0;
+                    visible: DEVELOPMENT;
+                    color: 255 255 255 127;
+                    rel1 {
+                        relative: 0.0 0.0;
+                        to: "background";
+                    }
+                    rel2 {
+                        relative: 1.0 1.0;
+                        to: "background";
+                    }
+                }
+            }
+            part {
+                name: "page_title";
+                type: TEXT;
+                scale: 1;
+                description {
+                    state: "default" 0.0;
+                    align: 0.0 0.5;
+                    color: 255 255 255 255;
+                    fixed: 1 1;
+                    visible: 1;
+                    rel1 {
+                        to: "page_title_spacer";
+                        relative: 1.0 1.0;
+                    }
+                    rel2 {
+                        to: "page_title_spacer2";
+                        relative: 0.0 0.0;
+                    }
+                    text {
+                        text: "Web page title";
+                        font: "Sans";
+                        size: 27;
+                        align: 0 0.5;
+                    }
+                }
+            }
+            rect {
+                name: "over";
+                scale: 1;
+                mouse_events: 1;
+                repeat_events: 1;
+                description {
+                    state: "default" 0.0;
+                    visible: 1;
+                    fixed: 0 0;
+                    align: 0 0;
+                    rel1.relative: 0 0;
+                    rel2.relative: 1 1;
+                    color: 0 0 0 0;
+                }
+            }
+        }
+        programs {
+            program {
+                name: "mouse_down";
+                signal: "mouse,down,*";
+                source: "over";
+                action: STATE_SET "selected" 0.0;
+                target: "background";
+                target: "bg";
             }
             program {
-                name: "hide_modules_toolbar";
-                signal: "hide_modules_toolbar";
-                source: "ui";
-                action: STATE_SET "hidden_modules_toolbar" 0.0;
-                target: "modules_toolbar";
-                target: "navigator_toolbar";
-            }
-            program {
-                name: "hide_navigator_toolbar";
-                signal: "hide_navigator_toolbar";
-                source: "ui";
-                action: STATE_SET "hidden_modules_toolbar" 0.0;
-                target: "navigator_toolbar";
-            }
-            program {
-                name: "hide_toolbars";
-                signal: "hide_toolbars";
-                source: "ui";
-                action: STATE_SET "hidden_toolbar" 0.0;
-                target: "elm.swallow.content";
-                target: "navigator_toolbar";
-                target: "modules_toolbar";
-            }
-            program {
-                name: "show_toolbars";
-                signal: "show_toolbars";
-                source: "ui";
+                name: "mouse_up";
+                signal: "mouse,up,*";
+                source: "over";
                 action: STATE_SET "default" 0.0;
-                target: "elm.swallow.content";
-                target: "navigator_toolbar";
-                target: "modules_toolbar";
+                target: "background";
+                target: "bg";
+            }
+        }
+    }
+
+    group {
+        name: "elm/gengrid/item/grid_custom_folder_item/default";
+        data.item: "texts" "page_title";
+        data.item: "contents" "elm.thumbnail elm.thumbButton";
+        images {
+            image: "folder_ic_custom.png" COMP;
+        }
+        parts {
+            rect {
+                name: "bg_spacer";
+                scale: 1;
+                description {
+                    state: "default" 0.0;
+                    min: GRID_ITEM_SPACER GRID_ITEM_SPACER;
+                    max: GRID_ITEM_SPACER GRID_ITEM_SPACER;
+                    fixed: 1 1;
+                    align: 1 1;
+                    visible: DEVELOPMENT;
+                    color: 255 255 255 127;
+                    rel1.relative: 0.0 0.0;
+                    rel2.relative: 1.0 1.0;
+                }
+            }
+            rect {
+                name: "bg";
+                scale: 1;
+                mouse_events: 0;
+                description {
+                    state: "default" 0.0;
+                    min: 0 0;
+                    max: -1 -1;
+                    fixed: 0 0;
+                    align: 0.0 0.0;
+                    visible: 1;
+                    color: 206 118 70 200;
+                    rel1.relative: 0 0;
+                    rel2 {
+                       relative: 1 0;
+                       to: "background";
+                    }
+                }
+                description {
+                    state: "selected";
+                    inherit: "default" 0.0;
+                    color: 206 118 70 255;
+                }
+            }
+            rect {
+                name: "background";
+                scale: 1;
+                description {
+                    state: "default" 0.0;
+                    min: 0 GRID_ITEM_TITLE_HEIGHT;
+                    max: -1 GRID_ITEM_TITLE_HEIGHT;
+                    align: 0.0 1.0;
+                    color: 206 118 70 255;
+                    fixed: 0 1;
+                    rel1.relative: 0.0 0.0;
+                    rel2 {
+                        relative: 0 0;
+                        to: "bg_spacer";
+                    }
+                }
+                description {
+                    state: "selected" 0.0;
+                    inherit: "default" 0.0;
+                    color: 206 118 70 200;
+                }
+            }
+            part {
+                name: "elm.thumbnail";
+                type: SWALLOW;
+                scale: 1;
+                description {
+                    state: "default" 0.0;
+                    fixed: 0 0;
+                    align: 0.0 0.0;
+                    color: 206 118 70 200;
+                    min: 0 0;
+                    max: -1 -1;
+                    fixed: 0 0;
+                    rel1 {
+                        relative: 0.0 0.0;
+                        to: "bg";
+                    }
+                    rel2 {
+                        relative: 1.0 0.0;
+                        to: "background";
+                    }
+                }
+            }
+            part {
+                name: "icon";
+                type: IMAGE;
+                scale: 1;
+                description { state: "default" 0.0;
+                    visible: 1;
+                    fixed: 1 1;
+                    align: 0.5 0.5;
+                    min: GRID_ITEM_ICON_SIZE GRID_ITEM_ICON_SIZE;
+                    max: GRID_ITEM_ICON_SIZE GRID_ITEM_ICON_SIZE;
+                    rel1 { relative: 0.0 0.0; to: "elm.thumbnail";}
+                    rel2 { relative: 1.0 1.0; to: "elm.thumbnail";}
+                    image.normal: "folder_ic_custom.png";
+                }
+            }
+            rect {
+                name: "page_title_spacer";
+                scale: 1;
+                description {
+                    state: "default" 0.0;
+                    min: GRID_ITEM_SPACER 0;
+                    max: GRID_ITEM_SPACER 0;
+                    align: 0.0 0.0;
+                    visible: DEVELOPMENT;
+                    color: 255 255 255 127;
+                    rel1 {
+                        relative: 0.0 0.0;
+                        to: "background";
+                    }
+                    rel2.relative: 1.0 1.0;
+                }
+            }
+            rect {
+                name: "page_title_spacer2";
+                scale: 1;
+                description {
+                    state: "default" 0.0;
+                    min: GRID_ITEM_SPACER 0;
+                    max: GRID_ITEM_SPACER 0;
+                    align: 1.0 1.0;
+                    visible: DEVELOPMENT;
+                    color: 255 255 255 127;
+                    rel1 {
+                        relative: 0.0 0.0;
+                        to: "background";
+                    }
+                    rel2 {
+                        relative: 1.0 1.0;
+                        to: "background";
+                    }
+                }
+            }
+            part {
+                name: "page_title";
+                type: TEXT;
+                scale: 1;
+                description {
+                    state: "default" 0.0;
+                    align: 0.0 0.5;
+                    color: 255 255 255 255;
+                    fixed: 1 1;
+                    visible: 1;
+                    rel1 {
+                        to: "page_title_spacer";
+                        relative: 1.0 1.0;
+                    }
+                    rel2 {
+                        to: "page_title_spacer2";
+                        relative: 0.0 0.0;
+                    }
+                    text {
+                        text: "Web page title";
+                        font: "Sans";
+                        size: 27;
+                        align: 0 0.5;
+                    }
+                }
+            }
+            rect {
+                name: "over";
+                scale: 1;
+                mouse_events: 1;
+                repeat_events: 1;
+                description {
+                    state: "default" 0.0;
+                    visible: 1;
+                    fixed: 0 0;
+                    align: 0 0;
+                    rel1.relative: 0 0;
+                    rel2.relative: 1 1;
+                    color: 0 0 0 0;
+                }
+            }
+        }
+        programs {
+            program {
+                name: "mouse_down";
+                signal: "mouse,down,*";
+                source: "over";
+                action: STATE_SET "selected" 0.0;
+                target: "background";
+                target: "bg";
+            }
+            program {
+                name: "mouse_up";
+                signal: "mouse,up,*";
+                source: "over";
+                action: STATE_SET "default" 0.0;
+                target: "background";
+                target: "bg";
+            }
+        }
+    }
+
+    group {
+        name: "elm/gengrid/item/grid_new_folder_item/default";
+        data.item: "texts" "page_title";
+        data.item: "contents" "elm.thumbnail elm.thumbButton";
+        images {
+            image: "folder_ic_add.png" COMP;
+        }
+        parts {
+            rect {
+                name: "bg_spacer";
+                scale: 1;
+                description {
+                    state: "default" 0.0;
+                    min: GRID_ITEM_SPACER GRID_ITEM_SPACER;
+                    max: GRID_ITEM_SPACER GRID_ITEM_SPACER;
+                    fixed: 1 1;
+                    align: 1 1;
+                    visible: DEVELOPMENT;
+                    color: 255 255 255 127;
+                    rel1.relative: 0.0 0.0;
+                    rel2.relative: 1.0 1.0;
+                }
+            }
+            rect {
+                name: "bg";
+                scale: 1;
+                mouse_events: 0;
+                description {
+                    state: "default" 0.0;
+                    min: 0 0;
+                    max: -1 -1;
+                    fixed: 0 0;
+                    align: 0.0 0.0;
+                    visible: 1;
+                    color: 86 98 113 200;
+                    rel1.relative: 0 0;
+                    rel2 {
+                        relative: 1 0;
+                        to: "background";
+                    }
+                }
+                description {
+                    state: "selected";
+                    inherit: "default" 0.0;
+                    color: 86 98 113 255;
+                }
+            }
+            rect {
+                name: "background";
+                scale: 1;
+                description {
+                    state: "default" 0.0;
+                    min: 0 GRID_ITEM_TITLE_HEIGHT;
+                    max: -1 GRID_ITEM_TITLE_HEIGHT;
+                    align: 0.0 1.0;
+                    color: 86 98 113 255;
+                    fixed: 0 1;
+                    rel1.relative: 0.0 0.0;
+                    rel2 {
+                        relative: 0 0;
+                        to: "bg_spacer";
+                    }
+                }
+                description {
+                    state: "selected" 0.0;
+                    inherit: "default" 0.0;
+                    color: 86 98 113 200;
+                }
+            }
+            part {
+                name: "elm.thumbnail";
+                type: SWALLOW;
+                scale: 1;
+                description {
+                    state: "default" 0.0;
+                    fixed: 0 0;
+                    align: 0.0 0.0;
+                    color: 206 118 70 200;
+                    min: 0 0;
+                    max: -1 -1;
+                    fixed: 0 0;
+                    rel1 {
+                        relative: 0.0 0.0;
+                        to: "bg";
+                    }
+                    rel2 {
+                        relative: 1.0 0.0;
+                        to: "background";
+                    }
+                }
+            }
+            part {
+                name: "icon";
+                type: IMAGE;
+                scale: 1;
+                description {
+                    state: "default" 0.0;
+                    visible: 1;
+                    fixed: 1 1;
+                    align: 0.5 0.5;
+                    min: GRID_ITEM_ICON_SIZE GRID_ITEM_ICON_SIZE;
+                    max: GRID_ITEM_ICON_SIZE GRID_ITEM_ICON_SIZE;
+                    rel1 {
+                        relative: 0.0 0.0;
+                        to: "elm.thumbnail";
+                    }
+                    rel2 {
+                        relative: 1.0 1.0;
+                        to: "elm.thumbnail";
+                    }
+                    image.normal: "folder_ic_add.png";
+                }
+            }
+            rect {
+                name: "page_title_spacer";
+                scale: 1;
+                description {
+                    state: "default" 0.0;
+                    min: GRID_ITEM_SPACER 0;
+                    max: GRID_ITEM_SPACER 0;
+                    align: 0.0 0.0;
+                    visible: DEVELOPMENT;
+                    color: 255 255 255 127;
+                    rel1 {
+                        relative: 0.0 0.0;
+                        to: "background";
+                    }
+                    rel2.relative: 1.0 1.0;
+                }
+            }
+            rect {
+                name: "page_title_spacer2";
+                scale: 1;
+                description {
+                    state: "default" 0.0;
+                    min: GRID_ITEM_SPACER 0;
+                    max: GRID_ITEM_SPACER 0;
+                    align: 1.0 1.0;
+                    visible: DEVELOPMENT;
+                    color: 255 255 255 127;
+                    rel1 {
+                        relative: 0.0 0.0;
+                        to: "background";
+                    }
+                    rel2 {
+                        relative: 1.0 1.0;
+                        to: "background";
+                    }
+                }
+            }
+            part {
+                name: "page_title";
+                type: TEXT;
+                scale: 1;
+                description {
+                    state: "default" 0.0;
+                    align: 0.0 0.5;
+                    color: 255 255 255 255;
+                    fixed: 1 1;
+                    visible: 1;
+                    rel1 {
+                        to: "page_title_spacer";
+                        relative: 1.0 1.0;
+                    }
+                    rel2 {
+                        to: "page_title_spacer2";
+                        relative: 0.0 0.0;
+                    }
+                    text {
+                        text: "New Folder";
+                        font: "Sans";
+                        size: 27;
+                        align: 0 0.5;
+                    }
+                }
+            }
+            rect {
+                name: "over";
+                scale: 1;
+                mouse_events: 1;
+                repeat_events: 1;
+                description {
+                    state: "default" 0.0;
+                    visible: 1;
+                    fixed: 0 0;
+                    align: 0 0;
+                    rel1.relative: 0 0;
+                    rel2.relative: 1 1;
+                    color: 0 0 0 0;
+                }
+            }
+        }
+        programs {
+            program {
+                name: "mouse_down";
+                signal: "mouse,down,*";
+                source: "over";
+                action: STATE_SET "selected" 0.0;
+                target: "background";
+                target: "bg";
+            }
+            program {
+                name: "mouse_up";
+                signal: "mouse,up,*";
+                source: "over";
+                action: STATE_SET "default" 0.0;
+                target: "background";
+                target: "bg";
+            }
+        }
+    }
+
+    group {
+        name: "elm/gengrid/item/grid_mobile_folder_item/default";
+        data.item: "texts" "page_title";
+        data.item: "contents" "elm.thumbnail elm.thumbButton";
+        images {
+            image: "folder_ic_bookmark.png" COMP;
+        }
+        parts {
+            rect {
+                name: "bg_spacer";
+                scale: 1;
+                description {
+                    state: "default" 0.0;
+                    min: GRID_ITEM_SPACER GRID_ITEM_SPACER;
+                    max: GRID_ITEM_SPACER GRID_ITEM_SPACER;
+                    fixed: 1 1;
+                    align: 1 1;
+                    visible: DEVELOPMENT;
+                    color: 255 255 255 127;
+                    rel1.relative: 0.0 0.0;
+                    rel2.relative: 1.0 1.0;
+                }
+            }
+            rect {
+                name: "bg";
+                scale: 1;
+                mouse_events: 0;
+                description {
+                    state: "default" 0.0;
+                    min: 0 0;
+                    max: -1 -1;
+                    fixed: 0 0;
+                    align: 0.0 0.0;
+                    visible: 1;
+                    color: 75 102 163 200;
+                    rel1.relative: 0 0;
+                    rel2 {
+                        relative: 1 0;
+                        to: "background";
+                    }
+                }
+                description {
+                    state: "selected";
+                    inherit: "default" 0.0;
+                    color: 75 102 163 255;
+                }
+            }
+            rect {
+                name: "background";
+                scale: 1;
+                description {
+                    state: "default" 0.0;
+                    min: 0 GRID_ITEM_TITLE_HEIGHT;
+                    max: -1 GRID_ITEM_TITLE_HEIGHT;
+                    align: 0.0 1.0;
+                    color: 75 102 163 255;
+                    fixed: 0 1;
+                    rel1.relative: 0.0 0.0;
+                    rel2 {
+                        relative: 0 0;
+                        to: "bg_spacer";
+                    }
+                }
+                description {
+                    state: "selected" 0.0;
+                    inherit: "default" 0.0;
+                    color: 75 102 163 200;
+                }
+            }
+            part {
+                name: "elm.thumbnail";
+                type: SWALLOW;
+                scale: 1;
+                description {
+                    state: "default" 0.0;
+                    fixed: 0 0;
+                    align: 0.0 0.0;
+                    color: 206 118 70 200;
+                    min: 0 0;
+                    max: -1 -1;
+                    fixed: 0 0;
+                    rel1 {
+                        relative: 0.0 0.0;
+                        to: "bg";
+                    }
+                    rel2 {
+                        relative: 1.0 0.0;
+                        to: "background";
+                    }
+                }
+            }
+            part {
+                name: "icon";
+                type: IMAGE;
+                scale: 1;
+                description {
+                    state: "default" 0.0;
+                    visible: 1;
+                    fixed: 1 1;
+                    align: 0.5 0.5;
+                    min: GRID_ITEM_ICON_SIZE GRID_ITEM_ICON_SIZE;
+                    max: GRID_ITEM_ICON_SIZE GRID_ITEM_ICON_SIZE;
+                    rel1 {
+                        relative: 0.0 0.0;
+                        to: "elm.thumbnail";
+                    }
+                    rel2 {
+                        relative: 1.0 1.0;
+                        to: "elm.thumbnail";
+                    }
+                    image.normal: "folder_ic_bookmark.png";
+                }
+            }
+            rect {
+                name: "page_title_spacer";
+                scale: 1;
+                description {
+                    state: "default" 0.0;
+                    min: GRID_ITEM_SPACER 0;
+                    max: GRID_ITEM_SPACER 0;
+                    align: 0.0 0.0;
+                    visible: DEVELOPMENT;
+                    color: 255 255 255 127;
+                    rel1 {
+                        relative: 0.0 0.0;
+                        to: "background";
+                    }
+                    rel2.relative: 1.0 1.0;
+                }
+            }
+            rect {
+                name: "page_title_spacer2";
+                scale: 1;
+                description {
+                    state: "default" 0.0;
+                    min: GRID_ITEM_SPACER 0;
+                    max: GRID_ITEM_SPACER 0;
+                    align: 1.0 1.0;
+                    visible: DEVELOPMENT;
+                    color: 255 255 255 127;
+                    rel1 {
+                        relative: 0.0 0.0;
+                        to: "background";
+                    }
+                    rel2 {
+                        relative: 1.0 1.0;
+                        to: "background";
+                    }
+                }
+            }
+            part {
+                name: "page_title";
+                type: TEXT;
+                scale: 1;
+                description {
+                    state: "default" 0.0;
+                    align: 0.0 0.5;
+                    color: 255 255 255 255;
+                    fixed: 1 1;
+                    visible: 1;
+                    rel1 {
+                        to: "page_title_spacer";
+                        relative: 1.0 1.0;
+                    }
+                    rel2 {
+                        to: "page_title_spacer2";
+                        relative: 0.0 0.0;
+                    }
+                    text {
+                        text: "Web page title";
+                        font: "Sans";
+                        size: 27;
+                        align: 0 0.5;
+                    }
+                }
+            }
+            rect {
+                name: "over";
+                scale: 1;
+                mouse_events: 1;
+                repeat_events: 1;
+                description {
+                    state: "default" 0.0;
+                    visible: 1;
+                    fixed: 0 0;
+                    align: 0 0;
+                    rel1.relative: 0 0;
+                    rel2.relative: 1 1;
+                    color: 0 0 0 0;
+                }
+            }
+        }
+        programs {
+            program {
+                name: "mouse_down";
+                signal: "mouse,down,*";
+                source: "over";
+                action: STATE_SET "selected" 0.0;
+                target: "background";
+                target: "bg";
+            }
+            program {
+                name: "mouse_up";
+                signal: "mouse,up,*";
+                source: "over";
+                action: STATE_SET "default" 0.0;
+                target: "background";
+                target: "bg";
             }
         }
     }

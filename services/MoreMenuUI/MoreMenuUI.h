@@ -19,7 +19,6 @@
 
 #include <Evas.h>
 #include <Eina.h>
-#include <Elementary.h>
 #include <memory>
 #include <boost/signals2/signal.hpp>
 
@@ -117,7 +116,7 @@ public:
     boost::signals2::signal<void ()> switchToMobileMode;
     boost::signals2::signal<void ()> switchToDesktopMode;
     boost::signals2::signal<bool ()> isBookmark;
-    boost::signals2::signal<void ()> bookmarkFlowClicked;
+    boost::signals2::signal<void (bool)> bookmarkFlowClicked;
 private:
     Elm_Gengrid_Item_Class* createItemClass();
     void createMoreMenuLayout();

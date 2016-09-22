@@ -43,7 +43,7 @@ part {  name: NAME;                                                 \
             }                                                       \
     }
 
-#define ADD_SPACER_NEXT_TO(NAME, RELATIVE_TO, WIDTH, HEIGHT, WIDTH_LANDSCAPE) \
+#define ADD_SPACER_NEXT_TO(NAME, RELATIVE_TO, WIDTH, HEIGHT)        \
 part {  name: NAME;                                                 \
     type: SPACER;                                                   \
     scale: 1;                                                       \
@@ -55,12 +55,6 @@ part {  name: NAME;                                                 \
         align: 0 0;                                                 \
         min: WIDTH HEIGHT;                                          \
         max: WIDTH HEIGHT;                                          \
-    }                                                               \
-    description {                                                   \
-        state: "landscape" 0.0;                                     \
-        inherit: "default" 0.0;                                     \
-        min: WIDTH_LANDSCAPE HEIGHT;                                \
-        max: WIDTH_LANDSCAPE HEIGHT;                                \
     }                                                               \
 }
 

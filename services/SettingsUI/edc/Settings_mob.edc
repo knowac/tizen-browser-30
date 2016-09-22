@@ -33,6 +33,7 @@ group {
                 min: 0 0;
                 max: -1 -1;
                 visible: 1;
+                color: 244 244 244 255;
             }
         }
         part {
@@ -48,6 +49,7 @@ group {
                 max: -1 285;
                 rel1 { relative: 0.0 0.0; to: "bg";}
                 rel2 { relative: 1.0 1.0;}
+                color_class: transparent;
             }
             description {
                 state: "sub" 0.0;
@@ -80,6 +82,7 @@ group {
                 max: -1 -1;
                 rel1 { relative: 0.0 0.0; to: "bg";}
                 rel2 { relative: 1.0 1.0;}
+                color_class: defaultListColor;
             }
             description {
                 state: "sub" 0.0;
@@ -107,6 +110,7 @@ group {
                 fixed: 0 0;
                 rel1 { relative: 0.0 0.0; to: "bg";}
                 rel2 { relative: 1.0 1.0;}
+                color_class: defaultListColor;
             }
         }
         part {
@@ -120,6 +124,7 @@ group {
                 fixed: 0 0;
                 rel1 { relative: 0.0 0.0; to: "bg";}
                 rel2 { relative: 1.0 1.0;}
+                color_class: defaultListColor;
             }
         }
         part {
@@ -133,6 +138,7 @@ group {
                 fixed: 0 0;
                 rel1 { relative: 0.0 0.0; to: "bg";}
                 rel2 { relative: 1.0 1.0;}
+                color_class: defaultListColor;
             }
         }
     }

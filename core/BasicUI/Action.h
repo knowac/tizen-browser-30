@@ -87,6 +87,7 @@ public:
 
     Action(const Action& other);
     ~Action();
+    std::string getIconText()const;
     std::string getText()const;
     std::string getStatusTip()const;
     std::string getToolTip()const;
@@ -145,6 +146,7 @@ public:
     boost::signals2::signal<void ()> enabledChanged;
 
 private:
+    std::string m_iconText; ///< Text displayed under the icon.
     std::string m_text;     ///< Text displayed in menu.
     std::string m_statusTip;///< Text displayed in status bar.
     std::string m_toolTip;  ///< Text displayed "on mouse over" in tool tip box.

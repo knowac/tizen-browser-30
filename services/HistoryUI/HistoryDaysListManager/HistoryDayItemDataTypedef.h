@@ -23,17 +23,18 @@
 namespace tizen_browser {
 namespace base_ui {
 
-using WebsiteVisitItemData = struct WebsiteVisitItemData_;
-using WebsiteVisitItemDataPtr = std::shared_ptr<WebsiteVisitItemData>;
-using WebsiteVisitItemDataPtrConst = std::shared_ptr<const WebsiteVisitItemData>;
+typedef struct WebsiteVisitItemData_ WebsiteVisitItemData;
+typedef std::shared_ptr<WebsiteVisitItemData> WebsiteVisitItemDataPtr;
+typedef std::shared_ptr<const WebsiteVisitItemData> WebsiteVisitItemDataPtrConst;
 
-using WebsiteHistoryItemData = struct WebsiteHistoryItemData_;
-using WebsiteHistoryItemDataPtr = std::shared_ptr<WebsiteHistoryItemData>;
-using WebsiteHistoryItemDataPtrConst = std::shared_ptr<const WebsiteHistoryItemData>;
+typedef struct WebsiteHistoryItemData_ WebsiteHistoryItemData;
+typedef std::shared_ptr<WebsiteHistoryItemData> WebsiteHistoryItemDataPtr;
+typedef std::shared_ptr<const WebsiteHistoryItemData> WebsiteHistoryItemDataPtrConst;
 
-using HistoryDayItemData = struct HistoryDayItemData_;
-using HistoryDayItemDataPtr = std::shared_ptr<HistoryDayItemData>;
-using HistoryDayItemDataPtrConst = std::shared_ptr<const HistoryDayItemData>;
+typedef struct HistoryDayItemData_ HistoryDayItemData;
+typedef std::shared_ptr<HistoryDayItemData> HistoryDayItemDataPtr;
+typedef std::shared_ptr<const HistoryDayItemData> HistoryDayItemDataPtrConst;
+
 }
 }
 

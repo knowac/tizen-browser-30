@@ -108,22 +108,6 @@ public:
      */
     bool deleteBookmark(const std::string & url);
 
-    bool deleteBookmark(int id);
-
-    std::shared_ptr<BookmarkItem> addFolder(const std::string & title, int parent = ROOT_FOLDER_ID);
-    std::vector<std::shared_ptr<BookmarkItem>> getFolders(int parent = ROOT_FOLDER_ID);
-    bool folderExists(const std::string & title, int parent = ROOT_FOLDER_ID);
-
-    std::vector<std::shared_ptr<BookmarkItem>> getAllBookmarkItems(int parent = ROOT_FOLDER_ID);
-
-    std::shared_ptr<services::BookmarkItem> getRoot();
-    int getQuickAccessRoot() {return m_quickAccess_root;}
-
-    std::shared_ptr<services::BookmarkItem> getBookmarkItem(int id);
-
-    void editBookmark(int id, const std::string & url, const std::string & title,
-        int parent = -1, int order = -1);
-
     /**
      * @brief Gets bookmark item
      *
@@ -132,6 +116,7 @@ public:
      */
     bool getItem(const std::string & url, BookmarkItem *item);
 
+    bool delete_by_id(int id);
     bool delete_by_id_notify(int id);
     bool delete_by_uri(const char *uri);
     int update_bookmark(int id, const char *title, const char *uri, int parent_id, int order,
@@ -143,7 +128,6 @@ public:
     int get_count(void);
     bool get_id(const char *uri, int *bookmark_id);
     bool is_in_bookmark(const char *uri);
-    int getFolderId(const std::string & title, int parent);
 
 private:
     /**
@@ -152,17 +136,13 @@ private:
     void errorPrint(std::string method) const;
 
     enum ItemType{
-          FOLDER_TYPE = 1
-        , BOOKMARK_TYPE = 0
+          BOOKMARK_TYPE = 0
         , ALL_TYPE = -1
     };
     std::vector<BookmarkItem *> m_bookmark_list;
     std::shared_ptr<tizen_browser::services::StorageService> m_storageManager;
 ///    \todo Need to change getBookmarkId function for finding stored bookmark - check getBookmarkExists function
     int getBookmarkId(const std::string & url);
-
-    std::shared_ptr<services::BookmarkItem> m_root;
-    int m_quickAccess_root;
 };
 
 }

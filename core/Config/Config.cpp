@@ -18,7 +18,6 @@
 #include "Config.h"
 #include "BrowserLogger.h"
 #include "Ecore_Wayland.h"
-#include "Tools/SettingsEnums.h"
 #include <Elementary.h>
 #include <app_common.h>
 
@@ -66,16 +65,11 @@ Config::Config()
     m_keysValues[CONFIG_KEY::WEB_ENGINE_REMEMBER_FROM_DATA] = true;
     m_keysValues[CONFIG_KEY::WEB_ENGINE_REMEMBER_PASSWORDS] = true;
     m_keysValues[CONFIG_KEY::WEB_ENGINE_AUTOFILL_PROFILE_DATA] = true;
-    m_keysValues[CONFIG_KEY::WEB_ENGINE_SCRIPTS_CAN_OPEN_PAGES] = true;
 
     m_keysValues[CONFIG_KEY::CACHE_ENABLE_VALUE] = EINA_TRUE;
     m_keysValues[CONFIG_KEY::CACHE_FONT_VALUE] = 0;
     m_keysValues[CONFIG_KEY::CACHE_IMAGE_VALUE] = 2048;
     m_keysValues[CONFIG_KEY::CACHE_INTERVAL_VALUE] = 32;
-
-    m_keysValues[CONFIG_KEY::SAVE_CONTENT_LOCATION] = base_ui::Translations::Device;
-    m_keysValues[CONFIG_KEY::DEFAULT_SEARCH_ENGINE] = base_ui::Translations::Google;
-    m_keysValues[CONFIG_KEY::CURRENT_HOME_PAGE] = "http://www.samsung.com";
 }
 
 boost::any Config::get(const std::string& key)

@@ -51,7 +51,8 @@ Action::Action(const std::string& icon, const std::string& text)
 
 
 Action::Action(const Action& other)
-    :m_text(other.m_text)
+    :m_iconText(other.m_iconText)
+    ,m_text(other.m_text)
     ,m_statusTip(other.m_statusTip)
     ,m_toolTip(other.m_toolTip)
     ,m_icon(other.m_icon)
@@ -78,6 +79,11 @@ std::string Action::getDisIcon() const
 std::string Action::getIcon() const
 {
     return m_icon;
+}
+
+std::string Action::getIconText() const
+{
+    return m_iconText;
 }
 
 std::string Action::getSelIcon() const
@@ -108,6 +114,11 @@ void Action::setDisIcon(const std::string& disIcon)
 void Action::setIcon(const std::string& icon)
 {
     m_icon = icon;
+}
+
+void Action::setIconText(const std::string& iconText)
+{
+    m_iconText = iconText;
 }
 
 void Action::setSelIcon(const std::string& selIcon)

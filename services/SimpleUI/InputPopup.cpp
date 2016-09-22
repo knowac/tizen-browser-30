@@ -12,7 +12,7 @@ InputPopup::InputPopup() :
     m_input_area(nullptr),
     m_input_cancel(nullptr),
     m_entry(nullptr),
-    m_accept_right_left(true)
+    m_accept_right_left(false)
 {
     m_edjFilePath = EDJE_DIR;
     m_edjFilePath.append("SimpleUI/InputPopup.edj");
@@ -78,11 +78,6 @@ void InputPopup::setTitle(const std::string& title)
 void InputPopup::setMessage(const std::string& message)
 {
     m_message = message;
-}
-
-void InputPopup::setTip(const std::string& tip)
-{
-    m_tip = tip;
 }
 
 void InputPopup::setOkButtonText(const std::string& okButtonText)
@@ -151,7 +146,6 @@ void InputPopup::createLayout()
     elm_entry_input_panel_layout_set(m_entry, ELM_INPUT_PANEL_LAYOUT_URL);
     elm_object_part_content_set(m_input_area, "input_text_swallow", m_entry);
     elm_object_part_text_set(m_entry, "elm.text", elm_entry_utf8_to_markup(m_input.c_str()));
-    elm_object_part_text_set(m_entry, "elm.guide", elm_entry_utf8_to_markup(m_tip.c_str()));
 
     evas_object_smart_callback_add(m_entry, "focused", _entry_focused, (void*)this);
     evas_object_smart_callback_add(m_entry, "unfocused", _entry_unfocused, (void*)this);

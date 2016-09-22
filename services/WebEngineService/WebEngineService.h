@@ -29,7 +29,6 @@
 #include "AbstractWebEngine/TabIdTypedef.h"
 #include "AbstractWebEngine/WebConfirmation.h"
 #include "AbstractWebEngine/TabOrigin.h"
-#include "AbstractWebEngine/State.h"
 #include "SnapshotType.h"
 #include "BrowserImage.h"
 #include "DownloadControl/DownloadControl.h"
@@ -41,10 +40,9 @@ namespace webengine_service {
 
 class WebView;
 
-using WebViewPtr = std::shared_ptr<WebView>;
-using TabsMapPtr = std::shared_ptr<std::map<TabId, WebViewPtr > >;
+typedef std::shared_ptr<WebView> WebViewPtr;
 
-class BROWSER_EXPORT WebEngineService : public AbstractWebEngine, boost::noncopyable
+class BROWSER_EXPORT WebEngineService : public AbstractWebEngine<Evas_Object>, boost::noncopyable
 {
 public:
     WebEngineService();
@@ -52,15 +50,11 @@ public:
     virtual std::string getName();
 
     Evas_Object * getLayout();
-    Evas_Object* getWidget();
-    void init(Evas_Object* guiParent);
+    void init(void * guiParent);
     void preinitializeWebViewCache();
 
     void setURI(const std::string &);
     std::string getURI(void) const;
-#if PWA
-    void requestManifest(void);
-#endif
     std::string getTitle(void) const;
     TabOrigin getOrigin(void) const;
     std::string getUserAgent(void) const;
@@ -104,9 +98,11 @@ public:
      */
     TabId addTab(
             const std::string & uri = std::string(),
+            const TabId* tabInitId = NULL,
             const boost::optional<int> tabId = boost::none,
             const std::string& title = std::string(),
             bool desktopMode = true,
+            bool incognitoMode = false,
             TabOrigin origin = TabOrigin::UNKNOWN);
     Evas_Object* getTabView(TabId id);
     bool switchToTab(TabId);
@@ -127,10 +123,15 @@ public:
     std::shared_ptr<tizen_browser::tools::BrowserImage> getSnapshotData(TabId id, int width, int height, bool async, tizen_browser::tools::SnapshotType snapshot_type);
 
     /**
-     * @brief Get the state of secret mode
+     * @brief Get the state of private mode for a specific tab
      *
+     * @param id of snapshot
+     * @return state of private mode where:
+     *     -1 is "Not set"
+     *      0 is "False"
+     *      1 is "True"
      */
-    bool isSecretMode();
+    bool isPrivateMode(const TabId& id);
 
 
     /**
@@ -194,6 +195,7 @@ public:
 
     void onTabIdCreated(int tabId) override;
 
+#if PROFILE_MOBILE
     /**
      * @brief Searches for word in the current page.
      *
@@ -218,16 +220,7 @@ public:
      * @brief Reset WebView settings
      */
     virtual void resetSettingsParam() override;
-
-    /**
-     * @brief set next state
-     */
-    void changeState() override;
-
-    /**
-     * @brief Get current state of the engine
-     */
-    State getState() override { return m_state; }
+#endif
 private:
     // callbacks from WebView
     void _favIconChanged(std::shared_ptr<tizen_browser::tools::BrowserImage> bi);
@@ -246,10 +239,6 @@ private:
     void _redirectedWebPage(const std::string& oldUrl, const std::string& newUrl);
     void _setCertificatePem(const std::string& uri, const std::string& pem);
     void _setWrongCertificatePem(const std::string& uri, const std::string& pem);
-#if PWA
-    void _resultDataManifest(std::string pwaData);
-    void _iconDownload(std::string download_uri);
-#endif
 #if PROFILE_MOBILE
     int _getRotation();
     void setWebViewSettings(std::shared_ptr<WebView> webView);
@@ -265,7 +254,6 @@ private:
     void disconnectSignals(WebViewPtr);
 
     void disconnectCurrentWebViewSignals();
-    void connectCurrentWebViewSignals();
 
     /**
      * connect signals of specified WebView
@@ -274,17 +262,14 @@ private:
     void connectSignals(WebViewPtr);
 
     int createTabId();
+
+#if PROFILE_MOBILE
     void initializeDownloadControl(Ewk_Context* context = ewk_context_default_get());
+#endif
 
 private:
-    struct StateStruct {
-        std::map<TabId, WebViewPtr > tabs;
-        std::vector<TabId> mostRecentTab;
-    };
-
-    State m_state;
     bool m_initialised;
-    Evas_Object* m_guiParent;
+    void* m_guiParent;
     bool m_stopped;
     bool m_webViewCacheInitialized;
 
@@ -292,14 +277,16 @@ private:
     TabId m_currentTabId;
     // current WebView
     WebViewPtr m_currentWebView;
-    StateStruct m_normalStateStruct;
-    StateStruct m_secretStateStruct;
-    StateStruct* m_stateStruct;
-    int m_tabIdCreated;
-    int m_tabIdSecret;
 
+    // map of all tabs (WebViews)
+    std::map<TabId, WebViewPtr > m_tabs;
+    // Most recent tab list
+    std::vector<TabId> m_mostRecentTab;
+    int m_tabIdCreated;
+#if PROFILE_MOBILE
     std::map<WebEngineSettings, bool>  m_settings;
     std::shared_ptr<DownloadControl> m_downloadControl;
+#endif
 };
 
 } /* end of webengine_service */

@@ -1,183 +1,169 @@
 #include "../../../core/Tools/edc/InvisibleButton.edc"
-#include "../../../core/Tools/edc/ColorClasses.edc"
+
 #define ON_OTHER_DEVICE 0
 
 collections { base_scale: 2.6;
-
-    group { name: "bottom_bar_with_margins";
-        parts {
-            rect { "top_left_content_spacer"; scale;
-                description { "default";
-                    min: 32 0;
-                    max: 32 0;
-                    align: 0 0;
-                    fixed: 1 1;
-                    visible: 0;
-                }
+    group {
+        name: "elm/button/base/tab_button";
+        styles {
+            style {
+                name: "tab_button_style";
+                base: "font=Tizen:style=Regular font_size=38 wrap=none color=#141414 align=0.5 ellipsis=1.0";
             }
-            rect { "bottom_right_content_spacer"; scale;
-                description { "default";
-                    min: 32 0;
-                    max: 32 0;
-                    align: 1 1;
-                    fixed: 1 1;
-                    visible: 0;
-                }
-            }
-            swallow { "elm.swallow.content"; scale;
-                description { "default";
-                    rel1 {
-                        relative: 1 1;
-                        to: "top_left_content_spacer";
-                    }
-                    rel2 {
-                        relative: 0 0;
-                        to: "bottom_right_content_spacer";
-                    }
-                }
+            style {
+                name: "tab_button_style_dissabled";
+                base: "font=Tizen:style=Regular font_size=38 wrap=none color=#C0C0C0 align=0.5 ellipsis=1.0";
             }
         }
-    }
-
-    group { name: "naviframe_content";
         parts {
-            rect { "content_top_left_spacer"; scale;
-                description { "default";
-                    min: 10 0;
-                    max: 10 0;
-                    fixed: 1 1;
-                    align: 0.0 0.0;
-                }
-                description { "landscape";
-                    inherit: "default";
-                    min: 0 0;
-                    max: 0 0;
-                }
-            }
-            rect { "content_bottom_right_spacer"; scale;
-                description { "default";
-                    min: 10 0;
-                    max: 10 0;
-                    fixed: 1 1;
-                    align: 1 1;
-                }
-                description { "landscape";
-                    inherit: "default";
-                    min: 0 0;
-                    max: 0 0;
+            rect {
+                name: "divider_horizontal";
+                scale: 1;
+                description {
+                    state: "default" 0.0;
+                    visible: 1;
+                    align: 0.5 0.0;
+                    color: 0 0 0 38.4;
+                    min: 0 1;
+                    max: -1 1;
+                    fixed: 0 1;
                 }
             }
-            swallow { "elm.swallow.content"; scale;
-                mouse_events: 1;
-                description { "default";
-                    align: 0.0 0.0;
+            rect {
+                name: "bg";
+                scale: 1;
+                description {
+                    state: "default" 0.0;
+                    visible: 1;
+                    color: 244 244 244 255;
                     min: 0 0;
                     max: -1 -1;
                     fixed: 0 0;
                     rel1 {
-                        relative: 1.0 1.0;
-                        to: "content_top_left_spacer";
+                        relative: 0 1;
+                        to: "divider_horizontal";
                     }
-                    rel2 {
-                        relative: 0 0;
-                        to: "content_bottom_right_spacer";
-                    }
+                }
+                description {
+                    state: "pressed" 0.0;
+                    inherit: "default" 0.0;
+                    color: 224 237 251 255;
                 }
             }
-            swallow { "elm.swallow.content_overlay"; scale;
-                multiline: 1;
-                description { "default";
+            rect {
+                name: "divider_vertical";
+                scale: 1;
+                description {
+                    state: "default" 0.0;
+                    min: 1 60;
+                    max: 1 60;
                     visible: 0;
+                    color: 0 0 0 76;
+                    align: 0.0 0.5;
+                    rel1 {
+                        relative: 0.0 0.0;
+                        to: "bg";
+                    }
                 }
-                description { "visible";
+                description {
+                    state: "visible" 0.0;
                     inherit: "default";
                     visible: 1;
                 }
             }
-        }
-        programs {
-            program {
-                name: "show_overlay";
-                signal: "show_overlay";
-                source: "ui";
-                action: STATE_SET "visible" 0.0;
-                target: "elm.swallow.content_overlay";
-            }
-            program {
-                name: "hide_overlay";
-                signal: "hide_overlay";
-                source: "ui";
-                action: STATE_SET "default" 0.0;
-                target: "elm.swallow.content_overlay";
-            }
-            program {
-                name: "switch_landscape";
-                signal: "switch_landscape";
-                source: "ui";
-                action: STATE_SET "landscape" 0.0;
-                target: "content_top_left_spacer";
-                target: "content_bottom_right_spacer";
-            }
-            program {
-                name: "switch_vertical";
-                signal: "switch_vertical";
-                source: "ui";
-                action: STATE_SET "default" 0.0;
-                target: "content_top_left_spacer";
-                target: "content_bottom_right_spacer";
-            }
-        }
-    }
-
-    group { name: "elm/button/base/delete_button";
-        images {
-            image: "btn_delete_nor.png" COMP;
-            image: "btn_delete_press.png" COMP;
-        }
-        parts {
-            part { name: "elm.image";
-                type: IMAGE;
+            part {
+                name: "elm.text";
+                type: TEXTBLOCK;
                 scale: 1;
                 mouse_events: 0;
-                description { state: "default" 0.0;
-                    align: 0.5 0.5;
+                description {
+                    state: "default" 0.0;
                     visible: 1;
-                    min: 60 60;
-                    max: 60 60;
                     fixed: 1 1;
-                    image.normal: "btn_delete_nor.png";
+                    rel1 {
+                        relative: 0.0 0.0;
+                        to: "bg";
+                    }
+                    rel2 {
+                        relative: 1.0 1.0;
+                        to: "bg";
+                    }
+                    text {
+                        style: "tab_button_style";
+                        align: 0 0.5;
+                    }
                 }
-                description { state: "pressed" 0.0;
-                    inherit: "default" 0.0;
-                    image.normal: "btn_delete_press.png";
+                description {
+                    state: "dissabled" 0.0;
+                    inherit: "default";
+                    text.style: "tab_button_style_dissabled";
                 }
             }
-            rect { "over"; scale;
-                description { "default";
-                    rel1.to: "elm.image";
-                    rel2.to: "elm.image";
+            rect {
+                name: "over";
+                scale: 1;
+                mouse_events: 1;
+                repeat_events: 0;
+                description {
+                    state: "default" 0.0;
+                    visible: 1;
+                    rel1 {
+                        relative: 0.0 0.0;
+                        to: "bg";
+                    }
+                    rel2 {
+                        relative: 1.0 1.0;
+                        to: "bg";
+                    }
                     color: 0 0 0 0;
+                }
+                description {
+                    state: "dissabled" 0.0;
+                    inherit: "default";
+                    visible: 0;
                 }
             }
         }
         programs {
-            program { name: "on_mouse_down";
-                signal: "mouse,down,1";
-                source: "over";
-                script {
-                    set_state(PART:"elm.image", "pressed", 0.0);
-                    emit("elm,action,press", "");
-                }
-             }
-            program {  name: "on_mouse_up";
-                signal: "mouse,up,1";
-                source: "over";
-                script {
-                   set_state(PART:"elm.image", "default", 0.0);
-                   emit("elm,action,unpress", "");
-                }
+            program {
+                name: "visible";
+                source: "ui";
+                signal: "visible";
+                action: STATE_SET "visible" 0.0;
+                target: "divider_vertical";
             }
-            program { name: "on_mouse_click";
+            program {
+                name: "dissabled";
+                source: "ui";
+                signal: "dissabled";
+                action: STATE_SET "dissabled" 0.0;
+                target: "elm.text";
+                target: "over";
+            }
+            program {
+                name: "enabled";
+                source: "ui";
+                signal: "enabled";
+                action: STATE_SET "default" 0.0;
+                target: "elm.text";
+                target: "over";
+            }
+            program {
+                name: "down";
+                source: "over";
+                signal: "mouse,down,*";
+                action: STATE_SET "pressed" 0.0;
+                target: "bg";
+            }
+            program {
+                name: "up";
+                source: "over";
+                signal: "mouse,up,*";
+                action: STATE_SET "default" 0.0;
+                target: "bg";
+            }
+            program {
+                name: "mouse_click";
                 signal: "mouse,clicked,1";
                 source: "over";
                 script {
@@ -186,391 +172,1203 @@ collections { base_scale: 2.6;
             }
         }
     }
-
-    group { name: "favicon_image";
-        images.image: "internet_tabs_ic_default.png" COMP;
-        script {
-            public secret_mode = 0;
+    group {
+        name: "elm/button/base/tab_thumbButton";
+        images {
+            image: "ico_delete.png" COMP;
         }
         parts {
-            part { name: "image";
-                type: IMAGE;
-                description { state: "default" 0.0;
-                    fixed: 1 1;
-                    align: 0.5 0.5;
-                    min: 40 40;
-                    max: 40 40;
-                    visible: 1;
-                    image.normal: "internet_tabs_ic_default.png";
-                    color_class: "AO034";
-                }
-                description { state: "selected" 0.0;
-                    inherit: "default";
-                    color_class: "AO035";
+            part {name: "elm.swallow.content";
+            type: RECT;
+                mouse_events: 1;
+                repeat_events: 1;
+                description {
+                    state: "default" 0.0;
+                    color: 0 0 0 0;
+                    visible: 0;
+                    rel1.relative: 0.0 0.0;
+                    rel2.relative: 1.0 1.0;
+                    align: 0.0 0.0;
                 }
             }
         }
         programs {
-            program { name: "on_mouse_down";
-                signal: "on_mouse_down";
-                source: "ui";
-                action: STATE_SET "selected" 0.0;
-                target: "image";
+            program {
+                name: "mouse,clicked";
+                signal: "mouse,down,1";
+                source: "elm.swallow.content";
+                action: SIGNAL_EMIT "elm,action,click" "";
             }
-            program { name: "on_mouse_up";
-                signal: "on_mouse_up";
-                source: "ui";
-                script {
-                    if (get_int(secret_mode))
-                        set_state(PART:"image", "selected", 0.0);
-                    else
-                        set_state(PART:"image", "default", 0.0);
+        }
+    }
+    group {
+        name: "elm/button/base/tab_incognitoButton";
+        images {
+            image: "tab_ic_incognito_nor.png" COMP;
+            image: "tab_ic_incognito_press.png" COMP;
+        }
+        parts {
+            part {
+                name: "incognito_btn_bg";
+                type: RECT;
+                scale: 1;
+                mouse_events: 1;
+                repeat_events: 0;
+                description {
+                    state: "default" 0.0;
+                    color: 0 0 0 0;
+                }
+                description {
+                    state: "highlight" 0.0;
+                    inherit: "default" 0.0;
+                    color: 0 0 0 26;
                 }
             }
-            program { name: "state_secret";
-                signal: "state_secret";
-                source: "ui";
-                script {
-                    set_int(secret_mode, 1);
-                    set_state(PART:"image", "selected", 0.0);
+            part {
+                name: "incognito_btn_ic";
+                type: IMAGE;
+                scale: 1;
+                mouse_events: 1;
+                repeat_events: 1;
+                description {
+                    state: "default" 0.0;
+                    align: 0.5 0.5;
+                    visible: 1;
+                    rel1 {
+                        to: "incognito_btn_bg";
+                        relative: 0.0 0.0;
+                    }
+                    rel2 {
+                        to: "incognito_btn_bg";
+                        relative: 1.0 1.0;
+                    }
+                    min: 49 49;
+                    max: 49 49;
+                    image.normal: "tab_ic_incognito_nor.png";
+                }
+                description {
+                    state: "highlight" 0.0;
+                    inherit: "default" 0.0;
+                    image.normal: "tab_ic_incognito_press.png";
                 }
             }
-            program { name: "state_normal";
-                signal: "state_normal";
-                source: "ui";
-                script {
-                    set_int(secret_mode, 0);
-                    set_state(PART:"image", "default", 0.0);
-                }
+        }
+        programs {
+            program {
+                name: "on_close_mouse_in";
+                signal: "mouse,in";
+                source: "incognito_btn_bg";
+                action: STATE_SET "highlight" 0.0;
+                target: "incognito_btn_bg";
+                target: "incognito_btn_ic";
+             }
+            program {
+                name: "on_close_mouse_out";
+                signal: "mouse,out";
+                source: "incognito_btn_bg";
+                action: STATE_SET "default" 0.0;
+                target: "incognito_btn_bg";
+                target: "incognito_btn_ic";
             }
         }
     }
 
-    group { name: "elm/gengrid/item/custom_tab_item/default";
-        styles {
-           style { name: "selected_text";
-              base: "font=Tizen:style=Regular font_size=36 color=#ffffff color_class=ATO015 text_class=ATO015 ellipsis=1.0";
-              tag:  "br" "\n";
-              tag:  "ps" "ps";
-              tag:  "tab" "\t";
-              tag:  "b" "+ font_weight=Bold";
-           }
-           style { name: "normal_text";
-              base: "font=Tizen:style=Regular font_size=36 color=#000000 color_class=ATO016 text_class=ATO016 ellipsis=1.0";
-              tag:  "br" "\n";
-              tag:  "ps" "ps";
-              tag:  "tab" "\t";
-              tag:  "b" "+ font_weight=Bold";
-           }
-        }
-        images.image: "internet_tabs_bg.#.png" COMP;
-        images.image: "internet_tabs_bg_ef.#.png" COMP;
-        images.image: "internet_tabs_bg_press.#.png" COMP;
-        images.image: "internet_tabs_img_mask.#.png" COMP;
-        data.item: "texts" "elm.text";
-        data.item: "contents" "elm.icon elm.button elm.thumbnail elm.overlay";
-        script {
-            public secret_mode = 0;
+    group {
+        name: "tab-layout";
+        data {
+            item: "highlight_focus" "off";
         }
         parts {
-            rect { "top_left_spacer"; scale;
-                description { "default";
-                    min: 11 0;
-                    max: 11 0;
-                    fixed: 1 1;
-                    align: 0 0;
-                    visible: 0;
-                }
-                description { "landscape";
-                    inherit: "default";
-                    min: 6 10;
-                    max: 6 10;
-                }
-            }
-            rect { "bottom_right_spacer"; scale;
-                description { "default";
-                    min: 11 21;
-                    max: 11 21;
-                    fixed: 1 1;
-                    align: 1 1;
-                    visible: 0;
-                }
-                description { "landscape";
-                    inherit: "default";
-                    min: 6 0;
-                    max: 6 0;
-                }
-            }
-            part { name: "bg";
+            part {
+                name: "main_bg";
+                type: RECT;
+                mouse_events: 1;
                 scale: 1;
-                type: IMAGE;
-                description { state: "default" 0.0;
-                    rel1 {
-                        to: "top_left_spacer";
-                        relative: 1 1;
-                    }
-                    rel2 {
-                        to: "bottom_right_spacer";
-                        relative: 0 0;
-                    }
-                    image.normal: "internet_tabs_bg.#.png";
-                    color_class: "AO025";
+                description {
+                    state: "default" 0.0;
+                    visible: 1;
+                    color: 244 244 244 255;
+                    rel1.relative: 0.0 0.0;
+                    rel2.relative: 1.0 1.0;
                 }
             }
-            rect { "top_bg"; scale;
-                description { "default";
-                    align: 0.5 0;
-                    min: 0 68;
-                    max: -1 68;
+            part {
+                name: "action_bar";
+                type: SWALLOW;
+                mouse_events: 1;
+                scale: 1;
+                description {
+                    state: "default" 0.0;
+                    visible: 1;
+                    align: 0.0 0.0;
+                    min: 0 108;
+                    max: -1 108;
                     fixed: 0 1;
                     rel1 {
-                        to: "top_left_spacer";
-                        relative: 1 1;
+                        relative: 0.0 0.0;
+                        to: "main_bg";
+                    }
+                }
+            }
+            part {
+                name: "top_bar";
+                type: SWALLOW;
+                mouse_events: 1;
+                scale: 1;
+                description {
+                    state: "default" 0.0;
+                    visible: 1;
+                    align: 0.0 0.0;
+                    min: 0 150;
+                    max: -1 150;
+                    fixed: 0 1;
+                    rel1 {
+                        relative: 0.0 1.0;
+                        to: "action_bar";
+                    }
+                }
+            }
+            part {
+                name: "tab_gengrid";
+                type: SWALLOW;
+                mouse_events: 1;
+                scale: 1;
+                description {
+                    state: "default" 0.0;
+                    visible: 1;
+                    align: 0.0 0.0;
+                    min: 0 0;
+                    max: -1 -1;
+                    rel1 {
+                        relative: 0.0 1.0;
+                        to: "top_bar";
                     }
                     rel2 {
-                        to: "bottom_right_spacer";
-                        relative: 0 0;
+                        relative: 1 0;
+                        to: "bottom_bar";
                     }
-                    color_class: "AO026";
-                }
-                description { "secret_default";
-                    inherit: "default";
-                    color_class: "tabs_secret_bg";
-                }
-                description { "selected";
-                    inherit: "default";
-                    color_class: "AO027";
-                }
-                description { "secret_selected";
-                    inherit: "default";
-                    color_class: "AO028";
                 }
             }
-            rect { "icon_spacer"; scale;
-                description { "default";
-                    min: 18 0;
-                    max: 18 0;
-                    align: 0 0;
-                    fixed: 1 1;
-                    visible: 0;
-                    rel1.to: "top_bg";
-                }
-            }
-            swallow { "elm.icon"; scale;
-                description { "default";
-                    min: 40 40;
-                    max: 40 40;
-                    align: 0.0 0.5;
-                    fixed: 1 1;
-                    rel1 {
-                        relative: 1.0 1.0;
-                        to: "icon_spacer";
-                    }
-                    rel2.to: "top_bg";
-                }
-            }
-            rect { "text_spacer_1"; scale;
-                description { "defalt";
-                    min: 70 8;
-                    max: 70 8;
-                    fixed: 1 1;
-                    align: 0 0;
-                    visible: 0;
-                    rel1.to: "top_bg";
-                }
-            }
-            rect { "text_spacer_2"; scale;
-                description { "defalt";
-                    min: 78 12;
-                    max: 78 12;
-                    fixed: 1 1;
-                    align: 1 1;
-                    visible: 0;
-                    rel2.to: "top_bg";
-                }
-            }
-            part { name: "elm.text";
-                type: TEXTBLOCK;
+            part {
+                name: "bottom_bar";
+                type: SWALLOW;
+                mouse_events: 1;
                 scale: 1;
-                description { state: "default" 0.0;
-                    min: 0 48;
+                description {
+                    state: "default" 0.0;
+                    visible: 1;
+                    align: 0.0 1;
+                    min: 0 121;
+                    max: -1 121;
+                    fixed: 0 1;
+                }
+            }
+        }
+    }
+    group {
+        name: "action_bar_layout";
+        images {
+            image: "navi_ic_stop.png" COMP;
+        }
+        parts{
+            part {
+                name: "header_bg";
+                scale: 1;
+                type: RECT;
+                description {
+                    state: "default" 0.0;
+                    color: 255 255 255 255;
+                    align: 0.0 0.0;
+                    min: 0 108;
+                    max: -1 108;
+                    fixed: 0 1;
+                    rel1.relative: 0.0 0.0;
+                    rel2.relative: 1.0 1.0;
+                }
+            }
+            part {
+                name: "close_button_spacer";
+                scale: 1;
+                type: SPACER;
+                description {
+                    state: "default" 0.0;
+                    min: 16 22;
+                    max: 16 22;
+                    align: 0.0 0.0;
+                }
+            }
+            part {
+                name: "close_button";
+                scale: 1;
+                mouse_events: 1;
+                type: RECT;
+                description {
+                    state: "default" 0.0;
+                    visible: 1;
+                    min: 64 64;
+                    max: 64 64;
+                    fixed: 1 1;
+                    color: 255 255 255 255;
                     align: 0.0 0.0;
                     rel1 {
-                        relative: 1 1;
-                        to: "text_spacer_1";
+                        relative: 1.0 1.0;
+                        to: "close_button_spacer";
                     }
-                    rel2 {
-                        relative: 0 0;
-                        to: "text_spacer_2";
-                    }
-                    text.style: "normal_text";
-                    text.min: 0 1;
-                    text.align: 0 0.5;
                 }
-                description { state: "selected" 0.0;
-                    inherit: "default";
-                    text.style: "selected_text";
+                description {
+                    state: "highlight" 0.0;
+                    inherit: "default" 0.0;
+                    color: 224 237 251 255;
+                    visible: 1;
+                }
+                description {
+                    state: "focus" 0.0;
+                    inherit: "default" 0.0;
+                    color: 224 237 251 255;
+                    visible: 1;
                 }
             }
-            rect { "button_spacer"; scale;
-                description { "default";
-                    min: 6 0;
-                    max: 6 0;
-                    align: 1 1;
-                    visible: 0;
-                    rel2.to: "top_bg";
-                }
-            }
-            rect { "top_left_thumbnail_spacer"; scale;
-                description { "default";
-                    min: 5 1;
-                    max: 5 1;
+            part {
+                name: "close_icon";
+                type: IMAGE;
+                mouse_events: 1;
+                repeat_events: 1;
+                scale: 1;
+                description {
+                    state: "default" 0.0;
+                    visible: 1;
                     fixed: 1 1;
                     align: 0 0;
-                    visible: 0;
+                    min: 64 64;
+                    max: 64 64;
                     rel1 {
-                        to: "top_bg";
-                        relative: 0 1;
-                    }
-                }
-            }
-            rect { "bottom_right_thumbnail_spacer"; scale;
-                description { "default";
-                    min: 5 6;
-                    max: 5 6;
-                    fixed: 1 1;
-                    align: 1 1;
-                    visible: 0;
-                    rel2.to: "bg";
-                }
-            }
-            part { name: "image_mask";
-                type: IMAGE;
-                scale: 1;
-                description { state: "default" 0.0;
-                    align: 0.5 0.0;
-                    rel1.to: "bg";
-                    rel2.to: "bg";
-                    visible: 1;
-                    image.normal: "internet_tabs_img_mask.#.png";
-                }
-                description { state: "secret" 0.0;
-                    inherit: "default";
-                    color_class: "AO033";
-                }
-            }
-            swallow { "elm.thumbnail"; scale;
-                description { "default";
-                    rel1 {
-                        relative: 1 1;
-                        to: "top_left_thumbnail_spacer";
+                        relative: 0.0 0.0;
+                        to: "close_button";
                     }
                     rel2 {
-                        to: "bottom_right_thumbnail_spacer";
-                        relative: 0 0;
+                        relative: 1.0 1.0;
+                        to: "close_button";
+                    }
+                    image.normal: "navi_ic_stop.png";
+                }
+            }
+            part {
+                name: "close_click";
+                type: SWALLOW;
+                mouse_events: 1;
+                repeat_events: 1;
+                scale: 1;
+                description {
+                    state: "default" 0.0;
+                    visible: 1;
+                    align: 0.0 0.0;
+                    rel1 {
+                        relative: 0.0 0.0;
+                        to: "close_button";
+                    }
+                    rel2{
+                        relative: 1.0 1.0;
+                        to: "close_button";
                     }
                 }
             }
-            part { name: "bg_effect";
+            part {
+                name: "title_txt";
                 scale: 1;
-                type: IMAGE;
-                description { state: "default" 0.0;
-                    rel1.to: "bg";
-                    rel2.to: "bg";
-                    image.normal: "internet_tabs_bg_ef.#.png";
-                }
-            }
-            part { name: "press_effect";
-                scale: 1;
-                type: IMAGE;
-                description { state: "default" 0.0;
-                    visible: 0;
-                    align: 0.5 0.0;
-                    rel1.to: "bg";
-                    rel2.to: "bg";
-                    image.normal: "internet_tabs_bg_press.#.png";
-                    color_class: "AO025P";
-                }
-                description { state: "selected"; 0.0;
-                    inherit: "default";
+                type: TEXT;
+                description {
+                    state: "default" 0.0;
                     visible: 1;
+                    fixed: 1 1;
+                    color: 51 51 51 255;
+                    text {
+                        text: "Tab Manager";
+                        align: 0.5 0.5;
+                        font: "Sans";
+                        size: 45;
+                    }
+                    rel1 {
+                        relative: 0.0 0.0;
+                        to: "header_bg";
+                    }
+                    rel2 {
+                        relative: 1.0 1.0;
+                        to: "header_bg";
+                    }
                 }
             }
-            swallow { "elm.overlay"; scale;
-                mouse_events: 1;
-                description { "default";
+        }
+        programs{
+           program {
+                name: "on_close_mouse_in";
+                signal: "mouse,in";
+                source: "close_button";
+                action: STATE_SET "highlight" 0.0;
+                target: "close_button";
+             }
+            program {
+                name: "on_close_mouse_out";
+                signal: "mouse,out";
+                source: "close_button";
+                action: STATE_SET "default" 0.0;
+                target: "close_button";
+            }
+        }
+    }
+    group {
+        name: "top_buttons_layout";
+        parts{
+            part {
+                name: "tab_buttons_bg";
+                scale: 1;
+                type: RECT;
+                description {
+                    state: "default" 0.0;
+                    min: 0 150;
+                    max: -1 150;
+                    fixed: 0 1;
+                    visible: 1;
+                    color: 244 244 244 255;
+                    rel1.relative: 0.0 0.0;
+                    rel2.relative: 1.0 1.0;
                 }
             }
-            swallow { "elm.button"; scale;
+            rect {
+                name: "buttons_bg";
+                scale: 1;
+                description {
+                    state: "default" 0.0;
+                    min: 656 0;
+                    max: 656 -1;
+                    fixed: 1 0;
+                    align: 0.5 0;
+                    visible: 0;
+                    rel1.to: "tab_buttons_bg";
+                    rel2.to: "tab_buttons_bg";
+                }
+            }
+            part {
+                name: "opened_tab_border_spacer";
+                scale: 1;
+                type: SPACER;
+                description {
+                    state: "default" 0.0;
+                    min: 0 43;
+                    max: 0 43;
+                    fixed: 1 1;
+                    align: 0.0 0.0;
+                    rel1 {
+                        relative: 0.0 0.0;
+                        to: "buttons_bg";
+                    }
+                }
+            }
+            part {
+                name: "opened_tab_border";
+                scale: 1;
                 mouse_events: 1;
-                repeat_events: 0;
-                description { "default";
-                    min: 60 60;
-                    max: 60 60;
-                    align: 1 0.5;
-                    rel1.to: "top_bg";
-                    rel2.to: "button_spacer";
+                type: RECT;
+                description {
+                    state: "default" 0.0;
+                    min: 327 68;
+                    max: 327 68;
+                    visible: 1;
+                    color: 51 51 15 102;
+                    align: (1 - ON_OTHER_DEVICE)/2 0.0;
+                    rel1 {
+                        relative: 1.0 1.0;
+                        to: "opened_tab_border_spacer";
+                    }
+                    rel2 {
+                        relative: 1.0 1.0;
+                        to: "buttons_bg";
+                    }
+                }
+                description {
+                    state: "selected" 0.0;
+                    inherit: "default" 0.0;
+                    color: 56 154 233 255;
+                }
+            }
+            part {
+                name: "openedtabs_click";
+                type: SWALLOW;
+                mouse_events: 1;
+                repeat_events: 1;
+                scale: 1;
+                description {
+                    state: "default" 0.0;
+                    visible: 1;
+                    align: 0.0 0.0;
+                    rel1 {
+                        relative: 0.0 0.0;
+                        to: "opened_tab_border";
+                    }
+                    rel2{
+                        relative: 1.0 1.0;
+                        to: "opened_tab_border";
+                    }
+                }
+            }
+            part {
+                name: "opened_tab_button_spacer";
+                type: SPACER;
+                scale: 1;
+                mouse_events: 1;
+                repeat_events: 1;
+                description {
+                    state: "default" 0.0;
+                    min: 2 2;
+                    max: 2 2;
+                    align: 0.0 0.0;
+                    rel1 {
+                        relative: 0.0 0.0;
+                        to: "opened_tab_border";
+                    }
+                }
+            }
+            part {
+                name: "opened_tab_button";
+                scale: 1;
+                mouse_events: 1;
+                repeat_events: 1;
+                type: RECT;
+                description {
+                    state: "default" 0.0;
+                    min: 325 64;
+                    max: 325 64;
+                    align: 0.0 0.0;
+                    visible: 1;
+                    color: 244 244 244 255;
+                    rel1 {
+                        relative: 1.0 1.0;
+                        to: "opened_tab_button_spacer";
+                    }
+                }
+                description {
+                    state: "highlight" 0.0;
+                    inherit: "default" 0.0;
+                    color: 224 237 251 255;
+                }
+            }
+            part {
+                name: "opened_tab_txt";
+                scale: 1;
+                mouse_events: 1;
+                repeat_events: 1;
+                type: TEXT;
+                description {
+                    state: "default" 0.0;
+                    visible: 1;
+                    fixed: 1 1;
+                    color: 51 51 51 255;
+                    text {
+                        text: "Opened Tab";
+                        align: 0.5 0.5;
+                        font: "Sans";
+                        size: 34;
+                    }
+                    rel1 {
+                        relative: 0.0 0.0;
+                        to: "opened_tab_button";
+                    }
+                    rel2 {
+                        relative: 1.0 1.0;
+                        to: "opened_tab_button";
+                    }
+                }
+                description {
+                    state: "selected" 0.0;
+                    inherit: "default" 0.0;
+                    color: 56 154 233 255;
+                }
+            }
+            part {
+                name: "button_separator";
+                scale: 1;
+                type: RECT;
+                description {
+                    state: "default" 0.0;
+                    visible: 0;
+                    min: 2 68;
+                    max: 2 68;
+                    color: 56 154 233 255;
+                    align: 0.0 0.0;
+                    rel1 {
+                        relative: ON_OTHER_DEVICE 0.0;
+                        to: "opened_tab_border";
+                    }
+                }
+            }
+            part {
+                name: "other_dev_border";
+                scale: 1;
+                mouse_events: 1;
+                type: RECT;
+                description {
+                    state: "default" 0.0;
+                    min: 327 68;
+                    max: 327 68;
+                    visible: ON_OTHER_DEVICE;
+                    color: 51 51 15 102;
+                    align: 0.0 0.0;
+                    rel1 {
+                        relative: 1.0 0.0;
+                        to: "button_separator";
+                    }
+                }
+                description {
+                    state: "selected" 0.0;
+                    inherit: "default" 0.0;
+                    color: 56 154 233 255;
+                }
+            }
+            part {
+                name: "onotherdevices_click";
+                type: SWALLOW;
+                mouse_events: 1;
+                repeat_events: 1;
+                scale: 1;
+                description {
+                    state: "default" 0.0;
+                    visible: ON_OTHER_DEVICE;
+                    align: 0.0 0.0;
+                    rel1 {
+                        relative: 0.0 0.0;
+                        to: "other_dev_border";
+                    }
+                    rel2{
+                        relative: 1.0 1.0;
+                        to: "other_dev_border";
+                    }
+                }
+            }
+            part {
+                name: "other_dev_button_spacer";
+                type: SPACER;
+                scale: 1;
+                mouse_events: 1;
+                repeat_events: 1;
+                description {
+                    state: "default" 0.0;
+                    min: 0 2;
+                    max: 0 2;
+                    align: 0.0 0.0;
+                    rel1 {
+                        relative: 0.0 0.0;
+                        to: "other_dev_border";
+                    }
+                }
+            }
+            part {
+                name: "other_dev_button";
+                scale: 1;
+                mouse_events: 1;
+                repeat_events: 1;
+                type: RECT;
+                description {
+                    state: "default" 0.0;
+                    min: 325 64;
+                    max: 325 64;
+                    align: 0.0 0.0;
+                    visible: ON_OTHER_DEVICE;
+                    color: 244 244 244 255;
+                    rel1 {
+                        relative: 1.0 1.0;
+                        to: "other_dev_button_spacer";
+                    }
+                }
+                description {
+                    state: "highlight" 0.0;
+                    inherit: "default" 0.0;
+                    color: 224 237 251 255;
+                }
+            }
+            part {
+                name: "other_dev_txt";
+                scale: 1;
+                mouse_events: 1;
+                repeat_events: 1;
+                type: TEXT;
+                description {
+                    state: "default" 0.0;
+                    visible: ON_OTHER_DEVICE;
+                    fixed: 1 1;
+                    color: 51 51 51 255;
+                    text {
+                        text: "On Other Devices";
+                        align: 0.5 0.5;
+                        font: "Sans";
+                        size: 34;
+                    }
+                    rel1 {
+                        relative: 0.0 0.0;
+                        to: "other_dev_button";
+                    }
+                    rel2 {
+                        relative: 1.0 1.0;
+                        to: "other_dev_button";
+                    }
+                }
+                description {
+                    state: "selected" 0.0;
+                    inherit: "default" 0.0;
+                    color: 56 154 233 255;
+                }
+            }
+        }
+        programs{
+           program {
+                name: "on_opened_tab_mouse_in";
+                signal: "mouse,in";
+                source: "opened_tab_border";
+                action: STATE_SET "highlight" 0.0;
+                target: "opened_tab_button";
+             }
+            program {
+                name: "on_opened_tab_mouse_out";
+                signal: "mouse,out";
+                source: "opened_tab_border";
+                action: STATE_SET "default" 0.0;
+                target: "opened_tab_button";
+            }
+            program {
+                name: "on_opened_tab_selected";
+                signal: "mouse,clicked,1";
+                source: "opened_tab_border";
+                action: STATE_SET "selected" 0.0;
+                target: "opened_tab_border";
+                target: "opened_tab_txt";
+            }
+            program {
+                name: "on_opened_tab_unselected";
+                signal: "mouse,clicked,1";
+                source: "other_dev_border";
+                action: STATE_SET "default" 0.0;
+                target: "opened_tab_border";
+                target: "opened_tab_txt";
+            }
+            program {
+                name: "on_other_dev_mouse_in";
+                signal: "mouse,in";
+                source: "other_dev_border";
+                action: STATE_SET "highlight" 0.0;
+                target: "other_dev_button";
+             }
+            program {
+                name: "on_other_dev_mouse_out";
+                signal: "mouse,out";
+                source: "other_dev_border";
+                action: STATE_SET "default" 0.0;
+                target: "other_dev_button";
+            }
+            program {
+                name: "on_other_dev_selected";
+                signal: "mouse,clicked,1";
+                source: "other_dev_border";
+                action: STATE_SET "selected" 0.0;
+                target: "other_dev_border";
+                target: "other_dev_txt";
+            }
+            program {
+                name: "on_other_dev_unselected";
+                signal: "mouse,clicked,1";
+                source: "opened_tab_border";
+                action: STATE_SET "default" 0.0;
+                target: "other_dev_border";
+                target: "other_dev_txt";
+            }
+        }
+    }
+    group {
+        name: "gengrid_layout";
+        parts {
+            part {
+                name: "tab_gengrid_bg";
+                scale: 1;
+                type: RECT;
+                description {
+                    state: "default" 0.0;
+                    min: 0 0;
+                    max: -1 -1;
+                    fixed: 0 0;
+                    visible: 1;
+                    color: 244 244 244 255;
+                    align: 0.0 0.0;
+                }
+            }
+            part {
+                name: "gengrid_spacer_0";
+                scale: 1;
+                type: SPACER;
+                description {
+                    state: "default" 0.0;
+                    min: 32-9 4;
+                    max: 32-9 4;
+                    fixed: 1 1;
+                    align: 0.0 0.0;
+                    rel1 {
+                        to: "tab_gengrid_bg";
+                        relative: 0.0 0.0;
+                    }
+                }
+                description {
+                    state: "landscape" 0.0;
+                    inherit: "default";
+                    min: 33-9 4;
+                    max: 33-9 4;
+                }
+            }
+            part {
+                name: "gengrid_spacer_1";
+                scale: 1;
+                type: SPACER;
+                description {
+                    state: "default" 0.0;
+                    min: 32-9 0;
+                    max: 32-9 0;
+                    align: 1 1;
+                    rel1 {
+                        to: "tab_gengrid_bg";
+                        relative: 0.0 0.0;
+                    }
+                    rel2 {
+                        to: "tab_gengrid_bg";
+                        relative: 1.0 1.0;
+                    }
+                }
+                description {
+                    state: "landscape" 0.0;
+                    inherit: "default";
+                    min: 33-9 0;
+                    max: 33-9 0;
+                }
+            }
+            part {
+                name: "gengrid_swallow";
+                type: SWALLOW;
+                mouse_events: 1;
+                scale: 1;
+                description {
+                    state: "default" 0.0;
+                    visible: 1;
+                    align: 0.0 0.0;
+                    min: 0 0;
+                    max: -1 -1;
+                    fixed: 0 0;
+                    rel1 {
+                        relative: 1.0 1.0;
+                        to: "gengrid_spacer_0";
+                    }
+                    rel2 {
+                        relative: 0 0;
+                        to: "gengrid_spacer_1";
+                    }
+                }
+                description {
+                    state: "hidden" 0.0;
+                    inherit: "default" 0.0;
+                    visible: 0;
+                }
+                description {
+                    state: "visible" 0.0;
+                    inherit: "default" 0.0;
+                    visible: 1;
                 }
             }
         }
         programs {
-            program { name: "state_landscape";
-                signal: "state_landscape";
+            program {
+                name: "switch_landscape";
+                signal: "switch_landscape";
                 source: "ui";
                 action: STATE_SET "landscape" 0.0;
-                target: "top_left_spacer";
-                target: "bottom_right_spacer";
+                target: "gengrid_spacer_0";
+                target: "gengrid_spacer_1";
             }
-            program { name: "state_default";
-                signal: "state_default";
+            program {
+                name: "switch_vertical";
+                signal: "switch_vertical";
                 source: "ui";
                 action: STATE_SET "default" 0.0;
-                target: "top_left_spacer";
-                target: "bottom_right_spacer";
+                target: "gengrid_spacer_0";
+                target: "gengrid_spacer_1";
             }
-            program { name: "selected";
-                signal: "elm,state,selected";
-                source: "elm";
-                script {
-                    if (get_int(secret_mode))
-                        set_state(PART:"top_bg", "secret_selected", 0.0);
-                    else
-                        set_state(PART:"top_bg", "selected", 0.0);
-                    set_state(PART:"elm.text", "selected", 0.0);
+        }
+    }
+    group {
+        name: "elm/gengrid/item/tab_item/default";
+        data.item: "texts" "tab_title";
+        data.item: "contents" "tab_thumbnail tab_selectedButton tab_thumbButton tab_incognitoButton";
+        images {
+            image: "tab_ic_close_nor.png" COMP;
+            image: "tab_ic_close_press.png" COMP;
+        }
+        parts {
+            rect {
+                name: "bg_spacer_0";
+                scale: 1;
+                description {
+                    state: "default" 0.0;
+                    min: 9 0;
+                    max: 9 0;
+                    align: 0 0;
+                    fixed: 1 1;
+                    visible: 0;
+                    color: 255 255 255 127;
                 }
             }
-            program { name: "unselected";
-                signal: "elm,state,unselected";
-                source: "elm";
-                script {
-                    if (get_int(secret_mode)) {
-                        set_state(PART:"elm.text", "selected", 0.0);
-                        set_state(PART:"top_bg", "secret_default", 0.0);
-                    } else {
-                        set_state(PART:"elm.text", "default", 0.0);
-                        set_state(PART:"top_bg", "default", 0.0);
+            rect {
+                name: "bg_spacer_1";
+                scale: 1;
+                description {
+                    state: "default" 0.0;
+                    min: 9 9;
+                    max: 9 9;
+                    align: 1 1;
+                    fixed: 1 1;
+                    visible: 0;
+                    color: 255 255 255 127;
+                }
+            }
+            rect {
+                name: "bg";
+                scale: 1;
+                description {
+                    state: "default" 0.0;
+                    min: 0 0;
+                    max: -1 -1;
+                    fixed: 0 0;
+                    visible: 1;
+                    color: 244 244 244 255;
+                    rel1 {
+                        relative: 1 1;
+                        to: "bg_spacer_0";
+                    }
+                    rel2 {
+                        relative: 0 0;
+                        to: "bg_spacer_1";
+                    }
+                }
+                description {
+                    state: "selected";
+                    inherit: "default" 0.0;
+                    color: 70 143 254 255;
+                }
+            }
+            part {
+                name: "tab_thumbnail_border";
+                type: RECT;
+                scale: 1;
+                mouse_events: 1;
+                description {
+                    state: "default" 0.0;
+                    min: 0 0;
+                    max: -1 -1;
+                    fixed: 0 0;
+                    color: 0 0 0 38;
+                    align: 0.0 0.0;
+                    rel1 {
+                        to: "bg";
+                        relative: 0 0;
+                    }
+                    rel2 {
+                        to: "bg";
+                        relative: 1 1;
                     }
                 }
             }
-            program { name: "state_secret";
-                signal: "state_secret";
-                source: "ui";
-                script {
-                    set_int(secret_mode, 1);
-                    set_state(PART:"elm.text", "selected", 0.0);
-                    set_state(PART:"top_bg", "secret_default", 0.0);
-                    set_state(PART:"image_mask", "secret", 0.0);
+            part {
+                name: "border_spacer_0";
+                type: SPACER;
+                scale: 1;
+                description {
+                    state: "default" 0.0;
+                    align: 0.0 0.0;
+                    min: 1 1;
+                    max: 1 1;
+                    fixed: 1 1;
+                    rel1 {
+                        to: "tab_thumbnail_border";
+                        relative: 0.0 0.0;
+                    }
                 }
             }
-            program { name: "state_normal";
-                signal: "state_normal";
-                source: "ui";
-                script {
-                    set_int(secret_mode, 0);
-                    set_state(PART:"elm.text", "default", 0.0);
-                    set_state(PART:"top_bg", "default", 0.0);
-                    set_state(PART:"image_mask", "default", 0.0);
+            part {
+                name: "border_spacer_1";
+                type: SPACER;
+                scale: 1;
+                description {
+                    state: "default" 0.0;
+                    align: 1 1;
+                    min: 1 1;
+                    max: 1 1;
+                    fixed: 1 1;
+                    rel2 {
+                        to: "tab_thumbnail_border";
+                        relative: 1 1;
+                    }
                 }
+            }
+            part {
+                name: "tab_thumbnail_bg";
+                type: RECT;
+                mouse_events: 1;
+                repeat_events: 1;
+                scale: 1;
+                description {
+                    state: "default" 0.0;
+                    align: 0.0 0.0;
+                    min: 0 0;
+                    max: -1 -1;
+                    fixed: 0 0;
+                    color: 255 255 255 255;
+                    rel1 {
+                        relative: 1.0 1.0;
+                        to: "border_spacer_0";
+                    }
+                    rel2 {
+                        relative: 1 0;
+                        to: "title_bg";
+                    }
+                }
+                description {
+                    state: "selected";
+                    inherit: "default" 0.0;
+                }
+            }
+            part {
+                name: "tab_thumbnail";
+                type: SWALLOW;
+                mouse_events: 1;
+                repeat_events: 1;
+                scale: 1;
+                description {
+                    state: "default" 0.0;
+                    align: 0.0 0.0;
+                    min: 0 0;
+                    max: -1 -1;
+                    fixed: 0 0;
+                    rel1 {
+                        relative: 0.0 0.0;
+                        to: "tab_thumbnail_bg";
+                    }
+                    rel2 {
+                        relative: 1.0 1.0;
+                        to: "tab_thumbnail_bg";
+                    }
+                }
+                description {
+                    state: "selected";
+                    inherit: "default" 0.0;
+                }
+            }
+            part {
+                name: "title_bg";
+                type: RECT;
+                scale: 1;
+                mouse_events: 1;
+                repeat_events: 1;
+                description {
+                    state: "default" 0.0;
+                    min: 0 99;
+                    max: -1 99;
+                    align: 0 1;
+                    color: 213 231 231 255;
+                    rel1 {
+                        to: "border_spacer_0";
+                        relative: 1 1;
+                    }
+                    rel2 {
+                        to: "border_spacer_1";
+                        relative: 0 0;
+                    }
+                }
+            }
+            part {
+                name: "title_spacer_0";
+                type: SPACER;
+                scale: 1;
+                description {
+                    state: "default" 0.0 0.0;
+                    min: 35 27;
+                    max: 35 27;
+                    align: 0.0 0.0;
+                    fixed: 1 1;
+                    rel1 {
+                        to: "title_bg";
+                        relative: 0 0;
+                    }
+                }
+            }
+            part {
+                name: "title_spacer_1";
+                type: SPACER;
+                scale: 1;
+                description {
+                    state: "default" 0.0 0.0;
+                    min: 35 0;
+                    max: 35 0;
+                    align: 1 1;
+                    fixed: 1 1;
+                    rel1 {
+                        to: "title_bg";
+                        relative: 1 1;
+                    }
+                }
+            }
+            part {
+                name: "tab_title";
+                type: TEXT;
+                scale: 1;
+                description {
+                    state: "default" 0.0;
+                    fixed: 1 1;
+                    align: 0.0 0.0;
+                    color: 255 255 255 255;
+                    visible: 1;
+                    rel1 {
+                        to: "title_spacer_0";
+                        relative: 1 1;
+                    }
+                    rel2 {
+                        to: "title_spacer_1";
+                        relative: 0 0;
+                    }
+
+                    text {
+                        text: "Web page title";
+                        font: "Sans";
+                        size: 34;
+                        align: 0.0 0.0;
+                    }
+                }
+                description {
+                    // State for white bg. Ready for future features
+                    state: "highlight" 0.0;
+                    inherit: "default" 0.0;
+                    color: 51 51 51 255;
+                }
+            }
+            part {
+                name: "tab_selectedButton";
+                scale: 1;
+                type: SWALLOW;
+                mouse_events: 1;
+                repeat_events: 1;
+                description {
+                    state: "default" 0.0;
+                    rel1 {
+                        to: "tab_thumbnail_border";
+                        relative: 0.0 0.0;
+                    }
+                    rel2 {
+                        to: "tab_thumbnail_border";
+                        relative: 1.0 1.0;
+                    }
+                }
+            }
+            part {
+                name: "close_btn_bg";
+                type: RECT;
+                scale: 1;
+                mouse_events: 1;
+                repeat_events: 0;
+                description {
+                    state: "default" 0.0;
+                    align: 1.0 0.0;
+                    rel1.to: "tab_thumbnail_bg";
+                    rel2 {
+                        relative: 1 0;
+                        to: "title_bg";
+                    }
+                    min: 81 81;
+                    max: 81 81;
+                    color: 0 0 0 0;
+                }
+                description {
+                    state: "highlight" 0.0;
+                    inherit: "default" 0.0;
+                    color: 0 0 0 26;
+                }
+            }
+            part {
+                name: "close_btn_ic";
+                type: IMAGE;
+                scale: 1;
+                mouse_events: 1;
+                repeat_events: 1;
+                description {
+                    state: "default" 0.0;
+                    align: 0.5 0.5;
+                    visible: 1;
+                    rel1 {
+                        to: "close_btn_bg";
+                        relative: 0.0 0.0;
+                    }
+                    rel2 {
+                        to: "close_btn_bg";
+                        relative: 1.0 1.0;
+                    }
+                    min: 49 49;
+                    max: 49 49;
+                    image.normal: "tab_ic_close_nor.png";
+                }
+                description {
+                    state: "highlight" 0.0;
+                    inherit: "default" 0.0;
+                    image.normal: "tab_ic_close_press.png";
+                }
+            }
+            part {
+                name: "tab_thumbButton";
+                type: SWALLOW;
+                scale: 1;
+                mouse_events: 1;
+                repeat_events: 1;
+                description {
+                    state: "default" 0.0;
+                    rel1 {
+                        to: "close_btn_bg";
+                        relative: 0.0 0.0;
+                    }
+                    rel2 {
+                        to: "close_btn_bg";
+                        relative: 1.0 1.0;
+                    }
+                }
+            }
+            part {
+                name: "tab_incognitoButton";
+                type: SWALLOW;
+                scale: 1;
+                mouse_events: 1;
+                repeat_events: 1;
+                description {
+                    state: "default" 0.0;
+                    align: 0.0 0.0;
+                    rel1.to: "tab_thumbnail_bg";
+                    min: 81 81;
+                    max: 81 81;
+                }
+            }
+        }
+        programs {
+            program {
+                name: "on_close_mouse_in";
+                signal: "mouse,in";
+                source: "close_btn_bg";
+                action: STATE_SET "highlight" 0.0;
+                target: "close_btn_bg";
+                target: "close_btn_ic";
+             }
+            program {
+                name: "on_close_mouse_out";
+                signal: "mouse,out";
+                source: "close_btn_bg";
+                action: STATE_SET "default" 0.0;
+                target: "close_btn_bg";
+                target: "close_btn_ic";
             }
         }
     }

@@ -32,17 +32,15 @@ class HistoryDaysListManager
 {
 public:
     virtual ~HistoryDaysListManager() {}
-    virtual Evas_Object* createDaysList(Evas_Object* parentLayout, bool isRemoveMode) = 0;
-    virtual void addHistoryItems(const std::shared_ptr<services::HistoryItemVector>& items, HistoryPeriod period) = 0;
+    virtual Evas_Object* createDaysList(Evas_Object* parentLayout) = 0;
+    virtual void addHistoryItems(
+            const std::map<std::string, services::HistoryItemVector>&,
+            HistoryPeriod period) = 0;
     // clear everything including efl objects (result: empty list)
     virtual void clear() = 0;
     virtual void setFocusChain(Evas_Object* obj) = 0;
-    virtual void removeSelectedItems() = 0;
-    virtual bool isSelectAllChecked() const = 0;
     boost::signals2::signal<void (std::string url, std::string title)> signalHistoryItemClicked;
-    boost::signals2::signal<void (int)> signalDeleteHistoryItems;
-    boost::signals2::signal<void (bool)> setRightButtonEnabledForHistory;
-    boost::signals2::signal<void (int)> setSelectedItemsCount;
+    boost::signals2::signal<void (std::shared_ptr<const std::vector<int>> itemIds)> signalDeleteHistoryItems;
 };
 
 }

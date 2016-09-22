@@ -1,8 +1,14 @@
 msgid "IDS_BR_POP_NETWORK_ERROR"
 msgstr "حدث خطأ في الشبكة."
 
+msgid "IDS_BR_BODY_AUTHUSERNAME"
+msgstr "اسم المستخدم"
+
 msgid "IDS_BR_BODY_DESTINATIONS_AUTHENTICATION_REQUIRED"
 msgstr "مطلوب التوثيق."
+
+msgid "IDS_BR_BODY_AUTHPASSWORD"
+msgstr "كلمة المرور"
 
 msgid "IDS_BR_HEADER_SECURITY_WARNING"
 msgstr "تحذير الأمان"
@@ -27,6 +33,12 @@ msgstr "توجد مشاكل في شهادة الأمان الخاصة بهذا �
 
 msgid "IDS_BR_OPT_ALLOW"
 msgstr "السماح"
+
+msgid "IDS_BR_OPT_VIEW"
+msgstr "عرض"
+
+msgid "IDS_BR_OPT_CANCEL"
+msgstr "إلغاء"
 
 msgid "IDS_BR_BODY_PS_REQUESTS_YOUR_LOCATION"
 msgstr "يطالب %s بتحديد موقعك."
@@ -60,18 +72,6 @@ msgstr "تنزيل"
 
 msgid "IDS_BR_BODY_THIS_WEBPAGE"
 msgstr "صفحة الويب هذه"
-
-msgid "IDS_BR_BODY_AUTHUSERNAME"
-msgstr "اسم المستخدم"
-
-msgid "IDS_BR_BODY_AUTHPASSWORD"
-msgstr "كلمة المرور"
-
-msgid "IDS_BR_OPT_VIEW"
-msgstr "عرض"
-
-msgid "IDS_BR_OPT_CANCEL"
-msgstr "إلغاء"
 
 msgid "IDS_BR_OPT_SCREEN"
 msgstr "الشاشة"
@@ -109,6 +109,15 @@ msgstr "إلغاء"
 msgid "IDS_BR_BUTTON_MORE"
 msgstr "المزيد"
 
+msgid "IDS_TPLATFORM_ACBUTTON_DONE_ABB"
+msgstr "تم"
+
+msgid "IDS_TPLATFORM_ACBUTTON_CANCEL_ABB"
+msgstr "إلغاء"
+
+msgid "IDS_TPLATFORM_ACBUTTON_DELETE_ABB"
+msgstr "حذف"
+
 msgid "IDS_BR_BODY_NO_ITEMS"
 msgstr "لا توجد عناصر"
 
@@ -117,6 +126,9 @@ msgstr "الاتصال بشبكة المحمول"
 
 msgid "IDS_BR_OPT_DO_NOT_SHOW_AGAIN"
 msgstr "عدم العرض مرة أخرى"
+
+msgid "IDS_BR_SK_OK"
+msgstr "موافق"
 
 msgid "IDS_BR_POP_ONLY_HTTP_OR_HTTPS_URLS_CAN_BE_DOWNLOADED"
 msgstr "يمكن تنزيل عناوين URL التي تبدأ بالمقطع http أو https فقط."
@@ -128,7 +140,7 @@ msgid "IDS_BR_OPT_VIEW_IMAGE"
 msgstr "عرض الصور"
 
 msgid "IDS_BR_OPT_SAVE_LINK"
-msgstr "حفظ الرابط"
+msgstr "حفظ الارتباط"
 
 msgid "IDS_BR_OPT_SAVE_IMAGE"
 msgstr "حفظ الصورة"
@@ -139,11 +151,17 @@ msgstr "نسخ الرابط"
 msgid "IDS_BR_OPT_COPY_IMAGE"
 msgstr "نسخ الصورة"
 
-msgid "IDS_BR_SK_OK"
-msgstr "موافق"
-
 msgid "IDS_BR_OPT_CALL"
 msgstr "اتصال"
+
+msgid "IDS_ST_POP_PS_HAS_BEEN_DETECTED"
+msgstr "تم اكتشاف %s"
+
+msgid "IDS_ST_POP_DETECTED_IN_C_PS"
+msgstr "تم الاكتشاف في: %s"
+
+msgid "IDS_ST_HEADER_MALWARE_DETECTED_ABB"
+msgstr "تم اكتشاف برنامج ضار"
 
 msgid "IDS_BR_BUTTON_FAILED"
 msgstr "فشل"
@@ -211,11 +229,35 @@ msgstr "إلغاء التحديد"
 msgid "IDS_BR_SK_TABS"
 msgstr "علامات تبويب"
 
+msgid "IDS_BR_SK_SAVE_LITE"
+msgstr "حفظ"
+
+msgid "IDS_BR_SK_SAVE_ABB"
+msgstr "حفظ"
+
+msgid "IDS_BR_SK_SAVE"
+msgstr "حفظ"
+
+msgid "IDS_BR_SK_PREVIOUS"
+msgstr "السابق"
+
+msgid "IDS_BR_SK_NEXT"
+msgstr "التالي"
+
 msgid "IDS_BR_SK_MENU"
 msgstr "القائمة"
 
 msgid "IDS_BR_SK_DELETE_ABB"
 msgstr "مسح"
+
+msgid "IDS_BR_SK_DELETE"
+msgstr "مسح"
+
+msgid "IDS_BR_SK_CLEAR"
+msgstr "مسح"
+
+msgid "IDS_BR_SK_BACK"
+msgstr "رجوع"
 
 msgid "IDS_BR_SK3_CREATE_FOLDER"
 msgstr "إنشاء مجلد"
@@ -233,19 +275,19 @@ msgid "IDS_BR_SBODY_SET_TEXT_USED_TO_FILL_IN_ONLINE_FORMS_ABB"
 msgstr "قم بضبط النص المستخدم لملء النماذج على الإنترنت."
 
 msgid "IDS_BR_SBODY_SET_ADVANCED_SETTINGS_FOR_INDIVIDUAL_WEBSITES"
-msgstr "تعيين الضبط المتقدم لمواقع ويب الفردية."
+msgstr "تعيين الضبط المتقدم لمواقع ويب الفردية"
 
 msgid "IDS_BR_SBODY_REMEMBER_DATA_TYPED_IN_FORMS_FOR_LATER_USE"
 msgstr "تذكر البيانات التي تم إدخالها في النماذج لاستخدامها لاحقًا"
 
 msgid "IDS_BR_SBODY_PREDICT_RELATED_QUERIES_AND_POPULAR_SITES_IN_THE_NAVIGATION_BAR_AS_YOU_TYPE"
-msgstr "توقع الاستعلامات ذات الصلة ومواقع الويب الأكثر شهرة في شريط التنقل أثناء الكتابة."
+msgstr "توقع الاستعلامات ذات الصلة ومواقع الويب الأكثر شهرة في شريط التنقل أثناء الكتابة"
 
 msgid "IDS_BR_SBODY_OVERRIDE_WEBSITE_REQUESTS_TO_CONTROL_ZOOM_LEVEL"
-msgstr "تجاوز طلبات موقع ويب للتحكم بمستوى التكبير/التصغير."
+msgstr "تجاوز طلبات موقع ويب للتحكم بمستوى التكبير/التصغير"
 
 msgid "IDS_BR_SBODY_DISPLAY_IMAGES_ON_WEBPAGES"
-msgstr "عرض الصور على صفحات الويب."
+msgstr "عرض الصور على صفحات الويب"
 
 msgid "IDS_BR_SBODY_COMPRESS_CONTENT_FROM_WEBSITES_TO_USE_LESS_DATA"
 msgstr "اضغط المحتويات الواردة من مواقع الويب لاستخدام كمية أقل من البيانات."
@@ -263,10 +305,10 @@ msgid "IDS_BR_SBODY_ALL_WEBSITE_NOTIFICATION_ACCESS_INFORMATION_WILL_BE_CLEARED"
 msgstr "سيتم مسح كل معلومات الوصول إلى إشعارات مواقع الويب."
 
 msgid "IDS_BR_SBODY_ALLOW_SITES_TO_SAVE_AND_READ_COOKIES"
-msgstr "السماح للمواقع بحفظ ملفات تعريف الارتباط وقراءتها."
+msgstr "السماح للمواقع بحفظ ملفات تعريف الارتباط وقراءتها"
 
 msgid "IDS_BR_SBODY_ALLOW_SITES_TO_ACCESS_YOUR_LOCATION_DATA"
-msgstr "السماح للمواقع بالوصول إلى بيانات الموقع."
+msgstr "السماح للمواقع بالوصول إلى بيانات الموقع"
 
 msgid "IDS_BR_POP_YOU_MAY_NOT_BE_ABLE_TO_CLIP_SOME_WEBPAGES_ACCURATELY"
 msgstr "قد لا تتمكن من تثبيت بعض صفحات الويب بدقّة"
@@ -274,11 +316,20 @@ msgstr "قد لا تتمكن من تثبيت بعض صفحات الويب بدق
 msgid "IDS_BR_POP_YOUR_HISTORY_WILL_BE_CLEARED"
 msgstr "سيتم مسح المحفوظات."
 
+msgid "IDS_BR_POP_WI_FI_CONNECTION_REQUIRED_CONNECT_TO_WI_FI_NETWORK_AND_TRY_AGAIN"
+msgstr "‏‫يلزم توفر اتصال Wi-Fi‬. اتصل بشبكة Wi-Fi وحاول مرة أخرى."
+
+msgid "IDS_BR_POP_URL_NOT_FOUND"
+msgstr "لم يتم العثور على URL."
+
+msgid "IDS_BR_POP_URL"
+msgstr "الموقع"
+
 msgid "IDS_BR_POP_UNABLE_TO_VIEW_THE_CERTIFICATE_THE_PAGE_INFORMATION_HAS_BEEN_CHANGED"
 msgstr "يتعذر عرض الشهادة. تم تغيير معلومات الصفحة."
 
 msgid "IDS_BR_POP_TO_SIGN_IN_TO_THIS_WEBSITE_USING_YOUR_FINGERPRINTS_GO_TO_SETTINGS_AND_ENABLE_WEB_SIGN_IN"
-msgstr "لتسجيل الدخول إلى موقع الويب هذا باستخدام بصمات الأصابع، انتقل إلى الضبط وقم بتفعيل تسجيل الدخول إلى الويب."
+msgstr "لتسجيل الدخول إلى موقع الويب هذا باستخدام البصمات، انتقل إلى الضبط وقم بتفعيل تسجيل الدخول إلى الويب."
 
 msgid "IDS_BR_POP_THIS_CERTIFICATE_IS_NOT_FROM_A_TRUSTED_AUTHORITY"
 msgstr "لم تصدر هذه الشهادة من مصدر موثوق به."
@@ -308,7 +359,7 @@ msgid "IDS_BR_POP_SET_AS_HOMEPAGE"
 msgstr "ضبط كصفحة رئيسية"
 
 msgid "IDS_BR_POP_SETTINGS_WILL_BE_RESET_TO_DEFAULTS"
-msgstr "ستتم إعادة تعيين الضبط إلى الإعداد الافتراضي."
+msgstr "ستتم إعادة تعيين الضبط إلى الإعداد الافتراضي"
 
 msgid "IDS_BR_POP_SETTIGS_SAVED"
 msgstr "تم حفظ الإعدادات."
@@ -319,11 +370,23 @@ msgstr "سياسة الأمان تقيد استخدام متصفح الإنتر�
 msgid "IDS_BR_POP_SAVED_TO_BOOKMARKS"
 msgstr "تم الحفظ في الإشارات المرجعية."
 
+msgid "IDS_BR_POP_SAVED"
+msgstr "تم الحفظ."
+
 msgid "IDS_BR_POP_RENAME_TAG"
 msgstr "تغيير اسم البطاقة"
 
+msgid "IDS_BR_POP_REMOVED"
+msgstr "تم الحذف."
+
 msgid "IDS_BR_POP_PD_PROFILES_WILL_BE_DELETED"
 msgstr "سيتم حذف %d من ملفات التعريف."
+
+msgid "IDS_BR_POP_PD_ITEMS_WILL_BE_DELETED"
+msgstr "سيتم حذف %d عناصر."
+
+msgid "IDS_BR_POP_PD_ITEMS_SELECTED"
+msgstr "تم تحديد %d عناصر."
 
 msgid "IDS_BR_POP_PAGES_THAT_YOU_VIEW_WILL_NOT_APPEAR_IN_YOUR_BROWSER_HISTORY_OR_SEARCH_HISTORY_AND_THEY_WILL_NOT_LEAVE_OTHER_TRACES_LIKE_COOKIES"
 msgstr "لن تظهر الصفحات التي تعرضها ضمن محفوظات المستعرض أو محفوظات البحث، كما أنها لا تترك مجالاً لأي عمليات تتبع أخرى، مثل ملفات تعريف الارتباط."
@@ -338,7 +401,7 @@ msgid "IDS_BR_POP_P1SS_HP2SS_IS_REQUESTING_PERMISSION_TO_SHOW_NOTIFICATIONS"
 msgstr "يوجد طلب من %1$s (%2$s) للحصول على إذن من أجل عرض الإخطارات"
 
 msgid "IDS_BR_POP_P1SS_HP2SS_IS_REQUESTING_PERMISSION_TO_CHANGE_HOW_YOUR_BROWSER_WORKS_ON_MSG"
-msgstr "يوجد طلب من %1$s (%2$s) للحصول على إذن من أجل تغيير طريقة عمل المستعرض على هذا الموقع. قد ينطوي ذلك على محاولة لمهاجمة نظامك. إذا كنت لا تثق في موقع الويب هذا أو كنت لا تعرف سبب ظهور هذا الطلب، فانقر فوق ”إلغاء“."
+msgstr "يوجد طلب من %1$s (%2$s) للحصول على إذن من أجل تغيير طريقة عمل المستعرض على هذا الموقع. قد ينطوي ذلك على محاولة لمهاجمة نظامك. إذا كنت لا تثق في موقع الويب هذا أو كنت لا تعرف سبب ظهور هذا الطلب، فانقر فوق إلغاء."
 
 msgid "IDS_BR_POP_P1SS_HP2SS_IS_REQUESTING_PERMISSION_TO_ACCESS_YOUR_LOCATION"
 msgstr "يوجد طلب من %1$s (%2$s) للحصول على إذن من أجل الوصول إلى موقعك"
@@ -352,20 +415,53 @@ msgstr "تم اكتشاف ”%1$s“.‏\nتم الاكتشاف في: ”%2$s“
 msgid "IDS_BR_POP_P1SS_HAS_BEEN_DETECTED_DETECTED_IN_C_P2SS_OPEN_WEBPAGE_ANYWAY_Q"
 msgstr "تم اكتشاف ”%1$s“.‏\nتم الاكتشاف في: ”%2$s“‏\n\nهل تريد فتح صفحة الويب على أي حال؟"
 
+msgid "IDS_BR_POP_NO_ITEMS_SELECTED"
+msgstr "لم يتم تحديد عناصر."
+
 msgid "IDS_BR_POP_NOT_ENOUGH_MEMORY_DELETE_SOME_ITEMS_AND_TRY_AGAIN"
 msgstr "مساحة الذاكرة غير كافية. احذف بعض العناصر وحاول مرة أخرى‬."
+
+msgid "IDS_BR_POP_NOT_ENOUGH_MEMORY"
+msgstr "الذاكرة لا تكفي."
 
 msgid "IDS_BR_POP_NOT_ALLOWED"
 msgstr "غير مسموح."
 
+msgid "IDS_BR_POP_NEVER"
+msgstr "أبدا"
+
 msgid "IDS_BR_POP_MOVED"
 msgstr "تم النقل."
+
+msgid "IDS_BR_POP_MOBILE_DATA_IS_DISABLED_CONNECT_TO_WI_FI_NETWORK_INSTEAD_OR_ENABLE_MOBILE_DATA_AND_TRY_AGAIN"
+msgstr "تم إلغاء تفعيل بيانات الهاتف المحمول. اتصل بشبكة Wi-Fi بدلا من ذلك أو قم بتفعيل بيانات الهاتف المحمول، ثم أعد المحاولة."
+
+msgid "IDS_BR_POP_LOADING_PLEASE_WAIT_ING"
+msgstr "يتم التحميل. يرجى الانتظار..."
+
+msgid "IDS_BR_POP_INVALID_URL"
+msgstr "الموقع الالكتروني غير صالح."
+
+msgid "IDS_BR_POP_FAIL"
+msgstr "فشل."
 
 msgid "IDS_BR_POP_ENTER_URL"
 msgstr "أدخل الموقع الالكتروني."
 
+msgid "IDS_BR_POP_ENTER_TITLE_ABB"
+msgstr "أدخل عنوانا"
+
 msgid "IDS_BR_POP_ENTER_BOOKMARK_NAME"
 msgstr "أدخل اسم الإشارة المرجعية."
+
+msgid "IDS_BR_POP_DO_NOT_SHOW_AGAIN"
+msgstr "عدم العرض مرة أخرى"
+
+msgid "IDS_BR_POP_DOWNLOADCOMPLETE"
+msgstr "تم التنزيل."
+
+msgid "IDS_BR_POP_DISABLED"
+msgstr "تم إيقاف التفعيل."
 
 msgid "IDS_BR_POP_DIALING_ING_VZW"
 msgstr "Dialing..."
@@ -391,6 +487,9 @@ msgstr "هل تريد حذف بيانات تسجيل الدخول لموقع ا�
 msgid "IDS_BR_POP_DELETE_SIGN_IN_DATA_FOR_PD_WEBSITES_Q"
 msgstr "هل تريد حذف بيانات تسجيل الدخول لـ %d من مواقع الويب؟"
 
+msgid "IDS_BR_POP_DELETE_Q"
+msgstr "مسح؟"
+
 msgid "IDS_BR_POP_DELETE_PD_SAVED_WEB_PAGES_Q"
 msgstr "هل تريد حذف %d من صفحات الويب المحفوظة؟"
 
@@ -406,8 +505,14 @@ msgstr "هل تريد حذف جميع بيانات مواقع الويب وأذ�
 msgid "IDS_BR_POP_DELETEHISTORYQUESTION"
 msgstr "مسح المواقع الماضية؟"
 
+msgid "IDS_BR_POP_DELETED"
+msgstr "تم المسح."
+
 msgid "IDS_BR_POP_CONTINUE"
 msgstr "متابعة"
+
+msgid "IDS_BR_POP_CLOSE_APPLICATION_Q"
+msgstr "هل تريد إغلاق التطبيق؟"
 
 msgid "IDS_BR_POP_CLOSE_APPLICATION"
 msgstr "غلق التطبيق"
@@ -419,7 +524,13 @@ msgid "IDS_BR_POP_CLEAR_HISTORY_Q"
 msgstr "هل تريد مسح السجل؟"
 
 msgid "IDS_BR_POP_BOOKMARK_REMOVED"
-msgstr "تمت إزالة العلامة المرجعية."
+msgstr "تمت إزالة العلامة."
+
+msgid "IDS_BR_POP_BOOKMARK_ADDED"
+msgstr "تمت إضافة إشارة مرجعية."
+
+msgid "IDS_BR_POP_AUTOMATIC_BRIGHTNESS"
+msgstr "سطوع تلقائي"
 
 msgid "IDS_BR_POP_ALREADY_EXISTS"
 msgstr "موجود مسبقا."
@@ -445,6 +556,15 @@ msgstr "السماح للمواقع بحفظ ملفات تعريف الارتب�
 msgid "IDS_BR_POP_ADDED_TO_BOOKMARKS"
 msgstr "تمت الإضافة إلى الإشارات المرجعية."
 
+msgid "IDS_BR_POP_ACCOUNT"
+msgstr "الحساب"
+
+msgid "IDS_BR_POP_1_ITEM_WILL_BE_DELETED"
+msgstr "سيتم حذف عنصر واحد."
+
+msgid "IDS_BR_POP_1_ITEM_SELECTED"
+msgstr "تم تحديد عنصر واحد."
+
 msgid "IDS_BR_OPT_WINDOWS"
 msgstr "الإطارات"
 
@@ -454,20 +574,38 @@ msgstr "عرض الشهادة"
 msgid "IDS_BR_OPT_UNICODE_HUTF_8"
 msgstr "يونيكود (UTF-8)"
 
+msgid "IDS_BR_OPT_TRANSLATE"
+msgstr "ترجمة"
+
 msgid "IDS_BR_OPT_THUMBNAIL_VIEW"
 msgstr "عرض مختصر"
 
 msgid "IDS_BR_OPT_TEXT_ENCODING"
 msgstr "ترميز النص"
 
+msgid "IDS_BR_OPT_STOP"
+msgstr "إيقاف"
+
 msgid "IDS_BR_OPT_SHRINK_TEXT"
 msgstr "تقليص النص"
+
+msgid "IDS_BR_OPT_SHOW"
+msgstr "عرض"
+
+msgid "IDS_BR_OPT_SHARE"
+msgstr "مشاركة"
 
 msgid "IDS_BR_OPT_SETTINGS_ABB"
 msgstr "الإعدادات"
 
+msgid "IDS_BR_OPT_SETTINGS"
+msgstr "الضبط"
+
 msgid "IDS_BR_OPT_SEND_MESSAGE_VODA"
 msgstr "إرسال رسالة"
+
+msgid "IDS_BR_OPT_SEND_EMAIL"
+msgstr "إرسال بريد إلكتروني"
 
 msgid "IDS_BR_OPT_SENDURLVIA_EMAIL"
 msgstr "بريد إلكتروني"
@@ -486,6 +624,12 @@ msgstr "وضع التحديد"
 
 msgid "IDS_BR_OPT_SELECTED"
 msgstr "محدد"
+
+msgid "IDS_BR_OPT_SELECT"
+msgstr "تحديد"
+
+msgid "IDS_BR_OPT_SD_CARD"
+msgstr "بطاقة SD"
 
 msgid "IDS_BR_OPT_SAVE_TO_KEEPIT_ABB"
 msgstr "حفظ إلى KeepIt"
@@ -514,8 +658,14 @@ msgstr "إعادة ترتيب"
 msgid "IDS_BR_OPT_RENAME_FOLDER"
 msgstr "تغيير اسم المجلد"
 
+msgid "IDS_BR_OPT_RENAME"
+msgstr "تغيير الاسم"
+
 msgid "IDS_BR_OPT_REMOVE"
 msgstr "حذف"
+
+msgid "IDS_BR_OPT_REFRESH"
+msgstr "إنعاش"
 
 msgid "IDS_BR_OPT_READER_MODE_TTS"
 msgstr "وضع القارئ"
@@ -535,8 +685,14 @@ msgstr "الصفحات غير المتصلة"
 msgid "IDS_BR_OPT_NEW_WINDOW"
 msgstr "إطار جديد"
 
+msgid "IDS_BR_OPT_MOVE"
+msgstr "نقل"
+
 msgid "IDS_BR_OPT_MINIMISE"
 msgstr "تصغير"
+
+msgid "IDS_BR_OPT_MESSAGES"
+msgstr "الرسائل"
 
 msgid "IDS_BR_OPT_MEDIUM_M_QUALITY"
 msgstr "متوسطة"
@@ -549,6 +705,9 @@ msgstr "امتيازات الوصول إلى الموقع"
 
 msgid "IDS_BR_OPT_LOAD_IMAGES"
 msgstr "تحميل الصور"
+
+msgid "IDS_BR_OPT_LIST_VIEW"
+msgstr "عرض القائمة"
 
 msgid "IDS_BR_OPT_LATIN_1_HISO_8859_1"
 msgstr "اللاتينية-1 (ISO-8859-1)"
@@ -565,6 +724,9 @@ msgstr "اليابانية (ISO-2022-JP)"
 msgid "IDS_BR_OPT_JAPANESE_HEUC_JP"
 msgstr "اليابانية (EUC-JP)"
 
+msgid "IDS_BR_OPT_I_AGREE"
+msgstr "أنا أوافق."
+
 msgid "IDS_BR_OPT_INCOGNITO_MODE_ABB"
 msgstr "وضع التصفح المتخفي"
 
@@ -579,6 +741,9 @@ msgstr "الشاشة الرئيسية كاختصار"
 
 msgid "IDS_BR_OPT_HIGH_M_QUALITY"
 msgstr "عالية"
+
+msgid "IDS_BR_OPT_HELP"
+msgstr "مساعدة"
 
 msgid "IDS_BR_OPT_GOFORWARD"
 msgstr "التالي"
@@ -625,6 +790,9 @@ msgstr "إلغاء تفعيل الاستخدام المنخفض للبيانات
 msgid "IDS_BR_OPT_DISABLED"
 msgstr "تم إلغاء التفعيل"
 
+msgid "IDS_BR_OPT_DEVICE"
+msgstr "الجهاز"
+
 msgid "IDS_BR_OPT_DELETE_SAVED_PAGE_ABB"
 msgstr "حذف صفحة محفوظة"
 
@@ -658,6 +826,9 @@ msgstr "الصينية (Big5)"
 msgid "IDS_BR_OPT_CACHE"
 msgstr "الذاكرة المؤقتة"
 
+msgid "IDS_BR_OPT_BOOKMARK"
+msgstr "علامة"
+
 msgid "IDS_BR_OPT_ADD_TO_WEB_CLIP"
 msgstr "إضافة إلى مقطع ويب"
 
@@ -678,6 +849,12 @@ msgstr "إضافة علامة"
 
 msgid "IDS_BR_OPT_ADD_BOOKMARK"
 msgstr "إضافة علامة"
+
+msgid "IDS_BR_OPT_ADDED"
+msgstr "تمت الإضافة."
+
+msgid "IDS_BR_OPT_ADD"
+msgstr "إضافة"
 
 msgid "IDS_BR_OPT1_EXTENSION"
 msgstr "امتداد"
@@ -728,7 +905,7 @@ msgid "IDS_BR_MBODY_PRELOAD_LINKED_WEBPAGES"
 msgstr "تحميل صفحات ويب المرتبطة مسبقًا"
 
 msgid "IDS_BR_MBODY_PRELOAD_AVAILABLE_LINKS"
-msgstr "تحميل مسبق للروابط المتاحة"
+msgstr "تحميل مسبق للارتباطات المتاحة"
 
 msgid "IDS_BR_MBODY_LOW_DATA_USAGE"
 msgstr "الاستخدام المنخفض للبيانات"
@@ -747,6 +924,9 @@ msgstr "تنزيل محتوى الموجز"
 
 msgid "IDS_BR_MBODY_DELETE_SIGN_IN_DATA"
 msgstr "حذف بيانات تسجيل الدخول"
+
+msgid "IDS_BR_MBODY_DEFAULT_DOWNLOAD_STORAGE"
+msgstr "وحدة تخزين تنزيل افتراضية"
 
 msgid "IDS_BR_MBODY_DATA_SAVING_STATISTICS"
 msgstr "إحصائيات حفظ البيانات"
@@ -790,6 +970,9 @@ msgstr "يتعذر نقل الإشارات المرجعية"
 msgid "IDS_BR_HEADER_SITE_NOT_TRUSTED_ABB"
 msgstr "الموقع غير موثوق به"
 
+msgid "IDS_BR_HEADER_SIGN_IN_TO_SAMSUNG_ACCOUNT"
+msgstr "تسجيل الدخول لحساب Samsung account"
+
 msgid "IDS_BR_HEADER_SET_HOMEPAGE_ABB"
 msgstr "تعيين الصفحة الرئيسية"
 
@@ -826,11 +1009,17 @@ msgstr "تم حظر الإطار المنبثق"
 msgid "IDS_BR_HEADER_POPULAR_WEBSITES_ABB"
 msgstr "مواقع الويب الأكثر استخدامًا"
 
+msgid "IDS_BR_HEADER_PD_SELECTED_ABB"
+msgstr "تم تحديد %d"
+
 msgid "IDS_BR_HEADER_ORGANISATION_C_ABB"
 msgstr "المؤسسة:"
 
 msgid "IDS_BR_HEADER_ORGANISATIONAL_UNIT_C"
 msgstr "الوحدة التابعة للمؤسسة:"
+
+msgid "IDS_BR_HEADER_NO_NETWORK_CONNECTION"
+msgstr "لا يوجد اتصال بالشبكة"
 
 msgid "IDS_BR_HEADER_NEWER_M_INTERNET_HISTORY_ABB"
 msgstr "Newer"
@@ -847,11 +1036,17 @@ msgstr "امتداد HTML5"
 msgid "IDS_BR_HEADER_FORM_DATA"
 msgstr "بيانات النموذج"
 
+msgid "IDS_BR_HEADER_FOLDER"
+msgstr "المجلد"
+
 msgid "IDS_BR_HEADER_EXPIRES_ON_C"
 msgstr "تاريخ الانتهاء:"
 
 msgid "IDS_BR_HEADER_ENABLE_WEB_SIGN_IN"
 msgstr "تفعيل تسجيل الدخول إلى الويب"
+
+msgid "IDS_BR_HEADER_EDIT_PROFILE"
+msgstr "تعديل الوضع"
 
 msgid "IDS_BR_HEADER_EDIT_BOOKMARK"
 msgstr "تعديل العلامة"
@@ -889,8 +1084,14 @@ msgstr "إدارة النطاق الترددي"
 msgid "IDS_BR_HEADER_ADVANCEDCERTIFICATES"
 msgstr "الشهادات"
 
+msgid "IDS_BR_BUTTON_SET"
+msgstr "ضبط"
+
 msgid "IDS_BR_BUTTON_RESET_ABB"
 msgstr "إعادة ضبط"
+
+msgid "IDS_BR_BUTTON_NOT_NOW"
+msgstr "ليس الآن"
 
 msgid "IDS_BR_BUTTON_HOMEPAGE_ABB"
 msgstr "الرئيسية"
@@ -898,11 +1099,35 @@ msgstr "الرئيسية"
 msgid "IDS_BR_BUTTON_FIND_ABB"
 msgstr "بحث"
 
+msgid "IDS_BR_BUTTON_ENABLE_ABB"
+msgstr "تمكين"
+
+msgid "IDS_BR_BUTTON_EDIT"
+msgstr "تعديل"
+
+msgid "IDS_BR_BUTTON_CONTINUE_ABB"
+msgstr "متابعة"
+
+msgid "IDS_BR_BUTTON_CONTINUE"
+msgstr "متابعة"
+
+msgid "IDS_BR_BUTTON_CLOSE"
+msgstr "اغلاق"
+
+msgid "IDS_BR_BUTTON_CANCEL_ABB"
+msgstr "إلغاء"
+
+msgid "IDS_BR_BUTTON_CANCEL"
+msgstr "إلغاء"
+
 msgid "IDS_BR_BUTTON_BACK_ABB"
 msgstr "رجوع"
 
 msgid "IDS_BR_BUTTON_ALWAYS_SHOW_ABB"
 msgstr "عرض دائمًا"
+
+msgid "IDS_BR_BUTTON_ALLOW"
+msgstr "السماح"
 
 msgid "IDS_BR_BUTTON2_WEB_PORTAL"
 msgstr "بوابة الويب"
@@ -927,6 +1152,9 @@ msgstr "انتقال إلى السجلات"
 
 msgid "IDS_BR_BUTTON2_ENTERTAINMENT"
 msgstr "ترفيه"
+
+msgid "IDS_BR_BODY_YESTERDAY"
+msgstr "أمس"
 
 msgid "IDS_BR_BODY_WINDOW_MANAGER"
 msgstr "إدارة الإطارات"
@@ -955,6 +1183,9 @@ msgstr "استخدم وضع ملء الشاشة لإخفاء شريط الحال
 msgid "IDS_BR_BODY_USE_A_PREDICTION_SERVICE_TO_DISPLAY_RELATED_QUERIES_AND_POPULAR_WEBSITES_IN_THE_ADDRESS_BAR_AS_YOU_TYPE"
 msgstr "استخدم إحدى خدمات التوقع لعرض الاستعلامات ذات الصلة ومواقع الويب الأكثر شهرة في شريط العنوان أثناء كتابتها."
 
+msgid "IDS_BR_BODY_URL"
+msgstr "الموقع"
+
 msgid "IDS_BR_BODY_UPPER_FOLDER_T_TALKBACK"
 msgstr "المجلد الأعلى"
 
@@ -970,6 +1201,12 @@ msgstr "يتعذر عرض صفحة الويب. لا توجد استجابة من
 msgid "IDS_BR_BODY_TOWN_CITY_COUNTY_ABB"
 msgstr "‏‫المدينة/المركز‬/البلد"
 
+msgid "IDS_BR_BODY_TODAY"
+msgstr "اليوم"
+
+msgid "IDS_BR_BODY_TITLE"
+msgstr "العنوان"
+
 msgid "IDS_BR_BODY_THIS_SITE_IS_USING_PS"
 msgstr "يستخدم هذا الموقع %s."
 
@@ -984,6 +1221,9 @@ msgstr "سيتم حذف هذه الإشارة المرجعية."
 
 msgid "IDS_BR_BODY_THE_SELECTED_PERSONAL_DATA_WILL_BE_DELETED"
 msgstr "سيتم حذف البيانات الشخصية المحددة."
+
+msgid "IDS_BR_BODY_THE_MAXIMUM_NUMBER_OF_CHARACTERS_HPD_HAS_BEEN_EXCEEDED"
+msgstr "تم تجاوز الحد الأقصى لعدد الأحرف (%d)"
 
 msgid "IDS_BR_BODY_TEXT_FIELD_T_TTS"
 msgstr "حقل نصي"
@@ -1009,11 +1249,17 @@ msgstr "مزامنة العلامات"
 msgid "IDS_BR_BODY_STREET_ADDRESS_PO_BOX_C_O_ETC_ABB"
 msgstr "عنوان الشارع، صندوق مكتب البريد، عناية، وما إلى ذلك"
 
+msgid "IDS_BR_BODY_STREAMING"
+msgstr "التدفق"
+
 msgid "IDS_BR_BODY_STORED_DATA"
 msgstr "البيانات المخزنة"
 
 msgid "IDS_BR_BODY_SPLIT_BAR_HANDLE"
 msgstr "مقبض شريط الانقسام"
+
+msgid "IDS_BR_BODY_SMALL"
+msgstr "صغير"
 
 msgid "IDS_BR_BODY_SIGN_IN_TO_YOUR_SAMSUNG_ACCOUNT_TO_ACCESS_THE_BOOKMARKS_AND_TABS_ON_YOUR_OTHER_DEVICES"
 msgstr "سجل الدخول إلى حساب Samsung account للوصول إلى العلامات وعلامات التبويب على الأجهزة الأخرى."
@@ -1033,6 +1279,9 @@ msgstr "‫قم بتعيين النص لملء نموذج الويب تلقائ�
 msgid "IDS_BR_BODY_SET_CURRENT_PAGE_AS_HOMEPAGE"
 msgstr "ضبط الصفحة الحالية كصفحة رئيسية"
 
+msgid "IDS_BR_BODY_SETTINGS"
+msgstr "الضبط"
+
 msgid "IDS_BR_BODY_SELECT_FOLDER"
 msgstr "حدد المجلد"
 
@@ -1045,6 +1294,9 @@ msgstr "حقل البحث"
 msgid "IDS_BR_BODY_SEARCH_AND_URL_SUGGESTIONS"
 msgstr "البحث واقتراحات عناوين URL"
 
+msgid "IDS_BR_BODY_SEARCH"
+msgstr "بحث"
+
 msgid "IDS_BR_BODY_SCREEN_AND_TEXT"
 msgstr "الشاشة والنص"
 
@@ -1052,7 +1304,10 @@ msgid "IDS_BR_BODY_SAVE_USER_NAMES_AND_PASSWORDS_FOR_WEBSITES"
 msgstr "حفظ أسماء المستخدمين وكلمات المرور الخاصة بمواقع الويب."
 
 msgid "IDS_BR_BODY_SAVE_LINK"
-msgstr "حفظ الرابط"
+msgstr "حفظ الارتباط"
+
+msgid "IDS_BR_BODY_RSS_SEARCH_RESULTS"
+msgstr "نتائج البحث"
 
 msgid "IDS_BR_BODY_RESTORE_DEFAULT_SETTINGS_Q"
 msgstr "هل تريد استعادة الإعدادات الافتراضية؟"
@@ -1087,6 +1342,12 @@ msgstr "زر الراديو"
 msgid "IDS_BR_BODY_PS_BOOKMARK_WILL_BE_DELETED"
 msgstr "سيتم حذف العلامة %s."
 
+msgid "IDS_BR_BODY_PROFILE"
+msgstr "الوضع"
+
+msgid "IDS_BR_BODY_PROCESSING_ING"
+msgstr "جاري المعالجة..."
+
 msgid "IDS_BR_BODY_PRIVACY"
 msgstr "الخصوصية"
 
@@ -1099,14 +1360,26 @@ msgstr "اضغط على مفتاح القائمة"
 msgid "IDS_BR_BODY_POSTCODE_ABB"
 msgstr "الرمز البريدي"
 
+msgid "IDS_BR_BODY_PHONE_NUMBER_ABB"
+msgstr "رقم الهاتف"
+
+msgid "IDS_BR_BODY_PHONE"
+msgstr "الهاتف"
+
 msgid "IDS_BR_BODY_PD_POP_UPS_BLOCKED_ABB"
 msgstr "يحظر نوافذ %d منبثقة."
+
+msgid "IDS_BR_BODY_PD_ITEMS_WILL_BE_DELETED"
+msgstr "سيتم حذف %d عناصر."
+
+msgid "IDS_BR_BODY_PASSWORD"
+msgstr "كلمة المرور"
 
 msgid "IDS_BR_BODY_PAGE_LOADED_T_TTS"
 msgstr "تم تحميل الصفحة"
 
 msgid "IDS_BR_BODY_PAGES_THAT_YOU_VIEW_IN_THIS_TAB_WILL_NOT_APPEAR_IN_YOUR_BROWSER_HISTORY_OR_SEARCH_HISTORY_MSG"
-msgstr "لا تظهر الصفحات التي يتم عرضها في علامة التبويب هذه ضمن محفوظات المستعرض أو محفوظات البحث، كما أنها لا تترك مجالاً لأي عمليات تتبع أخرى، مثل ملفات تعريف الارتباط."
+msgstr "لا تظهر الصفحات التي يتم عرضها في علامة التبويب هذه ضمن محفوظات المستعرض أو محفوظات البحث، كما أنها لا تترك مجالا لأي عمليات تتبع أخرى، مثل ملفات تعريف الارتباط."
 
 msgid "IDS_BR_BODY_OVERRIDE_WEBSITES_REQUEST_TO_CONTROL_ZOOM"
 msgstr "تجاوز طلب موقع الويب للتحكم في التكبير/التصغير."
@@ -1126,8 +1399,14 @@ msgstr "حسب الطلب"
 msgid "IDS_BR_BODY_ONLY_VIA_WI_FI_ABB"
 msgstr "عبر Wi-Fi فقط"
 
+msgid "IDS_BR_BODY_ON"
+msgstr "مفعل"
+
 msgid "IDS_BR_BODY_OLDER"
 msgstr "أقدم"
+
+msgid "IDS_BR_BODY_OFF"
+msgstr "غير مفعل"
 
 msgid "IDS_BR_BODY_NO_WINDOWS"
 msgstr "لا توجد نوافذ"
@@ -1141,8 +1420,17 @@ msgstr "لا يوجد عنوان"
 msgid "IDS_BR_BODY_NO_SAVED_PAGES"
 msgstr "لا توجد صفحات محفوظة"
 
+msgid "IDS_BR_BODY_NO_RESULTS_FOUND"
+msgstr "لا توجد نتائج."
+
+msgid "IDS_BR_BODY_NO_HISTORIES"
+msgstr "فارغة"
+
 msgid "IDS_BR_BODY_NO_BOOKMARKS"
 msgstr "لا يوجد علامات"
+
+msgid "IDS_BR_BODY_NOTIFICATIONS"
+msgstr "إشعارات"
 
 msgid "IDS_BR_BODY_NORMAL"
 msgstr "عادي"
@@ -1158,6 +1446,9 @@ msgstr "المواقع الأكثر زيارة"
 
 msgid "IDS_BR_BODY_MOBILE_VIEW"
 msgstr "عرض المحمول"
+
+msgid "IDS_BR_BODY_MEDIUM"
+msgstr "وسط"
 
 msgid "IDS_BR_BODY_LOCATION_M_INFORMATION"
 msgstr "الموقع"
@@ -1183,6 +1474,9 @@ msgstr "الإنترنت"
 msgid "IDS_BR_BODY_IMPROVE_PERFORMANCE_WHEN_LOADING_PAGES"
 msgstr "تحسين الأداء عند تحميل الصفحات."
 
+msgid "IDS_BR_BODY_IMAGES"
+msgstr "الصور"
+
 msgid "IDS_BR_BODY_HOMEPAGE"
 msgstr "الصفحة الرئيسية"
 
@@ -1192,11 +1486,20 @@ msgstr "قم بإخفاء شريط العنوان عند تمرير الصفحة
 msgid "IDS_BR_BODY_GENERAL_M_SETTINGS"
 msgstr "عام"
 
+msgid "IDS_BR_BODY_FULL_SCREEN"
+msgstr "الشاشة كاملة"
+
 msgid "IDS_BR_BODY_FULL_NAME_ABB"
 msgstr "الاسم بالكامل"
 
 msgid "IDS_BR_BODY_FORCE_ZOOM_ABB"
 msgstr "فرض التكبير/التصغير"
+
+msgid "IDS_BR_BODY_FONT_SIZE"
+msgstr "حجم الخط"
+
+msgid "IDS_BR_BODY_FOLDER_NAME"
+msgstr "اسم المجلد"
 
 msgid "IDS_BR_BODY_FLAT_SUITE_UNIT_BUILDING_FLOOR_ETC_ABB"
 msgstr "الشقة، الجناح، الوحدة، المبنى، الطابق، وخلافه"
@@ -1213,6 +1516,24 @@ msgstr "أدخل الاسم."
 msgid "IDS_BR_BODY_ENTER_TOWN_CITY_COUNTY_ABB"
 msgstr "أدخل ‏‫المدينة/المركز‬/البلد."
 
+msgid "IDS_BR_BODY_ENTER_POSTCODE_ABB"
+msgstr "أدخل الرمز البريدي."
+
+msgid "IDS_BR_BODY_ENTER_POSTCODE"
+msgstr "أدخل الرمز البريدي."
+
+msgid "IDS_BR_BODY_ENTER_PHONE_NUMBER"
+msgstr "أدخل رقم الهاتف."
+
+msgid "IDS_BR_BODY_ENTER_NAME"
+msgstr "أدخل الاسم."
+
+msgid "IDS_BR_BODY_ENTER_FOLDER_NAME"
+msgstr "أدخل اسم المجلد."
+
+msgid "IDS_BR_BODY_ENTER_EMAIL_ADDRESS"
+msgstr "أدخل عنوان البريد الإلكتروني."
+
 msgid "IDS_BR_BODY_ENTER_COUNTRY_REGION_ABB"
 msgstr "أدخل البلد/الإقليم."
 
@@ -1224,6 +1545,12 @@ msgstr "تمكين الموقع"
 
 msgid "IDS_BR_BODY_ENABLE_JAVASCRIPT"
 msgstr "تفعيل JavaScript"
+
+msgid "IDS_BR_BODY_EMAIL_ADDRESS"
+msgstr "عنوان البريد الإلكتروني"
+
+msgid "IDS_BR_BODY_DOWNLOADING_ING"
+msgstr "جاري التنزيل..."
 
 msgid "IDS_BR_BODY_DOUBLE_TAP_TO_VIEW_CERTIFICATE_TTS"
 msgstr "انقر نقرًا مزدوجًا لعرض الشهادة."
@@ -1264,6 +1591,9 @@ msgstr "عرض الإطارات المنبثقة لتحذيرات الأمان."
 msgid "IDS_BR_BODY_DISPLAY_IMAGES_ON_WEB_PAGES"
 msgstr "عرض الصور على صفحات الويب."
 
+msgid "IDS_BR_BODY_DEVELOPER_MODE"
+msgstr "وضع المطور"
+
 msgid "IDS_BR_BODY_DESKTOP_VIEW"
 msgstr "عرض سطح المكتب"
 
@@ -1278,6 +1608,9 @@ msgstr "ذاكرة التخزين الافتراضية"
 
 msgid "IDS_BR_BODY_DEFAULT_PAGE_ABB"
 msgstr "الصفحة الافتراضية"
+
+msgid "IDS_BR_BODY_DEFAULT"
+msgstr "إفتراضي"
 
 msgid "IDS_BR_BODY_DATA_USAGE_REDUCED_BY_P1SDP_HP2SD_KB_OF_P3SD_KB_RECEIVED_TAP_HERE_TO_RESET_STATISTICS"
 msgstr "تم خفض معدل استخدام البيانات بنسبة %1$d%‏ (تم تلقي %2$d كيلوبايت من أصل %3$d كيلوبايت). انقر هنا لإعادة ضبط الإحصائيات."
@@ -1342,6 +1675,9 @@ msgstr "غيّر حجم النص لتسهيل القراءة، وبخاصة عن
 msgid "IDS_BR_BODY_BOOKMARK_REMINDER_ABB"
 msgstr "تذكير بالعلامة"
 
+msgid "IDS_BR_BODY_BOOKMARKS"
+msgstr "العلامات"
+
 msgid "IDS_BR_BODY_BLOCK_POP_UPS_ON_WEB_PAGES"
 msgstr "حظر الإطارات المنبثقة على صفحات الويب."
 
@@ -1355,7 +1691,7 @@ msgid "IDS_BR_BODY_BASIC"
 msgstr "أساسي"
 
 msgid "IDS_BR_BODY_AUTO_FILL_FORMS_T_TTS"
-msgstr "ملء النماذج تلقائيّاً"
+msgstr "ملء النماذج تلقائيًّا"
 
 msgid "IDS_BR_BODY_AUTO_DETECT"
 msgstr "اكتشاف تلقائي"
@@ -1390,6 +1726,9 @@ msgstr "السماح لـ %s بعرض الإخطارات"
 msgid "IDS_BR_BODY_ALLOWS_SITES_TO_SAVE_AND_READ_COOKIE_DATA"
 msgstr "يسمح للمواقع بحفظ بيانات ملفات تعريف الارتباط وقراءتها."
 
+msgid "IDS_BR_BODY_ALL"
+msgstr "الكل"
+
 msgid "IDS_BR_BODY_AFTER_YOU_VISIT_WEBPAGES_THE_PAGES_YOU_HAVE_VISITED_THE_MOST_WILL_BE_SHOWN_HERE"
 msgstr "بعد زيارة صفحات الويب، ستظهر هنا الصفحات التي تزورها أكثر من غيرها."
 
@@ -1417,8 +1756,11 @@ msgstr "متقدم"
 msgid "IDS_BR_BODY_ADD_TO_CONTACT"
 msgstr "إضافة إلى جهة اتصال"
 
+msgid "IDS_BR_BODY_ADD_TO"
+msgstr "إضافة إلى"
+
 msgid "IDS_BR_BODY_ADD_THIS_WEBSITE_TO_BOOKMARKS_TO_OPEN_IT_FASTER_ABB"
-msgstr "أضف موقع الويب هذا إلى المفضلة لفتحه بسرعة أكبر."
+msgstr "أضف موقع الويب هذا إلى المفضلة لفتحة بسرعة أكبر."
 
 msgid "IDS_BR_BODY_ADDRESS_LINE_2_ABB"
 msgstr "أسطر العنوان ٢‎"
@@ -1426,17 +1768,29 @@ msgstr "أسطر العنوان ٢‎"
 msgid "IDS_BR_BODY_ADDRESS_LINE_1_ABB"
 msgstr "أسطر العنوان ۱"
 
+msgid "IDS_BR_BODY_ADDDETAILSVIEW_TAGS"
+msgstr "علامة"
+
+msgid "IDS_BR_BODY_ADDBOOKMARKURL"
+msgstr "الموقع"
+
 msgid "IDS_BR_BODY_ACCEPT_COOKIES"
 msgstr "قبول ملفات تعريف الارتباط"
 
 msgid "IDS_BR_BODY_1_PROFILE_WILL_BE_DELETED"
 msgstr "سيتم حذف ملف تعريف واحد."
 
+msgid "IDS_BR_BODY_1_ITEM_WILL_BE_DELETED"
+msgstr "سيتم حذف عنصر واحد."
+
 msgid "IDS_BR_ACBUTTON_TABS_ABB"
 msgstr "علامات تبويب"
 
 msgid "IDS_BR_TPOP_STARTING_DOWNLOAD_ING"
 msgstr "جارٍ بدء التنزيل..."
+
+msgid "IDS_BR_TPOP_MAXIMUM_NUMBER_OF_CHARACTERS_HPD_REACHED"
+msgstr "تم بلوغ أقصى عدد من الأحرف (%d)"
 
 msgid "IDS_BR_TPOP_FOLDER_RENAMED"
 msgstr "تمت إعادة تسمية المجلد."
@@ -1453,8 +1807,14 @@ msgstr "إلغاء"
 msgid "IDS_BR_SBODY_SET_THE_DEVICE_TO_SHOW_THE_FULL_WEBPAGE_ON_THE_SCREEN_WHEN_IT_IS_LOADED_WITHOUT_NEEDING_TO_SCROLL"
 msgstr "اضبط الجهاز لعرض صفحة الويب كاملةً على الشاشة عند تحميلها من دون الحاجة إلى التمرير."
 
+msgid "IDS_BR_POP_UNSUPPORTMEDIATYPE"
+msgstr "نوع الوسائط غير مدعوم."
+
 msgid "IDS_BR_POP_UNABLE_TO_RUN_INTERNET_LOW_BATTERY"
 msgstr "يتعذر تشغيل الإنترنت. البطارية منخفضة."
+
+msgid "IDS_BR_POP_UNABLE_TO_CONNECT_TO_MOBILE_NETWORKS_WHILE_FLIGHT_MODE_IS_ENABLED_CONNECT_TO_WI_FI_NETWORK_INSTEAD_OR_DISABLE_FLIGHT_MODE_AND_TRY_AGAIN"
+msgstr "يتعذر الاتصال بشبكات الهاتف المحمول أثناء تفعيل وضع الطيران. اتصل بشبكة Wi-Fi بدلا من ذلك أو قم بإلغاء تفعيل وضع الطيران، ثم أعد المحاولة."
 
 msgid "IDS_BR_POP_THE_DOWNLOAD_HAS_BEEN_STOPPED_AND_THE_DOWNLOADED_DATA_WILL_BE_DELETED"
 msgstr "تم إيقاف التنزيل وسيتم حذف البيانات التي تم تنزيلها."
@@ -1465,8 +1825,20 @@ msgstr "Search completed"
 msgid "IDS_BR_POP_READY"
 msgstr "جاهز."
 
+msgid "IDS_BR_POP_INSTALL_SUCCESS"
+msgstr "تم التثبيت."
+
+msgid "IDS_BR_POP_INSTALLATION_FAILED"
+msgstr "فشل التثبيت."
+
 msgid "IDS_BR_POP_INFORM_MEMORY_ERROR"
 msgstr "حدث خطأ في الذاكرة."
+
+msgid "IDS_BR_POP_DELETING_ING"
+msgstr "جاري المسح..."
+
+msgid "IDS_BR_POP_DATA_ROAMING_IS_DISABLED_CONNECT_TO_WI_FI_NETWORK_INSTEAD_OR_ENABLE_DATA_ROAMING_AND_TRY_AGAIN"
+msgstr "تم إلغاء تفعيل تجوال البيانات. اتصل بشبكة Wi-Fi بدلا من ذلك أو قم بتفعيل بيانات التجوال، ثم أعد المحاولة."
 
 msgid "IDS_BR_POP_DATA_ROAMING_IS_DISABLED_CONNECT_TO_A_WI_FI_NETWORK_OR_ENABLE_DATA_ROAMING_AND_TRY_AGAIN"
 msgstr "تم إلغاء تفعيل تجوال البيانات. اتصل بشبكة Wi-Fi، أو قم بتفعيل تجوال البيانات وحاول مرة أخرى."
@@ -1475,7 +1847,7 @@ msgid "IDS_BR_POP_BROWSERERRORREQUESTTIMEOUT"
 msgstr "انتهى وقت الطلب."
 
 msgid "IDS_BR_POP_A_WI_FI_CONNECTION_IS_REQUIRED_TAP_OK_TO_GO_TO_YOUR_WI_FI_SETTINGS"
-msgstr "مطلوب اتصال Wi-Fi. انقر فوق ”موافق“ للانتقال إلى ضبط Wi-Fi."
+msgstr "مطلوب اتصال Wi-Fi. انقر فوق موافق للانتقال إلى ضبط Wi-Fi."
 
 msgid "IDS_BR_OPT_WEB_APPS_ABB"
 msgstr "تطبيقات الويب"
@@ -1483,11 +1855,17 @@ msgstr "تطبيقات الويب"
 msgid "IDS_BR_OPT_VIEW_ONLINE"
 msgstr "العرض عبر الإنترنت"
 
+msgid "IDS_BR_OPT_SHARE_VIA"
+msgstr "مشاركة عبر"
+
 msgid "IDS_BR_OPT_READ_ON_OFFLINE_PAGES_LATER_ABB"
 msgstr "القراءة لاحقاً على صفحات غير متصلة بالإنترنت"
 
 msgid "IDS_BR_OPT_QUICK_ACCESS_ABB2"
 msgstr "الوصول السريع"
+
+msgid "IDS_BR_OPT_PASTE"
+msgstr "لصق"
 
 msgid "IDS_BR_OPT_ALWAYS_ENABLED_ABB"
 msgstr "التفعيل دائماً"
@@ -1513,6 +1891,9 @@ msgstr "اقتراحات عناوين URL والبحث"
 msgid "IDS_BR_MBODY_HISTORY"
 msgstr "المحفوظات"
 
+msgid "IDS_BR_MBODY_FONT_SIZE"
+msgstr "حجم الخط"
+
 msgid "IDS_BR_MBODY_FIT_PAGE_TO_SCREEN"
 msgstr "ملاءمة حجم الصفحة بحسب حجم الشاشة"
 
@@ -1524,6 +1905,9 @@ msgstr "مخصص"
 
 msgid "IDS_BR_MBODY_COUNTRY_REGION"
 msgstr "البلد/الإقليم"
+
+msgid "IDS_BR_HEADER_UNABLE_TO_DOWNLOAD_ABB"
+msgstr "يتعذر التنزيل"
 
 msgid "IDS_BR_HEADER_RENAME_FOLDER_ABB"
 msgstr "إعادة تسمية المجلد"
@@ -1555,8 +1939,14 @@ msgstr "إضافة معلومات"
 msgid "IDS_BR_BUTTON_WI_FI_ABB"
 msgstr "Wi-Fi"
 
+msgid "IDS_BR_BUTTON_UPDATE"
+msgstr "تحديث"
+
 msgid "IDS_BR_BUTTON_SETTINGS_ABB"
 msgstr "الضبط"
+
+msgid "IDS_BR_BUTTON_RETRY"
+msgstr "حاول ثانية"
 
 msgid "IDS_BR_BUTTON2_OK"
 msgstr "موافق"
@@ -1574,13 +1964,16 @@ msgid "IDS_BR_BODY_UNABLE_TO_FIND_AN_APPLICATION_TO_OPEN_THIS_FILE"
 msgstr "يتعذّر العثور على تطبيق لفتح هذا الملف."
 
 msgid "IDS_BR_BODY_UNABLE_TO_CONNECT_TO_MOBILE_NETWORKS_WHILE_FLIGHT_MODE_IS_ENABLED_MSG"
-msgstr "يتعذر الاتصال بشبكات الهاتف المحمول عندما يكون وضع الطيران قيد التفعيل. اتصل بشبكة Wi-Fi بدلاً من ذلك، أو انقر فوق ”الضبط“ لإلغاء تفعيل وضع الطيران ثم حاول مرة أخرى."
+msgstr "يتعذر الاتصال بشبكات الهاتف المحمول عندما يكون وضع الطيران قيد التفعيل. اتصل بشبكة Wi-Fi بدلاً من ذلك، أو انقر فوق الضبط لإلغاء تفعيل وضع الطيران ثم حاول مرة أخرى."
 
 msgid "IDS_BR_BODY_THIS_CERTIFICATE_IS_FROM_A_TRUSTED_AUTHORITY"
 msgstr "صدرت هذه الشهادة عن مصدر موثوق به."
 
 msgid "IDS_BR_BODY_TAP_HERE_TO_ADD_A_QUICK_ACCESS_SHORTCUT"
 msgstr "انقر هنا لإضافة اختصار وصول سريع."
+
+msgid "IDS_BR_BODY_REQUEST_FAILED"
+msgstr "فشل الطلب."
 
 msgid "IDS_BR_BODY_PREFERENCES"
 msgstr "التفضيلات"
@@ -1595,400 +1988,16 @@ msgid "IDS_BR_BODY_NO_MATCHES"
 msgstr "لا توجد متطابقات"
 
 msgid "IDS_BR_BODY_MOBILE_DATA_IS_TURNED_OFF_CONNECT_TO_A_WI_FI_NETWORK_INSTEAD_OR_TAP_SETTINGS_TO_TURN_ON_MOBILE_DATA_AND_THEN_TRY_AGAIN"
-msgstr "تم إيقاف تشغيل بيانات الهاتف المحمول. اتصل بشبكة Wi-Fi بدلاً من ذلك، أو انقر فوق ”الضبط“ لتشغيل بيانات الهاتف المحمول ثم حاول مرة أخرى."
-
-msgid "IDS_BR_BODY_FIT_TO_WIDTH"
-msgstr "ملائمة للعرض"
-
-msgid "IDS_BR_ACBUTTON_QUICK_ACCESS"
-msgstr "الوصول السريع"
-
-msgid "IDS_BR_OPT_OPEN_IN_NEW_TAB"
-msgstr "فتح في علامة تبويب جديدة"
-
-msgid "IDS_BR_BODY_SHARE_LINK"
-msgstr "مشاركة الارتباط"
-
-msgid "IDS_BR_SK_SAVE_LITE"
-msgstr "حفظ"
-
-msgid "IDS_BR_SK_SAVE_ABB"
-msgstr "حفظ"
-
-msgid "IDS_BR_SK_SAVE"
-msgstr "حفظ"
-
-msgid "IDS_BR_SK_PREVIOUS"
-msgstr "السابق"
-
-msgid "IDS_BR_SK_NEXT"
-msgstr "التالي"
-
-msgid "IDS_BR_SK_DELETE"
-msgstr "مسح"
-
-msgid "IDS_BR_SK_CLEAR"
-msgstr "مسح"
-
-msgid "IDS_BR_SK_BACK"
-msgstr "رجوع"
-
-msgid "IDS_BR_POP_WI_FI_CONNECTION_REQUIRED_CONNECT_TO_WI_FI_NETWORK_AND_TRY_AGAIN"
-msgstr "‏‫يلزم توفر اتصال Wi-Fi‬. اتصل بشبكة Wi-Fi وحاول مرة أخرى."
-
-msgid "IDS_BR_POP_URL_NOT_FOUND"
-msgstr "لم يتم العثور على URL."
-
-msgid "IDS_BR_POP_URL"
-msgstr "الموقع"
-
-msgid "IDS_BR_POP_SAVED"
-msgstr "تم الحفظ."
-
-msgid "IDS_BR_POP_REMOVED"
-msgstr "تم الحذف."
-
-msgid "IDS_BR_POP_PD_ITEMS_WILL_BE_DELETED"
-msgstr "سيتم حذف %d من العناصر."
-
-msgid "IDS_BR_POP_PD_ITEMS_SELECTED"
-msgstr "تم تحديد %d من العناصر."
-
-msgid "IDS_BR_POP_NO_ITEMS_SELECTED"
-msgstr "لم يتم تحديد عناصر."
-
-msgid "IDS_BR_POP_NOT_ENOUGH_MEMORY"
-msgstr "الذاكرة لا تكفي."
-
-msgid "IDS_BR_POP_NEVER"
-msgstr "أبدا"
-
-msgid "IDS_BR_POP_MOBILE_DATA_IS_DISABLED_CONNECT_TO_WI_FI_NETWORK_INSTEAD_OR_ENABLE_MOBILE_DATA_AND_TRY_AGAIN"
-msgstr "تم إلغاء تفعيل بيانات الهاتف المحمول. اتصل بشبكة Wi-Fi بدلا من ذلك أو قم بتفعيل بيانات الهاتف المحمول، ثم أعد المحاولة."
-
-msgid "IDS_BR_POP_LOADING_PLEASE_WAIT_ING"
-msgstr "يتم التحميل. يرجى الانتظار..."
-
-msgid "IDS_BR_POP_INVALID_URL"
-msgstr "الموقع الالكتروني غير صالح."
-
-msgid "IDS_BR_POP_FAIL"
-msgstr "فشل."
-
-msgid "IDS_BR_POP_ENTER_TITLE_ABB"
-msgstr "أدخل عنوانا"
-
-msgid "IDS_BR_POP_DO_NOT_SHOW_AGAIN"
-msgstr "عدم العرض مرة أخرى"
-
-msgid "IDS_BR_POP_DOWNLOADCOMPLETE"
-msgstr "تم التنزيل."
-
-msgid "IDS_BR_POP_DISABLED"
-msgstr "تم إيقاف التفعيل."
-
-msgid "IDS_BR_POP_DELETE_Q"
-msgstr "مسح؟"
-
-msgid "IDS_BR_POP_DELETED"
-msgstr "تم الحذف."
-
-msgid "IDS_BR_POP_CLOSE_APPLICATION_Q"
-msgstr "هل تريد إغلاق التطبيق؟"
-
-msgid "IDS_BR_POP_BOOKMARK_ADDED"
-msgstr "تمت إضافة إشارة مرجعية."
-
-msgid "IDS_BR_POP_AUTOMATIC_BRIGHTNESS"
-msgstr "سطوع تلقائي"
-
-msgid "IDS_BR_POP_ACCOUNT"
-msgstr "الحساب"
-
-msgid "IDS_BR_POP_1_ITEM_WILL_BE_DELETED"
-msgstr "سيتم حذف عنصر واحد."
-
-msgid "IDS_BR_POP_1_ITEM_SELECTED"
-msgstr "تم تحديد عنصر واحد."
-
-msgid "IDS_BR_OPT_TRANSLATE"
-msgstr "ترجمة"
-
-msgid "IDS_BR_OPT_STOP"
-msgstr "إيقاف"
-
-msgid "IDS_BR_OPT_SHOW"
-msgstr "عرض"
-
-msgid "IDS_BR_OPT_SHARE"
-msgstr "مشاركة"
-
-msgid "IDS_BR_OPT_SETTINGS"
-msgstr "الضبط"
-
-msgid "IDS_BR_OPT_SEND_EMAIL"
-msgstr "إرسال بريد إلكتروني"
-
-msgid "IDS_BR_OPT_SELECT"
-msgstr "تحديد"
-
-msgid "IDS_BR_OPT_SD_CARD"
-msgstr "بطاقة SD"
-
-msgid "IDS_BR_OPT_RENAME"
-msgstr "تغيير الاسم"
-
-msgid "IDS_BR_OPT_REFRESH"
-msgstr "إنعاش"
-
-msgid "IDS_BR_OPT_MOVE"
-msgstr "نقل"
-
-msgid "IDS_BR_OPT_MESSAGES"
-msgstr "الرسائل"
-
-msgid "IDS_BR_OPT_LIST_VIEW"
-msgstr "عرض القائمة"
-
-msgid "IDS_BR_OPT_I_AGREE"
-msgstr "أنا أوافق."
-
-msgid "IDS_BR_OPT_HELP"
-msgstr "مساعدة"
-
-msgid "IDS_BR_OPT_DEVICE"
-msgstr "الجهاز"
-
-msgid "IDS_BR_OPT_BOOKMARK"
-msgstr "علامة"
-
-msgid "IDS_BR_OPT_ADDED"
-msgstr "تمت الإضافة."
-
-msgid "IDS_BR_OPT_ADD"
-msgstr "إضافة"
-
-msgid "IDS_BR_MBODY_DEFAULT_DOWNLOAD_STORAGE"
-msgstr "وحدة تخزين تنزيل افتراضية"
-
-msgid "IDS_BR_HEADER_SIGN_IN_TO_SAMSUNG_ACCOUNT"
-msgstr "تسجيل الدخول لحساب Samsung account"
-
-msgid "IDS_BR_HEADER_PD_SELECTED_ABB"
-msgstr "تم تحديد %d"
-
-msgid "IDS_BR_HEADER_NO_NETWORK_CONNECTION"
-msgstr "لا يوجد اتصال بالشبكة"
-
-msgid "IDS_BR_HEADER_FOLDER"
-msgstr "المجلد"
-
-msgid "IDS_BR_HEADER_EDIT_PROFILE"
-msgstr "تعديل ملف التعريف"
-
-msgid "IDS_BR_BUTTON_SET"
-msgstr "ضبط"
-
-msgid "IDS_BR_BUTTON_NOT_NOW"
-msgstr "ليس الآن"
-
-msgid "IDS_BR_BUTTON_ENABLE_ABB"
-msgstr "تمكين"
-
-msgid "IDS_BR_BUTTON_EDIT"
-msgstr "تعديل"
-
-msgid "IDS_BR_BUTTON_CONTINUE_ABB"
-msgstr "متابعة"
-
-msgid "IDS_BR_BUTTON_CONTINUE"
-msgstr "متابعة"
-
-msgid "IDS_BR_BUTTON_CLOSE"
-msgstr "اغلاق"
-
-msgid "IDS_BR_BUTTON_CANCEL_ABB"
-msgstr "إلغاء"
-
-msgid "IDS_BR_BUTTON_CANCEL"
-msgstr "إلغاء"
-
-msgid "IDS_BR_BUTTON_ALLOW"
-msgstr "السماح"
-
-msgid "IDS_BR_BODY_YESTERDAY"
-msgstr "أمس"
-
-msgid "IDS_BR_BODY_URL"
-msgstr "الموقع"
-
-msgid "IDS_BR_BODY_TODAY"
-msgstr "اليوم"
-
-msgid "IDS_BR_BODY_TITLE"
-msgstr "العنوان"
-
-msgid "IDS_BR_BODY_THE_MAXIMUM_NUMBER_OF_CHARACTERS_HPD_HAS_BEEN_EXCEEDED"
-msgstr "تم تجاوز الحد الأقصى لعدد الأحرف (%d)"
-
-msgid "IDS_BR_BODY_STREAMING"
-msgstr "التدفق"
-
-msgid "IDS_BR_BODY_SMALL"
-msgstr "صغير"
-
-msgid "IDS_BR_BODY_SETTINGS"
-msgstr "الضبط"
-
-msgid "IDS_BR_BODY_SEARCH"
-msgstr "بحث"
-
-msgid "IDS_BR_BODY_RSS_SEARCH_RESULTS"
-msgstr "نتائج البحث"
-
-msgid "IDS_BR_BODY_PROFILE"
-msgstr "الوضع"
-
-msgid "IDS_BR_BODY_PROCESSING_ING"
-msgstr "جاري المعالجة..."
-
-msgid "IDS_BR_BODY_PHONE_NUMBER_ABB"
-msgstr "رقم الهاتف"
-
-msgid "IDS_BR_BODY_PHONE"
-msgstr "الهاتف"
-
-msgid "IDS_BR_BODY_PD_ITEMS_WILL_BE_DELETED"
-msgstr "سيتم حذف %d من العناصر."
-
-msgid "IDS_BR_BODY_PASSWORD"
-msgstr "كلمة المرور"
-
-msgid "IDS_BR_BODY_ON"
-msgstr "مفعل"
-
-msgid "IDS_BR_BODY_OFF"
-msgstr "غير مفعل"
-
-msgid "IDS_BR_BODY_NO_RESULTS_FOUND"
-msgstr "لا توجد نتائج."
-
-msgid "IDS_BR_BODY_NO_HISTORIES"
-msgstr "فارغة"
-
-msgid "IDS_BR_BODY_NOTIFICATIONS"
-msgstr "إشعارات"
-
-msgid "IDS_BR_BODY_MEDIUM"
-msgstr "وسط"
-
-msgid "IDS_BR_BODY_IMAGES"
-msgstr "الصور"
-
-msgid "IDS_BR_BODY_FULL_SCREEN"
-msgstr "الشاشة كاملة"
-
-msgid "IDS_BR_BODY_FONT_SIZE"
-msgstr "حجم الخط"
-
-msgid "IDS_BR_BODY_FOLDER_NAME"
-msgstr "اسم المجلد"
-
-msgid "IDS_BR_BODY_ENTER_POSTCODE_ABB"
-msgstr "أدخل الرمز البريدي."
-
-msgid "IDS_BR_BODY_ENTER_POSTCODE"
-msgstr "أدخل الرمز البريدي."
-
-msgid "IDS_BR_BODY_ENTER_PHONE_NUMBER"
-msgstr "أدخل رقم الهاتف."
-
-msgid "IDS_BR_BODY_ENTER_NAME"
-msgstr "أدخل الاسم."
-
-msgid "IDS_BR_BODY_ENTER_FOLDER_NAME"
-msgstr "أدخل اسم المجلد."
-
-msgid "IDS_BR_BODY_ENTER_EMAIL_ADDRESS"
-msgstr "أدخل عنوان البريد الإلكتروني."
-
-msgid "IDS_BR_BODY_EMAIL_ADDRESS"
-msgstr "عنوان البريد الإلكتروني"
-
-msgid "IDS_BR_BODY_DOWNLOADING_ING"
-msgstr "جاري التنزيل..."
-
-msgid "IDS_BR_BODY_DEVELOPER_MODE"
-msgstr "وضع المطور"
-
-msgid "IDS_BR_BODY_DEFAULT"
-msgstr "إفتراضي"
-
-msgid "IDS_BR_BODY_BOOKMARKS"
-msgstr "العلامات"
-
-msgid "IDS_BR_BODY_ALL"
-msgstr "الكل"
-
-msgid "IDS_BR_BODY_ADD_TO"
-msgstr "إضافة إلى"
-
-msgid "IDS_BR_BODY_ADDDETAILSVIEW_TAGS"
-msgstr "علامة"
-
-msgid "IDS_BR_BODY_ADDBOOKMARKURL"
-msgstr "الموقع"
-
-msgid "IDS_BR_BODY_1_ITEM_WILL_BE_DELETED"
-msgstr "سيتم حذف عنصر واحد."
-
-msgid "IDS_BR_TPOP_MAXIMUM_NUMBER_OF_CHARACTERS_HPD_REACHED"
-msgstr "تم بلوغ أقصى عدد من الأحرف (%d)"
-
-msgid "IDS_BR_POP_UNSUPPORTMEDIATYPE"
-msgstr "نوع الوسائط غير مدعوم."
-
-msgid "IDS_BR_POP_UNABLE_TO_CONNECT_TO_MOBILE_NETWORKS_WHILE_FLIGHT_MODE_IS_ENABLED_CONNECT_TO_WI_FI_NETWORK_INSTEAD_OR_DISABLE_FLIGHT_MODE_AND_TRY_AGAIN"
-msgstr "يتعذر الاتصال بشبكات الهاتف المحمول أثناء تفعيل وضع الطيران. اتصل بشبكة Wi-Fi بدلا من ذلك أو قم بإلغاء تفعيل وضع الطيران، ثم أعد المحاولة."
-
-msgid "IDS_BR_POP_INSTALL_SUCCESS"
-msgstr "تم التثبيت."
-
-msgid "IDS_BR_POP_INSTALLATION_FAILED"
-msgstr "فشل التثبيت."
-
-msgid "IDS_BR_POP_DELETING_ING"
-msgstr "جاري المسح..."
-
-msgid "IDS_BR_POP_DATA_ROAMING_IS_DISABLED_CONNECT_TO_WI_FI_NETWORK_INSTEAD_OR_ENABLE_DATA_ROAMING_AND_TRY_AGAIN"
-msgstr "تم إلغاء تفعيل تجوال البيانات. اتصل بشبكة Wi-Fi بدلا من ذلك أو قم بتفعيل بيانات التجوال، ثم أعد المحاولة."
-
-msgid "IDS_BR_OPT_SHARE_VIA"
-msgstr "مشاركة عبر"
-
-msgid "IDS_BR_OPT_PASTE"
-msgstr "لصق"
-
-msgid "IDS_BR_MBODY_FONT_SIZE"
-msgstr "حجم الخط"
-
-msgid "IDS_BR_HEADER_UNABLE_TO_DOWNLOAD_ABB"
-msgstr "يتعذر التنزيل"
-
-msgid "IDS_BR_BUTTON_UPDATE"
-msgstr "تحديث"
-
-msgid "IDS_BR_BUTTON_RETRY"
-msgstr "حاول ثانية"
-
-msgid "IDS_BR_BODY_REQUEST_FAILED"
-msgstr "فشل الطلب."
+msgstr "تم إيقاف تشغيل بيانات الهاتف المحمول. اتصل بشبكة Wi-Fi بدلاً من ذلك، أو انقر فوق الضبط لتشغيل بيانات الهاتف المحمول ثم حاول مرة أخرى."
 
 msgid "IDS_BR_BODY_LOGIN"
 msgstr "تسجيل الدخول"
 
 msgid "IDS_BR_BODY_LOADING_ING"
-msgstr "جارٍ التحميل..."
+msgstr "جاري التحميل ..."
+
+msgid "IDS_BR_BODY_FIT_TO_WIDTH"
+msgstr "ملائمة للعرض"
 
 msgid "IDS_BR_BODY_FIT_TO_SCREEN"
 msgstr "ملاءمة مع الشاشة"
@@ -1999,165 +2008,12 @@ msgstr "ملفات محملة"
 msgid "IDS_BR_BODY_DATA_ROAMING_IS_DISABLED_CONNECT_TO_A_WI_FI_NETWORK_INSTEAD_OR_ENABLE_DATA_ROAMING_AND_TRY_AGAIN"
 msgstr "تم إلغاء تفعيل تجوال البيانات. اتصل بشبكة Wi-Fi بدلا من ذلك، أو قم بتفعيل تجوال البيانات وحاول مرة أخرى."
 
-msgid "IDS_BR_POP_DOWNLOAD_CANCELLED"
-msgstr "تم إلغاء التنزيل."
+msgid "IDS_BR_ACBUTTON_QUICK_ACCESS"
+msgstr "الوصول السريع"
 
-msgid "IDS_BR_BUTTON_SECRET_ON_ABB"
-msgstr "تشغيل السر"
+msgid "IDS_ST_POP_SOME_CONTENT_HAS_BEEN_BLOCKED_TO_PROTECT_YOUR_DEVICE"
+msgstr "تم حظر بعض المحتويات من أجل حماية الجهاز"
 
-msgid "IDS_BR_MBODY_PRIVACY"
-msgstr "الخصوصية"
-
-msgid "IDS_BR_MBODY_DEFAULT_STORAGE"
-msgstr "وحدة التخزين الافتراضية"
-
-msgid "IDS_BR_MBODY_MANUAL_ZOOM"
-msgstr "التكبير/التصغير اليدوي"
-
-msgid "IDS_BR_TMBODY_DEFAULT_SEARCH_ENGINE"
-msgstr "محرك البحث الافتراضي"
-
-msgid "IDS_BR_MBODY_SAVE_SIGN_IN_INFO"
-msgstr "حفظ معلومات تسجيل الدخول"
-
-msgid "IDS_BR_OPT_TURN_OFF_SECRET_MODE_ABB"
-msgstr "إيقاف تشغيل الوضع السري"
-
-msgid "IDS_BR_OPT_TURN_ON_SECRET_MODE_ABB"
-msgstr "تشغيل الوضع السري"
-
-msgid "IDS_BR_OPT_SHOW_PASSWORD_ABB2"
-msgstr "إظهار كلمة المرور"
-
-msgid "IDS_BR_OPT_SECRET_MODE_SECURITY_ABB"
-msgstr "حماية الوضع السري"
-
-msgid "IDS_BR_BUTTON_USE_PASSWORD_ABB"
-msgstr "استخدام كلمة المرور"
-
-msgid "IDS_BR_HEADER_DONT_USE_PASSWORD_ABB"
-msgstr "عدم استخدام كلمة المرور"
-
-msgid "IDS_BR_MBODY_MOST_VISITED_WEBSITES"
-msgstr "مواقع الويب الأكثر زيارة"
-
-msgid "IDS_BR_MBODY_SET_MY_PROFILE"
-msgstr "تعيين ملف التعريف"
-
-msgid "IDS_BR_MBODY_MY_AUTO_FILL_PROFILE"
-msgstr "ملفي التعريفي المعبأ تلقائياً"
-
-msgid "IDS_BR_SBODY_MANAGE_DATA_USED_TO_FILL_IN_FORMS_ONLINE"
-msgstr "إدارة البيانات المستخدمة لملء النماذج عبر الإنترنت."
-
-msgid "IDS_BR_MBODY_SAVE_SIGN_IN_INFO_ABB"
-msgstr "حفظ معلومات تسجيل الدخول"
-
-msgid "IDS_BR_OPT_LOCATION_ACCESS_DATA"
-msgstr "بيانات الوصول إلى الموقع"
-
-msgid "IDS_BR_OPT_AUTO_FILL_DATA"
-msgstr "ملء البيانات تلقائيًا"
-
-msgid "IDS_BR_BODY_ANY_WEBPAGES_YOU_VIEW_WHILE_SECRET_MODE_IS_TURNED_ON_WONT_APPEAR_IN_YOUR_BROWSER_OR_SEARCH_HISTORY_MSG"
-msgstr "لن تظهر أي صفحات ويب تعرضها أثناء تشغيل الوضع السري في متصفّحك أو في محفوظات البحث، أثناء إيقاف تشغيل هذا الوضع.\n\nولن تظهر أي إشارات مرجعية وصفحات ويب تحفظها أثناء تشغيل الوضع السري، في حال تم إيقاف تشغيله.\n\nيمكنك أيضاً حماية بيانات الوضع السري بكلمة مرور."
-
-msgid "IDS_BR_BODY_ANY_WEBPAGES_YOU_VIEW_WHILE_SECRET_MODE_IS_TURNED_ON_WONT_APPEAR_IN_YOUR_BROWSER_OR_SEARCH_MSG"
-msgstr "لن تظهر أي صفحات ويب تعرضها أثناء تشغيل الوضع السري في متصفّحك أو في محفوظات البحث، أثناء إيقاف تشغيل هذا الوضع.\n\nولن تظهر أي إشارات مرجعية أو صفحات ويب تحفظها أثناء تشغيل الوضع السري، في حال تم إيقاف تشغيله."
-
-msgid "IDS_BR_BUTTON_SECRET_OFF_ABB"
-msgstr "إيقاف السر"
-
-msgid "IDS_BR_BUTTON_DONT_USE_PASSWORD_ABB"
-msgstr "عدم استخدام كلمة المرور"
-
-msgid "IDS_BR_BUTTON_NEW_TAB_ABB2"
-msgstr "علامة تبويب جديدة"
-
-msgid "IDS_BR_NPBODY_WEB_ADDRESS_ABB"
-msgstr "عنوان الويب"
-
-msgid "IDS_BR_HEADER_ADD_WEBPAGE_TO_QUICK_ACCESS_ABB"
-msgstr "إضافة صفحة ويب إلى الوصول السريع"
-
-msgid "IDS_BR_TMBODY_TURN_ON_JAVASCRIPT"
-msgstr "تشغيل JavaScript"
-
-msgid "IDS_BR_HEADER_COULDNT_OPEN_NEW_TAB_ABB"
-msgstr "تعذر فتح علامة تبويب جديدة"
-
-msgid "IDS_BR_OPT_OPEN_IN_NEW_TAB_ABB"
-msgstr "الفتح في علامة تبويب جديدة"
-
-msgid "IDS_BR_TPOP_FOLDER_NAME_ALREADY_IN_USE"
-msgstr "إن اسم المجلد قيد الاستخدام بالفعل."
-
-msgid "IDS_BR_NPBODY_NEW_FOLDER_PD"
-msgstr "مجلد جديد %d"
-
-msgid "IDS_BR_NPBODY_NEW_FOLDER"
-msgstr "مجلد جديد"
-
-msgid "IDS_BR_OPT_ENABLE_JAVASCRIPT"
-msgstr "تفعيل JavaScript"
-
-msgid "IDS_BR_TMBODY_MANAGE_WEBSITE_DATA"
-msgstr "إدارة بيانات موقع الويب"
-
-msgid "IDS_BR_HEADER_SET_HOME_PAGE_ABB"
-msgstr "ضبط الصفحة الرئيسية"
-
-msgid "IDS_BR_TPOP_WEBPAGE_ADDED_TO_QUICK_ACCESS_LIST"
-msgstr "تمت إضافة صفحة الويب إلى قائمة الوصول السريع."
-
-msgid "IDS_BR_OPT_EDIT_QUICK_ACCESS_ABB"
-msgstr "تعديل الوصول السريع"
-
-msgid "IDS_BR_OPT_REMOVE_FROM_BOOKMARKS_ABB"
-msgstr "إزالة من الإشارات المرجعية"
-
-msgid "IDS_BR_HEADER_ADD_BOOKMARK_ABB"
-msgstr "إضافة إشارة مرجعية"
-
-msgid "IDS_BR_BODY_BROWSING_HISTORY"
-msgstr "محفوظات الاستعراض"
-
-msgid "IDS_BR_HEADER_TABS_ABB2"
-msgstr "علامات التبويب"
-
-msgid "IDS_BR_OPT_NEW_TAB"
-msgstr "علامة تبويب جديدة"
-
-msgid "IDS_BR_BUTTON_FORWARD_ABB2"
-msgstr "تحويل"
-
-msgid "IDS_BR_BUTTON_BACK_ABB3"
-msgstr "رجوع"
-
-msgid "IDS_BR_BUTTON_BOOKMARKS_ABB"
-msgstr "الإشارات المرجعية"
-
-msgid "IDS_BR_NPBODY_NO_PROFILES_ABB"
-msgstr "ما من ملفات تعريف"
-
-msgid "IDS_BR_TAB2_HISTORY"
-msgstr "المحفوظات"
-
-msgid "IDS_BR_TAB2_BOOKMARKS"
-msgstr "الإشارات المرجعية"
-
-msgid "IDS_BR_HEADER_SAVE_CONTENT_TO_ABB"
-msgstr "حفظ المحتويات في"
-
-msgid "IDS_BR_HEADER_SELECT_ITEMS_ABB2"
-msgstr "تحديد عناصر"
-
-msgid "IDS_BR_BODY_YOUR_PASSWORD_MUST_CONTAIN_AT_LEAST_PD_CHARACTERS_INCLUDING_AT_LEAST_1_LETTER"
-msgstr "يجب أن تحتوي كلمة المرور الخاصة بك على %d من الرموز على الأقل، على أن تتضمن حرفاً واحداً على الأقل."
-
-msgid "IDS_BR_BODY_AN_INCORRECT_PASSWORD_HAS_BEEN_ENTERED_TRY_AGAIN"
-msgstr "تم إدخال كلمة مرور غير صحيحة. حاول مرة أخرى."
-
-msgid "IDS_BR_BODY_NO_TABS"
-msgstr "لا توجد علامات تبويب"
+msgid "IDS_ST_POP_SELECT_WHETHER_TO_GO_TO_THE_WEBPAGE_ANYWAY"
+msgstr "حدد إمكانية الانتقال إلى صفحة الويب على أي حال."
 

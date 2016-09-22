@@ -1,8 +1,14 @@
 msgid "IDS_BR_POP_NETWORK_ERROR"
 msgstr "Ошибка сети."
 
+msgid "IDS_BR_BODY_AUTHUSERNAME"
+msgstr "Имя пользователя"
+
 msgid "IDS_BR_BODY_DESTINATIONS_AUTHENTICATION_REQUIRED"
 msgstr "Требуется проверка подлинности."
+
+msgid "IDS_BR_BODY_AUTHPASSWORD"
+msgstr "Пароль"
 
 msgid "IDS_BR_HEADER_SECURITY_WARNING"
 msgstr "Предупреждение системы безопасности"
@@ -27,6 +33,12 @@ msgstr "Проблемы с сертификатом безопасности э
 
 msgid "IDS_BR_OPT_ALLOW"
 msgstr "Разрешить"
+
+msgid "IDS_BR_OPT_VIEW"
+msgstr "Просмотр"
+
+msgid "IDS_BR_OPT_CANCEL"
+msgstr "Отмена"
 
 msgid "IDS_BR_BODY_PS_REQUESTS_YOUR_LOCATION"
 msgstr "%s запрашивает сведения о вашем местоположении."
@@ -60,18 +72,6 @@ msgstr "Загрузить"
 
 msgid "IDS_BR_BODY_THIS_WEBPAGE"
 msgstr "Эта веб-страница"
-
-msgid "IDS_BR_BODY_AUTHUSERNAME"
-msgstr "Имя пользователя"
-
-msgid "IDS_BR_BODY_AUTHPASSWORD"
-msgstr "Пароль"
-
-msgid "IDS_BR_OPT_VIEW"
-msgstr "Просмотр"
-
-msgid "IDS_BR_OPT_CANCEL"
-msgstr "Отмена"
 
 msgid "IDS_BR_OPT_SCREEN"
 msgstr "Экран"
@@ -109,6 +109,15 @@ msgstr "Отмена"
 msgid "IDS_BR_BUTTON_MORE"
 msgstr "Еще"
 
+msgid "IDS_TPLATFORM_ACBUTTON_DONE_ABB"
+msgstr "ГОТОВО"
+
+msgid "IDS_TPLATFORM_ACBUTTON_CANCEL_ABB"
+msgstr "ОТМЕНА"
+
+msgid "IDS_TPLATFORM_ACBUTTON_DELETE_ABB"
+msgstr "УДАЛИТЬ"
+
 msgid "IDS_BR_BODY_NO_ITEMS"
 msgstr "Нет элементов"
 
@@ -117,6 +126,9 @@ msgstr "Подключение к мобил. сети"
 
 msgid "IDS_BR_OPT_DO_NOT_SHOW_AGAIN"
 msgstr "Больше не показывать"
+
+msgid "IDS_BR_SK_OK"
+msgstr "OK"
 
 msgid "IDS_BR_POP_ONLY_HTTP_OR_HTTPS_URLS_CAN_BE_DOWNLOADED"
 msgstr "Можно выполнять загрузку только с URL-адресов с протоколами http или https."
@@ -139,11 +151,17 @@ msgstr "Копировать ссылку"
 msgid "IDS_BR_OPT_COPY_IMAGE"
 msgstr "Копировать изображение"
 
-msgid "IDS_BR_SK_OK"
-msgstr "OK"
-
 msgid "IDS_BR_OPT_CALL"
 msgstr "Вызов"
+
+msgid "IDS_ST_POP_PS_HAS_BEEN_DETECTED"
+msgstr "Обнаружен файл %s."
+
+msgid "IDS_ST_POP_DETECTED_IN_C_PS"
+msgstr "Зараженный файл: %s"
+
+msgid "IDS_ST_HEADER_MALWARE_DETECTED_ABB"
+msgstr "Найдена вредоносная программа"
 
 msgid "IDS_BR_BUTTON_FAILED"
 msgstr "Сбой"
@@ -211,11 +229,35 @@ msgstr "Снять"
 msgid "IDS_BR_SK_TABS"
 msgstr "Вкладки"
 
+msgid "IDS_BR_SK_SAVE_LITE"
+msgstr "Соxр."
+
+msgid "IDS_BR_SK_SAVE_ABB"
+msgstr "Соxр."
+
+msgid "IDS_BR_SK_SAVE"
+msgstr "Соxранить"
+
+msgid "IDS_BR_SK_PREVIOUS"
+msgstr "Назад"
+
+msgid "IDS_BR_SK_NEXT"
+msgstr "Далее"
+
 msgid "IDS_BR_SK_MENU"
 msgstr "Меню"
 
 msgid "IDS_BR_SK_DELETE_ABB"
 msgstr "Удал."
+
+msgid "IDS_BR_SK_DELETE"
+msgstr "Удалить"
+
+msgid "IDS_BR_SK_CLEAR"
+msgstr "Стереть"
+
+msgid "IDS_BR_SK_BACK"
+msgstr "Назад"
 
 msgid "IDS_BR_SK3_CREATE_FOLDER"
 msgstr "Создать папку"
@@ -274,6 +316,15 @@ msgstr "Вероятно, вы не сможете точно обрезать �
 msgid "IDS_BR_POP_YOUR_HISTORY_WILL_BE_CLEARED"
 msgstr "Журнал будет очищен."
 
+msgid "IDS_BR_POP_WI_FI_CONNECTION_REQUIRED_CONNECT_TO_WI_FI_NETWORK_AND_TRY_AGAIN"
+msgstr "Требуется подключение к Wi-Fi. Подключитесь к сети Wi-Fi и повторите попытку"
+
+msgid "IDS_BR_POP_URL_NOT_FOUND"
+msgstr "URL-адрес не найден."
+
+msgid "IDS_BR_POP_URL"
+msgstr "URL"
+
 msgid "IDS_BR_POP_UNABLE_TO_VIEW_THE_CERTIFICATE_THE_PAGE_INFORMATION_HAS_BEEN_CHANGED"
 msgstr "Не удалось просмотреть сертификат. Данные на странице изменены."
 
@@ -319,11 +370,23 @@ msgstr "Политика безопасности ограничивает ис�
 msgid "IDS_BR_POP_SAVED_TO_BOOKMARKS"
 msgstr "Сохранено в закладках."
 
+msgid "IDS_BR_POP_SAVED"
+msgstr "Сохранено."
+
 msgid "IDS_BR_POP_RENAME_TAG"
 msgstr "Переименовать метку"
 
+msgid "IDS_BR_POP_REMOVED"
+msgstr "Удалено."
+
 msgid "IDS_BR_POP_PD_PROFILES_WILL_BE_DELETED"
 msgstr "Профили (%d) будут удалены."
+
+msgid "IDS_BR_POP_PD_ITEMS_WILL_BE_DELETED"
+msgstr "Элементы (%d) будут удалены."
+
+msgid "IDS_BR_POP_PD_ITEMS_SELECTED"
+msgstr "Выбрано элементов: %d."
 
 msgid "IDS_BR_POP_PAGES_THAT_YOU_VIEW_WILL_NOT_APPEAR_IN_YOUR_BROWSER_HISTORY_OR_SEARCH_HISTORY_AND_THEY_WILL_NOT_LEAVE_OTHER_TRACES_LIKE_COOKIES"
 msgstr "Просматриваемые страницы не отображаются в журнале браузера и журнале поиска. Кроме того, для них не будут сохраняться файлы cookie и другие данные."
@@ -352,20 +415,53 @@ msgstr "Обнаружено “%1$s”.\nМесто обнаружения: “
 msgid "IDS_BR_POP_P1SS_HAS_BEEN_DETECTED_DETECTED_IN_C_P2SS_OPEN_WEBPAGE_ANYWAY_Q"
 msgstr "Обнаружено “%1$s”.\nМесто обнаружения: “%2$s”\n\nОткрыть веб-страницу?"
 
+msgid "IDS_BR_POP_NO_ITEMS_SELECTED"
+msgstr "Элементы не выбраны."
+
 msgid "IDS_BR_POP_NOT_ENOUGH_MEMORY_DELETE_SOME_ITEMS_AND_TRY_AGAIN"
 msgstr "Недостаточно памяти. Удалите ненужные элементы и повторите попытку."
+
+msgid "IDS_BR_POP_NOT_ENOUGH_MEMORY"
+msgstr "Недостаточно памяти."
 
 msgid "IDS_BR_POP_NOT_ALLOWED"
 msgstr "Запрещено."
 
+msgid "IDS_BR_POP_NEVER"
+msgstr "Никогда"
+
 msgid "IDS_BR_POP_MOVED"
 msgstr "Перемещено."
+
+msgid "IDS_BR_POP_MOBILE_DATA_IS_DISABLED_CONNECT_TO_WI_FI_NETWORK_INSTEAD_OR_ENABLE_MOBILE_DATA_AND_TRY_AGAIN"
+msgstr "Мобильные данные отключены. Подключитесь к сети Wi-Fi или снова включите мобильные данные и повторите попытку"
+
+msgid "IDS_BR_POP_LOADING_PLEASE_WAIT_ING"
+msgstr "Загрузка. Подождите..."
+
+msgid "IDS_BR_POP_INVALID_URL"
+msgstr "Неправильный URL"
+
+msgid "IDS_BR_POP_FAIL"
+msgstr "Сбой."
 
 msgid "IDS_BR_POP_ENTER_URL"
 msgstr "Введите URL."
 
+msgid "IDS_BR_POP_ENTER_TITLE_ABB"
+msgstr "Введите название"
+
 msgid "IDS_BR_POP_ENTER_BOOKMARK_NAME"
 msgstr "Введите имя закладки."
+
+msgid "IDS_BR_POP_DO_NOT_SHOW_AGAIN"
+msgstr "Не показывать снова"
+
+msgid "IDS_BR_POP_DOWNLOADCOMPLETE"
+msgstr "Загрузка завершена."
+
+msgid "IDS_BR_POP_DISABLED"
+msgstr "Отключено."
 
 msgid "IDS_BR_POP_DIALING_ING_VZW"
 msgstr "Dialing..."
@@ -391,6 +487,9 @@ msgstr "Удалить данные для входа на этот веб-са�
 msgid "IDS_BR_POP_DELETE_SIGN_IN_DATA_FOR_PD_WEBSITES_Q"
 msgstr "Удалить данные для входа на веб-сайты в количестве %d?"
 
+msgid "IDS_BR_POP_DELETE_Q"
+msgstr "Удалить?"
+
 msgid "IDS_BR_POP_DELETE_PD_SAVED_WEB_PAGES_Q"
 msgstr "Удалить сохраненные веб-страницы (%d)?"
 
@@ -406,8 +505,14 @@ msgstr "Удалить все данные для веб-сайта и разр�
 msgid "IDS_BR_POP_DELETEHISTORYQUESTION"
 msgstr "Удалить журнал?"
 
+msgid "IDS_BR_POP_DELETED"
+msgstr "Удалено."
+
 msgid "IDS_BR_POP_CONTINUE"
 msgstr "Продолжить"
+
+msgid "IDS_BR_POP_CLOSE_APPLICATION_Q"
+msgstr "Закрыть приложение?"
 
 msgid "IDS_BR_POP_CLOSE_APPLICATION"
 msgstr "Закрыть приложение"
@@ -420,6 +525,12 @@ msgstr "Очистить журнал?"
 
 msgid "IDS_BR_POP_BOOKMARK_REMOVED"
 msgstr "Закладка удалена."
+
+msgid "IDS_BR_POP_BOOKMARK_ADDED"
+msgstr "Закладка добавлена."
+
+msgid "IDS_BR_POP_AUTOMATIC_BRIGHTNESS"
+msgstr "Автоматическая регулировка яркости"
 
 msgid "IDS_BR_POP_ALREADY_EXISTS"
 msgstr "Уже существует."
@@ -445,6 +556,15 @@ msgstr "Разрешить сайтам сохранять и читать cooki
 msgid "IDS_BR_POP_ADDED_TO_BOOKMARKS"
 msgstr "Добавлено к закладкам."
 
+msgid "IDS_BR_POP_ACCOUNT"
+msgstr "Учетная запись"
+
+msgid "IDS_BR_POP_1_ITEM_WILL_BE_DELETED"
+msgstr "Будет удален 1 элемент."
+
+msgid "IDS_BR_POP_1_ITEM_SELECTED"
+msgstr "Выбран 1 элемент."
+
 msgid "IDS_BR_OPT_WINDOWS"
 msgstr "Окна"
 
@@ -454,20 +574,38 @@ msgstr "Просм. сертификат"
 msgid "IDS_BR_OPT_UNICODE_HUTF_8"
 msgstr "Юникод (UTF-8)"
 
+msgid "IDS_BR_OPT_TRANSLATE"
+msgstr "Перевести"
+
 msgid "IDS_BR_OPT_THUMBNAIL_VIEW"
 msgstr "Эскизы"
 
 msgid "IDS_BR_OPT_TEXT_ENCODING"
 msgstr "Кодировка текста"
 
+msgid "IDS_BR_OPT_STOP"
+msgstr "Остановить"
+
 msgid "IDS_BR_OPT_SHRINK_TEXT"
 msgstr "Сжать текст"
+
+msgid "IDS_BR_OPT_SHOW"
+msgstr "Показать"
+
+msgid "IDS_BR_OPT_SHARE"
+msgstr "Поделиться"
 
 msgid "IDS_BR_OPT_SETTINGS_ABB"
 msgstr "Настройки"
 
+msgid "IDS_BR_OPT_SETTINGS"
+msgstr "Настройки"
+
 msgid "IDS_BR_OPT_SEND_MESSAGE_VODA"
 msgstr "Отправить сообщение"
+
+msgid "IDS_BR_OPT_SEND_EMAIL"
+msgstr "Отправить E-mail"
 
 msgid "IDS_BR_OPT_SENDURLVIA_EMAIL"
 msgstr "E-mail"
@@ -486,6 +624,12 @@ msgstr "Режим выделения"
 
 msgid "IDS_BR_OPT_SELECTED"
 msgstr "Выбранное"
+
+msgid "IDS_BR_OPT_SELECT"
+msgstr "Выбрать"
+
+msgid "IDS_BR_OPT_SD_CARD"
+msgstr "Карта памяти"
 
 msgid "IDS_BR_OPT_SAVE_TO_KEEPIT_ABB"
 msgstr "Сохранить в KeepIt"
@@ -514,8 +658,14 @@ msgstr "Изменить порядок"
 msgid "IDS_BR_OPT_RENAME_FOLDER"
 msgstr "Переименовать папку"
 
+msgid "IDS_BR_OPT_RENAME"
+msgstr "Переименовать"
+
 msgid "IDS_BR_OPT_REMOVE"
 msgstr "Удалить"
+
+msgid "IDS_BR_OPT_REFRESH"
+msgstr "Обновить"
 
 msgid "IDS_BR_OPT_READER_MODE_TTS"
 msgstr "Режим чтения"
@@ -535,8 +685,14 @@ msgstr "Автономные страницы"
 msgid "IDS_BR_OPT_NEW_WINDOW"
 msgstr "Новое окно"
 
+msgid "IDS_BR_OPT_MOVE"
+msgstr "Переместить"
+
 msgid "IDS_BR_OPT_MINIMISE"
 msgstr "Свернуть"
+
+msgid "IDS_BR_OPT_MESSAGES"
+msgstr "Сообщения"
 
 msgid "IDS_BR_OPT_MEDIUM_M_QUALITY"
 msgstr "Среднее"
@@ -549,6 +705,9 @@ msgstr "Привилегии доступа к местонахождению"
 
 msgid "IDS_BR_OPT_LOAD_IMAGES"
 msgstr "Загружать графику"
+
+msgid "IDS_BR_OPT_LIST_VIEW"
+msgstr "Список"
 
 msgid "IDS_BR_OPT_LATIN_1_HISO_8859_1"
 msgstr "Латиница-1 (ISO-8859-1)"
@@ -565,6 +724,9 @@ msgstr "Японский (ISO-2022-JP)"
 msgid "IDS_BR_OPT_JAPANESE_HEUC_JP"
 msgstr "Японский (EUC-JP)"
 
+msgid "IDS_BR_OPT_I_AGREE"
+msgstr "Принимаю."
+
 msgid "IDS_BR_OPT_INCOGNITO_MODE_ABB"
 msgstr "Анонимный режим"
 
@@ -579,6 +741,9 @@ msgstr "Ярлык на главном экране"
 
 msgid "IDS_BR_OPT_HIGH_M_QUALITY"
 msgstr "Высокое"
+
+msgid "IDS_BR_OPT_HELP"
+msgstr "Справка"
 
 msgid "IDS_BR_OPT_GOFORWARD"
 msgstr "Вперед"
@@ -625,6 +790,9 @@ msgstr "Выкл. “Пониж. использ. данных”"
 msgid "IDS_BR_OPT_DISABLED"
 msgstr "Отключено"
 
+msgid "IDS_BR_OPT_DEVICE"
+msgstr "Устройство"
+
 msgid "IDS_BR_OPT_DELETE_SAVED_PAGE_ABB"
 msgstr "Удалить сохраненную страницу"
 
@@ -658,6 +826,9 @@ msgstr "Китайский (Big5)"
 msgid "IDS_BR_OPT_CACHE"
 msgstr "Кэш"
 
+msgid "IDS_BR_OPT_BOOKMARK"
+msgstr "Закладка"
+
 msgid "IDS_BR_OPT_ADD_TO_WEB_CLIP"
 msgstr "Добавить как виджет"
 
@@ -678,6 +849,12 @@ msgstr "Добавить закладку"
 
 msgid "IDS_BR_OPT_ADD_BOOKMARK"
 msgstr "Добавить закладку"
+
+msgid "IDS_BR_OPT_ADDED"
+msgstr "Добавлено."
+
+msgid "IDS_BR_OPT_ADD"
+msgstr "Добавить"
 
 msgid "IDS_BR_OPT1_EXTENSION"
 msgstr "Pасширение"
@@ -748,6 +925,9 @@ msgstr "Загрузить содерж. канала"
 msgid "IDS_BR_MBODY_DELETE_SIGN_IN_DATA"
 msgstr "Удаление данных для входа"
 
+msgid "IDS_BR_MBODY_DEFAULT_DOWNLOAD_STORAGE"
+msgstr "Хран. для загр. по умолч."
+
 msgid "IDS_BR_MBODY_DATA_SAVING_STATISTICS"
 msgstr "Статистика эконом. данных"
 
@@ -790,6 +970,9 @@ msgstr "Невозм. переместить закладки"
 msgid "IDS_BR_HEADER_SITE_NOT_TRUSTED_ABB"
 msgstr "Ненадежный веб-сайт"
 
+msgid "IDS_BR_HEADER_SIGN_IN_TO_SAMSUNG_ACCOUNT"
+msgstr "Вход в учетную запись Samsung"
+
 msgid "IDS_BR_HEADER_SET_HOMEPAGE_ABB"
 msgstr "Настройка домашней страницы"
 
@@ -826,11 +1009,17 @@ msgstr "Всплывающее окно заблокировано"
 msgid "IDS_BR_HEADER_POPULAR_WEBSITES_ABB"
 msgstr "Популярные сайты"
 
+msgid "IDS_BR_HEADER_PD_SELECTED_ABB"
+msgstr "Выбрано: %d"
+
 msgid "IDS_BR_HEADER_ORGANISATION_C_ABB"
 msgstr "Организация:"
 
 msgid "IDS_BR_HEADER_ORGANISATIONAL_UNIT_C"
 msgstr "Подразделение:"
+
+msgid "IDS_BR_HEADER_NO_NETWORK_CONNECTION"
+msgstr "Отсутствует подключение к сети"
 
 msgid "IDS_BR_HEADER_NEWER_M_INTERNET_HISTORY_ABB"
 msgstr "Newer"
@@ -847,11 +1036,17 @@ msgstr "Расширение HTML5"
 msgid "IDS_BR_HEADER_FORM_DATA"
 msgstr "Данные формы"
 
+msgid "IDS_BR_HEADER_FOLDER"
+msgstr "Папка"
+
 msgid "IDS_BR_HEADER_EXPIRES_ON_C"
 msgstr "Срок действия:"
 
 msgid "IDS_BR_HEADER_ENABLE_WEB_SIGN_IN"
 msgstr "Включить вход на веб-сайты"
+
+msgid "IDS_BR_HEADER_EDIT_PROFILE"
+msgstr "Изменить профиль"
 
 msgid "IDS_BR_HEADER_EDIT_BOOKMARK"
 msgstr "Редактировать закладку"
@@ -889,8 +1084,14 @@ msgstr "Управ. пропуск. способн."
 msgid "IDS_BR_HEADER_ADVANCEDCERTIFICATES"
 msgstr "Сертификаты"
 
+msgid "IDS_BR_BUTTON_SET"
+msgstr "Установить"
+
 msgid "IDS_BR_BUTTON_RESET_ABB"
 msgstr "Сбросить"
+
+msgid "IDS_BR_BUTTON_NOT_NOW"
+msgstr "Не сейчас"
 
 msgid "IDS_BR_BUTTON_HOMEPAGE_ABB"
 msgstr "Дом. стр."
@@ -898,11 +1099,35 @@ msgstr "Дом. стр."
 msgid "IDS_BR_BUTTON_FIND_ABB"
 msgstr "Найти"
 
+msgid "IDS_BR_BUTTON_ENABLE_ABB"
+msgstr "Включить"
+
+msgid "IDS_BR_BUTTON_EDIT"
+msgstr "Изменить"
+
+msgid "IDS_BR_BUTTON_CONTINUE_ABB"
+msgstr "Далее"
+
+msgid "IDS_BR_BUTTON_CONTINUE"
+msgstr "Продолжить"
+
+msgid "IDS_BR_BUTTON_CLOSE"
+msgstr "Закрыть"
+
+msgid "IDS_BR_BUTTON_CANCEL_ABB"
+msgstr "Отмена"
+
+msgid "IDS_BR_BUTTON_CANCEL"
+msgstr "Отмена"
+
 msgid "IDS_BR_BUTTON_BACK_ABB"
 msgstr "Назад"
 
 msgid "IDS_BR_BUTTON_ALWAYS_SHOW_ABB"
 msgstr "Выв. всегда"
+
+msgid "IDS_BR_BUTTON_ALLOW"
+msgstr "Разрешить"
 
 msgid "IDS_BR_BUTTON2_WEB_PORTAL"
 msgstr "Веб-портал"
@@ -927,6 +1152,9 @@ msgstr "Перейти к журналу"
 
 msgid "IDS_BR_BUTTON2_ENTERTAINMENT"
 msgstr "Развле-\nчения"
+
+msgid "IDS_BR_BODY_YESTERDAY"
+msgstr "Вчера"
 
 msgid "IDS_BR_BODY_WINDOW_MANAGER"
 msgstr "Диспетчер окон"
@@ -955,6 +1183,9 @@ msgstr "Чтобы скрыть строку состояния, использ�
 msgid "IDS_BR_BODY_USE_A_PREDICTION_SERVICE_TO_DISPLAY_RELATED_QUERIES_AND_POPULAR_WEBSITES_IN_THE_ADDRESS_BAR_AS_YOU_TYPE"
 msgstr "Выводить связанные запросы или популярные сайты в адресной строке при вводе."
 
+msgid "IDS_BR_BODY_URL"
+msgstr "URL"
+
 msgid "IDS_BR_BODY_UPPER_FOLDER_T_TALKBACK"
 msgstr "На уровень выше"
 
@@ -970,6 +1201,12 @@ msgstr "Невозможно отобразить веб-страницу. Не�
 msgid "IDS_BR_BODY_TOWN_CITY_COUNTY_ABB"
 msgstr "Город/страна"
 
+msgid "IDS_BR_BODY_TODAY"
+msgstr "Сегодня"
+
+msgid "IDS_BR_BODY_TITLE"
+msgstr "Название"
+
 msgid "IDS_BR_BODY_THIS_SITE_IS_USING_PS"
 msgstr "Этот сайт использует %s."
 
@@ -984,6 +1221,9 @@ msgstr "Закладка будет удалена."
 
 msgid "IDS_BR_BODY_THE_SELECTED_PERSONAL_DATA_WILL_BE_DELETED"
 msgstr "Выбранные личные данные будут удалены."
+
+msgid "IDS_BR_BODY_THE_MAXIMUM_NUMBER_OF_CHARACTERS_HPD_HAS_BEEN_EXCEEDED"
+msgstr "Превышено максимальное число символов (%d)."
 
 msgid "IDS_BR_BODY_TEXT_FIELD_T_TTS"
 msgstr "Текстовое поле"
@@ -1009,11 +1249,17 @@ msgstr "Синхронизация закладок"
 msgid "IDS_BR_BODY_STREET_ADDRESS_PO_BOX_C_O_ETC_ABB"
 msgstr "Улица, дом, А/Я, получатель и т. д."
 
+msgid "IDS_BR_BODY_STREAMING"
+msgstr "Передача"
+
 msgid "IDS_BR_BODY_STORED_DATA"
 msgstr "Сохраненные данные"
 
 msgid "IDS_BR_BODY_SPLIT_BAR_HANDLE"
 msgstr "Ручка разделительной полосы"
+
+msgid "IDS_BR_BODY_SMALL"
+msgstr "Маленький"
 
 msgid "IDS_BR_BODY_SIGN_IN_TO_YOUR_SAMSUNG_ACCOUNT_TO_ACCESS_THE_BOOKMARKS_AND_TABS_ON_YOUR_OTHER_DEVICES"
 msgstr "Для доступа к закладкам и вкладкам на других устройствах войдите в учетную запись Samsung."
@@ -1033,6 +1279,9 @@ msgstr "Настройка текста для автозаполнения ве
 msgid "IDS_BR_BODY_SET_CURRENT_PAGE_AS_HOMEPAGE"
 msgstr "Установить текущую страницу в качестве домашней"
 
+msgid "IDS_BR_BODY_SETTINGS"
+msgstr "Настройки"
+
 msgid "IDS_BR_BODY_SELECT_FOLDER"
 msgstr "Выбор папки"
 
@@ -1045,6 +1294,9 @@ msgstr "Поле поиска"
 msgid "IDS_BR_BODY_SEARCH_AND_URL_SUGGESTIONS"
 msgstr "Предлагать варианты поисковых запросов и URL"
 
+msgid "IDS_BR_BODY_SEARCH"
+msgstr "Поиск"
+
 msgid "IDS_BR_BODY_SCREEN_AND_TEXT"
 msgstr "Экран и текст"
 
@@ -1053,6 +1305,9 @@ msgstr "Сохранять имена пользователей и пароли
 
 msgid "IDS_BR_BODY_SAVE_LINK"
 msgstr "Сохранить ссылку"
+
+msgid "IDS_BR_BODY_RSS_SEARCH_RESULTS"
+msgstr "Результаты поиска"
 
 msgid "IDS_BR_BODY_RESTORE_DEFAULT_SETTINGS_Q"
 msgstr "Восстановить значения по умолчанию?"
@@ -1087,6 +1342,12 @@ msgstr "Переключатель"
 msgid "IDS_BR_BODY_PS_BOOKMARK_WILL_BE_DELETED"
 msgstr "Закладка %s будет удалена."
 
+msgid "IDS_BR_BODY_PROFILE"
+msgstr "Профиль"
+
+msgid "IDS_BR_BODY_PROCESSING_ING"
+msgstr "Обработка..."
+
 msgid "IDS_BR_BODY_PRIVACY"
 msgstr "Конфиденциальность"
 
@@ -1099,8 +1360,20 @@ msgstr "Нажмите клавишу меню."
 msgid "IDS_BR_BODY_POSTCODE_ABB"
 msgstr "Почтовый индекс"
 
+msgid "IDS_BR_BODY_PHONE_NUMBER_ABB"
+msgstr "Номер телефона"
+
+msgid "IDS_BR_BODY_PHONE"
+msgstr "Телефон"
+
 msgid "IDS_BR_BODY_PD_POP_UPS_BLOCKED_ABB"
 msgstr "Забл. вспл. окон: %d."
+
+msgid "IDS_BR_BODY_PD_ITEMS_WILL_BE_DELETED"
+msgstr "Элементы (%d) будут удалены."
+
+msgid "IDS_BR_BODY_PASSWORD"
+msgstr "Пароль"
 
 msgid "IDS_BR_BODY_PAGE_LOADED_T_TTS"
 msgstr "Страница загружена"
@@ -1126,8 +1399,14 @@ msgstr "По запросу"
 msgid "IDS_BR_BODY_ONLY_VIA_WI_FI_ABB"
 msgstr "Только через Wi-Fi"
 
+msgid "IDS_BR_BODY_ON"
+msgstr "Включено"
+
 msgid "IDS_BR_BODY_OLDER"
 msgstr "Старые"
+
+msgid "IDS_BR_BODY_OFF"
+msgstr "Выключено"
 
 msgid "IDS_BR_BODY_NO_WINDOWS"
 msgstr "Нет окон"
@@ -1141,8 +1420,17 @@ msgstr "Нет названия"
 msgid "IDS_BR_BODY_NO_SAVED_PAGES"
 msgstr "Нет сохраненных страниц"
 
+msgid "IDS_BR_BODY_NO_RESULTS_FOUND"
+msgstr "Ничего не найдено."
+
+msgid "IDS_BR_BODY_NO_HISTORIES"
+msgstr "Нет записей"
+
 msgid "IDS_BR_BODY_NO_BOOKMARKS"
 msgstr "Нет закладок"
+
+msgid "IDS_BR_BODY_NOTIFICATIONS"
+msgstr "Уведомления"
 
 msgid "IDS_BR_BODY_NORMAL"
 msgstr "Обычный"
@@ -1159,6 +1447,9 @@ msgstr "Часто посещаемые сайты"
 msgid "IDS_BR_BODY_MOBILE_VIEW"
 msgstr "Мобильный просмотр"
 
+msgid "IDS_BR_BODY_MEDIUM"
+msgstr "Средний"
+
 msgid "IDS_BR_BODY_LOCATION_M_INFORMATION"
 msgstr "Место"
 
@@ -1169,7 +1460,7 @@ msgid "IDS_BR_BODY_LAST_MONTH"
 msgstr "Прошлый месяц"
 
 msgid "IDS_BR_BODY_LAST_7_DAYS"
-msgstr "За 7 дней"
+msgstr "Последние 7 дней"
 
 msgid "IDS_BR_BODY_LARGE"
 msgstr "Большой"
@@ -1183,6 +1474,9 @@ msgstr "Интернет"
 msgid "IDS_BR_BODY_IMPROVE_PERFORMANCE_WHEN_LOADING_PAGES"
 msgstr "Повысить производительность при загрузке страниц."
 
+msgid "IDS_BR_BODY_IMAGES"
+msgstr "Картинки"
+
 msgid "IDS_BR_BODY_HOMEPAGE"
 msgstr "Домашняя страница"
 
@@ -1192,11 +1486,20 @@ msgstr "Скрытие адресной строки во время прокр�
 msgid "IDS_BR_BODY_GENERAL_M_SETTINGS"
 msgstr "Общие"
 
+msgid "IDS_BR_BODY_FULL_SCREEN"
+msgstr "Во весь экран"
+
 msgid "IDS_BR_BODY_FULL_NAME_ABB"
 msgstr "Полное имя"
 
 msgid "IDS_BR_BODY_FORCE_ZOOM_ABB"
 msgstr "Принудительный масштаб"
+
+msgid "IDS_BR_BODY_FONT_SIZE"
+msgstr "Размер шрифта"
+
+msgid "IDS_BR_BODY_FOLDER_NAME"
+msgstr "Имя папки"
 
 msgid "IDS_BR_BODY_FLAT_SUITE_UNIT_BUILDING_FLOOR_ETC_ABB"
 msgstr "Квартира, корпус, строение, этаж и т. д."
@@ -1213,6 +1516,24 @@ msgstr "Введите свое имя."
 msgid "IDS_BR_BODY_ENTER_TOWN_CITY_COUNTY_ABB"
 msgstr "Укажите город/область."
 
+msgid "IDS_BR_BODY_ENTER_POSTCODE_ABB"
+msgstr "Введите почтовый индекс."
+
+msgid "IDS_BR_BODY_ENTER_POSTCODE"
+msgstr "Введите почтовый индекс."
+
+msgid "IDS_BR_BODY_ENTER_PHONE_NUMBER"
+msgstr "Введите номер телефона."
+
+msgid "IDS_BR_BODY_ENTER_NAME"
+msgstr "Введите название."
+
+msgid "IDS_BR_BODY_ENTER_FOLDER_NAME"
+msgstr "Введите имя папки."
+
+msgid "IDS_BR_BODY_ENTER_EMAIL_ADDRESS"
+msgstr "Введите адрес e-mail."
+
 msgid "IDS_BR_BODY_ENTER_COUNTRY_REGION_ABB"
 msgstr "Введите страну или регион."
 
@@ -1224,6 +1545,12 @@ msgstr "Включить местоположение"
 
 msgid "IDS_BR_BODY_ENABLE_JAVASCRIPT"
 msgstr "Разрешить JavaScript"
+
+msgid "IDS_BR_BODY_EMAIL_ADDRESS"
+msgstr "E-mail"
+
+msgid "IDS_BR_BODY_DOWNLOADING_ING"
+msgstr "Загрузка..."
 
 msgid "IDS_BR_BODY_DOUBLE_TAP_TO_VIEW_CERTIFICATE_TTS"
 msgstr "Дважды нажмите, чтобы просмотреть сертификат."
@@ -1264,6 +1591,9 @@ msgstr "Отображать всплывающие предупреждения
 msgid "IDS_BR_BODY_DISPLAY_IMAGES_ON_WEB_PAGES"
 msgstr "Показывать изображения на веб-страницах."
 
+msgid "IDS_BR_BODY_DEVELOPER_MODE"
+msgstr "Режим разработчика"
+
 msgid "IDS_BR_BODY_DESKTOP_VIEW"
 msgstr "Версия для ПК"
 
@@ -1278,6 +1608,9 @@ msgstr "Хранилище по умолчанию"
 
 msgid "IDS_BR_BODY_DEFAULT_PAGE_ABB"
 msgstr "Страница по умолчанию"
+
+msgid "IDS_BR_BODY_DEFAULT"
+msgstr "По умолчанию"
 
 msgid "IDS_BR_BODY_DATA_USAGE_REDUCED_BY_P1SDP_HP2SD_KB_OF_P3SD_KB_RECEIVED_TAP_HERE_TO_RESET_STATISTICS"
 msgstr "Объем данных уменьшен на %1$d % (получено %2$d КБ из %3$d КБ). Нажмите для сброса статистики."
@@ -1342,6 +1675,9 @@ msgstr "Изменение размера текста для упрощения
 msgid "IDS_BR_BODY_BOOKMARK_REMINDER_ABB"
 msgstr "Напоминание о закладке"
 
+msgid "IDS_BR_BODY_BOOKMARKS"
+msgstr "Закладки"
+
 msgid "IDS_BR_BODY_BLOCK_POP_UPS_ON_WEB_PAGES"
 msgstr "Блокировать всплывающие окна на веб-страницах."
 
@@ -1390,6 +1726,9 @@ msgstr "Разрешить %s отображать уведомления"
 msgid "IDS_BR_BODY_ALLOWS_SITES_TO_SAVE_AND_READ_COOKIE_DATA"
 msgstr "Позволяет сайтам сохранять и читать данные cookie."
 
+msgid "IDS_BR_BODY_ALL"
+msgstr "Все"
+
 msgid "IDS_BR_BODY_AFTER_YOU_VISIT_WEBPAGES_THE_PAGES_YOU_HAVE_VISITED_THE_MOST_WILL_BE_SHOWN_HERE"
 msgstr "Здесь будут показаны веб-страницы, посещенные наибольшее число раз."
 
@@ -1417,6 +1756,9 @@ msgstr "Дополнительно"
 msgid "IDS_BR_BODY_ADD_TO_CONTACT"
 msgstr "Добавить к контакту"
 
+msgid "IDS_BR_BODY_ADD_TO"
+msgstr "Добавить"
+
 msgid "IDS_BR_BODY_ADD_THIS_WEBSITE_TO_BOOKMARKS_TO_OPEN_IT_FASTER_ABB"
 msgstr "Добавьте сайт в закладки для быстрого открытия."
 
@@ -1426,17 +1768,29 @@ msgstr "Строка адреса 2"
 msgid "IDS_BR_BODY_ADDRESS_LINE_1_ABB"
 msgstr "Строка адреса 1"
 
+msgid "IDS_BR_BODY_ADDDETAILSVIEW_TAGS"
+msgstr "Теги"
+
+msgid "IDS_BR_BODY_ADDBOOKMARKURL"
+msgstr "URL"
+
 msgid "IDS_BR_BODY_ACCEPT_COOKIES"
 msgstr "Разрешить cookies"
 
 msgid "IDS_BR_BODY_1_PROFILE_WILL_BE_DELETED"
 msgstr "Будет удален 1 профиль."
 
+msgid "IDS_BR_BODY_1_ITEM_WILL_BE_DELETED"
+msgstr "Будет удален 1 элемент."
+
 msgid "IDS_BR_ACBUTTON_TABS_ABB"
 msgstr "ВК-КИ"
 
 msgid "IDS_BR_TPOP_STARTING_DOWNLOAD_ING"
 msgstr "Начало загрузки..."
+
+msgid "IDS_BR_TPOP_MAXIMUM_NUMBER_OF_CHARACTERS_HPD_REACHED"
+msgstr "Достигнуто максимальное число символов (%d)"
 
 msgid "IDS_BR_TPOP_FOLDER_RENAMED"
 msgstr "Папка переименована."
@@ -1453,8 +1807,14 @@ msgstr "Отмена"
 msgid "IDS_BR_SBODY_SET_THE_DEVICE_TO_SHOW_THE_FULL_WEBPAGE_ON_THE_SCREEN_WHEN_IT_IS_LOADED_WITHOUT_NEEDING_TO_SCROLL"
 msgstr "Отображение всей загруженной веб-страницы на экране без необходимости прокрутки."
 
+msgid "IDS_BR_POP_UNSUPPORTMEDIATYPE"
+msgstr "Неподдерживаемый тип медиаданных"
+
 msgid "IDS_BR_POP_UNABLE_TO_RUN_INTERNET_LOW_BATTERY"
 msgstr "Невозможно подключиться к Интернету. Низкий заряд батареи."
+
+msgid "IDS_BR_POP_UNABLE_TO_CONNECT_TO_MOBILE_NETWORKS_WHILE_FLIGHT_MODE_IS_ENABLED_CONNECT_TO_WI_FI_NETWORK_INSTEAD_OR_DISABLE_FLIGHT_MODE_AND_TRY_AGAIN"
+msgstr "Невозможно подключиться к мобильной сети в автономном режиме. Подключитесь к сети Wi-Fi или отключите автономный режим и повторите попытку"
 
 msgid "IDS_BR_POP_THE_DOWNLOAD_HAS_BEEN_STOPPED_AND_THE_DOWNLOADED_DATA_WILL_BE_DELETED"
 msgstr "Загрузка остановлена, а все загруженные данные удалены."
@@ -1465,8 +1825,20 @@ msgstr "Search completed"
 msgid "IDS_BR_POP_READY"
 msgstr "Готово."
 
+msgid "IDS_BR_POP_INSTALL_SUCCESS"
+msgstr "Установка завершена."
+
+msgid "IDS_BR_POP_INSTALLATION_FAILED"
+msgstr "Сбой установки."
+
 msgid "IDS_BR_POP_INFORM_MEMORY_ERROR"
 msgstr "Ошибка памяти"
+
+msgid "IDS_BR_POP_DELETING_ING"
+msgstr "Удаление..."
+
+msgid "IDS_BR_POP_DATA_ROAMING_IS_DISABLED_CONNECT_TO_WI_FI_NETWORK_INSTEAD_OR_ENABLE_DATA_ROAMING_AND_TRY_AGAIN"
+msgstr "Передача данных в роуминге отключена. Подключитесь к сети Wi-Fi или снова включите передачу данных в роуминге и повторите попытку"
 
 msgid "IDS_BR_POP_DATA_ROAMING_IS_DISABLED_CONNECT_TO_A_WI_FI_NETWORK_OR_ENABLE_DATA_ROAMING_AND_TRY_AGAIN"
 msgstr "Передача данных в роуминге отключена. Подключитесь к сети Wi-Fi или включите передачу данных в роуминге и повторите попытку."
@@ -1483,11 +1855,17 @@ msgstr "Веб-прил."
 msgid "IDS_BR_OPT_VIEW_ONLINE"
 msgstr "Просмотреть в Интернете"
 
+msgid "IDS_BR_OPT_SHARE_VIA"
+msgstr "Отправить через"
+
 msgid "IDS_BR_OPT_READ_ON_OFFLINE_PAGES_LATER_ABB"
 msgstr "Прочитать автономно позднее"
 
 msgid "IDS_BR_OPT_QUICK_ACCESS_ABB2"
 msgstr "Быстрый доступ"
+
+msgid "IDS_BR_OPT_PASTE"
+msgstr "Вставить"
 
 msgid "IDS_BR_OPT_ALWAYS_ENABLED_ABB"
 msgstr "Всегда включено"
@@ -1513,6 +1891,9 @@ msgstr "Предложения запросов и URL"
 msgid "IDS_BR_MBODY_HISTORY"
 msgstr "Журнал"
 
+msgid "IDS_BR_MBODY_FONT_SIZE"
+msgstr "Размер шрифта"
+
 msgid "IDS_BR_MBODY_FIT_PAGE_TO_SCREEN"
 msgstr "На весь экран"
 
@@ -1524,6 +1905,9 @@ msgstr "Другое"
 
 msgid "IDS_BR_MBODY_COUNTRY_REGION"
 msgstr "Страна/регион"
+
+msgid "IDS_BR_HEADER_UNABLE_TO_DOWNLOAD_ABB"
+msgstr "Не удалось загрузить"
 
 msgid "IDS_BR_HEADER_RENAME_FOLDER_ABB"
 msgstr "Переименовать папку"
@@ -1555,8 +1939,14 @@ msgstr "Доб. данные"
 msgid "IDS_BR_BUTTON_WI_FI_ABB"
 msgstr "Wi-Fi"
 
+msgid "IDS_BR_BUTTON_UPDATE"
+msgstr "Обновить"
+
 msgid "IDS_BR_BUTTON_SETTINGS_ABB"
 msgstr "Настр."
+
+msgid "IDS_BR_BUTTON_RETRY"
+msgstr "Повтор"
 
 msgid "IDS_BR_BUTTON2_OK"
 msgstr "ОК"
@@ -1582,6 +1972,9 @@ msgstr "Этот сертификат получен из надежного ц�
 msgid "IDS_BR_BODY_TAP_HERE_TO_ADD_A_QUICK_ACCESS_SHORTCUT"
 msgstr "Нажмите для добавления ярлыка быстрого доступа."
 
+msgid "IDS_BR_BODY_REQUEST_FAILED"
+msgstr "Сбой запроса."
+
 msgid "IDS_BR_BODY_PREFERENCES"
 msgstr "Параметры"
 
@@ -1597,398 +1990,14 @@ msgstr "Нет совпадений"
 msgid "IDS_BR_BODY_MOBILE_DATA_IS_TURNED_OFF_CONNECT_TO_A_WI_FI_NETWORK_INSTEAD_OR_TAP_SETTINGS_TO_TURN_ON_MOBILE_DATA_AND_THEN_TRY_AGAIN"
 msgstr "Передача мобильных данных отключена. Подключитесь к сети Wi-Fi или нажмите “Параметры”, чтобы включить мобильные данные, а затем повторите попытку."
 
-msgid "IDS_BR_BODY_FIT_TO_WIDTH"
-msgstr "По ширине"
-
-msgid "IDS_BR_ACBUTTON_QUICK_ACCESS"
-msgstr "БЫСТ. ДОСТУП"
-
-msgid "IDS_BR_OPT_OPEN_IN_NEW_TAB"
-msgstr "Открыть на новой вкладке"
-
-msgid "IDS_BR_BODY_SHARE_LINK"
-msgstr "Отправить ссылку"
-
-msgid "IDS_BR_SK_SAVE_LITE"
-msgstr "Соxр."
-
-msgid "IDS_BR_SK_SAVE_ABB"
-msgstr "Соxр."
-
-msgid "IDS_BR_SK_SAVE"
-msgstr "Соxранить"
-
-msgid "IDS_BR_SK_PREVIOUS"
-msgstr "Назад"
-
-msgid "IDS_BR_SK_NEXT"
-msgstr "Далее"
-
-msgid "IDS_BR_SK_DELETE"
-msgstr "Удалить"
-
-msgid "IDS_BR_SK_CLEAR"
-msgstr "Стереть"
-
-msgid "IDS_BR_SK_BACK"
-msgstr "Назад"
-
-msgid "IDS_BR_POP_WI_FI_CONNECTION_REQUIRED_CONNECT_TO_WI_FI_NETWORK_AND_TRY_AGAIN"
-msgstr "Требуется подключение к Wi-Fi. Подключитесь к сети Wi-Fi и повторите попытку"
-
-msgid "IDS_BR_POP_URL_NOT_FOUND"
-msgstr "URL-адрес не найден."
-
-msgid "IDS_BR_POP_URL"
-msgstr "URL"
-
-msgid "IDS_BR_POP_SAVED"
-msgstr "Сохранено."
-
-msgid "IDS_BR_POP_REMOVED"
-msgstr "Удалено."
-
-msgid "IDS_BR_POP_PD_ITEMS_WILL_BE_DELETED"
-msgstr "Элементы (%d) будут удалены."
-
-msgid "IDS_BR_POP_PD_ITEMS_SELECTED"
-msgstr "Выбрано элементов: %d."
-
-msgid "IDS_BR_POP_NO_ITEMS_SELECTED"
-msgstr "Элементы не выбраны."
-
-msgid "IDS_BR_POP_NOT_ENOUGH_MEMORY"
-msgstr "Недостаточно памяти."
-
-msgid "IDS_BR_POP_NEVER"
-msgstr "Никогда"
-
-msgid "IDS_BR_POP_MOBILE_DATA_IS_DISABLED_CONNECT_TO_WI_FI_NETWORK_INSTEAD_OR_ENABLE_MOBILE_DATA_AND_TRY_AGAIN"
-msgstr "Мобильные данные отключены. Подключитесь к сети Wi-Fi или снова включите мобильные данные и повторите попытку"
-
-msgid "IDS_BR_POP_LOADING_PLEASE_WAIT_ING"
-msgstr "Загрузка. Подождите..."
-
-msgid "IDS_BR_POP_INVALID_URL"
-msgstr "Неправильный URL"
-
-msgid "IDS_BR_POP_FAIL"
-msgstr "Сбой."
-
-msgid "IDS_BR_POP_ENTER_TITLE_ABB"
-msgstr "Введите название"
-
-msgid "IDS_BR_POP_DO_NOT_SHOW_AGAIN"
-msgstr "Не показывать снова"
-
-msgid "IDS_BR_POP_DOWNLOADCOMPLETE"
-msgstr "Загрузка завершена."
-
-msgid "IDS_BR_POP_DISABLED"
-msgstr "Отключено."
-
-msgid "IDS_BR_POP_DELETE_Q"
-msgstr "Удалить?"
-
-msgid "IDS_BR_POP_DELETED"
-msgstr "Удалено."
-
-msgid "IDS_BR_POP_CLOSE_APPLICATION_Q"
-msgstr "Закрыть приложение?"
-
-msgid "IDS_BR_POP_BOOKMARK_ADDED"
-msgstr "Закладка добавлена."
-
-msgid "IDS_BR_POP_AUTOMATIC_BRIGHTNESS"
-msgstr "Автоматическая регулировка яркости"
-
-msgid "IDS_BR_POP_ACCOUNT"
-msgstr "Учетная запись"
-
-msgid "IDS_BR_POP_1_ITEM_WILL_BE_DELETED"
-msgstr "Будет удален 1 элемент."
-
-msgid "IDS_BR_POP_1_ITEM_SELECTED"
-msgstr "Выбран 1 элемент."
-
-msgid "IDS_BR_OPT_TRANSLATE"
-msgstr "Перевести"
-
-msgid "IDS_BR_OPT_STOP"
-msgstr "Остановить"
-
-msgid "IDS_BR_OPT_SHOW"
-msgstr "Показать"
-
-msgid "IDS_BR_OPT_SHARE"
-msgstr "Поделиться"
-
-msgid "IDS_BR_OPT_SETTINGS"
-msgstr "Настройки"
-
-msgid "IDS_BR_OPT_SEND_EMAIL"
-msgstr "Отправить E-mail"
-
-msgid "IDS_BR_OPT_SELECT"
-msgstr "Выбрать"
-
-msgid "IDS_BR_OPT_SD_CARD"
-msgstr "Карта памяти"
-
-msgid "IDS_BR_OPT_RENAME"
-msgstr "Переименовать"
-
-msgid "IDS_BR_OPT_REFRESH"
-msgstr "Обновить"
-
-msgid "IDS_BR_OPT_MOVE"
-msgstr "Переместить"
-
-msgid "IDS_BR_OPT_MESSAGES"
-msgstr "Сообщения"
-
-msgid "IDS_BR_OPT_LIST_VIEW"
-msgstr "Список"
-
-msgid "IDS_BR_OPT_I_AGREE"
-msgstr "Принимаю."
-
-msgid "IDS_BR_OPT_HELP"
-msgstr "Справка"
-
-msgid "IDS_BR_OPT_DEVICE"
-msgstr "Устройство"
-
-msgid "IDS_BR_OPT_BOOKMARK"
-msgstr "Закладка"
-
-msgid "IDS_BR_OPT_ADDED"
-msgstr "Добавлено."
-
-msgid "IDS_BR_OPT_ADD"
-msgstr "Добавить"
-
-msgid "IDS_BR_MBODY_DEFAULT_DOWNLOAD_STORAGE"
-msgstr "Хран. для загр. по умолч."
-
-msgid "IDS_BR_HEADER_SIGN_IN_TO_SAMSUNG_ACCOUNT"
-msgstr "Вход в учетную запись Samsung"
-
-msgid "IDS_BR_HEADER_PD_SELECTED_ABB"
-msgstr "Выбрано: %d"
-
-msgid "IDS_BR_HEADER_NO_NETWORK_CONNECTION"
-msgstr "Отсутствует подключение к сети"
-
-msgid "IDS_BR_HEADER_FOLDER"
-msgstr "Папка"
-
-msgid "IDS_BR_HEADER_EDIT_PROFILE"
-msgstr "Изменить профиль"
-
-msgid "IDS_BR_BUTTON_SET"
-msgstr "Установить"
-
-msgid "IDS_BR_BUTTON_NOT_NOW"
-msgstr "Не сейчас"
-
-msgid "IDS_BR_BUTTON_ENABLE_ABB"
-msgstr "Включить"
-
-msgid "IDS_BR_BUTTON_EDIT"
-msgstr "Изменить"
-
-msgid "IDS_BR_BUTTON_CONTINUE_ABB"
-msgstr "Далее"
-
-msgid "IDS_BR_BUTTON_CONTINUE"
-msgstr "Продолжить"
-
-msgid "IDS_BR_BUTTON_CLOSE"
-msgstr "Закрыть"
-
-msgid "IDS_BR_BUTTON_CANCEL_ABB"
-msgstr "Отмена"
-
-msgid "IDS_BR_BUTTON_CANCEL"
-msgstr "Отмена"
-
-msgid "IDS_BR_BUTTON_ALLOW"
-msgstr "Разрешить"
-
-msgid "IDS_BR_BODY_YESTERDAY"
-msgstr "Вчера"
-
-msgid "IDS_BR_BODY_URL"
-msgstr "URL"
-
-msgid "IDS_BR_BODY_TODAY"
-msgstr "Сегодня"
-
-msgid "IDS_BR_BODY_TITLE"
-msgstr "Название"
-
-msgid "IDS_BR_BODY_THE_MAXIMUM_NUMBER_OF_CHARACTERS_HPD_HAS_BEEN_EXCEEDED"
-msgstr "Превышено максимальное число символов (%d)."
-
-msgid "IDS_BR_BODY_STREAMING"
-msgstr "Передача"
-
-msgid "IDS_BR_BODY_SMALL"
-msgstr "Маленький"
-
-msgid "IDS_BR_BODY_SETTINGS"
-msgstr "Настройки"
-
-msgid "IDS_BR_BODY_SEARCH"
-msgstr "Поиск"
-
-msgid "IDS_BR_BODY_RSS_SEARCH_RESULTS"
-msgstr "Результаты поиска"
-
-msgid "IDS_BR_BODY_PROFILE"
-msgstr "Профиль"
-
-msgid "IDS_BR_BODY_PROCESSING_ING"
-msgstr "Обработка..."
-
-msgid "IDS_BR_BODY_PHONE_NUMBER_ABB"
-msgstr "Номер телефона"
-
-msgid "IDS_BR_BODY_PHONE"
-msgstr "Телефон"
-
-msgid "IDS_BR_BODY_PD_ITEMS_WILL_BE_DELETED"
-msgstr "Элементы (%d) будут удалены."
-
-msgid "IDS_BR_BODY_PASSWORD"
-msgstr "Пароль"
-
-msgid "IDS_BR_BODY_ON"
-msgstr "Включено"
-
-msgid "IDS_BR_BODY_OFF"
-msgstr "Выключено"
-
-msgid "IDS_BR_BODY_NO_RESULTS_FOUND"
-msgstr "Ничего не найдено."
-
-msgid "IDS_BR_BODY_NO_HISTORIES"
-msgstr "Нет записей"
-
-msgid "IDS_BR_BODY_NOTIFICATIONS"
-msgstr "Уведомления"
-
-msgid "IDS_BR_BODY_MEDIUM"
-msgstr "Средний"
-
-msgid "IDS_BR_BODY_IMAGES"
-msgstr "Картинки"
-
-msgid "IDS_BR_BODY_FULL_SCREEN"
-msgstr "Во весь экран"
-
-msgid "IDS_BR_BODY_FONT_SIZE"
-msgstr "Размер шрифта"
-
-msgid "IDS_BR_BODY_FOLDER_NAME"
-msgstr "Имя папки"
-
-msgid "IDS_BR_BODY_ENTER_POSTCODE_ABB"
-msgstr "Введите почтовый индекс."
-
-msgid "IDS_BR_BODY_ENTER_POSTCODE"
-msgstr "Введите почтовый индекс."
-
-msgid "IDS_BR_BODY_ENTER_PHONE_NUMBER"
-msgstr "Введите номер телефона."
-
-msgid "IDS_BR_BODY_ENTER_NAME"
-msgstr "Введите название."
-
-msgid "IDS_BR_BODY_ENTER_FOLDER_NAME"
-msgstr "Введите имя папки."
-
-msgid "IDS_BR_BODY_ENTER_EMAIL_ADDRESS"
-msgstr "Введите адрес e-mail."
-
-msgid "IDS_BR_BODY_EMAIL_ADDRESS"
-msgstr "E-mail"
-
-msgid "IDS_BR_BODY_DOWNLOADING_ING"
-msgstr "Загрузка..."
-
-msgid "IDS_BR_BODY_DEVELOPER_MODE"
-msgstr "Режим разработчика"
-
-msgid "IDS_BR_BODY_DEFAULT"
-msgstr "По умолчанию"
-
-msgid "IDS_BR_BODY_BOOKMARKS"
-msgstr "Закладки"
-
-msgid "IDS_BR_BODY_ALL"
-msgstr "Все"
-
-msgid "IDS_BR_BODY_ADD_TO"
-msgstr "Добавить"
-
-msgid "IDS_BR_BODY_ADDDETAILSVIEW_TAGS"
-msgstr "Теги"
-
-msgid "IDS_BR_BODY_ADDBOOKMARKURL"
-msgstr "URL"
-
-msgid "IDS_BR_BODY_1_ITEM_WILL_BE_DELETED"
-msgstr "Будет удален 1 элемент."
-
-msgid "IDS_BR_TPOP_MAXIMUM_NUMBER_OF_CHARACTERS_HPD_REACHED"
-msgstr "Достигнуто максимальное число символов (%d)"
-
-msgid "IDS_BR_POP_UNSUPPORTMEDIATYPE"
-msgstr "Неподдерживаемый тип медиаданных"
-
-msgid "IDS_BR_POP_UNABLE_TO_CONNECT_TO_MOBILE_NETWORKS_WHILE_FLIGHT_MODE_IS_ENABLED_CONNECT_TO_WI_FI_NETWORK_INSTEAD_OR_DISABLE_FLIGHT_MODE_AND_TRY_AGAIN"
-msgstr "Невозможно подключиться к мобильной сети в автономном режиме. Подключитесь к сети Wi-Fi или отключите автономный режим и повторите попытку"
-
-msgid "IDS_BR_POP_INSTALL_SUCCESS"
-msgstr "Установка завершена."
-
-msgid "IDS_BR_POP_INSTALLATION_FAILED"
-msgstr "Сбой установки."
-
-msgid "IDS_BR_POP_DELETING_ING"
-msgstr "Удаление..."
-
-msgid "IDS_BR_POP_DATA_ROAMING_IS_DISABLED_CONNECT_TO_WI_FI_NETWORK_INSTEAD_OR_ENABLE_DATA_ROAMING_AND_TRY_AGAIN"
-msgstr "Передача данных в роуминге отключена. Подключитесь к сети Wi-Fi или снова включите передачу данных в роуминге и повторите попытку"
-
-msgid "IDS_BR_OPT_SHARE_VIA"
-msgstr "Отправить через"
-
-msgid "IDS_BR_OPT_PASTE"
-msgstr "Вставить"
-
-msgid "IDS_BR_MBODY_FONT_SIZE"
-msgstr "Размер шрифта"
-
-msgid "IDS_BR_HEADER_UNABLE_TO_DOWNLOAD_ABB"
-msgstr "Не удалось загрузить"
-
-msgid "IDS_BR_BUTTON_UPDATE"
-msgstr "Обновить"
-
-msgid "IDS_BR_BUTTON_RETRY"
-msgstr "Повтор"
-
-msgid "IDS_BR_BODY_REQUEST_FAILED"
-msgstr "Сбой запроса."
-
 msgid "IDS_BR_BODY_LOGIN"
 msgstr "Вход"
 
 msgid "IDS_BR_BODY_LOADING_ING"
 msgstr "Загрузка..."
+
+msgid "IDS_BR_BODY_FIT_TO_WIDTH"
+msgstr "По ширине"
 
 msgid "IDS_BR_BODY_FIT_TO_SCREEN"
 msgstr "По ширине экрана"
@@ -1999,165 +2008,12 @@ msgstr "Загрузки"
 msgid "IDS_BR_BODY_DATA_ROAMING_IS_DISABLED_CONNECT_TO_A_WI_FI_NETWORK_INSTEAD_OR_ENABLE_DATA_ROAMING_AND_TRY_AGAIN"
 msgstr "Передача данных в роуминге отключена. Подключитесь к сети Wi-Fi или включите передачу данных в роуминге и повторите попытку."
 
-msgid "IDS_BR_POP_DOWNLOAD_CANCELLED"
-msgstr "Загрузка отменена."
+msgid "IDS_BR_ACBUTTON_QUICK_ACCESS"
+msgstr "БЫСТ. ДОСТУП"
 
-msgid "IDS_BR_BUTTON_SECRET_ON_ABB"
-msgstr "Вкл. секр."
+msgid "IDS_ST_POP_SOME_CONTENT_HAS_BEEN_BLOCKED_TO_PROTECT_YOUR_DEVICE"
+msgstr "Для защиты вашего устройства некоторое содержимое было заблокировано."
 
-msgid "IDS_BR_MBODY_PRIVACY"
-msgstr "Конфиденциальность"
-
-msgid "IDS_BR_MBODY_DEFAULT_STORAGE"
-msgstr "Хранилище по умолчанию"
-
-msgid "IDS_BR_MBODY_MANUAL_ZOOM"
-msgstr "Увелич. масштаба вручную"
-
-msgid "IDS_BR_TMBODY_DEFAULT_SEARCH_ENGINE"
-msgstr "Поиск по умолчанию"
-
-msgid "IDS_BR_MBODY_SAVE_SIGN_IN_INFO"
-msgstr "Сохран. данных авториз."
-
-msgid "IDS_BR_OPT_TURN_OFF_SECRET_MODE_ABB"
-msgstr "Выключить секретный режим"
-
-msgid "IDS_BR_OPT_TURN_ON_SECRET_MODE_ABB"
-msgstr "Включить секретный режим"
-
-msgid "IDS_BR_OPT_SHOW_PASSWORD_ABB2"
-msgstr "Показать пароль"
-
-msgid "IDS_BR_OPT_SECRET_MODE_SECURITY_ABB"
-msgstr "Защита секретного режима"
-
-msgid "IDS_BR_BUTTON_USE_PASSWORD_ABB"
-msgstr "Использовать пароль"
-
-msgid "IDS_BR_HEADER_DONT_USE_PASSWORD_ABB"
-msgstr "Не использовать пароль"
-
-msgid "IDS_BR_MBODY_MOST_VISITED_WEBSITES"
-msgstr "Самые посещ. веб-сайты"
-
-msgid "IDS_BR_MBODY_SET_MY_PROFILE"
-msgstr "Настроить мой профиль"
-
-msgid "IDS_BR_MBODY_MY_AUTO_FILL_PROFILE"
-msgstr "Мой профиль автозаполн."
-
-msgid "IDS_BR_SBODY_MANAGE_DATA_USED_TO_FILL_IN_FORMS_ONLINE"
-msgstr "Управление данными, используемыми для заполнения онлайн-форм."
-
-msgid "IDS_BR_MBODY_SAVE_SIGN_IN_INFO_ABB"
-msgstr "Сохр. данные авт."
-
-msgid "IDS_BR_OPT_LOCATION_ACCESS_DATA"
-msgstr "Данные доступа к местонахождению"
-
-msgid "IDS_BR_OPT_AUTO_FILL_DATA"
-msgstr "Автозаполнение данных"
-
-msgid "IDS_BR_BODY_ANY_WEBPAGES_YOU_VIEW_WHILE_SECRET_MODE_IS_TURNED_ON_WONT_APPEAR_IN_YOUR_BROWSER_OR_SEARCH_HISTORY_MSG"
-msgstr "Веб-страницы, просмотренные в секретном режиме, не отображаются в истории браузера или поиска после отключения этого режима.\n\nВсе закладки и веб-страницы, сохраненные в секретном режиме, не отображаются после его отключения.\n\nКроме того, данные в секретном режиме можно защитить с помощью пароля."
-
-msgid "IDS_BR_BODY_ANY_WEBPAGES_YOU_VIEW_WHILE_SECRET_MODE_IS_TURNED_ON_WONT_APPEAR_IN_YOUR_BROWSER_OR_SEARCH_MSG"
-msgstr "Веб-страницы, просмотренные в секретном режиме, не отображаются в истории браузера или поиска после отключения этого режима.\n\nВсе закладки и веб-страницы, сохраненные в секретном режиме, не отображаются после его отключения."
-
-msgid "IDS_BR_BUTTON_SECRET_OFF_ABB"
-msgstr "Выкл. секр."
-
-msgid "IDS_BR_BUTTON_DONT_USE_PASSWORD_ABB"
-msgstr "Не использ. пароль"
-
-msgid "IDS_BR_BUTTON_NEW_TAB_ABB2"
-msgstr "Новая вкладка"
-
-msgid "IDS_BR_NPBODY_WEB_ADDRESS_ABB"
-msgstr "Веб-адрес"
-
-msgid "IDS_BR_HEADER_ADD_WEBPAGE_TO_QUICK_ACCESS_ABB"
-msgstr "Страница в быстром доступе"
-
-msgid "IDS_BR_TMBODY_TURN_ON_JAVASCRIPT"
-msgstr "Включить JavaScript"
-
-msgid "IDS_BR_HEADER_COULDNT_OPEN_NEW_TAB_ABB"
-msgstr "Сбой открытия новой вкладки"
-
-msgid "IDS_BR_OPT_OPEN_IN_NEW_TAB_ABB"
-msgstr "Открыть в новой вкладке"
-
-msgid "IDS_BR_TPOP_FOLDER_NAME_ALREADY_IN_USE"
-msgstr "Имя папки уже используется."
-
-msgid "IDS_BR_NPBODY_NEW_FOLDER_PD"
-msgstr "Новая папка %d"
-
-msgid "IDS_BR_NPBODY_NEW_FOLDER"
-msgstr "Новая папка"
-
-msgid "IDS_BR_OPT_ENABLE_JAVASCRIPT"
-msgstr "Разрешить JavaScript"
-
-msgid "IDS_BR_TMBODY_MANAGE_WEBSITE_DATA"
-msgstr "Управление данными с веб-сайтов"
-
-msgid "IDS_BR_HEADER_SET_HOME_PAGE_ABB"
-msgstr "Выбор домашней страницы"
-
-msgid "IDS_BR_TPOP_WEBPAGE_ADDED_TO_QUICK_ACCESS_LIST"
-msgstr "Веб-страница добавлена в список быстрого доступа."
-
-msgid "IDS_BR_OPT_EDIT_QUICK_ACCESS_ABB"
-msgstr "Изменить парам. быстрого доступа"
-
-msgid "IDS_BR_OPT_REMOVE_FROM_BOOKMARKS_ABB"
-msgstr "Удалить из закладок"
-
-msgid "IDS_BR_HEADER_ADD_BOOKMARK_ABB"
-msgstr "Добавить закладку"
-
-msgid "IDS_BR_BODY_BROWSING_HISTORY"
-msgstr "Журнал браузера"
-
-msgid "IDS_BR_HEADER_TABS_ABB2"
-msgstr "Вкладки"
-
-msgid "IDS_BR_OPT_NEW_TAB"
-msgstr "Новая вкладка"
-
-msgid "IDS_BR_BUTTON_FORWARD_ABB2"
-msgstr "Вперед"
-
-msgid "IDS_BR_BUTTON_BACK_ABB3"
-msgstr "Назад"
-
-msgid "IDS_BR_BUTTON_BOOKMARKS_ABB"
-msgstr "Закладки"
-
-msgid "IDS_BR_NPBODY_NO_PROFILES_ABB"
-msgstr "Нет профилей"
-
-msgid "IDS_BR_TAB2_HISTORY"
-msgstr "Журнал"
-
-msgid "IDS_BR_TAB2_BOOKMARKS"
-msgstr "Закладки"
-
-msgid "IDS_BR_HEADER_SAVE_CONTENT_TO_ABB"
-msgstr "Сохранить контент в"
-
-msgid "IDS_BR_HEADER_SELECT_ITEMS_ABB2"
-msgstr "Выбор элементов"
-
-msgid "IDS_BR_BODY_YOUR_PASSWORD_MUST_CONTAIN_AT_LEAST_PD_CHARACTERS_INCLUDING_AT_LEAST_1_LETTER"
-msgstr "Пароль должен содержать не менее %d символов, среди которых должна быть хотя бы 1 буква."
-
-msgid "IDS_BR_BODY_AN_INCORRECT_PASSWORD_HAS_BEEN_ENTERED_TRY_AGAIN"
-msgstr "Введен неправильный пароль. Повторите попытку."
-
-msgid "IDS_BR_BODY_NO_TABS"
-msgstr "Нет вкладок"
+msgid "IDS_ST_POP_SELECT_WHETHER_TO_GO_TO_THE_WEBPAGE_ANYWAY"
+msgstr "Укажите, хотите ли вы все равно перейти на веб-страницу."
 

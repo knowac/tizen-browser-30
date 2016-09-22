@@ -1,12 +1,7 @@
-#include "CustomButton.edc"
-
-#define URI_INPUTBOX_LENGTH 518
-#define URI_INPUTBOX_LENGTH_ENLARGED 656
-#define URI_INPUTBOX_LENGTH_SMALL 320
-#define URI_INPUTBOX_HEIGHT 80
-#define BORDER_WIDTH 5
-
-collections { base_scale: 2.6;
+#define URI_INPUTBOX_LENGTH 1720
+#define URI_INPUTBOX_LENGTH_SMALL 1460
+#define URI_INPUTBOX_WIDTH 82
+collections { base_scale: 2.0;
     group {
         name: "elm/entry/selection/browser_entry";
         parts {
@@ -17,7 +12,7 @@ collections { base_scale: 2.6;
                 mouse_events: 0;
                 description {
                     state: "default" 0.0;
-                    color: 224 237 251 255;
+                    color: 255 255 255 255;
                 }
             }
         }
@@ -32,9 +27,9 @@ collections { base_scale: 2.6;
                 mouse_events: 0;
                 description {
                     state: "default" 0.0;
-                    color: 10 132 229 255;
-                    min: 3 38;
-                    max: 3 38;
+                    color: 22 120 237 255;
+                    min: 2 36;
+                    max: 2 36;
                     visible: 0;
                 }
                 description {
@@ -51,7 +46,6 @@ collections { base_scale: 2.6;
                 source: "elm";
                 action: STATE_SET "focused" 0.0;
                 target: "bg";
-                after: "cursor_show";
             }
             program {
                 name: "unfocused";
@@ -59,59 +53,25 @@ collections { base_scale: 2.6;
                 source: "elm";
                 action: STATE_SET "default" 0.0;
                 target: "bg";
-                after: "stop_action";
-            }
-            program { name: "cursor_show";
-                action: STATE_SET "focused" 0.0;
-                target: "bg";
-                after: "cursor_show_timer";
-            }
-            program { name: "cursor_hide";
-                action: STATE_SET "default" 0.0;
-                target: "bg";
-                transition: SINUSOIDAL 0.2;
-                after: "cursor_hide_timer";
-            }
-            program { name: "cursor_show_timer";
-                in: 0.4 0.0;
-                after: "cursor_hide";
-            }
-            program { name: "cursor_hide_timer";
-                in: 0.3 0.0;
-                after: "cursor_show";
-            }
-            program {
-                name: "stop_action";
-                action: ACTION_STOP;
-                target: "cursor_show";
-                target: "cursor_hide";
-                target: "cursor_show_timer";
-                target: "cursor_hide_timer";
             }
         }
     }
     group {
         name: "elm/entry/base-single/uri_entry";
-        color_classes {
-            color_class {
-                name: "guide_text_unselected_color";
-                color: 51 51 51 0.5;
-            }
-        }
         styles {
             style {
                 name: "browser-entry-uri-style-unselected";
-                base: "font=Sans:style=SVD_Medium font_size="40" wrap=none color=#969696";
+                base: "font=Sans:style=SVD_Medium font_size="42" wrap=none color=#969696";
                 tag:  "br" "";
             }
             style {
                 name: "browser-entry-uri-style-selected";
-                base: "font=Sans:style=SVD_Medium font_size="40" wrap=none color=#4088d3";
+                base: "font=Sans:style=SVD_Medium font_size="42" wrap=none ellipsis="0.0" color=#4088d3";
                 tag:  "br" "";
             }
             style {
                 name: "browser-entry-uri-style-selected-incognito";
-                base: "font=Sans:style=SVD_Medium font_size="40" wrap=none color=#4088d3";
+                base: "font=Sans:style=SVD_Medium font_size="42" wrap=none ellipsis="0.0" right_margin="60" color=#4088d3";
                 tag:  "br" "";
             }
         }
@@ -127,11 +87,29 @@ collections { base_scale: 2.6;
                 mouse_events: 0;
                 description {
                     state: "default" 0.0;
-                    color: 0 0 0 0;
-                    fixed: 0 1;
-                    min: 0 URI_INPUTBOX_HEIGHT;
-                    max: -1 URI_INPUTBOX_HEIGHT;
+                    color: 255 255 255 255;
+                }
+            }
+
+            part {
+                name: "elm.guide";
+                scale:1;
+                type: TEXTBLOCK;
+                mouse_events: 0;
+                description {
+                    state: "default" 0.0;
+                    rel1.relative: 0.0 0.0;
+                    rel2.relative: 1.0 1.0;
                     align: 0.0 0.0;
+                    text {
+                        style: "browser-entry-uri-style-unselected";
+                        min: 0 1;
+                    }
+                }
+                description {
+                    state: "hidden" 0.0;
+                    inherit: "default" 0.0;
+                    visible: 0;
                 }
             }
             part {
@@ -144,19 +122,19 @@ collections { base_scale: 2.6;
             }
             part {
                 name: "elm.text";
-                scale: 1;
+                scale:1;
                 multiline: 0;
                 entry_mode: EDITABLE;
                 select_mode: DEFAULT;
                 cursor_mode: BEFORE;
                 type: TEXTBLOCK;
+                clip_to: "label.text.clip";
                 source: "elm/entry/selection/browser_entry";
                 source4: "elm/entry/cursor/browser_entry";
                 description {
                     state: "default" 0.0;
-                    rel1.to: "bg";
+                    max: -1 82;
                     rel1.relative: 0.0 0.0;
-                    rel2.to: "bg";
                     rel2.relative: 1.0 1.0;
                     align: 0.0 0.0;
                     text {
@@ -166,36 +144,14 @@ collections { base_scale: 2.6;
                 }
                 description {
                     state: "incognito" 0.0;
+                    max: -1 82;
+                    rel1.relative: 0.0 0.0;
+                    rel2.relative: 1.0 1.0;
                     align: 0.0 0.0;
                     text {
                         style: "browser-entry-uri-style-selected-incognito";
                         min: 0 1;
                     }
-                }
-            }
-            part {
-                name: "elm.guide";
-                scale:1;
-                type: TEXTBLOCK;
-                mouse_events: 0;
-                clip_to: "label.text.clip";
-                source4: "elm/entry/cursor/browser_entry";
-                description {
-                    state: "default" 0.0;
-                    rel1.to: "bg";
-                    rel1.relative: 0.0 0.0;
-                    rel1.offset: BORDER_WIDTH 0;
-                    rel2.relative: 1.0 1.0;
-                    max: -1 URI_INPUTBOX_HEIGHT;
-                    text {
-                        style: "browser-entry-uri-style-unselected";
-                        min: 0 1;
-                    }
-                }
-                description {
-                    state: "hidden" 0.0;
-                    inherit: "default" 0.0;
-                    visible: 0;
                 }
             }
         }
@@ -222,6 +178,13 @@ collections { base_scale: 2.6;
                 target: "elm.guide";
             }
             program {
+                name: "normal_mode_uri_entry";
+                source: "ui";
+                signal: "uri_entry_normal";
+                action: STATE_SET "default" 0.0;
+                target: "elm.text";
+            }
+            program {
                 name: "incognito_mode_uri_entry";
                 source: "ui";
                 signal: "uri_entry_incognito";
@@ -232,268 +195,97 @@ collections { base_scale: 2.6;
     }//group
 
     group {
-        name: "uri_entry_layout";
+        name: "elm/button/base/entry_btn";
         parts {
             part {
-                name: "uri_entry_space";
-                type : RECT;
-                repeat_events: 1;
-                scale: 1;
-                description {
-                    state: "default" 0.0;
-                    visible: 1;
-                    align: 0.0 0.0;
-                    min: 0 URI_INPUTBOX_HEIGHT;
-                    max: -1 URI_INPUTBOX_HEIGHT;
-                    fixed: 0 1;
-                    color_class: "uri_bg";
-                    rel1 { relative: 0.0 0.0; }
-                    rel2 { relative: 1.0 1.0; }
-                }
-                description {
-                    state: "hidden" 0.0;
-                    inherit: "default" 0.0;
-                    visible: 0;
-                }
-                description {
-                    state: "visible" 0.0;
-                    inherit: "default" 0.0;
-                    visible: 1;
-                }
-            }
-            rect {
-                name: "left_spacer";
-                scale: 1;
-                mouse_events: 0;
-                description {
-                    state: "default" 0.0;
-                    min: 16 URI_INPUTBOX_HEIGHT;
-                    max: 16 URI_INPUTBOX_HEIGHT;
-                    rel1.to: "left_spacer";
-                    rel1.relative: 0.0 0.0;
-                    rel2.to: "uri_entry_space";
-                    rel2.relative: 1.0 1.0;
-                    align: 0 0;
-                    visible: 0;
-                }
-                description {
-                    state: "hidden" 0.0;
-                    inherit: "default" 0.0;
-                    min: 0 0;
-                    max: 0 0;
-                }
-            }
-            rect {
-                name: "left_icon_bg";
-                scale: 1;
-                mouse_events: 0;
-                description {
-                    state: "default" 0.0;
-                    min: 0 0;
-                    max: 0 0;
-                    rel1.to: "left_spacer";
-                    rel1.relative: 1.0 0.0;
-                    rel2.to: "uri_entry_space";
-                    rel2.relative: 1.0 1.0;
-                    align: 0 0;
-                    color_class: "uri_bg";
-                }
-                description {
-                    state: "visible" 0.0;
-                    inherit: "default" 0.0;
-                    min: 82 URI_INPUTBOX_HEIGHT;
-                    max: 82 URI_INPUTBOX_HEIGHT;
-                }
-
-            }
-            part {
-                name: "left_icon";
-                type: SWALLOW;
-                scale: 1;
-                description {
-                    state: "default" 0.0;
-                    visible: 0;
-                    min: 0 0;
-                    max: 0 0;
-                    color: 105 105 105 255;
-                    rel1 {
-                        to: "left_icon_bg";
-                        relative: 0.0 0.0;
-                    }
-                    rel2 {
-                        to: "left_icon_bg";
-                        relative: 1.0 1.0;
-                    }
-                    align: 0.5 0.5;
-                }
-                description {
-                    state: "visible" 0.0;
-                    inherit: "default" 0.0;
-                    min: 80 80;
-                    max: 80 80;
-                    visible: 1;
-                }
-            }
-            part {
-                name: "over";
+                name: "bg";
                 type: RECT;
-                mouse_events: 1;
-                repeat_events: 1;
                 description {
                     state: "default" 0.0;
                     color: 0 0 0 0;
-                    rel1 { relative: 0 0; }
-                    rel2 { relative: 1 1; }
-                }
-            }
-            part {
-                name: "right_icon_bg";
-                scale:1;
-                type: RECT;
-                mouse_events: 1;
-                description {
-                    state: "default" 0.0;
-                    min: 0 URI_INPUTBOX_HEIGHT;
-                    max: 0 URI_INPUTBOX_HEIGHT;
-                    visible: 0;
-                    color: 0 0 0 0;
-                    fixed: 0 1;
-                    align: 1 0;
-                }
-                description {
-                    state: "visible" 0.0;
-                    inherit: "default" 0.0;
-                    fixed: 0 1;
-                    align: 1 1;
-                    min: URI_INPUTBOX_HEIGHT URI_INPUTBOX_HEIGHT;
-                    max: URI_INPUTBOX_HEIGHT URI_INPUTBOX_HEIGHT;
-                    rel1 {
-                        to: "uri_entry_space";
-                        relative: 0.0 0.0;
-                    }
-                    rel2 {
-                        to: "uri_entry_space";
-                        relative: 1.0 1.0;
-                    }
-                    visible: 1;
-                    color_class: "uri_bg";
-                }
-            }
-            part {
-                name: "uri_entry_swallow";
-                type : SWALLOW;
-                mouse_events: 1;
-                scale: 1;
-                description {
-                    state: "default" 0.0;
-                    visible: 1;
-                    align: 0.0 0.0;
-                    fixed: 1 1;
-                    rel1 { relative: 1.0 0.0; to: "left_icon_bg"; }
-                    rel2 { relative: 0.0 1.0; to: "right_icon_bg"; }
-                    min: 0 URI_INPUTBOX_HEIGHT;
-                    max: -1 URI_INPUTBOX_HEIGHT;
-                }
-                description {
-                    state: "hidden" 0.0;
-                    inherit: "default" 0.0;
-                    visible: 0;
-                }
-                description {
-                    state: "visible" 0.0;
-                    inherit: "default" 0.0;
-                    visible: 1;
-                }
-            }
-            part {
-                name: "right_icon";
-                type: SWALLOW;
-                scale: 1;
-                repeat_events: 1;
-                mouse_events: 1;
-                description {
-                    state: "default" 0.0;
-                    visible: 0;
-                    min: 0 0;
-                    max: 0 0;
-                    color: 105 105 105 255;
-                    rel1 {
-                        to: "right_icon_bg";
-                        relative: 0.0 0.0;
-                    }
-                    rel2 {
-                        to: "right_icon_bg";
-                        relative: 1.0 1.0;
-                    }
-                    align: 0.5 0.5;
-                }
-                description {
-                    state: "visible" 0.0;
-                    inherit: "default" 0.0;
-                    min: 80 80;
-                    max: 80 80;
                     visible: 1;
                 }
             }
         }
         programs {
             program {
-                name: "show_left_icon";
-                source: "ui";
-                signal: "show,left,icon";
-                action: STATE_SET "visible" 0.0;
-                target: "left_icon";
-                after: "show_left_icon_bg";
-            }
-            program {
-                name: "hide_left_icon";
-                source: "ui";
-                signal: "hide,left,icon";
-                action: STATE_SET "default" 0.0;
-                target: "left_icon";
-                target: "left_icon_bg";
-                target: "left_spacer";
-            }
-            program {
-                name: "show_cancel_icon";
-                source: "ui";
-                signal: "show,cancel,icon";
-                action: STATE_SET "cancel" 0.0;
-                target: "right_icon";
-                after: "show_right_icon_bg";
-            }
-            program {
-                name: "show_right_icon_bg";
-                action: STATE_SET "visible" 0.0;
-                target: "right_icon_bg";
-            }
-            program {
-                name: "show_right_icon";
-                source: "ui";
-                signal: "show,right,icon";
-                action: STATE_SET "visible" 0.0;
-                target: "right_icon";
-                after: "show_right_icon_bg";
-            }
-            program {
-                name: "hide_right_icon";
-                source: "ui";
-                signal: "hide,right,icon";
-                action: STATE_SET "default" 0.0;
-                target: "right_icon";
-                target: "right_icon_bg";
-            }
-            program {
-                name: "show_left_icon_bg";
-                action: STATE_SET "visible" 0.0;
-                target: "left_icon_bg";
-                after: "hide_left_spacer";
-            }
-            program {
-                name: "hide_left_spacer";
-                action: STATE_SET "hidden" 0.0;
-                target: "left_spacer";
+                name: "mouse_click";
+                signal: "mouse,clicked,1";
+                source: "bg";
+                script {
+                    emit("elm,action,click", "");
+                }
             }
         }
     }
+
+
+    group {
+        name: "uri_entry_layout";
+        parts {
+            part {
+                name: "spacer_1";
+                type: SPACER;
+                scale: 1;
+                description {
+                    state: "default" 0.0;
+                    rel1 { relative: 0.0 0.0; }
+                    rel2 { relative: 0.0 0.0; offset: 15 0; }
+                    align: 0.0 0.0;
+                    fixed: 1 1;
+                min: 1 102;
+                max: 1 102;
+            }
+        }
+        part {
+            name: "uri_entry_swallow";
+            type : SWALLOW;
+            scale: 1;
+            description {
+                state: "default" 0.0;
+                visible: 1;
+                color: 255 255 255 255;
+                align: 0.0 0.0;
+                min: URI_INPUTBOX_LENGTH URI_INPUTBOX_WIDTH;
+                max: URI_INPUTBOX_LENGTH URI_INPUTBOX_WIDTH;
+                fixed: 1 1;
+                rel1 { relative: 1 0; to: "spacer_1"; }
+                rel2 { relative: 1 1; to: "spacer_1"; }
+            }
+            description {
+                state: "moveright" 0.0;
+                inherit: "default" 0.0;
+                visible: 1;
+                min: URI_INPUTBOX_LENGTH_SMALL URI_INPUTBOX_WIDTH;
+                max: URI_INPUTBOX_LENGTH_SMALL URI_INPUTBOX_WIDTH;
+            }
+            description {
+                state: "hidden" 0.0;
+                inherit: "default" 0.0;
+                visible: 0;
+            }
+            description {
+                state: "visible" 0.0;
+                inherit: "default" 0.0;
+                visible: 1;
+            }
+        }
+    }
+    programs {
+        program {
+            name: "shiftright_uribarbg";
+            signal: "shiftright_uribg";
+            source: "ui";
+            action: STATE_SET "moveright" 0.0;
+            target: "uri_entry_swallow";
+        }
+        program {
+            name: "shiftback_uribarbg";
+            signal: "shiftback_uribg";
+            source: "ui";
+            action: STATE_SET "default" 0.0;
+            target: "uri_entry_swallow";
+        }
+    }
+}
 }

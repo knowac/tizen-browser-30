@@ -2,6 +2,7 @@ project(QuickAccess)
 
 set(QuickAccess_SRCS
     QuickAccess.cpp
+    DetailPopup.cpp
     )
 
 include(Coreheaders)
@@ -28,6 +29,7 @@ if (${PROFILE} MATCHES "mobile")    # mobile profile
 else (${PROFILE} MATCHES "mobile")  # tv profile
     set(edcFiles
         QuickAccess.edc
+        DetailPopup.edc
         )
 endif (${PROFILE} MATCHES "mobile")
 

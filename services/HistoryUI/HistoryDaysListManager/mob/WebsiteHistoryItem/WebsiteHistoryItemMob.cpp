@@ -23,12 +23,15 @@
 namespace tizen_browser {
 namespace base_ui {
 
-WebsiteHistoryItemMob::WebsiteHistoryItemMob(WebsiteHistoryItemDataPtr websiteHistoryItemData)
+WebsiteHistoryItemMob::WebsiteHistoryItemMob(
+        WebsiteHistoryItemDataPtr websiteHistoryItemData)
     : m_websiteHistoryItemData(websiteHistoryItemData)
     , m_websiteHistoryItemTitle(
-        std::make_shared<WebsiteHistoryItemTitleMob>(websiteHistoryItemData))
+                std::make_shared < WebsiteHistoryItemTitleMob
+                        > (websiteHistoryItemData))
     , m_websiteHistoryItemVisitItems(
-        std::make_shared<WebsiteHistoryItemVisitItemsMob>(websiteHistoryItemData->websiteVisitItem))
+                std::make_shared < WebsiteHistoryItemVisitItemsMob
+                        > (websiteHistoryItemData->websiteVisitItems))
     , m_layoutMain(nullptr)
     , m_boxMainVertical(nullptr)
 {
@@ -41,18 +44,17 @@ WebsiteHistoryItemMob::~WebsiteHistoryItemMob()
         evas_object_del(m_layoutMain);
 }
 
-Evas_Object* WebsiteHistoryItemMob::init(
-    Evas_Object* parent,
-    HistoryDaysListManagerEdjePtr edjeFiles)
+Evas_Object* WebsiteHistoryItemMob::init(Evas_Object* parent,
+        HistoryDaysListManagerEdjePtr edjeFiles)
 {
     m_layoutMain = elm_layout_add(parent);
     tools::EflTools::setExpandHints(m_layoutMain);
     elm_layout_file_set(m_layoutMain, edjeFiles->websiteHistoryItem.c_str(),
-        "layoutWebsiteHistoryItem");
+            "layoutWebsiteHistoryItem");
 
     m_boxMainVertical = createBoxMainVertical(m_layoutMain, edjeFiles);
     elm_object_part_content_set(m_layoutMain, "boxMainVertical",
-        m_boxMainVertical);
+            m_boxMainVertical);
 
     evas_object_show(m_boxMainVertical);
     evas_object_show(m_layoutMain);
@@ -66,40 +68,39 @@ void WebsiteHistoryItemMob::setEflObjectsAsDeleted()
     m_websiteHistoryItemVisitItems->setEflObjectsAsDeleted();
 }
 
-Evas_Object* WebsiteHistoryItemMob::createBoxMainVertical(
-    Evas_Object* parent,
-    HistoryDaysListManagerEdjePtr edjeFiles)
+Evas_Object* WebsiteHistoryItemMob::createBoxMainVertical(Evas_Object* parent,
+        HistoryDaysListManagerEdjePtr edjeFiles)
 {
     Evas_Object* box = elm_box_add(parent);
     elm_box_horizontal_set(box, EINA_FALSE);
 
-    elm_box_pack_end(box, m_websiteHistoryItemTitle->init(
-        parent,
-        edjeFiles->websiteHistoryItemTitle.c_str()));
-    elm_box_pack_end(box, m_websiteHistoryItemVisitItems->init(
-        parent,
-        edjeFiles->websiteHistoryItemVisitItems.c_str()));
+    elm_box_pack_end(box, m_websiteHistoryItemTitle->init(parent,
+            edjeFiles->websiteHistoryItemTitle.c_str()));
+    elm_box_pack_end(box, m_websiteHistoryItemVisitItems->init(parent,
+            edjeFiles->websiteHistoryItemVisitItems.c_str()));
 
     elm_box_align_set(box, 0.0, 0.0);
 
     return box;
 }
 
-bool WebsiteHistoryItemMob::contains(WebsiteVisitItemDataPtrConst historyVisitItemData)
+bool WebsiteHistoryItemMob::contains(
+        WebsiteVisitItemDataPtrConst historyVisitItemData)
 {
     return m_websiteHistoryItemVisitItems->contains(historyVisitItemData);
 }
 
-int WebsiteHistoryItemMob::getVisitItemsId()
+std::shared_ptr<std::vector<int>> WebsiteHistoryItemMob::getVisitItemsIds()
 {
-    return m_websiteHistoryItemVisitItems->getVisitItemsId();
+    return m_websiteHistoryItemVisitItems->getVisitItemsIds();
 }
 
 int WebsiteHistoryItemMob::sizeHistoryVisitItems() {
     return m_websiteHistoryItemVisitItems->size();
 }
 
-void WebsiteHistoryItemMob::removeItem(WebsiteVisitItemDataPtrConst historyVisitItemData)
+void WebsiteHistoryItemMob::removeItem(
+        WebsiteVisitItemDataPtrConst historyVisitItemData)
 {
     m_websiteHistoryItemVisitItems->removeItem(historyVisitItemData);
 }

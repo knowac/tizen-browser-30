@@ -1,8 +1,14 @@
 msgid "IDS_BR_POP_NETWORK_ERROR"
 msgstr "Võrgutõrge."
 
+msgid "IDS_BR_BODY_AUTHUSERNAME"
+msgstr "Kasutajanimi"
+
 msgid "IDS_BR_BODY_DESTINATIONS_AUTHENTICATION_REQUIRED"
 msgstr "Autentimine on kohustuslik."
+
+msgid "IDS_BR_BODY_AUTHPASSWORD"
+msgstr "Parool"
 
 msgid "IDS_BR_HEADER_SECURITY_WARNING"
 msgstr "Turvahoiatus"
@@ -27,6 +33,12 @@ msgstr "Selle saidi turvasertifikaadiga tekkis probleeme."
 
 msgid "IDS_BR_OPT_ALLOW"
 msgstr "Luba"
+
+msgid "IDS_BR_OPT_VIEW"
+msgstr "Kuva"
+
+msgid "IDS_BR_OPT_CANCEL"
+msgstr "Tühista"
 
 msgid "IDS_BR_BODY_PS_REQUESTS_YOUR_LOCATION"
 msgstr "%s taotleb teie asukohta."
@@ -60,18 +72,6 @@ msgstr "Lae alla"
 
 msgid "IDS_BR_BODY_THIS_WEBPAGE"
 msgstr "See veebileht"
-
-msgid "IDS_BR_BODY_AUTHUSERNAME"
-msgstr "Kasutajanimi"
-
-msgid "IDS_BR_BODY_AUTHPASSWORD"
-msgstr "Parool"
-
-msgid "IDS_BR_OPT_VIEW"
-msgstr "Kuva"
-
-msgid "IDS_BR_OPT_CANCEL"
-msgstr "Tühista"
 
 msgid "IDS_BR_OPT_SCREEN"
 msgstr "Ekraan"
@@ -109,6 +109,15 @@ msgstr "Tühista"
 msgid "IDS_BR_BUTTON_MORE"
 msgstr "Veel"
 
+msgid "IDS_TPLATFORM_ACBUTTON_DONE_ABB"
+msgstr "VALMIS"
+
+msgid "IDS_TPLATFORM_ACBUTTON_CANCEL_ABB"
+msgstr "TÜHISTA"
+
+msgid "IDS_TPLATFORM_ACBUTTON_DELETE_ABB"
+msgstr "KUSTUTA"
+
 msgid "IDS_BR_BODY_NO_ITEMS"
 msgstr "Üksusi ei ole"
 
@@ -117,6 +126,9 @@ msgstr "Loo ühendus mob.võrguga"
 
 msgid "IDS_BR_OPT_DO_NOT_SHOW_AGAIN"
 msgstr "Ära enam kuva"
+
+msgid "IDS_BR_SK_OK"
+msgstr "OK"
 
 msgid "IDS_BR_POP_ONLY_HTTP_OR_HTTPS_URLS_CAN_BE_DOWNLOADED"
 msgstr "Alla saab laadida ainult http- voi https-algusega URL-e."
@@ -139,11 +151,17 @@ msgstr "Kopeeri link"
 msgid "IDS_BR_OPT_COPY_IMAGE"
 msgstr "Kopeeri pilt"
 
-msgid "IDS_BR_SK_OK"
-msgstr "OK"
-
 msgid "IDS_BR_OPT_CALL"
 msgstr "Helista"
+
+msgid "IDS_ST_POP_PS_HAS_BEEN_DETECTED"
+msgstr "%s on tuvastatud."
+
+msgid "IDS_ST_POP_DETECTED_IN_C_PS"
+msgstr "Tuvastatud failis: %s"
+
+msgid "IDS_ST_HEADER_MALWARE_DETECTED_ABB"
+msgstr "Tuvastati ründevara"
 
 msgid "IDS_BR_BUTTON_FAILED"
 msgstr "Nurjus"
@@ -211,11 +229,35 @@ msgstr "Eem mär"
 msgid "IDS_BR_SK_TABS"
 msgstr "Vahekaardid"
 
+msgid "IDS_BR_SK_SAVE_LITE"
+msgstr "Salvesta"
+
+msgid "IDS_BR_SK_SAVE_ABB"
+msgstr "Salv."
+
+msgid "IDS_BR_SK_SAVE"
+msgstr "Salvesta"
+
+msgid "IDS_BR_SK_PREVIOUS"
+msgstr "Eelmine"
+
+msgid "IDS_BR_SK_NEXT"
+msgstr "Järgmine"
+
 msgid "IDS_BR_SK_MENU"
 msgstr "Menüü"
 
 msgid "IDS_BR_SK_DELETE_ABB"
 msgstr "Kustuta"
+
+msgid "IDS_BR_SK_DELETE"
+msgstr "Kustuta"
+
+msgid "IDS_BR_SK_CLEAR"
+msgstr "Tühjenda"
+
+msgid "IDS_BR_SK_BACK"
+msgstr "Tagasi"
 
 msgid "IDS_BR_SK3_CREATE_FOLDER"
 msgstr "Loo kaust"
@@ -274,6 +316,15 @@ msgstr "Osade veebilehtede täpne lõikamine ei pruugi olla võimalik"
 msgid "IDS_BR_POP_YOUR_HISTORY_WILL_BE_CLEARED"
 msgstr "Teie ajalugu kustutatakse."
 
+msgid "IDS_BR_POP_WI_FI_CONNECTION_REQUIRED_CONNECT_TO_WI_FI_NETWORK_AND_TRY_AGAIN"
+msgstr "Wi-Fi ühendus on nõutud. Looge ühendus Wi-Fi võrguga ja proovige uuesti"
+
+msgid "IDS_BR_POP_URL_NOT_FOUND"
+msgstr "URL-i ei leitud."
+
+msgid "IDS_BR_POP_URL"
+msgstr "URL"
+
 msgid "IDS_BR_POP_UNABLE_TO_VIEW_THE_CERTIFICATE_THE_PAGE_INFORMATION_HAS_BEEN_CHANGED"
 msgstr "Sertifikaati ei saa vaadata. Lehe teave on muutunud."
 
@@ -319,11 +370,23 @@ msgstr "Turvalisuse poliis piirab internetibrauseri kasutuse."
 msgid "IDS_BR_POP_SAVED_TO_BOOKMARKS"
 msgstr "Salvestatud järjehoidjatesse."
 
+msgid "IDS_BR_POP_SAVED"
+msgstr "Salvestatud."
+
 msgid "IDS_BR_POP_RENAME_TAG"
 msgstr "Nimeta silt ümber"
 
+msgid "IDS_BR_POP_REMOVED"
+msgstr "Eemaldatud."
+
 msgid "IDS_BR_POP_PD_PROFILES_WILL_BE_DELETED"
 msgstr "%d profiili kustutatakse."
+
+msgid "IDS_BR_POP_PD_ITEMS_WILL_BE_DELETED"
+msgstr "%d uksust kustutatakse."
+
+msgid "IDS_BR_POP_PD_ITEMS_SELECTED"
+msgstr "%d üksust on valitud."
 
 msgid "IDS_BR_POP_PAGES_THAT_YOU_VIEW_WILL_NOT_APPEAR_IN_YOUR_BROWSER_HISTORY_OR_SEARCH_HISTORY_AND_THEY_WILL_NOT_LEAVE_OTHER_TRACES_LIKE_COOKIES"
 msgstr "Avatud lehti ei kuvata brauseri- ega otsinguajaloos ja need ei jäta ka muid jälgi, nt küpsiseid."
@@ -352,20 +415,53 @@ msgstr "„%1$s” on tuvastatud.\nTuvastatud veebilehel: „%2$s”\n\nOsa sisu
 msgid "IDS_BR_POP_P1SS_HAS_BEEN_DETECTED_DETECTED_IN_C_P2SS_OPEN_WEBPAGE_ANYWAY_Q"
 msgstr "„%1$s” on tuvastatud.\nTuvastatud veebilehel: „%2$s”\n\nKas avada veebileht ikkagi?"
 
+msgid "IDS_BR_POP_NO_ITEMS_SELECTED"
+msgstr "Ühtegi üksust pole valitud."
+
 msgid "IDS_BR_POP_NOT_ENOUGH_MEMORY_DELETE_SOME_ITEMS_AND_TRY_AGAIN"
 msgstr "Mälu pole piisavalt. Kustutage mõned üksused ja proovige uuesti."
+
+msgid "IDS_BR_POP_NOT_ENOUGH_MEMORY"
+msgstr "Mälu pole piisavalt."
 
 msgid "IDS_BR_POP_NOT_ALLOWED"
 msgstr "Pole lubatud."
 
+msgid "IDS_BR_POP_NEVER"
+msgstr "Mitte kunagi"
+
 msgid "IDS_BR_POP_MOVED"
 msgstr "Teisaldatud."
+
+msgid "IDS_BR_POP_MOBILE_DATA_IS_DISABLED_CONNECT_TO_WI_FI_NETWORK_INSTEAD_OR_ENABLE_MOBILE_DATA_AND_TRY_AGAIN"
+msgstr "Mobiilne andmeside on desaktiveeritud. Looge selle asemel ühendus Wi-Fi võrguga või aktiveerige mobiilne andmeside ja proovige uuesti"
+
+msgid "IDS_BR_POP_LOADING_PLEASE_WAIT_ING"
+msgstr "Laadimine. Palun oodake..."
+
+msgid "IDS_BR_POP_INVALID_URL"
+msgstr "Vigane URL."
+
+msgid "IDS_BR_POP_FAIL"
+msgstr "Nurjus."
 
 msgid "IDS_BR_POP_ENTER_URL"
 msgstr "Sisesta URL."
 
+msgid "IDS_BR_POP_ENTER_TITLE_ABB"
+msgstr "Sisesta pealkiri"
+
 msgid "IDS_BR_POP_ENTER_BOOKMARK_NAME"
 msgstr "Sisestage jarjehoidja nimi."
+
+msgid "IDS_BR_POP_DO_NOT_SHOW_AGAIN"
+msgstr "Ära näita uuesti"
+
+msgid "IDS_BR_POP_DOWNLOADCOMPLETE"
+msgstr "Allalaadimine lõpetatud."
+
+msgid "IDS_BR_POP_DISABLED"
+msgstr "Keelatud."
 
 msgid "IDS_BR_POP_DIALING_ING_VZW"
 msgstr "Dialing..."
@@ -391,6 +487,9 @@ msgstr "Kas kustutada selle veebisaidi sisselogimise andmed?"
 msgid "IDS_BR_POP_DELETE_SIGN_IN_DATA_FOR_PD_WEBSITES_Q"
 msgstr "Kas kustutada %d veebisaidi sisselogimise andmed?"
 
+msgid "IDS_BR_POP_DELETE_Q"
+msgstr "Kustutada?"
+
 msgid "IDS_BR_POP_DELETE_PD_SAVED_WEB_PAGES_Q"
 msgstr "Kas kustutada %d salvestatud veebilehte?"
 
@@ -406,8 +505,14 @@ msgstr "Kas kustutada kõik veebisaidi andmed ja asukoha load?"
 msgid "IDS_BR_POP_DELETEHISTORYQUESTION"
 msgstr "Kustutada ajalugu?"
 
+msgid "IDS_BR_POP_DELETED"
+msgstr "Kustutatud."
+
 msgid "IDS_BR_POP_CONTINUE"
 msgstr "Jätka"
+
+msgid "IDS_BR_POP_CLOSE_APPLICATION_Q"
+msgstr "Kas sulgeda rakendus?"
 
 msgid "IDS_BR_POP_CLOSE_APPLICATION"
 msgstr "Sulge rakendus"
@@ -420,6 +525,12 @@ msgstr "Kustutada ajalugu?"
 
 msgid "IDS_BR_POP_BOOKMARK_REMOVED"
 msgstr "Järjehoidja on eemaldatud."
+
+msgid "IDS_BR_POP_BOOKMARK_ADDED"
+msgstr "Järjehoidja lisatud."
+
+msgid "IDS_BR_POP_AUTOMATIC_BRIGHTNESS"
+msgstr "Automaatne heledus"
 
 msgid "IDS_BR_POP_ALREADY_EXISTS"
 msgstr "Juba olemas."
@@ -445,6 +556,15 @@ msgstr "Luba saitidel salvestada ja lugeda kupsiseid."
 msgid "IDS_BR_POP_ADDED_TO_BOOKMARKS"
 msgstr "Lisatud järjehoidjatesse."
 
+msgid "IDS_BR_POP_ACCOUNT"
+msgstr "Konto"
+
+msgid "IDS_BR_POP_1_ITEM_WILL_BE_DELETED"
+msgstr "1 üksus kustutatakse."
+
+msgid "IDS_BR_POP_1_ITEM_SELECTED"
+msgstr "1 üksus on valitud."
+
 msgid "IDS_BR_OPT_WINDOWS"
 msgstr "Aknad"
 
@@ -454,20 +574,38 @@ msgstr "Kuva sertifikaat"
 msgid "IDS_BR_OPT_UNICODE_HUTF_8"
 msgstr "Unicode (UTF-8)"
 
+msgid "IDS_BR_OPT_TRANSLATE"
+msgstr "Tõlgi"
+
 msgid "IDS_BR_OPT_THUMBNAIL_VIEW"
 msgstr "Pisipildivaade"
 
 msgid "IDS_BR_OPT_TEXT_ENCODING"
 msgstr "Teksti kodeerimine"
 
+msgid "IDS_BR_OPT_STOP"
+msgstr "Peata"
+
 msgid "IDS_BR_OPT_SHRINK_TEXT"
 msgstr "Teksti vähendamine"
+
+msgid "IDS_BR_OPT_SHOW"
+msgstr "Näita"
+
+msgid "IDS_BR_OPT_SHARE"
+msgstr "Jaga"
 
 msgid "IDS_BR_OPT_SETTINGS_ABB"
 msgstr "Seaded"
 
+msgid "IDS_BR_OPT_SETTINGS"
+msgstr "Seaded"
+
 msgid "IDS_BR_OPT_SEND_MESSAGE_VODA"
 msgstr "Saada sõnum"
+
+msgid "IDS_BR_OPT_SEND_EMAIL"
+msgstr "Saada e-kiri"
 
 msgid "IDS_BR_OPT_SENDURLVIA_EMAIL"
 msgstr "E-kiri"
@@ -486,6 +624,12 @@ msgstr "Valikurežiim"
 
 msgid "IDS_BR_OPT_SELECTED"
 msgstr "Valitud"
+
+msgid "IDS_BR_OPT_SELECT"
+msgstr "Vali"
+
+msgid "IDS_BR_OPT_SD_CARD"
+msgstr "SD-kaart"
 
 msgid "IDS_BR_OPT_SAVE_TO_KEEPIT_ABB"
 msgstr "Salvesta rakendusse KeepIt"
@@ -514,8 +658,14 @@ msgstr "Järjesta ümber"
 msgid "IDS_BR_OPT_RENAME_FOLDER"
 msgstr "Nimeta kaust ümber"
 
+msgid "IDS_BR_OPT_RENAME"
+msgstr "Nimeta ümber"
+
 msgid "IDS_BR_OPT_REMOVE"
 msgstr "Eemalda"
+
+msgid "IDS_BR_OPT_REFRESH"
+msgstr "Värskenda"
 
 msgid "IDS_BR_OPT_READER_MODE_TTS"
 msgstr "Lugejarežiim"
@@ -535,8 +685,14 @@ msgstr "Võrguühenduseta lehed"
 msgid "IDS_BR_OPT_NEW_WINDOW"
 msgstr "Uus aken"
 
+msgid "IDS_BR_OPT_MOVE"
+msgstr "Teisalda"
+
 msgid "IDS_BR_OPT_MINIMISE"
 msgstr "Minimeeri"
+
+msgid "IDS_BR_OPT_MESSAGES"
+msgstr "Sõnumid"
 
 msgid "IDS_BR_OPT_MEDIUM_M_QUALITY"
 msgstr "Keskmine"
@@ -549,6 +705,9 @@ msgstr "Asukoha juurdepääsu privileegid"
 
 msgid "IDS_BR_OPT_LOAD_IMAGES"
 msgstr "Laadi pildid"
+
+msgid "IDS_BR_OPT_LIST_VIEW"
+msgstr "Loendivaade"
 
 msgid "IDS_BR_OPT_LATIN_1_HISO_8859_1"
 msgstr "Ladina-1 (ISO-8859-1)"
@@ -565,6 +724,9 @@ msgstr "Jaapani (ISO-2022-JP)"
 msgid "IDS_BR_OPT_JAPANESE_HEUC_JP"
 msgstr "Jaapani (EUC-JP)"
 
+msgid "IDS_BR_OPT_I_AGREE"
+msgstr "Nõustun."
+
 msgid "IDS_BR_OPT_INCOGNITO_MODE_ABB"
 msgstr "Inkognito režiim"
 
@@ -579,6 +741,9 @@ msgstr "Avaekraan otseteena"
 
 msgid "IDS_BR_OPT_HIGH_M_QUALITY"
 msgstr "Kõrge"
+
+msgid "IDS_BR_OPT_HELP"
+msgstr "Spikker"
 
 msgid "IDS_BR_OPT_GOFORWARD"
 msgstr "Edasi"
@@ -625,6 +790,9 @@ msgstr "Desaktiv. Madal andmekasutus"
 msgid "IDS_BR_OPT_DISABLED"
 msgstr "Desaktiveeritud"
 
+msgid "IDS_BR_OPT_DEVICE"
+msgstr "Seade"
+
 msgid "IDS_BR_OPT_DELETE_SAVED_PAGE_ABB"
 msgstr "Kustuta salvestatud leht"
 
@@ -658,6 +826,9 @@ msgstr "Hiina (Big5)"
 msgid "IDS_BR_OPT_CACHE"
 msgstr "Vahemälu"
 
+msgid "IDS_BR_OPT_BOOKMARK"
+msgstr "Järjehoidja"
+
 msgid "IDS_BR_OPT_ADD_TO_WEB_CLIP"
 msgstr "Lisa veebiklipile"
 
@@ -678,6 +849,12 @@ msgstr "Lisa järjehoidja"
 
 msgid "IDS_BR_OPT_ADD_BOOKMARK"
 msgstr "Lisa järjehoidja"
+
+msgid "IDS_BR_OPT_ADDED"
+msgstr "Lisatud."
+
+msgid "IDS_BR_OPT_ADD"
+msgstr "Lisa"
 
 msgid "IDS_BR_OPT1_EXTENSION"
 msgstr "Laiend"
@@ -748,6 +925,9 @@ msgstr "Laadi voo sisu alla"
 msgid "IDS_BR_MBODY_DELETE_SIGN_IN_DATA"
 msgstr "Kustuta sisselog. andmed"
 
+msgid "IDS_BR_MBODY_DEFAULT_DOWNLOAD_STORAGE"
+msgstr "Allalaadimise vaikemälu"
+
 msgid "IDS_BR_MBODY_DATA_SAVING_STATISTICS"
 msgstr "Andmete salv. statistika"
 
@@ -790,6 +970,9 @@ msgstr "Järjehoidjaid ei saa teisald."
 msgid "IDS_BR_HEADER_SITE_NOT_TRUSTED_ABB"
 msgstr "Sait pole usaldusväärne"
 
+msgid "IDS_BR_HEADER_SIGN_IN_TO_SAMSUNG_ACCOUNT"
+msgstr "Logige Samsungi kontole sisse"
+
 msgid "IDS_BR_HEADER_SET_HOMEPAGE_ABB"
 msgstr "Määra koduleht"
 
@@ -826,11 +1009,17 @@ msgstr "Hüpik on blokeeritud"
 msgid "IDS_BR_HEADER_POPULAR_WEBSITES_ABB"
 msgstr "Populaarsed veebisaidid"
 
+msgid "IDS_BR_HEADER_PD_SELECTED_ABB"
+msgstr "%d on valitud"
+
 msgid "IDS_BR_HEADER_ORGANISATION_C_ABB"
 msgstr "Organsatsioon:"
 
 msgid "IDS_BR_HEADER_ORGANISATIONAL_UNIT_C"
 msgstr "Organisatsiooni üksus:"
+
+msgid "IDS_BR_HEADER_NO_NETWORK_CONNECTION"
+msgstr "Võrguühendus puudub"
 
 msgid "IDS_BR_HEADER_NEWER_M_INTERNET_HISTORY_ABB"
 msgstr "Newer"
@@ -847,11 +1036,17 @@ msgstr "HTML5-laiend"
 msgid "IDS_BR_HEADER_FORM_DATA"
 msgstr "Ankeedi andmed"
 
+msgid "IDS_BR_HEADER_FOLDER"
+msgstr "Kaust"
+
 msgid "IDS_BR_HEADER_EXPIRES_ON_C"
 msgstr "Aegumise kuupäev:"
 
 msgid "IDS_BR_HEADER_ENABLE_WEB_SIGN_IN"
 msgstr "Aktiveeri veebi sisselogimine"
+
+msgid "IDS_BR_HEADER_EDIT_PROFILE"
+msgstr "Muuda profiili"
 
 msgid "IDS_BR_HEADER_EDIT_BOOKMARK"
 msgstr "Muuda järjehoidjat"
@@ -889,8 +1084,14 @@ msgstr "Ribalaiuse haldus"
 msgid "IDS_BR_HEADER_ADVANCEDCERTIFICATES"
 msgstr "Sertifikaadid"
 
+msgid "IDS_BR_BUTTON_SET"
+msgstr "Määra"
+
 msgid "IDS_BR_BUTTON_RESET_ABB"
 msgstr "Lähtesta"
+
+msgid "IDS_BR_BUTTON_NOT_NOW"
+msgstr "Mitte praegu"
 
 msgid "IDS_BR_BUTTON_HOMEPAGE_ABB"
 msgstr "Avaleht"
@@ -898,11 +1099,35 @@ msgstr "Avaleht"
 msgid "IDS_BR_BUTTON_FIND_ABB"
 msgstr "Leia"
 
+msgid "IDS_BR_BUTTON_ENABLE_ABB"
+msgstr "Aktiveeri"
+
+msgid "IDS_BR_BUTTON_EDIT"
+msgstr "Muuda"
+
+msgid "IDS_BR_BUTTON_CONTINUE_ABB"
+msgstr "Jätka"
+
+msgid "IDS_BR_BUTTON_CONTINUE"
+msgstr "Jätka"
+
+msgid "IDS_BR_BUTTON_CLOSE"
+msgstr "Sulge"
+
+msgid "IDS_BR_BUTTON_CANCEL_ABB"
+msgstr "Tühista"
+
+msgid "IDS_BR_BUTTON_CANCEL"
+msgstr "Tühista"
+
 msgid "IDS_BR_BUTTON_BACK_ABB"
 msgstr "Tagasi"
 
 msgid "IDS_BR_BUTTON_ALWAYS_SHOW_ABB"
 msgstr "Näita alati"
+
+msgid "IDS_BR_BUTTON_ALLOW"
+msgstr "Luba"
 
 msgid "IDS_BR_BUTTON2_WEB_PORTAL"
 msgstr "Veebi-\nportaal"
@@ -927,6 +1152,9 @@ msgstr "Ava ajalugu"
 
 msgid "IDS_BR_BUTTON2_ENTERTAINMENT"
 msgstr "Meele-\nlahutus"
+
+msgid "IDS_BR_BODY_YESTERDAY"
+msgstr "Eile"
 
 msgid "IDS_BR_BODY_WINDOW_MANAGER"
 msgstr "Aknahaldur"
@@ -955,6 +1183,9 @@ msgstr "Olekuriba peitmiseks kasutage Täisekraanrežiimi."
 msgid "IDS_BR_BODY_USE_A_PREDICTION_SERVICE_TO_DISPLAY_RELATED_QUERIES_AND_POPULAR_WEBSITES_IN_THE_ADDRESS_BAR_AS_YOU_TYPE"
 msgstr "Kasuta ennustusteenust, et kuvada trukkimise kaigus aadressiribal seotud paringuid ja populaarseid veebisaite."
 
+msgid "IDS_BR_BODY_URL"
+msgstr "URL"
+
 msgid "IDS_BR_BODY_UPPER_FOLDER_T_TALKBACK"
 msgstr "Ülemine kaust"
 
@@ -970,6 +1201,12 @@ msgstr "Veebilehte ei saa kuvada. Server ei vasta."
 msgid "IDS_BR_BODY_TOWN_CITY_COUNTY_ABB"
 msgstr "Linn/riik"
 
+msgid "IDS_BR_BODY_TODAY"
+msgstr "Täna"
+
+msgid "IDS_BR_BODY_TITLE"
+msgstr "Pealkiri"
+
 msgid "IDS_BR_BODY_THIS_SITE_IS_USING_PS"
 msgstr "See sait kasutab üksust %s."
 
@@ -984,6 +1221,9 @@ msgstr "See jarjehoidja kustutatakse."
 
 msgid "IDS_BR_BODY_THE_SELECTED_PERSONAL_DATA_WILL_BE_DELETED"
 msgstr "Valitud isiklikud andmed kustutatakse."
+
+msgid "IDS_BR_BODY_THE_MAXIMUM_NUMBER_OF_CHARACTERS_HPD_HAS_BEEN_EXCEEDED"
+msgstr "Tahemarkide maksimaalne arv (%d) on uletatud."
 
 msgid "IDS_BR_BODY_TEXT_FIELD_T_TTS"
 msgstr "Tekstiväli"
@@ -1009,11 +1249,17 @@ msgstr "Sünkrooni järjehoidjad"
 msgid "IDS_BR_BODY_STREET_ADDRESS_PO_BOX_C_O_ETC_ABB"
 msgstr "Tänav, postkast, vahendusel jne."
 
+msgid "IDS_BR_BODY_STREAMING"
+msgstr "Striiming"
+
 msgid "IDS_BR_BODY_STORED_DATA"
 msgstr "Salvestatud andmed"
 
 msgid "IDS_BR_BODY_SPLIT_BAR_HANDLE"
 msgstr "Poolitusriba sang"
+
+msgid "IDS_BR_BODY_SMALL"
+msgstr "Väike"
 
 msgid "IDS_BR_BODY_SIGN_IN_TO_YOUR_SAMSUNG_ACCOUNT_TO_ACCESS_THE_BOOKMARKS_AND_TABS_ON_YOUR_OTHER_DEVICES"
 msgstr "Logige sisse oma Samsungi kontole, et paaseda ligi oma teistes seadmetes olevatele jarjehoidjatele ja vahekaartidele."
@@ -1033,6 +1279,9 @@ msgstr "Maara tekst veebiankeetide automaatseks taitmiseks."
 msgid "IDS_BR_BODY_SET_CURRENT_PAGE_AS_HOMEPAGE"
 msgstr "Määrake praegune lehekülg avaleheks"
 
+msgid "IDS_BR_BODY_SETTINGS"
+msgstr "Seaded"
+
 msgid "IDS_BR_BODY_SELECT_FOLDER"
 msgstr "Vali kaust"
 
@@ -1045,6 +1294,9 @@ msgstr "Otsingu väli"
 msgid "IDS_BR_BODY_SEARCH_AND_URL_SUGGESTIONS"
 msgstr "Otsing ja URL-i soovitused"
 
+msgid "IDS_BR_BODY_SEARCH"
+msgstr "Otsi"
+
 msgid "IDS_BR_BODY_SCREEN_AND_TEXT"
 msgstr "Ekraan ja tekst"
 
@@ -1053,6 +1305,9 @@ msgstr "Salvesta kasutajanimed ja paroolid veebisaitide jaoks."
 
 msgid "IDS_BR_BODY_SAVE_LINK"
 msgstr "Salvesta link"
+
+msgid "IDS_BR_BODY_RSS_SEARCH_RESULTS"
+msgstr "Otsingutulemid"
 
 msgid "IDS_BR_BODY_RESTORE_DEFAULT_SETTINGS_Q"
 msgstr "Kas taastada vaikeseaded?"
@@ -1087,6 +1342,12 @@ msgstr "Raadio nupp"
 msgid "IDS_BR_BODY_PS_BOOKMARK_WILL_BE_DELETED"
 msgstr "Jarjehoidja %s kustutatakse."
 
+msgid "IDS_BR_BODY_PROFILE"
+msgstr "Profiil"
+
+msgid "IDS_BR_BODY_PROCESSING_ING"
+msgstr "Töötlemine..."
+
 msgid "IDS_BR_BODY_PRIVACY"
 msgstr "Privaatsus"
 
@@ -1099,8 +1360,20 @@ msgstr "Vajutage menuuklahvi."
 msgid "IDS_BR_BODY_POSTCODE_ABB"
 msgstr "Sihtnumber"
 
+msgid "IDS_BR_BODY_PHONE_NUMBER_ABB"
+msgstr "Tel. number"
+
+msgid "IDS_BR_BODY_PHONE"
+msgstr "Telefon"
+
 msgid "IDS_BR_BODY_PD_POP_UPS_BLOCKED_ABB"
 msgstr "%d hüp. blokeeritud."
+
+msgid "IDS_BR_BODY_PD_ITEMS_WILL_BE_DELETED"
+msgstr "%d uksust kustutatakse."
+
+msgid "IDS_BR_BODY_PASSWORD"
+msgstr "Parool"
 
 msgid "IDS_BR_BODY_PAGE_LOADED_T_TTS"
 msgstr "Leht on laaditud"
@@ -1126,8 +1399,14 @@ msgstr "Nõudmisel"
 msgid "IDS_BR_BODY_ONLY_VIA_WI_FI_ABB"
 msgstr "Ainult Wi-Fi kaudu"
 
+msgid "IDS_BR_BODY_ON"
+msgstr "Sees"
+
 msgid "IDS_BR_BODY_OLDER"
 msgstr "Vanemad"
+
+msgid "IDS_BR_BODY_OFF"
+msgstr "Väljas"
 
 msgid "IDS_BR_BODY_NO_WINDOWS"
 msgstr "Aknaid pole"
@@ -1141,8 +1420,17 @@ msgstr "Pealkirjata"
 msgid "IDS_BR_BODY_NO_SAVED_PAGES"
 msgstr "Salvestatud lehti pole"
 
+msgid "IDS_BR_BODY_NO_RESULTS_FOUND"
+msgstr "Tulemusi ei leitud."
+
+msgid "IDS_BR_BODY_NO_HISTORIES"
+msgstr "Ajalugu puudub"
+
 msgid "IDS_BR_BODY_NO_BOOKMARKS"
 msgstr "Järjehoidjaid ei ole"
+
+msgid "IDS_BR_BODY_NOTIFICATIONS"
+msgstr "Teavitused"
 
 msgid "IDS_BR_BODY_NORMAL"
 msgstr "Tavaline"
@@ -1158,6 +1446,9 @@ msgstr "Enim külastatud saidid"
 
 msgid "IDS_BR_BODY_MOBILE_VIEW"
 msgstr "Mobiilivaade"
+
+msgid "IDS_BR_BODY_MEDIUM"
+msgstr "Keskmine"
 
 msgid "IDS_BR_BODY_LOCATION_M_INFORMATION"
 msgstr "Asukoht"
@@ -1183,6 +1474,9 @@ msgstr "Internet"
 msgid "IDS_BR_BODY_IMPROVE_PERFORMANCE_WHEN_LOADING_PAGES"
 msgstr "Parandage lehtede laadimisel joudlust."
 
+msgid "IDS_BR_BODY_IMAGES"
+msgstr "Pildid"
+
 msgid "IDS_BR_BODY_HOMEPAGE"
 msgstr "Avalehekülg"
 
@@ -1192,11 +1486,20 @@ msgstr "Saate peita aadressiriba, kerides lehel allapoole."
 msgid "IDS_BR_BODY_GENERAL_M_SETTINGS"
 msgstr "Üldine"
 
+msgid "IDS_BR_BODY_FULL_SCREEN"
+msgstr "Täisekraan"
+
 msgid "IDS_BR_BODY_FULL_NAME_ABB"
 msgstr "Täielik nimi"
 
 msgid "IDS_BR_BODY_FORCE_ZOOM_ABB"
 msgstr "Sunnitud suumimine"
+
+msgid "IDS_BR_BODY_FONT_SIZE"
+msgstr "Suurus"
+
+msgid "IDS_BR_BODY_FOLDER_NAME"
+msgstr "Kausta nimi"
 
 msgid "IDS_BR_BODY_FLAT_SUITE_UNIT_BUILDING_FLOOR_ETC_ABB"
 msgstr "Korter, plokk, üksus, hoone, korrus jne"
@@ -1213,6 +1516,24 @@ msgstr "Sisestage oma nimi."
 msgid "IDS_BR_BODY_ENTER_TOWN_CITY_COUNTY_ABB"
 msgstr "Sisestage linn/riik."
 
+msgid "IDS_BR_BODY_ENTER_POSTCODE_ABB"
+msgstr "Sisestage sihtnumber."
+
+msgid "IDS_BR_BODY_ENTER_POSTCODE"
+msgstr "Sisestage sihtnumber."
+
+msgid "IDS_BR_BODY_ENTER_PHONE_NUMBER"
+msgstr "Sisestage telefoninumber."
+
+msgid "IDS_BR_BODY_ENTER_NAME"
+msgstr "Sisestage nimi."
+
+msgid "IDS_BR_BODY_ENTER_FOLDER_NAME"
+msgstr "Sisestage kausta nimi."
+
+msgid "IDS_BR_BODY_ENTER_EMAIL_ADDRESS"
+msgstr "Sisestage e-posti aadress."
+
 msgid "IDS_BR_BODY_ENTER_COUNTRY_REGION_ABB"
 msgstr "Sisestage riik/piirkond."
 
@@ -1224,6 +1545,12 @@ msgstr "Luba asukoht"
 
 msgid "IDS_BR_BODY_ENABLE_JAVASCRIPT"
 msgstr "Aktiveeri JavaScript"
+
+msgid "IDS_BR_BODY_EMAIL_ADDRESS"
+msgstr "E-posti aadress"
+
+msgid "IDS_BR_BODY_DOWNLOADING_ING"
+msgstr "Allalaadimine..."
 
 msgid "IDS_BR_BODY_DOUBLE_TAP_TO_VIEW_CERTIFICATE_TTS"
 msgstr "Toksake kaks korda, et vaadata sertifikaati."
@@ -1264,6 +1591,9 @@ msgstr "Kuva turvalisuse hoiatuse hupikud."
 msgid "IDS_BR_BODY_DISPLAY_IMAGES_ON_WEB_PAGES"
 msgstr "Kuva veebilehtedel olevad pildid."
 
+msgid "IDS_BR_BODY_DEVELOPER_MODE"
+msgstr "Arendaja režiim"
+
 msgid "IDS_BR_BODY_DESKTOP_VIEW"
 msgstr "Töölauakuva"
 
@@ -1278,6 +1608,9 @@ msgstr "Vaikemälu"
 
 msgid "IDS_BR_BODY_DEFAULT_PAGE_ABB"
 msgstr "Vaikeleht"
+
+msgid "IDS_BR_BODY_DEFAULT"
+msgstr "Vaikimisi"
 
 msgid "IDS_BR_BODY_DATA_USAGE_REDUCED_BY_P1SDP_HP2SD_KB_OF_P3SD_KB_RECEIVED_TAP_HERE_TO_RESET_STATISTICS"
 msgstr "Andmekasutust on vähendatud %1$d% (%2$d kB koguhulgast %3$d kB on vastu võetud). Toksake siia, et lähtestada statistikat."
@@ -1342,6 +1675,9 @@ msgstr "Saate muuta teksti suurust, et seda oleks lihtsam lugeda, eriti oma sead
 msgid "IDS_BR_BODY_BOOKMARK_REMINDER_ABB"
 msgstr "Järjehoidja meeldetuletus"
 
+msgid "IDS_BR_BODY_BOOKMARKS"
+msgstr "Järjehoidjad"
+
 msgid "IDS_BR_BODY_BLOCK_POP_UPS_ON_WEB_PAGES"
 msgstr "Blokeeri veebilehel olevad hupikud."
 
@@ -1390,6 +1726,9 @@ msgstr "Luba kasutajal %s näidata teavitusi"
 msgid "IDS_BR_BODY_ALLOWS_SITES_TO_SAVE_AND_READ_COOKIE_DATA"
 msgstr "Lubab saitidel küpsiste andmeid salvestada ja lugeda."
 
+msgid "IDS_BR_BODY_ALL"
+msgstr "Kõik"
+
 msgid "IDS_BR_BODY_AFTER_YOU_VISIT_WEBPAGES_THE_PAGES_YOU_HAVE_VISITED_THE_MOST_WILL_BE_SHOWN_HERE"
 msgstr "Enim külastatud veebilehed kuvatakse siin pärast nende külastamist."
 
@@ -1417,6 +1756,9 @@ msgstr "Täpsemalt"
 msgid "IDS_BR_BODY_ADD_TO_CONTACT"
 msgstr "Lisa kontaktile"
 
+msgid "IDS_BR_BODY_ADD_TO"
+msgstr "Lisa"
+
 msgid "IDS_BR_BODY_ADD_THIS_WEBSITE_TO_BOOKMARKS_TO_OPEN_IT_FASTER_ABB"
 msgstr "Kiiremini avamiseks lisage sait jarjehoidjatesse."
 
@@ -1426,17 +1768,29 @@ msgstr "Aadressi rida 2"
 msgid "IDS_BR_BODY_ADDRESS_LINE_1_ABB"
 msgstr "Aadressi rida 1"
 
+msgid "IDS_BR_BODY_ADDDETAILSVIEW_TAGS"
+msgstr "Sildid"
+
+msgid "IDS_BR_BODY_ADDBOOKMARKURL"
+msgstr "URL"
+
 msgid "IDS_BR_BODY_ACCEPT_COOKIES"
 msgstr "Nõustu küpsistega"
 
 msgid "IDS_BR_BODY_1_PROFILE_WILL_BE_DELETED"
 msgstr "1 profiil kustutatakse."
 
+msgid "IDS_BR_BODY_1_ITEM_WILL_BE_DELETED"
+msgstr "1 üksus kustutatakse."
+
 msgid "IDS_BR_ACBUTTON_TABS_ABB"
 msgstr "VAHK."
 
 msgid "IDS_BR_TPOP_STARTING_DOWNLOAD_ING"
 msgstr "Allalaadimise alustamine..."
+
+msgid "IDS_BR_TPOP_MAXIMUM_NUMBER_OF_CHARACTERS_HPD_REACHED"
+msgstr "Maksimaalne tähemärkide arv (%d) on saavutatud"
 
 msgid "IDS_BR_TPOP_FOLDER_RENAMED"
 msgstr "Kaust on ümber nimetatud."
@@ -1453,8 +1807,14 @@ msgstr "Tühis."
 msgid "IDS_BR_SBODY_SET_THE_DEVICE_TO_SHOW_THE_FULL_WEBPAGE_ON_THE_SCREEN_WHEN_IT_IS_LOADED_WITHOUT_NEEDING_TO_SCROLL"
 msgstr "Saate määrata seadme pärast laadimist näitama ekraanil tervet veebilehte ilma, et peaksite kerima."
 
+msgid "IDS_BR_POP_UNSUPPORTMEDIATYPE"
+msgstr "Toetuseta meediatüüp."
+
 msgid "IDS_BR_POP_UNABLE_TO_RUN_INTERNET_LOW_BATTERY"
 msgstr "Internetti ei saa kaivitada. Aku on tuhi."
+
+msgid "IDS_BR_POP_UNABLE_TO_CONNECT_TO_MOBILE_NETWORKS_WHILE_FLIGHT_MODE_IS_ENABLED_CONNECT_TO_WI_FI_NETWORK_INSTEAD_OR_DISABLE_FLIGHT_MODE_AND_TRY_AGAIN"
+msgstr "Mobiilsete võrkudega ei saa ühendust luua, kui lennurežiim on aktiveeritud. Looge selle asemel ühendus Wi-Fi võrguga või desaktiveerige lennurežiim ja proovige uuesti"
 
 msgid "IDS_BR_POP_THE_DOWNLOAD_HAS_BEEN_STOPPED_AND_THE_DOWNLOADED_DATA_WILL_BE_DELETED"
 msgstr "Allalaadimine on peatatud ja allalaaditud andmed kustutatakse."
@@ -1465,8 +1825,20 @@ msgstr "Search completed"
 msgid "IDS_BR_POP_READY"
 msgstr "Valmis."
 
+msgid "IDS_BR_POP_INSTALL_SUCCESS"
+msgstr "Installimine valmis."
+
+msgid "IDS_BR_POP_INSTALLATION_FAILED"
+msgstr "Installimine ebaõnnestus."
+
 msgid "IDS_BR_POP_INFORM_MEMORY_ERROR"
 msgstr "Mälutõrge."
+
+msgid "IDS_BR_POP_DELETING_ING"
+msgstr "Kustutamine..."
+
+msgid "IDS_BR_POP_DATA_ROAMING_IS_DISABLED_CONNECT_TO_WI_FI_NETWORK_INSTEAD_OR_ENABLE_DATA_ROAMING_AND_TRY_AGAIN"
+msgstr "Andmerändlus on desaktiveeritud. Looge selle asemel ühendus Wi-Fi võrguga või aktiveerige rändlus ja proovige uuesti"
 
 msgid "IDS_BR_POP_DATA_ROAMING_IS_DISABLED_CONNECT_TO_A_WI_FI_NETWORK_OR_ENABLE_DATA_ROAMING_AND_TRY_AGAIN"
 msgstr "Andmerändlus on desaktiveeritud. Looge ühendus Wi-Fi võrguga või aktiveerige andmerändlus ja proovige uuesti."
@@ -1483,11 +1855,17 @@ msgstr "Veebirak."
 msgid "IDS_BR_OPT_VIEW_ONLINE"
 msgstr "Kuva võrguühendusega"
 
+msgid "IDS_BR_OPT_SHARE_VIA"
+msgstr "Jagamine"
+
 msgid "IDS_BR_OPT_READ_ON_OFFLINE_PAGES_LATER_ABB"
 msgstr "Lehtede lugem. hiljem võrguta"
 
 msgid "IDS_BR_OPT_QUICK_ACCESS_ABB2"
 msgstr "Kiirjuurdepääs"
+
+msgid "IDS_BR_OPT_PASTE"
+msgstr "Kleebi"
 
 msgid "IDS_BR_OPT_ALWAYS_ENABLED_ABB"
 msgstr "Alati aktiveeritud"
@@ -1513,6 +1891,9 @@ msgstr "Otsing ja URL-i soovitused"
 msgid "IDS_BR_MBODY_HISTORY"
 msgstr "Ajalugu"
 
+msgid "IDS_BR_MBODY_FONT_SIZE"
+msgstr "Fondi suurus"
+
 msgid "IDS_BR_MBODY_FIT_PAGE_TO_SCREEN"
 msgstr "Mahuta leht ekraanile"
 
@@ -1524,6 +1905,9 @@ msgstr "Kohandatud"
 
 msgid "IDS_BR_MBODY_COUNTRY_REGION"
 msgstr "Riik/piirkond"
+
+msgid "IDS_BR_HEADER_UNABLE_TO_DOWNLOAD_ABB"
+msgstr "Ei saa alla laadida"
 
 msgid "IDS_BR_HEADER_RENAME_FOLDER_ABB"
 msgstr "Kausta ümbernimetamine"
@@ -1555,8 +1939,14 @@ msgstr "Teabe lis."
 msgid "IDS_BR_BUTTON_WI_FI_ABB"
 msgstr "Wi-Fi"
 
+msgid "IDS_BR_BUTTON_UPDATE"
+msgstr "Värskenda"
+
 msgid "IDS_BR_BUTTON_SETTINGS_ABB"
 msgstr "Seaded"
+
+msgid "IDS_BR_BUTTON_RETRY"
+msgstr "Uuesti"
 
 msgid "IDS_BR_BUTTON2_OK"
 msgstr "OK"
@@ -1582,6 +1972,9 @@ msgstr "See sertifikaat on pärit usaldusväärsest allikast."
 msgid "IDS_BR_BODY_TAP_HERE_TO_ADD_A_QUICK_ACCESS_SHORTCUT"
 msgstr "Toksake siia, et lisada kiirjuurdepääsu otseteed."
 
+msgid "IDS_BR_BODY_REQUEST_FAILED"
+msgstr "Taotlus nurjus."
+
 msgid "IDS_BR_BODY_PREFERENCES"
 msgstr "Eelistused"
 
@@ -1597,398 +1990,14 @@ msgstr "Vasteid pole"
 msgid "IDS_BR_BODY_MOBILE_DATA_IS_TURNED_OFF_CONNECT_TO_A_WI_FI_NETWORK_INSTEAD_OR_TAP_SETTINGS_TO_TURN_ON_MOBILE_DATA_AND_THEN_TRY_AGAIN"
 msgstr "Mobiilne andmeside on lülitatud välja. Looge selle asemel ühendus Wi-Fi võrguga või toksake menüüd Seaded, et lülitada mobiilne andmeside sisse, ning seejärel proovige uuesti."
 
-msgid "IDS_BR_BODY_FIT_TO_WIDTH"
-msgstr "Mahuta laiusele"
-
-msgid "IDS_BR_ACBUTTON_QUICK_ACCESS"
-msgstr "KIIRJUURDEP."
-
-msgid "IDS_BR_OPT_OPEN_IN_NEW_TAB"
-msgstr "Ava uues vahekaardis"
-
-msgid "IDS_BR_BODY_SHARE_LINK"
-msgstr "Jaga linki"
-
-msgid "IDS_BR_SK_SAVE_LITE"
-msgstr "Salvesta"
-
-msgid "IDS_BR_SK_SAVE_ABB"
-msgstr "Salv."
-
-msgid "IDS_BR_SK_SAVE"
-msgstr "Salvesta"
-
-msgid "IDS_BR_SK_PREVIOUS"
-msgstr "Eelmine"
-
-msgid "IDS_BR_SK_NEXT"
-msgstr "Järgmine"
-
-msgid "IDS_BR_SK_DELETE"
-msgstr "Kustuta"
-
-msgid "IDS_BR_SK_CLEAR"
-msgstr "Tühjenda"
-
-msgid "IDS_BR_SK_BACK"
-msgstr "Tagasi"
-
-msgid "IDS_BR_POP_WI_FI_CONNECTION_REQUIRED_CONNECT_TO_WI_FI_NETWORK_AND_TRY_AGAIN"
-msgstr "Wi-Fi ühendus on nõutud. Looge ühendus Wi-Fi võrguga ja proovige uuesti"
-
-msgid "IDS_BR_POP_URL_NOT_FOUND"
-msgstr "URL-i ei leitud."
-
-msgid "IDS_BR_POP_URL"
-msgstr "URL"
-
-msgid "IDS_BR_POP_SAVED"
-msgstr "Salvestatud."
-
-msgid "IDS_BR_POP_REMOVED"
-msgstr "Eemaldatud."
-
-msgid "IDS_BR_POP_PD_ITEMS_WILL_BE_DELETED"
-msgstr "%d uksust kustutatakse."
-
-msgid "IDS_BR_POP_PD_ITEMS_SELECTED"
-msgstr "%d üksust on valitud."
-
-msgid "IDS_BR_POP_NO_ITEMS_SELECTED"
-msgstr "Ühtegi üksust pole valitud."
-
-msgid "IDS_BR_POP_NOT_ENOUGH_MEMORY"
-msgstr "Mälu pole piisavalt."
-
-msgid "IDS_BR_POP_NEVER"
-msgstr "Mitte kunagi"
-
-msgid "IDS_BR_POP_MOBILE_DATA_IS_DISABLED_CONNECT_TO_WI_FI_NETWORK_INSTEAD_OR_ENABLE_MOBILE_DATA_AND_TRY_AGAIN"
-msgstr "Mobiilne andmeside on desaktiveeritud. Looge selle asemel ühendus Wi-Fi võrguga või aktiveerige mobiilne andmeside ja proovige uuesti"
-
-msgid "IDS_BR_POP_LOADING_PLEASE_WAIT_ING"
-msgstr "Laadimine. Palun oodake..."
-
-msgid "IDS_BR_POP_INVALID_URL"
-msgstr "Vigane URL."
-
-msgid "IDS_BR_POP_FAIL"
-msgstr "Nurjus."
-
-msgid "IDS_BR_POP_ENTER_TITLE_ABB"
-msgstr "Sisesta pealkiri"
-
-msgid "IDS_BR_POP_DO_NOT_SHOW_AGAIN"
-msgstr "Ära näita uuesti"
-
-msgid "IDS_BR_POP_DOWNLOADCOMPLETE"
-msgstr "Allalaadimine lõpetatud."
-
-msgid "IDS_BR_POP_DISABLED"
-msgstr "Keelatud."
-
-msgid "IDS_BR_POP_DELETE_Q"
-msgstr "Kustutada?"
-
-msgid "IDS_BR_POP_DELETED"
-msgstr "Kustutatud."
-
-msgid "IDS_BR_POP_CLOSE_APPLICATION_Q"
-msgstr "Kas sulgeda rakendus?"
-
-msgid "IDS_BR_POP_BOOKMARK_ADDED"
-msgstr "Järjehoidja lisatud."
-
-msgid "IDS_BR_POP_AUTOMATIC_BRIGHTNESS"
-msgstr "Automaatne heledus"
-
-msgid "IDS_BR_POP_ACCOUNT"
-msgstr "Konto"
-
-msgid "IDS_BR_POP_1_ITEM_WILL_BE_DELETED"
-msgstr "1 üksus kustutatakse."
-
-msgid "IDS_BR_POP_1_ITEM_SELECTED"
-msgstr "1 üksus on valitud."
-
-msgid "IDS_BR_OPT_TRANSLATE"
-msgstr "Tõlgi"
-
-msgid "IDS_BR_OPT_STOP"
-msgstr "Peata"
-
-msgid "IDS_BR_OPT_SHOW"
-msgstr "Näita"
-
-msgid "IDS_BR_OPT_SHARE"
-msgstr "Jaga"
-
-msgid "IDS_BR_OPT_SETTINGS"
-msgstr "Seaded"
-
-msgid "IDS_BR_OPT_SEND_EMAIL"
-msgstr "Saada e-kiri"
-
-msgid "IDS_BR_OPT_SELECT"
-msgstr "Vali"
-
-msgid "IDS_BR_OPT_SD_CARD"
-msgstr "SD-kaart"
-
-msgid "IDS_BR_OPT_RENAME"
-msgstr "Nimeta ümber"
-
-msgid "IDS_BR_OPT_REFRESH"
-msgstr "Värskenda"
-
-msgid "IDS_BR_OPT_MOVE"
-msgstr "Teisalda"
-
-msgid "IDS_BR_OPT_MESSAGES"
-msgstr "Sõnumid"
-
-msgid "IDS_BR_OPT_LIST_VIEW"
-msgstr "Loendivaade"
-
-msgid "IDS_BR_OPT_I_AGREE"
-msgstr "Nõustun."
-
-msgid "IDS_BR_OPT_HELP"
-msgstr "Spikker"
-
-msgid "IDS_BR_OPT_DEVICE"
-msgstr "Seade"
-
-msgid "IDS_BR_OPT_BOOKMARK"
-msgstr "Järjehoidja"
-
-msgid "IDS_BR_OPT_ADDED"
-msgstr "Lisatud."
-
-msgid "IDS_BR_OPT_ADD"
-msgstr "Lisa"
-
-msgid "IDS_BR_MBODY_DEFAULT_DOWNLOAD_STORAGE"
-msgstr "Allalaadimise vaikemälu"
-
-msgid "IDS_BR_HEADER_SIGN_IN_TO_SAMSUNG_ACCOUNT"
-msgstr "Logige Samsungi kontole sisse"
-
-msgid "IDS_BR_HEADER_PD_SELECTED_ABB"
-msgstr "%d on valitud"
-
-msgid "IDS_BR_HEADER_NO_NETWORK_CONNECTION"
-msgstr "Võrguühendus puudub"
-
-msgid "IDS_BR_HEADER_FOLDER"
-msgstr "Kaust"
-
-msgid "IDS_BR_HEADER_EDIT_PROFILE"
-msgstr "Muuda profiili"
-
-msgid "IDS_BR_BUTTON_SET"
-msgstr "Määra"
-
-msgid "IDS_BR_BUTTON_NOT_NOW"
-msgstr "Mitte praegu"
-
-msgid "IDS_BR_BUTTON_ENABLE_ABB"
-msgstr "Aktiveeri"
-
-msgid "IDS_BR_BUTTON_EDIT"
-msgstr "Muuda"
-
-msgid "IDS_BR_BUTTON_CONTINUE_ABB"
-msgstr "Jätka"
-
-msgid "IDS_BR_BUTTON_CONTINUE"
-msgstr "Jätka"
-
-msgid "IDS_BR_BUTTON_CLOSE"
-msgstr "Sulge"
-
-msgid "IDS_BR_BUTTON_CANCEL_ABB"
-msgstr "Tühista"
-
-msgid "IDS_BR_BUTTON_CANCEL"
-msgstr "Tühista"
-
-msgid "IDS_BR_BUTTON_ALLOW"
-msgstr "Luba"
-
-msgid "IDS_BR_BODY_YESTERDAY"
-msgstr "Eile"
-
-msgid "IDS_BR_BODY_URL"
-msgstr "URL"
-
-msgid "IDS_BR_BODY_TODAY"
-msgstr "Täna"
-
-msgid "IDS_BR_BODY_TITLE"
-msgstr "Pealkiri"
-
-msgid "IDS_BR_BODY_THE_MAXIMUM_NUMBER_OF_CHARACTERS_HPD_HAS_BEEN_EXCEEDED"
-msgstr "Tahemarkide maksimaalne arv (%d) on uletatud."
-
-msgid "IDS_BR_BODY_STREAMING"
-msgstr "Striiming"
-
-msgid "IDS_BR_BODY_SMALL"
-msgstr "Väike"
-
-msgid "IDS_BR_BODY_SETTINGS"
-msgstr "Seaded"
-
-msgid "IDS_BR_BODY_SEARCH"
-msgstr "Otsi"
-
-msgid "IDS_BR_BODY_RSS_SEARCH_RESULTS"
-msgstr "Otsingutulemid"
-
-msgid "IDS_BR_BODY_PROFILE"
-msgstr "Profiil"
-
-msgid "IDS_BR_BODY_PROCESSING_ING"
-msgstr "Töötlemine..."
-
-msgid "IDS_BR_BODY_PHONE_NUMBER_ABB"
-msgstr "Tel. number"
-
-msgid "IDS_BR_BODY_PHONE"
-msgstr "Telefon"
-
-msgid "IDS_BR_BODY_PD_ITEMS_WILL_BE_DELETED"
-msgstr "%d uksust kustutatakse."
-
-msgid "IDS_BR_BODY_PASSWORD"
-msgstr "Parool"
-
-msgid "IDS_BR_BODY_ON"
-msgstr "Sees"
-
-msgid "IDS_BR_BODY_OFF"
-msgstr "Väljas"
-
-msgid "IDS_BR_BODY_NO_RESULTS_FOUND"
-msgstr "Tulemusi ei leitud."
-
-msgid "IDS_BR_BODY_NO_HISTORIES"
-msgstr "Ajalugu puudub"
-
-msgid "IDS_BR_BODY_NOTIFICATIONS"
-msgstr "Teavitused"
-
-msgid "IDS_BR_BODY_MEDIUM"
-msgstr "Keskmine"
-
-msgid "IDS_BR_BODY_IMAGES"
-msgstr "Pildid"
-
-msgid "IDS_BR_BODY_FULL_SCREEN"
-msgstr "Täisekraan"
-
-msgid "IDS_BR_BODY_FONT_SIZE"
-msgstr "Suurus"
-
-msgid "IDS_BR_BODY_FOLDER_NAME"
-msgstr "Kausta nimi"
-
-msgid "IDS_BR_BODY_ENTER_POSTCODE_ABB"
-msgstr "Sisestage sihtnumber."
-
-msgid "IDS_BR_BODY_ENTER_POSTCODE"
-msgstr "Sisestage sihtnumber."
-
-msgid "IDS_BR_BODY_ENTER_PHONE_NUMBER"
-msgstr "Sisestage telefoninumber."
-
-msgid "IDS_BR_BODY_ENTER_NAME"
-msgstr "Sisestage nimi."
-
-msgid "IDS_BR_BODY_ENTER_FOLDER_NAME"
-msgstr "Sisestage kausta nimi."
-
-msgid "IDS_BR_BODY_ENTER_EMAIL_ADDRESS"
-msgstr "Sisestage e-posti aadress."
-
-msgid "IDS_BR_BODY_EMAIL_ADDRESS"
-msgstr "E-posti aadress"
-
-msgid "IDS_BR_BODY_DOWNLOADING_ING"
-msgstr "Allalaadimine..."
-
-msgid "IDS_BR_BODY_DEVELOPER_MODE"
-msgstr "Arendaja režiim"
-
-msgid "IDS_BR_BODY_DEFAULT"
-msgstr "Vaikimisi"
-
-msgid "IDS_BR_BODY_BOOKMARKS"
-msgstr "Järjehoidjad"
-
-msgid "IDS_BR_BODY_ALL"
-msgstr "Kõik"
-
-msgid "IDS_BR_BODY_ADD_TO"
-msgstr "Lisa"
-
-msgid "IDS_BR_BODY_ADDDETAILSVIEW_TAGS"
-msgstr "Sildid"
-
-msgid "IDS_BR_BODY_ADDBOOKMARKURL"
-msgstr "URL"
-
-msgid "IDS_BR_BODY_1_ITEM_WILL_BE_DELETED"
-msgstr "1 üksus kustutatakse."
-
-msgid "IDS_BR_TPOP_MAXIMUM_NUMBER_OF_CHARACTERS_HPD_REACHED"
-msgstr "Maksimaalne tähemärkide arv (%d) on saavutatud"
-
-msgid "IDS_BR_POP_UNSUPPORTMEDIATYPE"
-msgstr "Toetuseta meediatüüp."
-
-msgid "IDS_BR_POP_UNABLE_TO_CONNECT_TO_MOBILE_NETWORKS_WHILE_FLIGHT_MODE_IS_ENABLED_CONNECT_TO_WI_FI_NETWORK_INSTEAD_OR_DISABLE_FLIGHT_MODE_AND_TRY_AGAIN"
-msgstr "Mobiilsete võrkudega ei saa ühendust luua, kui lennurežiim on aktiveeritud. Looge selle asemel ühendus Wi-Fi võrguga või desaktiveerige lennurežiim ja proovige uuesti"
-
-msgid "IDS_BR_POP_INSTALL_SUCCESS"
-msgstr "Installimine valmis."
-
-msgid "IDS_BR_POP_INSTALLATION_FAILED"
-msgstr "Installimine ebaõnnestus."
-
-msgid "IDS_BR_POP_DELETING_ING"
-msgstr "Kustutamine..."
-
-msgid "IDS_BR_POP_DATA_ROAMING_IS_DISABLED_CONNECT_TO_WI_FI_NETWORK_INSTEAD_OR_ENABLE_DATA_ROAMING_AND_TRY_AGAIN"
-msgstr "Andmerändlus on desaktiveeritud. Looge selle asemel ühendus Wi-Fi võrguga või aktiveerige rändlus ja proovige uuesti"
-
-msgid "IDS_BR_OPT_SHARE_VIA"
-msgstr "Jagamine"
-
-msgid "IDS_BR_OPT_PASTE"
-msgstr "Kleebi"
-
-msgid "IDS_BR_MBODY_FONT_SIZE"
-msgstr "Fondi suurus"
-
-msgid "IDS_BR_HEADER_UNABLE_TO_DOWNLOAD_ABB"
-msgstr "Ei saa alla laadida"
-
-msgid "IDS_BR_BUTTON_UPDATE"
-msgstr "Värskenda"
-
-msgid "IDS_BR_BUTTON_RETRY"
-msgstr "Uuesti"
-
-msgid "IDS_BR_BODY_REQUEST_FAILED"
-msgstr "Taotlus nurjus."
-
 msgid "IDS_BR_BODY_LOGIN"
 msgstr "Sisselogimine"
 
 msgid "IDS_BR_BODY_LOADING_ING"
 msgstr "Laadimine..."
+
+msgid "IDS_BR_BODY_FIT_TO_WIDTH"
+msgstr "Mahuta laiusele"
 
 msgid "IDS_BR_BODY_FIT_TO_SCREEN"
 msgstr "Mahuta kuvale"
@@ -1999,165 +2008,12 @@ msgstr "Allalaet. failid"
 msgid "IDS_BR_BODY_DATA_ROAMING_IS_DISABLED_CONNECT_TO_A_WI_FI_NETWORK_INSTEAD_OR_ENABLE_DATA_ROAMING_AND_TRY_AGAIN"
 msgstr "Andmerändlus on desaktiveeritud. Looge ühendus hoopis Wi-Fi võrguga või aktiveerige andmerändlus ja proovige uuesti."
 
-msgid "IDS_BR_POP_DOWNLOAD_CANCELLED"
-msgstr "Allalaadimine tühistatud."
+msgid "IDS_BR_ACBUTTON_QUICK_ACCESS"
+msgstr "KIIRJUURDEP."
 
-msgid "IDS_BR_BUTTON_SECRET_ON_ABB"
-msgstr "Sal. sees"
+msgid "IDS_ST_POP_SOME_CONTENT_HAS_BEEN_BLOCKED_TO_PROTECT_YOUR_DEVICE"
+msgstr "Osa sisu on teie seadme kaitsmiseks blokeeritud."
 
-msgid "IDS_BR_MBODY_PRIVACY"
-msgstr "Privaatsus"
-
-msgid "IDS_BR_MBODY_DEFAULT_STORAGE"
-msgstr "Vaikemälu"
-
-msgid "IDS_BR_MBODY_MANUAL_ZOOM"
-msgstr "Käsitsi suumimine"
-
-msgid "IDS_BR_TMBODY_DEFAULT_SEARCH_ENGINE"
-msgstr "Vaikimisi otsingumootor"
-
-msgid "IDS_BR_MBODY_SAVE_SIGN_IN_INFO"
-msgstr "Logimisinfo salvestamine"
-
-msgid "IDS_BR_OPT_TURN_OFF_SECRET_MODE_ABB"
-msgstr "Lülita salarežiim välja"
-
-msgid "IDS_BR_OPT_TURN_ON_SECRET_MODE_ABB"
-msgstr "Lülita salarežiim sisse"
-
-msgid "IDS_BR_OPT_SHOW_PASSWORD_ABB2"
-msgstr "Kuva parool"
-
-msgid "IDS_BR_OPT_SECRET_MODE_SECURITY_ABB"
-msgstr "Salarežiimi turvalisus"
-
-msgid "IDS_BR_BUTTON_USE_PASSWORD_ABB"
-msgstr "Kasuta parooli"
-
-msgid "IDS_BR_HEADER_DONT_USE_PASSWORD_ABB"
-msgstr "Ära kasuta parooli"
-
-msgid "IDS_BR_MBODY_MOST_VISITED_WEBSITES"
-msgstr "Enim külastatud saidid"
-
-msgid "IDS_BR_MBODY_SET_MY_PROFILE"
-msgstr "Määra minu profiil"
-
-msgid "IDS_BR_MBODY_MY_AUTO_FILL_PROFILE"
-msgstr "Minu autom. täit. profiil"
-
-msgid "IDS_BR_SBODY_MANAGE_DATA_USED_TO_FILL_IN_FORMS_ONLINE"
-msgstr "Saate hallata veebiankeetide täitmise andmeid."
-
-msgid "IDS_BR_MBODY_SAVE_SIGN_IN_INFO_ABB"
-msgstr "Salv. logimisinfo"
-
-msgid "IDS_BR_OPT_LOCATION_ACCESS_DATA"
-msgstr "Asukoha juurdepääsuandmed"
-
-msgid "IDS_BR_OPT_AUTO_FILL_DATA"
-msgstr "Andmete automaatne lisamine"
-
-msgid "IDS_BR_BODY_ANY_WEBPAGES_YOU_VIEW_WHILE_SECRET_MODE_IS_TURNED_ON_WONT_APPEAR_IN_YOUR_BROWSER_OR_SEARCH_HISTORY_MSG"
-msgstr "Kõik veebilehed, mida kuvate sisselülitatud salarežiimi ajal, ei ilmu brauseri- või otsinguajalukku, kui lülitatakse välja.\n\nÜhtki järjehoidjat ega veebilehte, mille salvestate sisselülitatud salarežiimis ajal, ei kuvata, kui see lülitatakse välja.\n\nLisaks saate kaitsta oma salarežiimi andmeid parooliga."
-
-msgid "IDS_BR_BODY_ANY_WEBPAGES_YOU_VIEW_WHILE_SECRET_MODE_IS_TURNED_ON_WONT_APPEAR_IN_YOUR_BROWSER_OR_SEARCH_MSG"
-msgstr "Kõik veebilehed, mida kuvate sisselülitatud salarežiimi ajal, ei ilmu brauseri- või otsinguajalukku, kui lülitatakse välja.\n\nÜhtki järjehoidjat ega veebilehte, mille salvestate sisselülitatud salarežiimis ajal, ei kuvata, kui see lülitatakse välja."
-
-msgid "IDS_BR_BUTTON_SECRET_OFF_ABB"
-msgstr "Sal. väljas"
-
-msgid "IDS_BR_BUTTON_DONT_USE_PASSWORD_ABB"
-msgstr "Ära kasuta parooli"
-
-msgid "IDS_BR_BUTTON_NEW_TAB_ABB2"
-msgstr "Uus krt"
-
-msgid "IDS_BR_NPBODY_WEB_ADDRESS_ABB"
-msgstr "Veebiaadress"
-
-msgid "IDS_BR_HEADER_ADD_WEBPAGE_TO_QUICK_ACCESS_ABB"
-msgstr "Veebil. lis. kiirjuurdepääsu"
-
-msgid "IDS_BR_TMBODY_TURN_ON_JAVASCRIPT"
-msgstr "JavaScripti sisselülitamine"
-
-msgid "IDS_BR_HEADER_COULDNT_OPEN_NEW_TAB_ABB"
-msgstr "Uut vahekaarti ei saanud av."
-
-msgid "IDS_BR_OPT_OPEN_IN_NEW_TAB_ABB"
-msgstr "Ava uuel vahekaardil"
-
-msgid "IDS_BR_TPOP_FOLDER_NAME_ALREADY_IN_USE"
-msgstr "Kausta nimi on juba kasutusel."
-
-msgid "IDS_BR_NPBODY_NEW_FOLDER_PD"
-msgstr "Uus kaust %d"
-
-msgid "IDS_BR_NPBODY_NEW_FOLDER"
-msgstr "Uus kaust"
-
-msgid "IDS_BR_OPT_ENABLE_JAVASCRIPT"
-msgstr "Aktiveeri JavaScript"
-
-msgid "IDS_BR_TMBODY_MANAGE_WEBSITE_DATA"
-msgstr "Veebisaitide andmete haldamine"
-
-msgid "IDS_BR_HEADER_SET_HOME_PAGE_ABB"
-msgstr "Kodulehekülje määramine"
-
-msgid "IDS_BR_TPOP_WEBPAGE_ADDED_TO_QUICK_ACCESS_LIST"
-msgstr "Veebileht on lisatud kiirjuurdepääsu loendisse."
-
-msgid "IDS_BR_OPT_EDIT_QUICK_ACCESS_ABB"
-msgstr "Redigeeri kiirjuurdepääsu"
-
-msgid "IDS_BR_OPT_REMOVE_FROM_BOOKMARKS_ABB"
-msgstr "Eemalda järjehoidjatest"
-
-msgid "IDS_BR_HEADER_ADD_BOOKMARK_ABB"
-msgstr "Lisa järjehoidja"
-
-msgid "IDS_BR_BODY_BROWSING_HISTORY"
-msgstr "Sirvimise ajalugu"
-
-msgid "IDS_BR_HEADER_TABS_ABB2"
-msgstr "Vahekaardid"
-
-msgid "IDS_BR_OPT_NEW_TAB"
-msgstr "Uus vahekaart"
-
-msgid "IDS_BR_BUTTON_FORWARD_ABB2"
-msgstr "Edasta"
-
-msgid "IDS_BR_BUTTON_BACK_ABB3"
-msgstr "Tagasi"
-
-msgid "IDS_BR_BUTTON_BOOKMARKS_ABB"
-msgstr "Järjehoid."
-
-msgid "IDS_BR_NPBODY_NO_PROFILES_ABB"
-msgstr "Profiilid puuduvad"
-
-msgid "IDS_BR_TAB2_HISTORY"
-msgstr "Ajalugu"
-
-msgid "IDS_BR_TAB2_BOOKMARKS"
-msgstr "Järjehoidjad"
-
-msgid "IDS_BR_HEADER_SAVE_CONTENT_TO_ABB"
-msgstr "Sisu salvestamise koht"
-
-msgid "IDS_BR_HEADER_SELECT_ITEMS_ABB2"
-msgstr "Üksuste valimine"
-
-msgid "IDS_BR_BODY_YOUR_PASSWORD_MUST_CONTAIN_AT_LEAST_PD_CHARACTERS_INCLUDING_AT_LEAST_1_LETTER"
-msgstr "Teie parool peab sisaldama vähemalt %d tähemärki, seejuures vähemalt 1 tähte."
-
-msgid "IDS_BR_BODY_AN_INCORRECT_PASSWORD_HAS_BEEN_ENTERED_TRY_AGAIN"
-msgstr "Sisestatud on vale parool. Proovige uuesti."
-
-msgid "IDS_BR_BODY_NO_TABS"
-msgstr "Vahekaarte pole"
+msgid "IDS_ST_POP_SELECT_WHETHER_TO_GO_TO_THE_WEBPAGE_ANYWAY"
+msgstr "Valige, kas avada veebileht ikkagi."
 

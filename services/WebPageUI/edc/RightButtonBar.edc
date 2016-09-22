@@ -1,9 +1,8 @@
 #include "ImageButton.edc"
 #include "../../../core/Tools/edc/Spacer.edc"
-collections { base_scale: 2.6;
-
-    IMAGE_BUTTON("add_tab", 50, 50, "internet_ic_add.png")
-
+collections { base_scale: 2.0;
+    FOUR_STATE_IMAGE_BUTTON("browser/toolbar_tab", 82, 102, "btn_bar_manager_nor.png", 69, 149, 255)
+    FOUR_STATE_IMAGE_BUTTON("browser/toolbar_setting", 82, 102, "btn_bar_more_nor.png", 69, 149, 255)
     group {
         name: "right_button_bar";
         parts {
@@ -15,12 +14,73 @@ collections { base_scale: 2.6;
                     state: "default" 0.0;
                     visible: 1;
                     fixed: 1 1;
-                    align: 0.0 0.0;
-                    min: 100 106;
-                    max: 100 106;
-                    rel1 { relative: 0.0 0.0; }
+                align: 0.0 0.0;
+                min: 70 70;
+                max: 70 70;
+                rel1 { relative: 0.0 0.0; }
+                rel2 { relative: 0.0 0.0; }
+            }
+            description {
+                state: "hidden" 0.0;
+                inherit: "default" 0.0;
+                visible: 0;
+            }
+            description {
+                state: "visible" 0.0;
+                inherit: "default" 0.0;
+                visible: 1;
+            }
+        }
+        part {
+            name: "tabs_number";
+            type: TEXT;
+            scale: 1;
+            repeat_events: 1;
+            description{
+                state: "default" 0.0;
+                visible: 1;
+                fixed: 1 1;
+                align: 0.0 0.0;
+                min: 70 70;
+                max: 70 70;
+                color: 86 86 86 255;
+                rel1 { relative: 0.0 0.0; to: "tab_button"; offset: 5 13; }
+                rel2 { relative: 1.0 1.0; to: "tab_button"; }
+                text {
+                    text: "";
+                    font: "Tizen:style=Bold";
+                    size: 19;
+                    align: 0.5 0.5;
                 }
             }
         }
+        ADD_SPACER("spacer_1", "tab_button", 10, 70)
+            part {
+                name: "setting_button";
+                type : SWALLOW;
+                scale: 1;
+                description {
+                    state: "default" 0.0;
+                    visible: 1;
+                    fixed: 1 1;
+                align: 0.0 0.0;
+                min: 70 70;
+                max: 70 70;
+                fixed: 1 1;
+                rel1 { relative: 1.0 0.0; to: "spacer_1"; }
+                rel2 { relative: 0.0 0.0; }
+            }
+            description {
+                state: "hidden" 0.0;
+                inherit: "default" 0.0;
+                visible: 0;
+            }
+            description {
+                state: "visible" 0.0;
+                inherit: "default" 0.0;
+                visible: 1;
+            }
+        }
     }
+}
 }

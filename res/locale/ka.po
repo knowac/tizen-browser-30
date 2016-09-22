@@ -1,8 +1,14 @@
 msgid "IDS_BR_POP_NETWORK_ERROR"
 msgstr "ქსელის შეცდომა."
 
+msgid "IDS_BR_BODY_AUTHUSERNAME"
+msgstr "მომხმარებლის სახელი"
+
 msgid "IDS_BR_BODY_DESTINATIONS_AUTHENTICATION_REQUIRED"
 msgstr "ავტორიზაცია აუცილებელია."
+
+msgid "IDS_BR_BODY_AUTHPASSWORD"
+msgstr "პაროლი"
 
 msgid "IDS_BR_HEADER_SECURITY_WARNING"
 msgstr "უსაფრთხოების გაფრთხილება"
@@ -27,6 +33,12 @@ msgstr "ამ საიტს აქვს უსაფრთხოების
 
 msgid "IDS_BR_OPT_ALLOW"
 msgstr "დართე ნება"
+
+msgid "IDS_BR_OPT_VIEW"
+msgstr "ნახვა"
+
+msgid "IDS_BR_OPT_CANCEL"
+msgstr "გაუქმება"
 
 msgid "IDS_BR_BODY_PS_REQUESTS_YOUR_LOCATION"
 msgstr "%s ითხოვს თქვენს ლოკაციას."
@@ -60,18 +72,6 @@ msgstr "ჩამოტვირთვა"
 
 msgid "IDS_BR_BODY_THIS_WEBPAGE"
 msgstr "ეს ვებსაიტი"
-
-msgid "IDS_BR_BODY_AUTHUSERNAME"
-msgstr "მომხმარებლის სახელი"
-
-msgid "IDS_BR_BODY_AUTHPASSWORD"
-msgstr "პაროლი"
-
-msgid "IDS_BR_OPT_VIEW"
-msgstr "ნახვა"
-
-msgid "IDS_BR_OPT_CANCEL"
-msgstr "გაუქმება"
 
 msgid "IDS_BR_OPT_SCREEN"
 msgstr "ეკრანი"
@@ -109,6 +109,15 @@ msgstr "გაუქმება"
 msgid "IDS_BR_BUTTON_MORE"
 msgstr "სხვა"
 
+msgid "IDS_TPLATFORM_ACBUTTON_DONE_ABB"
+msgstr "მზადაა"
+
+msgid "IDS_TPLATFORM_ACBUTTON_CANCEL_ABB"
+msgstr "გაუქმება"
+
+msgid "IDS_TPLATFORM_ACBUTTON_DELETE_ABB"
+msgstr "წაშლა"
+
 msgid "IDS_BR_BODY_NO_ITEMS"
 msgstr "ელემენტები არ არის"
 
@@ -117,6 +126,9 @@ msgstr "მობილურ ქსელთან კავშირი"
 
 msgid "IDS_BR_OPT_DO_NOT_SHOW_AGAIN"
 msgstr "აღარ მაჩვენო"
+
+msgid "IDS_BR_SK_OK"
+msgstr "კი"
 
 msgid "IDS_BR_POP_ONLY_HTTP_OR_HTTPS_URLS_CAN_BE_DOWNLOADED"
 msgstr "მხოლოდ http ან https URL-ების ჩამოტვირთვაა შესაძლებელი."
@@ -139,11 +151,17 @@ msgstr "ბმულის კოპირება"
 msgid "IDS_BR_OPT_COPY_IMAGE"
 msgstr "სურათის ასლის გადაღება"
 
-msgid "IDS_BR_SK_OK"
-msgstr "კი"
-
 msgid "IDS_BR_OPT_CALL"
 msgstr "დარეკვა"
+
+msgid "IDS_ST_POP_PS_HAS_BEEN_DETECTED"
+msgstr "მოიძებნა %s."
+
+msgid "IDS_ST_POP_DETECTED_IN_C_PS"
+msgstr "მოიძებნა ადგილზე: %s"
+
+msgid "IDS_ST_HEADER_MALWARE_DETECTED_ABB"
+msgstr "ნაპოვნია მავნე პროგრამა"
 
 msgid "IDS_BR_BUTTON_FAILED"
 msgstr "არ შესრ."
@@ -211,11 +229,35 @@ msgstr "გაუქმ."
 msgid "IDS_BR_SK_TABS"
 msgstr "ჩანართები"
 
+msgid "IDS_BR_SK_SAVE_LITE"
+msgstr "შენახვა"
+
+msgid "IDS_BR_SK_SAVE_ABB"
+msgstr "შენხვ"
+
+msgid "IDS_BR_SK_SAVE"
+msgstr "შენახვა"
+
+msgid "IDS_BR_SK_PREVIOUS"
+msgstr "წინა"
+
+msgid "IDS_BR_SK_NEXT"
+msgstr "შემდეგი"
+
 msgid "IDS_BR_SK_MENU"
 msgstr "მენიუ"
 
 msgid "IDS_BR_SK_DELETE_ABB"
 msgstr "წაშლა"
+
+msgid "IDS_BR_SK_DELETE"
+msgstr "წაშლა"
+
+msgid "IDS_BR_SK_CLEAR"
+msgstr "წაშლა"
+
+msgid "IDS_BR_SK_BACK"
+msgstr "უკან"
 
 msgid "IDS_BR_SK3_CREATE_FOLDER"
 msgstr "საქაღალდის შექმნა"
@@ -274,6 +316,15 @@ msgstr "შესაძლოა, ვერ შეძლოთ ზოგიე�
 msgid "IDS_BR_POP_YOUR_HISTORY_WILL_BE_CLEARED"
 msgstr "ისტორია გასუფთავდება."
 
+msgid "IDS_BR_POP_WI_FI_CONNECTION_REQUIRED_CONNECT_TO_WI_FI_NETWORK_AND_TRY_AGAIN"
+msgstr "საჭიროა Wi-Fi კავშირი. დაუკავშირდით Wi-Fi ქსელს და ისევ ცადეთ"
+
+msgid "IDS_BR_POP_URL_NOT_FOUND"
+msgstr "URL არ მოიძებნა."
+
+msgid "IDS_BR_POP_URL"
+msgstr "URL"
+
 msgid "IDS_BR_POP_UNABLE_TO_VIEW_THE_CERTIFICATE_THE_PAGE_INFORMATION_HAS_BEEN_CHANGED"
 msgstr "სერტიფიკატის ნახვა შეუძლებელია. გვერდის ინფორმაცია შეიცვალა."
 
@@ -319,11 +370,23 @@ msgstr "უსაფრთხოების პოლიტიკა ზღუ�
 msgid "IDS_BR_POP_SAVED_TO_BOOKMARKS"
 msgstr "შენახულია სანიშნეებში."
 
+msgid "IDS_BR_POP_SAVED"
+msgstr "შენახულია."
+
 msgid "IDS_BR_POP_RENAME_TAG"
 msgstr "თეგის სახელის შეცვლა"
 
+msgid "IDS_BR_POP_REMOVED"
+msgstr "წაშლილია."
+
 msgid "IDS_BR_POP_PD_PROFILES_WILL_BE_DELETED"
 msgstr "%d პროფილი წაიშლება."
+
+msgid "IDS_BR_POP_PD_ITEMS_WILL_BE_DELETED"
+msgstr "%d ელემენტი წაიშლება."
+
+msgid "IDS_BR_POP_PD_ITEMS_SELECTED"
+msgstr "არჩეულია %d ელემენტი."
 
 msgid "IDS_BR_POP_PAGES_THAT_YOU_VIEW_WILL_NOT_APPEAR_IN_YOUR_BROWSER_HISTORY_OR_SEARCH_HISTORY_AND_THEY_WILL_NOT_LEAVE_OTHER_TRACES_LIKE_COOKIES"
 msgstr "ნანახი გვერდები არ გამოჩნდება ბრაუზერის ან ძებნის ისტორიაში და არ დარჩება სხვაგვარი კვალი, როგორიცაა ქუქი-ფაილები."
@@ -352,20 +415,53 @@ msgstr "ნაპოვნია „%1$s“.\nნაპოვნია ადგ
 msgid "IDS_BR_POP_P1SS_HAS_BEEN_DETECTED_DETECTED_IN_C_P2SS_OPEN_WEBPAGE_ANYWAY_Q"
 msgstr "ნაპოვნია „%1$s“.\nნაპოვნია ადგილზე: „%2$s“\n\nმაინც გახსნით ვებგვერდს?"
 
+msgid "IDS_BR_POP_NO_ITEMS_SELECTED"
+msgstr "ელემენტი არ არის შერჩეული."
+
 msgid "IDS_BR_POP_NOT_ENOUGH_MEMORY_DELETE_SOME_ITEMS_AND_TRY_AGAIN"
 msgstr "არ არის საკმარისი მეხსიერება. წაშალეთ ზოგიერთი ელემენტი და ისევ ცადეთ."
+
+msgid "IDS_BR_POP_NOT_ENOUGH_MEMORY"
+msgstr "მეხსიერება არ არის საკმარისი."
 
 msgid "IDS_BR_POP_NOT_ALLOWED"
 msgstr "დაუშვებელია."
 
+msgid "IDS_BR_POP_NEVER"
+msgstr "არასოდეს"
+
 msgid "IDS_BR_POP_MOVED"
 msgstr "გადატანილია."
+
+msgid "IDS_BR_POP_MOBILE_DATA_IS_DISABLED_CONNECT_TO_WI_FI_NETWORK_INSTEAD_OR_ENABLE_MOBILE_DATA_AND_TRY_AGAIN"
+msgstr "მობილური მონაცემები გამორთულია. სანაცვლოდ, დაუკავშირდით Wi-Fi ქსელს, ან გაააქტიურეთ მობილური მონაცემები და ისევ ცადეთ"
+
+msgid "IDS_BR_POP_LOADING_PLEASE_WAIT_ING"
+msgstr "იტვირთება. გთხოვთ, დაელოდოთ..."
+
+msgid "IDS_BR_POP_INVALID_URL"
+msgstr "URL არასწორია."
+
+msgid "IDS_BR_POP_FAIL"
+msgstr "ვერ შესრულდა."
 
 msgid "IDS_BR_POP_ENTER_URL"
 msgstr "შეიყვანეთ URL."
 
+msgid "IDS_BR_POP_ENTER_TITLE_ABB"
+msgstr "შეიყვანეთ სათაური"
+
 msgid "IDS_BR_POP_ENTER_BOOKMARK_NAME"
 msgstr "ჩაწერეთ სანიშნის სახელი."
+
+msgid "IDS_BR_POP_DO_NOT_SHOW_AGAIN"
+msgstr "აღარ მაჩვენო"
+
+msgid "IDS_BR_POP_DOWNLOADCOMPLETE"
+msgstr "ჩამოტვირთვა დასრულდა."
+
+msgid "IDS_BR_POP_DISABLED"
+msgstr "გამორთულია."
 
 msgid "IDS_BR_POP_DIALING_ING_VZW"
 msgstr "Dialing..."
@@ -391,6 +487,9 @@ msgstr "წაიშალოს ამ ვებსაიტის ავტო
 msgid "IDS_BR_POP_DELETE_SIGN_IN_DATA_FOR_PD_WEBSITES_Q"
 msgstr "წაიშალოს %d ვებსაიტის ავტორიზაციის პარამეტრები?"
 
+msgid "IDS_BR_POP_DELETE_Q"
+msgstr "წაიშალოს?"
+
 msgid "IDS_BR_POP_DELETE_PD_SAVED_WEB_PAGES_Q"
 msgstr "წაიშალოს %d შენახული გვერდი?"
 
@@ -406,8 +505,14 @@ msgstr "წაიშალოს ყველა ვებსაიტის მ
 msgid "IDS_BR_POP_DELETEHISTORYQUESTION"
 msgstr "წაშლით ისტორიას?"
 
+msgid "IDS_BR_POP_DELETED"
+msgstr "წაშლილია."
+
 msgid "IDS_BR_POP_CONTINUE"
 msgstr "გაგრძელება"
+
+msgid "IDS_BR_POP_CLOSE_APPLICATION_Q"
+msgstr "დახურავთ პროგრამას?"
 
 msgid "IDS_BR_POP_CLOSE_APPLICATION"
 msgstr "პროგრამის დახურვა"
@@ -420,6 +525,12 @@ msgstr "გსურთ ისტორიის გასუფთავებ�
 
 msgid "IDS_BR_POP_BOOKMARK_REMOVED"
 msgstr "სანიშნე მოცილდა."
+
+msgid "IDS_BR_POP_BOOKMARK_ADDED"
+msgstr "სანიშნე დაემატა."
+
+msgid "IDS_BR_POP_AUTOMATIC_BRIGHTNESS"
+msgstr "ავტომატური განათებულობა"
 
 msgid "IDS_BR_POP_ALREADY_EXISTS"
 msgstr "უკვე არის."
@@ -445,6 +556,15 @@ msgstr "საიტებს ჰქონდეთ ქუქი–ფაილ�
 msgid "IDS_BR_POP_ADDED_TO_BOOKMARKS"
 msgstr "დაემატა სანიშნეებში."
 
+msgid "IDS_BR_POP_ACCOUNT"
+msgstr "ანგარიში"
+
+msgid "IDS_BR_POP_1_ITEM_WILL_BE_DELETED"
+msgstr "1 ელემენტი წაიშლება."
+
+msgid "IDS_BR_POP_1_ITEM_SELECTED"
+msgstr "არჩეულია 1 ელემენტი."
+
 msgid "IDS_BR_OPT_WINDOWS"
 msgstr "ფანჯრები"
 
@@ -454,20 +574,38 @@ msgstr "სერთიფიკატის ნახვა"
 msgid "IDS_BR_OPT_UNICODE_HUTF_8"
 msgstr "უნიკოდი (UTF-8)"
 
+msgid "IDS_BR_OPT_TRANSLATE"
+msgstr "თარგმნა"
+
 msgid "IDS_BR_OPT_THUMBNAIL_VIEW"
 msgstr "მიკროასლების ნახვა"
 
 msgid "IDS_BR_OPT_TEXT_ENCODING"
 msgstr "ტექსტის კოდირება"
 
+msgid "IDS_BR_OPT_STOP"
+msgstr "შეჩერება"
+
 msgid "IDS_BR_OPT_SHRINK_TEXT"
 msgstr "ტექსტის შევიწროება"
+
+msgid "IDS_BR_OPT_SHOW"
+msgstr "ჩვენება"
+
+msgid "IDS_BR_OPT_SHARE"
+msgstr "გაზიარება"
 
 msgid "IDS_BR_OPT_SETTINGS_ABB"
 msgstr "პარამეტრები"
 
+msgid "IDS_BR_OPT_SETTINGS"
+msgstr "პარამეტრები"
+
 msgid "IDS_BR_OPT_SEND_MESSAGE_VODA"
 msgstr "წერილის გაგზავნა"
+
+msgid "IDS_BR_OPT_SEND_EMAIL"
+msgstr "ელ. წერილის გაგზავნა"
 
 msgid "IDS_BR_OPT_SENDURLVIA_EMAIL"
 msgstr "ელ.ფოსტა"
@@ -486,6 +624,12 @@ msgstr "რეჟიმის შერჩევა"
 
 msgid "IDS_BR_OPT_SELECTED"
 msgstr "შერჩეული"
+
+msgid "IDS_BR_OPT_SELECT"
+msgstr "არჩევა"
+
+msgid "IDS_BR_OPT_SD_CARD"
+msgstr "SDბარათი"
 
 msgid "IDS_BR_OPT_SAVE_TO_KEEPIT_ABB"
 msgstr "KeepIt-ზე შენახვა"
@@ -514,8 +658,14 @@ msgstr "გადალაგება"
 msgid "IDS_BR_OPT_RENAME_FOLDER"
 msgstr "საქაღალდის სახელის შეცვლა"
 
+msgid "IDS_BR_OPT_RENAME"
+msgstr "ხელახლა დასათაურება"
+
 msgid "IDS_BR_OPT_REMOVE"
 msgstr "წაშლა"
+
+msgid "IDS_BR_OPT_REFRESH"
+msgstr "განახლება"
 
 msgid "IDS_BR_OPT_READER_MODE_TTS"
 msgstr "წამკითხველის რეჟიმი"
@@ -535,8 +685,14 @@ msgstr "გვერდები უინტერნეტოდ"
 msgid "IDS_BR_OPT_NEW_WINDOW"
 msgstr "ახალი ფანჯარა"
 
+msgid "IDS_BR_OPT_MOVE"
+msgstr "გადატანა"
+
 msgid "IDS_BR_OPT_MINIMISE"
 msgstr "ჩამოკეცვა"
+
+msgid "IDS_BR_OPT_MESSAGES"
+msgstr "შეტყობინებები"
 
 msgid "IDS_BR_OPT_MEDIUM_M_QUALITY"
 msgstr "საშუალო"
@@ -549,6 +705,9 @@ msgstr "ლოკაციაზე წვდომის უპირატე�
 
 msgid "IDS_BR_OPT_LOAD_IMAGES"
 msgstr "სურათების ჩამოტვირთვა"
+
+msgid "IDS_BR_OPT_LIST_VIEW"
+msgstr "სიის ნახვა"
 
 msgid "IDS_BR_OPT_LATIN_1_HISO_8859_1"
 msgstr "ლათინური-1 (ISO-8859-1)"
@@ -565,6 +724,9 @@ msgstr "იაპონური (ISO-2022-JP)"
 msgid "IDS_BR_OPT_JAPANESE_HEUC_JP"
 msgstr "იაპონური (EUC-JP)"
 
+msgid "IDS_BR_OPT_I_AGREE"
+msgstr "ვეთანხმები."
+
 msgid "IDS_BR_OPT_INCOGNITO_MODE_ABB"
 msgstr "ინკოგნიტო რეჟიმი"
 
@@ -579,6 +741,9 @@ msgstr "ღილაკი საწყის ეკრანზე"
 
 msgid "IDS_BR_OPT_HIGH_M_QUALITY"
 msgstr "მაღალი"
+
+msgid "IDS_BR_OPT_HELP"
+msgstr "დახმარება"
 
 msgid "IDS_BR_OPT_GOFORWARD"
 msgstr "გადაგზავნა"
@@ -625,6 +790,9 @@ msgstr "მონაცემთა შემცირების გამო�
 msgid "IDS_BR_OPT_DISABLED"
 msgstr "გამორთულია"
 
+msgid "IDS_BR_OPT_DEVICE"
+msgstr "მოწყობილობა"
+
 msgid "IDS_BR_OPT_DELETE_SAVED_PAGE_ABB"
 msgstr "შენახული გვერდის წაშლა"
 
@@ -658,6 +826,9 @@ msgstr "ჩინური (Big5)"
 msgid "IDS_BR_OPT_CACHE"
 msgstr "ქეშ-მესხიერება"
 
+msgid "IDS_BR_OPT_BOOKMARK"
+msgstr "სანიშნე"
+
 msgid "IDS_BR_OPT_ADD_TO_WEB_CLIP"
 msgstr "ვებ–კლიპზე დამატება"
 
@@ -678,6 +849,12 @@ msgstr "სანიშნის დამატება"
 
 msgid "IDS_BR_OPT_ADD_BOOKMARK"
 msgstr "სანიშნის დამატება"
+
+msgid "IDS_BR_OPT_ADDED"
+msgstr "დამატებულია."
+
+msgid "IDS_BR_OPT_ADD"
+msgstr "დამატება"
 
 msgid "IDS_BR_OPT1_EXTENSION"
 msgstr "გაფართოება"
@@ -748,6 +925,9 @@ msgstr "არხის მასალის ჩამოტვირთვა"
 msgid "IDS_BR_MBODY_DELETE_SIGN_IN_DATA"
 msgstr "ავტორიზაციის ინფოს წაშლა"
 
+msgid "IDS_BR_MBODY_DEFAULT_DOWNLOAD_STORAGE"
+msgstr "ჩამოტვირთვის ადგილი"
+
 msgid "IDS_BR_MBODY_DATA_SAVING_STATISTICS"
 msgstr "მონაცემთა შენახვის სტატ."
 
@@ -790,6 +970,9 @@ msgstr "სანიშნეებს ვერ გადაიტანთ"
 msgid "IDS_BR_HEADER_SITE_NOT_TRUSTED_ABB"
 msgstr "საიტი არ არის სანდო"
 
+msgid "IDS_BR_HEADER_SIGN_IN_TO_SAMSUNG_ACCOUNT"
+msgstr "Samsung ანგარიშზე შესვლა"
+
 msgid "IDS_BR_HEADER_SET_HOMEPAGE_ABB"
 msgstr "საწყისი გვერდის დაყენება"
 
@@ -826,11 +1009,17 @@ msgstr "სარკმელი დაბლოკილია"
 msgid "IDS_BR_HEADER_POPULAR_WEBSITES_ABB"
 msgstr "პოპულარული ვებსაიტები"
 
+msgid "IDS_BR_HEADER_PD_SELECTED_ABB"
+msgstr "%d არჩეულია"
+
 msgid "IDS_BR_HEADER_ORGANISATION_C_ABB"
 msgstr "ორგანიზაცია:"
 
 msgid "IDS_BR_HEADER_ORGANISATIONAL_UNIT_C"
 msgstr "ორგანიზაციის ერთეული:"
+
+msgid "IDS_BR_HEADER_NO_NETWORK_CONNECTION"
+msgstr "ქსელთან კავშირი არ არის"
 
 msgid "IDS_BR_HEADER_NEWER_M_INTERNET_HISTORY_ABB"
 msgstr "Newer"
@@ -847,11 +1036,17 @@ msgstr "HTML5 გაფართოება"
 msgid "IDS_BR_HEADER_FORM_DATA"
 msgstr "ფორმის მონაცემები"
 
+msgid "IDS_BR_HEADER_FOLDER"
+msgstr "საქაღალდე"
+
 msgid "IDS_BR_HEADER_EXPIRES_ON_C"
 msgstr "ძალაშია:"
 
 msgid "IDS_BR_HEADER_ENABLE_WEB_SIGN_IN"
 msgstr "საიტზე შესვლის გააქტიურება"
+
+msgid "IDS_BR_HEADER_EDIT_PROFILE"
+msgstr "პროფილის შეცვლა"
 
 msgid "IDS_BR_HEADER_EDIT_BOOKMARK"
 msgstr "ნიშნულის შეცვლა"
@@ -889,8 +1084,14 @@ msgstr "სიხშირის დიაპაზონთა მართ."
 msgid "IDS_BR_HEADER_ADVANCEDCERTIFICATES"
 msgstr "სერთიფიკატები"
 
+msgid "IDS_BR_BUTTON_SET"
+msgstr "დაყენება"
+
 msgid "IDS_BR_BUTTON_RESET_ABB"
 msgstr "გადატვირთვა"
+
+msgid "IDS_BR_BUTTON_NOT_NOW"
+msgstr "ახლა არა"
 
 msgid "IDS_BR_BUTTON_HOMEPAGE_ABB"
 msgstr "საწყისი გვ."
@@ -898,11 +1099,35 @@ msgstr "საწყისი გვ."
 msgid "IDS_BR_BUTTON_FIND_ABB"
 msgstr "ძებნა"
 
+msgid "IDS_BR_BUTTON_ENABLE_ABB"
+msgstr "ჩართვა"
+
+msgid "IDS_BR_BUTTON_EDIT"
+msgstr "შეცვლა"
+
+msgid "IDS_BR_BUTTON_CONTINUE_ABB"
+msgstr "გაგრძელ."
+
+msgid "IDS_BR_BUTTON_CONTINUE"
+msgstr "გაგრძელება"
+
+msgid "IDS_BR_BUTTON_CLOSE"
+msgstr "დახურვა"
+
+msgid "IDS_BR_BUTTON_CANCEL_ABB"
+msgstr "გაუქმება"
+
+msgid "IDS_BR_BUTTON_CANCEL"
+msgstr "გაუქმება"
+
 msgid "IDS_BR_BUTTON_BACK_ABB"
 msgstr "უკან"
 
 msgid "IDS_BR_BUTTON_ALWAYS_SHOW_ABB"
 msgstr "მუდამ ჩანს"
+
+msgid "IDS_BR_BUTTON_ALLOW"
+msgstr "ნებართვა"
 
 msgid "IDS_BR_BUTTON2_WEB_PORTAL"
 msgstr "ვებ-\nპორტალი"
@@ -927,6 +1152,9 @@ msgstr "ისტორიაზე გადასვლა"
 
 msgid "IDS_BR_BUTTON2_ENTERTAINMENT"
 msgstr "გართობა"
+
+msgid "IDS_BR_BODY_YESTERDAY"
+msgstr "გუშინ"
 
 msgid "IDS_BR_BODY_WINDOW_MANAGER"
 msgstr "ფანჯრების მმართველი"
@@ -955,6 +1183,9 @@ msgstr "გამოიყენეთ მთელი ეკრანის რ
 msgid "IDS_BR_BODY_USE_A_PREDICTION_SERVICE_TO_DISPLAY_RELATED_QUERIES_AND_POPULAR_WEBSITES_IN_THE_ADDRESS_BAR_AS_YOU_TYPE"
 msgstr "გამოიყენეთ კარნახის ფუნქცია და მისამართის ზოლში აკრეფის დროს გამოჩნდება შესაბამისი ფრაზები და პოპულარული საიტები."
 
+msgid "IDS_BR_BODY_URL"
+msgstr "URL"
+
 msgid "IDS_BR_BODY_UPPER_FOLDER_T_TALKBACK"
 msgstr "ზედა საქაღალდე"
 
@@ -970,6 +1201,12 @@ msgstr "ვებგვერდი ვერ იხსნება. სერ�
 msgid "IDS_BR_BODY_TOWN_CITY_COUNTY_ABB"
 msgstr "დაბა/ქალაქი/ქვეყანა"
 
+msgid "IDS_BR_BODY_TODAY"
+msgstr "დღეს"
+
+msgid "IDS_BR_BODY_TITLE"
+msgstr "სათაური"
+
 msgid "IDS_BR_BODY_THIS_SITE_IS_USING_PS"
 msgstr "ეს საიტი იყენებს %s-ს."
 
@@ -984,6 +1221,9 @@ msgstr "ეს სანიშნე წაიშლება."
 
 msgid "IDS_BR_BODY_THE_SELECTED_PERSONAL_DATA_WILL_BE_DELETED"
 msgstr "შერჩეული პერსონალური მონაცემები წაიშლება."
+
+msgid "IDS_BR_BODY_THE_MAXIMUM_NUMBER_OF_CHARACTERS_HPD_HAS_BEEN_EXCEEDED"
+msgstr "გადაჭარბებულია სიმბოლოების მაქსიმალური რაოდენობა (%d)."
 
 msgid "IDS_BR_BODY_TEXT_FIELD_T_TTS"
 msgstr "ტექსტური ველი"
@@ -1009,11 +1249,17 @@ msgstr "სანიშნეების დასინქრონება"
 msgid "IDS_BR_BODY_STREET_ADDRESS_PO_BOX_C_O_ETC_ABB"
 msgstr "ქუჩის მისამართი, საფოსტო ყუთი, ვის გადაეცეს და ა.შ."
 
+msgid "IDS_BR_BODY_STREAMING"
+msgstr "ნაკადი"
+
 msgid "IDS_BR_BODY_STORED_DATA"
 msgstr "შენახული მონაცემები"
 
 msgid "IDS_BR_BODY_SPLIT_BAR_HANDLE"
 msgstr "გამყოფი ზოლის იდენტიფიკატორი"
+
+msgid "IDS_BR_BODY_SMALL"
+msgstr "პატარა"
 
 msgid "IDS_BR_BODY_SIGN_IN_TO_YOUR_SAMSUNG_ACCOUNT_TO_ACCESS_THE_BOOKMARKS_AND_TABS_ON_YOUR_OTHER_DEVICES"
 msgstr "თქვენს სხვა მოწყობილობებში სანიშნეებისა და ჩანართების გასახსნელად შედით თქვენს Samsung ანგარიშზე."
@@ -1033,6 +1279,9 @@ msgstr "შეადგინეთ ტექსტი ვებ-ფორმი
 msgid "IDS_BR_BODY_SET_CURRENT_PAGE_AS_HOMEPAGE"
 msgstr "მიმდინარე გვერდის დაყენება საწყის გვერდად"
 
+msgid "IDS_BR_BODY_SETTINGS"
+msgstr "პარამეტრები"
+
 msgid "IDS_BR_BODY_SELECT_FOLDER"
 msgstr "აირჩიეთ საქაღალდე"
 
@@ -1045,6 +1294,9 @@ msgstr "საძიებო ველი"
 msgid "IDS_BR_BODY_SEARCH_AND_URL_SUGGESTIONS"
 msgstr "ძებნა და URL-ის შეთავაზებები"
 
+msgid "IDS_BR_BODY_SEARCH"
+msgstr "ძიება"
+
 msgid "IDS_BR_BODY_SCREEN_AND_TEXT"
 msgstr "ეკრანი და ტექსტი"
 
@@ -1053,6 +1305,9 @@ msgstr "ვებსაიტების მომხმარებლის �
 
 msgid "IDS_BR_BODY_SAVE_LINK"
 msgstr "ბმულის შენახვა"
+
+msgid "IDS_BR_BODY_RSS_SEARCH_RESULTS"
+msgstr "ძიების შედეგები"
 
 msgid "IDS_BR_BODY_RESTORE_DEFAULT_SETTINGS_Q"
 msgstr "აღადგენთ საწყის პარამეტრებს?"
@@ -1087,6 +1342,12 @@ msgstr "მოსანიშნი წრე"
 msgid "IDS_BR_BODY_PS_BOOKMARK_WILL_BE_DELETED"
 msgstr "%s სანიშნე წაიშლება."
 
+msgid "IDS_BR_BODY_PROFILE"
+msgstr "პროფილი"
+
+msgid "IDS_BR_BODY_PROCESSING_ING"
+msgstr "მუშავდება..."
+
 msgid "IDS_BR_BODY_PRIVACY"
 msgstr "პირადი"
 
@@ -1099,8 +1360,20 @@ msgstr "დააჭირეთ მენიუს ღილაკს."
 msgid "IDS_BR_BODY_POSTCODE_ABB"
 msgstr "საფოსტო ინდექსი"
 
+msgid "IDS_BR_BODY_PHONE_NUMBER_ABB"
+msgstr "ტელეფ. ნომ."
+
+msgid "IDS_BR_BODY_PHONE"
+msgstr "ტელეფონი"
+
 msgid "IDS_BR_BODY_PD_POP_UPS_BLOCKED_ABB"
 msgstr "%d სარკმლები დაბლოკ."
+
+msgid "IDS_BR_BODY_PD_ITEMS_WILL_BE_DELETED"
+msgstr "%d ელემენტი წაიშლება."
+
+msgid "IDS_BR_BODY_PASSWORD"
+msgstr "პაროლი"
 
 msgid "IDS_BR_BODY_PAGE_LOADED_T_TTS"
 msgstr "გვერდი ჩაიტვირთა"
@@ -1126,8 +1399,14 @@ msgstr "მოთხოვნით"
 msgid "IDS_BR_BODY_ONLY_VIA_WI_FI_ABB"
 msgstr "მხოლოდ Wi-Fi-ით"
 
+msgid "IDS_BR_BODY_ON"
+msgstr "ჩართვა"
+
 msgid "IDS_BR_BODY_OLDER"
 msgstr "შედარებით ძველი"
+
+msgid "IDS_BR_BODY_OFF"
+msgstr "გამორთ."
 
 msgid "IDS_BR_BODY_NO_WINDOWS"
 msgstr "ფანჯრები არ არის"
@@ -1141,8 +1420,17 @@ msgstr "თემა არ არის"
 msgid "IDS_BR_BODY_NO_SAVED_PAGES"
 msgstr "არაა შენახული გვერდები"
 
+msgid "IDS_BR_BODY_NO_RESULTS_FOUND"
+msgstr "შედეგები არ მოიძებნა."
+
+msgid "IDS_BR_BODY_NO_HISTORIES"
+msgstr "ისტორია ცარიელია"
+
 msgid "IDS_BR_BODY_NO_BOOKMARKS"
 msgstr "ჩემი ნიშნულები"
+
+msgid "IDS_BR_BODY_NOTIFICATIONS"
+msgstr "შეტყობინებები"
 
 msgid "IDS_BR_BODY_NORMAL"
 msgstr "ნორმალური"
@@ -1158,6 +1446,9 @@ msgstr "ყველაზე ხშირად ნანახი საიტ
 
 msgid "IDS_BR_BODY_MOBILE_VIEW"
 msgstr "მობილურის ხედი"
+
+msgid "IDS_BR_BODY_MEDIUM"
+msgstr "საშუალო"
 
 msgid "IDS_BR_BODY_LOCATION_M_INFORMATION"
 msgstr "ლოკაცია"
@@ -1183,6 +1474,9 @@ msgstr "ინტერნეტი"
 msgid "IDS_BR_BODY_IMPROVE_PERFORMANCE_WHEN_LOADING_PAGES"
 msgstr "მუშაობის გაუმჯობესება გვერდების ჩამოტვირთვისას."
 
+msgid "IDS_BR_BODY_IMAGES"
+msgstr "გამოსახულებები"
+
 msgid "IDS_BR_BODY_HOMEPAGE"
 msgstr "საწყისი გვერდი"
 
@@ -1192,11 +1486,20 @@ msgstr "მისამართის ზოლი დაიმალოს, �
 msgid "IDS_BR_BODY_GENERAL_M_SETTINGS"
 msgstr "ზოგადი"
 
+msgid "IDS_BR_BODY_FULL_SCREEN"
+msgstr "მთლიანი ეკრანი"
+
 msgid "IDS_BR_BODY_FULL_NAME_ABB"
 msgstr "სახელი და გვარი"
 
 msgid "IDS_BR_BODY_FORCE_ZOOM_ABB"
 msgstr "შესრულდეს ზომის შეცვლა"
+
+msgid "IDS_BR_BODY_FONT_SIZE"
+msgstr "შრიფტის ზომა"
+
+msgid "IDS_BR_BODY_FOLDER_NAME"
+msgstr "საქაღალდის სახელი"
 
 msgid "IDS_BR_BODY_FLAT_SUITE_UNIT_BUILDING_FLOOR_ETC_ABB"
 msgstr "ბინა, კორპუსი, კვარტალი, შენობა, სართული და ა.შ."
@@ -1213,6 +1516,24 @@ msgstr "შეიყვანეთ თქვენი სახელი, გ�
 msgid "IDS_BR_BODY_ENTER_TOWN_CITY_COUNTY_ABB"
 msgstr "შეიყვანეთ დაბა/ქალაქი/ქვეყანა."
 
+msgid "IDS_BR_BODY_ENTER_POSTCODE_ABB"
+msgstr "აკრიფეთ საფოსტო ინდექსი."
+
+msgid "IDS_BR_BODY_ENTER_POSTCODE"
+msgstr "აკრიფეთ საფოსტო ინდექსი."
+
+msgid "IDS_BR_BODY_ENTER_PHONE_NUMBER"
+msgstr "შეიყვანეთ ტელეფონის ნომერი."
+
+msgid "IDS_BR_BODY_ENTER_NAME"
+msgstr "ჩაწერეთ სახელი."
+
+msgid "IDS_BR_BODY_ENTER_FOLDER_NAME"
+msgstr "შეიყვანეთ საქაღალდის სახელი."
+
+msgid "IDS_BR_BODY_ENTER_EMAIL_ADDRESS"
+msgstr "შეიტანეთ ელ.ფოსტის მისამართი."
+
 msgid "IDS_BR_BODY_ENTER_COUNTRY_REGION_ABB"
 msgstr "შეიყვანეთ ქვეყანა/რეგიონი."
 
@@ -1224,6 +1545,12 @@ msgstr "ლოკაციის ჩართვა"
 
 msgid "IDS_BR_BODY_ENABLE_JAVASCRIPT"
 msgstr "გააქტიურდეს JavaScript"
+
+msgid "IDS_BR_BODY_EMAIL_ADDRESS"
+msgstr "ელ. ფოსტის მისამართი"
+
+msgid "IDS_BR_BODY_DOWNLOADING_ING"
+msgstr "ჩამოტვირთვა..."
 
 msgid "IDS_BR_BODY_DOUBLE_TAP_TO_VIEW_CERTIFICATE_TTS"
 msgstr "შეეხეთ ორჯერ და ნახეთ სერტიფიკატი."
@@ -1264,6 +1591,9 @@ msgstr "უსაფრთხოების გაფრთხილები�
 msgid "IDS_BR_BODY_DISPLAY_IMAGES_ON_WEB_PAGES"
 msgstr "სურათების ჩვენება ვებ გვერდებზე."
 
+msgid "IDS_BR_BODY_DEVELOPER_MODE"
+msgstr "დეველოპერის რეჟიმი"
+
 msgid "IDS_BR_BODY_DESKTOP_VIEW"
 msgstr "ხედი ეკრანზე"
 
@@ -1278,6 +1608,9 @@ msgstr "ნაგულისხმევი შესანახი ადგ�
 
 msgid "IDS_BR_BODY_DEFAULT_PAGE_ABB"
 msgstr "ნაგულისხმევი გვერდი"
+
+msgid "IDS_BR_BODY_DEFAULT"
+msgstr "ნაგულისხმევი"
 
 msgid "IDS_BR_BODY_DATA_USAGE_REDUCED_BY_P1SDP_HP2SD_KB_OF_P3SD_KB_RECEIVED_TAP_HERE_TO_RESET_STATISTICS"
 msgstr "მონაცემთა გამოყენება შემცირდა %1$d%-ით (მიღებულია %2$d კბ %3$d კბ-დან). შეეხეთ აქ და განულდება სტატისტიკა."
@@ -1342,6 +1675,9 @@ msgstr "შეცვალეთ ტექსტის ზომა, რომ �
 msgid "IDS_BR_BODY_BOOKMARK_REMINDER_ABB"
 msgstr "შეხსენების სანიშნე"
 
+msgid "IDS_BR_BODY_BOOKMARKS"
+msgstr "სანიშნე"
+
 msgid "IDS_BR_BODY_BLOCK_POP_UPS_ON_WEB_PAGES"
 msgstr "კონტექსტური სარკმლების დაბლოკვა ვებგვერდებზე."
 
@@ -1390,6 +1726,9 @@ msgstr "დართეთ ნება მომხმარებელს „
 msgid "IDS_BR_BODY_ALLOWS_SITES_TO_SAVE_AND_READ_COOKIE_DATA"
 msgstr "საიტებისთვის ქუქი–ფაილების შენახვისა და წაკითხვის ნებართვის მიცემა."
 
+msgid "IDS_BR_BODY_ALL"
+msgstr "ყველა"
+
 msgid "IDS_BR_BODY_AFTER_YOU_VISIT_WEBPAGES_THE_PAGES_YOU_HAVE_VISITED_THE_MOST_WILL_BE_SHOWN_HERE"
 msgstr "ვებგვერდების ნახვის შემდეგ, ყველაზე ხშირად გახსნილი გვერდები გამოჩნდება აქ."
 
@@ -1417,6 +1756,9 @@ msgstr "გაუმჯობესებული"
 msgid "IDS_BR_BODY_ADD_TO_CONTACT"
 msgstr "კონტაქტზე დამატება"
 
+msgid "IDS_BR_BODY_ADD_TO"
+msgstr "დამატება"
+
 msgid "IDS_BR_BODY_ADD_THIS_WEBSITE_TO_BOOKMARKS_TO_OPEN_IT_FASTER_ABB"
 msgstr "დაამატეთ ვებსაიტი სანიშნეებში, რომ სწრაფად გახსნათ."
 
@@ -1426,17 +1768,29 @@ msgstr "მისამართის სტრიქონი 2"
 msgid "IDS_BR_BODY_ADDRESS_LINE_1_ABB"
 msgstr "მისამართის სტრიქონი 1"
 
+msgid "IDS_BR_BODY_ADDDETAILSVIEW_TAGS"
+msgstr "ტეგები"
+
+msgid "IDS_BR_BODY_ADDBOOKMARKURL"
+msgstr "URL"
+
 msgid "IDS_BR_BODY_ACCEPT_COOKIES"
 msgstr "ქუქი–ფაილების მიღება"
 
 msgid "IDS_BR_BODY_1_PROFILE_WILL_BE_DELETED"
 msgstr "1 პროფილი წაიშლება."
 
+msgid "IDS_BR_BODY_1_ITEM_WILL_BE_DELETED"
+msgstr "1 ელემენტი წაიშლება."
+
 msgid "IDS_BR_ACBUTTON_TABS_ABB"
 msgstr "ჩნრთ."
 
 msgid "IDS_BR_TPOP_STARTING_DOWNLOAD_ING"
 msgstr "იწყება ჩამოტვირთვა..."
+
+msgid "IDS_BR_TPOP_MAXIMUM_NUMBER_OF_CHARACTERS_HPD_REACHED"
+msgstr "მიღწეულია სიმბოლოების მაქსიმალური რაოდენობა (%d)"
 
 msgid "IDS_BR_TPOP_FOLDER_RENAMED"
 msgstr "საქაღალდის სახელი შეიცვალა."
@@ -1453,8 +1807,14 @@ msgstr "გაუქმ."
 msgid "IDS_BR_SBODY_SET_THE_DEVICE_TO_SHOW_THE_FULL_WEBPAGE_ON_THE_SCREEN_WHEN_IT_IS_LOADED_WITHOUT_NEEDING_TO_SCROLL"
 msgstr "მოწყობილობაში აირჩიეთ, რომ ეკრანზე გამოჩნდეს სრული ვებგვერდი, როდესაც იგი ჩამოიტვირთება, ისე რომ არ იყოს საჭირო მისი გადახვევა."
 
+msgid "IDS_BR_POP_UNSUPPORTMEDIATYPE"
+msgstr "მედიის ტიპი გაუთვალისწინებელია."
+
 msgid "IDS_BR_POP_UNABLE_TO_RUN_INTERNET_LOW_BATTERY"
 msgstr "ინტერნეტი ვერ ჩაირთვება. კვების ელემენტი იცლება."
+
+msgid "IDS_BR_POP_UNABLE_TO_CONNECT_TO_MOBILE_NETWORKS_WHILE_FLIGHT_MODE_IS_ENABLED_CONNECT_TO_WI_FI_NETWORK_INSTEAD_OR_DISABLE_FLIGHT_MODE_AND_TRY_AGAIN"
+msgstr "მობილურ ქსელებს ვერ დაუკავშირდებით, სანამ ჩართულია ფრენის რეჟიმი. სანაცვლოდ, დაუკავშირდით Wi-Fi ქსელს, ან გამორთეთ ფრენის რეჟიმი და ისევ ცადეთ"
 
 msgid "IDS_BR_POP_THE_DOWNLOAD_HAS_BEEN_STOPPED_AND_THE_DOWNLOADED_DATA_WILL_BE_DELETED"
 msgstr "ჩამოტვირთვა შეწყდა და ჩამოტვირთული მონაცემები წაიშლება."
@@ -1465,8 +1825,20 @@ msgstr "Search completed"
 msgid "IDS_BR_POP_READY"
 msgstr "მზადაა."
 
+msgid "IDS_BR_POP_INSTALL_SUCCESS"
+msgstr "დაინსტალირება დასრულდა."
+
+msgid "IDS_BR_POP_INSTALLATION_FAILED"
+msgstr "ვერ დაინსტალირდა."
+
 msgid "IDS_BR_POP_INFORM_MEMORY_ERROR"
 msgstr "მეხსიერების შეცდომა."
+
+msgid "IDS_BR_POP_DELETING_ING"
+msgstr "წაშლა..."
+
+msgid "IDS_BR_POP_DATA_ROAMING_IS_DISABLED_CONNECT_TO_WI_FI_NETWORK_INSTEAD_OR_ENABLE_DATA_ROAMING_AND_TRY_AGAIN"
+msgstr "მონაცემთა გადაცემა როუმინგის დროს გამორთულია. სანაცვლოდ, დაუკავშირდით Wi-Fi ქსელს, ან გაააქტიურეთ მონაცემთა გადაცემა როუმინგის დროს და ისევ ცადეთ"
 
 msgid "IDS_BR_POP_DATA_ROAMING_IS_DISABLED_CONNECT_TO_A_WI_FI_NETWORK_OR_ENABLE_DATA_ROAMING_AND_TRY_AGAIN"
 msgstr "მონაცემთა გადაცემა როუმინგის დროს გამორთულია. დაუკავშირდით Wi-Fi ქსელს, თუ გაააქტიურეთ მონაცემთა როუმინგი და ისევ სცადეთ."
@@ -1483,17 +1855,23 @@ msgstr "ვებ-აპები"
 msgid "IDS_BR_OPT_VIEW_ONLINE"
 msgstr "ნახეთ ინტერნეტით"
 
+msgid "IDS_BR_OPT_SHARE_VIA"
+msgstr "გაზიარების მეთოდია"
+
 msgid "IDS_BR_OPT_READ_ON_OFFLINE_PAGES_LATER_ABB"
 msgstr "მერე ნახეთ გვერდი უინტერნეტოდ"
 
 msgid "IDS_BR_OPT_QUICK_ACCESS_ABB2"
 msgstr "სწრაფი წვდომა"
 
+msgid "IDS_BR_OPT_PASTE"
+msgstr "ჩასმა"
+
 msgid "IDS_BR_OPT_ALWAYS_ENABLED_ABB"
 msgstr "ყოველთვის გააქტიურებული"
 
 msgid "IDS_BR_NPBODY_TAP_HERE_TO_ADD_A_QUICK_ACCESS_SHORTCUT"
-msgstr "შეეხეთ აქ და დაამატეთ „სწრაფი წვდომის“ ღილაკი"
+msgstr "შეეხეთ აქ და დაამატეთ სწრაფი წვდომის ღილაკი"
 
 msgid "IDS_BR_NPBODY_NO_HISTORY"
 msgstr "ისტორია არ არის"
@@ -1513,6 +1891,9 @@ msgstr "ძებნა და URL-ის შეთავაზება"
 msgid "IDS_BR_MBODY_HISTORY"
 msgstr "ისტორია"
 
+msgid "IDS_BR_MBODY_FONT_SIZE"
+msgstr "შრიფტის ზომა"
+
 msgid "IDS_BR_MBODY_FIT_PAGE_TO_SCREEN"
 msgstr "გვერდის მორგება ეკრანზე"
 
@@ -1524,6 +1905,9 @@ msgstr "პერსონალური"
 
 msgid "IDS_BR_MBODY_COUNTRY_REGION"
 msgstr "ქვეყანა/რეგიონი"
+
+msgid "IDS_BR_HEADER_UNABLE_TO_DOWNLOAD_ABB"
+msgstr "ვერ ჩამოიტვირთა"
 
 msgid "IDS_BR_HEADER_RENAME_FOLDER_ABB"
 msgstr "გადარქმევა"
@@ -1555,8 +1939,14 @@ msgstr "ინფოს დამ."
 msgid "IDS_BR_BUTTON_WI_FI_ABB"
 msgstr "Wi-Fi"
 
+msgid "IDS_BR_BUTTON_UPDATE"
+msgstr "განახლება"
+
 msgid "IDS_BR_BUTTON_SETTINGS_ABB"
 msgstr "პარამეტ."
+
+msgid "IDS_BR_BUTTON_RETRY"
+msgstr "ხელახალი ცდა"
 
 msgid "IDS_BR_BUTTON2_OK"
 msgstr "OK"
@@ -1574,13 +1964,16 @@ msgid "IDS_BR_BODY_UNABLE_TO_FIND_AN_APPLICATION_TO_OPEN_THIS_FILE"
 msgstr "პროგრამა ვერ მოიძებნა ამ ფაილის გასახსნელად."
 
 msgid "IDS_BR_BODY_UNABLE_TO_CONNECT_TO_MOBILE_NETWORKS_WHILE_FLIGHT_MODE_IS_ENABLED_MSG"
-msgstr "მობილურ ქსელებთან დაკავშირება შეუძლებელია, სანამ აქტიურია „ფრენის რეჟიმი“. სანაცვლოდ, დაუკავშირდით Wi-Fi ქსელს, ან ფრენის რეჟიმის გამოსართავად შეეხეთ „პარამეტრებს“ და ისევ სცადეთ."
+msgstr "მობილურ ქსელებთან დაკავშირება შეუძლებელია, სანამ აქტიურია ფრენის რეჟიმი. სანაცვლოდ, დაუკავშირდით Wi-Fi ქსელს, ან ფრენის რეჟიმის გამოსართავად შეეხეთ პარამეტრებს და ისევ სცადეთ."
 
 msgid "IDS_BR_BODY_THIS_CERTIFICATE_IS_FROM_A_TRUSTED_AUTHORITY"
 msgstr "ეს სერტიფიკატი არის სანდო წყაროდან."
 
 msgid "IDS_BR_BODY_TAP_HERE_TO_ADD_A_QUICK_ACCESS_SHORTCUT"
-msgstr "შეეხეთ აქ და დაამატეთ „სწრაფი წვდომის“ ღილაკი."
+msgstr "შეეხეთ აქ და დაამატეთ სწრაფი წვდომის ღილაკი."
+
+msgid "IDS_BR_BODY_REQUEST_FAILED"
+msgstr "მოთხოვნა ვერ შედგა."
 
 msgid "IDS_BR_BODY_PREFERENCES"
 msgstr "პრეფერენციები"
@@ -1595,400 +1988,16 @@ msgid "IDS_BR_BODY_NO_MATCHES"
 msgstr "შესატყვისები არ არის"
 
 msgid "IDS_BR_BODY_MOBILE_DATA_IS_TURNED_OFF_CONNECT_TO_A_WI_FI_NETWORK_INSTEAD_OR_TAP_SETTINGS_TO_TURN_ON_MOBILE_DATA_AND_THEN_TRY_AGAIN"
-msgstr "მობილურ მონაცემთა ქსელი გამორთულია. სანაცვლოდ, დაუკავშირდით Wi-Fi ქსელს, ან მობილურ მონაცემთა ჩასართავად შეეხეთ „პარამეტრებს“ და ისევ სცადეთ."
-
-msgid "IDS_BR_BODY_FIT_TO_WIDTH"
-msgstr "მორგება სიგანეზე"
-
-msgid "IDS_BR_ACBUTTON_QUICK_ACCESS"
-msgstr "ჩქარი წვდომა"
-
-msgid "IDS_BR_OPT_OPEN_IN_NEW_TAB"
-msgstr "გაიხსნას ახალ ჩანართში"
-
-msgid "IDS_BR_BODY_SHARE_LINK"
-msgstr "ბმულის გაზიარება"
-
-msgid "IDS_BR_SK_SAVE_LITE"
-msgstr "შენახვა"
-
-msgid "IDS_BR_SK_SAVE_ABB"
-msgstr "შენხვ"
-
-msgid "IDS_BR_SK_SAVE"
-msgstr "შენახვა"
-
-msgid "IDS_BR_SK_PREVIOUS"
-msgstr "წინა"
-
-msgid "IDS_BR_SK_NEXT"
-msgstr "შემდეგი"
-
-msgid "IDS_BR_SK_DELETE"
-msgstr "წაშლა"
-
-msgid "IDS_BR_SK_CLEAR"
-msgstr "წაშლა"
-
-msgid "IDS_BR_SK_BACK"
-msgstr "უკან"
-
-msgid "IDS_BR_POP_WI_FI_CONNECTION_REQUIRED_CONNECT_TO_WI_FI_NETWORK_AND_TRY_AGAIN"
-msgstr "საჭიროა Wi-Fi კავშირი. დაუკავშირდით Wi-Fi ქსელს და ისევ ცადეთ"
-
-msgid "IDS_BR_POP_URL_NOT_FOUND"
-msgstr "URL არ მოიძებნა."
-
-msgid "IDS_BR_POP_URL"
-msgstr "URL"
-
-msgid "IDS_BR_POP_SAVED"
-msgstr "შენახულია."
-
-msgid "IDS_BR_POP_REMOVED"
-msgstr "წაშლილია."
-
-msgid "IDS_BR_POP_PD_ITEMS_WILL_BE_DELETED"
-msgstr "%d ელემენტი წაიშლება."
-
-msgid "IDS_BR_POP_PD_ITEMS_SELECTED"
-msgstr "არჩეულია %d ელემენტი."
-
-msgid "IDS_BR_POP_NO_ITEMS_SELECTED"
-msgstr "ელემენტი არ არის შერჩეული."
-
-msgid "IDS_BR_POP_NOT_ENOUGH_MEMORY"
-msgstr "მეხსიერება არ არის საკმარისი."
-
-msgid "IDS_BR_POP_NEVER"
-msgstr "არასოდეს"
-
-msgid "IDS_BR_POP_MOBILE_DATA_IS_DISABLED_CONNECT_TO_WI_FI_NETWORK_INSTEAD_OR_ENABLE_MOBILE_DATA_AND_TRY_AGAIN"
-msgstr "მობილური მონაცემები გამორთულია. სანაცვლოდ, დაუკავშირდით Wi-Fi ქსელს, ან გაააქტიურეთ მობილური მონაცემები და ისევ ცადეთ"
-
-msgid "IDS_BR_POP_LOADING_PLEASE_WAIT_ING"
-msgstr "იტვირთება. გთხოვთ, დაელოდოთ..."
-
-msgid "IDS_BR_POP_INVALID_URL"
-msgstr "URL არასწორია."
-
-msgid "IDS_BR_POP_FAIL"
-msgstr "ვერ შესრულდა."
-
-msgid "IDS_BR_POP_ENTER_TITLE_ABB"
-msgstr "შეიყვანეთ სათაური"
-
-msgid "IDS_BR_POP_DO_NOT_SHOW_AGAIN"
-msgstr "აღარ მაჩვენო"
-
-msgid "IDS_BR_POP_DOWNLOADCOMPLETE"
-msgstr "ჩამოტვირთვა დასრულდა."
-
-msgid "IDS_BR_POP_DISABLED"
-msgstr "გამორთულია."
-
-msgid "IDS_BR_POP_DELETE_Q"
-msgstr "წაიშალოს?"
-
-msgid "IDS_BR_POP_DELETED"
-msgstr "წაშლილია."
-
-msgid "IDS_BR_POP_CLOSE_APPLICATION_Q"
-msgstr "დახურავთ პროგრამას?"
-
-msgid "IDS_BR_POP_BOOKMARK_ADDED"
-msgstr "სანიშნე დაემატა."
-
-msgid "IDS_BR_POP_AUTOMATIC_BRIGHTNESS"
-msgstr "ავტომატური განათებულობა"
-
-msgid "IDS_BR_POP_ACCOUNT"
-msgstr "ანგარიში"
-
-msgid "IDS_BR_POP_1_ITEM_WILL_BE_DELETED"
-msgstr "1 ელემენტი წაიშლება."
-
-msgid "IDS_BR_POP_1_ITEM_SELECTED"
-msgstr "არჩეულია 1 ელემენტი."
-
-msgid "IDS_BR_OPT_TRANSLATE"
-msgstr "თარგმნა"
-
-msgid "IDS_BR_OPT_STOP"
-msgstr "შეჩერება"
-
-msgid "IDS_BR_OPT_SHOW"
-msgstr "ჩვენება"
-
-msgid "IDS_BR_OPT_SHARE"
-msgstr "გაზიარება"
-
-msgid "IDS_BR_OPT_SETTINGS"
-msgstr "პარამეტრები"
-
-msgid "IDS_BR_OPT_SEND_EMAIL"
-msgstr "ელ. წერილის გაგზავნა"
-
-msgid "IDS_BR_OPT_SELECT"
-msgstr "არჩევა"
-
-msgid "IDS_BR_OPT_SD_CARD"
-msgstr "SDბარათი"
-
-msgid "IDS_BR_OPT_RENAME"
-msgstr "სახელის გადარქმევა"
-
-msgid "IDS_BR_OPT_REFRESH"
-msgstr "განახლება"
-
-msgid "IDS_BR_OPT_MOVE"
-msgstr "გადატანა"
-
-msgid "IDS_BR_OPT_MESSAGES"
-msgstr "შეტყობინებები"
-
-msgid "IDS_BR_OPT_LIST_VIEW"
-msgstr "სიის ნახვა"
-
-msgid "IDS_BR_OPT_I_AGREE"
-msgstr "ვეთანხმები."
-
-msgid "IDS_BR_OPT_HELP"
-msgstr "დახმარება"
-
-msgid "IDS_BR_OPT_DEVICE"
-msgstr "მოწყობილობა"
-
-msgid "IDS_BR_OPT_BOOKMARK"
-msgstr "სანიშნე"
-
-msgid "IDS_BR_OPT_ADDED"
-msgstr "დამატებულია."
-
-msgid "IDS_BR_OPT_ADD"
-msgstr "დამატება"
-
-msgid "IDS_BR_MBODY_DEFAULT_DOWNLOAD_STORAGE"
-msgstr "ჩამოტვირთვის ადგილი"
-
-msgid "IDS_BR_HEADER_SIGN_IN_TO_SAMSUNG_ACCOUNT"
-msgstr "Samsung ანგარიშზე შესვლა"
-
-msgid "IDS_BR_HEADER_PD_SELECTED_ABB"
-msgstr "%d არჩეულია"
-
-msgid "IDS_BR_HEADER_NO_NETWORK_CONNECTION"
-msgstr "ქსელთან კავშირი არ არის"
-
-msgid "IDS_BR_HEADER_FOLDER"
-msgstr "საქაღალდე"
-
-msgid "IDS_BR_HEADER_EDIT_PROFILE"
-msgstr "პროფილის შეცვლა"
-
-msgid "IDS_BR_BUTTON_SET"
-msgstr "დაყენება"
-
-msgid "IDS_BR_BUTTON_NOT_NOW"
-msgstr "ახლა არა"
-
-msgid "IDS_BR_BUTTON_ENABLE_ABB"
-msgstr "ჩართვა"
-
-msgid "IDS_BR_BUTTON_EDIT"
-msgstr "შეცვლა"
-
-msgid "IDS_BR_BUTTON_CONTINUE_ABB"
-msgstr "გაგრძელ."
-
-msgid "IDS_BR_BUTTON_CONTINUE"
-msgstr "გაგრძელება"
-
-msgid "IDS_BR_BUTTON_CLOSE"
-msgstr "დახურვა"
-
-msgid "IDS_BR_BUTTON_CANCEL_ABB"
-msgstr "გაუქმება"
-
-msgid "IDS_BR_BUTTON_CANCEL"
-msgstr "გაუქმება"
-
-msgid "IDS_BR_BUTTON_ALLOW"
-msgstr "ნებართვა"
-
-msgid "IDS_BR_BODY_YESTERDAY"
-msgstr "გუშინ"
-
-msgid "IDS_BR_BODY_URL"
-msgstr "URL"
-
-msgid "IDS_BR_BODY_TODAY"
-msgstr "დღეს"
-
-msgid "IDS_BR_BODY_TITLE"
-msgstr "სათაური"
-
-msgid "IDS_BR_BODY_THE_MAXIMUM_NUMBER_OF_CHARACTERS_HPD_HAS_BEEN_EXCEEDED"
-msgstr "გადაჭარბებულია სიმბოლოების მაქსიმალური რაოდენობა (%d)."
-
-msgid "IDS_BR_BODY_STREAMING"
-msgstr "ნაკადი"
-
-msgid "IDS_BR_BODY_SMALL"
-msgstr "პატარა"
-
-msgid "IDS_BR_BODY_SETTINGS"
-msgstr "პარამეტრები"
-
-msgid "IDS_BR_BODY_SEARCH"
-msgstr "ძიება"
-
-msgid "IDS_BR_BODY_RSS_SEARCH_RESULTS"
-msgstr "ძიების შედეგები"
-
-msgid "IDS_BR_BODY_PROFILE"
-msgstr "პროფილი"
-
-msgid "IDS_BR_BODY_PROCESSING_ING"
-msgstr "მუშავდება..."
-
-msgid "IDS_BR_BODY_PHONE_NUMBER_ABB"
-msgstr "ტელეფ. ნომ."
-
-msgid "IDS_BR_BODY_PHONE"
-msgstr "ტელეფონი"
-
-msgid "IDS_BR_BODY_PD_ITEMS_WILL_BE_DELETED"
-msgstr "%d ელემენტი წაიშლება."
-
-msgid "IDS_BR_BODY_PASSWORD"
-msgstr "პაროლი"
-
-msgid "IDS_BR_BODY_ON"
-msgstr "ჩართვა"
-
-msgid "IDS_BR_BODY_OFF"
-msgstr "გამორთ."
-
-msgid "IDS_BR_BODY_NO_RESULTS_FOUND"
-msgstr "შედეგები არ მოიძებნა."
-
-msgid "IDS_BR_BODY_NO_HISTORIES"
-msgstr "ისტორია ცარიელია"
-
-msgid "IDS_BR_BODY_NOTIFICATIONS"
-msgstr "შეტყობინებები"
-
-msgid "IDS_BR_BODY_MEDIUM"
-msgstr "საშუალო"
-
-msgid "IDS_BR_BODY_IMAGES"
-msgstr "გამოსახულებები"
-
-msgid "IDS_BR_BODY_FULL_SCREEN"
-msgstr "მთლიანი ეკრანი"
-
-msgid "IDS_BR_BODY_FONT_SIZE"
-msgstr "შრიფტის ზომა"
-
-msgid "IDS_BR_BODY_FOLDER_NAME"
-msgstr "საქაღალდის სახელი"
-
-msgid "IDS_BR_BODY_ENTER_POSTCODE_ABB"
-msgstr "აკრიფეთ საფოსტო ინდექსი."
-
-msgid "IDS_BR_BODY_ENTER_POSTCODE"
-msgstr "აკრიფეთ საფოსტო ინდექსი."
-
-msgid "IDS_BR_BODY_ENTER_PHONE_NUMBER"
-msgstr "შეიყვანეთ ტელეფონის ნომერი."
-
-msgid "IDS_BR_BODY_ENTER_NAME"
-msgstr "ჩაწერეთ სახელი."
-
-msgid "IDS_BR_BODY_ENTER_FOLDER_NAME"
-msgstr "შეიყვანეთ საქაღალდის სახელი."
-
-msgid "IDS_BR_BODY_ENTER_EMAIL_ADDRESS"
-msgstr "შეიტანეთ ელ.ფოსტის მისამართი."
-
-msgid "IDS_BR_BODY_EMAIL_ADDRESS"
-msgstr "ელ. ფოსტის მისამართი"
-
-msgid "IDS_BR_BODY_DOWNLOADING_ING"
-msgstr "ჩამოტვირთვა..."
-
-msgid "IDS_BR_BODY_DEVELOPER_MODE"
-msgstr "დეველოპერის რეჟიმი"
-
-msgid "IDS_BR_BODY_DEFAULT"
-msgstr "ნაგულისხმევი"
-
-msgid "IDS_BR_BODY_BOOKMARKS"
-msgstr "სანიშნე"
-
-msgid "IDS_BR_BODY_ALL"
-msgstr "ყველა"
-
-msgid "IDS_BR_BODY_ADD_TO"
-msgstr "დამატება"
-
-msgid "IDS_BR_BODY_ADDDETAILSVIEW_TAGS"
-msgstr "ტეგები"
-
-msgid "IDS_BR_BODY_ADDBOOKMARKURL"
-msgstr "URL"
-
-msgid "IDS_BR_BODY_1_ITEM_WILL_BE_DELETED"
-msgstr "1 ელემენტი წაიშლება."
-
-msgid "IDS_BR_TPOP_MAXIMUM_NUMBER_OF_CHARACTERS_HPD_REACHED"
-msgstr "მიღწეულია სიმბოლოების მაქსიმალური რაოდენობა (%d)"
-
-msgid "IDS_BR_POP_UNSUPPORTMEDIATYPE"
-msgstr "მედიის ტიპი გაუთვალისწინებელია."
-
-msgid "IDS_BR_POP_UNABLE_TO_CONNECT_TO_MOBILE_NETWORKS_WHILE_FLIGHT_MODE_IS_ENABLED_CONNECT_TO_WI_FI_NETWORK_INSTEAD_OR_DISABLE_FLIGHT_MODE_AND_TRY_AGAIN"
-msgstr "მობილურ ქსელებს ვერ დაუკავშირდებით, სანამ ჩართულია ფრენის რეჟიმი. სანაცვლოდ, დაუკავშირდით Wi-Fi ქსელს, ან გამორთეთ ფრენის რეჟიმი და ისევ ცადეთ"
-
-msgid "IDS_BR_POP_INSTALL_SUCCESS"
-msgstr "დაინსტალირება დასრულდა."
-
-msgid "IDS_BR_POP_INSTALLATION_FAILED"
-msgstr "ვერ დაინსტალირდა."
-
-msgid "IDS_BR_POP_DELETING_ING"
-msgstr "წაშლა..."
-
-msgid "IDS_BR_POP_DATA_ROAMING_IS_DISABLED_CONNECT_TO_WI_FI_NETWORK_INSTEAD_OR_ENABLE_DATA_ROAMING_AND_TRY_AGAIN"
-msgstr "მონაცემთა გადაცემა როუმინგის დროს გამორთულია. სანაცვლოდ, დაუკავშირდით Wi-Fi ქსელს, ან გაააქტიურეთ მონაცემთა გადაცემა როუმინგის დროს და ისევ ცადეთ"
-
-msgid "IDS_BR_OPT_SHARE_VIA"
-msgstr "გაზიარების მეთოდია"
-
-msgid "IDS_BR_OPT_PASTE"
-msgstr "ჩასმა"
-
-msgid "IDS_BR_MBODY_FONT_SIZE"
-msgstr "შრიფტის ზომა"
-
-msgid "IDS_BR_HEADER_UNABLE_TO_DOWNLOAD_ABB"
-msgstr "ვერ ჩამოიტვირთა"
-
-msgid "IDS_BR_BUTTON_UPDATE"
-msgstr "განახლება"
-
-msgid "IDS_BR_BUTTON_RETRY"
-msgstr "ხელახალი ცდა"
-
-msgid "IDS_BR_BODY_REQUEST_FAILED"
-msgstr "მოთხოვნა ვერ შედგა."
+msgstr "მობილურ მონაცემთა ქსელი გამორთულია. სანაცვლოდ, დაუკავშირდით Wi-Fi ქსელს, ან მობილურ მონაცემთა ჩასართავად შეეხეთ პარამეტრებს და ისევ სცადეთ."
 
 msgid "IDS_BR_BODY_LOGIN"
 msgstr "შესვლა"
 
 msgid "IDS_BR_BODY_LOADING_ING"
 msgstr "იტვირთება..."
+
+msgid "IDS_BR_BODY_FIT_TO_WIDTH"
+msgstr "მორგება სიგანეზე"
 
 msgid "IDS_BR_BODY_FIT_TO_SCREEN"
 msgstr "ეკრანზე მორგება"
@@ -1999,165 +2008,12 @@ msgstr "გადმოწერილები"
 msgid "IDS_BR_BODY_DATA_ROAMING_IS_DISABLED_CONNECT_TO_A_WI_FI_NETWORK_INSTEAD_OR_ENABLE_DATA_ROAMING_AND_TRY_AGAIN"
 msgstr "მონაცემთა როუმინგი გამორთულია. სანაცვლოდ, დაუკავშირდით Wi-Fi ქსელს, ან გაააქტიურეთ მონაცემთა გადაცემა როუმინგის დროს და ისევ სცადეთ."
 
-msgid "IDS_BR_POP_DOWNLOAD_CANCELLED"
-msgstr "ჩამოტვირთვა შეწყდა."
+msgid "IDS_BR_ACBUTTON_QUICK_ACCESS"
+msgstr "ჩქარი წვდომა"
 
-msgid "IDS_BR_BUTTON_SECRET_ON_ABB"
-msgstr "სდმლ. ჩართ."
+msgid "IDS_ST_POP_SOME_CONTENT_HAS_BEEN_BLOCKED_TO_PROTECT_YOUR_DEVICE"
+msgstr "ზოგიერთი მასალა დაიბლოკა თქვენი მოწყობილობის დაცვის მიზნით."
 
-msgid "IDS_BR_MBODY_PRIVACY"
-msgstr "პირადი"
-
-msgid "IDS_BR_MBODY_DEFAULT_STORAGE"
-msgstr "ნაგულისხმევი მეხსიერება"
-
-msgid "IDS_BR_MBODY_MANUAL_ZOOM"
-msgstr "მექანიკური მასშტაბირება"
-
-msgid "IDS_BR_TMBODY_DEFAULT_SEARCH_ENGINE"
-msgstr "ნაგულისხმევი საძიებო სისტემა"
-
-msgid "IDS_BR_MBODY_SAVE_SIGN_IN_INFO"
-msgstr "შეინახე ავტორიზაციის ინფო"
-
-msgid "IDS_BR_OPT_TURN_OFF_SECRET_MODE_ABB"
-msgstr "საიდუმლო რეჟიმის გამორთვა"
-
-msgid "IDS_BR_OPT_TURN_ON_SECRET_MODE_ABB"
-msgstr "საიდუმლო რეჟიმის ჩართვა"
-
-msgid "IDS_BR_OPT_SHOW_PASSWORD_ABB2"
-msgstr "პაროლის ჩვენება"
-
-msgid "IDS_BR_OPT_SECRET_MODE_SECURITY_ABB"
-msgstr "საიდუმლო რეჟიმის დაცვა"
-
-msgid "IDS_BR_BUTTON_USE_PASSWORD_ABB"
-msgstr "პაროლის გამოყენება"
-
-msgid "IDS_BR_HEADER_DONT_USE_PASSWORD_ABB"
-msgstr "არ გამოიყენოთ პაროლი"
-
-msgid "IDS_BR_MBODY_MOST_VISITED_WEBSITES"
-msgstr "ხშირად ნანახი ვებსაიტები"
-
-msgid "IDS_BR_MBODY_SET_MY_PROFILE"
-msgstr "ჩემი პროფილის დაყენება"
-
-msgid "IDS_BR_MBODY_MY_AUTO_FILL_PROFILE"
-msgstr "ავტოშევსების ჩემი პროფილი"
-
-msgid "IDS_BR_SBODY_MANAGE_DATA_USED_TO_FILL_IN_FORMS_ONLINE"
-msgstr "მართეთ ონლაინ-ფორმების შესავსებად გამოყენებული მონაცემები."
-
-msgid "IDS_BR_MBODY_SAVE_SIGN_IN_INFO_ABB"
-msgstr "შესვლის შენახვა"
-
-msgid "IDS_BR_OPT_LOCATION_ACCESS_DATA"
-msgstr "ლოკაციაზე წვდომის პარამეტრები"
-
-msgid "IDS_BR_OPT_AUTO_FILL_DATA"
-msgstr "მონაცემთა ავტომატური შევსება"
-
-msgid "IDS_BR_BODY_ANY_WEBPAGES_YOU_VIEW_WHILE_SECRET_MODE_IS_TURNED_ON_WONT_APPEAR_IN_YOUR_BROWSER_OR_SEARCH_HISTORY_MSG"
-msgstr "„საიდუმლო რეჟიმში“ დათვალიერებული ვებგვერდები არ ჩანს არც ბრაუზერში და არც ძიების ისტორიაში, როდესაც ეს რეჟიმი გამორთულია.\n\n„საიდუმლო რეჟიმის“ დროს შენახული არცერთი სანიშნე და ვებგვერდი არ ჩანს, როცა ეს რეჟიმი გამორთულია.\n\nასევე შეგიძლიათ, პაროლით დაიცვათ „საიდუმლო რეჟიმის“ მონაცემები."
-
-msgid "IDS_BR_BODY_ANY_WEBPAGES_YOU_VIEW_WHILE_SECRET_MODE_IS_TURNED_ON_WONT_APPEAR_IN_YOUR_BROWSER_OR_SEARCH_MSG"
-msgstr "„საიდუმლო რეჟიმში“ დათვალიერებული ვებგვერდები არ ჩანს არც ბრაუზერში და არც ძიების ისტორიაში, როდესაც ეს რეჟიმი გამორთულია.\n\n„საიდუმლო რეჟიმის“ დროს შენახული არცერთი სანიშნე და ვებგვერდი არ ჩანს, როცა ეს რეჟიმი გამორთულია."
-
-msgid "IDS_BR_BUTTON_SECRET_OFF_ABB"
-msgstr "სდმლ. გმრ."
-
-msgid "IDS_BR_BUTTON_DONT_USE_PASSWORD_ABB"
-msgstr "არ გამოიყენოთ პაროლი"
-
-msgid "IDS_BR_BUTTON_NEW_TAB_ABB2"
-msgstr "ახალი"
-
-msgid "IDS_BR_NPBODY_WEB_ADDRESS_ABB"
-msgstr "ვებ-მისამართი"
-
-msgid "IDS_BR_HEADER_ADD_WEBPAGE_TO_QUICK_ACCESS_ABB"
-msgstr "ვებგვერდი „სწრაფ წვდომაზე“"
-
-msgid "IDS_BR_TMBODY_TURN_ON_JAVASCRIPT"
-msgstr "ჩართეთ JavaScript"
-
-msgid "IDS_BR_HEADER_COULDNT_OPEN_NEW_TAB_ABB"
-msgstr "ახალი ჩანართი ვერ გაიხსნა"
-
-msgid "IDS_BR_OPT_OPEN_IN_NEW_TAB_ABB"
-msgstr "გაიხსნას ახალ ჩანართში"
-
-msgid "IDS_BR_TPOP_FOLDER_NAME_ALREADY_IN_USE"
-msgstr "საქაღალდის სახელი უკვე გამოყენებულია."
-
-msgid "IDS_BR_NPBODY_NEW_FOLDER_PD"
-msgstr "ახალი საქაღალდე %d"
-
-msgid "IDS_BR_NPBODY_NEW_FOLDER"
-msgstr "ახალი საქაღალდე"
-
-msgid "IDS_BR_OPT_ENABLE_JAVASCRIPT"
-msgstr "გააქტიურდეს JavaScript"
-
-msgid "IDS_BR_TMBODY_MANAGE_WEBSITE_DATA"
-msgstr "ვებსაიტის მონაცემთა მართვა"
-
-msgid "IDS_BR_HEADER_SET_HOME_PAGE_ABB"
-msgstr "საწყისი გვერდის დაყენება"
-
-msgid "IDS_BR_TPOP_WEBPAGE_ADDED_TO_QUICK_ACCESS_LIST"
-msgstr "ვებგვერდი დამატებულია სწრაფი წვდომის სიაში."
-
-msgid "IDS_BR_OPT_EDIT_QUICK_ACCESS_ABB"
-msgstr "სწრაფი წვდომის შესწორება"
-
-msgid "IDS_BR_OPT_REMOVE_FROM_BOOKMARKS_ABB"
-msgstr "სანიშნეებიდან ამოშლა"
-
-msgid "IDS_BR_HEADER_ADD_BOOKMARK_ABB"
-msgstr "სანიშნის დამატება"
-
-msgid "IDS_BR_BODY_BROWSING_HISTORY"
-msgstr "დათვალიერების ისტორია"
-
-msgid "IDS_BR_HEADER_TABS_ABB2"
-msgstr "ჩანართები"
-
-msgid "IDS_BR_OPT_NEW_TAB"
-msgstr "ახალი გრაფა"
-
-msgid "IDS_BR_BUTTON_FORWARD_ABB2"
-msgstr "გადაგზავნა"
-
-msgid "IDS_BR_BUTTON_BACK_ABB3"
-msgstr "უკან"
-
-msgid "IDS_BR_BUTTON_BOOKMARKS_ABB"
-msgstr "სანიშნეები"
-
-msgid "IDS_BR_NPBODY_NO_PROFILES_ABB"
-msgstr "პროფილები არ არის"
-
-msgid "IDS_BR_TAB2_HISTORY"
-msgstr "ისტორია"
-
-msgid "IDS_BR_TAB2_BOOKMARKS"
-msgstr "სანიშნეები"
-
-msgid "IDS_BR_HEADER_SAVE_CONTENT_TO_ABB"
-msgstr "მასალის შენახვა ადგილზე"
-
-msgid "IDS_BR_HEADER_SELECT_ITEMS_ABB2"
-msgstr "აირჩიეთ ელემენტები"
-
-msgid "IDS_BR_BODY_YOUR_PASSWORD_MUST_CONTAIN_AT_LEAST_PD_CHARACTERS_INCLUDING_AT_LEAST_1_LETTER"
-msgstr "პაროლი უნდა შეიცავდეს მინიმუმ %d სიმბოლოს, მათ შორის მინიმუმ 1 ასოს."
-
-msgid "IDS_BR_BODY_AN_INCORRECT_PASSWORD_HAS_BEEN_ENTERED_TRY_AGAIN"
-msgstr "შეყვანილი პაროლი არასწორია. ისევ სცადეთ."
-
-msgid "IDS_BR_BODY_NO_TABS"
-msgstr "ჩანართები არ არის"
+msgid "IDS_ST_POP_SELECT_WHETHER_TO_GO_TO_THE_WEBPAGE_ANYWAY"
+msgstr "აირჩიეთ, მაინც გსურთ თუ არა გადასვლა ვებგვერდზე."
 

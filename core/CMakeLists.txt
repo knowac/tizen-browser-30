@@ -18,7 +18,6 @@ set(browserCore_SRCS
     BasicUI/EAction.cpp
     BasicUI/Action.cpp
     BasicUI/MenuButton.cpp
-    BasicUI/NaviframeWrapper.cpp
     Config/Config.cpp
     Logger/Logger.cpp
     Logger/LoggerTools.cpp
@@ -99,24 +98,48 @@ target_link_libraries(${BIN_NAME} ${Boost_LIBRARIES})
 
 
 if(TIZEN_BUILD)
-    target_link_libraries(${BIN_NAME} ${tizen_pkgs_LDFLAGS} "-pie"
-    BookmarkFlowUI
-    BookmarkManagerUI
-    BookmarkService
-    CertificateService
-    FindOnPageUI
-    HistoryService
-    HistoryUI
-    PlatformInputManager
-    QuickAccess
-    SettingsUI
-    SimpleUI
-    StorageService
-    TabService
-    TabUI
-    WebEngineService
-    WebPageUI
-)
+    if (${PROFILE} MATCHES "mobile")
+        target_link_libraries(${BIN_NAME} ${tizen_pkgs_LDFLAGS} "-pie"
+        BookmarkDetailsUI
+        BookmarkFlowUI
+        BookmarkManagerUI
+        BookmarkService
+        CertificateService
+        FindOnPageUI
+        HistoryService
+        HistoryUI
+        MoreMenuUI
+        PlatformInputManager
+        QuickAccess
+        SettingsUI
+        SimpleUI
+        StorageService
+        TabService
+        TabUI
+        WebEngineService
+        WebPageUI
+    )
+    else(${PROFILE} MATCHES "mobile")
+        target_link_libraries(${BIN_NAME} ${tizen_pkgs_LDFLAGS} "-pie"
+        BookmarkDetailsUI
+        BookmarkFlowUI
+        BookmarkManagerUI
+        BookmarkService
+        CertificateService
+        HistoryService
+        HistoryUI
+        MoreMenuUI
+        PlatformInputManager
+        QuickAccess
+        SettingsUI
+        SimpleUI
+        StorageService
+        TabService
+        TabUI
+        WebEngineService
+        WebPageUI
+    )
+    endif(${PROFILE} MATCHES "mobile")
 endif(TIZEN_BUILD)
 
 install(TARGETS ${BIN_NAME} RUNTIME DESTINATION bin)

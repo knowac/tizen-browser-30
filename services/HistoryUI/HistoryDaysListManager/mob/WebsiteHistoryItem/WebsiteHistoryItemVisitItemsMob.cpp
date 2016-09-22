@@ -23,18 +23,20 @@
 namespace tizen_browser {
 namespace base_ui {
 
-boost::signals2::signal<void(const WebsiteVisitItemDataPtr, bool)> WebsiteHistoryItemVisitItemsMob::signalButtonClicked;
-
+boost::signals2::signal<void(const WebsiteVisitItemDataPtr, bool)>
+WebsiteHistoryItemVisitItemsMob::signalButtonClicked;
 const int WebsiteHistoryItemVisitItemsMob::GESTURE_MOMENTUM_MIN = 2000;
-
-WebsiteHistoryItemVisitItemsMob::WebsiteHistoryItemVisitItemsMob(WebsiteVisitItemDataPtr websiteVisitItem)
+WebsiteHistoryItemVisitItemsMob::WebsiteHistoryItemVisitItemsMob(
+        const std::vector<WebsiteVisitItemDataPtr> websiteVisitItems)
     : m_eflObjectsDeleted(nullptr)
     , m_layoutMain(nullptr)
     , m_boxMainVertical(nullptr)
 {
-    VisitItemObjects obj;
-    obj.websiteVisitItemData = websiteVisitItem;
-    m_websiteVisitItem = obj;
+    for (auto& visitItem : websiteVisitItems) {
+        VisitItemObjects obj;
+        obj.websiteVisitItemData = visitItem;
+        m_websiteVisitItems.push_back(obj);
+    }
 }
 
 WebsiteHistoryItemVisitItemsMob::~WebsiteHistoryItemVisitItemsMob()
@@ -45,22 +47,24 @@ WebsiteHistoryItemVisitItemsMob::~WebsiteHistoryItemVisitItemsMob()
 }
 
 Evas_Object* WebsiteHistoryItemVisitItemsMob::init(Evas_Object* parent,
-    const std::string& edjeFilePath)
+        const std::string& edjeFilePath)
 {
     m_layoutMain = elm_layout_add(parent);
     tools::EflTools::setExpandHints(m_layoutMain);
     elm_layout_file_set(m_layoutMain, edjeFilePath.c_str(),
-        "layoutWebsiteHistoryItemVisitItems");
+            "layoutWebsiteHistoryItemVisitItems");
 
     m_boxMainVertical = elm_box_add(m_layoutMain);
     tools::EflTools::setExpandHints(m_boxMainVertical);
     elm_object_part_content_set(m_layoutMain,
-        "boxMainVertical", m_boxMainVertical);
+            "boxMainVertical", m_boxMainVertical);
 
-    LayoutVisitItemObjects layoutObjects = createLayoutVisitItem(
-        m_layoutMain, edjeFilePath, m_websiteVisitItem.websiteVisitItemData);
-    m_websiteVisitItem.layoutVisitItemObjects = layoutObjects;
-    elm_box_pack_end(m_boxMainVertical, layoutObjects.layout);
+    for (auto& item : m_websiteVisitItems) {
+        LayoutVisitItemObjects layoutObjects = createLayoutVisitItem(
+                m_layoutMain, edjeFilePath, item.websiteVisitItemData);
+        item.layoutVisitItemObjects = layoutObjects;
+        elm_box_pack_end(m_boxMainVertical, layoutObjects.layout);
+    }
 
     evas_object_show(m_boxMainVertical);
     evas_object_show(m_layoutMain);
@@ -76,13 +80,13 @@ void WebsiteHistoryItemVisitItemsMob::setEflObjectsAsDeleted()
 
 WebsiteHistoryItemVisitItemsMob::LayoutVisitItemObjects
 WebsiteHistoryItemVisitItemsMob::createLayoutVisitItem(
-    Evas_Object* parent, const std::string& edjeFilePath,
-    WebsiteVisitItemDataPtr websiteVisitItemData)
+        Evas_Object* parent, const std::string& edjeFilePath,
+        WebsiteVisitItemDataPtr websiteVisitItemData)
 {
     Evas_Object* layout = elm_layout_add(parent);
     tools::EflTools::setExpandHints(layout);
     elm_layout_file_set(layout, edjeFilePath.c_str(),
-        "layoutWebsiteHistoryVisitItem");
+            "layoutWebsiteHistoryVisitItem");
 
     Evas_Object* boxMain = elm_box_add(parent);
     tools::EflTools::setExpandHints(boxMain);
@@ -112,25 +116,25 @@ WebsiteHistoryItemVisitItemsMob::createLayoutVisitItem(
 }
 
 Evas_Object* WebsiteHistoryItemVisitItemsMob::createLayoutContent(Evas_Object* parent,
-    const std::string& edjeFilePath, WebsiteVisitItemDataPtr websiteVisitItemData)
+        const std::string& edjeFilePath, WebsiteVisitItemDataPtr websiteVisitItemData)
 {
     Evas_Object* layoutContent = elm_layout_add(parent);
     tools::EflTools::setExpandHints(layoutContent);
     elm_layout_file_set(layoutContent, edjeFilePath.c_str(),
-        "layoutMainContent");
+            "layoutMainContent");
 
     elm_object_part_text_set(layoutContent, "textTitle",
-        websiteVisitItemData->historyItem->getTitle().c_str());
+            websiteVisitItemData->historyItem->getTitle().c_str());
 
     elm_object_part_text_set(layoutContent, "textUrl",
-        websiteVisitItemData->historyItem->getUrl().c_str());
+            websiteVisitItemData->historyItem->getUrl().c_str());
 
     // TODO Replace with std::time_t to_time_t(ptime pt) in the future
     std::time_t rawtime(websiteVisitItemData->historyItem->getLastVisitAsTimeT());
     char buffer[80];
     struct tm ts_ret;
 
-    if (localtime_r(&rawtime, &ts_ret)==NULL){
+    if(localtime_r(&rawtime, &ts_ret)==NULL){
         BROWSER_LOGE("[%s:%d] Warning: Unhandled localtime_r", __PRETTY_FUNCTION__, __LINE__);
         return  nullptr;
     }
@@ -149,7 +153,7 @@ Evas_Object* WebsiteHistoryItemVisitItemsMob::createLayoutContent(Evas_Object* p
 }
 
 Evas_Object* WebsiteHistoryItemVisitItemsMob::createLayoutButtonDelete(Evas_Object* parent,
-    const std::string& edjeFilePath)
+        const std::string& edjeFilePath)
 {
     Evas_Object* lay = elm_layout_add(parent);
     evas_object_size_hint_align_set(lay, EVAS_HINT_FILL, 0.5);
@@ -165,20 +169,22 @@ Evas_Object* WebsiteHistoryItemVisitItemsMob::createLayoutButtonDelete(Evas_Obje
 
 void WebsiteHistoryItemVisitItemsMob::initCallbacks()
 {
-    evas_object_smart_callback_add(
-        m_websiteVisitItem.layoutVisitItemObjects.buttonSelect, "clicked",
-        _buttonSelectClicked, &m_websiteVisitItem);
-    evas_object_smart_callback_add(
-        m_websiteVisitItem.layoutVisitItemObjects.buttonDelete, "clicked",
-        _buttonDeleteClicked, &m_websiteVisitItem);
-    elm_gesture_layer_cb_add(
-        m_websiteVisitItem.layoutVisitItemObjects.layerGesture,
-        ELM_GESTURE_N_LINES, ELM_GESTURE_STATE_MOVE, _gestureOccured,
-        &m_websiteVisitItem);
+    for (auto& websiteVisitItem : m_websiteVisitItems) {
+        evas_object_smart_callback_add(
+                websiteVisitItem.layoutVisitItemObjects.buttonSelect, "clicked",
+                _buttonSelectClicked, &websiteVisitItem);
+        evas_object_smart_callback_add(
+                websiteVisitItem.layoutVisitItemObjects.buttonDelete, "clicked",
+                _buttonDeleteClicked, &websiteVisitItem);
+        elm_gesture_layer_cb_add(
+                websiteVisitItem.layoutVisitItemObjects.layerGesture,
+                ELM_GESTURE_N_LINES, ELM_GESTURE_STATE_MOVE, _gestureOccured,
+                &websiteVisitItem);
+    }
 }
 
 void WebsiteHistoryItemVisitItemsMob::_buttonSelectClicked(void* data,
-    Evas_Object* /*obj*/, void* /*event_info*/)
+        Evas_Object* /*obj*/, void* /*event_info*/)
 {
     if (!data)
         return;
@@ -191,7 +197,7 @@ void WebsiteHistoryItemVisitItemsMob::_buttonSelectClicked(void* data,
 }
 
 void WebsiteHistoryItemVisitItemsMob::_buttonDeleteClicked(void* data,
-    Evas_Object* /*obj*/, void* /*event_info*/)
+        Evas_Object* /*obj*/, void* /*event_info*/)
 {
     if (!data)
         return;
@@ -200,7 +206,7 @@ void WebsiteHistoryItemVisitItemsMob::_buttonDeleteClicked(void* data,
 }
 
 Evas_Event_Flags WebsiteHistoryItemVisitItemsMob::_gestureOccured(void *data,
-    void *event_info)
+        void *event_info)
 {
     Evas_Event_Flags flag = EVAS_EVENT_FLAG_NONE;
     if (!data)
@@ -215,18 +221,18 @@ Evas_Event_Flags WebsiteHistoryItemVisitItemsMob::_gestureOccured(void *data,
             return flag;
         if (info->momentum.mx < 0)
             showButtonDelete(
-                visitItemObject->layoutVisitItemObjects.layoutButtonDelete,
-                visitItemObject->layoutVisitItemObjects.boxMain, true);
+                    visitItemObject->layoutVisitItemObjects.layoutButtonDelete,
+                    visitItemObject->layoutVisitItemObjects.boxMain, true);
         else if (info->momentum.mx > 0)
             showButtonDelete(
-                visitItemObject->layoutVisitItemObjects.layoutButtonDelete,
-                visitItemObject->layoutVisitItemObjects.boxMain, false);
+                    visitItemObject->layoutVisitItemObjects.layoutButtonDelete,
+                    visitItemObject->layoutVisitItemObjects.boxMain, false);
     }
     return flag;
 }
 
 void WebsiteHistoryItemVisitItemsMob::showButtonDelete(
-    Evas_Object* layoutButtonDelete, Evas_Object* box, bool show)
+        Evas_Object* layoutButtonDelete, Evas_Object* box, bool show)
 {
     if (evas_object_visible_get(layoutButtonDelete) == show)
         return;
@@ -240,26 +246,32 @@ void WebsiteHistoryItemVisitItemsMob::showButtonDelete(
 }
 
 bool WebsiteHistoryItemVisitItemsMob::contains(
-    WebsiteVisitItemDataPtrConst websiteVisitItemData)
+        WebsiteVisitItemDataPtrConst websiteVisitItemData)
 {
-    if (m_websiteVisitItem.websiteVisitItemData == websiteVisitItemData)
-        return true;
+    for (auto& item : m_websiteVisitItems) {
+        if (item.websiteVisitItemData == websiteVisitItemData)
+            return true;
+    }
     return false;
 }
 
 void WebsiteHistoryItemVisitItemsMob::removeItem(
-    WebsiteVisitItemDataPtrConst websiteVisitItemData)
+        WebsiteVisitItemDataPtrConst websiteVisitItemData)
 {
-    if (m_websiteVisitItem.websiteVisitItemData == websiteVisitItemData) {
-        elm_box_unpack(m_boxMainVertical,
-            m_websiteVisitItem.layoutVisitItemObjects.layout);
-        evas_object_del(m_websiteVisitItem.layoutVisitItemObjects.layout);
-    }
+    for (auto& item : m_websiteVisitItems)
+        if (item.websiteVisitItemData == websiteVisitItemData) {
+            elm_box_unpack(m_boxMainVertical,
+                    item.layoutVisitItemObjects.layout);
+            evas_object_del(item.layoutVisitItemObjects.layout);
+        }
 }
 
-int WebsiteHistoryItemVisitItemsMob::getVisitItemsId()
+std::shared_ptr<std::vector<int>> WebsiteHistoryItemVisitItemsMob::getVisitItemsIds()
 {
-    return m_websiteVisitItem.websiteVisitItemData->historyItem->getId();
+    auto vec = std::make_shared<std::vector<int>>();
+    for (auto& item : m_websiteVisitItems)
+        vec->push_back(item.websiteVisitItemData->historyItem->getId());
+    return vec;
 }
 
 }

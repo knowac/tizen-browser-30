@@ -71,6 +71,46 @@
         </app-control>
         <app-control>
             <operation name="http://tizen.org/appcontrol/operation/view" />
+            <uri name="http" />
+            <mime name="application/x-shockwave-flash" />
+        </app-control>
+        <app-control>
+            <operation name="http://tizen.org/appcontrol/operation/view" />
+            <uri name="http" />
+            <mime name="image/svg+xml" />
+        </app-control>
+        <app-control>
+            <operation name="http://tizen.org/appcontrol/operation/view" />
+            <uri name="http" />
+            <mime name="text/html" />
+        </app-control>
+        <app-control>
+            <operation name="http://tizen.org/appcontrol/operation/view" />
+            <uri name="http" />
+            <mime name="application/xml" />
+        </app-control>
+        <app-control>
+            <operation name="http://tizen.org/appcontrol/operation/view" />
+            <uri name="https" />
+            <mime name="application/x-shockwave-flash" />
+        </app-control>
+        <app-control>
+            <operation name="http://tizen.org/appcontrol/operation/view" />
+            <uri name="https" />
+             <mime name="image/svg+xml" />
+        </app-control>
+        <app-control>
+            <operation name="http://tizen.org/appcontrol/operation/view" />
+            <uri name="https" />
+            <mime name="text/html" />
+        </app-control>
+        <app-control>
+            <operation name="http://tizen.org/appcontrol/operation/view" />
+            <uri name="https" />
+            <mime name="application/xml" />
+        </app-control>
+        <app-control>
+            <operation name="http://tizen.org/appcontrol/operation/view" />
             <mime name="application/x-shockwave-flash" />
         </app-control>
         <app-control>
@@ -85,13 +125,6 @@
             <operation name="http://tizen.org/appcontrol/operation/view" />
             <mime name="application/xml" />
         </app-control>
-        <app-control>
-            <operation name="http://tizen.org/appcontrol/operation/view" />
-            <uri name="browser_shortcut" />
-        </app-control>
-        <app-control>
-            <operation name="http://tizen.org/appcontrol/operation/search" />
-        </app-control>
     </ui-application>
     <privileges>
         <privilege>http://tizen.org/privilege/bookmark.admin</privilege>
@@ -105,7 +138,6 @@
         <privilege>http://tizen.org/privilege/push</privilege>
         <privilege>http://tizen.org/privilege/mediastorage</privilege>
         <privilege>http://tizen.org/privilege/recorder</privilege>
-        <privilege>http://tizen.org/privilege/shortcut</privilege>
         <privilege>http://tizen.org/privilege/externalstorage</privilege>
         <privilege>http://tizen.org/privilege/externalstorage.appdata</privilege>
      </privileges>

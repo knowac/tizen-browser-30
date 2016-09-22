@@ -20,7 +20,6 @@
 #include <map>
 #include <string>
 #include <initializer_list>
-#include <memory>
 
 namespace tizen_browser {
 namespace base_ui {
@@ -61,9 +60,6 @@ private:
     std::map<WPUState, std::string> namesMap;
 
 };
-
-typedef std::shared_ptr<WebPageUIStatesManager> WPUStatesManagerPtr;
-typedef std::shared_ptr<const WebPageUIStatesManager> WPUStatesManagerPtrConst;
 
 } /* namespace base_ui */
 } /* namespace tizen_browser */

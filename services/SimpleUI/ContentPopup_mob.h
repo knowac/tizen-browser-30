@@ -20,6 +20,8 @@
 #include <Evas.h>
 #include <Elementary.h>
 #include <string>
+#include <list>
+#include <memory>
 
 #include "AbstractPopup.h"
 #include "PopupButtons.h"

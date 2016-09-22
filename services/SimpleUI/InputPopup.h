@@ -54,7 +54,6 @@ public:
     void setInput(const std::string &input);
     void setTitle(const std::string &title);
     void setMessage(const std::string &message);
-    void setTip(const std::string& tip);
     void setOkButtonText(const std::string &okButtonText);
     void setCancelButtonText(const std::string &cancelButtonText);
     void setAcceptRightLeft(bool right_left);
@@ -86,7 +85,6 @@ private:
     std::string m_input;
     std::string m_title;
     std::string m_message;
-    std::string m_tip;
     std::string m_ok_button_text;
     std::string m_cancel_button_text;
     std::vector<std::string> m_bad_words;

@@ -1,8 +1,14 @@
 msgid "IDS_BR_POP_NETWORK_ERROR"
 msgstr "Verkkovirhe"
 
+msgid "IDS_BR_BODY_AUTHUSERNAME"
+msgstr "Käyttäjän nimi"
+
 msgid "IDS_BR_BODY_DESTINATIONS_AUTHENTICATION_REQUIRED"
 msgstr "Todennus vaaditaan."
+
+msgid "IDS_BR_BODY_AUTHPASSWORD"
+msgstr "Salasana"
 
 msgid "IDS_BR_HEADER_SECURITY_WARNING"
 msgstr "Suojausvaroitus"
@@ -27,6 +33,12 @@ msgstr "Sivuston suojausvarmenteen kanssa on ongelmia."
 
 msgid "IDS_BR_OPT_ALLOW"
 msgstr "Salli"
+
+msgid "IDS_BR_OPT_VIEW"
+msgstr "Näytä"
+
+msgid "IDS_BR_OPT_CANCEL"
+msgstr "Peruuta"
 
 msgid "IDS_BR_BODY_PS_REQUESTS_YOUR_LOCATION"
 msgstr "%s pyytää sijaintiasi."
@@ -60,18 +72,6 @@ msgstr "Lataa"
 
 msgid "IDS_BR_BODY_THIS_WEBPAGE"
 msgstr "Tämä verkkosivu"
-
-msgid "IDS_BR_BODY_AUTHUSERNAME"
-msgstr "Käyttäjän nimi"
-
-msgid "IDS_BR_BODY_AUTHPASSWORD"
-msgstr "Salasana"
-
-msgid "IDS_BR_OPT_VIEW"
-msgstr "Näytä"
-
-msgid "IDS_BR_OPT_CANCEL"
-msgstr "Peruuta"
 
 msgid "IDS_BR_OPT_SCREEN"
 msgstr "Näyttö"
@@ -109,6 +109,15 @@ msgstr "Peruuta"
 msgid "IDS_BR_BUTTON_MORE"
 msgstr "Muut"
 
+msgid "IDS_TPLATFORM_ACBUTTON_DONE_ABB"
+msgstr "VALMIS"
+
+msgid "IDS_TPLATFORM_ACBUTTON_CANCEL_ABB"
+msgstr "PERUUTA"
+
+msgid "IDS_TPLATFORM_ACBUTTON_DELETE_ABB"
+msgstr "POISTA"
+
 msgid "IDS_BR_BODY_NO_ITEMS"
 msgstr "Ei kohteita"
 
@@ -117,6 +126,9 @@ msgstr "Yhdistä matkapuh.verkkoon"
 
 msgid "IDS_BR_OPT_DO_NOT_SHOW_AGAIN"
 msgstr "Älä näytä uudelleen"
+
+msgid "IDS_BR_SK_OK"
+msgstr "OK"
 
 msgid "IDS_BR_POP_ONLY_HTTP_OR_HTTPS_URLS_CAN_BE_DOWNLOADED"
 msgstr "Voit ladata vain http- tai https-muotoisista URL-osoitteista."
@@ -139,11 +151,17 @@ msgstr "Kopioi linkki"
 msgid "IDS_BR_OPT_COPY_IMAGE"
 msgstr "Kopioi kuva"
 
-msgid "IDS_BR_SK_OK"
-msgstr "OK"
-
 msgid "IDS_BR_OPT_CALL"
 msgstr "Soita"
+
+msgid "IDS_ST_POP_PS_HAS_BEEN_DETECTED"
+msgstr "%s on havaittu."
+
+msgid "IDS_ST_POP_DETECTED_IN_C_PS"
+msgstr "Havaittu kohteessa: %s"
+
+msgid "IDS_ST_HEADER_MALWARE_DETECTED_ABB"
+msgstr "Havaittu haittaohjelma"
 
 msgid "IDS_BR_BUTTON_FAILED"
 msgstr "Epäonn."
@@ -211,11 +229,35 @@ msgstr "P. val."
 msgid "IDS_BR_SK_TABS"
 msgstr "Välilehdet"
 
+msgid "IDS_BR_SK_SAVE_LITE"
+msgstr "Tallenna"
+
+msgid "IDS_BR_SK_SAVE_ABB"
+msgstr "Tall."
+
+msgid "IDS_BR_SK_SAVE"
+msgstr "Tallenna"
+
+msgid "IDS_BR_SK_PREVIOUS"
+msgstr "Edellinen"
+
+msgid "IDS_BR_SK_NEXT"
+msgstr "Seuraava"
+
 msgid "IDS_BR_SK_MENU"
 msgstr "Valikko"
 
 msgid "IDS_BR_SK_DELETE_ABB"
 msgstr "Poista"
+
+msgid "IDS_BR_SK_DELETE"
+msgstr "Poista"
+
+msgid "IDS_BR_SK_CLEAR"
+msgstr "Tyhjennä"
+
+msgid "IDS_BR_SK_BACK"
+msgstr "Takaisin"
 
 msgid "IDS_BR_SK3_CREATE_FOLDER"
 msgstr "Luo kansio"
@@ -274,6 +316,15 @@ msgstr "Joitakin verkkosivuja ei ehkä voi leikata tarkasti."
 msgid "IDS_BR_POP_YOUR_HISTORY_WILL_BE_CLEARED"
 msgstr "Historia tyhjennetään."
 
+msgid "IDS_BR_POP_WI_FI_CONNECTION_REQUIRED_CONNECT_TO_WI_FI_NETWORK_AND_TRY_AGAIN"
+msgstr "Wi-Fi-yhteys vaaditaan. Muodosta Wi-Fi-verkkoyhteys ja yritä uudelleen."
+
+msgid "IDS_BR_POP_URL_NOT_FOUND"
+msgstr "URL-osoitetta ei löydy."
+
+msgid "IDS_BR_POP_URL"
+msgstr "URL-osoite"
+
 msgid "IDS_BR_POP_UNABLE_TO_VIEW_THE_CERTIFICATE_THE_PAGE_INFORMATION_HAS_BEEN_CHANGED"
 msgstr "Varmennetta ei voi näyttää. Sivutiedot ovat muuttuneet."
 
@@ -319,11 +370,23 @@ msgstr "Suojauskäytäntö estää Internet-selaimen käytön."
 msgid "IDS_BR_POP_SAVED_TO_BOOKMARKS"
 msgstr "Tallennettu kirjanmerkkeihin."
 
+msgid "IDS_BR_POP_SAVED"
+msgstr "Tallennettu."
+
 msgid "IDS_BR_POP_RENAME_TAG"
 msgstr "Nimeä tunnus uudelleen"
 
+msgid "IDS_BR_POP_REMOVED"
+msgstr "Poistettu."
+
 msgid "IDS_BR_POP_PD_PROFILES_WILL_BE_DELETED"
 msgstr "%d profiilia poistetaan."
+
+msgid "IDS_BR_POP_PD_ITEMS_WILL_BE_DELETED"
+msgstr "%d kohdetta poistetaan."
+
+msgid "IDS_BR_POP_PD_ITEMS_SELECTED"
+msgstr "%d kohdetta valittu."
 
 msgid "IDS_BR_POP_PAGES_THAT_YOU_VIEW_WILL_NOT_APPEAR_IN_YOUR_BROWSER_HISTORY_OR_SEARCH_HISTORY_AND_THEY_WILL_NOT_LEAVE_OTHER_TRACES_LIKE_COOKIES"
 msgstr "Katsomasi sivut eivät näy selain- tai hakuhistoriassa eivätkä ne jätä muita jälkiä, kuten evästeitä."
@@ -352,20 +415,53 @@ msgstr "%1$s havaittu.\nHavaittu kohteessa: %2$s\n\nOsa sisällöstä on estetty
 msgid "IDS_BR_POP_P1SS_HAS_BEEN_DETECTED_DETECTED_IN_C_P2SS_OPEN_WEBPAGE_ANYWAY_Q"
 msgstr "%1$s havaittu.\nHavaittu kohteessa: %2$s\n\nAvataanko verkkosivu silti?"
 
+msgid "IDS_BR_POP_NO_ITEMS_SELECTED"
+msgstr "Ei valittuja kohteita."
+
 msgid "IDS_BR_POP_NOT_ENOUGH_MEMORY_DELETE_SOME_ITEMS_AND_TRY_AGAIN"
 msgstr "Muisti ei riitä. Poista joitain kohteita ja yritä uudelleen."
+
+msgid "IDS_BR_POP_NOT_ENOUGH_MEMORY"
+msgstr "Ei tarpeeksi muistia."
 
 msgid "IDS_BR_POP_NOT_ALLOWED"
 msgstr "Ei sallittu."
 
+msgid "IDS_BR_POP_NEVER"
+msgstr "Ei koskaan"
+
 msgid "IDS_BR_POP_MOVED"
 msgstr "Siirretty."
+
+msgid "IDS_BR_POP_MOBILE_DATA_IS_DISABLED_CONNECT_TO_WI_FI_NETWORK_INSTEAD_OR_ENABLE_MOBILE_DATA_AND_TRY_AGAIN"
+msgstr "Mobiilidata on poistettu käytöstä. Muodosta sen sijaan yhteys Wi-Fi-verkon kautta tai ota mobiilidata käyttöön ja yritä uudelleen."
+
+msgid "IDS_BR_POP_LOADING_PLEASE_WAIT_ING"
+msgstr "Ladataan. Odota..."
+
+msgid "IDS_BR_POP_INVALID_URL"
+msgstr "Virheellinen URL-osoite"
+
+msgid "IDS_BR_POP_FAIL"
+msgstr "Epäonnistui."
 
 msgid "IDS_BR_POP_ENTER_URL"
 msgstr "Kirjoita URL-osoite."
 
+msgid "IDS_BR_POP_ENTER_TITLE_ABB"
+msgstr "Kirjoita otsikko"
+
 msgid "IDS_BR_POP_ENTER_BOOKMARK_NAME"
 msgstr "Anna kirjanmerkin nimi."
+
+msgid "IDS_BR_POP_DO_NOT_SHOW_AGAIN"
+msgstr "Älä näytä uudestaan"
+
+msgid "IDS_BR_POP_DOWNLOADCOMPLETE"
+msgstr "Lataus valmis"
+
+msgid "IDS_BR_POP_DISABLED"
+msgstr "Pois."
 
 msgid "IDS_BR_POP_DIALING_ING_VZW"
 msgstr "Dialing..."
@@ -391,6 +487,9 @@ msgstr "Poistetaanko tämän sivuston kirjautumistiedot?"
 msgid "IDS_BR_POP_DELETE_SIGN_IN_DATA_FOR_PD_WEBSITES_Q"
 msgstr "Poistetaanko %d sivuston kirjautumistiedot?"
 
+msgid "IDS_BR_POP_DELETE_Q"
+msgstr "Poistetaanko?"
+
 msgid "IDS_BR_POP_DELETE_PD_SAVED_WEB_PAGES_Q"
 msgstr "Poistetaanko %d tallennettua verkkosivua?"
 
@@ -406,8 +505,14 @@ msgstr "Poistetaanko kaikki sivustojen tiedot ja sijaintiluvat?"
 msgid "IDS_BR_POP_DELETEHISTORYQUESTION"
 msgstr "Poistetaanko sivuhistoria?"
 
+msgid "IDS_BR_POP_DELETED"
+msgstr "Poistettu."
+
 msgid "IDS_BR_POP_CONTINUE"
 msgstr "Jatka"
+
+msgid "IDS_BR_POP_CLOSE_APPLICATION_Q"
+msgstr "Suljetaanko sovellus?"
 
 msgid "IDS_BR_POP_CLOSE_APPLICATION"
 msgstr "Sulje sovellus"
@@ -420,6 +525,12 @@ msgstr "Tyhjennetäänkö historia?"
 
 msgid "IDS_BR_POP_BOOKMARK_REMOVED"
 msgstr "Kirjanmerkki poistettu."
+
+msgid "IDS_BR_POP_BOOKMARK_ADDED"
+msgstr "Kirjanmerkki lisätty."
+
+msgid "IDS_BR_POP_AUTOMATIC_BRIGHTNESS"
+msgstr "Automaattinen kirkkaus"
 
 msgid "IDS_BR_POP_ALREADY_EXISTS"
 msgstr "On jo olemassa."
@@ -445,6 +556,15 @@ msgstr "Salli sivujen tallentaa ja lukea evästeitä."
 msgid "IDS_BR_POP_ADDED_TO_BOOKMARKS"
 msgstr "Lisätty kirjanmerkkeihin."
 
+msgid "IDS_BR_POP_ACCOUNT"
+msgstr "Tili"
+
+msgid "IDS_BR_POP_1_ITEM_WILL_BE_DELETED"
+msgstr "1 kohde poistetaan."
+
+msgid "IDS_BR_POP_1_ITEM_SELECTED"
+msgstr "1 kohde valittu."
+
 msgid "IDS_BR_OPT_WINDOWS"
 msgstr "Ikkunat"
 
@@ -454,20 +574,38 @@ msgstr "Näytä varmenne"
 msgid "IDS_BR_OPT_UNICODE_HUTF_8"
 msgstr "Unicode (UTF-8)"
 
+msgid "IDS_BR_OPT_TRANSLATE"
+msgstr "Käännä"
+
 msgid "IDS_BR_OPT_THUMBNAIL_VIEW"
 msgstr "Pikkukuvanäkymä"
 
 msgid "IDS_BR_OPT_TEXT_ENCODING"
 msgstr "Tekstin koodaus"
 
+msgid "IDS_BR_OPT_STOP"
+msgstr "Lopeta"
+
 msgid "IDS_BR_OPT_SHRINK_TEXT"
 msgstr "Kutista teksti"
+
+msgid "IDS_BR_OPT_SHOW"
+msgstr "Näytä"
+
+msgid "IDS_BR_OPT_SHARE"
+msgstr "Jaa"
 
 msgid "IDS_BR_OPT_SETTINGS_ABB"
 msgstr "Asetukset"
 
+msgid "IDS_BR_OPT_SETTINGS"
+msgstr "Asetukset"
+
 msgid "IDS_BR_OPT_SEND_MESSAGE_VODA"
 msgstr "Lähetä viesti"
+
+msgid "IDS_BR_OPT_SEND_EMAIL"
+msgstr "Lähetä sähköpostiviesti"
 
 msgid "IDS_BR_OPT_SENDURLVIA_EMAIL"
 msgstr "Sähköposti"
@@ -486,6 +624,12 @@ msgstr "Valintatila"
 
 msgid "IDS_BR_OPT_SELECTED"
 msgstr "Valittu"
+
+msgid "IDS_BR_OPT_SELECT"
+msgstr "Valitse"
+
+msgid "IDS_BR_OPT_SD_CARD"
+msgstr "SD-kort."
 
 msgid "IDS_BR_OPT_SAVE_TO_KEEPIT_ABB"
 msgstr "Tallenna KeepItiin"
@@ -514,8 +658,14 @@ msgstr "Järj. uudelleen"
 msgid "IDS_BR_OPT_RENAME_FOLDER"
 msgstr "Nimeä kansio uudelleen"
 
+msgid "IDS_BR_OPT_RENAME"
+msgstr "Nimeä uudelleen"
+
 msgid "IDS_BR_OPT_REMOVE"
 msgstr "Poista"
+
+msgid "IDS_BR_OPT_REFRESH"
+msgstr "Päivitä"
 
 msgid "IDS_BR_OPT_READER_MODE_TTS"
 msgstr "Lukutila"
@@ -535,8 +685,14 @@ msgstr "Offline-sivut"
 msgid "IDS_BR_OPT_NEW_WINDOW"
 msgstr "Uusi ikkuna"
 
+msgid "IDS_BR_OPT_MOVE"
+msgstr "Siirrä"
+
 msgid "IDS_BR_OPT_MINIMISE"
 msgstr "Pienennä"
+
+msgid "IDS_BR_OPT_MESSAGES"
+msgstr "Viestit"
 
 msgid "IDS_BR_OPT_MEDIUM_M_QUALITY"
 msgstr "Normaali"
@@ -549,6 +705,9 @@ msgstr "Sijainti-toiminnon käyttöoikeudet"
 
 msgid "IDS_BR_OPT_LOAD_IMAGES"
 msgstr "Lataa kuvia"
+
+msgid "IDS_BR_OPT_LIST_VIEW"
+msgstr "Luettelonäkymä"
 
 msgid "IDS_BR_OPT_LATIN_1_HISO_8859_1"
 msgstr "Latinalainen-1 (ISO-8859-1)"
@@ -565,6 +724,9 @@ msgstr "Japanil. (ISO-2022-JP)"
 msgid "IDS_BR_OPT_JAPANESE_HEUC_JP"
 msgstr "Japanilainen (EUC-JP)"
 
+msgid "IDS_BR_OPT_I_AGREE"
+msgstr "Hyväksyn."
+
 msgid "IDS_BR_OPT_INCOGNITO_MODE_ABB"
 msgstr "Inkognito-tila"
 
@@ -579,6 +741,9 @@ msgstr "Alkunäyttö pikavalintana"
 
 msgid "IDS_BR_OPT_HIGH_M_QUALITY"
 msgstr "Korkea"
+
+msgid "IDS_BR_OPT_HELP"
+msgstr "Ohje"
 
 msgid "IDS_BR_OPT_GOFORWARD"
 msgstr "Seuraava"
@@ -625,6 +790,9 @@ msgstr "Poista Pieni datankäyttö käyt."
 msgid "IDS_BR_OPT_DISABLED"
 msgstr "Poistettu käytöstä"
 
+msgid "IDS_BR_OPT_DEVICE"
+msgstr "Laite"
+
 msgid "IDS_BR_OPT_DELETE_SAVED_PAGE_ABB"
 msgstr "Poista tallennettu sivu"
 
@@ -658,6 +826,9 @@ msgstr "Kiina (Big5)"
 msgid "IDS_BR_OPT_CACHE"
 msgstr "Välimuisti"
 
+msgid "IDS_BR_OPT_BOOKMARK"
+msgstr "Kirjanmerkki"
+
 msgid "IDS_BR_OPT_ADD_TO_WEB_CLIP"
 msgstr "Lisää Web-leikkeeseen"
 
@@ -678,6 +849,12 @@ msgstr "Lisää kirjanm."
 
 msgid "IDS_BR_OPT_ADD_BOOKMARK"
 msgstr "Lisää suosikki"
+
+msgid "IDS_BR_OPT_ADDED"
+msgstr "Lisätty."
+
+msgid "IDS_BR_OPT_ADD"
+msgstr "Lisää"
 
 msgid "IDS_BR_OPT1_EXTENSION"
 msgstr "Laajennus"
@@ -748,6 +925,9 @@ msgstr "Lataa syötesisältöä"
 msgid "IDS_BR_MBODY_DELETE_SIGN_IN_DATA"
 msgstr "Poista kirjautumistiedot"
 
+msgid "IDS_BR_MBODY_DEFAULT_DOWNLOAD_STORAGE"
+msgstr "Oletuslataustallennustila"
+
 msgid "IDS_BR_MBODY_DATA_SAVING_STATISTICS"
 msgstr "Tietojen tallennustilastot"
 
@@ -790,6 +970,9 @@ msgstr "Kirjanmerkkejä ei voi siirtää"
 msgid "IDS_BR_HEADER_SITE_NOT_TRUSTED_ABB"
 msgstr "Sivusto ei ole luotettu"
 
+msgid "IDS_BR_HEADER_SIGN_IN_TO_SAMSUNG_ACCOUNT"
+msgstr "Kirjaudu Samsung-tilille"
+
 msgid "IDS_BR_HEADER_SET_HOMEPAGE_ABB"
 msgstr "Aseta kotisivu"
 
@@ -826,11 +1009,17 @@ msgstr "Ponnahdusikkuna estetty"
 msgid "IDS_BR_HEADER_POPULAR_WEBSITES_ABB"
 msgstr "Suositut sivustot"
 
+msgid "IDS_BR_HEADER_PD_SELECTED_ABB"
+msgstr "%d valittu"
+
 msgid "IDS_BR_HEADER_ORGANISATION_C_ABB"
 msgstr "Organisaatio:"
 
 msgid "IDS_BR_HEADER_ORGANISATIONAL_UNIT_C"
 msgstr "Organisaatioyksikkö:"
+
+msgid "IDS_BR_HEADER_NO_NETWORK_CONNECTION"
+msgstr "Ei verkkoyhteyttä"
 
 msgid "IDS_BR_HEADER_NEWER_M_INTERNET_HISTORY_ABB"
 msgstr "Newer"
@@ -847,11 +1036,17 @@ msgstr "HTML5-laajennus"
 msgid "IDS_BR_HEADER_FORM_DATA"
 msgstr "Lomaketiedot"
 
+msgid "IDS_BR_HEADER_FOLDER"
+msgstr "Kansio"
+
 msgid "IDS_BR_HEADER_EXPIRES_ON_C"
 msgstr "Vanhentuu:"
 
 msgid "IDS_BR_HEADER_ENABLE_WEB_SIGN_IN"
 msgstr "Ota verkkokirjautuminen käyttöön"
+
+msgid "IDS_BR_HEADER_EDIT_PROFILE"
+msgstr "Muokkaa profiilia"
 
 msgid "IDS_BR_HEADER_EDIT_BOOKMARK"
 msgstr "Muokkaa kirjanmerkkiä"
@@ -889,8 +1084,14 @@ msgstr "Kaistanleveyden hallinta"
 msgid "IDS_BR_HEADER_ADVANCEDCERTIFICATES"
 msgstr "Varmenteet"
 
+msgid "IDS_BR_BUTTON_SET"
+msgstr "Aseta"
+
 msgid "IDS_BR_BUTTON_RESET_ABB"
 msgstr "Palauta"
+
+msgid "IDS_BR_BUTTON_NOT_NOW"
+msgstr "Ei nyt"
 
 msgid "IDS_BR_BUTTON_HOMEPAGE_ABB"
 msgstr "Kotisivu"
@@ -898,11 +1099,35 @@ msgstr "Kotisivu"
 msgid "IDS_BR_BUTTON_FIND_ABB"
 msgstr "Etsi"
 
+msgid "IDS_BR_BUTTON_ENABLE_ABB"
+msgstr "Ota käytt."
+
+msgid "IDS_BR_BUTTON_EDIT"
+msgstr "Muokkaa"
+
+msgid "IDS_BR_BUTTON_CONTINUE_ABB"
+msgstr "Jatka"
+
+msgid "IDS_BR_BUTTON_CONTINUE"
+msgstr "Jatka"
+
+msgid "IDS_BR_BUTTON_CLOSE"
+msgstr "Sulje"
+
+msgid "IDS_BR_BUTTON_CANCEL_ABB"
+msgstr "Peruuta"
+
+msgid "IDS_BR_BUTTON_CANCEL"
+msgstr "Peruuta"
+
 msgid "IDS_BR_BUTTON_BACK_ABB"
 msgstr "Takaisin"
 
 msgid "IDS_BR_BUTTON_ALWAYS_SHOW_ABB"
 msgstr "Näytä aina"
+
+msgid "IDS_BR_BUTTON_ALLOW"
+msgstr "Salli"
 
 msgid "IDS_BR_BUTTON2_WEB_PORTAL"
 msgstr "Verkko-\nportaali"
@@ -927,6 +1152,9 @@ msgstr "Siirry historiaan"
 
 msgid "IDS_BR_BUTTON2_ENTERTAINMENT"
 msgstr "Viihde"
+
+msgid "IDS_BR_BODY_YESTERDAY"
+msgstr "Eilen"
 
 msgid "IDS_BR_BODY_WINDOW_MANAGER"
 msgstr "Ikkunoiden hallinta"
@@ -955,6 +1183,9 @@ msgstr "Käytä koko näytön tilaa tilarivin piilottamiseksi."
 msgid "IDS_BR_BODY_USE_A_PREDICTION_SERVICE_TO_DISPLAY_RELATED_QUERIES_AND_POPULAR_WEBSITES_IN_THE_ADDRESS_BAR_AS_YOU_TYPE"
 msgstr "Näytä aiheeseen liittyvät kyselyt ja suositut sivustot osoiterivillä jo kirjoitusvaiheessa käyttämällä ennakointipalvelua."
 
+msgid "IDS_BR_BODY_URL"
+msgstr "URL-osoite"
+
 msgid "IDS_BR_BODY_UPPER_FOLDER_T_TALKBACK"
 msgstr "Yläkansio"
 
@@ -970,6 +1201,12 @@ msgstr "Verkkosivua ei voi näyttää. Palvelin ei vastaa."
 msgid "IDS_BR_BODY_TOWN_CITY_COUNTY_ABB"
 msgstr "Kaupunki/maakunta"
 
+msgid "IDS_BR_BODY_TODAY"
+msgstr "Tänään"
+
+msgid "IDS_BR_BODY_TITLE"
+msgstr "Otsikko"
+
 msgid "IDS_BR_BODY_THIS_SITE_IS_USING_PS"
 msgstr "Tämä sivusto käyttää sivustoa %s."
 
@@ -984,6 +1221,9 @@ msgstr "Tämä kirjanmerkki poistetaan."
 
 msgid "IDS_BR_BODY_THE_SELECTED_PERSONAL_DATA_WILL_BE_DELETED"
 msgstr "Valitut henkilökohtaiset tiedot poistetaan."
+
+msgid "IDS_BR_BODY_THE_MAXIMUM_NUMBER_OF_CHARACTERS_HPD_HAS_BEEN_EXCEEDED"
+msgstr "Merkkien enimmäismäärä (%d) on ylitetty."
 
 msgid "IDS_BR_BODY_TEXT_FIELD_T_TTS"
 msgstr "Tekstikenttä"
@@ -1009,11 +1249,17 @@ msgstr "Synkronoi kirjanmerkit"
 msgid "IDS_BR_BODY_STREET_ADDRESS_PO_BOX_C_O_ETC_ABB"
 msgstr "Lähiosoite, postilokero, c/o, jne"
 
+msgid "IDS_BR_BODY_STREAMING"
+msgstr "Suoratoisto"
+
 msgid "IDS_BR_BODY_STORED_DATA"
 msgstr "Tallennetut tiedot"
 
 msgid "IDS_BR_BODY_SPLIT_BAR_HANDLE"
 msgstr "Jakopalkkikahva"
+
+msgid "IDS_BR_BODY_SMALL"
+msgstr "Pieni"
 
 msgid "IDS_BR_BODY_SIGN_IN_TO_YOUR_SAMSUNG_ACCOUNT_TO_ACCESS_THE_BOOKMARKS_AND_TABS_ON_YOUR_OTHER_DEVICES"
 msgstr "Kirjaudu Samsung-tilillesi muissa laitteissa olevien kirjanmerkkien ja välilehtien käyttöä varten."
@@ -1033,6 +1279,9 @@ msgstr "Määritä verkkolomakkeen automaattinen täyttöteksti."
 msgid "IDS_BR_BODY_SET_CURRENT_PAGE_AS_HOMEPAGE"
 msgstr "Aseta nykyinen sivu alkusivuksi"
 
+msgid "IDS_BR_BODY_SETTINGS"
+msgstr "Asetukset"
+
 msgid "IDS_BR_BODY_SELECT_FOLDER"
 msgstr "Valitse kansio"
 
@@ -1045,6 +1294,9 @@ msgstr "Hakukenttä"
 msgid "IDS_BR_BODY_SEARCH_AND_URL_SUGGESTIONS"
 msgstr "Haku- ja URL-osoite-ehdotukset"
 
+msgid "IDS_BR_BODY_SEARCH"
+msgstr "Etsi"
+
 msgid "IDS_BR_BODY_SCREEN_AND_TEXT"
 msgstr "Näyttö ja teksti"
 
@@ -1053,6 +1305,9 @@ msgstr "Tallenna Web-sivustojen käyttäjänimet ja salasanat."
 
 msgid "IDS_BR_BODY_SAVE_LINK"
 msgstr "Tallenna linkki"
+
+msgid "IDS_BR_BODY_RSS_SEARCH_RESULTS"
+msgstr "Hakutulokset"
 
 msgid "IDS_BR_BODY_RESTORE_DEFAULT_SETTINGS_Q"
 msgstr "Palautetaanko oletusasetukset?"
@@ -1087,6 +1342,12 @@ msgstr "Valintanappi"
 msgid "IDS_BR_BODY_PS_BOOKMARK_WILL_BE_DELETED"
 msgstr "Kirjanmerkki %s poistetaan."
 
+msgid "IDS_BR_BODY_PROFILE"
+msgstr "Profiili"
+
+msgid "IDS_BR_BODY_PROCESSING_ING"
+msgstr "Käsitellään..."
+
 msgid "IDS_BR_BODY_PRIVACY"
 msgstr "Yksityisyys"
 
@@ -1099,8 +1360,20 @@ msgstr "Paina valikkonäppäintä."
 msgid "IDS_BR_BODY_POSTCODE_ABB"
 msgstr "Postinumero"
 
+msgid "IDS_BR_BODY_PHONE_NUMBER_ABB"
+msgstr "Puhelin. n."
+
+msgid "IDS_BR_BODY_PHONE"
+msgstr "Puhelin"
+
 msgid "IDS_BR_BODY_PD_POP_UPS_BLOCKED_ABB"
 msgstr "%d ponn.ikk. estetty."
+
+msgid "IDS_BR_BODY_PD_ITEMS_WILL_BE_DELETED"
+msgstr "%d kohdetta poistetaan."
+
+msgid "IDS_BR_BODY_PASSWORD"
+msgstr "Salasana"
 
 msgid "IDS_BR_BODY_PAGE_LOADED_T_TTS"
 msgstr "Sivu ladattu"
@@ -1126,8 +1399,14 @@ msgstr "Tarvittaessa"
 msgid "IDS_BR_BODY_ONLY_VIA_WI_FI_ABB"
 msgstr "Vain Wi-Fin kautta"
 
+msgid "IDS_BR_BODY_ON"
+msgstr "Päälle"
+
 msgid "IDS_BR_BODY_OLDER"
 msgstr "Vanhempi"
+
+msgid "IDS_BR_BODY_OFF"
+msgstr "Pois"
 
 msgid "IDS_BR_BODY_NO_WINDOWS"
 msgstr "Ikkunoita ei ole"
@@ -1141,8 +1420,17 @@ msgstr "Otsikko puuttuu"
 msgid "IDS_BR_BODY_NO_SAVED_PAGES"
 msgstr "Ei tallennettuja sivuja"
 
+msgid "IDS_BR_BODY_NO_RESULTS_FOUND"
+msgstr "Tuloksia ei löytynyt."
+
+msgid "IDS_BR_BODY_NO_HISTORIES"
+msgstr "Historiaa ei ole"
+
 msgid "IDS_BR_BODY_NO_BOOKMARKS"
 msgstr "Ei kirjanmerkkejä"
+
+msgid "IDS_BR_BODY_NOTIFICATIONS"
+msgstr "Ilmoitukset"
 
 msgid "IDS_BR_BODY_NORMAL"
 msgstr "Normaali"
@@ -1158,6 +1446,9 @@ msgstr "Useimmin katsotut sivustot"
 
 msgid "IDS_BR_BODY_MOBILE_VIEW"
 msgstr "Mobiilinäkymä"
+
+msgid "IDS_BR_BODY_MEDIUM"
+msgstr "Keskikokoinen"
 
 msgid "IDS_BR_BODY_LOCATION_M_INFORMATION"
 msgstr "Sijainti"
@@ -1183,6 +1474,9 @@ msgstr "Internet"
 msgid "IDS_BR_BODY_IMPROVE_PERFORMANCE_WHEN_LOADING_PAGES"
 msgstr "Paranna suorituskykyä sivuja ladattaessa."
 
+msgid "IDS_BR_BODY_IMAGES"
+msgstr "Kuvat"
+
 msgid "IDS_BR_BODY_HOMEPAGE"
 msgstr "Kotisivu"
 
@@ -1192,11 +1486,20 @@ msgstr "Piilota osoiterivi sivua alaspäin vieritettäessä."
 msgid "IDS_BR_BODY_GENERAL_M_SETTINGS"
 msgstr "Yleiset"
 
+msgid "IDS_BR_BODY_FULL_SCREEN"
+msgstr "Koko näyttö"
+
 msgid "IDS_BR_BODY_FULL_NAME_ABB"
 msgstr "Koko nimi"
 
 msgid "IDS_BR_BODY_FORCE_ZOOM_ABB"
 msgstr "Pakota zoomaus"
+
+msgid "IDS_BR_BODY_FONT_SIZE"
+msgstr "Kirjasinkoko"
+
+msgid "IDS_BR_BODY_FOLDER_NAME"
+msgstr "Kansion nimi"
 
 msgid "IDS_BR_BODY_FLAT_SUITE_UNIT_BUILDING_FLOOR_ETC_ABB"
 msgstr "Asunto, sviitti, yksikkö, rakennus, kerros jne."
@@ -1213,6 +1516,24 @@ msgstr "Anna nimesi."
 msgid "IDS_BR_BODY_ENTER_TOWN_CITY_COUNTY_ABB"
 msgstr "Anna kaupunki/maakunta."
 
+msgid "IDS_BR_BODY_ENTER_POSTCODE_ABB"
+msgstr "Anna postinumero."
+
+msgid "IDS_BR_BODY_ENTER_POSTCODE"
+msgstr "Anna postinumero."
+
+msgid "IDS_BR_BODY_ENTER_PHONE_NUMBER"
+msgstr "Syötä puhelinnumero."
+
+msgid "IDS_BR_BODY_ENTER_NAME"
+msgstr "Kirjoita nimi."
+
+msgid "IDS_BR_BODY_ENTER_FOLDER_NAME"
+msgstr "Kirjoita kansion nimi."
+
+msgid "IDS_BR_BODY_ENTER_EMAIL_ADDRESS"
+msgstr "Anna sähköpostiosoite."
+
 msgid "IDS_BR_BODY_ENTER_COUNTRY_REGION_ABB"
 msgstr "Anna maa/alue."
 
@@ -1224,6 +1545,12 @@ msgstr "Ota sijainti käyttöön"
 
 msgid "IDS_BR_BODY_ENABLE_JAVASCRIPT"
 msgstr "Ota JavaScript käyttöön"
+
+msgid "IDS_BR_BODY_EMAIL_ADDRESS"
+msgstr "Sähköpostiosoite"
+
+msgid "IDS_BR_BODY_DOWNLOADING_ING"
+msgstr "Ladataan..."
 
 msgid "IDS_BR_BODY_DOUBLE_TAP_TO_VIEW_CERTIFICATE_TTS"
 msgstr "Näytä varmenne kaksoisnapauttamalla."
@@ -1264,6 +1591,9 @@ msgstr "Näytä suojausvaroitusponnahdusikkunat."
 msgid "IDS_BR_BODY_DISPLAY_IMAGES_ON_WEB_PAGES"
 msgstr "Näytä kuvat Web-sivuilla."
 
+msgid "IDS_BR_BODY_DEVELOPER_MODE"
+msgstr "Kehittäjätila"
+
 msgid "IDS_BR_BODY_DESKTOP_VIEW"
 msgstr "Työpöytänäkymä"
 
@@ -1278,6 +1608,9 @@ msgstr "Oletustallennuspaikka"
 
 msgid "IDS_BR_BODY_DEFAULT_PAGE_ABB"
 msgstr "Oletussivu"
+
+msgid "IDS_BR_BODY_DEFAULT"
+msgstr "Oletus"
 
 msgid "IDS_BR_BODY_DATA_USAGE_REDUCED_BY_P1SDP_HP2SD_KB_OF_P3SD_KB_RECEIVED_TAP_HERE_TO_RESET_STATISTICS"
 msgstr "Datankäyttöä vähennetty %1$d % (%2$d kt / vastaanotettu %3$d kt). Nollaa tilastot napauttamalla tätä."
@@ -1342,6 +1675,9 @@ msgstr "Muuta tekstin kokoa lukemisen helpottamiseksi, etenkin, kun tarkastelet 
 msgid "IDS_BR_BODY_BOOKMARK_REMINDER_ABB"
 msgstr "Kirjanmerkkimuistutus"
 
+msgid "IDS_BR_BODY_BOOKMARKS"
+msgstr "Kirjanmerkit"
+
 msgid "IDS_BR_BODY_BLOCK_POP_UPS_ON_WEB_PAGES"
 msgstr "Estä verkkosivujen ponnahdusikkunat."
 
@@ -1390,6 +1726,9 @@ msgstr "Salli, että %s näyttää ilmoitukset"
 msgid "IDS_BR_BODY_ALLOWS_SITES_TO_SAVE_AND_READ_COOKIE_DATA"
 msgstr "Anna sivustojen tallentaa ja lukea evästetietoja."
 
+msgid "IDS_BR_BODY_ALL"
+msgstr "Kaikki"
+
 msgid "IDS_BR_BODY_AFTER_YOU_VISIT_WEBPAGES_THE_PAGES_YOU_HAVE_VISITED_THE_MOST_WILL_BE_SHOWN_HERE"
 msgstr "Kun olet käynyt verkkosivuilla, sivut, joilla olet käynyt useimmin, näytetään täällä."
 
@@ -1417,6 +1756,9 @@ msgstr "Lisäasetukset"
 msgid "IDS_BR_BODY_ADD_TO_CONTACT"
 msgstr "Lisää yhteystietoon"
 
+msgid "IDS_BR_BODY_ADD_TO"
+msgstr "Lisää"
+
 msgid "IDS_BR_BODY_ADD_THIS_WEBSITE_TO_BOOKMARKS_TO_OPEN_IT_FASTER_ABB"
 msgstr "Lisää sivusto kirjanmerkkeihin ja avaa nopeammin."
 
@@ -1426,17 +1768,29 @@ msgstr "Osoiterivi 2"
 msgid "IDS_BR_BODY_ADDRESS_LINE_1_ABB"
 msgstr "Osoiterivi 1"
 
+msgid "IDS_BR_BODY_ADDDETAILSVIEW_TAGS"
+msgstr "Tunnisteet"
+
+msgid "IDS_BR_BODY_ADDBOOKMARKURL"
+msgstr "URL-osoite"
+
 msgid "IDS_BR_BODY_ACCEPT_COOKIES"
 msgstr "Hyväksy evästeet"
 
 msgid "IDS_BR_BODY_1_PROFILE_WILL_BE_DELETED"
 msgstr "1 profiili poistetaan."
 
+msgid "IDS_BR_BODY_1_ITEM_WILL_BE_DELETED"
+msgstr "1 kohde poistetaan."
+
 msgid "IDS_BR_ACBUTTON_TABS_ABB"
 msgstr "VÄLIL."
 
 msgid "IDS_BR_TPOP_STARTING_DOWNLOAD_ING"
 msgstr "Lataus käynnistetään..."
+
+msgid "IDS_BR_TPOP_MAXIMUM_NUMBER_OF_CHARACTERS_HPD_REACHED"
+msgstr "Merkkien enimmäismäärä (%d) on saavutettu."
 
 msgid "IDS_BR_TPOP_FOLDER_RENAMED"
 msgstr "Kansio nimetty uudelleen."
@@ -1453,8 +1807,14 @@ msgstr "Per."
 msgid "IDS_BR_SBODY_SET_THE_DEVICE_TO_SHOW_THE_FULL_WEBPAGE_ON_THE_SCREEN_WHEN_IT_IS_LOADED_WITHOUT_NEEDING_TO_SCROLL"
 msgstr "Määritä laite näyttämään näytössä koko verkkosivu, kun se on latautunut, tarvitsematta vierittää sitä."
 
+msgid "IDS_BR_POP_UNSUPPORTMEDIATYPE"
+msgstr "Mediatyyppiä ei tueta."
+
 msgid "IDS_BR_POP_UNABLE_TO_RUN_INTERNET_LOW_BATTERY"
 msgstr "Internetiä ei voi käyttää. Akun virta on vähissä."
+
+msgid "IDS_BR_POP_UNABLE_TO_CONNECT_TO_MOBILE_NETWORKS_WHILE_FLIGHT_MODE_IS_ENABLED_CONNECT_TO_WI_FI_NETWORK_INSTEAD_OR_DISABLE_FLIGHT_MODE_AND_TRY_AGAIN"
+msgstr "Matkapuhelinverkkoihin ei voi ottaa yhteyttä, kun lentotila on käytössä. Muodosta sen sijaan yhteys Wi-Fi-verkon kautta tai poista lentotila käytöstä ja yritä uudelleen."
 
 msgid "IDS_BR_POP_THE_DOWNLOAD_HAS_BEEN_STOPPED_AND_THE_DOWNLOADED_DATA_WILL_BE_DELETED"
 msgstr "Lataus on pysäytetty, ja ladatut tiedot poistetaan."
@@ -1465,8 +1825,20 @@ msgstr "Search completed"
 msgid "IDS_BR_POP_READY"
 msgstr "Valmis"
 
+msgid "IDS_BR_POP_INSTALL_SUCCESS"
+msgstr "Asennus valmis."
+
+msgid "IDS_BR_POP_INSTALLATION_FAILED"
+msgstr "Asennus epäonnistui."
+
 msgid "IDS_BR_POP_INFORM_MEMORY_ERROR"
 msgstr "Muistivirhe"
+
+msgid "IDS_BR_POP_DELETING_ING"
+msgstr "Poistetaan..."
+
+msgid "IDS_BR_POP_DATA_ROAMING_IS_DISABLED_CONNECT_TO_WI_FI_NETWORK_INSTEAD_OR_ENABLE_DATA_ROAMING_AND_TRY_AGAIN"
+msgstr "Dataverkkovierailu on poistettu käytöstä. Muodosta sen sijaan yhteys Wi-Fi-verkon kautta tai ota dataverkkovierailu käyttöön ja yritä uudelleen."
 
 msgid "IDS_BR_POP_DATA_ROAMING_IS_DISABLED_CONNECT_TO_A_WI_FI_NETWORK_OR_ENABLE_DATA_ROAMING_AND_TRY_AGAIN"
 msgstr "Dataverkkovierailu on poistettu käytöstä. Muodosta yhteys Wi-Fi-verkkoon tai ota dataverkkovierailu käyttöön ja yritä uudelleen."
@@ -1483,11 +1855,17 @@ msgstr "Verkkosov."
 msgid "IDS_BR_OPT_VIEW_ONLINE"
 msgstr "Näytä verkossa"
 
+msgid "IDS_BR_OPT_SHARE_VIA"
+msgstr "Jakotapa"
+
 msgid "IDS_BR_OPT_READ_ON_OFFLINE_PAGES_LATER_ABB"
 msgstr "Lue offline-sivut myöhemmin"
 
 msgid "IDS_BR_OPT_QUICK_ACCESS_ABB2"
 msgstr "Pikakäyttö"
+
+msgid "IDS_BR_OPT_PASTE"
+msgstr "Liitä"
 
 msgid "IDS_BR_OPT_ALWAYS_ENABLED_ABB"
 msgstr "Aina käytössä"
@@ -1513,6 +1891,9 @@ msgstr "Haku- ja URL-ehdotukset"
 msgid "IDS_BR_MBODY_HISTORY"
 msgstr "Historia"
 
+msgid "IDS_BR_MBODY_FONT_SIZE"
+msgstr "Fonttikoko"
+
 msgid "IDS_BR_MBODY_FIT_PAGE_TO_SCREEN"
 msgstr "Sovita sivu näyttöön"
 
@@ -1524,6 +1905,9 @@ msgstr "Mukautettu"
 
 msgid "IDS_BR_MBODY_COUNTRY_REGION"
 msgstr "Maa/alue"
+
+msgid "IDS_BR_HEADER_UNABLE_TO_DOWNLOAD_ABB"
+msgstr "Lataus ei onnistu"
 
 msgid "IDS_BR_HEADER_RENAME_FOLDER_ABB"
 msgstr "Nimeä kansio uudelleen"
@@ -1555,8 +1939,14 @@ msgstr "Lisää tiedot"
 msgid "IDS_BR_BUTTON_WI_FI_ABB"
 msgstr "Wi-Fi"
 
+msgid "IDS_BR_BUTTON_UPDATE"
+msgstr "Päivitä"
+
 msgid "IDS_BR_BUTTON_SETTINGS_ABB"
 msgstr "Aset."
+
+msgid "IDS_BR_BUTTON_RETRY"
+msgstr "Yr. uud."
 
 msgid "IDS_BR_BUTTON2_OK"
 msgstr "OK"
@@ -1582,6 +1972,9 @@ msgstr "Tämä varmenne on luotettavan tahon myöntämä."
 msgid "IDS_BR_BODY_TAP_HERE_TO_ADD_A_QUICK_ACCESS_SHORTCUT"
 msgstr "Lisää pikakäytön pikavalinta napauttamalla tätä."
 
+msgid "IDS_BR_BODY_REQUEST_FAILED"
+msgstr "Pyyntö epäonnistui."
+
 msgid "IDS_BR_BODY_PREFERENCES"
 msgstr "Valinnat"
 
@@ -1597,398 +1990,14 @@ msgstr "Ei vastineita"
 msgid "IDS_BR_BODY_MOBILE_DATA_IS_TURNED_OFF_CONNECT_TO_A_WI_FI_NETWORK_INSTEAD_OR_TAP_SETTINGS_TO_TURN_ON_MOBILE_DATA_AND_THEN_TRY_AGAIN"
 msgstr "Mobiilidata on poistettu käytöstä. Muodosta sen sijaan yhteys Wi-Fi-verkon kautta tai ota mobiilidata käyttöön napauttamalla Asetukset ja yritä sitten uudelleen."
 
-msgid "IDS_BR_BODY_FIT_TO_WIDTH"
-msgstr "Sovita leveyteen"
-
-msgid "IDS_BR_ACBUTTON_QUICK_ACCESS"
-msgstr "PIKAKÄYTTÖ"
-
-msgid "IDS_BR_OPT_OPEN_IN_NEW_TAB"
-msgstr "Avaa uudessa välilehdessä"
-
-msgid "IDS_BR_BODY_SHARE_LINK"
-msgstr "Jaa linkki"
-
-msgid "IDS_BR_SK_SAVE_LITE"
-msgstr "Tallenna"
-
-msgid "IDS_BR_SK_SAVE_ABB"
-msgstr "Tall."
-
-msgid "IDS_BR_SK_SAVE"
-msgstr "Tallenna"
-
-msgid "IDS_BR_SK_PREVIOUS"
-msgstr "Edellinen"
-
-msgid "IDS_BR_SK_NEXT"
-msgstr "Seuraava"
-
-msgid "IDS_BR_SK_DELETE"
-msgstr "Poista"
-
-msgid "IDS_BR_SK_CLEAR"
-msgstr "Tyhjennä"
-
-msgid "IDS_BR_SK_BACK"
-msgstr "Takaisin"
-
-msgid "IDS_BR_POP_WI_FI_CONNECTION_REQUIRED_CONNECT_TO_WI_FI_NETWORK_AND_TRY_AGAIN"
-msgstr "Wi-Fi-yhteys vaaditaan. Muodosta Wi-Fi-verkkoyhteys ja yritä uudelleen."
-
-msgid "IDS_BR_POP_URL_NOT_FOUND"
-msgstr "URL-osoitetta ei löydy."
-
-msgid "IDS_BR_POP_URL"
-msgstr "URL-osoite"
-
-msgid "IDS_BR_POP_SAVED"
-msgstr "Tallennettu."
-
-msgid "IDS_BR_POP_REMOVED"
-msgstr "Poistettu."
-
-msgid "IDS_BR_POP_PD_ITEMS_WILL_BE_DELETED"
-msgstr "%d kohdetta poistetaan."
-
-msgid "IDS_BR_POP_PD_ITEMS_SELECTED"
-msgstr "%d kohdetta valittu."
-
-msgid "IDS_BR_POP_NO_ITEMS_SELECTED"
-msgstr "Ei valittuja kohteita."
-
-msgid "IDS_BR_POP_NOT_ENOUGH_MEMORY"
-msgstr "Ei tarpeeksi muistia."
-
-msgid "IDS_BR_POP_NEVER"
-msgstr "Ei koskaan"
-
-msgid "IDS_BR_POP_MOBILE_DATA_IS_DISABLED_CONNECT_TO_WI_FI_NETWORK_INSTEAD_OR_ENABLE_MOBILE_DATA_AND_TRY_AGAIN"
-msgstr "Mobiilidata on poistettu käytöstä. Muodosta sen sijaan yhteys Wi-Fi-verkon kautta tai ota mobiilidata käyttöön ja yritä uudelleen."
-
-msgid "IDS_BR_POP_LOADING_PLEASE_WAIT_ING"
-msgstr "Ladataan. Odota..."
-
-msgid "IDS_BR_POP_INVALID_URL"
-msgstr "Virheellinen URL-osoite"
-
-msgid "IDS_BR_POP_FAIL"
-msgstr "Epäonnistui."
-
-msgid "IDS_BR_POP_ENTER_TITLE_ABB"
-msgstr "Kirjoita otsikko"
-
-msgid "IDS_BR_POP_DO_NOT_SHOW_AGAIN"
-msgstr "Älä näytä uudestaan"
-
-msgid "IDS_BR_POP_DOWNLOADCOMPLETE"
-msgstr "Lataus valmis"
-
-msgid "IDS_BR_POP_DISABLED"
-msgstr "Pois."
-
-msgid "IDS_BR_POP_DELETE_Q"
-msgstr "Poistetaanko?"
-
-msgid "IDS_BR_POP_DELETED"
-msgstr "Poistettu."
-
-msgid "IDS_BR_POP_CLOSE_APPLICATION_Q"
-msgstr "Suljetaanko sovellus?"
-
-msgid "IDS_BR_POP_BOOKMARK_ADDED"
-msgstr "Kirjanmerkki lisätty."
-
-msgid "IDS_BR_POP_AUTOMATIC_BRIGHTNESS"
-msgstr "Automaattinen kirkkaus"
-
-msgid "IDS_BR_POP_ACCOUNT"
-msgstr "Tili"
-
-msgid "IDS_BR_POP_1_ITEM_WILL_BE_DELETED"
-msgstr "1 kohde poistetaan."
-
-msgid "IDS_BR_POP_1_ITEM_SELECTED"
-msgstr "1 kohde valittu."
-
-msgid "IDS_BR_OPT_TRANSLATE"
-msgstr "Käännä"
-
-msgid "IDS_BR_OPT_STOP"
-msgstr "Lopeta"
-
-msgid "IDS_BR_OPT_SHOW"
-msgstr "Näytä"
-
-msgid "IDS_BR_OPT_SHARE"
-msgstr "Jaa"
-
-msgid "IDS_BR_OPT_SETTINGS"
-msgstr "Asetukset"
-
-msgid "IDS_BR_OPT_SEND_EMAIL"
-msgstr "Lähetä sähköpostiviesti"
-
-msgid "IDS_BR_OPT_SELECT"
-msgstr "Valitse"
-
-msgid "IDS_BR_OPT_SD_CARD"
-msgstr "SD-kort."
-
-msgid "IDS_BR_OPT_RENAME"
-msgstr "Nimeä uudelleen"
-
-msgid "IDS_BR_OPT_REFRESH"
-msgstr "Päivitä"
-
-msgid "IDS_BR_OPT_MOVE"
-msgstr "Siirrä"
-
-msgid "IDS_BR_OPT_MESSAGES"
-msgstr "Viestit"
-
-msgid "IDS_BR_OPT_LIST_VIEW"
-msgstr "Luettelonäkymä"
-
-msgid "IDS_BR_OPT_I_AGREE"
-msgstr "Hyväksyn."
-
-msgid "IDS_BR_OPT_HELP"
-msgstr "Ohje"
-
-msgid "IDS_BR_OPT_DEVICE"
-msgstr "Laite"
-
-msgid "IDS_BR_OPT_BOOKMARK"
-msgstr "Kirjanmerkki"
-
-msgid "IDS_BR_OPT_ADDED"
-msgstr "Lisätty."
-
-msgid "IDS_BR_OPT_ADD"
-msgstr "Lisää"
-
-msgid "IDS_BR_MBODY_DEFAULT_DOWNLOAD_STORAGE"
-msgstr "Oletuslataustallennustila"
-
-msgid "IDS_BR_HEADER_SIGN_IN_TO_SAMSUNG_ACCOUNT"
-msgstr "Kirjaudu Samsung-tilille"
-
-msgid "IDS_BR_HEADER_PD_SELECTED_ABB"
-msgstr "%d valittu"
-
-msgid "IDS_BR_HEADER_NO_NETWORK_CONNECTION"
-msgstr "Ei verkkoyhteyttä"
-
-msgid "IDS_BR_HEADER_FOLDER"
-msgstr "Kansio"
-
-msgid "IDS_BR_HEADER_EDIT_PROFILE"
-msgstr "Muokkaa profiilia"
-
-msgid "IDS_BR_BUTTON_SET"
-msgstr "Aseta"
-
-msgid "IDS_BR_BUTTON_NOT_NOW"
-msgstr "Ei nyt"
-
-msgid "IDS_BR_BUTTON_ENABLE_ABB"
-msgstr "Ota käytt."
-
-msgid "IDS_BR_BUTTON_EDIT"
-msgstr "Muokkaa"
-
-msgid "IDS_BR_BUTTON_CONTINUE_ABB"
-msgstr "Jatka"
-
-msgid "IDS_BR_BUTTON_CONTINUE"
-msgstr "Jatka"
-
-msgid "IDS_BR_BUTTON_CLOSE"
-msgstr "Sulje"
-
-msgid "IDS_BR_BUTTON_CANCEL_ABB"
-msgstr "Peruuta"
-
-msgid "IDS_BR_BUTTON_CANCEL"
-msgstr "Peruuta"
-
-msgid "IDS_BR_BUTTON_ALLOW"
-msgstr "Salli"
-
-msgid "IDS_BR_BODY_YESTERDAY"
-msgstr "Eilen"
-
-msgid "IDS_BR_BODY_URL"
-msgstr "URL-osoite"
-
-msgid "IDS_BR_BODY_TODAY"
-msgstr "Tänään"
-
-msgid "IDS_BR_BODY_TITLE"
-msgstr "Otsikko"
-
-msgid "IDS_BR_BODY_THE_MAXIMUM_NUMBER_OF_CHARACTERS_HPD_HAS_BEEN_EXCEEDED"
-msgstr "Merkkien enimmäismäärä (%d) on ylitetty."
-
-msgid "IDS_BR_BODY_STREAMING"
-msgstr "Suoratoisto"
-
-msgid "IDS_BR_BODY_SMALL"
-msgstr "Pieni"
-
-msgid "IDS_BR_BODY_SETTINGS"
-msgstr "Asetukset"
-
-msgid "IDS_BR_BODY_SEARCH"
-msgstr "Etsi"
-
-msgid "IDS_BR_BODY_RSS_SEARCH_RESULTS"
-msgstr "Hakutulokset"
-
-msgid "IDS_BR_BODY_PROFILE"
-msgstr "Profiili"
-
-msgid "IDS_BR_BODY_PROCESSING_ING"
-msgstr "Käsitellään..."
-
-msgid "IDS_BR_BODY_PHONE_NUMBER_ABB"
-msgstr "Puhelin. n."
-
-msgid "IDS_BR_BODY_PHONE"
-msgstr "Puhelin"
-
-msgid "IDS_BR_BODY_PD_ITEMS_WILL_BE_DELETED"
-msgstr "%d kohdetta poistetaan."
-
-msgid "IDS_BR_BODY_PASSWORD"
-msgstr "Salasana"
-
-msgid "IDS_BR_BODY_ON"
-msgstr "Päällä"
-
-msgid "IDS_BR_BODY_OFF"
-msgstr "Pois"
-
-msgid "IDS_BR_BODY_NO_RESULTS_FOUND"
-msgstr "Tuloksia ei löytynyt."
-
-msgid "IDS_BR_BODY_NO_HISTORIES"
-msgstr "Historiaa ei ole"
-
-msgid "IDS_BR_BODY_NOTIFICATIONS"
-msgstr "Ilmoitukset"
-
-msgid "IDS_BR_BODY_MEDIUM"
-msgstr "Keskikokoinen"
-
-msgid "IDS_BR_BODY_IMAGES"
-msgstr "Kuvat"
-
-msgid "IDS_BR_BODY_FULL_SCREEN"
-msgstr "Koko näyttö"
-
-msgid "IDS_BR_BODY_FONT_SIZE"
-msgstr "Kirjasinkoko"
-
-msgid "IDS_BR_BODY_FOLDER_NAME"
-msgstr "Kansion nimi"
-
-msgid "IDS_BR_BODY_ENTER_POSTCODE_ABB"
-msgstr "Anna postinumero."
-
-msgid "IDS_BR_BODY_ENTER_POSTCODE"
-msgstr "Anna postinumero."
-
-msgid "IDS_BR_BODY_ENTER_PHONE_NUMBER"
-msgstr "Syötä puhelinnumero."
-
-msgid "IDS_BR_BODY_ENTER_NAME"
-msgstr "Kirjoita nimi."
-
-msgid "IDS_BR_BODY_ENTER_FOLDER_NAME"
-msgstr "Kirjoita kansion nimi."
-
-msgid "IDS_BR_BODY_ENTER_EMAIL_ADDRESS"
-msgstr "Anna sähköpostiosoite."
-
-msgid "IDS_BR_BODY_EMAIL_ADDRESS"
-msgstr "Sähköpostiosoite"
-
-msgid "IDS_BR_BODY_DOWNLOADING_ING"
-msgstr "Ladataan..."
-
-msgid "IDS_BR_BODY_DEVELOPER_MODE"
-msgstr "Kehittäjätila"
-
-msgid "IDS_BR_BODY_DEFAULT"
-msgstr "Oletus"
-
-msgid "IDS_BR_BODY_BOOKMARKS"
-msgstr "Kirjanmerkit"
-
-msgid "IDS_BR_BODY_ALL"
-msgstr "Kaikki"
-
-msgid "IDS_BR_BODY_ADD_TO"
-msgstr "Lisää"
-
-msgid "IDS_BR_BODY_ADDDETAILSVIEW_TAGS"
-msgstr "Tunnisteet"
-
-msgid "IDS_BR_BODY_ADDBOOKMARKURL"
-msgstr "URL-osoite"
-
-msgid "IDS_BR_BODY_1_ITEM_WILL_BE_DELETED"
-msgstr "1 kohde poistetaan."
-
-msgid "IDS_BR_TPOP_MAXIMUM_NUMBER_OF_CHARACTERS_HPD_REACHED"
-msgstr "Merkkien enimmäismäärä (%d) on saavutettu."
-
-msgid "IDS_BR_POP_UNSUPPORTMEDIATYPE"
-msgstr "Mediatyyppiä ei tueta."
-
-msgid "IDS_BR_POP_UNABLE_TO_CONNECT_TO_MOBILE_NETWORKS_WHILE_FLIGHT_MODE_IS_ENABLED_CONNECT_TO_WI_FI_NETWORK_INSTEAD_OR_DISABLE_FLIGHT_MODE_AND_TRY_AGAIN"
-msgstr "Matkapuhelinverkkoihin ei voi ottaa yhteyttä, kun lentotila on käytössä. Muodosta sen sijaan yhteys Wi-Fi-verkon kautta tai poista lentotila käytöstä ja yritä uudelleen."
-
-msgid "IDS_BR_POP_INSTALL_SUCCESS"
-msgstr "Asennus valmis."
-
-msgid "IDS_BR_POP_INSTALLATION_FAILED"
-msgstr "Asennus epäonnistui."
-
-msgid "IDS_BR_POP_DELETING_ING"
-msgstr "Poistetaan..."
-
-msgid "IDS_BR_POP_DATA_ROAMING_IS_DISABLED_CONNECT_TO_WI_FI_NETWORK_INSTEAD_OR_ENABLE_DATA_ROAMING_AND_TRY_AGAIN"
-msgstr "Dataverkkovierailu on poistettu käytöstä. Muodosta sen sijaan yhteys Wi-Fi-verkon kautta tai ota dataverkkovierailu käyttöön ja yritä uudelleen."
-
-msgid "IDS_BR_OPT_SHARE_VIA"
-msgstr "Jakotapa"
-
-msgid "IDS_BR_OPT_PASTE"
-msgstr "Liitä"
-
-msgid "IDS_BR_MBODY_FONT_SIZE"
-msgstr "Fonttikoko"
-
-msgid "IDS_BR_HEADER_UNABLE_TO_DOWNLOAD_ABB"
-msgstr "Lataus ei onnistu"
-
-msgid "IDS_BR_BUTTON_UPDATE"
-msgstr "Päivitä"
-
-msgid "IDS_BR_BUTTON_RETRY"
-msgstr "Yr. uud."
-
-msgid "IDS_BR_BODY_REQUEST_FAILED"
-msgstr "Pyyntö epäonnistui."
-
 msgid "IDS_BR_BODY_LOGIN"
 msgstr "Kirjaudu"
 
 msgid "IDS_BR_BODY_LOADING_ING"
 msgstr "Ladataan..."
+
+msgid "IDS_BR_BODY_FIT_TO_WIDTH"
+msgstr "Sovita leveyteen"
 
 msgid "IDS_BR_BODY_FIT_TO_SCREEN"
 msgstr "Sovita näyttöön"
@@ -1999,165 +2008,12 @@ msgstr "Lataukset"
 msgid "IDS_BR_BODY_DATA_ROAMING_IS_DISABLED_CONNECT_TO_A_WI_FI_NETWORK_INSTEAD_OR_ENABLE_DATA_ROAMING_AND_TRY_AGAIN"
 msgstr "Dataverkkovierailu on poistettu käytöstä. Muodosta sen sijaan yhteys Wi-Fi-verkon kautta tai ota dataverkkovierailu käyttöön ja yritä uudelleen."
 
-msgid "IDS_BR_POP_DOWNLOAD_CANCELLED"
-msgstr "Lataus peruutettu."
+msgid "IDS_BR_ACBUTTON_QUICK_ACCESS"
+msgstr "PIKAKÄYTTÖ"
 
-msgid "IDS_BR_BUTTON_SECRET_ON_ABB"
-msgstr "Sal. päällä"
+msgid "IDS_ST_POP_SOME_CONTENT_HAS_BEEN_BLOCKED_TO_PROTECT_YOUR_DEVICE"
+msgstr "Jotkin sisällöt on estetty laitteen suojaamiseksi."
 
-msgid "IDS_BR_MBODY_PRIVACY"
-msgstr "Yksityisyys"
-
-msgid "IDS_BR_MBODY_DEFAULT_STORAGE"
-msgstr "Oletustallennussijainti"
-
-msgid "IDS_BR_MBODY_MANUAL_ZOOM"
-msgstr "Manuaalinen zoom"
-
-msgid "IDS_BR_TMBODY_DEFAULT_SEARCH_ENGINE"
-msgstr "Oletushakukone"
-
-msgid "IDS_BR_MBODY_SAVE_SIGN_IN_INFO"
-msgstr "Tallenna kirj.tiedot"
-
-msgid "IDS_BR_OPT_TURN_OFF_SECRET_MODE_ABB"
-msgstr "Poista salainen tila käytöstä"
-
-msgid "IDS_BR_OPT_TURN_ON_SECRET_MODE_ABB"
-msgstr "Ota salainen tila käyttöön"
-
-msgid "IDS_BR_OPT_SHOW_PASSWORD_ABB2"
-msgstr "Näytä salasana"
-
-msgid "IDS_BR_OPT_SECRET_MODE_SECURITY_ABB"
-msgstr "Salaisen tilan suojaus"
-
-msgid "IDS_BR_BUTTON_USE_PASSWORD_ABB"
-msgstr "Käytä salasanaa"
-
-msgid "IDS_BR_HEADER_DONT_USE_PASSWORD_ABB"
-msgstr "Älä käytä salasanaa"
-
-msgid "IDS_BR_MBODY_MOST_VISITED_WEBSITES"
-msgstr "Katsotuimmat sivustot"
-
-msgid "IDS_BR_MBODY_SET_MY_PROFILE"
-msgstr "Määritä oma profiili"
-
-msgid "IDS_BR_MBODY_MY_AUTO_FILL_PROFILE"
-msgstr "Oma autom. täyt. profiili"
-
-msgid "IDS_BR_SBODY_MANAGE_DATA_USED_TO_FILL_IN_FORMS_ONLINE"
-msgstr "Hallitse verkkolomakkeiden täyttämiseen käytettäviä tietoja."
-
-msgid "IDS_BR_MBODY_SAVE_SIGN_IN_INFO_ABB"
-msgstr "Tall. kirj.tiedot"
-
-msgid "IDS_BR_OPT_LOCATION_ACCESS_DATA"
-msgstr "Sijainnin käyttötiedot"
-
-msgid "IDS_BR_OPT_AUTO_FILL_DATA"
-msgstr "Täytä tiedot automaattisesti"
-
-msgid "IDS_BR_BODY_ANY_WEBPAGES_YOU_VIEW_WHILE_SECRET_MODE_IS_TURNED_ON_WONT_APPEAR_IN_YOUR_BROWSER_OR_SEARCH_HISTORY_MSG"
-msgstr "Salaisen tilan käytön aikana avatut verkkosivut eivät näy selain- tai hakuhistoriassa, kun tila on poistettu käytöstä.\n\nSalaisen tilan käytön aikana tallennettuja kirjanmerkkejä ja verkkosivuja ei näytetä, kun tila on poistettu käytöstä.\n\nVoit myös suojata salaisen tilan tiedot salasanalla."
-
-msgid "IDS_BR_BODY_ANY_WEBPAGES_YOU_VIEW_WHILE_SECRET_MODE_IS_TURNED_ON_WONT_APPEAR_IN_YOUR_BROWSER_OR_SEARCH_MSG"
-msgstr "Salaisen tilan käytön aikana avatut verkkosivut eivät näy selain- tai hakuhistoriassa, kun tila on poistettu käytöstä.\n\nSalaisen tilan käytön aikana tallennettuja kirjanmerkkejä ja verkkosivuja ei näytetä, kun tila on poistettu käytöstä."
-
-msgid "IDS_BR_BUTTON_SECRET_OFF_ABB"
-msgstr "Sal. pois"
-
-msgid "IDS_BR_BUTTON_DONT_USE_PASSWORD_ABB"
-msgstr "Älä käytä salasanaa"
-
-msgid "IDS_BR_BUTTON_NEW_TAB_ABB2"
-msgstr "Uusi v."
-
-msgid "IDS_BR_NPBODY_WEB_ADDRESS_ABB"
-msgstr "Verkko-osoite"
-
-msgid "IDS_BR_HEADER_ADD_WEBPAGE_TO_QUICK_ACCESS_ABB"
-msgstr "Lisää verkkosivu Pikakäyttöön"
-
-msgid "IDS_BR_TMBODY_TURN_ON_JAVASCRIPT"
-msgstr "Ota JavaScript käyttöön"
-
-msgid "IDS_BR_HEADER_COULDNT_OPEN_NEW_TAB_ABB"
-msgstr "Uutta välilehteä ei voi avata"
-
-msgid "IDS_BR_OPT_OPEN_IN_NEW_TAB_ABB"
-msgstr "Avaa uudessa välilehdessä"
-
-msgid "IDS_BR_TPOP_FOLDER_NAME_ALREADY_IN_USE"
-msgstr "Kansion nimi on jo käytössä."
-
-msgid "IDS_BR_NPBODY_NEW_FOLDER_PD"
-msgstr "Uusi kansio %d"
-
-msgid "IDS_BR_NPBODY_NEW_FOLDER"
-msgstr "Uusi kansio"
-
-msgid "IDS_BR_OPT_ENABLE_JAVASCRIPT"
-msgstr "Ota JavaScript käyttöön"
-
-msgid "IDS_BR_TMBODY_MANAGE_WEBSITE_DATA"
-msgstr "Sivuston tietojen hallinta"
-
-msgid "IDS_BR_HEADER_SET_HOME_PAGE_ABB"
-msgstr "Määritä kotisivu"
-
-msgid "IDS_BR_TPOP_WEBPAGE_ADDED_TO_QUICK_ACCESS_LIST"
-msgstr "Verkkosivu on lisätty pikaluetteloon."
-
-msgid "IDS_BR_OPT_EDIT_QUICK_ACCESS_ABB"
-msgstr "Muokkaa Pikakäyttö-toimintoa"
-
-msgid "IDS_BR_OPT_REMOVE_FROM_BOOKMARKS_ABB"
-msgstr "Poista kirjanmerkeistä"
-
-msgid "IDS_BR_HEADER_ADD_BOOKMARK_ABB"
-msgstr "Lisää kirjanmerkki"
-
-msgid "IDS_BR_BODY_BROWSING_HISTORY"
-msgstr "Selaushistoria"
-
-msgid "IDS_BR_HEADER_TABS_ABB2"
-msgstr "Välilehdet"
-
-msgid "IDS_BR_OPT_NEW_TAB"
-msgstr "Uusi välilehti"
-
-msgid "IDS_BR_BUTTON_FORWARD_ABB2"
-msgstr "Siirrä"
-
-msgid "IDS_BR_BUTTON_BACK_ABB3"
-msgstr "Takaisin"
-
-msgid "IDS_BR_BUTTON_BOOKMARKS_ABB"
-msgstr "Kirjanm."
-
-msgid "IDS_BR_NPBODY_NO_PROFILES_ABB"
-msgstr "Profiileja ei ole"
-
-msgid "IDS_BR_TAB2_HISTORY"
-msgstr "Historia"
-
-msgid "IDS_BR_TAB2_BOOKMARKS"
-msgstr "Kirjanmerkit"
-
-msgid "IDS_BR_HEADER_SAVE_CONTENT_TO_ABB"
-msgstr "Tallenna sisältö kohteeseen"
-
-msgid "IDS_BR_HEADER_SELECT_ITEMS_ABB2"
-msgstr "Valitse kohteet"
-
-msgid "IDS_BR_BODY_YOUR_PASSWORD_MUST_CONTAIN_AT_LEAST_PD_CHARACTERS_INCLUDING_AT_LEAST_1_LETTER"
-msgstr "Salasanassa on oltava vähintään %d merkkiä, niiden joukossa vähintään 1 kirjain."
-
-msgid "IDS_BR_BODY_AN_INCORRECT_PASSWORD_HAS_BEEN_ENTERED_TRY_AGAIN"
-msgstr "Annettu väärä salasana. Yritä uudelleen."
-
-msgid "IDS_BR_BODY_NO_TABS"
-msgstr "Ei välilehtiä"
+msgid "IDS_ST_POP_SELECT_WHETHER_TO_GO_TO_THE_WEBPAGE_ANYWAY"
+msgstr "Valitse, siirrytäänkö verkkosivulle silti."
 

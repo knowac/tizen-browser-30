@@ -367,11 +367,14 @@ void MoreMenuUI::_timeout(void *data, Evas_Object*, void*)
 void MoreMenuUI::_bookmarkButton_clicked(void* data, Evas_Object*, void*)
 {
     BROWSER_LOGD("[%s:%d] ", __PRETTY_FUNCTION__, __LINE__);
-    if (data) {
+    if(data) {
         MoreMenuUI *moreMenuUI = static_cast<MoreMenuUI*>(data);
-        moreMenuUI->bookmarkFlowClicked();
-    } else
-        BROWSER_LOGW("[%s] data = nullptr", __PRETTY_FUNCTION__);
+        boost::optional<bool> bookmark = moreMenuUI->isBookmark();
+        if (bookmark)
+            moreMenuUI->bookmarkFlowClicked(*bookmark);
+        else
+            BROWSER_LOGE("[%s:%d] Signal not found", __PRETTY_FUNCTION__, __LINE__);
+    }
 }
 
 void MoreMenuUI::_close_clicked(void* data, Evas_Object*, void*)
@@ -683,9 +686,14 @@ void MoreMenuUI::_thumbSelected(void* data, Evas_Object*, void*)
                 itemData->moreMenuUI->findOnPageClicked();
                 break;
             case ADD_TO_BOOKMARK:
-                if (!itemData->moreMenuUI->m_blockThumbnails)
+                if (!itemData->moreMenuUI->m_blockThumbnails) {
                     elm_object_focus_allow_set(itemData->moreMenuUI->m_gengrid, EINA_FALSE);
-                    itemData->moreMenuUI->bookmarkFlowClicked();
+                    boost::optional<bool> bookmark = itemData->moreMenuUI->isBookmark();
+                    if (bookmark)
+                        itemData->moreMenuUI->bookmarkFlowClicked(*bookmark);
+                    else
+                        BROWSER_LOGE("[%s:%d] Signal not found", __PRETTY_FUNCTION__, __LINE__);
+                }
                 break;
 #ifdef READER_MODE_ENABLED
             case READER_MODE:

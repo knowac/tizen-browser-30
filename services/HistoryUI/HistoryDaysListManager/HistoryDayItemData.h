@@ -25,42 +25,41 @@
 namespace tizen_browser {
 namespace base_ui {
 
-using WebsiteVisitItemData = struct WebsiteVisitItemData_
+typedef struct WebsiteVisitItemData_
 {
     WebsiteVisitItemData_(std::shared_ptr<services::HistoryItem> historyItem)
     : historyItem(historyItem)
     {
     }
     std::shared_ptr<const services::HistoryItem> historyItem;
-};
+} WebsiteVisitItemData;
 
-using WebsiteHistoryItemData = struct WebsiteHistoryItemData_
+typedef struct WebsiteHistoryItemData_
 {
     WebsiteHistoryItemData_(const std::string& websiteTitle,
             const std::string& websiteDomain,
             std::shared_ptr<tools::BrowserImage> favIcon,
-            const WebsiteVisitItemDataPtr& item) :
+            const std::vector<WebsiteVisitItemDataPtr>& list) :
             websiteTitle(websiteTitle), websiteDomain(websiteDomain),
-            favIcon(favIcon), websiteVisitItem(item)
+            favIcon(favIcon), websiteVisitItems(list)
     {
     }
     const std::string websiteTitle;
     const std::string websiteDomain;
     std::shared_ptr<tools::BrowserImage> favIcon;
-    const WebsiteVisitItemDataPtr websiteVisitItem;
-};
+    const std::vector<WebsiteVisitItemDataPtr> websiteVisitItems;
+} WebsiteHistoryItemData;
 
-using HistoryDayItemData = struct HistoryDayItemData_
+typedef struct HistoryDayItemData_
 {
     HistoryDayItemData_(const std::string& day,
-            const std::vector<WebsiteHistoryItemDataPtr>& list, bool ex = false) :
-            day(day), websiteHistoryItems(list), expanded(ex)
+            const std::vector<WebsiteHistoryItemDataPtr>& list) :
+            day(day), websiteHistoryItems(list)
     {
     }
     const std::string day;
     const std::vector<WebsiteHistoryItemDataPtr> websiteHistoryItems;
-    bool expanded;
-};
+} HistoryDayItemData;
 
 }
 }

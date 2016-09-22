@@ -43,19 +43,16 @@
 #include "GeneralTools.h"
 #include "Tools/WorkQueue.h"
 #include "ServiceManager.h"
-#include <shortcut_manager.h>
-#include <string>
-
 #if PROFILE_MOBILE
 #include <device/haptic.h>
 #include <Ecore.h>
 #endif
 
 #define certificate_crt_path CERTS_DIR
-#define APPLICATION_NAME_FOR_USER_AGENT "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.69 safari/537.36 "
+#define APPLICATION_NAME_FOR_USER_AGENT "Mozilla/5.0 (SMART-TV; Linux; Tizen 2.4.0; hawkp) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.69 TV safari/537.36"
 
 //TODO: temporary user agent for mobile display, change to proper one
-#define APPLICATION_NAME_FOR_USER_AGENT_MOBILE "Mozilla/5.0 (Linux; Tizen 3.0; SAMSUNG TM1) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/1.0 Chrome/47.0.2526.69 Mobile safari/537.36"
+#define APPLICATION_NAME_FOR_USER_AGENT_MOBILE "Mozilla/5.0 (Linux; Tizen 3.0; tm1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.69 Mobile safari/537.36"
 
 #if PROFILE_MOBILE
 Ecore_Timer* m_haptic_timer_id =NULL;
@@ -72,9 +69,6 @@ namespace basic_webengine {
 namespace webengine_service {
 
 const std::string WebView::COOKIES_PATH = "cookies";
-#if PWA
-std::string WebView::m_pwaData = "";
-#endif
 
 struct SnapshotItemData {
     WebView * web_view;
@@ -113,7 +107,7 @@ WebView::~WebView()
 #endif
 }
 
-void WebView::init(bool desktopMode, TabOrigin origin)
+void WebView::init(bool desktopMode, TabOrigin origin, Evas_Object*)
 {
     m_ewkView = m_private ? ewk_view_add_in_incognito_mode(evas_object_evas_get(m_parent)) :
                             ewk_view_add_with_context(evas_object_evas_get(m_parent), ewk_context_default_get());
@@ -650,11 +644,6 @@ Evas_Object * WebView::getLayout()
     return m_ewkView;
 }
 
-Evas_Object* WebView::getWidget()
-{
-    return ewk_view_widget_get(m_ewkView);
-}
-
 void WebView::setURI(const std::string & uri)
 {
     BROWSER_LOGD("[%s:%d] uri=%s", __PRETTY_FUNCTION__, __LINE__, uri.c_str());
@@ -668,105 +657,6 @@ std::string WebView::getURI(void)
     BROWSER_LOGD("[%s:%d] uri=%s", __PRETTY_FUNCTION__, __LINE__, ewk_view_url_get(m_ewkView));
     return fromChar(ewk_view_url_get(m_ewkView));
 }
-
-#if PWA
-void WebView::requestManifest(void)
-{
-    BROWSER_LOGD("[%s:%d] ", __PRETTY_FUNCTION__, __LINE__);
-    ewk_view_request_manifest(m_ewkView, dataSetManifest, this);
-}
-
-void WebView::dataSetManifest(Evas_Object* view, Ewk_View_Request_Manifest* manifest, void* data)
-{
-    BROWSER_LOGD("[%s:%d] ", __PRETTY_FUNCTION__, __LINE__);
-
-    WebView * self = reinterpret_cast<WebView *>(data);
-
-    if (view) {
-        const char* short_name(ewk_manifest_short_name_get(manifest));
-        const char* name(ewk_manifest_name_get(manifest));
-        const char* start_url(ewk_manifest_start_url_get(manifest));
-        const char* icon_src(ewk_manifest_icons_src_get(manifest, 0));
-        int orientation_type = ewk_manifest_orientation_type_get(manifest);
-        int display_mode = ewk_manifest_web_display_mode_get(manifest);
-        long theme_color = ewk_manifest_theme_color_get(manifest);
-        long background_color = ewk_manifest_background_color_get(manifest);
-        size_t icon_count = ewk_manifest_icons_count_get(manifest);
-
-        std::string str_short_name = "";
-        std::string str_name = "";
-        std::string str_start_url = "";
-        std::string str_icon_src = "";
-
-        if (short_name != NULL) {
-            str_short_name = short_name;
-        }
-        if (name != NULL) {
-            str_name = name;
-        }
-        if (start_url != NULL) {
-            str_start_url = start_url;
-        }
-        if (icon_src != NULL) {
-            str_icon_src = icon_src;
-        }
-
-        std::string retVal("browser_shortcut:://");
-        retVal.append("pwa_shortName:"); retVal.append(str_short_name.c_str()); retVal.append(",");
-        retVal.append("pwa_name:"); retVal.append(str_name.c_str()); retVal.append(",");
-        retVal.append("pwa_uri:"); retVal.append(str_start_url.c_str()); retVal.append(",");
-        retVal.append("pwa_orientation:"); retVal.append(std::to_string(orientation_type)); retVal.append(",");
-        retVal.append("pwa_displayMode:"); retVal.append(std::to_string(display_mode)); retVal.append(",");
-        retVal.append("pwa_themeColor:"); retVal.append(std::to_string(theme_color)); retVal.append(",");
-        retVal.append("pwa_backgroundColor:"); retVal.append(std::to_string(background_color)); retVal.append(",");
-        retVal.append("icon_count:"); retVal.append(std::to_string(icon_count)); retVal.append(",");
-        retVal.append("icon_src:"); retVal.append(str_icon_src.c_str()); retVal.append(",");
-
-        BROWSER_LOGD("[%s:%d] retVal : %s", __PRETTY_FUNCTION__, __LINE__, retVal.c_str());
-        m_pwaData = retVal;
-        //self->iconDownload(icon_src);
-
-/*
-        size_t len = strlen(icon_src.c_str());
-        char array[100] = {0,};
-        for(int i = 0; i < (int)len; i++) {
-            array[i] = icon_src[i];
-        }
-        int key = 0;
-        std::string result = "";
-
-        for(int i = len-1; i >= 0; i--) {
-            if(array[i] == '/') {
-                key = i;
-                break;
-            }
-        }
-        for(int j = key+1; j < (int)len; j++) {
-            result = result + array[j];
-        }
-        BROWSER_LOGD("[%s:%d] result : %s", __PRETTY_FUNCTION__, __LINE__, result.c_str());
-        std::string icon = "/opt/usr/home/owner/content/Downloads/" + result;
-*/
-        if (shortcut_add_to_home(name, LAUNCH_BY_URI, start_url, NULL, 0, result_cb, NULL) != SHORTCUT_ERROR_NONE) {
-            BROWSER_LOGE("[%s:%d] Fail to add to homescreen", __PRETTY_FUNCTION__, __LINE__);
-        } else {
-            BROWSER_LOGE("[%s:%d] Success to add to homescreen", __PRETTY_FUNCTION__, __LINE__);
-            self->resultDataManifest(m_pwaData);
-        }
-        BROWSER_LOGD("[%s:%d] dataSetManifest callback function end!", __PRETTY_FUNCTION__, __LINE__);
-    }
-}
-
-int WebView::result_cb(int ret, void *data) {
-
-    if (data) {
-        BROWSER_LOGD("[%s:%d] ret : %d, data : %s", __PRETTY_FUNCTION__, __LINE__, ret, data);
-    } else {
-        BROWSER_LOGW("[%s] result_cb_data = nullptr", __PRETTY_FUNCTION__);
-    }
-    return 0;
-}
-#endif
 
 std::string WebView::getTitle(void)
 {
@@ -958,10 +848,10 @@ void WebView::__newWindowRequest(void *data, Evas_Object *, void *out)
     WebView * self = reinterpret_cast<WebView *>(data);
     BROWSER_LOGD("[%s:%d] self=%p", __PRETTY_FUNCTION__, __LINE__, self);
     BROWSER_LOGD("Window creating in tab: %s", self->getTabId().toString().c_str());
-    std::shared_ptr<basic_webengine::AbstractWebEngine>  m_webEngine;
+    std::shared_ptr<basic_webengine::AbstractWebEngine<Evas_Object>>  m_webEngine;
     m_webEngine = std::dynamic_pointer_cast
     <
-        basic_webengine::AbstractWebEngine,tizen_browser::core::AbstractService
+        basic_webengine::AbstractWebEngine<Evas_Object>,tizen_browser::core::AbstractService
     >
     (tizen_browser::core::ServiceManager::getInstance().getService("org.tizen.browser.webengineservice"));
     M_ASSERT(m_webEngine);
@@ -970,9 +860,11 @@ void WebView::__newWindowRequest(void *data, Evas_Object *, void *out)
     TabId id(TabId::NONE);
     TabId currentTabId = m_webEngine->currentTabId();
     if (currentTabId != (id = m_webEngine->addTab(std::string(),
+                                                                 &self->getTabId(),
                                                                  boost::none,
                                                                  std::string(),
                                                                  self->isDesktopMode(),
+                                                                 self->isPrivateMode(),
                                                                  currentTabId.get()))) {
         BROWSER_LOGD("Created tab: %s", id.toString().c_str());
         Evas_Object* tab_ewk_view = m_webEngine->getTabView(id);
@@ -988,9 +880,9 @@ void WebView::__closeWindowRequest(void *data, Evas_Object *, void *)
 {
     BROWSER_LOGD("[%s:%d] ", __PRETTY_FUNCTION__, __LINE__);
     WebView * self = reinterpret_cast<WebView *>(data);
-    std::shared_ptr<AbstractWebEngine> m_webEngine =
+    std::shared_ptr<AbstractWebEngine<Evas_Object>> m_webEngine =
                 std::dynamic_pointer_cast
-                <basic_webengine::AbstractWebEngine,tizen_browser::core::AbstractService>
+                <basic_webengine::AbstractWebEngine<Evas_Object>,tizen_browser::core::AbstractService>
                 (tizen_browser::core::ServiceManager::getInstance().getService("org.tizen.browser.webengineservice"));
     m_webEngine->closeTab(self->getTabId());
 }
@@ -1259,14 +1151,18 @@ void WebView::_show_context_menu_text_link(Ewk_Context_Menu *menu)
         ewk_context_menu_item_remove(menu, item);
     }
 
+    /* Open */
+    ewk_context_menu_item_append_as_action(menu, EWK_CONTEXT_MENU_ITEM_TAG_OPEN_LINK, _("IDS_BR_OPT_OPEN"), true);
     /* Open in new window */
     ewk_context_menu_item_append_as_action(menu, EWK_CONTEXT_MENU_ITEM_TAG_OPEN_LINK_IN_NEW_WINDOW,_("IDS_BR_OPT_OPEN_IN_NEW_WINDOW_ABB"), true);   //TODO: missing translation
-    /* Save link */
-    ewk_context_menu_item_append_as_action(menu, EWK_CONTEXT_MENU_ITEM_TAG_DOWNLOAD_LINK_TO_DISK, _("IDS_BR_BODY_SAVE_LINK"), true);
+    /* Copy link text */
+    //ewk_context_menu_item_append_as_action(menu, EWK_CONTEXT_MENU_ITEM_TAG_COPY_LINK_DATA, _("IDS_BR_OPT_COPY_TO_CLIPBOARD"), true);             //TODO: missing translation
     /* Copy link address */
-    ewk_context_menu_item_append_as_action(menu, EWK_CONTEXT_MENU_ITEM_TAG_COPY_LINK_TO_CLIPBOARD, _("IDS_BR_OPT_COPY_LINK"), true);  //TODO: missing translation
-    /*Text Selection Mode */
-    ewk_context_menu_item_append_as_action(menu, EWK_CONTEXT_MENU_ITEM_TAG_TEXT_SELECTION_MODE, _("IDS_BR_OPT_SELECT_TEXT"), true);
+    ewk_context_menu_item_append_as_action(menu, EWK_CONTEXT_MENU_ITEM_TAG_COPY_LINK_TO_CLIPBOARD, _("IDS_BR_OPT_COPY_LINK_URL"), true);  //TODO: missing translation
+    ///* Share Link */
+    //ewk_context_menu_item_append_as_action(menu, EWK_CONTEXT_MENU_ITEM_TAG_SHARE_LINK, "Share Link", true);                     //TODO: missing translation
+    /* Save link */
+    ewk_context_menu_item_append_as_action(menu, EWK_CONTEXT_MENU_ITEM_TAG_DOWNLOAD_LINK_TO_DISK, _("IDS_BR_OPT_SAVE_LINK"), true);
 }
 
 void WebView::_show_context_menu_email_address(Ewk_Context_Menu *menu)
@@ -1369,20 +1265,36 @@ void WebView::_show_context_menu_text_image_link(Ewk_Context_Menu *menu)
 
     int count = ewk_context_menu_item_count(menu);
 
+    const char *selected_text = ewk_view_text_selection_text_get(m_ewkView);
+    bool text_selected = false;
+    if (selected_text && strlen(selected_text) > 0)
+        text_selected = true;
+
     for (int  i = 0 ; i < count ; i++) {
         Ewk_Context_Menu_Item *item = ewk_context_menu_nth_item_get(menu, 0);
         ewk_context_menu_item_remove(menu, item);
     }
 
-    /* Open in new window */
-    ewk_context_menu_item_append_as_action(menu, EWK_CONTEXT_MENU_ITEM_TAG_OPEN_LINK_IN_NEW_WINDOW,_("IDS_BR_OPT_OPEN_IN_NEW_WINDOW_ABB"), true);	//TODO: missing translation
+    /* Open in current Tab */
+    ewk_context_menu_item_append_as_action(menu, EWK_CONTEXT_MENU_ITEM_TAG_OPEN_IMAGE_IN_CURRENT_WINDOW, _("IDS_BR_BODY_VIEW_IMAGE"), true);               //TODO: missing translation
+    /* Open in New Tab */
+    ewk_context_menu_item_append_as_action(menu, EWK_CONTEXT_MENU_ITEM_TAG_OPEN_IMAGE_IN_NEW_WINDOW,_( "IDS_BR_OPT_OPEN_IN_NEW_WINDOW_ABB"), true);    //TODO: missing translation
+    /* Select all */
+    ewk_context_menu_item_append_as_action(menu, EWK_CONTEXT_MENU_ITEM_TAG_SELECT_ALL, _("IDS_BR_OPT_SELECT_ALL"), true);
+    /* Copy */
+    if (text_selected == true)
+        ewk_context_menu_item_append_as_action(menu, EWK_CONTEXT_MENU_ITEM_TAG_COPY, _("IDS_BR_OPT_COPY"), true);
+    /* Share*/
+    if (text_selected == true)
+        ewk_context_menu_item_append_as_action(menu, EWK_CONTEXT_MENU_ITEM_TAG_SMART_LINKS, _("IDS_BR_OPT_SHARE"), true);
+    /* Copy link */
+    ewk_context_menu_item_append_as_action(menu, EWK_CONTEXT_MENU_ITEM_TAG_COPY_LINK_TO_CLIPBOARD, _("IDS_BR_OPT_COPY_LINK_URL"), true);              //TODO: missing translation
     /* Save link */
     ewk_context_menu_item_append_as_action(menu, EWK_CONTEXT_MENU_ITEM_TAG_DOWNLOAD_LINK_TO_DISK, _("IDS_BR_OPT_SAVE_LINK"), true);
-    /* Copy link address */
-    ewk_context_menu_item_append_as_action(menu, EWK_CONTEXT_MENU_ITEM_TAG_COPY_LINK_TO_CLIPBOARD, _("IDS_BR_OPT_COPY_LINK"), true);  //TODO: missing translation
-    /*Text Selection Mode */
-    ewk_context_menu_item_append_as_action(menu, EWK_CONTEXT_MENU_ITEM_TAG_TEXT_SELECTION_MODE, _("IDS_BR_OPT_SELECT_TEXT"), true);
-
+    /* Copy image */
+    ewk_context_menu_item_append_as_action(menu, EWK_CONTEXT_MENU_ITEM_TAG_COPY_IMAGE_TO_CLIPBOARD, _("IDS_BR_OPT_COPY_IMAGE"), true);
+    /* Downlad image */
+    ewk_context_menu_item_append_as_action(menu, EWK_CONTEXT_MENU_ITEM_TAG_DOWNLOAD_IMAGE_TO_DISK, _("IDS_BR_OPT_SAVE_IMAGE"), true);
 }
 
 void WebView::_show_context_menu_image_link(Ewk_Context_Menu *menu)
@@ -1401,7 +1313,7 @@ void WebView::_show_context_menu_image_link(Ewk_Context_Menu *menu)
     /* Save link */
     ewk_context_menu_item_append_as_action(menu, EWK_CONTEXT_MENU_ITEM_TAG_DOWNLOAD_LINK_TO_DISK, _("IDS_BR_OPT_SAVE_LINK"), true);
     /* Copy link */
-    ewk_context_menu_item_append_as_action(menu, EWK_CONTEXT_MENU_ITEM_TAG_COPY_LINK_TO_CLIPBOARD, _("IDS_BR_OPT_COPY_LINK"), true);              //TODO: missing translation
+    ewk_context_menu_item_append_as_action(menu, EWK_CONTEXT_MENU_ITEM_TAG_COPY_LINK_TO_CLIPBOARD, _("IDS_BR_OPT_COPY_LINK_URL"), true);              //TODO: missing translation
     /* Save image */
     ewk_context_menu_item_append_as_action(menu, EWK_CONTEXT_MENU_ITEM_TAG_DOWNLOAD_IMAGE_TO_DISK, _("IDS_BR_OPT_SAVE_IMAGE"), true);                 //TODO: missing translation
    /* copy image */
@@ -1504,23 +1416,20 @@ void WebView::__contextmenu_selected_cb(void *data, Evas_Object */*obj*/, void *
     }
 }
 
-void WebView::__fullscreen_enter_cb(void *data, Evas_Object*, void*)
-{
+void WebView::__fullscreen_enter_cb(void *data, Evas_Object*, void*) {
     BROWSER_LOGD("[%s:%d] ", __PRETTY_FUNCTION__, __LINE__);
 
     auto self = static_cast<WebView*>(data);
     self->m_fullscreen = true;
-    self->fullscreenModeSet(self->m_fullscreen);
 }
 
-void WebView::__fullscreen_exit_cb(void *data, Evas_Object*, void*)
-{
+void WebView::__fullscreen_exit_cb(void *data, Evas_Object*, void*) {
     BROWSER_LOGD("[%s:%d] ", __PRETTY_FUNCTION__, __LINE__);
 
     auto self = static_cast<WebView*>(data);
     self->m_fullscreen = false;
-    self->fullscreenModeSet(self->m_fullscreen);
 }
+
 #endif
 
 void WebView::setFocus()
@@ -1585,44 +1494,32 @@ void WebView::findWord(const char *word, Eina_Bool forward, Evas_Smart_Cb found_
 
 void WebView::ewkSettingsAutoFittingSet(bool value)
 {
-    BROWSER_LOGD("[%s:%d:%d] ", __PRETTY_FUNCTION__, __LINE__, value);
     Ewk_Settings* settings = ewk_view_settings_get(m_ewkView);
     ewk_settings_auto_fitting_set(settings, value);
 }
 
 void WebView::ewkSettingsLoadsImagesSet(bool value)
 {
-    BROWSER_LOGD("[%s:%d:%d] ", __PRETTY_FUNCTION__, __LINE__, value);
     Ewk_Settings* settings = ewk_view_settings_get(m_ewkView);
     ewk_settings_loads_images_automatically_set(settings, value);
 }
 
 void WebView::ewkSettingsJavascriptEnabledSet(bool value)
 {
-    BROWSER_LOGD("[%s:%d:%d] ", __PRETTY_FUNCTION__, __LINE__, value);
     Ewk_Settings* settings = ewk_view_settings_get(m_ewkView);
     ewk_settings_javascript_enabled_set(settings, value);
 }
 
 void WebView::ewkSettingsFormCandidateDataEnabledSet(bool value)
 {
-    BROWSER_LOGD("[%s:%d:%d] ", __PRETTY_FUNCTION__, __LINE__, value);
     Ewk_Settings* settings = ewk_view_settings_get(m_ewkView);
     ewk_settings_form_candidate_data_enabled_set(settings, value);
 }
 
 void WebView::ewkSettingsAutofillPasswordFormEnabledSet(bool value)
 {
-    BROWSER_LOGD("[%s:%d:%d] ", __PRETTY_FUNCTION__, __LINE__, value);
     Ewk_Settings* settings = ewk_view_settings_get(m_ewkView);
     ewk_settings_autofill_password_form_enabled_set(settings, value);
-}
-
-void WebView::ewkSettingsScriptsCanOpenNewPagesEnabledSet(bool value)
-{
-    BROWSER_LOGD("[%s:%d:%d] ", __PRETTY_FUNCTION__, __LINE__, value);
-    Ewk_Settings* settings = ewk_view_settings_get(m_ewkView);
-    ewk_settings_scripts_can_open_windows_set(settings, value);
 }
 
 bool WebView::clearTextSelection() const {
@@ -1695,9 +1592,9 @@ void WebView::clearFormData()
 {
     BROWSER_LOGD("[%s:%d] ", __PRETTY_FUNCTION__, __LINE__);
     M_ASSERT(m_ewkContext);
-    if (m_ewkContext) {
+    if (m_ewkContext)
         ewk_context_form_candidate_data_delete_all(m_ewkContext);
-    } else
+    else
         BROWSER_LOGD("[%s:%d] Warning: no context", __PRETTY_FUNCTION__, __LINE__);
 }
 

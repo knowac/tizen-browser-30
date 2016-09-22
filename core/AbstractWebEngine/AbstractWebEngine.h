@@ -32,7 +32,6 @@
 #include "TabOrigin.h"
 #include "WebConfirmation.h"
 #include "WebEngineSettings.h"
-#include "State.h"
 
 namespace tizen_browser {
 namespace basic_webengine {
@@ -41,8 +40,9 @@ namespace basic_webengine {
  * It is designed for multiple tabs operations.
  * It is designed to be only way for communication with WebEngine. It should NOT return WebEngine object.
  */
+template<typename T>
 #ifndef NDEBUG
-class AbstractWebEngine: public tizen_browser::core::AbstractService, ShowLifeCycle<AbstractWebEngine>
+class AbstractWebEngine : public tizen_browser::core::AbstractService, ShowLifeCycle<AbstractWebEngine<T>>
 #else
 class AbstractWebEngine: public tizen_browser::core::AbstractService
 #endif
@@ -53,19 +53,14 @@ public:
      * Remember that there must be at least 1 tab created to return layout
      * @return pointer Evas_Object for current WebView.
      */
-    virtual Evas_Object* getLayout() = 0;
-
-    /**
-     * Remember that there must be at least 1 tab created to return layout
-     * @return pointer to Evas_Object widget connected with a current WebView.
-     */
-    virtual Evas_Object* getWidget() = 0;
+    virtual T * getLayout() = 0;
 
     /**
      * Initialize WebEngine.
-     * @param guiParent GUI parent object
+     * @param guiParent GUI parent object (now should pass Evas_Object)
+     * \todo make guiParent nonEFL object
      */
-    virtual void init(Evas_Object* guiParent) = 0;
+    virtual void init(void * guiParent) = 0;
 
     /**
      * Preinitialize WebView parameters.
@@ -82,10 +77,6 @@ public:
      * @return uri address for current tab.
      */
     virtual std::string getURI(void) const = 0;
-
-#if PWA
-    virtual void requestManifest(void) = 0;
-#endif
 
     /**
      * @return title of page opened in current tab.
@@ -185,20 +176,23 @@ public:
      * @param tabId Tab id of the new tab. If boost::none, tab's id will be
      * generated
      * @param desktopMode true if desktop mode, false if mobile mode
+     * @param incognitoMode true if incognito mode, false if not
      * @return TabId of created tab
      */
     virtual TabId addTab(
             const std::string& uri = std::string(),
+            const TabId* openerId = NULL,
             const boost::optional<int> tabId = boost::none,
             const std::string& title = std::string(),
             bool desktopMode = true,
+            bool incognitoMode = false,
             TabOrigin origin = TabOrigin::UNKNOWN) = 0;
 
     /**
      * @param tab id
      * @return returns underlaying UI component
      */
-    virtual Evas_Object* getTabView(TabId id) = 0;
+    virtual T* getTabView(TabId id) = 0;
 
     /**
      * Switch current tab for tab with tabId
@@ -240,12 +234,12 @@ public:
             bool async, tizen_browser::tools::SnapshotType snapshot_type) = 0;
 
     /**
-     * Get the state of secret mode
+     * Get the state of private mode for a specific tab
      *
      * /param id of snapshot
      * /return state of private mode
      */
-    virtual bool isSecretMode() = 0;
+    virtual bool isPrivateMode(const TabId&) = 0;
 
     virtual bool isLoadError() const = 0;
 
@@ -304,15 +298,7 @@ public:
     */
     virtual void clearFormData() = 0;
 
-    /**
-     * @brief Disconnect signals from current webview.
-     */
     virtual void disconnectCurrentWebViewSignals() = 0;
-
-    /**
-     * @brief Connect signals to current web view.
-     */
-    virtual void connectCurrentWebViewSignals() = 0;
 
     /**
      * @brief Search string on searchOnWebsite
@@ -372,6 +358,7 @@ public:
      */
     virtual void onTabIdCreated(int tabId) = 0;
 
+#if PROFILE_MOBILE
     /**
      * @brief Searches for word in the current page.
      *
@@ -401,16 +388,7 @@ public:
      * @brief Informs WebEngine that device orientation is changed.
      */
     virtual void orientationChanged() = 0;
-
-    /**
-     * @brief set next state
-     */
-    virtual void changeState() = 0;
-
-    /**
-     * @brief Get current state of the engine
-     */
-    virtual State getState() = 0;
+#endif
 
     /**
      * Ask browser to minimize itself
@@ -565,17 +543,6 @@ public:
      * Switch to quick access when tere is no page to witch we can return on back keys.
      */
     boost::signals2::signal<void()> switchToQuickAccess;
-
-    /**
-     * Switch fullscreenmode.
-     */
-    boost::signals2::signal<void(bool)> fullscreenModeSet;
-
-#if PWA
-    boost::signals2::signal<void (std::string)> resultDataManifest;
-
-    boost::signals2::signal<void (std::string)> iconDownload;
-#endif
 
 #if PROFILE_MOBILE
     /**

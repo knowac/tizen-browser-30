@@ -19,9 +19,6 @@
 #ifndef WEB_ENGINE_SETTINGS_H
 #define WEB_ENGINE_SETTINGS_H
 
-#include <map>
-#include <string>
-
 namespace tizen_browser {
 namespace basic_webengine {
 
@@ -31,11 +28,7 @@ enum class WebEngineSettings {
     ENABLE_JAVASCRIPT,
     REMEMBER_FROM_DATA,
     REMEMBER_PASSWORDS,
-    AUTOFILL_PROFILE_DATA,
-    SCRIPTS_CAN_OPEN_PAGES,
-    SAVE_CONTENT_LOCATION,
-    DEFAULT_SEARCH_ENGINE,
-    CURRENT_HOME_PAGE
+    AUTOFILL_PROFILE_DATA
 };
 
 // string parameters mapping
@@ -44,12 +37,7 @@ const std::map<WebEngineSettings, std::string> PARAMS_NAMES = {
     {WebEngineSettings::LOAD_IMAGES, "load_images"},
     {WebEngineSettings::ENABLE_JAVASCRIPT, "enable_javascript"},
     {WebEngineSettings::REMEMBER_FROM_DATA, "remember_form_data"},
-    {WebEngineSettings::REMEMBER_PASSWORDS, "remember_passwords"},
-    {WebEngineSettings::AUTOFILL_PROFILE_DATA, "autofill_profile_data"},
-    {WebEngineSettings::SCRIPTS_CAN_OPEN_PAGES, "scripts_can_open_pages"},
-    {WebEngineSettings::SAVE_CONTENT_LOCATION, "save_content_location"},
-    {WebEngineSettings::DEFAULT_SEARCH_ENGINE, "default_search_engine"},
-    {WebEngineSettings::CURRENT_HOME_PAGE, "current_home_page"}
+    {WebEngineSettings::REMEMBER_PASSWORDS, "remember_passwords"}
 };
 
 }

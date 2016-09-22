@@ -24,7 +24,6 @@
 #include "BasicUI/Action.h"
 #include "BrowserImage.h"
 #include "EflTools.h"
-#include "WebPageUIStatesManager.h"
 
 
 namespace tizen_browser {
@@ -43,7 +42,7 @@ public:
         SELECTION_KEEP
         , SELECTION_NONE
     };
-    URIEntry(WPUStatesManagerPtrConst statesMgr);
+    URIEntry();
     ~URIEntry();
     void init(Evas_Object* parent);
     Evas_Object* getContent();
@@ -55,21 +54,20 @@ public:
     // uri edition change (by a user)
     boost::signals2::signal<void (const std::shared_ptr<std::string>)> uriEntryEditingChangedByUser;
 
+#if PROFILE_MOBILE
     boost::signals2::signal<void ()> mobileEntryFocused;
     boost::signals2::signal<void ()> mobileEntryUnfocused;
     boost::signals2::signal<void ()> secureIconClicked;
     boost::signals2::signal<bool (const std::string&)> isValidCert;
-    boost::signals2::signal<void ()> reloadPage;
-    boost::signals2::signal<void ()> stopLoadingPage;
     void updateSecureIcon();
     void showSecureIcon(bool show, bool secure);
+#endif
 
     void setFavIcon(std::shared_ptr<tizen_browser::tools::BrowserImage> favicon);
     void setCurrentFavIcon();
     void setSearchIcon();
     void setDocIcon();
-    void setPageLoading(bool isLoading) { m_isPageLoading = isLoading; }
-
+    IconType getCurrentIconTyep();
     /**
      * \brief Adds Action to URI bar.
      *
@@ -83,6 +81,11 @@ public:
     std::list<sharedAction> actions() const;
 
     /**
+     * \brief Sets Focus to URI entry.
+     */
+    void setFocus();
+
+    /**
      * @brief Remove focus form URI
      */
     void clearFocus();
@@ -92,15 +95,7 @@ public:
      */
     bool hasFocus() const;
 
-    /**
-     * \brief Rewrites URI to support search and prefixing http:// if needed
-     */
-    std::string rewriteURI(const std::string& url);
-
     void setDisabled(bool disabled);
-    void editingCanceled();
-    void loadStarted();
-    void loadFinished();
 
 private:
     static void activated(void* data, Evas_Object* obj, void* event_info);
@@ -113,30 +108,29 @@ private:
     void selectionTool();
     void setUrlGuideText(const char* txt) const;
 
+    /**
+     * \brief Rewrites URI to support search and prefixing http:// if needed
+     */
+    std::string rewriteURI(const std::string& url);
+
     static void _fixed_entry_key_down_handler(void* data, Evas* e, Evas_Object* obj, void* event_info);
     static void _uri_entry_clicked(void* data, Evas_Object* obj, void* event_info);
     static void _uri_entry_editing_changed_user(void* data, Evas_Object* obj, void* event_info);
     static void _uri_entry_double_clicked(void* data, Evas_Object* obj, void* event_info);
     static void _uri_entry_selection_changed(void* data, Evas_Object* obj, void* event_info);
     static void _uri_entry_longpressed(void* data, Evas_Object* obj, void* event_info);
+#if PROFILE_MOBILE
     enum class RightIconType {
         NONE,
         CANCEL,
-        RELOAD,
-        STOP_LOADING
+        SECURE
     };
 
-    static void _uri_left_icon_clicked(void* data, Evas_Object* obj, void* event_info);
-    static void _uri_right_icon_clicked(void* data, Evas_Object* obj, void* event_info);
-    void showRightIcon(const std::string& fileName);
+    static void _uri_right_icon_clicked(void* data, Evas_Object*, const char*, const char*);
     void showCancelIcon();
-    void showStopIcon();
-    void showReloadIcon();
-    void hideRightIcon();
-    void hideLeftIcon();
+#endif
 
 private:
-    std::string m_customEdjPath;
     Evas_Object* m_parent;
     IconType m_currentIconType;
     std::list<sharedAction> m_actions;
@@ -149,11 +143,11 @@ private:
     bool m_entryContextMenuOpen;
     bool m_searchTextEntered;
     bool m_first_click;
-    bool m_isPageLoading;
-    WPUStatesManagerPtrConst m_statesMgr;
+#if PROFILE_MOBILE
     RightIconType m_rightIconType;
-    Evas_Object* m_rightIcon;
-    Evas_Object* m_leftIcon;
+    bool m_securePageIcon;
+    bool m_showSecureIcon;
+#endif
 };
 
 
