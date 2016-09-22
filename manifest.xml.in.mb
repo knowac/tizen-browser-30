@@ -125,6 +125,9 @@
             <operation name="http://tizen.org/appcontrol/operation/view" />
             <mime name="application/xml" />
         </app-control>
+        <app-control>
+            <operation name="http://tizen.org/appcontrol/operation/search" />
+        </app-control>
     </ui-application>
     <privileges>
         <privilege>http://tizen.org/privilege/bookmark.admin</privilege>
