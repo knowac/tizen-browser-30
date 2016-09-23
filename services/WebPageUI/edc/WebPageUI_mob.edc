@@ -111,12 +111,12 @@ collections { base_scale: 2.6;
                 description {
                     state: "hidden_vertical" 0.0;
                     inherit: "default" 0.0;
-                    rel1 {relative: 0.0 -URI_BG_HEIGHT/1228; to:"bg";}
+                    rel1 {relative: 0.0 -2*URI_BG_HEIGHT/1228; to:"bg";}
                 }
                 description {
                     state: "hidden_landscape" 0.0;
                     inherit: "default" 0.0;
-                    rel1 {relative: 0.0 -URI_BG_HEIGHT/668; to:"bg";}
+                    rel1 {relative: 0.0 -2*URI_BG_HEIGHT/668; to:"bg";}
                 }
             }
             ADD_SPACER_OVER("left_spacer", "uri_bar_bg", 16, URI_BG_HEIGHT)

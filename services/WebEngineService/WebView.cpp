@@ -1400,6 +1400,7 @@ void WebView::__fullscreen_enter_cb(void *data, Evas_Object*, void*) {
 
     auto self = static_cast<WebView*>(data);
     self->m_fullscreen = true;
+    self->fullscreenModeSet(self->m_fullscreen);
 }
 
 void WebView::__fullscreen_exit_cb(void *data, Evas_Object*, void*) {
@@ -1407,6 +1408,7 @@ void WebView::__fullscreen_exit_cb(void *data, Evas_Object*, void*) {
 
     auto self = static_cast<WebView*>(data);
     self->m_fullscreen = false;
+    self->fullscreenModeSet(self->m_fullscreen);
 }
 
 #endif

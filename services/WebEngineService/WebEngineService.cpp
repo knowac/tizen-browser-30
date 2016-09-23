@@ -142,6 +142,7 @@ void WebEngineService::connectSignals(std::shared_ptr<WebView> webView)
     webView->getRotation.connect(boost::bind(&WebEngineService::_getRotation, this));
     webView->unsecureConnection.connect(boost::bind(&WebEngineService::_unsecureConnection, this));
     webView->findOnPage.connect(boost::bind(&WebEngineService::_findOnPage, this, _1));
+    webView->fullscreenModeSet.connect([this](bool state){fullscreenModeSet(state);});
 #endif
 }
 
@@ -165,6 +166,7 @@ void WebEngineService::disconnectSignals(std::shared_ptr<WebView> webView)
     webView->getRotation.disconnect(boost::bind(&WebEngineService::_getRotation, this));
     webView->unsecureConnection.disconnect(boost::bind(&WebEngineService::_unsecureConnection, this));
     webView->findOnPage.disconnect(boost::bind(&WebEngineService::_findOnPage, this, _1));
+    webView->fullscreenModeSet.disconnect_all_slots();
 #endif
 }
 
