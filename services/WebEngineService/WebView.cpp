@@ -927,6 +927,8 @@ void WebView::__loadFinished(void * data, Evas_Object * /* obj */, void * /* eve
     self->captureSnapshot(boost::any_cast<int>(config::Config::getInstance().get(CONFIG_KEY::HISTORY_TAB_SERVICE_THUMB_WIDTH)),
             boost::any_cast<int>(tizen_browser::config::Config::getInstance().get(CONFIG_KEY::HISTORY_TAB_SERVICE_THUMB_HEIGHT)),
             true, tools::SnapshotType::ASYNC_LOAD_FINISHED);
+
+    self->setFocus();
 }
 
 void WebView::__loadProgress(void * data, Evas_Object * /* obj */, void * event_info)
