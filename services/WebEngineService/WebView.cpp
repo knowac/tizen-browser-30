@@ -242,6 +242,8 @@ void WebView::registerCallbacks()
     evas_object_smart_callback_add(m_ewkView, "fullscreen,enterfullscreen", __fullscreen_enter_cb, this);
     evas_object_smart_callback_add(m_ewkView, "fullscreen,exitfullscreen", __fullscreen_exit_cb, this);
     ewk_context_vibration_client_callbacks_set(m_ewkContext, __vibration_cb, __vibration_cancel_cb, this);
+
+    evas_object_smart_callback_add(m_ewkView, "rotate,prepared", __rotate_prepared_cb, this);
 #endif
 
 }
@@ -281,6 +283,8 @@ void WebView::unregisterCallbacks()
     evas_object_smart_callback_del_full(m_ewkView, "fullscreen,enterfullscreen", __fullscreen_enter_cb, this);
     evas_object_smart_callback_del_full(m_ewkView, "fullscreen,exitfullscreen", __fullscreen_exit_cb, this);
     ewk_context_vibration_client_callbacks_set(m_ewkContext, NULL, NULL, this);
+
+    evas_object_smart_callback_del_full(m_ewkView, "rotate,prepared", __rotate_prepared_cb, this);
 #endif
 }
 
@@ -1416,6 +1420,17 @@ void WebView::__fullscreen_exit_cb(void *data, Evas_Object*, void*) {
     auto self = static_cast<WebView*>(data);
     self->m_fullscreen = false;
     self->fullscreenModeSet(self->m_fullscreen);
+}
+
+void WebView::__rotate_prepared_cb(void * data, Evas_Object *, void *)
+{
+    BROWSER_LOGD("[%s:%d] ", __PRETTY_FUNCTION__, __LINE__);
+    if (data) {
+        auto *self = static_cast<WebView *>(data);
+        self->rotatePrepared();
+    } else {
+            BROWSER_LOGW("[%s] data = nullptr", __PRETTY_FUNCTION__);
+    }
 }
 
 #endif

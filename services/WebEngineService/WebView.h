@@ -282,6 +282,8 @@ public:
     boost::signals2::signal<void (const std::string&, const std::string&)> setCertificatePem;
     boost::signals2::signal<void (const std::string&, const std::string&)> setWrongCertificatePem;
 
+    boost::signals2::signal<void ()> rotatePrepared;
+
     boost::signals2::signal<void (const std::string&, const std::string&)> redirectedWebPage;
     boost::signals2::signal<void()> unsecureConnection;
     boost::signals2::signal<void(bool)> fullscreenModeSet;
@@ -313,6 +315,7 @@ private:
     static void __contextmenu_selected_cb(void *data, Evas_Object *obj, void *event_info);
     static void __fullscreen_enter_cb(void *data, Evas_Object *obj, void *event_info);
     static void __fullscreen_exit_cb(void *data, Evas_Object *obj, void *event_info);
+    static void __rotate_prepared_cb(void *data, Evas_Object *obj, void *event_info);
 
     Eina_Bool handle_scheme(const char *uri);
     Eina_Bool launch_email(const char *uri);

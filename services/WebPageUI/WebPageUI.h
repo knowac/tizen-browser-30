@@ -104,6 +104,7 @@ public:
     boost::signals2::signal<void ()> reloadPage;
     boost::signals2::signal<void ()> showTabUI;
 #if PROFILE_MOBILE
+    boost::signals2::signal<void ()> updateManualRotation;
     boost::signals2::signal<void ()> hideMoreMenu;
     boost::signals2::signal<void ()> qaOrientationChanged;
 #else

@@ -572,6 +572,11 @@ public:
     boost::signals2::signal<int()> getRotation;
 
     /**
+      Async signal to inform browser to finish rotation.
+     */
+    boost::signals2::signal<void ()> rotatePrepared;
+
+    /**
      * Unsecure connection to https host, do not even ask to confirm, just inform.
      */
     boost::signals2::signal<void()> unsecureConnection;
