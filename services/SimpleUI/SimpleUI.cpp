@@ -1786,12 +1786,10 @@ void SimpleUI::onResetBrowserButton(PopupButtons button, std::shared_ptr< PopupD
         m_webEngine->clearFormData();
 
         // Close all openend tabs
-        std::vector<std::shared_ptr<tizen_browser::basic_webengine::TabContent>> openedTabs = m_webEngine->getTabContents();
-        for (auto it = openedTabs.begin(); it < openedTabs.end(); ++it) {
-            tizen_browser::basic_webengine::TabId id = it->get()->getId();
-            m_tabService->removeTab(id);
-            m_webEngine->closeTab(id);
-        }
+        auto openedTabs = m_webEngine->getTabContents();
+        for (const auto& it : openedTabs)
+            m_webEngine->closeTab(it.get()->getId());
+        m_tabService->clearAll();
         m_certificateContents->clear();
         m_storageService->getCertificateStorage().deleteAllEntries();
         m_storageService->getFoldersStorage().deleteAllFolders();

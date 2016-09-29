@@ -205,10 +205,30 @@ void TabService::clearFromCache(const basic_webengine::TabId& tabId) {
     m_thumbMap.erase(tabId.get());
 }
 
+void TabService::clearAll()
+{
+    int* items = nullptr;
+    int count;
+    if (bp_tab_adaptor_get_full_ids_p(&items, &count) < 0) {
+        errorPrint("bp_tab_adaptor_get_full_ids_p");
+    }
+    for (int i = 0; i < count; ++i) {
+        auto id = basic_webengine::TabId(items[i]);
+        clearFromDatabase(id);
+    }
+    m_thumbMap.clear();
+}
+
 void TabService::clearFromDatabase(const basic_webengine::TabId& tabId)
 {
     if (bp_tab_adaptor_delete(tabId.get()) < 0) {
         errorPrint("bp_tab_adaptor_delete");
+    }
+    if (bp_tab_adaptor_set_deleted(tabId.get()) < 0) {
+        errorPrint("bp_tab_adaptor_set_deleted");
+    }
+    if (bp_tab_adaptor_clear_deleted_ids() < 0) {
+        errorPrint("bp_tab_adaptor_clear_deleted_ids");
     }
 }
 

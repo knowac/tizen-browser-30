@@ -66,6 +66,11 @@ public:
     void removeTab(const basic_webengine::TabId& tabId);
 
     /**
+     * Remove all items from the cache and database.
+     */
+    void clearAll();
+
+    /**
      * Set thumb images for given TabContent objects: get them from
      * cache or database or generate them by taking screenshots.
      */
