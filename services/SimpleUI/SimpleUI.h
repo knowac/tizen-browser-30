@@ -95,6 +95,9 @@ private:
     void initModelServices();
     void initUIServices();
     void connectModelSignals();
+    void pushViewToStack(interfaces::AbstractUIComponent* view);
+    void popTheStack();
+    void popStackTo(interfaces::AbstractUIComponent* view);
     void titleChanged(const std::string& title);
     void faviconChanged(tools::BrowserImagePtr favicon);
     void restoreLastSession();
@@ -291,6 +294,9 @@ private:
     void registerHWKeyCallback();
     void unregisterHWKeyCallback();
 
+    bool isManualRotation(interfaces::AbstractUIComponent* view);
+    void enableManualRotation(bool enable);
+    void rotatePrepared();
     void onRotation();
     bool isLandscape();
     int getRotation();
@@ -369,6 +375,7 @@ private:
     Evas_Object *main_window;
 #if PROFILE_MOBILE
     Evas_Object *m_conformant;
+    bool m_manualRotation;
     int m_current_angle;
     int m_temp_angle;
 #endif

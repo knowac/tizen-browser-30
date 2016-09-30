@@ -209,6 +209,7 @@ void WebPageUI::setMainContent(Evas_Object* content)
 #endif
 #if PROFILE_MOBILE
     evas_object_smart_callback_add(content, "mouse,down", _content_clicked, this);
+    updateManualRotation();
 #endif
     evas_object_show(content);
 }
