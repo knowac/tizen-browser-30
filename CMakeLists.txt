@@ -116,6 +116,7 @@ if(TIZEN_BUILD)
 
     if (${PROFILE} MATCHES "mobile")
         ADD_DEFINITIONS(-DPROFILE_MOBILE=1)
+        ADD_DEFINITIONS(-DDUMMY_BUTTON=1)
     endif (${PROFILE} MATCHES "mobile")
 
 endif(TIZEN_BUILD)

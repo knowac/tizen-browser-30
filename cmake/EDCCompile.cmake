@@ -34,6 +34,7 @@ IF(EDJE_CC_EXECUTABLE)
                                 ARGS -id ${CMAKE_CURRENT_SOURCE_DIR}/${IMAGES_URL}/
                                 -DBROWSER_RESOLUTION_${resolution}=1
                                 -DPROFILE_MOBILE=${IF_PROFILE_MOBILE}
+                                -DDUMMY_BUTTON=${IF_DUMMY_BUTTON}
                                 ${Edc_Input} ${tmp_output}
                                 MAIN_DEPENDENCY ${Edc_Input}
                                 DEPENDS ${EDJE_TARGET_depends}

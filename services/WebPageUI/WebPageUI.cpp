@@ -37,6 +37,9 @@ EXPORT_SERVICE(WebPageUI, "org.tizen.browser.webpageui")
 WebPageUI::WebPageUI()
     : m_parent(nullptr)
     , m_mainLayout(nullptr)
+#if DUMMY_BUTTON
+    , m_dummy_button(nullptr)
+#endif
     , m_errorLayout(nullptr)
     , m_privateLayout(nullptr)
     , m_bookmarkManagerButton(nullptr)
@@ -59,6 +62,10 @@ WebPageUI::WebPageUI()
 WebPageUI::~WebPageUI()
 {
     BROWSER_LOGD("[%s:%d] ", __PRETTY_FUNCTION__, __LINE__);
+#if DUMMY_BUTTON
+    evas_object_smart_callback_del(m_dummy_button, "focused", _dummy_button_focused);
+    evas_object_smart_callback_del(m_dummy_button, "unfocused", _dummy_button_unfocused);
+#endif
 }
 
 void WebPageUI::init(Evas_Object* parent)
@@ -207,8 +214,10 @@ void WebPageUI::setMainContent(Evas_Object* content)
 #if PROFILE_MOBILE && GESTURE
     elm_gesture_layer_attach(m_gestureLayer, content);
 #endif
-#if PROFILE_MOBILE
+#if PROFILE_MOBILE && !DUMMY_BUTTON
     evas_object_smart_callback_add(content, "mouse,down", _content_clicked, this);
+#endif
+#if PROFILE_MOBILE
     updateManualRotation();
 #endif
     evas_object_show(content);
@@ -484,6 +493,45 @@ void WebPageUI::createLayout()
 #endif
 }
 
+#if DUMMY_BUTTON
+void WebPageUI::createDummyButton()
+{
+    BROWSER_LOGD("[%s:%d] ", __PRETTY_FUNCTION__, __LINE__);
+    if (!m_dummy_button) {
+        M_ASSERT(m_mainLayout);
+        m_dummy_button = elm_button_add(m_mainLayout);
+        elm_object_style_set(m_dummy_button, "invisible_button");
+        evas_object_size_hint_align_set(m_dummy_button, EVAS_HINT_FILL, EVAS_HINT_FILL);
+        evas_object_size_hint_weight_set(m_dummy_button, EVAS_HINT_EXPAND, EVAS_HINT_EXPAND);
+        elm_object_focus_allow_set(m_dummy_button, EINA_TRUE);
+        elm_object_focus_set(m_dummy_button, EINA_TRUE);
+        evas_object_show(m_dummy_button);
+        elm_object_part_content_set(m_mainLayout, "web_view_dummy_button", m_dummy_button);
+
+        evas_object_smart_callback_add(m_dummy_button, "focused", _dummy_button_focused, this);
+        evas_object_smart_callback_add(m_dummy_button, "unfocused", _dummy_button_unfocused, this);
+    }
+}
+
+void WebPageUI::_dummy_button_focused(void *data, Evas_Object *, void *)
+{
+    BROWSER_LOGD("[%s:%d] ", __PRETTY_FUNCTION__, __LINE__);
+    if (data != nullptr) {
+        WebPageUI* webPageUI = static_cast<WebPageUI*>(data);
+        webPageUI->focusWebView();
+    }
+}
+
+void WebPageUI::_dummy_button_unfocused(void *data, Evas_Object *, void *)
+{
+    BROWSER_LOGD("[%s:%d] ", __PRETTY_FUNCTION__, __LINE__);
+    if (data != nullptr) {
+        WebPageUI* webPageUI = static_cast<WebPageUI*>(data);
+        webPageUI->unfocusWebView();
+    }
+}
+
+#endif
 void WebPageUI::createErrorLayout()
 {
     BROWSER_LOGD("[%s:%d] ", __PRETTY_FUNCTION__, __LINE__);
