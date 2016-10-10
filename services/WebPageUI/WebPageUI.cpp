@@ -434,13 +434,18 @@ void WebPageUI::fullscreenModeSet(bool state)
 {
     BROWSER_LOGD("[%s:%d] ", __PRETTY_FUNCTION__, __LINE__);
     auto landscape = isLandscape();
+    auto findonpage = isFindOnPageVisible();
     m_fullscreen = state;
-    if (!state)
+    if (!state) {
         elm_object_signal_emit(m_mainLayout, "show_uri_bar", "ui");
-    else if (landscape && state) {
+        if (findonpage && *findonpage)
+            elm_object_signal_emit(m_mainLayout, "show_findonpage", "ui");
+    } else if (landscape && state) {
         (*landscape) ?
             elm_object_signal_emit(m_mainLayout, "hide_uri_bar_landscape", "ui") :
             elm_object_signal_emit(m_mainLayout, "hide_uri_bar_vertical", "ui");
+        if (findonpage && *findonpage)
+            hideFindOnPage();
     }
 }
 #endif

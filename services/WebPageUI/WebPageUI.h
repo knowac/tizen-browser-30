@@ -110,6 +110,7 @@ public:
     boost::signals2::signal<void ()> updateManualRotation;
     boost::signals2::signal<void ()> hideMoreMenu;
     boost::signals2::signal<void ()> qaOrientationChanged;
+    boost::signals2::signal<bool ()> isFindOnPageVisible;
 #else
     boost::signals2::signal<void ()> showZoomNavigation;
 #endif
