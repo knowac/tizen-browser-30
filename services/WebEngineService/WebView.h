@@ -22,7 +22,8 @@
 #include <Evas.h>
 #include <ecore-1/Ecore.h>
 
-#include <ewk_chromium.h>
+#include <EWebKit.h>
+#include <EWebKit_internal.h>
 #include "browser_config.h"
 #include "Config.h"
 #include "BrowserImage.h"

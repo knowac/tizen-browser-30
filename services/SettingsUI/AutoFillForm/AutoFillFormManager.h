@@ -24,7 +24,8 @@
 #include <Elementary.h>
 #include <Evas.h>
 
-#include <ewk_chromium.h>
+#include <EWebKit.h>
+#include <EWebKit_internal.h>
 
 #define AUTO_FILL_FORM_ENTRY_MAX_COUNT 1024
 #define PHONE_FIELD_VALID_ENTRIES "0123456789*#()/N,.;+ "

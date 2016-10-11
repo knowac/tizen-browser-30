@@ -16,7 +16,8 @@
 
 #include <boost/test/unit_test.hpp>
 #include <Elementary.h>
-#include <ewk_chromium.h>
+#include <EWebKit.h>
+#include <EWebKit_internal.h>
 
 #include "ServiceManager.h"
 #include "AbstractWebEngine.h"

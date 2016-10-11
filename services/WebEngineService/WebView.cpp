@@ -23,7 +23,8 @@
 
 #include "WebView.h"
 
-#include <ewk_chromium.h>
+#include <EWebKit.h>
+#include <EWebKit_internal.h>
 
 #include <boost/format.hpp>
 #include <boost/regex.hpp>
