@@ -2,7 +2,7 @@
 
 #define BUTTON_HEIGHT 120
 #define TITLE_HEIGHT 127
-#define TITLE_TEXT_OFFSET_X 100
+#define TITLE_TEXT_OFFSET_X 0
 #define TITLE_TEXT_OFFSET_Y 44
 #define TITLE_TEXT_HEIGHT 45
 #define MESSAGE_OFFSET_X 44
@@ -32,34 +32,101 @@ collections { base_scale: 2.6;
                     state: "default" 0.0;
                     visible: 1;
                     color: 0 0 0 102.4;
-                    align: 0.5 0.5;
+                    align: 0.5 1.0;
                     min: 0 0;
                     max: -1 -1;
                     fixed: 0 0;
-                    rel1.relative: 0.0 0.0;
+                    rel1.relative: 0.0 0.2;
                     rel2.relative: 1.0 1.0;
                 }
             }
             rect {
-                name: "popup_bg";
+                name: "title_bg";
                 scale: 1;
                 description {
                     state: "default" 0.0;
                     visible: 1;
                     color: 255 255 255 255;
-                    min: 0 0;
-                    max: -1 -1;
-                    fixed: 0 0;
+                    align: 0 0;
+                    min: 0 TITLE_HEIGHT;
+                    max: -1 TITLE_HEIGHT;
+                    align: 0 0;
                     rel1 {
                         relative: 0 0;
-                        to: "title_bg";
+                        to: "bg";
                     }
                     rel2 {
-                        relative: 1 0;
-                        to: "buttons_bg";
+                        relative: 1 1;
+                        to: "bg";
                     }
                 }
             }
+            rect {
+                name: "title_text_spacer";
+                scale: 1;
+                description {
+                    state: "default" 0.0;
+                    visible: DEVELOPMENT;
+                    color: 255 255 255 127;
+                    min: TITLE_TEXT_OFFSET_X TITLE_TEXT_OFFSET_Y;
+                    max: TITLE_TEXT_OFFSET_X TITLE_TEXT_OFFSET_Y;
+                    fixed: 1 1;
+                    align: 0.0 0.0;
+                    rel1 {
+                        relative: 0.0 0.0;
+                        to: "title_bg";
+                    }
+                    rel2 {
+                        relative: 1.0 1.0;
+                        to: "title_bg";
+                    }
+                 }
+            }
+            rect {
+                name: "title_text_bg";
+                scale: 1;
+                description {
+                    state: "default" 0.0;
+                    visible: DEVELOPMENT;
+                    color: 255 182 193 255; //lightpink
+                    align: 0.0 0.0;
+                    min: 0 TITLE_TEXT_HEIGHT;
+                    max: -1 -1;
+                    fixed: 0 0;
+                    rel1 {
+                        relative: 1 1;
+                        to: "title_text_spacer";
+                    }
+                    rel2 {
+                        relative: 1 1;
+                        to: "title_bg";
+                    }
+                }
+            }
+            part {
+                name: "title_text";
+                type: TEXTBLOCK;
+                scale: 1;
+                description {
+                    state: "default" 0.0;
+                    visible: 1;
+                    align: 0.0 0.0;
+                    fixed: 0 0;
+                    rel1 {
+                        relative: 0.0 0.0;
+                        to: "title_text_bg";
+                    }
+                    rel2 {
+                        relative: 1.0 1.0;
+                        to: "title_text_bg";
+                    }
+                    text {
+                        style: "title_text_style";
+                        align: 0 0;
+                    }
+                }
+            }
+
             rect {
                 name: "buttons_bg";
                 scale: 1;
@@ -72,7 +139,7 @@ collections { base_scale: 2.6;
                     max: -1 BUTTON_HEIGHT;
                     fixed: 0 1;
                     rel1 {
-                        relative: 0.0 1.0;
+                        relative: 0.0 0.0;
                         to: "bg";
                     }
                     rel2 {
@@ -101,17 +168,45 @@ collections { base_scale: 2.6;
                 }
             }
             rect {
+                name: "popup_bg";
+                scale: 1;
+                description {
+                    state: "default" 0.0;
+                    visible: 1;
+                    color: 255 255 255 255;
+                    min: 0 0;
+                    max: -1 -1;
+                    fixed: 0 0;
+                    align: 0 0;
+                    rel1 {
+                        relative: 0 1;
+                        to: "title_bg";
+                    }
+                    rel2 {
+                        relative: 1 0;
+                        to: "buttons_bg";
+                    }
+                }
+            }
+            rect {
                 name: "text_spacer_0";
                 scale: 1;
                 description {
                     state: "default" 0.0;
                     visible: DEVELOPMENT;
+                    color: 0 0 70 255;
                     min: MESSAGE_OFFSET_X 0;
                     max: MESSAGE_OFFSET_X 0;
                     fixed: 1 1;
                     align: 0 0;
-                    rel1.relative: 0 0;
-                    rel2.relative: 1 1;
+                    rel1 {
+                        relative: 0 0;
+                        to: "popup_bg";
+                    }
+                    rel2 {
+                        relative: 1 1;
+                        to: "popup_bg";
+                    }
                 }
             }
             rect {
@@ -127,10 +222,11 @@ collections { base_scale: 2.6;
                     align: 1 1;
                     rel1 {
                         relative: 0 0;
+                        to: "popup_bg";
                     }
                     rel2 {
-                      relative: 1 0;
-                        to: "buttons_bg";
+                        relative: 1 1;
+                        to: "popup_bg";
                     }
                 }
             }
@@ -142,7 +238,8 @@ collections { base_scale: 2.6;
                     state: "default" 0.0;
                     visible: 1;
                     min: 0 38;
-                    align: 0.5 1;
+                    max: -1 -1;
+                    align: 0 0;
                     rel1 {
                         relative: 1 1;
                         to: "text_spacer_0";
@@ -150,131 +247,6 @@ collections { base_scale: 2.6;
                     rel2 {
                         relative: 0 0;
                         to: "text_spacer_1";
-                    }
-                }
-            }
-            rect {
-                name: "title_spacer";
-                scale: 1;
-                description {
-                    state: "default" 0.0;
-                    visible: DEVELOPMENT;
-                    min: MESSAGE_OFFSET_X 0;
-                    max: MESSAGE_OFFSET_X 0;
-                    fixed: 1 1;
-                    align: 0 0;
-                    rel1 {
-                        relative: 1 0;
-                        to: "content_swallow";
-                    }
-                    rel2 {
-                        relative: 1 1;
-                    }
-                }
-            }
-            rect {
-                name: "title_bg";
-                scale: 1;
-                description {
-                    state: "default" 0.0;
-                    visible: 1;
-                    color: 255 255 255 255;
-                    align: 0 1;
-                    min: 0 TITLE_HEIGHT;
-                    max: -1 TITLE_HEIGHT;
-                    rel1 {
-                        relative: 0 0;
-                        to: "bg";
-                    }
-                    rel2 {
-                        relative: 1 0;
-                        to: "title_spacer";
-                    }
-                }
-            }
-            rect {
-                name: "title_text_spacer_0";
-                scale: 1;
-                description {
-                    state: "default" 0.0;
-                    visible: DEVELOPMENT;
-                    color: 255 255 255 127;
-                    min: TITLE_TEXT_OFFSET_X TITLE_TEXT_OFFSET_Y;
-                    max: TITLE_TEXT_OFFSET_X TITLE_TEXT_OFFSET_Y;
-                    fixed: 1 1;
-                    align: 0.0 0.0;
-                    rel1 {
-                        relative: 0.0 0.0;
-                        to: "title_bg";
-                    }
-                    rel2 {
-                        relative: 1.0 1.0;
-                        to: "title_bg";
-                    }
-                 }
-            }
-            rect {
-                name: "title_text_spacer_1";
-                scale: 1;
-                description {
-                    state: "default" 0.0;
-                    visible: DEVELOPMENT;
-                    color: 255 255 255 127;
-                    min: TITLE_TEXT_OFFSET_X 0;
-                    max: TITLE_TEXT_OFFSET_X 0;
-                    fixed: 1 1;
-                    align: 1 1;
-                    rel1 {
-                        relative: 0.0 0.0;
-                        to: "title_bg";
-                    }
-                    rel2 {
-                        relative: 1.0 1.0;
-                        to: "title_bg";
-                    }
-                }
-            }
-            rect {
-                name: "title_text_bg";
-                scale: 1;
-                description {
-                    state: "default" 0.0;
-                    visible: DEVELOPMENT;
-                    color: 255 182 193 255; //lightpink
-                    align: 0.0 0.0;
-                    min: 0 TITLE_TEXT_HEIGHT;
-                    max: -1 -1;
-                    fixed: 0 0;
-                    rel1 {
-                        relative: 1 1;
-                        to: "title_text_spacer_0";
-                    }
-                    rel2 {
-                        relative: 0 0;
-                        to: "title_text_spacer_1";
-                    }
-                }
-            }
-            part {
-                name: "title_text";
-                type: TEXTBLOCK;
-                scale: 1;
-                description {
-                    state: "default" 0.0;
-                    visible: 1;
-                    align: 0.0 0.0;
-                    fixed: 0 0;
-                    rel1 {
-                        relative: 0.0 0.0;
-                        to: "title_text_bg";
-                    }
-                    rel2 {
-                        relative: 1.0 1.0;
-                        to: "title_text_bg";
-                    }
-                    text {
-                        style: "title_text_style";
-                        align: 0 0;
                     }
                 }
             }

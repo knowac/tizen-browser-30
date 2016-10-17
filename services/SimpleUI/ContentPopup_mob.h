@@ -42,7 +42,7 @@ public:
     void show();
     void dismiss();
     void onBackPressed();
-    void orientationChanged();
+    void orientationChanged() override { }
 
     void setTitle(const std::string& title);
     void setContent(Evas_Object* content);
@@ -82,8 +82,6 @@ private:
     std::string m_message;
     std::string m_edjFilePath;
     static const int MARGIN = 44;
-    static const int MAX_HEIGHT = 799 - 26 - 54;    // max height of content swallow (height - margins)
-    static const int MAX_HEIGHT_LANDSCAPE = 300;
 };
 
 }

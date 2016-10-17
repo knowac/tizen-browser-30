@@ -54,7 +54,6 @@ void ContentPopup::show()
 {
     evas_object_show(m_layout);
     elm_object_part_content_set(m_parent, "popup_content", m_layout);
-    orientationChanged();
     popupShown(this);
 }
 
@@ -151,20 +150,6 @@ void ContentPopup::_layout_resize_cb(void* data, Evas* /*e*/, Evas_Object* /*obj
     evas_object_geometry_get(self->m_layout, NULL, NULL, &w, NULL);
     w -= 2 * Z3_SCALE_SIZE(MARGIN);
     elm_label_wrap_width_set(self->m_content, w);
-}
-
-void ContentPopup::orientationChanged()
-{
-    BROWSER_LOGD("[%s:%d] ", __PRETTY_FUNCTION__, __LINE__);
-
-    auto landscapeSignal = isLandscape();
-    if (landscapeSignal) {
-        if (*landscapeSignal)
-            evas_object_size_hint_max_set(m_scroller, -1, MAX_HEIGHT_LANDSCAPE);
-        else
-            evas_object_size_hint_max_set(m_scroller, -1, MAX_HEIGHT);
-    } else
-        BROWSER_LOGW("[%s:%d] Wrong boost signal value!", __PRETTY_FUNCTION__, __LINE__);
 }
 
 
