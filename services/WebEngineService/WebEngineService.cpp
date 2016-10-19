@@ -886,9 +886,6 @@ void WebEngineService::backButtonClicked()
     }
 
 #if PROFILE_MOBILE
-    if (m_currentWebView->clearTextSelection())
-        return;
-
     if (m_currentWebView->isFullScreen()) {
         m_currentWebView->exitFullScreen();
         return;
