@@ -515,6 +515,9 @@ void WebPageUI::createDummyButton()
 
         evas_object_smart_callback_add(m_dummy_button, "focused", _dummy_button_focused, this);
         evas_object_smart_callback_add(m_dummy_button, "unfocused", _dummy_button_unfocused, this);
+
+        elm_atspi_accessible_role_set(m_dummy_button, ELM_ATSPI_ROLE_REDUNDANT_OBJECT);
+        elm_atspi_accessible_can_highlight_set(m_dummy_button, EINA_FALSE);
     }
 }
 
