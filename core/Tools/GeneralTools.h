@@ -38,6 +38,7 @@ namespace tools
     // declaration using 'unused' attribute because in some modules not all functions are used
     static std::string fromChar(const char* c) __attribute__ ((unused));
     static std::string clearURL(const std::string & url) __attribute__ ((unused));
+    static bool checkIfProtocolExist(const std::string & url) __attribute__ ((unused));
     static std::string extractDomain(const std::string & url) __attribute__ ((unused));
 
     static std::string fromChar(const char* c) { return c ? std::string(c) : std::string(); }
@@ -49,6 +50,10 @@ namespace tools
         size_t beg = url.find(PROTCOL_BEGIN);
         beg += strlen(PROTCOL_BEGIN);
         return url.substr(beg, url.size() - beg - suffix);
+    }
+
+    static bool checkIfProtocolExist(const std::string & url) {
+        return url.find(PROTCOL_BEGIN) != std::string::npos;
     }
 
     static std::string extractDomain(const std::string & url) {
