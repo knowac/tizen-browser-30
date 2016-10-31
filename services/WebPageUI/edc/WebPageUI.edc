@@ -331,7 +331,6 @@ collections { base_scale: 2.6;
                     rel2 { relative: 1.0 1.0; to: "bg"; }
                 }
             }
-#if DUMMY_BUTTON
             swallow { "web_view_dummy_button"; scale;
                 mouse_events: 1;
                 repeat_events: 1;
@@ -349,7 +348,6 @@ collections { base_scale: 2.6;
                     visible: 0;
                 }
             }
-#endif
             part { name: "progressbar_bg";
                 type: IMAGE;
                 scale: 1;
@@ -418,7 +416,6 @@ collections { base_scale: 2.6;
                     action: STATE_SET "default" 0.0;
                     target: "bottom_toolbar";
                 }
-#if DUMMY_BUTTON
                 program { name: "show,dummy_button";
                     signal: "show,dummy_button";
                     action: STATE_SET "default" 0.0;
@@ -429,7 +426,6 @@ collections { base_scale: 2.6;
                     action: STATE_SET "hidden" 0.0;
                     target: "web_view_dummy_button";
                 }
-#endif
             }
 
             #include "WebPageUIUrlHistoryList.edc"
