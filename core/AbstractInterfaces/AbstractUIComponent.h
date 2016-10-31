@@ -17,6 +17,8 @@
 #ifndef __ABSTRACT_UI_COMPONENT_H__
 #define __ABSTRACT_UI_COMPONENT_H__ 1
 
+#include <boost/signals2/signal.hpp>
+
 namespace tizen_browser
 {
 namespace interfaces
@@ -52,6 +54,11 @@ public:
  *        Deletes genlists and gengrids (due to elm_genlist_clear and elm_gengrid_clear isue)
  */
     virtual void hideUI() = 0;
+
+/**
+ * @brief Signal which has to be connected to view manager pop from stack function.
+ */
+    boost::signals2::signal<void ()> closeUI;
 };
 
 }//namespace interfaces

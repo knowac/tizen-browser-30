@@ -32,14 +32,16 @@
 #include "AbstractWebEngine/WebConfirmation.h"
 #include "AbstractWebEngine/TabOrigin.h"
 
-#if PROFILE_MOBILE
 #include "DownloadControl/DownloadControl.h"
 #include <app_control.h>
 #include <app.h>
 #include "AbstractRotatable.h"
+
+#if PWA
+#include <glib.h>
+#include <libsoup/soup.h>
 #endif
 
-#if PROFILE_MOBILE
 typedef enum _context_menu_type {
     TEXT_ONLY = 0,
     INPUT_FIELD,
@@ -63,29 +65,25 @@ typedef enum _custom_context_menu_item_tag {
     CUSTOM_CONTEXT_MENU_ITEM_SEND_EMAIL,
     CUSTOM_CONTEXT_MENU_ITEM_SEND_ADD_TO_CONTACT,
 } custom_context_menu_item_tag;
-#endif
 
 namespace tizen_browser {
 namespace basic_webengine {
 namespace webengine_service {
 
+using download_finish_callback = void (*)(const std::string& file_path, void *data);
+
 class WebView
-#if PROFILE_MOBILE
         : public tizen_browser::interfaces::AbstractRotatable
-#endif
 {
 public:
     WebView(Evas_Object *, TabId, const std::string& title, bool incognitoMode);
     virtual ~WebView();
-    void init(bool desktopMode, TabOrigin origin, Evas_Object * view = NULL);
+    void init(bool desktopMode, TabOrigin origin);
 
-#if PROFILE_MOBILE
     virtual void orientationChanged() override;
-#endif
 
     void setURI(const std::string &);
     std::string getURI(void);
-
     std::string getTitle(void);
 
     std::string getUserAgent(void);
@@ -107,6 +105,31 @@ public:
     bool isLoading();
     bool isLoadError() const;
 
+#if PWA
+    void requestManifest(void);
+    void request_file_download(const char *uri, const std::string& file_path, download_finish_callback cb, void *data);
+
+    struct download_request
+    {
+    public:
+        download_request(char* file_path_ = nullptr, download_finish_callback cb_ = nullptr, void* data_ = nullptr)
+    : file_path(file_path_),
+      cb(cb_),
+      data(data_)
+    {}
+
+        ~download_request() {}
+
+        std::string file_path;
+        download_finish_callback cb;
+        void *data;
+
+    private:
+        download_request& operator=(const download_request&);
+        download_request(const download_request&);
+    };
+#endif
+
     std::map<std::string, std::vector<std::string> > parse_uri(const char *uriToParse);
 
     Evas_Object * getLayout();
@@ -114,13 +137,6 @@ public:
     Evas_Object * getWidget();
 #endif
     void confirmationResult(WebConfirmationPtr);
-
-    /**
-     * @brief Get the state of private mode
-     *
-     * @return state of private mode
-     */
-    bool isPrivateMode() {return m_private;}
 
     std::shared_ptr<tizen_browser::tools::BrowserImage> captureSnapshot(int width, int height, bool async,
             tizen_browser::tools::SnapshotType snapshot_type);
@@ -203,7 +219,8 @@ public:
 
     TabOrigin getOrigin() { return m_origin; }
 
-#if PROFILE_MOBILE
+    Ewk_Context* getContext() { return m_ewkContext; }
+
     /**
      * @brief Searches for word in the current page.
      *
@@ -240,6 +257,11 @@ public:
     void ewkSettingsAutofillPasswordFormEnabledSet(bool value);
 
     /**
+     * @brief Set enable opening of the new pages by the script flag.
+     */
+    void ewkSettingsScriptsCanOpenNewPagesEnabledSet(bool value);
+
+    /**
      * @brief Check if fullscreen mode is enabled.
      */
     bool isFullScreen() const { return m_fullscreen; };
@@ -258,12 +280,10 @@ public:
      * @brief Set autofill profile data enabled settings flag.
      */
     void ewkSettingsFormProfileDataEnabledSet(bool value);
-#endif
 
 // signals
     boost::signals2::signal<void (std::shared_ptr<tizen_browser::tools::BrowserImage>)> favIconChanged;
     boost::signals2::signal<void (std::shared_ptr<tizen_browser::tools::BrowserImage>, tizen_browser::tools::SnapshotType snapshot_type)> snapshotCaptured;
-    boost::signals2::signal<void (const std::string&)> titleChanged;
     boost::signals2::signal<void (const std::string)> uriChanged;
     boost::signals2::signal<void (const std::string&)> findOnPage;
 
@@ -302,7 +322,14 @@ private:
     static void __newWindowRequest(void * data, Evas_Object *, void *out);
     static void __closeWindowRequest(void * data, Evas_Object *, void *);
 
-#if  PROFILE_MOBILE
+#if PWA
+    static void dataSetManifest(Evas_Object* view, Ewk_View_Request_Manifest* manifest, void*);
+    static int result_cb(int ret, void *data);
+    static void makeShortcut(const std::string& name, const std::string& pwaData, const std::string& icon);
+    static void __file_download_finished_cb(SoupSession *session, SoupMessage *msg, gpointer data);
+    static void __download_result_cb(const std::string& file_path, void *data);
+#endif
+
     context_menu_type _get_menu_type(Ewk_Context_Menu *menu);
     void _customize_context_menu(Ewk_Context_Menu *menu);
     void _show_context_menu_text_link(Ewk_Context_Menu *menu);
@@ -325,18 +352,15 @@ private:
     Eina_Bool launch_dialer(const char *uri);
     Eina_Bool launch_message(const char *uri);
     Eina_Bool launch_tizenstore(const char *uri);
-#endif
 
     // Load
     static void __loadStarted(void * data, Evas_Object * obj, void * event_info);
-    static void __loadStop(void * data, Evas_Object * obj, void * event_info);
     static void __loadFinished(void * data, Evas_Object * obj, void * event_info);
     static void __loadProgress(void * data, Evas_Object * obj, void * event_info);
     static void __loadError(void* data, Evas_Object* obj, void *ewkError);
 
     static void __titleChanged(void * data, Evas_Object * obj, void * event_info);
     static void __urlChanged(void * data, Evas_Object * obj, void * event_info);
-
     static void __backForwardListChanged(void * data, Evas_Object * obj, void * event_info);
 
     // Favicon - from database
@@ -355,11 +379,9 @@ private:
 
     static void scriptLinkSearchCallback(Evas_Object *o, const char *value, void *data);
 
-#if PROFILE_MOBILE
     // downloads
     static void __policy_response_decide_cb(void *data, Evas_Object *obj, void *event_info);
     static void __policy_navigation_decide_cb(void *data, Evas_Object *obj, void *event_info);
-#endif
 
     // Screenshot capture
     static void __screenshotCaptured(Evas_Object* image, void* user_data);
@@ -386,12 +408,17 @@ private:
     std::map<CertificateConfirmationPtr, Ewk_Certificate_Policy_Decision *> m_confirmationCertificatenMap;
 
     static const std::string COOKIES_PATH;
+#if PWA
+    static std::string s_pwaData;
+    static std::string s_name;
+    static std::string s_start_url;
+    static std::string s_icon;
+    static const std::string DOWNLOAD_PATH;
+#endif
 
-#if PROFILE_MOBILE
     int m_status_code;
     Eina_Bool m_is_error_page;
     DownloadControl *m_downloadControl;
-#endif
 };
 
 } /* namespace webengine_service */

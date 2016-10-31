@@ -39,8 +39,8 @@ public:
     }
 
     // static signals to allow easy connection in HistoryDaysListManager
-    static boost::signals2::signal<void(const WebsiteHistoryItemDataPtr, bool)>
-    signalButtonClicked;
+    static boost::signals2::signal<void(const WebsiteHistoryItemDataPtr, bool)> signalButtonClicked;
+
     void showButtonDelete(bool show);
     void setClickBlock(bool blocked) {clickBlocked = blocked;}
     bool getClickBlock() {return clickBlocked;}

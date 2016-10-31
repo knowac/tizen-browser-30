@@ -46,10 +46,22 @@ void ViewManager::init(Evas_Object* parentWindow)
     BROWSER_LOGD("[%s:%d] ", __PRETTY_FUNCTION__, __LINE__);
     M_ASSERT(parentWindow);
 
+    std::string edjFilePath = EDJE_DIR;
+    edjFilePath.append("SimpleUI/ViewManager.edj");
+
     m_conformant = elm_conformant_add(parentWindow);
-     //tmp for TSAM-5664 rotation resize issue
-    //elm_win_indicator_mode_set(parentWindow, ELM_WIN_INDICATOR_SHOW);
+    if (!elm_layout_file_set(m_conformant, edjFilePath.c_str(), "elm/conformant/custom_conformant"))
+        BROWSER_LOGD("[%s:%d] elm_layout_file_set falied !!!",__PRETTY_FUNCTION__, __LINE__);
     evas_object_size_hint_weight_set(m_conformant, EVAS_HINT_EXPAND, EVAS_HINT_EXPAND);
+
+    Evas_Object *bg = elm_bg_add(m_conformant);
+    elm_bg_color_set(bg, BG_COLOR_R, BG_COLOR_G, BG_COLOR_B);
+    evas_object_show(bg);
+    elm_object_part_content_set(m_conformant, "elm.swallow.indicator_bg", bg);
+
+    elm_win_indicator_mode_set(parentWindow, ELM_WIN_INDICATOR_SHOW);
+    elm_win_indicator_opacity_set(parentWindow, ELM_WIN_INDICATOR_TRANSPARENT);
+
     evas_object_show(m_conformant);
     elm_win_resize_object_add(parentWindow, m_conformant);
 
@@ -63,12 +75,8 @@ void ViewManager::init(Evas_Object* parentWindow)
     evas_object_show(m_mainLayout);
     elm_box_pack_end(bx, m_mainLayout);
 
-    Eina_Bool ret = elm_layout_file_set(m_mainLayout,
-                                        (std::string(EDJE_DIR)
-                                        + std::string("SimpleUI/ViewManager.edj")).c_str(),
-                                        "main_layout");
-    if (!ret)
-        BROWSER_LOGD("[%s:%d]  elm_layout_file_set falied !!!",__PRETTY_FUNCTION__, __LINE__);
+    if (!elm_layout_file_set(m_mainLayout, edjFilePath.c_str(), "main_layout"))
+        BROWSER_LOGD("[%s:%d] elm_layout_file_set falied !!!",__PRETTY_FUNCTION__, __LINE__);
 
     elm_object_content_set(m_conformant, bx);
 }
@@ -80,65 +88,60 @@ ViewManager::~ViewManager()
     evas_object_del(m_mainLayout);
 }
 
-void ViewManager::popStackTo(interfaces::AbstractUIComponent* view)
+void ViewManager::popStackTo(const sAUI& view)
 {
     BROWSER_LOGD("[%s:%d] ", __PRETTY_FUNCTION__, __LINE__);
     M_ASSERT(view);
-    interfaces::AbstractUIComponent* previousView = m_viewStack.top();
+    sAUI previousView = m_viewStack.top();
 
-    while(!m_viewStack.empty() && m_viewStack.top() != view)
-    {
+    while (!m_viewStack.empty() && m_viewStack.top() != view)
         m_viewStack.pop();
-    }
     updateLayout(previousView);
-    BROWSER_LOGD("[%s:%d] new top: %p", __PRETTY_FUNCTION__, __LINE__, topOfStack());
+    BROWSER_LOGD("[%s:%d] new top: %p", __PRETTY_FUNCTION__, __LINE__, topOfStack().get());
 }
 
 void ViewManager::popTheStack()
 {
     BROWSER_LOGD("[%s:%d] ", __PRETTY_FUNCTION__, __LINE__);
-    if(!m_viewStack.empty())
-    {
-        interfaces::AbstractUIComponent* previousView = m_viewStack.top();
+    if (!m_viewStack.empty()) {
+        sAUI previousView = m_viewStack.top();
         m_viewStack.pop();
         updateLayout(previousView);
     }
-    BROWSER_LOGD("[%s:%d] new top: %p", __PRETTY_FUNCTION__, __LINE__, topOfStack());
+    BROWSER_LOGD("[%s:%d] new top: %p", __PRETTY_FUNCTION__, __LINE__, topOfStack().get());
 }
 
-void ViewManager::pushViewToStack(interfaces::AbstractUIComponent* view)
+void ViewManager::pushViewToStack(const sAUI& view)
 {
     BROWSER_LOGD("[%s:%d] ", __PRETTY_FUNCTION__, __LINE__);
 
     M_ASSERT(view);
-    if (topOfStack() == view)
-    {
-       BROWSER_LOGD("[%s:%d] View %p is already on stack !!!",
-                          __PRETTY_FUNCTION__, __LINE__, view);
+    if (topOfStack() == view) {
+       BROWSER_LOGD(
+           "[%s:%d] View %p is already on stack !!!",
+           __PRETTY_FUNCTION__, __LINE__, view.get());
        return;
     }
-    interfaces::AbstractUIComponent* previousView = topOfStack();
+    sAUI previousView = topOfStack();
     m_viewStack.push(view);
     updateLayout(previousView);
-    BROWSER_LOGD("[%s:%d] new top: %p", __PRETTY_FUNCTION__, __LINE__, topOfStack());
+    BROWSER_LOGD("[%s:%d] new top: %p", __PRETTY_FUNCTION__, __LINE__, topOfStack().get());
 }
 
 
-void ViewManager::updateLayout(interfaces::AbstractUIComponent* previousView)
+void ViewManager::updateLayout(const sAUI& previousView)
 {
     BROWSER_LOGD("[%s:%d] ", __PRETTY_FUNCTION__, __LINE__);
     Evas_Object* swallowed = elm_layout_content_get(m_mainLayout, "content");
-    if (!m_viewStack.empty())
-    {
-        if (topOfStack()->getContent() == swallowed)
-        {
-            BROWSER_LOGD("[%s:%d] Top of stack is already visible!!!",
-                         __PRETTY_FUNCTION__, __LINE__);
+    if (!m_viewStack.empty()) {
+        if (topOfStack()->getContent() == swallowed) {
+            BROWSER_LOGD(
+                "[%s:%d] Top of stack is already visible!!!",
+                __PRETTY_FUNCTION__, __LINE__);
             return;
         }
         elm_layout_content_unset(m_mainLayout, "content");
-        if (previousView)
-        {
+        if (previousView) {
             previousView->hideUI();
             evas_object_hide(previousView->getContent());
         }
@@ -146,13 +149,10 @@ void ViewManager::updateLayout(interfaces::AbstractUIComponent* previousView)
         evas_object_show(elm_layout_content_get(m_mainLayout, "content"));
 
         topOfStack()->showUI();
-    }
-    else
-    {
+    } else {
         BROWSER_LOGD("[%s:%d] Stack is empty!!!",__PRETTY_FUNCTION__, __LINE__);
         elm_layout_content_unset(m_mainLayout, "content");
-        if (previousView)
-        {
+        if (previousView) {
              previousView->hideUI();
              evas_object_hide(previousView->getContent());
         }
@@ -170,12 +170,12 @@ Evas_Object* ViewManager::getConformant() {
     return m_conformant;
 }
 
-interfaces::AbstractUIComponent* ViewManager::topOfStack()
+sAUI& ViewManager::topOfStack()
 {
-    if(!m_viewStack.empty())
+    static sAUI ret = sAUI(nullptr);
+    if (!m_viewStack.empty())
         return m_viewStack.top();
-    else
-        return nullptr;
+    return ret;
 }
 
 

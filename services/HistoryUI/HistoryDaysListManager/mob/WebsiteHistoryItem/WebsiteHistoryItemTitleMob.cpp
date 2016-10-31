@@ -22,9 +22,10 @@
 namespace tizen_browser {
 namespace base_ui {
 
-boost::signals2::signal<void(const WebsiteHistoryItemDataPtr, bool)>
-WebsiteHistoryItemTitleMob::signalButtonClicked;
+boost::signals2::signal<void(const WebsiteHistoryItemDataPtr, bool)> WebsiteHistoryItemTitleMob::signalButtonClicked;
+
 const int WebsiteHistoryItemTitleMob::GESTURE_MOMENTUM_MIN = 2000;
+
 WebsiteHistoryItemTitleMob::WebsiteHistoryItemTitleMob(
         WebsiteHistoryItemDataPtr websiteHistoryItemData)
     : m_websiteHistoryItemData(websiteHistoryItemData)

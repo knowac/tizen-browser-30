@@ -58,6 +58,7 @@ EXPORT_SERVICE(CertificateContents, "org.tizen.browser.certificateservice")
 CertificateContents::CertificateContents()
     : m_mainLayout(nullptr)
     , m_parent(nullptr)
+    , m_certificate(nullptr)
 {
     BROWSER_LOGD("[%s:%d] ", __PRETTY_FUNCTION__, __LINE__);
     m_edjFilePath = EDJE_DIR;
@@ -73,6 +74,7 @@ CertificateContents::~CertificateContents()
     if (m_mainLayout)
         evas_object_del(m_mainLayout);
     m_genlist_callback_data_list.clear();
+    X509_free(m_certificate);
 }
 
 void CertificateContents::init()

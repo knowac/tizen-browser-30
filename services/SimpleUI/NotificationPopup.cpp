@@ -55,6 +55,14 @@ void NotificationPopup::show(const std::string& message, bool progressVisible)
     m_timer =  ecore_timer_add(DEFAULT_POPUP_INTERVAL, _hide_cb, this);
 }
 
+void NotificationPopup::show(const std::string& message, const std::string &message_add, bool progressVisible)
+{
+    BROWSER_LOGD("[%s,%d]", __func__, __LINE__);
+    m_message = message + message_add;
+    createLayout(progressVisible);
+    m_timer =  ecore_timer_add(DEFAULT_POPUP_INTERVAL, _hide_cb, this);
+}
+
 void NotificationPopup::dismiss()
 {
     BROWSER_LOGD("[%s,%d]", __func__, __LINE__);

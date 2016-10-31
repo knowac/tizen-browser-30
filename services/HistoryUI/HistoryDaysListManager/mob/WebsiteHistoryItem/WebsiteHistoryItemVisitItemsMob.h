@@ -45,8 +45,7 @@ class WebsiteHistoryItemVisitItemsMob
         struct LayoutVisitItemObjects layoutVisitItemObjects;
     };
 public:
-    WebsiteHistoryItemVisitItemsMob(
-            const std::vector<WebsiteVisitItemDataPtr> websiteVisitItems);
+    WebsiteHistoryItemVisitItemsMob(WebsiteVisitItemDataPtr websiteVisitItems);
     virtual ~WebsiteHistoryItemVisitItemsMob();
     Evas_Object* init(Evas_Object* parent, const std::string& edjeFilePath);
     /**
@@ -56,12 +55,11 @@ public:
     void setEflObjectsAsDeleted();
 
     // static signals to allow easy connection in HistoryDaysListManager
-    static boost::signals2::signal<void(const WebsiteVisitItemDataPtr, bool)>
-    signalButtonClicked;
+    static boost::signals2::signal<void(const WebsiteVisitItemDataPtr, bool)> signalButtonClicked;
 
     bool contains(WebsiteVisitItemDataPtrConst websiteVisitItemData);
     void removeItem(WebsiteVisitItemDataPtrConst websiteVisitItemData);
-    std::shared_ptr<std::vector<int>> getVisitItemsIds();
+    int getVisitItemsId();
     int size() {return eina_list_count(elm_box_children_get(m_boxMainVertical));}
 
 private:
@@ -85,7 +83,7 @@ private:
     /// used to indicate, if efl object were already deleted
     bool m_eflObjectsDeleted;
 
-    std::vector<VisitItemObjects> m_websiteVisitItems;
+    VisitItemObjects m_websiteVisitItem;
     Evas_Object* m_layoutMain;
     Evas_Object* m_boxMainVertical;
 

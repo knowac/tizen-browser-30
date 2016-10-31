@@ -151,6 +151,18 @@ std::shared_ptr<HistoryItemVector> HistoryService::getHistoryOlder()
     return getHistoryItems(BP_HISTORY_DATE_OLDER);
 }
 
+#if PWA
+int HistoryService::getHistoryCnt(const int& id)
+{
+    BROWSER_LOGD("[%s:%d] ", __PRETTY_FUNCTION__, __LINE__);
+    int freq, retVal = 0;
+
+    if (!bp_history_adaptor_get_frequency(id, &freq))
+        retVal = freq;
+    return retVal;
+}
+#endif
+
 std::shared_ptr<HistoryItemVector> HistoryService::getMostVisitedHistoryItems()
 {
     std::shared_ptr<HistoryItemVector> ret_history_list(new HistoryItemVector);
@@ -158,7 +170,7 @@ std::shared_ptr<HistoryItemVector> HistoryService::getMostVisitedHistoryItems()
     int *ids=nullptr;
     int count=-1;
     bp_history_rows_cond_fmt conds;
-    conds.limit = 5;  //no of rows to get negative means no limitation
+    conds.limit = 12;  //no of rows to get negative means no limitation
     conds.offset = -1;   //the first row's index
     conds.order_offset = BP_HISTORY_O_FREQUENCY; // property to sort
     conds.ordering = 1; //way of ordering 0 asc 1 desc
@@ -181,12 +193,12 @@ std::shared_ptr<HistoryItemVector> HistoryService::getMostVisitedHistoryItems()
         }
     }
 
-    int index_array[6] = {0, };
+    int index_array[13] = {0, };
     int j=0;
     int maximum = freq_arr[0];
     int position = 0;
 
-    for(int k=1; k<=5;k++){
+    for(int k=1; k<=12;k++){
         if(k > count || count == 0)
             break;
 
@@ -437,6 +449,12 @@ void HistoryService::deleteHistoryItem(int id) {
     }
 }
 
+void HistoryService::setMostVisitedFrequency(int id, int frequency)
+{
+    if (bp_history_adaptor_set_frequency(id, frequency) < 0 )
+        errorPrint("bp_history_adaptor_set_frequency");
+}
+
 std::shared_ptr<HistoryItem> HistoryService::getHistoryItem(int * ids, int idNumber)
 {
     bp_history_offset offset = (BP_HISTORY_O_URL | BP_HISTORY_O_TITLE | BP_HISTORY_O_FAVICON | BP_HISTORY_O_DATE_VISITED);
@@ -478,15 +496,15 @@ std::shared_ptr<HistoryItem> HistoryService::getHistoryItem(int * ids, int idNum
     history->setUrl(std::string(history_info.url ? history_info.url : ""));
     history->setTitle(std::string(history_info.title ? history_info.title : ""));
 
-    tools::BrowserImagePtr thumbnail = std::make_shared<tools::BrowserImage>(
-            history_info.thumbnail_width,
-            history_info.thumbnail_height,
-            history_info.thumbnail_length);
+    auto thumbnail = std::make_shared<tools::BrowserImage>(
+        history_info.thumbnail_width,
+        history_info.thumbnail_height,
+        history_info.thumbnail_length);
     thumbnail->setData((void*)history_info.thumbnail, false, tools::ImageType::ImageTypePNG);
-    tools::BrowserImagePtr favIcon = std::make_shared<tools::BrowserImage>(
-            history_info.favicon_width,
-            history_info.favicon_height,
-            history_info.favicon_length);
+    auto favIcon = std::make_shared<tools::BrowserImage>(
+        history_info.favicon_width,
+        history_info.favicon_height,
+        history_info.favicon_length);
     favIcon->setData((void*)history_info.favicon, false, tools::ImageType::ImageTypePNG);
     history->setThumbnail(thumbnail);
     history->setFavIcon(favIcon);

@@ -17,6 +17,13 @@
 #ifndef AUTOFILLFORMITEM_H_
 #define AUTOFILLFORMITEM_H_
 
+#include <Eina.h>
+#include <EWebKit.h>
+#include <EWebKit_internal.h>
+
+#define AUTO_FILL_FORM_ENTRY_MAX_COUNT 1024
+#define PHONE_FIELD_VALID_ENTRIES "0123456789*#()/N,.;+ "
+
 namespace tizen_browser{
 namespace base_ui{
 

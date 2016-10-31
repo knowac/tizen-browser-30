@@ -35,9 +35,13 @@ public:
 
     void resetSettings();
     void setParam(basic_webengine::WebEngineSettings param, bool value) const;
-    bool isParamPresent(basic_webengine::WebEngineSettings param) const;
+    void setParamString(basic_webengine::WebEngineSettings param, std::string value) const;
     bool getParamVal(basic_webengine::WebEngineSettings param) const;
-
+    bool isDBParamPresent(const std::string& key) const;
+    /**
+     * @throws StorageException on error
+     */
+    std::string getParamString(basic_webengine::WebEngineSettings param) const;
     /**
      * @throws StorageException on error
      */
@@ -56,6 +60,11 @@ public:
     /**
      * @throws StorageException on error
      */
+    bool getSettingsBool(const std::string & key, const bool defaultValue) const;
+
+    /**
+     * @throws StorageException on error
+     */
     void setSettingsInt(const std::string & key, int value) const;
 
     /**
@@ -67,6 +76,11 @@ public:
      * @throws StorageException on error
      */
     void setSettingsString(const std::string & key, std::string value) const;
+
+    /**
+     * @throws StorageException on error
+     */
+    void setSettingsBool(const std::string & key, bool value) const;
 
     void init(bool testmode = false);
 
@@ -82,6 +96,8 @@ private:
      * @throws StorageExceptionInitialization on error
      */
     void setSettingsValue(const std::string & key, storage::FieldPtr field) const;
+
+    bool isParamPresent(basic_webengine::WebEngineSettings param) const;
 
     bool m_dbSettingsInitialised;
     std::string DB_SETTINGS;

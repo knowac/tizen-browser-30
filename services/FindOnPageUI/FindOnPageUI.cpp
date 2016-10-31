@@ -156,9 +156,6 @@ Evas_Object* FindOnPageUI::createFindOnPageUILayout()
 
     elm_object_translatable_part_text_set(m_entry, "elm.guide", "IDS_BR_OPT_FIND_ON_PAGE");
 
-    Evas_Object *access = elm_access_object_get(elm_entry_textblock_get(m_entry));
-    elm_access_info_set(access, ELM_ACCESS_TYPE, _("IDS_BR_BODY_TEXT_FIELD_T_TTS"));
-
     static Elm_Entry_Filter_Limit_Size limit_filter_data;
     limit_filter_data.max_byte_count = 0;
     limit_filter_data.max_char_count = FIND_ON_PAGE_MAX_TEXT;
@@ -169,21 +166,21 @@ Evas_Object* FindOnPageUI::createFindOnPageUILayout()
     // Clear button
     m_clear_button = elm_button_add(m_fop_layout);
     elm_object_style_set(m_clear_button, "basic_button");
-    elm_access_info_set(m_clear_button, ELM_ACCESS_INFO, _("IDS_BR_OPT_CLEAR_ALL"));
+    elm_atspi_accessible_name_set(m_clear_button, _("IDS_BR_OPT_CLEAR_ALL"));
     evas_object_smart_callback_add(m_clear_button, "clicked", __clear_clicked_cb, this);
     elm_object_part_content_set(m_fop_layout, "clear_button_click", m_clear_button);
 
     // Down button.
     m_down_button = elm_button_add(m_fop_layout);
     elm_object_style_set(m_down_button, "basic_button");
-    elm_access_info_set(m_down_button, ELM_ACCESS_INFO, _("IDS_BR_SK_NEXT"));
+    elm_atspi_accessible_name_set(m_down_button, _("IDS_BR_SK_NEXT"));
     evas_object_smart_callback_add(m_down_button, "clicked", __down_clicked_cb, this);
     elm_object_part_content_set(m_fop_layout, "down_button_click", m_down_button);
 
     // Up button.
     m_up_button = elm_button_add(m_fop_layout);
     elm_object_style_set(m_up_button, "basic_button");
-    elm_access_info_set(m_up_button, ELM_ACCESS_INFO, _("IDS_BR_SK_PREVIOUS"));
+    elm_atspi_accessible_name_set(m_up_button, _("IDS_BR_SK_PREVIOUS"));
     evas_object_smart_callback_add(m_up_button, "clicked", __up_clicked_cb, this);
     elm_object_part_content_set(m_fop_layout, "up_button_click", m_up_button);
 

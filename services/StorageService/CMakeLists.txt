@@ -6,6 +6,7 @@ set(StorageServiceSOURCES
     DriverManager.cpp
     Field.cpp
     FoldersStorage.cpp
+    QuickAccessStorage.cpp
     CertificateStorage.cpp
     SQLTransactionScope.cpp
     DBTools.cpp

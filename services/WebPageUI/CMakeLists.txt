@@ -4,6 +4,7 @@ set(WebPageUI_SRCS
     WebPageUI.cpp
     WebPageUIStatesManager.cpp
     ButtonBar.cpp
+    EditQuickAccessUI.cpp
     URIEntry.cpp
     UrlHistoryList/UrlHistoryList.cpp
     UrlHistoryList/GenlistManager.cpp
@@ -22,7 +23,6 @@ include_directories(${CMAKE_SOURCE_DIR})
 include_directories(${CMAKE_SOURCE_DIR}/services)
 include_directories(${CMAKE_SOURCE_DIR}/services/WebEngineService)
 include_directories(${CMAKE_SOURCE_DIR}/services/WebEngineService/src)
-include_directories(${CMAKE_SOURCE_DIR}/services/MoreMenuUI)
 include_directories(${CMAKE_SOURCE_DIR}/services/QuickAccess)
 include_directories(${CMAKE_SOURCE_DIR}/services/SettingsUI)
 include_directories(${CMAKE_SOURCE_DIR}/services/TabUI)
@@ -34,10 +34,8 @@ pkg_check_modules(capi_net QUIET capi-network-connection)
 
 add_library(${PROJECT_NAME} SHARED ${WebPageUI_SRCS})
 
-add_dependencies(${PROJECT_NAME} MoreMenuUI)
 add_dependencies(${PROJECT_NAME} QuickAccess)
 add_dependencies(${PROJECT_NAME} TabUI)
-target_link_libraries(${PROJECT_NAME} MoreMenuUI)
 target_link_libraries(${PROJECT_NAME} QuickAccess)
 target_link_libraries(${PROJECT_NAME} TabUI)
 target_link_libraries(${PROJECT_NAME} ${EFL_LDFLAGS})
@@ -57,30 +55,17 @@ if (${PROFILE} MATCHES "mobile")
 endif (${PROFILE} MATCHES "mobile")
 
 #please do not add edc/ directory
-if (${PROFILE} MATCHES "mobile")    # mobile profile
-    set(edcFiles
-        WebPageUI_mob.edc
-        ErrorMessage.edc
-        LeftButtonBar_mob.edc
-        RightButtonBar_mob.edc
-        URIEntry_mob.edc
-        PrivateMode_mob.edc
-        UrlHistoryList.edc
-        )
-else (${PROFILE} MATCHES "mobile")  # tv profile
-    set(edcFiles
-        WebPageUI.edc
-        ErrorMessage.edc
-        LeftButtonBar.edc
-        RightButtonBar.edc
-        URIEntry.edc
-        PrivateMode.edc
-        UrlHistoryList.edc
-        )
-endif (${PROFILE} MATCHES "mobile")
+set(edcFiles
+    WebPageUI.edc
+    BottomButtonBar.edc
+    RightButtonBar.edc
+    URIEntry.edc
+    UrlHistoryList.edc
+    CustomButton.edc
+    )
 
 foreach(edec ${edcFiles})
-    string(REGEX REPLACE "(_mob)?.edc" ".edj" target_name ${edec})
+    string(REGEX REPLACE ".edc" ".edj" target_name ${edec})
     EDJ_TARGET(${target_name}
         ${CMAKE_CURRENT_SOURCE_DIR}/edc/${edec}
         ${CMAKE_CURRENT_BINARY_DIR})

@@ -47,7 +47,10 @@ public:
         : m_window()
     {}
 
-    virtual int exec(const std::string& url, const std::string& caller) = 0;
+    virtual int exec(
+        const std::string& url,
+        const std::string& caller,
+        const std::string& operation) = 0;
     std::shared_ptr<T> getMainWindow(){return m_window;};
 
     /**

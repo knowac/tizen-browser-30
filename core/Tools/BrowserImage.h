@@ -18,6 +18,7 @@
 #define __BROWSER_IMAGE_H__
 
 #include <Evas.h>
+#include <memory>
 namespace tizen_browser
 {
 namespace tools
@@ -87,6 +88,7 @@ private:
     Evas_Colorspace m_colorSpace;
 };
 
+using BrowserImagePtr = std::shared_ptr<BrowserImage>;
 
 } /* end of namespace tools */
 } /* end of namespace tizen_browser */

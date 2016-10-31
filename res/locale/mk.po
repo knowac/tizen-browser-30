@@ -1,14 +1,8 @@
 msgid "IDS_BR_POP_NETWORK_ERROR"
 msgstr "Грешка во мрежата."
 
-msgid "IDS_BR_BODY_AUTHUSERNAME"
-msgstr "Корисничко име"
-
 msgid "IDS_BR_BODY_DESTINATIONS_AUTHENTICATION_REQUIRED"
 msgstr "Се бара препознавање."
-
-msgid "IDS_BR_BODY_AUTHPASSWORD"
-msgstr "Лозинка"
 
 msgid "IDS_BR_HEADER_SECURITY_WARNING"
 msgstr "Безбедносно предупредување"
@@ -33,12 +27,6 @@ msgstr "Има проблеми со безбедносниот сертифик
 
 msgid "IDS_BR_OPT_ALLOW"
 msgstr "Дозволи"
-
-msgid "IDS_BR_OPT_VIEW"
-msgstr "Прикажи"
-
-msgid "IDS_BR_OPT_CANCEL"
-msgstr "Откажи"
 
 msgid "IDS_BR_BODY_PS_REQUESTS_YOUR_LOCATION"
 msgstr "%s барања за вашата локација."
@@ -73,6 +61,18 @@ msgstr "Преземи"
 msgid "IDS_BR_BODY_THIS_WEBPAGE"
 msgstr "Оваа интернет-страница"
 
+msgid "IDS_BR_BODY_AUTHUSERNAME"
+msgstr "Корисничко име"
+
+msgid "IDS_BR_BODY_AUTHPASSWORD"
+msgstr "Лозинка"
+
+msgid "IDS_BR_OPT_VIEW"
+msgstr "Прикажи"
+
+msgid "IDS_BR_OPT_CANCEL"
+msgstr "Откажи"
+
 msgid "IDS_BR_OPT_SCREEN"
 msgstr "Екран"
 
@@ -86,7 +86,7 @@ msgid "IDS_BR_HEADER_CERTIFICATE_INFO"
 msgstr "Податоци за сертификатот"
 
 msgid "IDS_BR_BODY_WEBSITE_SETTINGS"
-msgstr "Опции за сајт"
+msgstr "Поставувања за сајт"
 
 msgid "IDS_BR_POP_INVALID_CERTIFICATE"
 msgstr "Неправилен сертификат."
@@ -109,15 +109,6 @@ msgstr "Откажи"
 msgid "IDS_BR_BUTTON_MORE"
 msgstr "Повеќе"
 
-msgid "IDS_TPLATFORM_ACBUTTON_DONE_ABB"
-msgstr "ГОТОВО"
-
-msgid "IDS_TPLATFORM_ACBUTTON_CANCEL_ABB"
-msgstr "ОТКАЖИ"
-
-msgid "IDS_TPLATFORM_ACBUTTON_DELETE_ABB"
-msgstr "ИЗБРИШИ"
-
 msgid "IDS_BR_BODY_NO_ITEMS"
 msgstr "Нема записи"
 
@@ -126,9 +117,6 @@ msgstr "Поврзи со мобилна мрежа"
 
 msgid "IDS_BR_OPT_DO_NOT_SHOW_AGAIN"
 msgstr "Не прикажувај веќе"
-
-msgid "IDS_BR_SK_OK"
-msgstr "OK"
 
 msgid "IDS_BR_POP_ONLY_HTTP_OR_HTTPS_URLS_CAN_BE_DOWNLOADED"
 msgstr "Може да се преземаат само URL-а http или https."
@@ -151,17 +139,11 @@ msgstr "Копирај линк"
 msgid "IDS_BR_OPT_COPY_IMAGE"
 msgstr "Копирај слика"
 
+msgid "IDS_BR_SK_OK"
+msgstr "OK"
+
 msgid "IDS_BR_OPT_CALL"
 msgstr "Повик"
-
-msgid "IDS_ST_POP_PS_HAS_BEEN_DETECTED"
-msgstr "Откриен е %s."
-
-msgid "IDS_ST_POP_DETECTED_IN_C_PS"
-msgstr "Откриен во: %s"
-
-msgid "IDS_ST_HEADER_MALWARE_DETECTED_ABB"
-msgstr "Откриен е злонамерен софтвер"
 
 msgid "IDS_BR_BUTTON_FAILED"
 msgstr "Неусп."
@@ -229,35 +211,11 @@ msgstr "Одозн."
 msgid "IDS_BR_SK_TABS"
 msgstr "Картички"
 
-msgid "IDS_BR_SK_SAVE_LITE"
-msgstr "Сочувај"
-
-msgid "IDS_BR_SK_SAVE_ABB"
-msgstr "Сочувај"
-
-msgid "IDS_BR_SK_SAVE"
-msgstr "Сочувај"
-
-msgid "IDS_BR_SK_PREVIOUS"
-msgstr "Претход."
-
-msgid "IDS_BR_SK_NEXT"
-msgstr "Следно"
-
 msgid "IDS_BR_SK_MENU"
 msgstr "Мени"
 
 msgid "IDS_BR_SK_DELETE_ABB"
 msgstr "Избр."
-
-msgid "IDS_BR_SK_DELETE"
-msgstr "Избриши"
-
-msgid "IDS_BR_SK_CLEAR"
-msgstr "Избриши"
-
-msgid "IDS_BR_SK_BACK"
-msgstr "Назад"
 
 msgid "IDS_BR_SK3_CREATE_FOLDER"
 msgstr "Нова папка"
@@ -275,7 +233,7 @@ msgid "IDS_BR_SBODY_SET_TEXT_USED_TO_FILL_IN_ONLINE_FORMS_ABB"
 msgstr "Одр.текст за пополн.обрасци на интернет."
 
 msgid "IDS_BR_SBODY_SET_ADVANCED_SETTINGS_FOR_INDIVIDUAL_WEBSITES"
-msgstr "Одреди напредни поставки за одделни интернет страници."
+msgstr "Одреди напредни поставувања за одделни интернет страници."
 
 msgid "IDS_BR_SBODY_REMEMBER_DATA_TYPED_IN_FORMS_FOR_LATER_USE"
 msgstr "Помни ги внесените податоци во формуларите за подоцнежна употреба."
@@ -316,20 +274,11 @@ msgstr "Можно е некои интернет-страници да не м�
 msgid "IDS_BR_POP_YOUR_HISTORY_WILL_BE_CLEARED"
 msgstr "Вашата историја ќе се избрише."
 
-msgid "IDS_BR_POP_WI_FI_CONNECTION_REQUIRED_CONNECT_TO_WI_FI_NETWORK_AND_TRY_AGAIN"
-msgstr "Потребна е врска Wi-Fi. Поврзете со мрежа Wi-Fi и обидете се повторно"
-
-msgid "IDS_BR_POP_URL_NOT_FOUND"
-msgstr "URL не е пронајденo."
-
-msgid "IDS_BR_POP_URL"
-msgstr "URL"
-
 msgid "IDS_BR_POP_UNABLE_TO_VIEW_THE_CERTIFICATE_THE_PAGE_INFORMATION_HAS_BEEN_CHANGED"
 msgstr "Не може да се види сертификатот. Информациите за страницата се сменети."
 
 msgid "IDS_BR_POP_TO_SIGN_IN_TO_THIS_WEBSITE_USING_YOUR_FINGERPRINTS_GO_TO_SETTINGS_AND_ENABLE_WEB_SIGN_IN"
-msgstr "За да се регистрирате на интернет страницава со отпечаток на прс, одете во Опции и вклучете Најава на интернет."
+msgstr "За да се регистрирате на интернет страницава со отпечаток на прс, одете во Поставувања и вклучете Најава на интернет."
 
 msgid "IDS_BR_POP_THIS_CERTIFICATE_IS_NOT_FROM_A_TRUSTED_AUTHORITY"
 msgstr "Овој сертификат не е од доверлив извор."
@@ -359,10 +308,10 @@ msgid "IDS_BR_POP_SET_AS_HOMEPAGE"
 msgstr "Постави како почетна страница"
 
 msgid "IDS_BR_POP_SETTINGS_WILL_BE_RESET_TO_DEFAULTS"
-msgstr "Поставките ќе се ресетираат на основните."
+msgstr "Поставувањата ќе се ресетираат на основните."
 
 msgid "IDS_BR_POP_SETTIGS_SAVED"
-msgstr "Параметрите се меморирани."
+msgstr "Поставувањате се меморирани."
 
 msgid "IDS_BR_POP_SECURITY_POLICY_RESTRICTS_USE_OF_INTERNET_BROWSER"
 msgstr "Политиката на безбедност го ограничува користењето прегледник за интернет."
@@ -370,23 +319,11 @@ msgstr "Политиката на безбедност го ограничува
 msgid "IDS_BR_POP_SAVED_TO_BOOKMARKS"
 msgstr "Меморирано во сочувани страници."
 
-msgid "IDS_BR_POP_SAVED"
-msgstr "Меморирано."
-
 msgid "IDS_BR_POP_RENAME_TAG"
 msgstr "Преименувај ознака"
 
-msgid "IDS_BR_POP_REMOVED"
-msgstr "Отстрането."
-
 msgid "IDS_BR_POP_PD_PROFILES_WILL_BE_DELETED"
 msgstr "%d профили ќе се избришат."
-
-msgid "IDS_BR_POP_PD_ITEMS_WILL_BE_DELETED"
-msgstr "%d записи ќе се избришат."
-
-msgid "IDS_BR_POP_PD_ITEMS_SELECTED"
-msgstr "Избрани се %d записи."
 
 msgid "IDS_BR_POP_PAGES_THAT_YOU_VIEW_WILL_NOT_APPEAR_IN_YOUR_BROWSER_HISTORY_OR_SEARCH_HISTORY_AND_THEY_WILL_NOT_LEAVE_OTHER_TRACES_LIKE_COOKIES"
 msgstr "Страниците што ги гледате нема да се појават во историјата на прегледникот или историјата на пребарувањата и нема да остават други траги, како колачиња."
@@ -415,53 +352,20 @@ msgstr "Откриен е „%1$s“.\nОткриен е во: „%2$s“\n\nН�
 msgid "IDS_BR_POP_P1SS_HAS_BEEN_DETECTED_DETECTED_IN_C_P2SS_OPEN_WEBPAGE_ANYWAY_Q"
 msgstr "Откриен е „%1$s“.\nОткриен е во: „%2$s”\n\nСепак, да се отвори страницата?"
 
-msgid "IDS_BR_POP_NO_ITEMS_SELECTED"
-msgstr "Не се избрани содржини."
-
 msgid "IDS_BR_POP_NOT_ENOUGH_MEMORY_DELETE_SOME_ITEMS_AND_TRY_AGAIN"
 msgstr "Нема доволно меморија. Избришете некој запис и обидете се повторно."
-
-msgid "IDS_BR_POP_NOT_ENOUGH_MEMORY"
-msgstr "Нема доволно меморија."
 
 msgid "IDS_BR_POP_NOT_ALLOWED"
 msgstr "Не е дозволено."
 
-msgid "IDS_BR_POP_NEVER"
-msgstr "Никогаш"
-
 msgid "IDS_BR_POP_MOVED"
 msgstr "Преместено."
-
-msgid "IDS_BR_POP_MOBILE_DATA_IS_DISABLED_CONNECT_TO_WI_FI_NETWORK_INSTEAD_OR_ENABLE_MOBILE_DATA_AND_TRY_AGAIN"
-msgstr "Мобилните податоци се исклучени. Поврзете се со мрежа Wi-Fi или вклучете мобилни податоци и обидете се повторно"
-
-msgid "IDS_BR_POP_LOADING_PLEASE_WAIT_ING"
-msgstr "Се вчитува. Почекајте..."
-
-msgid "IDS_BR_POP_INVALID_URL"
-msgstr "Неправилен URL."
-
-msgid "IDS_BR_POP_FAIL"
-msgstr "Неуспешно."
 
 msgid "IDS_BR_POP_ENTER_URL"
 msgstr "Внеси URL."
 
-msgid "IDS_BR_POP_ENTER_TITLE_ABB"
-msgstr "Внесете наслов"
-
 msgid "IDS_BR_POP_ENTER_BOOKMARK_NAME"
 msgstr "Внесете име на омилената страница."
-
-msgid "IDS_BR_POP_DO_NOT_SHOW_AGAIN"
-msgstr "Не прикажувај веќе"
-
-msgid "IDS_BR_POP_DOWNLOADCOMPLETE"
-msgstr "Преземањето заврши."
-
-msgid "IDS_BR_POP_DISABLED"
-msgstr "Исклучено."
 
 msgid "IDS_BR_POP_DIALING_ING_VZW"
 msgstr "Dialing..."
@@ -487,9 +391,6 @@ msgstr "Да се избришат податоците за најава за �
 msgid "IDS_BR_POP_DELETE_SIGN_IN_DATA_FOR_PD_WEBSITES_Q"
 msgstr "Да се избришат податоците за најава за %d интернет-страници?"
 
-msgid "IDS_BR_POP_DELETE_Q"
-msgstr "Да се избрише?"
-
 msgid "IDS_BR_POP_DELETE_PD_SAVED_WEB_PAGES_Q"
 msgstr "Да се избришат %d сочувани интернет-страници?"
 
@@ -505,14 +406,8 @@ msgstr "Да се избришат сите податоци за сајтот �
 msgid "IDS_BR_POP_DELETEHISTORYQUESTION"
 msgstr "Да се избрише историјата?"
 
-msgid "IDS_BR_POP_DELETED"
-msgstr "Избришано."
-
 msgid "IDS_BR_POP_CONTINUE"
 msgstr "Продолжи"
-
-msgid "IDS_BR_POP_CLOSE_APPLICATION_Q"
-msgstr "Затвори апликација?"
 
 msgid "IDS_BR_POP_CLOSE_APPLICATION"
 msgstr "Затвори апликација"
@@ -525,12 +420,6 @@ msgstr "Бриши историја?"
 
 msgid "IDS_BR_POP_BOOKMARK_REMOVED"
 msgstr "Омилената страница е отстранета."
-
-msgid "IDS_BR_POP_BOOKMARK_ADDED"
-msgstr "Омилената страница е додадена."
-
-msgid "IDS_BR_POP_AUTOMATIC_BRIGHTNESS"
-msgstr "Автоматска осветленост"
 
 msgid "IDS_BR_POP_ALREADY_EXISTS"
 msgstr "Веќе постои."
@@ -545,7 +434,7 @@ msgid "IDS_BR_POP_ALL_STORED_AND_LOCATION_PERMISSION_DATA_FOR_THESE_WEBSITES_WIL
 msgstr "Сите зачувани податоци и дозволи за локација за овие интернет-локации ќе се избришат."
 
 msgid "IDS_BR_POP_ALL_SETTINGS_WILL_BE_RESET_TO_THEIR_DEFAULTS"
-msgstr "Сите поставки ќе се ресетираат на основните вредности."
+msgstr "Сите поставувања ќе се ресетираат на основните вредности."
 
 msgid "IDS_BR_POP_ALL_ITEMS_WILL_BE_DELETED_FROM_BROWSING_HISTORY"
 msgstr "Сите записи ќе се избришат од историјата на прегледите."
@@ -556,15 +445,6 @@ msgstr "Дозволи сајтовите да меморираат и чита�
 msgid "IDS_BR_POP_ADDED_TO_BOOKMARKS"
 msgstr "Додадено во ознаки."
 
-msgid "IDS_BR_POP_ACCOUNT"
-msgstr "Сметка"
-
-msgid "IDS_BR_POP_1_ITEM_WILL_BE_DELETED"
-msgstr "1 запис ќе се избрише."
-
-msgid "IDS_BR_POP_1_ITEM_SELECTED"
-msgstr "Избран е 1 запис."
-
 msgid "IDS_BR_OPT_WINDOWS"
 msgstr "Прозорци"
 
@@ -574,38 +454,20 @@ msgstr "Види сертификат"
 msgid "IDS_BR_OPT_UNICODE_HUTF_8"
 msgstr "Уникод (UTF-8)"
 
-msgid "IDS_BR_OPT_TRANSLATE"
-msgstr "Преведи"
-
 msgid "IDS_BR_OPT_THUMBNAIL_VIEW"
 msgstr "Икони"
 
 msgid "IDS_BR_OPT_TEXT_ENCODING"
 msgstr "Кодирање на текстот"
 
-msgid "IDS_BR_OPT_STOP"
-msgstr "Прекини"
-
 msgid "IDS_BR_OPT_SHRINK_TEXT"
 msgstr "Смали текст"
 
-msgid "IDS_BR_OPT_SHOW"
-msgstr "Прикажи"
-
-msgid "IDS_BR_OPT_SHARE"
-msgstr "Сподели"
-
 msgid "IDS_BR_OPT_SETTINGS_ABB"
-msgstr "Опции"
-
-msgid "IDS_BR_OPT_SETTINGS"
-msgstr "Опции"
+msgstr "Поставувања"
 
 msgid "IDS_BR_OPT_SEND_MESSAGE_VODA"
 msgstr "Прати порака"
-
-msgid "IDS_BR_OPT_SEND_EMAIL"
-msgstr "Прати е-пошта"
 
 msgid "IDS_BR_OPT_SENDURLVIA_EMAIL"
 msgstr "Е-пошта"
@@ -624,12 +486,6 @@ msgstr "Режим за избор"
 
 msgid "IDS_BR_OPT_SELECTED"
 msgstr "Избраните"
-
-msgid "IDS_BR_OPT_SELECT"
-msgstr "Избери"
-
-msgid "IDS_BR_OPT_SD_CARD"
-msgstr "SD-карт."
 
 msgid "IDS_BR_OPT_SAVE_TO_KEEPIT_ABB"
 msgstr "Сочувај во KeepIt"
@@ -658,14 +514,8 @@ msgstr "Пререди"
 msgid "IDS_BR_OPT_RENAME_FOLDER"
 msgstr "Преименувај папка"
 
-msgid "IDS_BR_OPT_RENAME"
-msgstr "Преименувај"
-
 msgid "IDS_BR_OPT_REMOVE"
 msgstr "Отстрани"
-
-msgid "IDS_BR_OPT_REFRESH"
-msgstr "Обнови"
 
 msgid "IDS_BR_OPT_READER_MODE_TTS"
 msgstr "Режим на читач"
@@ -685,14 +535,8 @@ msgstr "Страници без мрежа"
 msgid "IDS_BR_OPT_NEW_WINDOW"
 msgstr "Нов прозорец"
 
-msgid "IDS_BR_OPT_MOVE"
-msgstr "Премести"
-
 msgid "IDS_BR_OPT_MINIMISE"
 msgstr "Намали"
-
-msgid "IDS_BR_OPT_MESSAGES"
-msgstr "Пораки"
 
 msgid "IDS_BR_OPT_MEDIUM_M_QUALITY"
 msgstr "Среден"
@@ -705,9 +549,6 @@ msgstr "Привилегии за пристап на локација"
 
 msgid "IDS_BR_OPT_LOAD_IMAGES"
 msgstr "Вчитај слики"
-
-msgid "IDS_BR_OPT_LIST_VIEW"
-msgstr "Листа"
 
 msgid "IDS_BR_OPT_LATIN_1_HISO_8859_1"
 msgstr "Latin-1 (ISO-8859-1)"
@@ -724,9 +565,6 @@ msgstr "Јапонски (ISO-2022-JP)"
 msgid "IDS_BR_OPT_JAPANESE_HEUC_JP"
 msgstr "Јапонски (EUC-JP)"
 
-msgid "IDS_BR_OPT_I_AGREE"
-msgstr "Добро."
-
 msgid "IDS_BR_OPT_INCOGNITO_MODE_ABB"
 msgstr "Режим инкогнито"
 
@@ -741,9 +579,6 @@ msgstr "Почетен екран како кратенка"
 
 msgid "IDS_BR_OPT_HIGH_M_QUALITY"
 msgstr "Висок"
-
-msgid "IDS_BR_OPT_HELP"
-msgstr "Помош"
 
 msgid "IDS_BR_OPT_GOFORWARD"
 msgstr "Напред"
@@ -790,9 +625,6 @@ msgstr "Искл. Мало користење податоци"
 msgid "IDS_BR_OPT_DISABLED"
 msgstr "Исклучено"
 
-msgid "IDS_BR_OPT_DEVICE"
-msgstr "Уред"
-
 msgid "IDS_BR_OPT_DELETE_SAVED_PAGE_ABB"
 msgstr "Избриши сочувана страница"
 
@@ -826,9 +658,6 @@ msgstr "Кинески (Big5)"
 msgid "IDS_BR_OPT_CACHE"
 msgstr "Кеш меморија"
 
-msgid "IDS_BR_OPT_BOOKMARK"
-msgstr "Омилена страница"
-
 msgid "IDS_BR_OPT_ADD_TO_WEB_CLIP"
 msgstr "Додај во веб-запис"
 
@@ -849,12 +678,6 @@ msgstr "Додај омил. стр."
 
 msgid "IDS_BR_OPT_ADD_BOOKMARK"
 msgstr "Додај сочувана стр."
-
-msgid "IDS_BR_OPT_ADDED"
-msgstr "Додадено."
-
-msgid "IDS_BR_OPT_ADD"
-msgstr "Додај"
 
 msgid "IDS_BR_OPT1_EXTENSION"
 msgstr "Проширување"
@@ -896,7 +719,7 @@ msgid "IDS_BR_MBODY_RUN_JAVASCRIPT"
 msgstr "Активирај JavaScript"
 
 msgid "IDS_BR_MBODY_RESET_SETTINGS"
-msgstr "Ресетирај параметри"
+msgstr "Ресетирај поставувања"
 
 msgid "IDS_BR_MBODY_PRELOAD_WEBPAGES"
 msgstr "Вчитувај веб-стр. претх."
@@ -924,9 +747,6 @@ msgstr "Преземи содржина на канал"
 
 msgid "IDS_BR_MBODY_DELETE_SIGN_IN_DATA"
 msgstr "Избриши подат. за најава"
-
-msgid "IDS_BR_MBODY_DEFAULT_DOWNLOAD_STORAGE"
-msgstr "Основна мем. за преземање"
 
 msgid "IDS_BR_MBODY_DATA_SAVING_STATISTICS"
 msgstr "Стат.за сочувув. податоци"
@@ -970,9 +790,6 @@ msgstr "Не можат да се прем. омил.стр."
 msgid "IDS_BR_HEADER_SITE_NOT_TRUSTED_ABB"
 msgstr "Интернет-стр. не е доверлива"
 
-msgid "IDS_BR_HEADER_SIGN_IN_TO_SAMSUNG_ACCOUNT"
-msgstr "Најава на сметката Samsung"
-
 msgid "IDS_BR_HEADER_SET_HOMEPAGE_ABB"
 msgstr "Одреди почетна страница"
 
@@ -1009,17 +826,11 @@ msgstr "Појавниот екран е блокиран"
 msgid "IDS_BR_HEADER_POPULAR_WEBSITES_ABB"
 msgstr "Популарни интернет-страници"
 
-msgid "IDS_BR_HEADER_PD_SELECTED_ABB"
-msgstr "%d избрани"
-
 msgid "IDS_BR_HEADER_ORGANISATION_C_ABB"
 msgstr "Организација:"
 
 msgid "IDS_BR_HEADER_ORGANISATIONAL_UNIT_C"
 msgstr "Оддел:"
-
-msgid "IDS_BR_HEADER_NO_NETWORK_CONNECTION"
-msgstr "Нема мрежно поврзување"
 
 msgid "IDS_BR_HEADER_NEWER_M_INTERNET_HISTORY_ABB"
 msgstr "Newer"
@@ -1036,17 +847,11 @@ msgstr "Проширување HTML5"
 msgid "IDS_BR_HEADER_FORM_DATA"
 msgstr "Податоци за формулари"
 
-msgid "IDS_BR_HEADER_FOLDER"
-msgstr "Папка"
-
 msgid "IDS_BR_HEADER_EXPIRES_ON_C"
 msgstr "Застарува на:"
 
 msgid "IDS_BR_HEADER_ENABLE_WEB_SIGN_IN"
 msgstr "Овозможи најавување на интернет"
-
-msgid "IDS_BR_HEADER_EDIT_PROFILE"
-msgstr "Измени профил"
 
 msgid "IDS_BR_HEADER_EDIT_BOOKMARK"
 msgstr "Измени омилена стр."
@@ -1084,14 +889,8 @@ msgstr "Управување со опсегот"
 msgid "IDS_BR_HEADER_ADVANCEDCERTIFICATES"
 msgstr "Сертификати"
 
-msgid "IDS_BR_BUTTON_SET"
-msgstr "Постави"
-
 msgid "IDS_BR_BUTTON_RESET_ABB"
 msgstr "Ресетирај"
-
-msgid "IDS_BR_BUTTON_NOT_NOW"
-msgstr "Не сега"
 
 msgid "IDS_BR_BUTTON_HOMEPAGE_ABB"
 msgstr "Почет. стр."
@@ -1099,35 +898,11 @@ msgstr "Почет. стр."
 msgid "IDS_BR_BUTTON_FIND_ABB"
 msgstr "Најди"
 
-msgid "IDS_BR_BUTTON_ENABLE_ABB"
-msgstr "Овозможи"
-
-msgid "IDS_BR_BUTTON_EDIT"
-msgstr "Измени"
-
-msgid "IDS_BR_BUTTON_CONTINUE_ABB"
-msgstr "Продолжи"
-
-msgid "IDS_BR_BUTTON_CONTINUE"
-msgstr "Продолжи"
-
-msgid "IDS_BR_BUTTON_CLOSE"
-msgstr "Затвори"
-
-msgid "IDS_BR_BUTTON_CANCEL_ABB"
-msgstr "Откажи"
-
-msgid "IDS_BR_BUTTON_CANCEL"
-msgstr "Откажи"
-
 msgid "IDS_BR_BUTTON_BACK_ABB"
 msgstr "Назад"
 
 msgid "IDS_BR_BUTTON_ALWAYS_SHOW_ABB"
 msgstr "Прик. секог."
-
-msgid "IDS_BR_BUTTON_ALLOW"
-msgstr "Дозволи"
 
 msgid "IDS_BR_BUTTON2_WEB_PORTAL"
 msgstr "Портал на интернет"
@@ -1152,9 +927,6 @@ msgstr "Оди до историја"
 
 msgid "IDS_BR_BUTTON2_ENTERTAINMENT"
 msgstr "Разонода"
-
-msgid "IDS_BR_BODY_YESTERDAY"
-msgstr "Вчера"
 
 msgid "IDS_BR_BODY_WINDOW_MANAGER"
 msgstr "Управување со прозорците"
@@ -1183,9 +955,6 @@ msgstr "Користете го режимот на цел екран за да 
 msgid "IDS_BR_BODY_USE_A_PREDICTION_SERVICE_TO_DISPLAY_RELATED_QUERIES_AND_POPULAR_WEBSITES_IN_THE_ADDRESS_BAR_AS_YOU_TYPE"
 msgstr "Користете ја услугата за предвидување за да се прикажуваат сродни пребарувања и популарни интернет страници во лентата за адреси додека пишувате."
 
-msgid "IDS_BR_BODY_URL"
-msgstr "URL"
-
 msgid "IDS_BR_BODY_UPPER_FOLDER_T_TALKBACK"
 msgstr "Погорна папка"
 
@@ -1201,12 +970,6 @@ msgstr "Не може да се прикаже веб-страницата. Не
 msgid "IDS_BR_BODY_TOWN_CITY_COUNTY_ABB"
 msgstr "Место/град/околија"
 
-msgid "IDS_BR_BODY_TODAY"
-msgstr "Денес"
-
-msgid "IDS_BR_BODY_TITLE"
-msgstr "Наслов"
-
 msgid "IDS_BR_BODY_THIS_SITE_IS_USING_PS"
 msgstr "Оваа интернет-страница користи %s."
 
@@ -1221,9 +984,6 @@ msgstr "Ознакава ќе се избрише."
 
 msgid "IDS_BR_BODY_THE_SELECTED_PERSONAL_DATA_WILL_BE_DELETED"
 msgstr "Избраните лични податоци ќе се избришат."
-
-msgid "IDS_BR_BODY_THE_MAXIMUM_NUMBER_OF_CHARACTERS_HPD_HAS_BEEN_EXCEEDED"
-msgstr "Максималниот број знаци (%d) е надминат."
 
 msgid "IDS_BR_BODY_TEXT_FIELD_T_TTS"
 msgstr "Текстуално поле"
@@ -1249,17 +1009,11 @@ msgstr "Синхронизирај ознаки"
 msgid "IDS_BR_BODY_STREET_ADDRESS_PO_BOX_C_O_ETC_ABB"
 msgstr "Број на улица, пошт. фах, примател итн."
 
-msgid "IDS_BR_BODY_STREAMING"
-msgstr "Проток"
-
 msgid "IDS_BR_BODY_STORED_DATA"
 msgstr "Складирани податоци"
 
 msgid "IDS_BR_BODY_SPLIT_BAR_HANDLE"
 msgstr "Рачка на разделната лента"
-
-msgid "IDS_BR_BODY_SMALL"
-msgstr "Мала"
 
 msgid "IDS_BR_BODY_SIGN_IN_TO_YOUR_SAMSUNG_ACCOUNT_TO_ACCESS_THE_BOOKMARKS_AND_TABS_ON_YOUR_OTHER_DEVICES"
 msgstr "Најавете се на сметката Samsung за да пристапувате до страниците и картичките на другите уреди."
@@ -1279,9 +1033,6 @@ msgstr "Одредете текст за автом. пополнување фо
 msgid "IDS_BR_BODY_SET_CURRENT_PAGE_AS_HOMEPAGE"
 msgstr "Постави ја моменталната страница за основна"
 
-msgid "IDS_BR_BODY_SETTINGS"
-msgstr "Опции"
-
 msgid "IDS_BR_BODY_SELECT_FOLDER"
 msgstr "Изберете папка"
 
@@ -1294,9 +1045,6 @@ msgstr "Поле за пребарување"
 msgid "IDS_BR_BODY_SEARCH_AND_URL_SUGGESTIONS"
 msgstr "Предлози за пребарување и URL"
 
-msgid "IDS_BR_BODY_SEARCH"
-msgstr "Пребарување"
-
 msgid "IDS_BR_BODY_SCREEN_AND_TEXT"
 msgstr "Екран и текст"
 
@@ -1306,23 +1054,20 @@ msgstr "Меморирај кориснички имиња и лозинки з�
 msgid "IDS_BR_BODY_SAVE_LINK"
 msgstr "Сочувај линк"
 
-msgid "IDS_BR_BODY_RSS_SEARCH_RESULTS"
-msgstr "Резултати на пребарувањето"
-
 msgid "IDS_BR_BODY_RESTORE_DEFAULT_SETTINGS_Q"
-msgstr "Да се вратат основните параметри?"
+msgstr "Да се вратат основните поставувања?"
 
 msgid "IDS_BR_BODY_RESTORE_DEFAULT_SETTINGS"
-msgstr "Врати основни параметри"
+msgstr "Врати основни поставувања"
 
 msgid "IDS_BR_BODY_RESET_TO_DEFAULT"
 msgstr "Ресетирај на основните вредности"
 
 msgid "IDS_BR_BODY_RESET_SETTINGS"
-msgstr "Ресетирај параметри"
+msgstr "Ресетирај поставувања"
 
 msgid "IDS_BR_BODY_RESET_ALL_SETTINGS_TO_THEIR_DEFAULTS"
-msgstr "Ресетирај ги сите поставки на основните."
+msgstr "Ресетирај ги сите поставувања на основните."
 
 msgid "IDS_BR_BODY_REMOVE_WEB_NOTIFICATION_ACCESS_INFORMATION_Q"
 msgstr "Да се отстранат информациите за пристап на мрежните известувања?"
@@ -1342,12 +1087,6 @@ msgstr "Радио копче"
 msgid "IDS_BR_BODY_PS_BOOKMARK_WILL_BE_DELETED"
 msgstr "%s ознака ќе се избрише."
 
-msgid "IDS_BR_BODY_PROFILE"
-msgstr "Профил"
-
-msgid "IDS_BR_BODY_PROCESSING_ING"
-msgstr "Обработување..."
-
 msgid "IDS_BR_BODY_PRIVACY"
 msgstr "Доверливо"
 
@@ -1360,20 +1099,8 @@ msgstr "Притиснете го копчето за мени."
 msgid "IDS_BR_BODY_POSTCODE_ABB"
 msgstr "Поштенски број"
 
-msgid "IDS_BR_BODY_PHONE_NUMBER_ABB"
-msgstr "Тел. број"
-
-msgid "IDS_BR_BODY_PHONE"
-msgstr "Телефон"
-
 msgid "IDS_BR_BODY_PD_POP_UPS_BLOCKED_ABB"
 msgstr "%d блок. пој. екрани."
-
-msgid "IDS_BR_BODY_PD_ITEMS_WILL_BE_DELETED"
-msgstr "%d записи ќе се избришат."
-
-msgid "IDS_BR_BODY_PASSWORD"
-msgstr "Лозинка"
 
 msgid "IDS_BR_BODY_PAGE_LOADED_T_TTS"
 msgstr "Страницата е вчитана"
@@ -1399,14 +1126,8 @@ msgstr "По барање"
 msgid "IDS_BR_BODY_ONLY_VIA_WI_FI_ABB"
 msgstr "Само преку Wi-Fi"
 
-msgid "IDS_BR_BODY_ON"
-msgstr "Вклучено"
-
 msgid "IDS_BR_BODY_OLDER"
 msgstr "Постаро"
-
-msgid "IDS_BR_BODY_OFF"
-msgstr "Исклучено"
 
 msgid "IDS_BR_BODY_NO_WINDOWS"
 msgstr "Без прозорци"
@@ -1420,17 +1141,8 @@ msgstr "Нема наслов"
 msgid "IDS_BR_BODY_NO_SAVED_PAGES"
 msgstr "Нема снимени страници"
 
-msgid "IDS_BR_BODY_NO_RESULTS_FOUND"
-msgstr "Нема резултати."
-
-msgid "IDS_BR_BODY_NO_HISTORIES"
-msgstr "Нема белешки"
-
 msgid "IDS_BR_BODY_NO_BOOKMARKS"
 msgstr "Нема сочувани страници"
-
-msgid "IDS_BR_BODY_NOTIFICATIONS"
-msgstr "Известувања"
 
 msgid "IDS_BR_BODY_NORMAL"
 msgstr "Нормално"
@@ -1446,9 +1158,6 @@ msgstr "Најпосетувани сајтови"
 
 msgid "IDS_BR_BODY_MOBILE_VIEW"
 msgstr "Мобилен преглед"
-
-msgid "IDS_BR_BODY_MEDIUM"
-msgstr "Средна"
 
 msgid "IDS_BR_BODY_LOCATION_M_INFORMATION"
 msgstr "Место"
@@ -1474,9 +1183,6 @@ msgstr "Интернет"
 msgid "IDS_BR_BODY_IMPROVE_PERFORMANCE_WHEN_LOADING_PAGES"
 msgstr "Подобри перформанси при вчитувањето страници."
 
-msgid "IDS_BR_BODY_IMAGES"
-msgstr "Слики"
-
 msgid "IDS_BR_BODY_HOMEPAGE"
 msgstr "Почетна стр."
 
@@ -1486,20 +1192,11 @@ msgstr "Сокриј ја лентата за адреса кога се лис�
 msgid "IDS_BR_BODY_GENERAL_M_SETTINGS"
 msgstr "Општо"
 
-msgid "IDS_BR_BODY_FULL_SCREEN"
-msgstr "На цел екран"
-
 msgid "IDS_BR_BODY_FULL_NAME_ABB"
 msgstr "Цело име"
 
 msgid "IDS_BR_BODY_FORCE_ZOOM_ABB"
 msgstr "Принуден зум"
-
-msgid "IDS_BR_BODY_FONT_SIZE"
-msgstr "Големина на букви"
-
-msgid "IDS_BR_BODY_FOLDER_NAME"
-msgstr "Име на папката"
 
 msgid "IDS_BR_BODY_FLAT_SUITE_UNIT_BUILDING_FLOOR_ETC_ABB"
 msgstr "Стан, апартман, гарсоњера, зграда, кат итн."
@@ -1516,24 +1213,6 @@ msgstr "Внесете го своето име."
 msgid "IDS_BR_BODY_ENTER_TOWN_CITY_COUNTY_ABB"
 msgstr "Внесете град/околија."
 
-msgid "IDS_BR_BODY_ENTER_POSTCODE_ABB"
-msgstr "Внесете поштенски број."
-
-msgid "IDS_BR_BODY_ENTER_POSTCODE"
-msgstr "Внесете поштенски број."
-
-msgid "IDS_BR_BODY_ENTER_PHONE_NUMBER"
-msgstr "Внесете телефонски број."
-
-msgid "IDS_BR_BODY_ENTER_NAME"
-msgstr "Внеси име."
-
-msgid "IDS_BR_BODY_ENTER_FOLDER_NAME"
-msgstr "Внесете име за папката."
-
-msgid "IDS_BR_BODY_ENTER_EMAIL_ADDRESS"
-msgstr "Внесете email адреса."
-
 msgid "IDS_BR_BODY_ENTER_COUNTRY_REGION_ABB"
 msgstr "Внесете земја/регион."
 
@@ -1545,12 +1224,6 @@ msgstr "Овозможи локација"
 
 msgid "IDS_BR_BODY_ENABLE_JAVASCRIPT"
 msgstr "Овозможи JavaScript"
-
-msgid "IDS_BR_BODY_EMAIL_ADDRESS"
-msgstr "Адреса на Е-пошта"
-
-msgid "IDS_BR_BODY_DOWNLOADING_ING"
-msgstr "Се презема..."
 
 msgid "IDS_BR_BODY_DOUBLE_TAP_TO_VIEW_CERTIFICATE_TTS"
 msgstr "Допрете двапати за да го сертификатот."
@@ -1591,9 +1264,6 @@ msgstr "Прикажувај појавни безбедносни предуп�
 msgid "IDS_BR_BODY_DISPLAY_IMAGES_ON_WEB_PAGES"
 msgstr "Прикажувај слики на веб-страниците."
 
-msgid "IDS_BR_BODY_DEVELOPER_MODE"
-msgstr "Режим за програмери"
-
 msgid "IDS_BR_BODY_DESKTOP_VIEW"
 msgstr "Desktop приказ"
 
@@ -1608,9 +1278,6 @@ msgstr "Основна меморија"
 
 msgid "IDS_BR_BODY_DEFAULT_PAGE_ABB"
 msgstr "Основна страница"
-
-msgid "IDS_BR_BODY_DEFAULT"
-msgstr "Основно"
 
 msgid "IDS_BR_BODY_DATA_USAGE_REDUCED_BY_P1SDP_HP2SD_KB_OF_P3SD_KB_RECEIVED_TAP_HERE_TO_RESET_STATISTICS"
 msgstr "Користењето податоци е намалено за %1$d% (%2$d KB од %3$d KB received). Допрете тука за ресетирање на статистиката."
@@ -1637,7 +1304,7 @@ msgid "IDS_BR_BODY_COOKIES"
 msgstr "Колачиња"
 
 msgid "IDS_BR_BODY_CONTENT_SETTINGS"
-msgstr "Опции за содржината"
+msgstr "Поставувања за содржината"
 
 msgid "IDS_BR_BODY_COMPANY_NAME_ABB"
 msgstr "Име на компанија"
@@ -1646,7 +1313,7 @@ msgid "IDS_BR_BODY_CLOSE_TAB"
 msgstr "Затвори картичка."
 
 msgid "IDS_BR_BODY_CLEAR_WEB_NOTIFICATION_PERMISSION_SETTINGS"
-msgstr "Избриши опции за дозволи за известувања од интернет."
+msgstr "Избриши поставувања за дозволи за известувања од интернет."
 
 msgid "IDS_BR_BODY_CLEAR_WEB_NOTIFICATION_PERMISSIONS_Q"
 msgstr "Да се избришат дозволите за известувањата од интернет?"
@@ -1664,7 +1331,7 @@ msgid "IDS_BR_BODY_CLEAR_HISTORY"
 msgstr "Избриши историја"
 
 msgid "IDS_BR_BODY_CLEAR_ALL_BROWSER_DATA_AND_RESET_ALL_SETTINGS_TO_DEFAULT"
-msgstr "Избриши ги сите податоци на прегледникот и ресетирај ги сите нагодувања на основните."
+msgstr "Избриши ги сите податоци на прегледникот и ресетирај ги сите поставувања на основните."
 
 msgid "IDS_BR_BODY_CITY_TOWN_ABB"
 msgstr "Град/Место"
@@ -1674,9 +1341,6 @@ msgstr "Менувајте ја големината на текстот за п
 
 msgid "IDS_BR_BODY_BOOKMARK_REMINDER_ABB"
 msgstr "Потсетник за омилена страница"
-
-msgid "IDS_BR_BODY_BOOKMARKS"
-msgstr "Сочувани адреси"
 
 msgid "IDS_BR_BODY_BLOCK_POP_UPS_ON_WEB_PAGES"
 msgstr "Блокирај појавни прозорци на интернет-страниците."
@@ -1726,9 +1390,6 @@ msgstr "Дозволи %s да покажува известувања"
 msgid "IDS_BR_BODY_ALLOWS_SITES_TO_SAVE_AND_READ_COOKIE_DATA"
 msgstr "Дозволи сајтовите да меморираат и читаат податоци од „колачињата“."
 
-msgid "IDS_BR_BODY_ALL"
-msgstr "Сите"
-
 msgid "IDS_BR_BODY_AFTER_YOU_VISIT_WEBPAGES_THE_PAGES_YOU_HAVE_VISITED_THE_MOST_WILL_BE_SHOWN_HERE"
 msgstr "Откако ќе посетите интернет-страници, најчесто посетуваните ќе се прикажат тука."
 
@@ -1748,16 +1409,13 @@ msgid "IDS_BR_BODY_AFTER_YOU_ADD_WEBPAGES_TO_QUICK_ACCESS_THEY_WILL_BE_SHOWN_HER
 msgstr "Откако ќе додадете интернет-страници на Брз пристап, ќе се прикажат тука."
 
 msgid "IDS_BR_BODY_ADVANCED_SETTINGS_FOR_INDIVIDUAL_WEBSITES"
-msgstr "Напредни опции за одделни сајтови"
+msgstr "Напредни поставувања за одделни сајтови"
 
 msgid "IDS_BR_BODY_ADVANCED"
 msgstr "Дополнително"
 
 msgid "IDS_BR_BODY_ADD_TO_CONTACT"
 msgstr "Додај на запис"
-
-msgid "IDS_BR_BODY_ADD_TO"
-msgstr " Додај на"
 
 msgid "IDS_BR_BODY_ADD_THIS_WEBSITE_TO_BOOKMARKS_TO_OPEN_IT_FASTER_ABB"
 msgstr "Додад. ја инт.-стр. во омил.за да го отворате побрзо."
@@ -1768,29 +1426,17 @@ msgstr "Поле за адреса 2"
 msgid "IDS_BR_BODY_ADDRESS_LINE_1_ABB"
 msgstr "Поле за адреса 1"
 
-msgid "IDS_BR_BODY_ADDDETAILSVIEW_TAGS"
-msgstr "Ознаки"
-
-msgid "IDS_BR_BODY_ADDBOOKMARKURL"
-msgstr "URL"
-
 msgid "IDS_BR_BODY_ACCEPT_COOKIES"
 msgstr "Прифаќај колачиња"
 
 msgid "IDS_BR_BODY_1_PROFILE_WILL_BE_DELETED"
 msgstr "1 профил ќе се избрише."
 
-msgid "IDS_BR_BODY_1_ITEM_WILL_BE_DELETED"
-msgstr "1 запис ќе се избрише."
-
 msgid "IDS_BR_ACBUTTON_TABS_ABB"
 msgstr "КАРТ."
 
 msgid "IDS_BR_TPOP_STARTING_DOWNLOAD_ING"
 msgstr "Почнува преземање..."
-
-msgid "IDS_BR_TPOP_MAXIMUM_NUMBER_OF_CHARACTERS_HPD_REACHED"
-msgstr "Достигнат е максималниот број знаци (%d)."
 
 msgid "IDS_BR_TPOP_FOLDER_RENAMED"
 msgstr "Папката е преименувана."
@@ -1807,14 +1453,8 @@ msgstr "Откажи"
 msgid "IDS_BR_SBODY_SET_THE_DEVICE_TO_SHOW_THE_FULL_WEBPAGE_ON_THE_SCREEN_WHEN_IT_IS_LOADED_WITHOUT_NEEDING_TO_SCROLL"
 msgstr "Поставете уредот да покажува целосна интернет-страница на екранот кога ќе се вчита без потреба од листање."
 
-msgid "IDS_BR_POP_UNSUPPORTMEDIATYPE"
-msgstr "Неподдржан тип на медиум."
-
 msgid "IDS_BR_POP_UNABLE_TO_RUN_INTERNET_LOW_BATTERY"
 msgstr "Не може да се активира Интернет. Батеријата е празна."
-
-msgid "IDS_BR_POP_UNABLE_TO_CONNECT_TO_MOBILE_NETWORKS_WHILE_FLIGHT_MODE_IS_ENABLED_CONNECT_TO_WI_FI_NETWORK_INSTEAD_OR_DISABLE_FLIGHT_MODE_AND_TRY_AGAIN"
-msgstr "Не може да се поврзе со мобилни мрежи додека е вклучен режим за летало. Поврзете се со мрежа Wi-Fi или исклучете го режимот за летало и обидете се повторно"
 
 msgid "IDS_BR_POP_THE_DOWNLOAD_HAS_BEEN_STOPPED_AND_THE_DOWNLOADED_DATA_WILL_BE_DELETED"
 msgstr "Преземањето е сопрено и преземените податоци ќе се избришат."
@@ -1825,20 +1465,8 @@ msgstr "Search completed"
 msgid "IDS_BR_POP_READY"
 msgstr "Подготвен."
 
-msgid "IDS_BR_POP_INSTALL_SUCCESS"
-msgstr "Инсталирањето е извршено."
-
-msgid "IDS_BR_POP_INSTALLATION_FAILED"
-msgstr "Неуспешно вчитување."
-
 msgid "IDS_BR_POP_INFORM_MEMORY_ERROR"
 msgstr "Мемориска грешка."
-
-msgid "IDS_BR_POP_DELETING_ING"
-msgstr "Се брише..."
-
-msgid "IDS_BR_POP_DATA_ROAMING_IS_DISABLED_CONNECT_TO_WI_FI_NETWORK_INSTEAD_OR_ENABLE_DATA_ROAMING_AND_TRY_AGAIN"
-msgstr "Податочниот роаминг е исклучен. Поврзете се со мрежа Wi-Fi наместо тоа или овозможете податочен роаминг и обидете се повторно"
 
 msgid "IDS_BR_POP_DATA_ROAMING_IS_DISABLED_CONNECT_TO_A_WI_FI_NETWORK_OR_ENABLE_DATA_ROAMING_AND_TRY_AGAIN"
 msgstr "Податочниот роаминг е исклучен. Поврзете се со мрежа Wi-Fi или вклучете податочен роаминг и обидете се повторно."
@@ -1847,7 +1475,7 @@ msgid "IDS_BR_POP_BROWSERERRORREQUESTTIMEOUT"
 msgstr "Времето за барање истече."
 
 msgid "IDS_BR_POP_A_WI_FI_CONNECTION_IS_REQUIRED_TAP_OK_TO_GO_TO_YOUR_WI_FI_SETTINGS"
-msgstr "Потребно е поврзување Wi-Fi. Допрете ОК за да одите во поставките за Wi-Fi."
+msgstr "Потребно е поврзување Wi-Fi. Допрете ОК за да одите во поставувањата за Wi-Fi."
 
 msgid "IDS_BR_OPT_WEB_APPS_ABB"
 msgstr "Веб-аплик."
@@ -1855,17 +1483,11 @@ msgstr "Веб-аплик."
 msgid "IDS_BR_OPT_VIEW_ONLINE"
 msgstr "Прегледај на интернет"
 
-msgid "IDS_BR_OPT_SHARE_VIA"
-msgstr "Сподели преку"
-
 msgid "IDS_BR_OPT_READ_ON_OFFLINE_PAGES_LATER_ABB"
 msgstr "Читај стр. без мрежа подоцна"
 
 msgid "IDS_BR_OPT_QUICK_ACCESS_ABB2"
 msgstr "Брз пристап"
-
-msgid "IDS_BR_OPT_PASTE"
-msgstr "Пресликај"
 
 msgid "IDS_BR_OPT_ALWAYS_ENABLED_ABB"
 msgstr "Секогаш вклучено"
@@ -1891,9 +1513,6 @@ msgstr "Предлози за пребар. и URL"
 msgid "IDS_BR_MBODY_HISTORY"
 msgstr "Историја"
 
-msgid "IDS_BR_MBODY_FONT_SIZE"
-msgstr "Големина на букви"
-
 msgid "IDS_BR_MBODY_FIT_PAGE_TO_SCREEN"
 msgstr "Страница на цел екран"
 
@@ -1905,9 +1524,6 @@ msgstr "Прилагодено"
 
 msgid "IDS_BR_MBODY_COUNTRY_REGION"
 msgstr "Земја/Регион"
-
-msgid "IDS_BR_HEADER_UNABLE_TO_DOWNLOAD_ABB"
-msgstr "Не може да се преземе"
 
 msgid "IDS_BR_HEADER_RENAME_FOLDER_ABB"
 msgstr "Преименувај папка"
@@ -1939,14 +1555,8 @@ msgstr "Додај инфо."
 msgid "IDS_BR_BUTTON_WI_FI_ABB"
 msgstr "Wi-Fi"
 
-msgid "IDS_BR_BUTTON_UPDATE"
-msgstr "Ажурирај"
-
 msgid "IDS_BR_BUTTON_SETTINGS_ABB"
-msgstr "Опции"
-
-msgid "IDS_BR_BUTTON_RETRY"
-msgstr "Повторно"
+msgstr "Поставувања"
 
 msgid "IDS_BR_BUTTON2_OK"
 msgstr "OK"
@@ -1964,16 +1574,13 @@ msgid "IDS_BR_BODY_UNABLE_TO_FIND_AN_APPLICATION_TO_OPEN_THIS_FILE"
 msgstr "Не може да се најде апликација за отворање на овој фајл."
 
 msgid "IDS_BR_BODY_UNABLE_TO_CONNECT_TO_MOBILE_NETWORKS_WHILE_FLIGHT_MODE_IS_ENABLED_MSG"
-msgstr "Не може да се поврзе со мобилни мрежи додека е вклучен Авионскиот режим. Поврзете се со мрежа Wi-Fi место тоа или допрете Поставки за да го исклучите Авионскиот режим и обидете се повторно."
+msgstr "Не може да се поврзе со мобилни мрежи додека е вклучен Авионскиот режим. Поврзете се со мрежа Wi-Fi место тоа или допрете Поставувања за да го исклучите Авионскиот режим и обидете се повторно."
 
 msgid "IDS_BR_BODY_THIS_CERTIFICATE_IS_FROM_A_TRUSTED_AUTHORITY"
 msgstr "Овој сертификат е од доверлив извор."
 
 msgid "IDS_BR_BODY_TAP_HERE_TO_ADD_A_QUICK_ACCESS_SHORTCUT"
 msgstr "Допрете тука за да додадете кратенка за брз пристап."
-
-msgid "IDS_BR_BODY_REQUEST_FAILED"
-msgstr "Неуспешно барање."
 
 msgid "IDS_BR_BODY_PREFERENCES"
 msgstr "Преференци"
@@ -1988,16 +1595,400 @@ msgid "IDS_BR_BODY_NO_MATCHES"
 msgstr "Нема совпаѓања"
 
 msgid "IDS_BR_BODY_MOBILE_DATA_IS_TURNED_OFF_CONNECT_TO_A_WI_FI_NETWORK_INSTEAD_OR_TAP_SETTINGS_TO_TURN_ON_MOBILE_DATA_AND_THEN_TRY_AGAIN"
-msgstr "Мобилните податоци се исклучени. Поврзете се со мрежа Wi-Fi или допрете Поставки за да ги вклучите Мобилни податоци и обидете се повторно."
+msgstr "Мобилните податоци се исклучени. Поврзете се со мрежа Wi-Fi или допрете Поставувања за да ги вклучите Мобилни податоци и обидете се повторно."
+
+msgid "IDS_BR_BODY_FIT_TO_WIDTH"
+msgstr "На цела широчина"
+
+msgid "IDS_BR_ACBUTTON_QUICK_ACCESS"
+msgstr "БРЗ ПРИСТАП"
+
+msgid "IDS_BR_OPT_OPEN_IN_NEW_TAB"
+msgstr "Отвори во нова картичка"
+
+msgid "IDS_BR_BODY_SHARE_LINK"
+msgstr "Сподели линк"
+
+msgid "IDS_BR_SK_SAVE_LITE"
+msgstr "Сочувај"
+
+msgid "IDS_BR_SK_SAVE_ABB"
+msgstr "Сочувај"
+
+msgid "IDS_BR_SK_SAVE"
+msgstr "Сочувај"
+
+msgid "IDS_BR_SK_PREVIOUS"
+msgstr "Претход."
+
+msgid "IDS_BR_SK_NEXT"
+msgstr "Следно"
+
+msgid "IDS_BR_SK_DELETE"
+msgstr "Избриши"
+
+msgid "IDS_BR_SK_CLEAR"
+msgstr "Избриши"
+
+msgid "IDS_BR_SK_BACK"
+msgstr "Назад"
+
+msgid "IDS_BR_POP_WI_FI_CONNECTION_REQUIRED_CONNECT_TO_WI_FI_NETWORK_AND_TRY_AGAIN"
+msgstr "Потребна е врска Wi-Fi. Поврзете со мрежа Wi-Fi и обидете се повторно"
+
+msgid "IDS_BR_POP_URL_NOT_FOUND"
+msgstr "URL не е пронајденo."
+
+msgid "IDS_BR_POP_URL"
+msgstr "URL"
+
+msgid "IDS_BR_POP_SAVED"
+msgstr "Меморирано."
+
+msgid "IDS_BR_POP_REMOVED"
+msgstr "Отстрането."
+
+msgid "IDS_BR_POP_PD_ITEMS_WILL_BE_DELETED"
+msgstr "%d записи ќе се избришат."
+
+msgid "IDS_BR_POP_PD_ITEMS_SELECTED"
+msgstr "Избрани се %d записи."
+
+msgid "IDS_BR_POP_NO_ITEMS_SELECTED"
+msgstr "Не се избрани содржини."
+
+msgid "IDS_BR_POP_NOT_ENOUGH_MEMORY"
+msgstr "Нема доволно меморија."
+
+msgid "IDS_BR_POP_NEVER"
+msgstr "Никогаш"
+
+msgid "IDS_BR_POP_MOBILE_DATA_IS_DISABLED_CONNECT_TO_WI_FI_NETWORK_INSTEAD_OR_ENABLE_MOBILE_DATA_AND_TRY_AGAIN"
+msgstr "Мобилните податоци се исклучени. Поврзете се со мрежа Wi-Fi или вклучете мобилни податоци и обидете се повторно"
+
+msgid "IDS_BR_POP_LOADING_PLEASE_WAIT_ING"
+msgstr "Се вчитува. Почекајте..."
+
+msgid "IDS_BR_POP_INVALID_URL"
+msgstr "Неправилен URL."
+
+msgid "IDS_BR_POP_FAIL"
+msgstr "Неуспешно."
+
+msgid "IDS_BR_POP_ENTER_TITLE_ABB"
+msgstr "Внесете наслов"
+
+msgid "IDS_BR_POP_DO_NOT_SHOW_AGAIN"
+msgstr "Не прикажувај веќе"
+
+msgid "IDS_BR_POP_DOWNLOADCOMPLETE"
+msgstr "Преземањето заврши."
+
+msgid "IDS_BR_POP_DISABLED"
+msgstr "Исклучено."
+
+msgid "IDS_BR_POP_DELETE_Q"
+msgstr "Да се избрише?"
+
+msgid "IDS_BR_POP_DELETED"
+msgstr "Избришано."
+
+msgid "IDS_BR_POP_CLOSE_APPLICATION_Q"
+msgstr "Затвори апликација?"
+
+msgid "IDS_BR_POP_BOOKMARK_ADDED"
+msgstr "Омилената страница е додадена."
+
+msgid "IDS_BR_POP_AUTOMATIC_BRIGHTNESS"
+msgstr "Автоматска осветленост"
+
+msgid "IDS_BR_POP_ACCOUNT"
+msgstr "Сметка"
+
+msgid "IDS_BR_POP_1_ITEM_WILL_BE_DELETED"
+msgstr "1 запис ќе се избрише."
+
+msgid "IDS_BR_POP_1_ITEM_SELECTED"
+msgstr "Избран е 1 запис."
+
+msgid "IDS_BR_OPT_TRANSLATE"
+msgstr "Преведи"
+
+msgid "IDS_BR_OPT_STOP"
+msgstr "Прекини"
+
+msgid "IDS_BR_OPT_SHOW"
+msgstr "Прикажи"
+
+msgid "IDS_BR_OPT_SHARE"
+msgstr "Сподели"
+
+msgid "IDS_BR_OPT_SETTINGS"
+msgstr "Поставувања"
+
+msgid "IDS_BR_OPT_SEND_EMAIL"
+msgstr "Прати е-пошта"
+
+msgid "IDS_BR_OPT_SELECT"
+msgstr "Избери"
+
+msgid "IDS_BR_OPT_SD_CARD"
+msgstr "SD-карт."
+
+msgid "IDS_BR_OPT_RENAME"
+msgstr "Преименувај"
+
+msgid "IDS_BR_OPT_REFRESH"
+msgstr "Обнови"
+
+msgid "IDS_BR_OPT_MOVE"
+msgstr "Премести"
+
+msgid "IDS_BR_OPT_MESSAGES"
+msgstr "Пораки"
+
+msgid "IDS_BR_OPT_LIST_VIEW"
+msgstr "Листа"
+
+msgid "IDS_BR_OPT_I_AGREE"
+msgstr "Добро."
+
+msgid "IDS_BR_OPT_HELP"
+msgstr "Помош"
+
+msgid "IDS_BR_OPT_DEVICE"
+msgstr "Уред"
+
+msgid "IDS_BR_OPT_BOOKMARK"
+msgstr "Омилена страница"
+
+msgid "IDS_BR_OPT_ADDED"
+msgstr "Додадено."
+
+msgid "IDS_BR_OPT_ADD"
+msgstr "Додај"
+
+msgid "IDS_BR_MBODY_DEFAULT_DOWNLOAD_STORAGE"
+msgstr "Основна мем. за преземање"
+
+msgid "IDS_BR_HEADER_SIGN_IN_TO_SAMSUNG_ACCOUNT"
+msgstr "Најава на сметката Samsung"
+
+msgid "IDS_BR_HEADER_PD_SELECTED_ABB"
+msgstr "%d избрани"
+
+msgid "IDS_BR_HEADER_NO_NETWORK_CONNECTION"
+msgstr "Нема мрежно поврзување"
+
+msgid "IDS_BR_HEADER_FOLDER"
+msgstr "Папка"
+
+msgid "IDS_BR_HEADER_EDIT_PROFILE"
+msgstr "Измени профил"
+
+msgid "IDS_BR_BUTTON_SET"
+msgstr "Постави"
+
+msgid "IDS_BR_BUTTON_NOT_NOW"
+msgstr "Не сега"
+
+msgid "IDS_BR_BUTTON_ENABLE_ABB"
+msgstr "Овозможи"
+
+msgid "IDS_BR_BUTTON_EDIT"
+msgstr "Измени"
+
+msgid "IDS_BR_BUTTON_CONTINUE_ABB"
+msgstr "Продолжи"
+
+msgid "IDS_BR_BUTTON_CONTINUE"
+msgstr "Продолжи"
+
+msgid "IDS_BR_BUTTON_CLOSE"
+msgstr "Затвори"
+
+msgid "IDS_BR_BUTTON_CANCEL_ABB"
+msgstr "Откажи"
+
+msgid "IDS_BR_BUTTON_CANCEL"
+msgstr "Откажи"
+
+msgid "IDS_BR_BUTTON_ALLOW"
+msgstr "Дозволи"
+
+msgid "IDS_BR_BODY_YESTERDAY"
+msgstr "Вчера"
+
+msgid "IDS_BR_BODY_URL"
+msgstr "URL"
+
+msgid "IDS_BR_BODY_TODAY"
+msgstr "Денес"
+
+msgid "IDS_BR_BODY_TITLE"
+msgstr "Наслов"
+
+msgid "IDS_BR_BODY_THE_MAXIMUM_NUMBER_OF_CHARACTERS_HPD_HAS_BEEN_EXCEEDED"
+msgstr "Максималниот број знаци (%d) е надминат."
+
+msgid "IDS_BR_BODY_STREAMING"
+msgstr "Проток"
+
+msgid "IDS_BR_BODY_SMALL"
+msgstr "Мала"
+
+msgid "IDS_BR_BODY_SETTINGS"
+msgstr "Поставувања"
+
+msgid "IDS_BR_BODY_SEARCH"
+msgstr "Пребарување"
+
+msgid "IDS_BR_BODY_RSS_SEARCH_RESULTS"
+msgstr "Резултати на пребарувањето"
+
+msgid "IDS_BR_BODY_PROFILE"
+msgstr "Профил"
+
+msgid "IDS_BR_BODY_PROCESSING_ING"
+msgstr "Обработување..."
+
+msgid "IDS_BR_BODY_PHONE_NUMBER_ABB"
+msgstr "Тел. број"
+
+msgid "IDS_BR_BODY_PHONE"
+msgstr "Телефон"
+
+msgid "IDS_BR_BODY_PD_ITEMS_WILL_BE_DELETED"
+msgstr "%d записи ќе се избришат."
+
+msgid "IDS_BR_BODY_PASSWORD"
+msgstr "Лозинка"
+
+msgid "IDS_BR_BODY_ON"
+msgstr "Вклучено"
+
+msgid "IDS_BR_BODY_OFF"
+msgstr "Исклучено"
+
+msgid "IDS_BR_BODY_NO_RESULTS_FOUND"
+msgstr "Нема резултати."
+
+msgid "IDS_BR_BODY_NO_HISTORIES"
+msgstr "Нема белешки"
+
+msgid "IDS_BR_BODY_NOTIFICATIONS"
+msgstr "Известувања"
+
+msgid "IDS_BR_BODY_MEDIUM"
+msgstr "Средна"
+
+msgid "IDS_BR_BODY_IMAGES"
+msgstr "Слики"
+
+msgid "IDS_BR_BODY_FULL_SCREEN"
+msgstr "На цел екран"
+
+msgid "IDS_BR_BODY_FONT_SIZE"
+msgstr "Големина на букви"
+
+msgid "IDS_BR_BODY_FOLDER_NAME"
+msgstr "Име на папката"
+
+msgid "IDS_BR_BODY_ENTER_POSTCODE_ABB"
+msgstr "Внесете поштенски број."
+
+msgid "IDS_BR_BODY_ENTER_POSTCODE"
+msgstr "Внесете поштенски број."
+
+msgid "IDS_BR_BODY_ENTER_PHONE_NUMBER"
+msgstr "Внесете телефонски број."
+
+msgid "IDS_BR_BODY_ENTER_NAME"
+msgstr "Внеси име."
+
+msgid "IDS_BR_BODY_ENTER_FOLDER_NAME"
+msgstr "Внесете име за папката."
+
+msgid "IDS_BR_BODY_ENTER_EMAIL_ADDRESS"
+msgstr "Внесете email адреса."
+
+msgid "IDS_BR_BODY_EMAIL_ADDRESS"
+msgstr "Адреса на Е-пошта"
+
+msgid "IDS_BR_BODY_DOWNLOADING_ING"
+msgstr "Се презема..."
+
+msgid "IDS_BR_BODY_DEVELOPER_MODE"
+msgstr "Режим за програмери"
+
+msgid "IDS_BR_BODY_DEFAULT"
+msgstr "Основно"
+
+msgid "IDS_BR_BODY_BOOKMARKS"
+msgstr "Сочувани адреси"
+
+msgid "IDS_BR_BODY_ALL"
+msgstr "Сите"
+
+msgid "IDS_BR_BODY_ADD_TO"
+msgstr " Додај на"
+
+msgid "IDS_BR_BODY_ADDDETAILSVIEW_TAGS"
+msgstr "Ознаки"
+
+msgid "IDS_BR_BODY_ADDBOOKMARKURL"
+msgstr "URL"
+
+msgid "IDS_BR_BODY_1_ITEM_WILL_BE_DELETED"
+msgstr "1 запис ќе се избрише."
+
+msgid "IDS_BR_TPOP_MAXIMUM_NUMBER_OF_CHARACTERS_HPD_REACHED"
+msgstr "Достигнат е максималниот број знаци (%d)."
+
+msgid "IDS_BR_POP_UNSUPPORTMEDIATYPE"
+msgstr "Неподдржан тип на медиум."
+
+msgid "IDS_BR_POP_UNABLE_TO_CONNECT_TO_MOBILE_NETWORKS_WHILE_FLIGHT_MODE_IS_ENABLED_CONNECT_TO_WI_FI_NETWORK_INSTEAD_OR_DISABLE_FLIGHT_MODE_AND_TRY_AGAIN"
+msgstr "Не може да се поврзе со мобилни мрежи додека е вклучен режим за летало. Поврзете се со мрежа Wi-Fi или исклучете го режимот за летало и обидете се повторно"
+
+msgid "IDS_BR_POP_INSTALL_SUCCESS"
+msgstr "Инсталирањето е извршено."
+
+msgid "IDS_BR_POP_INSTALLATION_FAILED"
+msgstr "Неуспешно вчитување."
+
+msgid "IDS_BR_POP_DELETING_ING"
+msgstr "Се брише..."
+
+msgid "IDS_BR_POP_DATA_ROAMING_IS_DISABLED_CONNECT_TO_WI_FI_NETWORK_INSTEAD_OR_ENABLE_DATA_ROAMING_AND_TRY_AGAIN"
+msgstr "Податочниот роаминг е исклучен. Поврзете се со мрежа Wi-Fi наместо тоа или овозможете податочен роаминг и обидете се повторно"
+
+msgid "IDS_BR_OPT_SHARE_VIA"
+msgstr "Сподели преку"
+
+msgid "IDS_BR_OPT_PASTE"
+msgstr "Пресликај"
+
+msgid "IDS_BR_MBODY_FONT_SIZE"
+msgstr "Големина на букви"
+
+msgid "IDS_BR_HEADER_UNABLE_TO_DOWNLOAD_ABB"
+msgstr "Не може да се преземе"
+
+msgid "IDS_BR_BUTTON_UPDATE"
+msgstr "Ажурирај"
+
+msgid "IDS_BR_BUTTON_RETRY"
+msgstr "Повторно"
+
+msgid "IDS_BR_BODY_REQUEST_FAILED"
+msgstr "Неуспешно барање."
 
 msgid "IDS_BR_BODY_LOGIN"
 msgstr "Најава"
 
 msgid "IDS_BR_BODY_LOADING_ING"
 msgstr "Активирање..."
-
-msgid "IDS_BR_BODY_FIT_TO_WIDTH"
-msgstr "На цела широчина"
 
 msgid "IDS_BR_BODY_FIT_TO_SCREEN"
 msgstr "На цел екран"
@@ -2008,12 +1999,180 @@ msgstr "Преземено"
 msgid "IDS_BR_BODY_DATA_ROAMING_IS_DISABLED_CONNECT_TO_A_WI_FI_NETWORK_INSTEAD_OR_ENABLE_DATA_ROAMING_AND_TRY_AGAIN"
 msgstr "Податочниот роаминг е исклучен. Поврзете се со мрежа Wi-Fi место тоа или овозможете податочен роаминг и обидете се повторно."
 
-msgid "IDS_BR_ACBUTTON_QUICK_ACCESS"
-msgstr "БРЗ ПРИСТАП"
+msgid "IDS_BR_POP_DOWNLOAD_CANCELLED"
+msgstr "Преземањето е откажано."
 
-msgid "IDS_ST_POP_SOME_CONTENT_HAS_BEEN_BLOCKED_TO_PROTECT_YOUR_DEVICE"
-msgstr "Некои содржини се блокирани за да Ви се заштити уредот."
+msgid "IDS_BR_BUTTON_SECRET_ON_ABB"
+msgstr "Таен вклуч."
 
-msgid "IDS_ST_POP_SELECT_WHETHER_TO_GO_TO_THE_WEBPAGE_ANYWAY"
-msgstr "Изберете дали да отидете на интернет-страницата и покрај тоа."
+msgid "IDS_BR_MBODY_PRIVACY"
+msgstr "Доверливо"
+
+msgid "IDS_BR_MBODY_DEFAULT_STORAGE"
+msgstr "Основна меморија"
+
+msgid "IDS_BR_MBODY_MANUAL_ZOOM"
+msgstr "Рачен зум"
+
+msgid "IDS_BR_TMBODY_DEFAULT_SEARCH_ENGINE"
+msgstr "Основен пребарувач"
+
+msgid "IDS_BR_MBODY_SAVE_SIGN_IN_INFO"
+msgstr "Сочувај инфо. за најава"
+
+msgid "IDS_BR_OPT_TURN_OFF_SECRET_MODE_ABB"
+msgstr "Исклучете Таен режим"
+
+msgid "IDS_BR_OPT_TURN_ON_SECRET_MODE_ABB"
+msgstr "Вклучете Таен режим"
+
+msgid "IDS_BR_OPT_SHOW_PASSWORD_ABB2"
+msgstr "Прикажи лозинка"
+
+msgid "IDS_BR_BODY_ENTER_YOUR_CURRENT_SECRET_MODE_PASSWORD"
+msgstr "Внесете ја моменталната лозинка за Таен режим."
+
+msgid "IDS_BR_OPT_SECRET_MODE_SECURITY_ABB"
+msgstr "Безбедност на Таен режим"
+
+msgid "IDS_BR_BUTTON_USE_PASSWORD_ABB"
+msgstr "Користи лозинка"
+
+msgid "IDS_BR_HEADER_DONT_USE_PASSWORD_ABB"
+msgstr "Не користи лозинка"
+
+msgid "IDS_BR_MBODY_MOST_VISITED_WEBSITES"
+msgstr "Најпосетувани страници"
+
+msgid "IDS_BR_MBODY_SET_MY_PROFILE"
+msgstr "Одреди мој профил"
+
+msgid "IDS_BR_MBODY_MY_AUTO_FILL_PROFILE"
+msgstr "Мој профил за авт.пополн."
+
+msgid "IDS_BR_SBODY_MANAGE_DATA_USED_TO_FILL_IN_FORMS_ONLINE"
+msgstr "Управувајте со податоци што се користат за пополнување обрасци на интернет."
+
+msgid "IDS_BR_MBODY_SAVE_SIGN_IN_INFO_ABB"
+msgstr "Соч.инф.за најава"
+
+msgid "IDS_BR_OPT_LOCATION_ACCESS_DATA"
+msgstr "Податоци за пристап кон локација"
+
+msgid "IDS_BR_OPT_AUTO_FILL_DATA"
+msgstr "Автоматско пополнување податоци"
+
+msgid "IDS_BR_BODY_ANY_WEBPAGES_YOU_VIEW_WHILE_SECRET_MODE_IS_TURNED_ON_WONT_APPEAR_IN_YOUR_BROWSER_OR_SEARCH_HISTORY_MSG"
+msgstr "Сите интернет-страници што ги гледате додека е вклучен Таен режим, нема да се појават во Вашиот прегледник или во историјата на пребарувања додека е исклучена.\n\nСите ознаки и интернет-страници што ги зачувувате додека е вклучен Таен режим, нема да се прикажат додека тој е исклучен.\n\nМожете да ги заштитите своите податоци во Таен режим и со лозинка."
+
+msgid "IDS_BR_BODY_ANY_WEBPAGES_YOU_VIEW_WHILE_SECRET_MODE_IS_TURNED_ON_WONT_APPEAR_IN_YOUR_BROWSER_OR_SEARCH_MSG"
+msgstr "Сите интернет-страници што ги гледате додека е вклучен Таен режим, нема да се појават во Вашиот прегледник или во историјата на пребарувања додека е исклучена.\n\nСите ознаки и интернет-страници што ги зачувувате додека е вклучен Таен режим, нема да се прикажат додека тој е исклучен."
+
+msgid "IDS_BR_BUTTON_SECRET_OFF_ABB"
+msgstr "Таен искл."
+
+msgid "IDS_BR_BUTTON_DONT_USE_PASSWORD_ABB"
+msgstr "Не користи лозинка"
+
+msgid "IDS_BR_BUTTON_NEW_TAB_ABB2"
+msgstr "Н. кар."
+
+msgid "IDS_BR_NPBODY_WEB_ADDRESS_ABB"
+msgstr "Интернет-адреса"
+
+msgid "IDS_BR_HEADER_ADD_WEBPAGE_TO_QUICK_ACCESS_ABB"
+msgstr "Дод. интернет-стр. Брз прис."
+
+msgid "IDS_BR_TMBODY_TURN_ON_JAVASCRIPT"
+msgstr "Вклучете JavaScript"
+
+msgid "IDS_BR_HEADER_COULDNT_OPEN_NEW_TAB_ABB"
+msgstr "Не може да се отв.нова карт."
+
+msgid "IDS_BR_OPT_OPEN_IN_NEW_TAB_ABB"
+msgstr "Отвори во нова картичка"
+
+msgid "IDS_BR_TPOP_FOLDER_NAME_ALREADY_IN_USE"
+msgstr "Името на папката веќе се користи."
+
+msgid "IDS_BR_NPBODY_NEW_FOLDER_PD"
+msgstr "Нова папка %d"
+
+msgid "IDS_BR_NPBODY_NEW_FOLDER"
+msgstr "Нова папка"
+
+msgid "IDS_BR_OPT_ENABLE_JAVASCRIPT"
+msgstr "Овозможи JavaScript"
+
+msgid "IDS_BR_TMBODY_MANAGE_WEBSITE_DATA"
+msgstr "Уреди подат.за интернет-стр."
+
+msgid "IDS_BR_HEADER_SET_HOME_PAGE_ABB"
+msgstr "Постави почетна страница"
+
+msgid "IDS_BR_TPOP_WEBPAGE_ADDED_TO_QUICK_ACCESS_LIST"
+msgstr "Интернет-страницата е додадена во листата за брз пристап."
+
+msgid "IDS_BR_OPT_EDIT_QUICK_ACCESS_ABB"
+msgstr "Измени Брз пристап"
+
+msgid "IDS_BR_OPT_REMOVE_FROM_BOOKMARKS_ABB"
+msgstr "Отстрани од Ознаки"
+
+msgid "IDS_BR_HEADER_ADD_BOOKMARK_ABB"
+msgstr "Додај омил.страница"
+
+msgid "IDS_BR_BODY_BROWSING_HISTORY"
+msgstr "Историја на пребарување"
+
+msgid "IDS_BR_HEADER_TABS_ABB2"
+msgstr "Картички"
+
+msgid "IDS_BR_OPT_NEW_TAB"
+msgstr "Нова картичка"
+
+msgid "IDS_BR_BUTTON_FORWARD_ABB2"
+msgstr "Препрати"
+
+msgid "IDS_BR_BUTTON_BACK_ABB3"
+msgstr "Назад"
+
+msgid "IDS_BR_BUTTON_BOOKMARKS_ABB"
+msgstr "Ознаки"
+
+msgid "IDS_BR_NPBODY_NO_PROFILES_ABB"
+msgstr "Без профили"
+
+msgid "IDS_BR_TAB2_HISTORY"
+msgstr "Историја"
+
+msgid "IDS_BR_TAB2_BOOKMARKS"
+msgstr "Ознаки"
+
+msgid "IDS_BR_HEADER_SAVE_CONTENT_TO_ABB"
+msgstr "Зачувај ја содржината во"
+
+msgid "IDS_BR_HEADER_SELECT_ITEMS_ABB2"
+msgstr "Бирање записи"
+
+msgid "IDS_BR_BODY_YOUR_PASSWORD_MUST_CONTAIN_AT_LEAST_PD_CHARACTERS_INCLUDING_AT_LEAST_1_LETTER"
+msgstr "Лозинката треба да содржи барем %d знаци, меѓу кои барем 1 буква."
+
+msgid "IDS_BR_BODY_AN_INCORRECT_PASSWORD_HAS_BEEN_ENTERED_TRY_AGAIN"
+msgstr "Внесена е неточна лозинка. Обидете се повторно."
+
+msgid "IDS_BR_BODY_NO_TABS"
+msgstr "Без картички"
+
+msgid "IDS_BR_TMBODY_CHANGE_PASSWORD"
+msgstr "Смени лозинка"
+
+msgid "IDS_BR_BODY_ANY_WEBPAGES_VIEWED_WHILE_SECRET_MODE_IS_ENABLED_WILL_NOT_APPEAR_IN_YOUR_BROWSER_OR_SEARCH_HISTORY_WHILE_SECRET_MSG"
+msgstr "Сите интернет-страници прегледани додека е овозможен Таен режим, нема да се појават во Вашиот прегледник или во историјата на пребарувања додека Таен режим е оневозможен.\n\nСите ознаки и интернет-страници зачувани додека е овозможен Таен режим нема да се прикажат додека тој е оневозможен.\n\nМожете да ги заштитите своите податоци во Таен режим и со лозинка."
+
+msgid "IDS_BR_BODY_ANY_WEBPAGES_VIEWED_WHILE_SECRET_MODE_IS_ENABLED_WILL_NOT_APPEAR_IN_YOUR_MSG"
+msgstr "Сите интернет-страници прегледани додека е овозможен Таен режим, нема да се појават во Вашиот прегледник или во историјата на пребарувања додека Таен режим е оневозможен.\n\nСите ознаки и интернет-страници зачувани додека е овозможен Таен режим нема да се прикажат додека тој е оневозможен."
+
+msgid "IDS_BR_BUTTON2_DONE"
+msgstr "Готово"
 

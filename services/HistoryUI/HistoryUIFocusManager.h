@@ -24,7 +24,7 @@ namespace tizen_browser{
 namespace base_ui{
 
 class HistoryDaysListManager;
-typedef std::shared_ptr<HistoryDaysListManager> HistoryDaysListManagerPtr;
+using HistoryDaysListManagerPtr = std::shared_ptr<HistoryDaysListManager>;
 
 class HistoryUIFocusManager
 {
@@ -37,11 +37,11 @@ public:
     void setHistoryUIButtons(Evas_Object* buttonClose, Evas_Object* buttonClear);
 
 private:
-    Evas_Object* m_focusObject = nullptr;
+    Evas_Object* m_focusObject{nullptr};
     HistoryDaysListManagerPtr m_historyDaysListManager;
 
-    Evas_Object* m_buttonClose = nullptr;
-    Evas_Object* m_buttonClear = nullptr;
+    Evas_Object* m_buttonClose{nullptr};
+    Evas_Object* m_buttonClear{nullptr};
 };
 
 }

@@ -1,14 +1,8 @@
 msgid "IDS_BR_POP_NETWORK_ERROR"
 msgstr "Tarmoq xatosi."
 
-msgid "IDS_BR_BODY_AUTHUSERNAME"
-msgstr "Foydalanuvchi nomi"
-
 msgid "IDS_BR_BODY_DESTINATIONS_AUTHENTICATION_REQUIRED"
 msgstr "Haqiqiylik tekshiruvi talab qilinadi."
-
-msgid "IDS_BR_BODY_AUTHPASSWORD"
-msgstr "Parol"
 
 msgid "IDS_BR_HEADER_SECURITY_WARNING"
 msgstr "Xavfsizlik ogohlantirishi"
@@ -33,12 +27,6 @@ msgstr "Ushbu sayt sertifikati bilan bog‘liq muammolar mavjud."
 
 msgid "IDS_BR_OPT_ALLOW"
 msgstr "Ruxsat"
-
-msgid "IDS_BR_OPT_VIEW"
-msgstr "Ko‘rib chiqish"
-
-msgid "IDS_BR_OPT_CANCEL"
-msgstr "Bekor qilish"
 
 msgid "IDS_BR_BODY_PS_REQUESTS_YOUR_LOCATION"
 msgstr "%s Sizning joylashuvingizni talab qiladi."
@@ -72,6 +60,18 @@ msgstr "Yuklab olish"
 
 msgid "IDS_BR_BODY_THIS_WEBPAGE"
 msgstr "Ushbu veb-sahifa"
+
+msgid "IDS_BR_BODY_AUTHUSERNAME"
+msgstr "Foydalanuvchi nomi"
+
+msgid "IDS_BR_BODY_AUTHPASSWORD"
+msgstr "Parol"
+
+msgid "IDS_BR_OPT_VIEW"
+msgstr "Ko‘rib chiqish"
+
+msgid "IDS_BR_OPT_CANCEL"
+msgstr "Bekor qilish"
 
 msgid "IDS_BR_OPT_SCREEN"
 msgstr "Ekran"
@@ -109,15 +109,6 @@ msgstr "Bekor qilish"
 msgid "IDS_BR_BUTTON_MORE"
 msgstr "Yana"
 
-msgid "IDS_TPLATFORM_ACBUTTON_DONE_ABB"
-msgstr "BAJARILDI"
-
-msgid "IDS_TPLATFORM_ACBUTTON_CANCEL_ABB"
-msgstr "BEKOR QILISH"
-
-msgid "IDS_TPLATFORM_ACBUTTON_DELETE_ABB"
-msgstr "O‘CHIRISH"
-
 msgid "IDS_BR_BODY_NO_ITEMS"
 msgstr "Elementlar yo‘q"
 
@@ -126,9 +117,6 @@ msgstr "Mobil tarmoqqa ulanish"
 
 msgid "IDS_BR_OPT_DO_NOT_SHOW_AGAIN"
 msgstr "Boshqa ko‘rsatilmasin"
-
-msgid "IDS_BR_SK_OK"
-msgstr "OK"
 
 msgid "IDS_BR_POP_ONLY_HTTP_OR_HTTPS_URLS_CAN_BE_DOWNLOADED"
 msgstr "Faqat http yoki https URLlar yuklab olinishi mumkin."
@@ -151,17 +139,11 @@ msgstr "Havoladan nsuxa ko‘chirish"
 msgid "IDS_BR_OPT_COPY_IMAGE"
 msgstr "Suratdan nusxa olish"
 
+msgid "IDS_BR_SK_OK"
+msgstr "OK"
+
 msgid "IDS_BR_OPT_CALL"
 msgstr "Qo‘ng‘iroq qilish"
-
-msgid "IDS_ST_POP_PS_HAS_BEEN_DETECTED"
-msgstr "%s aniqlandi."
-
-msgid "IDS_ST_POP_DETECTED_IN_C_PS"
-msgstr "Aniqlandi: %s"
-
-msgid "IDS_ST_HEADER_MALWARE_DETECTED_ABB"
-msgstr "Zararli dastur aniqlandi"
 
 msgid "IDS_BR_BUTTON_FAILED"
 msgstr "Xato"
@@ -179,7 +161,7 @@ msgid "IDS_BR_TPOP_PD_ITEMS_DELETED_FROM_BROWSING_HISTORY"
 msgstr "%d ta element ko‘rib chiqishlar jurnalidan yo‘q qilindi."
 
 msgid "IDS_BR_TPOP_OPENING_SAMSUNG_ACCOUNT_ING"
-msgstr "Samsung account ochilmoqda..."
+msgstr "Samsung hisob qaydnomasi ochilmoqda..."
 
 msgid "IDS_BR_TPOP_LOW_DATA_USAGE_ENABLED"
 msgstr "Kam ma’lumot ishlatilishi yoqildi."
@@ -229,35 +211,11 @@ msgstr "Bel-siz"
 msgid "IDS_BR_SK_TABS"
 msgstr "Panellar"
 
-msgid "IDS_BR_SK_SAVE_LITE"
-msgstr "Saqlash"
-
-msgid "IDS_BR_SK_SAVE_ABB"
-msgstr "Saqla"
-
-msgid "IDS_BR_SK_SAVE"
-msgstr "Saqlash"
-
-msgid "IDS_BR_SK_PREVIOUS"
-msgstr "Avvalgi"
-
-msgid "IDS_BR_SK_NEXT"
-msgstr "Keyingi"
-
 msgid "IDS_BR_SK_MENU"
 msgstr "Menyu"
 
 msgid "IDS_BR_SK_DELETE_ABB"
 msgstr "O'chr"
-
-msgid "IDS_BR_SK_DELETE"
-msgstr "O'chirish"
-
-msgid "IDS_BR_SK_CLEAR"
-msgstr "O'chirish"
-
-msgid "IDS_BR_SK_BACK"
-msgstr "Orqaga"
 
 msgid "IDS_BR_SK3_CREATE_FOLDER"
 msgstr "Jild yaratish"
@@ -316,15 +274,6 @@ msgstr "Ba’zi veb-sahifalarni aniq qistirib bo‘lmaydi"
 msgid "IDS_BR_POP_YOUR_HISTORY_WILL_BE_CLEARED"
 msgstr "Jurnalingiz tozalanadi."
 
-msgid "IDS_BR_POP_WI_FI_CONNECTION_REQUIRED_CONNECT_TO_WI_FI_NETWORK_AND_TRY_AGAIN"
-msgstr "Wi-Fi ulanishi talab qilinadi. Wi-Fi tarmoqqa ulaning va qayta urinib ko‘ring"
-
-msgid "IDS_BR_POP_URL_NOT_FOUND"
-msgstr "URL topilmadi."
-
-msgid "IDS_BR_POP_URL"
-msgstr "URL-manzil"
-
 msgid "IDS_BR_POP_UNABLE_TO_VIEW_THE_CERTIFICATE_THE_PAGE_INFORMATION_HAS_BEEN_CHANGED"
 msgstr "Sertifikatni ko‘rib chiqib bo‘lmaydi. Sahifa ma’lumoti o‘zgartirildi."
 
@@ -370,23 +319,11 @@ msgstr "Xavfsizlik siyosati Internet brauzeridan foydalanishni cheklaydi."
 msgid "IDS_BR_POP_SAVED_TO_BOOKMARKS"
 msgstr "Veb-hujjatlarga saqlandi."
 
-msgid "IDS_BR_POP_SAVED"
-msgstr "Saqlandi."
-
 msgid "IDS_BR_POP_RENAME_TAG"
 msgstr "Teg nomini o‘zgartirish"
 
-msgid "IDS_BR_POP_REMOVED"
-msgstr "Olib tashlandi."
-
 msgid "IDS_BR_POP_PD_PROFILES_WILL_BE_DELETED"
 msgstr "%dta profil yo‘q qilinadi."
-
-msgid "IDS_BR_POP_PD_ITEMS_WILL_BE_DELETED"
-msgstr "%d element o'chirib tashlanadi."
-
-msgid "IDS_BR_POP_PD_ITEMS_SELECTED"
-msgstr "%d element tanlangan."
 
 msgid "IDS_BR_POP_PAGES_THAT_YOU_VIEW_WILL_NOT_APPEAR_IN_YOUR_BROWSER_HISTORY_OR_SEARCH_HISTORY_AND_THEY_WILL_NOT_LEAVE_OTHER_TRACES_LIKE_COOKIES"
 msgstr "Siz ko‘rib chiqqan sahifalar brauzer yoki qidirishlaringiz jurnalida paydo bo‘lmaydi hamda ular cookie-fayllar kabi iz qoldirmaydi."
@@ -415,53 +352,20 @@ msgstr "“%1$s” aniqlandi.\nAniqlandi: “%2$s”\n\nQurilmangizni himoya qil
 msgid "IDS_BR_POP_P1SS_HAS_BEEN_DETECTED_DETECTED_IN_C_P2SS_OPEN_WEBPAGE_ANYWAY_Q"
 msgstr "“%1$s” aniqlandi.\nAniqlandi: “%2$s”\n\nVeb-sahifa baribir ochilsinmi?"
 
-msgid "IDS_BR_POP_NO_ITEMS_SELECTED"
-msgstr "Elementlar tanlanmagan."
-
 msgid "IDS_BR_POP_NOT_ENOUGH_MEMORY_DELETE_SOME_ITEMS_AND_TRY_AGAIN"
 msgstr "Xotira yetarli emas. Ba’zi elementlarni o'chring va qayta urinib ko‘ring."
-
-msgid "IDS_BR_POP_NOT_ENOUGH_MEMORY"
-msgstr "Xotira yetarli emas."
 
 msgid "IDS_BR_POP_NOT_ALLOWED"
 msgstr "Ruxsat berilmagan."
 
-msgid "IDS_BR_POP_NEVER"
-msgstr "Hech qachon"
-
 msgid "IDS_BR_POP_MOVED"
 msgstr "Ko‘chirilgan."
-
-msgid "IDS_BR_POP_MOBILE_DATA_IS_DISABLED_CONNECT_TO_WI_FI_NETWORK_INSTEAD_OR_ENABLE_MOBILE_DATA_AND_TRY_AGAIN"
-msgstr "Mobil ma’lumot o‘chirilgan. Uning o‘rniga Wi-Fi tarmoqqa ulaning yoki mobil ma’lumotni yoqing va qayta urinib ko‘ring"
-
-msgid "IDS_BR_POP_LOADING_PLEASE_WAIT_ING"
-msgstr "Yuklanmoqda. iltimos, kuting..."
-
-msgid "IDS_BR_POP_INVALID_URL"
-msgstr "Noto‘g‘ri URL."
-
-msgid "IDS_BR_POP_FAIL"
-msgstr "Xato."
 
 msgid "IDS_BR_POP_ENTER_URL"
 msgstr "URL kiritish."
 
-msgid "IDS_BR_POP_ENTER_TITLE_ABB"
-msgstr "Sarlavha kiriting"
-
 msgid "IDS_BR_POP_ENTER_BOOKMARK_NAME"
 msgstr "Veb-hujjat nomini kiriting."
-
-msgid "IDS_BR_POP_DO_NOT_SHOW_AGAIN"
-msgstr "Boshqa ko‘rsatilmasin"
-
-msgid "IDS_BR_POP_DOWNLOADCOMPLETE"
-msgstr "Yuklash jarayoni yakunlandi."
-
-msgid "IDS_BR_POP_DISABLED"
-msgstr "O‘chirilgan."
 
 msgid "IDS_BR_POP_DIALING_ING_VZW"
 msgstr "Dialing..."
@@ -487,9 +391,6 @@ msgstr "Ushbu veb-sayt uchun kirish ma’lumotlari yo‘q qilinsinmi?"
 msgid "IDS_BR_POP_DELETE_SIGN_IN_DATA_FOR_PD_WEBSITES_Q"
 msgstr "%dta veb-sayt uchun kirish ma’lumotlari yo‘q qilinsinmi?"
 
-msgid "IDS_BR_POP_DELETE_Q"
-msgstr "O'chirilsinmi?"
-
 msgid "IDS_BR_POP_DELETE_PD_SAVED_WEB_PAGES_Q"
 msgstr "%dta saqlangan veb-sahifalar yo‘q qilinsinmi?"
 
@@ -505,14 +406,8 @@ msgstr "Barcha veb-sayt ma’lumotlari va joylashuv ruxsatnomalari o'chirilsinmi
 msgid "IDS_BR_POP_DELETEHISTORYQUESTION"
 msgstr "Jurnal o‘chirilsinmi?"
 
-msgid "IDS_BR_POP_DELETED"
-msgstr "O'chirildi."
-
 msgid "IDS_BR_POP_CONTINUE"
 msgstr "Davom ettirish"
-
-msgid "IDS_BR_POP_CLOSE_APPLICATION_Q"
-msgstr "Ilova yopilsinmi?"
 
 msgid "IDS_BR_POP_CLOSE_APPLICATION"
 msgstr "Ilovani yopish"
@@ -525,12 +420,6 @@ msgstr "Jurnal tozalansinmi?"
 
 msgid "IDS_BR_POP_BOOKMARK_REMOVED"
 msgstr "Veb-hujjat olib tashlandi."
-
-msgid "IDS_BR_POP_BOOKMARK_ADDED"
-msgstr "Saqlangan veb-hujjat qo‘shildi."
-
-msgid "IDS_BR_POP_AUTOMATIC_BRIGHTNESS"
-msgstr "Avtomatik yorqinlik"
 
 msgid "IDS_BR_POP_ALREADY_EXISTS"
 msgstr "Avvaldan mavjud."
@@ -556,15 +445,6 @@ msgstr "Saytlarga cookies-fayllarni saqlash va o‘qish uchun ruxsat berish."
 msgid "IDS_BR_POP_ADDED_TO_BOOKMARKS"
 msgstr "Saqlangan veb-hujjatlarga qo‘shildi."
 
-msgid "IDS_BR_POP_ACCOUNT"
-msgstr "Hisob qaydnomasi"
-
-msgid "IDS_BR_POP_1_ITEM_WILL_BE_DELETED"
-msgstr "1 element yo‘q qilinadi."
-
-msgid "IDS_BR_POP_1_ITEM_SELECTED"
-msgstr "1 element tanlangan."
-
 msgid "IDS_BR_OPT_WINDOWS"
 msgstr "Oynalar"
 
@@ -574,38 +454,20 @@ msgstr "Sertifikatni ko‘rish"
 msgid "IDS_BR_OPT_UNICODE_HUTF_8"
 msgstr "Yunikod (UTF-8)"
 
-msgid "IDS_BR_OPT_TRANSLATE"
-msgstr "Tarjima qilish"
-
 msgid "IDS_BR_OPT_THUMBNAIL_VIEW"
 msgstr "Eskizli ko'rinish"
 
 msgid "IDS_BR_OPT_TEXT_ENCODING"
 msgstr "Matn shifrlanishi"
 
-msgid "IDS_BR_OPT_STOP"
-msgstr "To‘xtat"
-
 msgid "IDS_BR_OPT_SHRINK_TEXT"
 msgstr "Matnni qisqartirish"
-
-msgid "IDS_BR_OPT_SHOW"
-msgstr "Ko‘rsatish"
-
-msgid "IDS_BR_OPT_SHARE"
-msgstr "Ulashish"
 
 msgid "IDS_BR_OPT_SETTINGS_ABB"
 msgstr "Parametrlar"
 
-msgid "IDS_BR_OPT_SETTINGS"
-msgstr "Parametrlar"
-
 msgid "IDS_BR_OPT_SEND_MESSAGE_VODA"
 msgstr "Xabar yuborish"
-
-msgid "IDS_BR_OPT_SEND_EMAIL"
-msgstr "E-pochta yub."
 
 msgid "IDS_BR_OPT_SENDURLVIA_EMAIL"
 msgstr "E-pochta"
@@ -624,12 +486,6 @@ msgstr "Tanlash rejimi"
 
 msgid "IDS_BR_OPT_SELECTED"
 msgstr "Tanlangan"
-
-msgid "IDS_BR_OPT_SELECT"
-msgstr "Tanlash"
-
-msgid "IDS_BR_OPT_SD_CARD"
-msgstr "SD-karta"
 
 msgid "IDS_BR_OPT_SAVE_TO_KEEPIT_ABB"
 msgstr "KeepItga saqlash"
@@ -658,14 +514,8 @@ msgstr "Qayta saralash"
 msgid "IDS_BR_OPT_RENAME_FOLDER"
 msgstr "Jild nomini o‘zgartirish"
 
-msgid "IDS_BR_OPT_RENAME"
-msgstr "Nom o‘zgartirish"
-
 msgid "IDS_BR_OPT_REMOVE"
 msgstr "Olib tashlash"
-
-msgid "IDS_BR_OPT_REFRESH"
-msgstr "Yangilash"
 
 msgid "IDS_BR_OPT_READER_MODE_TTS"
 msgstr "O‘qish vositasi rejimi"
@@ -685,14 +535,8 @@ msgstr "Offlayn sahifalar"
 msgid "IDS_BR_OPT_NEW_WINDOW"
 msgstr "Yangi oyna"
 
-msgid "IDS_BR_OPT_MOVE"
-msgstr "Ko‘chirish"
-
 msgid "IDS_BR_OPT_MINIMISE"
 msgstr "Kichraytirish"
-
-msgid "IDS_BR_OPT_MESSAGES"
-msgstr "Xabarlar"
 
 msgid "IDS_BR_OPT_MEDIUM_M_QUALITY"
 msgstr "O‘rta"
@@ -705,9 +549,6 @@ msgstr "Joylashuvga kirish imtiyozlari"
 
 msgid "IDS_BR_OPT_LOAD_IMAGES"
 msgstr "Rasmlarni yuklash"
-
-msgid "IDS_BR_OPT_LIST_VIEW"
-msgstr "Ro‘yxat ko‘rinishi"
 
 msgid "IDS_BR_OPT_LATIN_1_HISO_8859_1"
 msgstr "Lotincha-1 (ISO-8859-1)"
@@ -724,9 +565,6 @@ msgstr "Yaponcha (ISO-2022-JP)"
 msgid "IDS_BR_OPT_JAPANESE_HEUC_JP"
 msgstr "Yaponcha (EUC-JP)"
 
-msgid "IDS_BR_OPT_I_AGREE"
-msgstr "Men roziman."
-
 msgid "IDS_BR_OPT_INCOGNITO_MODE_ABB"
 msgstr "Inkognito rejimi"
 
@@ -741,9 +579,6 @@ msgstr "Asosiy ekr. yorliq sifatida"
 
 msgid "IDS_BR_OPT_HIGH_M_QUALITY"
 msgstr "Baland"
-
-msgid "IDS_BR_OPT_HELP"
-msgstr "Yordam"
 
 msgid "IDS_BR_OPT_GOFORWARD"
 msgstr "Boshqaga yo‘naltirish"
@@ -790,9 +625,6 @@ msgstr "Kam ma’l. ishlatilishini o‘ch"
 msgid "IDS_BR_OPT_DISABLED"
 msgstr "O‘chirilgan"
 
-msgid "IDS_BR_OPT_DEVICE"
-msgstr "Qurilma"
-
 msgid "IDS_BR_OPT_DELETE_SAVED_PAGE_ABB"
 msgstr "Saqlangan sahifani o'chirish"
 
@@ -826,9 +658,6 @@ msgstr "Xitoycha (Big5)"
 msgid "IDS_BR_OPT_CACHE"
 msgstr "Kesh"
 
-msgid "IDS_BR_OPT_BOOKMARK"
-msgstr "Saqlangan veb-hujjat"
-
 msgid "IDS_BR_OPT_ADD_TO_WEB_CLIP"
 msgstr "Veb-klipga qo‘shish"
 
@@ -849,12 +678,6 @@ msgstr "Veb-hujjat qo‘sh"
 
 msgid "IDS_BR_OPT_ADD_BOOKMARK"
 msgstr "Veb-hujjat qo‘shish"
-
-msgid "IDS_BR_OPT_ADDED"
-msgstr "Qo‘shildi."
-
-msgid "IDS_BR_OPT_ADD"
-msgstr "Qo‘shish"
 
 msgid "IDS_BR_OPT1_EXTENSION"
 msgstr "Kengaytma"
@@ -925,9 +748,6 @@ msgstr "Kanal tarkibini yuklab ol"
 msgid "IDS_BR_MBODY_DELETE_SIGN_IN_DATA"
 msgstr "Kirish ma’lumot. yo‘q qil"
 
-msgid "IDS_BR_MBODY_DEFAULT_DOWNLOAD_STORAGE"
-msgstr "Birlamchi yuk/olish joyi"
-
 msgid "IDS_BR_MBODY_DATA_SAVING_STATISTICS"
 msgstr "Ma’l. saqlash statistika"
 
@@ -970,9 +790,6 @@ msgstr "Xatcho‘pni ko‘chirib bo‘lmaydi"
 msgid "IDS_BR_HEADER_SITE_NOT_TRUSTED_ABB"
 msgstr "Sayt ishonchli emas"
 
-msgid "IDS_BR_HEADER_SIGN_IN_TO_SAMSUNG_ACCOUNT"
-msgstr "Samsung accountga kirish"
-
 msgid "IDS_BR_HEADER_SET_HOMEPAGE_ABB"
 msgstr "Bosh sahifani o‘rnatish"
 
@@ -1009,17 +826,11 @@ msgstr "Qalquvchi oyna bloklandi"
 msgid "IDS_BR_HEADER_POPULAR_WEBSITES_ABB"
 msgstr "Ommabop veb-saytlar"
 
-msgid "IDS_BR_HEADER_PD_SELECTED_ABB"
-msgstr "%d tanlandi"
-
 msgid "IDS_BR_HEADER_ORGANISATION_C_ABB"
 msgstr "Tashkilot:"
 
 msgid "IDS_BR_HEADER_ORGANISATIONAL_UNIT_C"
 msgstr "Tashkilot birligi:"
-
-msgid "IDS_BR_HEADER_NO_NETWORK_CONNECTION"
-msgstr "Tarmoq ulanishi yo‘q"
 
 msgid "IDS_BR_HEADER_NEWER_M_INTERNET_HISTORY_ABB"
 msgstr "Newer"
@@ -1036,17 +847,11 @@ msgstr "HTML5 kengaytmasi"
 msgid "IDS_BR_HEADER_FORM_DATA"
 msgstr "Shakl ma’lumoti"
 
-msgid "IDS_BR_HEADER_FOLDER"
-msgstr "Jild"
-
 msgid "IDS_BR_HEADER_EXPIRES_ON_C"
 msgstr "Amal qilish muddati:"
 
 msgid "IDS_BR_HEADER_ENABLE_WEB_SIGN_IN"
 msgstr "Veb-kirishni yoqish"
-
-msgid "IDS_BR_HEADER_EDIT_PROFILE"
-msgstr "Profilni tahrirlash"
 
 msgid "IDS_BR_HEADER_EDIT_BOOKMARK"
 msgstr "Veb-hujjatni tahrirlash"
@@ -1084,14 +889,8 @@ msgstr "Chastota diapazoni boshq."
 msgid "IDS_BR_HEADER_ADVANCEDCERTIFICATES"
 msgstr "Sertifikatlar"
 
-msgid "IDS_BR_BUTTON_SET"
-msgstr "O‘rnatish"
-
 msgid "IDS_BR_BUTTON_RESET_ABB"
 msgstr "Tashlash"
-
-msgid "IDS_BR_BUTTON_NOT_NOW"
-msgstr "Hozir emas"
 
 msgid "IDS_BR_BUTTON_HOMEPAGE_ABB"
 msgstr "Asos sahifa"
@@ -1099,35 +898,11 @@ msgstr "Asos sahifa"
 msgid "IDS_BR_BUTTON_FIND_ABB"
 msgstr "Top"
 
-msgid "IDS_BR_BUTTON_ENABLE_ABB"
-msgstr "Yoqish"
-
-msgid "IDS_BR_BUTTON_EDIT"
-msgstr "Tahrirlash"
-
-msgid "IDS_BR_BUTTON_CONTINUE_ABB"
-msgstr "Davom etish"
-
-msgid "IDS_BR_BUTTON_CONTINUE"
-msgstr "Davom ettirish"
-
-msgid "IDS_BR_BUTTON_CLOSE"
-msgstr "Yopish"
-
-msgid "IDS_BR_BUTTON_CANCEL_ABB"
-msgstr "Bek/qil."
-
-msgid "IDS_BR_BUTTON_CANCEL"
-msgstr "Bekor qilish"
-
 msgid "IDS_BR_BUTTON_BACK_ABB"
 msgstr "Orqaga"
 
 msgid "IDS_BR_BUTTON_ALWAYS_SHOW_ABB"
 msgstr "Doim ko‘rs"
-
-msgid "IDS_BR_BUTTON_ALLOW"
-msgstr "Ruxsat ber"
 
 msgid "IDS_BR_BUTTON2_WEB_PORTAL"
 msgstr "Veb-portal"
@@ -1152,9 +927,6 @@ msgstr "Jurnalga o‘tish"
 
 msgid "IDS_BR_BUTTON2_ENTERTAINMENT"
 msgstr "Shou-\nbiznes"
-
-msgid "IDS_BR_BODY_YESTERDAY"
-msgstr "Kecha"
 
 msgid "IDS_BR_BODY_WINDOW_MANAGER"
 msgstr "Oyna menejeri"
@@ -1183,9 +955,6 @@ msgstr "Holat satrini yashirish uchun, To‘liq ekrandan foydalanish."
 msgid "IDS_BR_BODY_USE_A_PREDICTION_SERVICE_TO_DISPLAY_RELATED_QUERIES_AND_POPULAR_WEBSITES_IN_THE_ADDRESS_BAR_AS_YOU_TYPE"
 msgstr "Manzil satriga matn kiritayotgan vaqtingizda tegishli so‘rovlar yoki ommabop veb-saytlar ko‘rsatilishi uchun taxmin qilish xizmatidan foydalaning."
 
-msgid "IDS_BR_BODY_URL"
-msgstr "URL-manzil"
-
 msgid "IDS_BR_BODY_UPPER_FOLDER_T_TALKBACK"
 msgstr "Yuqoriroq jild"
 
@@ -1201,12 +970,6 @@ msgstr "Veb-sahifani aks ettirib bo‘lmaydi. Serverdan javob yo‘q."
 msgid "IDS_BR_BODY_TOWN_CITY_COUNTY_ABB"
 msgstr "Shaharcha/shahar/okrug"
 
-msgid "IDS_BR_BODY_TODAY"
-msgstr "Bugun"
-
-msgid "IDS_BR_BODY_TITLE"
-msgstr "Sarlavha"
-
 msgid "IDS_BR_BODY_THIS_SITE_IS_USING_PS"
 msgstr "Ushbu sayt %s dan foydalanmoqda."
 
@@ -1221,9 +984,6 @@ msgstr "Ushbu veb-hujjat o'chirib tashlanadi."
 
 msgid "IDS_BR_BODY_THE_SELECTED_PERSONAL_DATA_WILL_BE_DELETED"
 msgstr "Tanlangan shaxsiy ma’lumotlar yo‘q qilinadi."
-
-msgid "IDS_BR_BODY_THE_MAXIMUM_NUMBER_OF_CHARACTERS_HPD_HAS_BEEN_EXCEEDED"
-msgstr "Belgilar soni maksimal miqdordan (%d) oshib ketdi."
 
 msgid "IDS_BR_BODY_TEXT_FIELD_T_TTS"
 msgstr "Matn maydoni"
@@ -1249,20 +1009,14 @@ msgstr "Veb-hujjatlarni sinxronlash"
 msgid "IDS_BR_BODY_STREET_ADDRESS_PO_BOX_C_O_ETC_ABB"
 msgstr "Ko‘chasi, Pochta qutisi va boshq."
 
-msgid "IDS_BR_BODY_STREAMING"
-msgstr "Oqimli uzatish"
-
 msgid "IDS_BR_BODY_STORED_DATA"
 msgstr "Saqlangan ma’lumot"
 
 msgid "IDS_BR_BODY_SPLIT_BAR_HANDLE"
 msgstr "Ajratish paneli ushlagichi"
 
-msgid "IDS_BR_BODY_SMALL"
-msgstr "Kichik"
-
 msgid "IDS_BR_BODY_SIGN_IN_TO_YOUR_SAMSUNG_ACCOUNT_TO_ACCESS_THE_BOOKMARKS_AND_TABS_ON_YOUR_OTHER_DEVICES"
-msgstr "Boshqa qurilmadagi veb-hujjatlar va ilovalarga kirish uchun Samsung accountingizga kiring."
+msgstr "Boshqa qurilmadagi veb-hujjatlar va ilovalarga kirish uchun Samsung hisob qaydnomasiga kiring."
 
 msgid "IDS_BR_BODY_SHOW_OVERVIEW_OF_NEWLY_OPENED_PAGES"
 msgstr "Yangi ochilgan sahifalarning umumiy ko‘rinishini ko‘rsatish."
@@ -1279,9 +1033,6 @@ msgstr "Veb-shaklni avtomatik to‘ldirish uchun matn o‘rnating."
 msgid "IDS_BR_BODY_SET_CURRENT_PAGE_AS_HOMEPAGE"
 msgstr "Joriy sahifani bosh sahifa sifatida o‘rnatish"
 
-msgid "IDS_BR_BODY_SETTINGS"
-msgstr "Parametrlar"
-
 msgid "IDS_BR_BODY_SELECT_FOLDER"
 msgstr "Jild tanlash"
 
@@ -1294,9 +1045,6 @@ msgstr "Search field"
 msgid "IDS_BR_BODY_SEARCH_AND_URL_SUGGESTIONS"
 msgstr "Qidirish va URL tavsiyalari"
 
-msgid "IDS_BR_BODY_SEARCH"
-msgstr "Qidirish"
-
 msgid "IDS_BR_BODY_SCREEN_AND_TEXT"
 msgstr "Ekran va matn"
 
@@ -1305,9 +1053,6 @@ msgstr "Veb-saytlar uchun foydalanuvchi nomi va parollarni saqlash."
 
 msgid "IDS_BR_BODY_SAVE_LINK"
 msgstr "Linkni saqlash"
-
-msgid "IDS_BR_BODY_RSS_SEARCH_RESULTS"
-msgstr "Qidiruv natijalari"
 
 msgid "IDS_BR_BODY_RESTORE_DEFAULT_SETTINGS_Q"
 msgstr "Sukut bo‘yicha parametrlar qayta o‘rnatilsinmi?"
@@ -1342,12 +1087,6 @@ msgstr "Radio tugma"
 msgid "IDS_BR_BODY_PS_BOOKMARK_WILL_BE_DELETED"
 msgstr "%s veb-hujjat yo‘q qilinadi."
 
-msgid "IDS_BR_BODY_PROFILE"
-msgstr "Profil"
-
-msgid "IDS_BR_BODY_PROCESSING_ING"
-msgstr "Bajarilmoqda..."
-
 msgid "IDS_BR_BODY_PRIVACY"
 msgstr "Maxfiylik"
 
@@ -1360,20 +1099,8 @@ msgstr "Menyu tugmasini bosing."
 msgid "IDS_BR_BODY_POSTCODE_ABB"
 msgstr "Pochta indeksi"
 
-msgid "IDS_BR_BODY_PHONE_NUMBER_ABB"
-msgstr "Tel. raqami"
-
-msgid "IDS_BR_BODY_PHONE"
-msgstr "Telefon"
-
 msgid "IDS_BR_BODY_PD_POP_UPS_BLOCKED_ABB"
 msgstr "%d qalq-chi oyna blk."
-
-msgid "IDS_BR_BODY_PD_ITEMS_WILL_BE_DELETED"
-msgstr "%d element o'chirib tashlanadi."
-
-msgid "IDS_BR_BODY_PASSWORD"
-msgstr "Parol"
 
 msgid "IDS_BR_BODY_PAGE_LOADED_T_TTS"
 msgstr "Sahifa yuklandi"
@@ -1399,14 +1126,8 @@ msgstr "Talab bo‘yicha"
 msgid "IDS_BR_BODY_ONLY_VIA_WI_FI_ABB"
 msgstr "Faqat Wi-Fi orqali"
 
-msgid "IDS_BR_BODY_ON"
-msgstr "Yoq."
-
 msgid "IDS_BR_BODY_OLDER"
 msgstr "Eskiroq"
-
-msgid "IDS_BR_BODY_OFF"
-msgstr "O‘ch."
 
 msgid "IDS_BR_BODY_NO_WINDOWS"
 msgstr "Oynalar yo‘q"
@@ -1420,17 +1141,8 @@ msgstr "Sarlavha yo‘q"
 msgid "IDS_BR_BODY_NO_SAVED_PAGES"
 msgstr "Saqlangan sahifalar yo‘q"
 
-msgid "IDS_BR_BODY_NO_RESULTS_FOUND"
-msgstr "Natijalar topilmadi."
-
-msgid "IDS_BR_BODY_NO_HISTORIES"
-msgstr "Jurnal yo‘q"
-
 msgid "IDS_BR_BODY_NO_BOOKMARKS"
 msgstr "Veb-hujjatlar yo‘q"
-
-msgid "IDS_BR_BODY_NOTIFICATIONS"
-msgstr "Ma'lumotnomalar"
 
 msgid "IDS_BR_BODY_NORMAL"
 msgstr "Normal"
@@ -1446,9 +1158,6 @@ msgstr "Eng ko‘p kirilgan saytlar"
 
 msgid "IDS_BR_BODY_MOBILE_VIEW"
 msgstr "Mobil ko‘rinish"
-
-msgid "IDS_BR_BODY_MEDIUM"
-msgstr "O‘rtacha"
 
 msgid "IDS_BR_BODY_LOCATION_M_INFORMATION"
 msgstr "Joylashuv"
@@ -1474,9 +1183,6 @@ msgstr "Internet"
 msgid "IDS_BR_BODY_IMPROVE_PERFORMANCE_WHEN_LOADING_PAGES"
 msgstr "Sahifalarni yuklashda samaradorlikni oshirish."
 
-msgid "IDS_BR_BODY_IMAGES"
-msgstr "Tasvirlar"
-
 msgid "IDS_BR_BODY_HOMEPAGE"
 msgstr "Asosiy sahifa"
 
@@ -1486,20 +1192,11 @@ msgstr "Sahifani pastga aylantirishda manzil satrini yashiring."
 msgid "IDS_BR_BODY_GENERAL_M_SETTINGS"
 msgstr "Umumiy"
 
-msgid "IDS_BR_BODY_FULL_SCREEN"
-msgstr "To‘liq ekran"
-
 msgid "IDS_BR_BODY_FULL_NAME_ABB"
 msgstr "Ismi sharifi"
 
 msgid "IDS_BR_BODY_FORCE_ZOOM_ABB"
 msgstr "Majburiy masshtab"
-
-msgid "IDS_BR_BODY_FONT_SIZE"
-msgstr "Shrift o‘lchami"
-
-msgid "IDS_BR_BODY_FOLDER_NAME"
-msgstr "Jild nomi"
 
 msgid "IDS_BR_BODY_FLAT_SUITE_UNIT_BUILDING_FLOOR_ETC_ABB"
 msgstr "Xonadon, xona, birlik, bino, qavat va boshq."
@@ -1516,24 +1213,6 @@ msgstr "Ismingizni kiriting."
 msgid "IDS_BR_BODY_ENTER_TOWN_CITY_COUNTY_ABB"
 msgstr "Tuman/shahar/mamlakatni kirit."
 
-msgid "IDS_BR_BODY_ENTER_POSTCODE_ABB"
-msgstr "Pochta indeksini kiriting."
-
-msgid "IDS_BR_BODY_ENTER_POSTCODE"
-msgstr "Pochta indeksini kiriting."
-
-msgid "IDS_BR_BODY_ENTER_PHONE_NUMBER"
-msgstr "Telefon raqamini kiriting."
-
-msgid "IDS_BR_BODY_ENTER_NAME"
-msgstr "Nom kiriting."
-
-msgid "IDS_BR_BODY_ENTER_FOLDER_NAME"
-msgstr "Jild nomini kiriting."
-
-msgid "IDS_BR_BODY_ENTER_EMAIL_ADDRESS"
-msgstr "Elektron pochta manzilini kiritish."
-
 msgid "IDS_BR_BODY_ENTER_COUNTRY_REGION_ABB"
 msgstr "Mamlakat/regionni kiriting."
 
@@ -1545,12 +1224,6 @@ msgstr "Joylashuvni yoqish"
 
 msgid "IDS_BR_BODY_ENABLE_JAVASCRIPT"
 msgstr "JavaScriptni yoqish"
-
-msgid "IDS_BR_BODY_EMAIL_ADDRESS"
-msgstr "E-pochta manzili"
-
-msgid "IDS_BR_BODY_DOWNLOADING_ING"
-msgstr "Yuklanmoqda..."
 
 msgid "IDS_BR_BODY_DOUBLE_TAP_TO_VIEW_CERTIFICATE_TTS"
 msgstr "Sertifikatni ko‘rib chiqish uchun ikki marta teging."
@@ -1591,9 +1264,6 @@ msgstr "Xavfsizlik ogohlantirish qalqib chiquvchi oynalarini aks ettir."
 msgid "IDS_BR_BODY_DISPLAY_IMAGES_ON_WEB_PAGES"
 msgstr "Veb-sahifadagi tasvirlarni aks ettirish."
 
-msgid "IDS_BR_BODY_DEVELOPER_MODE"
-msgstr "Ishlab chiqaruvchi rejimi"
-
 msgid "IDS_BR_BODY_DESKTOP_VIEW"
 msgstr "Ishchi stol ko‘rinishi"
 
@@ -1608,9 +1278,6 @@ msgstr "Birlamchi xotiraga saqlash"
 
 msgid "IDS_BR_BODY_DEFAULT_PAGE_ABB"
 msgstr "Birlamchi o'rnatilgan sahifa"
-
-msgid "IDS_BR_BODY_DEFAULT"
-msgstr "Birlamchi"
 
 msgid "IDS_BR_BODY_DATA_USAGE_REDUCED_BY_P1SDP_HP2SD_KB_OF_P3SD_KB_RECEIVED_TAP_HERE_TO_RESET_STATISTICS"
 msgstr "Ma’lumot ishlatilishi %1$d% ga kamaytiriladi (%3$d Kb-dan %2$d Kb olindi). Statistikani birlamchiga tashlash uchun bu yerga teging."
@@ -1675,9 +1342,6 @@ msgstr "Qurilmangizda veb-saytning ShK versiyalarini ko‘rib chiqayotganingizda
 msgid "IDS_BR_BODY_BOOKMARK_REMINDER_ABB"
 msgstr "Xatcho‘p eslatmasi"
 
-msgid "IDS_BR_BODY_BOOKMARKS"
-msgstr "Saqlangan veb-hujjatlar"
-
 msgid "IDS_BR_BODY_BLOCK_POP_UPS_ON_WEB_PAGES"
 msgstr "Veb-sahifalarda qalqib chiquvchi xabarlarni bloklaydi."
 
@@ -1726,9 +1390,6 @@ msgstr "%sga bildirishnomalarni ko‘rsatish uchun ruxsat berish"
 msgid "IDS_BR_BODY_ALLOWS_SITES_TO_SAVE_AND_READ_COOKIE_DATA"
 msgstr "Saytlarga cookie-ma’lumotlarni saqlash va o‘qish uchun yordam beradi."
 
-msgid "IDS_BR_BODY_ALL"
-msgstr "Barchasi"
-
 msgid "IDS_BR_BODY_AFTER_YOU_VISIT_WEBPAGES_THE_PAGES_YOU_HAVE_VISITED_THE_MOST_WILL_BE_SHOWN_HERE"
 msgstr "Veb-sahifalarga kirganingizdan so‘ng, Siz ko‘p tashrif buyuradigan sahifalar bu yerda ko‘rsatiladi."
 
@@ -1756,9 +1417,6 @@ msgstr "Takomillashgan"
 msgid "IDS_BR_BODY_ADD_TO_CONTACT"
 msgstr "Kontaktga qo‘shish"
 
-msgid "IDS_BR_BODY_ADD_TO"
-msgstr "Qo‘shish"
-
 msgid "IDS_BR_BODY_ADD_THIS_WEBSITE_TO_BOOKMARKS_TO_OPEN_IT_FASTER_ABB"
 msgstr "Veb-sayt tez ochilishi u-n uni xatcho‘plarga qo‘sh."
 
@@ -1768,29 +1426,17 @@ msgstr "Manzil satri 2"
 msgid "IDS_BR_BODY_ADDRESS_LINE_1_ABB"
 msgstr "Manzil satri 1"
 
-msgid "IDS_BR_BODY_ADDDETAILSVIEW_TAGS"
-msgstr "Teglar"
-
-msgid "IDS_BR_BODY_ADDBOOKMARKURL"
-msgstr "URL-manzil"
-
 msgid "IDS_BR_BODY_ACCEPT_COOKIES"
 msgstr "Cookie-fayllarni qabul qilish"
 
 msgid "IDS_BR_BODY_1_PROFILE_WILL_BE_DELETED"
 msgstr "1ta profil yo‘q qilinadi."
 
-msgid "IDS_BR_BODY_1_ITEM_WILL_BE_DELETED"
-msgstr "1 element yo‘q qilinadi."
-
 msgid "IDS_BR_ACBUTTON_TABS_ABB"
 msgstr "PANEL"
 
 msgid "IDS_BR_TPOP_STARTING_DOWNLOAD_ING"
 msgstr "Yuklab olish boshlanmoqda..."
-
-msgid "IDS_BR_TPOP_MAXIMUM_NUMBER_OF_CHARACTERS_HPD_REACHED"
-msgstr "Belgilar soni ruxsat etilgan maksimal miqdorga (%d) yetdi"
 
 msgid "IDS_BR_TPOP_FOLDER_RENAMED"
 msgstr "Jild nomi o‘zgartirildi."
@@ -1807,14 +1453,8 @@ msgstr "Bek/q."
 msgid "IDS_BR_SBODY_SET_THE_DEVICE_TO_SHOW_THE_FULL_WEBPAGE_ON_THE_SCREEN_WHEN_IT_IS_LOADED_WITHOUT_NEEDING_TO_SCROLL"
 msgstr "Qurilmani veb-sahifa yuklanganda aylantirish zaruriyatisiz uni to‘liq ko‘rsatadigan qilib sozlash."
 
-msgid "IDS_BR_POP_UNSUPPORTMEDIATYPE"
-msgstr "Qo‘llab-quvvatlanmaydigan media turi."
-
 msgid "IDS_BR_POP_UNABLE_TO_RUN_INTERNET_LOW_BATTERY"
 msgstr "Internetni ishga tushirib bo‘lmaydi. Batareya quvvati kam."
-
-msgid "IDS_BR_POP_UNABLE_TO_CONNECT_TO_MOBILE_NETWORKS_WHILE_FLIGHT_MODE_IS_ENABLED_CONNECT_TO_WI_FI_NETWORK_INSTEAD_OR_DISABLE_FLIGHT_MODE_AND_TRY_AGAIN"
-msgstr "Parvoz rejimi yoqilganda, mobil tarmoqlarga ulanib bo‘lmaydi. Uning o‘rniga Wi-Fi tarmoqqa ulaning yoki Parvoz rejimini yoqing va qayta urinib ko‘ring"
 
 msgid "IDS_BR_POP_THE_DOWNLOAD_HAS_BEEN_STOPPED_AND_THE_DOWNLOADED_DATA_WILL_BE_DELETED"
 msgstr "Yuklab olish to‘xtatildi va yuklab olingan ma’lumot yo‘q qilinadi."
@@ -1825,20 +1465,8 @@ msgstr "Search completed"
 msgid "IDS_BR_POP_READY"
 msgstr "Tayyor."
 
-msgid "IDS_BR_POP_INSTALL_SUCCESS"
-msgstr "O‘rnatish yakunlandi."
-
-msgid "IDS_BR_POP_INSTALLATION_FAILED"
-msgstr "O‘rnatish bajarilmadi."
-
 msgid "IDS_BR_POP_INFORM_MEMORY_ERROR"
 msgstr "Xotira xatosi."
-
-msgid "IDS_BR_POP_DELETING_ING"
-msgstr "O'chirilmoqda…"
-
-msgid "IDS_BR_POP_DATA_ROAMING_IS_DISABLED_CONNECT_TO_WI_FI_NETWORK_INSTEAD_OR_ENABLE_DATA_ROAMING_AND_TRY_AGAIN"
-msgstr "Ma’lumot roumingiz o‘chirilgan. Uning o‘rniga Wi-Fi tarmoqqa ulaning yoki ma’lumot roumingini yoqing va qayta urinib ko‘ring"
 
 msgid "IDS_BR_POP_DATA_ROAMING_IS_DISABLED_CONNECT_TO_A_WI_FI_NETWORK_OR_ENABLE_DATA_ROAMING_AND_TRY_AGAIN"
 msgstr "Ma’lumot roumingi o‘chirilgan. Wi-Fi tarmoqqa ulaning yoki Mobil roumingini yoqing va qayta urinib ko‘ring."
@@ -1855,17 +1483,11 @@ msgstr "Veb-ilova"
 msgid "IDS_BR_OPT_VIEW_ONLINE"
 msgstr "Onlayn ko‘rib chiqish"
 
-msgid "IDS_BR_OPT_SHARE_VIA"
-msgstr "Quyidagi orqali ulashish"
-
 msgid "IDS_BR_OPT_READ_ON_OFFLINE_PAGES_LATER_ABB"
 msgstr "Offlayn shf-ni keyinroq o‘qish"
 
 msgid "IDS_BR_OPT_QUICK_ACCESS_ABB2"
 msgstr "Tezkor kirish"
-
-msgid "IDS_BR_OPT_PASTE"
-msgstr "Qo‘shib qo‘yish"
 
 msgid "IDS_BR_OPT_ALWAYS_ENABLED_ABB"
 msgstr "Har doim yoqilgan"
@@ -1891,9 +1513,6 @@ msgstr "Qidirish va URL tavsiyasi"
 msgid "IDS_BR_MBODY_HISTORY"
 msgstr "Jurnal"
 
-msgid "IDS_BR_MBODY_FONT_SIZE"
-msgstr "Shrift o‘lchami"
-
 msgid "IDS_BR_MBODY_FIT_PAGE_TO_SCREEN"
 msgstr "Sahifani ekranga moslash"
 
@@ -1905,9 +1524,6 @@ msgstr "Sozlanadigan"
 
 msgid "IDS_BR_MBODY_COUNTRY_REGION"
 msgstr "Mamlakat/region"
-
-msgid "IDS_BR_HEADER_UNABLE_TO_DOWNLOAD_ABB"
-msgstr "Yuklab olib bo‘lmaydi"
 
 msgid "IDS_BR_HEADER_RENAME_FOLDER_ABB"
 msgstr "Jild nomini o‘zgartirish"
@@ -1939,14 +1555,8 @@ msgstr "Ma’l. qo‘sh"
 msgid "IDS_BR_BUTTON_WI_FI_ABB"
 msgstr "Wi-Fi"
 
-msgid "IDS_BR_BUTTON_UPDATE"
-msgstr "Yangilash"
-
 msgid "IDS_BR_BUTTON_SETTINGS_ABB"
 msgstr "Parametr"
-
-msgid "IDS_BR_BUTTON_RETRY"
-msgstr "Qay/urin."
 
 msgid "IDS_BR_BUTTON2_OK"
 msgstr "OK"
@@ -1972,9 +1582,6 @@ msgstr "Ushbu sertifikat ishonchli muallifdan."
 msgid "IDS_BR_BODY_TAP_HERE_TO_ADD_A_QUICK_ACCESS_SHORTCUT"
 msgstr "Tezkor kirish yorlig‘ini qo‘shish uchun bu yerga teging."
 
-msgid "IDS_BR_BODY_REQUEST_FAILED"
-msgstr "So‘rov bajarilmadi."
-
 msgid "IDS_BR_BODY_PREFERENCES"
 msgstr "Imtiyozlilar"
 
@@ -1990,14 +1597,398 @@ msgstr "Mosliklar yo‘q"
 msgid "IDS_BR_BODY_MOBILE_DATA_IS_TURNED_OFF_CONNECT_TO_A_WI_FI_NETWORK_INSTEAD_OR_TAP_SETTINGS_TO_TURN_ON_MOBILE_DATA_AND_THEN_TRY_AGAIN"
 msgstr "Mobil ma’lumot o‘chirilgan. Uning o‘rniga Wi-Fi tarmoqqa ulaning yoki Mobil ma’lumotni yoqish uchun Parametrlarga o‘ting va qayta urinib ko‘ring."
 
+msgid "IDS_BR_BODY_FIT_TO_WIDTH"
+msgstr "Kenglikka moslash"
+
+msgid "IDS_BR_ACBUTTON_QUICK_ACCESS"
+msgstr "TEZ KIRISH"
+
+msgid "IDS_BR_OPT_OPEN_IN_NEW_TAB"
+msgstr "Yangi panelda ochish"
+
+msgid "IDS_BR_BODY_SHARE_LINK"
+msgstr "Linkni ulashish"
+
+msgid "IDS_BR_SK_SAVE_LITE"
+msgstr "Saqlash"
+
+msgid "IDS_BR_SK_SAVE_ABB"
+msgstr "Saqla"
+
+msgid "IDS_BR_SK_SAVE"
+msgstr "Saqlash"
+
+msgid "IDS_BR_SK_PREVIOUS"
+msgstr "Avvalgi"
+
+msgid "IDS_BR_SK_NEXT"
+msgstr "Keyingi"
+
+msgid "IDS_BR_SK_DELETE"
+msgstr "O'chirish"
+
+msgid "IDS_BR_SK_CLEAR"
+msgstr "O'chirish"
+
+msgid "IDS_BR_SK_BACK"
+msgstr "Orqaga"
+
+msgid "IDS_BR_POP_WI_FI_CONNECTION_REQUIRED_CONNECT_TO_WI_FI_NETWORK_AND_TRY_AGAIN"
+msgstr "Wi-Fi ulanishi talab qilinadi. Wi-Fi tarmoqqa ulaning va qayta urinib ko‘ring"
+
+msgid "IDS_BR_POP_URL_NOT_FOUND"
+msgstr "URL topilmadi."
+
+msgid "IDS_BR_POP_URL"
+msgstr "URL-manzil"
+
+msgid "IDS_BR_POP_SAVED"
+msgstr "Saqlandi."
+
+msgid "IDS_BR_POP_REMOVED"
+msgstr "Olib tashlandi."
+
+msgid "IDS_BR_POP_PD_ITEMS_WILL_BE_DELETED"
+msgstr "%d element o'chirib tashlanadi."
+
+msgid "IDS_BR_POP_PD_ITEMS_SELECTED"
+msgstr "%d element tanlangan."
+
+msgid "IDS_BR_POP_NO_ITEMS_SELECTED"
+msgstr "Elementlar tanlanmagan."
+
+msgid "IDS_BR_POP_NOT_ENOUGH_MEMORY"
+msgstr "Xotira yetarli emas."
+
+msgid "IDS_BR_POP_NEVER"
+msgstr "Hech qachon"
+
+msgid "IDS_BR_POP_MOBILE_DATA_IS_DISABLED_CONNECT_TO_WI_FI_NETWORK_INSTEAD_OR_ENABLE_MOBILE_DATA_AND_TRY_AGAIN"
+msgstr "Mobil ma’lumot o‘chirilgan. Uning o‘rniga Wi-Fi tarmoqqa ulaning yoki mobil ma’lumotni yoqing va qayta urinib ko‘ring"
+
+msgid "IDS_BR_POP_LOADING_PLEASE_WAIT_ING"
+msgstr "Yuklanmoqda. iltimos, kuting..."
+
+msgid "IDS_BR_POP_INVALID_URL"
+msgstr "Noto‘g‘ri URL."
+
+msgid "IDS_BR_POP_FAIL"
+msgstr "Xato."
+
+msgid "IDS_BR_POP_ENTER_TITLE_ABB"
+msgstr "Sarlavha kiriting"
+
+msgid "IDS_BR_POP_DO_NOT_SHOW_AGAIN"
+msgstr "Boshqa ko‘rsatilmasin"
+
+msgid "IDS_BR_POP_DOWNLOADCOMPLETE"
+msgstr "Yuklash jarayoni yakunlandi."
+
+msgid "IDS_BR_POP_DISABLED"
+msgstr "O‘chirilgan."
+
+msgid "IDS_BR_POP_DELETE_Q"
+msgstr "O'chirilsinmi?"
+
+msgid "IDS_BR_POP_DELETED"
+msgstr "O'chirildi."
+
+msgid "IDS_BR_POP_CLOSE_APPLICATION_Q"
+msgstr "Ilova yopilsinmi?"
+
+msgid "IDS_BR_POP_BOOKMARK_ADDED"
+msgstr "Saqlangan veb-hujjat qo‘shildi."
+
+msgid "IDS_BR_POP_AUTOMATIC_BRIGHTNESS"
+msgstr "Avtomatik yorqinlik"
+
+msgid "IDS_BR_POP_ACCOUNT"
+msgstr "Hisob qaydnomasi"
+
+msgid "IDS_BR_POP_1_ITEM_WILL_BE_DELETED"
+msgstr "1 element yo‘q qilinadi."
+
+msgid "IDS_BR_POP_1_ITEM_SELECTED"
+msgstr "1 element tanlangan."
+
+msgid "IDS_BR_OPT_TRANSLATE"
+msgstr "Tarjima qilish"
+
+msgid "IDS_BR_OPT_STOP"
+msgstr "To‘xtat"
+
+msgid "IDS_BR_OPT_SHOW"
+msgstr "Ko‘rsatish"
+
+msgid "IDS_BR_OPT_SHARE"
+msgstr "Ulashish"
+
+msgid "IDS_BR_OPT_SETTINGS"
+msgstr "Parametrlar"
+
+msgid "IDS_BR_OPT_SEND_EMAIL"
+msgstr "E-pochta yub."
+
+msgid "IDS_BR_OPT_SELECT"
+msgstr "Tanlash"
+
+msgid "IDS_BR_OPT_SD_CARD"
+msgstr "SD-karta"
+
+msgid "IDS_BR_OPT_RENAME"
+msgstr "Nom o‘zgartirish"
+
+msgid "IDS_BR_OPT_REFRESH"
+msgstr "Yangilash"
+
+msgid "IDS_BR_OPT_MOVE"
+msgstr "Ko‘chirish"
+
+msgid "IDS_BR_OPT_MESSAGES"
+msgstr "Xabarlar"
+
+msgid "IDS_BR_OPT_LIST_VIEW"
+msgstr "Ro‘yxat ko‘rinishi"
+
+msgid "IDS_BR_OPT_I_AGREE"
+msgstr "Men roziman."
+
+msgid "IDS_BR_OPT_HELP"
+msgstr "Yordam"
+
+msgid "IDS_BR_OPT_DEVICE"
+msgstr "Qurilma"
+
+msgid "IDS_BR_OPT_BOOKMARK"
+msgstr "Saqlangan veb-hujjat"
+
+msgid "IDS_BR_OPT_ADDED"
+msgstr "Qo‘shildi."
+
+msgid "IDS_BR_OPT_ADD"
+msgstr "Qo‘shish"
+
+msgid "IDS_BR_MBODY_DEFAULT_DOWNLOAD_STORAGE"
+msgstr "Birlamchi yuk/olish joyi"
+
+msgid "IDS_BR_HEADER_SIGN_IN_TO_SAMSUNG_ACCOUNT"
+msgstr "Samsung hisob qaydnomasiga kirish"
+
+msgid "IDS_BR_HEADER_PD_SELECTED_ABB"
+msgstr "%d tanlandi"
+
+msgid "IDS_BR_HEADER_NO_NETWORK_CONNECTION"
+msgstr "Tarmoq ulanishi yo‘q"
+
+msgid "IDS_BR_HEADER_FOLDER"
+msgstr "Jild"
+
+msgid "IDS_BR_HEADER_EDIT_PROFILE"
+msgstr "Profilni tahrirlash"
+
+msgid "IDS_BR_BUTTON_SET"
+msgstr "O‘rnatish"
+
+msgid "IDS_BR_BUTTON_NOT_NOW"
+msgstr "Hozir emas"
+
+msgid "IDS_BR_BUTTON_ENABLE_ABB"
+msgstr "Yoqish"
+
+msgid "IDS_BR_BUTTON_EDIT"
+msgstr "Tahrirlash"
+
+msgid "IDS_BR_BUTTON_CONTINUE_ABB"
+msgstr "Davom etish"
+
+msgid "IDS_BR_BUTTON_CONTINUE"
+msgstr "Davom ettirish"
+
+msgid "IDS_BR_BUTTON_CLOSE"
+msgstr "Yopish"
+
+msgid "IDS_BR_BUTTON_CANCEL_ABB"
+msgstr "Bek/qil."
+
+msgid "IDS_BR_BUTTON_CANCEL"
+msgstr "Bekor qilish"
+
+msgid "IDS_BR_BUTTON_ALLOW"
+msgstr "Ruxsat ber"
+
+msgid "IDS_BR_BODY_YESTERDAY"
+msgstr "Kecha"
+
+msgid "IDS_BR_BODY_URL"
+msgstr "URL-manzil"
+
+msgid "IDS_BR_BODY_TODAY"
+msgstr "Bugun"
+
+msgid "IDS_BR_BODY_TITLE"
+msgstr "Sarlavha"
+
+msgid "IDS_BR_BODY_THE_MAXIMUM_NUMBER_OF_CHARACTERS_HPD_HAS_BEEN_EXCEEDED"
+msgstr "Belgilar soni maksimal miqdordan (%d) oshib ketdi."
+
+msgid "IDS_BR_BODY_STREAMING"
+msgstr "Oqimli uzatish"
+
+msgid "IDS_BR_BODY_SMALL"
+msgstr "Kichik"
+
+msgid "IDS_BR_BODY_SETTINGS"
+msgstr "Parametrlar"
+
+msgid "IDS_BR_BODY_SEARCH"
+msgstr "Qidirish"
+
+msgid "IDS_BR_BODY_RSS_SEARCH_RESULTS"
+msgstr "Qidiruv natijalari"
+
+msgid "IDS_BR_BODY_PROFILE"
+msgstr "Profil"
+
+msgid "IDS_BR_BODY_PROCESSING_ING"
+msgstr "Bajarilmoqda..."
+
+msgid "IDS_BR_BODY_PHONE_NUMBER_ABB"
+msgstr "Tel. raqami"
+
+msgid "IDS_BR_BODY_PHONE"
+msgstr "Telefon"
+
+msgid "IDS_BR_BODY_PD_ITEMS_WILL_BE_DELETED"
+msgstr "%d element o'chirib tashlanadi."
+
+msgid "IDS_BR_BODY_PASSWORD"
+msgstr "Parol"
+
+msgid "IDS_BR_BODY_ON"
+msgstr "Yoq."
+
+msgid "IDS_BR_BODY_OFF"
+msgstr "O‘ch."
+
+msgid "IDS_BR_BODY_NO_RESULTS_FOUND"
+msgstr "Natijalar topilmadi."
+
+msgid "IDS_BR_BODY_NO_HISTORIES"
+msgstr "Jurnal yo‘q"
+
+msgid "IDS_BR_BODY_NOTIFICATIONS"
+msgstr "Ma'lumotnomalar"
+
+msgid "IDS_BR_BODY_MEDIUM"
+msgstr "O‘rtacha"
+
+msgid "IDS_BR_BODY_IMAGES"
+msgstr "Tasvirlar"
+
+msgid "IDS_BR_BODY_FULL_SCREEN"
+msgstr "To‘liq ekran"
+
+msgid "IDS_BR_BODY_FONT_SIZE"
+msgstr "Shrift o‘lchami"
+
+msgid "IDS_BR_BODY_FOLDER_NAME"
+msgstr "Jild nomi"
+
+msgid "IDS_BR_BODY_ENTER_POSTCODE_ABB"
+msgstr "Pochta indeksini kiriting."
+
+msgid "IDS_BR_BODY_ENTER_POSTCODE"
+msgstr "Pochta indeksini kiriting."
+
+msgid "IDS_BR_BODY_ENTER_PHONE_NUMBER"
+msgstr "Telefon raqamini kiriting."
+
+msgid "IDS_BR_BODY_ENTER_NAME"
+msgstr "Nom kiriting."
+
+msgid "IDS_BR_BODY_ENTER_FOLDER_NAME"
+msgstr "Jild nomini kiriting."
+
+msgid "IDS_BR_BODY_ENTER_EMAIL_ADDRESS"
+msgstr "Elektron pochta manzilini kiritish."
+
+msgid "IDS_BR_BODY_EMAIL_ADDRESS"
+msgstr "E-pochta manzili"
+
+msgid "IDS_BR_BODY_DOWNLOADING_ING"
+msgstr "Yuklanmoqda..."
+
+msgid "IDS_BR_BODY_DEVELOPER_MODE"
+msgstr "Ishlab chiqaruvchi rejimi"
+
+msgid "IDS_BR_BODY_DEFAULT"
+msgstr "Birlamchi"
+
+msgid "IDS_BR_BODY_BOOKMARKS"
+msgstr "Saqlangan veb-hujjatlar"
+
+msgid "IDS_BR_BODY_ALL"
+msgstr "Barchasi"
+
+msgid "IDS_BR_BODY_ADD_TO"
+msgstr "Qo‘shish"
+
+msgid "IDS_BR_BODY_ADDDETAILSVIEW_TAGS"
+msgstr "Teglar"
+
+msgid "IDS_BR_BODY_ADDBOOKMARKURL"
+msgstr "URL-manzil"
+
+msgid "IDS_BR_BODY_1_ITEM_WILL_BE_DELETED"
+msgstr "1 element yo‘q qilinadi."
+
+msgid "IDS_BR_TPOP_MAXIMUM_NUMBER_OF_CHARACTERS_HPD_REACHED"
+msgstr "Belgilar soni ruxsat etilgan maksimal miqdorga (%d) yetdi"
+
+msgid "IDS_BR_POP_UNSUPPORTMEDIATYPE"
+msgstr "Qo‘llab-quvvatlanmaydigan media turi."
+
+msgid "IDS_BR_POP_UNABLE_TO_CONNECT_TO_MOBILE_NETWORKS_WHILE_FLIGHT_MODE_IS_ENABLED_CONNECT_TO_WI_FI_NETWORK_INSTEAD_OR_DISABLE_FLIGHT_MODE_AND_TRY_AGAIN"
+msgstr "Parvoz rejimi yoqilganda, mobil tarmoqlarga ulanib bo‘lmaydi. Uning o‘rniga Wi-Fi tarmoqqa ulaning yoki Parvoz rejimini yoqing va qayta urinib ko‘ring"
+
+msgid "IDS_BR_POP_INSTALL_SUCCESS"
+msgstr "O‘rnatish yakunlandi."
+
+msgid "IDS_BR_POP_INSTALLATION_FAILED"
+msgstr "O‘rnatish bajarilmadi."
+
+msgid "IDS_BR_POP_DELETING_ING"
+msgstr "O'chirilmoqda…"
+
+msgid "IDS_BR_POP_DATA_ROAMING_IS_DISABLED_CONNECT_TO_WI_FI_NETWORK_INSTEAD_OR_ENABLE_DATA_ROAMING_AND_TRY_AGAIN"
+msgstr "Ma’lumot roumingiz o‘chirilgan. Uning o‘rniga Wi-Fi tarmoqqa ulaning yoki ma’lumot roumingini yoqing va qayta urinib ko‘ring"
+
+msgid "IDS_BR_OPT_SHARE_VIA"
+msgstr "Quyidagi orqali ulashish"
+
+msgid "IDS_BR_OPT_PASTE"
+msgstr "Qo‘shib qo‘yish"
+
+msgid "IDS_BR_MBODY_FONT_SIZE"
+msgstr "Shrift o‘lchami"
+
+msgid "IDS_BR_HEADER_UNABLE_TO_DOWNLOAD_ABB"
+msgstr "Yuklab olib bo‘lmaydi"
+
+msgid "IDS_BR_BUTTON_UPDATE"
+msgstr "Yangilash"
+
+msgid "IDS_BR_BUTTON_RETRY"
+msgstr "Qay/urin."
+
+msgid "IDS_BR_BODY_REQUEST_FAILED"
+msgstr "So‘rov bajarilmadi."
+
 msgid "IDS_BR_BODY_LOGIN"
 msgstr "Kirish"
 
 msgid "IDS_BR_BODY_LOADING_ING"
 msgstr "Yuklanmoqda..."
-
-msgid "IDS_BR_BODY_FIT_TO_WIDTH"
-msgstr "Kenglikka moslash"
 
 msgid "IDS_BR_BODY_FIT_TO_SCREEN"
 msgstr "Ekranga moslash"
@@ -2008,12 +1999,180 @@ msgstr "Yuklanishlar"
 msgid "IDS_BR_BODY_DATA_ROAMING_IS_DISABLED_CONNECT_TO_A_WI_FI_NETWORK_INSTEAD_OR_ENABLE_DATA_ROAMING_AND_TRY_AGAIN"
 msgstr "Ma’lumot roumingi o‘chirilgan. Wi-Fi tarmoqqa ulaning yoki ma’lumot roumingini yoqing va qayta urinib ko‘ring."
 
-msgid "IDS_BR_ACBUTTON_QUICK_ACCESS"
-msgstr "TEZ KIRISH"
+msgid "IDS_BR_POP_DOWNLOAD_CANCELLED"
+msgstr "Yuklab olish bekor qilindi."
 
-msgid "IDS_ST_POP_SOME_CONTENT_HAS_BEEN_BLOCKED_TO_PROTECT_YOUR_DEVICE"
-msgstr "Qurilmangizni himoya qilish uchun ba’zi tarkib bloklandi."
+msgid "IDS_BR_BUTTON_SECRET_ON_ABB"
+msgstr "Sir rjm yoq"
 
-msgid "IDS_ST_POP_SELECT_WHETHER_TO_GO_TO_THE_WEBPAGE_ANYWAY"
-msgstr "Veb-sahifaga o‘tish yoki o‘tmaslikni tanlang."
+msgid "IDS_BR_MBODY_PRIVACY"
+msgstr "Maxfiylik"
+
+msgid "IDS_BR_MBODY_DEFAULT_STORAGE"
+msgstr "Birlamchi ombor"
+
+msgid "IDS_BR_MBODY_MANUAL_ZOOM"
+msgstr "Masshtab qo‘lda o‘zgartir"
+
+msgid "IDS_BR_TMBODY_DEFAULT_SEARCH_ENGINE"
+msgstr "Birlamchi qidirish mexanizmi"
+
+msgid "IDS_BR_MBODY_SAVE_SIGN_IN_INFO"
+msgstr "Kirish ma’lumotini saqla"
+
+msgid "IDS_BR_OPT_TURN_OFF_SECRET_MODE_ABB"
+msgstr "Sirli rejimni o‘chirish"
+
+msgid "IDS_BR_OPT_TURN_ON_SECRET_MODE_ABB"
+msgstr "Sir rejimini yoqish"
+
+msgid "IDS_BR_OPT_SHOW_PASSWORD_ABB2"
+msgstr "Parolni ko‘rsatish"
+
+msgid "IDS_BR_BODY_ENTER_YOUR_CURRENT_SECRET_MODE_PASSWORD"
+msgstr "Joriy Sir rejimi parolini kiriting."
+
+msgid "IDS_BR_OPT_SECRET_MODE_SECURITY_ABB"
+msgstr "Sir rejimi xavfsizligi"
+
+msgid "IDS_BR_BUTTON_USE_PASSWORD_ABB"
+msgstr "Paroldan foydalanish"
+
+msgid "IDS_BR_HEADER_DONT_USE_PASSWORD_ABB"
+msgstr "Parol ishlatilmasin"
+
+msgid "IDS_BR_MBODY_MOST_VISITED_WEBSITES"
+msgstr "Ko‘p kirilgan veb-saytlar"
+
+msgid "IDS_BR_MBODY_SET_MY_PROFILE"
+msgstr "Profilimni o‘rnatish"
+
+msgid "IDS_BR_MBODY_MY_AUTO_FILL_PROFILE"
+msgstr "Avto-to‘ldirish profilim"
+
+msgid "IDS_BR_SBODY_MANAGE_DATA_USED_TO_FILL_IN_FORMS_ONLINE"
+msgstr "Onlayn shakllarni to‘ldirish uchun ishlatilgan ma’lumotlarni boshqarish."
+
+msgid "IDS_BR_MBODY_SAVE_SIGN_IN_INFO_ABB"
+msgstr "Kir. ma’l. saqla"
+
+msgid "IDS_BR_OPT_LOCATION_ACCESS_DATA"
+msgstr "Joylashuv ma’lumotlariga kirish"
+
+msgid "IDS_BR_OPT_AUTO_FILL_DATA"
+msgstr "Ma’lumotni avtomatik to‘ldirish"
+
+msgid "IDS_BR_BODY_ANY_WEBPAGES_YOU_VIEW_WHILE_SECRET_MODE_IS_TURNED_ON_WONT_APPEAR_IN_YOUR_BROWSER_OR_SEARCH_HISTORY_MSG"
+msgstr "Sir rejimi yoqilgan vaqtda ko‘rilgan veb-sahifalar u o‘chirilganda ham brauzer yoki qidirish jurnalida ko‘rinmaydi.\n\nSir rejimi yoqilgan vaqtda saqlangan xatcho‘plar va veb-sahifalar u o‘chirilganda ham ko‘rsatilmaydi.\n\nSir rejimi ma’lumotlarini parol bilan himoya qilishingiz mumkin."
+
+msgid "IDS_BR_BODY_ANY_WEBPAGES_YOU_VIEW_WHILE_SECRET_MODE_IS_TURNED_ON_WONT_APPEAR_IN_YOUR_BROWSER_OR_SEARCH_MSG"
+msgstr "Sir rejimi yoqilgan vaqtda ko‘rilgan veb-sahifalar u o‘chirilganda ham brauzer yoki qidirish jurnalida ko‘rinmaydi.\n\nSir rejimi yoqilgan vaqtda saqlangan xatcho‘plar va veb-sahifalar u o‘chirilganda ham ko‘rsatilmaydi."
+
+msgid "IDS_BR_BUTTON_SECRET_OFF_ABB"
+msgstr "Sir rj o‘ch"
+
+msgid "IDS_BR_BUTTON_DONT_USE_PASSWORD_ABB"
+msgstr "Parol ishlatilmasin"
+
+msgid "IDS_BR_BUTTON_NEW_TAB_ABB2"
+msgstr "Yan/ilv"
+
+msgid "IDS_BR_NPBODY_WEB_ADDRESS_ABB"
+msgstr "Veb-manzil"
+
+msgid "IDS_BR_HEADER_ADD_WEBPAGE_TO_QUICK_ACCESS_ABB"
+msgstr "Tez kir. veb-sahifa qo‘shish"
+
+msgid "IDS_BR_TMBODY_TURN_ON_JAVASCRIPT"
+msgstr "JavaScript’ni yoqish"
+
+msgid "IDS_BR_HEADER_COULDNT_OPEN_NEW_TAB_ABB"
+msgstr "Yangi ilovani ochib bo‘lmadi"
+
+msgid "IDS_BR_OPT_OPEN_IN_NEW_TAB_ABB"
+msgstr "Yangi panelda ochish"
+
+msgid "IDS_BR_TPOP_FOLDER_NAME_ALREADY_IN_USE"
+msgstr "Jild nomi avvaldan ishlatilmoqda."
+
+msgid "IDS_BR_NPBODY_NEW_FOLDER_PD"
+msgstr "Yangi jild %d"
+
+msgid "IDS_BR_NPBODY_NEW_FOLDER"
+msgstr "Yangi jild"
+
+msgid "IDS_BR_OPT_ENABLE_JAVASCRIPT"
+msgstr "JavaScriptni yoqish"
+
+msgid "IDS_BR_TMBODY_MANAGE_WEBSITE_DATA"
+msgstr "Veb-sayt ma’lumotlarini boshqar"
+
+msgid "IDS_BR_HEADER_SET_HOME_PAGE_ABB"
+msgstr "Asosiy sahifani o‘rnatish"
+
+msgid "IDS_BR_TPOP_WEBPAGE_ADDED_TO_QUICK_ACCESS_LIST"
+msgstr "Veb-sahifa tezkor kirishlar ro‘yxatiga qo‘shildi."
+
+msgid "IDS_BR_OPT_EDIT_QUICK_ACCESS_ABB"
+msgstr "Tezkor kirishni tahrirlash"
+
+msgid "IDS_BR_OPT_REMOVE_FROM_BOOKMARKS_ABB"
+msgstr "Xatcho‘plarni olib tashlash"
+
+msgid "IDS_BR_HEADER_ADD_BOOKMARK_ABB"
+msgstr "Xatcho‘p qo‘shish"
+
+msgid "IDS_BR_BODY_BROWSING_HISTORY"
+msgstr "Brauzer jurnali"
+
+msgid "IDS_BR_HEADER_TABS_ABB2"
+msgstr "Panellar"
+
+msgid "IDS_BR_OPT_NEW_TAB"
+msgstr "Yangi oyna"
+
+msgid "IDS_BR_BUTTON_FORWARD_ABB2"
+msgstr "Boshqaga"
+
+msgid "IDS_BR_BUTTON_BACK_ABB3"
+msgstr "Orqaga"
+
+msgid "IDS_BR_BUTTON_BOOKMARKS_ABB"
+msgstr "Xatcho‘p"
+
+msgid "IDS_BR_NPBODY_NO_PROFILES_ABB"
+msgstr "Profillar yo‘q"
+
+msgid "IDS_BR_TAB2_HISTORY"
+msgstr "Jurnal"
+
+msgid "IDS_BR_TAB2_BOOKMARKS"
+msgstr "Xatcho‘plar"
+
+msgid "IDS_BR_HEADER_SAVE_CONTENT_TO_ABB"
+msgstr "Tarkibni saqlash"
+
+msgid "IDS_BR_HEADER_SELECT_ITEMS_ABB2"
+msgstr "Elementlarni tanlash"
+
+msgid "IDS_BR_BODY_YOUR_PASSWORD_MUST_CONTAIN_AT_LEAST_PD_CHARACTERS_INCLUDING_AT_LEAST_1_LETTER"
+msgstr "Parolingiz kamida %d ta belgidan tashkil topishi va kamida 1 ta harfga ega bo‘lishi lozim."
+
+msgid "IDS_BR_BODY_AN_INCORRECT_PASSWORD_HAS_BEEN_ENTERED_TRY_AGAIN"
+msgstr "Noto‘g‘ri parol kiritildi. Qayta urinib ko‘ring."
+
+msgid "IDS_BR_BODY_NO_TABS"
+msgstr "Ilovalar yo‘q"
+
+msgid "IDS_BR_TMBODY_CHANGE_PASSWORD"
+msgstr "Parolni o‘zgartirish"
+
+msgid "IDS_BR_BODY_ANY_WEBPAGES_VIEWED_WHILE_SECRET_MODE_IS_ENABLED_WILL_NOT_APPEAR_IN_YOUR_BROWSER_OR_SEARCH_HISTORY_WHILE_SECRET_MSG"
+msgstr "Sir rejimi yoniqligida ko‘rib chiqilgan veb-sahifalarning hech biri Sir rejimi o‘chirilgan vaqtda brauzer yoki qidirishlaringiz jurnalida ko‘rsatilmaydi.\n\nSir rejimi yoniqligida saqlangan xatcho‘p yoki veb-sahifalarning hech biri u o‘chirilgan vaqtda ko‘rsatilmaydi.\n\nSir rejimi ma’lumotlarini parol bilan himoya qilishingiz mumkin."
+
+msgid "IDS_BR_BODY_ANY_WEBPAGES_VIEWED_WHILE_SECRET_MODE_IS_ENABLED_WILL_NOT_APPEAR_IN_YOUR_MSG"
+msgstr "Sir rejimi yoniqligida ko‘rib chiqilgan veb-sahifalarning hech biri Sir rejimi o‘chirilgan vaqtda brauzer yoki qidirishlaringiz jurnalida ko‘rsatilmaydi.\n\nSir rejimi yoniqligida saqlangan xatcho‘p yoki veb-sahifalarning hech biri u o‘chirilgan vaqtda ko‘rsatilmaydi."
+
+msgid "IDS_BR_BUTTON2_DONE"
+msgstr "Bajarildi"
 

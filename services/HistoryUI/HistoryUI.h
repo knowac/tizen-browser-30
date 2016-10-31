@@ -23,25 +23,26 @@
 
 #include "HistoryPeriod.h"
 #include <services/HistoryService/HistoryItemTypedef.h>
+#include "AbstractContextMenu.h"
 #include "AbstractUIComponent.h"
 #include "AbstractService.h"
 #include "ServiceFactory.h"
 #include "service_macros.h"
+#include "NaviframeWrapper.h"
+
 
 namespace tizen_browser{
 namespace base_ui{
 
 class HistoryDaysListManager;
-typedef std::shared_ptr<HistoryDaysListManager> HistoryDaysListManagerPtr;
-#if !PROFILE_MOBILE
-class HistoryUIFocusManager;
-typedef std::unique_ptr<HistoryUIFocusManager> HistoryUIFocusManagerPtrUnique;
-#endif
 class HistoryDeleteManager;
-typedef std::shared_ptr<HistoryDeleteManager> HistoryDeleteManagerPtr;
+
+using HistoryDaysListManagerPtr = std::shared_ptr<HistoryDaysListManager>;
+using HistoryDeleteManagerPtr = std::shared_ptr<HistoryDeleteManager>;
 
 class BROWSER_EXPORT HistoryUI
-    : public tizen_browser::interfaces::AbstractUIComponent
+    : public interfaces::AbstractContextMenu
+    , public tizen_browser::interfaces::AbstractUIComponent
     , public tizen_browser::core::AbstractService
 {
 public:
@@ -51,51 +52,41 @@ public:
     Evas_Object* getContent();
     void showUI();
     void hideUI();
-    Evas_Object* createDaysList(Evas_Object* history_layout);
+    Evas_Object* createDaysList(Evas_Object* history_layout, bool isRemoveMode = false);
+    void removeSelectedHistoryItems();
     virtual std::string getName();
     void addHistoryItems(std::shared_ptr<services::HistoryItemVector>,
             HistoryPeriod period = HistoryPeriod::HISTORY_TODAY);
-    void removeHistoryItem(const std::string& uri);
-    Evas_Object* createActionBar(Evas_Object* history_layout);
     void addItems();
+    void setNaviframe(SharedNaviframeWrapper naviframe) { m_naviframe = naviframe;}
+
+    //AbstractContextMenu interface implementation
+    virtual void showContextMenu() override {};
+
     boost::signals2::signal<void ()> closeHistoryUIClicked;
     boost::signals2::signal<void ()> clearHistoryClicked;
-    boost::signals2::signal<void (std::shared_ptr<const std::vector<int>> itemIds)> signalDeleteHistoryItems;
+    boost::signals2::signal<void (int)> signalDeleteHistoryItems;
     boost::signals2::signal<void (std::string url, std::string title)> signalHistoryItemClicked;
 private:
     void clearItems();
-    void createHistoryUILayout(Evas_Object* parent);
-
-    HistoryDeleteManagerPtr getHistoryDeleteManager() {return m_historyDeleteManager;}
-
-    /**
-     * @brief Groups history items by domain
-     *
-     * @return key: domain, value: domain's history items
-     */
-    std::map<std::string, services::HistoryItemVector>
-    groupItemsByDomain(const services::HistoryItemVector& historyItems);
+    void createHistoryUILayout();
+    void createTopContent();
+    void setRightButtonEnabled(bool);
 
     static Evas_Object* _listActionBarContentGet(void *data, Evas_Object *obj, const char *part);
-    static void _clearHistory_clicked(void *data, Evas_Object *obj, void *event_info);
     static void _close_clicked_cb(void *data, Evas_Object *obj, void *event_info);
 
     std::string m_edjFilePath;
     Evas_Object *m_parent;
     Evas_Object *m_main_layout;
-    Evas_Object *m_actionBar;
     Evas_Object *m_buttonClose;
     Evas_Object *m_buttonClear;
     Evas_Object *m_daysList;
     HistoryDaysListManagerPtr m_historyDaysListManager;
-#if !PROFILE_MOBILE
-    HistoryUIFocusManagerPtrUnique m_focusManager;
-#endif
     HistoryDeleteManagerPtr m_historyDeleteManager;
-
-};
-
-}
+    SharedNaviframeWrapper m_naviframe;
+    Evas_Object* m_modulesToolbar;
+};}
 }
 
 #endif // BOOKMARKSUI_H

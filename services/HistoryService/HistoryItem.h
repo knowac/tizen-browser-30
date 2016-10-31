@@ -23,7 +23,6 @@
 #include <vector>
 
 #include "BrowserImage.h"
-#include "BrowserImageTypedef.h"
 
 namespace tizen_browser {
 namespace services {

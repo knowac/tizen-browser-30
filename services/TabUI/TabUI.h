@@ -20,24 +20,25 @@
 #include <Evas.h>
 #include <boost/signals2/signal.hpp>
 
+#include "AbstractContextMenu.h"
 #include "AbstractUIComponent.h"
 #include "AbstractService.h"
+#include "AbstractWebEngine/State.h"
 #include "ServiceFactory.h"
 #include "service_macros.h"
 #include "TabIdTypedef.h"
-#if PROFILE_MOBILE
 #include "AbstractRotatable.h"
-#endif
+#include "NaviframeWrapper.h"
+#include "PasswordUI.h"
 
 namespace tizen_browser{
 namespace base_ui{
 
 class BROWSER_EXPORT TabUI
-        : public tizen_browser::interfaces::AbstractUIComponent
+        : public tizen_browser::interfaces::AbstractContextMenu
+        , public tizen_browser::interfaces::AbstractUIComponent
         , public tizen_browser::core::AbstractService
-#if PROFILE_MOBILE
         , public tizen_browser::interfaces::AbstractRotatable
-#endif
 {
 public:
     TabUI();
@@ -50,81 +51,94 @@ public:
 
     virtual std::string getName();
 
-    void addTabItems(std::vector<basic_webengine::TabContentPtr>& items);
-    bool isEditMode();
-    void onBackKey();
-#if PROFILE_MOBILE
+    void addTabItems(std::vector<basic_webengine::TabContentPtr>& items, bool secret);
     virtual void orientationChanged() override;
-#endif
+
+    //AbstractContextMenu interface implementation
+    virtual void showContextMenu() override;
+    std::shared_ptr<PasswordUI> getPasswordUI() { return m_passwordUI; };
+    void switchToSecretFirstTime();
 
     boost::signals2::signal<void (const tizen_browser::basic_webengine::TabId&)> tabClicked;
     boost::signals2::signal<void ()> newTabClicked;
-    boost::signals2::signal<void ()> newIncognitoTabClicked;
     boost::signals2::signal<void (const tizen_browser::basic_webengine::TabId&)> closeTabsClicked;
-    boost::signals2::signal<void (const std::string & )> openedTabsClicked;
-#if ON_OTHER_DEVICES
-    boost::signals2::signal<void (const std::string & )> onOtherDevicesClicked;
-#endif
     boost::signals2::signal<void ()> closeTabUIClicked;
-    boost::signals2::signal<int () > tabsCount;
-    boost::signals2::signal<bool (const tizen_browser::basic_webengine::TabId& )> isIncognito;
+    boost::signals2::signal<void ()> changeEngineState;
+    boost::signals2::signal<void ()> refetchTabUIData;
+    boost::signals2::signal<bool (std::string)> checkIfParamExistsInDB;
+    boost::signals2::signal<void (std::string, bool)> setDBBoolParamValue;
+    boost::signals2::signal<void (std::string, std::string)> setDBStringParamValue;
+    boost::signals2::signal<bool (std::string)> getDBBoolParamValue;
+    boost::signals2::signal<std::string (std::string)> getDBStringParamValue;
+    boost::signals2::signal<void ()> showPasswordUI;
+    boost::signals2::signal<void ()> showNoPasswordWarning;
 
 private:
+    struct TabData
+    {
+        basic_webengine::TabContentPtr item;
+        TabUI* tabUI;
+    };
 
-    static char* _grid_text_get(void *data, Evas_Object *obj, const char *part);
-    static Evas_Object * _tab_grid_content_get(void *data, Evas_Object *obj, const char *part);
-    static void _del_item(void* /*data*/, Evas_Object* obj);
-    static void _itemSelected(void * data, Evas_Object * obj, void * event_info);
-    static void _item_deleted(void *data, Evas_Object *obj);
-    static void _thumbSelected(void * data, Evas_Object * obj, void * event_info);
-    static void _deleteBookmark(void *data, Evas_Object *obj, void *event_info);
+    enum class State {
+        NORMAL,
+        SECRET,
+        PASSWORD_DECISION
+    };
+
+    static char* _gengrid_text_get(void *data, Evas_Object *obj, const char *part);
+    static Evas_Object * _gengrid_content_get(void *data, Evas_Object *obj, const char *part);
+
+    static void _gengrid_tab_pressed(void * data, Evas_Object * obj, void * event_info);
+    static void _gengrid_tab_released(void * data, Evas_Object * obj, void * event_info);
+    static void _gengrid_tab_clicked(void * data, Evas_Object * obj, void * event_info);
+    static void _gengrid_tab_realized(void * data, Evas_Object * obj, void * event_info);
     static void _close_clicked(void *data, Evas_Object *obj, void *event_info);
-    void setEmptyGengrid(bool setEmpty);
+    void updateNoTabsText(bool forceShow=false);
 
     static void _openedtabs_clicked(void * data, Evas_Object * obj, void * event_info);
-    static void _newtab_clicked(void * data, Evas_Object * obj, void * event_info);
-    static void _newincognitotab_clicked(void * data, Evas_Object * obj, void * event_info);
-    static void _closetabs_clicked(void * data, Evas_Object * obj, void * event_info);
+    static void _right_button_clicked(void * data, Evas_Object * obj, void * event_info);
+    static void _left_button_clicked(void * data, Evas_Object * obj, void * event_info);
     static void _close_tab_clicked(void *data, Evas_Object*, void*);
-#if ON_OTHER_DEVICES
-    static void _onotherdevices_clicked(void * data, Evas_Object * obj, void * event_info);
-#endif
-    static void _focus_in(void * data, Evas*, Evas_Object * obj, void * event_info);
-    static Eina_Bool _ready(void *data);
+    static void _cm_secret_clicked(void*, Evas_Object*, void*);
+    static void _cm_close_clicked(void*, Evas_Object*, void*);
+    static Evas_Event_Flags _gesture_occured(void * data, void * event_info);
 
+    SharedNaviframeWrapper m_naviframe;
     void createTabUILayout();
-    Evas_Object* createActionBar(Evas_Object* parent);
-    Evas_Object* createGengrid(Evas_Object* parent);
-    Evas_Object* createTopButtons(Evas_Object* parent);
-    Evas_Object* createBottomBar(Evas_Object* parent);
-    Evas_Object* createNoHistoryLabel();
+    void createTopContent();
+    void createBottomContent();
+    void createEmptyLayout();
+    void createGengrid();
     void createTabItemClass();
-    void closeAllTabs();
     void addTabItem(basic_webengine::TabContentPtr);
+    void setStateButtons();
 
-    Evas_Object* m_button_left;
-    Evas_Object* m_button_right;
-    Evas_Object *m_tab_layout;
-    Evas_Object* m_gengrid_layout;
-    Evas_Object *m_gengrid;
     Evas_Object *m_parent;
+    Evas_Object *m_content;
+    Evas_Object *m_gengrid;
+    Evas_Object *m_empty_layout;
+
     Elm_Object_Item* m_itemToShow;
-    Ecore_Timer* m_timer;
-    bool editMode;
-    bool onOtherDevicesSwitch;
+    Elm_Object_Item* m_last_pressed_gengrid_item;
 
     Elm_Gengrid_Item_Class * m_item_class;
     std::string m_edjFilePath;
 
-#if PROFILE_MOBILE
-    const unsigned int GENGRID_ITEM_WIDTH = 674;
-    const unsigned int GENGRID_ITEM_HEIGHT = 468;
-    const unsigned int GENGRID_ITEM_WIDTH_LANDSCAPE = 308;
-    const unsigned int GENGRID_ITEM_HEIGHT_LANDSCAPE = 326;
-#else
-    const unsigned int GENGRID_ITEM_WIDTH = 364;
-    const unsigned int GENGRID_ITEM_HEIGHT = 320;
-#endif
+    State m_state;
+    std::shared_ptr<PasswordUI> m_passwordUI;
+
+    const unsigned int GENGRID_ITEM_WIDTH = 700;
+    const unsigned int GENGRID_ITEM_HEIGHT = 312;
+    const unsigned int GENGRID_ITEM_WIDTH_LANDSCAPE = 636;
+    const unsigned int GENGRID_ITEM_HEIGHT_LANDSCAPE = 274;
+    const unsigned int GESTURE_MOMENTUM_MIN = 4000;
+    static const int SWIPE_MOMENTUM_TRESHOLD = 400;
+    static const int SWIPE_MOVE_TRESHOLD = 140;
+    static constexpr double SWIPE_LEFT_ANGLE1 = 260.0;
+    static constexpr double SWIPE_LEFT_ANGLE2 = 280.0;
+    static constexpr double SWIPE_RIGHT_ANGLE1 = 80.0;
+    static constexpr double SWIPE_RIGHT_ANGLE2 = 100.0;
 };
 }
 }

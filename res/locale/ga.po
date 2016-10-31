@@ -1,14 +1,8 @@
 msgid "IDS_BR_POP_NETWORK_ERROR"
 msgstr "Earráid líonra."
 
-msgid "IDS_BR_BODY_AUTHUSERNAME"
-msgstr "Ainm úsáideora"
-
 msgid "IDS_BR_BODY_DESTINATIONS_AUTHENTICATION_REQUIRED"
 msgstr "Fíordheimhniú de dhíth."
-
-msgid "IDS_BR_BODY_AUTHPASSWORD"
-msgstr "Pasfhocal"
 
 msgid "IDS_BR_HEADER_SECURITY_WARNING"
 msgstr "Rabhadh slándála"
@@ -33,12 +27,6 @@ msgstr "Tá fadhbanna leis an deimhniú slándála don láithreán seo"
 
 msgid "IDS_BR_OPT_ALLOW"
 msgstr "Ceadaigh"
-
-msgid "IDS_BR_OPT_VIEW"
-msgstr "Amharc air"
-
-msgid "IDS_BR_OPT_CANCEL"
-msgstr "Cuir ar ceal"
 
 msgid "IDS_BR_BODY_PS_REQUESTS_YOUR_LOCATION"
 msgstr "Iarrann %s do shuíomh"
@@ -72,6 +60,18 @@ msgstr "Íoslódáil"
 
 msgid "IDS_BR_BODY_THIS_WEBPAGE"
 msgstr "An leathanach gréasáin seo"
+
+msgid "IDS_BR_BODY_AUTHUSERNAME"
+msgstr "Ainm úsáideora"
+
+msgid "IDS_BR_BODY_AUTHPASSWORD"
+msgstr "Pasfhocal"
+
+msgid "IDS_BR_OPT_VIEW"
+msgstr "Amharc air"
+
+msgid "IDS_BR_OPT_CANCEL"
+msgstr "Cuir ar ceal"
 
 msgid "IDS_BR_OPT_SCREEN"
 msgstr "Scáileán"
@@ -109,15 +109,6 @@ msgstr "Cuir ar ceal"
 msgid "IDS_BR_BUTTON_MORE"
 msgstr "Tuilleadh"
 
-msgid "IDS_TPLATFORM_ACBUTTON_DONE_ABB"
-msgstr "DÉANTA"
-
-msgid "IDS_TPLATFORM_ACBUTTON_CANCEL_ABB"
-msgstr "CUIR AR CEAL"
-
-msgid "IDS_TPLATFORM_ACBUTTON_DELETE_ABB"
-msgstr "SCRIOS"
-
 msgid "IDS_BR_BODY_NO_ITEMS"
 msgstr "Níl míreanna ann"
 
@@ -126,9 +117,6 @@ msgstr "Nasc le líonra móibíleach"
 
 msgid "IDS_BR_OPT_DO_NOT_SHOW_AGAIN"
 msgstr "Ná taispeáin arís"
-
-msgid "IDS_BR_SK_OK"
-msgstr "OK"
 
 msgid "IDS_BR_POP_ONLY_HTTP_OR_HTTPS_URLS_CAN_BE_DOWNLOADED"
 msgstr "Ní féidir ach URL http nó https a íoslódáil"
@@ -151,17 +139,11 @@ msgstr "Cóipeáil nasc"
 msgid "IDS_BR_OPT_COPY_IMAGE"
 msgstr "Cóipeáil íomhá"
 
+msgid "IDS_BR_SK_OK"
+msgstr "OK"
+
 msgid "IDS_BR_OPT_CALL"
 msgstr "Glaoigh"
-
-msgid "IDS_ST_POP_PS_HAS_BEEN_DETECTED"
-msgstr "Braitheadh %s"
-
-msgid "IDS_ST_POP_DETECTED_IN_C_PS"
-msgstr "Braite in: %s"
-
-msgid "IDS_ST_HEADER_MALWARE_DETECTED_ABB"
-msgstr "Bogearraí mailíseacha braite"
 
 msgid "IDS_BR_BUTTON_FAILED"
 msgstr "Theip air"
@@ -229,35 +211,11 @@ msgstr "Bain tic"
 msgid "IDS_BR_SK_TABS"
 msgstr "Táib"
 
-msgid "IDS_BR_SK_SAVE_LITE"
-msgstr "Sábháil"
-
-msgid "IDS_BR_SK_SAVE_ABB"
-msgstr "Sábhl"
-
-msgid "IDS_BR_SK_SAVE"
-msgstr "Sábháil"
-
-msgid "IDS_BR_SK_PREVIOUS"
-msgstr "Roimhe"
-
-msgid "IDS_BR_SK_NEXT"
-msgstr "Ar aghaidh"
-
 msgid "IDS_BR_SK_MENU"
 msgstr "Roghchlár"
 
 msgid "IDS_BR_SK_DELETE_ABB"
 msgstr "Scrs"
-
-msgid "IDS_BR_SK_DELETE"
-msgstr "Scrios"
-
-msgid "IDS_BR_SK_CLEAR"
-msgstr "Glan"
-
-msgid "IDS_BR_SK_BACK"
-msgstr "Siar"
 
 msgid "IDS_BR_SK3_CREATE_FOLDER"
 msgstr "Déan fillteán"
@@ -316,15 +274,6 @@ msgstr "Is féidir nach mbeidh tú ábalta roinnt leathanach gréasáin a ghearr
 msgid "IDS_BR_POP_YOUR_HISTORY_WILL_BE_CLEARED"
 msgstr "Glanfar do stair."
 
-msgid "IDS_BR_POP_WI_FI_CONNECTION_REQUIRED_CONNECT_TO_WI_FI_NETWORK_AND_TRY_AGAIN"
-msgstr "Nasc Wi-Fi de dhíth. Nasc le líonra Wi-Fi agus triail arís."
-
-msgid "IDS_BR_POP_URL_NOT_FOUND"
-msgstr "Níor aimsíodh URL."
-
-msgid "IDS_BR_POP_URL"
-msgstr "URL"
-
 msgid "IDS_BR_POP_UNABLE_TO_VIEW_THE_CERTIFICATE_THE_PAGE_INFORMATION_HAS_BEEN_CHANGED"
 msgstr "Ní féidir an deimhniú a fheiceáil. Athraíodh faisnéis an leathanaigh."
 
@@ -370,23 +319,11 @@ msgstr "Cuireann an beartas slándála srian ar úsáid an bhrabhsálaí Idirlí
 msgid "IDS_BR_POP_SAVED_TO_BOOKMARKS"
 msgstr "Sábháilte chuig leabharmharcanna."
 
-msgid "IDS_BR_POP_SAVED"
-msgstr "Sábháilte."
-
 msgid "IDS_BR_POP_RENAME_TAG"
 msgstr "Athainmnigh clib"
 
-msgid "IDS_BR_POP_REMOVED"
-msgstr "Bainte."
-
 msgid "IDS_BR_POP_PD_PROFILES_WILL_BE_DELETED"
 msgstr "Scriosfar %d próifíl."
-
-msgid "IDS_BR_POP_PD_ITEMS_WILL_BE_DELETED"
-msgstr "Scriosfar %d mír"
-
-msgid "IDS_BR_POP_PD_ITEMS_SELECTED"
-msgstr "%d mír roghnaithe."
 
 msgid "IDS_BR_POP_PAGES_THAT_YOU_VIEW_WILL_NOT_APPEAR_IN_YOUR_BROWSER_HISTORY_OR_SEARCH_HISTORY_AND_THEY_WILL_NOT_LEAVE_OTHER_TRACES_LIKE_COOKIES"
 msgstr "Ní thaispeánfar leathanaigh a n-amharcann tú orthu i stair do bhrabhsálaí ná i do Stair cuardaigh, agus ní fhágfar rianta eile, amhail fianáin, ina ndiaidh."
@@ -415,53 +352,20 @@ msgstr "Tá “%1$s” braite.\nBraite in: “%2$s”\n\nCuireadh bac ar roinnt 
 msgid "IDS_BR_POP_P1SS_HAS_BEEN_DETECTED_DETECTED_IN_C_P2SS_OPEN_WEBPAGE_ANYWAY_Q"
 msgstr "Tá “%1$s” braite.\nBraite in: “%2$s”\n\nOscail an leathanach gréasáin ar aon nós?"
 
-msgid "IDS_BR_POP_NO_ITEMS_SELECTED"
-msgstr "Níl mír roghnaithe."
-
 msgid "IDS_BR_POP_NOT_ENOUGH_MEMORY_DELETE_SOME_ITEMS_AND_TRY_AGAIN"
 msgstr "Easpa cuimhne. Scrios roinnt míreanna agus triail arís."
-
-msgid "IDS_BR_POP_NOT_ENOUGH_MEMORY"
-msgstr "Easpa cuimhne."
 
 msgid "IDS_BR_POP_NOT_ALLOWED"
 msgstr "Neamhcheadaithe."
 
-msgid "IDS_BR_POP_NEVER"
-msgstr "Choíche"
-
 msgid "IDS_BR_POP_MOVED"
 msgstr "Bogtha."
-
-msgid "IDS_BR_POP_MOBILE_DATA_IS_DISABLED_CONNECT_TO_WI_FI_NETWORK_INSTEAD_OR_ENABLE_MOBILE_DATA_AND_TRY_AGAIN"
-msgstr "Tá sonraí móibíleacha díchumasaithe. Nasc le líonra Wi-Fi, nó cumasaigh sonraí móibíleacha agus triail arís é."
-
-msgid "IDS_BR_POP_LOADING_PLEASE_WAIT_ING"
-msgstr "Ag lódáil. Fan go fóill..."
-
-msgid "IDS_BR_POP_INVALID_URL"
-msgstr "URL neamhbhailí."
-
-msgid "IDS_BR_POP_FAIL"
-msgstr "Theip air."
 
 msgid "IDS_BR_POP_ENTER_URL"
 msgstr "Iontráil URL"
 
-msgid "IDS_BR_POP_ENTER_TITLE_ABB"
-msgstr "Iontráil teideal"
-
 msgid "IDS_BR_POP_ENTER_BOOKMARK_NAME"
 msgstr "Iontráil ainm an leabharmhairc"
-
-msgid "IDS_BR_POP_DO_NOT_SHOW_AGAIN"
-msgstr "Ná taispeáin arís"
-
-msgid "IDS_BR_POP_DOWNLOADCOMPLETE"
-msgstr "Íoslódáilte."
-
-msgid "IDS_BR_POP_DISABLED"
-msgstr "Díchumasaithe."
 
 msgid "IDS_BR_POP_DIALING_ING_VZW"
 msgstr "Dialing..."
@@ -487,9 +391,6 @@ msgstr "Scrios sonraí sínithe isteach don láithreán gréasáin seo?"
 msgid "IDS_BR_POP_DELETE_SIGN_IN_DATA_FOR_PD_WEBSITES_Q"
 msgstr "Scrios sonraí sínithe isteach i gcás %d láithreán gréasáin?"
 
-msgid "IDS_BR_POP_DELETE_Q"
-msgstr "Scrios?"
-
 msgid "IDS_BR_POP_DELETE_PD_SAVED_WEB_PAGES_Q"
 msgstr "Scrios %d leathanach gréasáin sábháilte?"
 
@@ -505,14 +406,8 @@ msgstr "Scrios gach cead do shonraí agus do shuímh ag an láithreán gréasái
 msgid "IDS_BR_POP_DELETEHISTORYQUESTION"
 msgstr "Scrios stair?"
 
-msgid "IDS_BR_POP_DELETED"
-msgstr "Scriosta."
-
 msgid "IDS_BR_POP_CONTINUE"
 msgstr "Ar aghaidh"
-
-msgid "IDS_BR_POP_CLOSE_APPLICATION_Q"
-msgstr "Dún ríomhchlár?"
 
 msgid "IDS_BR_POP_CLOSE_APPLICATION"
 msgstr "Dún ríomhchlár"
@@ -525,12 +420,6 @@ msgstr "Glan stair?"
 
 msgid "IDS_BR_POP_BOOKMARK_REMOVED"
 msgstr "Leabharmharc bainte."
-
-msgid "IDS_BR_POP_BOOKMARK_ADDED"
-msgstr "Leabharmharc curtha leis."
-
-msgid "IDS_BR_POP_AUTOMATIC_BRIGHTNESS"
-msgstr "Uathghile"
 
 msgid "IDS_BR_POP_ALREADY_EXISTS"
 msgstr "Ann cheana."
@@ -556,15 +445,6 @@ msgstr "Lig do láithreáin fianáin a shábháil agus a léamh"
 msgid "IDS_BR_POP_ADDED_TO_BOOKMARKS"
 msgstr "Curtha le leabharmharcanna."
 
-msgid "IDS_BR_POP_ACCOUNT"
-msgstr "Cuntas"
-
-msgid "IDS_BR_POP_1_ITEM_WILL_BE_DELETED"
-msgstr "Scriosfar 1 mhír"
-
-msgid "IDS_BR_POP_1_ITEM_SELECTED"
-msgstr "1 mhír roghnaithe."
-
 msgid "IDS_BR_OPT_WINDOWS"
 msgstr "Fuinneoga"
 
@@ -574,38 +454,20 @@ msgstr "Amharc ar dheimhniú"
 msgid "IDS_BR_OPT_UNICODE_HUTF_8"
 msgstr "Unicode (UTF-8)"
 
-msgid "IDS_BR_OPT_TRANSLATE"
-msgstr "Cuir aistriúchán air"
-
 msgid "IDS_BR_OPT_THUMBNAIL_VIEW"
 msgstr "Radharc mionsamhla"
 
 msgid "IDS_BR_OPT_TEXT_ENCODING"
 msgstr "Ionchódú téacs"
 
-msgid "IDS_BR_OPT_STOP"
-msgstr "Stop"
-
 msgid "IDS_BR_OPT_SHRINK_TEXT"
 msgstr "Crap an téacs"
-
-msgid "IDS_BR_OPT_SHOW"
-msgstr "Taispeáin"
-
-msgid "IDS_BR_OPT_SHARE"
-msgstr "Comhroinn"
 
 msgid "IDS_BR_OPT_SETTINGS_ABB"
 msgstr "Socruithe"
 
-msgid "IDS_BR_OPT_SETTINGS"
-msgstr "Socruithe"
-
 msgid "IDS_BR_OPT_SEND_MESSAGE_VODA"
 msgstr "Seol teachtaireacht"
-
-msgid "IDS_BR_OPT_SEND_EMAIL"
-msgstr "Seol r-phost"
 
 msgid "IDS_BR_OPT_SENDURLVIA_EMAIL"
 msgstr "R-phost"
@@ -624,12 +486,6 @@ msgstr "Mód roghnaithe"
 
 msgid "IDS_BR_OPT_SELECTED"
 msgstr "Roghnaithe"
-
-msgid "IDS_BR_OPT_SELECT"
-msgstr "Roghnaigh"
-
-msgid "IDS_BR_OPT_SD_CARD"
-msgstr "Cárta SD"
 
 msgid "IDS_BR_OPT_SAVE_TO_KEEPIT_ABB"
 msgstr "Sábháil chuig KeepIt"
@@ -658,14 +514,8 @@ msgstr "Athordaigh"
 msgid "IDS_BR_OPT_RENAME_FOLDER"
 msgstr "Athainmnigh fillteán"
 
-msgid "IDS_BR_OPT_RENAME"
-msgstr "Athainmnigh"
-
 msgid "IDS_BR_OPT_REMOVE"
 msgstr "Bain"
-
-msgid "IDS_BR_OPT_REFRESH"
-msgstr "Athnuaigh"
 
 msgid "IDS_BR_OPT_READER_MODE_TTS"
 msgstr "Mód léitheoireachta"
@@ -685,14 +535,8 @@ msgstr "Leathanaigh as líne"
 msgid "IDS_BR_OPT_NEW_WINDOW"
 msgstr "Fuinneog nua"
 
-msgid "IDS_BR_OPT_MOVE"
-msgstr "Bog"
-
 msgid "IDS_BR_OPT_MINIMISE"
 msgstr "Íoslaghdaigh"
-
-msgid "IDS_BR_OPT_MESSAGES"
-msgstr "Teachtaireachtaí"
 
 msgid "IDS_BR_OPT_MEDIUM_M_QUALITY"
 msgstr "Meánach"
@@ -705,9 +549,6 @@ msgstr "Pribhléidí rochtana suímh"
 
 msgid "IDS_BR_OPT_LOAD_IMAGES"
 msgstr "Lódáil íomhánna"
-
-msgid "IDS_BR_OPT_LIST_VIEW"
-msgstr "Amharc liosta"
 
 msgid "IDS_BR_OPT_LATIN_1_HISO_8859_1"
 msgstr "Laidin-1 (ISO-8859-1)"
@@ -724,9 +565,6 @@ msgstr "Seapáinis (ISO-2022-JP)"
 msgid "IDS_BR_OPT_JAPANESE_HEUC_JP"
 msgstr "Seapáinis (EUC-JP)"
 
-msgid "IDS_BR_OPT_I_AGREE"
-msgstr "Aontaím."
-
 msgid "IDS_BR_OPT_INCOGNITO_MODE_ABB"
 msgstr "Mód incognito"
 
@@ -741,9 +579,6 @@ msgstr "Scáileán baile mar aicearra"
 
 msgid "IDS_BR_OPT_HIGH_M_QUALITY"
 msgstr "Ard"
-
-msgid "IDS_BR_OPT_HELP"
-msgstr "Cuidiú"
 
 msgid "IDS_BR_OPT_GOFORWARD"
 msgstr "Seol ar aghaidh"
@@ -790,9 +625,6 @@ msgstr "Díchum. Úsáid íseal sonraí"
 msgid "IDS_BR_OPT_DISABLED"
 msgstr "Díchumasaithe"
 
-msgid "IDS_BR_OPT_DEVICE"
-msgstr "Gléas"
-
 msgid "IDS_BR_OPT_DELETE_SAVED_PAGE_ABB"
 msgstr "Scrios leathanach sábháilte"
 
@@ -826,9 +658,6 @@ msgstr "Sínis (Big5)"
 msgid "IDS_BR_OPT_CACHE"
 msgstr "Taisce"
 
-msgid "IDS_BR_OPT_BOOKMARK"
-msgstr "Leabharmharc"
-
 msgid "IDS_BR_OPT_ADD_TO_WEB_CLIP"
 msgstr "Cuir leis an ngearrthóg Gréasáin"
 
@@ -849,12 +678,6 @@ msgstr "Cuir l.mharc leis"
 
 msgid "IDS_BR_OPT_ADD_BOOKMARK"
 msgstr "Cuir leabharmharc leis"
-
-msgid "IDS_BR_OPT_ADDED"
-msgstr "Curtha leis."
-
-msgid "IDS_BR_OPT_ADD"
-msgstr "Cuir leis"
 
 msgid "IDS_BR_OPT1_EXTENSION"
 msgstr "Breiseán"
@@ -925,9 +748,6 @@ msgstr "Íoslódáil inneachar fotha"
 msgid "IDS_BR_MBODY_DELETE_SIGN_IN_DATA"
 msgstr "Scrios sonraí sínithe ist"
 
-msgid "IDS_BR_MBODY_DEFAULT_DOWNLOAD_STORAGE"
-msgstr "Stóras íoslód. r'shocraithe"
-
 msgid "IDS_BR_MBODY_DATA_SAVING_STATISTICS"
 msgstr "Staitisticí coig. sonraí"
 
@@ -970,9 +790,6 @@ msgstr "Bogadh leabharmharc. dodhéanta"
 msgid "IDS_BR_HEADER_SITE_NOT_TRUSTED_ABB"
 msgstr "Níl an láithreán iontaofa"
 
-msgid "IDS_BR_HEADER_SIGN_IN_TO_SAMSUNG_ACCOUNT"
-msgstr "Sínigh isteach ar chuntas Samsung"
-
 msgid "IDS_BR_HEADER_SET_HOMEPAGE_ABB"
 msgstr "Socraigh leathanach baile"
 
@@ -1009,17 +826,11 @@ msgstr "Bac curtha ar mhír aníos"
 msgid "IDS_BR_HEADER_POPULAR_WEBSITES_ABB"
 msgstr "Láithreáin Gréasáin is mó éileamh"
 
-msgid "IDS_BR_HEADER_PD_SELECTED_ABB"
-msgstr "%d roghnaithe"
-
 msgid "IDS_BR_HEADER_ORGANISATION_C_ABB"
 msgstr "Eagraíocht:"
 
 msgid "IDS_BR_HEADER_ORGANISATIONAL_UNIT_C"
 msgstr "Aonad eagrúcháin:"
-
-msgid "IDS_BR_HEADER_NO_NETWORK_CONNECTION"
-msgstr "Níl nasc líonra ann"
 
 msgid "IDS_BR_HEADER_NEWER_M_INTERNET_HISTORY_ABB"
 msgstr "Newer"
@@ -1036,17 +847,11 @@ msgstr "Iarmhír HTML5"
 msgid "IDS_BR_HEADER_FORM_DATA"
 msgstr "Sonraí ar fhoirm"
 
-msgid "IDS_BR_HEADER_FOLDER"
-msgstr "Fillteán"
-
 msgid "IDS_BR_HEADER_EXPIRES_ON_C"
 msgstr "As feidhm:"
 
 msgid "IDS_BR_HEADER_ENABLE_WEB_SIGN_IN"
 msgstr "Cumasaigh Síniú isteach gréasáin"
-
-msgid "IDS_BR_HEADER_EDIT_PROFILE"
-msgstr "Cuir próifíl in eagar"
 
 msgid "IDS_BR_HEADER_EDIT_BOOKMARK"
 msgstr "Cuir leabharmharc in eagar"
@@ -1084,14 +889,8 @@ msgstr "Bainistiú leithead banda"
 msgid "IDS_BR_HEADER_ADVANCEDCERTIFICATES"
 msgstr "Deimhnithe"
 
-msgid "IDS_BR_BUTTON_SET"
-msgstr "Socraigh"
-
 msgid "IDS_BR_BUTTON_RESET_ABB"
 msgstr "Athshoc."
-
-msgid "IDS_BR_BUTTON_NOT_NOW"
-msgstr "Ní anois"
 
 msgid "IDS_BR_BUTTON_HOMEPAGE_ABB"
 msgstr "Lch baile"
@@ -1099,35 +898,11 @@ msgstr "Lch baile"
 msgid "IDS_BR_BUTTON_FIND_ABB"
 msgstr "Aim."
 
-msgid "IDS_BR_BUTTON_ENABLE_ABB"
-msgstr "Cumasaigh"
-
-msgid "IDS_BR_BUTTON_EDIT"
-msgstr "Cuir in eagar"
-
-msgid "IDS_BR_BUTTON_CONTINUE_ABB"
-msgstr "Ar agh"
-
-msgid "IDS_BR_BUTTON_CONTINUE"
-msgstr "Ar aghaidh"
-
-msgid "IDS_BR_BUTTON_CLOSE"
-msgstr "Dún"
-
-msgid "IDS_BR_BUTTON_CANCEL_ABB"
-msgstr "Cealaigh"
-
-msgid "IDS_BR_BUTTON_CANCEL"
-msgstr "Cealaigh"
-
 msgid "IDS_BR_BUTTON_BACK_ABB"
 msgstr "Siar"
 
 msgid "IDS_BR_BUTTON_ALWAYS_SHOW_ABB"
 msgstr "Taisp. i gcónaí"
-
-msgid "IDS_BR_BUTTON_ALLOW"
-msgstr "Ceadaigh"
 
 msgid "IDS_BR_BUTTON2_WEB_PORTAL"
 msgstr "Tairseach Gréasáin"
@@ -1152,9 +927,6 @@ msgstr "Gabh chuig stair"
 
 msgid "IDS_BR_BUTTON2_ENTERTAINMENT"
 msgstr "Siam\nsaíocht"
-
-msgid "IDS_BR_BODY_YESTERDAY"
-msgstr "Inné"
 
 msgid "IDS_BR_BODY_WINDOW_MANAGER"
 msgstr "Bainisteoir fuinneog"
@@ -1183,9 +955,6 @@ msgstr "Úsáid Mód lánscáileáin leis an mbarra stádais a fholú"
 msgid "IDS_BR_BODY_USE_A_PREDICTION_SERVICE_TO_DISPLAY_RELATED_QUERIES_AND_POPULAR_WEBSITES_IN_THE_ADDRESS_BAR_AS_YOU_TYPE"
 msgstr "Úsáid seirbhís tuartha le fiosruithe gaolmhara agus láithreáin Ghréasáin is mó éileamh a thaispeáint sa bharra seoltaí de réir mar a chlóscríobhann tú"
 
-msgid "IDS_BR_BODY_URL"
-msgstr "URL"
-
 msgid "IDS_BR_BODY_UPPER_FOLDER_T_TALKBACK"
 msgstr "Fillteán uachtarach"
 
@@ -1201,12 +970,6 @@ msgstr "Ní féidir an leathanach Gréasáin a thaispeáint. Ní bhfuarthas frea
 msgid "IDS_BR_BODY_TOWN_CITY_COUNTY_ABB"
 msgstr "Baile/cathair/contae"
 
-msgid "IDS_BR_BODY_TODAY"
-msgstr "Inniu"
-
-msgid "IDS_BR_BODY_TITLE"
-msgstr "Teideal"
-
 msgid "IDS_BR_BODY_THIS_SITE_IS_USING_PS"
 msgstr "Tá %s á úsáid ag an suíomh seo."
 
@@ -1221,9 +984,6 @@ msgstr "Scriosfar an leabharmharc seo"
 
 msgid "IDS_BR_BODY_THE_SELECTED_PERSONAL_DATA_WILL_BE_DELETED"
 msgstr "Scriosfar na sonraí pearsanta roghnaithe."
-
-msgid "IDS_BR_BODY_THE_MAXIMUM_NUMBER_OF_CHARACTERS_HPD_HAS_BEEN_EXCEEDED"
-msgstr "Uaslíon na gcarachtar (%d) bainte amach"
 
 msgid "IDS_BR_BODY_TEXT_FIELD_T_TTS"
 msgstr "Réimse téacs"
@@ -1249,17 +1009,11 @@ msgstr "Sioncronaigh leabharmharcanna"
 msgid "IDS_BR_BODY_STREET_ADDRESS_PO_BOX_C_O_ETC_ABB"
 msgstr "Seoladh sráide, Bosca poist, f/ch, srl"
 
-msgid "IDS_BR_BODY_STREAMING"
-msgstr "Sruthú"
-
 msgid "IDS_BR_BODY_STORED_DATA"
 msgstr "Sonraí stóráilte"
 
 msgid "IDS_BR_BODY_SPLIT_BAR_HANDLE"
 msgstr "Hanla an roinnbharra"
-
-msgid "IDS_BR_BODY_SMALL"
-msgstr "Beag"
 
 msgid "IDS_BR_BODY_SIGN_IN_TO_YOUR_SAMSUNG_ACCOUNT_TO_ACCESS_THE_BOOKMARKS_AND_TABS_ON_YOUR_OTHER_DEVICES"
 msgstr "Sínigh isteach i do chuntas Samsung chun na leabharmharcanna agus na táib ar do ghléasanna eile a rochtain"
@@ -1279,9 +1033,6 @@ msgstr "Socraigh téacs le foirmeacha Gréasáin a uath-líonadh"
 msgid "IDS_BR_BODY_SET_CURRENT_PAGE_AS_HOMEPAGE"
 msgstr "Socraigh an leathanach reatha mar leathanach baile"
 
-msgid "IDS_BR_BODY_SETTINGS"
-msgstr "Socruithe"
-
 msgid "IDS_BR_BODY_SELECT_FOLDER"
 msgstr "Roghnaigh fillteán"
 
@@ -1294,9 +1045,6 @@ msgstr "Réimse cuardaigh"
 msgid "IDS_BR_BODY_SEARCH_AND_URL_SUGGESTIONS"
 msgstr "Moltaí ar chuardach agus URL"
 
-msgid "IDS_BR_BODY_SEARCH"
-msgstr "Cuardaigh"
-
 msgid "IDS_BR_BODY_SCREEN_AND_TEXT"
 msgstr "Scáileán agus téacs"
 
@@ -1305,9 +1053,6 @@ msgstr "Sábháil ainmneacha úsáideora agus pasfhocail do láithreáin Ghréas
 
 msgid "IDS_BR_BODY_SAVE_LINK"
 msgstr "Sábháil nasc"
-
-msgid "IDS_BR_BODY_RSS_SEARCH_RESULTS"
-msgstr "Torthaí an chuardaigh"
 
 msgid "IDS_BR_BODY_RESTORE_DEFAULT_SETTINGS_Q"
 msgstr "Fill ar réamhshocruithe?"
@@ -1342,12 +1087,6 @@ msgstr "Cnaipe Raidió"
 msgid "IDS_BR_BODY_PS_BOOKMARK_WILL_BE_DELETED"
 msgstr "Scriosfar %s leabharmharc"
 
-msgid "IDS_BR_BODY_PROFILE"
-msgstr "Próifíl"
-
-msgid "IDS_BR_BODY_PROCESSING_ING"
-msgstr "Ag próiseáil..."
-
 msgid "IDS_BR_BODY_PRIVACY"
 msgstr "Príobháideacht"
 
@@ -1360,20 +1099,8 @@ msgstr "Brúigh an eochair Roghchlár"
 msgid "IDS_BR_BODY_POSTCODE_ABB"
 msgstr "Postchód"
 
-msgid "IDS_BR_BODY_PHONE_NUMBER_ABB"
-msgstr "Uimhir fóin"
-
-msgid "IDS_BR_BODY_PHONE"
-msgstr "Fón"
-
 msgid "IDS_BR_BODY_PD_POP_UPS_BLOCKED_ABB"
 msgstr "Bac ar mhír aníos %d."
-
-msgid "IDS_BR_BODY_PD_ITEMS_WILL_BE_DELETED"
-msgstr "Scriosfar %d mír"
-
-msgid "IDS_BR_BODY_PASSWORD"
-msgstr "Pasfhocal"
 
 msgid "IDS_BR_BODY_PAGE_LOADED_T_TTS"
 msgstr "Leathanach lódáilte"
@@ -1399,14 +1126,8 @@ msgstr "Ar éileamh"
 msgid "IDS_BR_BODY_ONLY_VIA_WI_FI_ABB"
 msgstr "Trí Wi-Fi amháin"
 
-msgid "IDS_BR_BODY_ON"
-msgstr "Air"
-
 msgid "IDS_BR_BODY_OLDER"
 msgstr "Níos sine"
-
-msgid "IDS_BR_BODY_OFF"
-msgstr "As"
 
 msgid "IDS_BR_BODY_NO_WINDOWS"
 msgstr "Níl fuinneoga ann"
@@ -1420,17 +1141,8 @@ msgstr "Níl teideal ann"
 msgid "IDS_BR_BODY_NO_SAVED_PAGES"
 msgstr "Níl leathanaigh sábháilte ann"
 
-msgid "IDS_BR_BODY_NO_RESULTS_FOUND"
-msgstr "Níor aimsíodh torthaí."
-
-msgid "IDS_BR_BODY_NO_HISTORIES"
-msgstr "Níl stair ann"
-
 msgid "IDS_BR_BODY_NO_BOOKMARKS"
 msgstr "Níl leabharmharcanna ann"
-
-msgid "IDS_BR_BODY_NOTIFICATIONS"
-msgstr "Fógraí"
 
 msgid "IDS_BR_BODY_NORMAL"
 msgstr "Normálta"
@@ -1446,9 +1158,6 @@ msgstr "Láithreáin is mó cuairt orthu"
 
 msgid "IDS_BR_BODY_MOBILE_VIEW"
 msgstr "Amharc móibíleach"
-
-msgid "IDS_BR_BODY_MEDIUM"
-msgstr "Meánach"
 
 msgid "IDS_BR_BODY_LOCATION_M_INFORMATION"
 msgstr "Suíomh"
@@ -1474,9 +1183,6 @@ msgstr "An tIdirlíon"
 msgid "IDS_BR_BODY_IMPROVE_PERFORMANCE_WHEN_LOADING_PAGES"
 msgstr "Feabhsaigh feidhmíocht agus leathanaigh á lódáil"
 
-msgid "IDS_BR_BODY_IMAGES"
-msgstr "Íomhánna"
-
 msgid "IDS_BR_BODY_HOMEPAGE"
 msgstr "Leathanach baile"
 
@@ -1486,20 +1192,11 @@ msgstr "Folaigh an barra seoltaí le linn scrollú síos an leathanaigh."
 msgid "IDS_BR_BODY_GENERAL_M_SETTINGS"
 msgstr "Ginearálta"
 
-msgid "IDS_BR_BODY_FULL_SCREEN"
-msgstr "Lánscáileán"
-
 msgid "IDS_BR_BODY_FULL_NAME_ABB"
 msgstr "Ainm iomlán"
 
 msgid "IDS_BR_BODY_FORCE_ZOOM_ABB"
 msgstr "Fórsáil zúmáil"
-
-msgid "IDS_BR_BODY_FONT_SIZE"
-msgstr "Méid an chló"
-
-msgid "IDS_BR_BODY_FOLDER_NAME"
-msgstr "Ainm an fhillteáin"
 
 msgid "IDS_BR_BODY_FLAT_SUITE_UNIT_BUILDING_FLOOR_ETC_ABB"
 msgstr "Árasán, svuít, aonad, foirgneamh, urlár, srl"
@@ -1516,24 +1213,6 @@ msgstr "Iontráil d'ainm"
 msgid "IDS_BR_BODY_ENTER_TOWN_CITY_COUNTY_ABB"
 msgstr "Iontráil baile/cathair/contae"
 
-msgid "IDS_BR_BODY_ENTER_POSTCODE_ABB"
-msgstr "Iontráil postchód"
-
-msgid "IDS_BR_BODY_ENTER_POSTCODE"
-msgstr "Iontráil cód poist"
-
-msgid "IDS_BR_BODY_ENTER_PHONE_NUMBER"
-msgstr "Iontráil uimhir fóin."
-
-msgid "IDS_BR_BODY_ENTER_NAME"
-msgstr "Iontráil ainm"
-
-msgid "IDS_BR_BODY_ENTER_FOLDER_NAME"
-msgstr "Iontráil ainm an fhillteáin"
-
-msgid "IDS_BR_BODY_ENTER_EMAIL_ADDRESS"
-msgstr "Iontráil seoladh r-phoist"
-
 msgid "IDS_BR_BODY_ENTER_COUNTRY_REGION_ABB"
 msgstr "Iontráil tír/réigiún"
 
@@ -1545,12 +1224,6 @@ msgstr "Cumasaigh suíomh"
 
 msgid "IDS_BR_BODY_ENABLE_JAVASCRIPT"
 msgstr "Cumasaigh JavaScript"
-
-msgid "IDS_BR_BODY_EMAIL_ADDRESS"
-msgstr "Seoladh r-phoist"
-
-msgid "IDS_BR_BODY_DOWNLOADING_ING"
-msgstr "Ag íoslódáil..."
 
 msgid "IDS_BR_BODY_DOUBLE_TAP_TO_VIEW_CERTIFICATE_TTS"
 msgstr "Déthapáil le hamharc ar dheimhniú."
@@ -1591,9 +1264,6 @@ msgstr "Taispeáin míreanna aníos rabhaidh slándála"
 msgid "IDS_BR_BODY_DISPLAY_IMAGES_ON_WEB_PAGES"
 msgstr "Taispeáin íomhánna ar leathanaigh Ghréasáin"
 
-msgid "IDS_BR_BODY_DEVELOPER_MODE"
-msgstr "Mód forbróra"
-
 msgid "IDS_BR_BODY_DESKTOP_VIEW"
 msgstr "Amharc deisce"
 
@@ -1608,9 +1278,6 @@ msgstr "Stóras réamhshocraithe"
 
 msgid "IDS_BR_BODY_DEFAULT_PAGE_ABB"
 msgstr "Leathanach réamhshocraithe"
-
-msgid "IDS_BR_BODY_DEFAULT"
-msgstr "Réamhshocrú"
 
 msgid "IDS_BR_BODY_DATA_USAGE_REDUCED_BY_P1SDP_HP2SD_KB_OF_P3SD_KB_RECEIVED_TAP_HERE_TO_RESET_STATISTICS"
 msgstr "Úsáid sonraí laghdaithe faoi %1$d% (%2$d KB as %3$d KB faighte). Tapáil anseo leis na staitisticí a athshocrú."
@@ -1675,9 +1342,6 @@ msgstr "Athraigh méid an téacs le haghaidh léitheoireachta níos éasca, go h
 msgid "IDS_BR_BODY_BOOKMARK_REMINDER_ABB"
 msgstr "Meabhrán leabharmhairc"
 
-msgid "IDS_BR_BODY_BOOKMARKS"
-msgstr "Leabharmharcanna"
-
 msgid "IDS_BR_BODY_BLOCK_POP_UPS_ON_WEB_PAGES"
 msgstr "Cuir bac ar mhíreanna aníos ar leathanaigh Ghréasáin"
 
@@ -1726,9 +1390,6 @@ msgstr "Ceadaigh do %s fógraí a thaispeáint"
 msgid "IDS_BR_BODY_ALLOWS_SITES_TO_SAVE_AND_READ_COOKIE_DATA"
 msgstr "Ceadaítear do láithreáin sonraí fianán a shábháil agus a léamh."
 
-msgid "IDS_BR_BODY_ALL"
-msgstr "Gach"
-
 msgid "IDS_BR_BODY_AFTER_YOU_VISIT_WEBPAGES_THE_PAGES_YOU_HAVE_VISITED_THE_MOST_WILL_BE_SHOWN_HERE"
 msgstr "Tar éis duit cuairt a thabhairt ar leathanaigh ghréasáin, taispeánfar na leathanaigh is mó cuairt anseo."
 
@@ -1756,9 +1417,6 @@ msgstr "Ardleibhéal"
 msgid "IDS_BR_BODY_ADD_TO_CONTACT"
 msgstr "Cuir le teagmhálaí"
 
-msgid "IDS_BR_BODY_ADD_TO"
-msgstr "Cuir le"
-
 msgid "IDS_BR_BODY_ADD_THIS_WEBSITE_TO_BOOKMARKS_TO_OPEN_IT_FASTER_ABB"
 msgstr "Cuir an láithreán gréas. seo le leabharmharc. lena oscailt níos tapa"
 
@@ -1768,29 +1426,17 @@ msgstr "Líne seolta 2"
 msgid "IDS_BR_BODY_ADDRESS_LINE_1_ABB"
 msgstr "Líne seolta 1"
 
-msgid "IDS_BR_BODY_ADDDETAILSVIEW_TAGS"
-msgstr "Clibeanna"
-
-msgid "IDS_BR_BODY_ADDBOOKMARKURL"
-msgstr "URL"
-
 msgid "IDS_BR_BODY_ACCEPT_COOKIES"
 msgstr "Glac le fianáin"
 
 msgid "IDS_BR_BODY_1_PROFILE_WILL_BE_DELETED"
 msgstr "Scriosfar 1 phróifíl."
 
-msgid "IDS_BR_BODY_1_ITEM_WILL_BE_DELETED"
-msgstr "Scriosfar 1 mhír"
-
 msgid "IDS_BR_ACBUTTON_TABS_ABB"
 msgstr "TÁIB"
 
 msgid "IDS_BR_TPOP_STARTING_DOWNLOAD_ING"
 msgstr "Tosú ar íoslódáil..."
-
-msgid "IDS_BR_TPOP_MAXIMUM_NUMBER_OF_CHARACTERS_HPD_REACHED"
-msgstr "Uaslíon na gcarachtar (%d) bainte amach."
 
 msgid "IDS_BR_TPOP_FOLDER_RENAMED"
 msgstr "Fillteán athainmnithe."
@@ -1807,14 +1453,8 @@ msgstr "Cealú"
 msgid "IDS_BR_SBODY_SET_THE_DEVICE_TO_SHOW_THE_FULL_WEBPAGE_ON_THE_SCREEN_WHEN_IT_IS_LOADED_WITHOUT_NEEDING_TO_SCROLL"
 msgstr "Socraigh an gléas leis an leathanach gréasáin ina iomláine a thaispeáint ar an scáileán nuair a lódáiltear é, gan gá le scrollú."
 
-msgid "IDS_BR_POP_UNSUPPORTMEDIATYPE"
-msgstr "Cineál meán gan tacú."
-
 msgid "IDS_BR_POP_UNABLE_TO_RUN_INTERNET_LOW_BATTERY"
 msgstr "Ní féidir an tIdirlíon a rith. Ceallra lag."
-
-msgid "IDS_BR_POP_UNABLE_TO_CONNECT_TO_MOBILE_NETWORKS_WHILE_FLIGHT_MODE_IS_ENABLED_CONNECT_TO_WI_FI_NETWORK_INSTEAD_OR_DISABLE_FLIGHT_MODE_AND_TRY_AGAIN"
-msgstr "Ní féidir nascadh le líonraí móibíleacha agus mód Eitilte cumasaithe. Nasc le líonra Wi-Fi, nó díchumasaigh mód Eitilte agus triail arís é."
 
 msgid "IDS_BR_POP_THE_DOWNLOAD_HAS_BEEN_STOPPED_AND_THE_DOWNLOADED_DATA_WILL_BE_DELETED"
 msgstr "Tá an íoslódáil scortha agus scriosfar sonraí na híoslódála."
@@ -1825,20 +1465,8 @@ msgstr "Search completed"
 msgid "IDS_BR_POP_READY"
 msgstr "Réidh."
 
-msgid "IDS_BR_POP_INSTALL_SUCCESS"
-msgstr "Suiteáilte."
-
-msgid "IDS_BR_POP_INSTALLATION_FAILED"
-msgstr "Theip ar shuiteáil."
-
 msgid "IDS_BR_POP_INFORM_MEMORY_ERROR"
 msgstr "Earráid chuimhne."
-
-msgid "IDS_BR_POP_DELETING_ING"
-msgstr "Ag scriosadh..."
-
-msgid "IDS_BR_POP_DATA_ROAMING_IS_DISABLED_CONNECT_TO_WI_FI_NETWORK_INSTEAD_OR_ENABLE_DATA_ROAMING_AND_TRY_AGAIN"
-msgstr "Tá fánaíocht sonraí díchumasaithe. Nasc le líonra Wi-Fi, nó cumasaigh fánaíocht sonraí agus triail arís é."
 
 msgid "IDS_BR_POP_DATA_ROAMING_IS_DISABLED_CONNECT_TO_A_WI_FI_NETWORK_OR_ENABLE_DATA_ROAMING_AND_TRY_AGAIN"
 msgstr "Tá fánaíocht sonraí díchumasaithe. Nasc le líonra Wi-Fi, nó cumasaigh fánaíocht sonraí agus triail arís é."
@@ -1855,17 +1483,11 @@ msgstr "F.chláir ghréas."
 msgid "IDS_BR_OPT_VIEW_ONLINE"
 msgstr "Amharc air ar líne"
 
-msgid "IDS_BR_OPT_SHARE_VIA"
-msgstr "Comhroinn le"
-
 msgid "IDS_BR_OPT_READ_ON_OFFLINE_PAGES_LATER_ABB"
 msgstr "Léigh ar Lgh as líne ar ball"
 
 msgid "IDS_BR_OPT_QUICK_ACCESS_ABB2"
 msgstr "Mear-rochtain"
-
-msgid "IDS_BR_OPT_PASTE"
-msgstr "Greamaigh"
 
 msgid "IDS_BR_OPT_ALWAYS_ENABLED_ABB"
 msgstr "Cumasaithe i gcónaí"
@@ -1891,9 +1513,6 @@ msgstr "Moltaí cuardaigh agus URL"
 msgid "IDS_BR_MBODY_HISTORY"
 msgstr "Stair"
 
-msgid "IDS_BR_MBODY_FONT_SIZE"
-msgstr "Méid cló"
-
 msgid "IDS_BR_MBODY_FIT_PAGE_TO_SCREEN"
 msgstr "Oir lch. don scáileán"
 
@@ -1905,9 +1524,6 @@ msgstr "Saincheaptha"
 
 msgid "IDS_BR_MBODY_COUNTRY_REGION"
 msgstr "Tír/Réigiún"
-
-msgid "IDS_BR_HEADER_UNABLE_TO_DOWNLOAD_ABB"
-msgstr "Íoslódáil dodhéanta"
 
 msgid "IDS_BR_HEADER_RENAME_FOLDER_ABB"
 msgstr "Athainmnigh fillteán"
@@ -1939,14 +1555,8 @@ msgstr "Cuir leis"
 msgid "IDS_BR_BUTTON_WI_FI_ABB"
 msgstr "Wi-Fi"
 
-msgid "IDS_BR_BUTTON_UPDATE"
-msgstr "Nuashonraigh"
-
 msgid "IDS_BR_BUTTON_SETTINGS_ABB"
 msgstr "Socruith."
-
-msgid "IDS_BR_BUTTON_RETRY"
-msgstr "Atriail"
 
 msgid "IDS_BR_BUTTON2_OK"
 msgstr "OK"
@@ -1972,9 +1582,6 @@ msgstr "Is ó údarás iontaofa an deimhniú seo."
 msgid "IDS_BR_BODY_TAP_HERE_TO_ADD_A_QUICK_ACCESS_SHORTCUT"
 msgstr "Tapáil anseo le hAicearra mear-rochtana a chur leis."
 
-msgid "IDS_BR_BODY_REQUEST_FAILED"
-msgstr "Theip ar iarratas."
-
 msgid "IDS_BR_BODY_PREFERENCES"
 msgstr "Sainroghanna"
 
@@ -1990,14 +1597,398 @@ msgstr "Níl meaitseanna ann"
 msgid "IDS_BR_BODY_MOBILE_DATA_IS_TURNED_OFF_CONNECT_TO_A_WI_FI_NETWORK_INSTEAD_OR_TAP_SETTINGS_TO_TURN_ON_MOBILE_DATA_AND_THEN_TRY_AGAIN"
 msgstr "Tá Sonraí móibíleacha casta as. Nasc le líonra Wi-Fi ina n-ionad, nó tapáil Socruithe le Sonraí móibíleacha a chasadh air agus ansin triail arís."
 
+msgid "IDS_BR_BODY_FIT_TO_WIDTH"
+msgstr "Oir don leithead"
+
+msgid "IDS_BR_ACBUTTON_QUICK_ACCESS"
+msgstr "MEAR-ROCH."
+
+msgid "IDS_BR_OPT_OPEN_IN_NEW_TAB"
+msgstr "Oscail i dtáb nua"
+
+msgid "IDS_BR_BODY_SHARE_LINK"
+msgstr "Comhroinn nasc"
+
+msgid "IDS_BR_SK_SAVE_LITE"
+msgstr "Sábháil"
+
+msgid "IDS_BR_SK_SAVE_ABB"
+msgstr "Sábhl"
+
+msgid "IDS_BR_SK_SAVE"
+msgstr "Sábháil"
+
+msgid "IDS_BR_SK_PREVIOUS"
+msgstr "Roimhe"
+
+msgid "IDS_BR_SK_NEXT"
+msgstr "Ar aghaidh"
+
+msgid "IDS_BR_SK_DELETE"
+msgstr "Scrios"
+
+msgid "IDS_BR_SK_CLEAR"
+msgstr "Glan"
+
+msgid "IDS_BR_SK_BACK"
+msgstr "Siar"
+
+msgid "IDS_BR_POP_WI_FI_CONNECTION_REQUIRED_CONNECT_TO_WI_FI_NETWORK_AND_TRY_AGAIN"
+msgstr "Nasc Wi-Fi de dhíth. Nasc le líonra Wi-Fi agus triail arís."
+
+msgid "IDS_BR_POP_URL_NOT_FOUND"
+msgstr "Níor aimsíodh URL."
+
+msgid "IDS_BR_POP_URL"
+msgstr "URL"
+
+msgid "IDS_BR_POP_SAVED"
+msgstr "Sábháilte."
+
+msgid "IDS_BR_POP_REMOVED"
+msgstr "Bainte."
+
+msgid "IDS_BR_POP_PD_ITEMS_WILL_BE_DELETED"
+msgstr "Scriosfar %d mír"
+
+msgid "IDS_BR_POP_PD_ITEMS_SELECTED"
+msgstr "%d mír roghnaithe."
+
+msgid "IDS_BR_POP_NO_ITEMS_SELECTED"
+msgstr "Níl mír roghnaithe."
+
+msgid "IDS_BR_POP_NOT_ENOUGH_MEMORY"
+msgstr "Easpa cuimhne."
+
+msgid "IDS_BR_POP_NEVER"
+msgstr "Choíche"
+
+msgid "IDS_BR_POP_MOBILE_DATA_IS_DISABLED_CONNECT_TO_WI_FI_NETWORK_INSTEAD_OR_ENABLE_MOBILE_DATA_AND_TRY_AGAIN"
+msgstr "Tá sonraí móibíleacha díchumasaithe. Nasc le líonra Wi-Fi, nó cumasaigh sonraí móibíleacha agus triail arís é."
+
+msgid "IDS_BR_POP_LOADING_PLEASE_WAIT_ING"
+msgstr "Ag lódáil. Fan go fóill..."
+
+msgid "IDS_BR_POP_INVALID_URL"
+msgstr "URL neamhbhailí."
+
+msgid "IDS_BR_POP_FAIL"
+msgstr "Theip air."
+
+msgid "IDS_BR_POP_ENTER_TITLE_ABB"
+msgstr "Iontráil teideal"
+
+msgid "IDS_BR_POP_DO_NOT_SHOW_AGAIN"
+msgstr "Ná taispeáin arís"
+
+msgid "IDS_BR_POP_DOWNLOADCOMPLETE"
+msgstr "Íoslódáilte."
+
+msgid "IDS_BR_POP_DISABLED"
+msgstr "Díchumasaithe."
+
+msgid "IDS_BR_POP_DELETE_Q"
+msgstr "Scrios?"
+
+msgid "IDS_BR_POP_DELETED"
+msgstr "Scriosta."
+
+msgid "IDS_BR_POP_CLOSE_APPLICATION_Q"
+msgstr "Dún ríomhchlár?"
+
+msgid "IDS_BR_POP_BOOKMARK_ADDED"
+msgstr "Leabharmharc curtha leis."
+
+msgid "IDS_BR_POP_AUTOMATIC_BRIGHTNESS"
+msgstr "Uathghile"
+
+msgid "IDS_BR_POP_ACCOUNT"
+msgstr "Cuntas"
+
+msgid "IDS_BR_POP_1_ITEM_WILL_BE_DELETED"
+msgstr "Scriosfar 1 mhír"
+
+msgid "IDS_BR_POP_1_ITEM_SELECTED"
+msgstr "1 mhír roghnaithe."
+
+msgid "IDS_BR_OPT_TRANSLATE"
+msgstr "Cuir aistriúchán air"
+
+msgid "IDS_BR_OPT_STOP"
+msgstr "Stop"
+
+msgid "IDS_BR_OPT_SHOW"
+msgstr "Taispeáin"
+
+msgid "IDS_BR_OPT_SHARE"
+msgstr "Comhroinn"
+
+msgid "IDS_BR_OPT_SETTINGS"
+msgstr "Socruithe"
+
+msgid "IDS_BR_OPT_SEND_EMAIL"
+msgstr "Seol r-phost"
+
+msgid "IDS_BR_OPT_SELECT"
+msgstr "Roghnaigh"
+
+msgid "IDS_BR_OPT_SD_CARD"
+msgstr "Cárta SD"
+
+msgid "IDS_BR_OPT_RENAME"
+msgstr "Athainmnigh"
+
+msgid "IDS_BR_OPT_REFRESH"
+msgstr "Athnuaigh"
+
+msgid "IDS_BR_OPT_MOVE"
+msgstr "Bog"
+
+msgid "IDS_BR_OPT_MESSAGES"
+msgstr "Teachtaireachtaí"
+
+msgid "IDS_BR_OPT_LIST_VIEW"
+msgstr "Amharc liosta"
+
+msgid "IDS_BR_OPT_I_AGREE"
+msgstr "Aontaím."
+
+msgid "IDS_BR_OPT_HELP"
+msgstr "Cuidiú"
+
+msgid "IDS_BR_OPT_DEVICE"
+msgstr "Gléas"
+
+msgid "IDS_BR_OPT_BOOKMARK"
+msgstr "Leabharmharc"
+
+msgid "IDS_BR_OPT_ADDED"
+msgstr "Curtha leis."
+
+msgid "IDS_BR_OPT_ADD"
+msgstr "Cuir leis"
+
+msgid "IDS_BR_MBODY_DEFAULT_DOWNLOAD_STORAGE"
+msgstr "Stóras íoslód. r'shocraithe"
+
+msgid "IDS_BR_HEADER_SIGN_IN_TO_SAMSUNG_ACCOUNT"
+msgstr "Sínigh isteach ar chuntas Samsung"
+
+msgid "IDS_BR_HEADER_PD_SELECTED_ABB"
+msgstr "%d roghnaithe"
+
+msgid "IDS_BR_HEADER_NO_NETWORK_CONNECTION"
+msgstr "Níl nasc líonra ann"
+
+msgid "IDS_BR_HEADER_FOLDER"
+msgstr "Fillteán"
+
+msgid "IDS_BR_HEADER_EDIT_PROFILE"
+msgstr "Cuir próifíl in eagar"
+
+msgid "IDS_BR_BUTTON_SET"
+msgstr "Socraigh"
+
+msgid "IDS_BR_BUTTON_NOT_NOW"
+msgstr "Ní anois"
+
+msgid "IDS_BR_BUTTON_ENABLE_ABB"
+msgstr "Cumasaigh"
+
+msgid "IDS_BR_BUTTON_EDIT"
+msgstr "Cuir in eagar"
+
+msgid "IDS_BR_BUTTON_CONTINUE_ABB"
+msgstr "Ar agh"
+
+msgid "IDS_BR_BUTTON_CONTINUE"
+msgstr "Ar aghaidh"
+
+msgid "IDS_BR_BUTTON_CLOSE"
+msgstr "Dún"
+
+msgid "IDS_BR_BUTTON_CANCEL_ABB"
+msgstr "Cealaigh"
+
+msgid "IDS_BR_BUTTON_CANCEL"
+msgstr "Cealaigh"
+
+msgid "IDS_BR_BUTTON_ALLOW"
+msgstr "Ceadaigh"
+
+msgid "IDS_BR_BODY_YESTERDAY"
+msgstr "Inné"
+
+msgid "IDS_BR_BODY_URL"
+msgstr "URL"
+
+msgid "IDS_BR_BODY_TODAY"
+msgstr "Inniu"
+
+msgid "IDS_BR_BODY_TITLE"
+msgstr "Teideal"
+
+msgid "IDS_BR_BODY_THE_MAXIMUM_NUMBER_OF_CHARACTERS_HPD_HAS_BEEN_EXCEEDED"
+msgstr "Uaslíon na gcarachtar (%d) bainte amach"
+
+msgid "IDS_BR_BODY_STREAMING"
+msgstr "Sruthú"
+
+msgid "IDS_BR_BODY_SMALL"
+msgstr "Beag"
+
+msgid "IDS_BR_BODY_SETTINGS"
+msgstr "Socruithe"
+
+msgid "IDS_BR_BODY_SEARCH"
+msgstr "Cuardaigh"
+
+msgid "IDS_BR_BODY_RSS_SEARCH_RESULTS"
+msgstr "Torthaí an chuardaigh"
+
+msgid "IDS_BR_BODY_PROFILE"
+msgstr "Próifíl"
+
+msgid "IDS_BR_BODY_PROCESSING_ING"
+msgstr "Ag próiseáil..."
+
+msgid "IDS_BR_BODY_PHONE_NUMBER_ABB"
+msgstr "Uimhir fóin"
+
+msgid "IDS_BR_BODY_PHONE"
+msgstr "Fón"
+
+msgid "IDS_BR_BODY_PD_ITEMS_WILL_BE_DELETED"
+msgstr "Scriosfar %d mír"
+
+msgid "IDS_BR_BODY_PASSWORD"
+msgstr "Pasfhocal"
+
+msgid "IDS_BR_BODY_ON"
+msgstr "Air"
+
+msgid "IDS_BR_BODY_OFF"
+msgstr "As"
+
+msgid "IDS_BR_BODY_NO_RESULTS_FOUND"
+msgstr "Níor aimsíodh torthaí."
+
+msgid "IDS_BR_BODY_NO_HISTORIES"
+msgstr "Níl stair ann"
+
+msgid "IDS_BR_BODY_NOTIFICATIONS"
+msgstr "Fógraí"
+
+msgid "IDS_BR_BODY_MEDIUM"
+msgstr "Meánach"
+
+msgid "IDS_BR_BODY_IMAGES"
+msgstr "Íomhánna"
+
+msgid "IDS_BR_BODY_FULL_SCREEN"
+msgstr "Lánscáileán"
+
+msgid "IDS_BR_BODY_FONT_SIZE"
+msgstr "Méid an chló"
+
+msgid "IDS_BR_BODY_FOLDER_NAME"
+msgstr "Ainm an fhillteáin"
+
+msgid "IDS_BR_BODY_ENTER_POSTCODE_ABB"
+msgstr "Iontráil postchód"
+
+msgid "IDS_BR_BODY_ENTER_POSTCODE"
+msgstr "Iontráil cód poist"
+
+msgid "IDS_BR_BODY_ENTER_PHONE_NUMBER"
+msgstr "Iontráil uimhir fóin."
+
+msgid "IDS_BR_BODY_ENTER_NAME"
+msgstr "Iontráil ainm"
+
+msgid "IDS_BR_BODY_ENTER_FOLDER_NAME"
+msgstr "Iontráil ainm an fhillteáin"
+
+msgid "IDS_BR_BODY_ENTER_EMAIL_ADDRESS"
+msgstr "Iontráil seoladh r-phoist"
+
+msgid "IDS_BR_BODY_EMAIL_ADDRESS"
+msgstr "Seoladh r-phoist"
+
+msgid "IDS_BR_BODY_DOWNLOADING_ING"
+msgstr "Ag íoslódáil..."
+
+msgid "IDS_BR_BODY_DEVELOPER_MODE"
+msgstr "Mód forbróra"
+
+msgid "IDS_BR_BODY_DEFAULT"
+msgstr "Réamhshocrú"
+
+msgid "IDS_BR_BODY_BOOKMARKS"
+msgstr "Leabharmharcanna"
+
+msgid "IDS_BR_BODY_ALL"
+msgstr "Gach"
+
+msgid "IDS_BR_BODY_ADD_TO"
+msgstr "Cuir le"
+
+msgid "IDS_BR_BODY_ADDDETAILSVIEW_TAGS"
+msgstr "Clibeanna"
+
+msgid "IDS_BR_BODY_ADDBOOKMARKURL"
+msgstr "URL"
+
+msgid "IDS_BR_BODY_1_ITEM_WILL_BE_DELETED"
+msgstr "Scriosfar 1 mhír"
+
+msgid "IDS_BR_TPOP_MAXIMUM_NUMBER_OF_CHARACTERS_HPD_REACHED"
+msgstr "Uaslíon na gcarachtar (%d) bainte amach."
+
+msgid "IDS_BR_POP_UNSUPPORTMEDIATYPE"
+msgstr "Cineál meán gan tacú."
+
+msgid "IDS_BR_POP_UNABLE_TO_CONNECT_TO_MOBILE_NETWORKS_WHILE_FLIGHT_MODE_IS_ENABLED_CONNECT_TO_WI_FI_NETWORK_INSTEAD_OR_DISABLE_FLIGHT_MODE_AND_TRY_AGAIN"
+msgstr "Ní féidir nascadh le líonraí móibíleacha agus mód Eitilte cumasaithe. Nasc le líonra Wi-Fi, nó díchumasaigh mód Eitilte agus triail arís é."
+
+msgid "IDS_BR_POP_INSTALL_SUCCESS"
+msgstr "Suiteáilte."
+
+msgid "IDS_BR_POP_INSTALLATION_FAILED"
+msgstr "Theip ar shuiteáil."
+
+msgid "IDS_BR_POP_DELETING_ING"
+msgstr "Ag scriosadh..."
+
+msgid "IDS_BR_POP_DATA_ROAMING_IS_DISABLED_CONNECT_TO_WI_FI_NETWORK_INSTEAD_OR_ENABLE_DATA_ROAMING_AND_TRY_AGAIN"
+msgstr "Tá fánaíocht sonraí díchumasaithe. Nasc le líonra Wi-Fi, nó cumasaigh fánaíocht sonraí agus triail arís é."
+
+msgid "IDS_BR_OPT_SHARE_VIA"
+msgstr "Comhroinn le"
+
+msgid "IDS_BR_OPT_PASTE"
+msgstr "Greamaigh"
+
+msgid "IDS_BR_MBODY_FONT_SIZE"
+msgstr "Méid cló"
+
+msgid "IDS_BR_HEADER_UNABLE_TO_DOWNLOAD_ABB"
+msgstr "Íoslódáil dodhéanta"
+
+msgid "IDS_BR_BUTTON_UPDATE"
+msgstr "Nuashonraigh"
+
+msgid "IDS_BR_BUTTON_RETRY"
+msgstr "Atriail"
+
+msgid "IDS_BR_BODY_REQUEST_FAILED"
+msgstr "Theip ar iarratas."
+
 msgid "IDS_BR_BODY_LOGIN"
 msgstr "Logáil isteach"
 
 msgid "IDS_BR_BODY_LOADING_ING"
 msgstr "Ag lódáil..."
-
-msgid "IDS_BR_BODY_FIT_TO_WIDTH"
-msgstr "Oir don leithead"
 
 msgid "IDS_BR_BODY_FIT_TO_SCREEN"
 msgstr "Oir don scáileán"
@@ -2008,12 +1999,180 @@ msgstr "Ioslódálacha"
 msgid "IDS_BR_BODY_DATA_ROAMING_IS_DISABLED_CONNECT_TO_A_WI_FI_NETWORK_INSTEAD_OR_ENABLE_DATA_ROAMING_AND_TRY_AGAIN"
 msgstr "Tá fánaíocht sonraí díchumasaithe. Nasc le líonra Wi-Fi ina ionad, nó cumasaigh fánaíocht sonraí agus triail arís é."
 
-msgid "IDS_BR_ACBUTTON_QUICK_ACCESS"
-msgstr "MEAR-ROCH."
+msgid "IDS_BR_POP_DOWNLOAD_CANCELLED"
+msgstr "Íoslódáil curtha ar ceal."
 
-msgid "IDS_ST_POP_SOME_CONTENT_HAS_BEEN_BLOCKED_TO_PROTECT_YOUR_DEVICE"
-msgstr "Tá bac ar roinnt inneachair le do ghléas a chosaint."
+msgid "IDS_BR_BUTTON_SECRET_ON_ABB"
+msgstr "Rúnda air"
 
-msgid "IDS_ST_POP_SELECT_WHETHER_TO_GO_TO_THE_WEBPAGE_ANYWAY"
-msgstr "Roghnaigh an mian leat gabháil chuig an leathanach gréasáin ar aon nós."
+msgid "IDS_BR_MBODY_PRIVACY"
+msgstr "Príobháideacht"
+
+msgid "IDS_BR_MBODY_DEFAULT_STORAGE"
+msgstr "Stóras réamhshocraithe"
+
+msgid "IDS_BR_MBODY_MANUAL_ZOOM"
+msgstr "Zúmáil de láimh"
+
+msgid "IDS_BR_TMBODY_DEFAULT_SEARCH_ENGINE"
+msgstr "Inneall cuardaigh r.shocraithe"
+
+msgid "IDS_BR_MBODY_SAVE_SIGN_IN_INFO"
+msgstr "Sábh. fais. sínithe ist."
+
+msgid "IDS_BR_OPT_TURN_OFF_SECRET_MODE_ABB"
+msgstr "Cas as Mód rúnda"
+
+msgid "IDS_BR_OPT_TURN_ON_SECRET_MODE_ABB"
+msgstr "Cas air Mód rúnda"
+
+msgid "IDS_BR_OPT_SHOW_PASSWORD_ABB2"
+msgstr "Taispeáin pasfhocal"
+
+msgid "IDS_BR_BODY_ENTER_YOUR_CURRENT_SECRET_MODE_PASSWORD"
+msgstr "Iontráil do phasfhocal reatha do Mhód rúnda."
+
+msgid "IDS_BR_OPT_SECRET_MODE_SECURITY_ABB"
+msgstr "Slándáil Mhód rúnda"
+
+msgid "IDS_BR_BUTTON_USE_PASSWORD_ABB"
+msgstr "Úsáid pasfhocal"
+
+msgid "IDS_BR_HEADER_DONT_USE_PASSWORD_ABB"
+msgstr "Ná húsáid pasfhocal"
+
+msgid "IDS_BR_MBODY_MOST_VISITED_WEBSITES"
+msgstr "Láithreáin is mó cuairt"
+
+msgid "IDS_BR_MBODY_SET_MY_PROFILE"
+msgstr "Socraigh mo phróifíl"
+
+msgid "IDS_BR_MBODY_MY_AUTO_FILL_PROFILE"
+msgstr "Mo phróifíl uathlíonta"
+
+msgid "IDS_BR_SBODY_MANAGE_DATA_USED_TO_FILL_IN_FORMS_ONLINE"
+msgstr "Bainistigh na sonraí a úsáidtear le foirmeacha ar líne a chomhlánú."
+
+msgid "IDS_BR_MBODY_SAVE_SIGN_IN_INFO_ABB"
+msgstr "Sábh. síniú ist."
+
+msgid "IDS_BR_OPT_LOCATION_ACCESS_DATA"
+msgstr "Sonraí rochtana suímh"
+
+msgid "IDS_BR_OPT_AUTO_FILL_DATA"
+msgstr "Uathlíon sonraí"
+
+msgid "IDS_BR_BODY_ANY_WEBPAGES_YOU_VIEW_WHILE_SECRET_MODE_IS_TURNED_ON_WONT_APPEAR_IN_YOUR_BROWSER_OR_SEARCH_HISTORY_MSG"
+msgstr "Aon leathanaigh ghréasáin a n-amharcann tú orthu agus Mód rúnda casta air, ní thaispeánfar i do stair bhrabhsálaí ná chuardaigh iad agus é casta as.\n\nAon leabharmharcanna nó leathanaigh ghréasáin a shábhálann tú agus Mód rúnda casta air, ní thaispeánfar iad agus é casta as.\n\nIs féidir leat do sonraí i Mód rúnda a chosaint le pasfhocal freisin."
+
+msgid "IDS_BR_BODY_ANY_WEBPAGES_YOU_VIEW_WHILE_SECRET_MODE_IS_TURNED_ON_WONT_APPEAR_IN_YOUR_BROWSER_OR_SEARCH_MSG"
+msgstr "Aon leathanaigh ghréasáin a n-amharcann tú orthu agus Mód rúnda casta air, ní thaispeánfar i do stair bhrabhsálaí ná chuardaigh iad agus é casta as.\n\nAon leabharmharcanna nó leathanaigh ghréasáin a shábhálann tú agus Mód rúnda casta air, ní thaispeánfar iad agus é casta as."
+
+msgid "IDS_BR_BUTTON_SECRET_OFF_ABB"
+msgstr "Rúnda as"
+
+msgid "IDS_BR_BUTTON_DONT_USE_PASSWORD_ABB"
+msgstr "Ná húsáid pasfhocal"
+
+msgid "IDS_BR_BUTTON_NEW_TAB_ABB2"
+msgstr "Táb nua"
+
+msgid "IDS_BR_NPBODY_WEB_ADDRESS_ABB"
+msgstr "Seoladh gréasáin"
+
+msgid "IDS_BR_HEADER_ADD_WEBPAGE_TO_QUICK_ACCESS_ABB"
+msgstr "Cuir lch. le Mear-rochtain"
+
+msgid "IDS_BR_TMBODY_TURN_ON_JAVASCRIPT"
+msgstr "Cas air JavaScript"
+
+msgid "IDS_BR_HEADER_COULDNT_OPEN_NEW_TAB_ABB"
+msgstr "Ní féidir táb nua a oscailt"
+
+msgid "IDS_BR_OPT_OPEN_IN_NEW_TAB_ABB"
+msgstr "Oscail i dtáb nua"
+
+msgid "IDS_BR_TPOP_FOLDER_NAME_ALREADY_IN_USE"
+msgstr "Ainm an fhillteáin in úsáid cheana."
+
+msgid "IDS_BR_NPBODY_NEW_FOLDER_PD"
+msgstr "Fillteán nua %d"
+
+msgid "IDS_BR_NPBODY_NEW_FOLDER"
+msgstr "Fillteán nua"
+
+msgid "IDS_BR_OPT_ENABLE_JAVASCRIPT"
+msgstr "Cumasaigh JavaScript"
+
+msgid "IDS_BR_TMBODY_MANAGE_WEBSITE_DATA"
+msgstr "Bainistigh sonraí láith."
+
+msgid "IDS_BR_HEADER_SET_HOME_PAGE_ABB"
+msgstr "Socraigh an leathanach baile"
+
+msgid "IDS_BR_TPOP_WEBPAGE_ADDED_TO_QUICK_ACCESS_LIST"
+msgstr "Leathanach gréasáin curtha le Liosta mear-rochtana."
+
+msgid "IDS_BR_OPT_EDIT_QUICK_ACCESS_ABB"
+msgstr "Cuir Mear-rochtain in eagar"
+
+msgid "IDS_BR_OPT_REMOVE_FROM_BOOKMARKS_ABB"
+msgstr "Bain ó Leabharmharcanna"
+
+msgid "IDS_BR_HEADER_ADD_BOOKMARK_ABB"
+msgstr "Cuir l.mharc leis"
+
+msgid "IDS_BR_BODY_BROWSING_HISTORY"
+msgstr "Stair bhrabhsála"
+
+msgid "IDS_BR_HEADER_TABS_ABB2"
+msgstr "Táib"
+
+msgid "IDS_BR_OPT_NEW_TAB"
+msgstr "Táb nua"
+
+msgid "IDS_BR_BUTTON_FORWARD_ABB2"
+msgstr "Ar agh."
+
+msgid "IDS_BR_BUTTON_BACK_ABB3"
+msgstr "Siar"
+
+msgid "IDS_BR_BUTTON_BOOKMARKS_ABB"
+msgstr "L.mharcanna"
+
+msgid "IDS_BR_NPBODY_NO_PROFILES_ABB"
+msgstr "Níl próifílí ann"
+
+msgid "IDS_BR_TAB2_HISTORY"
+msgstr "Stair"
+
+msgid "IDS_BR_TAB2_BOOKMARKS"
+msgstr "Leabharmharcanna"
+
+msgid "IDS_BR_HEADER_SAVE_CONTENT_TO_ABB"
+msgstr "Sábháil an t-inneachar chuig"
+
+msgid "IDS_BR_HEADER_SELECT_ITEMS_ABB2"
+msgstr "Roghnaigh míreanna"
+
+msgid "IDS_BR_BODY_YOUR_PASSWORD_MUST_CONTAIN_AT_LEAST_PD_CHARACTERS_INCLUDING_AT_LEAST_1_LETTER"
+msgstr "Ní mór %d carachtar ar a laghad a bheith i do phasfhocal, lena n-áirítear 1 litir ar a laghad."
+
+msgid "IDS_BR_BODY_AN_INCORRECT_PASSWORD_HAS_BEEN_ENTERED_TRY_AGAIN"
+msgstr "Pasfhocal mícheart iontráilte. Triail arís."
+
+msgid "IDS_BR_BODY_NO_TABS"
+msgstr "Níl táib ann"
+
+msgid "IDS_BR_TMBODY_CHANGE_PASSWORD"
+msgstr "Athraigh pasfhocal"
+
+msgid "IDS_BR_BODY_ANY_WEBPAGES_VIEWED_WHILE_SECRET_MODE_IS_ENABLED_WILL_NOT_APPEAR_IN_YOUR_BROWSER_OR_SEARCH_HISTORY_WHILE_SECRET_MSG"
+msgstr "Aon leathanaigh ghréasáin ar amharcadh orthu agus Mód rúnda cumasaithe, ní thaispeánfar i do stair bhrabhsálaí ná chuardaigh iad agus Mód rúnda díchumasaithe.\n\nAon leabharmharcanna nó leathanaigh ghréasáin a shábháiltear agus Mód rúnda cumasaithe, ní thaispeánfar i do stair bhrabhsálaí ná chuardaigh iad agus é díchumasaithe.\n\nIs féidir leat na sonraí atá agat i Mód rúnda a chosaint le pasfhocal freisin."
+
+msgid "IDS_BR_BODY_ANY_WEBPAGES_VIEWED_WHILE_SECRET_MODE_IS_ENABLED_WILL_NOT_APPEAR_IN_YOUR_MSG"
+msgstr "Aon leathanaigh ghréasáin ar amharcadh orthu agus Mód rúnda cumasaithe, ní thaispeánfar i do stair bhrabhsálaí ná chuardaigh iad agus Mód rúnda díchumasaithe.\n\nAon leabharmharcanna nó leathanaigh ghréasáin a shábháiltear agus Mód rúnda cumasaithe, ní thaispeánfar i do stair bhrabhsálaí ná chuardaigh iad agus é díchumasaithe."
+
+msgid "IDS_BR_BUTTON2_DONE"
+msgstr "Déanta"
 

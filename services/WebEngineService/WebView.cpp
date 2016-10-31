@@ -44,24 +44,29 @@
 #include "GeneralTools.h"
 #include "Tools/WorkQueue.h"
 #include "ServiceManager.h"
-#if PROFILE_MOBILE
+#include <shortcut_manager.h>
+#include <string>
+
 #include <device/haptic.h>
 #include <Ecore.h>
+
+#if PWA
+#include <sys/stat.h>
+#include <fcntl.h>
+#include <tzplatform_config.h>
 #endif
 
 #define certificate_crt_path CERTS_DIR
-#define APPLICATION_NAME_FOR_USER_AGENT "Mozilla/5.0 (SMART-TV; Linux; Tizen 2.4.0; hawkp) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.69 TV safari/537.36"
+#define APPLICATION_NAME_FOR_USER_AGENT "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.69 safari/537.36 "
 
 //TODO: temporary user agent for mobile display, change to proper one
-#define APPLICATION_NAME_FOR_USER_AGENT_MOBILE "Mozilla/5.0 (Linux; Tizen 3.0; tm1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.69 Mobile safari/537.36"
+#define APPLICATION_NAME_FOR_USER_AGENT_MOBILE "Mozilla/5.0 (Linux; Tizen 3.0; SAMSUNG TM1) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/1.0 Chrome/47.0.2526.69 Mobile safari/537.36"
 
-#if PROFILE_MOBILE
 Ecore_Timer* m_haptic_timer_id =NULL;
 haptic_device_h m_haptic_handle;
 haptic_effect_h m_haptic_effect;
 
 #define FIND_WORD_MAX_COUNT 1000
-#endif
 
 using namespace tizen_browser::tools;
 
@@ -70,12 +75,18 @@ namespace basic_webengine {
 namespace webengine_service {
 
 const std::string WebView::COOKIES_PATH = "cookies";
+#if PWA
+std::string WebView::s_pwaData = "";
+std::string WebView::s_name = "";
+std::string WebView::s_start_url = "";
+std::string WebView::s_icon = "";
+#define DOWNLOAD_PATH tzplatform_getenv(TZ_USER_DOWNLOADS)
+#endif
 
 struct SnapshotItemData {
     WebView * web_view;
     tizen_browser::tools::SnapshotType snapshot_type;
 };
-
 
 WebView::WebView(Evas_Object * obj, TabId tabId, const std::string& title, bool incognitoMode)
     : m_parent(obj)
@@ -89,9 +100,7 @@ WebView::WebView(Evas_Object * obj, TabId tabId, const std::string& title, bool 
     , m_suspended(false)
     , m_private(incognitoMode)
     , m_fullscreen(false)
-#if PROFILE_MOBILE
     , m_downloadControl(nullptr)
-#endif
 {
 }
 
@@ -103,20 +112,17 @@ WebView::~WebView()
         unregisterCallbacks();
         evas_object_del(m_ewkView);
     }
-#if PROFILE_MOBILE
     delete m_downloadControl;
-#endif
 }
 
-void WebView::init(bool desktopMode, TabOrigin origin, Evas_Object*)
+void WebView::init(bool desktopMode, TabOrigin origin)
 {
     m_ewkView = m_private ? ewk_view_add_in_incognito_mode(evas_object_evas_get(m_parent)) :
                             ewk_view_add_with_context(evas_object_evas_get(m_parent), ewk_context_default_get());
 
     m_ewkContext = ewk_view_context_get(m_ewkView);
     if (m_ewkContext)
-        m_private ? ewk_cookie_manager_accept_policy_set(ewk_context_cookie_manager_get(m_ewkContext), EWK_COOKIE_ACCEPT_POLICY_NEVER) :
-                    ewk_cookie_manager_accept_policy_set(ewk_context_cookie_manager_get(m_ewkContext), EWK_COOKIE_ACCEPT_POLICY_ALWAYS);
+        ewk_cookie_manager_accept_policy_set(ewk_context_cookie_manager_get(m_ewkContext), EWK_COOKIE_ACCEPT_POLICY_ALWAYS);
 
     evas_object_data_set(m_ewkView, "_container", this);
     BROWSER_LOGD("[%s:%d] self=%p", __PRETTY_FUNCTION__, __LINE__, this);
@@ -137,14 +143,11 @@ void WebView::init(bool desktopMode, TabOrigin origin, Evas_Object*)
 
     setupEwkSettings();
     registerCallbacks();
-#if PROFILE_MOBILE
     m_downloadControl = new DownloadControl();
     orientationChanged();
-#endif
     resume();
 }
 
-#if PROFILE_MOBILE
 void WebView::orientationChanged()
 {
     BROWSER_LOGD("[%s:%d] ", __PRETTY_FUNCTION__, __LINE__);
@@ -205,27 +208,24 @@ void __vibration_cancel_cb(void * /*data*/)
 
     cancel_vibration();
 }
-#endif
 
 void WebView::registerCallbacks()
 {
     evas_object_smart_callback_add(m_ewkView, "load,started", __loadStarted, this);
-    evas_object_smart_callback_add(m_ewkView, "load,stop", __loadStop, this);
     evas_object_smart_callback_add(m_ewkView, "load,finished", __loadFinished, this);
     evas_object_smart_callback_add(m_ewkView, "load,progress", __loadProgress, this);
     evas_object_smart_callback_add(m_ewkView, "load,error", __loadError, this);
 
     evas_object_smart_callback_add(m_ewkView, "title,changed", __titleChanged, this);
     evas_object_smart_callback_add(m_ewkView, "url,changed", __urlChanged, this);
-
     evas_object_smart_callback_add(m_ewkView, "back,forward,list,changed", __backForwardListChanged, this);
 
     evas_object_smart_callback_add(m_ewkView, "create,window", __newWindowRequest, this);
     evas_object_smart_callback_add(m_ewkView, "close,window", __closeWindowRequest, this);
-#if PROFILE_MOBILE
+
     evas_object_smart_callback_add(m_ewkView, "policy,response,decide", __policy_response_decide_cb, this);
     evas_object_smart_callback_add(m_ewkView, "policy,navigation,decide", __policy_navigation_decide_cb, this);
-#endif
+
     evas_object_smart_callback_add(m_ewkView, "request,certificate,confirm", __requestCertificationConfirm, this);
     evas_object_smart_callback_add(m_ewkView, "ssl,certificate,changed", __setCertificatePem, this);
 
@@ -237,7 +237,6 @@ void WebView::registerCallbacks()
     evas_object_smart_callback_add(m_ewkView, "load,provisional,started", __load_provisional_started, this);
     evas_object_smart_callback_add(m_ewkView, "load,provisional,redirect", __load_provisional_redirect, this);
 
-#if PROFILE_MOBILE
     evas_object_smart_callback_add(m_ewkView, "contextmenu,customize", __contextmenu_customize_cb, this);
     evas_object_smart_callback_add(m_ewkView, "contextmenu,selected", __contextmenu_selected_cb, this);
     evas_object_smart_callback_add(m_ewkView, "fullscreen,enterfullscreen", __fullscreen_enter_cb, this);
@@ -245,29 +244,25 @@ void WebView::registerCallbacks()
     ewk_context_vibration_client_callbacks_set(m_ewkContext, __vibration_cb, __vibration_cancel_cb, this);
 
     evas_object_smart_callback_add(m_ewkView, "rotate,prepared", __rotate_prepared_cb, this);
-#endif
-
 }
 
 void WebView::unregisterCallbacks()
 {
     evas_object_smart_callback_del_full(m_ewkView, "load,started", __loadStarted, this);
-    evas_object_smart_callback_del_full(m_ewkView, "load,stop", __loadStop, this);
     evas_object_smart_callback_del_full(m_ewkView, "load,finished", __loadFinished, this);
     evas_object_smart_callback_del_full(m_ewkView, "load,progress", __loadProgress, this);
     evas_object_smart_callback_del_full(m_ewkView, "load,error", __loadError, this);
 
     evas_object_smart_callback_del_full(m_ewkView, "title,changed", __titleChanged, this);
     evas_object_smart_callback_del_full(m_ewkView, "url,changed", __urlChanged, this);
-
     evas_object_smart_callback_del_full(m_ewkView, "back,forward,list,changed", __backForwardListChanged, this);
 
     evas_object_smart_callback_del_full(m_ewkView, "create,window", __newWindowRequest, this);
     evas_object_smart_callback_del_full(m_ewkView, "close,window", __closeWindowRequest, this);
-#if PROFILE_MOBILE
+
     evas_object_smart_callback_del_full(m_ewkView, "policy,response,decide", __policy_response_decide_cb, this);
     evas_object_smart_callback_del_full(m_ewkView, "policy,navigation,decide", __policy_navigation_decide_cb, this);
-#endif
+
     evas_object_smart_callback_del_full(m_ewkView, "request,certificate,confirm", __requestCertificationConfirm, this);
 
     evas_object_smart_callback_del_full(m_ewkView, "icon,received", __faviconChanged, this);
@@ -278,7 +273,6 @@ void WebView::unregisterCallbacks()
     evas_object_smart_callback_del_full(m_ewkView, "load,provisional,started", __load_provisional_started, this);
     evas_object_smart_callback_del_full(m_ewkView, "load,provisional,redirect", __load_provisional_redirect, this);
 
-#if PROFILE_MOBILE
     evas_object_smart_callback_del_full(m_ewkView, "contextmenu,customize", __contextmenu_customize_cb,this);
     evas_object_smart_callback_del_full(m_ewkView, "contextmenu,selected", __contextmenu_selected_cb, this);
     evas_object_smart_callback_del_full(m_ewkView, "fullscreen,enterfullscreen", __fullscreen_enter_cb, this);
@@ -286,7 +280,6 @@ void WebView::unregisterCallbacks()
     ewk_context_vibration_client_callbacks_set(m_ewkContext, NULL, NULL, this);
 
     evas_object_smart_callback_del_full(m_ewkView, "rotate,prepared", __rotate_prepared_cb, this);
-#endif
 }
 
 void WebView::setupEwkSettings()
@@ -348,7 +341,6 @@ std::map<std::string, std::vector<std::string> > WebView::parse_uri(const char *
     return uri_parts;
 }
 
-#if PROFILE_MOBILE
 Eina_Bool WebView::handle_scheme(const char *uri)
 {
     BROWSER_LOGD("[%s:%d] ", __PRETTY_FUNCTION__, __LINE__);
@@ -642,7 +634,6 @@ Eina_Bool WebView::launch_tizenstore(const char *uri)
 
     return EINA_TRUE;
 }
-#endif
 
 Evas_Object * WebView::getLayout()
 {
@@ -655,6 +646,7 @@ Evas_Object * WebView::getWidget()
     return ewk_view_widget_get(m_ewkView);
 }
 #endif
+
 void WebView::setURI(const std::string & uri)
 {
     BROWSER_LOGD("[%s:%d] uri=%s", __PRETTY_FUNCTION__, __LINE__, uri.c_str());
@@ -668,6 +660,144 @@ std::string WebView::getURI(void)
     BROWSER_LOGD("[%s:%d] uri=%s", __PRETTY_FUNCTION__, __LINE__, ewk_view_url_get(m_ewkView));
     return fromChar(ewk_view_url_get(m_ewkView));
 }
+
+#if PWA
+void WebView::requestManifest(void)
+{
+    BROWSER_LOGD("[%s:%d] ", __PRETTY_FUNCTION__, __LINE__);
+    ewk_view_request_manifest(m_ewkView, dataSetManifest, this);
+}
+
+void WebView::dataSetManifest(Evas_Object* view, Ewk_View_Request_Manifest* manifest, void* data)
+{
+    BROWSER_LOGD("[%s:%d] ", __PRETTY_FUNCTION__, __LINE__);
+
+    if (view && data) {
+        WebView * self = reinterpret_cast<WebView *>(data);
+
+        uint8_t* theme_r = nullptr; uint8_t* theme_g = nullptr;
+        uint8_t* theme_b = nullptr; uint8_t* theme_a = nullptr;
+        uint8_t* bg_r = nullptr; uint8_t* bg_g = nullptr;
+        uint8_t* bg_b = nullptr; uint8_t* bg_a = nullptr;
+
+        const char* short_name(ewk_manifest_short_name_get(manifest));
+        const char* name(ewk_manifest_name_get(manifest));
+        const char* start_url(ewk_manifest_start_url_get(manifest));
+        const char* icon_src(ewk_manifest_icons_src_get(manifest, 0));
+        int orientation_type = ewk_manifest_orientation_type_get(manifest);
+        int display_mode = ewk_manifest_web_display_mode_get(manifest);
+        long theme_color = ewk_manifest_theme_color_get(manifest, theme_r, theme_g, theme_b, theme_a);
+        long background_color = ewk_manifest_background_color_get(manifest, bg_r, bg_g, bg_b, bg_a);
+        size_t icon_count = ewk_manifest_icons_count_get(manifest);
+
+        std::string str_short_name = "";
+        std::string str_icon_src = "";
+
+        if (short_name)
+            str_short_name = short_name;
+        if (name)
+            s_name = name;
+        if (start_url)
+            s_start_url = start_url;
+        if (icon_src)
+            str_icon_src = icon_src;
+
+        std::string retVal("browser_shortcut:://");
+        retVal.append("pwa_shortName:"); retVal.append(str_short_name.c_str()); retVal.append(",");
+        retVal.append("pwa_name:"); retVal.append(s_name.c_str()); retVal.append(",");
+        retVal.append("pwa_uri:"); retVal.append(s_start_url.c_str()); retVal.append(",");
+        retVal.append("pwa_orientation:"); retVal.append(std::to_string(orientation_type)); retVal.append(",");
+        retVal.append("pwa_displayMode:"); retVal.append(std::to_string(display_mode)); retVal.append(",");
+        retVal.append("pwa_themeColor:"); retVal.append(std::to_string(theme_color)); retVal.append(",");
+        retVal.append("theme_r:"); retVal.append(std::to_string((int)theme_r)); retVal.append(",");
+        retVal.append("theme_g:"); retVal.append(std::to_string((int)theme_g)); retVal.append(",");
+        retVal.append("theme_b:"); retVal.append(std::to_string((int)theme_b)); retVal.append(",");
+        retVal.append("theme_a:"); retVal.append(std::to_string((int)theme_a)); retVal.append(",");
+        retVal.append("pwa_backgroundColor:"); retVal.append(std::to_string(background_color)); retVal.append(",");
+        retVal.append("bg_r:"); retVal.append(std::to_string((int)bg_r)); retVal.append(",");
+        retVal.append("bg_g:"); retVal.append(std::to_string((int)bg_g)); retVal.append(",");
+        retVal.append("bg_b:"); retVal.append(std::to_string((int)bg_b)); retVal.append(",");
+        retVal.append("bg_a:"); retVal.append(std::to_string((int)bg_a)); retVal.append(",");
+        retVal.append("icon_count:"); retVal.append(std::to_string(icon_count)); retVal.append(",");
+        retVal.append("icon_src:"); retVal.append(str_icon_src.c_str()); retVal.append(",");
+
+        BROWSER_LOGD("[%s:%d] retVal : %s", __PRETTY_FUNCTION__, __LINE__, retVal.c_str());
+        s_pwaData = retVal;
+
+        size_t len = strlen(icon_src);
+        auto result = str_icon_src.substr(str_icon_src.find_last_of("/"), len);
+        s_icon = DOWNLOAD_PATH + result;
+        self->request_file_download(icon_src, s_icon, __download_result_cb, NULL);
+        BROWSER_LOGD("[%s:%d] dataSetManifest callback function end!", __PRETTY_FUNCTION__, __LINE__);
+    }
+}
+
+void WebView::makeShortcut(const std::string& name, const std::string& pwaData, const std::string& icon)
+{
+    if (shortcut_add_to_home(name.c_str(),LAUNCH_BY_URI,pwaData.c_str(),
+            icon.c_str(),0,result_cb,nullptr) != SHORTCUT_ERROR_NONE)
+        BROWSER_LOGE("[%s:%d] Fail to add to homescreen", __PRETTY_FUNCTION__, __LINE__);
+    else
+        BROWSER_LOGE("[%s:%d] Success to add to homescreen", __PRETTY_FUNCTION__, __LINE__);
+}
+
+int WebView::result_cb(int ret, void *data) {
+
+    if (data) {
+        BROWSER_LOGD("[%s:%d] ret : %d, data : %s", __PRETTY_FUNCTION__, __LINE__, ret, data);
+    } else {
+        BROWSER_LOGW("[%s] result_cb_data = nullptr", __PRETTY_FUNCTION__);
+    }
+    return 0;
+}
+
+void WebView::request_file_download(const char *uri, const std::string& file_path, download_finish_callback cb, void *data)
+{
+    BROWSER_LOGD("[%s:%d]", __PRETTY_FUNCTION__, __LINE__);
+    BROWSER_LOGD("uri = [%s], file_path = [%s]", uri, file_path.c_str());
+
+    SoupSession *soup_session = nullptr;
+    SoupMessage *soup_msg = nullptr;
+
+    soup_session = soup_session_async_new();
+    g_object_set(soup_session, SOUP_SESSION_TIMEOUT, 15, nullptr);
+
+    soup_msg = soup_message_new("GET", uri);
+    download_request *request = new(std::nothrow) download_request(strdup(file_path.c_str()), cb, data);
+    soup_session_queue_message(soup_session, soup_msg, __file_download_finished_cb, static_cast<void*>(request));
+
+    g_object_unref(soup_session);
+}
+
+void WebView::__file_download_finished_cb(SoupSession *session, SoupMessage *msg, gpointer data)
+{
+    BROWSER_LOGD("[%s:%d] session : %s", __PRETTY_FUNCTION__, __LINE__, session);
+
+    if (data) {
+        download_request *request = static_cast<download_request*>(data);
+        SoupBuffer *body = soup_message_body_flatten(msg->response_body);
+        int fd = 0;
+        if (body->data && (body->length > 0) && ((fd = open(request->file_path.c_str(), O_CREAT | O_WRONLY, S_IRUSR | S_IWUSR | S_IRGRP | S_IROTH)) >= 0)) {
+            unsigned int write_len = write(fd, body->data, body->length);
+            close(fd);
+            if (write_len == body->length)
+                request->cb(request->file_path.c_str(), request->data);
+            else
+                unlink(request->file_path.c_str());
+        }
+        g_object_unref(msg);
+        soup_buffer_free(body);
+        delete request;
+    }
+    makeShortcut(s_name, s_pwaData, s_icon);
+}
+
+void WebView::__download_result_cb(const std::string& file_path, void *data)
+{
+    BROWSER_LOGD("[%s:%d] file_path = [%s], data = [%s]", file_path.c_str(), data);
+    BROWSER_LOGD("[%s:%d] complete !", __PRETTY_FUNCTION__, __LINE__);
+}
+#endif
 
 std::string WebView::getTitle(void)
 {
@@ -704,6 +834,7 @@ void WebView::resume()
 
 void WebView::stopLoading(void)
 {
+    BROWSER_LOGD("[%s:%d] ", __PRETTY_FUNCTION__, __LINE__);
     m_isLoading = false;
     ewk_view_stop(m_ewkView);
     loadStop();
@@ -711,6 +842,7 @@ void WebView::stopLoading(void)
 
 void WebView::reload(void)
 {
+    BROWSER_LOGD("[%s:%d] ", __PRETTY_FUNCTION__, __LINE__);
     m_isLoading = true;
     if(m_loadError)
     {
@@ -859,10 +991,10 @@ void WebView::__newWindowRequest(void *data, Evas_Object *, void *out)
     WebView * self = reinterpret_cast<WebView *>(data);
     BROWSER_LOGD("[%s:%d] self=%p", __PRETTY_FUNCTION__, __LINE__, self);
     BROWSER_LOGD("Window creating in tab: %s", self->getTabId().toString().c_str());
-    std::shared_ptr<basic_webengine::AbstractWebEngine<Evas_Object>>  m_webEngine;
+    std::shared_ptr<basic_webengine::AbstractWebEngine>  m_webEngine;
     m_webEngine = std::dynamic_pointer_cast
     <
-        basic_webengine::AbstractWebEngine<Evas_Object>,tizen_browser::core::AbstractService
+        basic_webengine::AbstractWebEngine,tizen_browser::core::AbstractService
     >
     (tizen_browser::core::ServiceManager::getInstance().getService("org.tizen.browser.webengineservice"));
     M_ASSERT(m_webEngine);
@@ -871,11 +1003,9 @@ void WebView::__newWindowRequest(void *data, Evas_Object *, void *out)
     TabId id(TabId::NONE);
     TabId currentTabId = m_webEngine->currentTabId();
     if (currentTabId != (id = m_webEngine->addTab(std::string(),
-                                                                 &self->getTabId(),
                                                                  boost::none,
                                                                  std::string(),
                                                                  self->isDesktopMode(),
-                                                                 self->isPrivateMode(),
                                                                  currentTabId.get()))) {
         BROWSER_LOGD("Created tab: %s", id.toString().c_str());
         Evas_Object* tab_ewk_view = m_webEngine->getTabView(id);
@@ -891,9 +1021,9 @@ void WebView::__closeWindowRequest(void *data, Evas_Object *, void *)
 {
     BROWSER_LOGD("[%s:%d] ", __PRETTY_FUNCTION__, __LINE__);
     WebView * self = reinterpret_cast<WebView *>(data);
-    std::shared_ptr<AbstractWebEngine<Evas_Object>> m_webEngine =
+    std::shared_ptr<AbstractWebEngine> m_webEngine =
                 std::dynamic_pointer_cast
-                <basic_webengine::AbstractWebEngine<Evas_Object>,tizen_browser::core::AbstractService>
+                <basic_webengine::AbstractWebEngine,tizen_browser::core::AbstractService>
                 (tizen_browser::core::ServiceManager::getInstance().getService("org.tizen.browser.webengineservice"));
     m_webEngine->closeTab(self->getTabId());
 }
@@ -906,16 +1036,6 @@ void WebView::__loadStarted(void * data, Evas_Object * /* obj */, void * /* even
 
     self->m_isLoading = true;
     self->loadStarted();
-}
-
-void WebView::__loadStop(void * data, Evas_Object * /* obj */, void * /* event_info */)
-{
-    BROWSER_LOGD("[%s:%d] ", __PRETTY_FUNCTION__, __LINE__);
-
-    WebView * self = reinterpret_cast<WebView *>(data);
-    self->m_isLoading = false;
-
-    self->loadStop();
 }
 
 void WebView::__loadFinished(void * data, Evas_Object * /* obj */, void * /* event_info */)
@@ -933,8 +1053,6 @@ void WebView::__loadFinished(void * data, Evas_Object * /* obj */, void * /* eve
     self->captureSnapshot(boost::any_cast<int>(config::Config::getInstance().get(CONFIG_KEY::HISTORY_TAB_SERVICE_THUMB_WIDTH)),
             boost::any_cast<int>(tizen_browser::config::Config::getInstance().get(CONFIG_KEY::HISTORY_TAB_SERVICE_THUMB_HEIGHT)),
             true, tools::SnapshotType::ASYNC_LOAD_FINISHED);
-
-    self->setFocus();
 }
 
 void WebView::__loadProgress(void * data, Evas_Object * /* obj */, void * event_info)
@@ -977,9 +1095,8 @@ void WebView::__titleChanged(void * data, Evas_Object * obj, void * /* event_inf
 {
     BROWSER_LOGD("[%s:%d] ", __PRETTY_FUNCTION__, __LINE__);
 
-    WebView * self = reinterpret_cast<WebView *>(data);
+    auto self = reinterpret_cast<WebView *>(data);
     self->m_title = fromChar(ewk_view_title_get(obj));
-    self->titleChanged(self->m_title);
 }
 
 void WebView::__urlChanged(void * data, Evas_Object * /* obj */, void * /* event_info */)
@@ -1103,7 +1220,6 @@ void WebView::__setCertificatePem(void* data , Evas_Object* /* obj */, void* eve
     }
 }
 
-#if PROFILE_MOBILE
 context_menu_type WebView::_get_menu_type(Ewk_Context_Menu *menu)
 {
     int count = ewk_context_menu_item_count(menu);
@@ -1165,11 +1281,11 @@ void WebView::_show_context_menu_text_link(Ewk_Context_Menu *menu)
     }
 
     /* Open in new window */
-    ewk_context_menu_item_append_as_action(menu, EWK_CONTEXT_MENU_ITEM_TAG_OPEN_LINK_IN_NEW_WINDOW,_("IDS_BR_OPT_OPEN_IN_NEW_WINDOW_ABB"), true);
+    ewk_context_menu_item_append_as_action(menu, EWK_CONTEXT_MENU_ITEM_TAG_OPEN_LINK_IN_NEW_WINDOW,_("IDS_BR_OPT_OPEN_IN_NEW_WINDOW_ABB"), true);   //TODO: missing translation
     /* Save link */
     ewk_context_menu_item_append_as_action(menu, EWK_CONTEXT_MENU_ITEM_TAG_DOWNLOAD_LINK_TO_DISK, _("IDS_BR_BODY_SAVE_LINK"), true);
-    /* Copy link */
-    ewk_context_menu_item_append_as_action(menu, EWK_CONTEXT_MENU_ITEM_TAG_COPY_LINK_TO_CLIPBOARD, _("IDS_BR_OPT_COPY_LINK"), true);
+    /* Copy link address */
+    ewk_context_menu_item_append_as_action(menu, EWK_CONTEXT_MENU_ITEM_TAG_COPY_LINK_TO_CLIPBOARD, _("IDS_BR_OPT_COPY_LINK"), true);  //TODO: missing translation
     /*Text Selection Mode */
     ewk_context_menu_item_append_as_action(menu, EWK_CONTEXT_MENU_ITEM_TAG_TEXT_SELECTION_MODE, _("IDS_BR_OPT_SELECT_TEXT"), true);
 }
@@ -1278,11 +1394,12 @@ void WebView::_show_context_menu_text_image_link(Ewk_Context_Menu *menu)
         Ewk_Context_Menu_Item *item = ewk_context_menu_nth_item_get(menu, 0);
         ewk_context_menu_item_remove(menu, item);
     }
+
     /* Open in new window */
     ewk_context_menu_item_append_as_action(menu, EWK_CONTEXT_MENU_ITEM_TAG_OPEN_LINK_IN_NEW_WINDOW,_("IDS_BR_OPT_OPEN_IN_NEW_WINDOW_ABB"), true);	//TODO: missing translation
     /* Save link */
     ewk_context_menu_item_append_as_action(menu, EWK_CONTEXT_MENU_ITEM_TAG_DOWNLOAD_LINK_TO_DISK, _("IDS_BR_OPT_SAVE_LINK"), true);
-    /* Copy link */
+    /* Copy link address */
     ewk_context_menu_item_append_as_action(menu, EWK_CONTEXT_MENU_ITEM_TAG_COPY_LINK_TO_CLIPBOARD, _("IDS_BR_OPT_COPY_LINK"), true);  //TODO: missing translation
     /*Text Selection Mode */
     ewk_context_menu_item_append_as_action(menu, EWK_CONTEXT_MENU_ITEM_TAG_TEXT_SELECTION_MODE, _("IDS_BR_OPT_SELECT_TEXT"), true);
@@ -1305,7 +1422,7 @@ void WebView::_show_context_menu_image_link(Ewk_Context_Menu *menu)
     /* Save link */
     ewk_context_menu_item_append_as_action(menu, EWK_CONTEXT_MENU_ITEM_TAG_DOWNLOAD_LINK_TO_DISK, _("IDS_BR_OPT_SAVE_LINK"), true);
     /* Copy link */
-    ewk_context_menu_item_append_as_action(menu, EWK_CONTEXT_MENU_ITEM_TAG_COPY_LINK_TO_CLIPBOARD, _("IDS_BR_OPT_COPY_LINK_URL"), true);              //TODO: missing translation
+    ewk_context_menu_item_append_as_action(menu, EWK_CONTEXT_MENU_ITEM_TAG_COPY_LINK_TO_CLIPBOARD, _("IDS_BR_OPT_COPY_LINK"), true);              //TODO: missing translation
     /* Save image */
     ewk_context_menu_item_append_as_action(menu, EWK_CONTEXT_MENU_ITEM_TAG_DOWNLOAD_IMAGE_TO_DISK, _("IDS_BR_OPT_SAVE_IMAGE"), true);                 //TODO: missing translation
    /* copy image */
@@ -1408,7 +1525,8 @@ void WebView::__contextmenu_selected_cb(void *data, Evas_Object */*obj*/, void *
     }
 }
 
-void WebView::__fullscreen_enter_cb(void *data, Evas_Object*, void*) {
+void WebView::__fullscreen_enter_cb(void *data, Evas_Object*, void*)
+{
     BROWSER_LOGD("[%s:%d] ", __PRETTY_FUNCTION__, __LINE__);
 
     auto self = static_cast<WebView*>(data);
@@ -1416,7 +1534,8 @@ void WebView::__fullscreen_enter_cb(void *data, Evas_Object*, void*) {
     self->fullscreenModeSet(self->m_fullscreen);
 }
 
-void WebView::__fullscreen_exit_cb(void *data, Evas_Object*, void*) {
+void WebView::__fullscreen_exit_cb(void *data, Evas_Object*, void*)
+{
     BROWSER_LOGD("[%s:%d] ", __PRETTY_FUNCTION__, __LINE__);
 
     auto self = static_cast<WebView*>(data);
@@ -1434,8 +1553,6 @@ void WebView::__rotate_prepared_cb(void * data, Evas_Object *, void *)
             BROWSER_LOGW("[%s] data = nullptr", __PRETTY_FUNCTION__);
     }
 }
-
-#endif
 
 void WebView::setFocus()
 {
@@ -1476,7 +1593,6 @@ void WebView::scrollView(const int& dx, const int& dy)
     ewk_view_scroll_by(m_ewkView, dx, dy);
 }
 
-#if PROFILE_MOBILE
 void WebView::findWord(const char *word, Eina_Bool forward, Evas_Smart_Cb found_cb, void *data)
 {
     BROWSER_LOGD("[%s:%d] ", __PRETTY_FUNCTION__, __LINE__);
@@ -1499,32 +1615,44 @@ void WebView::findWord(const char *word, Eina_Bool forward, Evas_Smart_Cb found_
 
 void WebView::ewkSettingsAutoFittingSet(bool value)
 {
+    BROWSER_LOGD("[%s:%d:%d] ", __PRETTY_FUNCTION__, __LINE__, value);
     Ewk_Settings* settings = ewk_view_settings_get(m_ewkView);
     ewk_settings_auto_fitting_set(settings, value);
 }
 
 void WebView::ewkSettingsLoadsImagesSet(bool value)
 {
+    BROWSER_LOGD("[%s:%d:%d] ", __PRETTY_FUNCTION__, __LINE__, value);
     Ewk_Settings* settings = ewk_view_settings_get(m_ewkView);
     ewk_settings_loads_images_automatically_set(settings, value);
 }
 
 void WebView::ewkSettingsJavascriptEnabledSet(bool value)
 {
+    BROWSER_LOGD("[%s:%d:%d] ", __PRETTY_FUNCTION__, __LINE__, value);
     Ewk_Settings* settings = ewk_view_settings_get(m_ewkView);
     ewk_settings_javascript_enabled_set(settings, value);
 }
 
 void WebView::ewkSettingsFormCandidateDataEnabledSet(bool value)
 {
+    BROWSER_LOGD("[%s:%d:%d] ", __PRETTY_FUNCTION__, __LINE__, value);
     Ewk_Settings* settings = ewk_view_settings_get(m_ewkView);
     ewk_settings_form_candidate_data_enabled_set(settings, value);
 }
 
 void WebView::ewkSettingsAutofillPasswordFormEnabledSet(bool value)
 {
+    BROWSER_LOGD("[%s:%d:%d] ", __PRETTY_FUNCTION__, __LINE__, value);
     Ewk_Settings* settings = ewk_view_settings_get(m_ewkView);
     ewk_settings_autofill_password_form_enabled_set(settings, value);
+}
+
+void WebView::ewkSettingsScriptsCanOpenNewPagesEnabledSet(bool value)
+{
+    BROWSER_LOGD("[%s:%d:%d] ", __PRETTY_FUNCTION__, __LINE__, value);
+    Ewk_Settings* settings = ewk_view_settings_get(m_ewkView);
+    ewk_settings_scripts_can_open_windows_set(settings, value);
 }
 
 bool WebView::clearTextSelection() const {
@@ -1540,12 +1668,10 @@ void WebView::ewkSettingsFormProfileDataEnabledSet(bool value)
     Ewk_Settings* settings = ewk_view_settings_get(m_ewkView);
     ewk_settings_form_profile_data_enabled_set(settings, value);
 }
-#endif
 
 const TabId& WebView::getTabId() {
     return m_tabId;
 }
-
 
 tools::BrowserImagePtr WebView::getFavicon()
 {
@@ -1597,9 +1723,9 @@ void WebView::clearFormData()
 {
     BROWSER_LOGD("[%s:%d] ", __PRETTY_FUNCTION__, __LINE__);
     M_ASSERT(m_ewkContext);
-    if (m_ewkContext)
+    if (m_ewkContext) {
         ewk_context_form_candidate_data_delete_all(m_ewkContext);
-    else
+    } else
         BROWSER_LOGD("[%s:%d] Warning: no context", __PRETTY_FUNCTION__, __LINE__);
 }
 
@@ -1625,7 +1751,6 @@ void WebView::switchToMobileMode() {
 bool WebView::isDesktopMode() const {
     return m_desktopMode;
 }
-#if PROFILE_MOBILE
 
 void WebView::__policy_response_decide_cb(void *data, Evas_Object * /* obj */, void *event_info)
 {
@@ -1720,7 +1845,6 @@ void WebView::__policy_navigation_decide_cb(void *data, Evas_Object * /*obj*/, v
     }
     ewk_policy_decision_use(policy_decision);
 }
-#endif
 
 } /* namespace webengine_service */
 } /* end of basic_webengine */

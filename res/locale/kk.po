@@ -1,14 +1,8 @@
 msgid "IDS_BR_POP_NETWORK_ERROR"
 msgstr "Желі қателігі"
 
-msgid "IDS_BR_BODY_AUTHUSERNAME"
-msgstr "Тұтынушы аты"
-
 msgid "IDS_BR_BODY_DESTINATIONS_AUTHENTICATION_REQUIRED"
 msgstr "Түпнұсқаны тексеру қажет."
-
-msgid "IDS_BR_BODY_AUTHPASSWORD"
-msgstr "Кілтсөз"
 
 msgid "IDS_BR_HEADER_SECURITY_WARNING"
 msgstr "Қауіпсіздік ескертуі"
@@ -33,12 +27,6 @@ msgstr "Осы сайтқа арналған қауіпсіздік куәліг
 
 msgid "IDS_BR_OPT_ALLOW"
 msgstr "Рұқсат"
-
-msgid "IDS_BR_OPT_VIEW"
-msgstr "Көрініс"
-
-msgid "IDS_BR_OPT_CANCEL"
-msgstr "Тоқтату"
 
 msgid "IDS_BR_BODY_PS_REQUESTS_YOUR_LOCATION"
 msgstr "%s орныңызды сұрайды."
@@ -72,6 +60,18 @@ msgstr "Жазу"
 
 msgid "IDS_BR_BODY_THIS_WEBPAGE"
 msgstr "Бұл веб-бет"
+
+msgid "IDS_BR_BODY_AUTHUSERNAME"
+msgstr "Тұтынушы аты"
+
+msgid "IDS_BR_BODY_AUTHPASSWORD"
+msgstr "Кілтсөз"
+
+msgid "IDS_BR_OPT_VIEW"
+msgstr "Көрініс"
+
+msgid "IDS_BR_OPT_CANCEL"
+msgstr "Тоқтату"
 
 msgid "IDS_BR_OPT_SCREEN"
 msgstr "Бейнебет"
@@ -109,15 +109,6 @@ msgstr "Тоқтату"
 msgid "IDS_BR_BUTTON_MORE"
 msgstr "Басқа"
 
-msgid "IDS_TPLATFORM_ACBUTTON_DONE_ABB"
-msgstr "ДАЙЫН"
-
-msgid "IDS_TPLATFORM_ACBUTTON_CANCEL_ABB"
-msgstr "БАС ТАРТУ"
-
-msgid "IDS_TPLATFORM_ACBUTTON_DELETE_ABB"
-msgstr "ЖОЮ"
-
 msgid "IDS_BR_BODY_NO_ITEMS"
 msgstr "Баптар жоқ"
 
@@ -126,9 +117,6 @@ msgstr "Мобильді желіге қосылу"
 
 msgid "IDS_BR_OPT_DO_NOT_SHOW_AGAIN"
 msgstr "Қайтадан көрсетпеу"
-
-msgid "IDS_BR_SK_OK"
-msgstr "OK"
 
 msgid "IDS_BR_POP_ONLY_HTTP_OR_HTTPS_URLS_CAN_BE_DOWNLOADED"
 msgstr "Тек http немесе https URL мекенжайларын жүктеуге болады."
@@ -151,17 +139,11 @@ msgstr "Сілтемені көшіру"
 msgid "IDS_BR_OPT_COPY_IMAGE"
 msgstr "Сурет көшіру"
 
+msgid "IDS_BR_SK_OK"
+msgstr "OK"
+
 msgid "IDS_BR_OPT_CALL"
 msgstr "Қоңырау"
-
-msgid "IDS_ST_POP_PS_HAS_BEEN_DETECTED"
-msgstr "%s анықталды."
-
-msgid "IDS_ST_POP_DETECTED_IN_C_PS"
-msgstr "Келесіде анықталды: %s"
-
-msgid "IDS_ST_HEADER_MALWARE_DETECTED_ABB"
-msgstr "Зиянды бағдарлама анықталды"
 
 msgid "IDS_BR_BUTTON_FAILED"
 msgstr "Сәтсіз"
@@ -229,35 +211,11 @@ msgstr "Қоймау"
 msgid "IDS_BR_SK_TABS"
 msgstr "Жиекбелгі"
 
-msgid "IDS_BR_SK_SAVE_LITE"
-msgstr "Сақт"
-
-msgid "IDS_BR_SK_SAVE_ABB"
-msgstr "Сақт"
-
-msgid "IDS_BR_SK_SAVE"
-msgstr "Сақтау"
-
-msgid "IDS_BR_SK_PREVIOUS"
-msgstr "Алдыңғы"
-
-msgid "IDS_BR_SK_NEXT"
-msgstr "Сосын"
-
 msgid "IDS_BR_SK_MENU"
 msgstr "Мәзір"
 
 msgid "IDS_BR_SK_DELETE_ABB"
 msgstr "Жою"
-
-msgid "IDS_BR_SK_DELETE"
-msgstr "Жою"
-
-msgid "IDS_BR_SK_CLEAR"
-msgstr "Тазалау"
-
-msgid "IDS_BR_SK_BACK"
-msgstr "Aртқа"
 
 msgid "IDS_BR_SK3_CREATE_FOLDER"
 msgstr "Қалта жасау"
@@ -316,15 +274,6 @@ msgstr "Кейбір веб-беттерді ұқыпты қыстыра алм�
 msgid "IDS_BR_POP_YOUR_HISTORY_WILL_BE_CLEARED"
 msgstr "Журнал өшіріледі."
 
-msgid "IDS_BR_POP_WI_FI_CONNECTION_REQUIRED_CONNECT_TO_WI_FI_NETWORK_AND_TRY_AGAIN"
-msgstr "Wi-Fi желісіне қосылу қажет етіледі. Wi-Fi желісіне қосылып, қайталап көріңіз"
-
-msgid "IDS_BR_POP_URL_NOT_FOUND"
-msgstr "URL табылмады."
-
-msgid "IDS_BR_POP_URL"
-msgstr "URL"
-
 msgid "IDS_BR_POP_UNABLE_TO_VIEW_THE_CERTIFICATE_THE_PAGE_INFORMATION_HAS_BEEN_CHANGED"
 msgstr "Сертификатты қарап шығу мүмкін емес. Бет туралы ақпарат өзгертілді."
 
@@ -370,23 +319,11 @@ msgstr "Қауіпсіздік саясаты интернет браузері�
 msgid "IDS_BR_POP_SAVED_TO_BOOKMARKS"
 msgstr "Бетбелгілерге сақталған."
 
-msgid "IDS_BR_POP_SAVED"
-msgstr "Сақталған"
-
 msgid "IDS_BR_POP_RENAME_TAG"
 msgstr "Белгінің атын өзгерту"
 
-msgid "IDS_BR_POP_REMOVED"
-msgstr "Жойылған"
-
 msgid "IDS_BR_POP_PD_PROFILES_WILL_BE_DELETED"
 msgstr "%d профиль жойылады."
-
-msgid "IDS_BR_POP_PD_ITEMS_WILL_BE_DELETED"
-msgstr "%d элемент жойылады."
-
-msgid "IDS_BR_POP_PD_ITEMS_SELECTED"
-msgstr "%d элемент таңдалды."
 
 msgid "IDS_BR_POP_PAGES_THAT_YOU_VIEW_WILL_NOT_APPEAR_IN_YOUR_BROWSER_HISTORY_OR_SEARCH_HISTORY_AND_THEY_WILL_NOT_LEAVE_OTHER_TRACES_LIKE_COOKIES"
 msgstr "Сіз көретін беттер браузер журналында немесе іздеу журналында пайда болмайды және олар cookie файлдары сияқты басқа жолдардан шықпайды."
@@ -415,53 +352,20 @@ msgstr "“%1$s” анықталды.\nКелесіде анықталды: “
 msgid "IDS_BR_POP_P1SS_HAS_BEEN_DETECTED_DETECTED_IN_C_P2SS_OPEN_WEBPAGE_ANYWAY_Q"
 msgstr "“%1$s” анықталды.\nКелесіде анықталды: “%2$s”\n\nБәрібір веб-бетті ашасыз ба?"
 
-msgid "IDS_BR_POP_NO_ITEMS_SELECTED"
-msgstr "Элементтер таңдалмады."
-
 msgid "IDS_BR_POP_NOT_ENOUGH_MEMORY_DELETE_SOME_ITEMS_AND_TRY_AGAIN"
 msgstr "Жад жеткіліксіз. Кейбір элементтерді жойып, әрекетті қайталаңыз."
-
-msgid "IDS_BR_POP_NOT_ENOUGH_MEMORY"
-msgstr "Жадында орын аз."
 
 msgid "IDS_BR_POP_NOT_ALLOWED"
 msgstr "Рұқсатсыз"
 
-msgid "IDS_BR_POP_NEVER"
-msgstr "Ешқашан"
-
 msgid "IDS_BR_POP_MOVED"
 msgstr "Орналастырылды."
-
-msgid "IDS_BR_POP_MOBILE_DATA_IS_DISABLED_CONNECT_TO_WI_FI_NETWORK_INSTEAD_OR_ENABLE_MOBILE_DATA_AND_TRY_AGAIN"
-msgstr "Ұялы деректер өшірілді. Оның орнына Wi-Fi желісіне қосылыңыз немесе ұялы деректерді қосыңыз, сосын әрекетті қайталап көріңіз"
-
-msgid "IDS_BR_POP_LOADING_PLEASE_WAIT_ING"
-msgstr "Жүктелуде. Күте тұрыңыз..."
-
-msgid "IDS_BR_POP_INVALID_URL"
-msgstr "Жарамсыз URL."
-
-msgid "IDS_BR_POP_FAIL"
-msgstr "Үзіліп кетті"
 
 msgid "IDS_BR_POP_ENTER_URL"
 msgstr "URL енгізіңіз."
 
-msgid "IDS_BR_POP_ENTER_TITLE_ABB"
-msgstr "Атауды енгізу"
-
 msgid "IDS_BR_POP_ENTER_BOOKMARK_NAME"
 msgstr "Бетбелгі атын енгізіңіз."
-
-msgid "IDS_BR_POP_DO_NOT_SHOW_AGAIN"
-msgstr "Қайта көрсетпеңіз"
-
-msgid "IDS_BR_POP_DOWNLOADCOMPLETE"
-msgstr "Жазылу аяқталды"
-
-msgid "IDS_BR_POP_DISABLED"
-msgstr "Өшірілген"
 
 msgid "IDS_BR_POP_DIALING_ING_VZW"
 msgstr "Dialing..."
@@ -487,9 +391,6 @@ msgstr "Осы веб-бетке арналған кіру деректерін 
 msgid "IDS_BR_POP_DELETE_SIGN_IN_DATA_FOR_PD_WEBSITES_Q"
 msgstr "%d веб-беттеріне арналған кіру деректерін жою керек пе?"
 
-msgid "IDS_BR_POP_DELETE_Q"
-msgstr "Өшіресіз бе?"
-
 msgid "IDS_BR_POP_DELETE_PD_SAVED_WEB_PAGES_Q"
 msgstr "%d сақталған веб-беттерді жоясыз ба?"
 
@@ -505,14 +406,8 @@ msgstr "Барлық веб-сайт деректері мен орын рұқс
 msgid "IDS_BR_POP_DELETEHISTORYQUESTION"
 msgstr "Журналды жоясыз ба?"
 
-msgid "IDS_BR_POP_DELETED"
-msgstr "Жойылды"
-
 msgid "IDS_BR_POP_CONTINUE"
 msgstr "Жалғастыру"
-
-msgid "IDS_BR_POP_CLOSE_APPLICATION_Q"
-msgstr "Бағдарламаны жабу керек пе?"
 
 msgid "IDS_BR_POP_CLOSE_APPLICATION"
 msgstr "Бағдарламаны жабу"
@@ -525,12 +420,6 @@ msgstr "Журналды тазалау керек пе?"
 
 msgid "IDS_BR_POP_BOOKMARK_REMOVED"
 msgstr "Бетбелгі жойылды."
-
-msgid "IDS_BR_POP_BOOKMARK_ADDED"
-msgstr "Бетбелгі қосылды."
-
-msgid "IDS_BR_POP_AUTOMATIC_BRIGHTNESS"
-msgstr "Автоматты ашықтық"
 
 msgid "IDS_BR_POP_ALREADY_EXISTS"
 msgstr "Қолданыста бар."
@@ -556,15 +445,6 @@ msgstr "Сайттарға куки файлдарын сақтауға және
 msgid "IDS_BR_POP_ADDED_TO_BOOKMARKS"
 msgstr "Бетбелгілерге қосылған."
 
-msgid "IDS_BR_POP_ACCOUNT"
-msgstr "Шот"
-
-msgid "IDS_BR_POP_1_ITEM_WILL_BE_DELETED"
-msgstr "1 элемент жойылады."
-
-msgid "IDS_BR_POP_1_ITEM_SELECTED"
-msgstr "1 элемент таңдалды"
-
 msgid "IDS_BR_OPT_WINDOWS"
 msgstr "Терезелер"
 
@@ -574,38 +454,20 @@ msgstr "Куәлікті көру"
 msgid "IDS_BR_OPT_UNICODE_HUTF_8"
 msgstr "Юникод (UTF-8)"
 
-msgid "IDS_BR_OPT_TRANSLATE"
-msgstr "Аудару"
-
 msgid "IDS_BR_OPT_THUMBNAIL_VIEW"
 msgstr "Нобай көрінісі"
 
 msgid "IDS_BR_OPT_TEXT_ENCODING"
 msgstr "Мәтінді кодтау"
 
-msgid "IDS_BR_OPT_STOP"
-msgstr "Тоқтату"
-
 msgid "IDS_BR_OPT_SHRINK_TEXT"
 msgstr "Мәтінді кішірейту"
-
-msgid "IDS_BR_OPT_SHOW"
-msgstr "Көрсету"
-
-msgid "IDS_BR_OPT_SHARE"
-msgstr "Байланысқа жол"
 
 msgid "IDS_BR_OPT_SETTINGS_ABB"
 msgstr "Параметрлер"
 
-msgid "IDS_BR_OPT_SETTINGS"
-msgstr "Қондырғылар"
-
 msgid "IDS_BR_OPT_SEND_MESSAGE_VODA"
 msgstr "Хабарлама жіберу"
-
-msgid "IDS_BR_OPT_SEND_EMAIL"
-msgstr "Email жіберу"
 
 msgid "IDS_BR_OPT_SENDURLVIA_EMAIL"
 msgstr "Email"
@@ -624,12 +486,6 @@ msgstr "Таңдау режимі"
 
 msgid "IDS_BR_OPT_SELECTED"
 msgstr "Таңдалған"
-
-msgid "IDS_BR_OPT_SELECT"
-msgstr "Таңдау"
-
-msgid "IDS_BR_OPT_SD_CARD"
-msgstr "SD карта"
 
 msgid "IDS_BR_OPT_SAVE_TO_KEEPIT_ABB"
 msgstr "KeepIt ішіне сақтау"
@@ -658,14 +514,8 @@ msgstr "Қайта тапс. беру"
 msgid "IDS_BR_OPT_RENAME_FOLDER"
 msgstr "Папканың атын өзгерту"
 
-msgid "IDS_BR_OPT_RENAME"
-msgstr "Атын өзгерту"
-
 msgid "IDS_BR_OPT_REMOVE"
 msgstr "Алып тастау"
-
-msgid "IDS_BR_OPT_REFRESH"
-msgstr "Жаңарту"
 
 msgid "IDS_BR_OPT_READER_MODE_TTS"
 msgstr "Оқу режимі"
@@ -685,14 +535,8 @@ msgstr "Желіден тыс беттер"
 msgid "IDS_BR_OPT_NEW_WINDOW"
 msgstr "Жаңа терезе"
 
-msgid "IDS_BR_OPT_MOVE"
-msgstr "Орналастыру"
-
 msgid "IDS_BR_OPT_MINIMISE"
 msgstr "Азайту"
-
-msgid "IDS_BR_OPT_MESSAGES"
-msgstr "Хабарламалар"
 
 msgid "IDS_BR_OPT_MEDIUM_M_QUALITY"
 msgstr "Орташа"
@@ -705,9 +549,6 @@ msgstr "Орынға қатынасу артықшылықтары"
 
 msgid "IDS_BR_OPT_LOAD_IMAGES"
 msgstr "Суреттерді жүктеу"
-
-msgid "IDS_BR_OPT_LIST_VIEW"
-msgstr "Тізімдік көрініс"
 
 msgid "IDS_BR_OPT_LATIN_1_HISO_8859_1"
 msgstr "Латын-1 (ISO-8859-1)"
@@ -724,9 +565,6 @@ msgstr "Жапон (ISO-2022-JP)"
 msgid "IDS_BR_OPT_JAPANESE_HEUC_JP"
 msgstr "Жапон (EUC-JP)"
 
-msgid "IDS_BR_OPT_I_AGREE"
-msgstr "Келісемін."
-
 msgid "IDS_BR_OPT_INCOGNITO_MODE_ABB"
 msgstr "Жасырын режим"
 
@@ -741,9 +579,6 @@ msgstr "Белгіше рет.бастапқы экран"
 
 msgid "IDS_BR_OPT_HIGH_M_QUALITY"
 msgstr "Жоғары"
-
-msgid "IDS_BR_OPT_HELP"
-msgstr "Көмек"
 
 msgid "IDS_BR_OPT_GOFORWARD"
 msgstr "Жіберу"
@@ -790,9 +625,6 @@ msgstr "Деректерді аз пайд-у қосылды"
 msgid "IDS_BR_OPT_DISABLED"
 msgstr "Өшірілген"
 
-msgid "IDS_BR_OPT_DEVICE"
-msgstr "Құрылғы"
-
 msgid "IDS_BR_OPT_DELETE_SAVED_PAGE_ABB"
 msgstr "Сақталған бетті жою"
 
@@ -826,9 +658,6 @@ msgstr "Қытай (Big5)"
 msgid "IDS_BR_OPT_CACHE"
 msgstr "Кэш"
 
-msgid "IDS_BR_OPT_BOOKMARK"
-msgstr "Белгі қосу"
-
 msgid "IDS_BR_OPT_ADD_TO_WEB_CLIP"
 msgstr "Веб-клипке қосу"
 
@@ -849,12 +678,6 @@ msgstr "Бетбелгі қосу"
 
 msgid "IDS_BR_OPT_ADD_BOOKMARK"
 msgstr "Қосымшаны қосу"
-
-msgid "IDS_BR_OPT_ADDED"
-msgstr "Қосылды"
-
-msgid "IDS_BR_OPT_ADD"
-msgstr "Қосу"
 
 msgid "IDS_BR_OPT1_EXTENSION"
 msgstr "Кеңейтім"
@@ -925,9 +748,6 @@ msgstr "Арна мазмұнын жүктеу"
 msgid "IDS_BR_MBODY_DELETE_SIGN_IN_DATA"
 msgstr "Кіру деректерін жою"
 
-msgid "IDS_BR_MBODY_DEFAULT_DOWNLOAD_STORAGE"
-msgstr "Әдепкі жүктеу қоймасы"
-
 msgid "IDS_BR_MBODY_DATA_SAVING_STATISTICS"
 msgstr "Дерек-ді сақ-у статис-ры"
 
@@ -970,9 +790,6 @@ msgstr "Бетб-ді жылжыту мүмкін емес"
 msgid "IDS_BR_HEADER_SITE_NOT_TRUSTED_ABB"
 msgstr "Сайт сенімді емес"
 
-msgid "IDS_BR_HEADER_SIGN_IN_TO_SAMSUNG_ACCOUNT"
-msgstr "Samsung есептік жазбасына кіру"
-
 msgid "IDS_BR_HEADER_SET_HOMEPAGE_ABB"
 msgstr "Бастапқы бетті орнату"
 
@@ -1009,17 +826,11 @@ msgstr "Қалқыма бұғатталды"
 msgid "IDS_BR_HEADER_POPULAR_WEBSITES_ABB"
 msgstr "Танымал веб-сайттар"
 
-msgid "IDS_BR_HEADER_PD_SELECTED_ABB"
-msgstr "%d таңдалды"
-
 msgid "IDS_BR_HEADER_ORGANISATION_C_ABB"
 msgstr "Ұйым:"
 
 msgid "IDS_BR_HEADER_ORGANISATIONAL_UNIT_C"
 msgstr "Ұйымдастыру бірлігі:"
-
-msgid "IDS_BR_HEADER_NO_NETWORK_CONNECTION"
-msgstr "Желіге қосылмаған"
 
 msgid "IDS_BR_HEADER_NEWER_M_INTERNET_HISTORY_ABB"
 msgstr "Newer"
@@ -1036,17 +847,11 @@ msgstr "HTML5 кеңейтімі"
 msgid "IDS_BR_HEADER_FORM_DATA"
 msgstr "Үлгі деректері"
 
-msgid "IDS_BR_HEADER_FOLDER"
-msgstr "Қалта"
-
 msgid "IDS_BR_HEADER_EXPIRES_ON_C"
 msgstr "Мерзімі бітетін күн:"
 
 msgid "IDS_BR_HEADER_ENABLE_WEB_SIGN_IN"
 msgstr "Веб-кіруді қосу"
-
-msgid "IDS_BR_HEADER_EDIT_PROFILE"
-msgstr "Профайлды өңдеу"
 
 msgid "IDS_BR_HEADER_EDIT_BOOKMARK"
 msgstr "Қосымшаны өзгерту"
@@ -1084,14 +889,8 @@ msgstr "Өткізу мүмкінд. басқару"
 msgid "IDS_BR_HEADER_ADVANCEDCERTIFICATES"
 msgstr "Сертификаттар"
 
-msgid "IDS_BR_BUTTON_SET"
-msgstr "Орнату"
-
 msgid "IDS_BR_BUTTON_RESET_ABB"
 msgstr "Қалпына келтіру"
-
-msgid "IDS_BR_BUTTON_NOT_NOW"
-msgstr "Қазір емес"
 
 msgid "IDS_BR_BUTTON_HOMEPAGE_ABB"
 msgstr "Баст. бет"
@@ -1099,35 +898,11 @@ msgstr "Баст. бет"
 msgid "IDS_BR_BUTTON_FIND_ABB"
 msgstr "Табу"
 
-msgid "IDS_BR_BUTTON_ENABLE_ABB"
-msgstr "Қосу"
-
-msgid "IDS_BR_BUTTON_EDIT"
-msgstr "Өзгерту"
-
-msgid "IDS_BR_BUTTON_CONTINUE_ABB"
-msgstr "Жалғ-ру"
-
-msgid "IDS_BR_BUTTON_CONTINUE"
-msgstr "Жалғастыру"
-
-msgid "IDS_BR_BUTTON_CLOSE"
-msgstr "Жабу"
-
-msgid "IDS_BR_BUTTON_CANCEL_ABB"
-msgstr "Бас тарту"
-
-msgid "IDS_BR_BUTTON_CANCEL"
-msgstr "Тоқтату"
-
 msgid "IDS_BR_BUTTON_BACK_ABB"
 msgstr "Артқа"
 
 msgid "IDS_BR_BUTTON_ALWAYS_SHOW_ABB"
 msgstr "Әрқ.көрсету"
-
-msgid "IDS_BR_BUTTON_ALLOW"
-msgstr "Рұқсат ету"
 
 msgid "IDS_BR_BUTTON2_WEB_PORTAL"
 msgstr "Веб-портал"
@@ -1152,9 +927,6 @@ msgstr "Журналға өту"
 
 msgid "IDS_BR_BUTTON2_ENTERTAINMENT"
 msgstr "Ойын-сауық"
-
-msgid "IDS_BR_BODY_YESTERDAY"
-msgstr "Кеше"
 
 msgid "IDS_BR_BODY_WINDOW_MANAGER"
 msgstr "Терезе реттеушісі"
@@ -1183,9 +955,6 @@ msgstr "Күй жолағын жасыру үшін толық экран реж
 msgid "IDS_BR_BODY_USE_A_PREDICTION_SERVICE_TO_DISPLAY_RELATED_QUERIES_AND_POPULAR_WEBSITES_IN_THE_ADDRESS_BAR_AS_YOU_TYPE"
 msgstr "Терген кезде мекенжай жолағында қатысты сұраулар мен танымал веб-сайттарды көрсету үшін болжау қызметін пайдалану."
 
-msgid "IDS_BR_BODY_URL"
-msgstr "URL"
-
 msgid "IDS_BR_BODY_UPPER_FOLDER_T_TALKBACK"
 msgstr "Жоғарғы қалта"
 
@@ -1201,12 +970,6 @@ msgstr "Веб-бетті көрсету мүмкін емес. Серверде
 msgid "IDS_BR_BODY_TOWN_CITY_COUNTY_ABB"
 msgstr "Қалашық/қала/ел"
 
-msgid "IDS_BR_BODY_TODAY"
-msgstr "Бүгін"
-
-msgid "IDS_BR_BODY_TITLE"
-msgstr "Тақырыбы"
-
 msgid "IDS_BR_BODY_THIS_SITE_IS_USING_PS"
 msgstr "Бұл сайт %s пайдалануда."
 
@@ -1221,9 +984,6 @@ msgstr "Бұл бетбелгі жойылады."
 
 msgid "IDS_BR_BODY_THE_SELECTED_PERSONAL_DATA_WILL_BE_DELETED"
 msgstr "Таңдалған жеке деректер жойылады."
-
-msgid "IDS_BR_BODY_THE_MAXIMUM_NUMBER_OF_CHARACTERS_HPD_HAS_BEEN_EXCEEDED"
-msgstr "Таңбалардың ең көп санынан (%d) асып кетті."
 
 msgid "IDS_BR_BODY_TEXT_FIELD_T_TTS"
 msgstr "Мәтін өрісі"
@@ -1249,17 +1009,11 @@ msgstr "Бетбелгілерді синхрондау"
 msgid "IDS_BR_BODY_STREET_ADDRESS_PO_BOX_C_O_ETC_ABB"
 msgstr "Көше, пошта индексі, беруге арналған, т.б."
 
-msgid "IDS_BR_BODY_STREAMING"
-msgstr "Ағымдағылер"
-
 msgid "IDS_BR_BODY_STORED_DATA"
 msgstr "Сақталған деректер"
 
 msgid "IDS_BR_BODY_SPLIT_BAR_HANDLE"
 msgstr "Бөлінген жолақ тұтқасы"
-
-msgid "IDS_BR_BODY_SMALL"
-msgstr "Ұсақ"
 
 msgid "IDS_BR_BODY_SIGN_IN_TO_YOUR_SAMSUNG_ACCOUNT_TO_ACCESS_THE_BOOKMARKS_AND_TABS_ON_YOUR_OTHER_DEVICES"
 msgstr "Бетбелгілер мен басқа да құрылғыңыздағы жиекбелгілерге кіру үшін Samsung есептік жазбаңызға кіріңіз."
@@ -1279,9 +1033,6 @@ msgstr "Веб-үлгіні авто толтыру мәтінін орнату.
 msgid "IDS_BR_BODY_SET_CURRENT_PAGE_AS_HOMEPAGE"
 msgstr "Ағымдағы бетті бастапқы бетке орнату"
 
-msgid "IDS_BR_BODY_SETTINGS"
-msgstr "Қондырғылар"
-
 msgid "IDS_BR_BODY_SELECT_FOLDER"
 msgstr "Папканы таңдау"
 
@@ -1294,9 +1045,6 @@ msgstr "Іздеу өрісі"
 msgid "IDS_BR_BODY_SEARCH_AND_URL_SUGGESTIONS"
 msgstr "Іздеу және URL ұсыныстары"
 
-msgid "IDS_BR_BODY_SEARCH"
-msgstr "Іздеу"
-
 msgid "IDS_BR_BODY_SCREEN_AND_TEXT"
 msgstr "Экран мен мәтін"
 
@@ -1305,9 +1053,6 @@ msgstr "Веб-сайттардың пайдаланушы аттары мен �
 
 msgid "IDS_BR_BODY_SAVE_LINK"
 msgstr "Сілтеме сақтау"
-
-msgid "IDS_BR_BODY_RSS_SEARCH_RESULTS"
-msgstr "Іздеу нәтижелері"
 
 msgid "IDS_BR_BODY_RESTORE_DEFAULT_SETTINGS_Q"
 msgstr "Әдепкі параметрлерді қалпына келтіру керек пе?"
@@ -1342,12 +1087,6 @@ msgstr "Ауыстырғыш түйме"
 msgid "IDS_BR_BODY_PS_BOOKMARK_WILL_BE_DELETED"
 msgstr "%s бетбелгісі жойылады."
 
-msgid "IDS_BR_BODY_PROFILE"
-msgstr "Режим"
-
-msgid "IDS_BR_BODY_PROCESSING_ING"
-msgstr "Өңделуде..."
-
 msgid "IDS_BR_BODY_PRIVACY"
 msgstr "Құпия"
 
@@ -1360,26 +1099,14 @@ msgstr "Мәзір пернесін басу."
 msgid "IDS_BR_BODY_POSTCODE_ABB"
 msgstr "Пошта индексі"
 
-msgid "IDS_BR_BODY_PHONE_NUMBER_ABB"
-msgstr "Тел. нөмірі"
-
-msgid "IDS_BR_BODY_PHONE"
-msgstr "Телефон"
-
 msgid "IDS_BR_BODY_PD_POP_UPS_BLOCKED_ABB"
 msgstr "%d қалқ. терезе бұғ."
-
-msgid "IDS_BR_BODY_PD_ITEMS_WILL_BE_DELETED"
-msgstr "%d элемент жойылады."
-
-msgid "IDS_BR_BODY_PASSWORD"
-msgstr "Кілтсөз"
 
 msgid "IDS_BR_BODY_PAGE_LOADED_T_TTS"
 msgstr "Бет жүктелді"
 
 msgid "IDS_BR_BODY_PAGES_THAT_YOU_VIEW_IN_THIS_TAB_WILL_NOT_APPEAR_IN_YOUR_BROWSER_HISTORY_OR_SEARCH_HISTORY_MSG"
-msgstr "Бұл жиекбелгіден көрінетін беттер браузеріңіздің журналында немесе іздеу журналында пайда болмайды және олар \"cookie\" файлдары сияқты басқа іздер қалдырмайды."
+msgstr "Бұл жиекбелгіден көрінетін беттер браузеріңіздің журналында немесе іздеу журналында пайда болмайды және олар “cookie” файлдары сияқты басқа іздер қалдырмайды."
 
 msgid "IDS_BR_BODY_OVERRIDE_WEBSITES_REQUEST_TO_CONTROL_ZOOM"
 msgstr "Веб-тораптың масштабтауды басқаруды сұрауын қайта анықтау."
@@ -1399,14 +1126,8 @@ msgstr "Талап етілгенде"
 msgid "IDS_BR_BODY_ONLY_VIA_WI_FI_ABB"
 msgstr "Тек Wi-Fi арқылы"
 
-msgid "IDS_BR_BODY_ON"
-msgstr "Қосылған"
-
 msgid "IDS_BR_BODY_OLDER"
 msgstr "Ескірек"
-
-msgid "IDS_BR_BODY_OFF"
-msgstr "Өшірілген"
 
 msgid "IDS_BR_BODY_NO_WINDOWS"
 msgstr "Терезелер жоқ"
@@ -1420,17 +1141,8 @@ msgstr "Тақырып жоқ"
 msgid "IDS_BR_BODY_NO_SAVED_PAGES"
 msgstr "Сақталған беттер жоқ"
 
-msgid "IDS_BR_BODY_NO_RESULTS_FOUND"
-msgstr "Ешқандай нәтиже табылмады."
-
-msgid "IDS_BR_BODY_NO_HISTORIES"
-msgstr "Жазбалар жоқ"
-
 msgid "IDS_BR_BODY_NO_BOOKMARKS"
 msgstr "Бетбелгі жоқ"
-
-msgid "IDS_BR_BODY_NOTIFICATIONS"
-msgstr "Хабарландырулар"
 
 msgid "IDS_BR_BODY_NORMAL"
 msgstr "Қалыпты"
@@ -1446,9 +1158,6 @@ msgstr "Көп кіретін сайттар"
 
 msgid "IDS_BR_BODY_MOBILE_VIEW"
 msgstr "Ұялы режим"
-
-msgid "IDS_BR_BODY_MEDIUM"
-msgstr "Орташа"
 
 msgid "IDS_BR_BODY_LOCATION_M_INFORMATION"
 msgstr "Орын"
@@ -1474,9 +1183,6 @@ msgstr "Шолушы"
 msgid "IDS_BR_BODY_IMPROVE_PERFORMANCE_WHEN_LOADING_PAGES"
 msgstr "Беттерді жүктеу кезінде өнімділікті арттыру."
 
-msgid "IDS_BR_BODY_IMAGES"
-msgstr "Суреттер"
-
 msgid "IDS_BR_BODY_HOMEPAGE"
 msgstr "Үй беті"
 
@@ -1486,20 +1192,11 @@ msgstr "Бетті төмен айналдыру кезінде мекенжай
 msgid "IDS_BR_BODY_GENERAL_M_SETTINGS"
 msgstr "Жалпы"
 
-msgid "IDS_BR_BODY_FULL_SCREEN"
-msgstr "Толық экран"
-
 msgid "IDS_BR_BODY_FULL_NAME_ABB"
 msgstr "Толық аты"
 
 msgid "IDS_BR_BODY_FORCE_ZOOM_ABB"
 msgstr "Мәжбүрлеп масштабтау"
-
-msgid "IDS_BR_BODY_FONT_SIZE"
-msgstr "Шрифт өлшемі"
-
-msgid "IDS_BR_BODY_FOLDER_NAME"
-msgstr "Папка аты"
 
 msgid "IDS_BR_BODY_FLAT_SUITE_UNIT_BUILDING_FLOOR_ETC_ABB"
 msgstr "Пәтер, жинақ, блок, ғимарат, қабат, т.б."
@@ -1516,24 +1213,6 @@ msgstr "Атыңызды енгізіңіз."
 msgid "IDS_BR_BODY_ENTER_TOWN_CITY_COUNTY_ABB"
 msgstr "Қала/елді енгізу."
 
-msgid "IDS_BR_BODY_ENTER_POSTCODE_ABB"
-msgstr "Пошта индексін енгізіңіз."
-
-msgid "IDS_BR_BODY_ENTER_POSTCODE"
-msgstr "Пошта индексін енгізіңіз."
-
-msgid "IDS_BR_BODY_ENTER_PHONE_NUMBER"
-msgstr "Телефон нөмірін енгізіңіз."
-
-msgid "IDS_BR_BODY_ENTER_NAME"
-msgstr "Атын енгізіңіз."
-
-msgid "IDS_BR_BODY_ENTER_FOLDER_NAME"
-msgstr "Қалта атын енгізңіз."
-
-msgid "IDS_BR_BODY_ENTER_EMAIL_ADDRESS"
-msgstr "Электрондық пошта мекенжайын енгізу."
-
 msgid "IDS_BR_BODY_ENTER_COUNTRY_REGION_ABB"
 msgstr "Ел/аймақты енгізу."
 
@@ -1545,12 +1224,6 @@ msgstr "Орнын қосу"
 
 msgid "IDS_BR_BODY_ENABLE_JAVASCRIPT"
 msgstr "JavaScript қосу"
-
-msgid "IDS_BR_BODY_EMAIL_ADDRESS"
-msgstr "Эл.пошта адресі"
-
-msgid "IDS_BR_BODY_DOWNLOADING_ING"
-msgstr "Жазылуда..."
 
 msgid "IDS_BR_BODY_DOUBLE_TAP_TO_VIEW_CERTIFICATE_TTS"
 msgstr "Сертификатты көру үшін екі рет түртіңіз."
@@ -1591,9 +1264,6 @@ msgstr "Қауіпсіздік ескертуі қалқымалы терезе�
 msgid "IDS_BR_BODY_DISPLAY_IMAGES_ON_WEB_PAGES"
 msgstr "Суреттерді веб-беттерден көрсету."
 
-msgid "IDS_BR_BODY_DEVELOPER_MODE"
-msgstr "Әзірлеуші режимі"
-
 msgid "IDS_BR_BODY_DESKTOP_VIEW"
 msgstr "Көлемі"
 
@@ -1608,9 +1278,6 @@ msgstr "Өздігінен сақталады"
 
 msgid "IDS_BR_BODY_DEFAULT_PAGE_ABB"
 msgstr "Әдепкі бет"
-
-msgid "IDS_BR_BODY_DEFAULT"
-msgstr "Өздігінен"
 
 msgid "IDS_BR_BODY_DATA_USAGE_REDUCED_BY_P1SDP_HP2SD_KB_OF_P3SD_KB_RECEIVED_TAP_HERE_TO_RESET_STATISTICS"
 msgstr "Деректерді пайдалану %1$d% (%2$d КБ/%3$d КБ алынды) бойынша өсті. Статистикаларды қалпына келтіру үшін осы жерді түртіңіз."
@@ -1675,9 +1342,6 @@ msgstr "Жеңіл пайдалану үшін, әсіресе құрылғың�
 msgid "IDS_BR_BODY_BOOKMARK_REMINDER_ABB"
 msgstr "Бетбелгі еске салғышы"
 
-msgid "IDS_BR_BODY_BOOKMARKS"
-msgstr "Қосымшалар"
-
 msgid "IDS_BR_BODY_BLOCK_POP_UPS_ON_WEB_PAGES"
 msgstr "Веб-беттердегі қалқымалы терезелерге тыйым салу."
 
@@ -1726,9 +1390,6 @@ msgstr "%s хабарландыруларды көрсетуге рұқсат е
 msgid "IDS_BR_BODY_ALLOWS_SITES_TO_SAVE_AND_READ_COOKIE_DATA"
 msgstr "Сайттарға куки деректерін сақтауға және оқуға мүмкіндік береді."
 
-msgid "IDS_BR_BODY_ALL"
-msgstr "Барлығы"
-
 msgid "IDS_BR_BODY_AFTER_YOU_VISIT_WEBPAGES_THE_PAGES_YOU_HAVE_VISITED_THE_MOST_WILL_BE_SHOWN_HERE"
 msgstr "Веб-беттерге кіргеннен кейін ең көп кірілген беттер мына жерде көрсетіледі."
 
@@ -1756,9 +1417,6 @@ msgstr "Қосымша"
 msgid "IDS_BR_BODY_ADD_TO_CONTACT"
 msgstr "Контактілерге қосу"
 
-msgid "IDS_BR_BODY_ADD_TO"
-msgstr "Қосу"
-
 msgid "IDS_BR_BODY_ADD_THIS_WEBSITE_TO_BOOKMARKS_TO_OPEN_IT_FASTER_ABB"
 msgstr "Осы сайтты тез ашу үшін, оны бетбелгілерге қосыңыз."
 
@@ -1768,29 +1426,17 @@ msgstr "2-мекенжай жолы"
 msgid "IDS_BR_BODY_ADDRESS_LINE_1_ABB"
 msgstr "1-мекенжай жолы"
 
-msgid "IDS_BR_BODY_ADDDETAILSVIEW_TAGS"
-msgstr "Белгілер"
-
-msgid "IDS_BR_BODY_ADDBOOKMARKURL"
-msgstr "URL"
-
 msgid "IDS_BR_BODY_ACCEPT_COOKIES"
 msgstr "Куки файлдарын қабылдау"
 
 msgid "IDS_BR_BODY_1_PROFILE_WILL_BE_DELETED"
 msgstr "1 профиль жойылады."
 
-msgid "IDS_BR_BODY_1_ITEM_WILL_BE_DELETED"
-msgstr "1 элемент жойылады."
-
 msgid "IDS_BR_ACBUTTON_TABS_ABB"
 msgstr "ҚОЙЫН"
 
 msgid "IDS_BR_TPOP_STARTING_DOWNLOAD_ING"
 msgstr "Жүктеу басталуда..."
-
-msgid "IDS_BR_TPOP_MAXIMUM_NUMBER_OF_CHARACTERS_HPD_REACHED"
-msgstr "Ең көп таңбалар санына (%d) жетті"
 
 msgid "IDS_BR_TPOP_FOLDER_RENAMED"
 msgstr "Қалта атауы өзгертілді."
@@ -1807,14 +1453,8 @@ msgstr "Тоқт"
 msgid "IDS_BR_SBODY_SET_THE_DEVICE_TO_SHOW_THE_FULL_WEBPAGE_ON_THE_SCREEN_WHEN_IT_IS_LOADED_WITHOUT_NEEDING_TO_SCROLL"
 msgstr "Құрылғыны толық веб-бетті экран жүктелген кезде айналдырусыз көрсетуге орнатыңыз."
 
-msgid "IDS_BR_POP_UNSUPPORTMEDIATYPE"
-msgstr "Қолданылмайтын медиа түрі."
-
 msgid "IDS_BR_POP_UNABLE_TO_RUN_INTERNET_LOW_BATTERY"
 msgstr "Интернетті іске қосу мүмкін емес. Аз зарядты батарея."
-
-msgid "IDS_BR_POP_UNABLE_TO_CONNECT_TO_MOBILE_NETWORKS_WHILE_FLIGHT_MODE_IS_ENABLED_CONNECT_TO_WI_FI_NETWORK_INSTEAD_OR_DISABLE_FLIGHT_MODE_AND_TRY_AGAIN"
-msgstr "Ұшу режимі қосылғанда ұялы байланыс желілеріне қосылу мүмкін емес. Оның орнына Wi-Fi желісіне қосылыңыз немесе ұшу режимін өшіріңіз, сосын әрекетті қайталап көріңіз"
 
 msgid "IDS_BR_POP_THE_DOWNLOAD_HAS_BEEN_STOPPED_AND_THE_DOWNLOADED_DATA_WILL_BE_DELETED"
 msgstr "Жүктеу тоқтатылды және жүктелген деректер жойылады."
@@ -1825,20 +1465,8 @@ msgstr "Search completed"
 msgid "IDS_BR_POP_READY"
 msgstr "Әзір"
 
-msgid "IDS_BR_POP_INSTALL_SUCCESS"
-msgstr "Орнату аяқталды."
-
-msgid "IDS_BR_POP_INSTALLATION_FAILED"
-msgstr "Орнату үстінде үзіліп кетті."
-
 msgid "IDS_BR_POP_INFORM_MEMORY_ERROR"
 msgstr "Жадында қателік бар."
-
-msgid "IDS_BR_POP_DELETING_ING"
-msgstr "Жойылуда..."
-
-msgid "IDS_BR_POP_DATA_ROAMING_IS_DISABLED_CONNECT_TO_WI_FI_NETWORK_INSTEAD_OR_ENABLE_DATA_ROAMING_AND_TRY_AGAIN"
-msgstr "Деректер роумингі өшірілді. Орнына Wi-Fi желісіне қосылыңыз немесе деректер роумингін қосып, қайталап көріңіз"
 
 msgid "IDS_BR_POP_DATA_ROAMING_IS_DISABLED_CONNECT_TO_A_WI_FI_NETWORK_OR_ENABLE_DATA_ROAMING_AND_TRY_AGAIN"
 msgstr "Деректер роумингі өшірілген. Wi-Fi желісіне қосылыңыз немесе деректер роумингін қосып, әрекетті қайталаңыз."
@@ -1855,17 +1483,11 @@ msgstr "Веб-бағд-р"
 msgid "IDS_BR_OPT_VIEW_ONLINE"
 msgstr "Желіде көру"
 
-msgid "IDS_BR_OPT_SHARE_VIA"
-msgstr "Бөлісу"
-
 msgid "IDS_BR_OPT_READ_ON_OFFLINE_PAGES_LATER_ABB"
 msgstr "Желіден тыс бет-ді кейін оқу"
 
 msgid "IDS_BR_OPT_QUICK_ACCESS_ABB2"
 msgstr "Жылдам қатынас"
-
-msgid "IDS_BR_OPT_PASTE"
-msgstr "Қою"
 
 msgid "IDS_BR_OPT_ALWAYS_ENABLED_ABB"
 msgstr "Әрдайым қосулы"
@@ -1891,9 +1513,6 @@ msgstr "Іздеу және URL ұсыныстары"
 msgid "IDS_BR_MBODY_HISTORY"
 msgstr "ЖУРНАЛ"
 
-msgid "IDS_BR_MBODY_FONT_SIZE"
-msgstr "Қаріп өлшемі"
-
 msgid "IDS_BR_MBODY_FIT_PAGE_TO_SCREEN"
 msgstr "Бетті экранға сәйкес-діру"
 
@@ -1905,9 +1524,6 @@ msgstr "Таңдамалы"
 
 msgid "IDS_BR_MBODY_COUNTRY_REGION"
 msgstr "Ел/аймақ"
-
-msgid "IDS_BR_HEADER_UNABLE_TO_DOWNLOAD_ABB"
-msgstr "Жүктеу мүмкін емес"
 
 msgid "IDS_BR_HEADER_RENAME_FOLDER_ABB"
 msgstr "Қалта атауын өзгерту"
@@ -1939,14 +1555,8 @@ msgstr "Ақпар. қосу"
 msgid "IDS_BR_BUTTON_WI_FI_ABB"
 msgstr "Wi-Fi"
 
-msgid "IDS_BR_BUTTON_UPDATE"
-msgstr "Жаңарту"
-
 msgid "IDS_BR_BUTTON_SETTINGS_ABB"
 msgstr "Параме-р"
-
-msgid "IDS_BR_BUTTON_RETRY"
-msgstr "Қайталау"
 
 msgid "IDS_BR_BUTTON2_OK"
 msgstr "OK"
@@ -1972,9 +1582,6 @@ msgstr "Бұл куәлік сенімді органнан берілген."
 msgid "IDS_BR_BODY_TAP_HERE_TO_ADD_A_QUICK_ACCESS_SHORTCUT"
 msgstr "Жылдам қатынас белгішесін қосу үшін, осы жерді түртіңіз."
 
-msgid "IDS_BR_BODY_REQUEST_FAILED"
-msgstr "Сұраныс үзіліп кетті."
-
 msgid "IDS_BR_BODY_PREFERENCES"
 msgstr "Ұнамдылар"
 
@@ -1990,14 +1597,398 @@ msgstr "Сәйкестік жоқ"
 msgid "IDS_BR_BODY_MOBILE_DATA_IS_TURNED_OFF_CONNECT_TO_A_WI_FI_NETWORK_INSTEAD_OR_TAP_SETTINGS_TO_TURN_ON_MOBILE_DATA_AND_THEN_TRY_AGAIN"
 msgstr "Ұялы деректер өшірілді. Орнына Wi-Fi желісіне қосылыңыз немесе ұялы деректерді қосу үшін, Параметрлер түймесін түртіп, әрекетті қайталаңыз."
 
+msgid "IDS_BR_BODY_FIT_TO_WIDTH"
+msgstr "Еніне сәйкес келу"
+
+msgid "IDS_BR_ACBUTTON_QUICK_ACCESS"
+msgstr "ЖЫЛДАМ ҚАТ-С"
+
+msgid "IDS_BR_OPT_OPEN_IN_NEW_TAB"
+msgstr "Жаңа жиекбелгіде ашу"
+
+msgid "IDS_BR_BODY_SHARE_LINK"
+msgstr "Сілтеме бөлісу"
+
+msgid "IDS_BR_SK_SAVE_LITE"
+msgstr "Сақт"
+
+msgid "IDS_BR_SK_SAVE_ABB"
+msgstr "Сақт"
+
+msgid "IDS_BR_SK_SAVE"
+msgstr "Сақтау"
+
+msgid "IDS_BR_SK_PREVIOUS"
+msgstr "Алдыңғы"
+
+msgid "IDS_BR_SK_NEXT"
+msgstr "Сосын"
+
+msgid "IDS_BR_SK_DELETE"
+msgstr "Жою"
+
+msgid "IDS_BR_SK_CLEAR"
+msgstr "Тазалау"
+
+msgid "IDS_BR_SK_BACK"
+msgstr "Aртқа"
+
+msgid "IDS_BR_POP_WI_FI_CONNECTION_REQUIRED_CONNECT_TO_WI_FI_NETWORK_AND_TRY_AGAIN"
+msgstr "Wi-Fi желісіне қосылу қажет етіледі. Wi-Fi желісіне қосылып, қайталап көріңіз"
+
+msgid "IDS_BR_POP_URL_NOT_FOUND"
+msgstr "URL табылмады."
+
+msgid "IDS_BR_POP_URL"
+msgstr "URL"
+
+msgid "IDS_BR_POP_SAVED"
+msgstr "Сақталған"
+
+msgid "IDS_BR_POP_REMOVED"
+msgstr "Жойылған"
+
+msgid "IDS_BR_POP_PD_ITEMS_WILL_BE_DELETED"
+msgstr "%d элемент жойылады."
+
+msgid "IDS_BR_POP_PD_ITEMS_SELECTED"
+msgstr "%d элемент таңдалды."
+
+msgid "IDS_BR_POP_NO_ITEMS_SELECTED"
+msgstr "Элементтер таңдалмады."
+
+msgid "IDS_BR_POP_NOT_ENOUGH_MEMORY"
+msgstr "Жадында орын аз."
+
+msgid "IDS_BR_POP_NEVER"
+msgstr "Ешқашан"
+
+msgid "IDS_BR_POP_MOBILE_DATA_IS_DISABLED_CONNECT_TO_WI_FI_NETWORK_INSTEAD_OR_ENABLE_MOBILE_DATA_AND_TRY_AGAIN"
+msgstr "Ұялы деректер өшірілді. Оның орнына Wi-Fi желісіне қосылыңыз немесе ұялы деректерді қосыңыз, сосын әрекетті қайталап көріңіз"
+
+msgid "IDS_BR_POP_LOADING_PLEASE_WAIT_ING"
+msgstr "Жүктелуде. Күте тұрыңыз..."
+
+msgid "IDS_BR_POP_INVALID_URL"
+msgstr "Жарамсыз URL."
+
+msgid "IDS_BR_POP_FAIL"
+msgstr "Үзіліп кетті"
+
+msgid "IDS_BR_POP_ENTER_TITLE_ABB"
+msgstr "Атауды енгізу"
+
+msgid "IDS_BR_POP_DO_NOT_SHOW_AGAIN"
+msgstr "Қайта көрсетпеңіз"
+
+msgid "IDS_BR_POP_DOWNLOADCOMPLETE"
+msgstr "Жазылу аяқталды"
+
+msgid "IDS_BR_POP_DISABLED"
+msgstr "Өшірілген"
+
+msgid "IDS_BR_POP_DELETE_Q"
+msgstr "Өшіресіз бе?"
+
+msgid "IDS_BR_POP_DELETED"
+msgstr "Жойылды"
+
+msgid "IDS_BR_POP_CLOSE_APPLICATION_Q"
+msgstr "Бағдарламаны жабу керек пе?"
+
+msgid "IDS_BR_POP_BOOKMARK_ADDED"
+msgstr "Бетбелгі қосылды."
+
+msgid "IDS_BR_POP_AUTOMATIC_BRIGHTNESS"
+msgstr "Автоматты ашықтық"
+
+msgid "IDS_BR_POP_ACCOUNT"
+msgstr "Шот"
+
+msgid "IDS_BR_POP_1_ITEM_WILL_BE_DELETED"
+msgstr "1 элемент жойылады."
+
+msgid "IDS_BR_POP_1_ITEM_SELECTED"
+msgstr "1 элемент таңдалды"
+
+msgid "IDS_BR_OPT_TRANSLATE"
+msgstr "Аудару"
+
+msgid "IDS_BR_OPT_STOP"
+msgstr "Тоқтату"
+
+msgid "IDS_BR_OPT_SHOW"
+msgstr "Көрсету"
+
+msgid "IDS_BR_OPT_SHARE"
+msgstr "Байланысқа жол"
+
+msgid "IDS_BR_OPT_SETTINGS"
+msgstr "Қондырғылар"
+
+msgid "IDS_BR_OPT_SEND_EMAIL"
+msgstr "Email жіберу"
+
+msgid "IDS_BR_OPT_SELECT"
+msgstr "Таңдау"
+
+msgid "IDS_BR_OPT_SD_CARD"
+msgstr "SD карта"
+
+msgid "IDS_BR_OPT_RENAME"
+msgstr "Атын өзгерту"
+
+msgid "IDS_BR_OPT_REFRESH"
+msgstr "Жаңарту"
+
+msgid "IDS_BR_OPT_MOVE"
+msgstr "Орналастыру"
+
+msgid "IDS_BR_OPT_MESSAGES"
+msgstr "Хабарламалар"
+
+msgid "IDS_BR_OPT_LIST_VIEW"
+msgstr "Тізімдік көрініс"
+
+msgid "IDS_BR_OPT_I_AGREE"
+msgstr "Келісемін."
+
+msgid "IDS_BR_OPT_HELP"
+msgstr "Көмек"
+
+msgid "IDS_BR_OPT_DEVICE"
+msgstr "Құрылғы"
+
+msgid "IDS_BR_OPT_BOOKMARK"
+msgstr "Белгі қосу"
+
+msgid "IDS_BR_OPT_ADDED"
+msgstr "Қосылды"
+
+msgid "IDS_BR_OPT_ADD"
+msgstr "Қосу"
+
+msgid "IDS_BR_MBODY_DEFAULT_DOWNLOAD_STORAGE"
+msgstr "Әдепкі жүктеу қоймасы"
+
+msgid "IDS_BR_HEADER_SIGN_IN_TO_SAMSUNG_ACCOUNT"
+msgstr "Samsung есептік жазбасына кіру"
+
+msgid "IDS_BR_HEADER_PD_SELECTED_ABB"
+msgstr "%d таңдалды"
+
+msgid "IDS_BR_HEADER_NO_NETWORK_CONNECTION"
+msgstr "Желіге қосылмаған"
+
+msgid "IDS_BR_HEADER_FOLDER"
+msgstr "Қалта"
+
+msgid "IDS_BR_HEADER_EDIT_PROFILE"
+msgstr "Профайлды өңдеу"
+
+msgid "IDS_BR_BUTTON_SET"
+msgstr "Орнату"
+
+msgid "IDS_BR_BUTTON_NOT_NOW"
+msgstr "Қазір емес"
+
+msgid "IDS_BR_BUTTON_ENABLE_ABB"
+msgstr "Қосу"
+
+msgid "IDS_BR_BUTTON_EDIT"
+msgstr "Өзгерту"
+
+msgid "IDS_BR_BUTTON_CONTINUE_ABB"
+msgstr "Жалғ-ру"
+
+msgid "IDS_BR_BUTTON_CONTINUE"
+msgstr "Жалғастыру"
+
+msgid "IDS_BR_BUTTON_CLOSE"
+msgstr "Жабу"
+
+msgid "IDS_BR_BUTTON_CANCEL_ABB"
+msgstr "Бас тарту"
+
+msgid "IDS_BR_BUTTON_CANCEL"
+msgstr "Тоқтату"
+
+msgid "IDS_BR_BUTTON_ALLOW"
+msgstr "Рұқсат ету"
+
+msgid "IDS_BR_BODY_YESTERDAY"
+msgstr "Кеше"
+
+msgid "IDS_BR_BODY_URL"
+msgstr "URL"
+
+msgid "IDS_BR_BODY_TODAY"
+msgstr "Бүгін"
+
+msgid "IDS_BR_BODY_TITLE"
+msgstr "Тақырыбы"
+
+msgid "IDS_BR_BODY_THE_MAXIMUM_NUMBER_OF_CHARACTERS_HPD_HAS_BEEN_EXCEEDED"
+msgstr "Таңбалардың ең көп санынан (%d) асып кетті."
+
+msgid "IDS_BR_BODY_STREAMING"
+msgstr "Ағымдағылер"
+
+msgid "IDS_BR_BODY_SMALL"
+msgstr "Ұсақ"
+
+msgid "IDS_BR_BODY_SETTINGS"
+msgstr "Қондырғылар"
+
+msgid "IDS_BR_BODY_SEARCH"
+msgstr "Іздеу"
+
+msgid "IDS_BR_BODY_RSS_SEARCH_RESULTS"
+msgstr "Іздеу нәтижелері"
+
+msgid "IDS_BR_BODY_PROFILE"
+msgstr "Режим"
+
+msgid "IDS_BR_BODY_PROCESSING_ING"
+msgstr "Өңделуде..."
+
+msgid "IDS_BR_BODY_PHONE_NUMBER_ABB"
+msgstr "Тел. нөмірі"
+
+msgid "IDS_BR_BODY_PHONE"
+msgstr "Телефон"
+
+msgid "IDS_BR_BODY_PD_ITEMS_WILL_BE_DELETED"
+msgstr "%d элемент жойылады."
+
+msgid "IDS_BR_BODY_PASSWORD"
+msgstr "Кілтсөз"
+
+msgid "IDS_BR_BODY_ON"
+msgstr "Қосылған"
+
+msgid "IDS_BR_BODY_OFF"
+msgstr "Өшірілген"
+
+msgid "IDS_BR_BODY_NO_RESULTS_FOUND"
+msgstr "Ешқандай нәтиже табылмады."
+
+msgid "IDS_BR_BODY_NO_HISTORIES"
+msgstr "Жазбалар жоқ"
+
+msgid "IDS_BR_BODY_NOTIFICATIONS"
+msgstr "Хабарландырулар"
+
+msgid "IDS_BR_BODY_MEDIUM"
+msgstr "Орташа"
+
+msgid "IDS_BR_BODY_IMAGES"
+msgstr "Суреттер"
+
+msgid "IDS_BR_BODY_FULL_SCREEN"
+msgstr "Толық экран"
+
+msgid "IDS_BR_BODY_FONT_SIZE"
+msgstr "Шрифт өлшемі"
+
+msgid "IDS_BR_BODY_FOLDER_NAME"
+msgstr "Папка аты"
+
+msgid "IDS_BR_BODY_ENTER_POSTCODE_ABB"
+msgstr "Пошта индексін енгізіңіз."
+
+msgid "IDS_BR_BODY_ENTER_POSTCODE"
+msgstr "Пошта индексін енгізіңіз."
+
+msgid "IDS_BR_BODY_ENTER_PHONE_NUMBER"
+msgstr "Телефон нөмірін енгізіңіз."
+
+msgid "IDS_BR_BODY_ENTER_NAME"
+msgstr "Атын енгізіңіз."
+
+msgid "IDS_BR_BODY_ENTER_FOLDER_NAME"
+msgstr "Қалта атын енгізңіз."
+
+msgid "IDS_BR_BODY_ENTER_EMAIL_ADDRESS"
+msgstr "Электрондық пошта мекенжайын енгізу."
+
+msgid "IDS_BR_BODY_EMAIL_ADDRESS"
+msgstr "Эл.пошта адресі"
+
+msgid "IDS_BR_BODY_DOWNLOADING_ING"
+msgstr "Жазылуда..."
+
+msgid "IDS_BR_BODY_DEVELOPER_MODE"
+msgstr "Әзірлеуші режимі"
+
+msgid "IDS_BR_BODY_DEFAULT"
+msgstr "Өздігінен"
+
+msgid "IDS_BR_BODY_BOOKMARKS"
+msgstr "Қосымшалар"
+
+msgid "IDS_BR_BODY_ALL"
+msgstr "Барлығы"
+
+msgid "IDS_BR_BODY_ADD_TO"
+msgstr "Қосу"
+
+msgid "IDS_BR_BODY_ADDDETAILSVIEW_TAGS"
+msgstr "Белгілер"
+
+msgid "IDS_BR_BODY_ADDBOOKMARKURL"
+msgstr "URL"
+
+msgid "IDS_BR_BODY_1_ITEM_WILL_BE_DELETED"
+msgstr "1 элемент жойылады."
+
+msgid "IDS_BR_TPOP_MAXIMUM_NUMBER_OF_CHARACTERS_HPD_REACHED"
+msgstr "Ең көп таңбалар санына (%d) жетті"
+
+msgid "IDS_BR_POP_UNSUPPORTMEDIATYPE"
+msgstr "Қолданылмайтын медиа түрі."
+
+msgid "IDS_BR_POP_UNABLE_TO_CONNECT_TO_MOBILE_NETWORKS_WHILE_FLIGHT_MODE_IS_ENABLED_CONNECT_TO_WI_FI_NETWORK_INSTEAD_OR_DISABLE_FLIGHT_MODE_AND_TRY_AGAIN"
+msgstr "Ұшу режимі қосылғанда ұялы байланыс желілеріне қосылу мүмкін емес. Оның орнына Wi-Fi желісіне қосылыңыз немесе ұшу режимін өшіріңіз, сосын әрекетті қайталап көріңіз"
+
+msgid "IDS_BR_POP_INSTALL_SUCCESS"
+msgstr "Орнату аяқталды."
+
+msgid "IDS_BR_POP_INSTALLATION_FAILED"
+msgstr "Орнату үстінде үзіліп кетті."
+
+msgid "IDS_BR_POP_DELETING_ING"
+msgstr "Жойылуда..."
+
+msgid "IDS_BR_POP_DATA_ROAMING_IS_DISABLED_CONNECT_TO_WI_FI_NETWORK_INSTEAD_OR_ENABLE_DATA_ROAMING_AND_TRY_AGAIN"
+msgstr "Деректер роумингі өшірілді. Орнына Wi-Fi желісіне қосылыңыз немесе деректер роумингін қосып, қайталап көріңіз"
+
+msgid "IDS_BR_OPT_SHARE_VIA"
+msgstr "Бөлісу"
+
+msgid "IDS_BR_OPT_PASTE"
+msgstr "Қою"
+
+msgid "IDS_BR_MBODY_FONT_SIZE"
+msgstr "Қаріп өлшемі"
+
+msgid "IDS_BR_HEADER_UNABLE_TO_DOWNLOAD_ABB"
+msgstr "Жүктеу мүмкін емес"
+
+msgid "IDS_BR_BUTTON_UPDATE"
+msgstr "Жаңарту"
+
+msgid "IDS_BR_BUTTON_RETRY"
+msgstr "Қайталау"
+
+msgid "IDS_BR_BODY_REQUEST_FAILED"
+msgstr "Сұраныс үзіліп кетті."
+
 msgid "IDS_BR_BODY_LOGIN"
 msgstr "Жүйеге кіру"
 
 msgid "IDS_BR_BODY_LOADING_ING"
 msgstr "Жазылуда..."
-
-msgid "IDS_BR_BODY_FIT_TO_WIDTH"
-msgstr "Еніне сәйкес келу"
 
 msgid "IDS_BR_BODY_FIT_TO_SCREEN"
 msgstr "Экран ұзындығы бойынша"
@@ -2008,12 +1999,180 @@ msgstr "Жазылған"
 msgid "IDS_BR_BODY_DATA_ROAMING_IS_DISABLED_CONNECT_TO_A_WI_FI_NETWORK_INSTEAD_OR_ENABLE_DATA_ROAMING_AND_TRY_AGAIN"
 msgstr "Деректер роумингі өшірілген. Оның орнына Wi-Fi желісіне қосылыңыз немесе деректер роумингін іске қосып, әрекетті қайталаңыз."
 
-msgid "IDS_BR_ACBUTTON_QUICK_ACCESS"
-msgstr "ЖЫЛДАМ ҚАТ-С"
+msgid "IDS_BR_POP_DOWNLOAD_CANCELLED"
+msgstr "Жазу тоқтатылды"
 
-msgid "IDS_ST_POP_SOME_CONTENT_HAS_BEEN_BLOCKED_TO_PROTECT_YOUR_DEVICE"
-msgstr "Кейбір мазмұн құрылғыңызды қорғау үшін бұғатталды."
+msgid "IDS_BR_BUTTON_SECRET_ON_ABB"
+msgstr "Қосулы"
 
-msgid "IDS_ST_POP_SELECT_WHETHER_TO_GO_TO_THE_WEBPAGE_ANYWAY"
-msgstr "Бәрібір веб-бетке өтуді не өтпеуді таңдаңыз."
+msgid "IDS_BR_MBODY_PRIVACY"
+msgstr "Құпиялық"
+
+msgid "IDS_BR_MBODY_DEFAULT_STORAGE"
+msgstr "Әдепкі сақтау"
+
+msgid "IDS_BR_MBODY_MANUAL_ZOOM"
+msgstr "Қолмен үлкейту"
+
+msgid "IDS_BR_TMBODY_DEFAULT_SEARCH_ENGINE"
+msgstr "Әдепкі іздеу жүйесі"
+
+msgid "IDS_BR_MBODY_SAVE_SIGN_IN_INFO"
+msgstr "Кіру ақпаратын сақтау"
+
+msgid "IDS_BR_OPT_TURN_OFF_SECRET_MODE_ABB"
+msgstr "Құпия режимді өшіру"
+
+msgid "IDS_BR_OPT_TURN_ON_SECRET_MODE_ABB"
+msgstr "Құпия режимді қосу"
+
+msgid "IDS_BR_OPT_SHOW_PASSWORD_ABB2"
+msgstr "Құпиясөзді көрсету"
+
+msgid "IDS_BR_BODY_ENTER_YOUR_CURRENT_SECRET_MODE_PASSWORD"
+msgstr "Ағымдағы құпия режимі құпиясөзін енгізіңіз."
+
+msgid "IDS_BR_OPT_SECRET_MODE_SECURITY_ABB"
+msgstr "Құпия режимінің қауіпсіздігі"
+
+msgid "IDS_BR_BUTTON_USE_PASSWORD_ABB"
+msgstr "Құпиясөзді пайдалану"
+
+msgid "IDS_BR_HEADER_DONT_USE_PASSWORD_ABB"
+msgstr "Құпиясөзді қолданбау"
+
+msgid "IDS_BR_MBODY_MOST_VISITED_WEBSITES"
+msgstr "Көп кіретін веб-сайттар"
+
+msgid "IDS_BR_MBODY_SET_MY_PROFILE"
+msgstr "Менің профилімді орнату"
+
+msgid "IDS_BR_MBODY_MY_AUTO_FILL_PROFILE"
+msgstr "Авто толтыру профилім"
+
+msgid "IDS_BR_SBODY_MANAGE_DATA_USED_TO_FILL_IN_FORMS_ONLINE"
+msgstr "Үлгілерді онлайн күйде толтыру үшін пайдаланылған деректерді басқарыңыз."
+
+msgid "IDS_BR_MBODY_SAVE_SIGN_IN_INFO_ABB"
+msgstr "Кіру мәл-н сақтау"
+
+msgid "IDS_BR_OPT_LOCATION_ACCESS_DATA"
+msgstr "Орынға қатынасу деректері"
+
+msgid "IDS_BR_OPT_AUTO_FILL_DATA"
+msgstr "Авто толтыру деректері"
+
+msgid "IDS_BR_BODY_ANY_WEBPAGES_YOU_VIEW_WHILE_SECRET_MODE_IS_TURNED_ON_WONT_APPEAR_IN_YOUR_BROWSER_OR_SEARCH_HISTORY_MSG"
+msgstr "Құпия режимі қосулы болғанда қаралған қандай да бір веб-парақтар режим өшірулі болған кезде шолғышта немесе іздеу журналында көрсетілмейді.\n\nҚұпия режимі қосулы болғанда сақталған бетбелгілер мен веб-парақтар режим өшірулі болғанда көрсетілмейді.\n\nСондай-ақ, Құпия режим деректерін құпиясөз арқылы қорғай аласыз."
+
+msgid "IDS_BR_BODY_ANY_WEBPAGES_YOU_VIEW_WHILE_SECRET_MODE_IS_TURNED_ON_WONT_APPEAR_IN_YOUR_BROWSER_OR_SEARCH_MSG"
+msgstr "Құпия режимі қосулы болғанда қаралған қандай да бір веб-парақтар режим өшірулі болған кезде шолғышта немесе іздеу журналында көрсетілмейді.\n\nҚұпия режимі қосулы болғанда сақталған бетбелгілер мен веб-парақтары режим өшірулі болғанда көрсетілмейді."
+
+msgid "IDS_BR_BUTTON_SECRET_OFF_ABB"
+msgstr "Өшірулі"
+
+msgid "IDS_BR_BUTTON_DONT_USE_PASSWORD_ABB"
+msgstr "Құпиясөзді қолданбау"
+
+msgid "IDS_BR_BUTTON_NEW_TAB_ABB2"
+msgstr "Жаңасы"
+
+msgid "IDS_BR_NPBODY_WEB_ADDRESS_ABB"
+msgstr "Веб-мекенжай"
+
+msgid "IDS_BR_HEADER_ADD_WEBPAGE_TO_QUICK_ACCESS_ABB"
+msgstr "Жыдам қатынасқа веб-бет қосу"
+
+msgid "IDS_BR_TMBODY_TURN_ON_JAVASCRIPT"
+msgstr "JavaScript опциясын қосу"
+
+msgid "IDS_BR_HEADER_COULDNT_OPEN_NEW_TAB_ABB"
+msgstr "Жаңа қойынды ашылмады"
+
+msgid "IDS_BR_OPT_OPEN_IN_NEW_TAB_ABB"
+msgstr "Жаңа қойындыда ашу"
+
+msgid "IDS_BR_TPOP_FOLDER_NAME_ALREADY_IN_USE"
+msgstr "Қалта атауы пайдаланылуда."
+
+msgid "IDS_BR_NPBODY_NEW_FOLDER_PD"
+msgstr "%d-жаңа қалта"
+
+msgid "IDS_BR_NPBODY_NEW_FOLDER"
+msgstr "Жаңа қалта"
+
+msgid "IDS_BR_OPT_ENABLE_JAVASCRIPT"
+msgstr "JavaScript қосу"
+
+msgid "IDS_BR_TMBODY_MANAGE_WEBSITE_DATA"
+msgstr "Веб-сайт деректерін басқару"
+
+msgid "IDS_BR_HEADER_SET_HOME_PAGE_ABB"
+msgstr "Бастапқы бетті орнату"
+
+msgid "IDS_BR_TPOP_WEBPAGE_ADDED_TO_QUICK_ACCESS_LIST"
+msgstr "Веб-бет жылдам қатынасу тізіміне қосылды."
+
+msgid "IDS_BR_OPT_EDIT_QUICK_ACCESS_ABB"
+msgstr "Жылдам қатынасты өзгерту"
+
+msgid "IDS_BR_OPT_REMOVE_FROM_BOOKMARKS_ABB"
+msgstr "Бетбелгілерден жою"
+
+msgid "IDS_BR_HEADER_ADD_BOOKMARK_ABB"
+msgstr "Бетбелгі қосу"
+
+msgid "IDS_BR_BODY_BROWSING_HISTORY"
+msgstr "Шолу журналы"
+
+msgid "IDS_BR_HEADER_TABS_ABB2"
+msgstr "Қойындылар"
+
+msgid "IDS_BR_OPT_NEW_TAB"
+msgstr "Жаңа қойынды"
+
+msgid "IDS_BR_BUTTON_FORWARD_ABB2"
+msgstr "Бағ. өзг-у"
+
+msgid "IDS_BR_BUTTON_BACK_ABB3"
+msgstr "Артқа"
+
+msgid "IDS_BR_BUTTON_BOOKMARKS_ABB"
+msgstr "Бетбелгі-р"
+
+msgid "IDS_BR_NPBODY_NO_PROFILES_ABB"
+msgstr "Профильдер жоқ"
+
+msgid "IDS_BR_TAB2_HISTORY"
+msgstr "Журнал"
+
+msgid "IDS_BR_TAB2_BOOKMARKS"
+msgstr "Бетбелгілер"
+
+msgid "IDS_BR_HEADER_SAVE_CONTENT_TO_ABB"
+msgstr "Мазмұнды сақтау орны"
+
+msgid "IDS_BR_HEADER_SELECT_ITEMS_ABB2"
+msgstr "Элементтер таңдау"
+
+msgid "IDS_BR_BODY_YOUR_PASSWORD_MUST_CONTAIN_AT_LEAST_PD_CHARACTERS_INCLUDING_AT_LEAST_1_LETTER"
+msgstr "Құпиясөз кем дегенде %d таңбадан тұрып, кем дегенде құрамында 1 әріп болуы керек."
+
+msgid "IDS_BR_BODY_AN_INCORRECT_PASSWORD_HAS_BEEN_ENTERED_TRY_AGAIN"
+msgstr "Қате құпия сөз енгізілді. Әрекетті қайталап көріңіз."
+
+msgid "IDS_BR_BODY_NO_TABS"
+msgstr "Жиекбелгілер жоқ"
+
+msgid "IDS_BR_TMBODY_CHANGE_PASSWORD"
+msgstr "Құпиясөзді өзгерту"
+
+msgid "IDS_BR_BODY_ANY_WEBPAGES_VIEWED_WHILE_SECRET_MODE_IS_ENABLED_WILL_NOT_APPEAR_IN_YOUR_BROWSER_OR_SEARCH_HISTORY_WHILE_SECRET_MSG"
+msgstr "Құпия режим қосулы кезде кірген кез келген веб-беттер “Құпия” режим өшірілгенде браузер немесе іздеу журналында пайда болмайды.\n\nҚұпия режим қосулы кезде сақталған кез келген бетбелгілер мен веб-беттер режим өшірілгенде көрсетілмейді.\n\nСондай-ақ, “Құпия” режим деректерін құпиясөз арқылы қорғай аласыз."
+
+msgid "IDS_BR_BODY_ANY_WEBPAGES_VIEWED_WHILE_SECRET_MODE_IS_ENABLED_WILL_NOT_APPEAR_IN_YOUR_MSG"
+msgstr "Құпия режим қосулы кезде кірген кез келген веб-беттер “Құпия” режим өшірілгенде браузер немесе іздеу журналында көрсетілмейді.\n\nҚұпия режим қосулы кезде сақталған кез келген бетбелгілер мен веб-беттер режим өшірілгенде көрсетілмейді."
+
+msgid "IDS_BR_BUTTON2_DONE"
+msgstr "Дайын"
 

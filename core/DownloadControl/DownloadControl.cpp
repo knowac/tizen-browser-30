@@ -22,6 +22,8 @@
 #include <appsvc.h>
 #include <app.h>
 #include <app_manager.h>
+#include "app_preference.h"
+
 
 #include <fcntl.h>
 #include <notification.h>
@@ -275,11 +277,14 @@ Eina_Bool DownloadControl::_get_download_path(const char *extension, char **full
 
     std::string storing_path;
 
-    storing_path = std::string(default_device_storage_path);
+    if (!strcmp(getStorageType(),"0"))
+        storing_path = std::string(default_device_storage_path);
+    else
+        storing_path = std::string(defualt_sd_card_storage_path);
 
     std::string only_file_name = std::string(default_download_item_name) + std::string(".") + std::string(extension);
     std::string entire_path_name = storing_path + std::string(default_download_item_name) + std::string(".") + std::string(extension);
-
+    BROWSER_LOGD("[%s:%d:%s]", __PRETTY_FUNCTION__, __LINE__,entire_path_name.c_str());
     while(_check_file_exist((const char *)entire_path_name.c_str()) == EINA_TRUE) {
         count++;
         memset(temp_count_str, 0, 10);
@@ -419,6 +424,17 @@ Eina_Bool DownloadControl::handle_data_scheme(const char *uri)
     return EINA_TRUE;
 }
 
+const char* DownloadControl::getStorageType()
+{
+    int storage = 0;
+    auto ret = preference_get_int("DefaultStorage", &storage);
+    if (ret != PREFERENCE_ERROR_NONE)
+        BROWSER_LOGE("[%s:%d] Storage get error. Using default instead.", __PRETTY_FUNCTION__, __LINE__);
+    std::ostringstream ss;
+    ss << storage;
+    return ss.str().c_str();
+}
+
 Eina_Bool DownloadControl::launch_download_app(const char *uri)
 {
     BROWSER_LOGD("[%s:%d] uri = [%s]", __PRETTY_FUNCTION__, __LINE__, uri);
@@ -453,8 +469,8 @@ Eina_Bool DownloadControl::launch_download_app(const char *uri)
         return EINA_FALSE;
     }
 
-    const char *storage_type = "0"; //phone memory
-
+    const char* storage_type = getStorageType();
+    BROWSER_LOGE("[%s:%d] Storage type: %s", __PRETTY_FUNCTION__, __LINE__, storage_type);
     if (app_control_add_extra_data(app_control, "default_storage", storage_type) < 0) {
         BROWSER_LOGE("[%s:%d] Fail to set app_control extra data", __PRETTY_FUNCTION__, __LINE__);
         app_control_destroy(app_control);

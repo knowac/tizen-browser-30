@@ -1,14 +1,8 @@
 msgid "IDS_BR_POP_NETWORK_ERROR"
 msgstr "Error de xarxa"
 
-msgid "IDS_BR_BODY_AUTHUSERNAME"
-msgstr "Nom d'usuari"
-
 msgid "IDS_BR_BODY_DESTINATIONS_AUTHENTICATION_REQUIRED"
 msgstr "Es requereix autenticació"
-
-msgid "IDS_BR_BODY_AUTHPASSWORD"
-msgstr "Contrasenya"
 
 msgid "IDS_BR_HEADER_SECURITY_WARNING"
 msgstr "Avís de seguretat"
@@ -33,12 +27,6 @@ msgstr "Hi ha problemes amb el certificat de seguretat d'aquest lloc"
 
 msgid "IDS_BR_OPT_ALLOW"
 msgstr "Permetre"
-
-msgid "IDS_BR_OPT_VIEW"
-msgstr "Veure"
-
-msgid "IDS_BR_OPT_CANCEL"
-msgstr "Cancel·lar"
 
 msgid "IDS_BR_BODY_PS_REQUESTS_YOUR_LOCATION"
 msgstr "%s sol·licita la seva ubicació"
@@ -73,6 +61,18 @@ msgstr "Descarregar"
 msgid "IDS_BR_BODY_THIS_WEBPAGE"
 msgstr "Aquesta pàgina web"
 
+msgid "IDS_BR_BODY_AUTHUSERNAME"
+msgstr "Nom d'usuari"
+
+msgid "IDS_BR_BODY_AUTHPASSWORD"
+msgstr "Contrasenya"
+
+msgid "IDS_BR_OPT_VIEW"
+msgstr "Veure"
+
+msgid "IDS_BR_OPT_CANCEL"
+msgstr "Cancel·lar"
+
 msgid "IDS_BR_OPT_SCREEN"
 msgstr "Pantalla"
 
@@ -104,19 +104,10 @@ msgid "IDS_BR_SK_DONE"
 msgstr "Fet"
 
 msgid "IDS_BR_SK_CANCEL"
-msgstr "Cancel"
+msgstr "Cancel·lar"
 
 msgid "IDS_BR_BUTTON_MORE"
 msgstr "Més"
-
-msgid "IDS_TPLATFORM_ACBUTTON_DONE_ABB"
-msgstr "REALITZAT"
-
-msgid "IDS_TPLATFORM_ACBUTTON_CANCEL_ABB"
-msgstr "CANCEL·LAR"
-
-msgid "IDS_TPLATFORM_ACBUTTON_DELETE_ABB"
-msgstr "ESBORRAR"
 
 msgid "IDS_BR_BODY_NO_ITEMS"
 msgstr "No hi ha elements"
@@ -126,9 +117,6 @@ msgstr "Connectar a xarxa mòbil"
 
 msgid "IDS_BR_OPT_DO_NOT_SHOW_AGAIN"
 msgstr "No tornar a mostrar"
-
-msgid "IDS_BR_SK_OK"
-msgstr "Acceptar"
 
 msgid "IDS_BR_POP_ONLY_HTTP_OR_HTTPS_URLS_CAN_BE_DOWNLOADED"
 msgstr "Només es poden descarregar URL http o https"
@@ -151,17 +139,11 @@ msgstr "Copiar enllaç"
 msgid "IDS_BR_OPT_COPY_IMAGE"
 msgstr "Copiar la imatge"
 
+msgid "IDS_BR_SK_OK"
+msgstr "Acceptar"
+
 msgid "IDS_BR_OPT_CALL"
 msgstr "Trucar"
-
-msgid "IDS_ST_POP_PS_HAS_BEEN_DETECTED"
-msgstr "S'ha detectat %s"
-
-msgid "IDS_ST_POP_DETECTED_IN_C_PS"
-msgstr "Detectat a: %s"
-
-msgid "IDS_ST_HEADER_MALWARE_DETECTED_ABB"
-msgstr "Software maliciós detectat"
 
 msgid "IDS_BR_BUTTON_FAILED"
 msgstr "Error"
@@ -229,35 +211,11 @@ msgstr "Desmarc"
 msgid "IDS_BR_SK_TABS"
 msgstr "Pestanyes"
 
-msgid "IDS_BR_SK_SAVE_LITE"
-msgstr "Desar"
-
-msgid "IDS_BR_SK_SAVE_ABB"
-msgstr "Desar"
-
-msgid "IDS_BR_SK_SAVE"
-msgstr "Desar"
-
-msgid "IDS_BR_SK_PREVIOUS"
-msgstr "Anterior"
-
-msgid "IDS_BR_SK_NEXT"
-msgstr "Següent"
-
 msgid "IDS_BR_SK_MENU"
 msgstr "Menú"
 
 msgid "IDS_BR_SK_DELETE_ABB"
 msgstr "Esborrar"
-
-msgid "IDS_BR_SK_DELETE"
-msgstr "Esborrar"
-
-msgid "IDS_BR_SK_CLEAR"
-msgstr "Esborrar"
-
-msgid "IDS_BR_SK_BACK"
-msgstr "Enrere"
 
 msgid "IDS_BR_SK3_CREATE_FOLDER"
 msgstr "Crear carpeta"
@@ -316,15 +274,6 @@ msgstr "Potser no pot afegir un clip a algunes pàgines web amb precisió"
 msgid "IDS_BR_POP_YOUR_HISTORY_WILL_BE_CLEARED"
 msgstr "S'esborrarà l'historial."
 
-msgid "IDS_BR_POP_WI_FI_CONNECTION_REQUIRED_CONNECT_TO_WI_FI_NETWORK_AND_TRY_AGAIN"
-msgstr "Cal una connexió Wi-Fi. Connecti a la xarxa Wi-Fi i torni-ho a intentar."
-
-msgid "IDS_BR_POP_URL_NOT_FOUND"
-msgstr "No s'ha trobat l'URL"
-
-msgid "IDS_BR_POP_URL"
-msgstr "URL"
-
 msgid "IDS_BR_POP_UNABLE_TO_VIEW_THE_CERTIFICATE_THE_PAGE_INFORMATION_HAS_BEEN_CHANGED"
 msgstr "No es pot veure el certificat. S'ha canviat la informació de la pàgina."
 
@@ -370,23 +319,11 @@ msgstr "La política de seguretat restringeix l'ús del navegador d'Internet"
 msgid "IDS_BR_POP_SAVED_TO_BOOKMARKS"
 msgstr "Desat als preferits"
 
-msgid "IDS_BR_POP_SAVED"
-msgstr "Desat"
-
 msgid "IDS_BR_POP_RENAME_TAG"
 msgstr "Canviar nom d'etiqueta"
 
-msgid "IDS_BR_POP_REMOVED"
-msgstr "Eliminat"
-
 msgid "IDS_BR_POP_PD_PROFILES_WILL_BE_DELETED"
 msgstr "S'esborraran %d perfils."
-
-msgid "IDS_BR_POP_PD_ITEMS_WILL_BE_DELETED"
-msgstr "S'esborraran %d elements"
-
-msgid "IDS_BR_POP_PD_ITEMS_SELECTED"
-msgstr "%d elements seleccionats"
 
 msgid "IDS_BR_POP_PAGES_THAT_YOU_VIEW_WILL_NOT_APPEAR_IN_YOUR_BROWSER_HISTORY_OR_SEARCH_HISTORY_AND_THEY_WILL_NOT_LEAVE_OTHER_TRACES_LIKE_COOKIES"
 msgstr "Les pàgines que vegi no es mostraran a l'historial del seu navegador ni a l'historial de cerca, i no deixaran altres rastres, com ara galetes."
@@ -415,53 +352,20 @@ msgstr "S'ha detectat “%1$s”.\nDetectat a: “%2$s”\n\nPart del contingut 
 msgid "IDS_BR_POP_P1SS_HAS_BEEN_DETECTED_DETECTED_IN_C_P2SS_OPEN_WEBPAGE_ANYWAY_Q"
 msgstr "S'ha detectat “%1$s”.\nDetectat a: “%2$s”\n\nObrir pàgina web igualment?"
 
-msgid "IDS_BR_POP_NO_ITEMS_SELECTED"
-msgstr "No s'ha seleccionat cap element"
-
 msgid "IDS_BR_POP_NOT_ENOUGH_MEMORY_DELETE_SOME_ITEMS_AND_TRY_AGAIN"
 msgstr "No hi ha prou memòria. Esborri'n alguns elements i torni-ho a intentar."
-
-msgid "IDS_BR_POP_NOT_ENOUGH_MEMORY"
-msgstr "No hi ha prou memòria"
 
 msgid "IDS_BR_POP_NOT_ALLOWED"
 msgstr "No permès"
 
-msgid "IDS_BR_POP_NEVER"
-msgstr "Mai"
-
 msgid "IDS_BR_POP_MOVED"
 msgstr "Mogut"
-
-msgid "IDS_BR_POP_MOBILE_DATA_IS_DISABLED_CONNECT_TO_WI_FI_NETWORK_INSTEAD_OR_ENABLE_MOBILE_DATA_AND_TRY_AGAIN"
-msgstr "Les dades mòbils estan deshabilitades. Connecti a una xarxa Wi-Fi en el seu lloc, o habiliti dades mòbils i torni-ho a intentar."
-
-msgid "IDS_BR_POP_LOADING_PLEASE_WAIT_ING"
-msgstr "Carregant. Esperi..."
-
-msgid "IDS_BR_POP_INVALID_URL"
-msgstr "URL no vàlida"
-
-msgid "IDS_BR_POP_FAIL"
-msgstr "Error"
 
 msgid "IDS_BR_POP_ENTER_URL"
 msgstr "Introdueixi URL"
 
-msgid "IDS_BR_POP_ENTER_TITLE_ABB"
-msgstr "Introduir títol"
-
 msgid "IDS_BR_POP_ENTER_BOOKMARK_NAME"
 msgstr "Introdueixi el nom del preferit"
-
-msgid "IDS_BR_POP_DO_NOT_SHOW_AGAIN"
-msgstr "No ho tornis a mostrar."
-
-msgid "IDS_BR_POP_DOWNLOADCOMPLETE"
-msgstr "Descàrrega finalitzada"
-
-msgid "IDS_BR_POP_DISABLED"
-msgstr "Desactivat"
 
 msgid "IDS_BR_POP_DIALING_ING_VZW"
 msgstr "Dialing..."
@@ -487,9 +391,6 @@ msgstr "Esborrar les dades d'inici de sessió d'aquest lloc web?"
 msgid "IDS_BR_POP_DELETE_SIGN_IN_DATA_FOR_PD_WEBSITES_Q"
 msgstr "Esborrar les dades d'inici de sessió de %d llocs web?"
 
-msgid "IDS_BR_POP_DELETE_Q"
-msgstr "Esborrar?"
-
 msgid "IDS_BR_POP_DELETE_PD_SAVED_WEB_PAGES_Q"
 msgstr "Vol esborrar %d pàgines web desades?"
 
@@ -505,14 +406,8 @@ msgstr "Esborrar totes les dades de lloc web i permisos d'ubicació?"
 msgid "IDS_BR_POP_DELETEHISTORYQUESTION"
 msgstr "Esborrar historial?"
 
-msgid "IDS_BR_POP_DELETED"
-msgstr "Esborrat"
-
 msgid "IDS_BR_POP_CONTINUE"
 msgstr "Continuar"
-
-msgid "IDS_BR_POP_CLOSE_APPLICATION_Q"
-msgstr "Tancar aplicació?"
 
 msgid "IDS_BR_POP_CLOSE_APPLICATION"
 msgstr "Tancar l'aplicació"
@@ -525,12 +420,6 @@ msgstr "Netejar l'historial?"
 
 msgid "IDS_BR_POP_BOOKMARK_REMOVED"
 msgstr "Preferit eliminat"
-
-msgid "IDS_BR_POP_BOOKMARK_ADDED"
-msgstr "Preferit afegit"
-
-msgid "IDS_BR_POP_AUTOMATIC_BRIGHTNESS"
-msgstr "Brillantor automàtica"
 
 msgid "IDS_BR_POP_ALREADY_EXISTS"
 msgstr "Ja existeix"
@@ -556,15 +445,6 @@ msgstr "Permetre als llocs desar i llegir galetes"
 msgid "IDS_BR_POP_ADDED_TO_BOOKMARKS"
 msgstr "Afegit a Preferits"
 
-msgid "IDS_BR_POP_ACCOUNT"
-msgstr "Compte"
-
-msgid "IDS_BR_POP_1_ITEM_WILL_BE_DELETED"
-msgstr "S'esborrarà 1 element"
-
-msgid "IDS_BR_POP_1_ITEM_SELECTED"
-msgstr "1 element seleccionat"
-
 msgid "IDS_BR_OPT_WINDOWS"
 msgstr "Finestres"
 
@@ -574,38 +454,20 @@ msgstr "Veure certificat"
 msgid "IDS_BR_OPT_UNICODE_HUTF_8"
 msgstr "Unicode (UTF-8)"
 
-msgid "IDS_BR_OPT_TRANSLATE"
-msgstr "Traduir"
-
 msgid "IDS_BR_OPT_THUMBNAIL_VIEW"
 msgstr "Vista de miniatura"
 
 msgid "IDS_BR_OPT_TEXT_ENCODING"
 msgstr "Codificació del text"
 
-msgid "IDS_BR_OPT_STOP"
-msgstr "Aturar"
-
 msgid "IDS_BR_OPT_SHRINK_TEXT"
 msgstr "Encongir text"
-
-msgid "IDS_BR_OPT_SHOW"
-msgstr "Mostrar"
-
-msgid "IDS_BR_OPT_SHARE"
-msgstr "Compartir"
 
 msgid "IDS_BR_OPT_SETTINGS_ABB"
 msgstr "Ajustaments"
 
-msgid "IDS_BR_OPT_SETTINGS"
-msgstr "Ajustaments"
-
 msgid "IDS_BR_OPT_SEND_MESSAGE_VODA"
 msgstr "Enviar missatge"
-
-msgid "IDS_BR_OPT_SEND_EMAIL"
-msgstr "Envia missatge o correu electrònic"
 
 msgid "IDS_BR_OPT_SENDURLVIA_EMAIL"
 msgstr "Correu electrònic"
@@ -624,12 +486,6 @@ msgstr "Mode selecció"
 
 msgid "IDS_BR_OPT_SELECTED"
 msgstr "Seleccionat"
-
-msgid "IDS_BR_OPT_SELECT"
-msgstr "Seleccionar"
-
-msgid "IDS_BR_OPT_SD_CARD"
-msgstr "Targ SD"
 
 msgid "IDS_BR_OPT_SAVE_TO_KEEPIT_ABB"
 msgstr "Desar a KeepIt"
@@ -658,14 +514,8 @@ msgstr "Tornar a ordenar"
 msgid "IDS_BR_OPT_RENAME_FOLDER"
 msgstr "Canviar nom de carpeta"
 
-msgid "IDS_BR_OPT_RENAME"
-msgstr "Canviar nom"
-
 msgid "IDS_BR_OPT_REMOVE"
 msgstr "Eliminar"
-
-msgid "IDS_BR_OPT_REFRESH"
-msgstr "Actualitzar"
 
 msgid "IDS_BR_OPT_READER_MODE_TTS"
 msgstr "Mode Lector"
@@ -685,14 +535,8 @@ msgstr "Pàgines fora de línia"
 msgid "IDS_BR_OPT_NEW_WINDOW"
 msgstr "Nova finestra"
 
-msgid "IDS_BR_OPT_MOVE"
-msgstr "Moure"
-
 msgid "IDS_BR_OPT_MINIMISE"
 msgstr "Minimitzar"
-
-msgid "IDS_BR_OPT_MESSAGES"
-msgstr "Missatges"
 
 msgid "IDS_BR_OPT_MEDIUM_M_QUALITY"
 msgstr "Mitjana"
@@ -705,9 +549,6 @@ msgstr "Privilegis d'accés a la ubicació"
 
 msgid "IDS_BR_OPT_LOAD_IMAGES"
 msgstr "Carregar imatges"
-
-msgid "IDS_BR_OPT_LIST_VIEW"
-msgstr "Vista de llista"
 
 msgid "IDS_BR_OPT_LATIN_1_HISO_8859_1"
 msgstr "Llatí-1 (ISO-8859-1)"
@@ -724,9 +565,6 @@ msgstr "Japonès (ISO-2022-JP)"
 msgid "IDS_BR_OPT_JAPANESE_HEUC_JP"
 msgstr "Japonès (EUC-JP)"
 
-msgid "IDS_BR_OPT_I_AGREE"
-msgstr "Accepto."
-
 msgid "IDS_BR_OPT_INCOGNITO_MODE_ABB"
 msgstr "Mode d'incògnit"
 
@@ -741,9 +579,6 @@ msgstr "Accés dir a Pantalla inici"
 
 msgid "IDS_BR_OPT_HIGH_M_QUALITY"
 msgstr "Alta"
-
-msgid "IDS_BR_OPT_HELP"
-msgstr "Ajuda"
 
 msgid "IDS_BR_OPT_GOFORWARD"
 msgstr "Endavant"
@@ -790,9 +625,6 @@ msgstr "Deshabiliti l'ús de dades baix"
 msgid "IDS_BR_OPT_DISABLED"
 msgstr "Deshabilitat"
 
-msgid "IDS_BR_OPT_DEVICE"
-msgstr "Dispositiu"
-
 msgid "IDS_BR_OPT_DELETE_SAVED_PAGE_ABB"
 msgstr "Esborrar pàgina desada"
 
@@ -826,9 +658,6 @@ msgstr "Xinès (Big5)"
 msgid "IDS_BR_OPT_CACHE"
 msgstr "Memòria cau"
 
-msgid "IDS_BR_OPT_BOOKMARK"
-msgstr "Preferit"
-
 msgid "IDS_BR_OPT_ADD_TO_WEB_CLIP"
 msgstr "Afegir a clip web"
 
@@ -849,12 +678,6 @@ msgstr "Afegir preferits"
 
 msgid "IDS_BR_OPT_ADD_BOOKMARK"
 msgstr "Afegir preferit"
-
-msgid "IDS_BR_OPT_ADDED"
-msgstr "Afegit"
-
-msgid "IDS_BR_OPT_ADD"
-msgstr "Afegir"
 
 msgid "IDS_BR_OPT1_EXTENSION"
 msgstr "Extensió"
@@ -925,9 +748,6 @@ msgstr "Descarreg contingut font"
 msgid "IDS_BR_MBODY_DELETE_SIGN_IN_DATA"
 msgstr "Esb dades inici sessió"
 
-msgid "IDS_BR_MBODY_DEFAULT_DOWNLOAD_STORAGE"
-msgstr "Emmagat descàrrega predet"
-
 msgid "IDS_BR_MBODY_DATA_SAVING_STATISTICS"
 msgstr "Estadístiques des dades"
 
@@ -970,9 +790,6 @@ msgstr "Error en moure preferits"
 msgid "IDS_BR_HEADER_SITE_NOT_TRUSTED_ABB"
 msgstr "El lloc no és de confiança"
 
-msgid "IDS_BR_HEADER_SIGN_IN_TO_SAMSUNG_ACCOUNT"
-msgstr "Iniciar sessió a Samsung account"
-
 msgid "IDS_BR_HEADER_SET_HOMEPAGE_ABB"
 msgstr "Definir pàgina d'inici"
 
@@ -1009,17 +826,11 @@ msgstr "Element emergent bloquejat"
 msgid "IDS_BR_HEADER_POPULAR_WEBSITES_ABB"
 msgstr "Llocs web populars"
 
-msgid "IDS_BR_HEADER_PD_SELECTED_ABB"
-msgstr "%d seleccionats"
-
 msgid "IDS_BR_HEADER_ORGANISATION_C_ABB"
 msgstr "Organització:"
 
 msgid "IDS_BR_HEADER_ORGANISATIONAL_UNIT_C"
 msgstr "Unitat organitzativa:"
-
-msgid "IDS_BR_HEADER_NO_NETWORK_CONNECTION"
-msgstr "Sense connexió de xarxa"
 
 msgid "IDS_BR_HEADER_NEWER_M_INTERNET_HISTORY_ABB"
 msgstr "Newer"
@@ -1036,17 +847,11 @@ msgstr "Extensió HTML5"
 msgid "IDS_BR_HEADER_FORM_DATA"
 msgstr "Dades del formulari"
 
-msgid "IDS_BR_HEADER_FOLDER"
-msgstr "Carpeta"
-
 msgid "IDS_BR_HEADER_EXPIRES_ON_C"
 msgstr "Caduca el:"
 
 msgid "IDS_BR_HEADER_ENABLE_WEB_SIGN_IN"
 msgstr "Habilitar Inici de sessió web"
-
-msgid "IDS_BR_HEADER_EDIT_PROFILE"
-msgstr "Editar perfil"
 
 msgid "IDS_BR_HEADER_EDIT_BOOKMARK"
 msgstr "Editar preferit"
@@ -1084,14 +889,8 @@ msgstr "Administració ample banda"
 msgid "IDS_BR_HEADER_ADVANCEDCERTIFICATES"
 msgstr "Certificats"
 
-msgid "IDS_BR_BUTTON_SET"
-msgstr "Definir"
-
 msgid "IDS_BR_BUTTON_RESET_ABB"
 msgstr "Restablir"
-
-msgid "IDS_BR_BUTTON_NOT_NOW"
-msgstr "Ara no"
 
 msgid "IDS_BR_BUTTON_HOMEPAGE_ABB"
 msgstr "Pàg inici"
@@ -1099,35 +898,11 @@ msgstr "Pàg inici"
 msgid "IDS_BR_BUTTON_FIND_ABB"
 msgstr "Troba"
 
-msgid "IDS_BR_BUTTON_ENABLE_ABB"
-msgstr "Habilitar"
-
-msgid "IDS_BR_BUTTON_EDIT"
-msgstr "Editar"
-
-msgid "IDS_BR_BUTTON_CONTINUE_ABB"
-msgstr "Cont."
-
-msgid "IDS_BR_BUTTON_CONTINUE"
-msgstr "Continuar"
-
-msgid "IDS_BR_BUTTON_CLOSE"
-msgstr "Tancar"
-
-msgid "IDS_BR_BUTTON_CANCEL_ABB"
-msgstr "Cancel"
-
-msgid "IDS_BR_BUTTON_CANCEL"
-msgstr "Cancel"
-
 msgid "IDS_BR_BUTTON_BACK_ABB"
 msgstr "Enrere"
 
 msgid "IDS_BR_BUTTON_ALWAYS_SHOW_ABB"
 msgstr "Most sempre"
-
-msgid "IDS_BR_BUTTON_ALLOW"
-msgstr "Permetre"
 
 msgid "IDS_BR_BUTTON2_WEB_PORTAL"
 msgstr "Portal web"
@@ -1152,9 +927,6 @@ msgstr "Anar a l'historial"
 
 msgid "IDS_BR_BUTTON2_ENTERTAINMENT"
 msgstr "Espec-\ntacles"
-
-msgid "IDS_BR_BODY_YESTERDAY"
-msgstr "Ahir"
 
 msgid "IDS_BR_BODY_WINDOW_MANAGER"
 msgstr "Gestor de finestres"
@@ -1183,9 +955,6 @@ msgstr "Utilitzar el mode de pantalla completa per ocultar la barra d'estat"
 msgid "IDS_BR_BODY_USE_A_PREDICTION_SERVICE_TO_DISPLAY_RELATED_QUERIES_AND_POPULAR_WEBSITES_IN_THE_ADDRESS_BAR_AS_YOU_TYPE"
 msgstr "Utilitzar un servei de predicció per mostrar consultes relacionades i llocs webs populars a la barra d'adreces mentre escriu"
 
-msgid "IDS_BR_BODY_URL"
-msgstr "URL"
-
 msgid "IDS_BR_BODY_UPPER_FOLDER_T_TALKBACK"
 msgstr "Carpeta superior"
 
@@ -1201,12 +970,6 @@ msgstr "No es pot mostrar la pàgina web. No hi ha resposta del servidor."
 msgid "IDS_BR_BODY_TOWN_CITY_COUNTY_ABB"
 msgstr "Poble/ciutat/província"
 
-msgid "IDS_BR_BODY_TODAY"
-msgstr "Avui"
-
-msgid "IDS_BR_BODY_TITLE"
-msgstr "Títol"
-
 msgid "IDS_BR_BODY_THIS_SITE_IS_USING_PS"
 msgstr "Aquest lloc està utilitzant %s."
 
@@ -1221,9 +984,6 @@ msgstr "S'esborrarà aquest preferit"
 
 msgid "IDS_BR_BODY_THE_SELECTED_PERSONAL_DATA_WILL_BE_DELETED"
 msgstr "S'esborraran les dades personals seleccionades."
-
-msgid "IDS_BR_BODY_THE_MAXIMUM_NUMBER_OF_CHARACTERS_HPD_HAS_BEEN_EXCEEDED"
-msgstr "S'ha excedit el nombre màxim de caràcters (%d)"
 
 msgid "IDS_BR_BODY_TEXT_FIELD_T_TTS"
 msgstr "Camp de text"
@@ -1249,17 +1009,11 @@ msgstr "Sincronitzar preferits"
 msgid "IDS_BR_BODY_STREET_ADDRESS_PO_BOX_C_O_ETC_ABB"
 msgstr "Adreça postal, codi postal, c/o, etc"
 
-msgid "IDS_BR_BODY_STREAMING"
-msgstr "Reproducció en temps real"
-
 msgid "IDS_BR_BODY_STORED_DATA"
 msgstr "Dades emmagatzemades"
 
 msgid "IDS_BR_BODY_SPLIT_BAR_HANDLE"
 msgstr "Controlador de la barra de divisió"
-
-msgid "IDS_BR_BODY_SMALL"
-msgstr "Petita"
 
 msgid "IDS_BR_BODY_SIGN_IN_TO_YOUR_SAMSUNG_ACCOUNT_TO_ACCESS_THE_BOOKMARKS_AND_TABS_ON_YOUR_OTHER_DEVICES"
 msgstr "Inici la sessió al seu Samsung account per accedir als preferits i pestanyes als altres dispositius"
@@ -1279,9 +1033,6 @@ msgstr "Definir text per a l'emplenament automàtic de formularis web"
 msgid "IDS_BR_BODY_SET_CURRENT_PAGE_AS_HOMEPAGE"
 msgstr "Establir la pàgina actual com a pàgina d'inici"
 
-msgid "IDS_BR_BODY_SETTINGS"
-msgstr "Ajustaments"
-
 msgid "IDS_BR_BODY_SELECT_FOLDER"
 msgstr "Seleccionar carpeta"
 
@@ -1294,9 +1045,6 @@ msgstr "Camp de cerca"
 msgid "IDS_BR_BODY_SEARCH_AND_URL_SUGGESTIONS"
 msgstr "Suggeriments de cerca i URL"
 
-msgid "IDS_BR_BODY_SEARCH"
-msgstr "Cercar"
-
 msgid "IDS_BR_BODY_SCREEN_AND_TEXT"
 msgstr "Pantalla i text"
 
@@ -1305,9 +1053,6 @@ msgstr "Desar noms d'usuari i contrasenyes per a llocs web"
 
 msgid "IDS_BR_BODY_SAVE_LINK"
 msgstr "Desar enllaç"
-
-msgid "IDS_BR_BODY_RSS_SEARCH_RESULTS"
-msgstr "Resultats de la cerca"
 
 msgid "IDS_BR_BODY_RESTORE_DEFAULT_SETTINGS_Q"
 msgstr "Restablir ajustaments predeterminats?"
@@ -1342,12 +1087,6 @@ msgstr "Botó de ràdio"
 msgid "IDS_BR_BODY_PS_BOOKMARK_WILL_BE_DELETED"
 msgstr "S'esborrarà el preferit %s"
 
-msgid "IDS_BR_BODY_PROFILE"
-msgstr "Perfil"
-
-msgid "IDS_BR_BODY_PROCESSING_ING"
-msgstr "Processant..."
-
 msgid "IDS_BR_BODY_PRIVACY"
 msgstr "Confidencialitat"
 
@@ -1360,20 +1099,8 @@ msgstr "Premi la tecla de menú"
 msgid "IDS_BR_BODY_POSTCODE_ABB"
 msgstr "Codi postal"
 
-msgid "IDS_BR_BODY_PHONE_NUMBER_ABB"
-msgstr "Número tel"
-
-msgid "IDS_BR_BODY_PHONE"
-msgstr "Telèfon"
-
 msgid "IDS_BR_BODY_PD_POP_UPS_BLOCKED_ABB"
 msgstr "%d elem emerg bloq"
-
-msgid "IDS_BR_BODY_PD_ITEMS_WILL_BE_DELETED"
-msgstr "S'esborraran %d elements"
-
-msgid "IDS_BR_BODY_PASSWORD"
-msgstr "Contrasenya"
 
 msgid "IDS_BR_BODY_PAGE_LOADED_T_TTS"
 msgstr "Pàgina carregada"
@@ -1399,14 +1126,8 @@ msgstr "A petició"
 msgid "IDS_BR_BODY_ONLY_VIA_WI_FI_ABB"
 msgstr "Només amb Wi-Fi"
 
-msgid "IDS_BR_BODY_ON"
-msgstr "Activat"
-
 msgid "IDS_BR_BODY_OLDER"
 msgstr "Més antic"
-
-msgid "IDS_BR_BODY_OFF"
-msgstr "Desactivat"
 
 msgid "IDS_BR_BODY_NO_WINDOWS"
 msgstr "Sense finestres"
@@ -1420,17 +1141,8 @@ msgstr "Sense títol"
 msgid "IDS_BR_BODY_NO_SAVED_PAGES"
 msgstr "No hi ha pàgines desades"
 
-msgid "IDS_BR_BODY_NO_RESULTS_FOUND"
-msgstr "No s'han trobat resultats."
-
-msgid "IDS_BR_BODY_NO_HISTORIES"
-msgstr "No hi ha historial"
-
 msgid "IDS_BR_BODY_NO_BOOKMARKS"
 msgstr "No hi ha preferits"
-
-msgid "IDS_BR_BODY_NOTIFICATIONS"
-msgstr "Notificacions"
 
 msgid "IDS_BR_BODY_NORMAL"
 msgstr "Normal"
@@ -1446,9 +1158,6 @@ msgstr "Llocs més visitats"
 
 msgid "IDS_BR_BODY_MOBILE_VIEW"
 msgstr "Vista de mòbil"
-
-msgid "IDS_BR_BODY_MEDIUM"
-msgstr "Mitjana"
 
 msgid "IDS_BR_BODY_LOCATION_M_INFORMATION"
 msgstr "Ubicació"
@@ -1474,9 +1183,6 @@ msgstr "Internet"
 msgid "IDS_BR_BODY_IMPROVE_PERFORMANCE_WHEN_LOADING_PAGES"
 msgstr "Millorar el rendiment en carregar pàgines"
 
-msgid "IDS_BR_BODY_IMAGES"
-msgstr "Imatges"
-
 msgid "IDS_BR_BODY_HOMEPAGE"
 msgstr "Pàgina d'inici"
 
@@ -1486,20 +1192,11 @@ msgstr "Oculta la barra d'adreces quan es desplaça cap avall per la pàgina."
 msgid "IDS_BR_BODY_GENERAL_M_SETTINGS"
 msgstr "General"
 
-msgid "IDS_BR_BODY_FULL_SCREEN"
-msgstr "Pantalla completa"
-
 msgid "IDS_BR_BODY_FULL_NAME_ABB"
 msgstr "Nom complet"
 
 msgid "IDS_BR_BODY_FORCE_ZOOM_ABB"
 msgstr "Forçar zoom"
-
-msgid "IDS_BR_BODY_FONT_SIZE"
-msgstr "Mida de font"
-
-msgid "IDS_BR_BODY_FOLDER_NAME"
-msgstr "Nom carpeta"
 
 msgid "IDS_BR_BODY_FLAT_SUITE_UNIT_BUILDING_FLOOR_ETC_ABB"
 msgstr "Pis, suite, unitat, edifici, planta, etc."
@@ -1516,24 +1213,6 @@ msgstr "Introdueixi el seu nom"
 msgid "IDS_BR_BODY_ENTER_TOWN_CITY_COUNTY_ABB"
 msgstr "Introdueixi poble/ciutat/comtat"
 
-msgid "IDS_BR_BODY_ENTER_POSTCODE_ABB"
-msgstr "Introduir codi postal"
-
-msgid "IDS_BR_BODY_ENTER_POSTCODE"
-msgstr "Introduir codi postal"
-
-msgid "IDS_BR_BODY_ENTER_PHONE_NUMBER"
-msgstr "Introdueixi el número de telèfon."
-
-msgid "IDS_BR_BODY_ENTER_NAME"
-msgstr "Introduir nom"
-
-msgid "IDS_BR_BODY_ENTER_FOLDER_NAME"
-msgstr "Introduir nom de carpeta"
-
-msgid "IDS_BR_BODY_ENTER_EMAIL_ADDRESS"
-msgstr "Introduir adreça correu electrònic"
-
 msgid "IDS_BR_BODY_ENTER_COUNTRY_REGION_ABB"
 msgstr "Introdueixi país/regió"
 
@@ -1545,12 +1224,6 @@ msgstr "Habilitar ubicació"
 
 msgid "IDS_BR_BODY_ENABLE_JAVASCRIPT"
 msgstr "Habilitar JavaScript"
-
-msgid "IDS_BR_BODY_EMAIL_ADDRESS"
-msgstr "Adreça de correu electrònic"
-
-msgid "IDS_BR_BODY_DOWNLOADING_ING"
-msgstr "Descarregant..."
 
 msgid "IDS_BR_BODY_DOUBLE_TAP_TO_VIEW_CERTIFICATE_TTS"
 msgstr "Toqui dos cops per veure el certificat."
@@ -1591,9 +1264,6 @@ msgstr "Mostrar avisos emergents de seguretat"
 msgid "IDS_BR_BODY_DISPLAY_IMAGES_ON_WEB_PAGES"
 msgstr "Mostrar imatges a pàgines web"
 
-msgid "IDS_BR_BODY_DEVELOPER_MODE"
-msgstr "Mode de programador"
-
 msgid "IDS_BR_BODY_DESKTOP_VIEW"
 msgstr "Vista d'escriptori"
 
@@ -1608,9 +1278,6 @@ msgstr "Emmagatzematge predeterminat"
 
 msgid "IDS_BR_BODY_DEFAULT_PAGE_ABB"
 msgstr "Pàgina predeterminada"
-
-msgid "IDS_BR_BODY_DEFAULT"
-msgstr "Predeterminat"
 
 msgid "IDS_BR_BODY_DATA_USAGE_REDUCED_BY_P1SDP_HP2SD_KB_OF_P3SD_KB_RECEIVED_TAP_HERE_TO_RESET_STATISTICS"
 msgstr "Ús de dades reduït un %1$d% (%2$d KB de %3$d KB rebuts). Toqui aquí per restablir les estadístiques."
@@ -1675,9 +1342,6 @@ msgstr "Canviï la mida del text per a una lectura més fàcil, especialment en 
 msgid "IDS_BR_BODY_BOOKMARK_REMINDER_ABB"
 msgstr "Recordatori de preferit"
 
-msgid "IDS_BR_BODY_BOOKMARKS"
-msgstr "Preferits"
-
 msgid "IDS_BR_BODY_BLOCK_POP_UPS_ON_WEB_PAGES"
 msgstr "Bloquejar finestres emergents a pàgines web"
 
@@ -1726,9 +1390,6 @@ msgstr "Permetre que %s mostri notificacions"
 msgid "IDS_BR_BODY_ALLOWS_SITES_TO_SAVE_AND_READ_COOKIE_DATA"
 msgstr "Permet als llocs desar i llegir dades de cookies"
 
-msgid "IDS_BR_BODY_ALL"
-msgstr "Tot"
-
 msgid "IDS_BR_BODY_AFTER_YOU_VISIT_WEBPAGES_THE_PAGES_YOU_HAVE_VISITED_THE_MOST_WILL_BE_SHOWN_HERE"
 msgstr "Després de visitar pàgines web, les pàgines que hagi visitat més es mostraran aquí."
 
@@ -1756,9 +1417,6 @@ msgstr "Avançat"
 msgid "IDS_BR_BODY_ADD_TO_CONTACT"
 msgstr "Afegir a contacte"
 
-msgid "IDS_BR_BODY_ADD_TO"
-msgstr "Afegir a"
-
 msgid "IDS_BR_BODY_ADD_THIS_WEBSITE_TO_BOOKMARKS_TO_OPEN_IT_FASTER_ABB"
 msgstr "Afeg lloc web a preferits per obrir-lo ràpidament"
 
@@ -1768,29 +1426,17 @@ msgstr "Línia d'adreça 2"
 msgid "IDS_BR_BODY_ADDRESS_LINE_1_ABB"
 msgstr "Línia d'adreça 1"
 
-msgid "IDS_BR_BODY_ADDDETAILSVIEW_TAGS"
-msgstr "Etiquetes"
-
-msgid "IDS_BR_BODY_ADDBOOKMARKURL"
-msgstr "URL"
-
 msgid "IDS_BR_BODY_ACCEPT_COOKIES"
 msgstr "Acceptar cookies"
 
 msgid "IDS_BR_BODY_1_PROFILE_WILL_BE_DELETED"
 msgstr "S'esborrarà 1 perfil."
 
-msgid "IDS_BR_BODY_1_ITEM_WILL_BE_DELETED"
-msgstr "S'esborrarà 1 element"
-
 msgid "IDS_BR_ACBUTTON_TABS_ABB"
 msgstr "PEST"
 
 msgid "IDS_BR_TPOP_STARTING_DOWNLOAD_ING"
 msgstr "Iniciant descàrrega..."
-
-msgid "IDS_BR_TPOP_MAXIMUM_NUMBER_OF_CHARACTERS_HPD_REACHED"
-msgstr "S'ha assolit el nombre màxim de caràcters (%d)."
 
 msgid "IDS_BR_TPOP_FOLDER_RENAMED"
 msgstr "Nom de carpeta canviat."
@@ -1807,14 +1453,8 @@ msgstr "Canc"
 msgid "IDS_BR_SBODY_SET_THE_DEVICE_TO_SHOW_THE_FULL_WEBPAGE_ON_THE_SCREEN_WHEN_IT_IS_LOADED_WITHOUT_NEEDING_TO_SCROLL"
 msgstr "Definir el dispositiu per mostrar la pàgina web completa a la pantalla quan es carregui, sense necessitat de desplaçar-se."
 
-msgid "IDS_BR_POP_UNSUPPORTMEDIATYPE"
-msgstr "No s'admet aquest tipus de mitjà"
-
 msgid "IDS_BR_POP_UNABLE_TO_RUN_INTERNET_LOW_BATTERY"
 msgstr "No es pot executar Internet. Bateria baixa."
-
-msgid "IDS_BR_POP_UNABLE_TO_CONNECT_TO_MOBILE_NETWORKS_WHILE_FLIGHT_MODE_IS_ENABLED_CONNECT_TO_WI_FI_NETWORK_INSTEAD_OR_DISABLE_FLIGHT_MODE_AND_TRY_AGAIN"
-msgstr "No es pot connectar a xarxes mòbils mentre el mode Vol està habilitat. Connecti a una xarxa Wi-Fi en el seu lloc, o deshabiliti el mode Vol i torni-ho a intentar."
 
 msgid "IDS_BR_POP_THE_DOWNLOAD_HAS_BEEN_STOPPED_AND_THE_DOWNLOADED_DATA_WILL_BE_DELETED"
 msgstr "S'ha aturat la descàrrega i s'esborraran les dades descarregades."
@@ -1825,20 +1465,8 @@ msgstr "Search completed"
 msgid "IDS_BR_POP_READY"
 msgstr "Preparat"
 
-msgid "IDS_BR_POP_INSTALL_SUCCESS"
-msgstr "Instal·lació finalitzada"
-
-msgid "IDS_BR_POP_INSTALLATION_FAILED"
-msgstr "Error d'instal·lació"
-
 msgid "IDS_BR_POP_INFORM_MEMORY_ERROR"
 msgstr "Error de memòria"
-
-msgid "IDS_BR_POP_DELETING_ING"
-msgstr "Esborrant..."
-
-msgid "IDS_BR_POP_DATA_ROAMING_IS_DISABLED_CONNECT_TO_WI_FI_NETWORK_INSTEAD_OR_ENABLE_DATA_ROAMING_AND_TRY_AGAIN"
-msgstr "La itinerància de dades està deshabilitada. Connecti a una xarxa Wi-Fi en el seu lloc, o habiliti la itinerància de dades i torni-ho a intentar."
 
 msgid "IDS_BR_POP_DATA_ROAMING_IS_DISABLED_CONNECT_TO_A_WI_FI_NETWORK_OR_ENABLE_DATA_ROAMING_AND_TRY_AGAIN"
 msgstr "La itinerància de dades està deshabilitada. Connecti a una xarxa Wi-Fi o habiliti la itinerància de dades i torni-ho a intentar."
@@ -1855,17 +1483,11 @@ msgstr "Aps web"
 msgid "IDS_BR_OPT_VIEW_ONLINE"
 msgstr "Veure en línia"
 
-msgid "IDS_BR_OPT_SHARE_VIA"
-msgstr "Compartir mitjançant"
-
 msgid "IDS_BR_OPT_READ_ON_OFFLINE_PAGES_LATER_ABB"
 msgstr "Llegir pàg fora línia més tard"
 
 msgid "IDS_BR_OPT_QUICK_ACCESS_ABB2"
 msgstr "Accés ràpid"
-
-msgid "IDS_BR_OPT_PASTE"
-msgstr "Enganxar"
 
 msgid "IDS_BR_OPT_ALWAYS_ENABLED_ABB"
 msgstr "Sempre habilitat"
@@ -1891,9 +1513,6 @@ msgstr "Suggerim de cerca i URL"
 msgid "IDS_BR_MBODY_HISTORY"
 msgstr "Historial"
 
-msgid "IDS_BR_MBODY_FONT_SIZE"
-msgstr "Mida font"
-
 msgid "IDS_BR_MBODY_FIT_PAGE_TO_SCREEN"
 msgstr "Ajustar pàgina a pantalla"
 
@@ -1905,9 +1524,6 @@ msgstr "Personalitzar"
 
 msgid "IDS_BR_MBODY_COUNTRY_REGION"
 msgstr "País/regió"
-
-msgid "IDS_BR_HEADER_UNABLE_TO_DOWNLOAD_ABB"
-msgstr "No es pot descarregar"
 
 msgid "IDS_BR_HEADER_RENAME_FOLDER_ABB"
 msgstr "Canviar nom carpeta"
@@ -1939,14 +1555,8 @@ msgstr "Afegir info"
 msgid "IDS_BR_BUTTON_WI_FI_ABB"
 msgstr "Wi-Fi"
 
-msgid "IDS_BR_BUTTON_UPDATE"
-msgstr "Actualitzar"
-
 msgid "IDS_BR_BUTTON_SETTINGS_ABB"
 msgstr "Ajust"
-
-msgid "IDS_BR_BUTTON_RETRY"
-msgstr "Reintent"
 
 msgid "IDS_BR_BUTTON2_OK"
 msgstr "Acceptar"
@@ -1972,9 +1582,6 @@ msgstr "Aquest certificat és d'una autoritat de confiança."
 msgid "IDS_BR_BODY_TAP_HERE_TO_ADD_A_QUICK_ACCESS_SHORTCUT"
 msgstr "Toqui aquí per afegir un accés directe d'Accés ràpid."
 
-msgid "IDS_BR_BODY_REQUEST_FAILED"
-msgstr "Error a la petició"
-
 msgid "IDS_BR_BODY_PREFERENCES"
 msgstr "Preferències"
 
@@ -1990,14 +1597,398 @@ msgstr "No hi ha coincidències"
 msgid "IDS_BR_BODY_MOBILE_DATA_IS_TURNED_OFF_CONNECT_TO_A_WI_FI_NETWORK_INSTEAD_OR_TAP_SETTINGS_TO_TURN_ON_MOBILE_DATA_AND_THEN_TRY_AGAIN"
 msgstr "Les dades mòbils estan desactivades. Connecti's a una xarxa Wi-Fi en el seu lloc, o toqui Ajustaments, per activar les dades mòbils i torni-ho a intentar."
 
+msgid "IDS_BR_BODY_FIT_TO_WIDTH"
+msgstr "Adaptar a l'amplada"
+
+msgid "IDS_BR_ACBUTTON_QUICK_ACCESS"
+msgstr "ACCÉS RÀPID"
+
+msgid "IDS_BR_OPT_OPEN_IN_NEW_TAB"
+msgstr "Obrir en pestanya nova"
+
+msgid "IDS_BR_BODY_SHARE_LINK"
+msgstr "Compartir enllaç"
+
+msgid "IDS_BR_SK_SAVE_LITE"
+msgstr "Desar"
+
+msgid "IDS_BR_SK_SAVE_ABB"
+msgstr "Desar"
+
+msgid "IDS_BR_SK_SAVE"
+msgstr "Desar"
+
+msgid "IDS_BR_SK_PREVIOUS"
+msgstr "Anterior"
+
+msgid "IDS_BR_SK_NEXT"
+msgstr "Següent"
+
+msgid "IDS_BR_SK_DELETE"
+msgstr "Esborrar"
+
+msgid "IDS_BR_SK_CLEAR"
+msgstr "Esborrar"
+
+msgid "IDS_BR_SK_BACK"
+msgstr "Enrere"
+
+msgid "IDS_BR_POP_WI_FI_CONNECTION_REQUIRED_CONNECT_TO_WI_FI_NETWORK_AND_TRY_AGAIN"
+msgstr "Cal una connexió Wi-Fi. Connecti a la xarxa Wi-Fi i torni-ho a intentar."
+
+msgid "IDS_BR_POP_URL_NOT_FOUND"
+msgstr "No s'ha trobat l'URL"
+
+msgid "IDS_BR_POP_URL"
+msgstr "URL"
+
+msgid "IDS_BR_POP_SAVED"
+msgstr "Desat"
+
+msgid "IDS_BR_POP_REMOVED"
+msgstr "Eliminat"
+
+msgid "IDS_BR_POP_PD_ITEMS_WILL_BE_DELETED"
+msgstr "S'esborraran %d elements"
+
+msgid "IDS_BR_POP_PD_ITEMS_SELECTED"
+msgstr "%d elements seleccionats"
+
+msgid "IDS_BR_POP_NO_ITEMS_SELECTED"
+msgstr "No s'ha seleccionat cap element"
+
+msgid "IDS_BR_POP_NOT_ENOUGH_MEMORY"
+msgstr "No hi ha prou memòria"
+
+msgid "IDS_BR_POP_NEVER"
+msgstr "Mai"
+
+msgid "IDS_BR_POP_MOBILE_DATA_IS_DISABLED_CONNECT_TO_WI_FI_NETWORK_INSTEAD_OR_ENABLE_MOBILE_DATA_AND_TRY_AGAIN"
+msgstr "Les dades mòbils estan deshabilitades. Connecti a una xarxa Wi-Fi en el seu lloc, o habiliti dades mòbils i torni-ho a intentar."
+
+msgid "IDS_BR_POP_LOADING_PLEASE_WAIT_ING"
+msgstr "Carregant. Esperi..."
+
+msgid "IDS_BR_POP_INVALID_URL"
+msgstr "URL no vàlida"
+
+msgid "IDS_BR_POP_FAIL"
+msgstr "Error"
+
+msgid "IDS_BR_POP_ENTER_TITLE_ABB"
+msgstr "Introduir títol"
+
+msgid "IDS_BR_POP_DO_NOT_SHOW_AGAIN"
+msgstr "No ho tornis a mostrar."
+
+msgid "IDS_BR_POP_DOWNLOADCOMPLETE"
+msgstr "Descàrrega finalitzada"
+
+msgid "IDS_BR_POP_DISABLED"
+msgstr "Desactivat"
+
+msgid "IDS_BR_POP_DELETE_Q"
+msgstr "Esborrar?"
+
+msgid "IDS_BR_POP_DELETED"
+msgstr "Esborrat"
+
+msgid "IDS_BR_POP_CLOSE_APPLICATION_Q"
+msgstr "Tancar aplicació?"
+
+msgid "IDS_BR_POP_BOOKMARK_ADDED"
+msgstr "Preferit afegit"
+
+msgid "IDS_BR_POP_AUTOMATIC_BRIGHTNESS"
+msgstr "Brillantor automàtica"
+
+msgid "IDS_BR_POP_ACCOUNT"
+msgstr "Compte"
+
+msgid "IDS_BR_POP_1_ITEM_WILL_BE_DELETED"
+msgstr "S'esborrarà 1 element"
+
+msgid "IDS_BR_POP_1_ITEM_SELECTED"
+msgstr "1 element seleccionat"
+
+msgid "IDS_BR_OPT_TRANSLATE"
+msgstr "Traduir"
+
+msgid "IDS_BR_OPT_STOP"
+msgstr "Aturar"
+
+msgid "IDS_BR_OPT_SHOW"
+msgstr "Mostrar"
+
+msgid "IDS_BR_OPT_SHARE"
+msgstr "Compartir"
+
+msgid "IDS_BR_OPT_SETTINGS"
+msgstr "Ajustaments"
+
+msgid "IDS_BR_OPT_SEND_EMAIL"
+msgstr "Envia missatge o correu electrònic"
+
+msgid "IDS_BR_OPT_SELECT"
+msgstr "Seleccionar"
+
+msgid "IDS_BR_OPT_SD_CARD"
+msgstr "Targ SD"
+
+msgid "IDS_BR_OPT_RENAME"
+msgstr "Canviar nom"
+
+msgid "IDS_BR_OPT_REFRESH"
+msgstr "Actualitzar"
+
+msgid "IDS_BR_OPT_MOVE"
+msgstr "Moure"
+
+msgid "IDS_BR_OPT_MESSAGES"
+msgstr "Missatges"
+
+msgid "IDS_BR_OPT_LIST_VIEW"
+msgstr "Vista de llista"
+
+msgid "IDS_BR_OPT_I_AGREE"
+msgstr "Accepto."
+
+msgid "IDS_BR_OPT_HELP"
+msgstr "Ajuda"
+
+msgid "IDS_BR_OPT_DEVICE"
+msgstr "Dispositiu"
+
+msgid "IDS_BR_OPT_BOOKMARK"
+msgstr "Preferit"
+
+msgid "IDS_BR_OPT_ADDED"
+msgstr "Afegit"
+
+msgid "IDS_BR_OPT_ADD"
+msgstr "Afegir"
+
+msgid "IDS_BR_MBODY_DEFAULT_DOWNLOAD_STORAGE"
+msgstr "Emmagat descàrrega predet"
+
+msgid "IDS_BR_HEADER_SIGN_IN_TO_SAMSUNG_ACCOUNT"
+msgstr "Iniciar sessió a Samsung account"
+
+msgid "IDS_BR_HEADER_PD_SELECTED_ABB"
+msgstr "%d seleccionats"
+
+msgid "IDS_BR_HEADER_NO_NETWORK_CONNECTION"
+msgstr "Sense connexió de xarxa"
+
+msgid "IDS_BR_HEADER_FOLDER"
+msgstr "Carpeta"
+
+msgid "IDS_BR_HEADER_EDIT_PROFILE"
+msgstr "Editar perfil"
+
+msgid "IDS_BR_BUTTON_SET"
+msgstr "Definir"
+
+msgid "IDS_BR_BUTTON_NOT_NOW"
+msgstr "Ara no"
+
+msgid "IDS_BR_BUTTON_ENABLE_ABB"
+msgstr "Habilitar"
+
+msgid "IDS_BR_BUTTON_EDIT"
+msgstr "Editar"
+
+msgid "IDS_BR_BUTTON_CONTINUE_ABB"
+msgstr "Cont."
+
+msgid "IDS_BR_BUTTON_CONTINUE"
+msgstr "Continuar"
+
+msgid "IDS_BR_BUTTON_CLOSE"
+msgstr "Tancar"
+
+msgid "IDS_BR_BUTTON_CANCEL_ABB"
+msgstr "Cancel·lar"
+
+msgid "IDS_BR_BUTTON_CANCEL"
+msgstr "Cancel·lar"
+
+msgid "IDS_BR_BUTTON_ALLOW"
+msgstr "Permetre"
+
+msgid "IDS_BR_BODY_YESTERDAY"
+msgstr "Ahir"
+
+msgid "IDS_BR_BODY_URL"
+msgstr "URL"
+
+msgid "IDS_BR_BODY_TODAY"
+msgstr "Avui"
+
+msgid "IDS_BR_BODY_TITLE"
+msgstr "Títol"
+
+msgid "IDS_BR_BODY_THE_MAXIMUM_NUMBER_OF_CHARACTERS_HPD_HAS_BEEN_EXCEEDED"
+msgstr "S'ha excedit el nombre màxim de caràcters (%d)"
+
+msgid "IDS_BR_BODY_STREAMING"
+msgstr "Reproducció en temps real"
+
+msgid "IDS_BR_BODY_SMALL"
+msgstr "Petita"
+
+msgid "IDS_BR_BODY_SETTINGS"
+msgstr "Ajustaments"
+
+msgid "IDS_BR_BODY_SEARCH"
+msgstr "Cercar"
+
+msgid "IDS_BR_BODY_RSS_SEARCH_RESULTS"
+msgstr "Resultats de la cerca"
+
+msgid "IDS_BR_BODY_PROFILE"
+msgstr "Perfil"
+
+msgid "IDS_BR_BODY_PROCESSING_ING"
+msgstr "Processant..."
+
+msgid "IDS_BR_BODY_PHONE_NUMBER_ABB"
+msgstr "Número tel"
+
+msgid "IDS_BR_BODY_PHONE"
+msgstr "Telèfon"
+
+msgid "IDS_BR_BODY_PD_ITEMS_WILL_BE_DELETED"
+msgstr "S'esborraran %d elements"
+
+msgid "IDS_BR_BODY_PASSWORD"
+msgstr "Contrasenya"
+
+msgid "IDS_BR_BODY_ON"
+msgstr "Activat"
+
+msgid "IDS_BR_BODY_OFF"
+msgstr "Desactivat"
+
+msgid "IDS_BR_BODY_NO_RESULTS_FOUND"
+msgstr "No s'han trobat resultats."
+
+msgid "IDS_BR_BODY_NO_HISTORIES"
+msgstr "No hi ha historial"
+
+msgid "IDS_BR_BODY_NOTIFICATIONS"
+msgstr "Notificacions"
+
+msgid "IDS_BR_BODY_MEDIUM"
+msgstr "Mitjana"
+
+msgid "IDS_BR_BODY_IMAGES"
+msgstr "Imatges"
+
+msgid "IDS_BR_BODY_FULL_SCREEN"
+msgstr "Pantalla completa"
+
+msgid "IDS_BR_BODY_FONT_SIZE"
+msgstr "Mida de font"
+
+msgid "IDS_BR_BODY_FOLDER_NAME"
+msgstr "Nom carpeta"
+
+msgid "IDS_BR_BODY_ENTER_POSTCODE_ABB"
+msgstr "Introduir codi postal"
+
+msgid "IDS_BR_BODY_ENTER_POSTCODE"
+msgstr "Introduir codi postal"
+
+msgid "IDS_BR_BODY_ENTER_PHONE_NUMBER"
+msgstr "Introdueixi el número de telèfon."
+
+msgid "IDS_BR_BODY_ENTER_NAME"
+msgstr "Introduir nom"
+
+msgid "IDS_BR_BODY_ENTER_FOLDER_NAME"
+msgstr "Introduir nom de carpeta"
+
+msgid "IDS_BR_BODY_ENTER_EMAIL_ADDRESS"
+msgstr "Introduir adreça correu electrònic"
+
+msgid "IDS_BR_BODY_EMAIL_ADDRESS"
+msgstr "Adreça de correu electrònic"
+
+msgid "IDS_BR_BODY_DOWNLOADING_ING"
+msgstr "Descarregant..."
+
+msgid "IDS_BR_BODY_DEVELOPER_MODE"
+msgstr "Mode de programador"
+
+msgid "IDS_BR_BODY_DEFAULT"
+msgstr "Predeterminat"
+
+msgid "IDS_BR_BODY_BOOKMARKS"
+msgstr "Preferits"
+
+msgid "IDS_BR_BODY_ALL"
+msgstr "Tot"
+
+msgid "IDS_BR_BODY_ADD_TO"
+msgstr "Afegir a"
+
+msgid "IDS_BR_BODY_ADDDETAILSVIEW_TAGS"
+msgstr "Etiquetes"
+
+msgid "IDS_BR_BODY_ADDBOOKMARKURL"
+msgstr "URL"
+
+msgid "IDS_BR_BODY_1_ITEM_WILL_BE_DELETED"
+msgstr "S'esborrarà 1 element"
+
+msgid "IDS_BR_TPOP_MAXIMUM_NUMBER_OF_CHARACTERS_HPD_REACHED"
+msgstr "S'ha assolit el nombre màxim de caràcters (%d)."
+
+msgid "IDS_BR_POP_UNSUPPORTMEDIATYPE"
+msgstr "No s'admet aquest tipus de mitjà"
+
+msgid "IDS_BR_POP_UNABLE_TO_CONNECT_TO_MOBILE_NETWORKS_WHILE_FLIGHT_MODE_IS_ENABLED_CONNECT_TO_WI_FI_NETWORK_INSTEAD_OR_DISABLE_FLIGHT_MODE_AND_TRY_AGAIN"
+msgstr "No es pot connectar a xarxes mòbils mentre el mode Vol està habilitat. Connecti a una xarxa Wi-Fi en el seu lloc, o deshabiliti el mode Vol i torni-ho a intentar."
+
+msgid "IDS_BR_POP_INSTALL_SUCCESS"
+msgstr "Instal·lació finalitzada"
+
+msgid "IDS_BR_POP_INSTALLATION_FAILED"
+msgstr "Error d'instal·lació"
+
+msgid "IDS_BR_POP_DELETING_ING"
+msgstr "Esborrant..."
+
+msgid "IDS_BR_POP_DATA_ROAMING_IS_DISABLED_CONNECT_TO_WI_FI_NETWORK_INSTEAD_OR_ENABLE_DATA_ROAMING_AND_TRY_AGAIN"
+msgstr "La itinerància de dades està deshabilitada. Connecti a una xarxa Wi-Fi en el seu lloc, o habiliti la itinerància de dades i torni-ho a intentar."
+
+msgid "IDS_BR_OPT_SHARE_VIA"
+msgstr "Compartir mitjançant"
+
+msgid "IDS_BR_OPT_PASTE"
+msgstr "Enganxar"
+
+msgid "IDS_BR_MBODY_FONT_SIZE"
+msgstr "Mida font"
+
+msgid "IDS_BR_HEADER_UNABLE_TO_DOWNLOAD_ABB"
+msgstr "No es pot descarregar"
+
+msgid "IDS_BR_BUTTON_UPDATE"
+msgstr "Actualitzar"
+
+msgid "IDS_BR_BUTTON_RETRY"
+msgstr "Reintent"
+
+msgid "IDS_BR_BODY_REQUEST_FAILED"
+msgstr "Error a la petició"
+
 msgid "IDS_BR_BODY_LOGIN"
 msgstr "Iniciar sessió"
 
 msgid "IDS_BR_BODY_LOADING_ING"
 msgstr "Carregant..."
-
-msgid "IDS_BR_BODY_FIT_TO_WIDTH"
-msgstr "Adaptar a l'amplada"
 
 msgid "IDS_BR_BODY_FIT_TO_SCREEN"
 msgstr "Ajustar a pantalla"
@@ -2008,12 +1999,180 @@ msgstr "Descàrregues"
 msgid "IDS_BR_BODY_DATA_ROAMING_IS_DISABLED_CONNECT_TO_A_WI_FI_NETWORK_INSTEAD_OR_ENABLE_DATA_ROAMING_AND_TRY_AGAIN"
 msgstr "La itinerància de dades està deshabilitada. Connecti a una xarxa Wi-Fi en el seu lloc, o habiliti la itinerància de dades i torni-ho a intentar."
 
-msgid "IDS_BR_ACBUTTON_QUICK_ACCESS"
-msgstr "ACCÉS RÀPID"
+msgid "IDS_BR_POP_DOWNLOAD_CANCELLED"
+msgstr "Descàrrega cancel·lada"
 
-msgid "IDS_ST_POP_SOME_CONTENT_HAS_BEEN_BLOCKED_TO_PROTECT_YOUR_DEVICE"
-msgstr "S'ha bloquejat algun contingut per protegir el dispositiu"
+msgid "IDS_BR_BUTTON_SECRET_ON_ABB"
+msgstr "Secr activ"
 
-msgid "IDS_ST_POP_SELECT_WHETHER_TO_GO_TO_THE_WEBPAGE_ANYWAY"
-msgstr "Seleccioni si vol anar a la pàgina web igualment."
+msgid "IDS_BR_MBODY_PRIVACY"
+msgstr "Privadesa"
+
+msgid "IDS_BR_MBODY_DEFAULT_STORAGE"
+msgstr "Emmagatz predeterminat"
+
+msgid "IDS_BR_MBODY_MANUAL_ZOOM"
+msgstr "Zoom manual"
+
+msgid "IDS_BR_TMBODY_DEFAULT_SEARCH_ENGINE"
+msgstr "Cercador predeterminat"
+
+msgid "IDS_BR_MBODY_SAVE_SIGN_IN_INFO"
+msgstr "Desar inform inici sessió"
+
+msgid "IDS_BR_OPT_TURN_OFF_SECRET_MODE_ABB"
+msgstr "Desactivar el mode Secret"
+
+msgid "IDS_BR_OPT_TURN_ON_SECRET_MODE_ABB"
+msgstr "Activar el mode Secret"
+
+msgid "IDS_BR_OPT_SHOW_PASSWORD_ABB2"
+msgstr "Mostrar la contrasenya"
+
+msgid "IDS_BR_BODY_ENTER_YOUR_CURRENT_SECRET_MODE_PASSWORD"
+msgstr "Introdueixi la contrasenya del mode Secret actual."
+
+msgid "IDS_BR_OPT_SECRET_MODE_SECURITY_ABB"
+msgstr "Seguretat del mode Secret"
+
+msgid "IDS_BR_BUTTON_USE_PASSWORD_ABB"
+msgstr "Utilitzar contrasenya"
+
+msgid "IDS_BR_HEADER_DONT_USE_PASSWORD_ABB"
+msgstr "No utilitzar contrasenya"
+
+msgid "IDS_BR_MBODY_MOST_VISITED_WEBSITES"
+msgstr "Llocs web més visitats"
+
+msgid "IDS_BR_MBODY_SET_MY_PROFILE"
+msgstr "Definir el meu perfil"
+
+msgid "IDS_BR_MBODY_MY_AUTO_FILL_PROFILE"
+msgstr "El meu Emplen auto perfil"
+
+msgid "IDS_BR_SBODY_MANAGE_DATA_USED_TO_FILL_IN_FORMS_ONLINE"
+msgstr "Gestionar dades utilitzades per omplir formularis en línia."
+
+msgid "IDS_BR_MBODY_SAVE_SIGN_IN_INFO_ABB"
+msgstr "Desa info ini ses"
+
+msgid "IDS_BR_OPT_LOCATION_ACCESS_DATA"
+msgstr "Ubicació de dades d'accés"
+
+msgid "IDS_BR_OPT_AUTO_FILL_DATA"
+msgstr "Emplenar dades automàticament"
+
+msgid "IDS_BR_BODY_ANY_WEBPAGES_YOU_VIEW_WHILE_SECRET_MODE_IS_TURNED_ON_WONT_APPEAR_IN_YOUR_BROWSER_OR_SEARCH_HISTORY_MSG"
+msgstr "Les pàgines web que vegi mentre el mode Secret estigui activat no apareixeran al navegador ni a l'historial de cerca quan estigui desactivat.\n\nEls marcadors i les pàgines web que desi mentre el mode Secret estigui activat no es mostraran quan aquest mode estigui desactivat.\n\nTambé pot protegir les dades del mode Secret amb una contrasenya."
+
+msgid "IDS_BR_BODY_ANY_WEBPAGES_YOU_VIEW_WHILE_SECRET_MODE_IS_TURNED_ON_WONT_APPEAR_IN_YOUR_BROWSER_OR_SEARCH_MSG"
+msgstr "Les pàgines web que vegi mentre el mode Secret estigui activat no apareixeran al navegador ni a l'historial de cerca quan estigui desactivat.\n\nEls marcadors i les pàgines web que desi mentre el mode Secret estigui activat no es mostraran quan aquest mode estigui desactivat."
+
+msgid "IDS_BR_BUTTON_SECRET_OFF_ABB"
+msgstr "Secr desact"
+
+msgid "IDS_BR_BUTTON_DONT_USE_PASSWORD_ABB"
+msgstr "No utilit contrasenya"
+
+msgid "IDS_BR_BUTTON_NEW_TAB_ABB2"
+msgstr "Pes nov"
+
+msgid "IDS_BR_NPBODY_WEB_ADDRESS_ABB"
+msgstr "Adreça web"
+
+msgid "IDS_BR_HEADER_ADD_WEBPAGE_TO_QUICK_ACCESS_ABB"
+msgstr "Afeg pàgin web a Accés ràpid"
+
+msgid "IDS_BR_TMBODY_TURN_ON_JAVASCRIPT"
+msgstr "Activar JavaScript"
+
+msgid "IDS_BR_HEADER_COULDNT_OPEN_NEW_TAB_ABB"
+msgstr "No s'ha pog obr pestanya nov"
+
+msgid "IDS_BR_OPT_OPEN_IN_NEW_TAB_ABB"
+msgstr "Obrir en una pestanya nova"
+
+msgid "IDS_BR_TPOP_FOLDER_NAME_ALREADY_IN_USE"
+msgstr "Nom de carpeta en ús."
+
+msgid "IDS_BR_NPBODY_NEW_FOLDER_PD"
+msgstr "Carpeta nova %d"
+
+msgid "IDS_BR_NPBODY_NEW_FOLDER"
+msgstr "Carpeta nova"
+
+msgid "IDS_BR_OPT_ENABLE_JAVASCRIPT"
+msgstr "Habilitar JavaScript"
+
+msgid "IDS_BR_TMBODY_MANAGE_WEBSITE_DATA"
+msgstr "Gestionar dades de llocs web"
+
+msgid "IDS_BR_HEADER_SET_HOME_PAGE_ABB"
+msgstr "Establir pàgina d'inici"
+
+msgid "IDS_BR_TPOP_WEBPAGE_ADDED_TO_QUICK_ACCESS_LIST"
+msgstr "Pàgina web afegida a la llista Accés ràpid."
+
+msgid "IDS_BR_OPT_EDIT_QUICK_ACCESS_ABB"
+msgstr "Editar Accés ràpid"
+
+msgid "IDS_BR_OPT_REMOVE_FROM_BOOKMARKS_ABB"
+msgstr "Eliminar de Preferits"
+
+msgid "IDS_BR_HEADER_ADD_BOOKMARK_ABB"
+msgstr "Afegir preferit"
+
+msgid "IDS_BR_BODY_BROWSING_HISTORY"
+msgstr "Historial de navegació"
+
+msgid "IDS_BR_HEADER_TABS_ABB2"
+msgstr "Pestanyes"
+
+msgid "IDS_BR_OPT_NEW_TAB"
+msgstr "Pestanya nova"
+
+msgid "IDS_BR_BUTTON_FORWARD_ABB2"
+msgstr "Reenviar"
+
+msgid "IDS_BR_BUTTON_BACK_ABB3"
+msgstr "Tornar"
+
+msgid "IDS_BR_BUTTON_BOOKMARKS_ABB"
+msgstr "Preferits"
+
+msgid "IDS_BR_NPBODY_NO_PROFILES_ABB"
+msgstr "Sense perfils"
+
+msgid "IDS_BR_TAB2_HISTORY"
+msgstr "Historial"
+
+msgid "IDS_BR_TAB2_BOOKMARKS"
+msgstr "Preferits"
+
+msgid "IDS_BR_HEADER_SAVE_CONTENT_TO_ABB"
+msgstr "Desar contingut a"
+
+msgid "IDS_BR_HEADER_SELECT_ITEMS_ABB2"
+msgstr "Seleccionar elements"
+
+msgid "IDS_BR_BODY_YOUR_PASSWORD_MUST_CONTAIN_AT_LEAST_PD_CHARACTERS_INCLUDING_AT_LEAST_1_LETTER"
+msgstr "La contrasenya ha de contenir almenys %d caràcters i incloure almenys 1 lletra."
+
+msgid "IDS_BR_BODY_AN_INCORRECT_PASSWORD_HAS_BEEN_ENTERED_TRY_AGAIN"
+msgstr "S'ha introduït una contrasenya incorrecta. Torni-ho a intentar."
+
+msgid "IDS_BR_BODY_NO_TABS"
+msgstr "Sense pestanyes"
+
+msgid "IDS_BR_TMBODY_CHANGE_PASSWORD"
+msgstr "Canviar la contrasenya"
+
+msgid "IDS_BR_BODY_ANY_WEBPAGES_VIEWED_WHILE_SECRET_MODE_IS_ENABLED_WILL_NOT_APPEAR_IN_YOUR_BROWSER_OR_SEARCH_HISTORY_WHILE_SECRET_MSG"
+msgstr "Les pàgines web que es vegin mentre el mode Secret estigui activat no apareixeran al navegador ni a l'historial de cerca quan el mode Secret estigui desactivat.\n\nEls marcadors i les pàgines web que es desin mentre el mode Secret estigui activat no es mostraran quan aquest mode estigui desactivat.\n\nTambé pot protegir les dades del mode Secret amb una contrasenya."
+
+msgid "IDS_BR_BODY_ANY_WEBPAGES_VIEWED_WHILE_SECRET_MODE_IS_ENABLED_WILL_NOT_APPEAR_IN_YOUR_MSG"
+msgstr "Les pàgines web que es vegin mentre el mode Secret estigui activat no apareixeran al navegador ni a l'historial de cerca quan el mode Secret estigui desactivat.\n\nEls marcadors i les pàgines web que es desin mentre el mode Secret estigui activat no es mostraran quan aquest mode estigui desactivat."
+
+msgid "IDS_BR_BUTTON2_DONE"
+msgstr "Finalitzat"
 

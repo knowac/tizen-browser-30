@@ -1,6 +1,0 @@
-#include "../../../core/Tools/edc/IconButton.edc"
-
-collections { base_scale: 2.6;
-    HISTORY_ICO_BTN_MOB("elm/button/base/history_button", "navi_ic_clear.png", "navi_ic_clear.png", "navi_ic_clear.png")
-    HISTORY_ICO_BTN_MOB("elm/button/base/close_history_button", "navi_ic_stop.png", "navi_ic_stop.png", "navi_ic_stop.png")
-}

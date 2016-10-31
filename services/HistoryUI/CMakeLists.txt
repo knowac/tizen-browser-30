@@ -9,11 +9,6 @@ set(HistoryUI_SRCS
     HistoryDaysListManager/mob/WebsiteHistoryItem/WebsiteHistoryItemMob.cpp
     HistoryDaysListManager/mob/WebsiteHistoryItem/WebsiteHistoryItemTitleMob.cpp
     HistoryDaysListManager/mob/WebsiteHistoryItem/WebsiteHistoryItemVisitItemsMob.cpp
-    HistoryDaysListManager/HistoryDaysListManagerTv.cpp
-    HistoryDaysListManager/tv/HistoryDayItemTv.cpp
-    HistoryDaysListManager/tv/WebsiteHistoryItem/WebsiteHistoryItemTv.cpp
-    HistoryDaysListManager/tv/WebsiteHistoryItem/WebsiteHistoryItemTitleTv.cpp
-    HistoryDaysListManager/tv/WebsiteHistoryItem/WebsiteHistoryItemVisitItemsTv.cpp
     )
 
 include(Coreheaders)
@@ -32,25 +27,10 @@ install(TARGETS ${PROJECT_NAME}
             ARCHIVE DESTINATION services/static)
 
 include(EDCCompile)
-if (${PROFILE} MATCHES "mobile")    # mobile profile
-    set(edcFiles
-        colorClasses.edc
-        History_mob.edc
-        HistoryDaysList_mob.edc
-        WebsiteHistoryItem_mob.edc
-        WebsiteHistoryItemTitle_mob.edc
-        WebsiteHistoryItemVisitItems_mob.edc
-        )
-else()                               # tv profile
-    set(edcFiles
-        colorClasses.edc
-        History.edc
-        HistoryDaysList.edc
-        WebsiteHistoryItem.edc
-        WebsiteHistoryItemTitle.edc
-        WebsiteHistoryItemVisitItems.edc
-        )
-endif (${PROFILE} MATCHES "mobile")
+set(edcFiles
+    History_mob.edc
+    HistoryDaysList_mob.edc
+)
 
 foreach(edec ${edcFiles})
     string(REGEX REPLACE "(_mob)?.edc" ".edj" target_name ${edec})

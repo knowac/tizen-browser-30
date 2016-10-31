@@ -1,14 +1,8 @@
 msgid "IDS_BR_POP_NETWORK_ERROR"
 msgstr "Tīkla kļūda."
 
-msgid "IDS_BR_BODY_AUTHUSERNAME"
-msgstr "Lietotājvārds"
-
 msgid "IDS_BR_BODY_DESTINATIONS_AUTHENTICATION_REQUIRED"
 msgstr "Nepieciešama autentifikācija."
-
-msgid "IDS_BR_BODY_AUTHPASSWORD"
-msgstr "Parole"
 
 msgid "IDS_BR_HEADER_SECURITY_WARNING"
 msgstr "Drošības brīdinājums"
@@ -33,12 +27,6 @@ msgstr "Šai vietnei ir radušās problēmas ar drošības sertifikātu."
 
 msgid "IDS_BR_OPT_ALLOW"
 msgstr "Atļaut"
-
-msgid "IDS_BR_OPT_VIEW"
-msgstr "Skatīt"
-
-msgid "IDS_BR_OPT_CANCEL"
-msgstr "Atcelt"
 
 msgid "IDS_BR_BODY_PS_REQUESTS_YOUR_LOCATION"
 msgstr "%s pieprasa jūsu atrašanās vietu."
@@ -72,6 +60,18 @@ msgstr "Lejupielādēt"
 
 msgid "IDS_BR_BODY_THIS_WEBPAGE"
 msgstr "Šī tīmekļa vietne"
+
+msgid "IDS_BR_BODY_AUTHUSERNAME"
+msgstr "Lietotājvārds"
+
+msgid "IDS_BR_BODY_AUTHPASSWORD"
+msgstr "Parole"
+
+msgid "IDS_BR_OPT_VIEW"
+msgstr "Skatīt"
+
+msgid "IDS_BR_OPT_CANCEL"
+msgstr "Atcelt"
 
 msgid "IDS_BR_OPT_SCREEN"
 msgstr "Ekrāns"
@@ -109,15 +109,6 @@ msgstr "Atcelt"
 msgid "IDS_BR_BUTTON_MORE"
 msgstr "Vēl"
 
-msgid "IDS_TPLATFORM_ACBUTTON_DONE_ABB"
-msgstr "GATAVS"
-
-msgid "IDS_TPLATFORM_ACBUTTON_CANCEL_ABB"
-msgstr "ATCELT"
-
-msgid "IDS_TPLATFORM_ACBUTTON_DELETE_ABB"
-msgstr "DZĒST"
-
 msgid "IDS_BR_BODY_NO_ITEMS"
 msgstr "Nav vienumu"
 
@@ -126,9 +117,6 @@ msgstr "Veidot sav. ar mob. tīklu"
 
 msgid "IDS_BR_OPT_DO_NOT_SHOW_AGAIN"
 msgstr "Vairs nerādīt"
-
-msgid "IDS_BR_SK_OK"
-msgstr "Labi"
 
 msgid "IDS_BR_POP_ONLY_HTTP_OR_HTTPS_URLS_CAN_BE_DOWNLOADED"
 msgstr "Var lejupielādēt tikai http vai https vietrāžus URL."
@@ -151,17 +139,11 @@ msgstr "Kopēt saiti"
 msgid "IDS_BR_OPT_COPY_IMAGE"
 msgstr "Kopēt attēlu"
 
+msgid "IDS_BR_SK_OK"
+msgstr "Labi"
+
 msgid "IDS_BR_OPT_CALL"
 msgstr "Zvans"
-
-msgid "IDS_ST_POP_PS_HAS_BEEN_DETECTED"
-msgstr "Noteikts fails %s."
-
-msgid "IDS_ST_POP_DETECTED_IN_C_PS"
-msgstr "Noteikts failā: %s"
-
-msgid "IDS_ST_HEADER_MALWARE_DETECTED_ABB"
-msgstr "Ļaunprogrammatūras noteikšana"
 
 msgid "IDS_BR_BUTTON_FAILED"
 msgstr "Neizdev."
@@ -229,35 +211,11 @@ msgstr "Noņ.atz"
 msgid "IDS_BR_SK_TABS"
 msgstr "Cilnes"
 
-msgid "IDS_BR_SK_SAVE_LITE"
-msgstr "Saglabāt"
-
-msgid "IDS_BR_SK_SAVE_ABB"
-msgstr "Sagl."
-
-msgid "IDS_BR_SK_SAVE"
-msgstr "Saglabāt"
-
-msgid "IDS_BR_SK_PREVIOUS"
-msgstr "Iepriekš."
-
-msgid "IDS_BR_SK_NEXT"
-msgstr "Nāk."
-
 msgid "IDS_BR_SK_MENU"
 msgstr "Izvēlne"
 
 msgid "IDS_BR_SK_DELETE_ABB"
 msgstr "Dzēst"
-
-msgid "IDS_BR_SK_DELETE"
-msgstr "Dzēst"
-
-msgid "IDS_BR_SK_CLEAR"
-msgstr "Dzēst"
-
-msgid "IDS_BR_SK_BACK"
-msgstr "Atpakaļ"
 
 msgid "IDS_BR_SK3_CREATE_FOLDER"
 msgstr "Izveidot mapi"
@@ -316,15 +274,6 @@ msgstr "Dažas tīmekļa lapas nevarēs izgriezt precīzi"
 msgid "IDS_BR_POP_YOUR_HISTORY_WILL_BE_CLEARED"
 msgstr "Jūsu vēsture tiks notīrīta."
 
-msgid "IDS_BR_POP_WI_FI_CONNECTION_REQUIRED_CONNECT_TO_WI_FI_NETWORK_AND_TRY_AGAIN"
-msgstr "Nepieciešams Wi-Fi savienojums. Izveidojiet savienojumu ar Wi-Fi tīklu un mēģiniet vēlreiz"
-
-msgid "IDS_BR_POP_URL_NOT_FOUND"
-msgstr "URL nav atrasts."
-
-msgid "IDS_BR_POP_URL"
-msgstr "URL"
-
 msgid "IDS_BR_POP_UNABLE_TO_VIEW_THE_CERTIFICATE_THE_PAGE_INFORMATION_HAS_BEEN_CHANGED"
 msgstr "Nevar skatīt sertifikātu. Lapas informācija ir mainīta."
 
@@ -370,23 +319,11 @@ msgstr "Drošības politika ierobežo interneta pārlūka lietošanu."
 msgid "IDS_BR_POP_SAVED_TO_BOOKMARKS"
 msgstr "Saglabāts mapē Grāmatzīmes."
 
-msgid "IDS_BR_POP_SAVED"
-msgstr "Saglabāts."
-
 msgid "IDS_BR_POP_RENAME_TAG"
 msgstr "Pārdēvēt virkni"
 
-msgid "IDS_BR_POP_REMOVED"
-msgstr "Noņemts."
-
 msgid "IDS_BR_POP_PD_PROFILES_WILL_BE_DELETED"
 msgstr "%d profili tiks izdzēsti."
-
-msgid "IDS_BR_POP_PD_ITEMS_WILL_BE_DELETED"
-msgstr "%d objekti tiks izdzēsti."
-
-msgid "IDS_BR_POP_PD_ITEMS_SELECTED"
-msgstr "Ir izvēlēti %d objekti."
 
 msgid "IDS_BR_POP_PAGES_THAT_YOU_VIEW_WILL_NOT_APPEAR_IN_YOUR_BROWSER_HISTORY_OR_SEARCH_HISTORY_AND_THEY_WILL_NOT_LEAVE_OTHER_TRACES_LIKE_COOKIES"
 msgstr "Skatītās lapas netiks parādītas pārlūka vai meklēšanas vēsturē un tās neatstās arī citas pēdas, piemēram, sīkfailus."
@@ -415,53 +352,20 @@ msgstr "Tika noteikta ļaunprogrammatūra “%1$s”.\nNoteikšanas vieta: “%2
 msgid "IDS_BR_POP_P1SS_HAS_BEEN_DETECTED_DETECTED_IN_C_P2SS_OPEN_WEBPAGE_ANYWAY_Q"
 msgstr "Tika noteikta ļaunprogrammatūra “%1$s”.\nNoteikšanas vieta: “%2$s”\n\nVai tomēr atvērt tīmekļa lapu?"
 
-msgid "IDS_BR_POP_NO_ITEMS_SELECTED"
-msgstr "Nav izvēlēts neviens objekts."
-
 msgid "IDS_BR_POP_NOT_ENOUGH_MEMORY_DELETE_SOME_ITEMS_AND_TRY_AGAIN"
 msgstr "Nepietiek atmiņas. Izdzēsiet dažus objektus un mēģiniet vēlreiz."
-
-msgid "IDS_BR_POP_NOT_ENOUGH_MEMORY"
-msgstr "Atmiņa pilna."
 
 msgid "IDS_BR_POP_NOT_ALLOWED"
 msgstr "Nav atļauts."
 
-msgid "IDS_BR_POP_NEVER"
-msgstr "Nekad"
-
 msgid "IDS_BR_POP_MOVED"
 msgstr "Pārvietots."
-
-msgid "IDS_BR_POP_MOBILE_DATA_IS_DISABLED_CONNECT_TO_WI_FI_NETWORK_INSTEAD_OR_ENABLE_MOBILE_DATA_AND_TRY_AGAIN"
-msgstr "Mobilie dati ir deaktivizēti. Tā vietā izveidojiet savienojumu ar Wi-Fi tīklu vai aktivizējiet mobilos datus un mēģiniet vēlreiz"
-
-msgid "IDS_BR_POP_LOADING_PLEASE_WAIT_ING"
-msgstr "Notiek ielāde. Lūdzu, uzgaidiet..."
-
-msgid "IDS_BR_POP_INVALID_URL"
-msgstr "Nederīgs URL."
-
-msgid "IDS_BR_POP_FAIL"
-msgstr "Neizdevās."
 
 msgid "IDS_BR_POP_ENTER_URL"
 msgstr "Ievadiet URL."
 
-msgid "IDS_BR_POP_ENTER_TITLE_ABB"
-msgstr "Ievadīt virsr."
-
 msgid "IDS_BR_POP_ENTER_BOOKMARK_NAME"
 msgstr "Ievadiet grāmatzīmes nosaukumu."
-
-msgid "IDS_BR_POP_DO_NOT_SHOW_AGAIN"
-msgstr "Nerādīt vēlreiz"
-
-msgid "IDS_BR_POP_DOWNLOADCOMPLETE"
-msgstr "Lejupielāde pabeigta."
-
-msgid "IDS_BR_POP_DISABLED"
-msgstr "Atspējots."
 
 msgid "IDS_BR_POP_DIALING_ING_VZW"
 msgstr "Dialing..."
@@ -487,9 +391,6 @@ msgstr "Vai izdzēst pierakstīšanās datus šai tīmekļa vietnei?"
 msgid "IDS_BR_POP_DELETE_SIGN_IN_DATA_FOR_PD_WEBSITES_Q"
 msgstr "Vai izdzēst pierakstīšanās datus %d tīmekļa vietnēm?"
 
-msgid "IDS_BR_POP_DELETE_Q"
-msgstr "Vai dzēst?"
-
 msgid "IDS_BR_POP_DELETE_PD_SAVED_WEB_PAGES_Q"
 msgstr "Vai izdzēst %d saglabātās tīmekļa lapas?"
 
@@ -505,14 +406,8 @@ msgstr "Vai dzēst visus šīs vietnes datus un atrašanās vietu atļaujas?"
 msgid "IDS_BR_POP_DELETEHISTORYQUESTION"
 msgstr "Vai izdzēst vēsturi?"
 
-msgid "IDS_BR_POP_DELETED"
-msgstr "Izdzēsts."
-
 msgid "IDS_BR_POP_CONTINUE"
 msgstr "Turpināt"
-
-msgid "IDS_BR_POP_CLOSE_APPLICATION_Q"
-msgstr "Vai aizvērt programmu?"
 
 msgid "IDS_BR_POP_CLOSE_APPLICATION"
 msgstr "Aizvērt programmu"
@@ -525,12 +420,6 @@ msgstr "Vai notīrīt vēsturi?"
 
 msgid "IDS_BR_POP_BOOKMARK_REMOVED"
 msgstr "Grāmatzīme noņemta."
-
-msgid "IDS_BR_POP_BOOKMARK_ADDED"
-msgstr "Pievienota grāmatzīme."
-
-msgid "IDS_BR_POP_AUTOMATIC_BRIGHTNESS"
-msgstr "Automātiska spilgtuma kontrole"
 
 msgid "IDS_BR_POP_ALREADY_EXISTS"
 msgstr "Jau pastāv."
@@ -556,15 +445,6 @@ msgstr "Atļaut vietnēm saglabāt un lasīt sīkfailus."
 msgid "IDS_BR_POP_ADDED_TO_BOOKMARKS"
 msgstr "Pievienots grāmatzīmēm."
 
-msgid "IDS_BR_POP_ACCOUNT"
-msgstr "Konts"
-
-msgid "IDS_BR_POP_1_ITEM_WILL_BE_DELETED"
-msgstr "Tiks izdzēsts 1 objekts."
-
-msgid "IDS_BR_POP_1_ITEM_SELECTED"
-msgstr "Ir izvēlēts 1 objekts."
-
 msgid "IDS_BR_OPT_WINDOWS"
 msgstr "Logi"
 
@@ -574,38 +454,20 @@ msgstr "Sk. sertifikātu"
 msgid "IDS_BR_OPT_UNICODE_HUTF_8"
 msgstr "Unikods (UTF-8)"
 
-msgid "IDS_BR_OPT_TRANSLATE"
-msgstr "Tulkot"
-
 msgid "IDS_BR_OPT_THUMBNAIL_VIEW"
 msgstr "Sīktēlu skats"
 
 msgid "IDS_BR_OPT_TEXT_ENCODING"
 msgstr "Teksta kodēšana"
 
-msgid "IDS_BR_OPT_STOP"
-msgstr "Apturēt"
-
 msgid "IDS_BR_OPT_SHRINK_TEXT"
 msgstr "Samazināt tekstu"
-
-msgid "IDS_BR_OPT_SHOW"
-msgstr "Rādīt"
-
-msgid "IDS_BR_OPT_SHARE"
-msgstr "Koplietot"
 
 msgid "IDS_BR_OPT_SETTINGS_ABB"
 msgstr "Iestatījumi"
 
-msgid "IDS_BR_OPT_SETTINGS"
-msgstr "Iestatījumi"
-
 msgid "IDS_BR_OPT_SEND_MESSAGE_VODA"
 msgstr "Sūtīt ziņu"
-
-msgid "IDS_BR_OPT_SEND_EMAIL"
-msgstr "Sūtīt e-pasta ziņu"
 
 msgid "IDS_BR_OPT_SENDURLVIA_EMAIL"
 msgstr "E-pasts"
@@ -624,12 +486,6 @@ msgstr "Izvēles režīms"
 
 msgid "IDS_BR_OPT_SELECTED"
 msgstr "Izvēlēts"
-
-msgid "IDS_BR_OPT_SELECT"
-msgstr "Izvēlēties"
-
-msgid "IDS_BR_OPT_SD_CARD"
-msgstr "SD karte"
 
 msgid "IDS_BR_OPT_SAVE_TO_KEEPIT_ABB"
 msgstr "Saglabāt KeepIt"
@@ -658,14 +514,8 @@ msgstr "Pārkārtot"
 msgid "IDS_BR_OPT_RENAME_FOLDER"
 msgstr "Pārdēvēt mapi"
 
-msgid "IDS_BR_OPT_RENAME"
-msgstr "Pārdēvēt"
-
 msgid "IDS_BR_OPT_REMOVE"
 msgstr "Noņemt"
-
-msgid "IDS_BR_OPT_REFRESH"
-msgstr "Atsvaidzināt"
 
 msgid "IDS_BR_OPT_READER_MODE_TTS"
 msgstr "Lasītāja režīms"
@@ -685,14 +535,8 @@ msgstr "Bezsaistes lapas"
 msgid "IDS_BR_OPT_NEW_WINDOW"
 msgstr "Jauns logs"
 
-msgid "IDS_BR_OPT_MOVE"
-msgstr "Pārvietot"
-
 msgid "IDS_BR_OPT_MINIMISE"
 msgstr "Minimizēt"
-
-msgid "IDS_BR_OPT_MESSAGES"
-msgstr "Ziņas"
 
 msgid "IDS_BR_OPT_MEDIUM_M_QUALITY"
 msgstr "Vidēja"
@@ -705,9 +549,6 @@ msgstr "Atrašanās vietas piekļuves privilēģijas"
 
 msgid "IDS_BR_OPT_LOAD_IMAGES"
 msgstr "Ielādēt attēlus"
-
-msgid "IDS_BR_OPT_LIST_VIEW"
-msgstr "Saraksta skats"
 
 msgid "IDS_BR_OPT_LATIN_1_HISO_8859_1"
 msgstr "Latīņu-1 (ISO-8859-1)"
@@ -724,9 +565,6 @@ msgstr "Japāņu (ISO-2022-JP)"
 msgid "IDS_BR_OPT_JAPANESE_HEUC_JP"
 msgstr "Japāņu (EUC-JP)"
 
-msgid "IDS_BR_OPT_I_AGREE"
-msgstr "Piekrītu."
-
 msgid "IDS_BR_OPT_INCOGNITO_MODE_ABB"
 msgstr "Inkognito režīms"
 
@@ -741,9 +579,6 @@ msgstr "Sākuma ekrāns kā īsceļš"
 
 msgid "IDS_BR_OPT_HIGH_M_QUALITY"
 msgstr "Augsta"
-
-msgid "IDS_BR_OPT_HELP"
-msgstr "Palīdzība"
 
 msgid "IDS_BR_OPT_GOFORWARD"
 msgstr "Uz priekšu"
@@ -790,9 +625,6 @@ msgstr "Deaktiviz. mazu datu lietojumu"
 msgid "IDS_BR_OPT_DISABLED"
 msgstr "Deaktivizēts"
 
-msgid "IDS_BR_OPT_DEVICE"
-msgstr "Ierīce"
-
 msgid "IDS_BR_OPT_DELETE_SAVED_PAGE_ABB"
 msgstr "Dzēst saglabāto lapu"
 
@@ -826,9 +658,6 @@ msgstr "Ķīniešu (Big5)"
 msgid "IDS_BR_OPT_CACHE"
 msgstr "Kešatmiņa"
 
-msgid "IDS_BR_OPT_BOOKMARK"
-msgstr "Grāmatzīme"
-
 msgid "IDS_BR_OPT_ADD_TO_WEB_CLIP"
 msgstr "Pievienot tīmekļa klipam"
 
@@ -849,12 +678,6 @@ msgstr "Piev. grāmatzīmi"
 
 msgid "IDS_BR_OPT_ADD_BOOKMARK"
 msgstr "Pievienot grāmatzīmi"
-
-msgid "IDS_BR_OPT_ADDED"
-msgstr "Pievienots."
-
-msgid "IDS_BR_OPT_ADD"
-msgstr "Pievienot"
 
 msgid "IDS_BR_OPT1_EXTENSION"
 msgstr "Paplašinājums"
@@ -925,9 +748,6 @@ msgstr "Lejupiel. plūsmas saturu"
 msgid "IDS_BR_MBODY_DELETE_SIGN_IN_DATA"
 msgstr "Dzēst pierakst. datus"
 
-msgid "IDS_BR_MBODY_DEFAULT_DOWNLOAD_STORAGE"
-msgstr "Noklus. lejupiel. krātuve"
-
 msgid "IDS_BR_MBODY_DATA_SAVING_STATISTICS"
 msgstr "Datu saglab. statistika"
 
@@ -970,9 +790,6 @@ msgstr "Nevar pārvietot grāmatzīmes"
 msgid "IDS_BR_HEADER_SITE_NOT_TRUSTED_ABB"
 msgstr "Vietne nav uzticama"
 
-msgid "IDS_BR_HEADER_SIGN_IN_TO_SAMSUNG_ACCOUNT"
-msgstr "Pierakstieties Samsung kontā"
-
 msgid "IDS_BR_HEADER_SET_HOMEPAGE_ABB"
 msgstr "Iestatīt sākumlapu"
 
@@ -1009,17 +826,11 @@ msgstr "Uznirstošais logs ir bloķēts"
 msgid "IDS_BR_HEADER_POPULAR_WEBSITES_ABB"
 msgstr "Populāras tīmekļa vietnes"
 
-msgid "IDS_BR_HEADER_PD_SELECTED_ABB"
-msgstr "Izvēlēts: %d"
-
 msgid "IDS_BR_HEADER_ORGANISATION_C_ABB"
 msgstr "Organizācija:"
 
 msgid "IDS_BR_HEADER_ORGANISATIONAL_UNIT_C"
 msgstr "Organizācijas vienība:"
-
-msgid "IDS_BR_HEADER_NO_NETWORK_CONNECTION"
-msgstr "Nav savienojuma ar tīklu"
 
 msgid "IDS_BR_HEADER_NEWER_M_INTERNET_HISTORY_ABB"
 msgstr "Newer"
@@ -1036,17 +847,11 @@ msgstr "HTML5 paplašinājums"
 msgid "IDS_BR_HEADER_FORM_DATA"
 msgstr "Veidlapas dati"
 
-msgid "IDS_BR_HEADER_FOLDER"
-msgstr "Mape"
-
 msgid "IDS_BR_HEADER_EXPIRES_ON_C"
 msgstr "Derīguma termiņš beidzas:"
 
 msgid "IDS_BR_HEADER_ENABLE_WEB_SIGN_IN"
 msgstr "Aktivizēt pierakstīšanos tīmeklī"
-
-msgid "IDS_BR_HEADER_EDIT_PROFILE"
-msgstr "Rediģēt profilu"
 
 msgid "IDS_BR_HEADER_EDIT_BOOKMARK"
 msgstr "Rediģēt grāmatzīmi"
@@ -1084,14 +889,8 @@ msgstr "Joslas platuma pārvaldība"
 msgid "IDS_BR_HEADER_ADVANCEDCERTIFICATES"
 msgstr "Sertifikāti"
 
-msgid "IDS_BR_BUTTON_SET"
-msgstr "Iestatīt"
-
 msgid "IDS_BR_BUTTON_RESET_ABB"
 msgstr "Atiestatīt"
-
-msgid "IDS_BR_BUTTON_NOT_NOW"
-msgstr "Vēlāk"
 
 msgid "IDS_BR_BUTTON_HOMEPAGE_ABB"
 msgstr "Sākumlapa"
@@ -1099,35 +898,11 @@ msgstr "Sākumlapa"
 msgid "IDS_BR_BUTTON_FIND_ABB"
 msgstr "Mekl."
 
-msgid "IDS_BR_BUTTON_ENABLE_ABB"
-msgstr "Aktivizēt"
-
-msgid "IDS_BR_BUTTON_EDIT"
-msgstr "Rediģēt"
-
-msgid "IDS_BR_BUTTON_CONTINUE_ABB"
-msgstr "Turpināt"
-
-msgid "IDS_BR_BUTTON_CONTINUE"
-msgstr "Turpināt"
-
-msgid "IDS_BR_BUTTON_CLOSE"
-msgstr "Aizvērt"
-
-msgid "IDS_BR_BUTTON_CANCEL_ABB"
-msgstr "Atcelt"
-
-msgid "IDS_BR_BUTTON_CANCEL"
-msgstr "Atcelt"
-
 msgid "IDS_BR_BUTTON_BACK_ABB"
 msgstr "Atpakaļ"
 
 msgid "IDS_BR_BUTTON_ALWAYS_SHOW_ABB"
 msgstr "Vienm. rādīt"
-
-msgid "IDS_BR_BUTTON_ALLOW"
-msgstr "Atļaut"
 
 msgid "IDS_BR_BUTTON2_WEB_PORTAL"
 msgstr "Tīmekļa\nportāls"
@@ -1152,9 +927,6 @@ msgstr "Atvērt vēsturi"
 
 msgid "IDS_BR_BUTTON2_ENTERTAINMENT"
 msgstr "Izklaide"
-
-msgid "IDS_BR_BODY_YESTERDAY"
-msgstr "Vakar"
 
 msgid "IDS_BR_BODY_WINDOW_MANAGER"
 msgstr "Logu pārvaldnieks"
@@ -1183,9 +955,6 @@ msgstr "Izmantojiet pilnekrāna režīmu, lai slēptu statusa joslu."
 msgid "IDS_BR_BODY_USE_A_PREDICTION_SERVICE_TO_DISPLAY_RELATED_QUERIES_AND_POPULAR_WEBSITES_IN_THE_ADDRESS_BAR_AS_YOU_TYPE"
 msgstr "Izmantojiet intuitīvās ievades pakalpojumu, lai, rakstot adrešu joslā, tiktu parādīti saistīti vaicājumi un populāras tīmekļa vietnes."
 
-msgid "IDS_BR_BODY_URL"
-msgstr "URL"
-
 msgid "IDS_BR_BODY_UPPER_FOLDER_T_TALKBACK"
 msgstr "Augšējā mape"
 
@@ -1201,12 +970,6 @@ msgstr "Nevar parādīt tīmekļa lapu. Nav atbildes no servera."
 msgid "IDS_BR_BODY_TOWN_CITY_COUNTY_ABB"
 msgstr "Pilsēta/rajons"
 
-msgid "IDS_BR_BODY_TODAY"
-msgstr "Šodien"
-
-msgid "IDS_BR_BODY_TITLE"
-msgstr "Nosaukums"
-
 msgid "IDS_BR_BODY_THIS_SITE_IS_USING_PS"
 msgstr "Šī vietne izmanto %s."
 
@@ -1221,9 +984,6 @@ msgstr "Šī grāmatzīme tiks izdzēsta."
 
 msgid "IDS_BR_BODY_THE_SELECTED_PERSONAL_DATA_WILL_BE_DELETED"
 msgstr "Izvēlētie personiskie dati tiks izdzēsti."
-
-msgid "IDS_BR_BODY_THE_MAXIMUM_NUMBER_OF_CHARACTERS_HPD_HAS_BEEN_EXCEEDED"
-msgstr "Pārsniegts maksimālais rakstzīmju skaits (%d)."
 
 msgid "IDS_BR_BODY_TEXT_FIELD_T_TTS"
 msgstr "Teksta lauks"
@@ -1249,17 +1009,11 @@ msgstr "Sinhronizēt grāmatzīmes"
 msgid "IDS_BR_BODY_STREET_ADDRESS_PO_BOX_C_O_ETC_ABB"
 msgstr "Adrese, abonenta kastītes numurs, nodošanai, utt."
 
-msgid "IDS_BR_BODY_STREAMING"
-msgstr "Straumēšana"
-
 msgid "IDS_BR_BODY_STORED_DATA"
 msgstr "Saglabātie dati"
 
 msgid "IDS_BR_BODY_SPLIT_BAR_HANDLE"
 msgstr "Skaldītājjoslas turis"
-
-msgid "IDS_BR_BODY_SMALL"
-msgstr "Mazs"
 
 msgid "IDS_BR_BODY_SIGN_IN_TO_YOUR_SAMSUNG_ACCOUNT_TO_ACCESS_THE_BOOKMARKS_AND_TABS_ON_YOUR_OTHER_DEVICES"
 msgstr "Pierakstieties savā Samsung kontā, lai piekļūtu citās jūsu ierīcēs esošajām grāmatzīmēm un cilnēm."
@@ -1279,9 +1033,6 @@ msgstr "Iestatīt tekstu tīmekļa veidlapas automātiskai aizpildīšanai."
 msgid "IDS_BR_BODY_SET_CURRENT_PAGE_AS_HOMEPAGE"
 msgstr "Iestatīt pašreizējo lapu kā sākumlapu"
 
-msgid "IDS_BR_BODY_SETTINGS"
-msgstr "Iestatījumi"
-
 msgid "IDS_BR_BODY_SELECT_FOLDER"
 msgstr "Izvēlieties mapi"
 
@@ -1294,9 +1045,6 @@ msgstr "Meklēšanas lauks"
 msgid "IDS_BR_BODY_SEARCH_AND_URL_SUGGESTIONS"
 msgstr "Meklēšanas un URL ieteikumi"
 
-msgid "IDS_BR_BODY_SEARCH"
-msgstr "Meklēt"
-
 msgid "IDS_BR_BODY_SCREEN_AND_TEXT"
 msgstr "Ekrāns un teksts"
 
@@ -1305,9 +1053,6 @@ msgstr "Saglabājiet tīmekļa vietņu lietotājvārdus un paroles."
 
 msgid "IDS_BR_BODY_SAVE_LINK"
 msgstr "Saglabāt saiti"
-
-msgid "IDS_BR_BODY_RSS_SEARCH_RESULTS"
-msgstr "Meklēšanas rezultāti"
 
 msgid "IDS_BR_BODY_RESTORE_DEFAULT_SETTINGS_Q"
 msgstr "Vai atjaunot noklusējuma iestatījumus?"
@@ -1342,12 +1087,6 @@ msgstr "Radiopoga"
 msgid "IDS_BR_BODY_PS_BOOKMARK_WILL_BE_DELETED"
 msgstr "%s grāmatzīme tiks izdzēsta."
 
-msgid "IDS_BR_BODY_PROFILE"
-msgstr "Profils"
-
-msgid "IDS_BR_BODY_PROCESSING_ING"
-msgstr "Notiek apstrāde..."
-
 msgid "IDS_BR_BODY_PRIVACY"
 msgstr "Konfidencialitāte"
 
@@ -1360,20 +1099,8 @@ msgstr "Nospiediet izvēlnes taustiņu."
 msgid "IDS_BR_BODY_POSTCODE_ABB"
 msgstr "Pasta indekss"
 
-msgid "IDS_BR_BODY_PHONE_NUMBER_ABB"
-msgstr "Tālruņa num."
-
-msgid "IDS_BR_BODY_PHONE"
-msgstr "Tālrunis"
-
 msgid "IDS_BR_BODY_PD_POP_UPS_BLOCKED_ABB"
 msgstr "%d uznir.logi bloķ."
-
-msgid "IDS_BR_BODY_PD_ITEMS_WILL_BE_DELETED"
-msgstr "%d objekti tiks izdzēsti."
-
-msgid "IDS_BR_BODY_PASSWORD"
-msgstr "Parole"
 
 msgid "IDS_BR_BODY_PAGE_LOADED_T_TTS"
 msgstr "Lapa ir ielādēta"
@@ -1399,14 +1126,8 @@ msgstr "Pēc pieprasījuma"
 msgid "IDS_BR_BODY_ONLY_VIA_WI_FI_ABB"
 msgstr "Tikai, izm. Wi-Fi"
 
-msgid "IDS_BR_BODY_ON"
-msgstr "Ieslēgts"
-
 msgid "IDS_BR_BODY_OLDER"
 msgstr "Vecāka"
-
-msgid "IDS_BR_BODY_OFF"
-msgstr "Izslēgts"
 
 msgid "IDS_BR_BODY_NO_WINDOWS"
 msgstr "Nav neviena loga"
@@ -1420,17 +1141,8 @@ msgstr "Nav nosaukuma"
 msgid "IDS_BR_BODY_NO_SAVED_PAGES"
 msgstr "Nav saglabātu lapu"
 
-msgid "IDS_BR_BODY_NO_RESULTS_FOUND"
-msgstr "Nav atrasts neviens rezultāts."
-
-msgid "IDS_BR_BODY_NO_HISTORIES"
-msgstr "Nav vēstures"
-
 msgid "IDS_BR_BODY_NO_BOOKMARKS"
 msgstr "Nav grāmatzīmes"
-
-msgid "IDS_BR_BODY_NOTIFICATIONS"
-msgstr "Paziņojumi"
 
 msgid "IDS_BR_BODY_NORMAL"
 msgstr "Parasta"
@@ -1446,9 +1158,6 @@ msgstr "Biežāk apmeklētās vietnes"
 
 msgid "IDS_BR_BODY_MOBILE_VIEW"
 msgstr "Mobilais skats"
-
-msgid "IDS_BR_BODY_MEDIUM"
-msgstr "Vidējs"
 
 msgid "IDS_BR_BODY_LOCATION_M_INFORMATION"
 msgstr "Atrašanās vieta"
@@ -1474,9 +1183,6 @@ msgstr "Internets"
 msgid "IDS_BR_BODY_IMPROVE_PERFORMANCE_WHEN_LOADING_PAGES"
 msgstr "Uzlabot veiktspēju lapu ielādes laikā."
 
-msgid "IDS_BR_BODY_IMAGES"
-msgstr "Attēli"
-
 msgid "IDS_BR_BODY_HOMEPAGE"
 msgstr "Mājas lapa"
 
@@ -1486,20 +1192,11 @@ msgstr "Slēpt adreses joslu, kad ritināt lapu uz leju."
 msgid "IDS_BR_BODY_GENERAL_M_SETTINGS"
 msgstr "Vispārīgi"
 
-msgid "IDS_BR_BODY_FULL_SCREEN"
-msgstr "Pilnekrāns"
-
 msgid "IDS_BR_BODY_FULL_NAME_ABB"
 msgstr "Vārds, uzvārds"
 
 msgid "IDS_BR_BODY_FORCE_ZOOM_ABB"
 msgstr "Piespiedu tālummaiņa"
-
-msgid "IDS_BR_BODY_FONT_SIZE"
-msgstr "Fonta lielums"
-
-msgid "IDS_BR_BODY_FOLDER_NAME"
-msgstr "Mapes nosaukums"
 
 msgid "IDS_BR_BODY_FLAT_SUITE_UNIT_BUILDING_FLOOR_ETC_ABB"
 msgstr "Dzīvoklis, viesnīcas numurs, bloks, ēka, stāvs utt."
@@ -1516,24 +1213,6 @@ msgstr "Ievadiet savu vārdu."
 msgid "IDS_BR_BODY_ENTER_TOWN_CITY_COUNTY_ABB"
 msgstr "Ievadiet pilsētu/novadu."
 
-msgid "IDS_BR_BODY_ENTER_POSTCODE_ABB"
-msgstr "Ievadiet pasta indeksu."
-
-msgid "IDS_BR_BODY_ENTER_POSTCODE"
-msgstr "Ievadiet pasta indeksu."
-
-msgid "IDS_BR_BODY_ENTER_PHONE_NUMBER"
-msgstr "Ievadiet tālruņa numuru."
-
-msgid "IDS_BR_BODY_ENTER_NAME"
-msgstr "Ievadiet vārdu."
-
-msgid "IDS_BR_BODY_ENTER_FOLDER_NAME"
-msgstr "Ievadiet mapes nosaukumu."
-
-msgid "IDS_BR_BODY_ENTER_EMAIL_ADDRESS"
-msgstr "Ievadīt e-pasta adresi."
-
 msgid "IDS_BR_BODY_ENTER_COUNTRY_REGION_ABB"
 msgstr "Ievadiet valsti/reģionu."
 
@@ -1545,12 +1224,6 @@ msgstr "Aktivizēt atrašanās vietu"
 
 msgid "IDS_BR_BODY_ENABLE_JAVASCRIPT"
 msgstr "Aktivizēt JavaScript"
-
-msgid "IDS_BR_BODY_EMAIL_ADDRESS"
-msgstr "E-pasta adrese"
-
-msgid "IDS_BR_BODY_DOWNLOADING_ING"
-msgstr "Ielādē..."
 
 msgid "IDS_BR_BODY_DOUBLE_TAP_TO_VIEW_CERTIFICATE_TTS"
 msgstr "Veiciet dubultskārienu, lai skatītu sertifikātu."
@@ -1591,9 +1264,6 @@ msgstr "Rādīt uznirstošos drošības brīdinājumus."
 msgid "IDS_BR_BODY_DISPLAY_IMAGES_ON_WEB_PAGES"
 msgstr "Parādīt tīmekļa lapu attēlus."
 
-msgid "IDS_BR_BODY_DEVELOPER_MODE"
-msgstr "Izstrādātāju režīms"
-
 msgid "IDS_BR_BODY_DESKTOP_VIEW"
 msgstr "Darbvirsmas skats"
 
@@ -1608,9 +1278,6 @@ msgstr "Noklusējuma krātuve"
 
 msgid "IDS_BR_BODY_DEFAULT_PAGE_ABB"
 msgstr "Noklusējuma lapa"
-
-msgid "IDS_BR_BODY_DEFAULT"
-msgstr "Noklusējums"
 
 msgid "IDS_BR_BODY_DATA_USAGE_REDUCED_BY_P1SDP_HP2SD_KB_OF_P3SD_KB_RECEIVED_TAP_HERE_TO_RESET_STATISTICS"
 msgstr "Datu lietojums samazināts par %1$d% (saņemti %2$d KB no %3$d KB). Pieskarieties šeit, lai nodzēstu statistiku."
@@ -1675,9 +1342,6 @@ msgstr "Lai teksts būtu vieglāk lasāms, palieliniet tā lielumu, it īpaši, 
 msgid "IDS_BR_BODY_BOOKMARK_REMINDER_ABB"
 msgstr "Grāmatzīmes atgādinājums"
 
-msgid "IDS_BR_BODY_BOOKMARKS"
-msgstr "Grāmatzīmes"
-
 msgid "IDS_BR_BODY_BLOCK_POP_UPS_ON_WEB_PAGES"
 msgstr "Bloķēt uznirstošos logus tīmekļa lapās."
 
@@ -1726,9 +1390,6 @@ msgstr "Atļaut %s rādīt paziņojumus"
 msgid "IDS_BR_BODY_ALLOWS_SITES_TO_SAVE_AND_READ_COOKIE_DATA"
 msgstr "Ļauj vietnēm saglabāt un lasīt sīkfailu datus."
 
-msgid "IDS_BR_BODY_ALL"
-msgstr "Visas"
-
 msgid "IDS_BR_BODY_AFTER_YOU_VISIT_WEBPAGES_THE_PAGES_YOU_HAVE_VISITED_THE_MOST_WILL_BE_SHOWN_HERE"
 msgstr "Pēc tīmekļa lapu apmeklēšanas visbiežāk apmeklētās lapas tiks parādītas šeit."
 
@@ -1756,9 +1417,6 @@ msgstr "Papildu"
 msgid "IDS_BR_BODY_ADD_TO_CONTACT"
 msgstr "Pievienot kontaktam"
 
-msgid "IDS_BR_BODY_ADD_TO"
-msgstr "Pievienot"
-
 msgid "IDS_BR_BODY_ADD_THIS_WEBSITE_TO_BOOKMARKS_TO_OPEN_IT_FASTER_ABB"
 msgstr "Lai atvērtu šo vietni ātrāk, piev. to grāmatzīmēm."
 
@@ -1768,29 +1426,17 @@ msgstr "2. adreses rinda"
 msgid "IDS_BR_BODY_ADDRESS_LINE_1_ABB"
 msgstr "1. adreses rinda"
 
-msgid "IDS_BR_BODY_ADDDETAILSVIEW_TAGS"
-msgstr "Atzīmes"
-
-msgid "IDS_BR_BODY_ADDBOOKMARKURL"
-msgstr "URL"
-
 msgid "IDS_BR_BODY_ACCEPT_COOKIES"
 msgstr "Pieņemt sīkfailus"
 
 msgid "IDS_BR_BODY_1_PROFILE_WILL_BE_DELETED"
 msgstr "1 profils tiks izdzēsts."
 
-msgid "IDS_BR_BODY_1_ITEM_WILL_BE_DELETED"
-msgstr "Tiks izdzēsts 1 objekts."
-
 msgid "IDS_BR_ACBUTTON_TABS_ABB"
 msgstr "CILN."
 
 msgid "IDS_BR_TPOP_STARTING_DOWNLOAD_ING"
 msgstr "Sāk lejupielādi..."
-
-msgid "IDS_BR_TPOP_MAXIMUM_NUMBER_OF_CHARACTERS_HPD_REACHED"
-msgstr "Sasniegts maksimālais rakstzīmju skaits (%d)"
 
 msgid "IDS_BR_TPOP_FOLDER_RENAMED"
 msgstr "Mape ir pārdēvēta."
@@ -1807,14 +1453,8 @@ msgstr "Atcelt"
 msgid "IDS_BR_SBODY_SET_THE_DEVICE_TO_SHOW_THE_FULL_WEBPAGE_ON_THE_SCREEN_WHEN_IT_IS_LOADED_WITHOUT_NEEDING_TO_SCROLL"
 msgstr "Iestatiet ierīci pēc ielādes ekrānā rādīt pilnu tīmekļa lapu, to neritinot."
 
-msgid "IDS_BR_POP_UNSUPPORTMEDIATYPE"
-msgstr "Neatbalstīts multivides veids."
-
 msgid "IDS_BR_POP_UNABLE_TO_RUN_INTERNET_LOW_BATTERY"
 msgstr "Nevar palaist internetu. Tukšs akumulators."
-
-msgid "IDS_BR_POP_UNABLE_TO_CONNECT_TO_MOBILE_NETWORKS_WHILE_FLIGHT_MODE_IS_ENABLED_CONNECT_TO_WI_FI_NETWORK_INSTEAD_OR_DISABLE_FLIGHT_MODE_AND_TRY_AGAIN"
-msgstr "Nevar izveidot savienojumu ar mobilajiem tīkliem, kamēr ir aktivizēts lidojuma režīms. Tā vietā izveidojiet savienojumu ar Wi-Fi tīklu vai deaktivizējiet lidojuma režīmu un mēģiniet vēlreiz"
 
 msgid "IDS_BR_POP_THE_DOWNLOAD_HAS_BEEN_STOPPED_AND_THE_DOWNLOADED_DATA_WILL_BE_DELETED"
 msgstr "Lejupielāde ir pārtraukta un lejupielādētie dati tiks izdzēsti."
@@ -1825,20 +1465,8 @@ msgstr "Search completed"
 msgid "IDS_BR_POP_READY"
 msgstr "Gatavs."
 
-msgid "IDS_BR_POP_INSTALL_SUCCESS"
-msgstr "Instalēšana pabeigta."
-
-msgid "IDS_BR_POP_INSTALLATION_FAILED"
-msgstr "Instalēšana neizdevās."
-
 msgid "IDS_BR_POP_INFORM_MEMORY_ERROR"
 msgstr "Atmiņas kļūda."
-
-msgid "IDS_BR_POP_DELETING_ING"
-msgstr "Dzēš..."
-
-msgid "IDS_BR_POP_DATA_ROAMING_IS_DISABLED_CONNECT_TO_WI_FI_NETWORK_INSTEAD_OR_ENABLE_DATA_ROAMING_AND_TRY_AGAIN"
-msgstr "Datu viesabonēšana ir deaktivizēta. Tā vietā izveidojiet savienojumu ar Wi-Fi tīklu vai aktivizējiet datu viesabonēšanu un mēģiniet vēlreiz"
 
 msgid "IDS_BR_POP_DATA_ROAMING_IS_DISABLED_CONNECT_TO_A_WI_FI_NETWORK_OR_ENABLE_DATA_ROAMING_AND_TRY_AGAIN"
 msgstr "Datu viesabonēšana ir deaktivizēta. Izveidojiet savienojumu ar Wi-Fi tīklu vai aktivizējiet datu viesabonēšanu un mēģiniet vēlreiz."
@@ -1855,17 +1483,11 @@ msgstr "Tīm.progr."
 msgid "IDS_BR_OPT_VIEW_ONLINE"
 msgstr "Skatīt tiešsaistē"
 
-msgid "IDS_BR_OPT_SHARE_VIA"
-msgstr "Koplietot, izmantojot"
-
 msgid "IDS_BR_OPT_READ_ON_OFFLINE_PAGES_LATER_ABB"
 msgstr "Lasīt bezsaistes lapās vēlāk"
 
 msgid "IDS_BR_OPT_QUICK_ACCESS_ABB2"
 msgstr "Ātrā piekļuve"
-
-msgid "IDS_BR_OPT_PASTE"
-msgstr "Ielīmēt"
 
 msgid "IDS_BR_OPT_ALWAYS_ENABLED_ABB"
 msgstr "Vienmēr aktivizēts"
@@ -1891,9 +1513,6 @@ msgstr "Meklēš. un URL ieteikumi"
 msgid "IDS_BR_MBODY_HISTORY"
 msgstr "Vēsture"
 
-msgid "IDS_BR_MBODY_FONT_SIZE"
-msgstr "Fonta lielums"
-
 msgid "IDS_BR_MBODY_FIT_PAGE_TO_SCREEN"
 msgstr "Ietilpināt lapu ekrānā"
 
@@ -1905,9 +1524,6 @@ msgstr "Pielāgots"
 
 msgid "IDS_BR_MBODY_COUNTRY_REGION"
 msgstr "Valsts/reģions"
-
-msgid "IDS_BR_HEADER_UNABLE_TO_DOWNLOAD_ABB"
-msgstr "Nevar lejupielādēt"
 
 msgid "IDS_BR_HEADER_RENAME_FOLDER_ABB"
 msgstr "Pārdēvēt mapi"
@@ -1939,14 +1555,8 @@ msgstr "Piev. inf."
 msgid "IDS_BR_BUTTON_WI_FI_ABB"
 msgstr "Wi-Fi"
 
-msgid "IDS_BR_BUTTON_UPDATE"
-msgstr "Atjaunināt"
-
 msgid "IDS_BR_BUTTON_SETTINGS_ABB"
 msgstr "Iestat."
-
-msgid "IDS_BR_BUTTON_RETRY"
-msgstr "Atkārtot"
 
 msgid "IDS_BR_BUTTON2_OK"
 msgstr "Labi"
@@ -1972,9 +1582,6 @@ msgstr "Šis ir uzticamas iestādes sertifikāts."
 msgid "IDS_BR_BODY_TAP_HERE_TO_ADD_A_QUICK_ACCESS_SHORTCUT"
 msgstr "Pieskarieties šeit, lai pievienotu ātrās piekļuves īsceļu."
 
-msgid "IDS_BR_BODY_REQUEST_FAILED"
-msgstr "Pieprasījums neizdevās."
-
 msgid "IDS_BR_BODY_PREFERENCES"
 msgstr "Pārlūka iestatījumi"
 
@@ -1990,14 +1597,398 @@ msgstr "Nav atbilstību"
 msgid "IDS_BR_BODY_MOBILE_DATA_IS_TURNED_OFF_CONNECT_TO_A_WI_FI_NETWORK_INSTEAD_OR_TAP_SETTINGS_TO_TURN_ON_MOBILE_DATA_AND_THEN_TRY_AGAIN"
 msgstr "Mobilie dati ir izslēgti. Tā vietā izveidojiet savienojumu ar Wi-Fi tīklu vai pieskarieties pie Iestatījumi, lai ieslēgtu mobilos datus, un mēģiniet vēlreiz."
 
+msgid "IDS_BR_BODY_FIT_TO_WIDTH"
+msgstr "Pielāgot platumam"
+
+msgid "IDS_BR_ACBUTTON_QUICK_ACCESS"
+msgstr "ĀTRĀ PIEKĻ."
+
+msgid "IDS_BR_OPT_OPEN_IN_NEW_TAB"
+msgstr "Atvērt jaunā cilnē"
+
+msgid "IDS_BR_BODY_SHARE_LINK"
+msgstr "Koplietot saiti"
+
+msgid "IDS_BR_SK_SAVE_LITE"
+msgstr "Saglabāt"
+
+msgid "IDS_BR_SK_SAVE_ABB"
+msgstr "Sagl."
+
+msgid "IDS_BR_SK_SAVE"
+msgstr "Saglabāt"
+
+msgid "IDS_BR_SK_PREVIOUS"
+msgstr "Iepriekš."
+
+msgid "IDS_BR_SK_NEXT"
+msgstr "Nāk."
+
+msgid "IDS_BR_SK_DELETE"
+msgstr "Dzēst"
+
+msgid "IDS_BR_SK_CLEAR"
+msgstr "Dzēst"
+
+msgid "IDS_BR_SK_BACK"
+msgstr "Atpakaļ"
+
+msgid "IDS_BR_POP_WI_FI_CONNECTION_REQUIRED_CONNECT_TO_WI_FI_NETWORK_AND_TRY_AGAIN"
+msgstr "Nepieciešams Wi-Fi savienojums. Izveidojiet savienojumu ar Wi-Fi tīklu un mēģiniet vēlreiz"
+
+msgid "IDS_BR_POP_URL_NOT_FOUND"
+msgstr "URL nav atrasts."
+
+msgid "IDS_BR_POP_URL"
+msgstr "URL"
+
+msgid "IDS_BR_POP_SAVED"
+msgstr "Saglabāts."
+
+msgid "IDS_BR_POP_REMOVED"
+msgstr "Noņemts."
+
+msgid "IDS_BR_POP_PD_ITEMS_WILL_BE_DELETED"
+msgstr "%d objekti tiks izdzēsti."
+
+msgid "IDS_BR_POP_PD_ITEMS_SELECTED"
+msgstr "Ir izvēlēti %d objekti."
+
+msgid "IDS_BR_POP_NO_ITEMS_SELECTED"
+msgstr "Nav izvēlēts neviens objekts."
+
+msgid "IDS_BR_POP_NOT_ENOUGH_MEMORY"
+msgstr "Atmiņa pilna."
+
+msgid "IDS_BR_POP_NEVER"
+msgstr "Nekad"
+
+msgid "IDS_BR_POP_MOBILE_DATA_IS_DISABLED_CONNECT_TO_WI_FI_NETWORK_INSTEAD_OR_ENABLE_MOBILE_DATA_AND_TRY_AGAIN"
+msgstr "Mobilie dati ir deaktivizēti. Tā vietā izveidojiet savienojumu ar Wi-Fi tīklu vai aktivizējiet mobilos datus un mēģiniet vēlreiz"
+
+msgid "IDS_BR_POP_LOADING_PLEASE_WAIT_ING"
+msgstr "Notiek ielāde. Lūdzu, uzgaidiet..."
+
+msgid "IDS_BR_POP_INVALID_URL"
+msgstr "Nederīgs URL."
+
+msgid "IDS_BR_POP_FAIL"
+msgstr "Neizdevās."
+
+msgid "IDS_BR_POP_ENTER_TITLE_ABB"
+msgstr "Ievadīt virsr."
+
+msgid "IDS_BR_POP_DO_NOT_SHOW_AGAIN"
+msgstr "Nerādīt vēlreiz"
+
+msgid "IDS_BR_POP_DOWNLOADCOMPLETE"
+msgstr "Lejupielāde pabeigta."
+
+msgid "IDS_BR_POP_DISABLED"
+msgstr "Atspējots."
+
+msgid "IDS_BR_POP_DELETE_Q"
+msgstr "Vai dzēst?"
+
+msgid "IDS_BR_POP_DELETED"
+msgstr "Izdzēsts."
+
+msgid "IDS_BR_POP_CLOSE_APPLICATION_Q"
+msgstr "Vai aizvērt programmu?"
+
+msgid "IDS_BR_POP_BOOKMARK_ADDED"
+msgstr "Pievienota grāmatzīme."
+
+msgid "IDS_BR_POP_AUTOMATIC_BRIGHTNESS"
+msgstr "Automātiska spilgtuma kontrole"
+
+msgid "IDS_BR_POP_ACCOUNT"
+msgstr "Konts"
+
+msgid "IDS_BR_POP_1_ITEM_WILL_BE_DELETED"
+msgstr "Tiks izdzēsts 1 objekts."
+
+msgid "IDS_BR_POP_1_ITEM_SELECTED"
+msgstr "Ir izvēlēts 1 objekts."
+
+msgid "IDS_BR_OPT_TRANSLATE"
+msgstr "Tulkot"
+
+msgid "IDS_BR_OPT_STOP"
+msgstr "Apturēt"
+
+msgid "IDS_BR_OPT_SHOW"
+msgstr "Rādīt"
+
+msgid "IDS_BR_OPT_SHARE"
+msgstr "Koplietot"
+
+msgid "IDS_BR_OPT_SETTINGS"
+msgstr "Iestatījumi"
+
+msgid "IDS_BR_OPT_SEND_EMAIL"
+msgstr "Sūtīt e-pasta ziņu"
+
+msgid "IDS_BR_OPT_SELECT"
+msgstr "Izvēlēties"
+
+msgid "IDS_BR_OPT_SD_CARD"
+msgstr "SD karte"
+
+msgid "IDS_BR_OPT_RENAME"
+msgstr "Pārdēvēt"
+
+msgid "IDS_BR_OPT_REFRESH"
+msgstr "Atsvaidzināt"
+
+msgid "IDS_BR_OPT_MOVE"
+msgstr "Pārvietot"
+
+msgid "IDS_BR_OPT_MESSAGES"
+msgstr "Ziņas"
+
+msgid "IDS_BR_OPT_LIST_VIEW"
+msgstr "Saraksta skats"
+
+msgid "IDS_BR_OPT_I_AGREE"
+msgstr "Piekrītu."
+
+msgid "IDS_BR_OPT_HELP"
+msgstr "Palīdzība"
+
+msgid "IDS_BR_OPT_DEVICE"
+msgstr "Ierīce"
+
+msgid "IDS_BR_OPT_BOOKMARK"
+msgstr "Grāmatzīme"
+
+msgid "IDS_BR_OPT_ADDED"
+msgstr "Pievienots."
+
+msgid "IDS_BR_OPT_ADD"
+msgstr "Pievienot"
+
+msgid "IDS_BR_MBODY_DEFAULT_DOWNLOAD_STORAGE"
+msgstr "Noklus. lejupiel. krātuve"
+
+msgid "IDS_BR_HEADER_SIGN_IN_TO_SAMSUNG_ACCOUNT"
+msgstr "Pierakstieties Samsung kontā"
+
+msgid "IDS_BR_HEADER_PD_SELECTED_ABB"
+msgstr "Izvēlēts: %d"
+
+msgid "IDS_BR_HEADER_NO_NETWORK_CONNECTION"
+msgstr "Nav savienojuma ar tīklu"
+
+msgid "IDS_BR_HEADER_FOLDER"
+msgstr "Mape"
+
+msgid "IDS_BR_HEADER_EDIT_PROFILE"
+msgstr "Rediģēt profilu"
+
+msgid "IDS_BR_BUTTON_SET"
+msgstr "Iestatīt"
+
+msgid "IDS_BR_BUTTON_NOT_NOW"
+msgstr "Vēlāk"
+
+msgid "IDS_BR_BUTTON_ENABLE_ABB"
+msgstr "Aktivizēt"
+
+msgid "IDS_BR_BUTTON_EDIT"
+msgstr "Rediģēt"
+
+msgid "IDS_BR_BUTTON_CONTINUE_ABB"
+msgstr "Turpināt"
+
+msgid "IDS_BR_BUTTON_CONTINUE"
+msgstr "Turpināt"
+
+msgid "IDS_BR_BUTTON_CLOSE"
+msgstr "Aizvērt"
+
+msgid "IDS_BR_BUTTON_CANCEL_ABB"
+msgstr "Atcelt"
+
+msgid "IDS_BR_BUTTON_CANCEL"
+msgstr "Atcelt"
+
+msgid "IDS_BR_BUTTON_ALLOW"
+msgstr "Atļaut"
+
+msgid "IDS_BR_BODY_YESTERDAY"
+msgstr "Vakar"
+
+msgid "IDS_BR_BODY_URL"
+msgstr "URL"
+
+msgid "IDS_BR_BODY_TODAY"
+msgstr "Šodien"
+
+msgid "IDS_BR_BODY_TITLE"
+msgstr "Nosaukums"
+
+msgid "IDS_BR_BODY_THE_MAXIMUM_NUMBER_OF_CHARACTERS_HPD_HAS_BEEN_EXCEEDED"
+msgstr "Pārsniegts maksimālais rakstzīmju skaits (%d)."
+
+msgid "IDS_BR_BODY_STREAMING"
+msgstr "Straumēšana"
+
+msgid "IDS_BR_BODY_SMALL"
+msgstr "Mazs"
+
+msgid "IDS_BR_BODY_SETTINGS"
+msgstr "Iestatījumi"
+
+msgid "IDS_BR_BODY_SEARCH"
+msgstr "Meklēt"
+
+msgid "IDS_BR_BODY_RSS_SEARCH_RESULTS"
+msgstr "Meklēšanas rezultāti"
+
+msgid "IDS_BR_BODY_PROFILE"
+msgstr "Profils"
+
+msgid "IDS_BR_BODY_PROCESSING_ING"
+msgstr "Notiek apstrāde..."
+
+msgid "IDS_BR_BODY_PHONE_NUMBER_ABB"
+msgstr "Tālruņa num."
+
+msgid "IDS_BR_BODY_PHONE"
+msgstr "Tālrunis"
+
+msgid "IDS_BR_BODY_PD_ITEMS_WILL_BE_DELETED"
+msgstr "%d objekti tiks izdzēsti."
+
+msgid "IDS_BR_BODY_PASSWORD"
+msgstr "Parole"
+
+msgid "IDS_BR_BODY_ON"
+msgstr "Ieslēgts"
+
+msgid "IDS_BR_BODY_OFF"
+msgstr "Izslēgts"
+
+msgid "IDS_BR_BODY_NO_RESULTS_FOUND"
+msgstr "Nav atrasts neviens rezultāts."
+
+msgid "IDS_BR_BODY_NO_HISTORIES"
+msgstr "Nav vēstures"
+
+msgid "IDS_BR_BODY_NOTIFICATIONS"
+msgstr "Paziņojumi"
+
+msgid "IDS_BR_BODY_MEDIUM"
+msgstr "Vidējs"
+
+msgid "IDS_BR_BODY_IMAGES"
+msgstr "Attēli"
+
+msgid "IDS_BR_BODY_FULL_SCREEN"
+msgstr "Pilnekrāns"
+
+msgid "IDS_BR_BODY_FONT_SIZE"
+msgstr "Fonta lielums"
+
+msgid "IDS_BR_BODY_FOLDER_NAME"
+msgstr "Mapes nosaukums"
+
+msgid "IDS_BR_BODY_ENTER_POSTCODE_ABB"
+msgstr "Ievadiet pasta indeksu."
+
+msgid "IDS_BR_BODY_ENTER_POSTCODE"
+msgstr "Ievadiet pasta indeksu."
+
+msgid "IDS_BR_BODY_ENTER_PHONE_NUMBER"
+msgstr "Ievadiet tālruņa numuru."
+
+msgid "IDS_BR_BODY_ENTER_NAME"
+msgstr "Ievadiet vārdu."
+
+msgid "IDS_BR_BODY_ENTER_FOLDER_NAME"
+msgstr "Ievadiet mapes nosaukumu."
+
+msgid "IDS_BR_BODY_ENTER_EMAIL_ADDRESS"
+msgstr "Ievadīt e-pasta adresi."
+
+msgid "IDS_BR_BODY_EMAIL_ADDRESS"
+msgstr "E-pasta adrese"
+
+msgid "IDS_BR_BODY_DOWNLOADING_ING"
+msgstr "Ielādē..."
+
+msgid "IDS_BR_BODY_DEVELOPER_MODE"
+msgstr "Izstrādātāju režīms"
+
+msgid "IDS_BR_BODY_DEFAULT"
+msgstr "Noklusējums"
+
+msgid "IDS_BR_BODY_BOOKMARKS"
+msgstr "Grāmatzīmes"
+
+msgid "IDS_BR_BODY_ALL"
+msgstr "Visas"
+
+msgid "IDS_BR_BODY_ADD_TO"
+msgstr "Pievienot"
+
+msgid "IDS_BR_BODY_ADDDETAILSVIEW_TAGS"
+msgstr "Atzīmes"
+
+msgid "IDS_BR_BODY_ADDBOOKMARKURL"
+msgstr "URL"
+
+msgid "IDS_BR_BODY_1_ITEM_WILL_BE_DELETED"
+msgstr "Tiks izdzēsts 1 objekts."
+
+msgid "IDS_BR_TPOP_MAXIMUM_NUMBER_OF_CHARACTERS_HPD_REACHED"
+msgstr "Sasniegts maksimālais rakstzīmju skaits (%d)"
+
+msgid "IDS_BR_POP_UNSUPPORTMEDIATYPE"
+msgstr "Neatbalstīts multivides veids."
+
+msgid "IDS_BR_POP_UNABLE_TO_CONNECT_TO_MOBILE_NETWORKS_WHILE_FLIGHT_MODE_IS_ENABLED_CONNECT_TO_WI_FI_NETWORK_INSTEAD_OR_DISABLE_FLIGHT_MODE_AND_TRY_AGAIN"
+msgstr "Nevar izveidot savienojumu ar mobilajiem tīkliem, kamēr ir aktivizēts lidojuma režīms. Tā vietā izveidojiet savienojumu ar Wi-Fi tīklu vai deaktivizējiet lidojuma režīmu un mēģiniet vēlreiz"
+
+msgid "IDS_BR_POP_INSTALL_SUCCESS"
+msgstr "Instalēšana pabeigta."
+
+msgid "IDS_BR_POP_INSTALLATION_FAILED"
+msgstr "Instalēšana neizdevās."
+
+msgid "IDS_BR_POP_DELETING_ING"
+msgstr "Dzēš..."
+
+msgid "IDS_BR_POP_DATA_ROAMING_IS_DISABLED_CONNECT_TO_WI_FI_NETWORK_INSTEAD_OR_ENABLE_DATA_ROAMING_AND_TRY_AGAIN"
+msgstr "Datu viesabonēšana ir deaktivizēta. Tā vietā izveidojiet savienojumu ar Wi-Fi tīklu vai aktivizējiet datu viesabonēšanu un mēģiniet vēlreiz"
+
+msgid "IDS_BR_OPT_SHARE_VIA"
+msgstr "Koplietot, izmantojot"
+
+msgid "IDS_BR_OPT_PASTE"
+msgstr "Ielīmēt"
+
+msgid "IDS_BR_MBODY_FONT_SIZE"
+msgstr "Fonta lielums"
+
+msgid "IDS_BR_HEADER_UNABLE_TO_DOWNLOAD_ABB"
+msgstr "Nevar lejupielādēt"
+
+msgid "IDS_BR_BUTTON_UPDATE"
+msgstr "Atjaunināt"
+
+msgid "IDS_BR_BUTTON_RETRY"
+msgstr "Atkārtot"
+
+msgid "IDS_BR_BODY_REQUEST_FAILED"
+msgstr "Pieprasījums neizdevās."
+
 msgid "IDS_BR_BODY_LOGIN"
 msgstr "Pieteikšanās"
 
 msgid "IDS_BR_BODY_LOADING_ING"
 msgstr "Ielādē..."
-
-msgid "IDS_BR_BODY_FIT_TO_WIDTH"
-msgstr "Pielāgot platumam"
 
 msgid "IDS_BR_BODY_FIT_TO_SCREEN"
 msgstr "Pielāgot ekrānam"
@@ -2008,12 +1999,180 @@ msgstr "Lejupielādes"
 msgid "IDS_BR_BODY_DATA_ROAMING_IS_DISABLED_CONNECT_TO_A_WI_FI_NETWORK_INSTEAD_OR_ENABLE_DATA_ROAMING_AND_TRY_AGAIN"
 msgstr "Datu viesabonēšana ir deaktivizēta. Izveidojiet savienojumu ar Wi-Fi tīklu vai aktivizējiet datu viesabonēšanu un mēģiniet vēlreiz."
 
-msgid "IDS_BR_ACBUTTON_QUICK_ACCESS"
-msgstr "ĀTRĀ PIEKĻ."
+msgid "IDS_BR_POP_DOWNLOAD_CANCELLED"
+msgstr "Lejupielāde atcelta."
 
-msgid "IDS_ST_POP_SOME_CONTENT_HAS_BEEN_BLOCKED_TO_PROTECT_YOUR_DEVICE"
-msgstr "Lai aizsargātu jūsu ierīci, daļa satura tika bloķēta."
+msgid "IDS_BR_BUTTON_SECRET_ON_ABB"
+msgstr "Slep. iesl."
 
-msgid "IDS_ST_POP_SELECT_WHETHER_TO_GO_TO_THE_WEBPAGE_ANYWAY"
-msgstr "Izvēlieties, vai tomēr doties uz tīmekļa lapu."
+msgid "IDS_BR_MBODY_PRIVACY"
+msgstr "Konfidencialitāte"
+
+msgid "IDS_BR_MBODY_DEFAULT_STORAGE"
+msgstr "Noklusējuma krātuve"
+
+msgid "IDS_BR_MBODY_MANUAL_ZOOM"
+msgstr "Manuālā tālummaiņa"
+
+msgid "IDS_BR_TMBODY_DEFAULT_SEARCH_ENGINE"
+msgstr "Noklusējuma meklētājprogramma"
+
+msgid "IDS_BR_MBODY_SAVE_SIGN_IN_INFO"
+msgstr "Saglabāt pierakst. datus"
+
+msgid "IDS_BR_OPT_TURN_OFF_SECRET_MODE_ABB"
+msgstr "Izslēgt slepeno režīmu"
+
+msgid "IDS_BR_OPT_TURN_ON_SECRET_MODE_ABB"
+msgstr "Ieslēgt slepeno režīmu"
+
+msgid "IDS_BR_OPT_SHOW_PASSWORD_ABB2"
+msgstr "Rādīt paroli"
+
+msgid "IDS_BR_BODY_ENTER_YOUR_CURRENT_SECRET_MODE_PASSWORD"
+msgstr "Ievadiet pašreizējo slepenā režīma paroli."
+
+msgid "IDS_BR_OPT_SECRET_MODE_SECURITY_ABB"
+msgstr "Slepenā režīma drošība"
+
+msgid "IDS_BR_BUTTON_USE_PASSWORD_ABB"
+msgstr "Izmantot paroli"
+
+msgid "IDS_BR_HEADER_DONT_USE_PASSWORD_ABB"
+msgstr "Neizmantot paroli"
+
+msgid "IDS_BR_MBODY_MOST_VISITED_WEBSITES"
+msgstr "Biežāk apmeklētās vietnes"
+
+msgid "IDS_BR_MBODY_SET_MY_PROFILE"
+msgstr "Iestatīt manu profilu"
+
+msgid "IDS_BR_MBODY_MY_AUTO_FILL_PROFILE"
+msgstr "Mans autom.aizpild. prof."
+
+msgid "IDS_BR_SBODY_MANAGE_DATA_USED_TO_FILL_IN_FORMS_ONLINE"
+msgstr "Pārvaldiet datus, kas tiek izmantoti veidlapu aizpildīšanai tiešsaistē."
+
+msgid "IDS_BR_MBODY_SAVE_SIGN_IN_INFO_ABB"
+msgstr "Sagl. pier. inf."
+
+msgid "IDS_BR_OPT_LOCATION_ACCESS_DATA"
+msgstr "Atrašanās vietas piekļuves dati"
+
+msgid "IDS_BR_OPT_AUTO_FILL_DATA"
+msgstr "Automātiski ievadīt datus"
+
+msgid "IDS_BR_BODY_ANY_WEBPAGES_YOU_VIEW_WHILE_SECRET_MODE_IS_TURNED_ON_WONT_APPEAR_IN_YOUR_BROWSER_OR_SEARCH_HISTORY_MSG"
+msgstr "Tīmekļa vietnes, ko skatāt, kad ir ieslēgts slepenais režīms, pēc tā izslēgšanas netiks parādītas jūsu pārlūkprogrammas vai meklēšanas vēsturē.\n\nGrāmatzīmes un tīmekļa lapas, ko esat saglabājis, kad ir ieslēgts slepenais režīms, pēc tā izslēgšanas netiks rādītas.\n\nSlepenā režīma datus varat aizsargāt arī ar paroli."
+
+msgid "IDS_BR_BODY_ANY_WEBPAGES_YOU_VIEW_WHILE_SECRET_MODE_IS_TURNED_ON_WONT_APPEAR_IN_YOUR_BROWSER_OR_SEARCH_MSG"
+msgstr "Tīmekļa vietnes, ko skatāt, kad ir ieslēgts slepenais režīms, pēc tā izslēgšanas netiks parādītas jūsu pārlūkprogrammas vai meklēšanas vēsturē.\n\nGrāmatzīmes un tīmekļa lapas, ko esat saglabājis, kad ir ieslēgts slepenais režīms, pēc tā izslēgšanas netiks rādītas."
+
+msgid "IDS_BR_BUTTON_SECRET_OFF_ABB"
+msgstr "Slep. izsl."
+
+msgid "IDS_BR_BUTTON_DONT_USE_PASSWORD_ABB"
+msgstr "Neizmantot paroli"
+
+msgid "IDS_BR_BUTTON_NEW_TAB_ABB2"
+msgstr "Jauna"
+
+msgid "IDS_BR_NPBODY_WEB_ADDRESS_ABB"
+msgstr "Tīmekļa adrese"
+
+msgid "IDS_BR_HEADER_ADD_WEBPAGE_TO_QUICK_ACCESS_ABB"
+msgstr "Piev. tīm. lapu ātr. piekļ."
+
+msgid "IDS_BR_TMBODY_TURN_ON_JAVASCRIPT"
+msgstr "JavaScript ieslēgšana"
+
+msgid "IDS_BR_HEADER_COULDNT_OPEN_NEW_TAB_ABB"
+msgstr "Nevarēja atvērt jaunu cilni"
+
+msgid "IDS_BR_OPT_OPEN_IN_NEW_TAB_ABB"
+msgstr "Atvērt jaunā cilnē"
+
+msgid "IDS_BR_TPOP_FOLDER_NAME_ALREADY_IN_USE"
+msgstr "Mapes nosaukums jau tiek lietots."
+
+msgid "IDS_BR_NPBODY_NEW_FOLDER_PD"
+msgstr "Jauna mape %d"
+
+msgid "IDS_BR_NPBODY_NEW_FOLDER"
+msgstr "Jauna mape"
+
+msgid "IDS_BR_OPT_ENABLE_JAVASCRIPT"
+msgstr "Aktivizēt JavaScript"
+
+msgid "IDS_BR_TMBODY_MANAGE_WEBSITE_DATA"
+msgstr "Pārvaldīt tīmekļa vietnes datus"
+
+msgid "IDS_BR_HEADER_SET_HOME_PAGE_ABB"
+msgstr "Iestatīt sākumlapu"
+
+msgid "IDS_BR_TPOP_WEBPAGE_ADDED_TO_QUICK_ACCESS_LIST"
+msgstr "Tīmekļa lapa ir pievienota ātrās piekļuves sarakstam."
+
+msgid "IDS_BR_OPT_EDIT_QUICK_ACCESS_ABB"
+msgstr "Rediģēt ātro piekļuvi"
+
+msgid "IDS_BR_OPT_REMOVE_FROM_BOOKMARKS_ABB"
+msgstr "Noņemt no grāmatzīmēm"
+
+msgid "IDS_BR_HEADER_ADD_BOOKMARK_ABB"
+msgstr "Pievienot grāmatz."
+
+msgid "IDS_BR_BODY_BROWSING_HISTORY"
+msgstr "Pārlūkošanas vēsture"
+
+msgid "IDS_BR_HEADER_TABS_ABB2"
+msgstr "Cilnes"
+
+msgid "IDS_BR_OPT_NEW_TAB"
+msgstr "Jauna cilne"
+
+msgid "IDS_BR_BUTTON_FORWARD_ABB2"
+msgstr "Pārsūtīt"
+
+msgid "IDS_BR_BUTTON_BACK_ABB3"
+msgstr "Atpakaļ"
+
+msgid "IDS_BR_BUTTON_BOOKMARKS_ABB"
+msgstr "Grāmatzīm."
+
+msgid "IDS_BR_NPBODY_NO_PROFILES_ABB"
+msgstr "Nav profilu"
+
+msgid "IDS_BR_TAB2_HISTORY"
+msgstr "Vēsture"
+
+msgid "IDS_BR_TAB2_BOOKMARKS"
+msgstr "Grāmatzīmes"
+
+msgid "IDS_BR_HEADER_SAVE_CONTENT_TO_ABB"
+msgstr "Satura saglabāšanas vieta"
+
+msgid "IDS_BR_HEADER_SELECT_ITEMS_ABB2"
+msgstr "Izvēlēties objektus"
+
+msgid "IDS_BR_BODY_YOUR_PASSWORD_MUST_CONTAIN_AT_LEAST_PD_CHARACTERS_INCLUDING_AT_LEAST_1_LETTER"
+msgstr "Parolē ir jābūt vismaz %d rakstzīmēm, tostarp vismaz 1 burtam."
+
+msgid "IDS_BR_BODY_AN_INCORRECT_PASSWORD_HAS_BEEN_ENTERED_TRY_AGAIN"
+msgstr "Ievadīta nepareiza parole. Mēģiniet vēlreiz."
+
+msgid "IDS_BR_BODY_NO_TABS"
+msgstr "Nav cilņu"
+
+msgid "IDS_BR_TMBODY_CHANGE_PASSWORD"
+msgstr "Mainīt paroli"
+
+msgid "IDS_BR_BODY_ANY_WEBPAGES_VIEWED_WHILE_SECRET_MODE_IS_ENABLED_WILL_NOT_APPEAR_IN_YOUR_BROWSER_OR_SEARCH_HISTORY_WHILE_SECRET_MSG"
+msgstr "Slepenajā režīmā skatītās tīmekļa vietnes netiks rādītas jūsu pārlūkprogrammas vai meklēšanas vēsturē, kad slepenais režīms ir deaktivizēts.\n\nVisas slepenajā režīmā saglabātās grāmatzīmes un tīmekļa vietnes pēc šī režīma deaktivizēšanas netiks rādītas.\n\nSavus slepenā režīma datus varat aizsargāt arī ar paroli."
+
+msgid "IDS_BR_BODY_ANY_WEBPAGES_VIEWED_WHILE_SECRET_MODE_IS_ENABLED_WILL_NOT_APPEAR_IN_YOUR_MSG"
+msgstr "Slepenajā režīmā skatītās tīmekļa vietnes netiks rādītas jūsu pārlūkprogrammas vai meklēšanas vēsturē, kad slepenais režīms ir deaktivizēts.\n\nVisas slepenajā režīmā saglabātās grāmatzīmes un tīmekļa vietnes pēc šī režīma deaktivizēšanas netiks rādītas."
+
+msgid "IDS_BR_BUTTON2_DONE"
+msgstr "Gatavs"
 
