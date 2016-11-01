@@ -675,59 +675,64 @@ void WebView::dataSetManifest(Evas_Object* view, Ewk_View_Request_Manifest* mani
     if (view && data) {
         WebView * self = reinterpret_cast<WebView *>(data);
 
-        uint8_t* theme_r = nullptr; uint8_t* theme_g = nullptr;
-        uint8_t* theme_b = nullptr; uint8_t* theme_a = nullptr;
-        uint8_t* bg_r = nullptr; uint8_t* bg_g = nullptr;
-        uint8_t* bg_b = nullptr; uint8_t* bg_a = nullptr;
+        if (manifest) {
+            uint8_t* theme_r = nullptr; uint8_t* theme_g = nullptr;
+            uint8_t* theme_b = nullptr; uint8_t* theme_a = nullptr;
+            uint8_t* bg_r = nullptr; uint8_t* bg_g = nullptr;
+            uint8_t* bg_b = nullptr; uint8_t* bg_a = nullptr;
 
-        const char* short_name(ewk_manifest_short_name_get(manifest));
-        const char* name(ewk_manifest_name_get(manifest));
-        const char* start_url(ewk_manifest_start_url_get(manifest));
-        const char* icon_src(ewk_manifest_icons_src_get(manifest, 0));
-        int orientation_type = ewk_manifest_orientation_type_get(manifest);
-        int display_mode = ewk_manifest_web_display_mode_get(manifest);
-        long theme_color = ewk_manifest_theme_color_get(manifest, theme_r, theme_g, theme_b, theme_a);
-        long background_color = ewk_manifest_background_color_get(manifest, bg_r, bg_g, bg_b, bg_a);
-        size_t icon_count = ewk_manifest_icons_count_get(manifest);
+            const char* short_name(ewk_manifest_short_name_get(manifest));
+            const char* name(ewk_manifest_name_get(manifest));
+            const char* start_url(ewk_manifest_start_url_get(manifest));
+            const char* icon_src(ewk_manifest_icons_src_get(manifest, 0));
+            int orientation_type = ewk_manifest_orientation_type_get(manifest);
+            int display_mode = ewk_manifest_web_display_mode_get(manifest);
+            long theme_color = ewk_manifest_theme_color_get(manifest, theme_r, theme_g, theme_b, theme_a);
+            long background_color = ewk_manifest_background_color_get(manifest, bg_r, bg_g, bg_b, bg_a);
+            size_t icon_count = ewk_manifest_icons_count_get(manifest);
 
-        std::string str_short_name = "";
-        std::string str_icon_src = "";
+            std::string str_short_name = "";
+            std::string str_icon_src = "";
 
-        if (short_name)
-            str_short_name = short_name;
-        if (name)
-            s_name = name;
-        if (start_url)
-            s_start_url = start_url;
-        if (icon_src)
-            str_icon_src = icon_src;
+            if (short_name)
+                str_short_name = short_name;
+            if (name)
+                s_name = name;
+            if (start_url)
+                s_start_url = start_url;
+            if (icon_src)
+                str_icon_src = icon_src;
 
-        std::string retVal("browser_shortcut:://");
-        retVal.append("pwa_shortName:"); retVal.append(str_short_name.c_str()); retVal.append(",");
-        retVal.append("pwa_name:"); retVal.append(s_name.c_str()); retVal.append(",");
-        retVal.append("pwa_uri:"); retVal.append(s_start_url.c_str()); retVal.append(",");
-        retVal.append("pwa_orientation:"); retVal.append(std::to_string(orientation_type)); retVal.append(",");
-        retVal.append("pwa_displayMode:"); retVal.append(std::to_string(display_mode)); retVal.append(",");
-        retVal.append("pwa_themeColor:"); retVal.append(std::to_string(theme_color)); retVal.append(",");
-        retVal.append("theme_r:"); retVal.append(std::to_string((int)theme_r)); retVal.append(",");
-        retVal.append("theme_g:"); retVal.append(std::to_string((int)theme_g)); retVal.append(",");
-        retVal.append("theme_b:"); retVal.append(std::to_string((int)theme_b)); retVal.append(",");
-        retVal.append("theme_a:"); retVal.append(std::to_string((int)theme_a)); retVal.append(",");
-        retVal.append("pwa_backgroundColor:"); retVal.append(std::to_string(background_color)); retVal.append(",");
-        retVal.append("bg_r:"); retVal.append(std::to_string((int)bg_r)); retVal.append(",");
-        retVal.append("bg_g:"); retVal.append(std::to_string((int)bg_g)); retVal.append(",");
-        retVal.append("bg_b:"); retVal.append(std::to_string((int)bg_b)); retVal.append(",");
-        retVal.append("bg_a:"); retVal.append(std::to_string((int)bg_a)); retVal.append(",");
-        retVal.append("icon_count:"); retVal.append(std::to_string(icon_count)); retVal.append(",");
-        retVal.append("icon_src:"); retVal.append(str_icon_src.c_str()); retVal.append(",");
+            std::string retVal("browser_shortcut:://");
+            retVal.append("pwa_shortName:"); retVal.append(str_short_name.c_str()); retVal.append(",");
+            retVal.append("pwa_name:"); retVal.append(s_name.c_str()); retVal.append(",");
+            retVal.append("pwa_uri:"); retVal.append(s_start_url.c_str()); retVal.append(",");
+            retVal.append("pwa_orientation:"); retVal.append(std::to_string(orientation_type)); retVal.append(",");
+            retVal.append("pwa_displayMode:"); retVal.append(std::to_string(display_mode)); retVal.append(",");
+            retVal.append("pwa_themeColor:"); retVal.append(std::to_string(theme_color)); retVal.append(",");
+            retVal.append("theme_r:"); retVal.append(std::to_string((int)theme_r)); retVal.append(",");
+            retVal.append("theme_g:"); retVal.append(std::to_string((int)theme_g)); retVal.append(",");
+            retVal.append("theme_b:"); retVal.append(std::to_string((int)theme_b)); retVal.append(",");
+            retVal.append("theme_a:"); retVal.append(std::to_string((int)theme_a)); retVal.append(",");
+            retVal.append("pwa_backgroundColor:"); retVal.append(std::to_string(background_color)); retVal.append(",");
+            retVal.append("bg_r:"); retVal.append(std::to_string((int)bg_r)); retVal.append(",");
+            retVal.append("bg_g:"); retVal.append(std::to_string((int)bg_g)); retVal.append(",");
+            retVal.append("bg_b:"); retVal.append(std::to_string((int)bg_b)); retVal.append(",");
+            retVal.append("bg_a:"); retVal.append(std::to_string((int)bg_a)); retVal.append(",");
+            retVal.append("icon_count:"); retVal.append(std::to_string(icon_count)); retVal.append(",");
+            retVal.append("icon_src:"); retVal.append(str_icon_src.c_str()); retVal.append(",");
 
-        BROWSER_LOGD("[%s:%d] retVal : %s", __PRETTY_FUNCTION__, __LINE__, retVal.c_str());
-        s_pwaData = retVal;
+            BROWSER_LOGD("[%s:%d] retVal : %s", __PRETTY_FUNCTION__, __LINE__, retVal.c_str());
+            s_pwaData = retVal;
 
-        size_t len = strlen(icon_src);
-        auto result = str_icon_src.substr(str_icon_src.find_last_of("/"), len);
-        s_icon = DOWNLOAD_PATH + result;
-        self->request_file_download(icon_src, s_icon, __download_result_cb, NULL);
+            size_t len = strlen(icon_src);
+            auto result = str_icon_src.substr(str_icon_src.find_last_of("/"), len);
+            s_icon = DOWNLOAD_PATH + result;
+            self->request_file_download(icon_src, s_icon, __download_result_cb, NULL);
+        } else {
+            s_pwaData = "";
+            makeShortcut(self->getTitle(), self->getURI(), "");
+        }
         BROWSER_LOGD("[%s:%d] dataSetManifest callback function end!", __PRETTY_FUNCTION__, __LINE__);
     }
 }
