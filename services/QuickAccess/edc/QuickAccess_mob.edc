@@ -1,10 +1,10 @@
 #include "../../../core/Tools/edc/InvisibleButton.edc"
 #include "../../../core/Tools/edc/Spacer.edc"
-#include "BrowserPageControl_mob.edc"
+#include "../../../core/Tools/edc/ColorClasses.edc"
 
 #define URI_INPUTBOX_LENGTH 1720
 #define URL_HISTORY_ITEM_H 82
-#define URL_HISTORY_ITEMS_VISIBLE_MAX 5
+#define URL_HISTORY_ITEMS_VISIBLE_MAX 12
 #define URL_HISTORY_LIST_MAX_H HISTORY_ITEM_H*HISTORY_ITEMS_VISIBLE_MAX
 #define LAYOUT_WIDTH 720
 #define LAYOUT_WIDTH_LANDSCAPE 1280
@@ -15,291 +15,53 @@
 #define BIG_TILE_WIDTH_LANDSCAPE 598
 #define BIG_TILE_HEIGHT 450
 #define BIG_TILE_HEIGHT_LANDSCAPE 634
-#define SMALL_TILE_WIDTH 319
-#define SMALL_TILE_WIDTH_LANDSCAPE 290
-#define SMALL_TILE_HEIGHT 361
-#define SMALL_TILE_HEIGHT_LANDSCAPE 308
+#define SMALL_TILE_WIDTH 114
+#define SMALL_TILE_WIDTH_LANDSCAPE 114
+#define SMALL_TILE_HEIGHT 114
+#define SMALL_TILE_HEIGHT_LANDSCAPE 114
 #define TILE_SEPARATOR 18
-#define TILE_LABEL_BG_HEIGHT 100
-#define TOTAL_TILES_HEIGHT 1226
+#define TILE_LABEL_BG_HEIGHT 64
+#define TOTAL_TILES_HEIGHT 1000
 #define TOTAL_TILES_HEIGHT_LANDSCAPE 652
 #define TOTAL_TILES_WIDTH_LANDSCAPE 1214
-#define PAGE_INDICATOR_WIDTH 74
-#define PAGE_INDICATOR_HEIGHT 14
 
-#define DEVELOPMENT 0
+#define GLIDE_EASE_OUT(duration) CUBIC_BEZIER (duration) 0.25 0.46 0.45 1.0
+#define BUTTON_NAVIFRAME_BACK_CORNER_RADIUS "10"
+#define QA_BTN_WIDTH 138
+#define QA_BTN_HEIGHT 196
+#define TOP_PADDING 8
+#define ICON_SIZE 114
 
-# define SMALL_TILE \
-    data.item: "texts" "page_title page_url";               \
-    data.item: "contents" "elm.thumbnail";      \
-    parts {     \
-        part { name: "bg";      \
-            type: RECT;     \
-            scale: 1;       \
-            mouse_events: 0;        \
-            description { state: "default" 0.0;     \
-                visible: 1;     \
-                color: 231 231 231 255;     \
-                align: 0.5 0.0;     \
-                rel1.relative: 0.0  0.0;     \
-                rel2.relative: 1.0  1.0;     \
-                min: SMALL_TILE_WIDTH SMALL_TILE_HEIGHT;   \
-                max: SMALL_TILE_WIDTH SMALL_TILE_HEIGHT;      \
-            }       \
-            description { state: "landscape" 0.0;   \
-                inherit: "default" 0.0;         \
-                min: SMALL_TILE_WIDTH_LANDSCAPE SMALL_TILE_HEIGHT_LANDSCAPE;    \
-                max: SMALL_TILE_WIDTH_LANDSCAPE SMALL_TILE_HEIGHT_LANDSCAPE;    \
-            }   \
-        }       \
-                \
-        part { name: "elm.thumbnail";       \
-            type: SWALLOW;      \
-            scale: 1;       \
-            description { state: "default" 0.0;     \
-                fixed: 1 0;     \
-                align: 0.0 0.0;     \
-                min: SMALL_TILE_WIDTH 261;   \
-                max: SMALL_TILE_WIDTH 261;      \
-                rel1 {      \
-                    relative: 0.0  0.0; to: "bg";       \
-                }       \
-                rel2 {      \
-                    relative: 1.0  1.0; to: "bg";       \
-                }       \
-            }       \
-            description { state: "selected";        \
-                inherit: "default" 0.0;     \
-            }       \
-            description { state: "landscape" 0.0;   \
-                inherit: "default" 0.0;         \
-                min: SMALL_TILE_WIDTH_LANDSCAPE 208;    \
-                max: SMALL_TILE_WIDTH_LANDSCAPE 208;    \
-            }   \
-        }       \
-                \
-        part { name: "border_top";      \
-            type: RECT;     \
-            scale: 1;       \
-            description { state: "default" 0.0;     \
-                color_class: focusBgColor;      \
-                min: 0 6;       \
-                max: -1 6;      \
-                align: 0 0;     \
-                rel1 {      \
-                    to: "elm.thumbnail";        \
-                    relative: 0.0 0.0;      \
-                }       \
-                rel2 {      \
-                    to: "elm.thumbnail";        \
-                    relative: 1.0  1.0;     \
-                }       \
-                visible: 0;     \
-            }       \
-            description { state: "selected";        \
-                inherit: "default" 0.0;     \
-                visible: 1;     \
-            }       \
-        }       \
-                \
-        part { name: "border_left";     \
-            type: RECT;     \
-            scale: 1;       \
-            description { state: "default" 0.0;     \
-                color_class: focusBgColor;      \
-                min: 6 0;       \
-                max: 6 -1;      \
-                align: 0 0;     \
-                rel1 {      \
-                    to: "elm.thumbnail";        \
-                    relative: 0.0 0.0;      \
-                }       \
-                rel2 {      \
-                    to: "elm.thumbnail";        \
-                    relative: 1.0  1.0;     \
-                }       \
-                visible: 0;     \
-            }       \
-            description { state: "selected";        \
-                inherit: "default" 0.0;     \
-                visible: 1;     \
-            }       \
-        }       \
-                \
-        part { name: "border_right";        \
-            type: RECT;     \
-            scale: 1;       \
-            description { state: "default" 0.0;     \
-                color_class: focusBgColor;      \
-                min: 6 0;       \
-                max: 6 -1;      \
-                align: 1 0;     \
-                rel1 {      \
-                    to: "elm.thumbnail";        \
-                    relative: 0.0 0.0;      \
-                }       \
-                rel2 {      \
-                    to: "elm.thumbnail";        \
-                    relative: 1.0  1.0;     \
-                }       \
-                visible: 0;     \
-            }       \
-            description { state: "selected";        \
-                inherit: "default" 0.0;     \
-                visible: 1;     \
-            }       \
-        }       \
-                \
-        part { name: "lb_bg";       \
-            type: RECT;     \
-            scale: 1;       \
-            description { state: "default" 0.0;     \
-                min: SMALL_TILE_WIDTH TILE_LABEL_BG_HEIGHT;      \
-                max: SMALL_TILE_WIDTH TILE_LABEL_BG_HEIGHT;      \
-                align: 0.0 0.0;     \
-                color_class: "lbBgColor";   \
-                visible: 1;     \
-                rel1 {      \
-                    to: "elm.thumbnail";       \
-                    relative: 0.0  1.0;     \
-                }               \
-                rel2 {          \
-                    to: "bg";   \
-                    relative: 1.0  1.0;     \
-                }       \
-            }       \
-            description { state: "selected" 0.0;        \
-                inherit: "default" 0.0;                 \
-                color_class: "focusBgColor";            \
-            }       \
-            description { state: "landscape" 0.0;   \
-                inherit: "default" 0.0;         \
-                min: SMALL_TILE_WIDTH_LANDSCAPE TILE_LABEL_BG_HEIGHT;   \
-                max: SMALL_TILE_WIDTH_LANDSCAPE TILE_LABEL_BG_HEIGHT;   \
-            }   \
-            description { state: "selected_landscape" 0.0;              \
-                inherit: "landscape" 0.0;                               \
-                color_class: "focusBgColor";                            \
-            }                                                           \
-        }       \
-                \
-        ADD_SPACER_OVER("title_spacer", "lb_bg", 36, 27) \
-                \
-        part { name: "page_title";      \
-            type: TEXT;     \
-            scale: 1;       \
-            description { state: "default" 0.0;     \
-                min: 247 34;        \
-                max: 247 34;        \
-                align: 0.0 0.0;     \
-                color: 255 255 255 255;     \
-                rel1 {      \
-                    to: "title_spacer";        \
-                    relative: 1.0 1.0;      \
-                }       \
-                rel2 {      \
-                    to: "lb_bg";        \
-                    relative: 1.0  1.0;     \
-                }       \
-                text {      \
-                    text: "Web page title";     \
-                    font: "Sans";       \
-                    size: 28;       \
-                    align: 0 0;       \
-                }       \
-            }       \
-        }       \
-                \
-        part { name: "over";        \
-            type: RECT;     \
-            scale: 1;       \
-            mouse_events: 1;        \
-            repeat_events: 1;       \
-            description { state: "default" 0.0;     \
-                color: 0 0 0 0;     \
-                rel1.to: "bg";      \
-                rel2.to: "lb_bg";       \
-            }       \
-        }       \
-    }       \
-                \
-    programs {      \
-        program { name: "mouse_in";                                     \
-            signal: "mouse,in";                                         \
-            source: "over";                                             \
-            script {                                                    \
-                new cur_state_helper[31];                               \
-                new Float:index;                                        \
-                get_state(PART:"lb_bg", cur_state_helper, 30, index);   \
-                if (!strcmp(cur_state_helper,"default")) {              \
-                    set_state(PART:"lb_bg", "selected", 0.0);           \
-                } else {                                                \
-                    set_state(PART:"lb_bg", "selected_landscape", 0.0); \
-            }                                                           \
-                set_state(PART:"border_top", "selected", 0.0);          \
-                set_state(PART:"border_left", "selected", 0.0);         \
-                set_state(PART:"border_right", "selected", 0.0);        \
-            }                                                           \
-        }                                                               \
-        program { name: "mouse_out";                                    \
-            signal: "mouse,out";                                        \
-            source: "over";                                             \
-            script {                                                    \
-                new cur_state_helper[31];                               \
-                new Float:index;                                        \
-                get_state(PART:"lb_bg", cur_state_helper, 30, index);   \
-                if(!strcmp(cur_state_helper,"selected")){               \
-                    set_state(PART:"lb_bg", "default", 0.0);            \
-                } else {                                                \
-                    set_state(PART:"lb_bg", "landscape", 0.0);          \
-                }                                                       \
-                set_state(PART:"border_top", "default", 0.0);           \
-                set_state(PART:"border_left", "default", 0.0);          \
-                set_state(PART:"border_right", "default", 0.0);         \
-            }                                                           \
-        }                                                               \
-        program {       \
-            name: "mouse_click";        \
-            signal: "mouse,clicked,1";      \
-            source: "over";     \
-            script {        \
-                emit("elm,action,click", "");       \
-            }       \
-        }       \
-        program { name: "set_landscape";            \
-            signal: "set,landscape";                \
-            source: "ui";                           \
-            action: STATE_SET "landscape" 0.0;      \
-            target: "bg";                           \
-            target: "elm.thumbnail";                \
-            target: "lb_bg";                        \
-        }                                           \
-        program { name: "set_portrait";             \
-            signal: "set,portrait";                 \
-            source: "ui";                           \
-            action: STATE_SET "default" 0.0;        \
-            target: "bg";                           \
-            target: "elm.thumbnail";                \
-            target: "lb_bg";                        \
-        }                                           \
-    }
+#define DEVELOPMENT 1
+
+
 
 collections { base_scale: 2.6;
 
-color_classes{
-    color_class{
-        name: "lbBgColor";
-        color: 113 128 147 255;
+    color_classes {
+        color_class {
+            name: "button_normal";
+            color: 190 190 190 255;
+        }
+        color_class {
+            name: "lbBgColor";
+            color: 255 255 255 255;
+        }
+        color_class {
+            name: "focusBgColor";
+            color: 0 119 246 255;
+        }
+        color_class {
+            name: "mainBgColor";
+            color: 244 244 244 255;
+        }
     }
-    color_class{
-        name: "focusBgColor";
-        color: 0 119 246 255;
+
+    styles {
+        style { name: "bottom_lb";
+            base: "font=Tizen:style=Regular font_size="26" align=center color=#ffffffff text_class=tizen wrap=mixed ellipsis=1.0";
+        }
     }
-    color_class{
-        name: "transparent";
-        color: 0 0 0 0;
-    }
-}
 
 group {
     name: "elm/button/base/thumbButton";
@@ -331,12 +93,6 @@ group {
 }
 
 group {
-    name: "page_indicator_layout";
-    parts {
-    }
-}
-
-group {
     name: "main_layout";
     parts {
         part {
@@ -344,7 +100,7 @@ group {
             type: RECT;
             scale: 1;
             description {
-                color: 244 244 244 255;
+                color_class: "mainBgColor";
                 state: "default" 0.0;
                 align: 0.0 0.0;
                 min: LAYOUT_WIDTH 0;
@@ -363,33 +119,10 @@ group {
                 color: 0 0 0 0;
                 state: "default" 0.0;
                 align: 0.0 0.0;
-                min: LAYOUT_WIDTH 116;
-                max: -1 116;
+                min: LAYOUT_WIDTH 80;
+                max: -1 80;
                 rel1.relative: 0 0;
                 rel2.relative: 1 1;
-            }
-        }
-
-        part {
-            /* pagecontrol container for mobile */
-            name: "buttons";
-            type: SWALLOW;
-            scale: 1;
-            mouse_events: 1;
-            description {
-                state: "default" 0.0;
-                align: 0.5 0.0;
-                fixed: 0 1;
-                min: 0 71;
-                max: -1 71;
-                rel1 {
-                    to: "screen_title_area";
-                    relative: 0 0;
-                }
-                rel2 {
-                    to: "screen_title_area";
-                    relative: 1 1;
-                }
             }
         }
 
@@ -400,10 +133,10 @@ group {
             description {
                 state: "default" 0.0;
                 fixed: 1 1;
-                color: 51 51 51 255;
+                color: 0 180 220 255;
                 rel1 {
-                    to: "buttons";  //TODO: ditto
-                    relative: 0 1;
+                    to: "screen_title_area";  //TODO: ditto
+                    relative: 0 0;
                 }
                 rel2 {
                     to: "screen_title_area";
@@ -412,27 +145,8 @@ group {
                 text {
                     text: "Most Visited";
                     font: "Tizen";
-                    align: 0.5 0.5;
+                    align: 0.1 0.5;
                     size: 45;
-                }
-            }
-        }
-
-        rect { name: "top_margin";
-            scale: 1;
-            description { state: "default" 0.0;
-                visible: DEVELOPMENT;
-                color: 100 0 0 255;
-                align: 0 0;
-                min: 0 38;
-                max: -1 38;
-                rel1 {
-                    to: "screen_title_area";
-                    relative: 0 1;
-                }
-                rel2 {
-                    to: "bg";
-                    relative: 1 1;
                 }
             }
         }
@@ -446,13 +160,67 @@ group {
                 align: 0.0 0.0;
                 fixed: 0 0;
                 rel1 {
-                    to: "top_margin";
+                    to: "screen_title_area";
                     relative: 0 1;
                 }
                 rel2 {
                     to: "bg";
                     relative: 1 1;
                 }
+            }
+        }
+
+        part {
+            name: "index_container";
+            type: RECT;
+            scale: 1;
+            description {
+                color: 244 244 244 0;
+                state: "default" 0.0;
+                align: 0.5 1.0;
+                min: LAYOUT_WIDTH 132;
+                max: LAYOUT_WIDTH 132;
+                rel1 {
+                    to: "screen_title_area";
+                    relative: 0 1;
+                }
+                rel2 {
+                    to: "view";
+                    relative: 1 1;
+                }
+            }
+            description { state: "landscape" 0.0;
+                inherit: "default" 0.0;
+                min: 200 68;
+                max: 200 68;
+            }
+        }
+
+        part {
+            /* pagecontrol container for mobile */
+            name: "index";
+            type: SWALLOW;
+            scale: 1;
+            mouse_events: 1;
+            description {
+                state: "default" 0.0;
+                align: 0.5 0.5;
+                fixed: 1 1;
+                min: 0 71;
+                max: -1 71;
+                rel1 {
+                    to: "index_container";
+                    relative: 0 0;
+                }
+                rel2 {
+                    to: "index_container";
+                    relative: 1 1;
+                }
+            }
+            description { state: "landscape" 0.0;
+                inherit: "default" 0.0;
+                min: 200 68;
+                max: 200 68;
             }
         }
     }
@@ -572,260 +340,286 @@ group { name: "page_layout";
     }
 }
 
-group { name: "center_layout";
-    parts {
-        part { name: "bg";
-            type: RECT;
-            scale: 1;
-            description { state: "default" 0.0;
-                color: 0 255 0 255;
-                align: 0 0;
-                visible: DEVELOPMENT;
-                min: 0 TOTAL_TILES_HEIGHT;
-                max: -1 TOTAL_TILES_HEIGHT;
-                rel1 {
-                    relative: 0 0;
-                }
-                rel2 {
-                    relative: 1 1;
-                }
-            }
-            description { state: "landscape" 0.0;
-                inherit: "default" 0.0;
-                min: 0 TOTAL_TILES_HEIGHT_LANDSCAPE;
-                max: -1 TOTAL_TILES_HEIGHT_LANDSCAPE;
-            }
-        }
-
-        part { name: "elm.swallow.big";
-            type: SWALLOW;
-            scale: 1;
-            description { state: "default" 0.0;
-                min: BIG_TILE_WIDTH BIG_TILE_HEIGHT;
-                max: BIG_TILE_WIDTH BIG_TILE_HEIGHT;
-                align: 0 0;
-                fixed: 1 1;
-                visible: 1;
-                rel1 {
-                    relative: 0 0;
-                    to: "bg";
-                }
-                rel2 {
-                    relative: 1 1;
-                    to: "bg";
-                }
-            }
-            description { state: "empty" 0.0;
-                inherit: "default" 0.0;
-                visible: 0;
-            }
-            description { state: "landscape" 0.0;
-                inherit: "default" 0.0;
-                min: BIG_TILE_WIDTH_LANDSCAPE BIG_TILE_HEIGHT_LANDSCAPE;
-                max: BIG_TILE_WIDTH_LANDSCAPE BIG_TILE_HEIGHT_LANDSCAPE;
-            }
-        }
-
-        rect { name: "swallow_big_margin";
-            scale: 1;
-            description { state: "default" 0.0;
-                visible: DEVELOPMENT;
-                color: 100 0 0 255;
-                align: 0 0;
-                min: 0 TILE_SEPARATOR;
-                max: 0 TILE_SEPARATOR;
-                rel1 {
-                    relative: 0 1;
-                    to: "elm.swallow.big";
-                }
-            }
-            description { state: "landscape" 0.0;
-                inherit: "default" 0.0;
-                min: TILE_SEPARATOR 0;
-                max: TILE_SEPARATOR 0;
-                rel1 {
-                    relative: 1 0;
-                    to: "elm.swallow.big";
-                }
-            }
-        }
-
-        part { name: "elm.swallow.small_first";
-            type: SWALLOW;
-            scale: 1;
-            description { state: "default" 0.0;
-                min: SMALL_TILE_WIDTH SMALL_TILE_HEIGHT;
-                max: SMALL_TILE_WIDTH SMALL_TILE_HEIGHT;
-                align: 0.0 0.0;
-                fixed: 1 1;
-                visible: 1;
-                rel1 {
-                    to: "swallow_big_margin";
-                    relative: 1 1;
-                }
-                rel2{
-                    to: "bg";
-                    relative: 1 1;
-                }
-            }
-            description { state: "empty" 0.0;
-                inherit: "default" 0.0;
-                visible: 0;
-            }
-            description { state: "landscape" 0.0;
-                inherit: "default" 0.0;
-                min: SMALL_TILE_WIDTH_LANDSCAPE SMALL_TILE_HEIGHT_LANDSCAPE;
-                max: SMALL_TILE_WIDTH_LANDSCAPE SMALL_TILE_HEIGHT_LANDSCAPE;
-            }
-        }
-
-        ADD_SPACER_NEXT_TO("first_margin", "elm.swallow.small_first", TILE_SEPARATOR, 0);
-
-        part { name: "elm.swallow.small_second";
-            type: SWALLOW;
-            scale: 1;
-            description { state: "default" 0.0;
-                min: SMALL_TILE_WIDTH SMALL_TILE_HEIGHT;
-                max: SMALL_TILE_WIDTH SMALL_TILE_HEIGHT;
-                align: 0.0 0.0;
-                fixed: 1 1;
-                visible: 1;
-                rel1 {
-                    to: "first_margin";
-                    relative: 1 0;
-                }
-                rel2{
-                    to: "bg";
-                    relative: 1 1;
-                }
-            }
-            description { state: "empty" 0.0;
-                inherit: "default" 0.0;
-                visible: 0;
-            }
-            description { state: "landscape" 0.0;
-                inherit: "default" 0.0;
-                min: SMALL_TILE_WIDTH_LANDSCAPE SMALL_TILE_HEIGHT_LANDSCAPE;
-                max: SMALL_TILE_WIDTH_LANDSCAPE SMALL_TILE_HEIGHT_LANDSCAPE;
-            }
-        }
-
-        ADD_SPACER_BELOW("second_margin", "elm.swallow.small_first", 0, TILE_SEPARATOR);
-
-        part { name: "elm.swallow.small_third";
-            type: SWALLOW;
-            scale: 1;
-            description { state: "default" 0.0;
-                min: SMALL_TILE_WIDTH SMALL_TILE_HEIGHT;
-                max: SMALL_TILE_WIDTH SMALL_TILE_HEIGHT;
-                align: 0.0 0.0;
-                fixed: 1 1;
-                visible: 1;
-                rel1 {
-                    to: "second_margin";
-                    relative: 0 1;
-                }
-                rel2 {
-                    to: "bg";
-                    relative: 1 1;
-                }
-            }
-            description { state: "empty" 0.0;
-                inherit: "default" 0.0;
-                visible: 0;
-            }
-            description { state: "landscape" 0.0;
-                inherit: "default" 0.0;
-                min: SMALL_TILE_WIDTH_LANDSCAPE SMALL_TILE_HEIGHT_LANDSCAPE;
-                max: SMALL_TILE_WIDTH_LANDSCAPE SMALL_TILE_HEIGHT_LANDSCAPE;
-            }
-        }
-
-        ADD_SPACER_NEXT_TO("third_margin", "elm.swallow.small_third", TILE_SEPARATOR, 0);
-
-        part { name: "elm.swallow.small_fourth";
-            type: SWALLOW;
-            scale: 1;
-            description { state: "default" 0.0;
-                min: SMALL_TILE_WIDTH SMALL_TILE_HEIGHT;
-                max: SMALL_TILE_WIDTH SMALL_TILE_HEIGHT;
-                align: 0.0 0.0;
-                fixed: 1 1;
-                visible: 1;
-                rel1 {
-                    to: "third_margin";
-                    relative: 1 0;
-                }
-                rel2 {
-                    to: "bg";
-                    relative: 1 1;
-                }
-            }
-            description { state: "empty" 0.0;
-                inherit: "default" 0.0;
-                visible: 0;
-            }
-            description { state: "landscape" 0.0;
-                inherit: "default" 0.0;
-                min: SMALL_TILE_WIDTH_LANDSCAPE SMALL_TILE_HEIGHT_LANDSCAPE;
-                max: SMALL_TILE_WIDTH_LANDSCAPE SMALL_TILE_HEIGHT_LANDSCAPE;
-            }
-        }
-    }
-
-    programs {
-        program {
-            name: "set_portrait";
-            signal: "set,portrait";
-            source: "ui";
-            action: STATE_SET "default" 0.0;
-            target: "elm.swallow.big";
-            target: "swallow_big_margin";
-            target: "elm.swallow.small_first";
-            target: "elm.swallow.small_second";
-            target: "elm.swallow.small_third";
-            target: "elm.swallow.small_fourth";
-        }
-        program {
-            name: "set_landscape";
-            signal: "set,landscape";
-            source: "ui";
-            action: STATE_SET "landscape" 0.0;
-            target: "bg";
-            target: "elm.swallow.big";
-            target: "swallow_big_margin";
-            target: "elm.swallow.small_first";
-            target: "elm.swallow.small_second";
-            target: "elm.swallow.small_third";
-            target: "elm.swallow.small_fourth";
-        }
-    }
+group { name: "elm/button/base/delete_button";
+  images {
+      image: "btn_delete_nor.png" COMP;
+      image: "btn_delete_press.png" COMP;
+  }
+  parts {
+      part { name: "elm.image";
+          type: IMAGE;
+          scale: 1;
+          mouse_events: 0;
+          description { state: "default" 0.0;
+              align: 0.5 0.5;
+              visible: 1;
+              min: 60 60;
+              max: 60 60;
+              fixed: 1 1;
+              image.normal: "btn_delete_nor.png";
+          }
+          description { state: "pressed" 0.0;
+              inherit: "default" 0.0;
+              image.normal: "btn_delete_press.png";
+          }
+      }
+      rect { "over"; scale;
+          description { "default";
+              rel1.to: "elm.image";
+              rel2.to: "elm.image";
+              color: 0 0 0 0;
+          }
+      }
+  }
+  programs {
+      program { name: "on_mouse_down";
+          signal: "mouse,down,1";
+          source: "over";
+          script {
+              set_state(PART:"elm.image", "pressed", 0.0);
+              emit("elm,action,press", "");
+          }
+       }
+      program {  name: "on_mouse_up";
+          signal: "mouse,up,1";
+          source: "over";
+          script {
+             set_state(PART:"elm.image", "default", 0.0);
+             emit("elm,action,unpress", "");
+          }
+      }
+      program { name: "on_mouse_click";
+          signal: "mouse,clicked,1";
+          source: "over";
+          script {
+              emit("elm,action,click", "");
+          }
+      }
+  }
 }
 
-group { name: "elm/button/base/big_tile";
-    data.item: "texts" "page_title page_url";
-    data.item: "contents" "elm.thumbnail";
+group {
+    name: "elm/gengrid/item/quickAccess/default";
+    data.item: "texts" "elm.text";
+    data.item: "contents" "elm.swallow.icon elm.button";
     parts {
         part { name: "bg";
             type: RECT;
             scale: 1;
             mouse_events: 0;
             description { state: "default" 0.0;
+                visible: 0;
+                align: 0.5 0.0;
                 rel1.relative: 0.0  0.0;
                 rel2.relative: 1.0  1.0;
-                visible: 1;
-                color: 231 231 231 255;
+                min: 138 196;
+                max: 138 196;
+            }
+            description { state: "landscape" 0.0;
+                inherit: "default" 0.0;
+                min: 138 196;
+                max: 138 196;
             }
         }
 
-        part { name: "elm.thumbnail";
+        part { name: "elm.swallow.icon";
             type: SWALLOW;
             scale: 1;
             description { state: "default" 0.0;
-                fixed: 1 1;
+                fixed: 1 0;
+                align: 0.5 0.0;
+                rel1 {
+                    relative: 0.0  0.0; to: "bg";
+                }
+                rel2 {
+                    relative: 1.0  1.0; to: "bg";
+                }
+            }
+            description { state: "selected";
+                inherit: "default" 0.0;
+            }
+        }
+
+        swallow { name: "elm.button";
+            scale: 1;
+            mouse_events: 1;
+            repeat_events: 0;
+            description { "default";
+                min: 60 60;
+                max: 60 60;
+                align: 1 0;
+                rel1.to: "bg";
+                rel2.to: "bg";
+            }
+        }
+    }
+}
+
+group {
+    name: "elm/gengrid/item/quickAccessAdd/default";
+    images {
+        image: "internet_ic_add.png" COMP;
+    }
+    parts {
+        part { name: "bg";
+            type: RECT;
+            scale: 1;
+            mouse_events: 0;
+            description { state: "default" 0.0;
+                visible: 0;
+                align: 0.5 0.0;
+                rel1.relative: 0.0  0.0;
+                rel2.relative: 1.0  1.0;
+                min: 138 196;
+                max: 138 196;
+            }
+            description { state: "landscape" 0.0;
+                inherit: "default" 0.0;
+                min: 138 196;
+                max: 138 196;
+            }
+        }
+
+        part { name: "img_bg";
+            type: RECT;
+            scale: 1;
+            description { state: "default" 0.0;
+                min: 114 114;
+                max: 114 114;
                 align: 0.0 0.0;
-                min: BIG_TILE_WIDTH BIG_TILE_HEIGHT;   // size adjusted to max thubnail with and height
-                max: BIG_TILE_WIDTH BIG_TILE_HEIGHT;
+                color: 160 200 240 255;
+                visible: 1;
+                rel1 {
+                    relative: 0.0 0.0; to: "bg";
+                }
+                rel2 {
+                    relative: 1.0  1.0; to: "bg";
+                }
+            }
+        }
+
+        part { name: "img";
+            type: IMAGE;
+            scale: 1;
+            mouse_events: 1;
+            description { state: "default" 0.0;
+                fixed: 1 0;
+                align: 0.5 0.1;
+                min: 114 114;
+                max: 114 114;
+                image.normal: "internet_ic_add.png";
+                rel1 {
+                    relative: 0.0  0.0; to: "img_bg";
+                }
+                rel2 {
+                    relative: 1.0  1.0; to: "img_bg";
+                }
+            }
+            description { state: "selected";
+                inherit: "default" 0.0;
+            }
+            description { state: "landscape" 0.0;
+                inherit: "default" 0.0;
+                min: 114 114;
+                max: 114 114;
+            }
+        }
+
+        ADD_SPACER_BELOW("title_spacer", "img", 0, 8)
+
+        part { name: "text_bg";
+            type: RECT;
+            scale: 1;
+            description { state: "default" 0.0;
+                min: 114 64;
+                max: 114 64;
+                align: 0.0 0.0;
+                visible: 0;
+                rel1 {
+                    to: "title_spacer";
+                    relative: 0.0 1.0;
+                }
+                rel2 {
+                    to: "bg";
+                    relative: 1.0  1.0;
+                }
+            }
+            description { state: "selected" 0.0;
+                inherit: "default" 0.0;
+                color_class: "focusBgColor";
+            }
+            description { state: "landscape" 0.0;
+                inherit: "default" 0.0;
+                min: 114 64;
+                max: 114 64;
+            }
+            description { state: "selected_landscape" 0.0;
+                inherit: "landscape" 0.0;
+                color_class: "focusBgColor";
+            }
+        }
+
+        part { name: "elm.text";
+            type: TEXT;
+            scale: 1;
+            description { state: "default" 0.0;
+                min: 114 64;
+                max: 114 64;
+                align: 0.0 0.0;
+                color: 80 80 80 255;
+                rel1 {
+                    to: "text_bg";
+                    relative: 0.0 0.0;
+                }
+                rel2 {
+                    to: "text_bg";
+                    relative: 1.0  1.0;
+                }
+                text {
+                    text: "Add";
+                    font: "Sans";
+                    size: 26;
+                    align: 0.5 0;
+                }
+            }
+        }
+    }
+    programs {}
+}
+
+
+group {
+    name: "elm/gengrid/item/mostVisited/default";
+    data.item: "texts" "elm.text";
+    data.item: "contents" "elm.swallow.icon elm.check";
+    parts {
+        part { name: "bg";
+            type: RECT;
+            scale: 1;
+            mouse_events: 0;
+            description { state: "default" 0.0;
+                visible: 0;
+                align: 0.5 0.0;
+                rel1.relative: 0.0  0.0;
+                rel2.relative: 1.0  1.0;
+                min: 218 208;
+                max: 218 208;
+            }
+            description { state: "landscape" 0.0;
+                inherit: "default" 0.0;
+                min: 218 208;
+                max: 218 208;
+            }
+        }
+
+        part { name: "elm.swallow.icon";
+            type: SWALLOW;
+            scale: 1;
+            description { state: "default" 0.0;
+                fixed: 1 0;
+                align: 0.5 0.2;
+                min: 162 120;
+                max: 162 120;
                 rel1 {
                     relative: 0.0  0.0; to: "bg";
                 }
@@ -838,522 +632,414 @@ group { name: "elm/button/base/big_tile";
             }
             description { state: "landscape" 0.0;
                 inherit: "default" 0.0;
-                min: BIG_TILE_WIDTH_LANDSCAPE BIG_TILE_HEIGHT_LANDSCAPE;
-                max: BIG_TILE_WIDTH_LANDSCAPE BIG_TILE_HEIGHT_LANDSCAPE;
+                min: 162 120;
+                max: 162 120;
             }
         }
 
-        part { name: "border_top";
-            type: RECT;
-            scale: 1;
-            description { state: "default" 0.0;
-                color_class: focusBgColor;
-                min: 0 6;
-                max: -1 6;
-                align: 0 0;
-                rel1 {
-                    to: "elm.thumbnail";
-                    relative: 0.0 0.0;
-                }
-                rel2 {
-                    to: "elm.thumbnail";
-                    relative: 1.0  1.0;
-                }
-                visible: 0;
-            }
-            description { state: "selected";
-                inherit: "default" 0.0;
-                visible: 1;
-            }
-        }
-
-        part { name: "border_left";
-            type: RECT;
-            scale: 1;
-            description { state: "default" 0.0;
-                color_class: focusBgColor;
-                min: 6 0;
-                max: 6 -1;
-                align: 0 0;
-                rel1 {
-                    to: "elm.thumbnail";
-                    relative: 0.0 0.0;
-                }
-                rel2 {
-                    to: "elm.thumbnail";
-                    relative: 1.0  1.0;
-                }
-                visible: 0;
-            }
-            description { state: "selected";
-                inherit: "default" 0.0;
-                visible: 1;
-            }
-        }
-
-        part { name: "border_right";
-            type: RECT;
-            scale: 1;
-            description { state: "default" 0.0;
-                color_class: focusBgColor;
-                min: 6 0;
-                max: 6 -1;
+        swallow { "elm.check"; scale;
+            mouse_events: 1;
+            repeat_events: 0;
+            description { "default";
+                min: 50 50;
+                max: 50 50;
                 align: 1 0;
-                rel1 {
-                    to: "elm.thumbnail";
-                    relative: 0.0 0.0;
-                }
-                rel2 {
-                    to: "elm.thumbnail";
-                    relative: 1.0  1.0;
-                }
-                visible: 0;
-            }
-            description { state: "selected";
-                inherit: "default" 0.0;
-                visible: 1;
-            }
-        }
-
-        part { name: "lb_bg";
-            type: RECT;
-            scale: 1;
-            description { state: "default" 0.0;
-                min: BIG_TILE_WIDTH TILE_LABEL_BG_HEIGHT;
-                max: BIG_TILE_WIDTH TILE_LABEL_BG_HEIGHT;
-                align: 0.0 1.0;
-                color_class: "lbBgColor";
-                visible: 1;
-                rel1 {
-                    to: "elm.thumbnail";
-                    relative: 0.0  0.0;
-                }
-                rel2 {
-                    to: "elm.thumbnail";
-                    relative: 1.0  1.0;
-                }
-            }
-            description { state: "selected" 0.0;
-                inherit: "default" 0.0;
-                color_class: focusBgColor;
-            }
-            description { state: "landscape" 0.0;
-                inherit: "default" 0.0;
-                min: BIG_TILE_WIDTH_LANDSCAPE TILE_LABEL_BG_HEIGHT;
-                max: BIG_TILE_WIDTH_LANDSCAPE TILE_LABEL_BG_HEIGHT;
-            }
-            description { state: "selected_landscape" 0.0;
-                inherit: "landscape" 0.0;
-                color_class: focusBgColor;
-            }
-        }
-
-        ADD_SPACER_OVER("title_spacer", "lb_bg", 36, 30)
-
-        part { name: "page_title";
-            type: TEXT;
-            scale: 1;
-            description { state: "default" 0.0;
-                min: 584 34;
-                max: 584 34;
-                align: 0.0 0.0;
-                color: 255 255 255 255;
-                rel1 {
-                    to: "title_spacer";
-                    relative: 1.0 1.0;
-                }
-                rel2 {
-                    to: "lb_bg";
-                    relative: 1.0  1.0;
-                }
-                text {
-                    text: "Web page title";
-                    font: "Sans";
-                    size: 36;
-                    align: 0 0.5;
-                }
-            }
-        }
-
-        part { name: "page_url";
-            type: TEXT;
-            scale: 1;
-            description { state: "default" 0.0;
-                visible: 0;
-            }
-        }
-
-        part { name: "over";
-            type: RECT;
-            scale: 1;
-            mouse_events: 1;
-            repeat_events: 1;
-            description { state: "default" 0.0;
-                color: 0 0 0 0;
-                rel1.to: "bg";
-                rel2.to: "lb_bg";
-            }
-        }
-    }
-
-    programs{
-        program { name: "mouse_in";
-            signal: "mouse,in";
-            source: "over";
-            script {
-                new cur_state_helper[31];
-                new Float:index;
-                get_state(PART:"lb_bg", cur_state_helper, 30, index);
-                if(!strcmp(cur_state_helper,"default")){
-                    set_state(PART:"lb_bg", "selected", 0.0);
-                } else {
-                    set_state(PART:"lb_bg", "selected_landscape", 0.0);
-                }
-                set_state(PART:"border_top", "selected", 0.0);
-                set_state(PART:"border_left", "selected", 0.0);
-                set_state(PART:"border_right", "selected", 0.0);
-            }
-        }
-        program { name: "mouse_out";
-            signal: "mouse,out";
-            source: "over";
-            script {
-                new cur_state_helper[31];
-                new Float:index;
-                get_state(PART:"lb_bg", cur_state_helper, 30, index);
-                if(!strcmp(cur_state_helper,"selected")){
-                    set_state(PART:"lb_bg", "default", 0.0);
-                } else {
-                    set_state(PART:"lb_bg", "landscape", 0.0);
-                }
-                set_state(PART:"border_top", "default", 0.0);
-                set_state(PART:"border_left", "default", 0.0);
-                set_state(PART:"border_right", "default", 0.0);
-            }
-        }
-        program {
-            name: "mouse_click";
-            signal: "mouse,clicked,1";
-            source: "over";
-            script {
-                emit("elm,action,click", "");
-            }
-        }
-        program { name: "set_landscape";
-            signal: "set,landscape";
-            source: "ui";
-            action: STATE_SET "landscape" 0.0;
-            target: "elm.thumbnail";
-            target: "lb_bg";
-        }
-        program { name: "set_portrait";
-            signal: "set,portrait";
-            source: "ui";
-            action: STATE_SET "default" 0.0;
-            target: "elm.thumbnail";
-            target: "lb_bg";
-        }
-    }
-}
-
-group { name: "elm/button/base/small_tile";
-    SMALL_TILE
-}
-
-group { name: "elm/gengrid/item/grid_item/default";
-    SMALL_TILE
-}
-
-group { name: "elm/gengrid/item/bookmark_manager/default";
-    images {
-        image: "bookmark_ic.png" COMP;
-    }
-    parts {
-        part { name: "bg";
-            type: RECT;
-            scale: 1;
-            description { state: "default" 0.0;
-                min: SMALL_TILE_WIDTH SMALL_TILE_HEIGHT;
-                max: SMALL_TILE_WIDTH SMALL_TILE_HEIGHT;
-                visible: 1;
-                color: 255 255 255 255;
-                align: 0.5 0.0;
-                rel1 {
-                    relative: 0.0  0.0;
-                }
-                rel2 {
-                    relative: 1.0  1.0;
-                }
-            }
-            description { state: "landscape" 0.0;
-                inherit: "default" 0.0;
-                min: SMALL_TILE_WIDTH_LANDSCAPE SMALL_TILE_HEIGHT_LANDSCAPE;
-                max: SMALL_TILE_WIDTH_LANDSCAPE SMALL_TILE_HEIGHT_LANDSCAPE;
-            }
-        }
-
-        rect { name: "img_spacer";
-            scale: 1;
-            description { state: "default" 0.0;
-                align: 0.0 0.0;
-                visible: DEVELOPMENT;
-                min: 0 72;
-                max: 0 72;
-                rel1 {
-                    to: "bg";
-                    relative: 0.0 0.0;
-                }
-            }
-            description { state: "landscape" 0.0;
-                inherit: "default" 0.0;
-                min: 0 32;
-                max: 0 32;
-            }
-        }
-
-        part {
-            name: "img";
-            type: IMAGE;
-            scale: 1;
-            mouse_events: 1;
-            description {
-                min: 111 111;
-                max: 111 111;
-                state: "default" 0.0;
-                visible: 1;
-                align: 0.5 0.0;
-                image.normal: "bookmark_ic.png";
-                rel1 {
-                    to: "img_spacer";
-                    relative: 0.0  1.0;
-                }
-                rel2 {
-                    to: "bg";
-                    relative: 1.0  1.0;
-                }
-            }
-        }
-
-        rect { name: "bottom_spacer1";
-            scale: 1;
-            description {
-                visible: DEVELOPMENT;
-                min: 0 72;
-                max: 0 72;
-                align: 1.0 1.0;
-                rel1 {
-                    to: "bg";
-                    relative: 0.0  0.0;
-                }
-                rel2 {
-                    to: "bg";
-                    relative: 1.0  1.0;
-                }
-            }
-        }
-
-        part { name: "label1";
-            type: TEXT;
-            scale: 1;
-            description { state: "default" 0.0;
-                min: 199 34;
-                max: 199 34;
-                align: 0.5 1.0;
-                color:  51 51 51 255;
-                rel1 {
-                    to: "bg";
-                    relative: 0.0 0.0;
-                }
-                rel2 {
-                    to: "bottom_spacer1";
-                    relative: 0.0  0.0;
-                }
-                text {
-                    text: "Bookmark";
-                    font: "Sans";
-                    size: 34;
-                    align: 0.5 0.0;
-                }
-            }
-        }
-
-        rect { name: "bottom_spacer2";
-            scale: 1;
-            description {
-                visible: DEVELOPMENT;
-                min: 0 32;
-                max: 0 32;
-                align: 1.0 1.0;
-                rel1 {
-                    to: "bg";
-                    relative: 0.0  0.0;
-                }
-                rel2 {
-                    to: "bg";
-                    relative: 1.0  1.0;
-                }
-            }
-        }
-
-        part { name: "label2";
-            type: TEXT;
-            scale: 1;
-            description { state: "default" 0.0;
-                min: 199 34;
-                max: 199 34;
-                align: 0.5 1.0;
-                color:  51 51 51 255;
-                rel1 {
-                    to: "bg";
-                    relative: 0.0 0.0;
-                }
-                rel2 {
-                    to: "bottom_spacer2";
-                    relative: 0.0  0.0;
-                }
-                text {
-                    text: "manager";
-                    font: "Sans";
-                    size: 34;
-                    align: 0.5 0.0;
-                }
-            }
-        }
-
-        part { name: "border_top";
-            type: RECT;
-            scale: 1;
-            description { state: "default" 0.0;
-                color_class: focusBgColor;
-                min: 0 6;
-                max: -1 6;
-                align: 0 0;
-                rel1 {
-                    to: "bg";
-                    relative: 0.0 0.0;
-                }
-                rel2 {
-                    to: "bg";
-                    relative: 1.0  1.0;
-                }
-                visible: 0;
-            }
-            description { state: "selected";
-                inherit: "default" 0.0;
-                visible: 1;
-            }
-        }
-
-        part { name: "border_left";
-            type: RECT;
-            scale: 1;
-            description { state: "default" 0.0;
-                color_class: focusBgColor;
-                min: 6 0;
-                max: 6 -1;
-                align: 0 0;
-                rel1 {
-                    to: "bg";
-                    relative: 0.0 0.0;
-                }
-                rel2 {
-                    to: "bg";
-                    relative: 1.0  1.0;
-                }
-                visible: 0;
-            }
-            description { state: "selected";
-                inherit: "default" 0.0;
-                visible: 1;
-            }
-        }
-
-        part { name: "border_right";
-            type: RECT;
-            scale: 1;
-            description { state: "default" 0.0;
-                color_class: focusBgColor;
-                min: 6 0;
-                max: 6 -1;
-                align: 1 0;
-                rel1 {
-                    to: "bg";
-                    relative: 0.0 0.0;
-                }
-                rel2 {
-                    to: "bg";
-                    relative: 1.0  1.0;
-                }
-                visible: 0;
-            }
-            description { state: "selected";
-                inherit: "default" 0.0;
-                visible: 1;
-            }
-        }
-
-        part { name: "border_bottom";
-            type: RECT;
-            scale: 1;
-            description { state: "default" 0.0;
-                min: 0 6;
-                max: -1 6;
-                align: 0.0 1.0;
-                color_class: focusBgColor;
-                visible: 0;
-                rel1 {
-                    to: "bg";
-                    relative: 0.0  0.0;
-                }
-                rel2 {
-                    to: "bg";
-                    relative: 1.0  1.0;
-                }
-            }
-            description { state: "selected" 0.0;
-                inherit: "default" 0.0;
-                visible: 1;
-            }
-        }
-
-        part { name: "over";
-            type: RECT;
-            scale: 1;
-            mouse_events: 1;
-            repeat_events: 1;
-            description { state: "default" 0.0;
-                color: 0 0 0 0;
                 rel1.to: "bg";
                 rel2.to: "bg";
             }
         }
+
+        ADD_SPACER_BELOW("title_spacer", "elm.swallow.icon", 0, 2)
+
+        part { name: "text_bg";
+            type: RECT;
+            scale: 1;
+            description { state: "default" 0.0;
+                min: 162 66;
+                max: 162 66;
+                align: 0.0 0.0;
+                visible: 0;
+                rel1 {
+                    to: "title_spacer";
+                    relative: 0.0 1.0;
+                }
+                rel2 {
+                    to: "bg";
+                    relative: 1.0  1.0;
+                }
+            }
+            description { state: "selected" 0.0;
+                inherit: "default" 0.0;
+                color_class: "focusBgColor";
+            }
+            description { state: "landscape" 0.0;
+                inherit: "default" 0.0;
+                min: 162 66;
+                max: 162 66;
+            }
+            description { state: "selected_landscape" 0.0;
+                inherit: "landscape" 0.0;
+                color_class: "focusBgColor";
+            }
+        }
+
+        part { name: "elm.text";
+            type: TEXT;
+            scale: 1;
+            description { state: "default" 0.0;
+                min: 162 66;
+                max: 162 66;
+                align: 0.0 0.0;
+                color: 80 80 80 255;
+                rel1 {
+                    to: "text_bg";
+                    relative: 0.0 0.0;
+                }
+                rel2 {
+                    to: "text_bg";
+                    relative: 1.0  1.0;
+                }
+                text {
+                    font: "Sans";
+                    size: 26;
+                    align: 0.5 0;
+                }
+            }
+        }
+
+    }
+    programs {}
+}
+
+group { name: "elm/button/base/roundedrect";
+    data.item: "vector_ux" "no_bg";
+    data.item: "corner_radius" BUTTON_NAVIFRAME_BACK_CORNER_RADIUS;
+
+    images {
+        image: "mask.png" COMP;
+    }
+
+    parts {
+        part { name: "button_bg";
+            type: SPACER;
+            scale: 1;
+            mouse_events: 0;
+            description { state: "default" 0.0;
+                min: QA_BTN_WIDTH QA_BTN_HEIGHT;
+                max: QA_BTN_WIDTH QA_BTN_HEIGHT;
+                fixed: 1 1;
+            }
+        }
+        part { name: "icon_spacer";
+            type: RECT;
+            scale: 1;
+            mouse_events: 0;
+            description {
+                visible: 0;
+                align: 0.0 0.0;
+                min: QA_BTN_WIDTH TOP_PADDING;
+                max: QA_BTN_WIDTH TOP_PADDING;
+                rel1 { relative: 0.0 0.0; to: "button_bg"; }
+                rel2 { relative: 1.0 1.0; to: "button_bg"; }
+            }
+        }
+        part { name: "button_icon";
+            type: RECT;
+            scale: 1;
+            mouse_events: 0;
+            description { state: "default" 0.0;
+                min: ICON_SIZE ICON_SIZE;
+                max: ICON_SIZE ICON_SIZE;
+                fixed: 1 1;
+                color_class: "button_normal";
+                align: 0.5 0.0;
+                rel1 { relative: 0.0 1.0; to: "icon_spacer"; }
+                rel2 { relative: 1.0 1.0; to: "button_bg"; }
+            }
+            description { state: "favicon" 0.0;
+                inherit: "default" 0.0;
+                visible: 0;
+            }
+        }
+        part { name: "button_image";
+            type: SWALLOW;
+            scale: 1;
+            mouse_events: 0;
+            description { state: "default" 0.0;
+                visible: 0;
+                rel1 { relative: 0.0 0.0; to: "button_icon"; }
+                rel2 { relative: 1.0 1.0; to: "button_icon"; }
+            }
+            description { state: "favicon" 0.0;
+                inherit: "default" 0.0;
+                visible: 1;
+            }
+        }
+        part { name: "mask";
+            type: IMAGE;
+            scale: 1;
+            mouse_events: 0;
+            description {
+                image.normal: "mask.png";
+                rel1 { relative: 0.0 0.0; to: "button_icon"; }
+                rel2 { relative: 1.0 1.0; to: "button_icon"; }
+            }
+        }
+        part { name: "center_label";
+            type: TEXT;
+            scale: 1;
+            mouse_events: 0;
+            description { state: "default" 0.0;
+                align: 0.0 0.0;
+                color_class: "ATO003";
+                rel1 { relative: 0.0 0.0; to: "button_icon"; }
+                rel2 { relative: 1.0 1.0; to: "button_icon"; }
+                text {
+                    text: "";
+                    font: "Tizen";
+                    size: 45;
+                    align: 0.5 0.5;
+                }
+            }
+        }
+        part { name: "text_spacer";
+            type: RECT;
+            scale: 1;
+            mouse_events: 0;
+            description {
+                visible: 0;
+                align: 0.0 0.0;
+                color: 255 0 0 255;
+                min: 0 8;
+                max: 0 8;
+                rel1 { relative: 0.0 1.0; to: "button_icon"; }
+                rel2 { relative: 1.0 1.0; to: "button_bg"; }
+            }
+        }
+        part { name: "button_text";
+            type: TEXTBLOCK;
+            scale: 1;
+            mouse_events: 0;
+            description { state: "default" 0.0;
+                align: 0.5 0.0;
+                color: 0 0 0 255;
+                min: ICON_SIZE 64;
+                max: ICON_SIZE 64;
+                rel1 { relative: 0.0 1.0;
+                    to_x: "button_bg";
+                    to_y: "text_spacer";
+                }
+                rel2 { relative: 1.0 1.0; to: "button_bg"; }
+                text {
+                    style: "bottom_lb";
+                    align: 0.5 0.0;
+                }
+            }
+        }
+        part { name: "effect_spacer";
+            type: SPACER;
+            scale: 1;
+            description { state: "default" 0.0;
+                fixed: 1 1;
+                rel1.relative: 0.5 0.5;
+                rel2.relative: 0.5 0.5;
+                min: QA_BTN_WIDTH QA_BTN_HEIGHT;
+                max: QA_BTN_WIDTH QA_BTN_HEIGHT;
+            }
+        }
+        part { name: "tizen_vg_shape";
+            type: SWALLOW;
+            clip_to: "tizen_vg_shape_clipper";
+            scale: 1;
+            description { state: "default" 0.0;
+                fixed: 1 1;
+                rel1.relative: 0.5 0.5;
+                rel2.relative: 0.5 0.5;
+            }
+            description { state: "ready" 0.0;
+                rel1.to: "effect_spacer";
+                rel2.to: "effect_spacer";
+                rel1.relative: 0.15 0.15;
+                rel2.relative: 0.85 0.85;
+            }
+            description { state: "pressed" 0.0;
+                inherit: "ready" 0.0;
+                rel1.relative: 0.0 0.0;
+                rel2.relative: 1.0 1.0;
+            }
+        }
+        part { name: "tizen_vg_shape_clipper";
+            type: RECT;
+            description { state: "default" 0.0;
+                color_class: "transparent";
+                visible: 0;
+                fixed: 1 1;
+                rel1.to: "tizen_vg_shape";
+                rel2.to: "tizen_vg_shape";
+            }
+            description { state: "ready" 0.0;
+                inherit: "default" 0.0;
+                visible: 1;
+                color_class: "B042";
+            }
+            description { state: "pressed" 0.0;
+                inherit: "default" 0.0;
+                visible: 1;
+                color_class: "B042";
+            }
+        }
+        part { name: "event";
+            type: RECT;
+            description { state: "default" 0.0;
+                rel1.to: "button_bg";
+                rel2.to: "button_bg";
+                color: 0 0 0 0;
+            }
+        }
+    }
+    script {
+        public mouse_down = 0;
+        public multi_down = 0;
+        public animate = 0;
+        public disabled = 0;
+
+        public message(Msg_Type:type, id, ...) {
+            if ((type == MSG_INT_SET) && (id == 0)) {
+                new r, g, b, a;
+                r = getarg(2);
+                g = getarg(3);
+                b = getarg(4);
+                a = getarg(5);
+                custom_state(PART:"button_icon","default",0.0);
+                set_state_val(PART:"button_icon", STATE_COLOR, r, g, b, a);
+                set_state(PART:"button_icon","custom",0.0);
+            }
+        }
     }
     programs {
-        program { name: "mouse_in";
-            signal: "mouse,in";
-            source: "over";
-            action: STATE_SET "selected" 0.0;
-            target: "border_top";
-            target: "border_left";
-            target: "border_right";
-            target: "border_bottom";
+        program { name: "pressed_effect";
+            action: STATE_SET "ready" 0.0;
+            target: "tizen_vg_shape_clipper";
+            target: "tizen_vg_shape";
+            after: "pressed_effect2";
         }
-        program { name: "mouse_out";
-            signal: "mouse,out";
-            source: "over";
+        program { name: "pressed_effect2";
+            action: STATE_SET "pressed" 0.0;
+            target: "tizen_vg_shape_clipper";
+            target: "tizen_vg_shape";
+            transition: GLIDE_EASE_OUT(0.15);
+            after: "pressed_effect3";
+        }
+        program { name: "pressed_effect3";
+            script {
+                set_int(animate, 0);
+            }
+        }
+        program { name: "delay_unpressed_effect";
+            in: 0.1 0.0;
+            after: "unpressed_effect";
+        }
+        program { name: "unpressed_effect";
+            script {
+                run_program(PROGRAM:"unpressed_effect2");
+            }
+        }
+        program { name: "unpressed_effect2";
+            action: STATE_SET "ready" 0.0;
+            target: "tizen_vg_shape_clipper";
+            transition: GLIDE_EASE_OUT(0.45);
+            after: "unpressed_effect3";
+        }
+        program { name: "unpressed_effect3";
             action: STATE_SET "default" 0.0;
-            target: "border_top";
-            target: "border_left";
-            target: "border_right";
-            target: "border_bottom";
+            target: "tizen_vg_shape";
+            target: "tizen_vg_shape_clipper";
         }
-        program { name: "set_landscape";
-            signal: "set,landscape";
-            source: "ui";
-            action: STATE_SET "landscape" 0.0;
-            target: "bg";
-            target: "img_spacer";
+        program { name: "pressed";
+            signal: "mouse,down,1*";
+            source: "event";
+            script {
+                if ((get_int(multi_down) == 0) && (get_int(mouse_down) == 0) && (get_int(disabled) == 0)) {
+                stop_program(PROGRAM:"delay_unpressed_effect");
+                set_int(mouse_down, 1);
+                set_int(animate, 1);
+                emit("elm,action,press", "");
+                run_program(PROGRAM:"pressed_effect");
+                }
+            }
+        }
+        program { name: "unpressed";
+            signal: "mouse,up,1";
+            source: "event";
+            script {
+                if (get_int(mouse_down) == 1) {
+                set_int(mouse_down, 0);
+                if (get_int(disabled) == 0) {
+                    if (get_int(animate) == 0) {
+                        run_program(PROGRAM:"unpressed_effect");
+                    } else {
+                        set_state(PART:"tizen_vg_shape", "pressed", 0.0);
+                        set_state(PART:"tizen_vg_shape_clipper", "pressed", 0.0);
+                        set_int(animate, 0);
+                        run_program(PROGRAM:"delay_unpressed_effect");
+                    }
+                    emit("elm,action,unpress", "");
+                }
+                }
+            }
+        }
+        program { name: "button_click";
+            signal: "mouse,clicked,1";
+            source: "event";
+            script {
+                if ((get_int(multi_down) == 0) && (get_int(disabled) == 0)) {
+                    run_program(PROGRAM:"clicked_signal");
+                }
+            }
+        }
+        program { name: "clicked_signal";
+            in: 0.001 0.0;
+            action: SIGNAL_EMIT "elm,action,click" "";
+        }
+        program { name: "show_rectangle";
+            signal: "show,bg,rectangle";
+            source: "event";
+            action:  STATE_SET "default" 0.0;
+            target: "button_icon";
+            target: "button_image";
+        }
+        program { name: "show_favicon";
+            signal: "show,bg,favicon";
+            source: "event";
+            action:  STATE_SET "favicon" 0.0;
+            target: "button_icon";
+            target: "button_image";
         }
     }
+}
+
+group { name: "elm/button/base/roundedrectADD";
+        inherit: "elm/button/base/roundedrect";
+    images {
+        image: "internet_ic_add.png" COMP;
+    }
+    parts {
+        part { name: "center_label";
+            type: IMAGE;
+            scale: 1;
+            mouse_events: 0;
+            description { state: "default" 0.0;
+                align: 0.5 0.5;
+                color_class: "ATO003";
+                min: 100 100;
+                max: 100 100;
+                image.normal: "internet_ic_add.png";
+                rel1 { relative: 0.0 0.0; to: "button_icon"; }
+                rel2 { relative: 1.0 1.0; to: "button_icon"; }
+            }
+        }
+    }
+}
+
 }
 

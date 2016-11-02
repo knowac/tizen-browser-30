@@ -1,0 +1,47 @@
+#define IMAGE_SIZE 64
+
+collections {
+    group {
+        name: "folder_image";
+        images.image: "internet_ic_folder.png" COMP;
+        parts {
+            part {
+                name: "image";
+                type: IMAGE;
+                mouse_events: 1;
+                repeat_events: 0;
+                description {
+                    state: "default" 0.0;
+                    fixed: 1 1;
+                    align: 0.5 0.5;
+                    min: IMAGE_SIZE IMAGE_SIZE;
+                    max: IMAGE_SIZE IMAGE_SIZE;
+                    visible: 1;
+                    image.normal: "internet_ic_folder.png";
+                }
+            }
+        }
+    }
+
+group {
+    name: "create_folder_image";
+    images.image: "internet_ic_folder_create_folder.png" COMP;
+    parts {
+        part {
+            name: "image";
+            type: IMAGE;
+            mouse_events: 1;
+            repeat_events: 0;
+            description {
+                state: "default" 0.0;
+                fixed: 1 1;
+                align: 0.5 0.5;
+                min: IMAGE_SIZE IMAGE_SIZE;
+                max: IMAGE_SIZE IMAGE_SIZE;
+                visible: 1;
+                image.normal: "internet_ic_folder_create_folder.png";
+            }
+        }
+    }
+}
+}

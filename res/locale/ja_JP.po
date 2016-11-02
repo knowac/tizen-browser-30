@@ -1,14 +1,8 @@
 msgid "IDS_BR_POP_NETWORK_ERROR"
 msgstr "ネットワークエラーが発生しました。"
 
-msgid "IDS_BR_BODY_AUTHUSERNAME"
-msgstr "ユーザー名"
-
 msgid "IDS_BR_BODY_DESTINATIONS_AUTHENTICATION_REQUIRED"
 msgstr "認証が必要です。"
-
-msgid "IDS_BR_BODY_AUTHPASSWORD"
-msgstr "パスワード"
 
 msgid "IDS_BR_HEADER_SECURITY_WARNING"
 msgstr "セキュリティ警告"
@@ -32,13 +26,7 @@ msgid "IDS_BR_BODY_SECURITY_CERTIFICATE_PROBLEM_MSG"
 msgstr "このサイトのセキュリティ証明書に問題があります。"
 
 msgid "IDS_BR_OPT_ALLOW"
-msgstr "許可する"
-
-msgid "IDS_BR_OPT_VIEW"
-msgstr "表示"
-
-msgid "IDS_BR_OPT_CANCEL"
-msgstr "キャンセル"
+msgstr "許可"
 
 msgid "IDS_BR_BODY_PS_REQUESTS_YOUR_LOCATION"
 msgstr "%sが位置情報をリクエストしました。"
@@ -72,6 +60,18 @@ msgstr "ダウンロード"
 
 msgid "IDS_BR_BODY_THIS_WEBPAGE"
 msgstr "このWebページ"
+
+msgid "IDS_BR_BODY_AUTHUSERNAME"
+msgstr "ユーザー名"
+
+msgid "IDS_BR_BODY_AUTHPASSWORD"
+msgstr "パスワード"
+
+msgid "IDS_BR_OPT_VIEW"
+msgstr "表示"
+
+msgid "IDS_BR_OPT_CANCEL"
+msgstr "キャンセル"
 
 msgid "IDS_BR_OPT_SCREEN"
 msgstr "画面"
@@ -107,28 +107,16 @@ msgid "IDS_BR_SK_CANCEL"
 msgstr "キャンセル"
 
 msgid "IDS_BR_BUTTON_MORE"
-msgstr "もっと見る"
-
-msgid "IDS_TPLATFORM_ACBUTTON_DONE_ABB"
-msgstr "完了"
-
-msgid "IDS_TPLATFORM_ACBUTTON_CANCEL_ABB"
-msgstr "キャンセル"
-
-msgid "IDS_TPLATFORM_ACBUTTON_DELETE_ABB"
-msgstr "削除"
+msgstr "その他"
 
 msgid "IDS_BR_BODY_NO_ITEMS"
-msgstr "アイテムがありません。"
+msgstr "アイテムがありません"
 
 msgid "IDS_BR_MBODY_CONNECT_TO_MOBILE_NETWORK"
 msgstr "ﾓﾊﾞｲﾙﾈｯﾄﾜｰｸに接続"
 
 msgid "IDS_BR_OPT_DO_NOT_SHOW_AGAIN"
 msgstr "今後表示しない"
-
-msgid "IDS_BR_SK_OK"
-msgstr "OK"
 
 msgid "IDS_BR_POP_ONLY_HTTP_OR_HTTPS_URLS_CAN_BE_DOWNLOADED"
 msgstr "httpやhttpsのURLからのみダウンロードできます。"
@@ -151,17 +139,11 @@ msgstr "リンクを​コピー"
 msgid "IDS_BR_OPT_COPY_IMAGE"
 msgstr "画像をコピー"
 
+msgid "IDS_BR_SK_OK"
+msgstr "OK"
+
 msgid "IDS_BR_OPT_CALL"
 msgstr "発信"
-
-msgid "IDS_ST_POP_PS_HAS_BEEN_DETECTED"
-msgstr "%sが検出されました。"
-
-msgid "IDS_ST_POP_DETECTED_IN_C_PS"
-msgstr "検出済み: %s"
-
-msgid "IDS_ST_HEADER_MALWARE_DETECTED_ABB"
-msgstr "マルウェアを検出"
 
 msgid "IDS_BR_BUTTON_FAILED"
 msgstr "失敗"
@@ -229,35 +211,11 @@ msgstr "チェックを外す"
 msgid "IDS_BR_SK_TABS"
 msgstr "タブ"
 
-msgid "IDS_BR_SK_SAVE_LITE"
-msgstr "保存"
-
-msgid "IDS_BR_SK_SAVE_ABB"
-msgstr "保存"
-
-msgid "IDS_BR_SK_SAVE"
-msgstr "保存"
-
-msgid "IDS_BR_SK_PREVIOUS"
-msgstr "前へ"
-
-msgid "IDS_BR_SK_NEXT"
-msgstr "次へ"
-
 msgid "IDS_BR_SK_MENU"
 msgstr "メニュー"
 
 msgid "IDS_BR_SK_DELETE_ABB"
 msgstr "削除"
-
-msgid "IDS_BR_SK_DELETE"
-msgstr "削除"
-
-msgid "IDS_BR_SK_CLEAR"
-msgstr "消去"
-
-msgid "IDS_BR_SK_BACK"
-msgstr "戻る"
 
 msgid "IDS_BR_SK3_CREATE_FOLDER"
 msgstr "フォルダ作成"
@@ -284,7 +242,7 @@ msgid "IDS_BR_SBODY_PREDICT_RELATED_QUERIES_AND_POPULAR_SITES_IN_THE_NAVIGATION_
 msgstr "ナビゲーションバーに入力した内容と関連した検索キーワードや人気サイトを予測"
 
 msgid "IDS_BR_SBODY_OVERRIDE_WEBSITE_REQUESTS_TO_CONTROL_ZOOM_LEVEL"
-msgstr "Webサイトの設定とは無関係に拡大/縮小をコントロールできます。"
+msgstr "Webサイトの設定に関係なく、指で画面を拡大または縮小できます。"
 
 msgid "IDS_BR_SBODY_DISPLAY_IMAGES_ON_WEBPAGES"
 msgstr "Webページに画像を表示"
@@ -315,15 +273,6 @@ msgstr "一部のWebページは、正常にクリップできない可能性が
 
 msgid "IDS_BR_POP_YOUR_HISTORY_WILL_BE_CLEARED"
 msgstr "履歴を消去します。"
-
-msgid "IDS_BR_POP_WI_FI_CONNECTION_REQUIRED_CONNECT_TO_WI_FI_NETWORK_AND_TRY_AGAIN"
-msgstr "Wi-Fi接続が必要です。Wi-Fiに接続し、再度お試しください。"
-
-msgid "IDS_BR_POP_URL_NOT_FOUND"
-msgstr "URLが見つかりません。"
-
-msgid "IDS_BR_POP_URL"
-msgstr "URL"
 
 msgid "IDS_BR_POP_UNABLE_TO_VIEW_THE_CERTIFICATE_THE_PAGE_INFORMATION_HAS_BEEN_CHANGED"
 msgstr "証明書を表示できません。ページ情報が変更されています。"
@@ -370,23 +319,11 @@ msgstr "インターネットブラウザの使用は、セキュリティポリ
 msgid "IDS_BR_POP_SAVED_TO_BOOKMARKS"
 msgstr "ブックマークに保存しました。"
 
-msgid "IDS_BR_POP_SAVED"
-msgstr "保存しました。"
-
 msgid "IDS_BR_POP_RENAME_TAG"
 msgstr "タグ​の​名前​を​変更​する"
 
-msgid "IDS_BR_POP_REMOVED"
-msgstr "削除しました。"
-
 msgid "IDS_BR_POP_PD_PROFILES_WILL_BE_DELETED"
 msgstr "%d件のプロフィールを削除します。"
-
-msgid "IDS_BR_POP_PD_ITEMS_WILL_BE_DELETED"
-msgstr "%d件のアイテムを削除します。"
-
-msgid "IDS_BR_POP_PD_ITEMS_SELECTED"
-msgstr "%d件選択"
 
 msgid "IDS_BR_POP_PAGES_THAT_YOU_VIEW_WILL_NOT_APPEAR_IN_YOUR_BROWSER_HISTORY_OR_SEARCH_HISTORY_AND_THEY_WILL_NOT_LEAVE_OTHER_TRACES_LIKE_COOKIES"
 msgstr "表示したページは、閲覧履歴や検索履歴に表示されません。また、Cookieなどの記録が残りません。"
@@ -415,56 +352,23 @@ msgstr "このサイトは「%1$s」として不正なコンテンツが含ま�
 msgid "IDS_BR_POP_P1SS_HAS_BEEN_DETECTED_DETECTED_IN_C_P2SS_OPEN_WEBPAGE_ANYWAY_Q"
 msgstr "このサイトは「%1$s」として不正なコンテンツが含まれています。\n検出対象: %2$s\n\nこのページを開きますか？"
 
-msgid "IDS_BR_POP_NO_ITEMS_SELECTED"
-msgstr "アイテムが選択されていません。"
-
 msgid "IDS_BR_POP_NOT_ENOUGH_MEMORY_DELETE_SOME_ITEMS_AND_TRY_AGAIN"
 msgstr "メモリが不足しています。いくつかのアイテムを削除し、やり直してください。"
-
-msgid "IDS_BR_POP_NOT_ENOUGH_MEMORY"
-msgstr "メモリが不足しています。"
 
 msgid "IDS_BR_POP_NOT_ALLOWED"
 msgstr "許可されていません。"
 
-msgid "IDS_BR_POP_NEVER"
-msgstr "なし"
-
 msgid "IDS_BR_POP_MOVED"
 msgstr "移動しました。"
-
-msgid "IDS_BR_POP_MOBILE_DATA_IS_DISABLED_CONNECT_TO_WI_FI_NETWORK_INSTEAD_OR_ENABLE_MOBILE_DATA_AND_TRY_AGAIN"
-msgstr "モバイルデータが無効です。Wi-Fiネットワークに接続するか、モバイルデータを有効にして、再度実行してください。"
-
-msgid "IDS_BR_POP_LOADING_PLEASE_WAIT_ING"
-msgstr "読み込み中です。 お待ちください..."
-
-msgid "IDS_BR_POP_INVALID_URL"
-msgstr "無効なURLです。"
-
-msgid "IDS_BR_POP_FAIL"
-msgstr "失敗しました。"
 
 msgid "IDS_BR_POP_ENTER_URL"
 msgstr "URL入力"
 
-msgid "IDS_BR_POP_ENTER_TITLE_ABB"
-msgstr "タイトルを入力"
-
 msgid "IDS_BR_POP_ENTER_BOOKMARK_NAME"
 msgstr "ブックマーク名を入力してください。"
 
-msgid "IDS_BR_POP_DO_NOT_SHOW_AGAIN"
-msgstr "今後表示しない"
-
-msgid "IDS_BR_POP_DOWNLOADCOMPLETE"
-msgstr "ダウンロードが完了しました。"
-
-msgid "IDS_BR_POP_DISABLED"
-msgstr "利用できません。"
-
 msgid "IDS_BR_POP_DIALING_ING_VZW"
-msgstr "Dialing..."
+msgstr "ダイヤル中..."
 
 msgid "IDS_BR_POP_DELETE_WEBSITE_LOCATION_ACCESS_INFORMATION_Q"
 msgstr "保存された位置情報を消去しますか？"
@@ -487,9 +391,6 @@ msgstr "このWebサイトのサインインデータを削除しますか？"
 msgid "IDS_BR_POP_DELETE_SIGN_IN_DATA_FOR_PD_WEBSITES_Q"
 msgstr "%d件のWebサイトのサインインデータを削除しますか？"
 
-msgid "IDS_BR_POP_DELETE_Q"
-msgstr "削除しますか？"
-
 msgid "IDS_BR_POP_DELETE_PD_SAVED_WEB_PAGES_Q"
 msgstr "%d件の保存したWebページを削除しますか？"
 
@@ -505,14 +406,8 @@ msgstr "Webサイトデータと位置情報アクセス権限を全て消去し
 msgid "IDS_BR_POP_DELETEHISTORYQUESTION"
 msgstr "履歴を削除しますか？"
 
-msgid "IDS_BR_POP_DELETED"
-msgstr "削除しました。"
-
 msgid "IDS_BR_POP_CONTINUE"
-msgstr "次へ"
-
-msgid "IDS_BR_POP_CLOSE_APPLICATION_Q"
-msgstr "アプリケーションを終了しますか？"
+msgstr "続行"
 
 msgid "IDS_BR_POP_CLOSE_APPLICATION"
 msgstr "アプリケーションを終了"
@@ -525,12 +420,6 @@ msgstr "履歴を消去しますか？"
 
 msgid "IDS_BR_POP_BOOKMARK_REMOVED"
 msgstr "ブックマークが削除されました。"
-
-msgid "IDS_BR_POP_BOOKMARK_ADDED"
-msgstr "ブックマークが追加されました。"
-
-msgid "IDS_BR_POP_AUTOMATIC_BRIGHTNESS"
-msgstr "明るさの自動調整"
 
 msgid "IDS_BR_POP_ALREADY_EXISTS"
 msgstr "既に登録されています。"
@@ -556,15 +445,6 @@ msgstr "クッキーの保存や読み込みをサイトに許可"
 msgid "IDS_BR_POP_ADDED_TO_BOOKMARKS"
 msgstr "ブックマークに追加しました。"
 
-msgid "IDS_BR_POP_ACCOUNT"
-msgstr "アカウント"
-
-msgid "IDS_BR_POP_1_ITEM_WILL_BE_DELETED"
-msgstr "1件のアイテムを削除します。"
-
-msgid "IDS_BR_POP_1_ITEM_SELECTED"
-msgstr "1件選択"
-
 msgid "IDS_BR_OPT_WINDOWS"
 msgstr "ウィンドウ一覧"
 
@@ -574,38 +454,20 @@ msgstr "証明書表示"
 msgid "IDS_BR_OPT_UNICODE_HUTF_8"
 msgstr "Unicode(UTF-8)"
 
-msgid "IDS_BR_OPT_TRANSLATE"
-msgstr "翻訳"
-
 msgid "IDS_BR_OPT_THUMBNAIL_VIEW"
 msgstr "サムネイル表示"
 
 msgid "IDS_BR_OPT_TEXT_ENCODING"
 msgstr "文字コード"
 
-msgid "IDS_BR_OPT_STOP"
-msgstr "停止"
-
 msgid "IDS_BR_OPT_SHRINK_TEXT"
 msgstr "テキストを縮小"
-
-msgid "IDS_BR_OPT_SHOW"
-msgstr "表示"
-
-msgid "IDS_BR_OPT_SHARE"
-msgstr "共有"
 
 msgid "IDS_BR_OPT_SETTINGS_ABB"
 msgstr "設定"
 
-msgid "IDS_BR_OPT_SETTINGS"
-msgstr "設定"
-
 msgid "IDS_BR_OPT_SEND_MESSAGE_VODA"
 msgstr "メッセージ送信"
-
-msgid "IDS_BR_OPT_SEND_EMAIL"
-msgstr "メール送信"
 
 msgid "IDS_BR_OPT_SENDURLVIA_EMAIL"
 msgstr "Eメール"
@@ -624,12 +486,6 @@ msgstr "選択モード"
 
 msgid "IDS_BR_OPT_SELECTED"
 msgstr "選択"
-
-msgid "IDS_BR_OPT_SELECT"
-msgstr "選択"
-
-msgid "IDS_BR_OPT_SD_CARD"
-msgstr "外部SDカード"
 
 msgid "IDS_BR_OPT_SAVE_TO_KEEPIT_ABB"
 msgstr "KeepItに保存"
@@ -658,14 +514,8 @@ msgstr "並べ替え"
 msgid "IDS_BR_OPT_RENAME_FOLDER"
 msgstr "フォルダ名を変更"
 
-msgid "IDS_BR_OPT_RENAME"
-msgstr "名前を変更"
-
 msgid "IDS_BR_OPT_REMOVE"
 msgstr "削除"
-
-msgid "IDS_BR_OPT_REFRESH"
-msgstr "更新"
 
 msgid "IDS_BR_OPT_READER_MODE_TTS"
 msgstr "リーダーモード"
@@ -685,14 +535,8 @@ msgstr "オフラインページ"
 msgid "IDS_BR_OPT_NEW_WINDOW"
 msgstr "新規ウィンドウ"
 
-msgid "IDS_BR_OPT_MOVE"
-msgstr "移動"
-
 msgid "IDS_BR_OPT_MINIMISE"
 msgstr "最小化"
-
-msgid "IDS_BR_OPT_MESSAGES"
-msgstr "メッセージ"
 
 msgid "IDS_BR_OPT_MEDIUM_M_QUALITY"
 msgstr "標準"
@@ -705,9 +549,6 @@ msgstr "位置情報へのアクセス権限"
 
 msgid "IDS_BR_OPT_LOAD_IMAGES"
 msgstr "画像の読み込み"
-
-msgid "IDS_BR_OPT_LIST_VIEW"
-msgstr "リスト表示"
 
 msgid "IDS_BR_OPT_LATIN_1_HISO_8859_1"
 msgstr "ラテン1(ISO-8859-1)"
@@ -724,9 +565,6 @@ msgstr "日本語(ISO-2022-JP)"
 msgid "IDS_BR_OPT_JAPANESE_HEUC_JP"
 msgstr "日本語(EUC-JP)"
 
-msgid "IDS_BR_OPT_I_AGREE"
-msgstr "同意します。"
-
 msgid "IDS_BR_OPT_INCOGNITO_MODE_ABB"
 msgstr "シークレットモード"
 
@@ -741,9 +579,6 @@ msgstr "ホーム画面にｼｮｰﾄｶｯﾄを追加"
 
 msgid "IDS_BR_OPT_HIGH_M_QUALITY"
 msgstr "高"
-
-msgid "IDS_BR_OPT_HELP"
-msgstr "ヘルプ"
 
 msgid "IDS_BR_OPT_GOFORWARD"
 msgstr "進む"
@@ -790,9 +625,6 @@ msgstr "[データ使用量を節約]を無効化"
 msgid "IDS_BR_OPT_DISABLED"
 msgstr "無効"
 
-msgid "IDS_BR_OPT_DEVICE"
-msgstr "本体"
-
 msgid "IDS_BR_OPT_DELETE_SAVED_PAGE_ABB"
 msgstr "保存したページを削除"
 
@@ -826,9 +658,6 @@ msgstr "中国語(Big5)"
 msgid "IDS_BR_OPT_CACHE"
 msgstr "キャッシュ"
 
-msgid "IDS_BR_OPT_BOOKMARK"
-msgstr "ブックマーク"
-
 msgid "IDS_BR_OPT_ADD_TO_WEB_CLIP"
 msgstr "Webクリップに追加"
 
@@ -849,12 +678,6 @@ msgstr "ﾌﾞｯｸﾏｰｸを追加"
 
 msgid "IDS_BR_OPT_ADD_BOOKMARK"
 msgstr "ブックマークを追加"
-
-msgid "IDS_BR_OPT_ADDED"
-msgstr "追加しました。"
-
-msgid "IDS_BR_OPT_ADD"
-msgstr "追加"
 
 msgid "IDS_BR_OPT1_EXTENSION"
 msgstr "拡張子"
@@ -925,9 +748,6 @@ msgstr "ﾌｨｰﾄﾞｺﾝﾃﾝﾂをﾀﾞｳﾝﾛｰﾄﾞ"
 msgid "IDS_BR_MBODY_DELETE_SIGN_IN_DATA"
 msgstr "サインインデータを削除"
 
-msgid "IDS_BR_MBODY_DEFAULT_DOWNLOAD_STORAGE"
-msgstr "標準ダウンロード先"
-
 msgid "IDS_BR_MBODY_DATA_SAVING_STATISTICS"
 msgstr "データ節約情報"
 
@@ -970,9 +790,6 @@ msgstr "ブックマークの移動不可"
 msgid "IDS_BR_HEADER_SITE_NOT_TRUSTED_ABB"
 msgstr "信頼できないサイト"
 
-msgid "IDS_BR_HEADER_SIGN_IN_TO_SAMSUNG_ACCOUNT"
-msgstr "Samsungアカウントにサインイン"
-
 msgid "IDS_BR_HEADER_SET_HOMEPAGE_ABB"
 msgstr "ホームページを設定"
 
@@ -1009,17 +826,11 @@ msgstr "ポップアップをブロック"
 msgid "IDS_BR_HEADER_POPULAR_WEBSITES_ABB"
 msgstr "人気のWebサイト"
 
-msgid "IDS_BR_HEADER_PD_SELECTED_ABB"
-msgstr "%d件選択"
-
 msgid "IDS_BR_HEADER_ORGANISATION_C_ABB"
 msgstr "組織名:"
 
 msgid "IDS_BR_HEADER_ORGANISATIONAL_UNIT_C"
 msgstr "部門名:"
-
-msgid "IDS_BR_HEADER_NO_NETWORK_CONNECTION"
-msgstr "ネットワーク接続不可"
 
 msgid "IDS_BR_HEADER_NEWER_M_INTERNET_HISTORY_ABB"
 msgstr "Newer"
@@ -1036,17 +847,11 @@ msgstr "HTML5機能拡張"
 msgid "IDS_BR_HEADER_FORM_DATA"
 msgstr "文字入力履歴"
 
-msgid "IDS_BR_HEADER_FOLDER"
-msgstr "フォルダ"
-
 msgid "IDS_BR_HEADER_EXPIRES_ON_C"
 msgstr "有効期限:"
 
 msgid "IDS_BR_HEADER_ENABLE_WEB_SIGN_IN"
 msgstr "Webサインインを有効にする"
-
-msgid "IDS_BR_HEADER_EDIT_PROFILE"
-msgstr "プロフィールを編集"
 
 msgid "IDS_BR_HEADER_EDIT_BOOKMARK"
 msgstr "ブックマークを編集"
@@ -1084,14 +889,8 @@ msgstr "帯域幅の管理"
 msgid "IDS_BR_HEADER_ADVANCEDCERTIFICATES"
 msgstr "証明書"
 
-msgid "IDS_BR_BUTTON_SET"
-msgstr "設定"
-
 msgid "IDS_BR_BUTTON_RESET_ABB"
 msgstr "リセット"
-
-msgid "IDS_BR_BUTTON_NOT_NOW"
-msgstr "今はしない"
 
 msgid "IDS_BR_BUTTON_HOMEPAGE_ABB"
 msgstr "ﾎｰﾑﾍﾟｰｼﾞ"
@@ -1099,35 +898,11 @@ msgstr "ﾎｰﾑﾍﾟｰｼﾞ"
 msgid "IDS_BR_BUTTON_FIND_ABB"
 msgstr "検索"
 
-msgid "IDS_BR_BUTTON_ENABLE_ABB"
-msgstr "有効"
-
-msgid "IDS_BR_BUTTON_EDIT"
-msgstr "編集"
-
-msgid "IDS_BR_BUTTON_CONTINUE_ABB"
-msgstr "続行"
-
-msgid "IDS_BR_BUTTON_CONTINUE"
-msgstr "続行"
-
-msgid "IDS_BR_BUTTON_CLOSE"
-msgstr "閉じる"
-
-msgid "IDS_BR_BUTTON_CANCEL_ABB"
-msgstr "キャンセル"
-
-msgid "IDS_BR_BUTTON_CANCEL"
-msgstr "キャンセル"
-
 msgid "IDS_BR_BUTTON_BACK_ABB"
 msgstr "戻る"
 
 msgid "IDS_BR_BUTTON_ALWAYS_SHOW_ABB"
 msgstr "常に表示"
-
-msgid "IDS_BR_BUTTON_ALLOW"
-msgstr "許可"
 
 msgid "IDS_BR_BUTTON2_WEB_PORTAL"
 msgstr "Webポータル"
@@ -1152,9 +927,6 @@ msgstr "履歴に移動"
 
 msgid "IDS_BR_BUTTON2_ENTERTAINMENT"
 msgstr "エンターテイメント"
-
-msgid "IDS_BR_BODY_YESTERDAY"
-msgstr "昨日"
 
 msgid "IDS_BR_BODY_WINDOW_MANAGER"
 msgstr "ウィンドウマネージャー"
@@ -1183,9 +955,6 @@ msgstr "フルスクリーンモードを使用 (ステータスバーは非表�
 msgid "IDS_BR_BODY_USE_A_PREDICTION_SERVICE_TO_DISPLAY_RELATED_QUERIES_AND_POPULAR_WEBSITES_IN_THE_ADDRESS_BAR_AS_YOU_TYPE"
 msgstr "アドレスバーに入力時に、関連性の高い検索キーワードや人気のWebサイトが表示される予測サービスを使用"
 
-msgid "IDS_BR_BODY_URL"
-msgstr "URL"
-
 msgid "IDS_BR_BODY_UPPER_FOLDER_T_TALKBACK"
 msgstr "上位フォルダです。"
 
@@ -1201,12 +970,6 @@ msgstr "Webページを表示できません。サーバーから応答があり
 msgid "IDS_BR_BODY_TOWN_CITY_COUNTY_ABB"
 msgstr "都道府県/市区町村"
 
-msgid "IDS_BR_BODY_TODAY"
-msgstr "今日"
-
-msgid "IDS_BR_BODY_TITLE"
-msgstr "タイトル"
-
 msgid "IDS_BR_BODY_THIS_SITE_IS_USING_PS"
 msgstr "このサイトでは%sを使用しています。"
 
@@ -1221,9 +984,6 @@ msgstr "このブックマークを削除します。"
 
 msgid "IDS_BR_BODY_THE_SELECTED_PERSONAL_DATA_WILL_BE_DELETED"
 msgstr "選択した個人データを削除します。"
-
-msgid "IDS_BR_BODY_THE_MAXIMUM_NUMBER_OF_CHARACTERS_HPD_HAS_BEEN_EXCEEDED"
-msgstr "最大文字数(%d)を超えました。"
 
 msgid "IDS_BR_BODY_TEXT_FIELD_T_TTS"
 msgstr "テキスト入力欄"
@@ -1249,17 +1009,11 @@ msgstr "ブックマークを同期"
 msgid "IDS_BR_BODY_STREET_ADDRESS_PO_BOX_C_O_ETC_ABB"
 msgstr "番地、私書箱、様方など"
 
-msgid "IDS_BR_BODY_STREAMING"
-msgstr "ストリーミング"
-
 msgid "IDS_BR_BODY_STORED_DATA"
 msgstr "保存したデータ"
 
 msgid "IDS_BR_BODY_SPLIT_BAR_HANDLE"
 msgstr "分割バーのハンドル"
-
-msgid "IDS_BR_BODY_SMALL"
-msgstr "小"
 
 msgid "IDS_BR_BODY_SIGN_IN_TO_YOUR_SAMSUNG_ACCOUNT_TO_ACCESS_THE_BOOKMARKS_AND_TABS_ON_YOUR_OTHER_DEVICES"
 msgstr "他の端末上のブックマークやタブにアクセスするには、Samsungアカウントにサインインしてください。"
@@ -1279,9 +1033,6 @@ msgstr "Webフォームに自動入力するテキストを設定"
 msgid "IDS_BR_BODY_SET_CURRENT_PAGE_AS_HOMEPAGE"
 msgstr "このページをホームページに設定します。"
 
-msgid "IDS_BR_BODY_SETTINGS"
-msgstr "設定"
-
 msgid "IDS_BR_BODY_SELECT_FOLDER"
 msgstr "フォルダを選択"
 
@@ -1294,9 +1045,6 @@ msgstr "検索欄"
 msgid "IDS_BR_BODY_SEARCH_AND_URL_SUGGESTIONS"
 msgstr "検索ワード/URLの候補表示"
 
-msgid "IDS_BR_BODY_SEARCH"
-msgstr "検索"
-
 msgid "IDS_BR_BODY_SCREEN_AND_TEXT"
 msgstr "画面とテキスト"
 
@@ -1305,9 +1053,6 @@ msgstr "Webサイトで入力したユーザー名とパスワードを保存"
 
 msgid "IDS_BR_BODY_SAVE_LINK"
 msgstr "リンクを保存"
-
-msgid "IDS_BR_BODY_RSS_SEARCH_RESULTS"
-msgstr "検索結果"
 
 msgid "IDS_BR_BODY_RESTORE_DEFAULT_SETTINGS_Q"
 msgstr "初期設定に戻しますか？"
@@ -1342,12 +1087,6 @@ msgstr "ラジオボタン"
 msgid "IDS_BR_BODY_PS_BOOKMARK_WILL_BE_DELETED"
 msgstr "%s件のブックマークを削除します。"
 
-msgid "IDS_BR_BODY_PROFILE"
-msgstr "プロフィール"
-
-msgid "IDS_BR_BODY_PROCESSING_ING"
-msgstr "処理中..."
-
 msgid "IDS_BR_BODY_PRIVACY"
 msgstr "プライバシー"
 
@@ -1360,20 +1099,8 @@ msgstr "メニューキーを押します。"
 msgid "IDS_BR_BODY_POSTCODE_ABB"
 msgstr "郵便番号"
 
-msgid "IDS_BR_BODY_PHONE_NUMBER_ABB"
-msgstr "電話番号"
-
-msgid "IDS_BR_BODY_PHONE"
-msgstr "本体"
-
 msgid "IDS_BR_BODY_PD_POP_UPS_BLOCKED_ABB"
 msgstr "ﾎﾟｯﾌﾟｱｯﾌﾟﾌﾞﾛｯｸ%d件"
-
-msgid "IDS_BR_BODY_PD_ITEMS_WILL_BE_DELETED"
-msgstr "%d件のアイテムを削除します。"
-
-msgid "IDS_BR_BODY_PASSWORD"
-msgstr "パスワード"
 
 msgid "IDS_BR_BODY_PAGE_LOADED_T_TTS"
 msgstr "ページの読み込みが完了しました。"
@@ -1399,14 +1126,8 @@ msgstr "毎回確認"
 msgid "IDS_BR_BODY_ONLY_VIA_WI_FI_ABB"
 msgstr "Wi-Fi使用時のみ"
 
-msgid "IDS_BR_BODY_ON"
-msgstr "ON"
-
 msgid "IDS_BR_BODY_OLDER"
 msgstr "古い順"
-
-msgid "IDS_BR_BODY_OFF"
-msgstr "OFF"
 
 msgid "IDS_BR_BODY_NO_WINDOWS"
 msgstr "ウィンドウがありません。"
@@ -1420,17 +1141,8 @@ msgstr "件名なし"
 msgid "IDS_BR_BODY_NO_SAVED_PAGES"
 msgstr "保存したページがありません"
 
-msgid "IDS_BR_BODY_NO_RESULTS_FOUND"
-msgstr "検索結果がありません。"
-
-msgid "IDS_BR_BODY_NO_HISTORIES"
-msgstr "履歴はありません。"
-
 msgid "IDS_BR_BODY_NO_BOOKMARKS"
 msgstr "ブックマークがありません。"
-
-msgid "IDS_BR_BODY_NOTIFICATIONS"
-msgstr "通知"
 
 msgid "IDS_BR_BODY_NORMAL"
 msgstr "標準"
@@ -1446,9 +1158,6 @@ msgstr "よく見るサイト"
 
 msgid "IDS_BR_BODY_MOBILE_VIEW"
 msgstr "モバイル版を表示"
-
-msgid "IDS_BR_BODY_MEDIUM"
-msgstr "標準"
 
 msgid "IDS_BR_BODY_LOCATION_M_INFORMATION"
 msgstr "位置情報"
@@ -1474,9 +1183,6 @@ msgstr "ブラウザ"
 msgid "IDS_BR_BODY_IMPROVE_PERFORMANCE_WHEN_LOADING_PAGES"
 msgstr "ページ読み込み時のパフォーマンスを向上"
 
-msgid "IDS_BR_BODY_IMAGES"
-msgstr "画像"
-
 msgid "IDS_BR_BODY_HOMEPAGE"
 msgstr "ホームページ"
 
@@ -1486,20 +1192,11 @@ msgstr "ページを下にスクロールするとアドレスバーを非表示
 msgid "IDS_BR_BODY_GENERAL_M_SETTINGS"
 msgstr "一般"
 
-msgid "IDS_BR_BODY_FULL_SCREEN"
-msgstr "全画面表示"
-
 msgid "IDS_BR_BODY_FULL_NAME_ABB"
 msgstr "氏名"
 
 msgid "IDS_BR_BODY_FORCE_ZOOM_ABB"
 msgstr "拡大/縮小設定を制御"
-
-msgid "IDS_BR_BODY_FONT_SIZE"
-msgstr "文字サイズ"
-
-msgid "IDS_BR_BODY_FOLDER_NAME"
-msgstr "フォルダ名"
 
 msgid "IDS_BR_BODY_FLAT_SUITE_UNIT_BUILDING_FLOOR_ETC_ABB"
 msgstr "建物名など"
@@ -1516,24 +1213,6 @@ msgstr "ユーザー名を入力"
 msgid "IDS_BR_BODY_ENTER_TOWN_CITY_COUNTY_ABB"
 msgstr "都道府県/市区町村を入力"
 
-msgid "IDS_BR_BODY_ENTER_POSTCODE_ABB"
-msgstr "郵便番号を入力してください。"
-
-msgid "IDS_BR_BODY_ENTER_POSTCODE"
-msgstr "郵便番号を入力"
-
-msgid "IDS_BR_BODY_ENTER_PHONE_NUMBER"
-msgstr "電話番号を入力してください。"
-
-msgid "IDS_BR_BODY_ENTER_NAME"
-msgstr "名前を入力してください。"
-
-msgid "IDS_BR_BODY_ENTER_FOLDER_NAME"
-msgstr "フォルダ名を入力してください。"
-
-msgid "IDS_BR_BODY_ENTER_EMAIL_ADDRESS"
-msgstr "Eメールアドレスを入力"
-
 msgid "IDS_BR_BODY_ENTER_COUNTRY_REGION_ABB"
 msgstr "国/地域を入力"
 
@@ -1545,12 +1224,6 @@ msgstr "位置情報を有効にする"
 
 msgid "IDS_BR_BODY_ENABLE_JAVASCRIPT"
 msgstr "JavaScriptを有効化"
-
-msgid "IDS_BR_BODY_EMAIL_ADDRESS"
-msgstr "Eメールアドレス"
-
-msgid "IDS_BR_BODY_DOWNLOADING_ING"
-msgstr "ダウンロード中..."
 
 msgid "IDS_BR_BODY_DOUBLE_TAP_TO_VIEW_CERTIFICATE_TTS"
 msgstr "証明書を表示するには、ダブルタップします。"
@@ -1591,9 +1264,6 @@ msgstr "セキュリティ警告ポップアップを表示"
 msgid "IDS_BR_BODY_DISPLAY_IMAGES_ON_WEB_PAGES"
 msgstr "Webページに画像を表示"
 
-msgid "IDS_BR_BODY_DEVELOPER_MODE"
-msgstr "開発者モード"
-
 msgid "IDS_BR_BODY_DESKTOP_VIEW"
 msgstr "PC版を表示"
 
@@ -1608,9 +1278,6 @@ msgstr "保存先"
 
 msgid "IDS_BR_BODY_DEFAULT_PAGE_ABB"
 msgstr "標準ページ"
-
-msgid "IDS_BR_BODY_DEFAULT"
-msgstr "標準"
 
 msgid "IDS_BR_BODY_DATA_USAGE_REDUCED_BY_P1SDP_HP2SD_KB_OF_P3SD_KB_RECEIVED_TAP_HERE_TO_RESET_STATISTICS"
 msgstr "データ使用量が%1$d%減少しました(%3$dKB中%2$dKBを受信済み)。データ使用量の統計をリセットするには、ここをタップしてください。"
@@ -1675,11 +1342,8 @@ msgstr "文字サイズを変更し、特にPC版のWebサイトを閲覧しや�
 msgid "IDS_BR_BODY_BOOKMARK_REMINDER_ABB"
 msgstr "ブックマークのおすすめ"
 
-msgid "IDS_BR_BODY_BOOKMARKS"
-msgstr "ブックマーク"
-
 msgid "IDS_BR_BODY_BLOCK_POP_UPS_ON_WEB_PAGES"
-msgstr "Webページのポップアップをブロック"
+msgstr "Webページのポップアップをブロックします。"
 
 msgid "IDS_BR_BODY_BLOCK_POP_UPS_ON_WEBPAGES"
 msgstr "Webページのポップアップをブロックします。"
@@ -1726,9 +1390,6 @@ msgstr "通知を表示するには、%sを許可してください。"
 msgid "IDS_BR_BODY_ALLOWS_SITES_TO_SAVE_AND_READ_COOKIE_DATA"
 msgstr "Cookieの保存と読み取りを許可"
 
-msgid "IDS_BR_BODY_ALL"
-msgstr "全て"
-
 msgid "IDS_BR_BODY_AFTER_YOU_VISIT_WEBPAGES_THE_PAGES_YOU_HAVE_VISITED_THE_MOST_WILL_BE_SHOWN_HERE"
 msgstr "Webページにアクセスすると、よく見るサイトがここに表示されます。"
 
@@ -1756,9 +1417,6 @@ msgstr "詳細設定"
 msgid "IDS_BR_BODY_ADD_TO_CONTACT"
 msgstr "電話帳に追加"
 
-msgid "IDS_BR_BODY_ADD_TO"
-msgstr "登録"
-
 msgid "IDS_BR_BODY_ADD_THIS_WEBSITE_TO_BOOKMARKS_TO_OPEN_IT_FASTER_ABB"
 msgstr "簡単にｱｸｾｽするために、このｻｲﾄをﾌﾞｯｸﾏｰｸに追加"
 
@@ -1768,29 +1426,17 @@ msgstr "住所2"
 msgid "IDS_BR_BODY_ADDRESS_LINE_1_ABB"
 msgstr "住所1"
 
-msgid "IDS_BR_BODY_ADDDETAILSVIEW_TAGS"
-msgstr "タグ"
-
-msgid "IDS_BR_BODY_ADDBOOKMARKURL"
-msgstr "URL"
-
 msgid "IDS_BR_BODY_ACCEPT_COOKIES"
 msgstr "Cookieを許可"
 
 msgid "IDS_BR_BODY_1_PROFILE_WILL_BE_DELETED"
 msgstr "1件のプロフィールを削除します。"
 
-msgid "IDS_BR_BODY_1_ITEM_WILL_BE_DELETED"
-msgstr "1件のアイテムを削除します。"
-
 msgid "IDS_BR_ACBUTTON_TABS_ABB"
 msgstr "タブ"
 
 msgid "IDS_BR_TPOP_STARTING_DOWNLOAD_ING"
 msgstr "ダウンロードを開始しています..."
-
-msgid "IDS_BR_TPOP_MAXIMUM_NUMBER_OF_CHARACTERS_HPD_REACHED"
-msgstr "最大文字数(%d文字)に達しました。"
 
 msgid "IDS_BR_TPOP_FOLDER_RENAMED"
 msgstr "フォルダ名を変更しました。"
@@ -1807,14 +1453,8 @@ msgstr "ｷｬﾝｾﾙ"
 msgid "IDS_BR_SBODY_SET_THE_DEVICE_TO_SHOW_THE_FULL_WEBPAGE_ON_THE_SCREEN_WHEN_IT_IS_LOADED_WITHOUT_NEEDING_TO_SCROLL"
 msgstr "Webページが読み込まれたとき、スクロールせずに全画面でWebページを表示するように端末を設定"
 
-msgid "IDS_BR_POP_UNSUPPORTMEDIATYPE"
-msgstr "未対応のメディアです。"
-
 msgid "IDS_BR_POP_UNABLE_TO_RUN_INTERNET_LOW_BATTERY"
 msgstr "バッテリー残量が不足しているため、インターネットを実行できません。"
-
-msgid "IDS_BR_POP_UNABLE_TO_CONNECT_TO_MOBILE_NETWORKS_WHILE_FLIGHT_MODE_IS_ENABLED_CONNECT_TO_WI_FI_NETWORK_INSTEAD_OR_DISABLE_FLIGHT_MODE_AND_TRY_AGAIN"
-msgstr "機内モードが有効な間は、モバイルネットワークに接続できません。代わりにWi-Fiネットワークに接続するか、機内モードを無効にして、再度実行してください。"
 
 msgid "IDS_BR_POP_THE_DOWNLOAD_HAS_BEEN_STOPPED_AND_THE_DOWNLOADED_DATA_WILL_BE_DELETED"
 msgstr "ダウンロードを中止しました。ダウンロードしたデータを削除します。"
@@ -1825,20 +1465,8 @@ msgstr "検索が完了しました。"
 msgid "IDS_BR_POP_READY"
 msgstr "準備完了"
 
-msgid "IDS_BR_POP_INSTALL_SUCCESS"
-msgstr "インストールが完了しました。"
-
-msgid "IDS_BR_POP_INSTALLATION_FAILED"
-msgstr "インストールが失敗しました。"
-
 msgid "IDS_BR_POP_INFORM_MEMORY_ERROR"
 msgstr "メモリエラーです。"
-
-msgid "IDS_BR_POP_DELETING_ING"
-msgstr "削除中..."
-
-msgid "IDS_BR_POP_DATA_ROAMING_IS_DISABLED_CONNECT_TO_WI_FI_NETWORK_INSTEAD_OR_ENABLE_DATA_ROAMING_AND_TRY_AGAIN"
-msgstr "データローミングが無効です。Wi-Fiネットワークに接続するか、データローミングを有効にし、再度実行してください。"
 
 msgid "IDS_BR_POP_DATA_ROAMING_IS_DISABLED_CONNECT_TO_A_WI_FI_NETWORK_OR_ENABLE_DATA_ROAMING_AND_TRY_AGAIN"
 msgstr "データローミングが無効です。Wi-Fiネットワークに接続するか、またはデータローミングを有効にし、再度お試しください。"
@@ -1855,17 +1483,11 @@ msgstr "Webアプリ"
 msgid "IDS_BR_OPT_VIEW_ONLINE"
 msgstr "オンラインで表示"
 
-msgid "IDS_BR_OPT_SHARE_VIA"
-msgstr "共有"
-
 msgid "IDS_BR_OPT_READ_ON_OFFLINE_PAGES_LATER_ABB"
 msgstr "オフラインページを後で読む"
 
 msgid "IDS_BR_OPT_QUICK_ACCESS_ABB2"
 msgstr "クイックアクセス"
-
-msgid "IDS_BR_OPT_PASTE"
-msgstr "貼り付け"
 
 msgid "IDS_BR_OPT_ALWAYS_ENABLED_ABB"
 msgstr "常に有効"
@@ -1891,9 +1513,6 @@ msgstr "検索ワード/URLの候補表示"
 msgid "IDS_BR_MBODY_HISTORY"
 msgstr "履歴"
 
-msgid "IDS_BR_MBODY_FONT_SIZE"
-msgstr "文字サイズ"
-
 msgid "IDS_BR_MBODY_FIT_PAGE_TO_SCREEN"
 msgstr "画面にページを合わせる"
 
@@ -1905,9 +1524,6 @@ msgstr "カスタム"
 
 msgid "IDS_BR_MBODY_COUNTRY_REGION"
 msgstr "国/地域"
-
-msgid "IDS_BR_HEADER_UNABLE_TO_DOWNLOAD_ABB"
-msgstr "ダウンロード不可"
 
 msgid "IDS_BR_HEADER_RENAME_FOLDER_ABB"
 msgstr "フォルダ名を変更"
@@ -1939,14 +1555,8 @@ msgstr "情報を追加"
 msgid "IDS_BR_BUTTON_WI_FI_ABB"
 msgstr "Wi-Fi"
 
-msgid "IDS_BR_BUTTON_UPDATE"
-msgstr "更新"
-
 msgid "IDS_BR_BUTTON_SETTINGS_ABB"
 msgstr "設定"
-
-msgid "IDS_BR_BUTTON_RETRY"
-msgstr "再試行"
 
 msgid "IDS_BR_BUTTON2_OK"
 msgstr "OK"
@@ -1972,9 +1582,6 @@ msgstr "この証明書は信頼できる機関から発行されています。
 msgid "IDS_BR_BODY_TAP_HERE_TO_ADD_A_QUICK_ACCESS_SHORTCUT"
 msgstr "クイックアクセスのショートカットを追加するには、ここをタップしてください。"
 
-msgid "IDS_BR_BODY_REQUEST_FAILED"
-msgstr "要求に失敗しました。"
-
 msgid "IDS_BR_BODY_PREFERENCES"
 msgstr "プレファレンス"
 
@@ -1985,19 +1592,403 @@ msgid "IDS_BR_BODY_NO_MOBILE_NETWORKS_HAVE_BEEN_FOUND"
 msgstr "モバイルネットワークが見つかりません。"
 
 msgid "IDS_BR_BODY_NO_MATCHES"
-msgstr "一致するものがありません。"
+msgstr "一致するものがありません"
 
 msgid "IDS_BR_BODY_MOBILE_DATA_IS_TURNED_OFF_CONNECT_TO_A_WI_FI_NETWORK_INSTEAD_OR_TAP_SETTINGS_TO_TURN_ON_MOBILE_DATA_AND_THEN_TRY_AGAIN"
 msgstr "モバイルデータがOFFになっています。Wi-Fiネットワークに接続するか、[設定]をタップしてモバイルデータをONにしてから再度お試しください。"
+
+msgid "IDS_BR_BODY_FIT_TO_WIDTH"
+msgstr "幅に合わせる"
+
+msgid "IDS_BR_ACBUTTON_QUICK_ACCESS"
+msgstr "ｸｲｯｸｱｸｾｽ"
+
+msgid "IDS_BR_OPT_OPEN_IN_NEW_TAB"
+msgstr "新規タブで開く"
+
+msgid "IDS_BR_BODY_SHARE_LINK"
+msgstr "リンクを共有"
+
+msgid "IDS_BR_SK_SAVE_LITE"
+msgstr "保存"
+
+msgid "IDS_BR_SK_SAVE_ABB"
+msgstr "保存"
+
+msgid "IDS_BR_SK_SAVE"
+msgstr "保存"
+
+msgid "IDS_BR_SK_PREVIOUS"
+msgstr "編集前の画像"
+
+msgid "IDS_BR_SK_NEXT"
+msgstr "次へ"
+
+msgid "IDS_BR_SK_DELETE"
+msgstr "削除"
+
+msgid "IDS_BR_SK_CLEAR"
+msgstr "消去"
+
+msgid "IDS_BR_SK_BACK"
+msgstr "戻る"
+
+msgid "IDS_BR_POP_WI_FI_CONNECTION_REQUIRED_CONNECT_TO_WI_FI_NETWORK_AND_TRY_AGAIN"
+msgstr "Wi-Fi接続が必要です。Wi-Fiに接続し、再度お試しください。"
+
+msgid "IDS_BR_POP_URL_NOT_FOUND"
+msgstr "URLが見つかりません。"
+
+msgid "IDS_BR_POP_URL"
+msgstr "URL"
+
+msgid "IDS_BR_POP_SAVED"
+msgstr "保存しました。"
+
+msgid "IDS_BR_POP_REMOVED"
+msgstr "削除しました。"
+
+msgid "IDS_BR_POP_PD_ITEMS_WILL_BE_DELETED"
+msgstr "%d件のアイテムを削除します。"
+
+msgid "IDS_BR_POP_PD_ITEMS_SELECTED"
+msgstr "%d件選択"
+
+msgid "IDS_BR_POP_NO_ITEMS_SELECTED"
+msgstr "アイテムが選択されていません。"
+
+msgid "IDS_BR_POP_NOT_ENOUGH_MEMORY"
+msgstr "メモリが不足しています。"
+
+msgid "IDS_BR_POP_NEVER"
+msgstr "なし"
+
+msgid "IDS_BR_POP_MOBILE_DATA_IS_DISABLED_CONNECT_TO_WI_FI_NETWORK_INSTEAD_OR_ENABLE_MOBILE_DATA_AND_TRY_AGAIN"
+msgstr "モバイルデータが無効です。Wi-Fiネットワークに接続するか、モバイルデータを有効にして、再度実行してください。"
+
+msgid "IDS_BR_POP_LOADING_PLEASE_WAIT_ING"
+msgstr "読み込み中です。 お待ちください..."
+
+msgid "IDS_BR_POP_INVALID_URL"
+msgstr "無効なURLです。"
+
+msgid "IDS_BR_POP_FAIL"
+msgstr "失敗しました。"
+
+msgid "IDS_BR_POP_ENTER_TITLE_ABB"
+msgstr "タイトルを入力"
+
+msgid "IDS_BR_POP_DO_NOT_SHOW_AGAIN"
+msgstr "今後表示しない"
+
+msgid "IDS_BR_POP_DOWNLOADCOMPLETE"
+msgstr "ダウンロードが完了しました。"
+
+msgid "IDS_BR_POP_DISABLED"
+msgstr "利用できません。"
+
+msgid "IDS_BR_POP_DELETE_Q"
+msgstr "削除しますか？"
+
+msgid "IDS_BR_POP_DELETED"
+msgstr "削除しました。"
+
+msgid "IDS_BR_POP_CLOSE_APPLICATION_Q"
+msgstr "アプリケーションを終了しますか？"
+
+msgid "IDS_BR_POP_BOOKMARK_ADDED"
+msgstr "ブックマークが追加されました。"
+
+msgid "IDS_BR_POP_AUTOMATIC_BRIGHTNESS"
+msgstr "明るさの自動調整"
+
+msgid "IDS_BR_POP_ACCOUNT"
+msgstr "アカウント"
+
+msgid "IDS_BR_POP_1_ITEM_WILL_BE_DELETED"
+msgstr "1件のアイテムを削除します。"
+
+msgid "IDS_BR_POP_1_ITEM_SELECTED"
+msgstr "1件選択"
+
+msgid "IDS_BR_OPT_TRANSLATE"
+msgstr "翻訳"
+
+msgid "IDS_BR_OPT_STOP"
+msgstr "停止"
+
+msgid "IDS_BR_OPT_SHOW"
+msgstr "表示"
+
+msgid "IDS_BR_OPT_SHARE"
+msgstr "共有"
+
+msgid "IDS_BR_OPT_SETTINGS"
+msgstr "設定"
+
+msgid "IDS_BR_OPT_SEND_EMAIL"
+msgstr "メール送信"
+
+msgid "IDS_BR_OPT_SELECT"
+msgstr "選択"
+
+msgid "IDS_BR_OPT_SD_CARD"
+msgstr "外部SDカード"
+
+msgid "IDS_BR_OPT_RENAME"
+msgstr "名前を変更"
+
+msgid "IDS_BR_OPT_REFRESH"
+msgstr "更新"
+
+msgid "IDS_BR_OPT_MOVE"
+msgstr "移動"
+
+msgid "IDS_BR_OPT_MESSAGES"
+msgstr "メッセージ"
+
+msgid "IDS_BR_OPT_LIST_VIEW"
+msgstr "リスト表示"
+
+msgid "IDS_BR_OPT_I_AGREE"
+msgstr "同意します。"
+
+msgid "IDS_BR_OPT_HELP"
+msgstr "ヘルプ"
+
+msgid "IDS_BR_OPT_DEVICE"
+msgstr "本体"
+
+msgid "IDS_BR_OPT_BOOKMARK"
+msgstr "ブックマーク"
+
+msgid "IDS_BR_OPT_ADDED"
+msgstr "追加しました。"
+
+msgid "IDS_BR_OPT_ADD"
+msgstr "追加"
+
+msgid "IDS_BR_MBODY_DEFAULT_DOWNLOAD_STORAGE"
+msgstr "標準ダウンロード先"
+
+msgid "IDS_BR_HEADER_SIGN_IN_TO_SAMSUNG_ACCOUNT"
+msgstr "Samsungアカウントにサインイン"
+
+msgid "IDS_BR_HEADER_PD_SELECTED_ABB"
+msgstr "%d件選択"
+
+msgid "IDS_BR_HEADER_NO_NETWORK_CONNECTION"
+msgstr "ネットワーク接続不可"
+
+msgid "IDS_BR_HEADER_FOLDER"
+msgstr "フォルダ"
+
+msgid "IDS_BR_HEADER_EDIT_PROFILE"
+msgstr "プロフィールを編集"
+
+msgid "IDS_BR_BUTTON_SET"
+msgstr "設定"
+
+msgid "IDS_BR_BUTTON_NOT_NOW"
+msgstr "今はしない"
+
+msgid "IDS_BR_BUTTON_ENABLE_ABB"
+msgstr "有効"
+
+msgid "IDS_BR_BUTTON_EDIT"
+msgstr "編集"
+
+msgid "IDS_BR_BUTTON_CONTINUE_ABB"
+msgstr "続行"
+
+msgid "IDS_BR_BUTTON_CONTINUE"
+msgstr "続行"
+
+msgid "IDS_BR_BUTTON_CLOSE"
+msgstr "閉じる"
+
+msgid "IDS_BR_BUTTON_CANCEL_ABB"
+msgstr "キャンセル"
+
+msgid "IDS_BR_BUTTON_CANCEL"
+msgstr "キャンセル"
+
+msgid "IDS_BR_BUTTON_ALLOW"
+msgstr "許可"
+
+msgid "IDS_BR_BODY_YESTERDAY"
+msgstr "昨日"
+
+msgid "IDS_BR_BODY_URL"
+msgstr "URL"
+
+msgid "IDS_BR_BODY_TODAY"
+msgstr "今日"
+
+msgid "IDS_BR_BODY_TITLE"
+msgstr "タイトル"
+
+msgid "IDS_BR_BODY_THE_MAXIMUM_NUMBER_OF_CHARACTERS_HPD_HAS_BEEN_EXCEEDED"
+msgstr "最大文字数(%d)を超えました。"
+
+msgid "IDS_BR_BODY_STREAMING"
+msgstr "ストリーミング"
+
+msgid "IDS_BR_BODY_SMALL"
+msgstr "小"
+
+msgid "IDS_BR_BODY_SETTINGS"
+msgstr "設定"
+
+msgid "IDS_BR_BODY_SEARCH"
+msgstr "検索"
+
+msgid "IDS_BR_BODY_RSS_SEARCH_RESULTS"
+msgstr "検索結果"
+
+msgid "IDS_BR_BODY_PROFILE"
+msgstr "プロフィール"
+
+msgid "IDS_BR_BODY_PROCESSING_ING"
+msgstr "処理中..."
+
+msgid "IDS_BR_BODY_PHONE_NUMBER_ABB"
+msgstr "電話番号"
+
+msgid "IDS_BR_BODY_PHONE"
+msgstr "本体"
+
+msgid "IDS_BR_BODY_PD_ITEMS_WILL_BE_DELETED"
+msgstr "%d件のアイテムを削除します。"
+
+msgid "IDS_BR_BODY_PASSWORD"
+msgstr "パスワード"
+
+msgid "IDS_BR_BODY_ON"
+msgstr "ON"
+
+msgid "IDS_BR_BODY_OFF"
+msgstr "OFF"
+
+msgid "IDS_BR_BODY_NO_RESULTS_FOUND"
+msgstr "検索結果がありません"
+
+msgid "IDS_BR_BODY_NO_HISTORIES"
+msgstr "履歴はありません"
+
+msgid "IDS_BR_BODY_NOTIFICATIONS"
+msgstr "通知"
+
+msgid "IDS_BR_BODY_MEDIUM"
+msgstr "標準"
+
+msgid "IDS_BR_BODY_IMAGES"
+msgstr "画像"
+
+msgid "IDS_BR_BODY_FULL_SCREEN"
+msgstr "全画面表示"
+
+msgid "IDS_BR_BODY_FONT_SIZE"
+msgstr "文字サイズ"
+
+msgid "IDS_BR_BODY_FOLDER_NAME"
+msgstr "フォルダ名"
+
+msgid "IDS_BR_BODY_ENTER_POSTCODE_ABB"
+msgstr "郵便番号を入力してください。"
+
+msgid "IDS_BR_BODY_ENTER_POSTCODE"
+msgstr "郵便番号を入力"
+
+msgid "IDS_BR_BODY_ENTER_PHONE_NUMBER"
+msgstr "電話番号を入力してください。"
+
+msgid "IDS_BR_BODY_ENTER_NAME"
+msgstr "名前を入力してください。"
+
+msgid "IDS_BR_BODY_ENTER_FOLDER_NAME"
+msgstr "フォルダ名を入力してください。"
+
+msgid "IDS_BR_BODY_ENTER_EMAIL_ADDRESS"
+msgstr "Eメールアドレスを入力"
+
+msgid "IDS_BR_BODY_EMAIL_ADDRESS"
+msgstr "Eメールアドレス"
+
+msgid "IDS_BR_BODY_DOWNLOADING_ING"
+msgstr "ダウンロード中..."
+
+msgid "IDS_BR_BODY_DEVELOPER_MODE"
+msgstr "開発者モード"
+
+msgid "IDS_BR_BODY_DEFAULT"
+msgstr "標準"
+
+msgid "IDS_BR_BODY_BOOKMARKS"
+msgstr "ブックマーク"
+
+msgid "IDS_BR_BODY_ALL"
+msgstr "全て"
+
+msgid "IDS_BR_BODY_ADD_TO"
+msgstr "登録"
+
+msgid "IDS_BR_BODY_ADDDETAILSVIEW_TAGS"
+msgstr "タグ"
+
+msgid "IDS_BR_BODY_ADDBOOKMARKURL"
+msgstr "URL"
+
+msgid "IDS_BR_BODY_1_ITEM_WILL_BE_DELETED"
+msgstr "1件のアイテムを削除します。"
+
+msgid "IDS_BR_TPOP_MAXIMUM_NUMBER_OF_CHARACTERS_HPD_REACHED"
+msgstr "最大%d文字まで入力できます。"
+
+msgid "IDS_BR_POP_UNSUPPORTMEDIATYPE"
+msgstr "未対応のメディアです。"
+
+msgid "IDS_BR_POP_UNABLE_TO_CONNECT_TO_MOBILE_NETWORKS_WHILE_FLIGHT_MODE_IS_ENABLED_CONNECT_TO_WI_FI_NETWORK_INSTEAD_OR_DISABLE_FLIGHT_MODE_AND_TRY_AGAIN"
+msgstr "機内モードが有効な間は、モバイルネットワークに接続できません。代わりにWi-Fiネットワークに接続するか、機内モードを無効にして、再度実行してください。"
+
+msgid "IDS_BR_POP_INSTALL_SUCCESS"
+msgstr "インストールが完了しました。"
+
+msgid "IDS_BR_POP_INSTALLATION_FAILED"
+msgstr "インストールが失敗しました。"
+
+msgid "IDS_BR_POP_DELETING_ING"
+msgstr "削除中..."
+
+msgid "IDS_BR_POP_DATA_ROAMING_IS_DISABLED_CONNECT_TO_WI_FI_NETWORK_INSTEAD_OR_ENABLE_DATA_ROAMING_AND_TRY_AGAIN"
+msgstr "データローミングが無効です。Wi-Fiネットワークに接続するか、データローミングを有効にし、再度実行してください。"
+
+msgid "IDS_BR_OPT_SHARE_VIA"
+msgstr "共有"
+
+msgid "IDS_BR_OPT_PASTE"
+msgstr "貼り付け"
+
+msgid "IDS_BR_MBODY_FONT_SIZE"
+msgstr "文字サイズ"
+
+msgid "IDS_BR_HEADER_UNABLE_TO_DOWNLOAD_ABB"
+msgstr "ダウンロード不可"
+
+msgid "IDS_BR_BUTTON_UPDATE"
+msgstr "更新"
+
+msgid "IDS_BR_BUTTON_RETRY"
+msgstr "再試行"
+
+msgid "IDS_BR_BODY_REQUEST_FAILED"
+msgstr "要求に失敗しました。"
 
 msgid "IDS_BR_BODY_LOGIN"
 msgstr "ログイン"
 
 msgid "IDS_BR_BODY_LOADING_ING"
 msgstr "読み込み中..."
-
-msgid "IDS_BR_BODY_FIT_TO_WIDTH"
-msgstr "幅に合わせる"
 
 msgid "IDS_BR_BODY_FIT_TO_SCREEN"
 msgstr "画面に合わせる"
@@ -2008,12 +1999,180 @@ msgstr "ダウンロード"
 msgid "IDS_BR_BODY_DATA_ROAMING_IS_DISABLED_CONNECT_TO_A_WI_FI_NETWORK_INSTEAD_OR_ENABLE_DATA_ROAMING_AND_TRY_AGAIN"
 msgstr "データローミングが無効です。Wi-Fiネットワークに接続するか、[データローミング]を有効した後、再度実行してください。"
 
-msgid "IDS_BR_ACBUTTON_QUICK_ACCESS"
-msgstr "ｸｲｯｸｱｸｾｽ"
+msgid "IDS_BR_POP_DOWNLOAD_CANCELLED"
+msgstr "ダウンロードを中止しました。"
 
-msgid "IDS_ST_POP_SOME_CONTENT_HAS_BEEN_BLOCKED_TO_PROTECT_YOUR_DEVICE"
-msgstr "端末を保護するために一部のコンテンツがブロックされました。"
+msgid "IDS_BR_BUTTON_SECRET_ON_ABB"
+msgstr "ｼｰｸﾚｯﾄON"
 
-msgid "IDS_ST_POP_SELECT_WHETHER_TO_GO_TO_THE_WEBPAGE_ANYWAY"
-msgstr "Webページに移動するかどうかを選択します。"
+msgid "IDS_BR_MBODY_PRIVACY"
+msgstr "プライバシー"
+
+msgid "IDS_BR_MBODY_DEFAULT_STORAGE"
+msgstr "標準保存先"
+
+msgid "IDS_BR_MBODY_MANUAL_ZOOM"
+msgstr "手動ズーム"
+
+msgid "IDS_BR_TMBODY_DEFAULT_SEARCH_ENGINE"
+msgstr "標準検索エンジン"
+
+msgid "IDS_BR_MBODY_SAVE_SIGN_IN_INFO"
+msgstr "サインイン情報を保存"
+
+msgid "IDS_BR_OPT_TURN_OFF_SECRET_MODE_ABB"
+msgstr "シークレットモードをOFF"
+
+msgid "IDS_BR_OPT_TURN_ON_SECRET_MODE_ABB"
+msgstr "シークレットモードをON"
+
+msgid "IDS_BR_OPT_SHOW_PASSWORD_ABB2"
+msgstr "パスワードを表示"
+
+msgid "IDS_BR_BODY_ENTER_YOUR_CURRENT_SECRET_MODE_PASSWORD"
+msgstr "現在のシークレットモードのパスワードを入力してください。"
+
+msgid "IDS_BR_OPT_SECRET_MODE_SECURITY_ABB"
+msgstr "シークレットモードセキュリティ"
+
+msgid "IDS_BR_BUTTON_USE_PASSWORD_ABB"
+msgstr "ﾊﾟｽﾜｰﾄﾞを使用"
+
+msgid "IDS_BR_HEADER_DONT_USE_PASSWORD_ABB"
+msgstr "パスワードを使用しない"
+
+msgid "IDS_BR_MBODY_MOST_VISITED_WEBSITES"
+msgstr "よく見るWebサイト"
+
+msgid "IDS_BR_MBODY_SET_MY_PROFILE"
+msgstr "マイプロフィールを設定"
+
+msgid "IDS_BR_MBODY_MY_AUTO_FILL_PROFILE"
+msgstr "自動入力プロフィール"
+
+msgid "IDS_BR_SBODY_MANAGE_DATA_USED_TO_FILL_IN_FORMS_ONLINE"
+msgstr "オンラインでフォームの入力に使用するデータを管理します。"
+
+msgid "IDS_BR_MBODY_SAVE_SIGN_IN_INFO_ABB"
+msgstr "ｻｲﾝｲﾝ情報を保存"
+
+msgid "IDS_BR_OPT_LOCATION_ACCESS_DATA"
+msgstr "位置情報アクセスデータ"
+
+msgid "IDS_BR_OPT_AUTO_FILL_DATA"
+msgstr "自動入力データ"
+
+msgid "IDS_BR_BODY_ANY_WEBPAGES_YOU_VIEW_WHILE_SECRET_MODE_IS_TURNED_ON_WONT_APPEAR_IN_YOUR_BROWSER_OR_SEARCH_HISTORY_MSG"
+msgstr "シークレットモードがONの間に表示した全てのWebページは、シークレットモードがOFFの間は閲覧履歴や検索履歴に表示されません。\n\nシークレットモードがONの間に保存した全てのブックマークおよびWebページは、シークレットモードがOFFの間は表示されません。\n\nシークレットモードのデータは、パスワードで保護することもできます。"
+
+msgid "IDS_BR_BODY_ANY_WEBPAGES_YOU_VIEW_WHILE_SECRET_MODE_IS_TURNED_ON_WONT_APPEAR_IN_YOUR_BROWSER_OR_SEARCH_MSG"
+msgstr "シークレットモードがONの間に表示した全てのWebページは、シークレットモードがOFFの間は閲覧履歴や検索履歴に表示されません。\n\nシークレットモードがONの間に保存した全てのブックマークおよびWebページは、シークレットモードがOFFの間は表示されません。"
+
+msgid "IDS_BR_BUTTON_SECRET_OFF_ABB"
+msgstr "ｼｰｸﾚｯﾄOFF"
+
+msgid "IDS_BR_BUTTON_DONT_USE_PASSWORD_ABB"
+msgstr "ﾊﾟｽﾜｰﾄﾞを使用しない"
+
+msgid "IDS_BR_BUTTON_NEW_TAB_ABB2"
+msgstr "新規ﾀﾌﾞ"
+
+msgid "IDS_BR_NPBODY_WEB_ADDRESS_ABB"
+msgstr "Webアドレス"
+
+msgid "IDS_BR_HEADER_ADD_WEBPAGE_TO_QUICK_ACCESS_ABB"
+msgstr "Webﾍﾟｰｼﾞをｸｲｯｸｱｸｾｽに追加"
+
+msgid "IDS_BR_TMBODY_TURN_ON_JAVASCRIPT"
+msgstr "JavaScriptをON"
+
+msgid "IDS_BR_HEADER_COULDNT_OPEN_NEW_TAB_ABB"
+msgstr "新しいタブの表示不可"
+
+msgid "IDS_BR_OPT_OPEN_IN_NEW_TAB_ABB"
+msgstr "新規タブで開く"
+
+msgid "IDS_BR_TPOP_FOLDER_NAME_ALREADY_IN_USE"
+msgstr "フォルダ名は既に使用されています。"
+
+msgid "IDS_BR_NPBODY_NEW_FOLDER_PD"
+msgstr "新規フォルダ%d"
+
+msgid "IDS_BR_NPBODY_NEW_FOLDER"
+msgstr "新規フォルダ"
+
+msgid "IDS_BR_OPT_ENABLE_JAVASCRIPT"
+msgstr "JavaScriptを有効化"
+
+msgid "IDS_BR_TMBODY_MANAGE_WEBSITE_DATA"
+msgstr "Webサイトデータを管理"
+
+msgid "IDS_BR_HEADER_SET_HOME_PAGE_ABB"
+msgstr "ホームページを設定"
+
+msgid "IDS_BR_TPOP_WEBPAGE_ADDED_TO_QUICK_ACCESS_LIST"
+msgstr "Webページをクイックアクセスリストに追加しました。"
+
+msgid "IDS_BR_OPT_EDIT_QUICK_ACCESS_ABB"
+msgstr "クイックアクセスを編集"
+
+msgid "IDS_BR_OPT_REMOVE_FROM_BOOKMARKS_ABB"
+msgstr "ブックマークから削除"
+
+msgid "IDS_BR_HEADER_ADD_BOOKMARK_ABB"
+msgstr "ブックマークを追加"
+
+msgid "IDS_BR_BODY_BROWSING_HISTORY"
+msgstr "閲覧履歴"
+
+msgid "IDS_BR_HEADER_TABS_ABB2"
+msgstr "タブ"
+
+msgid "IDS_BR_OPT_NEW_TAB"
+msgstr "新規タブ"
+
+msgid "IDS_BR_BUTTON_FORWARD_ABB2"
+msgstr "転送"
+
+msgid "IDS_BR_BUTTON_BACK_ABB3"
+msgstr "戻る"
+
+msgid "IDS_BR_BUTTON_BOOKMARKS_ABB"
+msgstr "ﾌﾞｯｸﾏｰｸ"
+
+msgid "IDS_BR_NPBODY_NO_PROFILES_ABB"
+msgstr "プロフィールがありません"
+
+msgid "IDS_BR_TAB2_HISTORY"
+msgstr "履歴"
+
+msgid "IDS_BR_TAB2_BOOKMARKS"
+msgstr "ブックマーク"
+
+msgid "IDS_BR_HEADER_SAVE_CONTENT_TO_ABB"
+msgstr "コンテンツの保存先"
+
+msgid "IDS_BR_HEADER_SELECT_ITEMS_ABB2"
+msgstr "アイテムを選択"
+
+msgid "IDS_BR_BODY_YOUR_PASSWORD_MUST_CONTAIN_AT_LEAST_PD_CHARACTERS_INCLUDING_AT_LEAST_1_LETTER"
+msgstr "パスワードは、最低1文字以上の英字を含めて%d文字以上にする必要があります。"
+
+msgid "IDS_BR_BODY_AN_INCORRECT_PASSWORD_HAS_BEEN_ENTERED_TRY_AGAIN"
+msgstr "正しくないパスワードが入力されました。再度入力してください。"
+
+msgid "IDS_BR_BODY_NO_TABS"
+msgstr "タブがありません"
+
+msgid "IDS_BR_TMBODY_CHANGE_PASSWORD"
+msgstr "パスワードを変更"
+
+msgid "IDS_BR_BODY_ANY_WEBPAGES_VIEWED_WHILE_SECRET_MODE_IS_ENABLED_WILL_NOT_APPEAR_IN_YOUR_BROWSER_OR_SEARCH_HISTORY_WHILE_SECRET_MSG"
+msgstr "シークレットモードが有効な間に表示した全てのWebページは、シークレットモードが無効な間は閲覧履歴や検索履歴に表示されません。\n\nシークレットモードが有効な間に保存した全てのブックマークおよびWebページは、シークレットモードが無効な間は表示されません。\n\nシークレットモードのデータは、パスワードで保護することもできます。"
+
+msgid "IDS_BR_BODY_ANY_WEBPAGES_VIEWED_WHILE_SECRET_MODE_IS_ENABLED_WILL_NOT_APPEAR_IN_YOUR_MSG"
+msgstr "シークレットモードが有効な間に表示した全てのWebページは、シークレットモードが無効な間は閲覧履歴や検索履歴に表示されません。\n\nシークレットモードが有効な間に保存した全てのブックマークおよびWebページは、シークレットモードが無効な間は表示されません。"
+
+msgid "IDS_BR_BUTTON2_DONE"
+msgstr "完了"
 

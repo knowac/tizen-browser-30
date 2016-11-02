@@ -52,18 +52,19 @@ public:
      * @return BookmarkItem class
      */
     virtual std::shared_ptr<tizen_browser::services::BookmarkItem> addBookmark(const std::string & address,
-                                                 const std::string & title,
-                                                 const std::string & note = std::string(),
-                                                 std::shared_ptr<tizen_browser::tools::BrowserImage> thumbnail=std::shared_ptr<tizen_browser::tools::BrowserImage>(),
-                                                 std::shared_ptr<tizen_browser::tools::BrowserImage> favicon = std::shared_ptr<tizen_browser::tools::BrowserImage>(),
-                                                 unsigned int dirId = 0) = 0;
+        const std::string & title,
+        const std::string & note = std::string(),
+        std::shared_ptr<tizen_browser::tools::BrowserImage> thumbnail=std::shared_ptr<tizen_browser::tools::BrowserImage>(),
+        std::shared_ptr<tizen_browser::tools::BrowserImage> favicon = std::shared_ptr<tizen_browser::tools::BrowserImage>(),
+        unsigned int dirId = 0) = 0;
 
     /**
      * @brief Update bookmark snapshot by given url
      *
      * @param url of bookmark to delete
      */
-    virtual void updateBookmarkItemSnapshot(const std::string & url, std::shared_ptr<tizen_browser::tools::BrowserImage> snapshot) = 0;
+    virtual void updateBookmarkItemSnapshot(const std::string & url,
+        std::shared_ptr<tizen_browser::tools::BrowserImage> snapshot) = 0;
 
     /** \todo Need to change this callback function for finding stored bookmark, check getBookmarkId function
      * @brief Check if bookmark exists
@@ -78,7 +79,7 @@ public:
      *
      * @return list of bookmark items in folder with id, folder_id
      */
-    virtual std::vector<std::shared_ptr<tizen_browser::services::BookmarkItem> > getBookmarks(int folder_id = -1) = 0;
+    virtual std::vector<std::shared_ptr<tizen_browser::services::BookmarkItem>> getBookmarks(int folder_id = -1) = 0;
 
     /**
      * @brief Delete all bookmarks
@@ -102,6 +103,19 @@ public:
      */
     virtual bool deleteBookmark(const std::string & url) = 0;
 
+    virtual std::shared_ptr<tizen_browser::services::BookmarkItem> addFolder(const std::string & title,
+        int parent = tizen_browser::services::ROOT_FOLDER_ID) = 0;
+
+    virtual std::vector<std::shared_ptr<tizen_browser::services::BookmarkItem>> getFolders(
+        int parent = tizen_browser::services::ROOT_FOLDER_ID) = 0;
+    virtual bool folderExists(const std::string & title, int parent = tizen_browser::services::ROOT_FOLDER_ID) = 0;
+    virtual std::vector<std::shared_ptr<tizen_browser::services::BookmarkItem>> getAllBookmarkItems(
+        int parent = tizen_browser::services::ROOT_FOLDER_ID) = 0;
+    virtual std::shared_ptr<tizen_browser::services::BookmarkItem> getRoot() = 0;
+    virtual std::shared_ptr<tizen_browser::services::BookmarkItem> getBookmarkItem(int id) = 0;
+    virtual void editBookmark(int id, const std::string & url, const std::string & title, int parent = -1,
+        int order = -1) = 0;
+    virtual bool deleteBookmark(int id) = 0;
     /**
      * @brief Gets bookmark item
      *
@@ -109,6 +123,7 @@ public:
      * @return true if success, false on error of not found bookmark
      */
     virtual bool getItem(const std::string & url, tizen_browser::services::BookmarkItem *item) = 0;
+    virtual int getFolderId(const std::string & title, int parent = tizen_browser::services::ROOT_FOLDER_ID) = 0;
 
     boost::signals2::signal<void (std::shared_ptr<tizen_browser::services::BookmarkItem>)> bookmarkAdded;
     boost::signals2::signal<void (const std::string& uri)> bookmarkDeleted;

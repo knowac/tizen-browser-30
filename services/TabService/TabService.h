@@ -27,7 +27,7 @@
 #include <boost/optional.hpp>
 #include <web/web_tab.h>
 #include "TabIdTypedef.h"
-#include "BrowserImageTypedef.h"
+#include "BrowserImage.h"
 #include "AbstractWebEngine/TabOrigin.h"
 
 namespace tizen_browser {
@@ -66,16 +66,17 @@ public:
     void removeTab(const basic_webengine::TabId& tabId);
 
     /**
-     * Remove all items from the cache and database.
-     */
-    void clearAll();
-
-    /**
      * Set thumb images for given TabContent objects: get them from
      * cache or database or generate them by taking screenshots.
      */
     void fillThumbs(
             const std::vector<basic_webengine::TabContentPtr>& tabsContents);
+
+    /**
+     * Set favicon images for given TabContent objects
+     */
+    void fillFavicons(
+        const std::vector<basic_webengine::TabContentPtr>& tabsContents);
 
     /**
      * Invoke bp_tab_adaptor_create.
@@ -94,10 +95,25 @@ public:
     boost::optional<int> convertTabId(std::string tabId) const;
 
     boost::signals2::signal<void(basic_webengine::TabId)> generateThumb;
+    boost::signals2::signal<void(basic_webengine::TabId)> generateFavicon;
 
     void updateTabItemSnapshot(const basic_webengine::TabId& tabId,
             tools::BrowserImagePtr imagePtr);
 
+    void updateTabItemFavicon(const basic_webengine::TabId& tabId,
+            tools::BrowserImagePtr imagePtr);
+
+    /**
+     * Cache given thumb image with given tab id.
+     */
+    void saveThumbCache(const basic_webengine::TabId& tabId,
+        tools::BrowserImagePtr imagePtr);
+
+    /**
+     * Cache given favicon image with given tab id.
+     */
+    void saveFaviconCache(const basic_webengine::TabId& tabId,
+        tools::BrowserImagePtr imagePtr);
 private:
     /**
      * Help method printing last bp_tab_error_defs error.
@@ -111,25 +127,45 @@ private:
     tools::BrowserImagePtr getThumb(const basic_webengine::TabId& tabId);
 
     /**
+     * Get favicon for given id (from cache or database).
+     */
+    tools::BrowserImagePtr getFavicon(const basic_webengine::TabId& tabId);
+
+    /**
      * Get cached thumb for given tab id.
      *
      * @return Image or boost::none.
      */
     boost::optional<tools::BrowserImagePtr> getThumbCache(
             const basic_webengine::TabId& tabId);
+
     /**
-     * Cache given thumb image with given tab id.
+     * Get cached favicon for given tab id.
+     *
+     * @return Image or boost::none.
      */
-    void saveThumbCache(const basic_webengine::TabId& tabId,
-            tools::BrowserImagePtr imagePtr);
+    boost::optional<tools::BrowserImagePtr> getFaviconCache(
+            const basic_webengine::TabId& tabId);
+
     /**
      * Check if thumb for given id is in a map.
      */
     bool thumbCached(const basic_webengine::TabId& tabId) const;
+
+    /**
+     * Check if favicon for given id is in a map.
+     */
+    bool faviconCached(const basic_webengine::TabId& tabId) const;
+
     /**
      * Remove image from cache for given tab id.
      */
     void clearFromCache(const basic_webengine::TabId& tabId);
+
+    /**
+     * Remove favicon from cache for given tab id.
+     */
+    void clearFaviconFromCache(const basic_webengine::TabId& tabId);
 
     /**
      * Get thumb from database for given tab id.
@@ -144,9 +180,9 @@ private:
     void saveThumbDatabase(const basic_webengine::TabId& tabId,
             tools::BrowserImagePtr imagePtr);
     /**
-     * Check if thumb for given id is in a database.
+     * Check if tab for given id is in a database.
      */
-    bool thumbInDatabase(const basic_webengine::TabId& tabId) const;
+    bool tabInDatabase(const basic_webengine::TabId& tabId) const;
     /**
      * Remove image from a database for given tab id.
      *
@@ -155,9 +191,23 @@ private:
     void clearFromDatabase(const basic_webengine::TabId& tabId);
 
     /**
+     * Get favicon from database for given tab id.
+     *
+     * @return Image or boost::none.
+     */
+    boost::optional<tools::BrowserImagePtr> getFaviconDatabase(
+            const basic_webengine::TabId& tabId);
+    /**
+     * Save given favicon image with given tab id in a database.
+     */
+    void saveFaviconDatabase(const basic_webengine::TabId& tabId,
+            tools::BrowserImagePtr imagePtr);
+
+    /**
      * Map caching images. Keys: tab ids, values: thumb images.
      */
     std::map<int, tools::BrowserImagePtr> m_thumbMap;
+    std::map<int, tools::BrowserImagePtr> m_faviconMap;
 };
 
 } /* namespace base_ui */

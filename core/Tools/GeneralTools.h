@@ -21,27 +21,39 @@
 #ifndef __GENERALTOOLS_H__
 #define __GENERALTOOLS_H__
 
+#define B_SIG boost::signals2::signal
+
 namespace tizen_browser
 {
 namespace tools
 {
-    static const int SUFIX_CHAR_DEL = 1;
+    static const int SUFFIX_CHAR_DEL = 1;
     static const char * PROTCOL_BEGIN = "://";
     static const char END_SLASH = '/';
     // which protocol, when only domain is available?
-    static const std::string PROTOCOL_DEFAULT("http://");
+    static const std::string PROTOCOL_HTTP("http://");
+    static const std::string PROTOCOL_HTTPS("https://");
+    static const std::string PROTOCOL_FTP("ftp://");
 
     // declaration using 'unused' attribute because in some modules not all functions are used
     static std::string fromChar(const char* c) __attribute__ ((unused));
     static std::string clearURL(const std::string & url) __attribute__ ((unused));
+    static bool checkIfProtocolExist(const std::string & url) __attribute__ ((unused));
     static std::string extractDomain(const std::string & url) __attribute__ ((unused));
 
     static std::string fromChar(const char* c) { return c ? std::string(c) : std::string(); }
 
     static std::string clearURL(const std::string & url) {
+        int suffix = 0;
+        if (url.back() == END_SLASH)
+            suffix = SUFFIX_CHAR_DEL;
         size_t beg = url.find(PROTCOL_BEGIN);
         beg += strlen(PROTCOL_BEGIN);
-        return url.substr(beg, url.size() - beg - SUFIX_CHAR_DEL);
+        return url.substr(beg, url.size() - beg - suffix);
+    }
+
+    static bool checkIfProtocolExist(const std::string & url) {
+        return url.find(PROTCOL_BEGIN) != std::string::npos;
     }
 
     static std::string extractDomain(const std::string & url) {

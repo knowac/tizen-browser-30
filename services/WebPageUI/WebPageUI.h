@@ -19,6 +19,7 @@
 
 #include <Evas.h>
 #include <boost/signals2/signal.hpp>
+#include "AbstractContextMenu.h"
 #include "AbstractService.h"
 #include "AbstractUIComponent.h"
 #include "AbstractRotatable.h"
@@ -26,25 +27,60 @@
 #include "service_macros.h"
 #include "ButtonBar.h"
 #include "URIEntry.h"
+#include "AbstractWebEngine/State.h"
+#include "EditQuickAccessUI.h"
 
 namespace tizen_browser {
 namespace base_ui {
 
 class WebPageUIStatesManager;
 enum class WPUState;
-typedef std::shared_ptr<WebPageUIStatesManager> WPUStatesManagerPtr;
-typedef std::shared_ptr<const WebPageUIStatesManager> WPUStatesManagerPtrConst;
 class UrlHistoryList;
 typedef std::shared_ptr<UrlHistoryList> UrlHistoryPtr;
 
 class BROWSER_EXPORT WebPageUI
-        : public tizen_browser::core::AbstractService
+        : public interfaces::AbstractContextMenu
+        , public tizen_browser::core::AbstractService
         , public tizen_browser::interfaces::AbstractUIComponent
-#if PROFILE_MOBILE
         , public tizen_browser::interfaces::AbstractRotatable
-#endif
 {
 public:
+
+#if PWA
+    typedef enum OrientationType {
+        WebScreenOrientationLockDefault = 0, // Equivalent to unlock.
+        WebScreenOrientationLockPortraitPrimary,
+        WebScreenOrientationLockPortraitSecondary,
+        WebScreenOrientationLockLandscapePrimary,
+        WebScreenOrientationLockLandscapeSecondary,
+        WebScreenOrientationLockAny,
+        WebScreenOrientationLockLandscape,
+        WebScreenOrientationLockPortrait,
+        WebScreenOrientationLockNatural,
+    } orientationType;
+
+    typedef enum WebDisplayMode {
+        WebDisplayModeUndefined = 0,
+        WebDisplayModeBrowser,
+        WebDisplayModeMinimalUi,
+        WebDisplayModeStandalone,
+        WebDisplayModeFullscreen,
+        WebDisplayModeLast = WebDisplayModeFullscreen
+    } webDisplayMode;
+
+    struct pwaInfo {
+        std::string     id;
+        std::string     decodedIcon; // needs to src, type, sizes.
+        std::string     uri;
+        std::string     name;
+        std::string     shortName;
+        int             orientation; // needs to portrait-primary, portrait-secondary, landscape-primary, landscape-secondary.
+        int             displayMode; // needs to fullscreen, standalone, minimal-ui, browser, and so on.
+        long            themeColor;
+        long            backgroundColor;
+    };
+#endif
+
     WebPageUI();
     virtual ~WebPageUI();
     virtual std::string getName();
@@ -53,13 +89,15 @@ public:
     UrlHistoryPtr getUrlHistoryList();
     virtual void showUI();
     virtual void hideUI();
+    void updateEngineStateUI();
 #if DUMMY_BUTTON
     void createDummyButton();
 #endif
-#if PROFILE_MOBILE
-    virtual void orientationChanged() override;
     void fullscreenModeSet(bool state);
-#endif
+    virtual void orientationChanged() override;
+    //AbstractContextMenu interface implementation
+    virtual void showContextMenu() override;
+
     void loadStarted();
     void progressChanged(double progress);
     void loadFinished();
@@ -75,51 +113,67 @@ public:
      */
     bool stateEquals(std::initializer_list<WPUState> states) const;
     bool isWebPageUIvisible() { return m_WebPageUIvisible; }
-    void toIncognito(bool);
-    void switchViewToErrorPage();
-    void switchViewToWebPage(Evas_Object* content, const std::string uri);
-    void switchViewToIncognitoPage();
+    void switchViewToWebPage(Evas_Object* content, const std::string uri, bool loading);
     void switchViewToQuickAccess(Evas_Object* content);
     URIEntry& getURIEntry() const { return *m_URIEntry.get(); }
+    std::shared_ptr<EditQuickAccessUI> getQuickAccessEditUI() { return m_editQuickAccessUI; }
+    void editingFinished() { m_statesMgr->set(WPUState::QUICK_ACCESS); }
+    void setMostVisitedSelectedItemsCountInEditMode(int count);
     void setTabsNumber(int tabs);
     void setBackButtonEnabled(bool enabled) { m_back->setEnabled(enabled); }
     void setForwardButtonEnabled(bool enabled) { m_forward->setEnabled(enabled); }
-    void setReloadButtonEnabled(bool enabled) { m_reload->setEnabled(enabled); }
-    void setStopButtonEnabled(bool enabled) { m_stopLoading->setEnabled(enabled); }
-    void setMoreMenuButtonEnabled(bool enabled) { m_showMoreMenu->setEnabled(enabled); }
     void lockWebview();
     void lockUrlHistoryList();
     void unlockUrlHistoryList();
     void setFocusOnSuspend();
-#if PROFILE_MOBILE
     void mobileEntryFocused();
     void mobileEntryUnfocused();
     void setContentFocus();
+    void showBottomBar(bool isShown);
     static Eina_Bool _hideDelay(void *data);
-#else
-    void onRedKeyPressed();
-    void onYellowKeyPressed();
+    void setDesktopMode(bool desktopMode) {m_desktopMode = desktopMode;}
+    bool getDesktopMode() { return m_desktopMode; }
+#if PWA
+    void setDisplayMode(WebDisplayMode mode);
 #endif
+    std::string getURI();
 
     boost::signals2::signal<void ()> backPage;
     boost::signals2::signal<void ()> forwardPage;
-    boost::signals2::signal<void ()> stopLoadingPage;
-    boost::signals2::signal<void ()> reloadPage;
     boost::signals2::signal<void ()> showTabUI;
-#if PROFILE_MOBILE
     boost::signals2::signal<void ()> updateManualRotation;
-    boost::signals2::signal<void ()> hideMoreMenu;
+    boost::signals2::signal<void ()> showBookmarksUI;
+    boost::signals2::signal<void ()> showHomePage;
     boost::signals2::signal<void ()> qaOrientationChanged;
-    boost::signals2::signal<bool ()> isFindOnPageVisible;
-#else
-    boost::signals2::signal<void ()> showZoomNavigation;
-#endif
-    boost::signals2::signal<void ()> showMoreMenu;
     boost::signals2::signal<void ()> hideQuickAccess;
     boost::signals2::signal<void ()> showQuickAccess;
     boost::signals2::signal<void ()> bookmarkManagerClicked;
     boost::signals2::signal<void ()> focusWebView;
     boost::signals2::signal<void ()> unfocusWebView;
+    boost::signals2::signal<void ()> addNewTab;
+
+    //AbstractContextMenu signals
+    boost::signals2::signal<bool ()> isBookmark;
+    boost::signals2::signal<bool ()> isQuickAccess;
+    boost::signals2::signal<void ()> deleteBookmark;
+    boost::signals2::signal<void ()> showBookmarkFlowUI;
+    boost::signals2::signal<void ()> showFindOnPageUI;
+    boost::signals2::signal<void ()> showSettingsUI;
+    boost::signals2::signal<void ()> switchToMobileMode;
+    boost::signals2::signal<void ()> switchToDesktopMode;
+    boost::signals2::signal<void ()> quickAccessEdit;
+    boost::signals2::signal<void ()> deleteMostVisited;
+    boost::signals2::signal<void (std::string, std::string)> addToQuickAccess;
+    boost::signals2::signal<std::string ()> getTitle;
+    boost::signals2::signal<bool ()> isMostVisited;
+    boost::signals2::signal<bool ()> isFindOnPageVisible;
+
+    boost::signals2::signal<std::string ()> requestCurrentPageForWebPageUI;
+    boost::signals2::signal<basic_webengine::State ()> getEngineState;
+#if PWA
+    boost::signals2::signal<void ()> pwaRequestManifest;
+    boost::signals2::signal<void ()> getCountCheckSignal;
+#endif
 
 private:
     static void faviconClicked(void* data, Evas_Object* obj, const char* emission, const char* source);
@@ -129,17 +183,26 @@ private:
     static void _dummy_button_focused(void *data, Evas_Object *, void *);
     static void _dummy_button_unfocused(void *data, Evas_Object *, void *);
 #endif
-#if PROFILE_MOBILE
-    static void _more_menu_background_clicked(void* data, Evas_Object*, const char*, const char*);
     static void _content_clicked(void * data, Evas_Object *, void *);
-#endif
-#if PROFILE_MOBILE && GESTURE
+#if GESTURE
     static Evas_Event_Flags _gesture_move(void *data, void *event_info);
 #endif
+    static void _cm_edit_qa_clicked(void*, Evas_Object*, void*);
+    static void _cm_delete_mv_clicked(void*, Evas_Object*, void*);
+    static void _cm_share_clicked(void*, Evas_Object*, void*);
+    static void _cm_find_on_page_clicked(void*, Evas_Object*, void*);
+    static void _cm_delete_bookmark_clicked(void*, Evas_Object*, void*);
+    static void _cm_bookmark_flow_clicked(void*, Evas_Object*, void*);
+    static void _cm_add_to_qa_clicked(void*, Evas_Object*, void*);
+    static void _cm_desktop_view_page_clicked(void*, Evas_Object*, void*);
+    static void _cm_mobile_view_page_clicked(void*, Evas_Object*, void*);
+    static void _cm_settings_clicked(void*, Evas_Object*, void*);
+#if PWA
+    static void _cm_add_to_hs_clicked(void*, Evas_Object*, void*);
+#endif
+    static void launch_share(const char *uri);
 
     void createLayout();
-    void createErrorLayout();
-    void createPrivateLayout();
     void createActions();
     void connectActions();
     void showProgressBar();
@@ -147,14 +210,12 @@ private:
     void hideFindOnPage();
     void hideWebView();
     void setErrorButtons();
-    void setPrivateButtons();
+    void setButtonsDisabled();
     void setMainContent(Evas_Object* content);
-    void updateURIBar(const std::string& uri);
+    void updateURIBar(const std::string& uri, bool loading);
     std::string edjePath(const std::string& file);
-#if !PROFILE_MOBILE
-    void refreshFocusChain();
-#endif
-#if PROFILE_MOBILE && GESTURE
+    void setQuickAccessView();
+#if GESTURE
     void gestureUp();
     void gestureDown();
 #endif
@@ -162,10 +223,7 @@ private:
     // wrappers to call singal as a reaction to other signal
     void backPageConnect() { backPage(); }
     void forwardPageConnect() { forwardPage(); }
-    void stopLoadingPageConnect() { stopLoadingPage(); }
-    void reloadPageConnect() { reloadPage(); }
-    void showTabUIConnect();
-    void showMoreMenuConnect();
+    void addNewTabConnect() { addNewTab(); }
 
     Evas_Object* m_parent;
     Evas_Object* m_mainLayout;
@@ -173,33 +231,36 @@ private:
     Evas_Object* m_dummy_button;
 #endif
     Evas_Object* m_errorLayout;
-    Evas_Object* m_privateLayout;
     Evas_Object* m_bookmarkManagerButton;
 
-    std::unique_ptr<ButtonBar> m_leftButtonBar;
+    std::unique_ptr<ButtonBar> m_bottomButtonBar;
     std::unique_ptr<ButtonBar> m_rightButtonBar;
-    std::unique_ptr<URIEntry> m_URIEntry;
     WPUStatesManagerPtr m_statesMgr;
+    std::unique_ptr<URIEntry> m_URIEntry;
+    std::shared_ptr<EditQuickAccessUI> m_editQuickAccessUI;
     UrlHistoryPtr m_urlHistoryList;
     bool m_webviewLocked;
     bool m_WebPageUIvisible;
+    bool m_desktopMode;
 
     sharedAction m_back;
     sharedAction m_forward;
-    sharedAction m_stopLoading;
-    sharedAction m_reload;
-    sharedAction m_tab;
-    sharedAction m_showMoreMenu;
+    sharedAction m_addTab;
+    sharedAction m_homePage;
+    sharedAction m_bookmarks;
+    sharedAction m_tabs;
 
-#if PROFILE_MOBILE && GESTURE
+#if PWA
+    std::shared_ptr<pwaInfo> m_pwaInfo;
+#endif
+
+#if GESTURE
     Evas_Object* m_gestureLayer;
     static const int SINGLE_FINGER = 1;
     static const int SWIPE_MOMENTUM_TRESHOLD = 400;
 #endif
-#if PROFILE_MOBILE
     bool m_uriBarHidden;
     bool m_fullscreen;
-#endif
 };
 
 

@@ -1,0 +1,92 @@
+color_classes {
+
+//Background colors
+    color_class {
+        name: "AO021";
+        color: 41 41 41 255;
+    }
+    color_class {
+        name: "AO006";
+        color: 41 41 41 255;
+    }
+    color_class {
+        name: "AO006D";
+        color: 41 41 41 77;
+    }
+    color_class {
+        name: "AO004E02";
+        color: 200 200 200 255;     // TODO wrong values in guidelines
+    }
+    color_class {
+        name: "AO004E02D";
+        color: 200 200 200 77;      // TODO wrong values in guidelines
+    }
+    color_class {
+        name: "AO025";
+        color: 235 235 235 255;
+    }
+    color_class {
+        name: "AO025P";
+        color: 20 20 20 127;
+    }
+    color_class {
+        name: "AO026";
+        color: 235 235 235 255;
+    }
+    color_class {
+        name: "AO027";
+        //TODO: add correct color when guidelines are fixed.
+        color: 61 185 204 255;
+    }
+    color_class {
+        name: "tabs_secret_bg";
+        color: 97 97 97 255;
+    }
+    color_class {
+        name: "AO028";
+        color: 15 125 153 255;
+    }
+    color_class {
+        name: "AO030";
+        color: 102 102 102 205;
+    }
+    color_class {
+        name: "AO033";
+        color: 0 0 0 127;
+    }
+    color_class {
+        name: "AO034";
+        color: 0 0 0 205;
+    }
+    color_class {
+        name: "AO035";
+        //TODO: add correct color when guidelines are fixed.
+        color: 255 255 255 230;
+    }
+    color_class {
+        name: "B042";
+        color: 61 185 204 38;
+    }
+    color_class {
+        name: "secret";
+        //TODO: add correct color when guidelines are fixed.
+        color: 97 97 97 255;
+    }
+    color_class{
+        name: "transparent";
+        color: 0 0 0 0;
+    }
+//Font colors
+    color_class {
+        name: "ATO015";
+        color: 255 255 255 255;
+    }
+    color_class {
+        name: "ATO016";
+        color: 0 0 0 255;
+    }
+    color_class {
+        name: "ATO003";
+        color: 255 255 255 255;
+    }
+}

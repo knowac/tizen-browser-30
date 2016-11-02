@@ -77,6 +77,8 @@ if(TIZEN_BUILD)
         capi-media-image-util
         efl-extension
         libssl
+        shortcut
+        libsoup-2.4
     )
 
    if (${PROFILE} MATCHES "mobile")
@@ -88,6 +90,8 @@ if(TIZEN_BUILD)
         capi-appfw-app-manager
         notification
         appsvc
+        shortcut
+        capi-network-connection
     )
     endif (${PROFILE} MATCHES "mobile")
 
@@ -116,6 +120,7 @@ if(TIZEN_BUILD)
 
     if (${PROFILE} MATCHES "mobile")
         ADD_DEFINITIONS(-DPROFILE_MOBILE=1)
+        ADD_DEFINITIONS(-DPWA=0)
         ADD_DEFINITIONS(-DDUMMY_BUTTON=1)
     endif (${PROFILE} MATCHES "mobile")
 

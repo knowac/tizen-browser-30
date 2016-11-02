@@ -25,6 +25,7 @@ WebPageUIStatesManager::WebPageUIStatesManager(WPUState initialState) :
 {
     namesMap = {
         { WPUState::QUICK_ACCESS, "QUICK_ACCESS" },
+        { WPUState::EDIT_MODE, "EDIT_MODE" },
         { WPUState::MAIN_WEB_PAGE, "MAIN_WEB_PAGE" },
         { WPUState::MAIN_ERROR_PAGE, "MAIN_ERROR_PAGE" },
         { WPUState::MAIN_INCOGNITO_PAGE, "MAIN_INCOGNITO_PAGE" }

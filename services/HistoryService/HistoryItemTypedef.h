@@ -19,15 +19,18 @@
 
 #include <memory>
 #include <vector>
+#include <string>
+#include <map>
 
 namespace tizen_browser {
 namespace services {
 
 class HistoryItem;
 
-typedef std::vector<std::shared_ptr<HistoryItem>> HistoryItemVector;
-typedef std::vector<std::shared_ptr<HistoryItem>>::iterator HistoryItemVectorIter;
-typedef std::vector<std::shared_ptr<HistoryItem>>::const_iterator HistoryItemVectorConstIter;
+using HistoryItemVector = std::vector<std::shared_ptr<HistoryItem>>;
+using HistoryItemVectorIter = std::vector<std::shared_ptr<HistoryItem>>::iterator;
+using HistoryItemVectorConstIter = std::vector<std::shared_ptr<HistoryItem>>::const_iterator;
+using HistoryItemVectorMap = std::map<std::string, services::HistoryItemVector>;
 
 }
 }

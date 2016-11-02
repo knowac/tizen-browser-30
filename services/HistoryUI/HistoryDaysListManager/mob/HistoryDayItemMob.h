@@ -28,7 +28,7 @@ namespace tizen_browser {
 namespace base_ui {
 
 class WebsiteHistoryItemMob;
-typedef std::shared_ptr<WebsiteHistoryItemMob> WebsiteHistoryItemMobPtr;
+using WebsiteHistoryItemMobPtr = std::shared_ptr<WebsiteHistoryItemMob>;
 
 class HistoryDayItemMob
 {

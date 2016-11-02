@@ -34,6 +34,8 @@
 namespace tizen_browser{
 namespace base_ui{
 
+using AUI = interfaces::AbstractUIComponent;
+using sAUI = std::shared_ptr<AUI>;
 
 /**
  * @brief This class simplifies UI component management. It is a views stack.
@@ -67,7 +69,7 @@ public:
  *
  * @param A view which stack should be popped to. Do not use nullptr.
  */
-    void popStackTo(interfaces::AbstractUIComponent* view);
+    void popStackTo(const sAUI& view);
 
 /**
  * @brief Pops actual view from the stack, hides it and if there is any view
@@ -81,7 +83,7 @@ public:
  *
  * @param View pushed to stack. Do not use nullptr.
  */
-    void pushViewToStack(interfaces::AbstractUIComponent* view);
+    void pushViewToStack(const sAUI& view);
 
 /**
  * @brief Function returns elm layout used in view management. It's parent is
@@ -104,7 +106,7 @@ public:
  *
  * @return actual dispalyed view
  */
-    interfaces::AbstractUIComponent* topOfStack();
+    sAUI& topOfStack();
 
 /**
  * @brief Signal checks if browser is in landscape mode.
@@ -114,12 +116,16 @@ public:
     boost::signals2::signal<bool ()> isLandscape;
 
 private:
-    void updateLayout(interfaces::AbstractUIComponent* previousView);
+    void updateLayout(const sAUI& previousView);
 private:
     Evas_Object* m_mainLayout;
     Evas_Object* m_conformant;
     Evas_Object* m_parentWindow;
-    std::stack<interfaces::AbstractUIComponent*> m_viewStack;
+    std::stack<sAUI> m_viewStack;
+
+    const int BG_COLOR_R = 61;
+    const int BG_COLOR_G = 184;
+    const int BG_COLOR_B = 204;
 };
 
 }//namespace base_ui

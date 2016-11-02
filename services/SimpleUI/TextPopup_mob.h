@@ -59,6 +59,8 @@ private:
     TextPopup(Evas_Object* parent);
     TextPopup(Evas_Object* parent, const std::string& title, const std::string& message);
 
+    static void _response_cb(void* data, Evas_Object* obj, void* event_info);
+
     struct Button {
         Button(PopupButtons type, bool dismissOnClick)
             : m_type(type)
@@ -71,12 +73,10 @@ private:
     };
 
     Evas_Object* m_parent;
-    Evas_Object* m_layout;
-    Evas_Object* m_buttons_box;
+    Evas_Object* m_popup;
     std::vector<Button> m_buttons;
     std::string m_title;
     std::string m_message;
-    static void _response_cb(void* data, Evas_Object* obj, void* event_info);
     std::string m_edjFilePath;
     PopupButtons m_defaultBackButton = NONE;
 };

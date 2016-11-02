@@ -3,6 +3,66 @@
 #include "colorClasses.edc"
 
 collections { base_scale: 2.6;
+    group {
+        name: "arrow-layout";
+        images {
+            image: "core_icon_expand_close.png" COMP;
+            image: "core_icon_expand_open.png" COMP;
+        }
+
+        parts {
+            part {
+                name: "bg";
+                scale : 1;
+                type : RECT;
+                description {
+                    state: "default" 0.0;
+                    visible: 1;
+                    min: 64 64 ;
+                    max: 64 64;
+                    color: 0 0 0 0;
+                    rel1 { relative: 0.0 0.0; }
+                    rel2 { relative: 1.0 1.0; }
+                }
+            }
+            part {
+                name: "elm.icon.image";
+                scale : 1;
+                type : IMAGE;
+                description {
+                    state: "default" 0.0;
+                    visible: 1;
+                    min: 64 64 ;
+                    max: 64 64;
+                    fixed: 1 1;
+                    align: 0.5 0.5;
+                    rel1 { relative: 0.0 0.0; to: "bg"; }
+                    rel2 { relative: 1.0 1.0; to: "bg"; }
+                    image.normal: "core_icon_expand_open.png";
+                    color: 61 185 204 255;
+                }
+                description {
+                    state: "contract" 0.0;
+                    inherit: "default" 0.0;
+                    image.normal: "core_icon_expand_close.png";
+                }
+            }
+        }
+        programs {
+            program {
+                name: "expanded";
+                signal: "state,expanded,signal";
+                action: STATE_SET "default" 0.0;
+                target: "elm.icon.image";
+            }
+            program {
+                name: "contracted";
+                signal: "state,contracted,signal";
+                action: STATE_SET "contract" 0.0;
+                target: "elm.icon.image";
+            }
+        }
+    }
     group { name: "layoutScrollerDays";
             parts {
                 BACKGROUND_COVER("", 1, "colorMainBg")

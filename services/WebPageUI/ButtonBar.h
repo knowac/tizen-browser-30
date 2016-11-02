@@ -51,8 +51,10 @@ public:
     Evas_Object* getButton(const std::string& buttonName);
     void clearFocus();
     void setDisabled(bool disabled);
+    void setButtonsColor(bool secretMode);
 
 private:
+    std::string m_edjFilePath;
     //map button name to current action assigned to button
     std::map<std::string, sharedAction> m_actionsMap;
     //map button name to struct ActionButton which contains Evas_Object of button
@@ -60,24 +62,8 @@ private:
     Evas_Object* m_layout;
     void refreshButton(const std::string& buttonName);
     void onEnabledChanged(const std::string& buttonName, sharedAction action);
-#if !PROFILE_MOBILE
-    static Ecore_Timer* m_tooltipHideTimer;
-    static Ecore_Timer* m_tooltipShowTimer;
 
-    static double tooltipHideTimeout;
-    static double tooltipShowDelay;
-#endif
-
-    static void __cb_mouse_in(void* data, Evas* e, Evas_Object* obj, void* event_info);
-    static void __cb_mouse_out(void* data, Evas* e, Evas_Object* obj, void* event_info);
-#if !PROFILE_MOBILE
-    static void __cb_focus_in(void* data, Evas_Object* obj, void* event_info);
-    static void __cb_focus_out(void* data, Evas_Object* obj, void* event_info);
-
-    static Eina_Bool __cb_tooltip_hide_timeout(void* data);
-    static Eina_Bool __cb_tooltip_show_delay(void* data);
-#endif
-
+    static const int BUTTON_WITH_ICON_HEIGHT = 56;
 };
 
 }

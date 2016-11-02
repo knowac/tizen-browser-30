@@ -20,12 +20,14 @@
 #include <map>
 #include <string>
 #include <initializer_list>
+#include <memory>
 
 namespace tizen_browser {
 namespace base_ui {
 
 enum class WPUState {
     QUICK_ACCESS,
+    EDIT_MODE,
     // displaying web page content
     MAIN_WEB_PAGE,
     MAIN_ERROR_PAGE,
@@ -60,6 +62,9 @@ private:
     std::map<WPUState, std::string> namesMap;
 
 };
+
+typedef std::shared_ptr<WebPageUIStatesManager> WPUStatesManagerPtr;
+typedef std::shared_ptr<const WebPageUIStatesManager> WPUStatesManagerPtrConst;
 
 } /* namespace base_ui */
 } /* namespace tizen_browser */

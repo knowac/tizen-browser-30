@@ -1,14 +1,8 @@
 msgid "IDS_BR_POP_NETWORK_ERROR"
 msgstr "Netvilla."
 
-msgid "IDS_BR_BODY_AUTHUSERNAME"
-msgstr "Notandanafn"
-
 msgid "IDS_BR_BODY_DESTINATIONS_AUTHENTICATION_REQUIRED"
 msgstr "Sannprófun er nauðsynleg."
-
-msgid "IDS_BR_BODY_AUTHPASSWORD"
-msgstr "Aðgangsorð"
 
 msgid "IDS_BR_HEADER_SECURITY_WARNING"
 msgstr "Öryggisviðvörun"
@@ -33,12 +27,6 @@ msgstr "Það komu upp vandamál með öryggisvottorðið fyrir þetta svæði."
 
 msgid "IDS_BR_OPT_ALLOW"
 msgstr "Leyfa"
-
-msgid "IDS_BR_OPT_VIEW"
-msgstr "Birta"
-
-msgid "IDS_BR_OPT_CANCEL"
-msgstr "Hætta við"
 
 msgid "IDS_BR_BODY_PS_REQUESTS_YOUR_LOCATION"
 msgstr "%s biður um staðsetningu þína."
@@ -72,6 +60,18 @@ msgstr "Niðurhal"
 
 msgid "IDS_BR_BODY_THIS_WEBPAGE"
 msgstr "Þessi vefsíða"
+
+msgid "IDS_BR_BODY_AUTHUSERNAME"
+msgstr "Notandanafn"
+
+msgid "IDS_BR_BODY_AUTHPASSWORD"
+msgstr "Aðgangsorð"
+
+msgid "IDS_BR_OPT_VIEW"
+msgstr "Birta"
+
+msgid "IDS_BR_OPT_CANCEL"
+msgstr "Hætta við"
 
 msgid "IDS_BR_OPT_SCREEN"
 msgstr "Skjár"
@@ -109,15 +109,6 @@ msgstr "Hætta við"
 msgid "IDS_BR_BUTTON_MORE"
 msgstr "Meira"
 
-msgid "IDS_TPLATFORM_ACBUTTON_DONE_ABB"
-msgstr "LOKIÐ"
-
-msgid "IDS_TPLATFORM_ACBUTTON_CANCEL_ABB"
-msgstr "HÆTTA VIÐ"
-
-msgid "IDS_TPLATFORM_ACBUTTON_DELETE_ABB"
-msgstr "EYÐA"
-
 msgid "IDS_BR_BODY_NO_ITEMS"
 msgstr "Engin atriði"
 
@@ -126,9 +117,6 @@ msgstr "Tengjast farsímakerfi"
 
 msgid "IDS_BR_OPT_DO_NOT_SHOW_AGAIN"
 msgstr "Ekki sýna aftur"
-
-msgid "IDS_BR_SK_OK"
-msgstr "Í lagi"
 
 msgid "IDS_BR_POP_ONLY_HTTP_OR_HTTPS_URLS_CAN_BE_DOWNLOADED"
 msgstr "Aðeins er hægt að sækja http- og https-vefslóðir."
@@ -151,17 +139,11 @@ msgstr "Afrita tengil"
 msgid "IDS_BR_OPT_COPY_IMAGE"
 msgstr "Afrita mynd"
 
+msgid "IDS_BR_SK_OK"
+msgstr "Í lagi"
+
 msgid "IDS_BR_OPT_CALL"
 msgstr "Símtal"
-
-msgid "IDS_ST_POP_PS_HAS_BEEN_DETECTED"
-msgstr "%s greindist."
-
-msgid "IDS_ST_POP_DETECTED_IN_C_PS"
-msgstr "Greindist í: %s"
-
-msgid "IDS_ST_HEADER_MALWARE_DETECTED_ABB"
-msgstr "Spilliforrit fannst"
 
 msgid "IDS_BR_BUTTON_FAILED"
 msgstr "Mistókst"
@@ -229,35 +211,11 @@ msgstr "Afvelja"
 msgid "IDS_BR_SK_TABS"
 msgstr "Flipar"
 
-msgid "IDS_BR_SK_SAVE_LITE"
-msgstr "Vista"
-
-msgid "IDS_BR_SK_SAVE_ABB"
-msgstr "Vista"
-
-msgid "IDS_BR_SK_SAVE"
-msgstr "Vista"
-
-msgid "IDS_BR_SK_PREVIOUS"
-msgstr "Fyrri"
-
-msgid "IDS_BR_SK_NEXT"
-msgstr "Næsta"
-
 msgid "IDS_BR_SK_MENU"
 msgstr "Valmynd"
 
 msgid "IDS_BR_SK_DELETE_ABB"
 msgstr "Eyða"
-
-msgid "IDS_BR_SK_DELETE"
-msgstr "Eyða"
-
-msgid "IDS_BR_SK_CLEAR"
-msgstr "Hreinsa"
-
-msgid "IDS_BR_SK_BACK"
-msgstr "Bakka"
 
 msgid "IDS_BR_SK3_CREATE_FOLDER"
 msgstr "Búa til möppu"
@@ -316,15 +274,6 @@ msgstr "Ekki er víst að hægt sé að klippa allar vefsíður rétt"
 msgid "IDS_BR_POP_YOUR_HISTORY_WILL_BE_CLEARED"
 msgstr "Ferillinn verður hreinsaður."
 
-msgid "IDS_BR_POP_WI_FI_CONNECTION_REQUIRED_CONNECT_TO_WI_FI_NETWORK_AND_TRY_AGAIN"
-msgstr "Wi-Fi tenging nauðsynleg. Tengdu við Wi-Fi netkerfi og reyndu aftur."
-
-msgid "IDS_BR_POP_URL_NOT_FOUND"
-msgstr "Slóðin fannst ekki."
-
-msgid "IDS_BR_POP_URL"
-msgstr "Vefslóð"
-
 msgid "IDS_BR_POP_UNABLE_TO_VIEW_THE_CERTIFICATE_THE_PAGE_INFORMATION_HAS_BEEN_CHANGED"
 msgstr "Ekki er hægt að skoða vottorðið. Síðuupplýsingarnar hafa breyst."
 
@@ -370,23 +319,11 @@ msgstr "Öryggisreglur takmarka notkun netvafra."
 msgid "IDS_BR_POP_SAVED_TO_BOOKMARKS"
 msgstr "Vistað í bókamerkjum."
 
-msgid "IDS_BR_POP_SAVED"
-msgstr "Vistað."
-
 msgid "IDS_BR_POP_RENAME_TAG"
 msgstr "Breyta heiti merkis"
 
-msgid "IDS_BR_POP_REMOVED"
-msgstr "Fjarlægt."
-
 msgid "IDS_BR_POP_PD_PROFILES_WILL_BE_DELETED"
 msgstr "%d prófílum verður eytt."
-
-msgid "IDS_BR_POP_PD_ITEMS_WILL_BE_DELETED"
-msgstr "%d hlutum verður eytt."
-
-msgid "IDS_BR_POP_PD_ITEMS_SELECTED"
-msgstr "%d atriði valin."
 
 msgid "IDS_BR_POP_PAGES_THAT_YOU_VIEW_WILL_NOT_APPEAR_IN_YOUR_BROWSER_HISTORY_OR_SEARCH_HISTORY_AND_THEY_WILL_NOT_LEAVE_OTHER_TRACES_LIKE_COOKIES"
 msgstr "Síður sem þú skoðar birtast ekki í vafra- eða leitarferli og skilja ekki eftir sig önnur ummerki á borð við fótspor."
@@ -415,53 +352,20 @@ msgstr "„%1$s“ fannst.\nFannst í: „%2$s“\n\nEitthvað efni var útiloka
 msgid "IDS_BR_POP_P1SS_HAS_BEEN_DETECTED_DETECTED_IN_C_P2SS_OPEN_WEBPAGE_ANYWAY_Q"
 msgstr "„%1$s“ fannst.\nFannst í: „%2$s“\n\nViltu samt opna vefsíðuna?"
 
-msgid "IDS_BR_POP_NO_ITEMS_SELECTED"
-msgstr "Engin atriði valin."
-
 msgid "IDS_BR_POP_NOT_ENOUGH_MEMORY_DELETE_SOME_ITEMS_AND_TRY_AGAIN"
 msgstr "Of lítið minni. Eyddu einhverjum atriðum og reyndu aftur."
-
-msgid "IDS_BR_POP_NOT_ENOUGH_MEMORY"
-msgstr "Ekki er nægt minni."
 
 msgid "IDS_BR_POP_NOT_ALLOWED"
 msgstr "Er óheimilt."
 
-msgid "IDS_BR_POP_NEVER"
-msgstr "Aldrei"
-
 msgid "IDS_BR_POP_MOVED"
 msgstr "Flutt."
-
-msgid "IDS_BR_POP_MOBILE_DATA_IS_DISABLED_CONNECT_TO_WI_FI_NETWORK_INSTEAD_OR_ENABLE_MOBILE_DATA_AND_TRY_AGAIN"
-msgstr "Slökkt á farsímagögnum. Tengdu við Wi-Fit net í staðinn, eða kveiktu á farsímagögnum og reyndu aftur."
-
-msgid "IDS_BR_POP_LOADING_PLEASE_WAIT_ING"
-msgstr "Hleður. Andartak..."
-
-msgid "IDS_BR_POP_INVALID_URL"
-msgstr "Ógild slóð."
-
-msgid "IDS_BR_POP_FAIL"
-msgstr "Mistókst."
 
 msgid "IDS_BR_POP_ENTER_URL"
 msgstr "Slá inn slóð."
 
-msgid "IDS_BR_POP_ENTER_TITLE_ABB"
-msgstr "Rita titil"
-
 msgid "IDS_BR_POP_ENTER_BOOKMARK_NAME"
 msgstr "Sláðu inn heiti bókamerkis."
-
-msgid "IDS_BR_POP_DO_NOT_SHOW_AGAIN"
-msgstr "Ekki birta aftur"
-
-msgid "IDS_BR_POP_DOWNLOADCOMPLETE"
-msgstr "Niðurhalinu er lokið."
-
-msgid "IDS_BR_POP_DISABLED"
-msgstr "Gert óvirkt."
 
 msgid "IDS_BR_POP_DIALING_ING_VZW"
 msgstr "Dialing..."
@@ -487,9 +391,6 @@ msgstr "Viltu eyða innskráningargögnum fyrir þetta vefsvæði?"
 msgid "IDS_BR_POP_DELETE_SIGN_IN_DATA_FOR_PD_WEBSITES_Q"
 msgstr "Viltu eyða innskráningargögnum fyrir %d vefsvæði?"
 
-msgid "IDS_BR_POP_DELETE_Q"
-msgstr "Á að eyða?"
-
 msgid "IDS_BR_POP_DELETE_PD_SAVED_WEB_PAGES_Q"
 msgstr "Viltu eyða %d vistuðum vefsíðum?"
 
@@ -505,14 +406,8 @@ msgstr "Eyða öllum gögnum á vefsíðu og staðsetningarleyfum?"
 msgid "IDS_BR_POP_DELETEHISTORYQUESTION"
 msgstr "Á að eyða ferli?"
 
-msgid "IDS_BR_POP_DELETED"
-msgstr "Eytt."
-
 msgid "IDS_BR_POP_CONTINUE"
 msgstr "Halda áfram"
-
-msgid "IDS_BR_POP_CLOSE_APPLICATION_Q"
-msgstr "Viltu loka forritinu?"
 
 msgid "IDS_BR_POP_CLOSE_APPLICATION"
 msgstr "Loka forriti"
@@ -525,12 +420,6 @@ msgstr "Eyða sögu?"
 
 msgid "IDS_BR_POP_BOOKMARK_REMOVED"
 msgstr "Bókamerki fjarlægt."
-
-msgid "IDS_BR_POP_BOOKMARK_ADDED"
-msgstr "Bókamerki bætt við."
-
-msgid "IDS_BR_POP_AUTOMATIC_BRIGHTNESS"
-msgstr "Sjálfvirkt birtustig"
 
 msgid "IDS_BR_POP_ALREADY_EXISTS"
 msgstr "Er þegar til."
@@ -556,15 +445,6 @@ msgstr "Leyfa svæðum að vista og lesa fótspor."
 msgid "IDS_BR_POP_ADDED_TO_BOOKMARKS"
 msgstr "Bætt við bókamerki."
 
-msgid "IDS_BR_POP_ACCOUNT"
-msgstr "Reikningur"
-
-msgid "IDS_BR_POP_1_ITEM_WILL_BE_DELETED"
-msgstr "1 hlut verður eytt."
-
-msgid "IDS_BR_POP_1_ITEM_SELECTED"
-msgstr "1 atriði valið."
-
 msgid "IDS_BR_OPT_WINDOWS"
 msgstr "Gluggar"
 
@@ -574,38 +454,20 @@ msgstr "Skoða vottorð"
 msgid "IDS_BR_OPT_UNICODE_HUTF_8"
 msgstr "Unicode (UTF-8)"
 
-msgid "IDS_BR_OPT_TRANSLATE"
-msgstr "Þýða"
-
 msgid "IDS_BR_OPT_THUMBNAIL_VIEW"
 msgstr "Smámyndir"
 
 msgid "IDS_BR_OPT_TEXT_ENCODING"
 msgstr "Textakóðun"
 
-msgid "IDS_BR_OPT_STOP"
-msgstr "Stöðva"
-
 msgid "IDS_BR_OPT_SHRINK_TEXT"
 msgstr "Minnka texta"
-
-msgid "IDS_BR_OPT_SHOW"
-msgstr "Sýna"
-
-msgid "IDS_BR_OPT_SHARE"
-msgstr "Samnýta"
 
 msgid "IDS_BR_OPT_SETTINGS_ABB"
 msgstr "Stillingar"
 
-msgid "IDS_BR_OPT_SETTINGS"
-msgstr "Stillingar"
-
 msgid "IDS_BR_OPT_SEND_MESSAGE_VODA"
 msgstr "Senda skilaboð"
-
-msgid "IDS_BR_OPT_SEND_EMAIL"
-msgstr "Senda tölvupóst"
 
 msgid "IDS_BR_OPT_SENDURLVIA_EMAIL"
 msgstr "Tölvupóstur"
@@ -624,12 +486,6 @@ msgstr "Valstilling"
 
 msgid "IDS_BR_OPT_SELECTED"
 msgstr "Valið"
-
-msgid "IDS_BR_OPT_SELECT"
-msgstr "Velja"
-
-msgid "IDS_BR_OPT_SD_CARD"
-msgstr "SD-kort"
 
 msgid "IDS_BR_OPT_SAVE_TO_KEEPIT_ABB"
 msgstr "Vista í KeepIt"
@@ -658,14 +514,8 @@ msgstr "Endurraða"
 msgid "IDS_BR_OPT_RENAME_FOLDER"
 msgstr "Endurnefna möppu"
 
-msgid "IDS_BR_OPT_RENAME"
-msgstr "Endurnefna"
-
 msgid "IDS_BR_OPT_REMOVE"
 msgstr "Fjarlægja"
-
-msgid "IDS_BR_OPT_REFRESH"
-msgstr "Uppfæra"
 
 msgid "IDS_BR_OPT_READER_MODE_TTS"
 msgstr "Lesarastilling"
@@ -685,14 +535,8 @@ msgstr "Ótengdar vefsíður"
 msgid "IDS_BR_OPT_NEW_WINDOW"
 msgstr "Nýr gluggi"
 
-msgid "IDS_BR_OPT_MOVE"
-msgstr "Færa"
-
 msgid "IDS_BR_OPT_MINIMISE"
 msgstr "Fela"
-
-msgid "IDS_BR_OPT_MESSAGES"
-msgstr "Skilaboð"
 
 msgid "IDS_BR_OPT_MEDIUM_M_QUALITY"
 msgstr "Miðlungs"
@@ -705,9 +549,6 @@ msgstr "Aðgangsheimildir staðsetningar"
 
 msgid "IDS_BR_OPT_LOAD_IMAGES"
 msgstr "Hlaða inn myndum"
-
-msgid "IDS_BR_OPT_LIST_VIEW"
-msgstr "Listaskjár"
 
 msgid "IDS_BR_OPT_LATIN_1_HISO_8859_1"
 msgstr "Latin-1 (ISO-8859-1)"
@@ -724,9 +565,6 @@ msgstr "Japanska (ISO-2022-JP)"
 msgid "IDS_BR_OPT_JAPANESE_HEUC_JP"
 msgstr "Japanska (EUC-JP)"
 
-msgid "IDS_BR_OPT_I_AGREE"
-msgstr "Ég samþykki."
-
 msgid "IDS_BR_OPT_INCOGNITO_MODE_ABB"
 msgstr "Nafnlaus stilling"
 
@@ -741,9 +579,6 @@ msgstr "Flýtileið á heimaskjá"
 
 msgid "IDS_BR_OPT_HIGH_M_QUALITY"
 msgstr "Mikið"
-
-msgid "IDS_BR_OPT_HELP"
-msgstr "Hjálp"
 
 msgid "IDS_BR_OPT_GOFORWARD"
 msgstr "Framsenda"
@@ -790,9 +625,6 @@ msgstr "Slökkva á „Lítil gagnanotkun“"
 msgid "IDS_BR_OPT_DISABLED"
 msgstr "Óvirkt"
 
-msgid "IDS_BR_OPT_DEVICE"
-msgstr "Tæki"
-
 msgid "IDS_BR_OPT_DELETE_SAVED_PAGE_ABB"
 msgstr "Eyða vistaðri síðu"
 
@@ -826,9 +658,6 @@ msgstr "Kínverska (Big5)"
 msgid "IDS_BR_OPT_CACHE"
 msgstr "Skyndiminni"
 
-msgid "IDS_BR_OPT_BOOKMARK"
-msgstr "Bókamerki"
-
 msgid "IDS_BR_OPT_ADD_TO_WEB_CLIP"
 msgstr "Bæta við vefklippur"
 
@@ -849,12 +678,6 @@ msgstr "Bæta bókamerki"
 
 msgid "IDS_BR_OPT_ADD_BOOKMARK"
 msgstr "Bæta við bókamerki"
-
-msgid "IDS_BR_OPT_ADDED"
-msgstr "Bætt við."
-
-msgid "IDS_BR_OPT_ADD"
-msgstr "Bæta við"
 
 msgid "IDS_BR_OPT1_EXTENSION"
 msgstr "Viðbót"
@@ -925,9 +748,6 @@ msgstr "Sækja efni straums"
 msgid "IDS_BR_MBODY_DELETE_SIGN_IN_DATA"
 msgstr "Eyða innskráningargögnum"
 
-msgid "IDS_BR_MBODY_DEFAULT_DOWNLOAD_STORAGE"
-msgstr "Sjálfg. niðurhalsstaður"
-
 msgid "IDS_BR_MBODY_DATA_SAVING_STATISTICS"
 msgstr "Tölfræði gagnasparnaðar"
 
@@ -970,9 +790,6 @@ msgstr "Ekki hægt að flytja bókamerki"
 msgid "IDS_BR_HEADER_SITE_NOT_TRUSTED_ABB"
 msgstr "Ótraust vefsvæði"
 
-msgid "IDS_BR_HEADER_SIGN_IN_TO_SAMSUNG_ACCOUNT"
-msgstr "Skrá inn á Samsung-reikning"
-
 msgid "IDS_BR_HEADER_SET_HOMEPAGE_ABB"
 msgstr "Velja upphafssíðu"
 
@@ -1009,17 +826,11 @@ msgstr "Lokað fyrir sprettiglugga"
 msgid "IDS_BR_HEADER_POPULAR_WEBSITES_ABB"
 msgstr "Vinsæl vefsvæði"
 
-msgid "IDS_BR_HEADER_PD_SELECTED_ABB"
-msgstr "%d valið"
-
 msgid "IDS_BR_HEADER_ORGANISATION_C_ABB"
 msgstr "Stofnun:"
 
 msgid "IDS_BR_HEADER_ORGANISATIONAL_UNIT_C"
 msgstr "Deild fyrirtækis:"
-
-msgid "IDS_BR_HEADER_NO_NETWORK_CONNECTION"
-msgstr "Tengingin rofnaði"
 
 msgid "IDS_BR_HEADER_NEWER_M_INTERNET_HISTORY_ABB"
 msgstr "Newer"
@@ -1036,17 +847,11 @@ msgstr "HTML5-viðbót"
 msgid "IDS_BR_HEADER_FORM_DATA"
 msgstr "Innsláttargögn"
 
-msgid "IDS_BR_HEADER_FOLDER"
-msgstr "Mappa"
-
 msgid "IDS_BR_HEADER_EXPIRES_ON_C"
 msgstr "Gildir til:"
 
 msgid "IDS_BR_HEADER_ENABLE_WEB_SIGN_IN"
 msgstr "Gera vefinnskráningu virka"
-
-msgid "IDS_BR_HEADER_EDIT_PROFILE"
-msgstr "Breyta forstillingu"
 
 msgid "IDS_BR_HEADER_EDIT_BOOKMARK"
 msgstr "Breyta bókamerki"
@@ -1084,14 +889,8 @@ msgstr "Bandvíddarstjórnun"
 msgid "IDS_BR_HEADER_ADVANCEDCERTIFICATES"
 msgstr "Skírteini"
 
-msgid "IDS_BR_BUTTON_SET"
-msgstr "Stilla"
-
 msgid "IDS_BR_BUTTON_RESET_ABB"
 msgstr "Núllstilla"
-
-msgid "IDS_BR_BUTTON_NOT_NOW"
-msgstr "Ekki núna"
 
 msgid "IDS_BR_BUTTON_HOMEPAGE_ABB"
 msgstr "Heimasíða"
@@ -1099,35 +898,11 @@ msgstr "Heimasíða"
 msgid "IDS_BR_BUTTON_FIND_ABB"
 msgstr "Finna"
 
-msgid "IDS_BR_BUTTON_ENABLE_ABB"
-msgstr "Kveikja"
-
-msgid "IDS_BR_BUTTON_EDIT"
-msgstr "Breyta"
-
-msgid "IDS_BR_BUTTON_CONTINUE_ABB"
-msgstr "Áfram"
-
-msgid "IDS_BR_BUTTON_CONTINUE"
-msgstr "Halda áfram"
-
-msgid "IDS_BR_BUTTON_CLOSE"
-msgstr "Loka"
-
-msgid "IDS_BR_BUTTON_CANCEL_ABB"
-msgstr "Hætta við"
-
-msgid "IDS_BR_BUTTON_CANCEL"
-msgstr "Hætta v."
-
 msgid "IDS_BR_BUTTON_BACK_ABB"
 msgstr "Bakka"
 
 msgid "IDS_BR_BUTTON_ALWAYS_SHOW_ABB"
 msgstr "Sýna alltaf"
-
-msgid "IDS_BR_BUTTON_ALLOW"
-msgstr "Leyfa"
 
 msgid "IDS_BR_BUTTON2_WEB_PORTAL"
 msgstr "Vefgátt"
@@ -1152,9 +927,6 @@ msgstr "Opna feril"
 
 msgid "IDS_BR_BUTTON2_ENTERTAINMENT"
 msgstr "Afþreying"
-
-msgid "IDS_BR_BODY_YESTERDAY"
-msgstr "Í gær"
 
 msgid "IDS_BR_BODY_WINDOW_MANAGER"
 msgstr "Gluggastjórnun"
@@ -1183,9 +955,6 @@ msgstr "Nota Allan skjáinn til að fela stöðustikuna."
 msgid "IDS_BR_BODY_USE_A_PREDICTION_SERVICE_TO_DISPLAY_RELATED_QUERIES_AND_POPULAR_WEBSITES_IN_THE_ADDRESS_BAR_AS_YOU_TYPE"
 msgstr "Nota tillöguþjónustu til að birta tengdar fyrirspurnir og vinsæl vefsvæði í veffangastikunni þegar skrifað er."
 
-msgid "IDS_BR_BODY_URL"
-msgstr "Vefslóð"
-
 msgid "IDS_BR_BODY_UPPER_FOLDER_T_TALKBACK"
 msgstr "Efri mappa"
 
@@ -1201,12 +970,6 @@ msgstr "Ekki er hægt að birta vefsíðuna. Netþjónninn svarar ekki."
 msgid "IDS_BR_BODY_TOWN_CITY_COUNTY_ABB"
 msgstr "Bær/borg/sýsla"
 
-msgid "IDS_BR_BODY_TODAY"
-msgstr "Í dag"
-
-msgid "IDS_BR_BODY_TITLE"
-msgstr "Titill"
-
 msgid "IDS_BR_BODY_THIS_SITE_IS_USING_PS"
 msgstr "Þetta vefsvæði notar %s."
 
@@ -1221,9 +984,6 @@ msgstr "Þessu bókamerki verður eytt."
 
 msgid "IDS_BR_BODY_THE_SELECTED_PERSONAL_DATA_WILL_BE_DELETED"
 msgstr "Völdum persónulegum gögnum verður eytt."
-
-msgid "IDS_BR_BODY_THE_MAXIMUM_NUMBER_OF_CHARACTERS_HPD_HAS_BEEN_EXCEEDED"
-msgstr "Hámarksfjölda stafa (%d) hefur verið náð."
 
 msgid "IDS_BR_BODY_TEXT_FIELD_T_TTS"
 msgstr "Textareitur"
@@ -1249,17 +1009,11 @@ msgstr "Samstilla bókamerki"
 msgid "IDS_BR_BODY_STREET_ADDRESS_PO_BOX_C_O_ETC_ABB"
 msgstr "Götuheiti, pósthólf, b.t. o.s.frv."
 
-msgid "IDS_BR_BODY_STREAMING"
-msgstr "Straumspilun"
-
 msgid "IDS_BR_BODY_STORED_DATA"
 msgstr "Vistuð gögn"
 
 msgid "IDS_BR_BODY_SPLIT_BAR_HANDLE"
 msgstr "Skiptistika"
-
-msgid "IDS_BR_BODY_SMALL"
-msgstr "Lítið"
 
 msgid "IDS_BR_BODY_SIGN_IN_TO_YOUR_SAMSUNG_ACCOUNT_TO_ACCESS_THE_BOOKMARKS_AND_TABS_ON_YOUR_OTHER_DEVICES"
 msgstr "Skráðu þig inn á Samsung-reikninginn þinn til að sjá bókamerki og flipa annarra tækja."
@@ -1279,9 +1033,6 @@ msgstr "Stilla texta fyrir sjálfvirka innfyllingu vefeyðublaða."
 msgid "IDS_BR_BODY_SET_CURRENT_PAGE_AS_HOMEPAGE"
 msgstr "Velja opna síðu sem upphafssíðu"
 
-msgid "IDS_BR_BODY_SETTINGS"
-msgstr "Stillingar"
-
 msgid "IDS_BR_BODY_SELECT_FOLDER"
 msgstr "Velja möppu"
 
@@ -1294,9 +1045,6 @@ msgstr "Leita í reit"
 msgid "IDS_BR_BODY_SEARCH_AND_URL_SUGGESTIONS"
 msgstr "Tillögur að leit og vefslóðum"
 
-msgid "IDS_BR_BODY_SEARCH"
-msgstr "Leit"
-
 msgid "IDS_BR_BODY_SCREEN_AND_TEXT"
 msgstr "Skjár og texti"
 
@@ -1305,9 +1053,6 @@ msgstr "Vista notandanöfn og lykilorð fyrir vefsvæði."
 
 msgid "IDS_BR_BODY_SAVE_LINK"
 msgstr "Vista tengil"
-
-msgid "IDS_BR_BODY_RSS_SEARCH_RESULTS"
-msgstr "Leitarniðurstöður"
 
 msgid "IDS_BR_BODY_RESTORE_DEFAULT_SETTINGS_Q"
 msgstr "Endurheimta sjálfgefnar stillingar?"
@@ -1342,12 +1087,6 @@ msgstr "Valhringur"
 msgid "IDS_BR_BODY_PS_BOOKMARK_WILL_BE_DELETED"
 msgstr "%s bókamerkjum verður eytt."
 
-msgid "IDS_BR_BODY_PROFILE"
-msgstr "Forstilling"
-
-msgid "IDS_BR_BODY_PROCESSING_ING"
-msgstr "Vinnsla í gangi..."
-
 msgid "IDS_BR_BODY_PRIVACY"
 msgstr "Leynd"
 
@@ -1360,20 +1099,8 @@ msgstr "Ýttu á valmyndartakkann."
 msgid "IDS_BR_BODY_POSTCODE_ABB"
 msgstr "Póstnúmer"
 
-msgid "IDS_BR_BODY_PHONE_NUMBER_ABB"
-msgstr "Símanúmer"
-
-msgid "IDS_BR_BODY_PHONE"
-msgstr "Sími"
-
 msgid "IDS_BR_BODY_PD_POP_UPS_BLOCKED_ABB"
 msgstr "%d sprettigl. lokað."
-
-msgid "IDS_BR_BODY_PD_ITEMS_WILL_BE_DELETED"
-msgstr "%d hlutum verður eytt."
-
-msgid "IDS_BR_BODY_PASSWORD"
-msgstr "Aðgangsorð"
 
 msgid "IDS_BR_BODY_PAGE_LOADED_T_TTS"
 msgstr "Síða hlaðin"
@@ -1399,14 +1126,8 @@ msgstr "Samkvæmt beiðni"
 msgid "IDS_BR_BODY_ONLY_VIA_WI_FI_ABB"
 msgstr "Bara í gegnum Wi-Fi"
 
-msgid "IDS_BR_BODY_ON"
-msgstr "Kveikt"
-
 msgid "IDS_BR_BODY_OLDER"
 msgstr "Eldri"
-
-msgid "IDS_BR_BODY_OFF"
-msgstr "Slökkt"
 
 msgid "IDS_BR_BODY_NO_WINDOWS"
 msgstr "Engir gluggar"
@@ -1420,17 +1141,8 @@ msgstr "Titil vantar"
 msgid "IDS_BR_BODY_NO_SAVED_PAGES"
 msgstr "Engar vistaðar síður"
 
-msgid "IDS_BR_BODY_NO_RESULTS_FOUND"
-msgstr "Ekkert fannst."
-
-msgid "IDS_BR_BODY_NO_HISTORIES"
-msgstr "Ferill er enginn"
-
 msgid "IDS_BR_BODY_NO_BOOKMARKS"
 msgstr "Ný bókamerki"
-
-msgid "IDS_BR_BODY_NOTIFICATIONS"
-msgstr "Tilkynningar"
 
 msgid "IDS_BR_BODY_NORMAL"
 msgstr "Venjulegt"
@@ -1446,9 +1158,6 @@ msgstr "Mest opnuð svæði"
 
 msgid "IDS_BR_BODY_MOBILE_VIEW"
 msgstr "Farsímaskjár"
-
-msgid "IDS_BR_BODY_MEDIUM"
-msgstr "Miðlungs"
 
 msgid "IDS_BR_BODY_LOCATION_M_INFORMATION"
 msgstr "Staðsetning"
@@ -1474,9 +1183,6 @@ msgstr "Internetið"
 msgid "IDS_BR_BODY_IMPROVE_PERFORMANCE_WHEN_LOADING_PAGES"
 msgstr "Bæta afköst þegar síður eru hlaðnar."
 
-msgid "IDS_BR_BODY_IMAGES"
-msgstr "Myndir"
-
 msgid "IDS_BR_BODY_HOMEPAGE"
 msgstr "Heimasíða"
 
@@ -1486,20 +1192,11 @@ msgstr "Fela veffangastiku þegar flett er niður síðu."
 msgid "IDS_BR_BODY_GENERAL_M_SETTINGS"
 msgstr "Almennt"
 
-msgid "IDS_BR_BODY_FULL_SCREEN"
-msgstr "Allur skjárinn"
-
 msgid "IDS_BR_BODY_FULL_NAME_ABB"
 msgstr "Fullt nafn"
 
 msgid "IDS_BR_BODY_FORCE_ZOOM_ABB"
 msgstr "Þvinga aðdrátt"
-
-msgid "IDS_BR_BODY_FONT_SIZE"
-msgstr "Leturstærð"
-
-msgid "IDS_BR_BODY_FOLDER_NAME"
-msgstr "Heiti möppu"
 
 msgid "IDS_BR_BODY_FLAT_SUITE_UNIT_BUILDING_FLOOR_ETC_ABB"
 msgstr "Íbúð, deild, bygging, hæð o.s.frv."
@@ -1516,24 +1213,6 @@ msgstr "Sláðu inn nafnið þitt."
 msgid "IDS_BR_BODY_ENTER_TOWN_CITY_COUNTY_ABB"
 msgstr "Sláðu inn bæ/borg/sýslu."
 
-msgid "IDS_BR_BODY_ENTER_POSTCODE_ABB"
-msgstr "Sláðu inn póstnúmer."
-
-msgid "IDS_BR_BODY_ENTER_POSTCODE"
-msgstr "Sláðu inn póstnúmer."
-
-msgid "IDS_BR_BODY_ENTER_PHONE_NUMBER"
-msgstr "Sláðu inn símanúmer."
-
-msgid "IDS_BR_BODY_ENTER_NAME"
-msgstr "Rita nafn."
-
-msgid "IDS_BR_BODY_ENTER_FOLDER_NAME"
-msgstr "Ritið heiti möppu."
-
-msgid "IDS_BR_BODY_ENTER_EMAIL_ADDRESS"
-msgstr "Tilgreina netfang."
-
 msgid "IDS_BR_BODY_ENTER_COUNTRY_REGION_ABB"
 msgstr "Færðu inn land/svæði."
 
@@ -1545,12 +1224,6 @@ msgstr "Virkja staðsetningu"
 
 msgid "IDS_BR_BODY_ENABLE_JAVASCRIPT"
 msgstr "Opna fyrir JavaScript"
-
-msgid "IDS_BR_BODY_EMAIL_ADDRESS"
-msgstr "Netfang"
-
-msgid "IDS_BR_BODY_DOWNLOADING_ING"
-msgstr "Verið er að hala niður..."
 
 msgid "IDS_BR_BODY_DOUBLE_TAP_TO_VIEW_CERTIFICATE_TTS"
 msgstr "Pikkaðu tvisvar til að skoða vottorð."
@@ -1591,9 +1264,6 @@ msgstr "Birta öryggisviðvaranir."
 msgid "IDS_BR_BODY_DISPLAY_IMAGES_ON_WEB_PAGES"
 msgstr "Birta myndir á vefsíðum."
 
-msgid "IDS_BR_BODY_DEVELOPER_MODE"
-msgstr "Hönnunarstilling"
-
 msgid "IDS_BR_BODY_DESKTOP_VIEW"
 msgstr "Skjáborðssýn"
 
@@ -1608,9 +1278,6 @@ msgstr "Sjálfgefinn vistunarstaður"
 
 msgid "IDS_BR_BODY_DEFAULT_PAGE_ABB"
 msgstr "Sjálfgefin síða"
-
-msgid "IDS_BR_BODY_DEFAULT"
-msgstr "Sjálfgefið"
 
 msgid "IDS_BR_BODY_DATA_USAGE_REDUCED_BY_P1SDP_HP2SD_KB_OF_P3SD_KB_RECEIVED_TAP_HERE_TO_RESET_STATISTICS"
 msgstr "Gagnanotkun minnkuð um %1$d% (%2$d KB af mótteknum %3$d KB). Pikkaðu hér til að endurstilla tölfræði."
@@ -1675,9 +1342,6 @@ msgstr "Breyttu stærð texta til að gera hann auðlæsilegri, sérstaklega þe
 msgid "IDS_BR_BODY_BOOKMARK_REMINDER_ABB"
 msgstr "Bókamerkjaáminning"
 
-msgid "IDS_BR_BODY_BOOKMARKS"
-msgstr "Bókamerki"
-
 msgid "IDS_BR_BODY_BLOCK_POP_UPS_ON_WEB_PAGES"
 msgstr "Útiloka sprettiglugga á vefsíðum."
 
@@ -1726,9 +1390,6 @@ msgstr "Leyfa %s að sýna tilkynningar"
 msgid "IDS_BR_BODY_ALLOWS_SITES_TO_SAVE_AND_READ_COOKIE_DATA"
 msgstr "Leyfir vefsvæðum að vista og lesa fótsporagögn."
 
-msgid "IDS_BR_BODY_ALL"
-msgstr "Allt"
-
 msgid "IDS_BR_BODY_AFTER_YOU_VISIT_WEBPAGES_THE_PAGES_YOU_HAVE_VISITED_THE_MOST_WILL_BE_SHOWN_HERE"
 msgstr "Síðurnar sem þú heimsækir oftast birtast hér."
 
@@ -1756,9 +1417,6 @@ msgstr "Fleiri valkostir"
 msgid "IDS_BR_BODY_ADD_TO_CONTACT"
 msgstr "Bæta við tengilið"
 
-msgid "IDS_BR_BODY_ADD_TO"
-msgstr "Bæta við"
-
 msgid "IDS_BR_BODY_ADD_THIS_WEBSITE_TO_BOOKMARKS_TO_OPEN_IT_FASTER_ABB"
 msgstr "Bættu vefsvæðinu við bókamerki til að flýta fyrir."
 
@@ -1768,29 +1426,17 @@ msgstr "2. heimilisfangslína"
 msgid "IDS_BR_BODY_ADDRESS_LINE_1_ABB"
 msgstr "1. heimilisfangslína"
 
-msgid "IDS_BR_BODY_ADDDETAILSVIEW_TAGS"
-msgstr "Merki"
-
-msgid "IDS_BR_BODY_ADDBOOKMARKURL"
-msgstr "Vefslóð"
-
 msgid "IDS_BR_BODY_ACCEPT_COOKIES"
 msgstr "Samþykkja fótspor"
 
 msgid "IDS_BR_BODY_1_PROFILE_WILL_BE_DELETED"
 msgstr "1 prófíl verður eytt."
 
-msgid "IDS_BR_BODY_1_ITEM_WILL_BE_DELETED"
-msgstr "1 hlut verður eytt."
-
 msgid "IDS_BR_ACBUTTON_TABS_ABB"
 msgstr "FLIPAR"
 
 msgid "IDS_BR_TPOP_STARTING_DOWNLOAD_ING"
 msgstr "Hef niðurhal..."
-
-msgid "IDS_BR_TPOP_MAXIMUM_NUMBER_OF_CHARACTERS_HPD_REACHED"
-msgstr "Hámarksfjölda stafa (%d) hefur verið náð."
 
 msgid "IDS_BR_TPOP_FOLDER_RENAMED"
 msgstr "Möppuheiti breytt."
@@ -1807,14 +1453,8 @@ msgstr "Hætta við"
 msgid "IDS_BR_SBODY_SET_THE_DEVICE_TO_SHOW_THE_FULL_WEBPAGE_ON_THE_SCREEN_WHEN_IT_IS_LOADED_WITHOUT_NEEDING_TO_SCROLL"
 msgstr "Láta tækið birta vefsíðuna í heild á skjánum þegar hún hefur verið hlaðin og gera flettingu óþarfa."
 
-msgid "IDS_BR_POP_UNSUPPORTMEDIATYPE"
-msgstr "Óstudd tegund miðils."
-
 msgid "IDS_BR_POP_UNABLE_TO_RUN_INTERNET_LOW_BATTERY"
 msgstr "Mistókst að ræsa vafra. Rafhlaðan er að tæmast."
-
-msgid "IDS_BR_POP_UNABLE_TO_CONNECT_TO_MOBILE_NETWORKS_WHILE_FLIGHT_MODE_IS_ENABLED_CONNECT_TO_WI_FI_NETWORK_INSTEAD_OR_DISABLE_FLIGHT_MODE_AND_TRY_AGAIN"
-msgstr "Ekki hægt að tengjast farsímagögnum þegar kveikt er á flugstillingu. Tengdu við Wi-Fit net í staðinn, eða slökktu á flugstillingu og reyndu aftur."
 
 msgid "IDS_BR_POP_THE_DOWNLOAD_HAS_BEEN_STOPPED_AND_THE_DOWNLOADED_DATA_WILL_BE_DELETED"
 msgstr "Niðurhalið var stöðvað og sóttum gögnum verður eytt."
@@ -1825,20 +1465,8 @@ msgstr "Search completed"
 msgid "IDS_BR_POP_READY"
 msgstr "Tilbúið."
 
-msgid "IDS_BR_POP_INSTALL_SUCCESS"
-msgstr "Uppsetningu lokið."
-
-msgid "IDS_BR_POP_INSTALLATION_FAILED"
-msgstr "Uppsetning mistókst."
-
 msgid "IDS_BR_POP_INFORM_MEMORY_ERROR"
 msgstr "Minnisvilla."
-
-msgid "IDS_BR_POP_DELETING_ING"
-msgstr "Verið er að eyða..."
-
-msgid "IDS_BR_POP_DATA_ROAMING_IS_DISABLED_CONNECT_TO_WI_FI_NETWORK_INSTEAD_OR_ENABLE_DATA_ROAMING_AND_TRY_AGAIN"
-msgstr "Slökkt á gagnareiki. Tengdu við Wi-Fit net í staðinn, eða kveiktu á gagnareiki og reyndu aftur."
 
 msgid "IDS_BR_POP_DATA_ROAMING_IS_DISABLED_CONNECT_TO_A_WI_FI_NETWORK_OR_ENABLE_DATA_ROAMING_AND_TRY_AGAIN"
 msgstr "Slökkt er á gagnareiki. Tengstu Wi-Fi neti í staðinn eða kveiktu á gagnareiki og reyndu aftur."
@@ -1855,17 +1483,11 @@ msgstr "Vefforrit"
 msgid "IDS_BR_OPT_VIEW_ONLINE"
 msgstr "Skoða á netinu"
 
-msgid "IDS_BR_OPT_SHARE_VIA"
-msgstr "Samnýta um"
-
 msgid "IDS_BR_OPT_READ_ON_OFFLINE_PAGES_LATER_ABB"
 msgstr "Lesa síðar án nettengingar"
 
 msgid "IDS_BR_OPT_QUICK_ACCESS_ABB2"
 msgstr "Flýtiaðgangur"
-
-msgid "IDS_BR_OPT_PASTE"
-msgstr "Líma"
 
 msgid "IDS_BR_OPT_ALWAYS_ENABLED_ABB"
 msgstr "Alltaf kveikt"
@@ -1891,9 +1513,6 @@ msgstr "Leitar- og slóðatillögur"
 msgid "IDS_BR_MBODY_HISTORY"
 msgstr "Ferill"
 
-msgid "IDS_BR_MBODY_FONT_SIZE"
-msgstr "Leturstærð"
-
 msgid "IDS_BR_MBODY_FIT_PAGE_TO_SCREEN"
 msgstr "Laga síðu að skjá"
 
@@ -1905,9 +1524,6 @@ msgstr "Sérsniðið"
 
 msgid "IDS_BR_MBODY_COUNTRY_REGION"
 msgstr "Land/svæði"
-
-msgid "IDS_BR_HEADER_UNABLE_TO_DOWNLOAD_ABB"
-msgstr "Ekki er hægt að sækja"
 
 msgid "IDS_BR_HEADER_RENAME_FOLDER_ABB"
 msgstr "Breyta möppuheiti"
@@ -1939,14 +1555,8 @@ msgstr "Bæta við"
 msgid "IDS_BR_BUTTON_WI_FI_ABB"
 msgstr "Wi-Fi"
 
-msgid "IDS_BR_BUTTON_UPDATE"
-msgstr "Uppfæra"
-
 msgid "IDS_BR_BUTTON_SETTINGS_ABB"
 msgstr "Still."
-
-msgid "IDS_BR_BUTTON_RETRY"
-msgstr "Reyna aftur"
 
 msgid "IDS_BR_BUTTON2_OK"
 msgstr "Í lagi"
@@ -1972,9 +1582,6 @@ msgstr "Þetta vottorð er frá traustum aðila."
 msgid "IDS_BR_BODY_TAP_HERE_TO_ADD_A_QUICK_ACCESS_SHORTCUT"
 msgstr "Pikkaðu hér til að bæta við flýtileið flýtiaðgangs."
 
-msgid "IDS_BR_BODY_REQUEST_FAILED"
-msgstr "Beiðni tókst ekki."
-
 msgid "IDS_BR_BODY_PREFERENCES"
 msgstr "Sérstillingar"
 
@@ -1990,14 +1597,398 @@ msgstr "Ekkert fannst"
 msgid "IDS_BR_BODY_MOBILE_DATA_IS_TURNED_OFF_CONNECT_TO_A_WI_FI_NETWORK_INSTEAD_OR_TAP_SETTINGS_TO_TURN_ON_MOBILE_DATA_AND_THEN_TRY_AGAIN"
 msgstr "Slökkt er á farsímagögnum. Tengstu Wi-Fi neti í staðinn eða pikkaðu á „Stillingar“ til að kveikja á farsímagögnum og reyndu aftur."
 
+msgid "IDS_BR_BODY_FIT_TO_WIDTH"
+msgstr "Fella að breidd"
+
+msgid "IDS_BR_ACBUTTON_QUICK_ACCESS"
+msgstr "FLÝTIAÐG."
+
+msgid "IDS_BR_OPT_OPEN_IN_NEW_TAB"
+msgstr "Opna í nýjum flipa"
+
+msgid "IDS_BR_BODY_SHARE_LINK"
+msgstr "Samnýta tengil"
+
+msgid "IDS_BR_SK_SAVE_LITE"
+msgstr "Vista"
+
+msgid "IDS_BR_SK_SAVE_ABB"
+msgstr "Vista"
+
+msgid "IDS_BR_SK_SAVE"
+msgstr "Vista"
+
+msgid "IDS_BR_SK_PREVIOUS"
+msgstr "Fyrri"
+
+msgid "IDS_BR_SK_NEXT"
+msgstr "Næsta"
+
+msgid "IDS_BR_SK_DELETE"
+msgstr "Eyða"
+
+msgid "IDS_BR_SK_CLEAR"
+msgstr "Hreinsa"
+
+msgid "IDS_BR_SK_BACK"
+msgstr "Bakka"
+
+msgid "IDS_BR_POP_WI_FI_CONNECTION_REQUIRED_CONNECT_TO_WI_FI_NETWORK_AND_TRY_AGAIN"
+msgstr "Wi-Fi tenging nauðsynleg. Tengdu við Wi-Fi netkerfi og reyndu aftur."
+
+msgid "IDS_BR_POP_URL_NOT_FOUND"
+msgstr "Slóðin fannst ekki."
+
+msgid "IDS_BR_POP_URL"
+msgstr "Vefslóð"
+
+msgid "IDS_BR_POP_SAVED"
+msgstr "Vistað."
+
+msgid "IDS_BR_POP_REMOVED"
+msgstr "Fjarlægt."
+
+msgid "IDS_BR_POP_PD_ITEMS_WILL_BE_DELETED"
+msgstr "%d hlutum verður eytt."
+
+msgid "IDS_BR_POP_PD_ITEMS_SELECTED"
+msgstr "%d atriði valin."
+
+msgid "IDS_BR_POP_NO_ITEMS_SELECTED"
+msgstr "Engin atriði valin."
+
+msgid "IDS_BR_POP_NOT_ENOUGH_MEMORY"
+msgstr "Ekki er nægt minni."
+
+msgid "IDS_BR_POP_NEVER"
+msgstr "Aldrei"
+
+msgid "IDS_BR_POP_MOBILE_DATA_IS_DISABLED_CONNECT_TO_WI_FI_NETWORK_INSTEAD_OR_ENABLE_MOBILE_DATA_AND_TRY_AGAIN"
+msgstr "Slökkt á farsímagögnum. Tengdu við Wi-Fit net í staðinn, eða kveiktu á farsímagögnum og reyndu aftur."
+
+msgid "IDS_BR_POP_LOADING_PLEASE_WAIT_ING"
+msgstr "Hleður. Andartak..."
+
+msgid "IDS_BR_POP_INVALID_URL"
+msgstr "Ógild slóð."
+
+msgid "IDS_BR_POP_FAIL"
+msgstr "Mistókst."
+
+msgid "IDS_BR_POP_ENTER_TITLE_ABB"
+msgstr "Rita titil"
+
+msgid "IDS_BR_POP_DO_NOT_SHOW_AGAIN"
+msgstr "Ekki birta aftur"
+
+msgid "IDS_BR_POP_DOWNLOADCOMPLETE"
+msgstr "Niðurhalinu er lokið."
+
+msgid "IDS_BR_POP_DISABLED"
+msgstr "Gert óvirkt."
+
+msgid "IDS_BR_POP_DELETE_Q"
+msgstr "Á að eyða?"
+
+msgid "IDS_BR_POP_DELETED"
+msgstr "Eytt."
+
+msgid "IDS_BR_POP_CLOSE_APPLICATION_Q"
+msgstr "Viltu loka forritinu?"
+
+msgid "IDS_BR_POP_BOOKMARK_ADDED"
+msgstr "Bókamerki bætt við."
+
+msgid "IDS_BR_POP_AUTOMATIC_BRIGHTNESS"
+msgstr "Sjálfvirkt birtustig"
+
+msgid "IDS_BR_POP_ACCOUNT"
+msgstr "Reikningur"
+
+msgid "IDS_BR_POP_1_ITEM_WILL_BE_DELETED"
+msgstr "1 hlut verður eytt."
+
+msgid "IDS_BR_POP_1_ITEM_SELECTED"
+msgstr "1 atriði valið."
+
+msgid "IDS_BR_OPT_TRANSLATE"
+msgstr "Þýða"
+
+msgid "IDS_BR_OPT_STOP"
+msgstr "Stöðva"
+
+msgid "IDS_BR_OPT_SHOW"
+msgstr "Sýna"
+
+msgid "IDS_BR_OPT_SHARE"
+msgstr "Samnýta"
+
+msgid "IDS_BR_OPT_SETTINGS"
+msgstr "Stillingar"
+
+msgid "IDS_BR_OPT_SEND_EMAIL"
+msgstr "Senda tölvupóst"
+
+msgid "IDS_BR_OPT_SELECT"
+msgstr "Velja"
+
+msgid "IDS_BR_OPT_SD_CARD"
+msgstr "SD-kort"
+
+msgid "IDS_BR_OPT_RENAME"
+msgstr "Endurnefna"
+
+msgid "IDS_BR_OPT_REFRESH"
+msgstr "Uppfæra"
+
+msgid "IDS_BR_OPT_MOVE"
+msgstr "Færa"
+
+msgid "IDS_BR_OPT_MESSAGES"
+msgstr "Skilaboð"
+
+msgid "IDS_BR_OPT_LIST_VIEW"
+msgstr "Listaskjár"
+
+msgid "IDS_BR_OPT_I_AGREE"
+msgstr "Ég samþykki."
+
+msgid "IDS_BR_OPT_HELP"
+msgstr "Hjálp"
+
+msgid "IDS_BR_OPT_DEVICE"
+msgstr "Tæki"
+
+msgid "IDS_BR_OPT_BOOKMARK"
+msgstr "Bókamerki"
+
+msgid "IDS_BR_OPT_ADDED"
+msgstr "Bætt við."
+
+msgid "IDS_BR_OPT_ADD"
+msgstr "Bæta við"
+
+msgid "IDS_BR_MBODY_DEFAULT_DOWNLOAD_STORAGE"
+msgstr "Sjálfg. niðurhalsstaður"
+
+msgid "IDS_BR_HEADER_SIGN_IN_TO_SAMSUNG_ACCOUNT"
+msgstr "Skrá inn á Samsung-reikning"
+
+msgid "IDS_BR_HEADER_PD_SELECTED_ABB"
+msgstr "%d valið"
+
+msgid "IDS_BR_HEADER_NO_NETWORK_CONNECTION"
+msgstr "Tengingin rofnaði"
+
+msgid "IDS_BR_HEADER_FOLDER"
+msgstr "Mappa"
+
+msgid "IDS_BR_HEADER_EDIT_PROFILE"
+msgstr "Breyta forstillingu"
+
+msgid "IDS_BR_BUTTON_SET"
+msgstr "Stilla"
+
+msgid "IDS_BR_BUTTON_NOT_NOW"
+msgstr "Ekki núna"
+
+msgid "IDS_BR_BUTTON_ENABLE_ABB"
+msgstr "Kveikja"
+
+msgid "IDS_BR_BUTTON_EDIT"
+msgstr "Breyta"
+
+msgid "IDS_BR_BUTTON_CONTINUE_ABB"
+msgstr "Áfram"
+
+msgid "IDS_BR_BUTTON_CONTINUE"
+msgstr "Halda áfram"
+
+msgid "IDS_BR_BUTTON_CLOSE"
+msgstr "Loka"
+
+msgid "IDS_BR_BUTTON_CANCEL_ABB"
+msgstr "Hætta við"
+
+msgid "IDS_BR_BUTTON_CANCEL"
+msgstr "Hætta v."
+
+msgid "IDS_BR_BUTTON_ALLOW"
+msgstr "Leyfa"
+
+msgid "IDS_BR_BODY_YESTERDAY"
+msgstr "Í gær"
+
+msgid "IDS_BR_BODY_URL"
+msgstr "Vefslóð"
+
+msgid "IDS_BR_BODY_TODAY"
+msgstr "Í dag"
+
+msgid "IDS_BR_BODY_TITLE"
+msgstr "Titill"
+
+msgid "IDS_BR_BODY_THE_MAXIMUM_NUMBER_OF_CHARACTERS_HPD_HAS_BEEN_EXCEEDED"
+msgstr "Hámarksfjölda stafa (%d) hefur verið náð."
+
+msgid "IDS_BR_BODY_STREAMING"
+msgstr "Straumspilun"
+
+msgid "IDS_BR_BODY_SMALL"
+msgstr "Lítið"
+
+msgid "IDS_BR_BODY_SETTINGS"
+msgstr "Stillingar"
+
+msgid "IDS_BR_BODY_SEARCH"
+msgstr "Leit"
+
+msgid "IDS_BR_BODY_RSS_SEARCH_RESULTS"
+msgstr "Leitarniðurstöður"
+
+msgid "IDS_BR_BODY_PROFILE"
+msgstr "Forstilling"
+
+msgid "IDS_BR_BODY_PROCESSING_ING"
+msgstr "Vinnsla í gangi..."
+
+msgid "IDS_BR_BODY_PHONE_NUMBER_ABB"
+msgstr "Símanúmer"
+
+msgid "IDS_BR_BODY_PHONE"
+msgstr "Sími"
+
+msgid "IDS_BR_BODY_PD_ITEMS_WILL_BE_DELETED"
+msgstr "%d hlutum verður eytt."
+
+msgid "IDS_BR_BODY_PASSWORD"
+msgstr "Aðgangsorð"
+
+msgid "IDS_BR_BODY_ON"
+msgstr "Kveikt"
+
+msgid "IDS_BR_BODY_OFF"
+msgstr "Slökkt"
+
+msgid "IDS_BR_BODY_NO_RESULTS_FOUND"
+msgstr "Ekkert fannst."
+
+msgid "IDS_BR_BODY_NO_HISTORIES"
+msgstr "Ferill er enginn"
+
+msgid "IDS_BR_BODY_NOTIFICATIONS"
+msgstr "Tilkynningar"
+
+msgid "IDS_BR_BODY_MEDIUM"
+msgstr "Miðlungs"
+
+msgid "IDS_BR_BODY_IMAGES"
+msgstr "Myndir"
+
+msgid "IDS_BR_BODY_FULL_SCREEN"
+msgstr "Allur skjárinn"
+
+msgid "IDS_BR_BODY_FONT_SIZE"
+msgstr "Leturstærð"
+
+msgid "IDS_BR_BODY_FOLDER_NAME"
+msgstr "Heiti möppu"
+
+msgid "IDS_BR_BODY_ENTER_POSTCODE_ABB"
+msgstr "Sláðu inn póstnúmer."
+
+msgid "IDS_BR_BODY_ENTER_POSTCODE"
+msgstr "Sláðu inn póstnúmer."
+
+msgid "IDS_BR_BODY_ENTER_PHONE_NUMBER"
+msgstr "Sláðu inn símanúmer."
+
+msgid "IDS_BR_BODY_ENTER_NAME"
+msgstr "Rita nafn."
+
+msgid "IDS_BR_BODY_ENTER_FOLDER_NAME"
+msgstr "Ritið heiti möppu."
+
+msgid "IDS_BR_BODY_ENTER_EMAIL_ADDRESS"
+msgstr "Tilgreina netfang."
+
+msgid "IDS_BR_BODY_EMAIL_ADDRESS"
+msgstr "Netfang"
+
+msgid "IDS_BR_BODY_DOWNLOADING_ING"
+msgstr "Verið er að hala niður..."
+
+msgid "IDS_BR_BODY_DEVELOPER_MODE"
+msgstr "Hönnunarstilling"
+
+msgid "IDS_BR_BODY_DEFAULT"
+msgstr "Sjálfgefið"
+
+msgid "IDS_BR_BODY_BOOKMARKS"
+msgstr "Bókamerki"
+
+msgid "IDS_BR_BODY_ALL"
+msgstr "Allt"
+
+msgid "IDS_BR_BODY_ADD_TO"
+msgstr "Bæta við"
+
+msgid "IDS_BR_BODY_ADDDETAILSVIEW_TAGS"
+msgstr "Merki"
+
+msgid "IDS_BR_BODY_ADDBOOKMARKURL"
+msgstr "Vefslóð"
+
+msgid "IDS_BR_BODY_1_ITEM_WILL_BE_DELETED"
+msgstr "1 hlut verður eytt."
+
+msgid "IDS_BR_TPOP_MAXIMUM_NUMBER_OF_CHARACTERS_HPD_REACHED"
+msgstr "Hámarksfjölda stafa (%d) hefur verið náð."
+
+msgid "IDS_BR_POP_UNSUPPORTMEDIATYPE"
+msgstr "Óstudd tegund miðils."
+
+msgid "IDS_BR_POP_UNABLE_TO_CONNECT_TO_MOBILE_NETWORKS_WHILE_FLIGHT_MODE_IS_ENABLED_CONNECT_TO_WI_FI_NETWORK_INSTEAD_OR_DISABLE_FLIGHT_MODE_AND_TRY_AGAIN"
+msgstr "Ekki hægt að tengjast farsímagögnum þegar kveikt er á flugstillingu. Tengdu við Wi-Fit net í staðinn, eða slökktu á flugstillingu og reyndu aftur."
+
+msgid "IDS_BR_POP_INSTALL_SUCCESS"
+msgstr "Uppsetningu lokið."
+
+msgid "IDS_BR_POP_INSTALLATION_FAILED"
+msgstr "Uppsetning mistókst."
+
+msgid "IDS_BR_POP_DELETING_ING"
+msgstr "Verið er að eyða..."
+
+msgid "IDS_BR_POP_DATA_ROAMING_IS_DISABLED_CONNECT_TO_WI_FI_NETWORK_INSTEAD_OR_ENABLE_DATA_ROAMING_AND_TRY_AGAIN"
+msgstr "Slökkt á gagnareiki. Tengdu við Wi-Fit net í staðinn, eða kveiktu á gagnareiki og reyndu aftur."
+
+msgid "IDS_BR_OPT_SHARE_VIA"
+msgstr "Samnýta um"
+
+msgid "IDS_BR_OPT_PASTE"
+msgstr "Líma"
+
+msgid "IDS_BR_MBODY_FONT_SIZE"
+msgstr "Leturstærð"
+
+msgid "IDS_BR_HEADER_UNABLE_TO_DOWNLOAD_ABB"
+msgstr "Ekki er hægt að sækja"
+
+msgid "IDS_BR_BUTTON_UPDATE"
+msgstr "Uppfæra"
+
+msgid "IDS_BR_BUTTON_RETRY"
+msgstr "Reyna aftur"
+
+msgid "IDS_BR_BODY_REQUEST_FAILED"
+msgstr "Beiðni tókst ekki."
+
 msgid "IDS_BR_BODY_LOGIN"
 msgstr "Innskráning"
 
 msgid "IDS_BR_BODY_LOADING_ING"
 msgstr "Hleð..."
-
-msgid "IDS_BR_BODY_FIT_TO_WIDTH"
-msgstr "Fella að breidd"
 
 msgid "IDS_BR_BODY_FIT_TO_SCREEN"
 msgstr "Laga að skjá"
@@ -2008,12 +1999,180 @@ msgstr "Niðurhal"
 msgid "IDS_BR_BODY_DATA_ROAMING_IS_DISABLED_CONNECT_TO_A_WI_FI_NETWORK_INSTEAD_OR_ENABLE_DATA_ROAMING_AND_TRY_AGAIN"
 msgstr "Slökkt er á gagnareiki. Tengstu Wi-Fi neti í staðinn eða kveiktu á gagnareiki og reyndu aftur."
 
-msgid "IDS_BR_ACBUTTON_QUICK_ACCESS"
-msgstr "FLÝTIAÐG."
+msgid "IDS_BR_POP_DOWNLOAD_CANCELLED"
+msgstr "Það var hætt við niðurhal."
 
-msgid "IDS_ST_POP_SOME_CONTENT_HAS_BEEN_BLOCKED_TO_PROTECT_YOUR_DEVICE"
-msgstr "Eitthvað efni var útilokað til að vernda tækið þitt."
+msgid "IDS_BR_BUTTON_SECRET_ON_ABB"
+msgstr "Leynd á"
 
-msgid "IDS_ST_POP_SELECT_WHETHER_TO_GO_TO_THE_WEBPAGE_ANYWAY"
-msgstr "Veldu hvort þú vilt samt fara á vefsíðuna."
+msgid "IDS_BR_MBODY_PRIVACY"
+msgstr "Gagnaleynd"
+
+msgid "IDS_BR_MBODY_DEFAULT_STORAGE"
+msgstr "Sjálfgefin geymsla"
+
+msgid "IDS_BR_MBODY_MANUAL_ZOOM"
+msgstr "Handvirkur aðdráttur"
+
+msgid "IDS_BR_TMBODY_DEFAULT_SEARCH_ENGINE"
+msgstr "Sjálfgefin leitarvél"
+
+msgid "IDS_BR_MBODY_SAVE_SIGN_IN_INFO"
+msgstr "Vista innskráningaruppl."
+
+msgid "IDS_BR_OPT_TURN_OFF_SECRET_MODE_ABB"
+msgstr "Slökkva á leyndarstillingu"
+
+msgid "IDS_BR_OPT_TURN_ON_SECRET_MODE_ABB"
+msgstr "Kveikja á leyndarstillingu"
+
+msgid "IDS_BR_OPT_SHOW_PASSWORD_ABB2"
+msgstr "Sýna lykilorð"
+
+msgid "IDS_BR_BODY_ENTER_YOUR_CURRENT_SECRET_MODE_PASSWORD"
+msgstr "Sláðu inn núverandi lykilorð leyndarstillingar."
+
+msgid "IDS_BR_OPT_SECRET_MODE_SECURITY_ABB"
+msgstr "Öryggi leyndarstillingar"
+
+msgid "IDS_BR_BUTTON_USE_PASSWORD_ABB"
+msgstr "Nota lykilorð"
+
+msgid "IDS_BR_HEADER_DONT_USE_PASSWORD_ABB"
+msgstr "Ekki nota lykilorð"
+
+msgid "IDS_BR_MBODY_MOST_VISITED_WEBSITES"
+msgstr "Mest heimsótt vefsvæði"
+
+msgid "IDS_BR_MBODY_SET_MY_PROFILE"
+msgstr "Velja prófíl"
+
+msgid "IDS_BR_MBODY_MY_AUTO_FILL_PROFILE"
+msgstr "Mitt útfyllingarsnið"
+
+msgid "IDS_BR_SBODY_MANAGE_DATA_USED_TO_FILL_IN_FORMS_ONLINE"
+msgstr "Stjórna gögnum sem notuð eru við útfyllingu eyðublaða á netinu."
+
+msgid "IDS_BR_MBODY_SAVE_SIGN_IN_INFO_ABB"
+msgstr "Vista upplýsingar"
+
+msgid "IDS_BR_OPT_LOCATION_ACCESS_DATA"
+msgstr "Gögn aðgangs að staðsetningu"
+
+msgid "IDS_BR_OPT_AUTO_FILL_DATA"
+msgstr "Sjálfvirk gagnaútfylling"
+
+msgid "IDS_BR_BODY_ANY_WEBPAGES_YOU_VIEW_WHILE_SECRET_MODE_IS_TURNED_ON_WONT_APPEAR_IN_YOUR_BROWSER_OR_SEARCH_HISTORY_MSG"
+msgstr "Vefsíður sem þú skoðar þegar kveikt er á leyndarstillingu birtast ekki í vafranum eða leitarferlinum þínum þegar slökkt er á stillingunni.\n\nEngin bókamerki og vefsíður sem þú vistar þegar kveikt er á leyndarstillingu eru sýnileg þegar slökkt er á stillingunni.\n\nÞú getur einnig varið leyndarstillingargögnin þín með lykilorði."
+
+msgid "IDS_BR_BODY_ANY_WEBPAGES_YOU_VIEW_WHILE_SECRET_MODE_IS_TURNED_ON_WONT_APPEAR_IN_YOUR_BROWSER_OR_SEARCH_MSG"
+msgstr "Vefsíður sem þú skoðar þegar kveikt er á leyndarstillingu birtast ekki í vafranum eða leitarferlinum þínum þegar slökkt er á stillingunni.\n\nEngin bókamerki og vefsíður sem þú vistar þegar kveikt er á leyndarstillingu eru sýnileg þegar slökkt er á stillingunni."
+
+msgid "IDS_BR_BUTTON_SECRET_OFF_ABB"
+msgstr "Leynd af"
+
+msgid "IDS_BR_BUTTON_DONT_USE_PASSWORD_ABB"
+msgstr "Ekki nota lykilorð"
+
+msgid "IDS_BR_BUTTON_NEW_TAB_ABB2"
+msgstr "Flipi"
+
+msgid "IDS_BR_NPBODY_WEB_ADDRESS_ABB"
+msgstr "Veffang"
+
+msgid "IDS_BR_HEADER_ADD_WEBPAGE_TO_QUICK_ACCESS_ABB"
+msgstr "Bæta vefsíðu við flýtiaðgang"
+
+msgid "IDS_BR_TMBODY_TURN_ON_JAVASCRIPT"
+msgstr "Kveikja á JavaScript"
+
+msgid "IDS_BR_HEADER_COULDNT_OPEN_NEW_TAB_ABB"
+msgstr "Gat ekki opnað nýjan flipa"
+
+msgid "IDS_BR_OPT_OPEN_IN_NEW_TAB_ABB"
+msgstr "Opna í nýjum flipa"
+
+msgid "IDS_BR_TPOP_FOLDER_NAME_ALREADY_IN_USE"
+msgstr "Möppuheitið er þegar í notkun."
+
+msgid "IDS_BR_NPBODY_NEW_FOLDER_PD"
+msgstr "Ný mappa %d"
+
+msgid "IDS_BR_NPBODY_NEW_FOLDER"
+msgstr "Ný mappa"
+
+msgid "IDS_BR_OPT_ENABLE_JAVASCRIPT"
+msgstr "Opna fyrir JavaScript"
+
+msgid "IDS_BR_TMBODY_MANAGE_WEBSITE_DATA"
+msgstr "Stjórna gögnum vefsvæðis"
+
+msgid "IDS_BR_HEADER_SET_HOME_PAGE_ABB"
+msgstr "Stilla heimasíðu"
+
+msgid "IDS_BR_TPOP_WEBPAGE_ADDED_TO_QUICK_ACCESS_LIST"
+msgstr "Vefsíða sett á flýtiaðgangslistann."
+
+msgid "IDS_BR_OPT_EDIT_QUICK_ACCESS_ABB"
+msgstr "Breyta flýtiaðgangi"
+
+msgid "IDS_BR_OPT_REMOVE_FROM_BOOKMARKS_ABB"
+msgstr "Fjarlægja úr bókamerkjum"
+
+msgid "IDS_BR_HEADER_ADD_BOOKMARK_ABB"
+msgstr "Bæta við bókamerki"
+
+msgid "IDS_BR_BODY_BROWSING_HISTORY"
+msgstr "Vefferill"
+
+msgid "IDS_BR_HEADER_TABS_ABB2"
+msgstr "Flipar"
+
+msgid "IDS_BR_OPT_NEW_TAB"
+msgstr "Nýr flipi"
+
+msgid "IDS_BR_BUTTON_FORWARD_ABB2"
+msgstr "Áfram"
+
+msgid "IDS_BR_BUTTON_BACK_ABB3"
+msgstr "Til baka"
+
+msgid "IDS_BR_BUTTON_BOOKMARKS_ABB"
+msgstr "Bókamerki"
+
+msgid "IDS_BR_NPBODY_NO_PROFILES_ABB"
+msgstr "Engin snið"
+
+msgid "IDS_BR_TAB2_HISTORY"
+msgstr "Ferill"
+
+msgid "IDS_BR_TAB2_BOOKMARKS"
+msgstr "Bókamerki"
+
+msgid "IDS_BR_HEADER_SAVE_CONTENT_TO_ABB"
+msgstr "Vista efni á"
+
+msgid "IDS_BR_HEADER_SELECT_ITEMS_ABB2"
+msgstr "Velja atriði"
+
+msgid "IDS_BR_BODY_YOUR_PASSWORD_MUST_CONTAIN_AT_LEAST_PD_CHARACTERS_INCLUDING_AT_LEAST_1_LETTER"
+msgstr "Lykilorðið verður að innihalda a.m.k. %d stafi, þar á meðal minnst einn bókstaf."
+
+msgid "IDS_BR_BODY_AN_INCORRECT_PASSWORD_HAS_BEEN_ENTERED_TRY_AGAIN"
+msgstr "Rangt lykilorð var slegið inn. Reyndu aftur."
+
+msgid "IDS_BR_BODY_NO_TABS"
+msgstr "Engir flipar"
+
+msgid "IDS_BR_TMBODY_CHANGE_PASSWORD"
+msgstr "Breyta lykilorði"
+
+msgid "IDS_BR_BODY_ANY_WEBPAGES_VIEWED_WHILE_SECRET_MODE_IS_ENABLED_WILL_NOT_APPEAR_IN_YOUR_BROWSER_OR_SEARCH_HISTORY_WHILE_SECRET_MSG"
+msgstr "Vefsíður sem þú skoðar þegar kveikt er á leyndarstillingu birtast ekki í vafranum eða leitarferlinum þínum þegar slökkt er á stillingunni.\n\nEngin bókamerki og vefsíður sem eru vistuð þegar kveikt er á leyndarstillingu eru sýnileg þegar slökkt er á stillingunni.\n\nÞú getur einnig varið leyndarstillingargögnin þín með lykilorði."
+
+msgid "IDS_BR_BODY_ANY_WEBPAGES_VIEWED_WHILE_SECRET_MODE_IS_ENABLED_WILL_NOT_APPEAR_IN_YOUR_MSG"
+msgstr "Vefsíður sem þú skoðar þegar kveikt er á leyndarstillingu birtast ekki í vafranum eða leitarferlinum þínum þegar slökkt er á stillingunni.\n\nEngin bókamerki og vefsíður sem eru vistuð þegar kveikt er á leyndarstillingu eru sýnileg þegar slökkt er á stillingunni."
+
+msgid "IDS_BR_BUTTON2_DONE"
+msgstr "Lokið"
 

@@ -1,7 +1,0 @@
-#include "../../../core/Tools/edc/IconButton.edc"
-
-collections { base_scale: 2.0;
-    HISTORY_ICO_BTN("elm/button/base/history_button", "btn_bar_clear_nor.png", "btn_bar_clear_foc.png", "btn_bar_clear_dis.png")
-    HISTORY_ICO_BTN("elm/button/base/clear_history_button", "btn_bar_clear_all_nor.png", "btn_bar_clear_all_foc.png", "btn_bar_clear_all_dis.png")
-    HISTORY_ICO_BTN("elm/button/base/close_history_button", "btn_bar_stop_nor.png", "btn_bar_stop_nor.png", "btn_bar_stop_nor.png")
-}

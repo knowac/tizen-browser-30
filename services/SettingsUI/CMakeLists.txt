@@ -1,27 +1,32 @@
 project(SettingsUI)
 
-if (${PROFILE} MATCHES "mobile")
 set(SettingsUI_SRCS
-    SettingsUI_mob.cpp
-    AutoFillForm/AutoFillFormComposeView.cpp
-    AutoFillForm/AutoFillFormManager.cpp
+    SettingsManager.cpp
+    SettingsUI.cpp
+    SettingsMain.cpp
+    SettingsHomePage.cpp
+    SettingsPrivacy.cpp
+    SettingsAdvanced.cpp
+    SettingsDelPersData.cpp
+    SettingsAFProfile.cpp
+    SettingsAFCreator.cpp
+    SettingsUserAgent.cpp
     AutoFillForm/AutoFillFormItem.cpp
-    AutoFillForm/AutoFillFormListView.cpp
-    AutoFillForm/AutoProfileDeleteView.cpp
     )
 set(SettingsUI_HEADERS
-    SettingsUI_mob.h
-    AutoFillForm/AutoFillFormComposeView.h
-    AutoFillForm/AutoFillFormManager.h
+    SettingsManager.h
+    SettingsUI.h
+    SettingsMain.h
+    SettingsHomePage.h
+    SettingsPrivacy.h
+    SettingsAdvanced.h
+    SettingsDelPersData.h
+    SettingsAFProfile.h
+    SettingsAFCreator.h
+    SettingsUserAgent.h
+    SettingsPrettySignalConnector.h
     AutoFillForm/AutoFillFormItem.h
-    AutoFillForm/AutoFillFormListView.h
-    AutoFillForm/AutoProfileDeleteView.h
     )
-else (${PROFILE} MATCHES "mobile")
-set(SettingsUI_SRCS
-    SettingsUI.cpp
-    )
-endif (${PROFILE} MATCHES "mobile")
 
 include(Coreheaders)
 include(EFLHelpers)
@@ -39,15 +44,6 @@ install(TARGETS ${PROJECT_NAME}
 
 include(EDCCompile)
 
-if (${PROFILE} MATCHES "mobile")
 EDJ_TARGET(SettingsMobileUI.edj
     ${CMAKE_CURRENT_SOURCE_DIR}/edc/Settings_mob.edc
     ${CMAKE_CURRENT_BINARY_DIR})
-EDJ_TARGET(AutoFillMobileUI.edj
-    ${CMAKE_CURRENT_SOURCE_DIR}/edc/AutoFill_mob.edc
-    ${CMAKE_CURRENT_BINARY_DIR})
-else (${PROFILE} MATCHES "mobile")
-EDJ_TARGET(SettingsUI.edj
-    ${CMAKE_CURRENT_SOURCE_DIR}/edc/Settings.edc
-    ${CMAKE_CURRENT_BINARY_DIR})
-endif (${PROFILE} MATCHES "mobile")

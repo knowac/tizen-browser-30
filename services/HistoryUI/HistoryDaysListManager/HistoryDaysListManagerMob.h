@@ -21,6 +21,9 @@
 #include <Elementary.h>
 #include <string>
 #include <vector>
+#include <set>
+#include <EflTools.h>
+
 #include "HistoryDayItemDataTypedef.h"
 #include "HistoryDaysListManager.h"
 #include "HistoryDaysListManagerEdje.h"
@@ -29,7 +32,7 @@ namespace tizen_browser {
 namespace base_ui {
 
 class HistoryDayItemMob;
-typedef std::shared_ptr<HistoryDayItemMob> HistoryDayItemMobPtr;
+using HistoryDayItemMobPtr = std::shared_ptr<HistoryDayItemMob>;
 
 class HistoryDaysListManagerMob : public HistoryDaysListManager
 {
@@ -37,23 +40,41 @@ public:
     HistoryDaysListManagerMob();
     virtual ~HistoryDaysListManagerMob();
 
-    Evas_Object* createDaysList(Evas_Object* parent) override;
-    void addHistoryItems(const std::map<std::string, services::HistoryItemVector>&,
-            HistoryPeriod period) override;
-    void sortDayItems(std::vector<WebsiteHistoryItemDataPtr>& historyItems);
+    void createGenlistItemClasses();
+    static char* _genlist_history_day_text_get(void *data, Evas_Object *, const char *part);
+    static char* _genlist_history_download_text_get(void* data, Evas_Object*, const char *part);
+    static char* _genlist_history_item_text_get(void *data, Evas_Object *, const char *part);
+    static void _check_state_changed(void*, Evas_Object*, void *);
+    static void _tree_item_expanded(void*, Evas_Object*, void*);
+    static void _tree_item_contracted(void*, Evas_Object*, void*);
+    static void _tree_item_pressed(void*, Evas_Object*, void*);
+    static void _item_selected(void *data, Evas_Object *obj, void *event_info);
+    static Evas_Object* _genlist_history_download_content_get(void*, Evas_Object* obj, const char *part);
+    static Evas_Object* _genlist_history_item_content_get(void *data, Evas_Object *, const char *part);
+    static Evas_Object* _genlist_history_day_content_get(void *data, Evas_Object* obj, const char *part);
+
+    Evas_Object* createDaysList(Evas_Object* parent, bool isRemoveMode = false) override;
+    void addHistoryItems(
+        const std::shared_ptr<services::HistoryItemVector>& items,
+        HistoryPeriod period) override;
     void clear() override;
     void setFocusChain(Evas_Object* /*obj*/) override {}
 
-    void onHistoryDayItemButtonClicked(
-            const HistoryDayItemDataPtrConst clickedItem, bool remove);
-    void onWebsiteHistoryItemClicked(
-            const WebsiteHistoryItemDataPtrConst websiteHistoryItemData,
-            bool remove);
     void onWebsiteHistoryItemVisitItemClicked(
-            const WebsiteVisitItemDataPtrConst websiteVisitItemData,
-            bool remove);
+        const WebsiteVisitItemDataPtrConst websiteVisitItemData,
+        bool remove);
+    void countItemsToDelete();
+    void selectAllCheckboxes();
+    void removeSelectedItems();
+    bool isSelectAllChecked() const { return m_isSelectAllChecked == EINA_TRUE; }
 
 private:
+    struct ItemData {
+        HistoryDaysListManagerMob* self;
+        WebsiteVisitItemDataPtr websiteVisitItem;
+        WebsiteHistoryItemDataPtr websiteHistoryItemData;
+        const char* str;
+    };
     void connectSignals();
     void appendDayItem(HistoryDayItemDataPtr dayItemData);
     void showNoHistoryMessage(bool show);
@@ -88,6 +109,21 @@ private:
     Evas_Object* m_scrollerDays;
     Evas_Object* m_layoutScrollerDays;
     Evas_Object* m_boxDays;
+    Elm_Genlist_Item_Class* m_history_day_item_class;
+    Elm_Genlist_Item_Class* m_history_item_item_class;
+    Elm_Genlist_Item_Class* m_history_download_item_class;
+    Evas_Object* m_genlist;
+    std::map<Elm_Object_Item*, HistoryDayItemDataPtr> m_itemData;
+    std::map<Elm_Object_Item*, Eina_Bool> m_expandedState;
+    std::map<Elm_Object_Item*, Eina_Bool> m_itemsToDelete;
+    std::map<Elm_Object_Item*, WebsiteVisitItemDataPtr> m_visitItemData;
+    bool m_isRemoveMode;
+    std::vector<ItemData*> m_itemDataVector;
+    size_t m_delete_count;
+    size_t m_history_count;
+    Eina_Bool m_isSelectAllChecked;
+    Elm_Object_Item* m_downloadManagerItem;
+    Elm_Object_Item* m_selectAllItem;
 };
 
 } /* namespace base_ui */

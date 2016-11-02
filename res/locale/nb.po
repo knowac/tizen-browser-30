@@ -1,14 +1,8 @@
 msgid "IDS_BR_POP_NETWORK_ERROR"
 msgstr "Nettverksfeil."
 
-msgid "IDS_BR_BODY_AUTHUSERNAME"
-msgstr "Brukernavn"
-
 msgid "IDS_BR_BODY_DESTINATIONS_AUTHENTICATION_REQUIRED"
 msgstr "Krever godkjenning."
-
-msgid "IDS_BR_BODY_AUTHPASSWORD"
-msgstr "Passord"
 
 msgid "IDS_BR_HEADER_SECURITY_WARNING"
 msgstr "Sikkerhetsadvarsel"
@@ -33,12 +27,6 @@ msgstr "Det er problemer med sikkerhetssertifikatet for dette området."
 
 msgid "IDS_BR_OPT_ALLOW"
 msgstr "Tillat"
-
-msgid "IDS_BR_OPT_VIEW"
-msgstr "Vis"
-
-msgid "IDS_BR_OPT_CANCEL"
-msgstr "Avbryt"
 
 msgid "IDS_BR_BODY_PS_REQUESTS_YOUR_LOCATION"
 msgstr "%s forespør din posisjon."
@@ -72,6 +60,18 @@ msgstr "Last ned"
 
 msgid "IDS_BR_BODY_THIS_WEBPAGE"
 msgstr "Denne nettsiden"
+
+msgid "IDS_BR_BODY_AUTHUSERNAME"
+msgstr "Brukernavn"
+
+msgid "IDS_BR_BODY_AUTHPASSWORD"
+msgstr "Passord"
+
+msgid "IDS_BR_OPT_VIEW"
+msgstr "Vis"
+
+msgid "IDS_BR_OPT_CANCEL"
+msgstr "Avbryt"
 
 msgid "IDS_BR_OPT_SCREEN"
 msgstr "Skjerm"
@@ -109,15 +109,6 @@ msgstr "Avbryt"
 msgid "IDS_BR_BUTTON_MORE"
 msgstr "Mer"
 
-msgid "IDS_TPLATFORM_ACBUTTON_DONE_ABB"
-msgstr "FULLFØRT"
-
-msgid "IDS_TPLATFORM_ACBUTTON_CANCEL_ABB"
-msgstr "AVBRYT"
-
-msgid "IDS_TPLATFORM_ACBUTTON_DELETE_ABB"
-msgstr "SLETT"
-
 msgid "IDS_BR_BODY_NO_ITEMS"
 msgstr "Ingen elementer"
 
@@ -126,9 +117,6 @@ msgstr "Koble til mobilnett"
 
 msgid "IDS_BR_OPT_DO_NOT_SHOW_AGAIN"
 msgstr "Ikke vis igjen"
-
-msgid "IDS_BR_SK_OK"
-msgstr "OK"
 
 msgid "IDS_BR_POP_ONLY_HTTP_OR_HTTPS_URLS_CAN_BE_DOWNLOADED"
 msgstr "Bare http- eller https-URL-er kan lastes ned."
@@ -151,17 +139,11 @@ msgstr "Kopier kobling"
 msgid "IDS_BR_OPT_COPY_IMAGE"
 msgstr "Kopier bilde"
 
+msgid "IDS_BR_SK_OK"
+msgstr "OK"
+
 msgid "IDS_BR_OPT_CALL"
 msgstr "Ring"
-
-msgid "IDS_ST_POP_PS_HAS_BEEN_DETECTED"
-msgstr "%s har blitt oppdaget."
-
-msgid "IDS_ST_POP_DETECTED_IN_C_PS"
-msgstr "Oppdaget i: %s"
-
-msgid "IDS_ST_HEADER_MALWARE_DETECTED_ABB"
-msgstr "Ondsinnet progr.vare gjenkjent"
 
 msgid "IDS_BR_BUTTON_FAILED"
 msgstr "Feilet"
@@ -229,35 +211,11 @@ msgstr "Fj merk"
 msgid "IDS_BR_SK_TABS"
 msgstr "Faner"
 
-msgid "IDS_BR_SK_SAVE_LITE"
-msgstr "Lagre"
-
-msgid "IDS_BR_SK_SAVE_ABB"
-msgstr "Lagre"
-
-msgid "IDS_BR_SK_SAVE"
-msgstr "Lagre"
-
-msgid "IDS_BR_SK_PREVIOUS"
-msgstr "Forrige"
-
-msgid "IDS_BR_SK_NEXT"
-msgstr "Neste"
-
 msgid "IDS_BR_SK_MENU"
 msgstr "Meny"
 
 msgid "IDS_BR_SK_DELETE_ABB"
 msgstr "Slett"
-
-msgid "IDS_BR_SK_DELETE"
-msgstr "Slett"
-
-msgid "IDS_BR_SK_CLEAR"
-msgstr "Slett"
-
-msgid "IDS_BR_SK_BACK"
-msgstr "Tilbake"
 
 msgid "IDS_BR_SK3_CREATE_FOLDER"
 msgstr "Lag mappe"
@@ -316,15 +274,6 @@ msgstr "Du vil kanskje ikke nøyaktig kunne beskjære enkelte nettsteder."
 msgid "IDS_BR_POP_YOUR_HISTORY_WILL_BE_CLEARED"
 msgstr "Historikken blir fjernet."
 
-msgid "IDS_BR_POP_WI_FI_CONNECTION_REQUIRED_CONNECT_TO_WI_FI_NETWORK_AND_TRY_AGAIN"
-msgstr "Wi-Fi-tilkobling nødvendig. Koble til Wi-Fi-nettverk og prøv på nytt."
-
-msgid "IDS_BR_POP_URL_NOT_FOUND"
-msgstr "URL ikke funnet."
-
-msgid "IDS_BR_POP_URL"
-msgstr "URL"
-
 msgid "IDS_BR_POP_UNABLE_TO_VIEW_THE_CERTIFICATE_THE_PAGE_INFORMATION_HAS_BEEN_CHANGED"
 msgstr "Kan ikke vise sertifikatet. Sideinformasjonen er endret."
 
@@ -370,23 +319,11 @@ msgstr "Sikkerhetspolicy begrenser bruk av Internettleser."
 msgid "IDS_BR_POP_SAVED_TO_BOOKMARKS"
 msgstr "Lagret i bokmerker."
 
-msgid "IDS_BR_POP_SAVED"
-msgstr "Lagret."
-
 msgid "IDS_BR_POP_RENAME_TAG"
 msgstr "Endre navn på tagg"
 
-msgid "IDS_BR_POP_REMOVED"
-msgstr "Fjernet."
-
 msgid "IDS_BR_POP_PD_PROFILES_WILL_BE_DELETED"
 msgstr "%d profiler vil bli slettet."
-
-msgid "IDS_BR_POP_PD_ITEMS_WILL_BE_DELETED"
-msgstr "%d elementer vil bli slettet."
-
-msgid "IDS_BR_POP_PD_ITEMS_SELECTED"
-msgstr "%d elementer valgt."
 
 msgid "IDS_BR_POP_PAGES_THAT_YOU_VIEW_WILL_NOT_APPEAR_IN_YOUR_BROWSER_HISTORY_OR_SEARCH_HISTORY_AND_THEY_WILL_NOT_LEAVE_OTHER_TRACES_LIKE_COOKIES"
 msgstr "Sider som du besøker, vises ikke i nettleserhistorikken eller søkehistorikken, og de vil ikke legge igjen andre spor, for eksempel informasjonskapsler."
@@ -415,53 +352,20 @@ msgstr "“%1$s” er blitt registrert.\nRegistrert i: “%2$s”\n\nNoe av innh
 msgid "IDS_BR_POP_P1SS_HAS_BEEN_DETECTED_DETECTED_IN_C_P2SS_OPEN_WEBPAGE_ANYWAY_Q"
 msgstr "“%1$s” er blitt registrert.\nRegistrert i: “%2$s”\n\nVil du åpne nettstedet likevel?"
 
-msgid "IDS_BR_POP_NO_ITEMS_SELECTED"
-msgstr "Det er ikke valgt noen elementer."
-
 msgid "IDS_BR_POP_NOT_ENOUGH_MEMORY_DELETE_SOME_ITEMS_AND_TRY_AGAIN"
 msgstr "Ikke nok minne. Slett noen elementer og prøv på nytt."
-
-msgid "IDS_BR_POP_NOT_ENOUGH_MEMORY"
-msgstr "Ikke nok minne."
 
 msgid "IDS_BR_POP_NOT_ALLOWED"
 msgstr "Ikke tillatt."
 
-msgid "IDS_BR_POP_NEVER"
-msgstr "Aldri"
-
 msgid "IDS_BR_POP_MOVED"
 msgstr "Flyttet."
-
-msgid "IDS_BR_POP_MOBILE_DATA_IS_DISABLED_CONNECT_TO_WI_FI_NETWORK_INSTEAD_OR_ENABLE_MOBILE_DATA_AND_TRY_AGAIN"
-msgstr "Mobildata er deaktivert. Koble til Wi-Fi-nettverk i stedet, eller aktiver mobildata og prøv på nytt."
-
-msgid "IDS_BR_POP_LOADING_PLEASE_WAIT_ING"
-msgstr "Åpner. Vennligst vent..."
-
-msgid "IDS_BR_POP_INVALID_URL"
-msgstr "Ugyldig URL."
-
-msgid "IDS_BR_POP_FAIL"
-msgstr "Det oppstod en feil."
 
 msgid "IDS_BR_POP_ENTER_URL"
 msgstr "Tast inn URL."
 
-msgid "IDS_BR_POP_ENTER_TITLE_ABB"
-msgstr "Angi tittel"
-
 msgid "IDS_BR_POP_ENTER_BOOKMARK_NAME"
 msgstr "Angi bokmerkenavn."
-
-msgid "IDS_BR_POP_DO_NOT_SHOW_AGAIN"
-msgstr "Ikke vis igjen"
-
-msgid "IDS_BR_POP_DOWNLOADCOMPLETE"
-msgstr "Nedlasting fullført."
-
-msgid "IDS_BR_POP_DISABLED"
-msgstr "Deaktivert"
 
 msgid "IDS_BR_POP_DIALING_ING_VZW"
 msgstr "Dialing..."
@@ -487,9 +391,6 @@ msgstr "Vil du slette påloggingsdata for dette nettstedet?"
 msgid "IDS_BR_POP_DELETE_SIGN_IN_DATA_FOR_PD_WEBSITES_Q"
 msgstr "Vil du slette påloggingsdata for %d nettsteder?"
 
-msgid "IDS_BR_POP_DELETE_Q"
-msgstr "Slette?"
-
 msgid "IDS_BR_POP_DELETE_PD_SAVED_WEB_PAGES_Q"
 msgstr "Vil du slette %d lagrede nettsider?"
 
@@ -505,14 +406,8 @@ msgstr "Slette alle webområdedata og plasseringstillatelser?"
 msgid "IDS_BR_POP_DELETEHISTORYQUESTION"
 msgstr "Slette logg?"
 
-msgid "IDS_BR_POP_DELETED"
-msgstr "Slettet."
-
 msgid "IDS_BR_POP_CONTINUE"
 msgstr "Fortsett"
-
-msgid "IDS_BR_POP_CLOSE_APPLICATION_Q"
-msgstr "Lukke app?"
 
 msgid "IDS_BR_POP_CLOSE_APPLICATION"
 msgstr "Lukk app"
@@ -525,12 +420,6 @@ msgstr "Fjerne historikk?"
 
 msgid "IDS_BR_POP_BOOKMARK_REMOVED"
 msgstr "Bokmerke fjernet."
-
-msgid "IDS_BR_POP_BOOKMARK_ADDED"
-msgstr "Bokmerke lagt til."
-
-msgid "IDS_BR_POP_AUTOMATIC_BRIGHTNESS"
-msgstr "Automatisk lysstyrke"
 
 msgid "IDS_BR_POP_ALREADY_EXISTS"
 msgstr "Finnes allerede."
@@ -556,15 +445,6 @@ msgstr "Tillat områder å lagre og lese data fra informasjonskapsler."
 msgid "IDS_BR_POP_ADDED_TO_BOOKMARKS"
 msgstr "Lagt til i bokmerker."
 
-msgid "IDS_BR_POP_ACCOUNT"
-msgstr "Konto"
-
-msgid "IDS_BR_POP_1_ITEM_WILL_BE_DELETED"
-msgstr "1 element vil bli slettet."
-
-msgid "IDS_BR_POP_1_ITEM_SELECTED"
-msgstr "1 element valgt."
-
 msgid "IDS_BR_OPT_WINDOWS"
 msgstr "Vinduer"
 
@@ -574,38 +454,20 @@ msgstr "Vis sertifikat"
 msgid "IDS_BR_OPT_UNICODE_HUTF_8"
 msgstr "Unicode (UTF-8)"
 
-msgid "IDS_BR_OPT_TRANSLATE"
-msgstr "Oversett"
-
 msgid "IDS_BR_OPT_THUMBNAIL_VIEW"
 msgstr "Miniatyrvisning"
 
 msgid "IDS_BR_OPT_TEXT_ENCODING"
 msgstr "Tekstkoding"
 
-msgid "IDS_BR_OPT_STOP"
-msgstr "Stopp"
-
 msgid "IDS_BR_OPT_SHRINK_TEXT"
 msgstr "Forminsk teksten"
-
-msgid "IDS_BR_OPT_SHOW"
-msgstr "Vis"
-
-msgid "IDS_BR_OPT_SHARE"
-msgstr "Del"
 
 msgid "IDS_BR_OPT_SETTINGS_ABB"
 msgstr "Innstillinger"
 
-msgid "IDS_BR_OPT_SETTINGS"
-msgstr "Innstillinger"
-
 msgid "IDS_BR_OPT_SEND_MESSAGE_VODA"
 msgstr "Send melding"
-
-msgid "IDS_BR_OPT_SEND_EMAIL"
-msgstr "Send e-post"
 
 msgid "IDS_BR_OPT_SENDURLVIA_EMAIL"
 msgstr "E-post"
@@ -624,12 +486,6 @@ msgstr "Valgmodus"
 
 msgid "IDS_BR_OPT_SELECTED"
 msgstr "Valgt"
-
-msgid "IDS_BR_OPT_SELECT"
-msgstr "Velg"
-
-msgid "IDS_BR_OPT_SD_CARD"
-msgstr "SD-kort"
 
 msgid "IDS_BR_OPT_SAVE_TO_KEEPIT_ABB"
 msgstr "Lagre på KeepIt"
@@ -658,14 +514,8 @@ msgstr "Omordne"
 msgid "IDS_BR_OPT_RENAME_FOLDER"
 msgstr "Endre mappenavn"
 
-msgid "IDS_BR_OPT_RENAME"
-msgstr "Endre navn"
-
 msgid "IDS_BR_OPT_REMOVE"
 msgstr "Fjern"
-
-msgid "IDS_BR_OPT_REFRESH"
-msgstr "Oppdater"
 
 msgid "IDS_BR_OPT_READER_MODE_TTS"
 msgstr "Lesermodus"
@@ -685,14 +535,8 @@ msgstr "Frakoblede sider"
 msgid "IDS_BR_OPT_NEW_WINDOW"
 msgstr "Nytt vindu"
 
-msgid "IDS_BR_OPT_MOVE"
-msgstr "Flytt"
-
 msgid "IDS_BR_OPT_MINIMISE"
 msgstr "Minimer"
-
-msgid "IDS_BR_OPT_MESSAGES"
-msgstr "Meldinger"
 
 msgid "IDS_BR_OPT_MEDIUM_M_QUALITY"
 msgstr "Middels"
@@ -705,9 +549,6 @@ msgstr "Posisjonstilgangsrettigheter"
 
 msgid "IDS_BR_OPT_LOAD_IMAGES"
 msgstr "Åpne bilder"
-
-msgid "IDS_BR_OPT_LIST_VIEW"
-msgstr "Listevisning"
 
 msgid "IDS_BR_OPT_LATIN_1_HISO_8859_1"
 msgstr "Latin-1 (ISO-8859-1)"
@@ -724,9 +565,6 @@ msgstr "Japansk (ISO-2022-JP)"
 msgid "IDS_BR_OPT_JAPANESE_HEUC_JP"
 msgstr "Japansk (EUC-JP)"
 
-msgid "IDS_BR_OPT_I_AGREE"
-msgstr "Jeg godtar."
-
 msgid "IDS_BR_OPT_INCOGNITO_MODE_ABB"
 msgstr "Inkognitomodus"
 
@@ -741,9 +579,6 @@ msgstr "Startskj.bilde som snarvei"
 
 msgid "IDS_BR_OPT_HIGH_M_QUALITY"
 msgstr "Høy"
-
-msgid "IDS_BR_OPT_HELP"
-msgstr "Hjelp"
 
 msgid "IDS_BR_OPT_GOFORWARD"
 msgstr "Fremover"
@@ -790,9 +625,6 @@ msgstr "Deaktiver Lav databruk"
 msgid "IDS_BR_OPT_DISABLED"
 msgstr "Deaktivert"
 
-msgid "IDS_BR_OPT_DEVICE"
-msgstr "Enhet"
-
 msgid "IDS_BR_OPT_DELETE_SAVED_PAGE_ABB"
 msgstr "Slett lagret side"
 
@@ -826,9 +658,6 @@ msgstr "Kinesisk (Big5)"
 msgid "IDS_BR_OPT_CACHE"
 msgstr "Mellomlager"
 
-msgid "IDS_BR_OPT_BOOKMARK"
-msgstr "Bokmerke"
-
 msgid "IDS_BR_OPT_ADD_TO_WEB_CLIP"
 msgstr "Legg til nettklipp"
 
@@ -849,12 +678,6 @@ msgstr "Legg til bokmerke"
 
 msgid "IDS_BR_OPT_ADD_BOOKMARK"
 msgstr "Legg til bokmerke"
-
-msgid "IDS_BR_OPT_ADDED"
-msgstr "Lagt til."
-
-msgid "IDS_BR_OPT_ADD"
-msgstr "Legg til"
 
 msgid "IDS_BR_OPT1_EXTENSION"
 msgstr "Utvidelsen"
@@ -925,9 +748,6 @@ msgstr "Last ned feed-innhold"
 msgid "IDS_BR_MBODY_DELETE_SIGN_IN_DATA"
 msgstr "Slett påloggingsdata"
 
-msgid "IDS_BR_MBODY_DEFAULT_DOWNLOAD_STORAGE"
-msgstr "Standard nedlastingslagr."
-
 msgid "IDS_BR_MBODY_DATA_SAVING_STATISTICS"
 msgstr "Datalagringsstatistikk"
 
@@ -970,9 +790,6 @@ msgstr "Kan ikke flytte bokmerker"
 msgid "IDS_BR_HEADER_SITE_NOT_TRUSTED_ABB"
 msgstr "Side er ikke klarert"
 
-msgid "IDS_BR_HEADER_SIGN_IN_TO_SAMSUNG_ACCOUNT"
-msgstr "Logg på Samsung-kontoen din"
-
 msgid "IDS_BR_HEADER_SET_HOMEPAGE_ABB"
 msgstr "Angi startside"
 
@@ -1009,17 +826,11 @@ msgstr "Sprettoppvindu blokkert"
 msgid "IDS_BR_HEADER_POPULAR_WEBSITES_ABB"
 msgstr "Populære nettsteder"
 
-msgid "IDS_BR_HEADER_PD_SELECTED_ABB"
-msgstr "%d er valgt"
-
 msgid "IDS_BR_HEADER_ORGANISATION_C_ABB"
 msgstr "Organisasjon:"
 
 msgid "IDS_BR_HEADER_ORGANISATIONAL_UNIT_C"
 msgstr "Organisasjonsenhet:"
-
-msgid "IDS_BR_HEADER_NO_NETWORK_CONNECTION"
-msgstr "Ingen nettverksforbindelse"
 
 msgid "IDS_BR_HEADER_NEWER_M_INTERNET_HISTORY_ABB"
 msgstr "Newer"
@@ -1036,17 +847,11 @@ msgstr "HTML5-utvidelse"
 msgid "IDS_BR_HEADER_FORM_DATA"
 msgstr "Skjemadata"
 
-msgid "IDS_BR_HEADER_FOLDER"
-msgstr "Mappe"
-
 msgid "IDS_BR_HEADER_EXPIRES_ON_C"
 msgstr "Utløper den:"
 
 msgid "IDS_BR_HEADER_ENABLE_WEB_SIGN_IN"
 msgstr "Aktiver Nettpålogging"
-
-msgid "IDS_BR_HEADER_EDIT_PROFILE"
-msgstr "Rediger profil"
 
 msgid "IDS_BR_HEADER_EDIT_BOOKMARK"
 msgstr "Rediger bokmerke"
@@ -1084,14 +889,8 @@ msgstr "Båndbreddebehandling"
 msgid "IDS_BR_HEADER_ADVANCEDCERTIFICATES"
 msgstr "Sertifikater"
 
-msgid "IDS_BR_BUTTON_SET"
-msgstr "Angi"
-
 msgid "IDS_BR_BUTTON_RESET_ABB"
 msgstr "Nullstill"
-
-msgid "IDS_BR_BUTTON_NOT_NOW"
-msgstr "Ikke nå"
 
 msgid "IDS_BR_BUTTON_HOMEPAGE_ABB"
 msgstr "Startside"
@@ -1099,35 +898,11 @@ msgstr "Startside"
 msgid "IDS_BR_BUTTON_FIND_ABB"
 msgstr "Finn"
 
-msgid "IDS_BR_BUTTON_ENABLE_ABB"
-msgstr "Aktiver"
-
-msgid "IDS_BR_BUTTON_EDIT"
-msgstr "Rediger"
-
-msgid "IDS_BR_BUTTON_CONTINUE_ABB"
-msgstr "Fortsett"
-
-msgid "IDS_BR_BUTTON_CONTINUE"
-msgstr "Fortsett"
-
-msgid "IDS_BR_BUTTON_CLOSE"
-msgstr "Lukk"
-
-msgid "IDS_BR_BUTTON_CANCEL_ABB"
-msgstr "Avbryt"
-
-msgid "IDS_BR_BUTTON_CANCEL"
-msgstr "Avbryt"
-
 msgid "IDS_BR_BUTTON_BACK_ABB"
 msgstr "Tilbake"
 
 msgid "IDS_BR_BUTTON_ALWAYS_SHOW_ABB"
 msgstr "Vis alltid"
-
-msgid "IDS_BR_BUTTON_ALLOW"
-msgstr "Tillat"
 
 msgid "IDS_BR_BUTTON2_WEB_PORTAL"
 msgstr "Nettportal"
@@ -1152,9 +927,6 @@ msgstr "Gå til logg"
 
 msgid "IDS_BR_BUTTON2_ENTERTAINMENT"
 msgstr "Underh."
-
-msgid "IDS_BR_BODY_YESTERDAY"
-msgstr "I går"
 
 msgid "IDS_BR_BODY_WINDOW_MANAGER"
 msgstr "Vindusbehandler"
@@ -1183,9 +955,6 @@ msgstr "Bruk fullskjermsmodus for å skjule statuslinjen."
 msgid "IDS_BR_BODY_USE_A_PREDICTION_SERVICE_TO_DISPLAY_RELATED_QUERIES_AND_POPULAR_WEBSITES_IN_THE_ADDRESS_BAR_AS_YOU_TYPE"
 msgstr "Bruk en forslagstjeneste for å vise beslektede forespørsler og populære nettsteder på adresselinjen mens du skriver."
 
-msgid "IDS_BR_BODY_URL"
-msgstr "URL"
-
 msgid "IDS_BR_BODY_UPPER_FOLDER_T_TALKBACK"
 msgstr "Øvre mappe"
 
@@ -1201,12 +970,6 @@ msgstr "Kan ikke vise nettsiden. Serveren svarer ikke."
 msgid "IDS_BR_BODY_TOWN_CITY_COUNTY_ABB"
 msgstr "Sted/by/kommune"
 
-msgid "IDS_BR_BODY_TODAY"
-msgstr "I dag"
-
-msgid "IDS_BR_BODY_TITLE"
-msgstr "Tittel"
-
 msgid "IDS_BR_BODY_THIS_SITE_IS_USING_PS"
 msgstr "Denne siden bruker %s."
 
@@ -1221,9 +984,6 @@ msgstr "Dette bokmerket vil bli slettet."
 
 msgid "IDS_BR_BODY_THE_SELECTED_PERSONAL_DATA_WILL_BE_DELETED"
 msgstr "De valgte personlige dataene blir slettet."
-
-msgid "IDS_BR_BODY_THE_MAXIMUM_NUMBER_OF_CHARACTERS_HPD_HAS_BEEN_EXCEEDED"
-msgstr "Det maksimale antallet tegn (%d) er oversteget."
 
 msgid "IDS_BR_BODY_TEXT_FIELD_T_TTS"
 msgstr "Tekstfelt"
@@ -1249,17 +1009,11 @@ msgstr "Synkroniser bokmerker"
 msgid "IDS_BR_BODY_STREET_ADDRESS_PO_BOX_C_O_ETC_ABB"
 msgstr "Gateadresse, postboks, c/o, osv."
 
-msgid "IDS_BR_BODY_STREAMING"
-msgstr "Direkteavspilling"
-
 msgid "IDS_BR_BODY_STORED_DATA"
 msgstr "Lagrede data"
 
 msgid "IDS_BR_BODY_SPLIT_BAR_HANDLE"
 msgstr "Delingslinjehåndtak"
-
-msgid "IDS_BR_BODY_SMALL"
-msgstr "Liten"
 
 msgid "IDS_BR_BODY_SIGN_IN_TO_YOUR_SAMSUNG_ACCOUNT_TO_ACCESS_THE_BOOKMARKS_AND_TABS_ON_YOUR_OTHER_DEVICES"
 msgstr "Logg på Samsung-kontoen din for å få tilgang til bokmerkene og fanene på de andre enhetene dine."
@@ -1279,9 +1033,6 @@ msgstr "Angi autoutfyllingstekst for webskjema."
 msgid "IDS_BR_BODY_SET_CURRENT_PAGE_AS_HOMEPAGE"
 msgstr "Angi gjeldende side som startside"
 
-msgid "IDS_BR_BODY_SETTINGS"
-msgstr "Innstillinger"
-
 msgid "IDS_BR_BODY_SELECT_FOLDER"
 msgstr "Velg mappe"
 
@@ -1294,9 +1045,6 @@ msgstr "Søkefelt"
 msgid "IDS_BR_BODY_SEARCH_AND_URL_SUGGESTIONS"
 msgstr "Søke- og URL-forslag"
 
-msgid "IDS_BR_BODY_SEARCH"
-msgstr "Søk"
-
 msgid "IDS_BR_BODY_SCREEN_AND_TEXT"
 msgstr "Skjerm og tekst"
 
@@ -1305,9 +1053,6 @@ msgstr "Lagre brukernavn og passord for webområder."
 
 msgid "IDS_BR_BODY_SAVE_LINK"
 msgstr "Lagre kobling"
-
-msgid "IDS_BR_BODY_RSS_SEARCH_RESULTS"
-msgstr "Søkeresultater"
 
 msgid "IDS_BR_BODY_RESTORE_DEFAULT_SETTINGS_Q"
 msgstr "Gjenopprette standardinnstillinger?"
@@ -1342,12 +1087,6 @@ msgstr "Radioknapp"
 msgid "IDS_BR_BODY_PS_BOOKMARK_WILL_BE_DELETED"
 msgstr "Bokmerket %s vil bli slettet."
 
-msgid "IDS_BR_BODY_PROFILE"
-msgstr "Profil"
-
-msgid "IDS_BR_BODY_PROCESSING_ING"
-msgstr "Behandler..."
-
 msgid "IDS_BR_BODY_PRIVACY"
 msgstr "Personvern"
 
@@ -1360,20 +1099,8 @@ msgstr "Trykk på menytasten."
 msgid "IDS_BR_BODY_POSTCODE_ABB"
 msgstr "Postnummer"
 
-msgid "IDS_BR_BODY_PHONE_NUMBER_ABB"
-msgstr "Tel.nummer"
-
-msgid "IDS_BR_BODY_PHONE"
-msgstr "Telefon"
-
 msgid "IDS_BR_BODY_PD_POP_UPS_BLOCKED_ABB"
 msgstr "%d vinduer blokkert."
-
-msgid "IDS_BR_BODY_PD_ITEMS_WILL_BE_DELETED"
-msgstr "%d elementer vil bli slettet."
-
-msgid "IDS_BR_BODY_PASSWORD"
-msgstr "Passord"
 
 msgid "IDS_BR_BODY_PAGE_LOADED_T_TTS"
 msgstr "Side lastet"
@@ -1399,14 +1126,8 @@ msgstr "På anmodning"
 msgid "IDS_BR_BODY_ONLY_VIA_WI_FI_ABB"
 msgstr "Bare via Wi-Fi"
 
-msgid "IDS_BR_BODY_ON"
-msgstr "På"
-
 msgid "IDS_BR_BODY_OLDER"
 msgstr "Eldre"
-
-msgid "IDS_BR_BODY_OFF"
-msgstr "Av"
 
 msgid "IDS_BR_BODY_NO_WINDOWS"
 msgstr "Ingen vinduer"
@@ -1420,17 +1141,8 @@ msgstr "Ingen tittel"
 msgid "IDS_BR_BODY_NO_SAVED_PAGES"
 msgstr "Ingen lagrede sider"
 
-msgid "IDS_BR_BODY_NO_RESULTS_FOUND"
-msgstr "Fant ingen resultater."
-
-msgid "IDS_BR_BODY_NO_HISTORIES"
-msgstr "Ingen logg"
-
 msgid "IDS_BR_BODY_NO_BOOKMARKS"
 msgstr "Ingen bokmerker"
-
-msgid "IDS_BR_BODY_NOTIFICATIONS"
-msgstr "Varsler"
 
 msgid "IDS_BR_BODY_NORMAL"
 msgstr "Normal"
@@ -1446,9 +1158,6 @@ msgstr "Mest besøkte sider"
 
 msgid "IDS_BR_BODY_MOBILE_VIEW"
 msgstr "Mobilvisning"
-
-msgid "IDS_BR_BODY_MEDIUM"
-msgstr "Middels"
 
 msgid "IDS_BR_BODY_LOCATION_M_INFORMATION"
 msgstr "Posisjon"
@@ -1474,9 +1183,6 @@ msgstr "Internett"
 msgid "IDS_BR_BODY_IMPROVE_PERFORMANCE_WHEN_LOADING_PAGES"
 msgstr "Øk ytelsen ved lasting av sider."
 
-msgid "IDS_BR_BODY_IMAGES"
-msgstr "Bilder"
-
 msgid "IDS_BR_BODY_HOMEPAGE"
 msgstr "Startside"
 
@@ -1486,20 +1192,11 @@ msgstr "Skjul adresselinjen når du blar nedover på siden."
 msgid "IDS_BR_BODY_GENERAL_M_SETTINGS"
 msgstr "Generelt"
 
-msgid "IDS_BR_BODY_FULL_SCREEN"
-msgstr "Fullskjerm"
-
 msgid "IDS_BR_BODY_FULL_NAME_ABB"
 msgstr "Fullt navn"
 
 msgid "IDS_BR_BODY_FORCE_ZOOM_ABB"
 msgstr "Tving zoom"
-
-msgid "IDS_BR_BODY_FONT_SIZE"
-msgstr "Skriftstørrelse"
-
-msgid "IDS_BR_BODY_FOLDER_NAME"
-msgstr "Mappenavn"
 
 msgid "IDS_BR_BODY_FLAT_SUITE_UNIT_BUILDING_FLOOR_ETC_ABB"
 msgstr "Leilighet, enhet, bygning, etasje osv"
@@ -1516,24 +1213,6 @@ msgstr "Angi navnet ditt."
 msgid "IDS_BR_BODY_ENTER_TOWN_CITY_COUNTY_ABB"
 msgstr "Angi sted/by/kommune."
 
-msgid "IDS_BR_BODY_ENTER_POSTCODE_ABB"
-msgstr "Angi postnummer."
-
-msgid "IDS_BR_BODY_ENTER_POSTCODE"
-msgstr "Angi postnummer."
-
-msgid "IDS_BR_BODY_ENTER_PHONE_NUMBER"
-msgstr "Oppgi telefonnummer."
-
-msgid "IDS_BR_BODY_ENTER_NAME"
-msgstr "Angi navn."
-
-msgid "IDS_BR_BODY_ENTER_FOLDER_NAME"
-msgstr "Angi mappenavn."
-
-msgid "IDS_BR_BODY_ENTER_EMAIL_ADDRESS"
-msgstr "Angi e-postadresse."
-
 msgid "IDS_BR_BODY_ENTER_COUNTRY_REGION_ABB"
 msgstr "Velg land/område."
 
@@ -1545,12 +1224,6 @@ msgstr "Aktiver posisjon"
 
 msgid "IDS_BR_BODY_ENABLE_JAVASCRIPT"
 msgstr "Aktiver JavaScript"
-
-msgid "IDS_BR_BODY_EMAIL_ADDRESS"
-msgstr "E-postadresse"
-
-msgid "IDS_BR_BODY_DOWNLOADING_ING"
-msgstr "Laster ned..."
 
 msgid "IDS_BR_BODY_DOUBLE_TAP_TO_VIEW_CERTIFICATE_TTS"
 msgstr "Trykk raskt to ganger for å vise sertifikat."
@@ -1591,9 +1264,6 @@ msgstr "Vis sprettoppvinduer med sikkerhetsadvarsler."
 msgid "IDS_BR_BODY_DISPLAY_IMAGES_ON_WEB_PAGES"
 msgstr "Vis bilder på nettsider."
 
-msgid "IDS_BR_BODY_DEVELOPER_MODE"
-msgstr "Utviklermodus"
-
 msgid "IDS_BR_BODY_DESKTOP_VIEW"
 msgstr "Skrivebordsvisning"
 
@@ -1608,9 +1278,6 @@ msgstr "Standard lagringssted"
 
 msgid "IDS_BR_BODY_DEFAULT_PAGE_ABB"
 msgstr "Standardside"
-
-msgid "IDS_BR_BODY_DEFAULT"
-msgstr "Standard"
 
 msgid "IDS_BR_BODY_DATA_USAGE_REDUCED_BY_P1SDP_HP2SD_KB_OF_P3SD_KB_RECEIVED_TAP_HERE_TO_RESET_STATISTICS"
 msgstr "Databruk er redusert med %1$d % (%2$d kB av %3$d kB mottatt). Trykk her for å nullstille statistikk."
@@ -1675,9 +1342,6 @@ msgstr "Endre tekststørrelsen for å gjøre teksten enklere å lese, spesielt n
 msgid "IDS_BR_BODY_BOOKMARK_REMINDER_ABB"
 msgstr "Bokmerkepåminnelse"
 
-msgid "IDS_BR_BODY_BOOKMARKS"
-msgstr "Bokmerker"
-
 msgid "IDS_BR_BODY_BLOCK_POP_UPS_ON_WEB_PAGES"
 msgstr "Blokker sprettoppvinduer på nettsider."
 
@@ -1726,9 +1390,6 @@ msgstr "Tillat %s å vise varsler"
 msgid "IDS_BR_BODY_ALLOWS_SITES_TO_SAVE_AND_READ_COOKIE_DATA"
 msgstr "Tillater områder å lagre og lese data fra informasjonskapsler."
 
-msgid "IDS_BR_BODY_ALL"
-msgstr "Alle"
-
 msgid "IDS_BR_BODY_AFTER_YOU_VISIT_WEBPAGES_THE_PAGES_YOU_HAVE_VISITED_THE_MOST_WILL_BE_SHOWN_HERE"
 msgstr "Når du har besøkt nettsider, vises nettsidene du har besøkt mest, her."
 
@@ -1756,9 +1417,6 @@ msgstr "Avansert"
 msgid "IDS_BR_BODY_ADD_TO_CONTACT"
 msgstr "Legg til kontakt"
 
-msgid "IDS_BR_BODY_ADD_TO"
-msgstr "Legg til i"
-
 msgid "IDS_BR_BODY_ADD_THIS_WEBSITE_TO_BOOKMARKS_TO_OPEN_IT_FASTER_ABB"
 msgstr "Legg til denne siden i Bokmerker for rask åpning."
 
@@ -1768,29 +1426,17 @@ msgstr "Adresselinje 2"
 msgid "IDS_BR_BODY_ADDRESS_LINE_1_ABB"
 msgstr "Adresselinje 1"
 
-msgid "IDS_BR_BODY_ADDDETAILSVIEW_TAGS"
-msgstr "Tagger"
-
-msgid "IDS_BR_BODY_ADDBOOKMARKURL"
-msgstr "URL"
-
 msgid "IDS_BR_BODY_ACCEPT_COOKIES"
 msgstr "Godta informasjonskapsler"
 
 msgid "IDS_BR_BODY_1_PROFILE_WILL_BE_DELETED"
 msgstr "1 profil vil bli slettet."
 
-msgid "IDS_BR_BODY_1_ITEM_WILL_BE_DELETED"
-msgstr "1 element vil bli slettet."
-
 msgid "IDS_BR_ACBUTTON_TABS_ABB"
 msgstr "FANER"
 
 msgid "IDS_BR_TPOP_STARTING_DOWNLOAD_ING"
 msgstr "Starter nedlasting..."
-
-msgid "IDS_BR_TPOP_MAXIMUM_NUMBER_OF_CHARACTERS_HPD_REACHED"
-msgstr "Maksimalt antall tegn (%d) er nådd."
 
 msgid "IDS_BR_TPOP_FOLDER_RENAMED"
 msgstr "Endret navn på mappe."
@@ -1807,14 +1453,8 @@ msgstr "Avbryt"
 msgid "IDS_BR_SBODY_SET_THE_DEVICE_TO_SHOW_THE_FULL_WEBPAGE_ON_THE_SCREEN_WHEN_IT_IS_LOADED_WITHOUT_NEEDING_TO_SCROLL"
 msgstr "Angi at enheten skal vise hele nettsiden på skjermen når den er lastet, uten at du trenger å bla."
 
-msgid "IDS_BR_POP_UNSUPPORTMEDIATYPE"
-msgstr "Medietypen støttes ikke."
-
 msgid "IDS_BR_POP_UNABLE_TO_RUN_INTERNET_LOW_BATTERY"
 msgstr "Kan ikke kjøre Internett. Lavt batteri."
-
-msgid "IDS_BR_POP_UNABLE_TO_CONNECT_TO_MOBILE_NETWORKS_WHILE_FLIGHT_MODE_IS_ENABLED_CONNECT_TO_WI_FI_NETWORK_INSTEAD_OR_DISABLE_FLIGHT_MODE_AND_TRY_AGAIN"
-msgstr "Kan ikke koble til mobilnett mens Flymodus er aktivert. Koble til Wi-Fi-nettverk i stedet, eller deaktiver Flymodus og prøv på nytt."
 
 msgid "IDS_BR_POP_THE_DOWNLOAD_HAS_BEEN_STOPPED_AND_THE_DOWNLOADED_DATA_WILL_BE_DELETED"
 msgstr "Nedlastingen er blitt stoppet, og nedlastede data blir slettet."
@@ -1825,20 +1465,8 @@ msgstr "Search completed"
 msgid "IDS_BR_POP_READY"
 msgstr "Klar."
 
-msgid "IDS_BR_POP_INSTALL_SUCCESS"
-msgstr "Installasjon fullført."
-
-msgid "IDS_BR_POP_INSTALLATION_FAILED"
-msgstr "Installasjonen mislyktes."
-
 msgid "IDS_BR_POP_INFORM_MEMORY_ERROR"
 msgstr "Minnefeil."
-
-msgid "IDS_BR_POP_DELETING_ING"
-msgstr "Sletter..."
-
-msgid "IDS_BR_POP_DATA_ROAMING_IS_DISABLED_CONNECT_TO_WI_FI_NETWORK_INSTEAD_OR_ENABLE_DATA_ROAMING_AND_TRY_AGAIN"
-msgstr "Dataroaming er deaktivert. Koble til Wi-Fi-nettverk i stedet, eller aktiver dataroaming og prøv på nytt."
 
 msgid "IDS_BR_POP_DATA_ROAMING_IS_DISABLED_CONNECT_TO_A_WI_FI_NETWORK_OR_ENABLE_DATA_ROAMING_AND_TRY_AGAIN"
 msgstr "Dataroaming er deaktivert. Koble til et Wi-Fi-nettverk i stedet, eller aktiver Dataroaming og prøv på nytt."
@@ -1855,17 +1483,11 @@ msgstr "Nettapper"
 msgid "IDS_BR_OPT_VIEW_ONLINE"
 msgstr "Vis online"
 
-msgid "IDS_BR_OPT_SHARE_VIA"
-msgstr "Del via"
-
 msgid "IDS_BR_OPT_READ_ON_OFFLINE_PAGES_LATER_ABB"
 msgstr "Les på frakoblede sider senere"
 
 msgid "IDS_BR_OPT_QUICK_ACCESS_ABB2"
 msgstr "Hurtigtilgang"
-
-msgid "IDS_BR_OPT_PASTE"
-msgstr "Lim inn"
 
 msgid "IDS_BR_OPT_ALWAYS_ENABLED_ABB"
 msgstr "Alltid aktivert"
@@ -1891,9 +1513,6 @@ msgstr "Søke- og URL-forslag"
 msgid "IDS_BR_MBODY_HISTORY"
 msgstr "Logg"
 
-msgid "IDS_BR_MBODY_FONT_SIZE"
-msgstr "Skriftstørrelse"
-
 msgid "IDS_BR_MBODY_FIT_PAGE_TO_SCREEN"
 msgstr "Tilpass side til skjerm"
 
@@ -1905,9 +1524,6 @@ msgstr "Egendefinert"
 
 msgid "IDS_BR_MBODY_COUNTRY_REGION"
 msgstr "Land/område"
-
-msgid "IDS_BR_HEADER_UNABLE_TO_DOWNLOAD_ABB"
-msgstr "Kan ikke laste ned"
 
 msgid "IDS_BR_HEADER_RENAME_FOLDER_ABB"
 msgstr "Endre navn på mappe"
@@ -1939,14 +1555,8 @@ msgstr "Tilføy info"
 msgid "IDS_BR_BUTTON_WI_FI_ABB"
 msgstr "Wi-Fi"
 
-msgid "IDS_BR_BUTTON_UPDATE"
-msgstr "Oppdater"
-
 msgid "IDS_BR_BUTTON_SETTINGS_ABB"
 msgstr "Innst."
-
-msgid "IDS_BR_BUTTON_RETRY"
-msgstr "Prøv igjen"
 
 msgid "IDS_BR_BUTTON2_OK"
 msgstr "OK"
@@ -1972,9 +1582,6 @@ msgstr "Dette sertifikatet er fra en godkjent instans."
 msgid "IDS_BR_BODY_TAP_HERE_TO_ADD_A_QUICK_ACCESS_SHORTCUT"
 msgstr "Trykk her for å legge til en hurtigtilgangssnarvei."
 
-msgid "IDS_BR_BODY_REQUEST_FAILED"
-msgstr "Forespørsel mislyktes."
-
 msgid "IDS_BR_BODY_PREFERENCES"
 msgstr "Preferanser"
 
@@ -1990,14 +1597,398 @@ msgstr "Ingen treff"
 msgid "IDS_BR_BODY_MOBILE_DATA_IS_TURNED_OFF_CONNECT_TO_A_WI_FI_NETWORK_INSTEAD_OR_TAP_SETTINGS_TO_TURN_ON_MOBILE_DATA_AND_THEN_TRY_AGAIN"
 msgstr "Mobildata er slått av. Koble til et Wi-Fi-nettverk i stedet, eller trykk på Innstillinger for å slå på Mobildata og prøv på nytt."
 
+msgid "IDS_BR_BODY_FIT_TO_WIDTH"
+msgstr "Tilpass til bredde"
+
+msgid "IDS_BR_ACBUTTON_QUICK_ACCESS"
+msgstr "HURTIGTILG."
+
+msgid "IDS_BR_OPT_OPEN_IN_NEW_TAB"
+msgstr "Åpne i ny fane"
+
+msgid "IDS_BR_BODY_SHARE_LINK"
+msgstr "Del kobling"
+
+msgid "IDS_BR_SK_SAVE_LITE"
+msgstr "Lagre"
+
+msgid "IDS_BR_SK_SAVE_ABB"
+msgstr "Lagre"
+
+msgid "IDS_BR_SK_SAVE"
+msgstr "Lagre"
+
+msgid "IDS_BR_SK_PREVIOUS"
+msgstr "Forrige"
+
+msgid "IDS_BR_SK_NEXT"
+msgstr "Neste"
+
+msgid "IDS_BR_SK_DELETE"
+msgstr "Slett"
+
+msgid "IDS_BR_SK_CLEAR"
+msgstr "Slett"
+
+msgid "IDS_BR_SK_BACK"
+msgstr "Tilbake"
+
+msgid "IDS_BR_POP_WI_FI_CONNECTION_REQUIRED_CONNECT_TO_WI_FI_NETWORK_AND_TRY_AGAIN"
+msgstr "Wi-Fi-tilkobling nødvendig. Koble til Wi-Fi-nettverk og prøv på nytt."
+
+msgid "IDS_BR_POP_URL_NOT_FOUND"
+msgstr "URL ikke funnet."
+
+msgid "IDS_BR_POP_URL"
+msgstr "URL"
+
+msgid "IDS_BR_POP_SAVED"
+msgstr "Lagret."
+
+msgid "IDS_BR_POP_REMOVED"
+msgstr "Fjernet."
+
+msgid "IDS_BR_POP_PD_ITEMS_WILL_BE_DELETED"
+msgstr "%d elementer vil bli slettet."
+
+msgid "IDS_BR_POP_PD_ITEMS_SELECTED"
+msgstr "%d elementer valgt."
+
+msgid "IDS_BR_POP_NO_ITEMS_SELECTED"
+msgstr "Det er ikke valgt noen elementer."
+
+msgid "IDS_BR_POP_NOT_ENOUGH_MEMORY"
+msgstr "Ikke nok minne."
+
+msgid "IDS_BR_POP_NEVER"
+msgstr "Aldri"
+
+msgid "IDS_BR_POP_MOBILE_DATA_IS_DISABLED_CONNECT_TO_WI_FI_NETWORK_INSTEAD_OR_ENABLE_MOBILE_DATA_AND_TRY_AGAIN"
+msgstr "Mobildata er deaktivert. Koble til Wi-Fi-nettverk i stedet, eller aktiver mobildata og prøv på nytt."
+
+msgid "IDS_BR_POP_LOADING_PLEASE_WAIT_ING"
+msgstr "Åpner. Vennligst vent..."
+
+msgid "IDS_BR_POP_INVALID_URL"
+msgstr "Ugyldig URL."
+
+msgid "IDS_BR_POP_FAIL"
+msgstr "Det oppstod en feil."
+
+msgid "IDS_BR_POP_ENTER_TITLE_ABB"
+msgstr "Angi tittel"
+
+msgid "IDS_BR_POP_DO_NOT_SHOW_AGAIN"
+msgstr "Ikke vis igjen"
+
+msgid "IDS_BR_POP_DOWNLOADCOMPLETE"
+msgstr "Nedlasting fullført."
+
+msgid "IDS_BR_POP_DISABLED"
+msgstr "Deaktivert"
+
+msgid "IDS_BR_POP_DELETE_Q"
+msgstr "Slette?"
+
+msgid "IDS_BR_POP_DELETED"
+msgstr "Slettet."
+
+msgid "IDS_BR_POP_CLOSE_APPLICATION_Q"
+msgstr "Lukke app?"
+
+msgid "IDS_BR_POP_BOOKMARK_ADDED"
+msgstr "Bokmerke lagt til."
+
+msgid "IDS_BR_POP_AUTOMATIC_BRIGHTNESS"
+msgstr "Automatisk lysstyrke"
+
+msgid "IDS_BR_POP_ACCOUNT"
+msgstr "Konto"
+
+msgid "IDS_BR_POP_1_ITEM_WILL_BE_DELETED"
+msgstr "1 element vil bli slettet."
+
+msgid "IDS_BR_POP_1_ITEM_SELECTED"
+msgstr "1 element valgt."
+
+msgid "IDS_BR_OPT_TRANSLATE"
+msgstr "Oversett"
+
+msgid "IDS_BR_OPT_STOP"
+msgstr "Stopp"
+
+msgid "IDS_BR_OPT_SHOW"
+msgstr "Vis"
+
+msgid "IDS_BR_OPT_SHARE"
+msgstr "Del"
+
+msgid "IDS_BR_OPT_SETTINGS"
+msgstr "Innstillinger"
+
+msgid "IDS_BR_OPT_SEND_EMAIL"
+msgstr "Send e-post"
+
+msgid "IDS_BR_OPT_SELECT"
+msgstr "Velg"
+
+msgid "IDS_BR_OPT_SD_CARD"
+msgstr "SD-kort"
+
+msgid "IDS_BR_OPT_RENAME"
+msgstr "Endre navn"
+
+msgid "IDS_BR_OPT_REFRESH"
+msgstr "Oppdater"
+
+msgid "IDS_BR_OPT_MOVE"
+msgstr "Flytt"
+
+msgid "IDS_BR_OPT_MESSAGES"
+msgstr "Meldinger"
+
+msgid "IDS_BR_OPT_LIST_VIEW"
+msgstr "Listevisning"
+
+msgid "IDS_BR_OPT_I_AGREE"
+msgstr "Jeg godtar."
+
+msgid "IDS_BR_OPT_HELP"
+msgstr "Hjelp"
+
+msgid "IDS_BR_OPT_DEVICE"
+msgstr "Enhet"
+
+msgid "IDS_BR_OPT_BOOKMARK"
+msgstr "Bokmerke"
+
+msgid "IDS_BR_OPT_ADDED"
+msgstr "Lagt til."
+
+msgid "IDS_BR_OPT_ADD"
+msgstr "Legg til"
+
+msgid "IDS_BR_MBODY_DEFAULT_DOWNLOAD_STORAGE"
+msgstr "Standard nedlastingslagr."
+
+msgid "IDS_BR_HEADER_SIGN_IN_TO_SAMSUNG_ACCOUNT"
+msgstr "Logg på Samsung-kontoen din"
+
+msgid "IDS_BR_HEADER_PD_SELECTED_ABB"
+msgstr "%d er valgt"
+
+msgid "IDS_BR_HEADER_NO_NETWORK_CONNECTION"
+msgstr "Ingen nettverksforbindelse"
+
+msgid "IDS_BR_HEADER_FOLDER"
+msgstr "Mappe"
+
+msgid "IDS_BR_HEADER_EDIT_PROFILE"
+msgstr "Rediger profil"
+
+msgid "IDS_BR_BUTTON_SET"
+msgstr "Angi"
+
+msgid "IDS_BR_BUTTON_NOT_NOW"
+msgstr "Ikke nå"
+
+msgid "IDS_BR_BUTTON_ENABLE_ABB"
+msgstr "Aktiver"
+
+msgid "IDS_BR_BUTTON_EDIT"
+msgstr "Rediger"
+
+msgid "IDS_BR_BUTTON_CONTINUE_ABB"
+msgstr "Fortsett"
+
+msgid "IDS_BR_BUTTON_CONTINUE"
+msgstr "Fortsett"
+
+msgid "IDS_BR_BUTTON_CLOSE"
+msgstr "Lukk"
+
+msgid "IDS_BR_BUTTON_CANCEL_ABB"
+msgstr "Avbryt"
+
+msgid "IDS_BR_BUTTON_CANCEL"
+msgstr "Avbryt"
+
+msgid "IDS_BR_BUTTON_ALLOW"
+msgstr "Tillat"
+
+msgid "IDS_BR_BODY_YESTERDAY"
+msgstr "I går"
+
+msgid "IDS_BR_BODY_URL"
+msgstr "URL"
+
+msgid "IDS_BR_BODY_TODAY"
+msgstr "I dag"
+
+msgid "IDS_BR_BODY_TITLE"
+msgstr "Tittel"
+
+msgid "IDS_BR_BODY_THE_MAXIMUM_NUMBER_OF_CHARACTERS_HPD_HAS_BEEN_EXCEEDED"
+msgstr "Det maksimale antallet tegn (%d) er oversteget."
+
+msgid "IDS_BR_BODY_STREAMING"
+msgstr "Direkteavspilling"
+
+msgid "IDS_BR_BODY_SMALL"
+msgstr "Liten"
+
+msgid "IDS_BR_BODY_SETTINGS"
+msgstr "Innstillinger"
+
+msgid "IDS_BR_BODY_SEARCH"
+msgstr "Søk"
+
+msgid "IDS_BR_BODY_RSS_SEARCH_RESULTS"
+msgstr "Søkeresultater"
+
+msgid "IDS_BR_BODY_PROFILE"
+msgstr "Profil"
+
+msgid "IDS_BR_BODY_PROCESSING_ING"
+msgstr "Behandler..."
+
+msgid "IDS_BR_BODY_PHONE_NUMBER_ABB"
+msgstr "Tel.nummer"
+
+msgid "IDS_BR_BODY_PHONE"
+msgstr "Telefon"
+
+msgid "IDS_BR_BODY_PD_ITEMS_WILL_BE_DELETED"
+msgstr "%d elementer vil bli slettet."
+
+msgid "IDS_BR_BODY_PASSWORD"
+msgstr "Passord"
+
+msgid "IDS_BR_BODY_ON"
+msgstr "På"
+
+msgid "IDS_BR_BODY_OFF"
+msgstr "Av"
+
+msgid "IDS_BR_BODY_NO_RESULTS_FOUND"
+msgstr "Fant ingen resultater."
+
+msgid "IDS_BR_BODY_NO_HISTORIES"
+msgstr "Ingen logg"
+
+msgid "IDS_BR_BODY_NOTIFICATIONS"
+msgstr "Varsler"
+
+msgid "IDS_BR_BODY_MEDIUM"
+msgstr "Middels"
+
+msgid "IDS_BR_BODY_IMAGES"
+msgstr "Bilder"
+
+msgid "IDS_BR_BODY_FULL_SCREEN"
+msgstr "Fullskjerm"
+
+msgid "IDS_BR_BODY_FONT_SIZE"
+msgstr "Skriftstørrelse"
+
+msgid "IDS_BR_BODY_FOLDER_NAME"
+msgstr "Mappenavn"
+
+msgid "IDS_BR_BODY_ENTER_POSTCODE_ABB"
+msgstr "Angi postnummer."
+
+msgid "IDS_BR_BODY_ENTER_POSTCODE"
+msgstr "Angi postnummer."
+
+msgid "IDS_BR_BODY_ENTER_PHONE_NUMBER"
+msgstr "Oppgi telefonnummer."
+
+msgid "IDS_BR_BODY_ENTER_NAME"
+msgstr "Angi navn."
+
+msgid "IDS_BR_BODY_ENTER_FOLDER_NAME"
+msgstr "Angi mappenavn."
+
+msgid "IDS_BR_BODY_ENTER_EMAIL_ADDRESS"
+msgstr "Angi e-postadresse."
+
+msgid "IDS_BR_BODY_EMAIL_ADDRESS"
+msgstr "E-postadresse"
+
+msgid "IDS_BR_BODY_DOWNLOADING_ING"
+msgstr "Laster ned..."
+
+msgid "IDS_BR_BODY_DEVELOPER_MODE"
+msgstr "Utviklermodus"
+
+msgid "IDS_BR_BODY_DEFAULT"
+msgstr "Standard"
+
+msgid "IDS_BR_BODY_BOOKMARKS"
+msgstr "Bokmerker"
+
+msgid "IDS_BR_BODY_ALL"
+msgstr "Alle"
+
+msgid "IDS_BR_BODY_ADD_TO"
+msgstr "Legg til i"
+
+msgid "IDS_BR_BODY_ADDDETAILSVIEW_TAGS"
+msgstr "Tagger"
+
+msgid "IDS_BR_BODY_ADDBOOKMARKURL"
+msgstr "URL"
+
+msgid "IDS_BR_BODY_1_ITEM_WILL_BE_DELETED"
+msgstr "1 element vil bli slettet."
+
+msgid "IDS_BR_TPOP_MAXIMUM_NUMBER_OF_CHARACTERS_HPD_REACHED"
+msgstr "Maksimalt antall tegn (%d) er nådd."
+
+msgid "IDS_BR_POP_UNSUPPORTMEDIATYPE"
+msgstr "Medietypen støttes ikke."
+
+msgid "IDS_BR_POP_UNABLE_TO_CONNECT_TO_MOBILE_NETWORKS_WHILE_FLIGHT_MODE_IS_ENABLED_CONNECT_TO_WI_FI_NETWORK_INSTEAD_OR_DISABLE_FLIGHT_MODE_AND_TRY_AGAIN"
+msgstr "Kan ikke koble til mobilnett mens Flymodus er aktivert. Koble til Wi-Fi-nettverk i stedet, eller deaktiver Flymodus og prøv på nytt."
+
+msgid "IDS_BR_POP_INSTALL_SUCCESS"
+msgstr "Installasjon fullført."
+
+msgid "IDS_BR_POP_INSTALLATION_FAILED"
+msgstr "Installasjonen mislyktes."
+
+msgid "IDS_BR_POP_DELETING_ING"
+msgstr "Sletter..."
+
+msgid "IDS_BR_POP_DATA_ROAMING_IS_DISABLED_CONNECT_TO_WI_FI_NETWORK_INSTEAD_OR_ENABLE_DATA_ROAMING_AND_TRY_AGAIN"
+msgstr "Dataroaming er deaktivert. Koble til Wi-Fi-nettverk i stedet, eller aktiver dataroaming og prøv på nytt."
+
+msgid "IDS_BR_OPT_SHARE_VIA"
+msgstr "Del via"
+
+msgid "IDS_BR_OPT_PASTE"
+msgstr "Lim inn"
+
+msgid "IDS_BR_MBODY_FONT_SIZE"
+msgstr "Skriftstørrelse"
+
+msgid "IDS_BR_HEADER_UNABLE_TO_DOWNLOAD_ABB"
+msgstr "Kan ikke laste ned"
+
+msgid "IDS_BR_BUTTON_UPDATE"
+msgstr "Oppdater"
+
+msgid "IDS_BR_BUTTON_RETRY"
+msgstr "Prøv igjen"
+
+msgid "IDS_BR_BODY_REQUEST_FAILED"
+msgstr "Forespørsel mislyktes."
+
 msgid "IDS_BR_BODY_LOGIN"
 msgstr "Logg inn"
 
 msgid "IDS_BR_BODY_LOADING_ING"
 msgstr "Åpner..."
-
-msgid "IDS_BR_BODY_FIT_TO_WIDTH"
-msgstr "Tilpass til bredde"
 
 msgid "IDS_BR_BODY_FIT_TO_SCREEN"
 msgstr "Tilpass til skjerm"
@@ -2008,12 +1999,180 @@ msgstr "Nedlastinger"
 msgid "IDS_BR_BODY_DATA_ROAMING_IS_DISABLED_CONNECT_TO_A_WI_FI_NETWORK_INSTEAD_OR_ENABLE_DATA_ROAMING_AND_TRY_AGAIN"
 msgstr "Dataroaming er deaktivert. Koble til et Wi-Fi-nettverk i stedet, eller aktiver dataroaming og prøv på nytt."
 
-msgid "IDS_BR_ACBUTTON_QUICK_ACCESS"
-msgstr "HURTIGTILG."
+msgid "IDS_BR_POP_DOWNLOAD_CANCELLED"
+msgstr "Nedlasting avbrutt."
 
-msgid "IDS_ST_POP_SOME_CONTENT_HAS_BEEN_BLOCKED_TO_PROTECT_YOUR_DEVICE"
-msgstr "Noe av innholdet har blitt blokkert for å beskytte enheten."
+msgid "IDS_BR_BUTTON_SECRET_ON_ABB"
+msgstr "Hemmelig på"
 
-msgid "IDS_ST_POP_SELECT_WHETHER_TO_GO_TO_THE_WEBPAGE_ANYWAY"
-msgstr "Velg om du vil gå til nettsiden likevel."
+msgid "IDS_BR_MBODY_PRIVACY"
+msgstr "Personvern"
+
+msgid "IDS_BR_MBODY_DEFAULT_STORAGE"
+msgstr "Standard lagringssted"
+
+msgid "IDS_BR_MBODY_MANUAL_ZOOM"
+msgstr "Manuell zoom"
+
+msgid "IDS_BR_TMBODY_DEFAULT_SEARCH_ENGINE"
+msgstr "Standard søkemotor"
+
+msgid "IDS_BR_MBODY_SAVE_SIGN_IN_INFO"
+msgstr "Lagre påloggingsoppl."
+
+msgid "IDS_BR_OPT_TURN_OFF_SECRET_MODE_ABB"
+msgstr "Slå av Hemmelig modus"
+
+msgid "IDS_BR_OPT_TURN_ON_SECRET_MODE_ABB"
+msgstr "Slå på Hemmelig modus"
+
+msgid "IDS_BR_OPT_SHOW_PASSWORD_ABB2"
+msgstr "Vis passord"
+
+msgid "IDS_BR_BODY_ENTER_YOUR_CURRENT_SECRET_MODE_PASSWORD"
+msgstr "Angi gjeldende passord for Hemmelig modus."
+
+msgid "IDS_BR_OPT_SECRET_MODE_SECURITY_ABB"
+msgstr "Hemmelig modus-sikkerhet"
+
+msgid "IDS_BR_BUTTON_USE_PASSWORD_ABB"
+msgstr "Bruk passord"
+
+msgid "IDS_BR_HEADER_DONT_USE_PASSWORD_ABB"
+msgstr "Ikke bruk passord"
+
+msgid "IDS_BR_MBODY_MOST_VISITED_WEBSITES"
+msgstr "Mest besøkte nettsteder"
+
+msgid "IDS_BR_MBODY_SET_MY_PROFILE"
+msgstr "Angi min profil"
+
+msgid "IDS_BR_MBODY_MY_AUTO_FILL_PROFILE"
+msgstr "Min autoutfyllingsprofil"
+
+msgid "IDS_BR_SBODY_MANAGE_DATA_USED_TO_FILL_IN_FORMS_ONLINE"
+msgstr "Administrer data som brukes for å fylle ut nettskjemaer."
+
+msgid "IDS_BR_MBODY_SAVE_SIGN_IN_INFO_ABB"
+msgstr "Lagre pålogg.det."
+
+msgid "IDS_BR_OPT_LOCATION_ACCESS_DATA"
+msgstr "Posisjonstilgangsdata"
+
+msgid "IDS_BR_OPT_AUTO_FILL_DATA"
+msgstr "Autoutfylling av data"
+
+msgid "IDS_BR_BODY_ANY_WEBPAGES_YOU_VIEW_WHILE_SECRET_MODE_IS_TURNED_ON_WONT_APPEAR_IN_YOUR_BROWSER_OR_SEARCH_HISTORY_MSG"
+msgstr "Alle nettsidene du viser når Hemmelig modus er slått på, vises ikke i nettleser- eller søkehistorikken når den er slått av.\n\nAlle bokmerker og nettsider du lagrer når Hemmelig modus er slått på, vises ikke når den er slått av.\n\nDu kan også beskytte Hemmelig modus-dataene med et passord."
+
+msgid "IDS_BR_BODY_ANY_WEBPAGES_YOU_VIEW_WHILE_SECRET_MODE_IS_TURNED_ON_WONT_APPEAR_IN_YOUR_BROWSER_OR_SEARCH_MSG"
+msgstr "Alle nettsidene du viser når Hemmelig modus er slått på, vises ikke i nettleser- eller søkehistorikken når modusen er slått av.\n\nAlle bokmerker og nettsider du lagrer når Hemmelig modus er slått på, vises ikke når modusen er slått av."
+
+msgid "IDS_BR_BUTTON_SECRET_OFF_ABB"
+msgstr "Hemmelig av"
+
+msgid "IDS_BR_BUTTON_DONT_USE_PASSWORD_ABB"
+msgstr "Ikke bruk passord"
+
+msgid "IDS_BR_BUTTON_NEW_TAB_ABB2"
+msgstr "Ny fane"
+
+msgid "IDS_BR_NPBODY_WEB_ADDRESS_ABB"
+msgstr "Nettadresse"
+
+msgid "IDS_BR_HEADER_ADD_WEBPAGE_TO_QUICK_ACCESS_ABB"
+msgstr "Legg til nettside i Hurtigtilgang"
+
+msgid "IDS_BR_TMBODY_TURN_ON_JAVASCRIPT"
+msgstr "Slå på JavaScript"
+
+msgid "IDS_BR_HEADER_COULDNT_OPEN_NEW_TAB_ABB"
+msgstr "Kunne ikke åpne ny fane"
+
+msgid "IDS_BR_OPT_OPEN_IN_NEW_TAB_ABB"
+msgstr "Åpne i ny fane"
+
+msgid "IDS_BR_TPOP_FOLDER_NAME_ALREADY_IN_USE"
+msgstr "Mappenavnet er allerede i bruk."
+
+msgid "IDS_BR_NPBODY_NEW_FOLDER_PD"
+msgstr "Ny mappe %d"
+
+msgid "IDS_BR_NPBODY_NEW_FOLDER"
+msgstr "Ny mappe"
+
+msgid "IDS_BR_OPT_ENABLE_JAVASCRIPT"
+msgstr "Aktiver JavaScript"
+
+msgid "IDS_BR_TMBODY_MANAGE_WEBSITE_DATA"
+msgstr "Administrer nettstedsdata"
+
+msgid "IDS_BR_HEADER_SET_HOME_PAGE_ABB"
+msgstr "Angi hjemmeside"
+
+msgid "IDS_BR_TPOP_WEBPAGE_ADDED_TO_QUICK_ACCESS_LIST"
+msgstr "Nettside er lagt til på Hurtigtilgang-listen."
+
+msgid "IDS_BR_OPT_EDIT_QUICK_ACCESS_ABB"
+msgstr "Rediger Hurtigtilgang"
+
+msgid "IDS_BR_OPT_REMOVE_FROM_BOOKMARKS_ABB"
+msgstr "Fjern fra bokmerker"
+
+msgid "IDS_BR_HEADER_ADD_BOOKMARK_ABB"
+msgstr "Legg til bokmerke"
+
+msgid "IDS_BR_BODY_BROWSING_HISTORY"
+msgstr "Søkehistorikk"
+
+msgid "IDS_BR_HEADER_TABS_ABB2"
+msgstr "Faner"
+
+msgid "IDS_BR_OPT_NEW_TAB"
+msgstr "Ny fane"
+
+msgid "IDS_BR_BUTTON_FORWARD_ABB2"
+msgstr "Vid.snd"
+
+msgid "IDS_BR_BUTTON_BACK_ABB3"
+msgstr "Tilbake"
+
+msgid "IDS_BR_BUTTON_BOOKMARKS_ABB"
+msgstr "Bokmerker"
+
+msgid "IDS_BR_NPBODY_NO_PROFILES_ABB"
+msgstr "Ingen profiler"
+
+msgid "IDS_BR_TAB2_HISTORY"
+msgstr "Logg"
+
+msgid "IDS_BR_TAB2_BOOKMARKS"
+msgstr "Bokmerker"
+
+msgid "IDS_BR_HEADER_SAVE_CONTENT_TO_ABB"
+msgstr "Lagre innhold til"
+
+msgid "IDS_BR_HEADER_SELECT_ITEMS_ABB2"
+msgstr "Velg elementer"
+
+msgid "IDS_BR_BODY_YOUR_PASSWORD_MUST_CONTAIN_AT_LEAST_PD_CHARACTERS_INCLUDING_AT_LEAST_1_LETTER"
+msgstr "Passordet må inneholde minst %d tegn, inkludert minst 1 bokstav."
+
+msgid "IDS_BR_BODY_AN_INCORRECT_PASSWORD_HAS_BEEN_ENTERED_TRY_AGAIN"
+msgstr "Det er angitt feil passord. Prøv på nytt."
+
+msgid "IDS_BR_BODY_NO_TABS"
+msgstr "Ingen faner"
+
+msgid "IDS_BR_TMBODY_CHANGE_PASSWORD"
+msgstr "Endre passord"
+
+msgid "IDS_BR_BODY_ANY_WEBPAGES_VIEWED_WHILE_SECRET_MODE_IS_ENABLED_WILL_NOT_APPEAR_IN_YOUR_BROWSER_OR_SEARCH_HISTORY_WHILE_SECRET_MSG"
+msgstr "Alle nettsider du viser når Hemmelig modus er aktivert, vises ikke i nettleser- eller søkehistorikken når Hemmelig modus er deaktivert.\n\nAlle bokmerker og nettsider som lagres når Hemmelig modus er aktivert, vises ikke når den er deaktivert.\n\nDu kan også beskytte Hemmelig modus-dataene med et passord."
+
+msgid "IDS_BR_BODY_ANY_WEBPAGES_VIEWED_WHILE_SECRET_MODE_IS_ENABLED_WILL_NOT_APPEAR_IN_YOUR_MSG"
+msgstr "Alle nettsider du viser når Hemmelig modus er aktivert, vises ikke i nettleser- eller søkehistorikken når Hemmelig modus er deaktivert.\n\nAlle bokmerker og nettsider som lagres når Hemmelig modus er aktivert, vises ikke når den er deaktivert."
+
+msgid "IDS_BR_BUTTON2_DONE"
+msgstr "Utført"
 

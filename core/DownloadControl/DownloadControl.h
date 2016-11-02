@@ -25,11 +25,15 @@
 #include <Ecore.h>
 #include <Eina.h>
 #include <Elementary.h>
-#include "BrowserLogger.h"
 #include <glib.h>
+
+#include "BrowserLogger.h"
 
 #define unit_size 1024
 #define default_device_storage_path "/home/owner/content/Downloads/"
+//TODO Currently cannot save content on sd card. Check if it is correct path
+//or the problem is with the download provider
+#define defualt_sd_card_storage_path "/opt/storage/sdcard/Downloads/"
 
 #define CALLBACK_DATA_0 "cb0"
 #define CALLBACK_DATA_1 "cb1"
@@ -119,6 +123,7 @@ private:
 
     Evas_Object *brui_popup_add(Evas_Object *parent);
     void show_noti_popup(const char *msg);
+    const char* getStorageType();
 
     std::string m_download_uri;
     Evas_Object *m_parent;

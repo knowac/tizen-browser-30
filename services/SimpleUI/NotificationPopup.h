@@ -32,6 +32,7 @@ public:
     NotificationPopup();
     static NotificationPopup *createNotificationPopup(Evas_Object *parent);
     void show(const std::string &message, bool progressVisible = true);
+    void show(const std::string &message, const std::string &message_add, bool progressVisible = true);
     void dismiss();
     static Eina_Bool _hide_cb(void *data);
 

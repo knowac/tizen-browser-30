@@ -1,107 +1,171 @@
-#define URI_LENGTH 1720
-#define URI_LENGTH_SHORT 1460
-#define URI_WIDTH 82
+#define URI_HEIGHT 80
+#define URI_BG_HEIGHT 108
+#define ADD_TAB_WIDTH 100
+#define ADD_TAB_HEIGHT 106
+#define BOTTOM_TOOLBAR_HEIGHT 96
+#define FINDONPAGE_HEIGHT 104
+#define FINDONPAGE_WIDTH 720
+#define SPACER_SIZE 16
 #include "../../../core/Tools/edc/Spacer.edc"
-#define DEBUG_RECT_OVER(over_part, r, g, b)                         \
-    part { name: __CONCAT("dbg_rect_at_", __stringify(__LINE__));   \
-                                                                    \
-scale:1;                                                            \
-        type : RECT;                                                \
-        repeat_events: 1;                                           \
-        description {                                               \
-            state: "default" 0.0;                                   \
-            visible: 1;                                             \
-            color: r g b 255;                                 \
-            rel1 { to: over_part; relative: 0 0; }                  \
-            rel2 { to: over_part; relative: 1 1; }                  \
-        }                                                           \
+#include "../../../core/Tools/edc/ColorClasses.edc"
+
+#define PROGRESS_DESCRIPTIONS\
+    PROGRESS_DESCRIPTION(0.00)\
+    PROGRESS_DESCRIPTION(0.05)\
+    PROGRESS_DESCRIPTION(0.10)\
+    PROGRESS_DESCRIPTION(0.15)\
+    PROGRESS_DESCRIPTION(0.20)\
+    PROGRESS_DESCRIPTION(0.25)\
+    PROGRESS_DESCRIPTION(0.30)\
+    PROGRESS_DESCRIPTION(0.35)\
+    PROGRESS_DESCRIPTION(0.40)\
+    PROGRESS_DESCRIPTION(0.45)\
+    PROGRESS_DESCRIPTION(0.50)\
+    PROGRESS_DESCRIPTION(0.55)\
+    PROGRESS_DESCRIPTION(0.60)\
+    PROGRESS_DESCRIPTION(0.65)\
+    PROGRESS_DESCRIPTION(0.70)\
+    PROGRESS_DESCRIPTION(0.75)\
+    PROGRESS_DESCRIPTION(0.80)\
+    PROGRESS_DESCRIPTION(0.85)\
+    PROGRESS_DESCRIPTION(0.90)\
+    PROGRESS_DESCRIPTION(0.95)\
+    PROGRESS_DESCRIPTION(1.00)
+
+#define PROGRESS_DESCRIPTION(RATE)\
+    description { state: "progress" RATE;\
+        inherit: "default" 0.0;\
+        visible: 1;\
+        rel1 { relative: 0.0 0.0; to: "progressbar_bg"; }\
+        rel2 { relative: RATE 1.0; to: "progressbar_bg"; }\
     }
-collections { base_scale: 2.0;
+
+#define PROGRESS_PROGRAMS\
+    PROGRESS_PROGRAM(0.10)\
+    PROGRESS_PROGRAM(0.15)\
+    PROGRESS_PROGRAM(0.20)\
+    PROGRESS_PROGRAM(0.25)\
+    PROGRESS_PROGRAM(0.30)\
+    PROGRESS_PROGRAM(0.35)\
+    PROGRESS_PROGRAM(0.40)\
+    PROGRESS_PROGRAM(0.45)\
+    PROGRESS_PROGRAM(0.50)\
+    PROGRESS_PROGRAM(0.55)\
+    PROGRESS_PROGRAM(0.60)\
+    PROGRESS_PROGRAM(0.65)\
+    PROGRESS_PROGRAM(0.70)\
+    PROGRESS_PROGRAM(0.75)\
+    PROGRESS_PROGRAM(0.80)\
+    PROGRESS_PROGRAM(0.85)\
+    PROGRESS_PROGRAM(0.90)\
+    PROGRESS_PROGRAM(0.95)
+
+#define PROGRESS_PROGRAM(RATE)\
+    program { name: "update,progress,"RATE;\
+        signal: "update,progress,"RATE",signal";\
+        transition: DECELERATE 0.1;\
+        action: STATE_SET "progress" RATE;\
+        target: "progress_bar";\
+    }
+
+#define PROGRESS_BG_IMAGE "I01_toolbar_progress_bg.#.png"
+#define PROGRESS_BAR_IMAGE "I01_toolbar_progress.#.png"
+
+collections { base_scale: 2.6;
     group {
         name: "main_layout";
         images {
-            image: "web_shadow.png" COMP;
-            image: "btn_bar_incognito.png" COMP;
+            image: PROGRESS_BG_IMAGE COMP;
+            image: PROGRESS_BAR_IMAGE COMP;
+        }
+        color_classes{
+            color_class{
+                name: "defaultBg";
+                color: 240 240 240 255;
+            }
         }
         parts {
+            part {
+                name: "bg";
+                type: RECT;
+                scale: 1;
+                description {
+                    state: "default" 0.0;
+                    color: 0 0 0 0;
+                    rel1 {
+                        relative: 0.0 0.0;
+                    }
+                    rel2 {
+                        relative: 1.0 1.0;
+                    }
+                }
+            }
             part {
                 name: "uri_bar_bg";
                 type : RECT;
                 scale: 1;
                 description {
                     state: "default" 0.0;
-                    visible: 1;
-                    fixed: 1 1;
-                align: 0 0;
-                min: 1920 104;
-                max: 1920 104;
-                color: 255 255 255 255;
-                rel1 { relative: 0.0 0.0; }
-                rel2 { relative: 1.0 0.0; }
+                    visible: 0;
+                    fixed: 0 1;
+                    align: 0 0;
+                    min: 0 URI_BG_HEIGHT;
+                    max: -1 URI_BG_HEIGHT;
+                    rel1 {relative: 0.0 0.0; to:"bg";}
+                    rel2 {relative: 1.0 1.0; to:"bg";}
+                }
+                description {
+                    state: "hidden_vertical" 0.0;
+                    inherit: "default" 0.0;
+                    rel1 {relative: 0.0 -2*(URI_BG_HEIGHT/1228); to:"bg";}
+                }
+                description {
+                    state: "hidden_landscape" 0.0;
+                    inherit: "default" 0.0;
+                    rel1 {relative: 0.0 -2*(URI_BG_HEIGHT/668); to:"bg";}
+                }
             }
-        }
-        ADD_SPACER_OVER("left_spacer", "uri_bar_bg", 7, 104)
-            part {
-                name: "uri_bar_buttons_left";
-                type : SWALLOW;
+
+            rect {
+                name: "uri_bar_bg_color";
                 scale: 1;
                 description {
                     state: "default" 0.0;
                     visible: 1;
-                    align: 0 0.5;
-                    min: 246 102;
-                    max: 246 102;
-                    fixed: 1 1;
-                rel1 { relative: 1.0 1.0; to: "left_spacer"; }
-                rel2 { relative: 0.0 0.0; to: "left_spacer"; }
+                    align: 0 0;
+                    color_class: "defaultBg";
+                    rel1 {relative: 0.0 0.0; to:"uri_bar_bg";}
+                    rel2 {relative: 1.0 1.0; to:"uri_bar_bg";}
+                }
+                description {
+                    state: "secret" 0.0;
+                    inherit: "default" 0.0;
+                    color_class: "secret";
+                }
             }
-            description {
-                state: "hidden" 0.0;
-                inherit: "default" 0.0;
-                visible: 0;
-            }
-            description {
-                state: "visible" 0.0;
-                inherit: "default" 0.0;
-                visible: 1;
-            }
-        }
-        ADD_SPACER("left_buttons_spacer", "uri_bar_buttons_left", 0.5, 102)
+
             part {
-                name: "uri_entry";
-                type : SWALLOW;
+                name: "right_spacer";
+                type: RECT;
                 scale: 1;
                 description {
                     state: "default" 0.0;
-                    visible: 1;
-                    align: 0.0 0.5;
-                    min: URI_LENGTH URI_WIDTH;
-                    max: URI_LENGTH URI_WIDTH;
-                    fixed: 1 1;
-                rel1 { relative: 1.0 0.5; to: "left_spacer"; }
-                rel2 { relative: 1.0 0.5; to: "left_spacer"; }
+                    visible: 0;
+                    fixed: 0 1;
+                    align: 1 1;
+                    min: 14 URI_BG_HEIGHT;
+                    max: 14 URI_BG_HEIGHT;
+                    rel1 { relative: 0.0 0.0; to: "uri_bar_bg"; }
+                    rel2 { relative: 1.0 1.0; to: "uri_bar_bg"; }
+                }
+                description {
+                    state: "entry_enlarged" 0.0;
+                    inherit: "default" 0.0;
+                    min: 0 URI_BG_HEIGHT;
+                    max: 0 URI_BG_HEIGHT;
+                }
             }
-            description {
-                state: "moveright" 0.0;
-                inherit: "default" 0.0;
-                visible: 1;
-                min: URI_LENGTH_SHORT URI_WIDTH;
-                max: URI_LENGTH_SHORT URI_WIDTH;
-                rel1 { relative: 1.0 0.5; to: "left_buttons_spacer"; }
-                rel2 { relative: 1.0 0.5; to: "left_buttons_spacer"; }
-            }
-            description {
-                state: "hidden" 0.0;
-                inherit: "default" 0.0;
-                visible: 0;
-            }
-            description {
-                state: "visible" 0.0;
-                inherit: "default" 0.0;
-                visible: 1;
-            }
-        }
-        ADD_SPACER("right_buttons_spacer", "uri_entry", 26, 102)
+
             part {
                 name: "uri_bar_buttons_right";
                 type : SWALLOW;
@@ -109,227 +173,395 @@ collections { base_scale: 2.0;
                 description {
                     state: "default" 0.0;
                     visible: 1;
-                    align: 0.0 0.5;
-                    min: 164 102;
-                    max: 164 102;
+                    align: 1.0 0.0;
+                    min: ADD_TAB_WIDTH ADD_TAB_HEIGHT;
+                    max: ADD_TAB_WIDTH ADD_TAB_HEIGHT;
                     fixed: 1 1;
-                rel1 { relative: 1.0 0.5; to: "right_buttons_spacer"; }
-                rel2 { relative: 1.0 0.5; to: "right_buttons_spacer"; }
-            }
-            description {
-                state: "hidden" 0.0;
-                inherit: "default" 0.0;
-                visible: 0;
-            }
-            description {
-                state: "visible" 0.0;
-                inherit: "default" 0.0;
-                visible: 1;
-            }
-        }
-        ADD_SPACER("right_spacer", "uri_bar_buttons_right", 74, 102)
-        part {
-            name: "web_view";
-            type : SWALLOW;
-            scale: 1;
-            description {
-                state: "default" 0.0;
-                visible: 1;
-                align: 0.0 0.0;
-                fixed: 0 0;
-                rel1 { relative: 0.0 1.0; to: "uri_bar_bg"; }
-                rel2 { relative: 1.0 1.0; }
-            }
-        }
-        part {
-            name: "shadow";
-            type: IMAGE;
-            scale: 1;
-            repeat_events: 1;
-            description {
-                state: "default" 0.0;
-                visible: 1;
-                align: 0.0 0.0;
-                fixed: 0 0;
-                min: 1920 14;
-                max: 1920 14;
-                image.normal: "web_shadow.png";
-                rel1 { relative: 0.0 0.0; to: "web_view"; }
-                rel2 { relative: 1.0 1.0; }
-            }
-        }
-        part {
-            name: "incognito";
-            type: IMAGE;
-            repeat_events: 1;
-            scale: 1;
-            description {
-                state: "default" 0.0;
-                visible: 0;
-                rel1 {
-                    relative: 0.0 0.0;
-                    to: "uri_bar_bg";
-                    offset: 1623 0;
+                    rel1 { relative: 0.0 0.0; to: "uri_bar_bg"; }
+                    rel2 { relative: 0.0 1.0; to: "right_spacer"; }
                 }
-                rel2 {
-                    relative: 0.0 0.0;
-                    to: "uri_bar_bg";
-                    offset: 1623+82 0+102;
+                description {
+                    state: "hidden" 0.0;
+                    inherit: "default" 0.0;
+                    min: 0 ADD_TAB_HEIGHT;
+                    max: 0 ADD_TAB_HEIGHT;
+                    visible: 0;
                 }
-                align: 0.5 0.5;
-                image.normal: "btn_bar_incognito.png";
-            }
-            description {
-                state: "visible" 1.0;
-                inherit: "default" 0.0;
-                visible: 1;
-            }
-        }
-        part {
-            name: "progress_bar";
-            type: SWALLOW;
-            scale: 1;
-            description {
-                state: "default" 0.0;
-                visible: 1;
-                align: 0.0 0.0;
-                fixed: 0 0;
-                min: 1920 2;
-                max: 1920 2;
-                rel1 {
-                    relative: 0.0 0.0;
-                    offset: 0 1;
-                    to: "web_view";
+                description {
+                    state: "entry_enlarged" 0.0;
+                    inherit: "hidden" 0.0;
                 }
-                rel2 { relative: 1.0 1.0; }
             }
-        }
-        part {
-            name: "progress_bar_light_bg";
-            type: RECT;
-            repeat_events: 1;
-            description {
-                state: "default" 0.0;
-                fixed: 1 1;
-                min: 0 8;
-                max: 1920 8;
-                align: 0 0;
-                visible: 0;
-                rel1.to: "web_view";
-                rel1.relative: 0.0 0.0;
-                rel2.relative: 1.0 0.0;
-                color: 69 143 255 55;
-            }
-            description {
-                state: "visible" 0.0;
-                inherit: "default" 0.0;
-                visible: 1;
-            }
-        }
-        #include "WebPageUIUrlHistoryList.edc"
-        part {
-            name: "popup_bg";
-            type: RECT;
-            scale: 1;
-            mouse_events: 1;
-            description {
-                state: "default" 0.0;
-                visible: 0;
-                min: 1920 1080;
-                fixed: 1 1;
-                color: 100 100 100 128;
-                rel1 {relative: 0.0 0.0; }
-                rel2 {relative: 1.0 1.0; }
-            }
-            description {
-                state: "visible" 0.0;
-                inherit: "default" 0.0;
-                visible: 1;
-            }
+
             part {
-                name: "popup";
-                type: SWALLOW;
+                name: "spacer_after_uri_entry";
+                type: RECT;
                 scale: 1;
                 description {
                     state: "default" 0.0;
                     visible: 0;
-                    min: 0 0;
-                    max: 700 800;
-                    align: 0.5 0.5;
-                    rel1 { relative: 0.0 0.0; to: "web_view";}
-                    rel2 { relative: 1.0 1.0; to: "web_view";}
-                    fixed: 1 1;
+                    fixed: 0 1;
+                    align: 1 1;
+                    min: SPACER_SIZE URI_BG_HEIGHT;
+                    max: SPACER_SIZE URI_BG_HEIGHT;
+                    rel1 { relative: 0.0 0.0; to: "uri_bar_bg"; }
+                    rel2 { relative: 0.0 1.0; to: "uri_bar_buttons_right"; }
+                }
+            }
+
+            ADD_SPACER_OVER("left_spacer", "uri_bar_bg", SPACER_SIZE, SPACER_SIZE)
+
+            part {
+                name: "uri_entry";
+                type : SWALLOW;
+                scale: 1;
+                description {
+                    state: "default" 0.0;
+                    visible: 1;
+                    align: 0.0 0.0;
+                    min: 0 URI_HEIGHT;
+                    max: -1 URI_HEIGHT;
+                    fixed: 0 1;
+                    rel1 { relative: 1.0 1.0; to: "left_spacer"; }
+                    rel2 { relative: 0.0 1.0; to: "spacer_after_uri_entry"; }
                 }
                 description {
-                    state: "visible" 0.0;
+                    state: "moveright" 0.0;
                     inherit: "default" 0.0;
                     visible: 1;
-                    max: 1920 1080;
+                    rel1 { relative: 1.0 1.0; to: "left_spacer"; }
+                    rel2 { relative: 0.0 1.0; to: "spacer_after_uri_entry"; }
                 }
+                description {
+                    state: "entry_enlarged" 0.0;
+                    inherit: "default" 0.0;
+                    visible: 1;
+                    max: -1 URI_HEIGHT;
+                    rel2 {
+                        to: "spacer_after_uri_entry";
+                        relative: 0.0 1.0;
+                    }
+                }
+                description {
+                    state: "hidden" 0.0;
+                    inherit: "default" 0.0;
+                    visible: 0;
+                }
+            }
+
+            rect {
+                name: "bottom_toolbar";
+                scale: 1;
+                description {
+                    state: "default" 0.0;
+                    visible: 1;
+                    align: 0.0 1.0;
+                    min: 0 0;
+                    max: -1 BOTTOM_TOOLBAR_HEIGHT;
+                    color_class: "defaultBg";
+                    rel1 { relative: 0.0 0.0; to: "bg"; }
+                    rel2 { relative: 1.0 1.0; to: "bg"; }
+                }
+                description {
+                    state: "hidden" 0.0;
+                    inherit: "default" 0.0;
+                    rel1 {relative: 1.0 1.0; to:"bg";}
+                }
+            }
+            rect {
+                name: "bottom_toolbar_bg_color";
+                scale: 1;
+                description {
+                    state: "default" 0.0;
+                    visible: 1;
+                    align: 0.0 0.0;
+                    color_class: "defaultBg";
+                    rel1 { relative: 0.0 0.0; to: "bottom_toolbar"; }
+                    rel2 { relative: 1.0 1.0; to: "bottom_toolbar"; }
+                }
+                description {
+                    state: "secret" 0.0;
+                    inherit: "default" 0.0;
+                    color_class: "secret";
+                }
+            }
+            rect {
+                name: "swallow_spacer";
+                scale: 1;
+                description {
+                    state: "default" 0.0;
+                    visible: 0;
+                    min: 0 2;
+                    max: -1 2;
+                    align: 0.0 0.0;
+                    rel1 { relative: 0.0 0.0; to: "bottom_toolbar"; }
+                    rel2 { relative: 1.0 1.0; to: "bottom_toolbar"; }
+                }
+            }
+            part {
+                name: "bottom_swallow";
+                type: SWALLOW;
+                scale: 1;
+                description {
+                    state: "default" 0.0;
+                    visible: 1;
+                    rel1 { relative: 0.0 1.0; to: "swallow_spacer"; }
+                    rel2 { relative: 1.0 1.0; to: "bottom_toolbar"; }
+                }
+            }
+
+            part {
+                name: "web_view";
+                type: SWALLOW;
+                scale: 1;
+                description {
+                    state: "default" 0.0;
+                    visible: 1;
+                    align: 0.0 0.0;
+                    fixed: 0 0;
+                    min: 0 0;
+                    max: -1 -1;
+                    rel1 { relative: 0.0 1.0; to: "uri_bar_bg"; }
+                    rel2 { relative: 1.0 0.0; to: "bottom_toolbar"; }
+                }
+                description {
+                    state: "fullscreen" 0.0;
+                    inherit: "default" 0.0;
+                    rel1 { relative: 0.0 0.0; to: "bg"; }
+                    rel2 { relative: 1.0 1.0; to: "bg"; }
+                }
+            }
+            swallow { "web_view_dummy_button"; scale;
+                mouse_events: 1;
+                repeat_events: 1;
+                description { "default";
+                    visible: 1;
+                    align: 0.0 0.0;
+                    fixed: 0 0;
+                    min: 0 0;
+                    max: -1 -1;
+                    rel1 { relative: 0.0 0.0; to: "web_view"; }
+                    rel2 { relative: 1.0 1.0; to: "web_view"; }
+                }
+                description { "hidden";
+                    inherit: "default";
+                    visible: 0;
+                }
+            }
+            part { name: "progressbar_bg";
+                type: IMAGE;
+                scale: 1;
+                description {
+                    state: "default" 0.0;
+                    visible: 0;
+                    fixed: 0 1;
+                    min: 0 5;
+                    max: -1 5;
+                    align: 0.5 1;
+                    image.normal: PROGRESS_BG_IMAGE;
+                    rel1 { relative: 0.0 0.0; to: "uri_bar_bg";}
+                    rel2 { relative: 1.0 1.0; to: "uri_bar_bg";}
+                }
+                description {
+                    state: "progress" 0.0;
+                    inherit: "default" 0.0;
+                    visible: 1;
+                }
+            }
+            part { name: "progress_bar";
+                type: IMAGE;
+                scale: 1;
+                description {
+                    state: "default" 0.0;
+                    visible: 0;
+                    align: 0.0 0.0;
+                    image.normal: PROGRESS_BAR_IMAGE;
+                    rel1 { relative: 0.0 0.0; to: "progressbar_bg"; }
+                    rel2 { relative: 1.0 1.0; to: "progressbar_bg"; }
+                }
+                PROGRESS_DESCRIPTIONS
+            }
+            programs {
+                program { name: "hide,progress";
+                    signal: "hide,progress,signal";
+                    transition: DECELERATE 0.1;
+                    action: STATE_SET "default" 0.0;
+                    target: "progress_bar";
+                    target: "bg";
+                }
+                program { name: "show,progress";
+                    signal: "show,progress,signal";
+                    action: STATE_SET "progress" 0.0;
+                    target: "bg";
+                }
+                program { name: "update,progress,0.00";
+                    signal: "update,progress,0.00,signal";
+                    action: STATE_SET "progress" 0.05;
+                    target: "progress_bar";
+                }
+                PROGRESS_PROGRAMS
+                program { name: "update,progress,1.0";
+                    signal: "update,progress,1.00,signal";
+                    transition: DECELERATE 0.05;
+                    action: STATE_SET "progress" 1.00;
+                    target: "progress_bar";
+                }
+                program { name: "hide,bottom";
+                    signal: "hide,bottom";
+                    action: STATE_SET "hidden" 0.0;
+                    target: "bottom_toolbar";
+                }
+                program { name: "show,bottom";
+                    signal: "show,bottom";
+                    action: STATE_SET "default" 0.0;
+                    target: "bottom_toolbar";
+                }
+                program { name: "show,dummy_button";
+                    signal: "show,dummy_button";
+                    action: STATE_SET "default" 0.0;
+                    target: "web_view_dummy_button";
+                }
+                program { name: "hide,dummy_button";
+                    signal: "hide,dummy_button";
+                    action: STATE_SET "hidden" 0.0;
+                    target: "web_view_dummy_button";
+                }
+            }
+
+            #include "WebPageUIUrlHistoryList.edc"
+            part {
+               name: "findonpage";
+               type: SWALLOW;
+               scale: 1;
+               mouse_events: 1;
+               description {
+                  state: "default" 0.0;
+                  visible: 0;
+                  align: 0 0;
+                  fixed: 1 1;
+                  color: 244 244 244 255;
+                  min: 0 FINDONPAGE_HEIGHT;
+                  max: -1 FINDONPAGE_HEIGHT;
+                  rel1 {
+                      relative: 0 0;
+                      to: "web_view";
+                  }
+                  rel2 {
+                      relative: 1 1;
+                      to: "web_view";
+                  }
+               }
+               description {
+                   state: "visible" 0.0;
+                   inherit: "default";
+                   visible: 1;
+               }
+            }
+        }
+        programs {
+            program {
+                name: "shiftright_uribar";
+                signal: "shiftright_uri";
+                source: "ui";
+                action: STATE_SET "moveright" 0.0;
+                target: "uri_entry";
+            }
+            program {
+                name: "shiftback_uribar";
+                signal: "shiftback_uri";
+                source: "ui";
+                action: STATE_SET "default" 0.0;
+                target: "uri_entry";
+            }
+            program {
+                name: "enlarge_focused_uribar";
+                signal: "enlarge_focused_uri";
+                source: "ui";
+                action: STATE_SET "entry_enlarged" 0.0;
+                target: "uri_entry";
+                target: "uri_bar_buttons_right";
+                target: "right_spacer";
+            }
+            program {
+                name: "decrease_unfocused_uribar";
+                signal: "decrease_unfocused_uri";
+                source: "ui";
+                action: STATE_SET "default" 0.0;
+                target: "uri_entry";
+                target: "uri_bar_buttons_right";
+                target: "right_spacer";
+            }
+            program {
+                name: "hide_uri_bar_landscape";
+                signal: "hide_uri_bar_landscape";
+                source: "ui";
+                in: 0.01 0.0;
+                action: STATE_SET "hidden_landscape" 0.0;
+                target: "uri_bar_bg";
+                transition: LINEAR 0.15;
+            }
+            program {
+                name: "hide_uri_bar_vertical";
+                signal: "hide_uri_bar_vertical";
+                source: "ui";
+                in: 0.01 0.0;
+                action: STATE_SET "hidden_vertical" 0.0;
+                target: "uri_bar_bg";
+                transition: LINEAR 0.15;
+            }
+            program {
+                name: "show_uri_bar";
+                signal: "show_uri_bar";
+                source: "ui";
+                action: STATE_SET "default" 0.0;
+                target: "uri_bar_bg";
+                target: "bottom_toolbar";
+                transition: LINEAR 0.15;
+            }
+            program {
+                name: "hide_findonpage";
+                signal: "hide_findonpage";
+                source: "ui";
+                action: STATE_SET "default" 0.0;
+                target: "findonpage";
+            }
+            program {
+                name: "show_findonpage";
+                signal: "show_findonpage";
+                source: "ui";
+                action: STATE_SET "visible" 0.0;
+                target: "findonpage";
+            }
+            program {
+                name: "set_normal_mode";
+                signal: "set_normal_mode";
+                source: "ui";
+                action: STATE_SET "default" 0.0;
+                target: "uri_bar_bg_color";
+                target: "bottom_toolbar_bg_color";
+            }
+            program {
+                name: "set_secret_mode";
+                signal: "set_secret_mode";
+                source: "ui";
+                action: STATE_SET "secret" 0.0;
+                target: "uri_bar_bg_color";
+                target: "bottom_toolbar_bg_color";
+            }
+            program {
+                name: "webview_fullscreen";
+                signal: "webview_fullscreen";
+                source: "ui";
+                action: STATE_SET "fullscreen" 0.0;
+                target: "web_view";
+            }
+            program {
+                name: "webview_default";
+                signal: "webview_default";
+                source: "ui";
+                action: STATE_SET "default" 0.0;
+                target: "web_view";
             }
         }
     }
-    programs {
-        program {
-            name: "shiftright_uribar";
-            signal: "shiftright_uri";
-            source: "ui";
-            action: STATE_SET "moveright" 0.0;
-            target: "uri_entry";
-        }
-        program {
-            name: "shiftback_uribar";
-            signal: "shiftback_uri";
-            source: "ui";
-            action: STATE_SET "default" 0.0;
-            target: "uri_entry";
-        }
-        program {
-            name: "hide_progress";
-            signal: "hide_progressbar_bg";
-            source: "ui";
-            action: STATE_SET "default" 0.0;
-            target: "progress_bar_light_bg";
-        }
-        program {
-            name: "show_progress";
-            signal: "show_progressbar_bg";
-            source: "ui";
-            action: STATE_SET "visible" 0.0;
-            target: "progress_bar_light_bg";
-        }
-        program {
-            name: "show_incognito_ico";
-            signal: "incognito,true";
-            source: "ui";
-            action: STATE_SET "visible" 1.0;
-            target: "incognito";
-        }
-        program {
-            name: "hide_incognito_ico";
-            signal: "incognito,false";
-            source: "ui";
-            action: STATE_SET "default" 0.0;
-            target: "incognito";
-        }
-        program {
-            name: "show_popup";
-            signal: "elm,state,show";
-            source: "elm";
-            action: STATE_SET "visible" 0.0;
-            transition: LINEAR 0.0;
-            target: "popup";
-            target: "popup_bg";
-        }
-        program {
-            name: "hide_popup";
-            signal: "elm,state,hide";
-            source: "elm";
-            action: STATE_SET "default" 0.0;
-            transition: LINEAR 0.0;
-            target: "popup";
-            target: "popup_bg";
-        }
-    }
-}
 }

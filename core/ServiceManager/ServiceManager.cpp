@@ -30,67 +30,60 @@ ServiceManagerPrivate::ServiceManagerPrivate()
 {
     findServiceLibs();
     loadServiceLibs();
-    enumerateServices();
 }
 
 ServiceManagerPrivate::~ServiceManagerPrivate()
 {}
 
-void ServiceManagerPrivate::findServiceLibs()
+void ServiceManagerPrivate::findServiceLibs() try
 {
-    try{
-        boost::filesystem::path servicesDir(boost::any_cast<std::string>(tizen_browser::config::Config::getInstance().get("services/dir")));
-        for( boost::filesystem::directory_iterator it(servicesDir);
-                it != boost::filesystem::directory_iterator();
-                ++it){
-            boost::filesystem::path item(*it);
-            if(boost::filesystem::is_regular_file(item)){
-                if( (item.extension().string() == ".so" )
-                    && (item.filename().string().find("lib") == 0)){
-                    try{
-                        servicesLoaderMap[item.string()] = std::shared_ptr<ServiceLoader>(new ServiceLoader(item.string()));
-                    } catch (std::runtime_error & e){
-                        BROWSER_LOGD(e.what() );
-                    }
+    boost::filesystem::path servicesDir(
+        boost::any_cast<std::string>(tizen_browser::config::Config::getInstance().get("services/dir")));
+    for (boost::filesystem::directory_iterator it(servicesDir);
+        it != boost::filesystem::directory_iterator();
+        ++it) {
+        boost::filesystem::path item(*it);
+        if (boost::filesystem::is_regular_file(item)) {
+            if ((item.extension().string() == ".so" ) &&
+                (item.filename().string().find("lib") != std::string::npos)) {
+                try {
+                    servicesLoaderMap[item.string()] = std::make_shared<ServiceLoader>(item.string());
+                } catch (std::runtime_error & e) {
+                    BROWSER_LOGD(e.what() );
                 }
             }
         }
-    } catch (const boost::filesystem::filesystem_error& ex){
-        BROWSER_LOGD(ex.what() );
     }
+} catch (const boost::filesystem::filesystem_error& ex) {
+    BROWSER_LOGD(ex.what());
 }
 
 void ServiceManagerPrivate::loadServiceLibs()
 {
-    ///\todo: make shure that librareis are founded.
-    auto end = servicesLoaderMap.end();
-    for(auto slm = servicesLoaderMap.begin(); slm !=end; slm++ ){
-        try{
-            ServiceFactory* factory=((*slm).second->getFactory());
+    /// TODO make sure that librareis are founded.
+    for (auto slm : servicesLoaderMap) {
+        try {
+            auto factory = slm.second->getFactory();
             servicesMap[factory->serviceName()] = factory;//do not write to map if there's an error.
-        }catch (std::runtime_error& e){
+        } catch (const std::runtime_error& e) {
             BROWSER_LOGD(e.what() );
         }
     }
 }
 
 void ServiceManagerPrivate::enumerateServices(){
-    auto end = servicesMap.end();
-    for( auto sm = servicesMap.begin(); sm != end; sm++){
-        BROWSER_LOGD("%s:%p", (*sm).first.c_str(), (*sm).second );
-    }
+    for (auto sm : servicesMap)
+        BROWSER_LOGD("%s:%p", sm.first.c_str(), sm.second);
 }
 
 ServiceManager::ServiceManager()
     :d(new ServiceManagerPrivate)
-{
-
-}
+{}
 
 ServiceManager& ServiceManager::getInstance(void)
 {
-        static ServiceManager instance;
-        return instance;
+    static ServiceManager instance;
+    return instance;
 }
 
 std::shared_ptr< AbstractService > ServiceManager::getService(const std::string& service)
@@ -102,9 +95,8 @@ std::shared_ptr< AbstractService > ServiceManager::getService(const std::string&
     std::lock_guard<std::mutex> hold(mut);
     auto sp = cache[service];
 
-    if(!sp){
+    if (!sp)
         cache[service] = sp = std::shared_ptr<AbstractService>(d->servicesMap[service]->create());
-    }
     return sp;
 }
 

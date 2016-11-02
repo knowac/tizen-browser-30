@@ -28,9 +28,10 @@ namespace tizen_browser {
 namespace base_ui {
 
 class WebsiteHistoryItemTitleMob;
-typedef std::shared_ptr<WebsiteHistoryItemTitleMob> WebsiteHistoryItemTitleMobPtr;
 class WebsiteHistoryItemVisitItemsMob;
-typedef std::shared_ptr<WebsiteHistoryItemVisitItemsMob> WebsiteHistoryItemVisitItemsMobPtr;
+
+using WebsiteHistoryItemTitleMobPtr = std::shared_ptr<WebsiteHistoryItemTitleMob>;
+using WebsiteHistoryItemVisitItemsMobPtr = std::shared_ptr<WebsiteHistoryItemVisitItemsMob>;
 
 class WebsiteHistoryItemMob
 {
@@ -45,7 +46,7 @@ public:
     void removeItem(WebsiteVisitItemDataPtrConst historyVisitItemData);
     bool contains(WebsiteVisitItemDataPtrConst websiteVisitItemData);
 
-    std::shared_ptr<std::vector<int>> getVisitItemsIds();
+    int getVisitItemsId();
 
     /**
      * @brief invoked when main layout is already removed.

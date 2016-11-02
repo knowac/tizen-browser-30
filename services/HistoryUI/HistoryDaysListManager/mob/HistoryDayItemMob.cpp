@@ -24,6 +24,7 @@ namespace tizen_browser {
 namespace base_ui {
 
 boost::signals2::signal<void(const HistoryDayItemDataPtr, bool)> HistoryDayItemMob::signaButtonClicked;
+
 HistoryDayItemMob::HistoryDayItemMob(HistoryDayItemDataPtr dayItemData)
     : m_eflObjectsDeleted(false)
     , m_dayItemData(dayItemData)

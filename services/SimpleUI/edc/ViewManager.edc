@@ -25,7 +25,480 @@
 #define IME_PORTRAIT_HEIGHT 435
 #define IME_LANDSCAPE_HEIGHT 0   //TODO: Change it when landscape IME will be available
 
+#define ATTACH_PANEL_TRANS_TIME 0.2
+#define ATTACH_PANEL_STATE_HIDE 0
+#define ATTACH_PANEL_STATE_HALF 1
+#define ATTACH_PANEL_STATE_FULL 2
+
+#define INDICATOR_MODE_UNKNOWN 0
+#define INDICATOR_MODE_HIDE 1
+#define INDICATOR_MODE_SHOW 2
+
+#define INDICATOR_OPACITY_UNKNOWN 0
+#define INDICATOR_OPACITY_OPAQUE 1
+#define INDICATOR_OPACITY_TRANSLUCENT 2
+#define INDICATOR_OPACITY_TRANSPARENT 3
+#define INDICATOR_OPACITY_BGTRANSPARENT 4
+
+#define INDICATOR_ROTATION_PORTRAIT 0
+#define INDICATOR_ROTATION_LANDSCAPE 1
+
+#define LAYOUT_INDICATOR_HEIGHT_INC 42
+
 collections { base_scale: 2.0;
+
+    group { name: "elm/conformant/custom_conformant";
+       script {
+          // legacy support
+          public clipboard_disable = 0;     //check clipboard enable/disable
+          public keypad_disable = 0;        //check virtualkeypad enable/disable
+          public attach_panel_state = ATTACH_PANEL_STATE_HIDE;  //check attach_panel state
+          public overlap_mode = 0;          //Overlap mode
+          // centralized variables
+          public indicator_mode = 0;
+          public indicator_opacity = 0;
+          public indicator_rotation = 0;
+       }
+       parts {
+          part { name: "base";
+             type: SPACER;
+             description { state: "default" 0.0;
+             }
+          }
+          part { name: "indicator_base";
+             type: SPACER;
+             scale: 1;
+             description { state: "default" 0.0;
+                fixed: 0 1;
+                align: 0.5 0.0;
+                min: 0 LAYOUT_INDICATOR_HEIGHT_INC;
+                rel2.relative: 1.0 0.0;
+             }
+             description { state: "hide" 0.0;
+                inherit: "default" 0.0;
+                min: 0 0;
+             }
+          }
+          part { name: "indicator_adapter";
+             type: SPACER;
+             scale: 1;
+             description { state: "default" 0.0;
+                fixed: 0 1;
+                align: 0.5 0.0;
+                min: 0 LAYOUT_INDICATOR_HEIGHT_INC;
+                rel2.relative: 1.0 0.0;
+             }
+             //just in case: hide
+            description { state: "hide" 0.0;
+                inherit: "default" 0.0;
+                align: 0.5 1.0;
+                min: 0 LAYOUT_INDICATOR_HEIGHT_INC;
+             }
+          }
+          part { name: "elm.swallow.content";
+             type: SWALLOW;
+             scale: 1;
+             description { state: "default" 0.0;
+                rel1.relative: 0.0 1.0;
+                rel1.to: "indicator_base";
+                rel2.relative: 1.0 0.0;
+                rel2.to: "sip_area";
+             }
+             description { state: "disable_sip" 0.0;
+                inherit: "default" 0.0;
+                rel2.relative: 1.0 1.0;
+                rel2.to: "base";
+             }
+             description { state: "show_attach_panel" 0.0; //attach_panel: visible
+                inherit: "default" 0.0;
+                rel2.to: "elm.swallow.attach_panel_base";
+             }
+          }
+          part { name: "elm.swallow.ug";
+             type: SWALLOW;
+             scale: 1;
+             description { state: "default" 0.0;
+                rel1.to: "elm.swallow.content";
+                rel2.to: "elm.swallow.content";
+             }
+          }
+          part { name: "indicator_bg";
+             type: RECT;
+             clip_to: "overlap_clipper";
+             description { state: "default" 0.0;
+                rel1 { to: "indicator_adapter"; }
+                rel2 { to: "indicator_adapter"; }
+                color: 61 184 204 255;
+             }
+             description { state: "transparent" 0.0;
+                inherit: "default" 0.0;
+                color: 0 0 0 0;
+             }
+             description { state: "translucent" 0.0;
+                inherit: "default" 0.0;
+                color: 0 0 0 127;
+             }
+          }
+          part { name: "elm.swallow.indicator_bg";
+             type: SWALLOW;
+             clip_to: "overlap_clipper";
+             description { state: "default" 0.0;
+                rel1.to: "indicator_bg";
+                rel2.to: "indicator_bg";
+             }
+             description { state: "transparent" 0.0;
+                inherit: "default" 0.0;
+                visible: 1;
+             }
+          }
+          part { name: "overlap_clipper";
+             type: RECT;
+             description { state: "default" 0.0;
+                rel1.to: "indicator_bg";
+                rel2.to: "indicator_bg";
+             }
+             description { state: "overlap" 0.0;
+                inherit: "default" 0.0;
+                visible: 0;
+             }
+          }
+          part { name: "elm.swallow.indicator";
+             type: SWALLOW;
+             scale: 1;
+             description { state: "default" 0.0;
+                rel1.to: "indicator_adapter";
+                rel2.to: "indicator_adapter";
+             }
+          }
+          part { name: "elm.swallow.attach_panel_base";
+             type: SWALLOW;
+             description { state: "default" 0.0;
+                fixed: 0 1;
+                align: 0.0 1.0;
+                rel1.relative: 0.0 1.0;
+             }
+          }
+          part { name: "elm.swallow.attach_panel";
+             type: SWALLOW;
+             description { state: "default" 0.0;
+                fixed: 0 1;
+                rel1.to_y: "elm.swallow.attach_panel_base";
+                rel2.to_y: "elm.swallow.attach_panel_base";
+                visible: 0;
+             }
+             description { state: "half" 0.0;
+                inherit: "default" 0.0;
+                visible: 1;
+             }
+             description { state: "full" 0.0;
+                inherit: "default" 0.0;
+                rel1.to_y: "indicator_bg";
+                rel1.relative: 0.0 1.0;
+                visible: 1;
+             }
+          }
+          part { name: "sip_area";
+             type: SPACER;
+             description { state: "default" 0.0;
+                fixed: 0 1;
+                min: 0 0;
+                rel1.to_y: "elm.swallow.virtualkeypad";
+                rel2.to_y: "elm.swallow.virtualkeypad";
+             }
+             description { state: "clipboard_on" 0.0;
+                inherit: "default" 0.0;
+                rel1.to_y: "elm.swallow.clipboard";
+                rel2.to_y: "elm.swallow.clipboard";
+             }
+          }
+          part { name: "elm.swallow.clipboard";
+             type: SWALLOW;
+             description { state: "default" 0.0;
+                fixed: 0 1;
+                align: 0.0 1.0;
+                rel1.relative: 0.0 1.0;
+             }
+          }
+          part { name: "elm.swallow.virtualkeypad";
+             type: SWALLOW;
+             description { state: "default" 0.0;
+                fixed: 0 1;
+                align: 0.0 1.0;
+                rel1.relative: 0.0 1.0;
+             }
+          }
+       }
+       programs {
+          program { name: "show_indicator";
+             signal: "elm,state,indicator,show";
+             source: "elm";
+             script {
+                set_int(indicator_mode, INDICATOR_MODE_SHOW);
+                run_program(PROGRAM:"update_indicator_adapter");
+             }
+          }
+          program { name: "hide_indicator";
+             signal: "elm,state,indicator,hide";
+             source: "elm";
+             script {
+                set_int(indicator_mode, INDICATOR_MODE_HIDE);
+                run_program(PROGRAM:"update_indicator_adapter");
+             }
+          }
+          program { name: "show_indicator_effect"; //show indicator using effect
+              signal: "indicator,show,effect";
+              source: "elm";
+              action: STATE_SET "default" 0.0;
+              target: "indicator_adapter";
+              transition: DECELERATE 0.2;
+          }
+          program { name: "hide_indicator_effect"; //hide indicator using effect
+              signal: "indicator,hide,effect";
+              source: "elm";
+              action: STATE_SET "hide" 0.0;
+              target: "indicator_adapter";
+              transition: DECELERATE 0.2;
+          }
+          program { name: "opaque_indicator";
+              signal: "elm,state,indicator,opaque";
+              source: "elm";
+              script {
+                 set_int(indicator_opacity, INDICATOR_OPACITY_OPAQUE);
+                 run_program(PROGRAM:"update_indicator_adapter");
+              }
+          }
+          program { name: "transparent_indicator";
+              signal: "elm,state,indicator,transparent";
+              source: "elm";
+              script {
+                 set_int(indicator_opacity, INDICATOR_OPACITY_TRANSPARENT);
+                 run_program(PROGRAM:"update_indicator_adapter");
+              }
+          }
+          program { name: "translucent_indicator";
+              signal: "elm,state,indicator,translucent";
+              source: "elm";
+              script {
+                 set_int(indicator_opacity, INDICATOR_OPACITY_TRANSLUCENT);
+                 run_program(PROGRAM:"update_indicator_adapter");
+              }
+          }
+          program { name: "bg_transparent_indicator";
+              signal: "elm,state,indicator,bg_transparent";
+              source: "elm";
+              script {
+                 set_int(indicator_opacity, INDICATOR_OPACITY_BGTRANSPARENT);
+                 run_program(PROGRAM:"update_indicator_adapter");
+              }
+          }
+          program { name: "show_full_attach_panel";
+             signal: "elm,state,attach_panel,show,full";
+             source: "";
+             script {
+                set_int(attach_panel_state, ATTACH_PANEL_STATE_FULL);
+             }
+             after: "show_full_attach_panel2";
+          }
+          program { name: "show_full_attach_panel2";
+             action: STATE_SET "full" 0.0;
+             target: "elm.swallow.attach_panel";
+             transition: DECELERATE ATTACH_PANEL_TRANS_TIME;
+          }
+          program { name: "show_half_attach_panel";
+             signal: "elm,state,attach_panel,show,half";
+             source: "";
+             script {
+                set_int(attach_panel_state, ATTACH_PANEL_STATE_HALF);
+             }
+             after: "show_half_attach_panel2";
+          }
+          program { name: "show_half_attach_panel2";
+             action: STATE_SET "half" 0.0;
+             target: "elm.swallow.attach_panel";
+             transition: DECELERATE ATTACH_PANEL_TRANS_TIME;
+          }
+          program { name: "show_attach_panel_started";
+             signal: "elm,state,attach_panel,show,started";
+             source: "";
+             script {
+                set_int(attach_panel_state, ATTACH_PANEL_STATE_HALF);
+                //set attach_panel state
+                set_state(PART:"elm.swallow.attach_panel", "half", 0.0);
+                //set content state
+                set_state(PART:"elm.swallow.content", "show_attach_panel", 0.0);
+             }
+          }
+          program { name: "hide_attach_panel_finished";
+             signal: "elm,state,attach_panel,hide,finished";
+             source: "";
+             script {
+                set_int(attach_panel_state, ATTACH_PANEL_STATE_HIDE);
+                //set attach_panel state
+                set_state(PART:"elm.swallow.attach_panel", "default", 0.0);
+                //set content state
+                if (get_int(keypad_disable) == 1 && get_int(clipboard_disable) == 1)
+                  set_state(PART:"elm.swallow.content", "disable_sip", 0.0);
+                else
+                  set_state(PART:"elm.swallow.content", "default", 0.0);
+             }
+          }
+          program { name: "enable_clipboard";
+             signal: "elm,state,clipboard,enable";
+             source: "";
+             script {
+                set_int(clipboard_disable, 0);
+                //set content state
+                set_state(PART:"elm.swallow.content", "default", 0.0);
+                set_state(PART:"sip_area", "default", 0.0);
+             }
+          }
+          program { name: "disable_clipboard";
+             signal: "elm,state,clipboard,disable";
+             source: "";
+             script {
+                set_int(clipboard_disable, 1);
+                set_state(PART:"sip_area", "default", 0.0);
+                if (get_int(attach_panel_state) != ATTACH_PANEL_STATE_HIDE) {
+                   set_state(PART:"elm.swallow.content", "show_attach_panel", 0.0);
+                }
+                else {
+                   if (get_int(keypad_disable) == 1)
+                     set_state(PART:"elm.swallow.content", "disable_sip", 0.0);
+                   else
+                     set_state(PART:"elm.swallow.content", "default", 0.0);
+                }
+             }
+          }
+          program { name: "enable_virtualkeypad";
+             signal: "elm,state,virtualkeypad,enable";
+             source: "";
+             script {
+                set_int(keypad_disable, 0);
+                set_state(PART:"elm.swallow.content", "default", 0.0);
+                set_state(PART:"sip_area", "default", 0.0);
+             }
+          }
+          program { name: "disable_virtualkeypad";
+             signal: "elm,state,virtualkeypad,disable";
+             source: "";
+             script {
+                set_int(keypad_disable, 1);
+                if (get_int(attach_panel_state) != ATTACH_PANEL_STATE_HIDE) {
+                   set_state(PART:"elm.swallow.content", "show_attach_panel", 0.0);
+                }
+                else {
+                   if (get_int(clipboard_disable) == 1)
+                     {
+                        set_state(PART:"sip_area", "clipboard_on", 0.0);
+                        set_state(PART:"elm.swallow.content", "disable_sip", 0.0);
+                     }
+                   else
+                     set_state(PART:"elm.swallow.content", "default", 0.0);
+                }
+             }
+          }
+          program { name: "change_to_landscape";
+             script {
+                set_int(indicator_rotation, INDICATOR_ROTATION_LANDSCAPE);
+                run_program(PROGRAM:"update_indicator_adapter");
+             }
+          }
+          program { name: "change_to_portrait";
+             script {
+                set_int(indicator_rotation, INDICATOR_ROTATION_PORTRAIT);
+                run_program(PROGRAM:"update_indicator_adapter");
+             }
+          }
+          program { name: "overlap_mode";
+             signal: "elm,state,indicator,overlap";
+             source: "elm";
+             script {
+                set_int(overlap_mode, 1);
+                run_program(PROGRAM:"update_indicator_adapter");
+             }
+          }
+          program { name: "nooverlap_mode";
+             signal: "elm,state,indicator,nooverlap";
+             source: "elm";
+             script {
+                set_int(overlap_mode, 0);
+                run_program(PROGRAM:"update_indicator_adapter");
+             }
+          }
+          program { name: "update_indicator_adapter";
+             script {
+                // indicator base/adapter update
+                if (get_int(indicator_mode) == INDICATOR_MODE_SHOW) {
+                  if (get_int(indicator_rotation) == INDICATOR_ROTATION_PORTRAIT) {
+                    if ((get_int(indicator_opacity) == INDICATOR_OPACITY_OPAQUE) ||
+                        (get_int(indicator_opacity) == INDICATOR_OPACITY_UNKNOWN)) {
+                      set_state(PART:"indicator_base", "default", 0.0);
+                      set_state(PART:"indicator_adapter", "default", 0.0);
+                    } else if (get_int(indicator_opacity) == INDICATOR_OPACITY_TRANSPARENT) {
+                      set_state(PART:"indicator_base", "hide", 0.0);
+                      set_state(PART:"indicator_adapter", "hide", 0.0);
+                    } else {
+                      set_state(PART:"indicator_base", "hide", 0.0);
+                      set_state(PART:"indicator_adapter", "default", 0.0);
+                    }
+                  } else { // LANDSCAPE
+                    set_state(PART:"indicator_base", "hide", 0.0);
+                    set_state(PART:"indicator_adapter", "hide", 0.0);
+                  }
+                } else { // HIDE
+                  set_state(PART:"indicator_base", "hide", 0.0);
+                  set_state(PART:"indicator_adapter", "hide", 0.0);
+                }
+                // indicator bg update
+                if (get_int(indicator_rotation) == INDICATOR_ROTATION_PORTRAIT) {
+                  if (get_int(indicator_opacity) == INDICATOR_OPACITY_TRANSPARENT) {
+                    set_state(PART:"indicator_bg", "transparent", 0.0);
+                    set_state(PART:"elm.swallow.indicator_bg", "transparent", 0.0);
+                  } else if (get_int(indicator_opacity) == INDICATOR_OPACITY_TRANSLUCENT) {
+                    set_state(PART:"indicator_bg", "translucent", 0.0);
+                    set_state(PART:"elm.swallow.indicator_bg", "transparent", 0.0);
+                  } else if (get_int(indicator_opacity) == INDICATOR_OPACITY_BGTRANSPARENT) {
+                    set_state(PART:"indicator_bg", "transparent", 0.0);
+                    set_state(PART:"elm.swallow.indicator_bg", "transparent", 0.0);
+                  } else { // OPAQUE here
+                    set_state(PART:"indicator_bg", "default", 0.0);
+                    set_state(PART:"elm.swallow.indicator_bg", "default", 0.0);
+                  }
+                } else {
+                  set_state(PART:"indicator_bg", "transparent", 0.0);
+                  set_state(PART:"elm.swallow.indicator_bg", "transparent", 0.0);
+                }
+                // legacy support
+                if (get_int(overlap_mode) == 1 ) {
+                  set_state(PART:"overlap_clipper", "overlap", 0.0);
+                } else {
+                  set_state(PART:"overlap_clipper", "default", 0.0);
+                }
+             }
+          }
+          program { name: "landscape_mode";
+             source: "elm";
+             signal: "elm,state,orient,90";
+             after: "change_to_landscape";
+          }
+          program { name: "landscape_mode2";
+             source: "elm";
+             signal: "elm,state,orient,270";
+             after: "change_to_landscape";
+          }
+          program { name: "portrait_mode";
+             source: "elm";
+             signal: "elm,state,orient,0";
+             after: "change_to_portrait";
+          }
+          program { name: "portrait_mode2";
+             source: "elm";
+             signal: "elm,state,orient,180";
+             after: "change_to_portrait";
+          }
+       }
+    }
+
     group {
         name: "main_layout";
         parts {

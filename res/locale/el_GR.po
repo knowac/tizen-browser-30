@@ -1,14 +1,8 @@
 msgid "IDS_BR_POP_NETWORK_ERROR"
 msgstr "Σφάλμα δικτύου."
 
-msgid "IDS_BR_BODY_AUTHUSERNAME"
-msgstr "Όνομα χρήστη"
-
 msgid "IDS_BR_BODY_DESTINATIONS_AUTHENTICATION_REQUIRED"
 msgstr "Απαιτείται έλεγχος ταυτότητας."
-
-msgid "IDS_BR_BODY_AUTHPASSWORD"
-msgstr "Κωδικός πρόσβασης"
 
 msgid "IDS_BR_HEADER_SECURITY_WARNING"
 msgstr "Προειδοποίηση ασφαλείας"
@@ -33,12 +27,6 @@ msgstr "Υπάρχουν προβλήματα με το πιστοποιητικ
 
 msgid "IDS_BR_OPT_ALLOW"
 msgstr "Να επιτρέπεται"
-
-msgid "IDS_BR_OPT_VIEW"
-msgstr "Προβολή"
-
-msgid "IDS_BR_OPT_CANCEL"
-msgstr "Ακύρωση"
 
 msgid "IDS_BR_BODY_PS_REQUESTS_YOUR_LOCATION"
 msgstr "Το %s ζητά την τοποθεσία σας."
@@ -72,6 +60,18 @@ msgstr "Λήψη"
 
 msgid "IDS_BR_BODY_THIS_WEBPAGE"
 msgstr "Αυτή η ιστοσελίδα"
+
+msgid "IDS_BR_BODY_AUTHUSERNAME"
+msgstr "Όνομα χρήστη"
+
+msgid "IDS_BR_BODY_AUTHPASSWORD"
+msgstr "Κωδικός πρόσβασης"
+
+msgid "IDS_BR_OPT_VIEW"
+msgstr "Προβολή"
+
+msgid "IDS_BR_OPT_CANCEL"
+msgstr "Ακύρωση"
 
 msgid "IDS_BR_OPT_SCREEN"
 msgstr "Οθόνη"
@@ -109,15 +109,6 @@ msgstr "Άκυρο"
 msgid "IDS_BR_BUTTON_MORE"
 msgstr "Περισσότερα"
 
-msgid "IDS_TPLATFORM_ACBUTTON_DONE_ABB"
-msgstr "ΤΕΛΟΣ"
-
-msgid "IDS_TPLATFORM_ACBUTTON_CANCEL_ABB"
-msgstr "ΑΚΥΡΟ"
-
-msgid "IDS_TPLATFORM_ACBUTTON_DELETE_ABB"
-msgstr "ΔΙΑΓΡΑΦΗ"
-
 msgid "IDS_BR_BODY_NO_ITEMS"
 msgstr "Κανένα στοιχείο"
 
@@ -126,9 +117,6 @@ msgstr "Σύνδ. σε δίκτ. κιν. τηλ."
 
 msgid "IDS_BR_OPT_DO_NOT_SHOW_AGAIN"
 msgstr "Να μην εμφανιστεί ξανά"
-
-msgid "IDS_BR_SK_OK"
-msgstr "OK"
 
 msgid "IDS_BR_POP_ONLY_HTTP_OR_HTTPS_URLS_CAN_BE_DOWNLOADED"
 msgstr "Είναι δυνατή η λήψη μόνο διευθύνσεων URL http ή https."
@@ -151,17 +139,11 @@ msgstr "Αντιγραφή συνδέσμου"
 msgid "IDS_BR_OPT_COPY_IMAGE"
 msgstr "Αντιγραφή εικόνας"
 
+msgid "IDS_BR_SK_OK"
+msgstr "OK"
+
 msgid "IDS_BR_OPT_CALL"
 msgstr "Κλήση"
-
-msgid "IDS_ST_POP_PS_HAS_BEEN_DETECTED"
-msgstr "Εντοπίστηκε το στοιχείο «%s»."
-
-msgid "IDS_ST_POP_DETECTED_IN_C_PS"
-msgstr "Εντοπίστηκε στη θέση: %s"
-
-msgid "IDS_ST_HEADER_MALWARE_DETECTED_ABB"
-msgstr "Εντοπ. κακόβουλο λογισμικό"
 
 msgid "IDS_BR_BUTTON_FAILED"
 msgstr "Απέτυχε"
@@ -229,35 +211,11 @@ msgstr "Αποεπ."
 msgid "IDS_BR_SK_TABS"
 msgstr "Καρτέλες"
 
-msgid "IDS_BR_SK_SAVE_LITE"
-msgstr "Αποθήκ."
-
-msgid "IDS_BR_SK_SAVE_ABB"
-msgstr "Αποθ."
-
-msgid "IDS_BR_SK_SAVE"
-msgstr "Αποθ/ση"
-
-msgid "IDS_BR_SK_PREVIOUS"
-msgstr "Προηγούμενο"
-
-msgid "IDS_BR_SK_NEXT"
-msgstr "Επόμενο"
-
 msgid "IDS_BR_SK_MENU"
 msgstr "Μενού"
 
 msgid "IDS_BR_SK_DELETE_ABB"
 msgstr "Διαγρ."
-
-msgid "IDS_BR_SK_DELETE"
-msgstr "Διαγραφή"
-
-msgid "IDS_BR_SK_CLEAR"
-msgstr "Διαγραφή"
-
-msgid "IDS_BR_SK_BACK"
-msgstr "Πίσω"
 
 msgid "IDS_BR_SK3_CREATE_FOLDER"
 msgstr "Δημ/ργία φακέλου"
@@ -316,15 +274,6 @@ msgstr "Ίσως δεν είναι δυνατή η ακριβής περικοπ
 msgid "IDS_BR_POP_YOUR_HISTORY_WILL_BE_CLEARED"
 msgstr "Θα γίνει εκκαθάριση του ιστορικού."
 
-msgid "IDS_BR_POP_WI_FI_CONNECTION_REQUIRED_CONNECT_TO_WI_FI_NETWORK_AND_TRY_AGAIN"
-msgstr "Απαιτείται σύνδεση Wi-Fi. Συνδεθείτε σε δίκτυο Wi-Fi και δοκιμάστε ξανά"
-
-msgid "IDS_BR_POP_URL_NOT_FOUND"
-msgstr "Δε βρέθηκε η URL."
-
-msgid "IDS_BR_POP_URL"
-msgstr "URL"
-
 msgid "IDS_BR_POP_UNABLE_TO_VIEW_THE_CERTIFICATE_THE_PAGE_INFORMATION_HAS_BEEN_CHANGED"
 msgstr "Δεν είναι δυνατή η προβολή του πιστοποιητικού. Τα στοιχεία της σελίδας έχουν αλλάξει."
 
@@ -370,23 +319,11 @@ msgstr "Η πολιτική ασφαλείας περιορίζει τη χρή�
 msgid "IDS_BR_POP_SAVED_TO_BOOKMARKS"
 msgstr "Αποθηκεύτηκε στους σελιδοδείκτες."
 
-msgid "IDS_BR_POP_SAVED"
-msgstr "Αποθηκεύτηκε."
-
 msgid "IDS_BR_POP_RENAME_TAG"
 msgstr "Μετονομασία ετικέτας"
 
-msgid "IDS_BR_POP_REMOVED"
-msgstr "Αφαιρέθηκε."
-
 msgid "IDS_BR_POP_PD_PROFILES_WILL_BE_DELETED"
 msgstr "Θα διαγραφούν %d προφίλ."
-
-msgid "IDS_BR_POP_PD_ITEMS_WILL_BE_DELETED"
-msgstr "Θα διαγραφούν %d στοιχεία."
-
-msgid "IDS_BR_POP_PD_ITEMS_SELECTED"
-msgstr "Επιλέχθηκαν %d στοιχεία."
 
 msgid "IDS_BR_POP_PAGES_THAT_YOU_VIEW_WILL_NOT_APPEAR_IN_YOUR_BROWSER_HISTORY_OR_SEARCH_HISTORY_AND_THEY_WILL_NOT_LEAVE_OTHER_TRACES_LIKE_COOKIES"
 msgstr "Οι σελίδες που βλέπετε δεν θα εμφανίζονται στο ιστορικό του προγράμματος περιήγησης ή στο ιστορικό αναζήτησης και δεν θα αφήνουν άλλα ίχνη, όπως είναι τα cookies."
@@ -415,53 +352,20 @@ msgstr "Εντοπίστηκε το κακόβουλο λογισμικό «%1$s
 msgid "IDS_BR_POP_P1SS_HAS_BEEN_DETECTED_DETECTED_IN_C_P2SS_OPEN_WEBPAGE_ANYWAY_Q"
 msgstr "Εντοπίστηκε το κακόβουλο λογισμικό «%1$s».\nΕντοπίστηκε στη διεύθυνση: «%2$s»\n\nΘέλετε να ανοίξετε την ιστοσελίδα;"
 
-msgid "IDS_BR_POP_NO_ITEMS_SELECTED"
-msgstr "Δεν έχουν επιλεχθεί στοιχεία."
-
 msgid "IDS_BR_POP_NOT_ENOUGH_MEMORY_DELETE_SOME_ITEMS_AND_TRY_AGAIN"
 msgstr "Ανεπαρκής μνήμη. Διαγράψτε μερικά στοιχεία και δοκιμάστε ξανά."
-
-msgid "IDS_BR_POP_NOT_ENOUGH_MEMORY"
-msgstr "Ανεπαρκής μνήμη."
 
 msgid "IDS_BR_POP_NOT_ALLOWED"
 msgstr "Δεν επιτρέπεται."
 
-msgid "IDS_BR_POP_NEVER"
-msgstr "Ποτέ"
-
 msgid "IDS_BR_POP_MOVED"
 msgstr "Μετακινήθηκε."
-
-msgid "IDS_BR_POP_MOBILE_DATA_IS_DISABLED_CONNECT_TO_WI_FI_NETWORK_INSTEAD_OR_ENABLE_MOBILE_DATA_AND_TRY_AGAIN"
-msgstr "Τα δεδομένα κινητής τηλεφωνίας απενεργοποιήθηκαν. Συνδεθείτε σε δίκτυο Wi-Fi ή ενεργοποιήστε τα δεδομένα κινητής τηλεφωνίας και δοκιμάστε ξανά"
-
-msgid "IDS_BR_POP_LOADING_PLEASE_WAIT_ING"
-msgstr "Φόρτωση. Περιμένετε..."
-
-msgid "IDS_BR_POP_INVALID_URL"
-msgstr "Άκυρο URL."
-
-msgid "IDS_BR_POP_FAIL"
-msgstr "Αποτυχία."
 
 msgid "IDS_BR_POP_ENTER_URL"
 msgstr "Εισαγωγή URL."
 
-msgid "IDS_BR_POP_ENTER_TITLE_ABB"
-msgstr "Εισαγωγή τίτλου"
-
 msgid "IDS_BR_POP_ENTER_BOOKMARK_NAME"
 msgstr "Εισαγωγή ονόματος σελιδοδείκτη."
-
-msgid "IDS_BR_POP_DO_NOT_SHOW_AGAIN"
-msgstr "Να μην εμφανιστεί ξανά"
-
-msgid "IDS_BR_POP_DOWNLOADCOMPLETE"
-msgstr "Η λήψη ολοκληρώθηκε."
-
-msgid "IDS_BR_POP_DISABLED"
-msgstr "Απενεργοποιημένη."
 
 msgid "IDS_BR_POP_DIALING_ING_VZW"
 msgstr "Dialing..."
@@ -487,9 +391,6 @@ msgstr "Να διαγραφούν τα δεδομένα σύνδεσης για 
 msgid "IDS_BR_POP_DELETE_SIGN_IN_DATA_FOR_PD_WEBSITES_Q"
 msgstr "Να διαγραφούν τα δεδομένα σύνδεσης για %d τοποθεσίες Web;"
 
-msgid "IDS_BR_POP_DELETE_Q"
-msgstr "Διαγραφή;"
-
 msgid "IDS_BR_POP_DELETE_PD_SAVED_WEB_PAGES_Q"
 msgstr "Διαγραφή %d αποθηκευμένων ιστοσελίδων;"
 
@@ -505,14 +406,8 @@ msgstr "Να διαγραφούν όλα τα δεδομένα τοποθεσι�
 msgid "IDS_BR_POP_DELETEHISTORYQUESTION"
 msgstr "Διαγραφή ιστορικού;"
 
-msgid "IDS_BR_POP_DELETED"
-msgstr "Διαγράφηκε."
-
 msgid "IDS_BR_POP_CONTINUE"
 msgstr "Συνέχεια;"
-
-msgid "IDS_BR_POP_CLOSE_APPLICATION_Q"
-msgstr "Τερματισμός εφαρμογής;"
 
 msgid "IDS_BR_POP_CLOSE_APPLICATION"
 msgstr "Τερματισμός εφαρμογής"
@@ -525,12 +420,6 @@ msgstr "Εκκαθάριση ιστορικού;"
 
 msgid "IDS_BR_POP_BOOKMARK_REMOVED"
 msgstr "Ο σελιδοδείκτης καταργήθηκε."
-
-msgid "IDS_BR_POP_BOOKMARK_ADDED"
-msgstr "Προστέθηκε σελιδοδείκτης."
-
-msgid "IDS_BR_POP_AUTOMATIC_BRIGHTNESS"
-msgstr "Αυτόματη φωτεινότητα"
 
 msgid "IDS_BR_POP_ALREADY_EXISTS"
 msgstr "Υπάρχει ήδη."
@@ -556,15 +445,6 @@ msgstr "Να επιτρέπεται στις τοποθεσίες να αποθ�
 msgid "IDS_BR_POP_ADDED_TO_BOOKMARKS"
 msgstr "Προστέθηκε στους σελιδοδείκτες."
 
-msgid "IDS_BR_POP_ACCOUNT"
-msgstr "Λογαριασμός"
-
-msgid "IDS_BR_POP_1_ITEM_WILL_BE_DELETED"
-msgstr "Θα γίνει διαγραφή 1 στοιχείου."
-
-msgid "IDS_BR_POP_1_ITEM_SELECTED"
-msgstr "Επιλέχθηκε 1 στοιχείο."
-
 msgid "IDS_BR_OPT_WINDOWS"
 msgstr "Παράθυρα"
 
@@ -574,38 +454,20 @@ msgstr "Προβ. πιστοποιητικού"
 msgid "IDS_BR_OPT_UNICODE_HUTF_8"
 msgstr "Unicode (UTF-8)"
 
-msgid "IDS_BR_OPT_TRANSLATE"
-msgstr "Μετάφραση"
-
 msgid "IDS_BR_OPT_THUMBNAIL_VIEW"
 msgstr "Προβολή μικρογραφιών"
 
 msgid "IDS_BR_OPT_TEXT_ENCODING"
 msgstr "Κωδικοποίηση κειμένου"
 
-msgid "IDS_BR_OPT_STOP"
-msgstr "Διακοπή"
-
 msgid "IDS_BR_OPT_SHRINK_TEXT"
 msgstr "Σμίκρυνση κειμένου"
-
-msgid "IDS_BR_OPT_SHOW"
-msgstr "Εμφάνιση"
-
-msgid "IDS_BR_OPT_SHARE"
-msgstr "Κοινόχρηστο"
 
 msgid "IDS_BR_OPT_SETTINGS_ABB"
 msgstr "Ρυθμίσεις"
 
-msgid "IDS_BR_OPT_SETTINGS"
-msgstr "Ρυθμίσεις"
-
 msgid "IDS_BR_OPT_SEND_MESSAGE_VODA"
 msgstr "Αποστολή μηνύματος"
-
-msgid "IDS_BR_OPT_SEND_EMAIL"
-msgstr "Αποστολή email"
 
 msgid "IDS_BR_OPT_SENDURLVIA_EMAIL"
 msgstr "Email"
@@ -624,12 +486,6 @@ msgstr "Λειτουργία επιλογής"
 
 msgid "IDS_BR_OPT_SELECTED"
 msgstr "Επιλεγμένο"
-
-msgid "IDS_BR_OPT_SELECT"
-msgstr "Επιλογή"
-
-msgid "IDS_BR_OPT_SD_CARD"
-msgstr "Κάρτα SD"
 
 msgid "IDS_BR_OPT_SAVE_TO_KEEPIT_ABB"
 msgstr "Αποθήκευση σε KeepIt"
@@ -658,14 +514,8 @@ msgstr "Αλλαγή σειράς"
 msgid "IDS_BR_OPT_RENAME_FOLDER"
 msgstr "Μετονομασία φακέλου"
 
-msgid "IDS_BR_OPT_RENAME"
-msgstr "Μετονομασία"
-
 msgid "IDS_BR_OPT_REMOVE"
 msgstr "Κατάργηση"
-
-msgid "IDS_BR_OPT_REFRESH"
-msgstr "Ανανέωση"
 
 msgid "IDS_BR_OPT_READER_MODE_TTS"
 msgstr "Λειτουργία ανάγνωσης"
@@ -685,14 +535,8 @@ msgstr "Σελίδες χωρίς σύνδεση"
 msgid "IDS_BR_OPT_NEW_WINDOW"
 msgstr "Νέο παράθυρο"
 
-msgid "IDS_BR_OPT_MOVE"
-msgstr "Μετακίνηση"
-
 msgid "IDS_BR_OPT_MINIMISE"
 msgstr "Ελαχιστοποίηση"
-
-msgid "IDS_BR_OPT_MESSAGES"
-msgstr "Μηνύματα"
 
 msgid "IDS_BR_OPT_MEDIUM_M_QUALITY"
 msgstr "Μέτρια"
@@ -705,9 +549,6 @@ msgstr "Δικαιώματα πρόσβασης τοποθεσίας"
 
 msgid "IDS_BR_OPT_LOAD_IMAGES"
 msgstr "Φόρτωση εικόνων"
-
-msgid "IDS_BR_OPT_LIST_VIEW"
-msgstr "Προβολή λίστας"
 
 msgid "IDS_BR_OPT_LATIN_1_HISO_8859_1"
 msgstr "Λατινικά-1 (ISO-8859-1)"
@@ -724,9 +565,6 @@ msgstr "Ιαπωνικά (ISO-2022-JP)"
 msgid "IDS_BR_OPT_JAPANESE_HEUC_JP"
 msgstr "Ιαπωνικά (EUC-JP)"
 
-msgid "IDS_BR_OPT_I_AGREE"
-msgstr "Συμφωνώ."
-
 msgid "IDS_BR_OPT_INCOGNITO_MODE_ABB"
 msgstr "Λειτ. ανώνυμης περιήγ."
 
@@ -741,9 +579,6 @@ msgstr "Αρχική οθόνη ως συντόμευση"
 
 msgid "IDS_BR_OPT_HIGH_M_QUALITY"
 msgstr "Υψηλή"
-
-msgid "IDS_BR_OPT_HELP"
-msgstr "Βοήθεια"
 
 msgid "IDS_BR_OPT_GOFORWARD"
 msgstr "Μπροστά"
@@ -790,9 +625,6 @@ msgstr "Απενερ. χαμηλής χρήσης δεδομ."
 msgid "IDS_BR_OPT_DISABLED"
 msgstr "Απενεργοποιήθηκε"
 
-msgid "IDS_BR_OPT_DEVICE"
-msgstr "Συσκευή"
-
 msgid "IDS_BR_OPT_DELETE_SAVED_PAGE_ABB"
 msgstr "Διαγραφή αποθηκευμένης σελίδας"
 
@@ -826,9 +658,6 @@ msgstr "Κινεζικά (Big5)"
 msgid "IDS_BR_OPT_CACHE"
 msgstr "Μνήμη cache"
 
-msgid "IDS_BR_OPT_BOOKMARK"
-msgstr "Σελιδοδείκτης"
-
 msgid "IDS_BR_OPT_ADD_TO_WEB_CLIP"
 msgstr "Προσθήκη κλιπ στο Web"
 
@@ -849,12 +678,6 @@ msgstr "Προσθ. σελιδοδ."
 
 msgid "IDS_BR_OPT_ADD_BOOKMARK"
 msgstr "Προσθήκη σελιδοδείκτη"
-
-msgid "IDS_BR_OPT_ADDED"
-msgstr "Προστέθηκε."
-
-msgid "IDS_BR_OPT_ADD"
-msgstr "Προσθήκη"
 
 msgid "IDS_BR_OPT1_EXTENSION"
 msgstr "Επέκταση"
@@ -925,9 +748,6 @@ msgstr "Λήψη περιεχ. τροφοδοσίας"
 msgid "IDS_BR_MBODY_DELETE_SIGN_IN_DATA"
 msgstr "Διαγραφή δεδομ. σύνδεσης"
 
-msgid "IDS_BR_MBODY_DEFAULT_DOWNLOAD_STORAGE"
-msgstr "Προεπ. χώρος αποθ. λήψεων"
-
 msgid "IDS_BR_MBODY_DATA_SAVING_STATISTICS"
 msgstr "Στατιστ. εξοικον. δεδομ."
 
@@ -970,9 +790,6 @@ msgstr "Αδύνατη η μετακ. των σελιδοδ."
 msgid "IDS_BR_HEADER_SITE_NOT_TRUSTED_ABB"
 msgstr "Μη αξιόπιστη τοποθεσία"
 
-msgid "IDS_BR_HEADER_SIGN_IN_TO_SAMSUNG_ACCOUNT"
-msgstr "Συνδεθείτε στο Samsung account"
-
 msgid "IDS_BR_HEADER_SET_HOMEPAGE_ABB"
 msgstr "Ορισμός αρχικής σελίδας"
 
@@ -1009,17 +826,11 @@ msgstr "Αποκλείστηκε αναδυόμενο"
 msgid "IDS_BR_HEADER_POPULAR_WEBSITES_ABB"
 msgstr "Δημοφιλείς τοποθεσίες web"
 
-msgid "IDS_BR_HEADER_PD_SELECTED_ABB"
-msgstr "Επιλέχθηκαν %d"
-
 msgid "IDS_BR_HEADER_ORGANISATION_C_ABB"
 msgstr "Οργανισμός:"
 
 msgid "IDS_BR_HEADER_ORGANISATIONAL_UNIT_C"
 msgstr "Οργανωτική μονάδα:"
-
-msgid "IDS_BR_HEADER_NO_NETWORK_CONNECTION"
-msgstr "Δεν υπάρχει σύνδεση δικτύου"
 
 msgid "IDS_BR_HEADER_NEWER_M_INTERNET_HISTORY_ABB"
 msgstr "Newer"
@@ -1036,17 +847,11 @@ msgstr "Επέκταση HTML5"
 msgid "IDS_BR_HEADER_FORM_DATA"
 msgstr "Δεδομένα φορμών"
 
-msgid "IDS_BR_HEADER_FOLDER"
-msgstr "Φάκελος"
-
 msgid "IDS_BR_HEADER_EXPIRES_ON_C"
 msgstr "Ημερομηνία λήξης:"
 
 msgid "IDS_BR_HEADER_ENABLE_WEB_SIGN_IN"
 msgstr "Ενεργοποίηση σύνδεσης web"
-
-msgid "IDS_BR_HEADER_EDIT_PROFILE"
-msgstr "Επεξεργασία προφίλ"
 
 msgid "IDS_BR_HEADER_EDIT_BOOKMARK"
 msgstr "Επεξεργασία σελιδοδείκτη"
@@ -1084,14 +889,8 @@ msgstr "Διαχείριση εύρους ζώνης"
 msgid "IDS_BR_HEADER_ADVANCEDCERTIFICATES"
 msgstr "Πιστοποιητικά"
 
-msgid "IDS_BR_BUTTON_SET"
-msgstr "Ορισμός"
-
 msgid "IDS_BR_BUTTON_RESET_ABB"
 msgstr "Επαναφορά"
-
-msgid "IDS_BR_BUTTON_NOT_NOW"
-msgstr "Όχι τώρα"
 
 msgid "IDS_BR_BUTTON_HOMEPAGE_ABB"
 msgstr "Αρχ. σελ."
@@ -1099,35 +898,11 @@ msgstr "Αρχ. σελ."
 msgid "IDS_BR_BUTTON_FIND_ABB"
 msgstr "Εύρ."
 
-msgid "IDS_BR_BUTTON_ENABLE_ABB"
-msgstr "Ενεργοπ."
-
-msgid "IDS_BR_BUTTON_EDIT"
-msgstr "Επεξεργασία"
-
-msgid "IDS_BR_BUTTON_CONTINUE_ABB"
-msgstr "Συνέχεια"
-
-msgid "IDS_BR_BUTTON_CONTINUE"
-msgstr "Συνέχεια;"
-
-msgid "IDS_BR_BUTTON_CLOSE"
-msgstr "Κλείσιμο"
-
-msgid "IDS_BR_BUTTON_CANCEL_ABB"
-msgstr "Άκυρο"
-
-msgid "IDS_BR_BUTTON_CANCEL"
-msgstr "Ακύρωση"
-
 msgid "IDS_BR_BUTTON_BACK_ABB"
 msgstr "Πίσω"
 
 msgid "IDS_BR_BUTTON_ALWAYS_SHOW_ABB"
 msgstr "Εμφ. πάντα"
-
-msgid "IDS_BR_BUTTON_ALLOW"
-msgstr "Αποδοχή"
 
 msgid "IDS_BR_BUTTON2_WEB_PORTAL"
 msgstr "Πύλη Web"
@@ -1152,9 +927,6 @@ msgstr "Μετάβαση στο ιστορικό"
 
 msgid "IDS_BR_BUTTON2_ENTERTAINMENT"
 msgstr "Ψυχαγωγία"
-
-msgid "IDS_BR_BODY_YESTERDAY"
-msgstr "Xθές"
 
 msgid "IDS_BR_BODY_WINDOW_MANAGER"
 msgstr "Διαχείριση παραθύρων"
@@ -1183,9 +955,6 @@ msgstr "Χρήση λειτουργίας πλήρους οθόνης για α�
 msgid "IDS_BR_BODY_USE_A_PREDICTION_SERVICE_TO_DISPLAY_RELATED_QUERIES_AND_POPULAR_WEBSITES_IN_THE_ADDRESS_BAR_AS_YOU_TYPE"
 msgstr "Χρήση της υπηρεσίας πρόβλεψης για την εμφάνιση σχετικών ερωτημάτων και δημοφιλών τοποθεσιών web στη γραμμή διευθύνσεων κατά την πληκτρολόγηση."
 
-msgid "IDS_BR_BODY_URL"
-msgstr "URL"
-
 msgid "IDS_BR_BODY_UPPER_FOLDER_T_TALKBACK"
 msgstr "Επάνω φάκελος"
 
@@ -1201,12 +970,6 @@ msgstr "Δεν είναι δυνατή η εμφάνιση της ιστοσελ
 msgid "IDS_BR_BODY_TOWN_CITY_COUNTY_ABB"
 msgstr "Πόλη/νομός"
 
-msgid "IDS_BR_BODY_TODAY"
-msgstr "Σήμερα"
-
-msgid "IDS_BR_BODY_TITLE"
-msgstr "Τίτλος"
-
 msgid "IDS_BR_BODY_THIS_SITE_IS_USING_PS"
 msgstr "Αυτή η τοποθεσία χρησιμοποιεί %s."
 
@@ -1221,9 +984,6 @@ msgstr "Αυτός ο σελιδοδείκτης θα διαγραφεί."
 
 msgid "IDS_BR_BODY_THE_SELECTED_PERSONAL_DATA_WILL_BE_DELETED"
 msgstr "Τα επιλεγμένα προσωπικά δεδομένα θα διαγραφούν."
-
-msgid "IDS_BR_BODY_THE_MAXIMUM_NUMBER_OF_CHARACTERS_HPD_HAS_BEEN_EXCEEDED"
-msgstr "Υπέρβαση του μέγιστου αριθμού χαρακτήρων (%d)."
 
 msgid "IDS_BR_BODY_TEXT_FIELD_T_TTS"
 msgstr "Πεδίο κειμένου"
@@ -1249,17 +1009,11 @@ msgstr "Συγχρονισμός σελιδοδεικτών"
 msgid "IDS_BR_BODY_STREET_ADDRESS_PO_BOX_C_O_ETC_ABB"
 msgstr "Διεύθυνση, ταχ. θυρίδα, υπόψη κ.ά."
 
-msgid "IDS_BR_BODY_STREAMING"
-msgstr "Ροή"
-
 msgid "IDS_BR_BODY_STORED_DATA"
 msgstr "Αποθηκευμένα δεδομένα"
 
 msgid "IDS_BR_BODY_SPLIT_BAR_HANDLE"
 msgstr "Λαβή χειρισμού της γραμμής διαχωρισμού"
-
-msgid "IDS_BR_BODY_SMALL"
-msgstr "Μικρό"
 
 msgid "IDS_BR_BODY_SIGN_IN_TO_YOUR_SAMSUNG_ACCOUNT_TO_ACCESS_THE_BOOKMARKS_AND_TABS_ON_YOUR_OTHER_DEVICES"
 msgstr "Για να αποκτήσετε πρόσβαση στους σελιδοδείκτες και τις καρτέλες στην άλλη συσκευή, συνδεθείτε στο Samsung account."
@@ -1279,9 +1033,6 @@ msgstr "Ορισμός κειμένου για αυτόματη συμπλήρω
 msgid "IDS_BR_BODY_SET_CURRENT_PAGE_AS_HOMEPAGE"
 msgstr "Ορισμός της τρέχουσας σελίδας ως αρχικής"
 
-msgid "IDS_BR_BODY_SETTINGS"
-msgstr "Ρυθμίσεις"
-
 msgid "IDS_BR_BODY_SELECT_FOLDER"
 msgstr "Επιλογή φακέλου"
 
@@ -1294,9 +1045,6 @@ msgstr "Πεδίο αναζήτησης"
 msgid "IDS_BR_BODY_SEARCH_AND_URL_SUGGESTIONS"
 msgstr "Προτάσεις αναζήτησης και διευθύνσεων URL"
 
-msgid "IDS_BR_BODY_SEARCH"
-msgstr "Αναζήτηση"
-
 msgid "IDS_BR_BODY_SCREEN_AND_TEXT"
 msgstr "Οθόνη και κείμενο"
 
@@ -1305,9 +1053,6 @@ msgstr "Αποθήκευση ονομάτων χρήστη και κωδικών
 
 msgid "IDS_BR_BODY_SAVE_LINK"
 msgstr "Αποθήκευση σύνδεσης"
-
-msgid "IDS_BR_BODY_RSS_SEARCH_RESULTS"
-msgstr "Αποτελέσματα αναζήτησης"
 
 msgid "IDS_BR_BODY_RESTORE_DEFAULT_SETTINGS_Q"
 msgstr "Επαναφορά των προεπιλεγμένων ρυθμίσεων;"
@@ -1342,12 +1087,6 @@ msgstr "Κουμπί επιλογής"
 msgid "IDS_BR_BODY_PS_BOOKMARK_WILL_BE_DELETED"
 msgstr "Ο σελιδοδείκτης %s θα διαγραφεί."
 
-msgid "IDS_BR_BODY_PROFILE"
-msgstr "Προφίλ"
-
-msgid "IDS_BR_BODY_PROCESSING_ING"
-msgstr "Επεξεργασία..."
-
 msgid "IDS_BR_BODY_PRIVACY"
 msgstr "Απόρρητο"
 
@@ -1360,20 +1099,8 @@ msgstr "Πατήστε το πλήκτρο μενού."
 msgid "IDS_BR_BODY_POSTCODE_ABB"
 msgstr "Ταχυδρομικός κωδικός"
 
-msgid "IDS_BR_BODY_PHONE_NUMBER_ABB"
-msgstr "Αριθ. τηλεφ."
-
-msgid "IDS_BR_BODY_PHONE"
-msgstr "Τηλέφωνο"
-
 msgid "IDS_BR_BODY_PD_POP_UPS_BLOCKED_ABB"
 msgstr "Αποκλ. %d αναδ. παρ."
-
-msgid "IDS_BR_BODY_PD_ITEMS_WILL_BE_DELETED"
-msgstr "Θα διαγραφούν %d στοιχεία."
-
-msgid "IDS_BR_BODY_PASSWORD"
-msgstr "Κωδικός πρόσβασης"
 
 msgid "IDS_BR_BODY_PAGE_LOADED_T_TTS"
 msgstr "Η φόρτωση της σελίδας ολοκληρώθηκε"
@@ -1399,14 +1126,8 @@ msgstr "Κατ’απαίτηση"
 msgid "IDS_BR_BODY_ONLY_VIA_WI_FI_ABB"
 msgstr "Μόνο μέσω Wi-Fi"
 
-msgid "IDS_BR_BODY_ON"
-msgstr "Ενεργό"
-
 msgid "IDS_BR_BODY_OLDER"
 msgstr "Παλαιότερο"
-
-msgid "IDS_BR_BODY_OFF"
-msgstr "Ανενεργό"
 
 msgid "IDS_BR_BODY_NO_WINDOWS"
 msgstr "Δεν υπάρχουν παράθυρα"
@@ -1420,17 +1141,8 @@ msgstr "Χωρίς τίτλο"
 msgid "IDS_BR_BODY_NO_SAVED_PAGES"
 msgstr "Καμία αποθηκευμένη σελίδα"
 
-msgid "IDS_BR_BODY_NO_RESULTS_FOUND"
-msgstr "Δεν βρέθηκαν αποτελέσματα."
-
-msgid "IDS_BR_BODY_NO_HISTORIES"
-msgstr "Κανένα ιστορικό"
-
 msgid "IDS_BR_BODY_NO_BOOKMARKS"
 msgstr "Κανένας σελιδοδείκτης"
-
-msgid "IDS_BR_BODY_NOTIFICATIONS"
-msgstr "Ειδοποιήσεις"
 
 msgid "IDS_BR_BODY_NORMAL"
 msgstr "Κανονική"
@@ -1446,9 +1158,6 @@ msgstr "Δημοφιλέστερες τοποθεσίες"
 
 msgid "IDS_BR_BODY_MOBILE_VIEW"
 msgstr "Προβολή κινητού"
-
-msgid "IDS_BR_BODY_MEDIUM"
-msgstr "Μεσαίο"
 
 msgid "IDS_BR_BODY_LOCATION_M_INFORMATION"
 msgstr "Τοποθεσία"
@@ -1474,9 +1183,6 @@ msgstr "Internet"
 msgid "IDS_BR_BODY_IMPROVE_PERFORMANCE_WHEN_LOADING_PAGES"
 msgstr "Βελτίωση της απόδοσης κατά τη φόρτωση εικόνων."
 
-msgid "IDS_BR_BODY_IMAGES"
-msgstr "Εικόνες"
-
 msgid "IDS_BR_BODY_HOMEPAGE"
 msgstr "Αρχική σελίδα"
 
@@ -1486,20 +1192,11 @@ msgstr "Απόκρυψη της γραμμής διευθύνσεων κατά �
 msgid "IDS_BR_BODY_GENERAL_M_SETTINGS"
 msgstr "Γενικά"
 
-msgid "IDS_BR_BODY_FULL_SCREEN"
-msgstr "Πλήρης οθόνη"
-
 msgid "IDS_BR_BODY_FULL_NAME_ABB"
 msgstr "Πλήρες όνομα"
 
 msgid "IDS_BR_BODY_FORCE_ZOOM_ABB"
 msgstr "Επιβολή ζουμ"
-
-msgid "IDS_BR_BODY_FONT_SIZE"
-msgstr "Μέγεθος γραμματοσειράς"
-
-msgid "IDS_BR_BODY_FOLDER_NAME"
-msgstr "Όνομα φακέλου"
 
 msgid "IDS_BR_BODY_FLAT_SUITE_UNIT_BUILDING_FLOOR_ETC_ABB"
 msgstr "Διαμέρισμα, σουίτα, μονάδα, κτήριο, όροφος κτλ."
@@ -1516,24 +1213,6 @@ msgstr "Εισαγάγετε το όνομά σας."
 msgid "IDS_BR_BODY_ENTER_TOWN_CITY_COUNTY_ABB"
 msgstr "Καταχωρίστε πόλη/νομό."
 
-msgid "IDS_BR_BODY_ENTER_POSTCODE_ABB"
-msgstr "Εισαγωγή ταχυδρομικού κώδικα."
-
-msgid "IDS_BR_BODY_ENTER_POSTCODE"
-msgstr "Εισαγωγή ταχυδρομικού κώδικα."
-
-msgid "IDS_BR_BODY_ENTER_PHONE_NUMBER"
-msgstr "Εισαγάγετε αριθμό τηλεφώνου."
-
-msgid "IDS_BR_BODY_ENTER_NAME"
-msgstr "Εισαγωγή ονόματος."
-
-msgid "IDS_BR_BODY_ENTER_FOLDER_NAME"
-msgstr "Εισαγωγή ονόματος φακέλου."
-
-msgid "IDS_BR_BODY_ENTER_EMAIL_ADDRESS"
-msgstr "Εισαγωγή διεύθυνσης email."
-
 msgid "IDS_BR_BODY_ENTER_COUNTRY_REGION_ABB"
 msgstr "Εισαγωγή χώρας/περιοχής."
 
@@ -1545,12 +1224,6 @@ msgstr "Ενεργοποίηση τοποθεσίας"
 
 msgid "IDS_BR_BODY_ENABLE_JAVASCRIPT"
 msgstr "Ενεργοποίηση JavaScript"
-
-msgid "IDS_BR_BODY_EMAIL_ADDRESS"
-msgstr "Διεύθυνση Email"
-
-msgid "IDS_BR_BODY_DOWNLOADING_ING"
-msgstr "Λήψη..."
 
 msgid "IDS_BR_BODY_DOUBLE_TAP_TO_VIEW_CERTIFICATE_TTS"
 msgstr "Πατήστε δύο φορές για προβολή του πιστοποιητικού."
@@ -1591,9 +1264,6 @@ msgstr "Εμφάνιση αναδυόμενων παραθύρων προειδ�
 msgid "IDS_BR_BODY_DISPLAY_IMAGES_ON_WEB_PAGES"
 msgstr "Εμφάνιση εικόνων σε ιστοσελίδες."
 
-msgid "IDS_BR_BODY_DEVELOPER_MODE"
-msgstr "Κατάσταση λειτουργίας προγραμματισμού"
-
 msgid "IDS_BR_BODY_DESKTOP_VIEW"
 msgstr "Προβολή επιφάνειας εργασίας"
 
@@ -1608,9 +1278,6 @@ msgstr "Προεπιλεγμένη αποθήκευση"
 
 msgid "IDS_BR_BODY_DEFAULT_PAGE_ABB"
 msgstr "Προεπιλεγμένη σελίδα"
-
-msgid "IDS_BR_BODY_DEFAULT"
-msgstr "Προεπιλογή"
 
 msgid "IDS_BR_BODY_DATA_USAGE_REDUCED_BY_P1SDP_HP2SD_KB_OF_P3SD_KB_RECEIVED_TAP_HERE_TO_RESET_STATISTICS"
 msgstr "Η χρήση δεδομένων μειώθηκε κατά %1$d% (ελήφθησαν %2$d KB από %3$d KB). Πατήστε εδώ για επαναφορά των στατιστικών."
@@ -1675,9 +1342,6 @@ msgstr "Αλλάξτε το μέγεθος του κειμένου για ευκ
 msgid "IDS_BR_BODY_BOOKMARK_REMINDER_ABB"
 msgstr "Υπενθύμιση σελιδοδείκτη"
 
-msgid "IDS_BR_BODY_BOOKMARKS"
-msgstr "Σελιδοδείκτες"
-
 msgid "IDS_BR_BODY_BLOCK_POP_UPS_ON_WEB_PAGES"
 msgstr "Αποκλεισμός αναδυόμενων παραθύρων σε ιστοσελίδες."
 
@@ -1726,9 +1390,6 @@ msgstr "Να επιτρέπεται η εμφάνιση ειδοποιήσεων
 msgid "IDS_BR_BODY_ALLOWS_SITES_TO_SAVE_AND_READ_COOKIE_DATA"
 msgstr "Επιτρέπει στις τοποθεσίες να αποθηκεύουν και να διαβάζουν δεδομένα αρχείων cookie."
 
-msgid "IDS_BR_BODY_ALL"
-msgstr "Όλα"
-
 msgid "IDS_BR_BODY_AFTER_YOU_VISIT_WEBPAGES_THE_PAGES_YOU_HAVE_VISITED_THE_MOST_WILL_BE_SHOWN_HERE"
 msgstr "Αφού επισκεφτείτε ιστοσελίδες, οι σελίδες που επισκέπτεστε πιο συχνά θα εμφανίζονται εδώ."
 
@@ -1756,9 +1417,6 @@ msgstr "Για προχωρ."
 msgid "IDS_BR_BODY_ADD_TO_CONTACT"
 msgstr "Προσθήκη σε επαφή"
 
-msgid "IDS_BR_BODY_ADD_TO"
-msgstr "Προσθήκη σε"
-
 msgid "IDS_BR_BODY_ADD_THIS_WEBSITE_TO_BOOKMARKS_TO_OPEN_IT_FASTER_ABB"
 msgstr "Προσθ. την τοπ. web στους σελιδ. για γρήγ. άνοιγ."
 
@@ -1768,29 +1426,17 @@ msgstr "Γραμμή διεύθυνσης 2"
 msgid "IDS_BR_BODY_ADDRESS_LINE_1_ABB"
 msgstr "Γραμμή διεύθυνσης 1"
 
-msgid "IDS_BR_BODY_ADDDETAILSVIEW_TAGS"
-msgstr "Ετικέτες"
-
-msgid "IDS_BR_BODY_ADDBOOKMARKURL"
-msgstr "URL"
-
 msgid "IDS_BR_BODY_ACCEPT_COOKIES"
 msgstr "Αποδοχή των cookies"
 
 msgid "IDS_BR_BODY_1_PROFILE_WILL_BE_DELETED"
 msgstr "Θα διαγραφεί 1 προφίλ."
 
-msgid "IDS_BR_BODY_1_ITEM_WILL_BE_DELETED"
-msgstr "Θα γίνει διαγραφή 1 στοιχείου."
-
 msgid "IDS_BR_ACBUTTON_TABS_ABB"
 msgstr "ΚΑΡΤ."
 
 msgid "IDS_BR_TPOP_STARTING_DOWNLOAD_ING"
 msgstr "Έναρξη λήψης..."
-
-msgid "IDS_BR_TPOP_MAXIMUM_NUMBER_OF_CHARACTERS_HPD_REACHED"
-msgstr "Συμπληρώθηκε ο μέγιστος αριθμός χαρακτήρων (%d)."
 
 msgid "IDS_BR_TPOP_FOLDER_RENAMED"
 msgstr "Το όνομα του φακέλου άλλαξε."
@@ -1807,14 +1453,8 @@ msgstr "Άκυρο"
 msgid "IDS_BR_SBODY_SET_THE_DEVICE_TO_SHOW_THE_FULL_WEBPAGE_ON_THE_SCREEN_WHEN_IT_IS_LOADED_WITHOUT_NEEDING_TO_SCROLL"
 msgstr "Ρυθμίστε τη συσκευή ώστε να εμφανίζεται ολόκληρη η ιστοσελίδα στην οθόνη κατά τη φόρτωση, χωρίς να χρειάζεται να κάνετε κύλιση."
 
-msgid "IDS_BR_POP_UNSUPPORTMEDIATYPE"
-msgstr "Μη υποστηριζόμενος τύπος μέσου."
-
 msgid "IDS_BR_POP_UNABLE_TO_RUN_INTERNET_LOW_BATTERY"
 msgstr "Δεν ήταν δυνατή η εκτέλεση του Internet. Χαμηλή ισχύς μπαταρίας."
-
-msgid "IDS_BR_POP_UNABLE_TO_CONNECT_TO_MOBILE_NETWORKS_WHILE_FLIGHT_MODE_IS_ENABLED_CONNECT_TO_WI_FI_NETWORK_INSTEAD_OR_DISABLE_FLIGHT_MODE_AND_TRY_AGAIN"
-msgstr "Δεν είναι δυνατή η σύνδεση σε δίκτυα κινητής τηλεφωνίας όσο είναι ενεργοποιημένη η λειτουργία πτήσης. Συνδεθείτε σε δίκτυο Wi-Fi ή απενεργοποιήστε τη λειτουργία πτήσης και δοκιμάστε ξανά"
 
 msgid "IDS_BR_POP_THE_DOWNLOAD_HAS_BEEN_STOPPED_AND_THE_DOWNLOADED_DATA_WILL_BE_DELETED"
 msgstr "Η λήψη διακόπηκε και τα δεδομένα που λήφθηκαν θα διαγραφούν."
@@ -1825,20 +1465,8 @@ msgstr "Search completed"
 msgid "IDS_BR_POP_READY"
 msgstr "Έτοιμο."
 
-msgid "IDS_BR_POP_INSTALL_SUCCESS"
-msgstr "Η εγκατάσταση ολοκληρώθηκε."
-
-msgid "IDS_BR_POP_INSTALLATION_FAILED"
-msgstr "Αποτυχία εγκατάστασης."
-
 msgid "IDS_BR_POP_INFORM_MEMORY_ERROR"
 msgstr "Σφάλμα μνήμης."
-
-msgid "IDS_BR_POP_DELETING_ING"
-msgstr "Διαγραφή..."
-
-msgid "IDS_BR_POP_DATA_ROAMING_IS_DISABLED_CONNECT_TO_WI_FI_NETWORK_INSTEAD_OR_ENABLE_DATA_ROAMING_AND_TRY_AGAIN"
-msgstr "Τα δεδομένα περιαγωγής απενεργοποιήθηκαν. Συνδεθείτε σε δίκτυο Wi-Fi ή ενεργοποιήστε τα δεδομένα περιαγωγής και δοκιμάστε ξανά"
 
 msgid "IDS_BR_POP_DATA_ROAMING_IS_DISABLED_CONNECT_TO_A_WI_FI_NETWORK_OR_ENABLE_DATA_ROAMING_AND_TRY_AGAIN"
 msgstr "Τα δεδομένα περιαγωγής απενεργοποιήθηκαν. Συνδεθείτε σε δίκτυο Wi-Fi ή ενεργοποιήστε την περιαγωγή δεδομένων και δοκιμάστε ξανά."
@@ -1855,17 +1483,11 @@ msgstr "Εφαρμ. Web"
 msgid "IDS_BR_OPT_VIEW_ONLINE"
 msgstr "Προβολή στο διαδίκτυο"
 
-msgid "IDS_BR_OPT_SHARE_VIA"
-msgstr "Κοινή χρήση μέσω"
-
 msgid "IDS_BR_OPT_READ_ON_OFFLINE_PAGES_LATER_ABB"
 msgstr "Ανάγ. αργ. σε σελ. εκτός σύνδ."
 
 msgid "IDS_BR_OPT_QUICK_ACCESS_ABB2"
 msgstr "Γρήγορη πρόσβαση"
-
-msgid "IDS_BR_OPT_PASTE"
-msgstr "Επικόλληση"
 
 msgid "IDS_BR_OPT_ALWAYS_ENABLED_ABB"
 msgstr "Πάντα ενεργοποιημένο"
@@ -1891,9 +1513,6 @@ msgstr "Προτάσεις αναζήτ. και URL"
 msgid "IDS_BR_MBODY_HISTORY"
 msgstr "Ιστορικό"
 
-msgid "IDS_BR_MBODY_FONT_SIZE"
-msgstr "Μέγ. γραμματοσειράς"
-
 msgid "IDS_BR_MBODY_FIT_PAGE_TO_SCREEN"
 msgstr "Προσαρμ. σελίδας σε οθόνη"
 
@@ -1905,9 +1524,6 @@ msgstr "Προσαρμογή"
 
 msgid "IDS_BR_MBODY_COUNTRY_REGION"
 msgstr "Χώρα/Περιοχή"
-
-msgid "IDS_BR_HEADER_UNABLE_TO_DOWNLOAD_ABB"
-msgstr "Δεν είναι δυνατή η λήψη"
 
 msgid "IDS_BR_HEADER_RENAME_FOLDER_ABB"
 msgstr "Μετονομασία φακέλου"
@@ -1939,14 +1555,8 @@ msgstr "Πρ. πληροφ."
 msgid "IDS_BR_BUTTON_WI_FI_ABB"
 msgstr "Wi-Fi"
 
-msgid "IDS_BR_BUTTON_UPDATE"
-msgstr "Ενημέρωση"
-
 msgid "IDS_BR_BUTTON_SETTINGS_ABB"
 msgstr "Ρυθμ."
-
-msgid "IDS_BR_BUTTON_RETRY"
-msgstr "Επανάληψη"
 
 msgid "IDS_BR_BUTTON2_OK"
 msgstr "OK"
@@ -1972,9 +1582,6 @@ msgstr "Αυτό το πιστοποιητικό προέρχεται από α�
 msgid "IDS_BR_BODY_TAP_HERE_TO_ADD_A_QUICK_ACCESS_SHORTCUT"
 msgstr "Πατήστε εδώ για να προσθέσετε μια συντόμευση γρήγορης πρόσβασης."
 
-msgid "IDS_BR_BODY_REQUEST_FAILED"
-msgstr "Αποτυχία αιτήματος."
-
 msgid "IDS_BR_BODY_PREFERENCES"
 msgstr "Προτιμήσεις"
 
@@ -1990,14 +1597,398 @@ msgstr "Δεν βρέθηκαν αποτελέσματα"
 msgid "IDS_BR_BODY_MOBILE_DATA_IS_TURNED_OFF_CONNECT_TO_A_WI_FI_NETWORK_INSTEAD_OR_TAP_SETTINGS_TO_TURN_ON_MOBILE_DATA_AND_THEN_TRY_AGAIN"
 msgstr "Τα δεδομένα κινητής τηλεφωνίας είναι απενεργοποιημένα. Συνδεθείτε σε ένα δίκτυο Wi-Fi ή πατήστε «Ρυθμίσεις» για να ενεργοποιήσετε τα δεδομένα κινητής τηλεφωνίας και, στη συνέχεια, δοκιμάστε ξανά."
 
+msgid "IDS_BR_BODY_FIT_TO_WIDTH"
+msgstr "Προσαρμογή κατά πλάτος"
+
+msgid "IDS_BR_ACBUTTON_QUICK_ACCESS"
+msgstr "ΓΡΗΓ. ΠΡΟΣΒ."
+
+msgid "IDS_BR_OPT_OPEN_IN_NEW_TAB"
+msgstr "Άνοιγμα σε νέα καρτέλα"
+
+msgid "IDS_BR_BODY_SHARE_LINK"
+msgstr "Κοινή χρήση σύνδεσης"
+
+msgid "IDS_BR_SK_SAVE_LITE"
+msgstr "Αποθήκ."
+
+msgid "IDS_BR_SK_SAVE_ABB"
+msgstr "Αποθ."
+
+msgid "IDS_BR_SK_SAVE"
+msgstr "Αποθ/ση"
+
+msgid "IDS_BR_SK_PREVIOUS"
+msgstr "Προηγούμενο"
+
+msgid "IDS_BR_SK_NEXT"
+msgstr "Επόμενο"
+
+msgid "IDS_BR_SK_DELETE"
+msgstr "Διαγραφή"
+
+msgid "IDS_BR_SK_CLEAR"
+msgstr "Διαγραφή"
+
+msgid "IDS_BR_SK_BACK"
+msgstr "Πίσω"
+
+msgid "IDS_BR_POP_WI_FI_CONNECTION_REQUIRED_CONNECT_TO_WI_FI_NETWORK_AND_TRY_AGAIN"
+msgstr "Απαιτείται σύνδεση Wi-Fi. Συνδεθείτε σε δίκτυο Wi-Fi και δοκιμάστε ξανά"
+
+msgid "IDS_BR_POP_URL_NOT_FOUND"
+msgstr "Δε βρέθηκε η URL."
+
+msgid "IDS_BR_POP_URL"
+msgstr "URL"
+
+msgid "IDS_BR_POP_SAVED"
+msgstr "Αποθηκεύτηκε."
+
+msgid "IDS_BR_POP_REMOVED"
+msgstr "Αφαιρέθηκε."
+
+msgid "IDS_BR_POP_PD_ITEMS_WILL_BE_DELETED"
+msgstr "Θα διαγραφούν %d στοιχεία."
+
+msgid "IDS_BR_POP_PD_ITEMS_SELECTED"
+msgstr "Επιλέχθηκαν %d στοιχεία."
+
+msgid "IDS_BR_POP_NO_ITEMS_SELECTED"
+msgstr "Δεν έχουν επιλεχθεί στοιχεία."
+
+msgid "IDS_BR_POP_NOT_ENOUGH_MEMORY"
+msgstr "Ανεπαρκής μνήμη."
+
+msgid "IDS_BR_POP_NEVER"
+msgstr "Ποτέ"
+
+msgid "IDS_BR_POP_MOBILE_DATA_IS_DISABLED_CONNECT_TO_WI_FI_NETWORK_INSTEAD_OR_ENABLE_MOBILE_DATA_AND_TRY_AGAIN"
+msgstr "Τα δεδομένα κινητής τηλεφωνίας απενεργοποιήθηκαν. Συνδεθείτε σε δίκτυο Wi-Fi ή ενεργοποιήστε τα δεδομένα κινητής τηλεφωνίας και δοκιμάστε ξανά"
+
+msgid "IDS_BR_POP_LOADING_PLEASE_WAIT_ING"
+msgstr "Φόρτωση. Περιμένετε..."
+
+msgid "IDS_BR_POP_INVALID_URL"
+msgstr "Άκυρο URL."
+
+msgid "IDS_BR_POP_FAIL"
+msgstr "Αποτυχία."
+
+msgid "IDS_BR_POP_ENTER_TITLE_ABB"
+msgstr "Εισαγωγή τίτλου"
+
+msgid "IDS_BR_POP_DO_NOT_SHOW_AGAIN"
+msgstr "Να μην εμφανιστεί ξανά"
+
+msgid "IDS_BR_POP_DOWNLOADCOMPLETE"
+msgstr "Η λήψη ολοκληρώθηκε."
+
+msgid "IDS_BR_POP_DISABLED"
+msgstr "Απενεργοποιημένη."
+
+msgid "IDS_BR_POP_DELETE_Q"
+msgstr "Διαγραφή;"
+
+msgid "IDS_BR_POP_DELETED"
+msgstr "Διαγράφηκε."
+
+msgid "IDS_BR_POP_CLOSE_APPLICATION_Q"
+msgstr "Τερματισμός εφαρμογής;"
+
+msgid "IDS_BR_POP_BOOKMARK_ADDED"
+msgstr "Προστέθηκε σελιδοδείκτης."
+
+msgid "IDS_BR_POP_AUTOMATIC_BRIGHTNESS"
+msgstr "Αυτόματη φωτεινότητα"
+
+msgid "IDS_BR_POP_ACCOUNT"
+msgstr "Λογαριασμός"
+
+msgid "IDS_BR_POP_1_ITEM_WILL_BE_DELETED"
+msgstr "Θα γίνει διαγραφή 1 στοιχείου."
+
+msgid "IDS_BR_POP_1_ITEM_SELECTED"
+msgstr "Επιλέχθηκε 1 στοιχείο."
+
+msgid "IDS_BR_OPT_TRANSLATE"
+msgstr "Μετάφραση"
+
+msgid "IDS_BR_OPT_STOP"
+msgstr "Διακοπή"
+
+msgid "IDS_BR_OPT_SHOW"
+msgstr "Εμφάνιση"
+
+msgid "IDS_BR_OPT_SHARE"
+msgstr "Κοινή χρήση"
+
+msgid "IDS_BR_OPT_SETTINGS"
+msgstr "Ρυθμίσεις"
+
+msgid "IDS_BR_OPT_SEND_EMAIL"
+msgstr "Αποστολή email"
+
+msgid "IDS_BR_OPT_SELECT"
+msgstr "Επιλογή"
+
+msgid "IDS_BR_OPT_SD_CARD"
+msgstr "Κάρτα SD"
+
+msgid "IDS_BR_OPT_RENAME"
+msgstr "Μετονομασία"
+
+msgid "IDS_BR_OPT_REFRESH"
+msgstr "Ανανέωση"
+
+msgid "IDS_BR_OPT_MOVE"
+msgstr "Μετακίνηση"
+
+msgid "IDS_BR_OPT_MESSAGES"
+msgstr "Μηνύματα"
+
+msgid "IDS_BR_OPT_LIST_VIEW"
+msgstr "Προβολή λίστας"
+
+msgid "IDS_BR_OPT_I_AGREE"
+msgstr "Συμφωνώ."
+
+msgid "IDS_BR_OPT_HELP"
+msgstr "Βοήθεια"
+
+msgid "IDS_BR_OPT_DEVICE"
+msgstr "Συσκευή"
+
+msgid "IDS_BR_OPT_BOOKMARK"
+msgstr "Σελιδοδείκτης"
+
+msgid "IDS_BR_OPT_ADDED"
+msgstr "Προστέθηκε."
+
+msgid "IDS_BR_OPT_ADD"
+msgstr "Προσθήκη"
+
+msgid "IDS_BR_MBODY_DEFAULT_DOWNLOAD_STORAGE"
+msgstr "Προεπ. χώρος αποθ. λήψεων"
+
+msgid "IDS_BR_HEADER_SIGN_IN_TO_SAMSUNG_ACCOUNT"
+msgstr "Συνδεθείτε στο Samsung account"
+
+msgid "IDS_BR_HEADER_PD_SELECTED_ABB"
+msgstr "Επιλέχθηκαν %d"
+
+msgid "IDS_BR_HEADER_NO_NETWORK_CONNECTION"
+msgstr "Δεν υπάρχει σύνδεση δικτύου"
+
+msgid "IDS_BR_HEADER_FOLDER"
+msgstr "Φάκελος"
+
+msgid "IDS_BR_HEADER_EDIT_PROFILE"
+msgstr "Επεξεργασία προφίλ"
+
+msgid "IDS_BR_BUTTON_SET"
+msgstr "Ορισμός"
+
+msgid "IDS_BR_BUTTON_NOT_NOW"
+msgstr "Όχι τώρα"
+
+msgid "IDS_BR_BUTTON_ENABLE_ABB"
+msgstr "Ενεργοπ."
+
+msgid "IDS_BR_BUTTON_EDIT"
+msgstr "Επεξεργασία"
+
+msgid "IDS_BR_BUTTON_CONTINUE_ABB"
+msgstr "Συνέχεια"
+
+msgid "IDS_BR_BUTTON_CONTINUE"
+msgstr "Συνέχεια;"
+
+msgid "IDS_BR_BUTTON_CLOSE"
+msgstr "Κλείσιμο"
+
+msgid "IDS_BR_BUTTON_CANCEL_ABB"
+msgstr "Άκυρο"
+
+msgid "IDS_BR_BUTTON_CANCEL"
+msgstr "Ακύρωση"
+
+msgid "IDS_BR_BUTTON_ALLOW"
+msgstr "Αποδοχή"
+
+msgid "IDS_BR_BODY_YESTERDAY"
+msgstr "Xθές"
+
+msgid "IDS_BR_BODY_URL"
+msgstr "URL"
+
+msgid "IDS_BR_BODY_TODAY"
+msgstr "Σήμερα"
+
+msgid "IDS_BR_BODY_TITLE"
+msgstr "Τίτλος"
+
+msgid "IDS_BR_BODY_THE_MAXIMUM_NUMBER_OF_CHARACTERS_HPD_HAS_BEEN_EXCEEDED"
+msgstr "Υπέρβαση του μέγιστου αριθμού χαρακτήρων (%d)."
+
+msgid "IDS_BR_BODY_STREAMING"
+msgstr "Ροή"
+
+msgid "IDS_BR_BODY_SMALL"
+msgstr "Μικρό"
+
+msgid "IDS_BR_BODY_SETTINGS"
+msgstr "Ρυθμίσεις"
+
+msgid "IDS_BR_BODY_SEARCH"
+msgstr "Αναζήτηση"
+
+msgid "IDS_BR_BODY_RSS_SEARCH_RESULTS"
+msgstr "Αποτελέσματα αναζήτησης"
+
+msgid "IDS_BR_BODY_PROFILE"
+msgstr "Προφίλ"
+
+msgid "IDS_BR_BODY_PROCESSING_ING"
+msgstr "Επεξεργασία..."
+
+msgid "IDS_BR_BODY_PHONE_NUMBER_ABB"
+msgstr "Αριθ. τηλεφ."
+
+msgid "IDS_BR_BODY_PHONE"
+msgstr "Τηλέφωνο"
+
+msgid "IDS_BR_BODY_PD_ITEMS_WILL_BE_DELETED"
+msgstr "Θα διαγραφούν %d στοιχεία."
+
+msgid "IDS_BR_BODY_PASSWORD"
+msgstr "Κωδικός πρόσβασης"
+
+msgid "IDS_BR_BODY_ON"
+msgstr "Ενεργό"
+
+msgid "IDS_BR_BODY_OFF"
+msgstr "Ανενεργό"
+
+msgid "IDS_BR_BODY_NO_RESULTS_FOUND"
+msgstr "Δεν βρέθηκαν αποτελέσματα."
+
+msgid "IDS_BR_BODY_NO_HISTORIES"
+msgstr "Κανένα ιστορικό"
+
+msgid "IDS_BR_BODY_NOTIFICATIONS"
+msgstr "Ειδοποιήσεις"
+
+msgid "IDS_BR_BODY_MEDIUM"
+msgstr "Μεσαίο"
+
+msgid "IDS_BR_BODY_IMAGES"
+msgstr "Εικόνες"
+
+msgid "IDS_BR_BODY_FULL_SCREEN"
+msgstr "Πλήρης οθόνη"
+
+msgid "IDS_BR_BODY_FONT_SIZE"
+msgstr "Μέγεθος γραμματοσειράς"
+
+msgid "IDS_BR_BODY_FOLDER_NAME"
+msgstr "Όνομα φακέλου"
+
+msgid "IDS_BR_BODY_ENTER_POSTCODE_ABB"
+msgstr "Εισαγωγή ταχυδρομικού κώδικα."
+
+msgid "IDS_BR_BODY_ENTER_POSTCODE"
+msgstr "Εισαγωγή ταχυδρομικού κώδικα."
+
+msgid "IDS_BR_BODY_ENTER_PHONE_NUMBER"
+msgstr "Εισαγάγετε αριθμό τηλεφώνου."
+
+msgid "IDS_BR_BODY_ENTER_NAME"
+msgstr "Εισαγωγή ονόματος."
+
+msgid "IDS_BR_BODY_ENTER_FOLDER_NAME"
+msgstr "Εισαγωγή ονόματος φακέλου."
+
+msgid "IDS_BR_BODY_ENTER_EMAIL_ADDRESS"
+msgstr "Εισαγωγή διεύθυνσης email."
+
+msgid "IDS_BR_BODY_EMAIL_ADDRESS"
+msgstr "Διεύθυνση Email"
+
+msgid "IDS_BR_BODY_DOWNLOADING_ING"
+msgstr "Λήψη..."
+
+msgid "IDS_BR_BODY_DEVELOPER_MODE"
+msgstr "Κατάσταση λειτουργίας προγραμματισμού"
+
+msgid "IDS_BR_BODY_DEFAULT"
+msgstr "Προεπιλογή"
+
+msgid "IDS_BR_BODY_BOOKMARKS"
+msgstr "Σελιδοδείκτες"
+
+msgid "IDS_BR_BODY_ALL"
+msgstr "Όλα"
+
+msgid "IDS_BR_BODY_ADD_TO"
+msgstr "Προσθήκη σε"
+
+msgid "IDS_BR_BODY_ADDDETAILSVIEW_TAGS"
+msgstr "Ετικέτες"
+
+msgid "IDS_BR_BODY_ADDBOOKMARKURL"
+msgstr "URL"
+
+msgid "IDS_BR_BODY_1_ITEM_WILL_BE_DELETED"
+msgstr "Θα γίνει διαγραφή 1 στοιχείου."
+
+msgid "IDS_BR_TPOP_MAXIMUM_NUMBER_OF_CHARACTERS_HPD_REACHED"
+msgstr "Συμπληρώθηκε ο μέγιστος αριθμός χαρακτήρων (%d)."
+
+msgid "IDS_BR_POP_UNSUPPORTMEDIATYPE"
+msgstr "Μη υποστηριζόμενος τύπος μέσου."
+
+msgid "IDS_BR_POP_UNABLE_TO_CONNECT_TO_MOBILE_NETWORKS_WHILE_FLIGHT_MODE_IS_ENABLED_CONNECT_TO_WI_FI_NETWORK_INSTEAD_OR_DISABLE_FLIGHT_MODE_AND_TRY_AGAIN"
+msgstr "Δεν είναι δυνατή η σύνδεση σε δίκτυα κινητής τηλεφωνίας όσο είναι ενεργοποιημένη η λειτουργία πτήσης. Συνδεθείτε σε δίκτυο Wi-Fi ή απενεργοποιήστε τη λειτουργία πτήσης και δοκιμάστε ξανά"
+
+msgid "IDS_BR_POP_INSTALL_SUCCESS"
+msgstr "Η εγκατάσταση ολοκληρώθηκε."
+
+msgid "IDS_BR_POP_INSTALLATION_FAILED"
+msgstr "Αποτυχία εγκατάστασης."
+
+msgid "IDS_BR_POP_DELETING_ING"
+msgstr "Διαγραφή..."
+
+msgid "IDS_BR_POP_DATA_ROAMING_IS_DISABLED_CONNECT_TO_WI_FI_NETWORK_INSTEAD_OR_ENABLE_DATA_ROAMING_AND_TRY_AGAIN"
+msgstr "Τα δεδομένα περιαγωγής απενεργοποιήθηκαν. Συνδεθείτε σε δίκτυο Wi-Fi ή ενεργοποιήστε τα δεδομένα περιαγωγής και δοκιμάστε ξανά"
+
+msgid "IDS_BR_OPT_SHARE_VIA"
+msgstr "Κοινή χρήση μέσω"
+
+msgid "IDS_BR_OPT_PASTE"
+msgstr "Επικόλληση"
+
+msgid "IDS_BR_MBODY_FONT_SIZE"
+msgstr "Μέγ. γραμματοσειράς"
+
+msgid "IDS_BR_HEADER_UNABLE_TO_DOWNLOAD_ABB"
+msgstr "Δεν είναι δυνατή η λήψη"
+
+msgid "IDS_BR_BUTTON_UPDATE"
+msgstr "Ενημέρωση"
+
+msgid "IDS_BR_BUTTON_RETRY"
+msgstr "Επανάληψη"
+
+msgid "IDS_BR_BODY_REQUEST_FAILED"
+msgstr "Αποτυχία αιτήματος."
+
 msgid "IDS_BR_BODY_LOGIN"
 msgstr "Σύνδεση"
 
 msgid "IDS_BR_BODY_LOADING_ING"
 msgstr "Φόρτωση..."
-
-msgid "IDS_BR_BODY_FIT_TO_WIDTH"
-msgstr "Προσαρμογή κατά πλάτος"
 
 msgid "IDS_BR_BODY_FIT_TO_SCREEN"
 msgstr "Προσαρμογή σε οθόνη"
@@ -2008,12 +1999,180 @@ msgstr "Λήψεις"
 msgid "IDS_BR_BODY_DATA_ROAMING_IS_DISABLED_CONNECT_TO_A_WI_FI_NETWORK_INSTEAD_OR_ENABLE_DATA_ROAMING_AND_TRY_AGAIN"
 msgstr "Τα δεδομένα περιαγωγής απενεργοποιήθηκαν. Συνδεθείτε σε δίκτυο Wi-Fi ή ενεργοποιήστε τα δεδομένα περιαγωγής και δοκιμάστε ξανά."
 
-msgid "IDS_BR_ACBUTTON_QUICK_ACCESS"
-msgstr "ΓΡΗΓ. ΠΡΟΣΒ."
+msgid "IDS_BR_POP_DOWNLOAD_CANCELLED"
+msgstr "Ακύρωση λήψης."
 
-msgid "IDS_ST_POP_SOME_CONTENT_HAS_BEEN_BLOCKED_TO_PROTECT_YOUR_DEVICE"
-msgstr "Έχει γίνει αποκλεισμός περιεχομένου για την προστασία της συσκευής σας."
+msgid "IDS_BR_BUTTON_SECRET_ON_ABB"
+msgstr "Μυστ. ενερ."
 
-msgid "IDS_ST_POP_SELECT_WHETHER_TO_GO_TO_THE_WEBPAGE_ANYWAY"
-msgstr "Επιλέξτε αν θα μεταβείτε στην ιστοσελίδα ούτως ή άλλως."
+msgid "IDS_BR_MBODY_PRIVACY"
+msgstr "Απόρρητο"
+
+msgid "IDS_BR_MBODY_DEFAULT_STORAGE"
+msgstr "Προεπιλεγμ. χώρος αποθήκ."
+
+msgid "IDS_BR_MBODY_MANUAL_ZOOM"
+msgstr "Μη αυτόματη μεγέθυνση"
+
+msgid "IDS_BR_TMBODY_DEFAULT_SEARCH_ENGINE"
+msgstr "Προεπιλεγμένη μηχανή αναζήτησης"
+
+msgid "IDS_BR_MBODY_SAVE_SIGN_IN_INFO"
+msgstr "Αποθ. πληροφ. σύνδεσης"
+
+msgid "IDS_BR_OPT_TURN_OFF_SECRET_MODE_ABB"
+msgstr "Απενεργοπ. Μυστικής λειτουργίας"
+
+msgid "IDS_BR_OPT_TURN_ON_SECRET_MODE_ABB"
+msgstr "Ενεργοπ. Μυστικής λειτουργίας"
+
+msgid "IDS_BR_OPT_SHOW_PASSWORD_ABB2"
+msgstr "Εμφάνιση κωδικού πρόσβασης"
+
+msgid "IDS_BR_BODY_ENTER_YOUR_CURRENT_SECRET_MODE_PASSWORD"
+msgstr "Καταχωρήστε τον τρέχοντα κωδικό πρόσβασης για τη Μυστική λειτουργία."
+
+msgid "IDS_BR_OPT_SECRET_MODE_SECURITY_ABB"
+msgstr "Ασφάλεια Μυστικής λειτουργίας"
+
+msgid "IDS_BR_BUTTON_USE_PASSWORD_ABB"
+msgstr "Χρήση κωδικού"
+
+msgid "IDS_BR_HEADER_DONT_USE_PASSWORD_ABB"
+msgstr "Χωρίς χρήση κωδικού"
+
+msgid "IDS_BR_MBODY_MOST_VISITED_WEBSITES"
+msgstr "Πιο δημοφιλείς τοποθ. web"
+
+msgid "IDS_BR_MBODY_SET_MY_PROFILE"
+msgstr "Ορισμός του προφίλ μου"
+
+msgid "IDS_BR_MBODY_MY_AUTO_FILL_PROFILE"
+msgstr "Προφίλ Αυτόμ. συμπλήρωσης"
+
+msgid "IDS_BR_SBODY_MANAGE_DATA_USED_TO_FILL_IN_FORMS_ONLINE"
+msgstr "Διαχειριστείτε τα δεδομένα που χρησιμοποιείτε για τη συμπλήρωση ηλεκτρονικών φορμών."
+
+msgid "IDS_BR_MBODY_SAVE_SIGN_IN_INFO_ABB"
+msgstr "Αποθ. πληρ. σύνδ."
+
+msgid "IDS_BR_OPT_LOCATION_ACCESS_DATA"
+msgstr "Δεδομένα πρόσβασης τοποθεσίας"
+
+msgid "IDS_BR_OPT_AUTO_FILL_DATA"
+msgstr "Αυτόματη συμπλήρωση δεδομένων"
+
+msgid "IDS_BR_BODY_ANY_WEBPAGES_YOU_VIEW_WHILE_SECRET_MODE_IS_TURNED_ON_WONT_APPEAR_IN_YOUR_BROWSER_OR_SEARCH_HISTORY_MSG"
+msgstr "Οι ιστοσελίδες που βλέπετε ενώ είναι ενεργοποιημένη η Μυστική λειτουργία δεν θα εμφανίζονται στο πρόγραμμα περιήγησης ή το ιστορικό αναζήτησης μετά την απενεργοποίησή της.\n\nΟι σελιδοδείκτες και οι ιστοσελίδες που αποθηκεύσατε όσο ήταν ενεργοποιημένη η Μυστική λειτουργία δεν θα εμφανίζονται μετά την απενεργοποίησή της.\n\nΜπορείτε, επίσης, να προστατεύσετε τα δεδομένα της Μυστικής λειτουργίας με έναν κωδικό πρόσβασης."
+
+msgid "IDS_BR_BODY_ANY_WEBPAGES_YOU_VIEW_WHILE_SECRET_MODE_IS_TURNED_ON_WONT_APPEAR_IN_YOUR_BROWSER_OR_SEARCH_MSG"
+msgstr "Οι ιστοσελίδες που βλέπετε ενώ είναι ενεργοποιημένη η Μυστική λειτουργία δεν θα εμφανίζονται στο πρόγραμμα περιήγησης ή το ιστορικό αναζήτησης μετά την απενεργοποίησή της.\n\nΟι σελιδοδείκτες και οι ιστοσελίδες που αποθηκεύσατε όσο ήταν ενεργοποιημένη η Μυστική λειτουργία δεν θα εμφανίζονται μετά την απενεργοποίησή της."
+
+msgid "IDS_BR_BUTTON_SECRET_OFF_ABB"
+msgstr "Μυστ. ανεν."
+
+msgid "IDS_BR_BUTTON_DONT_USE_PASSWORD_ABB"
+msgstr "Χωρίς χρήση κωδικού"
+
+msgid "IDS_BR_BUTTON_NEW_TAB_ABB2"
+msgstr "Νέα καρτ."
+
+msgid "IDS_BR_NPBODY_WEB_ADDRESS_ABB"
+msgstr "Διεύθυνση Web"
+
+msgid "IDS_BR_HEADER_ADD_WEBPAGE_TO_QUICK_ACCESS_ABB"
+msgstr "Προσθ. ιστοσ. στη γρ. πρόσβ."
+
+msgid "IDS_BR_TMBODY_TURN_ON_JAVASCRIPT"
+msgstr "Ενεργοποίηση JavaScript"
+
+msgid "IDS_BR_HEADER_COULDNT_OPEN_NEW_TAB_ABB"
+msgstr "Αδύν. το άνοιγ. νέας καρτέλ."
+
+msgid "IDS_BR_OPT_OPEN_IN_NEW_TAB_ABB"
+msgstr "Άνοιγμα σε νέα καρτέλα"
+
+msgid "IDS_BR_TPOP_FOLDER_NAME_ALREADY_IN_USE"
+msgstr "Το όνομα φακέλου χρησιμοποιείται ήδη."
+
+msgid "IDS_BR_NPBODY_NEW_FOLDER_PD"
+msgstr "Νέος φάκελος %d"
+
+msgid "IDS_BR_NPBODY_NEW_FOLDER"
+msgstr "Νέος φάκελος"
+
+msgid "IDS_BR_OPT_ENABLE_JAVASCRIPT"
+msgstr "Ενεργοποίηση JavaScript"
+
+msgid "IDS_BR_TMBODY_MANAGE_WEBSITE_DATA"
+msgstr "Διαχείριση δεδ. τοποθεσιών web"
+
+msgid "IDS_BR_HEADER_SET_HOME_PAGE_ABB"
+msgstr "Ορισμός αρχικής σελίδας"
+
+msgid "IDS_BR_TPOP_WEBPAGE_ADDED_TO_QUICK_ACCESS_LIST"
+msgstr "Η ιστοσελίδα προστέθηκε στη λίστα γρήγορης πρόσβασης."
+
+msgid "IDS_BR_OPT_EDIT_QUICK_ACCESS_ABB"
+msgstr "Επεξεργασία Γρήγορης πρόσβασης"
+
+msgid "IDS_BR_OPT_REMOVE_FROM_BOOKMARKS_ABB"
+msgstr "Κατάργηση από τους σελιδοδείκτες"
+
+msgid "IDS_BR_HEADER_ADD_BOOKMARK_ABB"
+msgstr "Προσθήκη σελιδοδ."
+
+msgid "IDS_BR_BODY_BROWSING_HISTORY"
+msgstr "Ιστορικό περιήγησης"
+
+msgid "IDS_BR_HEADER_TABS_ABB2"
+msgstr "Καρτέλες"
+
+msgid "IDS_BR_OPT_NEW_TAB"
+msgstr "Νέα καρτέλα"
+
+msgid "IDS_BR_BUTTON_FORWARD_ABB2"
+msgstr "Προώθηση"
+
+msgid "IDS_BR_BUTTON_BACK_ABB3"
+msgstr "Πίσω"
+
+msgid "IDS_BR_BUTTON_BOOKMARKS_ABB"
+msgstr "Σελιδοδ."
+
+msgid "IDS_BR_NPBODY_NO_PROFILES_ABB"
+msgstr "Κανένα προφίλ"
+
+msgid "IDS_BR_TAB2_HISTORY"
+msgstr "Ιστορικό"
+
+msgid "IDS_BR_TAB2_BOOKMARKS"
+msgstr "Σελιδοδείκτες"
+
+msgid "IDS_BR_HEADER_SAVE_CONTENT_TO_ABB"
+msgstr "Αποθήκευση περιεχομένου σε"
+
+msgid "IDS_BR_HEADER_SELECT_ITEMS_ABB2"
+msgstr "Επιλογή στοιχείων"
+
+msgid "IDS_BR_BODY_YOUR_PASSWORD_MUST_CONTAIN_AT_LEAST_PD_CHARACTERS_INCLUDING_AT_LEAST_1_LETTER"
+msgstr "Ο κωδικός πρόσβασης πρέπει να περιέχει τουλάχιστον %d χαρακτήρες και να περιλαμβάνει τουλάχιστον 1 γράμμα."
+
+msgid "IDS_BR_BODY_AN_INCORRECT_PASSWORD_HAS_BEEN_ENTERED_TRY_AGAIN"
+msgstr "Έχετε εισαγάγει λανθασμένο κωδικό πρόσβασης. Δοκιμάστε ξανά."
+
+msgid "IDS_BR_BODY_NO_TABS"
+msgstr "Καμία καρτέλα"
+
+msgid "IDS_BR_TMBODY_CHANGE_PASSWORD"
+msgstr "Αλλαγή κωδικού πρόσβασης"
+
+msgid "IDS_BR_BODY_ANY_WEBPAGES_VIEWED_WHILE_SECRET_MODE_IS_ENABLED_WILL_NOT_APPEAR_IN_YOUR_BROWSER_OR_SEARCH_HISTORY_WHILE_SECRET_MSG"
+msgstr "Οι ιστοσελίδες που επισκέπτεστε ενώ είναι ενεργοποιημένη η Μυστική λειτουργία δεν θα εμφανίζονται στο πρόγραμμα περιήγησης ή το ιστορικό αναζήτησης όταν απενεργοποιηθεί η Μυστική λειτουργία.\n\nΟι σελιδοδείκτες και οι ιστοσελίδες που αποθηκεύσατε όσο ήταν ενεργοποιημένη η Μυστική λειτουργία δεν θα εμφανίζονται μετά την απενεργοποίησή της.\n\nΜπορείτε, επίσης, να προστατεύσετε τα δεδομένα της Μυστικής λειτουργίας με έναν κωδικό πρόσβασης."
+
+msgid "IDS_BR_BODY_ANY_WEBPAGES_VIEWED_WHILE_SECRET_MODE_IS_ENABLED_WILL_NOT_APPEAR_IN_YOUR_MSG"
+msgstr "Οι ιστοσελίδες που επισκέπτεστε ενώ είναι ενεργοποιημένη η Μυστική λειτουργία δεν θα εμφανίζονται στο πρόγραμμα περιήγησης ή το ιστορικό αναζήτησης όταν απενεργοποιηθεί η Μυστική λειτουργία.\n\nΟι σελιδοδείκτες και οι ιστοσελίδες που αποθηκεύσατε όσο ήταν ενεργοποιημένη η Μυστική λειτουργία δεν θα εμφανίζονται μετά την απενεργοποίησή της."
+
+msgid "IDS_BR_BUTTON2_DONE"
+msgstr "OΚ"
 

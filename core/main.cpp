@@ -29,6 +29,7 @@
 #if PROFILE_MOBILE
 #include <system_settings.h>
 #include <app_common.h>
+#include <appcore-common.h>
 #endif
 
 // for tests...
@@ -84,7 +85,6 @@ static bool app_create(void* app_data)
 #else
     elm_config_focus_highlight_enabled_set(EINA_TRUE);
 #endif
-
     elm_config_cache_flush_enabled_set(boost::any_cast <Eina_Bool>(tizen_browser::config::Config::getInstance().get(CONFIG_KEY::CACHE_ENABLE_VALUE)));
     elm_config_cache_flush_interval_set(boost::any_cast <int>(tizen_browser::config::Config::getInstance().get(CONFIG_KEY::CACHE_INTERVAL_VALUE)));
     elm_config_cache_font_cache_size_set(boost::any_cast <int>(tizen_browser::config::Config::getInstance().get(CONFIG_KEY::CACHE_INTERVAL_VALUE)));
@@ -147,6 +147,7 @@ static void app_control(app_control_h app_control, void* app_data){
             }
         }
     }
+
     if (app_control_get_extra_data(app_control, "search", &search_keyword) == APP_CONTROL_ERROR_NONE) {
         BROWSER_LOGD("search keyword launching");
 
@@ -157,15 +158,15 @@ static void app_control(app_control_h app_control, void* app_data){
     }
 
     if ((operation && !strcmp(operation, APP_CONTROL_OPERATION_SEARCH )) &&
-        ((app_control_get_extra_data(app_control, "http://tizen.org/appcontrol/data/keyword", &search_keyword) == APP_CONTROL_ERROR_NONE) ||
-        (app_control_get_extra_data(app_control, APP_CONTROL_DATA_TEXT, &search_keyword) == APP_CONTROL_ERROR_NONE))) { 
+    ((app_control_get_extra_data(app_control, "http://tizen.org/appcontrol/data/keyword", &search_keyword) == APP_CONTROL_ERROR_NONE) ||
+    (app_control_get_extra_data(app_control, APP_CONTROL_DATA_TEXT, &search_keyword) == APP_CONTROL_ERROR_NONE))) {
         BROWSER_LOGD("APP_CONTROL_OPERATION_SEARCH");
         if (search_keyword) {
             uri=std::string(search_keyword);
             free(search_keyword);
         }
     }
-
+    std::string oper(operation);
     BROWSER_LOGD("[%s] uri=%s", __func__, uri.c_str());
     free(request_uri);
     free(request_mime_type);
@@ -173,9 +174,12 @@ static void app_control(app_control_h app_control, void* app_data){
     free(operation);
 
     auto bd = static_cast<BrowserDataPtr*>(app_data);
-    (*bd)->exec(uri, caller);
+    (*bd)->exec(uri, caller, oper);
     evas_object_show((*bd)->getMainWindow().get());
     elm_win_activate((*bd)->getMainWindow().get());
+
+    if (appcore_flush_memory() == -1)
+        BROWSER_LOGW("[%s] appcore_flush_memory error!", __PRETTY_FUNCTION__);
 }
 
 static void app_pause(void* app_data){

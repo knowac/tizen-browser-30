@@ -21,7 +21,6 @@
 #include <memory>
 #include <boost/date_time/gregorian/gregorian.hpp>
 #include <boost/signals2/signal.hpp>
-#include "BrowserImageTypedef.h"
 
 #include "ServiceFactory.h"
 #include "service_macros.h"
@@ -54,6 +53,7 @@ public:
     void clearAllHistory();
     void clearURLHistory(const std::string & url);
     void deleteHistoryItem(int id);
+    void setMostVisitedFrequency(int id, int frequency);
     std::shared_ptr<HistoryItem> getHistoryItem(const std::string & url);
     std::shared_ptr<HistoryItemVector> getHistoryAll();
     std::shared_ptr<HistoryItemVector> getHistoryToday();
@@ -65,6 +65,9 @@ public:
     void cleanMostVisitedHistoryItems();
     std::shared_ptr<HistoryItemVector> getHistoryItemsByKeyword(const std::string & keyword, int maxItems);
     std::shared_ptr<HistoryItemVector> getHistoryItemsByURL(const std::string & url, int maxItems);
+#if PWA
+    int getHistoryCnt(const int& id);
+#endif
 
     /**
      * @brief Searches for history items matching given pattern.

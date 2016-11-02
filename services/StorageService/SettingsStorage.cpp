@@ -107,6 +107,16 @@ void SettingsStorage::resetSettings()
             tizen_browser::config::Config::getInstance().get(CONFIG_KEY::WEB_ENGINE_REMEMBER_FROM_DATA)));
     setParam(basic_webengine::WebEngineSettings::REMEMBER_PASSWORDS, boost::any_cast<bool>(
             tizen_browser::config::Config::getInstance().get(CONFIG_KEY::WEB_ENGINE_REMEMBER_PASSWORDS)));
+    setParam(basic_webengine::WebEngineSettings::AUTOFILL_PROFILE_DATA, boost::any_cast<bool>(
+            tizen_browser::config::Config::getInstance().get(CONFIG_KEY::WEB_ENGINE_AUTOFILL_PROFILE_DATA)));
+    setParam(basic_webengine::WebEngineSettings::SCRIPTS_CAN_OPEN_PAGES, boost::any_cast<bool>(
+            tizen_browser::config::Config::getInstance().get(CONFIG_KEY::WEB_ENGINE_SCRIPTS_CAN_OPEN_PAGES)));
+    setParamString(basic_webengine::WebEngineSettings::SCRIPTS_CAN_OPEN_PAGES, boost::any_cast<std::string>(
+            tizen_browser::config::Config::getInstance().get(CONFIG_KEY::SAVE_CONTENT_LOCATION)));
+    setParamString(basic_webengine::WebEngineSettings::SCRIPTS_CAN_OPEN_PAGES, boost::any_cast<std::string>(
+            tizen_browser::config::Config::getInstance().get(CONFIG_KEY::DEFAULT_SEARCH_ENGINE)));
+    setParamString(basic_webengine::WebEngineSettings::SCRIPTS_CAN_OPEN_PAGES, boost::any_cast<std::string>(
+            tizen_browser::config::Config::getInstance().get(CONFIG_KEY::CURRENT_HOME_PAGE)));
 }
 
 void SettingsStorage::init(bool testmode)
@@ -172,19 +182,31 @@ void SettingsStorage::initWebEngineSettingsFromDB()
 
 void SettingsStorage::setParam(basic_webengine::WebEngineSettings param, bool value) const
 {
+    BROWSER_LOGD("[%s:%d:%d] ", __PRETTY_FUNCTION__, __LINE__, value);
     const std::string& paramName = basic_webengine::PARAMS_NAMES.at(param);
     setSettingsInt(paramName, static_cast<int>(value));
+}
+
+void SettingsStorage::setParamString(basic_webengine::WebEngineSettings param, std::string value) const
+{
+    BROWSER_LOGD("[%s:%d:%s] ", __PRETTY_FUNCTION__, __LINE__, value.c_str());
+    const std::string& paramName = basic_webengine::PARAMS_NAMES.at(param);
+    setSettingsString(paramName,value);
+}
+
+bool SettingsStorage::isDBParamPresent(const std::string& key) const
+{
+    auto con = storage::DriverManager::getDatabase(DB_SETTINGS);
+    storage::SQLQuery select(con->prepare(SQL_CHECK_IF_PARAM_EXISTS));
+    select.bindText(1, key);
+    select.exec();
+    return select.hasNext();
 }
 
 bool SettingsStorage::isParamPresent(basic_webengine::WebEngineSettings param) const
 {
     const std::string& paramName = basic_webengine::PARAMS_NAMES.at(param);
-    auto con = storage::DriverManager::getDatabase(DB_SETTINGS);
-
-    storage::SQLQuery select(con->prepare(SQL_CHECK_IF_PARAM_EXISTS));
-    select.bindText(1, paramName);
-    select.exec();
-    return select.hasNext();
+    return isDBParamPresent(paramName);
 }
 
 bool SettingsStorage::getParamVal(basic_webengine::WebEngineSettings param) const
@@ -192,6 +214,16 @@ bool SettingsStorage::getParamVal(basic_webengine::WebEngineSettings param) cons
     BROWSER_LOGD("[%s:%d] ", __PRETTY_FUNCTION__, __LINE__);
     const std::string& paramName = basic_webengine::PARAMS_NAMES.at(param);
     return static_cast<bool>(getSettingsInt(paramName, 0));
+}
+
+/**
+ * @throws StorageException on error
+ */
+std::string SettingsStorage::getParamString(basic_webengine::WebEngineSettings param) const
+{
+    BROWSER_LOGD("[%s:%d] ", __PRETTY_FUNCTION__, __LINE__);
+    const std::string& paramName = basic_webengine::PARAMS_NAMES.at(param);
+    return getSettingsText(paramName, std::string());
 }
 
 /**
@@ -248,6 +280,16 @@ const std::string SettingsStorage::getSettingsText(const std::string & key, cons
     return defaultValue;
 }
 
+bool SettingsStorage::getSettingsBool(const std::string & key, const bool defaultValue) const
+{
+    BROWSER_LOGD("[%s:%d] ", __PRETTY_FUNCTION__, __LINE__);
+    int value = getSettingsInt(key, -1);
+    if (value < 0)
+        return defaultValue;
+    else
+        return static_cast<bool>(value);
+}
+
 /**
  * @throws StorageException on error
  */
@@ -285,6 +327,7 @@ void SettingsStorage::setSettingsValue(const std::string & key, storage::FieldPt
  */
 void SettingsStorage::setSettingsInt(const std::string & key, int value) const
 {
+    BROWSER_LOGD("[%s:%d:%d] ", __PRETTY_FUNCTION__, __LINE__, value);
     storage::FieldPtr field = std::make_shared<storage::Field>(value);
     setSettingsValue(key, field);
 }
@@ -305,6 +348,15 @@ void SettingsStorage::setSettingsString(const std::string & key, std::string val
 {
     storage::FieldPtr field = std::make_shared<storage::Field>(value);
     setSettingsValue(key, field);
+}
+
+/**
+ * @throws StorageException on error
+ */
+void SettingsStorage::setSettingsBool(const std::string & key, bool value) const
+{
+    BROWSER_LOGD("[%s:%d:%d] ", __PRETTY_FUNCTION__, __LINE__, value);
+    setSettingsInt(key, static_cast<int>(value));
 }
 
 }
