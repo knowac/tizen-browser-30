@@ -303,15 +303,17 @@ Evas_Object* HistoryDaysListManagerMob::createDaysList(
     id->websiteVisitItem = nullptr;
     id->websiteHistoryItemData = nullptr;
     id->str = nullptr;
+    /*TODO: Uncomment this feature when Download History is supported (Phase 2).
     if (!m_isRemoveMode) {
-        id->str = _("IDS_BR_BODY_DOWNLOAD_HISTORY");
-        m_downloadManagerItem = elm_genlist_item_append(
-            m_genlist, m_history_download_item_class,
-            id,
-            nullptr, ELM_GENLIST_ITEM_NONE,
-            nullptr, nullptr);
-        elm_object_item_disabled_set(m_downloadManagerItem, EINA_TRUE);
-    } else {
+            id->str = _("IDS_BR_BODY_DOWNLOAD_HISTORY");
+            m_downloadManagerItem = elm_genlist_item_append(
+                m_genlist, m_history_download_item_class,
+                id,
+                nullptr, ELM_GENLIST_ITEM_NONE,
+                nullptr, nullptr);
+            elm_object_item_disabled_set(m_downloadManagerItem, EINA_TRUE);
+    }*/
+    if (m_isRemoveMode) {
         id->str = _("IDS_BR_OPT_SELECT_ALL");
         m_selectAllItem = elm_genlist_item_append(
             m_genlist, m_history_download_item_class,
