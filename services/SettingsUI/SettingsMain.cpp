@@ -41,14 +41,11 @@ void SettingsMain::updateButtonMap()
 
     ItemData search;
     search.buttonText = _(Translations::SettingsMainDefaultSearchEngine.c_str());
-    search.subText =  []() -> std::string {
-        auto sig =
-            SPSC.getWebEngineSettingsParamString(
-                basic_webengine::WebEngineSettings::DEFAULT_SEARCH_ENGINE);
-        return (sig && !sig->empty()) ?
-            *sig :
-            Translations::Google;
-    }();
+    auto sig = SPSC.getWebEngineSettingsParamString(
+        basic_webengine::WebEngineSettings::DEFAULT_SEARCH_ENGINE);
+    auto sub = (sig && !sig->empty()) ? *sig : Translations::Google;
+
+    search.subText =  _(sub.c_str());
     search.sui = this;
     search.id = SEARCH;
 
@@ -263,24 +260,24 @@ void SettingsMain::setHomePageSubText()
 
     if (!homePage.compare(Translations::TizenPage)) {
         m_buttonsMap[SettingsMainOptions::HOME].subText =
-            Translations::TizenPage;
+            _(Translations::TizenPage.c_str());
     } else if (!homePage.compare(Translations::QuickPage)) {
         m_buttonsMap[SettingsMainOptions::HOME].subText =
-            Translations::SettingsHomePageQuickAccess;
+            _(Translations::SettingsHomePageQuickAccess.c_str());
     } else if (!homePage.compare(Translations::MostVisitedPage)) {
         m_buttonsMap[SettingsMainOptions::HOME].subText =
-            Translations::SettingsHomePageMostVisited;
+            _(Translations::SettingsHomePageMostVisited.c_str());
     } else if (!homePage.compare(currentURL)) {
         m_buttonsMap[SettingsMainOptions::HOME].subText =
-            Translations::SettingsHomePageCurrentPage;
+            _(Translations::SettingsHomePageCurrentPage.c_str());
     } else if (it != std::string::npos) {
         homePage.erase(it, Translations::CurrentPage.length());
-        m_buttonsMap[SettingsMainOptions::HOME].subText = homePage;
+        m_buttonsMap[SettingsMainOptions::HOME].subText = _(homePage.c_str());
         SPSC.setWebEngineSettingsParamString(
             basic_webengine::WebEngineSettings::CURRENT_HOME_PAGE,
             homePage);
     } else {
-        m_buttonsMap[SettingsMainOptions::HOME].subText = homePage;
+        m_buttonsMap[SettingsMainOptions::HOME].subText = _(homePage.c_str());
     }
     elm_genlist_realized_items_update(m_genlist);
 }
