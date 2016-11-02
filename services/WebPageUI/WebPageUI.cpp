@@ -403,7 +403,7 @@ void WebPageUI::showContextMenu()
             if (!isMostVisitedOpt || !(*isMostVisitedOpt))
                 elm_ctxpopup_item_append(m_ctxpopup, _("IDS_BR_OPT_EDIT_QUICK_ACCESS_ABB"), nullptr, _cm_edit_qa_clicked, this);
             else
-                elm_ctxpopup_item_append(m_ctxpopup, _("IDS_BR_OPT_DELETE"), nullptr, _cm_delete_mv_clicked, this);
+                elm_ctxpopup_item_append(m_ctxpopup, _("IDS_BR_SK_DELETE_ABB"), nullptr, _cm_delete_mv_clicked, this);
         } else if (m_statesMgr->equals(WPUState::MAIN_WEB_PAGE)) {
             elm_ctxpopup_item_append(m_ctxpopup, _("IDS_BR_OPT_SHARE"), nullptr, _cm_share_clicked, this);
             elm_ctxpopup_item_append(m_ctxpopup, _("IDS_BR_OPT_FIND_ON_PAGE"), nullptr, _cm_find_on_page_clicked, this);
@@ -721,7 +721,7 @@ void WebPageUI::createActions()
     m_back = sharedAction(new Action(_("IDS_BR_BUTTON_BACK_ABB")));
     m_back->setIcon("toolbar_prev");
 
-    m_forward = sharedAction(new Action(_("IDS_BR_SK_NEXT")));
+    m_forward = sharedAction(new Action(_("IDS_BR_OPT_GOFORWARD")));
     m_forward->setIcon("toolbar_next");
 
     m_addTab = sharedAction(new Action(_("IDS_BR_BUTTON_NEW_TAB_ABB2")));
