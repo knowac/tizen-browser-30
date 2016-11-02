@@ -3,7 +3,7 @@
     <label>Internet</label>
     <icon>org.tizen.browser.png</icon>
     <description>Web Browser Application</description>
-    <ui-application appid="@PACKAGE_NAME@" exec="@BINDIR@/browser" nodisplay="false" multiple="false" type="capp" taskmanage="true" hw-acceleration="on" process-pool="true">
+    <ui-application appid="@PACKAGE_NAME@" exec="@BINDIR@/browser" nodisplay="false" multiple="false" type="capp" taskmanage="true" hw-acceleration="on" process-pool="true" portrait-effectimage="@ICONDIR@/portrait.png" landscape-effectimage="@ICONDIR@/landscape.png">
         <label>Internet</label>
         <icon>org.tizen.browser.png</icon>
         <label xml:lang="ar-ae">الإنترنت</label>

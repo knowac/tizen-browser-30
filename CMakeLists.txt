@@ -162,6 +162,9 @@ endif (${PROFILE} MATCHES "mobile")
 install(FILES ${CMAKE_BINARY_DIR}/${PACKAGE_NAME}.xml DESTINATION ${MANIFESTDIR})
 # install desktop file & icon
 install(FILES ${CMAKE_SOURCE_DIR}/org.tizen.browser.png DESTINATION ${ICONDIR})
+install(FILES ${CMAKE_SOURCE_DIR}/landscape.png DESTINATION ${ICONDIR})
+install(FILES ${CMAKE_SOURCE_DIR}/portrait.png DESTINATION ${ICONDIR})
+
 # install certs
 INSTALL(DIRECTORY ${CMAKE_SOURCE_DIR}/certs/ DESTINATION ${CERTS_DIR})
 endif(TIZEN_BUILD)
