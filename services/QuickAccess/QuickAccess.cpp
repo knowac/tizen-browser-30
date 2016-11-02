@@ -219,7 +219,6 @@ Evas_Object* QuickAccess::createQuickAccessGengrid(Evas_Object *parent)
     Evas_Object *quickAccessGengrid = elm_gengrid_add(parent);
 
     elm_gengrid_select_mode_set(quickAccessGengrid, ELM_OBJECT_SELECT_MODE_ALWAYS);
-    elm_gengrid_multi_select_set(quickAccessGengrid, EINA_TRUE);
     elm_scroller_policy_set(quickAccessGengrid, ELM_SCROLLER_POLICY_OFF, ELM_SCROLLER_POLICY_OFF);
     evas_object_size_hint_weight_set(quickAccessGengrid, EVAS_HINT_EXPAND, EVAS_HINT_EXPAND);
     evas_object_size_hint_align_set(quickAccessGengrid, EVAS_HINT_FILL, EVAS_HINT_FILL);
