@@ -72,7 +72,6 @@ void FindOnPageUI::show()
     if (!m_fop_layout)
         m_fop_layout = createFindOnPageUILayout();
     showUI();
-    show_ime();
 }
 
 void FindOnPageUI::init(Evas_Object* parent)
@@ -107,6 +106,8 @@ void FindOnPageUI::set_text(const char *text)
     elm_entry_entry_append(m_entry, markup_text);
     if (markup_text)
         free(markup_text);
+    if (elm_entry_is_empty(m_entry))
+        show_ime();
 }
 
 void FindOnPageUI::clear_text(void)

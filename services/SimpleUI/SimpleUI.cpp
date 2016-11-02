@@ -1555,8 +1555,7 @@ void SimpleUI::showFindOnPageUI(const std::string& str)
     BROWSER_LOGD("[%s:%d] ", __PRETTY_FUNCTION__, __LINE__);
     M_ASSERT(m_findOnPageUI);
     m_findOnPageUI->show();
-    if (!str.empty())
-        m_findOnPageUI->set_text(str.c_str());
+    m_findOnPageUI->set_text(str.c_str());
 }
 
 void SimpleUI::findWord(const struct FindData& fdata)
