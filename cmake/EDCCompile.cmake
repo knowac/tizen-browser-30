@@ -27,6 +27,13 @@ IF(EDJE_CC_EXECUTABLE)
             SET(IF_PROFILE_MOBILE 0)
          ENDIF()
 
+         if (${DUMMY_BUTTON} MATCHES "ON")
+             SET(IF_DUMMY_BUTTON 1)
+         endif ()
+         if (${DUMMY_BUTTON} MATCHES "OFF")
+             SET(IF_DUMMY_BUTTON 0)
+         endif()
+
          FOREACH(resolution ${BROWSER_RESOLUTION})
              SET(tmp_output ${Edj_Output}/${resolution}_${Name})
              ADD_CUSTOM_COMMAND(OUTPUT ${tmp_output}

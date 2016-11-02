@@ -56,6 +56,9 @@ BuildRequires:  pkgconfig(capi-content-media-content)
 BuildRequires:  pkgconfig(shortcut)
 %endif
 
+#This is the main switch for The Dummy Button - ON/OFF
+%define _dummy_button "ON"
+
 %define BUILD_UT  %{?build_ut:ON}%{!?build_ut:OFF}
 %if %BUILD_UT == "ON"
 BuildRequires:  boost-test
@@ -100,6 +103,7 @@ cmake .. \
     -DBUILD_UT=%{BUILD_UT} \
     -DCOVERAGE_STATS=%{COVERAGE_STATS} \
     -DPROFILE=%{profile} \
+    -DDUMMY_BUTTON=%{_dummy_button} \
     -DTZ_SYS_RO_PACKAGES=%{TZ_SYS_RO_PACKAGES} \
     -DTZ_SYS_RO_ICONS=%{TZ_SYS_RO_ICONS} \
 %if "%{?_with_wayland}" == "1"
