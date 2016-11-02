@@ -112,6 +112,8 @@ public:
      * @returns True if one of the given states equals to the manager's state
      */
     bool stateEquals(std::initializer_list<WPUState> states) const;
+    void setShouldOpenNewTab(bool should) { m_shouldOpenNewTab = should; }
+    bool shouldOpenNewTab() const { return m_shouldOpenNewTab; }
     bool isWebPageUIvisible() { return m_WebPageUIvisible; }
     void switchViewToWebPage(Evas_Object* content, const std::string uri, bool loading);
     void switchViewToQuickAccess(Evas_Object* content);
@@ -261,6 +263,7 @@ private:
 #endif
     bool m_uriBarHidden;
     bool m_fullscreen;
+    bool m_shouldOpenNewTab;
 };
 
 

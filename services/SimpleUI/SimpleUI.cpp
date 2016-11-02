@@ -939,9 +939,12 @@ void SimpleUI::openURL(const std::string& url, const std::string& title, bool de
     BROWSER_LOGD("[%s:%d] ", __PRETTY_FUNCTION__, __LINE__);
     if (m_webPageUI) {
         popStackTo(m_webPageUI);
-        if (tabsCount() == 0 || m_webPageUI->stateEquals(WPUState::QUICK_ACCESS))
+        if (tabsCount() == 0 ||
+            (m_webPageUI->stateEquals(WPUState::QUICK_ACCESS) && m_webPageUI->shouldOpenNewTab())) {
             openNewTab(url, title, boost::none, desktopMode, basic_webengine::TabOrigin::QUICKACCESS);
-        else {
+        } else {
+            if (m_webEngine->isSuspended())
+                m_webEngine->resume();
             m_webPageUI->switchViewToWebPage(m_webEngine->getLayout(), url, false);
             m_webEngine->setURI(url);
             m_webPageUI->getURIEntry().clearFocus();
@@ -1294,6 +1297,7 @@ void SimpleUI::onBackPressed()
         m_webPageUI->getQuickAccessEditUI()->backPressed();
     } else if (m_viewManager.topOfStack() == nullptr) {
         switchViewToQuickAccess();
+        m_webPageUI->setShouldOpenNewTab(true);
     } else if ((m_viewManager.topOfStack() == m_webPageUI)) {
         if (m_webPageUI->stateEquals(WPUState::QUICK_ACCESS)) {
             if (m_quickAccess->canBeBacked(m_webEngine->tabsCount())) {
@@ -1303,6 +1307,7 @@ void SimpleUI::onBackPressed()
             }
         } else {
             m_webEngine->backButtonClicked();
+            m_webPageUI->setShouldOpenNewTab(true);
         }
     } else {
         popTheStack();
@@ -1596,6 +1601,7 @@ void SimpleUI::newTabClicked()
     if (!checkIfCreate())
         return;
     showHomePage();
+    m_webPageUI->setShouldOpenNewTab(true);
 }
 
 void SimpleUI::tabClicked(const tizen_browser::basic_webengine::TabId& tabId)

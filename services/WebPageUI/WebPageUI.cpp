@@ -58,6 +58,7 @@ WebPageUI::WebPageUI()
 #endif
     , m_uriBarHidden(false)
     , m_fullscreen(false)
+    , m_shouldOpenNewTab(true)
 {
     BROWSER_LOGD("[%s:%d] ", __PRETTY_FUNCTION__, __LINE__);
 }
@@ -268,6 +269,7 @@ void WebPageUI::switchViewToQuickAccess(Evas_Object* content)
     m_statesMgr->set(WPUState::QUICK_ACCESS);
     setMainContent(content);
     setQuickAccessView();
+    m_shouldOpenNewTab = false;
 #if DUMMY_BUTTON
     elm_object_signal_emit(m_mainLayout, "hide,dummy_button", "");
 #endif
