@@ -24,7 +24,6 @@
 #include "WebView.h"
 
 #include <EWebKit.h>
-#include <EWebKit_internal.h>
 
 #include <boost/format.hpp>
 #include <boost/regex.hpp>
@@ -32,20 +31,22 @@
 #include <boost/algorithm/string/classification.hpp>
 #include <boost/algorithm/string/split.hpp>
 #include <Elementary.h>
-#include <Evas.h>
 
 #include "URIschemes.h"
 #include "app_i18n.h"
 #include "AbstractWebEngine/AbstractWebEngine.h"
+#include "AbstractWebEngine/TabOrigin.h"
+#include "Config.h"
+#include "DownloadControl/DownloadControl.h"
 #include "app_common.h"
 #include "BrowserAssert.h"
 #include "BrowserLogger.h"
+#include "BrowserImage.h"
 #include "EflTools.h"
 #include "GeneralTools.h"
 #include "Tools/WorkQueue.h"
 #include "ServiceManager.h"
 #include <shortcut_manager.h>
-#include <string>
 
 #include <device/haptic.h>
 #include <Ecore.h>
@@ -54,19 +55,21 @@
 #include <sys/stat.h>
 #include <fcntl.h>
 #include <tzplatform_config.h>
+#include <glib.h>
 #endif
 
-#define certificate_crt_path CERTS_DIR
-#define APPLICATION_NAME_FOR_USER_AGENT "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.69 safari/537.36 "
+const char* const APPLICATION_NAME_FOR_USER_AGENT =
+    "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.69 safari/537.36 ";
 
 //TODO: temporary user agent for mobile display, change to proper one
-#define APPLICATION_NAME_FOR_USER_AGENT_MOBILE "Mozilla/5.0 (Linux; Tizen 3.0; SAMSUNG TM1) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/1.0 Chrome/47.0.2526.69 Mobile safari/537.36"
+const char* const APPLICATION_NAME_FOR_USER_AGENT_MOBILE =
+    "Mozilla/5.0 (Linux; Tizen 3.0; SAMSUNG TM1) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/1.0 Chrome/47.0.2526.69 Mobile safari/537.36";
 
-Ecore_Timer* m_haptic_timer_id =NULL;
+const unsigned FIND_WORD_MAX_COUNT = 1000;
+
+Ecore_Timer* m_haptic_timer_id = nullptr;
 haptic_device_h m_haptic_handle;
 haptic_effect_h m_haptic_effect;
-
-#define FIND_WORD_MAX_COUNT 1000
 
 using namespace tizen_browser::tools;
 
@@ -80,12 +83,12 @@ std::string WebView::s_pwaData = "";
 std::string WebView::s_name = "";
 std::string WebView::s_start_url = "";
 std::string WebView::s_icon = "";
-#define DOWNLOAD_PATH tzplatform_getenv(TZ_USER_DOWNLOADS)
+const char* const DOWNLOAD_PATH = tzplatform_getenv(TZ_USER_DOWNLOADS);
 #endif
 
 struct SnapshotItemData {
-    WebView * web_view;
-    tizen_browser::tools::SnapshotType snapshot_type;
+    WebView* web_view;
+    SnapshotType snapshot_type;
 };
 
 WebView::WebView(Evas_Object * obj, TabId tabId, const std::string& title, bool incognitoMode)

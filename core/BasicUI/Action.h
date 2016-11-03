@@ -157,7 +157,7 @@ private:
     bool m_iconVisibleInMenu; ///<Shoud icon be displayed in menu.
 };
 
-typedef std::shared_ptr<Action> sharedAction;
+using sharedAction = std::shared_ptr<Action>;
 
 } /* end of namespace base_ui */
 } /* end of namespace tizen_browser */

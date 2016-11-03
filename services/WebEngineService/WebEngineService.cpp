@@ -23,9 +23,14 @@
 #include <app.h>
 
 #include "AbstractWebEngine/TabId.h"
+#include "AbstractWebEngine/WebConfirmation.h"
+#include "AbstractWebEngine/TabOrigin.h"
+
 #include "BrowserAssert.h"
 #include "BrowserLogger.h"
 #include "Config/Config.h"
+#include "DownloadControl/DownloadControl.h"
+#include "WebView.h"
 
 namespace tizen_browser {
 namespace basic_webengine {

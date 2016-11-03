@@ -63,8 +63,8 @@ private:
 
 };
 
-typedef std::shared_ptr<WebPageUIStatesManager> WPUStatesManagerPtr;
-typedef std::shared_ptr<const WebPageUIStatesManager> WPUStatesManagerPtrConst;
+using WPUStatesManagerPtr = std::shared_ptr<WebPageUIStatesManager>;
+using WPUStatesManagerPtrConst = std::shared_ptr<const WebPageUIStatesManager>;
 
 } /* namespace base_ui */
 } /* namespace tizen_browser */

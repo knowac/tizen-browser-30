@@ -30,51 +30,51 @@
 #include "AbstractMainWindow.h"
 #include "AbstractService.h"
 #include "AbstractFavoriteService.h"
-#include "ServiceFactory.h"
 #include "service_macros.h"
-
-// components
-#include "WebPageUI.h"
-#include "AbstractWebEngine.h"
-#include "TabOrigin.h"
-#include "HistoryUI.h"
-#include "FindOnPageUI.h"
-#include "SettingsUI.h"
-#include "SettingsMain.h"
-#include "SettingsHomePage.h"
-#include "SettingsPrivacy.h"
-#include "SettingsManager.h"
-#include "TextPopup_mob.h"
-#include "QuickAccess.h"
-#include "TabUI.h"
-#include "TabId.h"
-#include "HistoryService.h"
 #include "TabServiceTypedef.h"
-#include "BookmarkFlowUI.h"
-#include "BookmarkManagerUI.h"
-#include "PlatformInputManager.h"
-#include "StorageService.h"
-#include "CertificateContents.h"
 
 // other
-#include "Action.h"
-#include "InputPopup.h"
-#include "SimplePopup.h"
-#include "ContentPopup_mob.h"
-#include "WebConfirmation.h"
-#include "ViewManager.h"
-#include "MenuButton.h"
-#include "NaviframeWrapper.h"
-#if PWA
-#include "ProgressiveWebApp.h"
-#endif
 #include <functional>
 #include <future>
 
-#define CONNECT_COUNT 2
+const unsigned CONNECT_COUNT = 2;
 
 namespace tizen_browser{
+
+namespace basic_webengine {
+class AbstractWebEngine;
+class TabOrigin;
+class TabId;
+class WebConfirmation;
+}
+
+namespace services {
+class HistoryService;
+class PlatformInputManager;
+class StorageService;
+class CertificateContents;
+}
+
 namespace base_ui{
+class WebPageUI;
+class HistoryUI;
+class FindOnPageUI;
+class SettingsUI;
+class SettingsManager;
+class QuickAccess;
+class TabUI;
+class BookmarkFlowUI;
+class BookmarkManagerUI;
+class Action;
+class InputPopup;
+class SimplePopup;
+class ContentPopup;
+class ViewManager;
+class MenuButton;
+class NaviframeWrapper;
+#if PWA
+class ProgressiveWebApp;
+#endif
 
 template <>
 void AbstractMainWindow<Evas_Object>::setMainWindow(Evas_Object * rawPtr)
@@ -87,11 +87,11 @@ class BROWSER_EXPORT SimpleUI : public AbstractMainWindow<Evas_Object>
 public:
     SimpleUI(/*Evas_Object *window*/);
     virtual ~SimpleUI();
-    virtual int exec(
+    int exec(
         const std::string& _url,
         const std::string& _caller,
         const std::string& _operation) final override;
-    virtual std::string getName() final override;
+    std::string getName() final override;
     void suspend();
     void resume();
     void destroyUI();

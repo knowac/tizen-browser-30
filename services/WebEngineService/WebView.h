@@ -20,29 +20,22 @@
 #include <boost/signals2/signal.hpp>
 #include <string>
 #include <Evas.h>
-#include <ecore-1/Ecore.h>
 
-#include <EWebKit.h>
 #include <EWebKit_internal.h>
 #include "browser_config.h"
-#include "Config.h"
-#include "BrowserImage.h"
 #include "SnapshotType.h"
 #include "AbstractWebEngine/TabId.h"
 #include "AbstractWebEngine/WebConfirmation.h"
-#include "AbstractWebEngine/TabOrigin.h"
 
-#include "DownloadControl/DownloadControl.h"
 #include <app_control.h>
 #include <app.h>
 #include "AbstractRotatable.h"
 
 #if PWA
-#include <glib.h>
 #include <libsoup/soup.h>
 #endif
 
-typedef enum _context_menu_type {
+enum context_menu_type {
     TEXT_ONLY = 0,
     INPUT_FIELD,
     TEXT_LINK,
@@ -52,9 +45,9 @@ typedef enum _context_menu_type {
     TEL_LINK,
     TEXT_IMAGE_LINK,
     UNKNOWN_MENU
-} context_menu_type;
+};
 
-typedef enum _custom_context_menu_item_tag {
+enum custom_context_menu_item_tag {
     CUSTOM_CONTEXT_MENU_ITEM_BASE_TAG = EWK_CONTEXT_MENU_ITEM_BASE_APPLICATION_TAG,
     CUSTOM_CONTEXT_MENU_ITEM_FIND_ON_PAGE,
     CUSTOM_CONTEXT_MENU_ITEM_SHARE,
@@ -64,23 +57,32 @@ typedef enum _custom_context_menu_item_tag {
     CUSTOM_CONTEXT_MENU_ITEM_SEND_MESSAGE,
     CUSTOM_CONTEXT_MENU_ITEM_SEND_EMAIL,
     CUSTOM_CONTEXT_MENU_ITEM_SEND_ADD_TO_CONTACT,
-} custom_context_menu_item_tag;
+};
+class DownloadControl;
 
 namespace tizen_browser {
+
+namespace tools {
+class BrowserImage;
+}
+
 namespace basic_webengine {
+
+class TabOrigin;
+
 namespace webengine_service {
 
 using download_finish_callback = void (*)(const std::string& file_path, void *data);
 
 class WebView
-        : public tizen_browser::interfaces::AbstractRotatable
+    : public tizen_browser::interfaces::AbstractRotatable
 {
 public:
     WebView(Evas_Object *, TabId, const std::string& title, bool incognitoMode);
     virtual ~WebView();
     void init(bool desktopMode, TabOrigin origin);
 
-    virtual void orientationChanged() override;
+    void orientationChanged() override;
 
     void setURI(const std::string &);
     std::string getURI(void);
@@ -113,10 +115,10 @@ public:
     {
     public:
         download_request(char* file_path_ = nullptr, download_finish_callback cb_ = nullptr, void* data_ = nullptr)
-    : file_path(file_path_),
-      cb(cb_),
-      data(data_)
-    {}
+            : file_path(file_path_)
+            , cb(cb_)
+            , data(data_)
+        {}
 
         ~download_request() {}
 

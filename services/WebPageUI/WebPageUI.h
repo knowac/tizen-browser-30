@@ -36,18 +36,18 @@ namespace base_ui {
 class WebPageUIStatesManager;
 enum class WPUState;
 class UrlHistoryList;
-typedef std::shared_ptr<UrlHistoryList> UrlHistoryPtr;
+using UrlHistoryPtr = std::shared_ptr<UrlHistoryList>;
 
 class BROWSER_EXPORT WebPageUI
-        : public interfaces::AbstractContextMenu
-        , public tizen_browser::core::AbstractService
-        , public tizen_browser::interfaces::AbstractUIComponent
-        , public tizen_browser::interfaces::AbstractRotatable
+    : public interfaces::AbstractContextMenu
+    , public core::AbstractService
+    , public interfaces::AbstractUIComponent
+    , public interfaces::AbstractRotatable
 {
 public:
 
 #if PWA
-    typedef enum OrientationType {
+    enum orientationType {
         WebScreenOrientationLockDefault = 0, // Equivalent to unlock.
         WebScreenOrientationLockPortraitPrimary,
         WebScreenOrientationLockPortraitSecondary,
@@ -57,16 +57,16 @@ public:
         WebScreenOrientationLockLandscape,
         WebScreenOrientationLockPortrait,
         WebScreenOrientationLockNatural,
-    } orientationType;
+    };
 
-    typedef enum WebDisplayMode {
+    enum webDisplayMode {
         WebDisplayModeUndefined = 0,
         WebDisplayModeBrowser,
         WebDisplayModeMinimalUi,
         WebDisplayModeStandalone,
         WebDisplayModeFullscreen,
         WebDisplayModeLast = WebDisplayModeFullscreen
-    } webDisplayMode;
+    };
 
     struct pwaInfo {
         std::string     id;
@@ -83,20 +83,20 @@ public:
 
     WebPageUI();
     virtual ~WebPageUI();
-    virtual std::string getName();
-    virtual void init(Evas_Object* parent);
-    virtual Evas_Object* getContent();
+    std::string getName() override;
+    void init(Evas_Object* parent) override;
+    Evas_Object* getContent() override;
     UrlHistoryPtr getUrlHistoryList();
-    virtual void showUI();
-    virtual void hideUI();
+    void showUI() override;
+    void hideUI() override;
     void updateEngineStateUI();
 #if DUMMY_BUTTON
     void createDummyButton();
 #endif
     void fullscreenModeSet(bool state);
-    virtual void orientationChanged() override;
+    void orientationChanged() override;
     //AbstractContextMenu interface implementation
-    virtual void showContextMenu() override;
+    void showContextMenu() override;
 
     void loadStarted();
     void progressChanged(double progress);

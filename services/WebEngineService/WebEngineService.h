@@ -21,41 +21,46 @@
 #include <string>
 #include <Evas.h>
 #include <memory>
+#include <EWebKit_internal.h>
 
-#include "ServiceFactory.h"
 #include "service_macros.h"
 
 #include "AbstractWebEngine/AbstractWebEngine.h"
 #include "AbstractWebEngine/TabIdTypedef.h"
-#include "AbstractWebEngine/WebConfirmation.h"
-#include "AbstractWebEngine/TabOrigin.h"
 #include "AbstractWebEngine/State.h"
 #include "SnapshotType.h"
-#include "BrowserImage.h"
-#include "DownloadControl/DownloadControl.h"
-#include "WebView.h"
+
+class DownloadControl;
 
 namespace tizen_browser {
+
+namespace tools {
+class BrowserImage;
+}
 namespace basic_webengine {
+
+class WebConfirmation;
+class TabOrigin;
+
 namespace webengine_service {
 
 class WebView;
 
 using WebViewPtr = std::shared_ptr<WebView>;
-using TabsMapPtr = std::shared_ptr<std::map<TabId, WebViewPtr > >;
+using TabsMapPtr = std::shared_ptr<std::map<TabId, WebViewPtr>>;
 
 class BROWSER_EXPORT WebEngineService : public AbstractWebEngine, boost::noncopyable
 {
 public:
     WebEngineService();
     virtual ~WebEngineService();
-    virtual std::string getName();
+    std::string getName() override;
 
     Evas_Object * getLayout();
 #if !DUMMY_BUTTON
     Evas_Object * getWidget();
 #endif
-    void init(Evas_Object *guiParent);
+    void init(Evas_Object* guiParent);
     void preinitializeWebViewCache();
 
     void setURI(const std::string &);
@@ -156,13 +161,13 @@ public:
      */
     bool hasFocus() const;
 
-    virtual int getZoomFactor() const;
+    int getZoomFactor() const override;
 
     /**
      * @brief check if autofit is enabled
      */
 
-    virtual void setZoomFactor(int zoomFactor);
+    void setZoomFactor(int zoomFactor) override;
 
 
     /**
@@ -217,7 +222,7 @@ public:
     /**
      * @brief Reset WebView settings
      */
-    virtual void resetSettingsParam() override;
+    void resetSettingsParam() override;
 
     /**
      * @brief set next state

@@ -27,7 +27,7 @@ namespace tizen_browser {
 namespace basic_webengine {
 
 class WebConfirmation;
-typedef std::shared_ptr<WebConfirmation> WebConfirmationPtr;
+using WebConfirmationPtr = std::shared_ptr<WebConfirmation>;
 
 class WebConfirmation
 {
@@ -92,7 +92,7 @@ private:
 };
 
 class CertificateConfirmation;
-typedef std::shared_ptr<CertificateConfirmation> CertificateConfirmationPtr;
+using CertificateConfirmationPtr = std::shared_ptr<CertificateConfirmation>;
 
 class CertificateConfirmation : public WebConfirmation {
 public:

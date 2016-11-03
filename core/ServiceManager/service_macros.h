@@ -17,6 +17,7 @@
 #ifndef __SERVICE_MACROS_H__
 #define __SERVICE_MACROS_H__
 
+#include "ServiceFactory.h"
 /**
  * @def BROWSER_EXPORT
  * @ingroup BROWSERMacros
