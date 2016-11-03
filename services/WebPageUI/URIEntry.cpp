@@ -301,14 +301,17 @@ std::string URIEntry::rewriteURI(const std::string& url)
     boost::regex chromeRegex(R"(^chrome:[^\s]*$)");
     boost::regex aboutRegex(R"(^about:[^\s]*$)");
     boost::regex fileRegex(R"(^file:///[^\s]*$)");
+    boost::regex myfilesappRegex(R"(^file:///opt/usr/media/[^\s]*$)");
 
     if (!url.empty()) {
         if (boost::regex_match(url, urlRegex) ||
-            boost::regex_match(url, fileRegex) ||
+            boost::regex_match(url, myfilesappRegex) ||
             boost::regex_match(url, chromeRegex) ||
             boost::regex_match(url, aboutRegex))
             return url;
-        else if (boost::regex_match(std::string("http://") + url, urlRegex) &&  url.find(".") != std::string::npos)
+        else if (boost::regex_match(std::string("http://") + url, urlRegex) &&
+            (!boost::regex_match(url, fileRegex)) &&
+            url.find(".") != std::string::npos)
             return std::string("http://") + url;
         else {
             const std::string searchEngine  = [this]() -> std::string {
