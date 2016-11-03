@@ -109,7 +109,7 @@ void QuickAccess::createItemClasses()
         m_quickAccess_tile_class->func.text_get = nullptr;
         m_quickAccess_tile_class->func.content_get = _grid_quickaccessADD_content_get;
         m_quickAccess_tile_class->func.state_get = nullptr;
-        m_quickAccess_tile_class->func.del = nullptr;
+        m_quickAccess_tile_class->func.del = _grid_quickaccessADD_del;
     }
 }
 
@@ -303,7 +303,8 @@ void QuickAccess::addQuickAccessItem(services::SharedQuickAccessItem qa)
     QuickAccessItemData *itemData = new QuickAccessItemData();
     itemData->item = qa;
     itemData->quickAccess = this;
-    elm_gengrid_item_append(m_quickAccessGengrid, m_quickAccess_item_class, itemData, _thumbQuickAccessClicked, itemData);
+    itemData->genlistItem = elm_gengrid_item_append(m_quickAccessGengrid, m_quickAccess_item_class,
+        itemData, nullptr, nullptr);
 }
 
 void QuickAccess::clearMostVisitedGengrid()
@@ -325,7 +326,8 @@ void QuickAccess::setQuickAccessItems(services::SharedQuickAccessItemVector item
 void QuickAccess::addToQuickAccessTile()
 {
     BROWSER_LOGD("[%s:%d] ", __PRETTY_FUNCTION__, __LINE__);
-    elm_gengrid_item_append(m_quickAccessGengrid, m_quickAccess_tile_class, this, _addToQuickAccess_clicked, this);
+    m_addQuickAccessItem = elm_gengrid_item_append(m_quickAccessGengrid, m_quickAccess_tile_class,
+        this, nullptr, nullptr);
 }
 
 void QuickAccess::setIndexPage(const void *page) const
@@ -411,6 +413,7 @@ Evas_Object * QuickAccess::_grid_quickaccess_content_get(void *data, Evas_Object
             Evas_Object *button = elm_button_add(obj);
             elm_object_style_set(button, "roundedrect");
             elm_object_part_text_set(button, "button_text", itemData->item->getTitle().c_str());
+            evas_object_smart_callback_add(button, "clicked", _thumbQuickAccessClicked, data);
 
             if (itemData->item->has_favicon()) {
                 // Favicon
@@ -452,6 +455,7 @@ Evas_Object *QuickAccess::_grid_quickaccessADD_content_get(void *data, Evas_Obje
             elm_object_part_text_set(button, "button_text", "Add");
             elm_layout_signal_emit(button, "show,bg,rectangle", "event");
             setButtonColor(button, 150, 180, 255, 255);
+            evas_object_smart_callback_add(button, "clicked", _addToQuickAccess_clicked, data);
             return button;
         }
     } else {
@@ -464,8 +468,27 @@ void QuickAccess::_grid_quickaccess_del(void* data, Evas_Object*)
 {
     BROWSER_LOGD("[%s:%d]", __PRETTY_FUNCTION__, __LINE__);
     auto itemData = static_cast<QuickAccessItemData*>(data);
-    if (itemData)
+    if (itemData) {
+        auto button = elm_object_item_part_content_get(itemData->genlistItem, "elm.swallow.icon");
+        evas_object_smart_callback_del(button, "clicked", _thumbQuickAccessClicked);
+        if (itemData->quickAccess->m_state == QuickAccessState::Edit) {
+            button = elm_object_item_part_content_get(itemData->genlistItem, "elm.button");
+            evas_object_smart_callback_del(button, "clicked", __quckAccess_del_clicked);
+        }
+
         delete itemData;
+    }
+}
+
+void QuickAccess::_grid_quickaccessADD_del(void *data, Evas_Object*)
+{
+    BROWSER_LOGD("[%s:%d]", __PRETTY_FUNCTION__, __LINE__);
+    auto itemData = static_cast<QuickAccess*>(data);
+    if (itemData) {
+        auto button = elm_object_item_part_content_get(itemData->m_addQuickAccessItem,
+            "elm.swallow.icon");
+        evas_object_smart_callback_del(button, "clicked", _addToQuickAccess_clicked);
+    }
 }
 
 void QuickAccess::__quckAccess_del_clicked(void *data, Evas_Object */*obj*/, void *)

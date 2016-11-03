@@ -94,6 +94,7 @@ private:
     {
         services::SharedQuickAccessItem item;
         QuickAccess* quickAccess;
+        Elm_Object_Item* genlistItem;
     };
 
     void createItemClasses();
@@ -121,6 +122,7 @@ private:
     static Evas_Object * _grid_quickaccess_content_get(void *data, Evas_Object *obj, const char *part);
     static Evas_Object * _grid_quickaccessADD_content_get(void *data, Evas_Object *obj, const char *part);
     static void _grid_quickaccess_del(void *data, Evas_Object *obj);
+    static void _grid_quickaccessADD_del(void *data, Evas_Object *obj);
     static void __quckAccess_del_clicked(void *data, Evas_Object *, void *);
     static char* _grid_mostVisited_text_get(void *data, Evas_Object *obj, const char *part);
     static Evas_Object * _grid_mostVisited_content_get(void *data, Evas_Object *obj, const char *part);
@@ -142,6 +144,7 @@ private:
     Evas_Object *m_quickAccessGengrid;
     Evas_Object *m_mostVisitedGengrid;
     Evas_Object* m_index;
+    Elm_Object_Item *m_addQuickAccessItem;
     std::vector<Evas_Object *> m_tiles;
 
     int m_currPage;
