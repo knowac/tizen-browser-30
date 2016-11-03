@@ -61,7 +61,6 @@ FindOnPageUI::~FindOnPageUI(void)
 
     evas_object_smart_callback_del(m_entry, "activated", __enter_key_cb);
     evas_object_smart_callback_del(m_entry, "changed", __entry_changed_cb);
-    evas_object_smart_callback_del(m_entry, "clicked", __entry_clicked_cb);
 
     evas_object_del(m_fop_layout);
     eina_stringshare_del(m_input_word);
@@ -152,7 +151,6 @@ Evas_Object* FindOnPageUI::createFindOnPageUILayout()
 
     evas_object_smart_callback_add(m_entry, "activated", __enter_key_cb, this);
     evas_object_smart_callback_add(m_entry, "changed", __entry_changed_cb, this);
-    evas_object_smart_callback_add(m_entry, "clicked", __entry_clicked_cb, this);
 
     elm_object_translatable_part_text_set(m_entry, "elm.guide", "IDS_BR_OPT_FIND_ON_PAGE");
 
@@ -296,13 +294,6 @@ void FindOnPageUI::__text_found_cb(void *data, Evas_Object* /*obj*/, void *event
     if (fop->m_current_index > fop->m_total_count)
         fop->m_current_index = fop->m_total_count;
     fop->_set_count(fop->m_current_index, fop->m_total_count);
-}
-void FindOnPageUI::__entry_clicked_cb(void *data, Evas_Object*/*obj*/, void* /*event_info*/)
-{
-    BROWSER_LOGD("[%s:%d] ", __PRETTY_FUNCTION__, __LINE__);
-    auto fop = static_cast<FindOnPageUI*>(data);
-    if (fop)
-        fop->show_ime();
 }
 
 void FindOnPageUI::__entry_changed_cb(void *data, Evas_Object *obj, void* /*event_info*/)

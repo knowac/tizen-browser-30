@@ -72,7 +72,6 @@ private:
     static void __down_clicked_cb(void *data, Evas_Object *obj, void *event_info);
     static void __up_clicked_cb(void *data, Evas_Object *obj, void *event_info);
     static void __enter_key_cb(void *data, Evas_Object *obj, void *event_info);
-    static void __entry_clicked_cb(void *data, Evas_Object *obj, void *event_info);
     static void __entry_changed_cb(void *data, Evas_Object *obj, void *event_info);
     static void __text_found_cb(void *data, Evas_Object *obj, void *event_info);
     static void __close_clicked_cb(void *data, Evas_Object *obj, void *event_info);
