@@ -139,8 +139,6 @@ private:
     Evas_Object *m_layout;
     Evas_Object* m_horizontalScroller;
     Evas_Object *m_box;
-    Evas_Object *m_quickAccessView;
-    Evas_Object *m_mostVisitedView;
     Evas_Object *m_quickAccessGengrid;
     Evas_Object *m_mostVisitedGengrid;
     Evas_Object* m_index;
@@ -169,6 +167,10 @@ private:
     static const int MOSTVISITED_ITEM_HEIGHT_LANDSCAPE = 208;
     static const int HEADER_HEIGHT = 116+38;
     static const int DEFAULT_BUTTON_COLOR = 190;
+    // TODO: scroller arbitrary values, probably can be changed to screen
+    // size after solving http://suprem.sec.samsung.net/jira/browse/TWF-2437
+    static const int SCROLLER_PORTRAIT_PAGE = 1040;
+    static const int SCROLLER_LANDSCAPE_PAGE = 2200;
 };
 
 }

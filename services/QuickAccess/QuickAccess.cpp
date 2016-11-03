@@ -39,8 +39,6 @@ QuickAccess::QuickAccess()
     , m_layout(nullptr)
     , m_horizontalScroller(nullptr)
     , m_box(nullptr)
-    , m_quickAccessView(nullptr)
-    , m_mostVisitedView(nullptr)
     , m_quickAccessGengrid(nullptr)
     , m_mostVisitedGengrid(nullptr)
     , m_index(nullptr)
@@ -143,12 +141,8 @@ void QuickAccess::createQuickAccessLayout(Evas_Object* parent)
     elm_index_level_go(m_index, 0);
 
     m_horizontalScroller = elm_scroller_add(m_layout);
-    elm_scroller_page_scroll_limit_set(m_horizontalScroller, 1, 0);
-    elm_scroller_movement_block_set(m_horizontalScroller, ELM_SCROLLER_MOVEMENT_BLOCK_VERTICAL);
-    elm_scroller_loop_set(m_horizontalScroller, EINA_FALSE, EINA_FALSE);
-    elm_scroller_page_relative_set(m_horizontalScroller, 1.0, 0.0);
-    elm_scroller_policy_set(m_horizontalScroller, ELM_SCROLLER_POLICY_OFF, ELM_SCROLLER_POLICY_OFF);
     elm_scroller_bounce_set(m_horizontalScroller, EINA_FALSE, EINA_FALSE);
+    elm_scroller_policy_set(m_horizontalScroller, ELM_SCROLLER_POLICY_OFF, ELM_SCROLLER_POLICY_OFF);
     elm_object_part_content_set(m_layout, "view", m_horizontalScroller);
     evas_object_smart_callback_add(m_horizontalScroller, "scroll,anim,stop",
         _horizontalScroller_scroll, this);
@@ -165,27 +159,14 @@ void QuickAccess::createBox(Evas_Object* parent)
     evas_object_show(m_box);
 
     createQuickAccessView(m_box);
-    elm_box_pack_end(m_box, m_quickAccessView);
     createMostVisitedView(m_box);
-    elm_box_pack_end(m_box, m_mostVisitedView);
 }
 
 void QuickAccess::createMostVisitedView(Evas_Object * parent)
 {
     BROWSER_LOGD("[%s:%d] ", __PRETTY_FUNCTION__, __LINE__);
 
-    if (m_mostVisitedView)
-        evas_object_del(m_mostVisitedView);
-
-    m_mostVisitedView = elm_layout_add(parent);
-    elm_layout_theme_set(m_mostVisitedView, "layout", "application", "default");
-    evas_object_size_hint_weight_set(m_mostVisitedView, EVAS_HINT_EXPAND, EVAS_HINT_EXPAND);
-    evas_object_size_hint_align_set (m_mostVisitedView, EVAS_HINT_FILL, EVAS_HINT_FILL);
-    evas_object_show(m_mostVisitedView);
-
-    evas_object_event_callback_add(m_mostVisitedView, EVAS_CALLBACK_RESIZE, _layout_resize_cb, this);
-
-    m_mostVisitedGengrid = createMostVisitedGengrid(m_mostVisitedView);
+    m_mostVisitedGengrid = createMostVisitedGengrid(parent);
     evas_object_smart_callback_add(m_mostVisitedGengrid, "realized", _quickAccess_tile_realized, this);  //TODO
 
     evas_object_show(m_mostVisitedGengrid);
@@ -195,13 +176,8 @@ void QuickAccess::createQuickAccessView(Evas_Object * parent)
 {
     BROWSER_LOGD("[%s:%d] ", __PRETTY_FUNCTION__, __LINE__);
 
-    m_quickAccessView = elm_layout_add(parent);
-    elm_layout_theme_set(m_quickAccessView, "layout", "application", "default");
-    evas_object_size_hint_weight_set(m_quickAccessView, EVAS_HINT_EXPAND, EVAS_HINT_EXPAND);
-    evas_object_size_hint_align_set(m_quickAccessView, EVAS_HINT_FILL, EVAS_HINT_FILL);
-    evas_object_show(m_quickAccessView);
-
-    m_quickAccessGengrid = createQuickAccessGengrid(m_quickAccessView);
+    m_quickAccessGengrid = createQuickAccessGengrid(parent);
+    evas_object_pass_events_set(m_quickAccessGengrid, EINA_FALSE);
     evas_object_smart_callback_add(m_quickAccessGengrid, "realized", _quickAccess_tile_realized, this);
 
     evas_object_show(m_quickAccessGengrid);
@@ -363,6 +339,7 @@ void QuickAccess::orientationChanged()
                 m_mostVisitedGengrid,
                 Z3_SCALE_SIZE(MOSTVISITED_ITEM_WIDTH_LANDSCAPE),
                 Z3_SCALE_SIZE(MOSTVISITED_ITEM_HEIGHT_LANDSCAPE));
+            elm_scroller_page_size_set(m_horizontalScroller, ELM_SCALE_SIZE(SCROLLER_LANDSCAPE_PAGE), 0);
         } else {
             elm_gengrid_item_size_set(
                 m_quickAccessGengrid,
@@ -373,6 +350,7 @@ void QuickAccess::orientationChanged()
                 m_mostVisitedGengrid,
                 Z3_SCALE_SIZE(MOSTVISITED_ITEM_WIDTH),
                 Z3_SCALE_SIZE(MOSTVISITED_ITEM_HEIGHT));
+            elm_scroller_page_size_set(m_horizontalScroller, ELM_SCALE_SIZE(SCROLLER_PORTRAIT_PAGE), 0);
         }
     } else {
         BROWSER_LOGE("[%s:%d] Signal not found", __PRETTY_FUNCTION__, __LINE__);
@@ -625,7 +603,7 @@ void QuickAccess::editQuickAccess()
     m_state = QuickAccessState::Edit;
     elm_gengrid_reorder_mode_set(m_quickAccessGengrid, EINA_TRUE);
     elm_gengrid_realized_items_update(m_quickAccessGengrid);
-    elm_object_part_content_unset(m_quickAccessView, "elm.swallow.content");
+    elm_box_unpack_all(m_box);
     evas_object_hide(m_mostVisitedGengrid);
 }
 
@@ -634,7 +612,7 @@ void QuickAccess::deleteMostVisited()
     BROWSER_LOGD("[%s:%d] ", __PRETTY_FUNCTION__, __LINE__);
     m_state = QuickAccessState::DeleteMostVisited;
     elm_gengrid_realized_items_update(m_mostVisitedGengrid);
-    elm_object_part_content_unset(m_mostVisitedView, "elm.swallow.content");
+    elm_box_unpack_all(m_box);
     evas_object_hide(m_quickAccessGengrid);
 }
 
@@ -673,8 +651,8 @@ void QuickAccess::showUI()
     BROWSER_LOGD("[%s:%d] currPage: %d", __PRETTY_FUNCTION__, __LINE__, m_currPage);
     getQuickAccessItems();
     getMostVisitedItems();
-    elm_object_part_content_set(m_mostVisitedView, "elm.swallow.content", m_mostVisitedGengrid);
-    elm_object_part_content_set(m_quickAccessView, "elm.swallow.content", m_quickAccessGengrid);
+    elm_box_pack_end(m_box, m_quickAccessGengrid);
+    elm_box_pack_end(m_box, m_mostVisitedGengrid);
     evas_object_show(m_mostVisitedGengrid);
     evas_object_show(m_quickAccessGengrid);
     orientationChanged();
