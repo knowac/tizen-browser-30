@@ -1,4 +1,4 @@
-#include "ContentPopup_mob.h"
+#include "ContentPopup.h"
 #include "ServiceManager.h"
 #include "AbstractMainWindow.h"
 #include "Tools/EflTools.h"

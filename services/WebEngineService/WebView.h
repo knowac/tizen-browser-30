@@ -208,17 +208,6 @@ public:
      */
     std::shared_ptr<tizen_browser::tools::BrowserImage> getFavicon();
 
-    /**
-     * Sets an absolute scroll of the given view.
-     *
-     * Both values are from zero to the contents size minus the viewport
-     * size.
-     *
-     * @param x horizontal position to scroll
-     * @param y vertical position to scroll
-     */
-    void scrollView(const int& dx, const int& dy);
-
     TabOrigin getOrigin() { return m_origin; }
 
     Ewk_Context* getContext() { return m_ewkContext; }

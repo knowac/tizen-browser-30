@@ -194,9 +194,6 @@ public:
     void switchToMobileMode();
     void switchToDesktopMode();
     bool isDesktopMode() const;
-
-    void scrollView(const int& dx, const int& dy);
-
     void onTabIdCreated(int tabId) override;
 
     /**

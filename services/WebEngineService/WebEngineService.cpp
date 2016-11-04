@@ -949,17 +949,6 @@ bool WebEngineService::isDesktopMode() const
     return m_currentWebView->isDesktopMode();
 }
 
-void WebEngineService::scrollView(const int& dx, const int& dy)
-{
-    BROWSER_LOGD("[%s:%d] ", __PRETTY_FUNCTION__, __LINE__);
-    M_ASSERT(m_currentWebView);
-    if (!m_currentWebView) {
-        BROWSER_LOGD("[%s:%d:%s] ", __PRETTY_FUNCTION__, __LINE__,"m_currentWebView is null");
-        return;
-    }
-    m_currentWebView->scrollView(dx, dy);
-}
-
 void WebEngineService::findWord(const char *word, Eina_Bool forward, Evas_Smart_Cb found_cb, void *data)
 {
     if (m_currentWebView)

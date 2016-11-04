@@ -1,47 +1,48 @@
 #include "../../../core/Tools/edc/InvisibleButton.edc"
 
 #define DEVELOPMENT 0
+#define WIDTH 720
+#define HEIGHT 426
 
-#define WIDTH 1920
-#define HEIGHT 1080
-#define POPUP_WIDTH 740
-#define POPUP_HEIGHT 388
-#define TITLE_HEIGHT 88
-#define INPUT_HEIGHT 210
-#define BUTTON_HEIGHT 90
-#define BUTTON_WIDTH 370
-#define TITLE_TEXT_OFFSET_X 40
-#define TITLE_TEXT_OFFSET_Y 46
-#define TITLE_TEXT_WIDTH 660
-#define TITLE_TEXT_HEIGHT 42
-#define BUTTON_TEXT_OFFSET_X 30
-#define BUTTON_TEXT_OFFSET_Y 0
-#define BUTTON_TEXT_WIDTH 310
-#define BUTTON_TEXT_HEIGHT 36
-#define MESSAGE_TEXT_OFFSET_X 40
-#define MESSAGE_TEXT_OFFSET_Y 24
-#define MESSAGE_TEXT_WIDTH 660
-#define MESSAGE_TEXT_HEIGHT 32
-#define INPUT_OFFSET_Y 88
-#define INPUT_AREA_HEIGHT 122
-#define INPUT_TEXT_WIDTH 488
-#define INPUT_TEXT_HEIGHT 68
+#define TITLE_HEIGHT 101
+#define INPUT_HEIGHT 205
+#define BUTTON_HEIGHT 120
+#define BUTTON_WIDTH 360
+#define TITLE_TEXT_OFFSET_X 100
+#define TITLE_TEXT_OFFSET_Y 44
+#define TITLE_TEXT_WIDTH 520
+#define TITLE_TEXT_HEIGHT 45
+#define BUTTON_TEXT_OFFSET_X 50
+#define BUTTON_TEXT_OFFSET_Y 40
+#define BUTTON_TEXT_WIDTH 260
+#define BUTTON_TEXT_HEIGHT 40
+#define MESSAGE_TEXT_OFFSET_X 44
+#define MESSAGE_TEXT_OFFSET_Y 30
+#define MESSAGE_TEXT_WIDTH 632
+#define MESSAGE_TEXT_HEIGHT 38
+#define INPUT_OFFSET_Y 78
+#define INPUT_AREA_HEIGHT 106
+#define INPUT_TEXT_OFFSET_X 44
+#define INPUT_TEXT_OFFSET_Y 26
+#define INPUT_TEXT_WIDTH 632
+#define INPUT_TEXT_SELECTED_WIDTH 578
+#define INPUT_TEXT_HEIGHT 40
+#define INPUT_DIVIDER_OFFSET_X 32
+#define INPUT_DIVIDER_OFFSET_Y 82
+#define INPUT_DIVIDER_HEIGHT 2
+#define INPUT_DIVIDER_WIDTH 656
+#define INPUT_CANCEL_OFFSET_X 34
+#define INPUT_CANCEL_OFFSET_Y 41
+#define CANCEL_BUTTON_WIDTH 98
 
 collections{
-
-#if PROFILE_MOBILE
     base_scale: 2.6;
-#else
-    base_scale: 2.0;
-#endif
-
     group {
         name: "elm/entry/selection/browser_entry";
         parts {
-            part {
+            rect {
                 name: "bg";
                 scale: 1;
-                type: RECT;
                 mouse_events: 0;
                 description {
                     state: "default" 0.0;
@@ -53,16 +54,15 @@ collections{
     group {
         name: "elm/entry/cursor/browser_entry";
         parts {
-            part {
+            rect {
                 name: "bg";
                 scale: 1;
-                type: RECT;
                 mouse_events: 0;
                 description {
                     state: "default" 0.0;
                     color: 10 132 229 255;
-                    min: 3 60;
-                    max: 3 60;
+                    min: 3 INPUT_TEXT_HEIGHT;
+                    max: 3 INPUT_TEXT_HEIGHT;
                     visible: 0;
                 }
                 description {
@@ -94,12 +94,12 @@ collections{
         styles {
             style {
                 name: "input_text_style";
-                base: "font=BreezeSans:style=Light font_size=50 wrap=none color=#333333 align=0.0 valign=0.5 ellipsis=1.0"; //68
+                base: "font=Tizen:style=Regular font_size=40 wrap=none color=#333333 align=0.0";
                 tag:  "br" "";
             }
             style {
                 name: "guide_text_style";
-                base: "font=BreezeSans:style=Light font_size=50 wrap=none color=#969696 align=0.0 valign=0.5 ellipsis=1.0"; //68
+                base: "font=Tizen:style=Regular font_size=40 wrap=none color=#969696 align=0.0 ellipsis=1";
                 tag:  "br" "";
             }
         }
@@ -107,24 +107,30 @@ collections{
             item: focus_highlight "off";
         }
         parts {
-            part {
+            rect {
                 name: "bg";
                 scale: 1;
-                type: RECT;
                 mouse_events: 0;
                 description {
                     state: "default" 0.0;
+                    align: 0 0;
+                    min: 0 0;
+                    max: -1 INPUT_TEXT_HEIGHT+10;
+                    fixed: 0 0;
+                    rel1.relative: 0 0;
+                    rel2.relative: 1 1;
+                    visible: 1;
                     color: 244 244 244 255;
                 }
                 description {
                     state: "focused" 0.0;
+                    inherit: "default";
                     color: 224 237 251 255;
                 }
             }
-            part {
+            rect {
                 name: "label.text.clip";
                 scale: 1;
-                type: RECT;
                 description {
                     state: "default" 0.0;
                 }
@@ -142,15 +148,22 @@ collections{
                 source4: "elm/entry/cursor/browser_entry";
                 description {
                     state: "default" 0.0;
-                    min: 0 INPUT_TEXT_HEIGHT;
-                    max: -1 INPUT_TEXT_HEIGHT;
-                    rel1 {
-                        to: "bg";
-                        relative: 0.0 0.0;
-                    }
-                    rel2.relative: 1.0 1.0;
                     align: 0.0 0.0;
-                    text.style: "input_text_style";
+                    min: 0 INPUT_TEXT_HEIGHT+20;
+                    max: -1 -1;
+                    fixed: 0 0;
+                    rel1 {
+                        relative: 0.0 0.0;
+                        to: "bg";
+                    }
+                    rel2 {
+                        relative: 1.0 1.0;
+                        to: "bg";
+                    }
+                    text {
+                        style: "input_text_style";
+                        align: 0 0;
+                    }
                 }
             }
             part {
@@ -160,16 +173,22 @@ collections{
                 mouse_events: 0;
                 description {
                     state: "default" 0.0;
+                    align: 0.0 0.0;
+                    min: 0 INPUT_TEXT_HEIGHT+20;
+                    max: -1 -1;
+                    fixed: 0 0;
                     rel1 {
-                        to: "bg";
                         relative: 0.0 0.0;
+                        to: "bg";
                     }
-                    rel2.relative: 1.0 1.0;
-                    min: 0 INPUT_TEXT_HEIGHT;
-                    max: -1 INPUT_TEXT_HEIGHT;
+                    rel2 {
+                        relative: 1.0 1.0;
+                        to: "bg";
+                    }
                     text {
-                        text: "Input folder name";
                         style: "guide_text_style";
+                        align: 0 0;
+                        text: "Input folder name";
                     }
                 }
                 description {
@@ -222,72 +241,68 @@ collections{
         styles {
             style {
                 name: "title_text_style";
-                base: "font=BreezeSans:style=Light font_size=34 wrap=none color=#333333 align=0.5 valign=1.0 ellipsis=1.0";
+                base: "font=Tizen:style=Regular font_size=45 wrap=none color=#389ae9 align=0.5 ellipsis=1";
             }
         }
         parts {
-            part {
-                name: "dimmed-bg";
-                type: RECT;
+            rect {
+                name: "bg";
                 scale: 1;
                 description {
                     state: "default" 0.0;
                     visible: 1;
-                    color: 0 0 0 102;
-                    align: 0.0 0.0;
-                    min: WIDTH HEIGHT;
-                    max: WIDTH HEIGHT;
-                    fixed: 1 1;
+                    color: 0 0 0 102.4;
+                    align: 0.5 0.5;
+                    min: 0 0;
+                    max: -1 -1;
+                    fixed: 0 0;
                     rel1.relative: 0.0 0.0;
                     rel2.relative: 1.0 1.0;
                 }
             }
-            part {
-                name: "bg";
-                type: RECT;
+            rect {
+                name: "popup_bg";
                 scale: 1;
                 description {
                     state: "default" 0.0;
-                    visible: DEVELOPMENT;
-                    color: 198 113 113 255; //salmon
-                    align: 0.5 0.0; //TODO: 0.5 0.5
-                    min: POPUP_WIDTH POPUP_HEIGHT;
-                    max: POPUP_WIDTH POPUP_HEIGHT;
-                    fixed: 1 1;
+                    visible: 0;
+                    align: 0.5 1;
+                    fixed: 0 1;
+                    min: 0 HEIGHT;
+                    max: -1 HEIGHT;
                     rel1 {
-                        relative: 0.0 0.0;
-                        to: "dimmed-bg";
+                        relative: 0 0;
+                        to: "bg";
                     }
                     rel2 {
-                        relative: 1.0 1.0;
-                        to: "dimmed-bg";
+                        relative: 1 1;
+                        to: "bg";
                     }
-                }
+                 }
             }
-            part {
+            rect {
                 name: "title_bg";
-                type: RECT;
                 scale: 1;
                 description {
                     state: "default" 0.0;
                     visible: 1;
                     color: 255 255 255 255;
-                    align: 0.5 0.0;
-                    min: POPUP_WIDTH TITLE_HEIGHT;
-                    max: POPUP_WIDTH TITLE_HEIGHT;
+                    align: 0.0 0.0;
+                    min: 0 TITLE_HEIGHT;
+                    max: -1 TITLE_HEIGHT;
+                    fixed: 0 0;
                     rel1 {
                         relative: 0.0 0.0;
-                        to: "bg";
+                        to: "popup_bg";
                     }
                     rel2 {
                         relative: 1.0 1.0;
-                        to: "bg";
+                        to: "popup_bg";
                     }
                 }
             }
-            part {
-                name: "title_text_spacer";
-                type: RECT;
+            rect {
+                name: "title_text_spacer_0";
                 scale: 1;
                 description {
                     state: "default" 0.0;
@@ -295,6 +310,7 @@ collections{
                     color: 255 255 255 127;
                     min: TITLE_TEXT_OFFSET_X TITLE_TEXT_OFFSET_Y;
                     max: TITLE_TEXT_OFFSET_X TITLE_TEXT_OFFSET_Y;
+                    fixed: 1 1;
                     align: 0.0 0.0;
                     rel1 {
                         relative: 0.0 0.0;
@@ -302,29 +318,50 @@ collections{
                     }
                     rel2 {
                         relative: 1.0 1.0;
-                        to: "bg";
+                        to: "title_bg";
+                    }
+                 }
+            }
+            rect {
+                name: "title_text_spacer_1";
+                scale: 1;
+                description {
+                    state: "default" 0.0;
+                    visible: DEVELOPMENT;
+                    color: 255 255 255 127;
+                    min: TITLE_TEXT_OFFSET_X 0;
+                    max: TITLE_TEXT_OFFSET_X 0;
+                    fixed: 1 1;
+                    align: 1 1;
+                    rel1 {
+                        relative: 0.0 0.0;
+                        to: "title_bg";
+                    }
+                    rel2 {
+                        relative: 1.0 1.0;
+                        to: "title_bg";
                     }
                 }
             }
-            part {
+            rect {
                 name: "title_text_bg";
-                type: RECT;
                 scale: 1;
                 description {
                     state: "default" 0.0;
                     visible: DEVELOPMENT;
                     color: 255 182 193 255; //lightpink
                     align: 0.0 0.0;
-                    min: TITLE_TEXT_WIDTH TITLE_TEXT_HEIGHT;
-                    max: TITLE_TEXT_WIDTH TITLE_TEXT_HEIGHT;
+                    min: 0 TITLE_TEXT_HEIGHT;
+                    max: -1 -1;
+                    fixed: 0 0;
                     rel1 {
-                        relative: 1.0 1.0;
-                        to: "title_text_spacer";
+                        relative: 1 1;
+                        to: "title_text_spacer_0";
                     }
                     rel2 {
-                        relative: 1.0 1.0;
-                        to: "bg";
-                    }
+                        relative: 0 0;
+                        to: "title_text_spacer_1";
+                         }
                 }
             }
             part {
@@ -335,8 +372,7 @@ collections{
                     state: "default" 0.0;
                     visible: 1;
                     align: 0.0 0.0;
-                    min: TITLE_TEXT_WIDTH TITLE_TEXT_HEIGHT;
-                    max: TITLE_TEXT_WIDTH TITLE_TEXT_HEIGHT;
+                    fixed: 0 0;
                     rel1 {
                         relative: 0.0 0.0;
                         to: "title_text_bg";
@@ -345,7 +381,10 @@ collections{
                         relative: 1.0 1.0;
                         to: "title_text_bg";
                     }
-                    text.style: "title_text_style";
+                    text {
+                        style: "title_text_style";
+                        align: 0 0;
+                    }
                 }
             }
             part {
@@ -356,8 +395,9 @@ collections{
                 repeat_events: 1;
                 description {
                     state: "default" 0.0;
-                    min: POPUP_WIDTH INPUT_HEIGHT;
-                    max: POPUP_WIDTH INPUT_HEIGHT;
+                    min: 0 INPUT_HEIGHT;
+                    max: -1 INPUT_HEIGHT;
+                    fixed: 0 1;
                     align: 0.0 0.0;
                     visible: 1;
                     rel1 {
@@ -366,28 +406,28 @@ collections{
                     }
                     rel2 {
                         relative: 1.0 1.0;
-                        to: "bg";
+                        to: "popup_bg";
                     }
                 }
             }
-            part {
+            rect {
                 name: "buttons_bg";
-                type: RECT;
                 scale: 1;
                 description {
                     state: "default" 0.0;
                     visible: 1;
                     color: 0 255 255 255;
                     align: 0.0 0.0;
-                    min: POPUP_WIDTH BUTTON_HEIGHT;
-                    max: POPUP_WIDTH BUTTON_HEIGHT;
+                    min: 0 BUTTON_HEIGHT;
+                    max: -1 BUTTON_HEIGHT;
+                    fixed: 0 1;
                     rel1 {
                         relative: 0.0 1.0;
                         to: "input_swallow";
                     }
                     rel2 {
                         relative: 1.0 1.0;
-                        to: "bg";
+                        to: "popup_bg";
                     }
                 }
             }
@@ -397,8 +437,7 @@ collections{
                 scale: 1;
                 description {
                     state: "default" 0.0;
-                    min: POPUP_WIDTH BUTTON_HEIGHT;
-                    max: POPUP_WIDTH BUTTON_HEIGHT;
+                    fixed: 0 0;
                     align: 0.0 0.0;
                     rel1 {
                         relative: 0.0 0.0;
@@ -416,41 +455,40 @@ collections{
         name: "input-area-layout";
         styles {
             style {
-                name: "message_text_normal_style";
-                base: "font=Tizen:style=Regular font_size=25 wrap=none color=#686868 align=0.5 valign=1.0 ellipsis=1.0";
-            }
-            style {
-                name: "message_text_highlight_style";
-                base: "font=Tizen:style=Regular font_size=25 wrap=none color=#686868 align=0.5 valign=1.0 ellipsis=1.0";
+                name: "message_text_style";
+                base: "font=Tizen:style=Regular font_size=40 wrap=none color=#141414 align=0.0 ellipsis=1.0";
             }
         }
+        images {
+            image: "input_ic_cancel.png" COMP;
+        }
         parts {
-            part {
+            rect {
                 name: "bg";
-                type: RECT;
                 scale: 1;
                 description {
                     state: "default" 0.0;
                     visible: 1;
                     color: 255 255 255 255;
                     align: 0.0 0.0;
-                    min: POPUP_WIDTH INPUT_HEIGHT;
-                    max: POPUP_WIDTH INPUT_HEIGHT;
+                    min: 0 INPUT_HEIGHT;
+                    max: -1 INPUT_HEIGHT;
+                    fixed: 0 1;
                     rel1.relative: 0.0 0.0;
                     rel2.relative: 1.0 1.0;
                 }
             }
-            part {
-                name: "input_message_spacer";
-                type: RECT;
+            rect {
+                name: "input_message_spacer_0";
                 scale: 1;
                 description {
                     state: "default" 0.0;
                     visible: DEVELOPMENT;
-                    color: 255 0 0 127;
+                    color: 255 255 255 127;
                     align: 0.0 0.0;
                     min: MESSAGE_TEXT_OFFSET_X MESSAGE_TEXT_OFFSET_Y;
                     max: MESSAGE_TEXT_OFFSET_X MESSAGE_TEXT_OFFSET_Y;
+                    fixed: 1 1;
                     rel1 {
                         relative: 0.0 0.0;
                         to: "bg";
@@ -458,22 +496,47 @@ collections{
                     rel2.relative: 1.0 1.0;
                 }
             }
-            part {
+            rect {
+                name: "input_message_spacer_1";
+                scale: 1;
+                mouse_events: 0;
+                description {
+                    state: "default" 0.0;
+                    align: 1 1;
+                    min: INPUT_TEXT_OFFSET_X 0;
+                    max: INPUT_TEXT_OFFSET_X 0;
+                    fixed: 1 1;
+                    visible: DEVELOPMENT;
+                    color: 255 255 255 127;
+                    rel1 {
+                        relative: 0 0;
+                        to: "bg";
+                    }
+                    rel2 {
+                        relative: 1 0;
+                        to: "input_area_bg";
+                    }
+                }
+            }
+            rect {
                 name: "input_message_bg";
-                type: RECT;
                 scale: 1;
                 description {
                     state: "default" 0.0;
                     visible: DEVELOPMENT;
                     color: 202 225 255 255; //lightsteelblue
                     align: 0.0 0.0;
-                    min: MESSAGE_TEXT_WIDTH MESSAGE_TEXT_HEIGHT;
-                    max: MESSAGE_TEXT_WIDTH MESSAGE_TEXT_HEIGHT;
+                    min: 0 MESSAGE_TEXT_HEIGHT;
+                    max: -1 -1;
+                    fixed: 0 0;
                     rel1 {
-                        relative: 1.0 1.0;
-                        to: "input_message_spacer";
+                        relative: 1 1;
+                        to: "input_message_spacer_0";
                     }
-                    rel2.relative: 1.0 1.0;
+                    rel2 {
+                        relative: 0 0;
+                        to: "input_message_spacer_1";
+                    }
                 }
             }
             part {
@@ -484,8 +547,7 @@ collections{
                     state: "default";
                     visible: 1;
                     align: 0.0 0.0;
-                    min: MESSAGE_TEXT_WIDTH MESSAGE_TEXT_HEIGHT;
-                    max: MESSAGE_TEXT_WIDTH MESSAGE_TEXT_HEIGHT;
+                    fixed: 1 1;
                     rel1 {
                         relative: 0.0 0.0;
                         to: "input_message_bg";
@@ -494,17 +556,14 @@ collections{
                         relative: 1.0 1.0;
                         to: "input_message_bg";
                     }
-                    text.style: "message_text_normal_style";
-                }
-                description {
-                    state: "highlighted" 0.0;
-                    inherit: "default";
-                    text.style: "message_text_highlight_style";
+                    text {
+                        style: "message_text_style";
+                        align: 0 0;
+                    }
                 }
             }
-            part {
+            rect {
                 name: "input_area_spacer";
-                type: RECT;
                 scale: 1;
                 mouse_events: 0;
                 description {
@@ -521,16 +580,16 @@ collections{
                     rel2.relative: 1.0 1.0;
                 }
             }
-            part {
+            rect {
                 name: "input_area_bg";
-                type: RECT;
                 scale: 1;
                 mouse_events: 0;
                 description {
                     state: "default" 0.0;
                     align: 0.0 0.0;
-                    min: POPUP_WIDTH INPUT_AREA_HEIGHT;
-                    max: POPUP_WIDTH INPUT_AREA_HEIGHT;
+                    min: 0 INPUT_AREA_HEIGHT;
+                    max: -1 INPUT_AREA_HEIGHT;
+                    fixed: 0 1;
                     visible: 0;
                     color: 224 237 251 255;
                     rel1 {
@@ -539,19 +598,63 @@ collections{
                     }
                     rel2.relative: 1.0 1.0;
                 }
+                description {
+                    state: "focused" 0.0;
+                    inherit: "default";
+                    visible: 1;
+                }
             }
-            part {
-                name: "input_text_bg";
-                type: RECT;
+            rect {
+                name: "input_spacer_0";
                 scale: 1;
                 mouse_events: 0;
                 description {
                     state: "default" 0.0;
-                    align: 0.5 0.0;
-                    min: INPUT_TEXT_WIDTH INPUT_TEXT_HEIGHT;
-                    max: INPUT_TEXT_WIDTH INPUT_TEXT_HEIGHT;
+                    align: 0.0 0.0;
+                    min: INPUT_TEXT_OFFSET_X INPUT_TEXT_OFFSET_Y;
+                    max: INPUT_TEXT_OFFSET_X INPUT_TEXT_OFFSET_Y;
                     visible: DEVELOPMENT;
-                    color: 238 229 222 255; //seashell
+                    color: 255 255 255 127;
+                    rel1 {
+                        relative: 0.0 0.0;
+                        to: "input_area_bg";
+                    }
+                    rel2.relative: 1.0 1.0;
+                }
+            }
+            rect {
+                name: "input_spacer_1";
+                scale: 1;
+                mouse_events: 0;
+                description {
+                    state: "default" 0.0;
+                    align: 1 1;
+                    min: INPUT_TEXT_OFFSET_X 0;
+                    max: INPUT_TEXT_OFFSET_X 0;
+                    visible: DEVELOPMENT;
+                    color: 255 255 255 127;
+                    rel1 {
+                        relative: 0 0;
+                        to: "input_area_bg";
+                    }
+                    rel2 {
+                        relative: 1 1;
+                        to: "input_area_bg";
+                    }
+                }
+            }
+            rect {
+                name: "title_input_spacer_2";
+                scale: 1;
+                mouse_events: 0;
+                description {
+                    state: "default" 0.0;
+                    align: 1 1;
+                    min: CANCEL_BUTTON_WIDTH 0;
+                    max: CANCEL_BUTTON_WIDTH 0;
+                    fixed: 1 1;
+                    visible: DEVELOPMENT;
+                    color: 255 255 255 127;
                     rel1 {
                         relative: 0.0 0.0;
                         to: "input_area_bg";
@@ -559,6 +662,36 @@ collections{
                     rel2 {
                         relative: 1.0 1.0;
                         to: "input_area_bg";
+                    }
+                }
+            }
+            rect {
+                name: "input_text_bg";
+                scale: 1;
+                mouse_events: 0;
+                description {
+                    state: "default" 0.0;
+                    align: 0.0 0.0;
+                    min: 0 INPUT_TEXT_HEIGHT;
+                    max: -1 -1;
+                    fixed: 0 0;
+                    visible: DEVELOPMENT;
+                    color: 238 229 222 255; //seashell
+                    rel1 {
+                        relative: 1 1;
+                        to: "input_spacer_0";
+                    }
+                    rel2 {
+                        relative: 0 0;
+                        to: "input_spacer_1";
+                    }
+                }
+                description {
+                    state: "show" 0.0;
+                    inherit: "default";
+                    rel2 {
+                        relative: 0 0;
+                        to: "title_input_spacer_2";
                     }
                 }
             }
@@ -570,8 +703,9 @@ collections{
                 description {
                     state: "default" 0.0;
                     align: 0.0 0.0;
-                    min: INPUT_TEXT_WIDTH INPUT_TEXT_HEIGHT;
-                    max: INPUT_TEXT_WIDTH INPUT_TEXT_HEIGHT;
+                    min: 0 INPUT_TEXT_HEIGHT;
+                    max: -1 -1;
+                    fixed: 0 0;
                     rel1 {
                         relative: 0.0 0.0;
                         to: "input_text_bg";
@@ -581,6 +715,224 @@ collections{
                         to: "input_text_bg";
                     }
                 }
+            }
+            rect {
+                name: "input_cancel_spacer";
+                scale: 1;
+                mouse_events: 0;
+                description {
+                    state: "default" 0.0;
+                    align: 1 1;
+                    min: INPUT_CANCEL_OFFSET_X INPUT_CANCEL_OFFSET_Y-10;
+                    max: INPUT_CANCEL_OFFSET_X INPUT_CANCEL_OFFSET_Y-10;
+                    fixed: 1 1;
+                    visible: DEVELOPMENT;
+                    color: 255 255 255 127;
+                    rel1 {
+                        relative: 0.0 0.0;
+                        to: "input_area_bg";
+                    }
+                    rel2 {
+                        relative: 1.0 1.0;
+                        to: "input_area_bg";
+                    }
+                }
+            }
+            rect {
+                name: "input_cancel_bg";
+                mouse_events: 0;
+                scale: 1;
+                description {
+                    state: "default" 0.0;
+                    min: INPUT_TEXT_HEIGHT+10 INPUT_TEXT_HEIGHT+10;
+                    max: INPUT_TEXT_HEIGHT+10 INPUT_TEXT_HEIGHT+10;
+                    fixed: 1 1;
+                    visible: DEVELOPMENT;
+                    align: 1 1;
+                    color: 224 237 251 127;
+                    rel1 {
+                        relative: 0.0 0.0;
+                        to: "input_area_bg";
+                    }
+                    rel2 {
+                        relative: 0.0 0.0;
+                        to: "input_cancel_spacer";
+                    }
+                }
+                description {
+                    state: "focused" 0.0;
+                    inherit: "default";
+                    color: 224 237 251 255;
+                    visible: 1;
+                }
+            }
+            part {
+                name: "input_cancel_icon";
+                type: IMAGE;
+                scale: 1;
+                mouse_events: 0;
+                description {
+                    state: "default" 0.0;
+                    align: 0.5 0.5;
+                    min: INPUT_TEXT_HEIGHT INPUT_TEXT_HEIGHT;
+                    max: INPUT_TEXT_HEIGHT INPUT_TEXT_HEIGHT;
+                    fixed: 1 1;
+                    visible: 0;
+                    rel1 {
+                        relative: 0.0 0.0;
+                        to: "input_cancel_bg";
+                    }
+                    rel2 {
+                        relative: 1.0 1.0;
+                        to: "input_cancel_bg";
+                    }
+                    image {
+                        normal: "input_ic_cancel.png";
+                        border: 0 0 0 0;
+                    }
+                }
+                description {
+                    state: "show" 0.0;
+                    inherit: "default";
+                    visible: 1;
+                }
+            }
+            part {
+                name: "input_cancel_click";
+                type: SWALLOW;
+                scale: 1;
+                mouse_events: 1;
+                repeat_events: 0;
+                description {
+                    state: "default" 0.0;
+                    align: 1 1;
+                    min: CANCEL_BUTTON_WIDTH INPUT_AREA_HEIGHT;
+                    max: CANCEL_BUTTON_WIDTH INPUT_AREA_HEIGHT;
+                    fixed: 1 1;
+                    visible: 0;
+                    rel1 {
+                        relative: 0.0 0.0;
+                        to: "input_area_bg";
+                    }
+                    rel2 {
+                        relative: 1.0 1.0;
+                        to: "input_area_bg";
+                    }
+                }
+                description {
+                    state: "show" 0.0;
+                    inherit: "default";
+                    visible: 1;
+                }
+            }
+            rect {
+                name: "input_divider_spacer_0";
+                scale: 1;
+                mouse_events: 0;
+                description {
+                    state: "default" 0.0;
+                    align: 0.0 0.0;
+                    min: INPUT_DIVIDER_OFFSET_X INPUT_DIVIDER_OFFSET_Y;
+                    max: INPUT_DIVIDER_OFFSET_X INPUT_DIVIDER_OFFSET_Y;
+                    fixed: 1 1;
+                    visible: DEVELOPMENT;
+                    color: 255 255 255 127;
+                    rel1 {
+                        relative: 0.0 0.0;
+                        to: "input_area_bg";
+                    }
+                    rel2.relative: 1.0 1.0;
+                }
+            }
+            rect {
+                name: "input_divider_spacer_1";
+                scale: 1;
+                mouse_events: 0;
+                description {
+                    state: "default" 0.0;
+                    align: 1 1;
+                    min: INPUT_DIVIDER_OFFSET_X 0;
+                    max: INPUT_DIVIDER_OFFSET_X 0;
+                    fixed: 1 1;
+                    visible: DEVELOPMENT;
+                    color: 255 255 255 127;
+                    rel1 {
+                        relative: 0 0;
+                        to: "input_area_bg";
+                    }
+                    rel2 {
+                        relative: 1 1;
+                        to: "input_area_bg";
+                    }
+                }
+            }
+            rect {
+                name: "input_divider_bg";
+                scale: 1;
+                mouse_events: 0;
+                description {
+                    state: "default" 0.0;
+                    align: 0.0 0.0;
+                    min: 0 INPUT_DIVIDER_HEIGHT;
+                    max: 1 INPUT_DIVIDER_HEIGHT;
+                    visible: 1;
+                    color: 10 132 229 255;
+                    rel1 {
+                        relative: 1 1;
+                        to: "input_divider_spacer_0";
+                    }
+                    rel2 { relative: 0 0;
+                           to: "input_divider_spacer_1";
+                         }
+                }
+            }
+        }
+        programs {
+            program {
+                name: "entry_swallow_down";
+                source: "input_text_swallow";
+                signal: "mouse,down,*";
+                action: STATE_SET "focused" 0.0;
+                target: "input_area_bg";
+            }
+            program {
+                name: "entry_swallow_up";
+                source: "input_text_swallow";
+                signal: "mouse,up,*";
+                action: STATE_SET "default" 0.0;
+                target: "input_area_bg";
+            }
+            program {
+                name: "close_icon_show";
+                signal: "close_icon_show";
+                source: "ui";
+                action: STATE_SET "show" 0.0;
+                target: "input_text_bg";
+                target: "input_cancel_icon";
+                target: "input_cancel_click";
+            }
+            program {
+                name: "close_icon_hide";
+                signal: "close_icon_hide";
+                source: "ui";
+                action: STATE_SET "default" 0.0;
+                target: "input_text_bg";
+                target: "input_cancel_icon";
+                target: "input_cancel_click";
+            }
+            program {
+                name: "input_cancel_down";
+                source: "input_cancel_click";
+                signal: "mouse,down,*";
+                action: STATE_SET "focused" 0.0;
+                target: "input_cancel_bg";
+            }
+            program {
+                name: "input_cancel_up";
+                source: "input_cancel_click";
+                signal: "mouse,up,*";
+                action: STATE_SET "default" 0.0;
+                target: "input_cancel_bg";
             }
         }
     }
@@ -588,90 +940,43 @@ collections{
         name: "elm/button/base/input-popup-button";
         styles {
             style {
-                name: "button_text_style_normal";
-                base: "font=BreezeSans:style=Light font_size=29 wrap=none color=#575757 align=0.5 valign=0.5 ellipsis=1.0"; //36
-            }
-            style {
-                name: "button_text_style_focused";
-                base: "font=BreezeSans:style=Light font_size=29 wrap=none color=#ffffff align=0.5 valign=0.5 ellipsis=1.0"; //36
+                name: "button_text_style";
+                base: "font=Tizen:style=Regular font_size=40 wrap=none color=#141414 align=0.5 ellipsis=1.0";
             }
             style {
                 name: "button_text_style_dissabled";
-                base: "font=BreezeSans:style=Light font_size=29 wrap=none color=#ababab align=0.5 valign=0.5"; //36
+                base: "font=Tizen:style=Regular font_size=40 wrap=none color=#C0C0C0 align=0.5 ellipsis=1.0";
             }
         }
         parts {
-            part {
+            rect {
                 name: "bg";
-                type: RECT;
                 scale: 1;
                 description {
                     state: "default" 0.0;
                     visible: 1;
-                    align: 0.5 0.5;
-                    fixed: 1 1;
-                    color: 246 246 246 255;
-                    min: BUTTON_WIDTH BUTTON_HEIGHT;
-                    max: BUTTON_WIDTH BUTTON_HEIGHT;
+                    color: 244 244 244 255;
+                    min: 0 0;
+                    max: -1 -1;
+                    fixed: 0 0;
                 }
                 description {
-                    state: "focused" 0.0;
+                    state: "pressed" 0.0;
                     inherit: "default" 0.0;
-                    color: 0 119 246 255;
+                    color: 224 237 251 255;
                 }
             }
-            part {
+            rect {
                 name: "divider_horizontal";
-                type: RECT;
                 scale: 1;
                 description {
                     state: "default" 0.0;
                     visible: 1;
                     align: 0.5 0.0;
-                    color: 227 227 227 255;
-                    min: BUTTON_WIDTH 1;
-                    max: BUTTON_WIDTH 1;
-                    rel1 {
-                        relative: 0.0 0.0;
-                        to: "bg";
-                    }
-                    rel2.relative: 1.0 1.0;
-                }
-            }
-            part {
-                name: "divider_vertical";
-                type: RECT;
-                scale: 1;
-                description {
-                    state: "default" 0.0;
-                    visible: 0;
-                    align: 0.0 0.0;
-                    color: 227 227 227 255;
-                    min: 1 BUTTON_HEIGHT;
-                    max: 1 BUTTON_HEIGHT;
-                    rel1 {
-                        relative: 0.0 0.0;
-                        to: "bg";
-                    }
-                    rel2.relative: 1.0 1.0;
-                }
-                description {
-                    state: "visible" 0.0;
-                    inherit: "default";
-                    visible: 1;
-                }
-            }
-            part {
-                name: "text_bg";
-                type: RECT;
-                scale: 1;
-                description {
-                    state: "default" 0.0;
-                    visible: DEVELOPMENT;
-                    align: 0.5 0.5;
-                    color: 255 0 255 255; //magenta
-                    min: BUTTON_TEXT_WIDTH BUTTON_TEXT_HEIGHT;
-                    max: BUTTON_TEXT_WIDTH BUTTON_TEXT_HEIGHT;
+                    color: 0 0 0 38.4;
+                    min: 0 1;
+                    max: -1 1;
+                    fixed: 0 1;
                     rel1 {
                         relative: 0.0 0.0;
                         to: "bg";
@@ -679,6 +984,94 @@ collections{
                     rel2 {
                         relative: 1.0 1.0;
                         to: "bg";
+                    }
+                }
+            }
+            rect {
+                name: "divider_vertical";
+                scale: 1;
+                description {
+                    state: "default" 0.0;
+                    visible: 0;
+                    align: 0.0 0.0;
+                    color: 0 0 0 38.4;
+                    min: 1 0;
+                    max: 1 -1;
+                    fixed: 1 0;
+                    rel1 {
+                        relative: 0.0 0.0;
+                        to: "bg";
+                    }
+                    rel2 {
+                        relative: 1.0 1.0;
+                        to: "bg";
+                    }
+                }
+                description {
+                    state: "visible" 0.0;
+                    inherit: "default";
+                    visible: 1;
+                }
+            }
+            rect {
+                name: "text_spacer_0";
+                scale: 1;
+                description {
+                    state: "default" 0.0;
+                    visible: DEVELOPMENT;
+                    align: 0.0 0.0;
+                    color: 255 255 255 127;
+                    min: BUTTON_TEXT_OFFSET_X BUTTON_TEXT_OFFSET_Y;
+                    max: BUTTON_TEXT_OFFSET_X BUTTON_TEXT_OFFSET_Y;
+                    fixed: 1 1;
+                    rel1 {
+                        relative: 0.0 0.0;
+                        to: "bg";
+                    }
+                    rel2 {
+                        relative: 1.0 1.0;
+                        to: "bg";
+                    }
+                }
+            }
+            rect {
+                name: "text_spacer_1";
+                scale: 1;
+                description {
+                    state: "default" 0.0;
+                    visible: DEVELOPMENT;
+                    align: 1 1;
+                    color: 255 255 255 127;
+                    min: BUTTON_TEXT_OFFSET_X 0;
+                    max: BUTTON_TEXT_OFFSET_X 0;
+                    fixed: 1 1;
+                    rel1 {
+                        relative: 0.0 0.0;
+                        to: "bg";
+                    }
+                    rel2 {
+                        relative: 1.0 1.0;
+                        to: "bg";
+                    }
+                }
+            }
+            rect {
+                name: "text_bg";
+                scale: 1;
+                description {
+                    state: "default" 0.0;
+                    visible: DEVELOPMENT;
+                    align: 0.0 0.0;
+                    color: 255 0 255 255; //magenta
+                    min: 0 BUTTON_TEXT_HEIGHT;
+                    max: -1 -1;
+                    rel1 {
+                        relative: 1.0 1.0;
+                        to: "text_spacer_0";
+                    }
+                    rel2 {
+                        relative: 0 0;
+                        to: "text_spacer_1";
                     }
                 }
             }
@@ -690,8 +1083,7 @@ collections{
                 description {
                     state: "default" 0.0;
                     visible: 1;
-                    min: BUTTON_TEXT_WIDTH BUTTON_TEXT_HEIGHT;
-                    max: BUTTON_TEXT_WIDTH BUTTON_TEXT_HEIGHT;
+                    fixed: 1 1;
                     rel1 {
                         relative: 0.0 0.0;
                         to: "text_bg";
@@ -700,30 +1092,33 @@ collections{
                         relative: 1.0 1.0;
                         to: "text_bg";
                     }
-                    text.style: "button_text_style_normal";
+                    text {
+                        style: "button_text_style";
+                        align: 0 0;
+                    }
                 }
                 description {
                     state: "dissabled" 0.0;
                     inherit: "default";
                     text.style: "button_text_style_dissabled";
                 }
-                description {
-                    state: "focused" 0.0;
-                    inherit: "default";
-                    text.style: "button_text_style_focused";
-                }
             }
-            part {
+            rect {
                 name: "over";
                 scale: 1;
                 mouse_events: 1;
                 repeat_events: 0;
-                type: RECT;
                 description {
                     state: "default" 0.0;
                     visible: 1;
-                    rel1 { relative: 0.0 0.0; to: "bg";}
-                    rel2 { relative: 1.0 1.0; to: "bg";}
+                    rel1 {
+                        relative: 0.0 0.0;
+                        to: "bg";
+                    }
+                    rel2 {
+                        relative: 1.0 1.0;
+                        to: "bg";
+                    }
                     color: 0 0 0 0;
                 }
             }
@@ -754,9 +1149,8 @@ collections{
                 name: "down";
                 source: "over";
                 signal: "mouse,down,*";
-                action: STATE_SET "focused" 0.0;
+                action: STATE_SET "pressed" 0.0;
                 target: "bg";
-                target: "elm.text";
             }
             program {
                 name: "up";
@@ -764,7 +1158,6 @@ collections{
                 signal: "mouse,up,*";
                 action: STATE_SET "default" 0.0;
                 target: "bg";
-                target: "elm.text";
             }
             program {
                 name: "mouse_click";

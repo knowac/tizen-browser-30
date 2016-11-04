@@ -31,6 +31,14 @@ namespace tizen_browser
 namespace base_ui
 {
 
+struct PopupData {
+    virtual ~PopupData() {};
+};
+
+struct CertificatePopupData : public PopupData {
+    basic_webengine::CertificateConfirmationPtr cert;
+};
+
 class ContentPopup : public interfaces::AbstractPopup
 {
 public:

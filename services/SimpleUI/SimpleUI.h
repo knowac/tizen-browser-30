@@ -67,7 +67,6 @@ class BookmarkFlowUI;
 class BookmarkManagerUI;
 class Action;
 class InputPopup;
-class SimplePopup;
 class ContentPopup;
 class ViewManager;
 class MenuButton;
@@ -180,12 +179,6 @@ private:
     void onHistoryRemoved(const std::string& uri);
     void openURLhistory(std::shared_ptr<tizen_browser::services::HistoryItem> historyItem, bool desktopMode);
     void openURLquickaccess(services::SharedQuickAccessItem quickaccessItem, bool desktopMode);
-    /**
-     * @brief Handles 'openUrlInNewTab' signals. Uses QuickAccess to indicate
-     * desktop/mobile mode.
-     * TODO: desktop mode should be checked in WebView or QuickAcces (depends
-     * on which view is active)
-     */
     void openURL(const std::string& url);
     void openURL(const std::string& url, const std::string& title, bool desktopMode);
     void onClearHistoryAllClicked();
@@ -259,16 +252,11 @@ private:
 
     /**
      * @brief Remove current page from bookmarks
-     *
-     * @param  ...
-     * @return void
      */
     void deleteBookmark(void);
 
     void settingsOverrideUseragent(const std::string& userAgent);
     void onOverrideUseragentButton(const std::string& newUA);
-
-    void scrollView(const int& dx, const int& dy);
 
     void showTabUI();
     void refetchTabUIData();
@@ -338,24 +326,18 @@ private:
     void tabLimitPopupButtonClicked(PopupButtons button);
     int tabsCount();
 
-    void onReturnPressed(MenuButton *m);
     void onXF86BackPressed();
     void onBackPressed();
 
-    void searchWebPage(std::string &text, int flags);
     void showPasswordUI();
     void onFirstSecretMode();
 
-    std::string edjePath(const std::string &);
-
     std::vector<interfaces::AbstractPopup*> m_popupVector;
-
     std::shared_ptr<WebPageUI> m_webPageUI;
     std::shared_ptr<basic_webengine::AbstractWebEngine>  m_webEngine;
     std::shared_ptr<interfaces::AbstractFavoriteService> m_favoriteService;
     std::shared_ptr<services::HistoryService> m_historyService;
     services::TabServicePtr m_tabService;
-
     std::shared_ptr<BookmarkFlowUI> m_bookmarkFlowUI;
     std::shared_ptr<FindOnPageUI> m_findOnPageUI;
     std::shared_ptr<services::CertificateContents> m_certificateContents;
@@ -368,9 +350,7 @@ private:
     std::shared_ptr<services::PlatformInputManager> m_platformInputManager;
     std::shared_ptr<services::StorageService> m_storageService;
     bool m_initialised;
-    std::string m_caller;
     int m_tabLimit;
-    int m_favoritesLimit;
     bool m_wvIMEStatus;
     std::string m_folder_name;
 
@@ -381,13 +361,11 @@ private:
     ProgressiveWebApp m_pwa;
     bool m_alreadyOpenedPWA;
 #endif
-    SharedNaviframeWrapper m_QAEditNaviframe;
     Evas_Object *m_conformant;
     bool m_manualRotation;
     int m_current_angle;
     int m_temp_angle;
     std::function<void()> m_functionViewPrepare;
-    std::future<void> m_futureView;
     bool m_alreadyOpenedExecURL;
 };
 

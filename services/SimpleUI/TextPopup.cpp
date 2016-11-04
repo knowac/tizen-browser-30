@@ -1,4 +1,4 @@
-#include "TextPopup_mob.h"
+#include "TextPopup.h"
 #include "ServiceManager.h"
 #include "AbstractMainWindow.h"
 #include <stdio.h>

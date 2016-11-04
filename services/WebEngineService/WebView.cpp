@@ -1596,11 +1596,6 @@ void WebView::setZoomFactor(double zoomFactor)
     }
 }
 
-void WebView::scrollView(const int& dx, const int& dy)
-{
-    ewk_view_scroll_by(m_ewkView, dx, dy);
-}
-
 void WebView::findWord(const char *word, Eina_Bool forward, Evas_Smart_Cb found_cb, void *data)
 {
     BROWSER_LOGD("[%s:%d] ", __PRETTY_FUNCTION__, __LINE__);

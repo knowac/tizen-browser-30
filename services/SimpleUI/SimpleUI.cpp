@@ -35,7 +35,7 @@
 #include "SettingsMain.h"
 #include "SettingsHomePage.h"
 #include "SettingsManager.h"
-#include "TextPopup_mob.h"
+#include "TextPopup.h"
 #include "QuickAccess.h"
 #include "TabUI.h"
 #include "TabId.h"
@@ -50,8 +50,7 @@
 #endif
 #include "Action.h"
 #include "InputPopup.h"
-#include "SimplePopup.h"
-#include "ContentPopup_mob.h"
+#include "ContentPopup.h"
 #include "WebConfirmation.h"
 #include "ViewManager.h"
 #include "MenuButton.h"
@@ -78,6 +77,7 @@
 #include "Tools/SnapshotType.h"
 #include "SettingsPrettySignalConnector.h"
 #include "net_connection.h"
+#include "DownloadControl/DownloadControl.h"
 
 namespace tizen_browser{
 namespace base_ui{
@@ -102,7 +102,6 @@ SimpleUI::SimpleUI()
     , m_tabUI()
     , m_initialised(false)
     , m_tabLimit(0)
-    , m_favoritesLimit(0)
     , m_wvIMEStatus(false)
 #if PWA
     , m_pwa()
@@ -123,7 +122,6 @@ SimpleUI::SimpleUI()
     config::Config::getInstance().set(
             "scale", static_cast<double>(elm_config_scale_get()/config_scale_value));
     m_tabLimit = boost::any_cast<int>(config::Config::getInstance().get("TAB_LIMIT"));
-    m_favoritesLimit = boost::any_cast<int>(config::Config::getInstance().get("FAVORITES_LIMIT"));
 
     elm_win_conformant_set(main_window, EINA_TRUE);
     if (main_window == nullptr)
@@ -175,11 +173,6 @@ void SimpleUI::destroyUI()
 {
     BROWSER_LOGD("[%s:%d] ", __PRETTY_FUNCTION__, __LINE__);
     m_webEngine->destroyTabs();
-}
-
-std::string SimpleUI::edjePath(const std::string &file)
-{
-    return std::string(EDJE_DIR) + file;
 }
 
 std::shared_ptr<services::HistoryItemVector> SimpleUI::getMostVisitedItems()
@@ -250,7 +243,6 @@ int SimpleUI::exec(const std::string& _url, const std::string& _caller, const st
         m_initialised);
     std::string url = _url;
     std::string operation = _operation;
-    m_caller = _caller;
     m_alreadyOpenedExecURL = false;
     m_functionViewPrepare = [url, operation, this]() mutable {
         if (!m_initialised) {
@@ -1260,14 +1252,6 @@ void SimpleUI::onHistoryRemoved(const std::string& uri)
     BROWSER_LOGD("[%s] deleted %s", __func__, uri.c_str());
 }
 
-void SimpleUI::onReturnPressed(MenuButton *m)
-{
-    BROWSER_LOGD("[%s]", __func__);
-    m_platformInputManager->returnPressed.disconnect_all_slots();
-    m_platformInputManager->returnPressed.connect(boost::bind(&elm_exit));
-    m->hidePopup();
-}
-
 void SimpleUI::setwvIMEStatus(bool status)
 {
     BROWSER_LOGD("[%s]", __func__);
@@ -1548,11 +1532,6 @@ void SimpleUI::onURLEntryEditedByUser(const std::shared_ptr<std::string> editedU
             m_historyService->getHistoryItemsByKeywordsString(editedUrl,
                     historyItemsVisibleMax, minKeywordLength, true);
     m_webPageUI->getUrlHistoryList()->onURLEntryEditedByUser(editedUrl, result);
-}
-
-void SimpleUI::scrollView(const int& dx, const int& dy)
-{
-    m_webEngine->scrollView(dx, dy);
 }
 
 void SimpleUI::showFindOnPageUI(const std::string& str)
@@ -2114,11 +2093,6 @@ void SimpleUI::engineTabClosed(const basic_webengine::TabId& id)
         m_webPageUI->switchViewToQuickAccess(m_quickAccess->getContent());
     } else
         switchViewToWebPage();
-}
-
-void SimpleUI::searchWebPage(std::string &text, int flags)
-{
-    m_webEngine->searchOnWebsite(text, flags);
 }
 
 void SimpleUI::showPasswordUI()

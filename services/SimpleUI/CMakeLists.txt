@@ -3,19 +3,13 @@ project(SimpleUI)
 set(SimpleUI_SRCS
     SimpleUI.cpp
     InputPopup.cpp
-    SimplePopup.cpp
     NotificationPopup.cpp
     ViewManager.cpp
     RadioPopup.cpp
     ProgressiveWebApp.cpp
+    TextPopup.cpp
+    ContentPopup.cpp
     )
-
-if (${PROFILE} MATCHES "mobile")
-set(SimpleUI_SRCS ${SimpleUI_SRCS}
-    TextPopup_mob.cpp
-    ContentPopup_mob.cpp
-    )
-endif (${PROFILE} MATCHES "mobile")
 
 include(Coreheaders)
 include(EFLHelpers)
@@ -87,26 +81,16 @@ install(TARGETS ${PROJECT_NAME}
 include(EDCCompile)
 
 #please do not add edc/ directory
-if (${PROFILE} MATCHES "mobile")
-set(edcFiles
-    InputPopup_mob.edc
-    NotificationPopup_mob.edc
-    Tooltip.edc
-    ViewManager.edc
-    TextPopup_mob.edc
-    ContentPopup_mob.edc
-    )
-else (${PROFILE} MATCHES "mobile")
 set(edcFiles
     InputPopup.edc
     NotificationPopup.edc
-    Tooltip.edc
     ViewManager.edc
+    TextPopup.edc
+    ContentPopup.edc
     )
-endif (${PROFILE} MATCHES "mobile")
 
 foreach(edec ${edcFiles})
-    string(REGEX REPLACE "(_mob)?.edc" ".edj" target_name ${edec})
+    string(REPLACE ".edc" ".edj" target_name ${edec})
     EDJ_TARGET(${target_name}
                ${CMAKE_CURRENT_SOURCE_DIR}/edc/${edec}
                ${CMAKE_CURRENT_BINARY_DIR})
