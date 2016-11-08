@@ -59,7 +59,7 @@ public:
         WebScreenOrientationLockNatural,
     };
 
-    enum webDisplayMode {
+    enum WebDisplayMode {
         WebDisplayModeUndefined = 0,
         WebDisplayModeBrowser,
         WebDisplayModeMinimalUi,

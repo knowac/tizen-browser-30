@@ -874,7 +874,7 @@ Eina_Bool WebPageUI::_hideDelay(void *data)
 }
 
 #if PWA
-void WebPageUI::setDisplayMode(WebPageUI::WebDisplayMode mode)
+void WebPageUI::setDisplayMode(WebDisplayMode mode)
 {
     BROWSER_LOGD("[%s:%d] ", __PRETTY_FUNCTION__, __LINE__);
     if (mode == WebDisplayMode::WebDisplayModeFullscreen)

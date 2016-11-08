@@ -83,7 +83,7 @@ std::string WebView::s_pwaData = "";
 std::string WebView::s_name = "";
 std::string WebView::s_start_url = "";
 std::string WebView::s_icon = "";
-const char* const DOWNLOAD_PATH = tzplatform_getenv(TZ_USER_DOWNLOADS);
+const std::string WebView::DOWNLOAD_PATH = tzplatform_getenv(TZ_USER_DOWNLOADS);
 #endif
 
 struct SnapshotItemData {
