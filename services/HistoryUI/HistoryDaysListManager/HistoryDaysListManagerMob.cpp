@@ -154,10 +154,8 @@ void HistoryDaysListManagerMob::selectAllCheckboxes()
             continue;
         elm_check_state_set(check, m_isSelectAllChecked);
     }
-    if (m_isSelectAllChecked == EINA_TRUE && elm_genlist_items_count(m_genlist) > 1)
-        m_delete_count = m_history_count;
-    if (m_isSelectAllChecked == EINA_FALSE)
-        m_delete_count = 0;
+
+    m_delete_count = m_isSelectAllChecked == EINA_TRUE ? m_history_count : 0;
     setSelectedItemsCount(m_delete_count);
     setRightButtonEnabledForHistory(m_delete_count);
 }
