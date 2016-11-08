@@ -294,6 +294,7 @@ Evas_Object* SettingsUI::createSettingsMobilePage(Evas_Object* settings_layout)
         elm_genlist_multi_select_set(m_genlist, EINA_FALSE);
         elm_scroller_policy_set(m_genlist, ELM_SCROLLER_POLICY_OFF, ELM_SCROLLER_POLICY_OFF);
         elm_scroller_bounce_set(m_genlist, EINA_FALSE, EINA_FALSE);
+        elm_genlist_mode_set(m_genlist, ELM_LIST_COMPRESS);
         evas_object_smart_callback_add(m_genlist, "language,changed", _language_changed, this);
         elm_object_part_content_set(layout, "options_swallow", m_genlist);
         evas_object_show(m_genlist);
