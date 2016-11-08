@@ -43,9 +43,9 @@
 #define INDICATOR_ROTATION_PORTRAIT 0
 #define INDICATOR_ROTATION_LANDSCAPE 1
 
-#define LAYOUT_INDICATOR_HEIGHT_INC 42
+#define LAYOUT_INDICATOR_HEIGHT_INC 40
 
-collections { base_scale: 2.0;
+collections { base_scale: 2.6;
 
     group { name: "elm/conformant/custom_conformant";
        script {
