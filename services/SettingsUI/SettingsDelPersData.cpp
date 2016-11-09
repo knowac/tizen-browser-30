@@ -156,6 +156,10 @@ void SettingsDelPersData::grid_item_check_changed(void* data, Evas_Object* obj, 
         self->setOption(
             itd->id,
             static_cast<bool>(value));
+        if ((value == false) && (self->getOption(SELECT_ALL) == true)) {
+            elm_check_state_set(self->getCheckboxes()[SELECT_ALL], false);
+            self->setOption(SELECT_ALL, false);
+        }
     }
     bool val = self->getOption(SELECT_ALL);
     if (self->getOption(LOCATION) != val &&
