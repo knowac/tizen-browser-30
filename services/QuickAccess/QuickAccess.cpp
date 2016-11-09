@@ -582,6 +582,7 @@ void QuickAccess::showMostVisited()
     elm_scroller_page_show(m_horizontalScroller, MOST_VISITED_PAGE, 0);
 
     m_mv_delete_list.clear();
+    setPageTitle();
 }
 
 void QuickAccess::clearQuickAccessGengrid()
@@ -595,6 +596,7 @@ void QuickAccess::showQuickAccess()
     BROWSER_LOGD("[%s:%d] ", __PRETTY_FUNCTION__, __LINE__);
     m_currPage = QuickAccess::QUICKACCESS_PAGE;
     elm_scroller_page_show(m_horizontalScroller, QUICKACCESS_PAGE, 0);
+    setPageTitle();
 }
 
 void QuickAccess::editQuickAccess()
@@ -657,7 +659,6 @@ void QuickAccess::showUI()
     evas_object_show(m_quickAccessGengrid);
     orientationChanged();
     showScrollerPage(m_currPage);
-    setPageTitle();
 }
 
 void QuickAccess::hideUI()
