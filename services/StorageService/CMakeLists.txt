@@ -13,6 +13,7 @@ set(StorageServiceSOURCES
     SQLDatabase.cpp
     SettingsStorage.cpp
     StorageService.cpp
+    PWAStorage.cpp
 )
 
 include(Coreheaders)

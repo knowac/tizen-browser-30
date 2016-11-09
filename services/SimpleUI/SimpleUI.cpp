@@ -304,16 +304,17 @@ int SimpleUI::exec(const std::string& _url, const std::string& _caller, const st
 void SimpleUI::countCheckUrl()
 {
     BROWSER_LOGD("[%s:%d] ", __PRETTY_FUNCTION__, __LINE__);
-    int id, ret = 0;
-    id = m_historyService->getHistoryId(m_webEngine->getURI());
+    bool chk = m_storageService->getPWAStorage().getPWACheck(m_webEngine->getURI());
 
-    if (id)
-        ret = m_historyService->getHistoryCnt(id);
+    if (!chk) {
+        int ret = m_historyService->getHistoryCnt(
+            m_historyService->getHistoryId(m_webEngine->getURI()));
 
-    if (ret == CONNECT_COUNT)
-        pwaPopupRequest();
-    else
-        BROWSER_LOGD("[%s:%d] url count : %d", __PRETTY_FUNCTION__, __LINE__, ret);
+        if (ret >= CONNECT_COUNT)
+            pwaPopupRequest();
+        else
+            BROWSER_LOGD("[%s:%d] url count : %d", __PRETTY_FUNCTION__, __LINE__, ret);
+    }
 }
 #endif
 
@@ -950,6 +951,7 @@ void SimpleUI::onClearHistoryAllClicked()
 {
     BROWSER_LOGD("[%s:%d] ", __PRETTY_FUNCTION__, __LINE__);
     m_historyService->clearAllHistory();
+    m_storageService->getPWAStorage().deletePWAItems();
 }
 
 void SimpleUI::onDeleteHistoryItems(int id)
@@ -1608,6 +1610,7 @@ void SimpleUI::pwaPopupRequest()
     TextPopup* popup = TextPopup::createPopup(m_viewManager.getContent());
     popup->addButton(OK);
     popup->addButton(CANCEL);
+    popup->addButton(NEVER);
     popup->buttonClicked.connect(boost::bind(&SimpleUI::pwaPopupButtonClicked, this, _1));
     popup->setTitle(m_webEngine->getTitle());
     popup->setMessage(_("IDS_BR_OPT_ADD_TO_HOME_SCREEN_ABB"));
@@ -1619,13 +1622,21 @@ void SimpleUI::pwaPopupRequest()
 void SimpleUI::pwaPopupButtonClicked(const PopupButtons& button)
 {
     BROWSER_LOGD("[%s:%d] ", __PRETTY_FUNCTION__, __LINE__);
+    auto uri = m_webEngine->getURI();
+
     switch (button) {
         case OK:
-            BROWSER_LOGD("[%s:%d] pwaPopup create !", __PRETTY_FUNCTION__, __LINE__);
+            BROWSER_LOGD("[%s:%d] pwaPopup OK !", __PRETTY_FUNCTION__, __LINE__);
             m_webEngine->requestManifest();
+            m_storageService->getPWAStorage().addPWAItem(uri, 1, 0);
             break;
         case CANCEL:
-            BROWSER_LOGD("[%s:%d] pwaPopup deny !", __PRETTY_FUNCTION__, __LINE__);
+            BROWSER_LOGD("[%s:%d] pwaPopup DENY !", __PRETTY_FUNCTION__, __LINE__);
+            m_storageService->getPWAStorage().addPWAItem(uri, 0, 0);
+            break;
+        case NEVER:
+            BROWSER_LOGD("[%s:%d] pwaPopup NEVER !", __PRETTY_FUNCTION__, __LINE__);
+            m_storageService->getPWAStorage().addPWAItem(uri, 0, 1);
             break;
         default:
             BROWSER_LOGW("[%s:%d] Unknown button type!", __PRETTY_FUNCTION__, __LINE__);
@@ -1979,6 +1990,7 @@ void SimpleUI::onDeleteSelectedDataButton(const PopupButtons& button, const std:
             if (it.first == BROWSING_HISTORY && it.second) {
                 BROWSER_LOGD("clear history" );
                 m_historyService->clearAllHistory();
+                m_storageService->getPWAStorage().deletePWAItems();
             } else if (it.first == CACHE && it.second) {
                 BROWSER_LOGD("clear cache");
                 m_webEngine->clearCache();

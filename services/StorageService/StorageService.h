@@ -23,6 +23,7 @@
 #include "FoldersStorage.h"
 #include "CertificateStorage.h"
 #include "QuickAccessStorage.h"
+#include "PWAStorage.h"
 
 #define DOMAIN_STORAGE_SERVICE "org.tizen.browser.storageservice"
 
@@ -40,12 +41,14 @@ public:
     storage::FoldersStorage& getFoldersStorage() { return m_foldersStorage; }
     storage::CertificateStorage& getCertificateStorage() { return m_certificateStorage; }
     storage::QuickAccessStorage& getQuickAccessStorage() { return m_quickaccessStorage; }
+    storage::PWAStorage getPWAStorage() const { return m_pwaStorage; }
 
 private:
     storage::SettingsStorage m_settingsStorage;
     storage::FoldersStorage m_foldersStorage;
     storage::CertificateStorage m_certificateStorage;
     storage::QuickAccessStorage m_quickaccessStorage;
+    storage::PWAStorage m_pwaStorage;
 };
 
 

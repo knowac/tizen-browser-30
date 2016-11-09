@@ -40,6 +40,7 @@ namespace base_ui
        ,DELETE  = 1 << 10
        ,BACK_TO_SAFETY  = 1 << 11
        ,VIEW_CERTIFICATE  = 1 << 12
+       ,NEVER  = 1 << 13
     };
 
     static std::map<PopupButtons, std::string> createTranslations()
@@ -57,6 +58,7 @@ namespace base_ui
         m[DELETE] = "IDS_BR_SK_DELETE_ABB";
         m[BACK_TO_SAFETY] = "Back to safety";
         m[VIEW_CERTIFICATE] = "IDS_BR_OPT_VIEW_CERTIFICATE";
+        m[NEVER] = "Never";
 
         return m;
     }

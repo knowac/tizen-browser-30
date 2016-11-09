@@ -37,7 +37,7 @@
 #include <functional>
 #include <future>
 
-const unsigned CONNECT_COUNT = 2;
+const int CONNECT_COUNT = 2;
 
 namespace tizen_browser{
 
