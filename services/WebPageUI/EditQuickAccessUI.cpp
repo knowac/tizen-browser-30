@@ -170,6 +170,17 @@ void EditQuickAccessUI::createEditLayout()
     m_naviframe->setContent(m_layout);
 }
 
+void EditQuickAccessUI::orientationChanged(bool landscape)
+{
+    BROWSER_LOGD("[%s:%d] ", __PRETTY_FUNCTION__, __LINE__);
+
+    Evas_Object* content = elm_object_part_content_get(m_layout, "elm.swallow.content");
+    if (landscape)
+        evas_object_size_hint_min_set(content, Z3_SCALE_SIZE(GENGRID_HORIZONTAL_WIDTH), 0);
+    else
+        evas_object_size_hint_min_set(content, Z3_SCALE_SIZE(GENGRID_PORTRAIT_WIDTH), 0);
+}
+
 }   // namespace tizen_browser
 }   // namespace base_ui
 

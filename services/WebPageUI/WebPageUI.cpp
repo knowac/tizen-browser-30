@@ -388,6 +388,8 @@ void WebPageUI::orientationChanged()
 
     if (m_statesMgr->equals(WPUState::QUICK_ACCESS)) {
         qaOrientationChanged();
+    } else if (m_statesMgr->equals(WPUState::EDIT_MODE)) {
+        m_editQuickAccessUI->orientationChanged(*landscape);
     }
 }
 

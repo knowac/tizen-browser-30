@@ -43,6 +43,7 @@ public:
     Evas_Object* getContent();
     void backPressed();
     void setMVSelectedItems(int count);
+    void orientationChanged(bool landscape);
 
     boost::signals2::signal<Evas_Object* ()> requestQuickAccessGengrid;
     boost::signals2::signal<Evas_Object* ()> requestMostVisitedGengrid;
@@ -61,6 +62,9 @@ private:
     Evas_Object *m_layout;
     std::shared_ptr<QuickAccess> m_quickAccess;
     QuickAccessState m_editState;
+
+    static const int GENGRID_HORIZONTAL_WIDTH = 1280;
+    static const int GENGRID_PORTRAIT_WIDTH = 720;
 };
 
 }   // namespace tizen_browser
