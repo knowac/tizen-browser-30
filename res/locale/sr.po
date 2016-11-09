@@ -2176,3 +2176,18 @@ msgstr "Sve veb stranice koje ste prikazivali dok je Tajni režim bio omogućen 
 msgid "IDS_BR_BUTTON2_DONE"
 msgstr "Kraj"
 
+msgid "IDS_BR_BODY_ENTER_YOUR_PASSWORD_AGAIN_TO_CONFIRM_IT"
+msgstr "Ponovo unesite svoju lozinku za njenu potvrdu."
+
+msgid "IDS_BR_HEADER_CREATE_PASSWORD_M_SET_ABB"
+msgstr "Kreiraj lozinku"
+
+msgid "IDS_BR_BUTTON_DO_NOT_USE_PASSWORD_ABB"
+msgstr "Ne koristi lozinku"
+
+msgid "IDS_BR_POP_TO_PROTECT_YOUR_SECRET_MODE_DATA_CREATE_A_PASSWORD_IF_YOU_USE_SECRET_MODE_WITHOUT_CREATING_A_PASSWORD_MSG"
+msgstr "Da biste zaštitili podatke Tajnog režima, kreirajte lozinku. Ako koristite Tajni režim bez kreiranja lozinke, nećete moći da sprečite druge korisnike da prikazuju istoriju vašeg pretraživača i istoriju pretrage, obeleživače i sačuvane stranice."
+
+msgid "IDS_BR_BODY_AFTER_YOU_ADD_BOOKMARKS_THEY_WILL_BE_SHOWN_HERE"
+msgstr "Nakon što dodate obeleživače, oni će se prikazati ovde."
+

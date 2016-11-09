@@ -2176,3 +2176,18 @@ msgstr "Aon leathanaigh ghréasáin ar amharcadh orthu agus Mód rúnda cumasait
 msgid "IDS_BR_BUTTON2_DONE"
 msgstr "Déanta"
 
+msgid "IDS_BR_BODY_ENTER_YOUR_PASSWORD_AGAIN_TO_CONFIRM_IT"
+msgstr "Iontráil do phasfhocal arís lena dheimhniú."
+
+msgid "IDS_BR_HEADER_CREATE_PASSWORD_M_SET_ABB"
+msgstr "Cruthaigh pasfhocal"
+
+msgid "IDS_BR_BUTTON_DO_NOT_USE_PASSWORD_ABB"
+msgstr "Ná húsáid pasfhocal"
+
+msgid "IDS_BR_POP_TO_PROTECT_YOUR_SECRET_MODE_DATA_CREATE_A_PASSWORD_IF_YOU_USE_SECRET_MODE_WITHOUT_CREATING_A_PASSWORD_MSG"
+msgstr "Le do chuid sonraí i Mód rúnda a chosaint, cruthaigh pasfhocal. Má úsáideann tú Mód rúnda gan pasfhocal a chruthú, ní bheidh tú in ann cosc a chur ar dhaoine eile amharc ar do stair bhrabhsálaí agus chuardaigh, leabharmharcanna ná leathanaigh shábháilte."
+
+msgid "IDS_BR_BODY_AFTER_YOU_ADD_BOOKMARKS_THEY_WILL_BE_SHOWN_HERE"
+msgstr "Tar éis duit leabharmharcanna a chur leis, taispeánfar anseo iad."
+

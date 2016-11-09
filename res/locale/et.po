@@ -2176,3 +2176,18 @@ msgstr "Mitte ükski veebileht, mida kuvatakse aktiivse salarežiimi ajal, et il
 msgid "IDS_BR_BUTTON2_DONE"
 msgstr "Valmis"
 
+msgid "IDS_BR_BODY_ENTER_YOUR_PASSWORD_AGAIN_TO_CONFIRM_IT"
+msgstr "Kinnitamiseks sisestage oma parool uuesti."
+
+msgid "IDS_BR_HEADER_CREATE_PASSWORD_M_SET_ABB"
+msgstr "Parooli loomine"
+
+msgid "IDS_BR_BUTTON_DO_NOT_USE_PASSWORD_ABB"
+msgstr "Ära kasuta parooli"
+
+msgid "IDS_BR_POP_TO_PROTECT_YOUR_SECRET_MODE_DATA_CREATE_A_PASSWORD_IF_YOU_USE_SECRET_MODE_WITHOUT_CREATING_A_PASSWORD_MSG"
+msgstr "Looge parool, et kaitsta oma salarežiimi andmeid. Kui kasutate salarežiimi ilma paroolita, saavad teised vaadata teie brauseri ja otsingute ajalugu, järjehoidjaid ja salvestatud lehti."
+
+msgid "IDS_BR_BODY_AFTER_YOU_ADD_BOOKMARKS_THEY_WILL_BE_SHOWN_HERE"
+msgstr "Järjehoidjad kuvatakse siin pärast nende lisamist."
+

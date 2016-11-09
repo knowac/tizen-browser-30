@@ -2176,3 +2176,18 @@ msgstr "無痕模式停用時，在無痕模式啟用時檢視的任何網頁將
 msgid "IDS_BR_BUTTON2_DONE"
 msgstr "完成"
 
+msgid "IDS_BR_BODY_ENTER_YOUR_PASSWORD_AGAIN_TO_CONFIRM_IT"
+msgstr "請再次輸入密碼以確認。"
+
+msgid "IDS_BR_HEADER_CREATE_PASSWORD_M_SET_ABB"
+msgstr "建立密碼"
+
+msgid "IDS_BR_BUTTON_DO_NOT_USE_PASSWORD_ABB"
+msgstr "不要使用密碼"
+
+msgid "IDS_BR_POP_TO_PROTECT_YOUR_SECRET_MODE_DATA_CREATE_A_PASSWORD_IF_YOU_USE_SECRET_MODE_WITHOUT_CREATING_A_PASSWORD_MSG"
+msgstr "若要保護無痕模式資料，請建立一組密碼。若未建立密碼即使用無痕模式，則無法防止其他使用者檢視您的瀏覽器與搜尋歷程記錄、書籤以及儲存的網頁。"
+
+msgid "IDS_BR_BODY_AFTER_YOU_ADD_BOOKMARKS_THEY_WILL_BE_SHOWN_HERE"
+msgstr "新增書籤後，將顯示於此。"
+

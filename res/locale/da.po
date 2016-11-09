@@ -2176,3 +2176,18 @@ msgstr "Websider, du har set, mens Hemmelig tilstand har været aktiveret, vises
 msgid "IDS_BR_BUTTON2_DONE"
 msgstr "Udført"
 
+msgid "IDS_BR_BODY_ENTER_YOUR_PASSWORD_AGAIN_TO_CONFIRM_IT"
+msgstr "Indtast din adgangskode igen for at bekræfte den."
+
+msgid "IDS_BR_HEADER_CREATE_PASSWORD_M_SET_ABB"
+msgstr "Opret adgangskode"
+
+msgid "IDS_BR_BUTTON_DO_NOT_USE_PASSWORD_ABB"
+msgstr "Brug ikke adg.-kode"
+
+msgid "IDS_BR_POP_TO_PROTECT_YOUR_SECRET_MODE_DATA_CREATE_A_PASSWORD_IF_YOU_USE_SECRET_MODE_WITHOUT_CREATING_A_PASSWORD_MSG"
+msgstr "Opret en adgangskode for at beskytte dine Hemmelig tilstand-data. Hvis du bruger Hemmelig tilstand uden at oprette en adgangskode, kan du ikke forhindre andre i at se din browser- og søgeoversigt, dine bogmærker og dine gemte sider."
+
+msgid "IDS_BR_BODY_AFTER_YOU_ADD_BOOKMARKS_THEY_WILL_BE_SHOWN_HERE"
+msgstr "Når du har tilføjet bogmærker, vil de blive vist her."
+

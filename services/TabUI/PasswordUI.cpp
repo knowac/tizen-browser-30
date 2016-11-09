@@ -223,7 +223,7 @@ void PasswordUI::changeState(PasswordState state)
         case PasswordState::CreatePassword:
             text = (boost::format(_(Translations::CreatePassword.c_str()))
                 % PASSWORD_MINIMUM_CHARACTERS).str();
-            m_naviframe->setTitle("Create password");
+            m_naviframe->setTitle(_("IDS_BR_HEADER_CREATE_PASSWORD_M_SET_ABB"));
             break;
         case PasswordState::ConfirmCreatePassword:
             text = _(Translations::ConfirmCreatePassword.c_str());

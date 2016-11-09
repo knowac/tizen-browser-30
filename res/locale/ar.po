@@ -2176,3 +2176,18 @@ msgstr "لن تظهر أي صفحات ويب تم عرضها عندما كان �
 msgid "IDS_BR_BUTTON2_DONE"
 msgstr "تم"
 
+msgid "IDS_BR_BODY_ENTER_YOUR_PASSWORD_AGAIN_TO_CONFIRM_IT"
+msgstr "أدخل كلمة المرور مرة أخرى لتأكيدها."
+
+msgid "IDS_BR_HEADER_CREATE_PASSWORD_M_SET_ABB"
+msgstr "إنشاء كلمة مرور"
+
+msgid "IDS_BR_BUTTON_DO_NOT_USE_PASSWORD_ABB"
+msgstr "عدم استخدام كلمة المرور"
+
+msgid "IDS_BR_POP_TO_PROTECT_YOUR_SECRET_MODE_DATA_CREATE_A_PASSWORD_IF_YOU_USE_SECRET_MODE_WITHOUT_CREATING_A_PASSWORD_MSG"
+msgstr "لحماية بيانات الوضع السري، قم بإنشاء كلمة مرور. إذا كنت تستخدم الوضع السري بدون إنشاء كلمة مرور، فلن تتمكّن من منع الآخرين من عرض متصفحك ومحفوظات البحث والإشارات المرجعية والصفحات المحفوظة."
+
+msgid "IDS_BR_BODY_AFTER_YOU_ADD_BOOKMARKS_THEY_WILL_BE_SHOWN_HERE"
+msgstr "ستظهر الإشارات المرجعية هنا بعد إضافتها."
+

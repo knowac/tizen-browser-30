@@ -2176,3 +2176,18 @@ msgstr "Vefsíður sem þú skoðar þegar kveikt er á leyndarstillingu birtast
 msgid "IDS_BR_BUTTON2_DONE"
 msgstr "Lokið"
 
+msgid "IDS_BR_BODY_ENTER_YOUR_PASSWORD_AGAIN_TO_CONFIRM_IT"
+msgstr "Sláðu lykilorðið aftur inn til að staðfesta það."
+
+msgid "IDS_BR_HEADER_CREATE_PASSWORD_M_SET_ABB"
+msgstr "Búa til lykilorð"
+
+msgid "IDS_BR_BUTTON_DO_NOT_USE_PASSWORD_ABB"
+msgstr "Ekki nota lykilorð"
+
+msgid "IDS_BR_POP_TO_PROTECT_YOUR_SECRET_MODE_DATA_CREATE_A_PASSWORD_IF_YOU_USE_SECRET_MODE_WITHOUT_CREATING_A_PASSWORD_MSG"
+msgstr "Búðu til lykilorð til að vernda leyndarstillingargögnin þín. Ef þú notar leyndarstillingu án þess að búa til lykilorð geturðu ekki hindrað aðra í að skoða vafrann þinn og leitarferil, bókamerki og vistaðar síður."
+
+msgid "IDS_BR_BODY_AFTER_YOU_ADD_BOOKMARKS_THEY_WILL_BE_SHOWN_HERE"
+msgstr "Bókamerki birtast hér eftir að þeim er bætt við."
+

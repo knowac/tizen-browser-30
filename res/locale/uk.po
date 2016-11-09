@@ -2176,3 +2176,18 @@ msgstr "Будь-які веб-сторінки, переглянуті в се�
 msgid "IDS_BR_BUTTON2_DONE"
 msgstr "Готово"
 
+msgid "IDS_BR_BODY_ENTER_YOUR_PASSWORD_AGAIN_TO_CONFIRM_IT"
+msgstr "Уведіть пароль ще раз для підтвердження."
+
+msgid "IDS_BR_HEADER_CREATE_PASSWORD_M_SET_ABB"
+msgstr "Створити пароль"
+
+msgid "IDS_BR_BUTTON_DO_NOT_USE_PASSWORD_ABB"
+msgstr "Не викор. пароль"
+
+msgid "IDS_BR_POP_TO_PROTECT_YOUR_SECRET_MODE_DATA_CREATE_A_PASSWORD_IF_YOU_USE_SECRET_MODE_WITHOUT_CREATING_A_PASSWORD_MSG"
+msgstr "Щоб захистити дані секретного режиму, створіть пароль. Якщо секретний режим не захищено паролем, ви не зможете завадити іншим особам переглядати ваш браузер, історію пошуку, закладки та збережені сторінки."
+
+msgid "IDS_BR_BODY_AFTER_YOU_ADD_BOOKMARKS_THEY_WILL_BE_SHOWN_HERE"
+msgstr "Тут буде відображено закладки, після того як ви їх додасте."
+

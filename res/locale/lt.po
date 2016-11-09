@@ -2176,3 +2176,18 @@ msgstr "Tinklalapiai, kuriuos peržiūrėsite veikiant slaptajam režimui, nebus
 msgid "IDS_BR_BUTTON2_DONE"
 msgstr "Atlikta"
 
+msgid "IDS_BR_BODY_ENTER_YOUR_PASSWORD_AGAIN_TO_CONFIRM_IT"
+msgstr "Dar kartą įveskite slaptažodį, kad patvirtintumėte."
+
+msgid "IDS_BR_HEADER_CREATE_PASSWORD_M_SET_ABB"
+msgstr "Kurti slaptažodį"
+
+msgid "IDS_BR_BUTTON_DO_NOT_USE_PASSWORD_ABB"
+msgstr "Nenaudokit slaptaž."
+
+msgid "IDS_BR_POP_TO_PROTECT_YOUR_SECRET_MODE_DATA_CREATE_A_PASSWORD_IF_YOU_USE_SECRET_MODE_WITHOUT_CREATING_A_PASSWORD_MSG"
+msgstr "Norėdami apsaugoti slaptojo režimo duomenis, sukurkite slaptažodį. Jei slaptuoju režimu naudositės nesukūrę slaptažodžio, kiti galės peržiūrėti jūsų naršyklės ir paieškos istoriją, adresyno įrašus ir išsaugotus puslapius."
+
+msgid "IDS_BR_BODY_AFTER_YOU_ADD_BOOKMARKS_THEY_WILL_BE_SHOWN_HERE"
+msgstr "Kai pridėsite adresyno įrašų, jie bus rodomi čia."
+

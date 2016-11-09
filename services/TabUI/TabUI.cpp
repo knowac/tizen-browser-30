@@ -440,8 +440,8 @@ void TabUI::setStateButtons()
             m_naviframe->setBottomButtonText(1, _("IDS_BR_BUTTON_NEW_TAB_ABB2"));
             break;
         case State::PASSWORD_DECISION:
-            m_naviframe->setBottomButtonText(0, "Do not use password");
-            m_naviframe->setBottomButtonText(1, "Create password");
+            m_naviframe->setBottomButtonText(0,  _("IDS_BR_BUTTON_DO_NOT_USE_PASSWORD_ABB "));
+            m_naviframe->setBottomButtonText(1, _("IDS_BR_HEADER_CREATE_PASSWORD_M_SET_ABB"));
             break;
         }
 }

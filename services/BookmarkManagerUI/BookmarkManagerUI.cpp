@@ -286,7 +286,7 @@ void BookmarkManagerUI::createEmptyLayout()
     evas_object_size_hint_align_set(m_empty_layout, EVAS_HINT_FILL, EVAS_HINT_FILL);
 
     elm_object_translatable_part_text_set(m_empty_layout, "elm.text", _("IDS_BR_BODY_NO_BOOKMARKS"));
-    elm_object_translatable_part_text_set(m_empty_layout, "elm.help.text", "After you add bookmarks, they will be shown here.");
+    elm_object_translatable_part_text_set(m_empty_layout, "elm.help.text",  _("IDS_BR_BODY_AFTER_YOU_ADD_BOOKMARKS_THEY_WILL_BE_SHOWN_HERE"));
 
     elm_layout_signal_emit(m_empty_layout, "text,disabled", "");
     elm_layout_signal_emit(m_empty_layout, "align.center", "elm");

@@ -2176,3 +2176,18 @@ msgstr "Salaisen tilan käytön aikana avatut verkkosivut eivät näy selain- ta
 msgid "IDS_BR_BUTTON2_DONE"
 msgstr "Valmis"
 
+msgid "IDS_BR_BODY_ENTER_YOUR_PASSWORD_AGAIN_TO_CONFIRM_IT"
+msgstr "Vahvista salasanasi antamalla se uudelleen."
+
+msgid "IDS_BR_HEADER_CREATE_PASSWORD_M_SET_ABB"
+msgstr "Luo salasana"
+
+msgid "IDS_BR_BUTTON_DO_NOT_USE_PASSWORD_ABB"
+msgstr "Älä käytä salasanaa"
+
+msgid "IDS_BR_POP_TO_PROTECT_YOUR_SECRET_MODE_DATA_CREATE_A_PASSWORD_IF_YOU_USE_SECRET_MODE_WITHOUT_CREATING_A_PASSWORD_MSG"
+msgstr "Luo salasana salaisen tilan tietojen suojausta varten. Jos käytät salaista tilaa salasanaa luomatta, et pysty estämään muita tarkastelemasta selaintasi sekä hakuhistoriaasi, kirjanmerkkejä ja tallennettuja sivuja."
+
+msgid "IDS_BR_BODY_AFTER_YOU_ADD_BOOKMARKS_THEY_WILL_BE_SHOWN_HERE"
+msgstr "Kun olet lisännyt kirjanmerkkejä, ne näytetään täällä."
+

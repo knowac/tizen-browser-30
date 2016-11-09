@@ -2176,3 +2176,18 @@ msgstr "Sir rejimi yoniqligida ko‘rib chiqilgan veb-sahifalarning hech biri Si
 msgid "IDS_BR_BUTTON2_DONE"
 msgstr "Bajarildi"
 
+msgid "IDS_BR_BODY_ENTER_YOUR_PASSWORD_AGAIN_TO_CONFIRM_IT"
+msgstr "Parolni tasdiqlash uchun uni qayta kiriting."
+
+msgid "IDS_BR_HEADER_CREATE_PASSWORD_M_SET_ABB"
+msgstr "Parol yaratish"
+
+msgid "IDS_BR_BUTTON_DO_NOT_USE_PASSWORD_ABB"
+msgstr "Parol ishlatilmasin"
+
+msgid "IDS_BR_POP_TO_PROTECT_YOUR_SECRET_MODE_DATA_CREATE_A_PASSWORD_IF_YOU_USE_SECRET_MODE_WITHOUT_CREATING_A_PASSWORD_MSG"
+msgstr "Sir rejimi ma’lumotlarini himoya qilish uchun parol yarating. Agar Sir rejimidan parol yaratmasdan foydalansangiz, boshqalarning brauzer, qidirish jurnali, xatcho‘plar va saqlangan sahifalaringizni ko‘rishini ta’qiqlay olmaysiz."
+
+msgid "IDS_BR_BODY_AFTER_YOU_ADD_BOOKMARKS_THEY_WILL_BE_SHOWN_HERE"
+msgstr "Xatcho‘plar qo‘shilgandan so‘ng, ular bu yerda ko‘rsatiladi."
+

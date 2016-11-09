@@ -2176,3 +2176,18 @@ msgstr "As páginas Web visualizadas quando o Modo secreto está activado não s
 msgid "IDS_BR_BUTTON2_DONE"
 msgstr "Concluir"
 
+msgid "IDS_BR_BODY_ENTER_YOUR_PASSWORD_AGAIN_TO_CONFIRM_IT"
+msgstr "Introduza novamente a sua palavra-passe para a confirmar."
+
+msgid "IDS_BR_HEADER_CREATE_PASSWORD_M_SET_ABB"
+msgstr "Criar palavra-passe"
+
+msgid "IDS_BR_BUTTON_DO_NOT_USE_PASSWORD_ABB"
+msgstr "Não usar pal.-passe"
+
+msgid "IDS_BR_POP_TO_PROTECT_YOUR_SECRET_MODE_DATA_CREATE_A_PASSWORD_IF_YOU_USE_SECRET_MODE_WITHOUT_CREATING_A_PASSWORD_MSG"
+msgstr "Para proteger os seus dados do Modo secreto, crie uma palavra-passe. Se utilizar o Modo secreto sem criar uma palavra-passe, não poderá impedir as outras pessoas de verem o seu histórico dos browsers e de procuras, os seus favoritos e as suas páginas guardadas."
+
+msgid "IDS_BR_BODY_AFTER_YOU_ADD_BOOKMARKS_THEY_WILL_BE_SHOWN_HERE"
+msgstr "Depois de adicionar favoritos, estes serão mostrados aqui."
+

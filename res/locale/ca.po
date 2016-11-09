@@ -2176,3 +2176,18 @@ msgstr "Les pàgines web que es vegin mentre el mode Secret estigui activat no a
 msgid "IDS_BR_BUTTON2_DONE"
 msgstr "Finalitzat"
 
+msgid "IDS_BR_BODY_ENTER_YOUR_PASSWORD_AGAIN_TO_CONFIRM_IT"
+msgstr "Torni a introduir la contrasenya per confirmar-la."
+
+msgid "IDS_BR_HEADER_CREATE_PASSWORD_M_SET_ABB"
+msgstr "Crear contrasenya"
+
+msgid "IDS_BR_BUTTON_DO_NOT_USE_PASSWORD_ABB"
+msgstr "No usar contrasenya"
+
+msgid "IDS_BR_POP_TO_PROTECT_YOUR_SECRET_MODE_DATA_CREATE_A_PASSWORD_IF_YOU_USE_SECRET_MODE_WITHOUT_CREATING_A_PASSWORD_MSG"
+msgstr "Per protegir les dades del mode Secret, creï una contrasenya. Si utilitza el mode Secret sense crear una contrasenya, no podrà impedir que els altres usuaris vegin el seu navegador i l'historial de cerques, els marcadors i les pàgines desades."
+
+msgid "IDS_BR_BODY_AFTER_YOU_ADD_BOOKMARKS_THEY_WILL_BE_SHOWN_HERE"
+msgstr "Un cop afegits els preferits, es mostraran aquí."
+

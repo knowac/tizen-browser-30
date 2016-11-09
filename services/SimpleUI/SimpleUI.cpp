@@ -2107,9 +2107,7 @@ void SimpleUI::onFirstSecretMode()
     TextPopup* popup = TextPopup::createPopup(m_viewManager.getContent());
     popup->addButton(OK);
     popup->setTitle(_("IDS_BR_HEADER_DONT_USE_PASSWORD_ABB"));
-    popup->setMessage("To protect your Secret mode data, create a password. "
-        "If you Use Secret mode without creating a password, you will not be able to "
-        "prevent others from viewing your browser and search history, bookmarks, And saved pages.");
+    popup->setMessage(_("IDS_BR_POP_TO_PROTECT_YOUR_SECRET_MODE_DATA_CREATE_A_PASSWORD_IF_YOU_USE_SECRET_MODE_WITHOUT_CREATING_A_PASSWORD_MSG"));
     popup->buttonClicked.connect(boost::bind(&TabUI::switchToSecretFirstTime, m_tabUI.get()));
     popup->popupShown.connect(boost::bind(&SimpleUI::showPopup, this, _1));
     popup->popupDismissed.connect(boost::bind(&SimpleUI::dismissPopup, this, _1));

@@ -2176,3 +2176,18 @@ msgstr "Webové stránky zobrazené pri zapnutej funkcii Tajný režim sa po jej
 msgid "IDS_BR_BUTTON2_DONE"
 msgstr "Hotovo"
 
+msgid "IDS_BR_BODY_ENTER_YOUR_PASSWORD_AGAIN_TO_CONFIRM_IT"
+msgstr "Znova zadajte heslo na jeho potvrdenie."
+
+msgid "IDS_BR_HEADER_CREATE_PASSWORD_M_SET_ABB"
+msgstr "Vytvorenie hesla"
+
+msgid "IDS_BR_BUTTON_DO_NOT_USE_PASSWORD_ABB"
+msgstr "Nepoužívať heslo"
+
+msgid "IDS_BR_POP_TO_PROTECT_YOUR_SECRET_MODE_DATA_CREATE_A_PASSWORD_IF_YOU_USE_SECRET_MODE_WITHOUT_CREATING_A_PASSWORD_MSG"
+msgstr "Vytvorte si heslo na ochranu svojich údajov v aplikácii Tajný režim. Ak budete používať aplikáciu Tajný režim bez vytvorenie hesla, nebudete môcť zabrániť ostatným používateľom, aby si prezerali vašu históriu prehliadača a vyhľadávania, vaše záložky a uložené stránky."
+
+msgid "IDS_BR_BODY_AFTER_YOU_ADD_BOOKMARKS_THEY_WILL_BE_SHOWN_HERE"
+msgstr "Tu sa zobrazia záložky po ich pridaní."
+

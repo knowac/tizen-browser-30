@@ -2176,3 +2176,18 @@ msgstr "Le pagine Web visitate mentre la Modalità segreta è attiva non verrann
 msgid "IDS_BR_BUTTON2_DONE"
 msgstr "Fatto"
 
+msgid "IDS_BR_BODY_ENTER_YOUR_PASSWORD_AGAIN_TO_CONFIRM_IT"
+msgstr "Inserite nuovamente la password per confermarla."
+
+msgid "IDS_BR_HEADER_CREATE_PASSWORD_M_SET_ABB"
+msgstr "Crea password"
+
+msgid "IDS_BR_BUTTON_DO_NOT_USE_PASSWORD_ABB"
+msgstr "Non usare password"
+
+msgid "IDS_BR_POP_TO_PROTECT_YOUR_SECRET_MODE_DATA_CREATE_A_PASSWORD_IF_YOU_USE_SECRET_MODE_WITHOUT_CREATING_A_PASSWORD_MSG"
+msgstr "Per proteggere i dati della Modalità segreta, create una password. Se utilizzate la Modalità segreta senza creare una password, non potrete impedire agli altri utenti di visualizzare la cronologia del browser e di ricerca, i preferiti e le pagine salvate."
+
+msgid "IDS_BR_BODY_AFTER_YOU_ADD_BOOKMARKS_THEY_WILL_BE_SHOWN_HERE"
+msgstr "I preferiti aggiunti saranno visualizzati qui."
+

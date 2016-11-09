@@ -278,7 +278,7 @@ msgid "IDS_BR_POP_UNABLE_TO_VIEW_THE_CERTIFICATE_THE_PAGE_INFORMATION_HAS_BEEN_C
 msgstr "페이지 정보가 변경되어 인증서를 볼 수 없습니다."
 
 msgid "IDS_BR_POP_TO_SIGN_IN_TO_THIS_WEBSITE_USING_YOUR_FINGERPRINTS_GO_TO_SETTINGS_AND_ENABLE_WEB_SIGN_IN"
-msgstr "지문을 이용하여 웹사이트에 로그인하려면 [설정]에서 [웹 로그인]을 실행하세요."
+msgstr "지문을 이용하여 웹사이트에 로그인하려면 설정에서 [웹 로그인]을 실행하세요."
 
 msgid "IDS_BR_POP_THIS_CERTIFICATE_IS_NOT_FROM_A_TRUSTED_AUTHORITY"
 msgstr "신뢰할 수 없는 기관에서 발급한 인증서입니다."
@@ -314,7 +314,7 @@ msgid "IDS_BR_POP_SETTIGS_SAVED"
 msgstr "설정을 저장하였습니다."
 
 msgid "IDS_BR_POP_SECURITY_POLICY_RESTRICTS_USE_OF_INTERNET_BROWSER"
-msgstr "보안정책에 따라 [인터넷]을 사용할 수 없습니다."
+msgstr "보안정책에 따라 인터넷을 사용할 수 없습니다."
 
 msgid "IDS_BR_POP_SAVED_TO_BOOKMARKS"
 msgstr "북마크에 저장하였습니다."
@@ -1595,7 +1595,7 @@ msgid "IDS_BR_BODY_NO_MATCHES"
 msgstr "일치하는 검색 결과가 없습니다."
 
 msgid "IDS_BR_BODY_MOBILE_DATA_IS_TURNED_OFF_CONNECT_TO_A_WI_FI_NETWORK_INSTEAD_OR_TAP_SETTINGS_TO_TURN_ON_MOBILE_DATA_AND_THEN_TRY_AGAIN"
-msgstr "[모바일 데이터]가 해제된 상태입니다. Wi-Fi 네트워크에 연결하거나, [모바일 데이터]를 실행할 수 있도록 설정 버튼을 누른 후 다시 시도하세요."
+msgstr "모바일 데이터 기능이 해제된 상태입니다. Wi-Fi 네트워크에 연결하거나, 모바일 데이터 기능을 실행할 수 있도록 설정 버튼을 누른 후 다시 시도하세요."
 
 msgid "IDS_BR_BODY_FIT_TO_WIDTH"
 msgstr "너비에 맞추기"
@@ -1664,7 +1664,7 @@ msgid "IDS_BR_POP_NEVER"
 msgstr "안 함"
 
 msgid "IDS_BR_POP_MOBILE_DATA_IS_DISABLED_CONNECT_TO_WI_FI_NETWORK_INSTEAD_OR_ENABLE_MOBILE_DATA_AND_TRY_AGAIN"
-msgstr "[모바일 데이터]를 해제하였습니다. Wi-Fi 네트워크에 연결하거나 [모바일 데이터]를 실행한 후 다시 시도하세요."
+msgstr "모바일 데이터 기능을 해제하였습니다. Wi-Fi 네트워크에 연결하거나 모바일 데이터 기능을 실행한 후 다시 시도하세요."
 
 msgid "IDS_BR_POP_LOADING_PLEASE_WAIT_ING"
 msgstr "불러오는 중입니다. 잠시 기다리세요..."
@@ -2175,4 +2175,19 @@ msgstr "비밀 모드 실행 중에 방문한 웹페이지는 해당 모드를 �
 
 msgid "IDS_BR_BUTTON2_DONE"
 msgstr "완료"
+
+msgid "IDS_BR_BODY_ENTER_YOUR_PASSWORD_AGAIN_TO_CONFIRM_IT"
+msgstr "확인을 위해 비밀번호를 한 번 더 입력하세요."
+
+msgid "IDS_BR_HEADER_CREATE_PASSWORD_M_SET_ABB"
+msgstr "비밀번호 설정"
+
+msgid "IDS_BR_BUTTON_DO_NOT_USE_PASSWORD_ABB"
+msgstr "비밀번호 사용 안 함"
+
+msgid "IDS_BR_POP_TO_PROTECT_YOUR_SECRET_MODE_DATA_CREATE_A_PASSWORD_IF_YOU_USE_SECRET_MODE_WITHOUT_CREATING_A_PASSWORD_MSG"
+msgstr "비밀 모드 데이터를 보호하려면 비밀번호를 만드세요. 비밀번호를 설정하지 않고 이 모드를 사용하면 내 검색기록, 방문기록, 북마크, 저장된 페이지가 다른 사람에게 노출되지 않도록 보호할 수 없습니다."
+
+msgid "IDS_BR_BODY_AFTER_YOU_ADD_BOOKMARKS_THEY_WILL_BE_SHOWN_HERE"
+msgstr "북마크를 추가하면 여기에 표시됩니다."
 

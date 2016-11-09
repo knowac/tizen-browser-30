@@ -2176,3 +2176,18 @@ msgstr "Toate paginile web vizualizate atunci când Modul Secret este activat nu
 msgid "IDS_BR_BUTTON2_DONE"
 msgstr "Efectuat"
 
+msgid "IDS_BR_BODY_ENTER_YOUR_PASSWORD_AGAIN_TO_CONFIRM_IT"
+msgstr "Introduceți-vă din nou parola pentru a o confirma."
+
+msgid "IDS_BR_HEADER_CREATE_PASSWORD_M_SET_ABB"
+msgstr "Creare parolă"
+
+msgid "IDS_BR_BUTTON_DO_NOT_USE_PASSWORD_ABB"
+msgstr "Nu se util. parola"
+
+msgid "IDS_BR_POP_TO_PROTECT_YOUR_SECRET_MODE_DATA_CREATE_A_PASSWORD_IF_YOU_USE_SECRET_MODE_WITHOUT_CREATING_A_PASSWORD_MSG"
+msgstr "Pentru a vă proteja datele din Modul Secret, creați o parolă. Dacă utilizați Modul Secret fără a crea o parolă, nu veți putea împiedica vizualizarea browserului și a istoricului de căutare, a marcajelor și a paginilor salvate de către alte persoane."
+
+msgid "IDS_BR_BODY_AFTER_YOU_ADD_BOOKMARKS_THEY_WILL_BE_SHOWN_HERE"
+msgstr "După ce adăugați marcaje, acestea vor fi afișate aici."
+

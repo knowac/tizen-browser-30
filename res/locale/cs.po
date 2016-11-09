@@ -2176,3 +2176,18 @@ msgstr "Žádné webové stránky, které navštívíte při zapnutém Režimu u
 msgid "IDS_BR_BUTTON2_DONE"
 msgstr "Hotovo"
 
+msgid "IDS_BR_BODY_ENTER_YOUR_PASSWORD_AGAIN_TO_CONFIRM_IT"
+msgstr "Zadejte znovu heslo a potvrďte ho."
+
+msgid "IDS_BR_HEADER_CREATE_PASSWORD_M_SET_ABB"
+msgstr "Vytvořit heslo"
+
+msgid "IDS_BR_BUTTON_DO_NOT_USE_PASSWORD_ABB"
+msgstr "Nepoužívat heslo"
+
+msgid "IDS_BR_POP_TO_PROTECT_YOUR_SECRET_MODE_DATA_CREATE_A_PASSWORD_IF_YOU_USE_SECRET_MODE_WITHOUT_CREATING_A_PASSWORD_MSG"
+msgstr "Chcete-li chránit data Režimu utajení, vytvořte heslo. Když použijete Režim utajení bez vytvoření hesla, nebudete moci ostatním uživatelům zabránit, aby se podívali na váš prohlížeč a historii hledání, záložky a uložené stránky."
+
+msgid "IDS_BR_BODY_AFTER_YOU_ADD_BOOKMARKS_THEY_WILL_BE_SHOWN_HERE"
+msgstr "Až přidáte záložky, zobrazí se zde."
+

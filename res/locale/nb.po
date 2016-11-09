@@ -2176,3 +2176,18 @@ msgstr "Alle nettsider du viser når Hemmelig modus er aktivert, vises ikke i ne
 msgid "IDS_BR_BUTTON2_DONE"
 msgstr "Utført"
 
+msgid "IDS_BR_BODY_ENTER_YOUR_PASSWORD_AGAIN_TO_CONFIRM_IT"
+msgstr "Angi passordet på nytt for å bekrefte det."
+
+msgid "IDS_BR_HEADER_CREATE_PASSWORD_M_SET_ABB"
+msgstr "Opprett passord"
+
+msgid "IDS_BR_BUTTON_DO_NOT_USE_PASSWORD_ABB"
+msgstr "Ikke bruk passord"
+
+msgid "IDS_BR_POP_TO_PROTECT_YOUR_SECRET_MODE_DATA_CREATE_A_PASSWORD_IF_YOU_USE_SECRET_MODE_WITHOUT_CREATING_A_PASSWORD_MSG"
+msgstr "For å beskytte Hemmelig modus-dataene må du opprette et passord. Hvis du bruker Hemmelig modus uten å opprette et passord, vil du ikke kunne hindre andre fra å vise nettleser- og søkehistorikken, bokmerkene og lagrede sider."
+
+msgid "IDS_BR_BODY_AFTER_YOU_ADD_BOOKMARKS_THEY_WILL_BE_SHOWN_HERE"
+msgstr "Når du har lagt til bokmerker, vises de her."
+

@@ -2176,3 +2176,18 @@ msgstr "シークレットモードが有効な間に表示した全てのWebペ
 msgid "IDS_BR_BUTTON2_DONE"
 msgstr "完了"
 
+msgid "IDS_BR_BODY_ENTER_YOUR_PASSWORD_AGAIN_TO_CONFIRM_IT"
+msgstr "確認のため、再度パスワードを入力してください。"
+
+msgid "IDS_BR_HEADER_CREATE_PASSWORD_M_SET_ABB"
+msgstr "パスワードを作成"
+
+msgid "IDS_BR_BUTTON_DO_NOT_USE_PASSWORD_ABB"
+msgstr "パスワードを使用しない"
+
+msgid "IDS_BR_POP_TO_PROTECT_YOUR_SECRET_MODE_DATA_CREATE_A_PASSWORD_IF_YOU_USE_SECRET_MODE_WITHOUT_CREATING_A_PASSWORD_MSG"
+msgstr "シークレットモードのデータを保護するには、パスワードを作成してください。パスワードを作成せずにシークレットモードを使用すると、閲覧履歴、検索履歴、ブックマーク、および保存したページを他者に見られることを防止できません。"
+
+msgid "IDS_BR_BODY_AFTER_YOU_ADD_BOOKMARKS_THEY_WILL_BE_SHOWN_HERE"
+msgstr "ブックマークを追加すると、ここに表示されます。"
+

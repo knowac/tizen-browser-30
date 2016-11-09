@@ -2176,3 +2176,18 @@ msgstr "Nijedna web-stranica kojoj ste pristupili dok je uključen Tajni način 
 msgid "IDS_BR_BUTTON2_DONE"
 msgstr "OK"
 
+msgid "IDS_BR_BODY_ENTER_YOUR_PASSWORD_AGAIN_TO_CONFIRM_IT"
+msgstr "Ponovno unesite lozinku da biste je potvrdili."
+
+msgid "IDS_BR_HEADER_CREATE_PASSWORD_M_SET_ABB"
+msgstr "Kreiraj lozinku"
+
+msgid "IDS_BR_BUTTON_DO_NOT_USE_PASSWORD_ABB"
+msgstr "Ne koristi lozinku"
+
+msgid "IDS_BR_POP_TO_PROTECT_YOUR_SECRET_MODE_DATA_CREATE_A_PASSWORD_IF_YOU_USE_SECRET_MODE_WITHOUT_CREATING_A_PASSWORD_MSG"
+msgstr "Da biste zaštitili podatke Tajnog načina, stvorite lozinku. Ako upotrebljavate Tajni način bez stvaranja lozinke, nećete moći spriječiti da drugi vide vašu povijest preglednika i povijest pretraživanja, oznake i spremljene stranice."
+
+msgid "IDS_BR_BODY_AFTER_YOU_ADD_BOOKMARKS_THEY_WILL_BE_SHOWN_HERE"
+msgstr "Oznake će se prikazati ovdje nakon što ih dodate."
+

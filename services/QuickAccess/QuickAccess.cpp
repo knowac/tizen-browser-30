@@ -230,10 +230,10 @@ void QuickAccess::setPageTitle()
 {
     BROWSER_LOGD("[%s:%d] currPage: %d", __PRETTY_FUNCTION__, __LINE__, m_currPage);
     if (m_currPage == MOST_VISITED_PAGE) {
-        elm_object_translatable_part_text_set(m_layout, "screen_title", "Most visited websites");  //TODO: translate
+        elm_object_translatable_part_text_set(m_layout, "screen_title", _("IDS_BR_BODY_MOST_VISITED_SITES"));
         setIndexPage(&MOST_VISITED_PAGE);
     } else {
-        elm_object_translatable_part_text_set(m_layout, "screen_title", "Quick access");  //TODO: translate
+        elm_object_translatable_part_text_set(m_layout, "screen_title", _("IDS_BR_HEADER_QUICK_ACCESS_ABB"));
         setIndexPage(&QUICKACCESS_PAGE);
     }
 }

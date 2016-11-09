@@ -2176,3 +2176,18 @@ msgstr "Alle Webseiten, die bei aktiviertem geheimen Modus angezeigt werden, wer
 msgid "IDS_BR_BUTTON2_DONE"
 msgstr "OK"
 
+msgid "IDS_BR_BODY_ENTER_YOUR_PASSWORD_AGAIN_TO_CONFIRM_IT"
+msgstr "Geben Sie Ihr Passwort zur Bestätigung erneut ein."
+
+msgid "IDS_BR_HEADER_CREATE_PASSWORD_M_SET_ABB"
+msgstr "Passwort erstellen"
+
+msgid "IDS_BR_BUTTON_DO_NOT_USE_PASSWORD_ABB"
+msgstr "Passwort nicht verwenden"
+
+msgid "IDS_BR_POP_TO_PROTECT_YOUR_SECRET_MODE_DATA_CREATE_A_PASSWORD_IF_YOU_USE_SECRET_MODE_WITHOUT_CREATING_A_PASSWORD_MSG"
+msgstr "Erstellen Sie ein Passwort, um die Daten Ihres geheimen Modus zu schützen. Wenn Sie den geheimen Modus verwenden, ohne ein Passwort zu erstellen, können andere Personen Ihren Browser- und Suchverlauf, Ihre Lesezeichen und gespeicherten Seiten einsehen."
+
+msgid "IDS_BR_BODY_AFTER_YOU_ADD_BOOKMARKS_THEY_WILL_BE_SHOWN_HERE"
+msgstr "Nachdem Sie Lesezeichen hinzugefügt haben, werden diese hier angezeigt."
+

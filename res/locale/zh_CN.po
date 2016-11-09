@@ -2176,3 +2176,18 @@ msgstr "保密模式启用期间查看的网页在保密模式禁用时不会出
 msgid "IDS_BR_BUTTON2_DONE"
 msgstr "完成"
 
+msgid "IDS_BR_BODY_ENTER_YOUR_PASSWORD_AGAIN_TO_CONFIRM_IT"
+msgstr "请再次输入混合密码进行确认。"
+
+msgid "IDS_BR_HEADER_CREATE_PASSWORD_M_SET_ABB"
+msgstr "创建密码"
+
+msgid "IDS_BR_BUTTON_DO_NOT_USE_PASSWORD_ABB"
+msgstr "不使用密码"
+
+msgid "IDS_BR_POP_TO_PROTECT_YOUR_SECRET_MODE_DATA_CREATE_A_PASSWORD_IF_YOU_USE_SECRET_MODE_WITHOUT_CREATING_A_PASSWORD_MSG"
+msgstr "若要保护您的保密模式数据，请创建混合密码。如果您在不创建混合密码的情况下使用保密模式，您将无法阻止他人查看您的浏览器和搜索历史记录、书签以及已保存的页面。"
+
+msgid "IDS_BR_BODY_AFTER_YOU_ADD_BOOKMARKS_THEY_WILL_BE_SHOWN_HERE"
+msgstr "添加书签后，其将显示在此处。"
+

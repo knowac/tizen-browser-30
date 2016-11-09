@@ -2176,3 +2176,18 @@ msgstr "保密模式已啟用時檢視的所有網頁在保密模式已停用時
 msgid "IDS_BR_BUTTON2_DONE"
 msgstr "完成"
 
+msgid "IDS_BR_BODY_ENTER_YOUR_PASSWORD_AGAIN_TO_CONFIRM_IT"
+msgstr "再次輸入您的密碼以確認。"
+
+msgid "IDS_BR_HEADER_CREATE_PASSWORD_M_SET_ABB"
+msgstr "建立密碼"
+
+msgid "IDS_BR_BUTTON_DO_NOT_USE_PASSWORD_ABB"
+msgstr "不要使用密碼"
+
+msgid "IDS_BR_POP_TO_PROTECT_YOUR_SECRET_MODE_DATA_CREATE_A_PASSWORD_IF_YOU_USE_SECRET_MODE_WITHOUT_CREATING_A_PASSWORD_MSG"
+msgstr "若要保護您的保密模式數據，請建立密碼。如果您使用保密模式且未建立密碼，您將無法防止其他人查看您的瀏覽器與搜尋歷程記錄、書籤及已儲存的頁面。"
+
+msgid "IDS_BR_BODY_AFTER_YOU_ADD_BOOKMARKS_THEY_WILL_BE_SHOWN_HERE"
+msgstr "加入書籤後，其將顯示於此。"
+

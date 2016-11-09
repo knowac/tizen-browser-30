@@ -2176,3 +2176,18 @@ msgstr "Any webpages viewed while Secret mode is enabled will not appear in your
 msgid "IDS_BR_BUTTON2_DONE"
 msgstr "Done"
 
+msgid "IDS_BR_BODY_ENTER_YOUR_PASSWORD_AGAIN_TO_CONFIRM_IT"
+msgstr "Enter your password again to confirm it."
+
+msgid "IDS_BR_HEADER_CREATE_PASSWORD_M_SET_ABB"
+msgstr "Create password"
+
+msgid "IDS_BR_BUTTON_DO_NOT_USE_PASSWORD_ABB"
+msgstr "Do not use password"
+
+msgid "IDS_BR_POP_TO_PROTECT_YOUR_SECRET_MODE_DATA_CREATE_A_PASSWORD_IF_YOU_USE_SECRET_MODE_WITHOUT_CREATING_A_PASSWORD_MSG"
+msgstr "To protect your Secret mode data, create a password. If you use Secret mode without creating a password, you won't be able to prevent others from viewing your browser and search history, bookmarks, and saved pages."
+
+msgid "IDS_BR_BODY_AFTER_YOU_ADD_BOOKMARKS_THEY_WILL_BE_SHOWN_HERE"
+msgstr "After you add bookmarks, they will be shown here."
+

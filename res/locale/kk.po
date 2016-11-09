@@ -2176,3 +2176,18 @@ msgstr "Құпия режим қосулы кезде кірген кез кел
 msgid "IDS_BR_BUTTON2_DONE"
 msgstr "Дайын"
 
+msgid "IDS_BR_BODY_ENTER_YOUR_PASSWORD_AGAIN_TO_CONFIRM_IT"
+msgstr "Растау үшін құпиясөзді қайта енгізіңіз."
+
+msgid "IDS_BR_HEADER_CREATE_PASSWORD_M_SET_ABB"
+msgstr "Құпиясөз жасау"
+
+msgid "IDS_BR_BUTTON_DO_NOT_USE_PASSWORD_ABB"
+msgstr "Құпиясөз қолданбау"
+
+msgid "IDS_BR_POP_TO_PROTECT_YOUR_SECRET_MODE_DATA_CREATE_A_PASSWORD_IF_YOU_USE_SECRET_MODE_WITHOUT_CREATING_A_PASSWORD_MSG"
+msgstr "Құпия режимі деректерін сақтау үшін құпиясөз ойлап табыңыз. Егер Құпия режимін құпиясөзсіз орнатататын болсаңыз, өзгелердің сіздің шолғышыңызды, іздеген ақпараттарыңызды, бетбелгілеріңізді және сақталған парақтарыңызды қарауының алдын алуға мүмкіндігіңіз болмайды."
+
+msgid "IDS_BR_BODY_AFTER_YOU_ADD_BOOKMARKS_THEY_WILL_BE_SHOWN_HERE"
+msgstr "Бетбелгілерді қосқаннан кейін, олар осы жерде көрсетіледі."
+

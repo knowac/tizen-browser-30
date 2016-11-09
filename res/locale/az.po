@@ -2176,3 +2176,18 @@ msgstr "Gizli rejim aktiv olan zaman daxil olunan bütün vebsəhifələr Gizli 
 msgid "IDS_BR_BUTTON2_DONE"
 msgstr "Hazırdır"
 
+msgid "IDS_BR_BODY_ENTER_YOUR_PASSWORD_AGAIN_TO_CONFIRM_IT"
+msgstr "Təsdiq etmək üçün parolu yenidən daxil et."
+
+msgid "IDS_BR_HEADER_CREATE_PASSWORD_M_SET_ABB"
+msgstr "Parol yarat"
+
+msgid "IDS_BR_BUTTON_DO_NOT_USE_PASSWORD_ABB"
+msgstr "Paroldan istif etmə"
+
+msgid "IDS_BR_POP_TO_PROTECT_YOUR_SECRET_MODE_DATA_CREATE_A_PASSWORD_IF_YOU_USE_SECRET_MODE_WITHOUT_CREATING_A_PASSWORD_MSG"
+msgstr "Gizli rejimin məlumatını qorumaq üçün parol yaradın. Parol yaratmadan Gizli rejimdən istifadə edirsinizsə, başqalarının brauzerinizi və axtarış tarixçənizi, əlfəcinləri və saxlanmış səhifələri görməsinin qarşısını ala bilməyəcəksiniz."
+
+msgid "IDS_BR_BODY_AFTER_YOU_ADD_BOOKMARKS_THEY_WILL_BE_SHOWN_HERE"
+msgstr "Əlfəcinləri əlavə etdikdən sonra onlar burada görünəcək."
+

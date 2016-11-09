@@ -2176,3 +2176,18 @@ msgstr "A Titkos módban megtekintett weboldalak a Titkos mód kikapcsolása ut�
 msgid "IDS_BR_BUTTON2_DONE"
 msgstr "Kész"
 
+msgid "IDS_BR_BODY_ENTER_YOUR_PASSWORD_AGAIN_TO_CONFIRM_IT"
+msgstr "Adja meg még egyszer a jelszót."
+
+msgid "IDS_BR_HEADER_CREATE_PASSWORD_M_SET_ABB"
+msgstr "Jelszó létrehozása"
+
+msgid "IDS_BR_BUTTON_DO_NOT_USE_PASSWORD_ABB"
+msgstr "Nem használ jelszót"
+
+msgid "IDS_BR_POP_TO_PROTECT_YOUR_SECRET_MODE_DATA_CREATE_A_PASSWORD_IF_YOU_USE_SECRET_MODE_WITHOUT_CREATING_A_PASSWORD_MSG"
+msgstr "Hozzon létre jelszót a Titkos mód védelméhez. A Titkos mód jelszó nélkül használatával nem tudja megakadályozni, hogy mások megtekintsék a böngészési és a keresési előzményeket, a könyvjelzőket és a mentett oldalakat."
+
+msgid "IDS_BR_BODY_AFTER_YOU_ADD_BOOKMARKS_THEY_WILL_BE_SHOWN_HERE"
+msgstr "Itt jelennek majd meg a hozzáadott könyvjelzők."
+

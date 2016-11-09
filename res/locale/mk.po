@@ -2176,3 +2176,18 @@ msgstr "Сите интернет-страници прегледани доде
 msgid "IDS_BR_BUTTON2_DONE"
 msgstr "Готово"
 
+msgid "IDS_BR_BODY_ENTER_YOUR_PASSWORD_AGAIN_TO_CONFIRM_IT"
+msgstr "Внесете ја лозинката повторно за потврда."
+
+msgid "IDS_BR_HEADER_CREATE_PASSWORD_M_SET_ABB"
+msgstr "Направи лозинка"
+
+msgid "IDS_BR_BUTTON_DO_NOT_USE_PASSWORD_ABB"
+msgstr "Не користи лозинка"
+
+msgid "IDS_BR_POP_TO_PROTECT_YOUR_SECRET_MODE_DATA_CREATE_A_PASSWORD_IF_YOU_USE_SECRET_MODE_WITHOUT_CREATING_A_PASSWORD_MSG"
+msgstr "За да ги заштитите своите податоци во Таен режим, направете лозинка. Ако користите Таен режим без да направите лозинка, нема да можете да ги спречите другите да ја гледаат историјата на Вашиот прегледник и на пребарувањата, ознаките и зачуваните страници."
+
+msgid "IDS_BR_BODY_AFTER_YOU_ADD_BOOKMARKS_THEY_WILL_BE_SHOWN_HERE"
+msgstr "Откако ќе додадете ознаки, ќе се прикажат тука."
+

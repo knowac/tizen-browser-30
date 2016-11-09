@@ -2176,3 +2176,18 @@ msgstr "Todas as páxinas web visualizadas co modo Secreto activado non aparecer
 msgid "IDS_BR_BUTTON2_DONE"
 msgstr "Feito"
 
+msgid "IDS_BR_BODY_ENTER_YOUR_PASSWORD_AGAIN_TO_CONFIRM_IT"
+msgstr "Volve inserir o contrasinal para confirmalo."
+
+msgid "IDS_BR_HEADER_CREATE_PASSWORD_M_SET_ABB"
+msgstr "Crear contrasinal"
+
+msgid "IDS_BR_BUTTON_DO_NOT_USE_PASSWORD_ABB"
+msgstr "Non usar contras."
+
+msgid "IDS_BR_POP_TO_PROTECT_YOUR_SECRET_MODE_DATA_CREATE_A_PASSWORD_IF_YOU_USE_SECRET_MODE_WITHOUT_CREATING_A_PASSWORD_MSG"
+msgstr "Para protexer os datos do modo Secreto, crea un contrasinal. Se usas o modo Secreto sen crear un contrasinal, non poderás evitar que outros usuarios visualicen o teu navegador nin o historial de buscas, os favoritos nin as páxinas gardadas."
+
+msgid "IDS_BR_BODY_AFTER_YOU_ADD_BOOKMARKS_THEY_WILL_BE_SHOWN_HERE"
+msgstr "Despois de engadir favoritos, estes amosaranse aquí."
+

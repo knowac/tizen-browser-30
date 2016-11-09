@@ -2176,3 +2176,18 @@ msgstr "Webpagina's die u hebt bekeken terwijl Geheime stand is ingeschakeld, ve
 msgid "IDS_BR_BUTTON2_DONE"
 msgstr "Klaar"
 
+msgid "IDS_BR_BODY_ENTER_YOUR_PASSWORD_AGAIN_TO_CONFIRM_IT"
+msgstr "Voer uw wachtwoord nogmaals in om het te bevestigen."
+
+msgid "IDS_BR_HEADER_CREATE_PASSWORD_M_SET_ABB"
+msgstr "Wachtwoord maken"
+
+msgid "IDS_BR_BUTTON_DO_NOT_USE_PASSWORD_ABB"
+msgstr "Wachtw. niet gebr."
+
+msgid "IDS_BR_POP_TO_PROTECT_YOUR_SECRET_MODE_DATA_CREATE_A_PASSWORD_IF_YOU_USE_SECRET_MODE_WITHOUT_CREATING_A_PASSWORD_MSG"
+msgstr "Maak een wachtwoord om uw gegevens in Geheime stand te beschermen. Als u Geheime stand wilt gebruiken zonder een wachtwoord te maken, kunt u niet voorkomen dat anderen uw browser- en zoekhistorie, favorieten en opgeslagen pagina's bekijken."
+
+msgid "IDS_BR_BODY_AFTER_YOU_ADD_BOOKMARKS_THEY_WILL_BE_SHOWN_HERE"
+msgstr "Nadat u favorieten hebt toegevoegd, worden ze hier getoond."
+

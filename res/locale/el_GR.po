@@ -2176,3 +2176,18 @@ msgstr "Οι ιστοσελίδες που επισκέπτεστε ενώ εί�
 msgid "IDS_BR_BUTTON2_DONE"
 msgstr "OΚ"
 
+msgid "IDS_BR_BODY_ENTER_YOUR_PASSWORD_AGAIN_TO_CONFIRM_IT"
+msgstr "Καταχωρήστε ξανά τον κωδικό σας πρόσβασης για επιβεβαίωση."
+
+msgid "IDS_BR_HEADER_CREATE_PASSWORD_M_SET_ABB"
+msgstr "Δημιουργία κωδ. πρόσβασης"
+
+msgid "IDS_BR_BUTTON_DO_NOT_USE_PASSWORD_ABB"
+msgstr "Χωρίς χρήση κωδικού"
+
+msgid "IDS_BR_POP_TO_PROTECT_YOUR_SECRET_MODE_DATA_CREATE_A_PASSWORD_IF_YOU_USE_SECRET_MODE_WITHOUT_CREATING_A_PASSWORD_MSG"
+msgstr "Δημιουργήστε έναν κωδικό πρόσβασης, για να προστατεύσετε τα δεδομένα της Μυστικής λειτουργίας. Αν χρησιμοποιήσετε τη Μυστική λειτουργία χωρίς να δημιουργήσετε κωδικό πρόσβασης, δεν θα μπορέσετε να εμποδίσετε την προβολή του προγράμματος περιήγησης, του ιστορικού αναζήτησης, των σελιδοδεικτών και των αποθηκευμένων σελίδων από άλλους χρήστες."
+
+msgid "IDS_BR_BODY_AFTER_YOU_ADD_BOOKMARKS_THEY_WILL_BE_SHOWN_HERE"
+msgstr "Αφού προσθέσετε σελιδοδείκτες, αυτοί θα εμφανίζονται εδώ."
+
