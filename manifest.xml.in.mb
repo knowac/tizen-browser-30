@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns="http://tizen.org/ns/packages" package="@PACKAGE_NAME@" api-version="3.0" version="@VERSION@" install-location="internal-only">
+    <label>Internet</label>
+    <icon>org.tizen.browser.png</icon>
+    <description>Web Browser Application</description>
+    <ui-application appid="@PACKAGE_NAME@" exec="@BINDIR@/browser" nodisplay="false" multiple="false" type="capp" taskmanage="true" hw-acceleration="on" process-pool="true" portrait-effectimage="@ICONDIR@/portrait.png" landscape-effectimage="@ICONDIR@/landscape.png">
+        <label>Internet</label>
+        <icon>org.tizen.browser.png</icon>
+        <label xml:lang="ar-ae">الإنترنت</label>
+        <label xml:lang="hy-am">Ինտերնետ</label>
+        <label xml:lang="az-az">Internet</label>
+        <label xml:lang="eu-es">Internet</label>
+        <label xml:lang="bg-bg">Интернет</label>
+        <label xml:lang="ca-es">Internet</label>
+        <label xml:lang="zh-cn">互联网</label>
+        <label xml:lang="zh-hk">瀏覽器</label>
+        <label xml:lang="zh-sg">网络</label>
+        <label xml:lang="zh-tw">網際網路</label>
+        <label xml:lang="hr-hr">Internet</label>
+        <label xml:lang="cs-cz">Internet</label>
+        <label xml:lang="da-dk">Internet</label>
+        <label xml:lang="nl-nl">Internet</label>
+        <label xml:lang="en-ph">Internet</label>
+        <label xml:lang="en-gb">Internet</label>
+        <label xml:lang="en-us">Internet</label>
+        <label xml:lang="et-ee">Internet</label>
+        <label xml:lang="fi-fi">Internet</label>
+        <label xml:lang="fr-fr">Internet</label>
+        <label xml:lang="fr-ca">Internet</label>
+        <label xml:lang="gl-es">Internet</label>
+        <label xml:lang="ka-ge">ინტერნეტი</label>
+        <label xml:lang="de-de">Internet</label>
+        <label xml:lang="el-gr">Internet</label>
+        <label xml:lang="hi-in">इंटरनेट</label>
+        <label xml:lang="hu-hu">Internet</label>
+        <label xml:lang="is-is">Internetið</label>
+        <label xml:lang="ga-ie">an tIdirlíon</label>
+        <label xml:lang="it-it">Internet</label>
+        <label xml:lang="ja-jp">インターネット</label>
+        <label xml:lang="kk-kz">Шолушы</label>
+        <label xml:lang="ko-kr">인터넷</label>
+        <label xml:lang="lv-lv">Internets</label>
+        <label xml:lang="lt-lt">Internetas</label>
+        <label xml:lang="mk-mk">Интернет</label>
+        <label xml:lang="nb-no">Internett</label>
+        <label xml:lang="pl-pl">Internet</label>
+        <label xml:lang="pt-pt">Internet</label>
+        <label xml:lang="pt-br">Internet</label>
+        <label xml:lang="ro-ro">Internet</label>
+        <label xml:lang="ru-ru">Интернет</label>
+        <label xml:lang="sr-rs">Internet</label>
+        <label xml:lang="sk-sk">Internet</label>
+        <label xml:lang="sl-si">Internet</label>
+        <label xml:lang="es-es">Internet</label>
+        <label xml:lang="es-mx">Internet</label>
+        <label xml:lang="sv-se">Internet</label>
+        <label xml:lang="tr-tr">İnternet</label>
+        <label xml:lang="uk-ua">Браузер</label>
+        <label xml:lang="uz-uz">Интернет</label>
+        <app-control>
+            <operation name="http://tizen.org/appcontrol/operation/view" />
+            <uri name="http" />
+        </app-control>
+        <app-control>
+            <operation name="http://tizen.org/appcontrol/operation/view" />
+            <uri name="https" />
+        </app-control>
+        <app-control>
+            <operation name="http://tizen.org/appcontrol/operation/view" />
+            <uri name="file" />
+        </app-control>
+        <app-control>
+            <operation name="http://tizen.org/appcontrol/operation/view" />
+            <mime name="application/x-shockwave-flash" />
+        </app-control>
+        <app-control>
+            <operation name="http://tizen.org/appcontrol/operation/view" />
+            <mime name="image/svg+xml" />
+        </app-control>
+        <app-control>
+            <operation name="http://tizen.org/appcontrol/operation/view" />
+            <mime name="text/html" />
+        </app-control>
+        <app-control>
+            <operation name="http://tizen.org/appcontrol/operation/view" />
+            <mime name="application/xml" />
+        </app-control>
+        <app-control>
+            <operation name="http://tizen.org/appcontrol/operation/view" />
+            <uri name="browser_shortcut" />
+        </app-control>
+        <app-control>
+            <operation name="http://tizen.org/appcontrol/operation/search" />
+        </app-control>
+    </ui-application>
+    <privileges>
+        <privilege>http://tizen.org/privilege/bookmark.admin</privilege>
+        <privilege>http://tizen.org/privilege/web-history.admin</privilege>
+        <privilege>http://tizen.org/privilege/appmanager.launch</privilege>
+        <privilege>http://tizen.org/privilege/content.write</privilege>
+        <privilege>http://tizen.org/privilege/notification</privilege>
+        <privilege>http://tizen.org/privilege/download</privilege>
+        <privilege>http://tizen.org/privilege/haptic</privilege>
+        <privilege>http://tizen.org/privilege/camera</privilege>
+        <privilege>http://tizen.org/privilege/push</privilege>
+        <privilege>http://tizen.org/privilege/mediastorage</privilege>
+        <privilege>http://tizen.org/privilege/recorder</privilege>
+        <privilege>http://tizen.org/privilege/shortcut</privilege>
+        <privilege>http://tizen.org/privilege/externalstorage</privilege>
+        <privilege>http://tizen.org/privilege/externalstorage.appdata</privilege>
+        <privilege>http://tizen.org/privilege/display</privilege>
+        <privilege>http://tizen.org/privilege/network.get</privilege>
+        <privilege>http://tizen.org/privilege/internet</privilege>
+     </privileges>
+</manifest>

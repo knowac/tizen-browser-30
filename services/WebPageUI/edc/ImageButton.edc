@@ -1,0 +1,24 @@
+#define __CONCAT1(X,Y)          X##Y
+#define __CONCAT(X,Y)           __CONCAT1(X,Y)
+
+#define ICON_SIZE 48
+
+#define IMAGE_BUTTON(NAME, W, H, IMG)                               \
+    group {                                                         \
+        name: NAME;                                                 \
+        images.image: IMG COMP;                                     \
+        parts {                                                     \
+            image {                                                 \
+                name: "image";                                      \
+                mouse_events: 1;                                    \
+                repeat_events: 0;                                   \
+                description {                                       \
+                    state: "default" 0.0;                           \
+                    min: W H;                                       \
+                    max: W H;                                       \
+                    image.normal: IMG;                              \
+                    color: 105 105 105 255;                         \
+                }                                                   \
+            }                                                       \
+        }                                                           \
+    }

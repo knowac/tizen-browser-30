@@ -1,0 +1,364 @@
+#include "ColorClasses.edc"
+
+#define BUTTON_NAVIFRAME_BACK_CORNER_RADIUS "10"
+#define BUTTON_NAVIFRAME_BACK_BUTTON_SIZE_INC 80 80
+#define BUTTON_NAVIFRAME_BACK_BUTTON_EFFECT_MAX_SIZE_INC 80 80
+#define GLIDE_EASE_OUT(duration) CUBIC_BEZIER (duration) 0.25 0.46 0.45 1.0
+
+#define TOOLBAR_BUTTON(NAME, ICON, WIDTH, HEIGHT, TOP_PADDING)  \
+    group { name: __CONCAT("elm/button/base/", NAME);  \
+        data.item: "vector_ux" "no_bg";  \
+        data.item: "corner_radius" BUTTON_NAVIFRAME_BACK_CORNER_RADIUS;  \
+        images {  \
+            set {  \
+                name: __CONCAT("image_file_", NAME);  \
+                image {  \
+                    image: ICON COMP;  \
+                }  \
+            }  \
+        }  \
+        script {  \
+            public mouse_down = 0;  \
+            public multi_down = 0;  \
+            public animate = 0;  \
+            public disabled = 0;  \
+            public secret = 0;  \
+        }  \
+        parts {  \
+            part { name: "button_bg";  \
+                type: SPACER;  \
+                scale: 1;  \
+                mouse_events: 0;  \
+                description { state: "default" 0.0;  \
+                    min: WIDTH HEIGHT;  \
+                    max: WIDTH HEIGHT;  \
+                    fixed: 1 1;  \
+                }  \
+            }  \
+            part { name: "effect_spacer";  \
+                type: SPACER;  \
+                scale: 1;  \
+                description { state: "default" 0.0;  \
+                    fixed: 1 1;  \
+                    rel1.relative: 0.5 0.5;  \
+                    rel2.relative: 0.5 0.5;  \
+                    min: WIDTH HEIGHT;  \
+                    max: WIDTH HEIGHT;  \
+                }  \
+            }  \
+            part { name: "tizen_vg_shape";  \
+                type: SWALLOW;  \
+                clip_to: "tizen_vg_shape_clipper";  \
+                scale: 1;  \
+                description { state: "default" 0.0;  \
+                    fixed: 1 1;  \
+                    rel1.relative: 0.5 0.5;  \
+                    rel2.relative: 0.5 0.5;  \
+                }  \
+                description { state: "ready" 0.0;  \
+                    rel1.to: "effect_spacer";  \
+                    rel2.to: "effect_spacer";  \
+                    rel1.relative: 0.15 0.15;  \
+                    rel2.relative: 0.85 0.85;  \
+                }  \
+                description { state: "pressed" 0.0;  \
+                    inherit: "ready" 0.0;  \
+                    rel1.relative: 0.0 0.0;  \
+                    rel2.relative: 1.0 1.0;  \
+                }  \
+            }  \
+            part { name: "tizen_vg_shape_clipper";  \
+                type: RECT;  \
+                description { state: "default" 0.0;  \
+                    color: 0 0 0 0;  \
+                    visible: 0;  \
+                    fixed: 1 1;  \
+                    rel1.to: "tizen_vg_shape";  \
+                    rel2.to: "tizen_vg_shape";  \
+                }  \
+                description { state: "ready" 0.0;  \
+                    inherit: "default" 0.0;  \
+                    visible: 1;  \
+                }  \
+                description { state: "pressed" 0.0;  \
+                    inherit: "default" 0.0;  \
+                    color: 0 0 0 77;  \
+                    visible: 1;  \
+                }  \
+            }  \
+            part { name: "icon_spacer";  \
+                type: RECT;  \
+                scale: 1;  \
+                mouse_events: 0;  \
+                description {  \
+                    visible: 0;  \
+                    align: 0.0 0.0;  \
+                    min: 0 TOP_PADDING;  \
+                    max: -1 TOP_PADDING;  \
+                    rel1 { relative: 0.0 0.0; to: "button_bg"; }  \
+                    rel2 { relative: 1.0 1.0; to: "button_bg"; }  \
+                }  \
+            }  \
+            part { name: "button_icon";  \
+                type: IMAGE;  \
+                scale: 1;  \
+                mouse_events: 0;  \
+                description { state: "default" 0.0;  \
+                    min: ICON_SIZE ICON_SIZE;  \
+                    max: ICON_SIZE ICON_SIZE;  \
+                    fixed: 1 1;  \
+                    color_class: "AO006";  \
+                    image.normal: __CONCAT("image_file_", NAME);  \
+                    align: 0.5 0.0;  \
+                    rel1 { relative: 0.0 1.0; to: "icon_spacer"; }  \
+                    rel2 { relative: 1.0 1.0; to: "button_bg"; }  \
+                }  \
+                description { state: "disabled" 0.0;  \
+                    inherit: "default" 0.0;  \
+                    color_class: "AO006D";  \
+                }  \
+                description { state: "secret" 0.0;  \
+                    inherit: "default" 0.0;  \
+                    color_class: "AO004E02";  \
+                }  \
+                description { state: "secret_disabled" 0.0;  \
+                    inherit: "default" 0.0;  \
+                    color_class: "AO004E02D";  \
+                }  \
+            }  \
+            part { name: "button_text";  \
+                type: TEXT;  \
+                scale: 1;  \
+                mouse_events: 0;  \
+                description { state: "default" 0.0;  \
+                    align: 0.5 0.0;  \
+                    color_class: "AO006";  \
+                    rel1 { relative: 0.0 1.0;  \
+                        to_x: "button_bg";  \
+                        to_y: "button_icon";  \
+                    }  \
+                    text {  \
+                        text: "";  \
+                        font: "Tizen";  \
+                        size: 22;  \
+                        align: 0.5 0.0;  \
+                    }  \
+                }  \
+                description { state: "disabled" 0.0;  \
+                    inherit: "default" 0.0;  \
+                    color_class: "AO006D";  \
+                }  \
+                description { state: "secret" 0.0;  \
+                    inherit: "default" 0.0;  \
+                    color_class: "AO004E02";  \
+                }  \
+                description { state: "secret_disabled" 0.0;  \
+                    inherit: "default" 0.0;  \
+                    color_class: "AO004E02D";  \
+                }  \
+            }  \
+            part { name: "event";  \
+                type: RECT;  \
+                description { state: "default" 0.0;  \
+                    rel1.to: "button_bg";  \
+                    rel2.to: "button_bg";  \
+                    color: 0 0 0 0;  \
+                }  \
+            }  \
+        }  \
+        programs {  \
+            program { name: "pressed_effect";  \
+                action: STATE_SET "ready" 0.0;  \
+                target: "tizen_vg_shape_clipper";  \
+                target: "tizen_vg_shape";  \
+                after: "pressed_effect2";  \
+            }  \
+            program { name: "pressed_effect2";  \
+                action: STATE_SET "pressed" 0.0;  \
+                target: "tizen_vg_shape_clipper";  \
+                target: "tizen_vg_shape";  \
+                transition: GLIDE_EASE_OUT(0.15);  \
+                after: "pressed_effect3";  \
+            }  \
+            program { name: "pressed_effect3";  \
+                script {  \
+                    set_int(animate, 0);  \
+                }  \
+            }  \
+            program { name: "delay_unpressed_effect";  \
+                in: 0.1 0.0;  \
+                after: "unpressed_effect";  \
+            }  \
+            program { name: "unpressed_effect";  \
+                script {  \
+                    run_program(PROGRAM:"unpressed_effect2");  \
+                }  \
+            }  \
+            program { name: "unpressed_effect2";  \
+                action: STATE_SET "ready" 0.0;  \
+                target: "tizen_vg_shape_clipper";  \
+                transition: GLIDE_EASE_OUT(0.45);  \
+                after: "unpressed_effect3";  \
+            }  \
+            program { name: "unpressed_effect3";  \
+                action: STATE_SET "default" 0.0;  \
+                target: "tizen_vg_shape";  \
+                target: "tizen_vg_shape_clipper";  \
+            }  \
+            program { name: "pressed";  \
+                signal: "mouse,down,1*";  \
+                source: "event";  \
+                script {  \
+                    if ((get_int(multi_down) == 0) && (get_int(mouse_down) == 0) && (get_int(disabled) == 0)) {  \
+                    stop_program(PROGRAM:"delay_unpressed_effect");  \
+                    set_int(mouse_down, 1);  \
+                    set_int(animate, 1);  \
+                    emit("elm,action,press", "");  \
+                    run_program(PROGRAM:"pressed_effect");  \
+                    }  \
+                }  \
+            }  \
+            program { name: "unpressed";  \
+                signal: "mouse,up,1";  \
+                source: "event";  \
+                script {  \
+                    if (get_int(mouse_down) == 1) {  \
+                    set_int(mouse_down, 0);  \
+                    if (get_int(disabled) == 0) {  \
+                        if (get_int(animate) == 0) {  \
+                            run_program(PROGRAM:"unpressed_effect");  \
+                        } else {  \
+                            set_state(PART:"tizen_vg_shape", "pressed", 0.0);  \
+                            set_state(PART:"tizen_vg_shape_clipper", "pressed", 0.0);  \
+                            set_int(animate, 0);  \
+                            run_program(PROGRAM:"delay_unpressed_effect");  \
+                        }  \
+                        emit("elm,action,unpress", "");  \
+                    }  \
+                    }  \
+                }  \
+            }  \
+            program { name: "button_click";  \
+                signal: "mouse,clicked,1";  \
+                source: "event";  \
+                script {  \
+                    if ((get_int(multi_down) == 0) && (get_int(disabled) == 0)) {  \
+                    run_program(PROGRAM:"play_sound");  \
+                    run_program(PROGRAM:"clicked_signal");  \
+                    }  \
+                }  \
+            }  \
+            program { name: "play_sound";  \
+                action: RUN_PLUGIN "touch_sound";  \
+            }  \
+            program { name: "clicked_signal";  \
+                in: 0.001 0.0;  \
+                action: SIGNAL_EMIT "elm,action,click" "";  \
+            }  \
+            program { name: "enable";  \
+                signal: "elm,state,enabled";  \
+                source: "elm";  \
+                script {  \
+                set_int(disabled, 0);  \
+                    if (get_int(secret) == 0) {  \
+                        set_state(PART:"button_icon", "default", 0.0);  \
+                        set_state(PART:"button_text", "default", 0.0);  \
+                    } else {  \
+                        set_state(PART:"button_icon", "secret", 0.0);  \
+                        set_state(PART:"button_text", "secret", 0.0);  \
+                    }  \
+                }  \
+            }  \
+            program { name: "disable";  \
+                signal: "elm,state,disabled";  \
+                source: "elm";  \
+                script {  \
+                    set_int(disabled, 1);  \
+                    if (get_int(secret) == 0) {  \
+                        set_state(PART:"button_icon", "disabled", 0.0);  \
+                        set_state(PART:"button_text", "disabled", 0.0);  \
+                    } else {  \
+                        set_state(PART:"button_icon", "secret_disabled", 0.0);  \
+                        set_state(PART:"button_text", "secret_disabled", 0.0);  \
+                    }  \
+                }  \
+            }  \
+            program {  \
+                name: "multi_down";  \
+                signal: "elm,action,multi,down";  \
+                source: "elm";  \
+                script {  \
+                    set_int(multi_down, 1);  \
+                }  \
+            }  \
+            program {  \
+                name: "multi_up";  \
+                signal: "elm,action,multi,up";  \
+                source: "elm";  \
+                script {  \
+                    set_int(multi_down, 0);  \
+                }  \
+            }  \
+            program { name: "pass_event_enable";  \
+                signal: "elm,event,pass,enabled";  \
+                source: "elm";  \
+                script {  \
+                    set_mouse_events(PART:"event", 0);  \
+                }  \
+            }  \
+            program { name: "pass_event_disable";  \
+                signal: "elm,event,pass,disabled";  \
+                source:"elm";  \
+                script {  \
+                    set_mouse_events(PART:"event", 1);  \
+                }  \
+            }  \
+            program { name: "repeat_event_enable";  \
+                signal: "elm,event,repeat,enabled";  \
+                source: "elm";  \
+                script {  \
+                    set_repeat_events(PART:"event", 1);  \
+                }  \
+            }  \
+            program { name: "repeat_event_disable";  \
+                signal: "elm,event,repeat,disabled";  \
+                source:"elm";  \
+                script {  \
+                    set_repeat_events(PART:"event", 0);  \
+                }  \
+            }  \
+            program {  \
+                name: "set_normal_mode";  \
+                signal: "set_normal_mode";  \
+                source: "ui";  \
+                script {  \
+                    set_int(secret, 0);  \
+                    if (get_int(disabled) == 0) {  \
+                        set_state(PART:"button_icon", "default", 0.0);  \
+                        set_state(PART:"button_text", "default", 0.0);  \
+                    } else {  \
+                        set_state(PART:"button_icon", "disabled", 0.0);  \
+                        set_state(PART:"button_text", "disabled", 0.0);  \
+                    }  \
+                }  \
+            }  \
+            program {  \
+                name: "set_secret_mode";  \
+                signal: "set_secret_mode";  \
+                source: "ui";  \
+                action: STATE_SET "secret" 0.0;  \
+                target: "button_icon";  \
+                target: "button_text";  \
+                script {  \
+                    set_int(secret, 1);  \
+                    if (get_int(disabled) == 0) {  \
+                        set_state(PART:"button_icon", "secret", 0.0);  \
+                        set_state(PART:"button_text", "secret", 0.0);  \
+                    } else{  \
+                        set_state(PART:"button_icon", "secret_disabled", 0.0);  \
+                        set_state(PART:"button_text", "secret_disabled", 0.0);  \
+                    }  \
+                }  \
+            }  \
+        }  \
+    }

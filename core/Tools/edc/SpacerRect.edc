@@ -1,0 +1,57 @@
+color_classes{
+    color_class { name: "colorSpacer";
+                  color: 255 0 0 150;
+                }
+}
+
+/*
+  Defines 'rect' intended to be used as a spacer. Used as a base of
+  more specific macros.
+*/
+#define SPACER_RECT(NAME, VISIBLE, ALIGNX, ALIGNY, MINW, MINH, MAXW, MAXH) \
+rect { NAME; \
+       scale: 1; \
+       mouse_events: 1; \
+       repeat_events: 1; \
+       desc { "default"; \
+              visible: VISIBLE; color_class: "colorSpacer"; \
+              align: ALIGNX ALIGNY; \
+              rel1 { relative: 0.0 0.0; } \
+              rel2 { relative: 1.0 1.0; } \
+              min: MINW MINH; \
+              max: MAXW MAXH; \
+              fixed: 1 1; \
+            } \
+     } \
+
+/*
+  Defines 'rect' intended to be used as a horizontal spacer. Extends
+  its height to the top and the bottom of the parent container.
+  @param ALIGN Horizontal alignment.
+*/
+#define SPACER_RECT_HORIZONTAL(NAME, VISIBLE, WIDTH, ALIGN) \
+    SPACER_RECT(NAME, VISIBLE, ALIGN, 0.0, WIDTH, 1, WIDTH, -1) \
+
+/*
+  Defines 'rect' intended to be used as a vertical spacer. Extends its
+  width to the left side and the right side of the parent container.
+  @param ALIGN Vertical alignment.
+*/
+#define SPACER_RECT_VERTICAL(NAME, VISIBLE, HEIGHT, ALIGN) \
+    SPACER_RECT(NAME, VISIBLE, 0.0, ALIGN, 1, HEIGHT, -1, HEIGHT) \
+
+/*
+  Defines 'rect' intended to be used as a corner spacer. Aligns itself
+  to the corner of the parent container.
+ */
+#define SPACER_RECT_CORNER_LEFT_TOP(NAME, VISIBLE, WIDTH, HEIGHT) \
+    SPACER_RECT(NAME, VISIBLE, 0.0, 0.0, WIDTH, HEIGHT, WIDTH, HEIGHT) \
+
+#define SPACER_RECT_CORNER_LEFT_BOTTOM(NAME, VISIBLE, WIDTH, HEIGHT) \
+    SPACER_RECT(NAME, VISIBLE, 0.0, 1.0, WIDTH, HEIGHT, WIDTH, HEIGHT) \
+
+#define SPACER_RECT_CORNER_RIGHT_TOP(NAME, VISIBLE, WIDTH, HEIGHT) \
+    SPACER_RECT(NAME, VISIBLE, 1.0, 0.0, WIDTH, HEIGHT, WIDTH, HEIGHT) \
+
+#define SPACER_RECT_CORNER_RIGHT_BOTTOM(NAME, VISIBLE, WIDTH, HEIGHT) \
+    SPACER_RECT(NAME, VISIBLE, 1.0, 1.0, WIDTH, HEIGHT, WIDTH, HEIGHT) \

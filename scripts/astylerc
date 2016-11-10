@@ -1,0 +1,20 @@
+# It might not be enough so please keep the code in your eyes.
+# for example,
+# 1. It does not check below
+#    a) class Child: public Parent
+#    b) class Child : public Parent
+
+style=kr
+indent=spaces=4
+pad-oper
+pad-header
+lineend=linux
+add-brackets
+indent-switches
+unpad-paren
+convert-tabs
+align-pointer=middle
+align-reference=middle
+max-instatement-indent=80
+keep-one-line-statements
+indent-preprocessor

@@ -1,0 +1,40 @@
+
+collections {
+    group{
+        name: "elm/button/base/invisible_button";
+        parts{
+            part{
+                name: "button";
+                type: RECT;
+                scale: 1;
+                description { state: "default" 0.0;
+                    visible: 1;
+                    fixed: 1 1;
+                    color: 0 0 0 0;
+                }
+            }
+            part{
+                name: "over";
+                type: RECT;
+                scale: 1;
+                description { state: "default" 0.0;
+                    visible: 1;
+                    fixed: 1 1;
+                    rel1 { relative: 0.0 0.0;to: "button";}
+                    rel2 { relative: 1.0 1.0;to: "button";}
+                    color: 0 0 0 0;
+                }
+            }
+        }
+        programs{
+            program {
+                name: "mouse_click";
+                signal: "mouse,clicked,1";
+                source: "over";
+                script {
+                    emit("elm,action,click", "");
+                }
+            }
+        }
+    }
+}

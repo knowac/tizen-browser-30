@@ -1,0 +1,853 @@
+
+collections {
+   #if PROFILE_MOBILE
+        base_scale: 2.6;
+   #else
+        base_scale: 2.0;
+   #endif
+   group{
+      name: "elm/button/base/basic_button";
+      parts {
+         part{
+            name: "button";
+            type: RECT;
+            scale: 1;
+            description {
+               state: "default" 0.0;
+               visible: 1;
+               fixed: 1 1;
+               color: 0 0 0 0;
+            }
+         }
+         part{
+            name: "over";
+            type: RECT;
+            scale: 1;
+            description {
+               state: "default" 0.0;
+               visible: 1;
+               fixed: 1 1;
+               rel1 {
+                  relative: 0.0 0.0;
+                  to: "button";
+               }
+               rel2 {
+                  relative: 1.0 1.0;
+                  to: "button";
+               }
+               color: 0 0 0 0;
+            }
+         }
+      }
+      programs{
+         program {
+            name: "mouse_click";
+            signal: "mouse,clicked,1";
+            source: "over";
+            script {
+               emit("elm,action,click", "");
+            }
+         }
+      }
+   }
+   group {
+      name: "elm/entry/selection/fop_entry";
+      parts {
+         part {
+            name: "bg";
+            scale:1;
+            type: RECT;
+            mouse_events: 0;
+            description {
+               state: "default" 0.0;
+               color: 224 237 251 255;
+            }
+         }
+      }
+   }
+   group {
+      name: "elm/entry/cursor/fop_entry";
+      parts {
+         part {
+            name: "bg";
+            scale:1;
+            type: RECT;
+            mouse_events: 0;
+            description {
+               state: "default" 0.0;
+               color: 22 120 237 255;
+               min: 2 42;
+               max: 2 42;
+               visible: 0;
+            }
+            description {
+               state: "focused" 0.0;
+               inherit: "default" 0.0;
+               visible: 1;
+            }
+         }
+      }
+      programs {
+         program {
+            name: "focused";
+            signal: "elm,action,focus";
+            source: "elm";
+            action: STATE_SET "focused" 0.0;
+            target: "bg";
+         }
+         program {
+            name: "unfocused";
+            signal: "elm,action,unfocus";
+            source: "elm";
+            action: STATE_SET "default" 0.0;
+            target: "bg";
+         }
+      }
+   }
+   group {
+      name: "elm/entry/base-single/fop_entry";
+      styles {
+         style {
+            name: "fop-entry-style-unselected";
+            base: "font=Sans font_size="28" wrap=none color=#969696";
+            tag:  "br" "";
+         }
+         style {
+            name: "fop-entry-style-selected";
+            base: "font=Sans font_size="28" wrap=none color=#4088d3";
+            tag:  "br" "";
+         }
+      }
+      parts {
+         part {
+            name: "bg";
+            scale:1;
+            type: RECT;
+            mouse_events: 0;
+            description {
+               state: "default" 0.0;
+               color: 255 255 255 255;
+            }
+         }
+         part {
+            name: "elm.guide";
+            scale:1;
+            type: TEXTBLOCK;
+            mouse_events: 0;
+            description {
+               state: "default" 0.0;
+               rel1.relative: 0.0 0.0;
+               rel2.relative: 1.0 1.0;
+               align: 0.0 0.0;
+               text {
+                  style: "fop-entry-style-unselected";
+                  min: 0 1;
+               }
+            }
+            description {
+               state: "hidden" 0.0;
+               inherit: "default" 0.0;
+               visible: 0;
+            }
+         }
+         part {
+            name: "label.text.clip";
+            scale:1;
+            type: RECT;
+            description {
+               state: "default" 0.0;
+            }
+         }
+         part {
+            name: "elm.text";
+            scale:1;
+            multiline: 0;
+            entry_mode: EDITABLE;
+            select_mode: DEFAULT;
+            cursor_mode: BEFORE;
+            type: TEXTBLOCK;
+            clip_to: "label.text.clip";
+            source: "elm/entry/selection/fop_entry";
+            source4: "elm/entry/cursor/fop_entry";
+            description {
+               state: "default" 0.0;
+               max: -1 82;
+               rel1.relative: 0.0 0.0;
+               rel2.relative: 1.0 1.0;
+               align: 0.0 0.0;
+               text {
+                  style: "fop-entry-style-selected";
+                  min: 0 1;
+               }
+            }
+         }
+      }
+      programs {
+         program {
+            name: "focus";
+            signal: "load";
+            source: "";
+            action: FOCUS_SET;
+            target: "elm.text";
+         }
+         program {
+            name: "gdisabled";
+            signal: "elm,guide,disabled";
+            source: "elm";
+            action: STATE_SET "hidden" 0.0;
+            target: "elm.guide";
+         }
+         program {
+            name: "genabled";
+            signal: "elm,guide,enabled";
+            source: "elm";
+            action: STATE_SET "default" 0.0;
+            target: "elm.guide";
+         }
+      }
+   }
+   group {
+      name: "find-on-page-layout";
+      images {
+         image: "btn_bar_stop_nor.png" COMP;
+         image: "find_on_page_prev.png" COMP;
+         image: "find_on_page_next.png" COMP;
+         image: "web_shadow.png" COMP;
+      }
+      color_classes{
+         color_class{
+            name: "focusBgColor";
+            color: 69 143 255 255;
+         }
+         color_class{
+            name: "transparent";
+            color: 0 0 0 0;
+         }
+      }
+      styles {
+         style {
+            name: "counter_text";
+            base: "font=Sans font_size=26 wrap=word color=#969696 align=1.0 valign=0.5";
+         }
+      }
+      parts{
+         part {
+            name: "bg_clipper";
+            scale:1;
+            type: RECT;
+            description {
+               state: "default" 0.0;
+               color: 247 247 247 255;
+               align: 0 0;
+               min: 720 104;
+               max: -1 104;
+               rel1 {
+                  relative: 0.0 0.0;
+               }
+               rel2 {
+                  relative: 1.0 1.0;
+               }
+            }
+         }
+         part {
+            name: "entry_spacer";
+            type: SPACER;
+            scale: 1;
+            description {
+               state: "default" 0.0;
+               min: 20 104;
+               max: 20 104;
+               align: 0.0 0.5;
+               fixed: 1 1;
+               rel1 {
+                  relative: 0.0 0.0;
+                  to: "bg_clipper";
+               }
+               rel2 {
+                  relative: 1.0 1.0;
+                  to: "bg_clipper";
+               }
+            }
+         }
+         part {
+            name: "entry_bg";
+            type: SPACER;
+            scale: 1;
+            description {
+               state: "default" 0.0;
+               min: 350 92;
+               max: -1 92;
+               align: 0.0 0.5;
+               fixed: 0 1;
+               rel1 {
+                  relative: 1.0 0.0;
+                  to: "entry_spacer";
+               }
+               rel2 {
+                  relative: 0.0 1.0;
+                  to: "entry_right_spacer";
+               }
+            }
+         }
+         part {
+            name: "elm.swallow.entry";
+            type: SWALLOW;
+            scale: 1;
+            description {
+               state: "default" 0.0;
+               min: 350 92;
+               max: -1 92;
+               align: 0.0 0.5;
+               fixed: 0 1;
+               rel1 {
+                  relative: 0.0 0.0;
+                  to: "entry_bg";
+               }
+               rel2 {
+                  relative: 0.0 1.0;
+                  to_x: "clear_button_bg";
+                  to_y: "entry_bg";
+               }
+            }
+         }
+         part {
+            name: "clear_button_spacer";
+            scale:1;
+            mouse_events: 1;
+            type: SPACER;
+            description {
+               state: "default" 0.0;
+               fixed: 1 1;
+               align: 1 0.5;
+               min: 10 92;
+               max: 10 92;
+               rel1 {
+                  relative: 0.0 0.0;
+                  to: "entry_bg";
+               }
+               rel2 {
+                  relative: 1.0 1.0;
+                  to: "entry_bg";
+               }
+            }
+         }
+         part {
+            name: "clear_button_bg";
+            scale:1;
+            mouse_events: 1;
+            type: RECT;
+            description {
+               state: "default" 0.0;
+               visible: 1;
+               fixed: 1 1;
+               align: 1 0.5;
+               min: 42 92;
+               max: 42 92;
+               rel1 {
+                  relative: 0.0 0.0;
+                  to: "entry_bg";
+               }
+               rel2 {
+                  relative: 0.0 1.0;
+                  to: "clear_button_spacer";
+               }
+               color_class: transparent;
+            }
+         }
+         part {
+            name: "clear_button_icon";
+            type: IMAGE;
+            scale: 1;
+            description {
+               state: "default" 0.0;
+               visible: 0;
+               fixed: 1 1;
+               align: 0 .5;
+               min: 42 46;
+               max: 42 46;
+               rel1 {
+                  relative: 0.0 0.0;
+                  to: "clear_button_bg";
+               }
+               rel2 {
+                  relative: 1.0 1.0;
+                  to: "clear_button_bg";
+               }
+               image.normal: "btn_bar_stop_nor.png";
+            }
+            description {
+               state: "show" 0.0;
+               inherit: "default" 0.0;
+               visible: 1;
+            }
+         }
+         part {
+            name: "clear_button_click";
+            scale:1;
+            type: SWALLOW;
+            description {
+               state: "default" 0.0;
+               visible: 0;
+               align: 0 .5;
+               fixed: 1 1;
+               min: 42 46;
+               max: 42 46;
+               rel1 {
+                  relative: 0.0 0.0;
+                  to: "clear_button_bg";
+               }
+               rel2 {
+                  relative: 1.0 1.0;
+                  to: "clear_button_bg";
+               }
+               color_class: transparent;
+            }
+            description {
+               state: "show" 0.0;
+               inherit: "default" 0.0;
+               visible: 1;
+            }
+         }
+         part {
+            name: "elm.text_spacer";
+            type: SPACER;
+            scale: 1;
+            description {
+               state: "default" 0.0;
+               min: 10 104;
+               max: 10 104;
+               fixed: 1 1;
+               align: 1 0;
+               rel1 {
+                  relative: 0.0 0.0;
+                  to: "bg_clipper";
+               }
+               rel2 {
+                  relative: 0.0 1.0;
+                  to: "down_button_bg";
+               }
+            }
+         }
+         part {
+            name: "elm.text.count";
+            type: TEXTBLOCK;
+            scale: 1;
+            description {
+               state: "default" 0.0;
+               min: 110 104;
+               max: 110 104;
+               fixed: 1 1;
+               align: 1 .5;
+               rel1 {
+                  relative: 0.0 0.0;
+                  to: "bg_clipper";
+               }
+               rel2 {
+                  relative: 0.0 1.0;
+                  to: "elm.text_spacer";
+               }
+               text {
+                  style: "counter_text";
+                  text: "0/0";
+               }
+            }
+         }
+         part {
+            name: "up_button_spacer";
+            scale:1;
+            type: SPACER;
+            description {
+               state: "default" 0.0;
+               fixed: 1 1;
+               align: 1 0;
+               min: 10 104;
+               max: 10 104;
+               rel1 {
+                  relative: 0.0 0.0;
+                  to: "bg_clipper";
+               }
+               rel2 {
+                  relative: 0.0 1.0;
+                  to: "close_bg";
+               }
+            }
+         }
+         part {
+            name: "up_button_bg";
+            scale:1;
+            mouse_events: 1;
+            type: RECT;
+            description {
+               state: "default" 0.0;
+               visible: 1;
+               fixed: 1 1;
+               align: 1 0.5;
+               min: 56 56;
+               max: 56 56;
+               rel1 {
+                  relative: 0.0 0.0;
+                  to: "bg_clipper";
+               }
+               rel2 {
+                  relative: 0.0 1.0;
+                  to: "up_button_spacer";
+               }
+               color_class: transparent;
+            }
+            description {
+               state: "highlight" 0.0;
+               inherit: "default" 0.0;
+               color_class: focusBgColor;
+               visible: 1;
+            }
+         }
+         part {
+            name: "up_button_icon";
+            type: IMAGE;
+            scale: 1;
+            description {
+               state: "default" 0.0;
+               visible: 1;
+               fixed: 1 1;
+               align: 0 0;
+               min: 56 56;
+               max: 56 56;
+               rel1 {
+                  relative: 0.0 0.0;
+                  to: "up_button_bg";
+               }
+               rel2 {
+                  relative: 1.0 1.0;
+                  to: "up_button_bg";
+               }
+               image.normal: "find_on_page_prev.png";
+            }
+         }
+         part {
+            name: "up_button_click";
+            scale:1;
+            type: SWALLOW;
+            description {
+               state: "default" 0.0;
+               visible: 1;
+               align: 0 0;
+               fixed: 1 1;
+               min: 56 56;
+               max: 56 56;
+               rel1 {
+                  relative: 0.0 0.0;
+                  to: "up_button_bg";
+               }
+               rel2 {
+                  relative: 1.0 1.0;
+                  to: "up_button_bg";
+               }
+               color_class: transparent;
+            }
+         }
+         part {
+            name: "down_button_spacer";
+            scale:1;
+            type: SPACER;
+            description {
+               state: "default" 0.0;
+               fixed: 1 1;
+               align: 1  0;
+               min: 10 104;
+               max: 10 104;
+               rel1 {
+                  relative: 0.0 0.0;
+                  to: "bg_clipper";
+               }
+               rel2 {
+                  relative: 0.0 1.0;
+                  to: "up_button_bg";
+               }
+            }
+         }
+         part {
+            name: "down_button_bg";
+            scale:1;
+            mouse_events: 1;
+            type: RECT;
+            description {
+               state: "default" 0.0;
+               visible: 1;
+               fixed: 1 1;
+               align: 1 .5;
+               min: 56 56;
+               max: 56 56;
+               rel1 {
+                  relative: 0.0 0.0;
+                  to: "bg_clipper";
+               }
+               rel2 {
+                  relative: 0.0 1.0;
+                  to: "down_button_spacer";
+               }
+               color_class: transparent;
+            }
+            description {
+               state: "highlight" 0.0;
+               inherit: "default" 0.0;
+               color_class: focusBgColor;
+               visible: 1;
+            }
+         }
+         part {
+            name: "down_button_icon";
+            type: IMAGE;
+            scale: 1;
+            description {
+               state: "default" 0.0;
+               visible: 1;
+               fixed: 1 1;
+               align: 0 0;
+               min: 56 56;
+               max: 56 56;
+               rel1 {
+                  relative: 0.0 0.0;
+                  to: "down_button_bg";
+               }
+               rel2 {
+                  relative: 1.0 1.0;
+                  to: "down_button_bg";
+               }
+               image.normal: "find_on_page_next.png";
+            }
+         }
+         part {
+            name: "down_button_click";
+            scale:1;
+            type: SWALLOW;
+            description {
+               state: "default" 0.0;
+               visible: 1;
+               align: 0 0;
+               fixed: 1 1;
+               min: 56 56;
+               max: 56 56;
+               rel1 {
+                  relative: 0.0 0.0;
+                  to: "down_button_bg";
+               }
+               rel2 {
+                  relative: 1.0 1.0;
+                  to: "down_button_bg";
+               }
+               color_class: transparent;
+            }
+         }
+         part {
+            name: "entry_right_spacer";
+            scale:1;
+            type: SPACER;
+            description {
+               state: "default" 0.0;
+               fixed: 1 1;
+               align: 1  0;
+               min: 10 104;
+               max: 10 104;
+               rel1 {
+                  relative: 0.0 0.0;
+                  to: "bg_clipper";
+               }
+               rel2 {
+                  relative: 0.0 1.0;
+                  to: "elm.text.count";
+               }
+            }
+         }
+         part {
+            name: "close_spacer";
+            scale:1;
+            mouse_events: 1;
+            type: SPACER;
+            description {
+               state: "default" 0.0;
+               fixed: 1 1;
+               align: 1 .5;
+               min: 10 104;
+               max: 10 104;
+               rel1 {
+                  relative: 0.0 0.0;
+                  to: "bg_clipper";
+               }
+               rel2 {
+                  relative: 1.0 1.0;
+                  to: "bg_clipper";
+               }
+            }
+         }
+         part {
+            name: "close_bg";
+            scale:1;
+            mouse_events: 1;
+            type: RECT;
+            description {
+               state: "default" 0.0;
+               visible: 1;
+               fixed: 1 1;
+               align: 1 .5;
+               min: 46 54;
+               max: 46 54;
+               rel1 {
+                  relative: 0.0 0.0;
+                  to: "bg_clipper";
+               }
+               rel2 {
+                  relative: 0.0 1.0;
+                  to: "close_spacer";
+               }
+               color_class: transparent;
+            }
+            description {
+               state: "highlight" 0.0;
+               inherit: "default" 0.0;
+               color_class: focusBgColor;
+               visible: 1;
+            }
+         }
+         part {
+            name: "close_icon";
+            type: IMAGE;
+            scale: 1;
+            description {
+               state: "default" 0.0;
+               visible: 1;
+               fixed: 1 1;
+               align: 0 0;
+               min: 46 54;
+               max: 46 54;
+               rel1 {
+                  relative: 0.0 0.0;
+                  to: "close_bg";
+               }
+               rel2 {
+                  relative: 1.0 1.0;
+                  to: "close_bg";
+               }
+               image.normal: "btn_bar_stop_nor.png";
+            }
+            description {
+               state: "highlight" 0.0;
+               inherit: "default" 0.0;
+               visible: 1;
+            }
+         }
+         part {
+            name: "close_click";
+            scale:1;
+            type: SWALLOW;
+            description {
+               state: "default" 0.0;
+               visible: 1;
+               align: 0 0;
+               fixed: 1 1;
+               min: 46 54;
+               max: 46 54;
+               rel1 {
+                  relative: 0.0 0.0;
+                  to: "close_bg";
+               }
+               rel2 {
+                  relative: 1.0 1.0;
+                  to: "close_bg";
+               }
+               color_class: transparent;
+            }
+         }
+         part {
+            name: "fop_bar_shadow";
+            type: IMAGE;
+            scale: 1;
+            repeat_events: 1;
+            description {
+               state: "default" 0.0;
+               visible: 1;
+               align: 0.0 0.0;
+               fixed: 0 1;
+               min: 720 14;
+               max: -1 14;
+               image.normal: "web_shadow.png";
+               rel1 {
+                  relative: 0.0 1.0;
+                  to: "bg_clipper";
+               }
+               rel2 {
+                  relative: 1.0 1.0;
+                  to: "bg_clipper";
+               }
+            }
+         }
+      }
+      programs{
+         program {
+            name: "mouse_down_close_click";
+            signal: "mouse,down,1";
+            source: "close_click";
+            action: STATE_SET "highlight" 0.0;
+            target: "close_bg";
+            target: "close_icon";
+         }
+         program {
+            name: "mouse_up_close_click";
+            signal: "mouse,up,1";
+            source: "close_click";
+            action: STATE_SET "default" 0.0;
+            target: "close_bg";
+            target: "close_icon";
+         }
+         program {
+            name: "show_clear_button";
+            signal: "show,clear,button,signal";
+            source: "";
+            action: STATE_SET "show" 0.0;
+            target: "clear_button_bg";
+            target: "clear_button_icon";
+            target: "clear_button_click";
+         }
+         program {
+            name: "hide_clear_button";
+            signal: "hide,clear,button,signal";
+            source: "";
+            action: STATE_SET "default" 0.0;
+            target: "clear_button_bg";
+            target: "clear_button_icon";
+            target: "clear_button_click";
+         }
+         program {
+            name: "mouse_down_upbutton_click";
+            signal: "mouse,down,1";
+            source: "up_button_click";
+            action: STATE_SET "highlight" 0.0;
+            target: "up_button_bg";
+            target: "up_button_icon";
+         }
+         program {
+            name: "mouse_up_upbutton_click";
+            signal: "mouse,up,1";
+            source: "up_button_click";
+            action: STATE_SET "default" 0.0;
+            target: "up_button_bg";
+            target: "up_button_icon";
+         }
+         program {
+            name: "mouse_down_downbutton_click";
+            signal: "mouse,down,1";
+            source: "down_button_click";
+            action: STATE_SET "highlight" 0.0;
+            target: "down_button_bg";
+            target: "down_button_icon";
+         }
+         program {
+            name: "mouse_up_downbutton_click";
+            signal: "mouse,up,1";
+            source: "down_button_click";
+            action: STATE_SET "default" 0.0;
+            target: "down_button_bg";
+            target: "down_button_icon";
+         }
+      }
+   }
+}

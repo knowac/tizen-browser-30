@@ -1,0 +1,2193 @@
+msgid "IDS_BR_POP_NETWORK_ERROR"
+msgstr "Greška mreže."
+
+msgid "IDS_BR_BODY_DESTINATIONS_AUTHENTICATION_REQUIRED"
+msgstr "Provjera potrebna."
+
+msgid "IDS_BR_HEADER_SECURITY_WARNING"
+msgstr "Sigurnosno upozorenje"
+
+msgid "IDS_BR_BODY_CERTIFICATES"
+msgstr "Certifikati"
+
+msgid "IDS_BR_HEADER_ISSUED_TO_C"
+msgstr "Izdano za:"
+
+msgid "IDS_BR_HEADER_COMMON_NAME_C"
+msgstr "Zajednički naziv:"
+
+msgid "IDS_BR_HEADER_ORGANIZATION_C"
+msgstr "Organizacija:"
+
+msgid "IDS_BR_HEADER_ORGANIZATIONAL_UNIT_C"
+msgstr "Organizacijska jedinica:"
+
+msgid "IDS_BR_BODY_SECURITY_CERTIFICATE_PROBLEM_MSG"
+msgstr "Greška sigurnosne potvrde za ovu stranicu."
+
+msgid "IDS_BR_OPT_ALLOW"
+msgstr "Dopusti"
+
+msgid "IDS_BR_BODY_PS_REQUESTS_YOUR_LOCATION"
+msgstr "%s traži vašu lokaciju."
+
+msgid "IDS_BR_BODY_REMEMBER_PREFERENCE"
+msgstr "Spremi postavke."
+
+msgid "IDS_BR_BODY_CERTIFICATE_SERIAL_NUMBER"
+msgstr "Serijski broj"
+
+msgid "IDS_BR_HEADER_ISSUED_BY_C"
+msgstr "Izdavač:"
+
+msgid "IDS_BR_HEADER_VALIDITY_C"
+msgstr "Valjanost:"
+
+msgid "IDS_BR_POP_CERTI_VALID_FROM_C"
+msgstr "Vrijedi od:"
+
+msgid "IDS_BR_BODY_CERTIFICATE_VALID_TILL"
+msgstr "Vrijedi do"
+
+msgid "IDS_BR_BODY_ROOTCERTIFICATES_FINGER_PRINT"
+msgstr "Otisak prsta"
+
+msgid "IDS_BR_BODY_SIGNATURE_ALGORITHM_VODA"
+msgstr "Algoritam potpisa"
+
+msgid "IDS_BR_BODY_DOWNLOAD"
+msgstr "Skidanje"
+
+msgid "IDS_BR_BODY_THIS_WEBPAGE"
+msgstr "Ova web-stranica"
+
+msgid "IDS_BR_BODY_AUTHUSERNAME"
+msgstr "Korisničko ime"
+
+msgid "IDS_BR_BODY_AUTHPASSWORD"
+msgstr "Lozinka"
+
+msgid "IDS_BR_OPT_VIEW"
+msgstr "Prikaz"
+
+msgid "IDS_BR_OPT_CANCEL"
+msgstr "Prekid"
+
+msgid "IDS_BR_OPT_SCREEN"
+msgstr "Zaslon"
+
+msgid "IDS_BR_OPT_LTE_GSM_WCDMA_HAUTO_CONNECT"
+msgstr "LTE//GSM/WCDMA (automatsko spajanje)"
+
+msgid "IDS_BR_HEADER_MULTI_WINDOW"
+msgstr "Više prozora"
+
+msgid "IDS_BR_HEADER_CERTIFICATE_INFO"
+msgstr "Informacije o certifikatu"
+
+msgid "IDS_BR_BODY_WEBSITE_SETTINGS"
+msgstr "Postavke web stranice"
+
+msgid "IDS_BR_POP_INVALID_CERTIFICATE"
+msgstr "Neispravna potvrda."
+
+msgid "IDS_BR_BODY_BUTTON_T_TTS"
+msgstr "Tipka"
+
+msgid "IDS_BR_SK_YES"
+msgstr "Da"
+
+msgid "IDS_BR_SK_NO"
+msgstr "Ne"
+
+msgid "IDS_BR_SK_DONE"
+msgstr "OK"
+
+msgid "IDS_BR_SK_CANCEL"
+msgstr "Prekid"
+
+msgid "IDS_BR_BUTTON_MORE"
+msgstr "Više"
+
+msgid "IDS_BR_BODY_NO_ITEMS"
+msgstr "Nema stavki"
+
+msgid "IDS_BR_MBODY_CONNECT_TO_MOBILE_NETWORK"
+msgstr "Spoji na mobilnu mrežu"
+
+msgid "IDS_BR_OPT_DO_NOT_SHOW_AGAIN"
+msgstr "Ne prikazuj više"
+
+msgid "IDS_BR_POP_ONLY_HTTP_OR_HTTPS_URLS_CAN_BE_DOWNLOADED"
+msgstr "Mogu se skinuti samo URL-ovi http ili https."
+
+msgid "IDS_BR_OPT_WEB_SEARCH"
+msgstr "Internet tražilica"
+
+msgid "IDS_BR_OPT_VIEW_IMAGE"
+msgstr "Prikaži sliku"
+
+msgid "IDS_BR_OPT_SAVE_LINK"
+msgstr "Spremi vezu"
+
+msgid "IDS_BR_OPT_SAVE_IMAGE"
+msgstr "Spremi sliku"
+
+msgid "IDS_BR_OPT_COPY_LINK"
+msgstr "Kopiraj adresu"
+
+msgid "IDS_BR_OPT_COPY_IMAGE"
+msgstr "Kopiraj sliku"
+
+msgid "IDS_BR_SK_OK"
+msgstr "U redu"
+
+msgid "IDS_BR_OPT_CALL"
+msgstr "Poziv"
+
+msgid "IDS_BR_BUTTON_FAILED"
+msgstr "Neuspjeh"
+
+msgid "IDS_BR_TPOP_WEBPAGE_ADDED_TO_QUICK_ACCESS"
+msgstr "Web-stranica je dodana na Brzi pristup."
+
+msgid "IDS_BR_TPOP_WEBPAGE_ADDED_TO_BOOKMARKS"
+msgstr "Web-stranica dodana u Oznake."
+
+msgid "IDS_BR_TPOP_QUICK_ACCESS_SHORTCUT_DELETED"
+msgstr "Izbrisan prečac Brzog pristupa."
+
+msgid "IDS_BR_TPOP_PD_ITEMS_DELETED_FROM_BROWSING_HISTORY"
+msgstr "Izbrisano je više stavki (%d) iz povijesti pretraživanja."
+
+msgid "IDS_BR_TPOP_OPENING_SAMSUNG_ACCOUNT_ING"
+msgstr "Otvaranje Samsung računa..."
+
+msgid "IDS_BR_TPOP_LOW_DATA_USAGE_ENABLED"
+msgstr "Uključena mala količina prijenosa podataka."
+
+msgid "IDS_BR_TPOP_LOW_DATA_USAGE_DISABLED_PDP_OF_BANDWIDTH_SAVED"
+msgstr "Isključena mala količina prijenosa podataka. Spremljeno %d % širine pojasa."
+
+msgid "IDS_BR_TPOP_IMAGE_COPIED_TO_CLIPBOARD"
+msgstr "Slika kopirana u međuspremnik."
+
+msgid "IDS_BR_TPOP_FAILED_TO_ADD_TO_HOME_SCREEN_ABB"
+msgstr "Greška dodavanja na početni zaslon."
+
+msgid "IDS_BR_TPOP_DOWNLOADING_IMAGE_ING"
+msgstr "Skidanje slike..."
+
+msgid "IDS_BR_TPOP_DATA_SAVING_STATISTICS_RESET"
+msgstr "Ponovno postavite statistike o pohrani podataka."
+
+msgid "IDS_BR_TPOP_BOOKMARK_DELETED"
+msgstr "Oznaka obrisana."
+
+msgid "IDS_BR_TPOP_ADDED_TO_QUICK_ACCESS_LIST"
+msgstr "Dodano na popis za brzi pristup."
+
+msgid "IDS_BR_TPOP_ADDED_TO_HOME_SCREEN"
+msgstr "Dodano na početni zaslon."
+
+msgid "IDS_BR_TPOP_1_POP_UP_BLOCKED"
+msgstr "Blokiran je 1 skočni prozor."
+
+msgid "IDS_BR_TPOP_1_ITEM_DELETED_FROM_BROWSING_HISTORY"
+msgstr "Izbrisana je 1 stavka iz povijesti pretraživanja."
+
+msgid "IDS_BR_TMBODY_NOTIFICATIONS"
+msgstr "Obavijesti"
+
+msgid "IDS_BR_TAB_MOST_VISITED"
+msgstr "Najposjećenije"
+
+msgid "IDS_BR_TAB_HISTORY"
+msgstr "Povijest"
+
+msgid "IDS_BR_SK_UNTICK_ABB"
+msgstr "Odznači"
+
+msgid "IDS_BR_SK_TABS"
+msgstr "Kartice"
+
+msgid "IDS_BR_SK_MENU"
+msgstr "Meni"
+
+msgid "IDS_BR_SK_DELETE_ABB"
+msgstr "Obriši"
+
+msgid "IDS_BR_SK3_CREATE_FOLDER"
+msgstr "Nova mapa"
+
+msgid "IDS_BR_SK3_CLEAR"
+msgstr "Obriši"
+
+msgid "IDS_BR_SBODY_VIEW_PC_WEBSITES_EASILY_ON_YOUR_MOBILE_DEVICE_THIS_FEATURE_BOOSTS_THE_TEXT_SIZE_TO_MAKE_IT_EASIER_TO_READ_NOTE_C_THE_TEXT_LAYOUT_MAY_CHANGE"
+msgstr "Pregledajte internet stranice računala na svom mobilnom uređaju. Značajka povećava veličinu teksta radi lakšeg čitanja. Napomena: Izgled teksta mogao bi se promijeniti."
+
+msgid "IDS_BR_SBODY_SET_THE_DEVICE_TO_SUGGEST_QUERIES_AND_SITES_IN_THE_WEB_ADDRESS_BAR_AS_YOU_TYPE"
+msgstr "Postavite uređaj da predlaže upite i stranice u traci web-adresa tijekom unosa."
+
+msgid "IDS_BR_SBODY_SET_TEXT_USED_TO_FILL_IN_ONLINE_FORMS_ABB"
+msgstr "Post. tekst za ispunj. obraz. na mreži."
+
+msgid "IDS_BR_SBODY_SET_ADVANCED_SETTINGS_FOR_INDIVIDUAL_WEBSITES"
+msgstr "Postavite napredne postavke za pojedinačne web stranice."
+
+msgid "IDS_BR_SBODY_REMEMBER_DATA_TYPED_IN_FORMS_FOR_LATER_USE"
+msgstr "Zapamti podatke unesene u obrascima za kasnije potrebe."
+
+msgid "IDS_BR_SBODY_PREDICT_RELATED_QUERIES_AND_POPULAR_SITES_IN_THE_NAVIGATION_BAR_AS_YOU_TYPE"
+msgstr "Predvidite povezane upite i popularne stranice u navigacijskoj traci kako tipkate."
+
+msgid "IDS_BR_SBODY_OVERRIDE_WEBSITE_REQUESTS_TO_CONTROL_ZOOM_LEVEL"
+msgstr "Poništite zahtjeve web stranica za upravljanje zumiranjem."
+
+msgid "IDS_BR_SBODY_DISPLAY_IMAGES_ON_WEBPAGES"
+msgstr "Prikaz slika na web stranicama."
+
+msgid "IDS_BR_SBODY_COMPRESS_CONTENT_FROM_WEBSITES_TO_USE_LESS_DATA"
+msgstr "Za korištenje manje količine podataka komprimirajte sadržaj s web-mjesta."
+
+msgid "IDS_BR_SBODY_CLEAR_NOTIFICATION_ACCESS_INFORMATION_FOR_ALL_WEBSITES"
+msgstr "Izbriši informacije o pristupu obavijesti za sva web-mjesta."
+
+msgid "IDS_BR_SBODY_CHANGE_THE_TEXT_SIZE_FOR_EASIER_READING_ESPECIALLY_WHEN_VIEWING_DESKTOP_VERSIONS_OF_WEBSITES_ON_YOUR_PHONE_NOTE_THAT_THE_TEXT_MSG_US"
+msgstr "Change the text size for easier reading, especially when viewing desktop versions of websites on your phone. Note that the text layout may change as a result."
+
+msgid "IDS_BR_SBODY_CHANGE_THE_TEXT_SIZE_FOR_EASIER_READING_ESPECIALLY_WHEN_VIEWING_DESKTOP_VERSIONS_OF_WEBSITES_NOTE_THAT_THE_TEXT_LAYOUT_MAY_CHANGE_AS_A_RESULT"
+msgstr "Promijenite veličinu teksta za lakše čitanje, pogotovo pri gledanju verzija web-stranica za radne površine. Imajte na umu da će se izgled teksta možda promijeniti."
+
+msgid "IDS_BR_SBODY_ALL_WEBSITE_NOTIFICATION_ACCESS_INFORMATION_WILL_BE_CLEARED"
+msgstr "Izbrisat će se sve informacije o pristupu obavijesti web-mjesta."
+
+msgid "IDS_BR_SBODY_ALLOW_SITES_TO_SAVE_AND_READ_COOKIES"
+msgstr "Dopusti stranicama spremanje i čitanje kolačića."
+
+msgid "IDS_BR_SBODY_ALLOW_SITES_TO_ACCESS_YOUR_LOCATION_DATA"
+msgstr "Dopusti stranicama pristup podacima o lokaciji."
+
+msgid "IDS_BR_POP_YOU_MAY_NOT_BE_ABLE_TO_CLIP_SOME_WEBPAGES_ACCURATELY"
+msgstr "Možda nećete moći točno spojiti neke web stranice."
+
+msgid "IDS_BR_POP_YOUR_HISTORY_WILL_BE_CLEARED"
+msgstr "Vaša će se povijest izbrisati."
+
+msgid "IDS_BR_POP_UNABLE_TO_VIEW_THE_CERTIFICATE_THE_PAGE_INFORMATION_HAS_BEEN_CHANGED"
+msgstr "Nije moguće pregledati potvrdu. Promijenile su se informacije o stranici."
+
+msgid "IDS_BR_POP_TO_SIGN_IN_TO_THIS_WEBSITE_USING_YOUR_FINGERPRINTS_GO_TO_SETTINGS_AND_ENABLE_WEB_SIGN_IN"
+msgstr "Za prijavljivanje na ovu web-stranicu pomoću otisaka prstiju idite u Postavke i uključite Prijavu preko interneta."
+
+msgid "IDS_BR_POP_THIS_CERTIFICATE_IS_NOT_FROM_A_TRUSTED_AUTHORITY"
+msgstr "Potvrda nije pouzdana."
+
+msgid "IDS_BR_POP_THIS_CERTIFICATE_IS_FROM_A_TRUSTED_AUTHORITY"
+msgstr "Potvrda je pouzdana."
+
+msgid "IDS_BR_POP_THE_LOCATION_PERMISSION_DATA_FOR_THIS_WEBSITE_WILL_BE_CLEARED"
+msgstr "Izbrisat će se lokacijske dozvole za ovo web-mjesto."
+
+msgid "IDS_BR_POP_THE_DESTINATION_FOLDER_IS_THE_SAME_AS_THE_SOURCE_FOLDER"
+msgstr "Izvorišna i odredišna mapa su iste."
+
+msgid "IDS_BR_POP_THE_DESTINATION_FOLDER_IS_A_SUBFOLDER_OF_THE_SOURCE_FOLDER"
+msgstr "Odredišna mapa je podmapa izvorišne mape."
+
+msgid "IDS_BR_POP_THERE_ARE_PROBLEMS_WITH_THE_SECURITY_CERTIFICATE_FOR_THIS_WEBSITE"
+msgstr "Došlo je do pogreške sigurnosne potvrde za ovo web-mjesto."
+
+msgid "IDS_BR_POP_STARTING_DOWNLOAD_ING"
+msgstr "Pokretanje skidanja..."
+
+msgid "IDS_BR_POP_SOME_OLD_HTML_WEBSITES_MAY_NOT_SUPPORT_THIS_FEATURE"
+msgstr "Neke starije HTML internet stranice možda neće podržavati ovu značajku."
+
+msgid "IDS_BR_POP_SET_AS_HOMEPAGE"
+msgstr "Postavi kao početnu stranicu"
+
+msgid "IDS_BR_POP_SETTINGS_WILL_BE_RESET_TO_DEFAULTS"
+msgstr "Postavke će biti vraćene na zadano."
+
+msgid "IDS_BR_POP_SETTIGS_SAVED"
+msgstr "Postavke spremljene."
+
+msgid "IDS_BR_POP_SECURITY_POLICY_RESTRICTS_USE_OF_INTERNET_BROWSER"
+msgstr "Sigurnosne odredbe ograničavaju korištenje internet preglednika."
+
+msgid "IDS_BR_POP_SAVED_TO_BOOKMARKS"
+msgstr "Spremljeno u Oznake."
+
+msgid "IDS_BR_POP_RENAME_TAG"
+msgstr "Preimenuj oznaku"
+
+msgid "IDS_BR_POP_PD_PROFILES_WILL_BE_DELETED"
+msgstr "%d profila će biti obrisano."
+
+msgid "IDS_BR_POP_PAGES_THAT_YOU_VIEW_WILL_NOT_APPEAR_IN_YOUR_BROWSER_HISTORY_OR_SEARCH_HISTORY_AND_THEY_WILL_NOT_LEAVE_OTHER_TRACES_LIKE_COOKIES"
+msgstr "Stranice koje pregledavate neće se prikazati u povijesti preglednika ili povijesti pretraživanja i neće ostavljati druge tragove, poput kolačića."
+
+msgid "IDS_BR_POP_P1SS_HP2SS_IS_REQUESTING_PERMISSION_TO_USE_YOUR_CAMERA"
+msgstr "%1$s (%2$s) traži dopuštenje da koristi vašu kameru."
+
+msgid "IDS_BR_POP_P1SS_HP2SS_IS_REQUESTING_PERMISSION_TO_STORE_DATA_ON_YOUR_DEVICE_FOR_OFFLINE_USE"
+msgstr "%1$s (%2$s) traži dopuštenje da pohrani veću količinu podataka na vaš uređaj za korištenje izvan mreže."
+
+msgid "IDS_BR_POP_P1SS_HP2SS_IS_REQUESTING_PERMISSION_TO_SHOW_NOTIFICATIONS"
+msgstr "%1$s (%2$s) traži dopuštenje da prikaže obavijesti."
+
+msgid "IDS_BR_POP_P1SS_HP2SS_IS_REQUESTING_PERMISSION_TO_CHANGE_HOW_YOUR_BROWSER_WORKS_ON_MSG"
+msgstr "%1$s (%2$s) traži dopuštenje da promijeni način rada preglednika na ovoj stranici. Ovo može biti pokušaj napada na vaš sustav. Ako ne vjerujete ovoj web stranici ili ne znate zašto se ovaj zahtjev pojavio, dodirnite Prekid"
+
+msgid "IDS_BR_POP_P1SS_HP2SS_IS_REQUESTING_PERMISSION_TO_ACCESS_YOUR_LOCATION"
+msgstr "%1$s (%2$s) traži dopuštenje da pristupi vašoj lokaciji."
+
+msgid "IDS_BR_POP_P1SS_HP2SS_IS_ATTEMPTING_TO_STORE_A_LARGE_AMOUNT_OF_DATA_ON_YOUR_DEVICE_FOR_OFFLINE_USE"
+msgstr "%1$s (%2$s) pokušava pohraniti veću količinu podataka na vaš uređaj za korištenje izvan mreže."
+
+msgid "IDS_BR_POP_P1SS_HAS_BEEN_DETECTED_DETECTED_IN_C_P2SS_SOME_CONTENT_HAS_BEEN_BLOCKED_TO_PROTECT_YOUR_DEVICE"
+msgstr "„%1$s” je otkriveno.\nOtkriveno u: „%2$s”\n\nNeki sadržaji su blokirani radi zaštite uređaja."
+
+msgid "IDS_BR_POP_P1SS_HAS_BEEN_DETECTED_DETECTED_IN_C_P2SS_OPEN_WEBPAGE_ANYWAY_Q"
+msgstr "„%1$s” je otkriveno.\nOtkriveno u: „%2$s”\n\nSvejedno otvoriti web-stranicu?"
+
+msgid "IDS_BR_POP_NOT_ENOUGH_MEMORY_DELETE_SOME_ITEMS_AND_TRY_AGAIN"
+msgstr "Nedovoljno memorije. Obrišite stavke i ponovite."
+
+msgid "IDS_BR_POP_NOT_ALLOWED"
+msgstr "Nije dopušteno."
+
+msgid "IDS_BR_POP_MOVED"
+msgstr "Premješteno."
+
+msgid "IDS_BR_POP_ENTER_URL"
+msgstr "Unesite adresu."
+
+msgid "IDS_BR_POP_ENTER_BOOKMARK_NAME"
+msgstr "Unesite naziv oznake."
+
+msgid "IDS_BR_POP_DIALING_ING_VZW"
+msgstr "Dialing..."
+
+msgid "IDS_BR_POP_DELETE_WEBSITE_LOCATION_ACCESS_INFORMATION_Q"
+msgstr "Obrisati informacije o pristupu lokaciji web stranice?"
+
+msgid "IDS_BR_POP_DELETE_THIS_QUICK_ACCESS_SHORTCUT_Q"
+msgstr "Izbrisati ovaj prečac Brzog pristupa?"
+
+msgid "IDS_BR_POP_DELETE_THIS_PAGE_Q"
+msgstr "Izbrisati ovu stranicu?"
+
+msgid "IDS_BR_POP_DELETE_THIS_BOOKMARK_Q"
+msgstr "Izbrisati ovu oznaku?"
+
+msgid "IDS_BR_POP_DELETE_STORED_WEBSITE_DATA_Q"
+msgstr "Izbrisati spremljene podatke web-stranice?"
+
+msgid "IDS_BR_POP_DELETE_SIGN_IN_DATA_FOR_THIS_WEBSITE_Q"
+msgstr "Izbrisati podatke o prijavi za ovu web-stranicu?"
+
+msgid "IDS_BR_POP_DELETE_SIGN_IN_DATA_FOR_PD_WEBSITES_Q"
+msgstr "Izbrisati podatke o prijavi za %d web-stranice?"
+
+msgid "IDS_BR_POP_DELETE_PD_SAVED_WEB_PAGES_Q"
+msgstr "Izbrisati %d spremljene web-stranice?"
+
+msgid "IDS_BR_POP_DELETE_PD_QUICK_ACCESS_SHORTCUTS_Q"
+msgstr "Izbrisati %d prečace Brzog pristupa?"
+
+msgid "IDS_BR_POP_DELETE_PD_BOOKMARKS_Q"
+msgstr "Izbrisati %d oznaka?"
+
+msgid "IDS_BR_POP_DELETE_ALL_WEBSITE_DATA_AND_LOCATION_PERMISSIONS_Q"
+msgstr "Obrisati sve podatke o internet stranici i dozvole lokacije?"
+
+msgid "IDS_BR_POP_DELETEHISTORYQUESTION"
+msgstr "Obrisati povijest?"
+
+msgid "IDS_BR_POP_CONTINUE"
+msgstr "Nastavak"
+
+msgid "IDS_BR_POP_CLOSE_APPLICATION"
+msgstr "Prekid aplikacije"
+
+msgid "IDS_BR_POP_CLEAR_Q"
+msgstr "Obrisati?"
+
+msgid "IDS_BR_POP_CLEAR_HISTORY_Q"
+msgstr "Obrisati povijest?"
+
+msgid "IDS_BR_POP_BOOKMARK_REMOVED"
+msgstr "Oznaka uklonjena."
+
+msgid "IDS_BR_POP_ALREADY_EXISTS"
+msgstr "Već postoji."
+
+msgid "IDS_BR_POP_ALL_STORED_DATA_FOR_THIS_WEBSITE_WILL_BE_CLEARED"
+msgstr "Izbrisat će se svi spremljeni podaci za ovo web-mjesto."
+
+msgid "IDS_BR_POP_ALL_STORED_AND_LOCATION_PERMISSION_DATA_FOR_THIS_WEBSITE_WILL_BE_CLEARED"
+msgstr "Izbrisat će se svi spremljeni podaci te lokacijske dozvole za ovo web-mjesto."
+
+msgid "IDS_BR_POP_ALL_STORED_AND_LOCATION_PERMISSION_DATA_FOR_THESE_WEBSITES_WILL_BE_CLEARED"
+msgstr "Izbrisat će se svi spremljeni podaci i lokacijske dozvole za ova web-mjesta."
+
+msgid "IDS_BR_POP_ALL_SETTINGS_WILL_BE_RESET_TO_THEIR_DEFAULTS"
+msgstr "Sve će se postavke vratiti na zadane."
+
+msgid "IDS_BR_POP_ALL_ITEMS_WILL_BE_DELETED_FROM_BROWSING_HISTORY"
+msgstr "Sve će se stavke izbrisati iz povijesti pretraživanja."
+
+msgid "IDS_BR_POP_ALLOW_SITES_TO_SAVE_AND_READ_COOKIES"
+msgstr "Dopusti stranicama spremanje i čitanje kolačića."
+
+msgid "IDS_BR_POP_ADDED_TO_BOOKMARKS"
+msgstr "Dodano u oznake."
+
+msgid "IDS_BR_OPT_WINDOWS"
+msgstr "Prozori"
+
+msgid "IDS_BR_OPT_VIEW_CERTIFICATE"
+msgstr "Prikaži potvrdu"
+
+msgid "IDS_BR_OPT_UNICODE_HUTF_8"
+msgstr "Unicode (UTF-8)"
+
+msgid "IDS_BR_OPT_THUMBNAIL_VIEW"
+msgstr "Sličice"
+
+msgid "IDS_BR_OPT_TEXT_ENCODING"
+msgstr "Kodiranje teksta"
+
+msgid "IDS_BR_OPT_SHRINK_TEXT"
+msgstr "Smanji tekst"
+
+msgid "IDS_BR_OPT_SETTINGS_ABB"
+msgstr "Postavke"
+
+msgid "IDS_BR_OPT_SEND_MESSAGE_VODA"
+msgstr "Pošalji poruku"
+
+msgid "IDS_BR_OPT_SENDURLVIA_EMAIL"
+msgstr "Email"
+
+msgid "IDS_BR_OPT_SELECT_TEXT"
+msgstr "Odaberi tekst"
+
+msgid "IDS_BR_OPT_SELECT_ALL_ABB"
+msgstr "Odaberite sve"
+
+msgid "IDS_BR_OPT_SELECT_ALL"
+msgstr "Odaberite sve"
+
+msgid "IDS_BR_OPT_SELECTION_MODE"
+msgstr "Način odabira"
+
+msgid "IDS_BR_OPT_SELECTED"
+msgstr "Odabrano"
+
+msgid "IDS_BR_OPT_SAVE_TO_KEEPIT_ABB"
+msgstr "Spremi u KeepIt"
+
+msgid "IDS_BR_OPT_SAVE_PAGE_FOR_OFFLINE_VIEWING_ABB"
+msgstr "Spremi str. za izvanmr. pregl."
+
+msgid "IDS_BR_OPT_SAVE_LINKED_ITEM_IN_KEEPIT_ABB"
+msgstr "Spremi pov. stav. u KeepIt"
+
+msgid "IDS_BR_OPT_SAVE_FOR_OFFLINE_VIEWING_ABB"
+msgstr "Spremi za izvanmrežni pregled"
+
+msgid "IDS_BR_OPT_SAVEWEBPAGE"
+msgstr "Internet stranica"
+
+msgid "IDS_BR_OPT_SAVEDPAGES"
+msgstr "Spremljene stranice"
+
+msgid "IDS_BR_OPT_RSS_VIEW"
+msgstr "Pogled"
+
+msgid "IDS_BR_OPT_REORDER_ABB"
+msgstr "Poredaj"
+
+msgid "IDS_BR_OPT_RENAME_FOLDER"
+msgstr "Preimenuj mapu"
+
+msgid "IDS_BR_OPT_REMOVE"
+msgstr "Ukloni"
+
+msgid "IDS_BR_OPT_READER_MODE_TTS"
+msgstr "Način čitača"
+
+msgid "IDS_BR_OPT_PASSWORDS"
+msgstr "Lozinke"
+
+msgid "IDS_BR_OPT_OPEN_IN_NEW_WINDOW_ABB"
+msgstr "Otvori u novom prozoru"
+
+msgid "IDS_BR_OPT_OPEN"
+msgstr "Početna"
+
+msgid "IDS_BR_OPT_OFFLINE_PAGES_ABB"
+msgstr "Izvanmrežne stranice"
+
+msgid "IDS_BR_OPT_NEW_WINDOW"
+msgstr "Novi prozor"
+
+msgid "IDS_BR_OPT_MINIMISE"
+msgstr "Minimiziraj"
+
+msgid "IDS_BR_OPT_MEDIUM_M_QUALITY"
+msgstr "Srednja"
+
+msgid "IDS_BR_OPT_LOW_M_QUALITY"
+msgstr "Niska"
+
+msgid "IDS_BR_OPT_LOCATION_ACCESS_PRIVILEGES"
+msgstr "Prava pristupa lokaciji"
+
+msgid "IDS_BR_OPT_LOAD_IMAGES"
+msgstr "Učitaj slike"
+
+msgid "IDS_BR_OPT_LATIN_1_HISO_8859_1"
+msgstr "Latin-1 (ISO-8859-1)"
+
+msgid "IDS_BR_OPT_KOREAN_HEUC_KR"
+msgstr "Korejski (EUC-KR)"
+
+msgid "IDS_BR_OPT_JAPANESE_HSHIFT_JIS"
+msgstr "Japanski (SHIFT JIS)"
+
+msgid "IDS_BR_OPT_JAPANESE_HISO_2022_JP"
+msgstr "Japanski (ISO-2022-JP)"
+
+msgid "IDS_BR_OPT_JAPANESE_HEUC_JP"
+msgstr "Japanski (EUC-JP)"
+
+msgid "IDS_BR_OPT_INCOGNITO_MODE_ABB"
+msgstr "Tajni način"
+
+msgid "IDS_BR_OPT_HUGE"
+msgstr "Jako veliko"
+
+msgid "IDS_BR_OPT_HOME_SCREEN_AS_WEB_CLIP_ABB"
+msgstr "Poč. zaslon kao web-isječak"
+
+msgid "IDS_BR_OPT_HOME_SCREEN_AS_SHORTCUT_ABB"
+msgstr "Početni zaslon kao prečac"
+
+msgid "IDS_BR_OPT_HIGH_M_QUALITY"
+msgstr "Visoka"
+
+msgid "IDS_BR_OPT_GOFORWARD"
+msgstr "Naprijed"
+
+msgid "IDS_BR_OPT_GOBACKWARD"
+msgstr "Nazad"
+
+msgid "IDS_BR_OPT_GIANT_M_TEXTSIZE"
+msgstr "Ogromno"
+
+msgid "IDS_BR_OPT_FIND_ON_PAGE_ABB"
+msgstr "Traži na stranici"
+
+msgid "IDS_BR_OPT_FIND_ON_PAGE"
+msgstr "Traži na stranici"
+
+msgid "IDS_BR_OPT_FEEDS_SUBSCRIBED_TO_ABB"
+msgstr "Kanali s pretplatom"
+
+msgid "IDS_BR_OPT_ENLARGE_TEXT"
+msgstr "Povećaj tekst"
+
+msgid "IDS_BR_OPT_ENABLE_SECRET_MODE_ABB"
+msgstr "Uključi Tajni način"
+
+msgid "IDS_BR_OPT_ENABLE_NIGHT_MODE_ABB"
+msgstr "Uključi Noćni način"
+
+msgid "IDS_BR_OPT_ENABLE_LOW_DATA_USAGE_ABB"
+msgstr "Uključi malu količ. prij. pod."
+
+msgid "IDS_BR_OPT_DRAG_AND_DROP"
+msgstr "Dovuci i ispusti"
+
+msgid "IDS_BR_OPT_DISABLE_SECRET_MODE_ABB"
+msgstr "Isključi Tajni način"
+
+msgid "IDS_BR_OPT_DISABLE_NIGHT_MODE_ABB"
+msgstr "Isključi Noćni način"
+
+msgid "IDS_BR_OPT_DISABLE_LOW_DATA_USAGE_ABB"
+msgstr "Isklj. malu količ. prij. pod."
+
+msgid "IDS_BR_OPT_DISABLED"
+msgstr "Isključeno"
+
+msgid "IDS_BR_OPT_DELETE_SAVED_PAGE_ABB"
+msgstr "Obriši spremljenu stranicu"
+
+msgid "IDS_BR_OPT_DELETE_HISTORY"
+msgstr "Obriši povijest"
+
+msgid "IDS_BR_OPT_DATA_NETWORK"
+msgstr "Podatkovna mreža"
+
+msgid "IDS_BR_OPT_COPY_TO_CLIPBOARD"
+msgstr "Kopiraj u međuspremnik"
+
+msgid "IDS_BR_OPT_COPY_LINK_URL"
+msgstr "Kopiraj adresu"
+
+msgid "IDS_BR_OPT_COPY"
+msgstr "Kopija"
+
+msgid "IDS_BR_OPT_CLOSE_ALL"
+msgstr "Zatvori sve"
+
+msgid "IDS_BR_OPT_CLEAR_ALL"
+msgstr "Obriši sve"
+
+msgid "IDS_BR_OPT_CHINESE_HGBK"
+msgstr "Kineski (GBK)"
+
+msgid "IDS_BR_OPT_CHINESE_HBIG5"
+msgstr "Kineski (Big5)"
+
+msgid "IDS_BR_OPT_CACHE"
+msgstr "Međuspremnik"
+
+msgid "IDS_BR_OPT_ADD_TO_WEB_CLIP"
+msgstr "Dodaj u Internet zapise"
+
+msgid "IDS_BR_OPT_ADD_TO_QUICK_ACCESS"
+msgstr "Dodaj na brzi pristup"
+
+msgid "IDS_BR_OPT_ADD_TO_HOME_SCREEN_ABB"
+msgstr "Dodaj na početni zaslon"
+
+msgid "IDS_BR_OPT_ADD_TO_HOME"
+msgstr "Dodaj na početnu"
+
+msgid "IDS_BR_OPT_ADD_OR_REMOVE_BOOKMARK"
+msgstr "Dodajte ili uklonite oznaku"
+
+msgid "IDS_BR_OPT_ADD_BOOKMARK_ABB"
+msgstr "Dodaj oznaku"
+
+msgid "IDS_BR_OPT_ADD_BOOKMARK"
+msgstr "Dodaj oznaku"
+
+msgid "IDS_BR_OPT1_EXTENSION"
+msgstr "Ekstenzija"
+
+msgid "IDS_BR_NPBODY_SEARCH_OR_ENTER_URL_ABB"
+msgstr "Potraž. ili upišite URL"
+
+msgid "IDS_BR_NPBODY_NO_WEBSITE_HISTORY"
+msgstr "Nema povijesti web-mjesta"
+
+msgid "IDS_BR_NPBODY_NO_WEBSITES"
+msgstr "Nema web-stranica"
+
+msgid "IDS_BR_NPBODY_NO_WEBPAGES"
+msgstr "Nema internetskih stranica"
+
+msgid "IDS_BR_NPBODY_NO_SHORTCUTS"
+msgstr "Nema prečaca"
+
+msgid "IDS_BR_MBODY_WEB_ADDRESS_SUGGESTIONS"
+msgstr "Prijedlozi web-adresa"
+
+msgid "IDS_BR_MBODY_WEBSITES"
+msgstr "Web-stranice"
+
+msgid "IDS_BR_MBODY_VIEW_MORE"
+msgstr "Vidi još"
+
+msgid "IDS_BR_MBODY_URL_SUGGESTIONS"
+msgstr "URL prijedlozi"
+
+msgid "IDS_BR_MBODY_TEXT_BOOSTER"
+msgstr "Povećanje teksta"
+
+msgid "IDS_BR_MBODY_SET_HOMEPAGE"
+msgstr "Postavi početnu stranicu"
+
+msgid "IDS_BR_MBODY_RUN_JAVASCRIPT"
+msgstr "Pokreni JavaScript"
+
+msgid "IDS_BR_MBODY_RESET_SETTINGS"
+msgstr "Poništi postavke"
+
+msgid "IDS_BR_MBODY_PRELOAD_WEBPAGES"
+msgstr "Učitaj internet. stranice"
+
+msgid "IDS_BR_MBODY_PRELOAD_LINKED_WEBPAGES"
+msgstr "Učitaj povezane stranice"
+
+msgid "IDS_BR_MBODY_PRELOAD_AVAILABLE_LINKS"
+msgstr "Učitaj dostupne poveznice"
+
+msgid "IDS_BR_MBODY_LOW_DATA_USAGE"
+msgstr "Mala količ. prij. podat."
+
+msgid "IDS_BR_MBODY_LOCATION_ACCESS"
+msgstr "Pristup lokaciji"
+
+msgid "IDS_BR_MBODY_IMAGE_QUALITY"
+msgstr "Kvaliteta slike"
+
+msgid "IDS_BR_MBODY_HIDE_ADDRESS_BAR"
+msgstr "Sakrij adresnu traku"
+
+msgid "IDS_BR_MBODY_DOWNLOAD_FEED_CONTENT"
+msgstr "Skini sadržaj kanala"
+
+msgid "IDS_BR_MBODY_DELETE_SIGN_IN_DATA"
+msgstr "Izbriši podatke o prijavi"
+
+msgid "IDS_BR_MBODY_DATA_SAVING_STATISTICS"
+msgstr "Statistika o pohrani pod."
+
+msgid "IDS_BR_MBODY_CONTENT"
+msgstr "Sadržaj"
+
+msgid "IDS_BR_MBODY_CLEAR_NOTIFICATION_DATA"
+msgstr "Izbr. podatke obavijesti"
+
+msgid "IDS_BR_MBODY_AUTO_FILL_FORMS"
+msgstr "Automatski popuni obrasce"
+
+msgid "IDS_BR_MBODY_ADD_PROFILE"
+msgstr "Dodaj profil"
+
+msgid "IDS_BR_MBODY_ACCESS_LOCATION"
+msgstr "Pristupi lokaciji"
+
+msgid "IDS_BR_HEADER_WINDOW_LIMIT_REACHED"
+msgstr "Dosegnuto ograničenje prozora"
+
+msgid "IDS_BR_HEADER_WEB_NOTIFICATIONS_ABB"
+msgstr "Web-obavijesti"
+
+msgid "IDS_BR_HEADER_WEB_NOTIFICATION"
+msgstr "Web obavijest"
+
+msgid "IDS_BR_HEADER_VALIDITY"
+msgstr "Valjanost"
+
+msgid "IDS_BR_HEADER_UNABLE_TO_OPEN_WINDOW_ABB"
+msgstr "Nije moguće otvoriti prozor"
+
+msgid "IDS_BR_HEADER_UNABLE_TO_OPEN_FILE"
+msgstr "Nemoguće otvoriti datoteku"
+
+msgid "IDS_BR_HEADER_UNABLE_TO_MOVE_BOOKMARKS_ABB"
+msgstr "Nije moguće pomaknuti oznaku"
+
+msgid "IDS_BR_HEADER_SITE_NOT_TRUSTED_ABB"
+msgstr "Nepouzdana stranica"
+
+msgid "IDS_BR_HEADER_SET_HOMEPAGE_ABB"
+msgstr "Postavi početnu stranicu"
+
+msgid "IDS_BR_HEADER_SERIAL_NUMBER_C_ABB"
+msgstr "Serijski broj:"
+
+msgid "IDS_BR_HEADER_SELECT_SIGN_IN_DATA_FOR_ABB"
+msgstr "Odaberite podatke za prijavu"
+
+msgid "IDS_BR_HEADER_SELECT_SHORTCUTS_ABB"
+msgstr "Odaberite prečace"
+
+msgid "IDS_BR_HEADER_SELECT_BOOKMARKS"
+msgstr "Odaberi oznake"
+
+msgid "IDS_BR_HEADER_SELECT_BOOKMARK"
+msgstr "Odaberi oznaku"
+
+msgid "IDS_BR_HEADER_SECURITY_CERTIFICATE"
+msgstr "Sigurnosna potvrda"
+
+msgid "IDS_BR_HEADER_REORDER_QUICK_ACCESS_SHORTCUTS_ABB"
+msgstr "Poredaj prečace Brzog pristupa"
+
+msgid "IDS_BR_HEADER_QUICK_ACCESS_ABB"
+msgstr "Brzi pristup"
+
+msgid "IDS_BR_HEADER_PROFILES"
+msgstr "Profili"
+
+msgid "IDS_BR_HEADER_POP_UP_BLOCKED_ABB"
+msgstr "Blokirani skočni prozori"
+
+msgid "IDS_BR_HEADER_POPULAR_WEBSITES_ABB"
+msgstr "Popularne web-stranice"
+
+msgid "IDS_BR_HEADER_ORGANISATION_C_ABB"
+msgstr "Organizacija:"
+
+msgid "IDS_BR_HEADER_ORGANISATIONAL_UNIT_C"
+msgstr "Organizacijska jedinica:"
+
+msgid "IDS_BR_HEADER_NEWER_M_INTERNET_HISTORY_ABB"
+msgstr "Newer"
+
+msgid "IDS_BR_HEADER_ISSUED_ON_C"
+msgstr "Datum izdavanja:"
+
+msgid "IDS_BR_HEADER_ISSUED_BY"
+msgstr "Izdavač"
+
+msgid "IDS_BR_HEADER_HTML5_EXTENSION"
+msgstr "HTML5 ekstenzija"
+
+msgid "IDS_BR_HEADER_FORM_DATA"
+msgstr "Podaci formi"
+
+msgid "IDS_BR_HEADER_EXPIRES_ON_C"
+msgstr "Datum isteka:"
+
+msgid "IDS_BR_HEADER_ENABLE_WEB_SIGN_IN"
+msgstr "Uključi prijavu preko interneta"
+
+msgid "IDS_BR_HEADER_EDIT_BOOKMARK"
+msgstr "Uredi oznaku"
+
+msgid "IDS_BR_HEADER_DELETE_WEBSITE_DATA_ABB"
+msgstr "Izbriši podatke web-stranice"
+
+msgid "IDS_BR_HEADER_DELETE_SIGN_IN_DATA_ABB"
+msgstr "Izbriši podatke o prijavi"
+
+msgid "IDS_BR_HEADER_DELETE_PROFILE"
+msgstr "Obriši profil"
+
+msgid "IDS_BR_HEADER_DELETE_BOOKMARKS_ABB"
+msgstr "Izbriši oznake"
+
+msgid "IDS_BR_HEADER_DATA_CONNECTIVITY_PROBLEM"
+msgstr "Greška podatkovne veze"
+
+msgid "IDS_BR_HEADER_COMMON_NAME_C_ABB"
+msgstr "Zajednički naziv:"
+
+msgid "IDS_BR_HEADER_CLOSE_APPLICATION"
+msgstr "Zatvori aplikaciju"
+
+msgid "IDS_BR_HEADER_CLEAR_PERSONALISED_DATA"
+msgstr "Obriši personalizirane podatke"
+
+msgid "IDS_BR_HEADER_CLEAR_LOCATION_ACCESS"
+msgstr "Obriši pristup lokaciji"
+
+msgid "IDS_BR_HEADER_BANDWIDTH_MANAGEMENT_ABB"
+msgstr "Upravljanje šir. pojasa"
+
+msgid "IDS_BR_HEADER_ADVANCEDCERTIFICATES"
+msgstr "Certifikati"
+
+msgid "IDS_BR_BUTTON_RESET_ABB"
+msgstr "Poništi"
+
+msgid "IDS_BR_BUTTON_HOMEPAGE_ABB"
+msgstr "Poč. str."
+
+msgid "IDS_BR_BUTTON_FIND_ABB"
+msgstr "Traži"
+
+msgid "IDS_BR_BUTTON_BACK_ABB"
+msgstr "Nazad"
+
+msgid "IDS_BR_BUTTON_ALWAYS_SHOW_ABB"
+msgstr "Uvij. prik."
+
+msgid "IDS_BR_BUTTON2_WEB_PORTAL"
+msgstr "Web portal"
+
+msgid "IDS_BR_BUTTON2_SPORT"
+msgstr "Sport"
+
+msgid "IDS_BR_BUTTON2_SOCIAL"
+msgstr "Društveno"
+
+msgid "IDS_BR_BUTTON2_SHOPPING"
+msgstr "Kupnja"
+
+msgid "IDS_BR_BUTTON2_PAYMENT"
+msgstr "Plaćanje"
+
+msgid "IDS_BR_BUTTON2_HOBBIES"
+msgstr "Hobiji"
+
+msgid "IDS_BR_BUTTON2_GO_TO_HISTORY"
+msgstr "Idi u povijest"
+
+msgid "IDS_BR_BUTTON2_ENTERTAINMENT"
+msgstr "Zabava"
+
+msgid "IDS_BR_BODY_WINDOW_MANAGER"
+msgstr "Upravljanje prozorima"
+
+msgid "IDS_BR_BODY_WEB_ADDRESS"
+msgstr "Internetska adresa"
+
+msgid "IDS_BR_BODY_VOICE_INPUT_TTS"
+msgstr "Ulaz glasa"
+
+msgid "IDS_BR_BODY_VIEW_IMAGE"
+msgstr "Prikaži sliku"
+
+msgid "IDS_BR_BODY_VIEW_HISTORY_T_TALKBACK"
+msgstr "Prikaz povijesti."
+
+msgid "IDS_BR_BODY_VIEW_BOOKMARKS_T_TALKBACK"
+msgstr "Prikaz oznaka."
+
+msgid "IDS_BR_BODY_VALID_CERTIFICATE"
+msgstr "Valjana potvrda"
+
+msgid "IDS_BR_BODY_USE_FULL_SCREEN_MODE_TO_HIDE_THE_STATUS_BAR"
+msgstr "Upotrijebi način Punog zaslona za skrivanje statusne trake."
+
+msgid "IDS_BR_BODY_USE_A_PREDICTION_SERVICE_TO_DISPLAY_RELATED_QUERIES_AND_POPULAR_WEBSITES_IN_THE_ADDRESS_BAR_AS_YOU_TYPE"
+msgstr "Korištenje usluge predviđanja za prikaz povezanih upita i popularnih web-stranica u traci za adresu dok tipkate"
+
+msgid "IDS_BR_BODY_UPPER_FOLDER_T_TALKBACK"
+msgstr "Gornja mapa"
+
+msgid "IDS_BR_BODY_UNTAGGED"
+msgstr "Bez oznake"
+
+msgid "IDS_BR_BODY_UNABLE_TO_OPEN_THE_FILE_AT_PS_IT_MAY_HAVE_BEEN_REMOVED_OR_RENAMED_OR_FILE_PERMISSIONS_MAY_BE_PREVENTING_ACCESS"
+msgstr "Nije moguće otvoriti datoteku u %s. Datoteka je uklonjena ili preimenovana ili dopuštenja datoteke onemogućuju pristup."
+
+msgid "IDS_BR_BODY_UNABLE_TO_DISPLAY_THE_WEBPAGE_NO_RESPONSE_FROM_THE_SERVER"
+msgstr "Nemoguće prikazati internet stranicu. Poslužitelj ne reagira."
+
+msgid "IDS_BR_BODY_TOWN_CITY_COUNTY_ABB"
+msgstr "Mjesto/grad/županija"
+
+msgid "IDS_BR_BODY_THIS_SITE_IS_USING_PS"
+msgstr "Ovo web-mjesto koristi %s."
+
+msgid "IDS_BR_BODY_THIS_SITE_CAN_ACCESS_YOUR_LOCATION"
+msgstr "Ovo web-mjesto može pristupiti vašoj lokaciji."
+
+msgid "IDS_BR_BODY_THIS_SITE_CANNOT_ACCESS_YOUR_LOCATION"
+msgstr "Ovo web-mjesto ne može pristupiti vašoj lokaciji."
+
+msgid "IDS_BR_BODY_THIS_BOOKMARK_WILL_BE_DELETED"
+msgstr "Oznaka će biti obrisana."
+
+msgid "IDS_BR_BODY_THE_SELECTED_PERSONAL_DATA_WILL_BE_DELETED"
+msgstr "Izbrisat će se odabrani osobni podaci."
+
+msgid "IDS_BR_BODY_TEXT_FIELD_T_TTS"
+msgstr "Polje za tekst"
+
+msgid "IDS_BR_BODY_TARGET_FOLDER"
+msgstr "Odr. mapa"
+
+msgid "IDS_BR_BODY_TAP_THE_WINDOW_MANAGER_ICON_AND_CLOSE_SOME_WINDOWS_THEN_TRY_AGAIN"
+msgstr "Dotaknite ikonu upravljanja prozorima i zatvorite neke prozore, a zatim ponovno pokušajte."
+
+msgid "IDS_BR_BODY_TAP_ONCE_MORE_TO_CLOSE_INTERNET"
+msgstr "Dodirnite još jednom za zatvaranje Interneta."
+
+msgid "IDS_BR_BODY_SYNC_OPEN_PAGES"
+msgstr "Sinkroniziraj otvorene stranice"
+
+msgid "IDS_BR_BODY_SYNC_INTERNET_DATA"
+msgstr "Sinkroniziraj podatke s Interneta"
+
+msgid "IDS_BR_BODY_SYNC_BOOKMARKS_ABB"
+msgstr "Sinkroniziraj oznake"
+
+msgid "IDS_BR_BODY_STREET_ADDRESS_PO_BOX_C_O_ETC_ABB"
+msgstr "Adresa ulice, poštanski sandučić, n/r, itd."
+
+msgid "IDS_BR_BODY_STORED_DATA"
+msgstr "Spremljeni podaci"
+
+msgid "IDS_BR_BODY_SPLIT_BAR_HANDLE"
+msgstr "Ručica razdjelne trake"
+
+msgid "IDS_BR_BODY_SIGN_IN_TO_YOUR_SAMSUNG_ACCOUNT_TO_ACCESS_THE_BOOKMARKS_AND_TABS_ON_YOUR_OTHER_DEVICES"
+msgstr "Prijavite se u Samsung račun da biste pristupili oznakama i karticama na drugim uređajima."
+
+msgid "IDS_BR_BODY_SHOW_OVERVIEW_OF_NEWLY_OPENED_PAGES"
+msgstr "Prikaz posljednjih stranica."
+
+msgid "IDS_BR_BODY_SHA_256_FINGERPRINT_C"
+msgstr "SHA-256 otisak prsta:"
+
+msgid "IDS_BR_BODY_SHA_1_FINGERPRINT_C"
+msgstr "SHA-1 otisak prsta:"
+
+msgid "IDS_BR_BODY_SET_TEXT_FOR_WEB_FORM_AUTO_FILL"
+msgstr "Postavite tekst za automatsko ispunjavanje internet obrazaca."
+
+msgid "IDS_BR_BODY_SET_CURRENT_PAGE_AS_HOMEPAGE"
+msgstr "Postavi trenutnu stranicu kao početnu"
+
+msgid "IDS_BR_BODY_SELECT_FOLDER"
+msgstr "Odaberi mapu"
+
+msgid "IDS_BR_BODY_SEARCH_OR_ENTER_URL"
+msgstr "Potražite ili unesi URL."
+
+msgid "IDS_BR_BODY_SEARCH_FIELD_T_TTS"
+msgstr "Polje za pretragu"
+
+msgid "IDS_BR_BODY_SEARCH_AND_URL_SUGGESTIONS"
+msgstr "Prijedlozi za pretraživanje i URL"
+
+msgid "IDS_BR_BODY_SCREEN_AND_TEXT"
+msgstr "Zaslon i tekst"
+
+msgid "IDS_BR_BODY_SAVE_USER_NAMES_AND_PASSWORDS_FOR_WEBSITES"
+msgstr "Spremi korisnička imena i šifre za internet stranice."
+
+msgid "IDS_BR_BODY_SAVE_LINK"
+msgstr "Spremi vezu"
+
+msgid "IDS_BR_BODY_RESTORE_DEFAULT_SETTINGS_Q"
+msgstr "Vratiti zadane postavke?"
+
+msgid "IDS_BR_BODY_RESTORE_DEFAULT_SETTINGS"
+msgstr "Vrati zadane postavke"
+
+msgid "IDS_BR_BODY_RESET_TO_DEFAULT"
+msgstr "Vrati na zadano"
+
+msgid "IDS_BR_BODY_RESET_SETTINGS"
+msgstr "Poništavanje postavki"
+
+msgid "IDS_BR_BODY_RESET_ALL_SETTINGS_TO_THEIR_DEFAULTS"
+msgstr "Vratite sve postavke na zadane."
+
+msgid "IDS_BR_BODY_REMOVE_WEB_NOTIFICATION_ACCESS_INFORMATION_Q"
+msgstr "Ukloniti informacije o pristupu web obavijesti?"
+
+msgid "IDS_BR_BODY_REMEMBER_PASSWORDS"
+msgstr "Zapamti šifre"
+
+msgid "IDS_BR_BODY_REMEMBER_FORM_DATA"
+msgstr "Zapamti unose obrazaca"
+
+msgid "IDS_BR_BODY_REMEMBER_DATA_I_TYPE_IN_FORMS_FOR_LATER_USE"
+msgstr "Zapamti unose obrazaca za kasnije korištenje."
+
+msgid "IDS_BR_BODY_RADIO_BUTTON_T_TTS"
+msgstr "Tipka za radio"
+
+msgid "IDS_BR_BODY_PS_BOOKMARK_WILL_BE_DELETED"
+msgstr "Izbrisat će se %s oznaka."
+
+msgid "IDS_BR_BODY_PRIVACY"
+msgstr "Privatnost"
+
+msgid "IDS_BR_BODY_PRINT"
+msgstr "Ispis"
+
+msgid "IDS_BR_BODY_PRESS_THE_MENU_KEY"
+msgstr "Pritisnite tipku izbornika."
+
+msgid "IDS_BR_BODY_POSTCODE_ABB"
+msgstr "Poštanski broj"
+
+msgid "IDS_BR_BODY_PD_POP_UPS_BLOCKED_ABB"
+msgstr "%d blok. skoč. proz."
+
+msgid "IDS_BR_BODY_PAGE_LOADED_T_TTS"
+msgstr "Stranica učitana"
+
+msgid "IDS_BR_BODY_PAGES_THAT_YOU_VIEW_IN_THIS_TAB_WILL_NOT_APPEAR_IN_YOUR_BROWSER_HISTORY_OR_SEARCH_HISTORY_MSG"
+msgstr "Stranice koje pregledavate u ovoj kartici neće biti prikazane u povijesti preglednika ili povijesti pretraživanja i neće ostavljati druge tragove, poput kolačića."
+
+msgid "IDS_BR_BODY_OVERRIDE_WEBSITES_REQUEST_TO_CONTROL_ZOOM"
+msgstr "Poništite zahtjev web mjesta za upravljanje zumom."
+
+msgid "IDS_BR_BODY_OTHER_ABB"
+msgstr "Ostalo"
+
+msgid "IDS_BR_BODY_OPEN_WINDOWS_T_TALKBACK"
+msgstr "Otvori prozore."
+
+msgid "IDS_BR_BODY_OPEN_PAGES_IN_OVERVIEW_ABB"
+msgstr "Otvori stranice"
+
+msgid "IDS_BR_BODY_ON_DEMAND"
+msgstr "Na zahtjev"
+
+msgid "IDS_BR_BODY_ONLY_VIA_WI_FI_ABB"
+msgstr "Samo preko Wi-Fi"
+
+msgid "IDS_BR_BODY_OLDER"
+msgstr "Starije"
+
+msgid "IDS_BR_BODY_NO_WINDOWS"
+msgstr "Nema prozora"
+
+msgid "IDS_BR_BODY_NO_VISITED_SITES"
+msgstr "Nema posjećenih stranica"
+
+msgid "IDS_BR_BODY_NO_TITLE"
+msgstr "Nema naslova"
+
+msgid "IDS_BR_BODY_NO_SAVED_PAGES"
+msgstr "Nema spremljenih stranica"
+
+msgid "IDS_BR_BODY_NO_BOOKMARKS"
+msgstr "Nema oznaka"
+
+msgid "IDS_BR_BODY_NORMAL"
+msgstr "Normalna"
+
+msgid "IDS_BR_BODY_NEWS"
+msgstr "Vijesti"
+
+msgid "IDS_BR_BODY_MOVE_THE_SELECTED_BOOKMARKS_Q"
+msgstr "Premjestiti odabrane oznake?"
+
+msgid "IDS_BR_BODY_MOST_VISITED_SITES"
+msgstr "Najposjećenija mjesta"
+
+msgid "IDS_BR_BODY_MOBILE_VIEW"
+msgstr "Mobilni prikaz"
+
+msgid "IDS_BR_BODY_LOCATION_M_INFORMATION"
+msgstr "Lokacija"
+
+msgid "IDS_BR_BODY_LAST_WEEK"
+msgstr "Zadnji tjedan"
+
+msgid "IDS_BR_BODY_LAST_MONTH"
+msgstr "Prošli mjesec"
+
+msgid "IDS_BR_BODY_LAST_7_DAYS"
+msgstr "Posljednjih 7 dana"
+
+msgid "IDS_BR_BODY_LARGE"
+msgstr "Velika"
+
+msgid "IDS_BR_BODY_INTERNET_HISTORY_IS_NOT_STORED_ABB"
+msgstr "Internet povijest nije spremljena."
+
+msgid "IDS_BR_BODY_INTERNET"
+msgstr "Internet"
+
+msgid "IDS_BR_BODY_IMPROVE_PERFORMANCE_WHEN_LOADING_PAGES"
+msgstr "Poboljšaj rad pri učitavanju stranica."
+
+msgid "IDS_BR_BODY_HOMEPAGE"
+msgstr "Početna stranica"
+
+msgid "IDS_BR_BODY_HIDE_THE_ADDRESS_BAR_WHEN_SCROLLING_DOWN_THE_PAGE"
+msgstr "Sakrijte adresnu traku kada se pomičete prema dolje na stranici."
+
+msgid "IDS_BR_BODY_GENERAL_M_SETTINGS"
+msgstr "Općenito"
+
+msgid "IDS_BR_BODY_FULL_NAME_ABB"
+msgstr "Puno ime"
+
+msgid "IDS_BR_BODY_FORCE_ZOOM_ABB"
+msgstr "Prisilni zum"
+
+msgid "IDS_BR_BODY_FLAT_SUITE_UNIT_BUILDING_FLOOR_ETC_ABB"
+msgstr "Stan, apartman, jedinica, zgrada, kat itd."
+
+msgid "IDS_BR_BODY_FINGERPRINTS_C"
+msgstr "Otisci prstiju:"
+
+msgid "IDS_BR_BODY_FAILED_TO_ADD_TO_HOME_SCREEN_ABB"
+msgstr "Greška dodavanja na početni zaslon."
+
+msgid "IDS_BR_BODY_ENTER_YOUR_NAME_ABB"
+msgstr "Unesite svoje ime."
+
+msgid "IDS_BR_BODY_ENTER_TOWN_CITY_COUNTY_ABB"
+msgstr "Upišite mjesto/grad/županiju."
+
+msgid "IDS_BR_BODY_ENTER_COUNTRY_REGION_ABB"
+msgstr "Unesite državu/regiju."
+
+msgid "IDS_BR_BODY_ENTER_COMPANY_NAME_ABB"
+msgstr "Unesite naziv tvrtke."
+
+msgid "IDS_BR_BODY_ENABLE_LOCATION"
+msgstr "Uključi lokaciju"
+
+msgid "IDS_BR_BODY_ENABLE_JAVASCRIPT"
+msgstr "Uključi JavaScript"
+
+msgid "IDS_BR_BODY_DOUBLE_TAP_TO_VIEW_CERTIFICATE_TTS"
+msgstr "Dvaput dodirnite za prikaz potvrde."
+
+msgid "IDS_BR_BODY_DOUBLE_TAP_TO_SELECT_A_SEARCH_ENGINE_T_TALKBACK"
+msgstr "Dvostrukim dodirom odaberite pretraživač."
+
+msgid "IDS_BR_BODY_DOUBLE_TAP_TO_OPEN_THE_WEBPAGE_T_TALKBACK"
+msgstr "Dvostrukim dodirom otvorite web-stranicu."
+
+msgid "IDS_BR_BODY_DOUBLE_TAP_TO_OPEN_THE_LIST_T_TTS"
+msgstr "Dvaput dodirnite za otvaranje popisa."
+
+msgid "IDS_BR_BODY_DOUBLE_TAP_TO_OPEN_THE_FOLDER_T_TTS"
+msgstr "Dvostrukim dodirom otvorite mapu."
+
+msgid "IDS_BR_BODY_DOUBLE_TAP_TO_OPEN_KEYBOARD_T_TTS"
+msgstr "Dvaput dodirnite za otvaranje tipkovnice."
+
+msgid "IDS_BR_BODY_DOUBLE_TAP_TO_MOVE_TO_CONTENT_T_TTS"
+msgstr "Dvaput dodirnite za pomicanje na sadržaj."
+
+msgid "IDS_BR_BODY_DOUBLE_TAP_TO_CLOSE_THE_TRAY_T_TALKBACK"
+msgstr "Dvostrukim dodirom zatvorite traku."
+
+msgid "IDS_BR_BODY_DOUBLE_TAP_TO_CANCEL_THE_SEARCH_T_TALKBACK"
+msgstr "Dvostrukim dodirom poništite pretraživanje."
+
+msgid "IDS_BR_BODY_DOUBLE_TAP_AND_HOLD_TO_RESIZE_SPLIT_AREA_T_TTS"
+msgstr "Dvostrukim dodirom i držanjem promijenite veličinu podijeljenog područja."
+
+msgid "IDS_BR_BODY_DOUBLE_TAP_AND_DRAG_TO_REORDER_TTS"
+msgstr "Dvaput dodirnite i povucite za sortiranje."
+
+msgid "IDS_BR_BODY_DISPLAY_SECURITY_WARNING_POP_UPS"
+msgstr "Prikaz skočnih prozora sigurnosnih upozorenja."
+
+msgid "IDS_BR_BODY_DISPLAY_IMAGES_ON_WEB_PAGES"
+msgstr "Prikaz slika na internet stranicama."
+
+msgid "IDS_BR_BODY_DESKTOP_VIEW"
+msgstr "Računalna verzija"
+
+msgid "IDS_BR_BODY_DELETE_THE_SELECTED_BOOKMARKS_Q"
+msgstr "Izbrisati odabrane oznake?"
+
+msgid "IDS_BR_BODY_DELETE_PERSONAL_DATA"
+msgstr "Obriši osobne podatke"
+
+msgid "IDS_BR_BODY_DEFAULT_STORAGE"
+msgstr "Postavljena memorija"
+
+msgid "IDS_BR_BODY_DEFAULT_PAGE_ABB"
+msgstr "Zadana stranica"
+
+msgid "IDS_BR_BODY_DATA_USAGE_REDUCED_BY_P1SDP_HP2SD_KB_OF_P3SD_KB_RECEIVED_TAP_HERE_TO_RESET_STATISTICS"
+msgstr "Prijenos podataka smanjen je za %1$d % (primljeno %2$d KB od %3$d KB). Dodirnite za poništavanje statistike."
+
+msgid "IDS_BR_BODY_CUSTOM_USER_AGENT"
+msgstr "prilagodi korisničkog agenta"
+
+msgid "IDS_BR_BODY_CURRENT_PAGE"
+msgstr "Trenutna stranica"
+
+msgid "IDS_BR_BODY_CREATED"
+msgstr "Stvoreno."
+
+msgid "IDS_BR_BODY_COUNTY_ABB"
+msgstr "Država"
+
+msgid "IDS_BR_BODY_COUNTRY_REGION_ABB2"
+msgstr "Država/regija"
+
+msgid "IDS_BR_BODY_COOKIES_AND_SITE_DATA_ABB"
+msgstr "Kolač. i podaci o str."
+
+msgid "IDS_BR_BODY_COOKIES"
+msgstr "Kolačići"
+
+msgid "IDS_BR_BODY_CONTENT_SETTINGS"
+msgstr "Postavke sadržaja"
+
+msgid "IDS_BR_BODY_COMPANY_NAME_ABB"
+msgstr "Naziv tvrtke"
+
+msgid "IDS_BR_BODY_CLOSE_TAB"
+msgstr "Zatvori karticu."
+
+msgid "IDS_BR_BODY_CLEAR_WEB_NOTIFICATION_PERMISSION_SETTINGS"
+msgstr "Brisanje svih postavki dopuštenja za web-obavijesti."
+
+msgid "IDS_BR_BODY_CLEAR_WEB_NOTIFICATION_PERMISSIONS_Q"
+msgstr "Obrisati sva dopuštenja za web obavijesti?"
+
+msgid "IDS_BR_BODY_CLEAR_NOTIFICATION_ACCESS_FOR_WEBSITES"
+msgstr "Obriši pristup obavijestima za sve web stranice."
+
+msgid "IDS_BR_BODY_CLEAR_NOTIFICATIONS"
+msgstr "Obriši obavijesti"
+
+msgid "IDS_BR_BODY_CLEAR_LOCATION_ACCESS"
+msgstr "Obriši pristup lokaciji"
+
+msgid "IDS_BR_BODY_CLEAR_HISTORY"
+msgstr "Brisanje povijesti"
+
+msgid "IDS_BR_BODY_CLEAR_ALL_BROWSER_DATA_AND_RESET_ALL_SETTINGS_TO_DEFAULT"
+msgstr "Obriši sve podatke i vrati zadane postavke."
+
+msgid "IDS_BR_BODY_CITY_TOWN_ABB"
+msgstr "Mjesto/grad:"
+
+msgid "IDS_BR_BODY_CHANGE_THE_TEXT_SIZE_FOR_EASIER_READING_ESPECIALLY_WHEN_VIEWING_DESKTOP_VERSIONS_OF_WEBSITES_ON_YOUR_DEVICE_MSG"
+msgstr "Promijenite veličinu teksta za lakše čitanje, pogotovo pri gledanju verzija web-mjesta za radne površine na uređaju. Imajte na umu da će se izgled teksta možda promijeniti."
+
+msgid "IDS_BR_BODY_BOOKMARK_REMINDER_ABB"
+msgstr "Podsjetnik oznake"
+
+msgid "IDS_BR_BODY_BLOCK_POP_UPS_ON_WEB_PAGES"
+msgstr "Blokiraj skočne prozore na internet stranicama."
+
+msgid "IDS_BR_BODY_BLOCK_POP_UPS_ON_WEBPAGES"
+msgstr "Blokirajte skočne prozore na web-stranicama."
+
+msgid "IDS_BR_BODY_BLOCK_POP_UPS"
+msgstr "Blokiraj pop-up prozore"
+
+msgid "IDS_BR_BODY_BASIC"
+msgstr "Osnovno"
+
+msgid "IDS_BR_BODY_AUTO_FILL_FORMS_T_TTS"
+msgstr "Automatski popuni obrasce"
+
+msgid "IDS_BR_BODY_AUTO_DETECT"
+msgstr "Auto. prepoznavanje"
+
+msgid "IDS_BR_BODY_AUTOMATIC"
+msgstr "Automatski"
+
+msgid "IDS_BR_BODY_ASK_WHETHER_TO_ADD_A_BOOKMARK_FOR_A_WEBSITE_WHEN_YOU_HAVE_VISITED_IT_PD_TIMES"
+msgstr "Upit želite li dodati oznaku favorita za web stranicu kada je posjetite %d puta."
+
+msgid "IDS_BR_BODY_ALWAYS_ON"
+msgstr "Uvijek uključeno"
+
+msgid "IDS_BR_BODY_ALWAYS"
+msgstr "Uvijek"
+
+msgid "IDS_BR_BODY_ALL_OPEN_WINDOWS_WILL_BE_CLOSED_AND_YOU_WILL_MOVE_TO_YOUR_HOMEPAGE"
+msgstr "Svi otvoreni prozori će se zatvoriti i prijeći ćete na početnu stranicu."
+
+msgid "IDS_BR_BODY_ALLOW_SITES_TO_RUN_JAVASCRIPT"
+msgstr "Dopusti stranicama pokretanje JavaScripta."
+
+msgid "IDS_BR_BODY_ALLOW_SITES_TO_REQUEST_ACCESS_TO_YOUR_LOCATION"
+msgstr "Dopusti stranicama pristup podacima o lokaciji."
+
+msgid "IDS_BR_BODY_ALLOW_SITES_TO_ACCESS_YOUR_LOCATION_DATA"
+msgstr "Dopusti stranicama pristup podacima o lokaciji."
+
+msgid "IDS_BR_BODY_ALLOW_PS_TO_SHOW_NOTIFICATIONS"
+msgstr "Dopusti %s da prikazuje obavijesti"
+
+msgid "IDS_BR_BODY_ALLOWS_SITES_TO_SAVE_AND_READ_COOKIE_DATA"
+msgstr "Dopušta stranicama spremanje i čitanje podataka iz kolačića."
+
+msgid "IDS_BR_BODY_AFTER_YOU_VISIT_WEBPAGES_THE_PAGES_YOU_HAVE_VISITED_THE_MOST_WILL_BE_SHOWN_HERE"
+msgstr "Nakon što posjetite web-mjesta, stranice koje ste najčešće posjećivali prikazat će se ovdje."
+
+msgid "IDS_BR_BODY_AFTER_YOU_VIEW_WEBSITES_THE_SIZE_OF_THEIR_STORED_DATA_AND_WHETHER_THEY_CAN_ACCESS_YOUR_LOCATION_WILL_BE_SHOWN_HERE"
+msgstr "Nakon što pogledate web-mjesta, ovdje će se prikazati veličina njihovih pohranjenih podataka te informacija o tome mogu li pristupiti vašoj lokaciji."
+
+msgid "IDS_BR_BODY_AFTER_YOU_VIEW_WEBPAGES_THEY_WILL_BE_SHOWN_HERE"
+msgstr "Nakon što pogledate web-mjesta, prikazat će se ovdje."
+
+msgid "IDS_BR_BODY_AFTER_YOU_SAVE_WEBPAGES_TO_VIEW_OFFLINE_THEY_WILL_BE_SHOWN_HERE"
+msgstr "Nakon što ih spremite za čitanje izvan mreže, internetske stranice prikazat će se ovdje."
+
+msgid "IDS_BR_BODY_AFTER_YOU_LOAD_PAGES_THE_PAGE_HISTORY_WILL_BE_SHOWN"
+msgstr "Nakon učitavanja stranica, povijest preglednika će se prikazati ovdje."
+
+msgid "IDS_BR_BODY_AFTER_YOU_ADD_WEBPAGES_TO_QUICK_ACCESS_THEY_WILL_BE_SHOWN_HERE"
+msgstr "Nakon što dodate web-mjesta na Brzi pristup, prikazat će se ovdje."
+
+msgid "IDS_BR_BODY_ADVANCED_SETTINGS_FOR_INDIVIDUAL_WEBSITES"
+msgstr "Napredne postavke za pojedinačne web adrese"
+
+msgid "IDS_BR_BODY_ADVANCED"
+msgstr "Napredno"
+
+msgid "IDS_BR_BODY_ADD_TO_CONTACT"
+msgstr "Dodaj kontaktu"
+
+msgid "IDS_BR_BODY_ADD_THIS_WEBSITE_TO_BOOKMARKS_TO_OPEN_IT_FASTER_ABB"
+msgstr "Dodajte web stranicu u oznake za brži pristup."
+
+msgid "IDS_BR_BODY_ADDRESS_LINE_2_ABB"
+msgstr "Redak adrese 2"
+
+msgid "IDS_BR_BODY_ADDRESS_LINE_1_ABB"
+msgstr "Redak adrese 1"
+
+msgid "IDS_BR_BODY_ACCEPT_COOKIES"
+msgstr "Prihvati kolačiće"
+
+msgid "IDS_BR_BODY_1_PROFILE_WILL_BE_DELETED"
+msgstr "1 profil će biti obrisan."
+
+msgid "IDS_BR_ACBUTTON_TABS_ABB"
+msgstr "KART."
+
+msgid "IDS_BR_TPOP_STARTING_DOWNLOAD_ING"
+msgstr "Pokretanje preuzimanja..."
+
+msgid "IDS_BR_TPOP_FOLDER_RENAMED"
+msgstr "Mapa preimenovana."
+
+msgid "IDS_BR_TMBODY_SUGGEST_SEARCH_TERMS_AND_URLS"
+msgstr "Predl. pojm. za pret. i URL-ove"
+
+msgid "IDS_BR_TMBODY_DATA_USAGE_MANAGEMENT"
+msgstr "Upravljanje korišt. podataka"
+
+msgid "IDS_BR_SK_CANCEL_ABB"
+msgstr "Prekid"
+
+msgid "IDS_BR_SBODY_SET_THE_DEVICE_TO_SHOW_THE_FULL_WEBPAGE_ON_THE_SCREEN_WHEN_IT_IS_LOADED_WITHOUT_NEEDING_TO_SCROLL"
+msgstr "Podesi uređaj tako da nakon učitavanja prikazuje punu internetsku stranicu na zaslonu, bez potrebe za pomicanjem."
+
+msgid "IDS_BR_POP_UNABLE_TO_RUN_INTERNET_LOW_BATTERY"
+msgstr "Nemoguće koristiti Internet. Baterija prazna."
+
+msgid "IDS_BR_POP_THE_DOWNLOAD_HAS_BEEN_STOPPED_AND_THE_DOWNLOADED_DATA_WILL_BE_DELETED"
+msgstr "Preuzimanje se zaustavilo, a preuzeti će se podaci izbrisati."
+
+msgid "IDS_BR_POP_SEARCH_COMPLETED_JPN_SBM"
+msgstr "Search completed"
+
+msgid "IDS_BR_POP_READY"
+msgstr "Pripravan."
+
+msgid "IDS_BR_POP_INFORM_MEMORY_ERROR"
+msgstr "Greška memorije."
+
+msgid "IDS_BR_POP_DATA_ROAMING_IS_DISABLED_CONNECT_TO_A_WI_FI_NETWORK_OR_ENABLE_DATA_ROAMING_AND_TRY_AGAIN"
+msgstr "Podatkovni roaming je isključen. Spojite se na Wi-Fi mrežu ili uključite podatkovni roaming i pokušajte ponovno."
+
+msgid "IDS_BR_POP_BROWSERERRORREQUESTTIMEOUT"
+msgstr "Isteklo vrijeme zahtjeva."
+
+msgid "IDS_BR_POP_A_WI_FI_CONNECTION_IS_REQUIRED_TAP_OK_TO_GO_TO_YOUR_WI_FI_SETTINGS"
+msgstr "Potrebna je Wi-Fi veza. Dodirnite U redu za pristup Postavkama Wi-Fi mreže."
+
+msgid "IDS_BR_OPT_WEB_APPS_ABB"
+msgstr "Web-aplik."
+
+msgid "IDS_BR_OPT_VIEW_ONLINE"
+msgstr "Prikaži na mreži"
+
+msgid "IDS_BR_OPT_READ_ON_OFFLINE_PAGES_LATER_ABB"
+msgstr "Čit. kasnije na str. izvan mr."
+
+msgid "IDS_BR_OPT_QUICK_ACCESS_ABB2"
+msgstr "Brzi pristup"
+
+msgid "IDS_BR_OPT_ALWAYS_ENABLED_ABB"
+msgstr "Uvijek uključeno"
+
+msgid "IDS_BR_NPBODY_TAP_HERE_TO_ADD_A_QUICK_ACCESS_SHORTCUT"
+msgstr "Dodirnite za dodavanje prečaca Brzog pristupa"
+
+msgid "IDS_BR_NPBODY_NO_HISTORY"
+msgstr "Nema povijesti"
+
+msgid "IDS_BR_MBODY_USER_MANUAL_ABB"
+msgstr "Korisnički priručnik"
+
+msgid "IDS_BR_MBODY_TOWN_CITY_COUNTY"
+msgstr "Mjesto / grad / županija"
+
+msgid "IDS_BR_MBODY_STORED_DATA"
+msgstr "Spremljeni podaci"
+
+msgid "IDS_BR_MBODY_SEARCH_AND_URL_SUGGESTIONS_ABB"
+msgstr "Prijedlozi za pretr. i URL"
+
+msgid "IDS_BR_MBODY_HISTORY"
+msgstr "Povijest"
+
+msgid "IDS_BR_MBODY_FIT_PAGE_TO_SCREEN"
+msgstr "Prilagodi str. zaslonu"
+
+msgid "IDS_BR_MBODY_DOWNLOADS"
+msgstr "Skidanja"
+
+msgid "IDS_BR_MBODY_CUSTOM"
+msgstr "Prilagođeno"
+
+msgid "IDS_BR_MBODY_COUNTRY_REGION"
+msgstr "Država/regija"
+
+msgid "IDS_BR_HEADER_RENAME_FOLDER_ABB"
+msgstr "Preimenovanje mape"
+
+msgid "IDS_BR_HEADER_PERSONAL_DATA_ABB"
+msgstr "Osobni podaci"
+
+msgid "IDS_BR_HEADER_NEWER_M_INTERNET_HISTORY"
+msgstr "Novije"
+
+msgid "IDS_BR_HEADER_ISSUED_TO"
+msgstr "Izdano za"
+
+msgid "IDS_BR_HEADER_ENCODING"
+msgstr "Šifriranje"
+
+msgid "IDS_BR_HEADER_EDIT_INFO_ABB"
+msgstr "Uređ. pod."
+
+msgid "IDS_BR_HEADER_DOWNLOAD_STOPPED_ABB"
+msgstr "Preuzimanje zaustavljeno"
+
+msgid "IDS_BR_HEADER_DEPARTMENT_C_ABB"
+msgstr "Odjel:"
+
+msgid "IDS_BR_HEADER_ADD_INFO_ABB"
+msgstr "Dod. info."
+
+msgid "IDS_BR_BUTTON_WI_FI_ABB"
+msgstr "Wi-Fi"
+
+msgid "IDS_BR_BUTTON_SETTINGS_ABB"
+msgstr "Postavke"
+
+msgid "IDS_BR_BUTTON2_OK"
+msgstr "U redu"
+
+msgid "IDS_BR_BUTTON2_NEW"
+msgstr "Novi"
+
+msgid "IDS_BR_BODY_WEB_SEARCH"
+msgstr "Internet tražilica"
+
+msgid "IDS_BR_BODY_UNABLE_TO_OPEN_FILE"
+msgstr "Nemoguće otvoriti datoteku."
+
+msgid "IDS_BR_BODY_UNABLE_TO_FIND_AN_APPLICATION_TO_OPEN_THIS_FILE"
+msgstr "Nema aplikacije potrebne za otvaranje ove datoteke."
+
+msgid "IDS_BR_BODY_UNABLE_TO_CONNECT_TO_MOBILE_NETWORKS_WHILE_FLIGHT_MODE_IS_ENABLED_MSG"
+msgstr "Nije moguće povezati se s mobilnim mrežama dok je uključen profil Bez mreže. Umjesto toga povežite se s Wi-Fi mrežom ili dodirnite Postavke za isključivanje profila Bez mreže, a zatim pokušajte ponovno."
+
+msgid "IDS_BR_BODY_THIS_CERTIFICATE_IS_FROM_A_TRUSTED_AUTHORITY"
+msgstr "Potvrda je pouzdana."
+
+msgid "IDS_BR_BODY_TAP_HERE_TO_ADD_A_QUICK_ACCESS_SHORTCUT"
+msgstr "Dodirnite za dodavanje prečaca Brzog pristupa."
+
+msgid "IDS_BR_BODY_PREFERENCES"
+msgstr "Odrednice"
+
+msgid "IDS_BR_BODY_PERCENTAGE_M_SYMBOL"
+msgstr "% "
+
+msgid "IDS_BR_BODY_NO_MOBILE_NETWORKS_HAVE_BEEN_FOUND"
+msgstr "Nema pronađenih mobilnih mreža."
+
+msgid "IDS_BR_BODY_NO_MATCHES"
+msgstr "Nema rezultata"
+
+msgid "IDS_BR_BODY_MOBILE_DATA_IS_TURNED_OFF_CONNECT_TO_A_WI_FI_NETWORK_INSTEAD_OR_TAP_SETTINGS_TO_TURN_ON_MOBILE_DATA_AND_THEN_TRY_AGAIN"
+msgstr "Mobilni su podaci isključeni. Umjesto toga povežite se s Wi-Fi mrežom ili dodirnite Postavke za uključivanje Mobilnih podataka, a zatim pokušajte ponovno."
+
+msgid "IDS_BR_BODY_FIT_TO_WIDTH"
+msgstr "Prilagodi širini"
+
+msgid "IDS_BR_ACBUTTON_QUICK_ACCESS"
+msgstr "BRZI PRISTUP"
+
+msgid "IDS_BR_OPT_OPEN_IN_NEW_TAB"
+msgstr "Otvori u novoj kartici"
+
+msgid "IDS_BR_BODY_SHARE_LINK"
+msgstr "Pošalji vezu"
+
+msgid "IDS_BR_SK_SAVE_LITE"
+msgstr "Spremi"
+
+msgid "IDS_BR_SK_SAVE_ABB"
+msgstr "Spremi"
+
+msgid "IDS_BR_SK_SAVE"
+msgstr "Spremi"
+
+msgid "IDS_BR_SK_PREVIOUS"
+msgstr "Nazad"
+
+msgid "IDS_BR_SK_NEXT"
+msgstr "Dalje"
+
+msgid "IDS_BR_SK_DELETE"
+msgstr "Obriši"
+
+msgid "IDS_BR_SK_CLEAR"
+msgstr "Obriši"
+
+msgid "IDS_BR_SK_BACK"
+msgstr "Nazad"
+
+msgid "IDS_BR_POP_WI_FI_CONNECTION_REQUIRED_CONNECT_TO_WI_FI_NETWORK_AND_TRY_AGAIN"
+msgstr "Potrebna Wi-Fi veza. Spojite se na Wi-Fi vezu i pokušajte ponovno"
+
+msgid "IDS_BR_POP_URL_NOT_FOUND"
+msgstr "Adresa nije pronađena."
+
+msgid "IDS_BR_POP_URL"
+msgstr "Adresa"
+
+msgid "IDS_BR_POP_SAVED"
+msgstr "Spremljeno."
+
+msgid "IDS_BR_POP_REMOVED"
+msgstr "Uklonjeno."
+
+msgid "IDS_BR_POP_PD_ITEMS_WILL_BE_DELETED"
+msgstr "%d datoteka bit će obrisano."
+
+msgid "IDS_BR_POP_PD_ITEMS_SELECTED"
+msgstr "%d odabranih stavki."
+
+msgid "IDS_BR_POP_NO_ITEMS_SELECTED"
+msgstr "Nisu odabrane stavke."
+
+msgid "IDS_BR_POP_NOT_ENOUGH_MEMORY"
+msgstr "Memorija nedovoljna."
+
+msgid "IDS_BR_POP_NEVER"
+msgstr "Nikad"
+
+msgid "IDS_BR_POP_MOBILE_DATA_IS_DISABLED_CONNECT_TO_WI_FI_NETWORK_INSTEAD_OR_ENABLE_MOBILE_DATA_AND_TRY_AGAIN"
+msgstr "Mobilni podaci su isključeni. Umjesto toga spojite se na Wi-Fi mrežu ili uključite mobilne podatke i pokušajte ponovno"
+
+msgid "IDS_BR_POP_LOADING_PLEASE_WAIT_ING"
+msgstr "Učitavanje. Pričekajte..."
+
+msgid "IDS_BR_POP_INVALID_URL"
+msgstr "Neispravna adresa."
+
+msgid "IDS_BR_POP_FAIL"
+msgstr "Neuspješno."
+
+msgid "IDS_BR_POP_ENTER_TITLE_ABB"
+msgstr "Unesi naslov"
+
+msgid "IDS_BR_POP_DO_NOT_SHOW_AGAIN"
+msgstr "Ne prikazuj više"
+
+msgid "IDS_BR_POP_DOWNLOADCOMPLETE"
+msgstr "Skidanje obavljeno."
+
+msgid "IDS_BR_POP_DISABLED"
+msgstr "Isključeno."
+
+msgid "IDS_BR_POP_DELETE_Q"
+msgstr "Obrisati?"
+
+msgid "IDS_BR_POP_DELETED"
+msgstr "Obrisano."
+
+msgid "IDS_BR_POP_CLOSE_APPLICATION_Q"
+msgstr "Zatvoriti program?"
+
+msgid "IDS_BR_POP_BOOKMARK_ADDED"
+msgstr "Dodano u oznake."
+
+msgid "IDS_BR_POP_AUTOMATIC_BRIGHTNESS"
+msgstr "Auto. osvjetljenje"
+
+msgid "IDS_BR_POP_ACCOUNT"
+msgstr "Račun"
+
+msgid "IDS_BR_POP_1_ITEM_WILL_BE_DELETED"
+msgstr "1 stavka bit će obrisana."
+
+msgid "IDS_BR_POP_1_ITEM_SELECTED"
+msgstr "1 stavka odabrana."
+
+msgid "IDS_BR_OPT_TRANSLATE"
+msgstr "Prijevod"
+
+msgid "IDS_BR_OPT_STOP"
+msgstr "Zaustavi"
+
+msgid "IDS_BR_OPT_SHOW"
+msgstr "Prikaz"
+
+msgid "IDS_BR_OPT_SHARE"
+msgstr "Dijeli"
+
+msgid "IDS_BR_OPT_SETTINGS"
+msgstr "Postavke"
+
+msgid "IDS_BR_OPT_SEND_EMAIL"
+msgstr "Pošalji email"
+
+msgid "IDS_BR_OPT_SELECT"
+msgstr "Odaberi"
+
+msgid "IDS_BR_OPT_SD_CARD"
+msgstr "SD kartica"
+
+msgid "IDS_BR_OPT_RENAME"
+msgstr "Preimenuj"
+
+msgid "IDS_BR_OPT_REFRESH"
+msgstr "Aktualiziraj"
+
+msgid "IDS_BR_OPT_MOVE"
+msgstr "Premjesti"
+
+msgid "IDS_BR_OPT_MESSAGES"
+msgstr "Poruke"
+
+msgid "IDS_BR_OPT_LIST_VIEW"
+msgstr "Prikaz liste"
+
+msgid "IDS_BR_OPT_I_AGREE"
+msgstr "Slažem se."
+
+msgid "IDS_BR_OPT_HELP"
+msgstr "Upute"
+
+msgid "IDS_BR_OPT_DEVICE"
+msgstr "Uređaj"
+
+msgid "IDS_BR_OPT_BOOKMARK"
+msgstr "Oznaka"
+
+msgid "IDS_BR_OPT_ADDED"
+msgstr "Dodano."
+
+msgid "IDS_BR_OPT_ADD"
+msgstr "Dodaj"
+
+msgid "IDS_BR_MBODY_DEFAULT_DOWNLOAD_STORAGE"
+msgstr "Zadano mjesto skidanja"
+
+msgid "IDS_BR_HEADER_SIGN_IN_TO_SAMSUNG_ACCOUNT"
+msgstr "Prijava u Samsung račun"
+
+msgid "IDS_BR_HEADER_PD_SELECTED_ABB"
+msgstr "%d odabrano"
+
+msgid "IDS_BR_HEADER_NO_NETWORK_CONNECTION"
+msgstr "Nema mrežne veze"
+
+msgid "IDS_BR_HEADER_FOLDER"
+msgstr "Mapa"
+
+msgid "IDS_BR_HEADER_EDIT_PROFILE"
+msgstr "Uredi profil"
+
+msgid "IDS_BR_BUTTON_SET"
+msgstr "Postavi"
+
+msgid "IDS_BR_BUTTON_NOT_NOW"
+msgstr "Ne sada"
+
+msgid "IDS_BR_BUTTON_ENABLE_ABB"
+msgstr "Uključi"
+
+msgid "IDS_BR_BUTTON_EDIT"
+msgstr "Uredi"
+
+msgid "IDS_BR_BUTTON_CONTINUE_ABB"
+msgstr "Nastavak"
+
+msgid "IDS_BR_BUTTON_CONTINUE"
+msgstr "Nastavak"
+
+msgid "IDS_BR_BUTTON_CLOSE"
+msgstr "Prekid"
+
+msgid "IDS_BR_BUTTON_CANCEL_ABB"
+msgstr "Prekid"
+
+msgid "IDS_BR_BUTTON_CANCEL"
+msgstr "Prekid"
+
+msgid "IDS_BR_BUTTON_ALLOW"
+msgstr "Dopusti"
+
+msgid "IDS_BR_BODY_YESTERDAY"
+msgstr "Jučer"
+
+msgid "IDS_BR_BODY_URL"
+msgstr "Adresa"
+
+msgid "IDS_BR_BODY_TODAY"
+msgstr "Danas"
+
+msgid "IDS_BR_BODY_TITLE"
+msgstr "Naslov"
+
+msgid "IDS_BR_BODY_THE_MAXIMUM_NUMBER_OF_CHARACTERS_HPD_HAS_BEEN_EXCEEDED"
+msgstr "Premašen je maksimalan broj znakova (%d)."
+
+msgid "IDS_BR_BODY_STREAMING"
+msgstr "Streaming"
+
+msgid "IDS_BR_BODY_SMALL"
+msgstr "Mala"
+
+msgid "IDS_BR_BODY_SETTINGS"
+msgstr "Postavke"
+
+msgid "IDS_BR_BODY_SEARCH"
+msgstr "Traži"
+
+msgid "IDS_BR_BODY_RSS_SEARCH_RESULTS"
+msgstr "Rezultati pretraživanja"
+
+msgid "IDS_BR_BODY_PROFILE"
+msgstr "Profil"
+
+msgid "IDS_BR_BODY_PROCESSING_ING"
+msgstr "Procesiranje..."
+
+msgid "IDS_BR_BODY_PHONE_NUMBER_ABB"
+msgstr "Tel. broj"
+
+msgid "IDS_BR_BODY_PHONE"
+msgstr "Telefon"
+
+msgid "IDS_BR_BODY_PD_ITEMS_WILL_BE_DELETED"
+msgstr "%d datoteka bit će obrisano."
+
+msgid "IDS_BR_BODY_PASSWORD"
+msgstr "Lozinka"
+
+msgid "IDS_BR_BODY_ON"
+msgstr "Uključeno"
+
+msgid "IDS_BR_BODY_OFF"
+msgstr "Isključeno"
+
+msgid "IDS_BR_BODY_NO_RESULTS_FOUND"
+msgstr "Nema rezultata."
+
+msgid "IDS_BR_BODY_NO_HISTORIES"
+msgstr "Nema povijesti"
+
+msgid "IDS_BR_BODY_NOTIFICATIONS"
+msgstr "Obavijesti"
+
+msgid "IDS_BR_BODY_MEDIUM"
+msgstr "Srednje"
+
+msgid "IDS_BR_BODY_IMAGES"
+msgstr "Slike"
+
+msgid "IDS_BR_BODY_FULL_SCREEN"
+msgstr "Cijeli zaslon"
+
+msgid "IDS_BR_BODY_FONT_SIZE"
+msgstr "Veličina slova"
+
+msgid "IDS_BR_BODY_FOLDER_NAME"
+msgstr "Ime mape"
+
+msgid "IDS_BR_BODY_ENTER_POSTCODE_ABB"
+msgstr "Unesite pošt. broj."
+
+msgid "IDS_BR_BODY_ENTER_POSTCODE"
+msgstr "Unesite poštanski broj."
+
+msgid "IDS_BR_BODY_ENTER_PHONE_NUMBER"
+msgstr "Unesite telefonski broj."
+
+msgid "IDS_BR_BODY_ENTER_NAME"
+msgstr "Unesite ime."
+
+msgid "IDS_BR_BODY_ENTER_FOLDER_NAME"
+msgstr "Unesite naziv mape."
+
+msgid "IDS_BR_BODY_ENTER_EMAIL_ADDRESS"
+msgstr "Unesite email adresu."
+
+msgid "IDS_BR_BODY_EMAIL_ADDRESS"
+msgstr "Email adresa"
+
+msgid "IDS_BR_BODY_DOWNLOADING_ING"
+msgstr "Skidanje..."
+
+msgid "IDS_BR_BODY_DEVELOPER_MODE"
+msgstr "Razvojni način"
+
+msgid "IDS_BR_BODY_DEFAULT"
+msgstr "Zadano"
+
+msgid "IDS_BR_BODY_BOOKMARKS"
+msgstr "Oznake"
+
+msgid "IDS_BR_BODY_ALL"
+msgstr "Sve"
+
+msgid "IDS_BR_BODY_ADD_TO"
+msgstr "Dodaj u"
+
+msgid "IDS_BR_BODY_ADDDETAILSVIEW_TAGS"
+msgstr "Oznake"
+
+msgid "IDS_BR_BODY_ADDBOOKMARKURL"
+msgstr "Adresa"
+
+msgid "IDS_BR_BODY_1_ITEM_WILL_BE_DELETED"
+msgstr "1 stavka bit će obrisana."
+
+msgid "IDS_BR_TPOP_MAXIMUM_NUMBER_OF_CHARACTERS_HPD_REACHED"
+msgstr "Maksimalan broj znakova (%d) dosegnut."
+
+msgid "IDS_BR_POP_UNSUPPORTMEDIATYPE"
+msgstr "Nepodržani mediji."
+
+msgid "IDS_BR_POP_UNABLE_TO_CONNECT_TO_MOBILE_NETWORKS_WHILE_FLIGHT_MODE_IS_ENABLED_CONNECT_TO_WI_FI_NETWORK_INSTEAD_OR_DISABLE_FLIGHT_MODE_AND_TRY_AGAIN"
+msgstr "Nemoguće spojiti se na mobilne mreže dok je uključen profil Bez mreže. Umjesto toga spojite se na Wi-Fi mrežu ili isključite profil Bez mreže i pokušajte ponovno"
+
+msgid "IDS_BR_POP_INSTALL_SUCCESS"
+msgstr "Instalacija dovršena."
+
+msgid "IDS_BR_POP_INSTALLATION_FAILED"
+msgstr "Instalacija neuspješna."
+
+msgid "IDS_BR_POP_DELETING_ING"
+msgstr "Brisanje..."
+
+msgid "IDS_BR_POP_DATA_ROAMING_IS_DISABLED_CONNECT_TO_WI_FI_NETWORK_INSTEAD_OR_ENABLE_DATA_ROAMING_AND_TRY_AGAIN"
+msgstr "Podatkovni roaming je isključen. Umjesto toga, spojite se na Wi-Fi mrežu ili uključite podatkovni roaming i pokušajte ponovno"
+
+msgid "IDS_BR_OPT_SHARE_VIA"
+msgstr "Dijeljenje preko"
+
+msgid "IDS_BR_OPT_PASTE"
+msgstr "Zalijepi"
+
+msgid "IDS_BR_MBODY_FONT_SIZE"
+msgstr "Veličina slova"
+
+msgid "IDS_BR_HEADER_UNABLE_TO_DOWNLOAD_ABB"
+msgstr "Nemoguće skinuti"
+
+msgid "IDS_BR_BUTTON_UPDATE"
+msgstr "Aktualiziraj"
+
+msgid "IDS_BR_BUTTON_RETRY"
+msgstr "Ponovi"
+
+msgid "IDS_BR_BODY_REQUEST_FAILED"
+msgstr "Zahtjev neuspješan."
+
+msgid "IDS_BR_BODY_LOGIN"
+msgstr "Prijava"
+
+msgid "IDS_BR_BODY_LOADING_ING"
+msgstr "Učitavanje..."
+
+msgid "IDS_BR_BODY_FIT_TO_SCREEN"
+msgstr "Prilagodi zaslonu"
+
+msgid "IDS_BR_BODY_DOWNLOADS_VODA"
+msgstr "Skidanja"
+
+msgid "IDS_BR_BODY_DATA_ROAMING_IS_DISABLED_CONNECT_TO_A_WI_FI_NETWORK_INSTEAD_OR_ENABLE_DATA_ROAMING_AND_TRY_AGAIN"
+msgstr "Podatkovni roaming je isključen. Umjesto toga, spojite se na Wi-Fi mrežu ili uključite podatkovni roaming i pokušajte ponovno."
+
+msgid "IDS_BR_POP_DOWNLOAD_CANCELLED"
+msgstr "Skidanje prekinuto."
+
+msgid "IDS_BR_BUTTON_SECRET_ON_ABB"
+msgstr "Uklj. Tajno"
+
+msgid "IDS_BR_MBODY_PRIVACY"
+msgstr "Privatnost"
+
+msgid "IDS_BR_MBODY_DEFAULT_STORAGE"
+msgstr "Zadana memorija"
+
+msgid "IDS_BR_MBODY_MANUAL_ZOOM"
+msgstr "Ručno zumiranje"
+
+msgid "IDS_BR_TMBODY_DEFAULT_SEARCH_ENGINE"
+msgstr "Zadana tražilica"
+
+msgid "IDS_BR_MBODY_SAVE_SIGN_IN_INFO"
+msgstr "Sprem. podatke za prijavu"
+
+msgid "IDS_BR_OPT_TURN_OFF_SECRET_MODE_ABB"
+msgstr "Isključi Tajni način"
+
+msgid "IDS_BR_OPT_TURN_ON_SECRET_MODE_ABB"
+msgstr "Uključi Tajni način"
+
+msgid "IDS_BR_OPT_SHOW_PASSWORD_ABB2"
+msgstr "Prikaži lozinku"
+
+msgid "IDS_BR_BODY_ENTER_YOUR_CURRENT_SECRET_MODE_PASSWORD"
+msgstr "Unesite trenutačnu lozinku za Tajni način."
+
+msgid "IDS_BR_OPT_SECRET_MODE_SECURITY_ABB"
+msgstr "Sigurnost Tajnog načina"
+
+msgid "IDS_BR_BUTTON_USE_PASSWORD_ABB"
+msgstr "Upotrijebi lozinku"
+
+msgid "IDS_BR_HEADER_DONT_USE_PASSWORD_ABB"
+msgstr "Ne upotrebljavaj lozinku"
+
+msgid "IDS_BR_MBODY_MOST_VISITED_WEBSITES"
+msgstr "Najposjećenija web-mjesta"
+
+msgid "IDS_BR_MBODY_SET_MY_PROFILE"
+msgstr "Postavi moj profil"
+
+msgid "IDS_BR_MBODY_MY_AUTO_FILL_PROFILE"
+msgstr "Moj auto. ispunj. profil"
+
+msgid "IDS_BR_SBODY_MANAGE_DATA_USED_TO_FILL_IN_FORMS_ONLINE"
+msgstr "Upravljanje podacima za ispunjavanje obrazaca na mreži."
+
+msgid "IDS_BR_MBODY_SAVE_SIGN_IN_INFO_ABB"
+msgstr "Spr. pod. za pr."
+
+msgid "IDS_BR_OPT_LOCATION_ACCESS_DATA"
+msgstr "Podaci za pristup lokaciji"
+
+msgid "IDS_BR_OPT_AUTO_FILL_DATA"
+msgstr "Automatski popuni podatke"
+
+msgid "IDS_BR_BODY_ANY_WEBPAGES_YOU_VIEW_WHILE_SECRET_MODE_IS_TURNED_ON_WONT_APPEAR_IN_YOUR_BROWSER_OR_SEARCH_HISTORY_MSG"
+msgstr "Nijedna web-stranica kojoj pristupite dok je uključen Tajni način neće se pojaviti u vašem pregledniku ili povijesti pretraživanja dok je on isključen.\n\nNijedna oznaka ni web-stranica koju spremite dok je uključen Tajni način neće se prikazati dok je taj način isključen.\n\nTakođer možete lozinkom zaštititi svoje podatke Tajnog načina."
+
+msgid "IDS_BR_BODY_ANY_WEBPAGES_YOU_VIEW_WHILE_SECRET_MODE_IS_TURNED_ON_WONT_APPEAR_IN_YOUR_BROWSER_OR_SEARCH_MSG"
+msgstr "Nijedna web-stranica kojoj pristupite dok je uključen Tajni način neće se pojaviti u vašem pregledniku ili povijesti pretraživanja dok je on isključen.\n\nNijedna oznaka ni web-stranica koju spremite dok je uključen Tajni način neće se prikazati dok je taj način isključen."
+
+msgid "IDS_BR_BUTTON_SECRET_OFF_ABB"
+msgstr "Isklj. Taj."
+
+msgid "IDS_BR_BUTTON_DONT_USE_PASSWORD_ABB"
+msgstr "Ne upotreb. lozinku"
+
+msgid "IDS_BR_BUTTON_NEW_TAB_ABB2"
+msgstr "Nova"
+
+msgid "IDS_BR_NPBODY_WEB_ADDRESS_ABB"
+msgstr "Internetska adresa"
+
+msgid "IDS_BR_HEADER_ADD_WEBPAGE_TO_QUICK_ACCESS_ABB"
+msgstr "Dod. web-str. na Br. pristup"
+
+msgid "IDS_BR_TMBODY_TURN_ON_JAVASCRIPT"
+msgstr "Uključite JavaScript"
+
+msgid "IDS_BR_HEADER_COULDNT_OPEN_NEW_TAB_ABB"
+msgstr "Nemog. otvoriti novu karticu"
+
+msgid "IDS_BR_OPT_OPEN_IN_NEW_TAB_ABB"
+msgstr "Otvori u novoj kartici"
+
+msgid "IDS_BR_TPOP_FOLDER_NAME_ALREADY_IN_USE"
+msgstr "Naziv mape već se koristi."
+
+msgid "IDS_BR_NPBODY_NEW_FOLDER_PD"
+msgstr "Nova mapa %d"
+
+msgid "IDS_BR_NPBODY_NEW_FOLDER"
+msgstr "Nova mapa"
+
+msgid "IDS_BR_OPT_ENABLE_JAVASCRIPT"
+msgstr "Uključi JavaScript"
+
+msgid "IDS_BR_TMBODY_MANAGE_WEBSITE_DATA"
+msgstr "Upravljajte podacima web-mjesta"
+
+msgid "IDS_BR_HEADER_SET_HOME_PAGE_ABB"
+msgstr "Postavlj. početne stranice"
+
+msgid "IDS_BR_TPOP_WEBPAGE_ADDED_TO_QUICK_ACCESS_LIST"
+msgstr "Web-stranica dodana na popis za brzi pristup."
+
+msgid "IDS_BR_OPT_EDIT_QUICK_ACCESS_ABB"
+msgstr "Uredi Brzi pristup"
+
+msgid "IDS_BR_OPT_REMOVE_FROM_BOOKMARKS_ABB"
+msgstr "Ukloni iz Oznaka"
+
+msgid "IDS_BR_HEADER_ADD_BOOKMARK_ABB"
+msgstr "Dodaj oznaku"
+
+msgid "IDS_BR_BODY_BROWSING_HISTORY"
+msgstr "Povijest pretraživanja"
+
+msgid "IDS_BR_HEADER_TABS_ABB2"
+msgstr "Kartice"
+
+msgid "IDS_BR_OPT_NEW_TAB"
+msgstr "Nova kartica"
+
+msgid "IDS_BR_BUTTON_FORWARD_ABB2"
+msgstr "Proslijedi"
+
+msgid "IDS_BR_BUTTON_BACK_ABB3"
+msgstr "Natrag"
+
+msgid "IDS_BR_BUTTON_BOOKMARKS_ABB"
+msgstr "Oznake"
+
+msgid "IDS_BR_NPBODY_NO_PROFILES_ABB"
+msgstr "Nema profila"
+
+msgid "IDS_BR_TAB2_HISTORY"
+msgstr "Povijest"
+
+msgid "IDS_BR_TAB2_BOOKMARKS"
+msgstr "Oznake"
+
+msgid "IDS_BR_HEADER_SAVE_CONTENT_TO_ABB"
+msgstr "Spremanje sadržaja na"
+
+msgid "IDS_BR_HEADER_SELECT_ITEMS_ABB2"
+msgstr "Odabir stavki"
+
+msgid "IDS_BR_BODY_YOUR_PASSWORD_MUST_CONTAIN_AT_LEAST_PD_CHARACTERS_INCLUDING_AT_LEAST_1_LETTER"
+msgstr "Lozinka mora sadržavati najmanje %d znaka(ov)a, uključujući barem jedno slovo."
+
+msgid "IDS_BR_BODY_AN_INCORRECT_PASSWORD_HAS_BEEN_ENTERED_TRY_AGAIN"
+msgstr "Unesena je neispravna lozinka. Pokušajte ponovno."
+
+msgid "IDS_BR_BODY_NO_TABS"
+msgstr "Bez kartica"
+
+msgid "IDS_BR_TMBODY_CHANGE_PASSWORD"
+msgstr "Promjena lozinke"
+
+msgid "IDS_BR_BODY_ANY_WEBPAGES_VIEWED_WHILE_SECRET_MODE_IS_ENABLED_WILL_NOT_APPEAR_IN_YOUR_BROWSER_OR_SEARCH_HISTORY_WHILE_SECRET_MSG"
+msgstr "Nijedna web-stranica kojoj ste pristupili dok je uključen Tajni način neće se pojaviti u vašem pregledniku ili povijesti pretraživanja dok je isključen Tajni način.\n\nNijedna oznaka ni web-stranica spremljena dok je uključen Tajni način neće se prikazati dok je taj način isključen.\n\nTakođer možete lozinkom zaštititi svoje podatke Tajnog načina."
+
+msgid "IDS_BR_BODY_ANY_WEBPAGES_VIEWED_WHILE_SECRET_MODE_IS_ENABLED_WILL_NOT_APPEAR_IN_YOUR_MSG"
+msgstr "Nijedna web-stranica kojoj ste pristupili dok je uključen Tajni način neće se pojaviti u vašem pregledniku ili povijesti pretraživanja dok je isključen Tajni način.\n\nNijedna oznaka ni web-stranica spremljena dok je uključen Tajni način neće se prikazati dok je taj način isključen."
+
+msgid "IDS_BR_BUTTON2_DONE"
+msgstr "OK"
+
+msgid "IDS_BR_BODY_ENTER_YOUR_PASSWORD_AGAIN_TO_CONFIRM_IT"
+msgstr "Ponovno unesite lozinku da biste je potvrdili."
+
+msgid "IDS_BR_HEADER_CREATE_PASSWORD_M_SET_ABB"
+msgstr "Kreiraj lozinku"
+
+msgid "IDS_BR_BUTTON_DO_NOT_USE_PASSWORD_ABB"
+msgstr "Ne koristi lozinku"
+
+msgid "IDS_BR_POP_TO_PROTECT_YOUR_SECRET_MODE_DATA_CREATE_A_PASSWORD_IF_YOU_USE_SECRET_MODE_WITHOUT_CREATING_A_PASSWORD_MSG"
+msgstr "Da biste zaštitili podatke Tajnog načina, stvorite lozinku. Ako upotrebljavate Tajni način bez stvaranja lozinke, nećete moći spriječiti da drugi vide vašu povijest preglednika i povijest pretraživanja, oznake i spremljene stranice."
+
+msgid "IDS_BR_BODY_AFTER_YOU_ADD_BOOKMARKS_THEY_WILL_BE_SHOWN_HERE"
+msgstr "Oznake će se prikazati ovdje nakon što ih dodate."
+

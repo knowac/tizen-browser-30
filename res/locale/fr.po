@@ -1,0 +1,2193 @@
+msgid "IDS_BR_POP_NETWORK_ERROR"
+msgstr "Erreur réseau"
+
+msgid "IDS_BR_BODY_DESTINATIONS_AUTHENTICATION_REQUIRED"
+msgstr "Authentification obligatoire"
+
+msgid "IDS_BR_HEADER_SECURITY_WARNING"
+msgstr "Avertissement de sécurité"
+
+msgid "IDS_BR_BODY_CERTIFICATES"
+msgstr "Certificats"
+
+msgid "IDS_BR_HEADER_ISSUED_TO_C"
+msgstr "Émis vers :"
+
+msgid "IDS_BR_HEADER_COMMON_NAME_C"
+msgstr "Nom commun :"
+
+msgid "IDS_BR_HEADER_ORGANIZATION_C"
+msgstr "Organisation :"
+
+msgid "IDS_BR_HEADER_ORGANIZATIONAL_UNIT_C"
+msgstr "Unité organisation :"
+
+msgid "IDS_BR_BODY_SECURITY_CERTIFICATE_PROBLEM_MSG"
+msgstr "Problèmes avec le certificat de sécurité de ce site"
+
+msgid "IDS_BR_OPT_ALLOW"
+msgstr "Autoriser"
+
+msgid "IDS_BR_BODY_PS_REQUESTS_YOUR_LOCATION"
+msgstr "%s demande votre position."
+
+msgid "IDS_BR_BODY_REMEMBER_PREFERENCE"
+msgstr "Mémoriser la préférence."
+
+msgid "IDS_BR_BODY_CERTIFICATE_SERIAL_NUMBER"
+msgstr "Numéro de série"
+
+msgid "IDS_BR_HEADER_ISSUED_BY_C"
+msgstr "Émis par :"
+
+msgid "IDS_BR_HEADER_VALIDITY_C"
+msgstr "Validité:"
+
+msgid "IDS_BR_POP_CERTI_VALID_FROM_C"
+msgstr "Valide depuis :"
+
+msgid "IDS_BR_BODY_CERTIFICATE_VALID_TILL"
+msgstr "Valide jusqu'au"
+
+msgid "IDS_BR_BODY_ROOTCERTIFICATES_FINGER_PRINT"
+msgstr "Empreinte digitale"
+
+msgid "IDS_BR_BODY_SIGNATURE_ALGORITHM_VODA"
+msgstr "Algorithme de signature"
+
+msgid "IDS_BR_BODY_DOWNLOAD"
+msgstr "Télécharger"
+
+msgid "IDS_BR_BODY_THIS_WEBPAGE"
+msgstr "Cette page Web"
+
+msgid "IDS_BR_BODY_AUTHUSERNAME"
+msgstr "Nom d'utilisateur"
+
+msgid "IDS_BR_BODY_AUTHPASSWORD"
+msgstr "Mot de passe"
+
+msgid "IDS_BR_OPT_VIEW"
+msgstr "Afficher"
+
+msgid "IDS_BR_OPT_CANCEL"
+msgstr "Annuler"
+
+msgid "IDS_BR_OPT_SCREEN"
+msgstr "Écran"
+
+msgid "IDS_BR_OPT_LTE_GSM_WCDMA_HAUTO_CONNECT"
+msgstr "2G/3G/4G (mode Automatique)"
+
+msgid "IDS_BR_HEADER_MULTI_WINDOW"
+msgstr "Fenêtres multiples"
+
+msgid "IDS_BR_HEADER_CERTIFICATE_INFO"
+msgstr "Infos sur le certificat"
+
+msgid "IDS_BR_BODY_WEBSITE_SETTINGS"
+msgstr "Paramètres des sites Web"
+
+msgid "IDS_BR_POP_INVALID_CERTIFICATE"
+msgstr "Certificat non valide"
+
+msgid "IDS_BR_BODY_BUTTON_T_TTS"
+msgstr "Touche"
+
+msgid "IDS_BR_SK_YES"
+msgstr "Oui"
+
+msgid "IDS_BR_SK_NO"
+msgstr "Non"
+
+msgid "IDS_BR_SK_DONE"
+msgstr "Effectué"
+
+msgid "IDS_BR_SK_CANCEL"
+msgstr "Annuler"
+
+msgid "IDS_BR_BUTTON_MORE"
+msgstr "Plus"
+
+msgid "IDS_BR_BODY_NO_ITEMS"
+msgstr "Aucun élément"
+
+msgid "IDS_BR_MBODY_CONNECT_TO_MOBILE_NETWORK"
+msgstr "Connexion au réseau mob."
+
+msgid "IDS_BR_OPT_DO_NOT_SHOW_AGAIN"
+msgstr "Ne plus afficher"
+
+msgid "IDS_BR_POP_ONLY_HTTP_OR_HTTPS_URLS_CAN_BE_DOWNLOADED"
+msgstr "Seules les URL de type http ou https permettent les téléchargements."
+
+msgid "IDS_BR_OPT_WEB_SEARCH"
+msgstr "Recherche Web"
+
+msgid "IDS_BR_OPT_VIEW_IMAGE"
+msgstr "Afficher image"
+
+msgid "IDS_BR_OPT_SAVE_LINK"
+msgstr "Enregistrer le lien"
+
+msgid "IDS_BR_OPT_SAVE_IMAGE"
+msgstr "Enregistrer image"
+
+msgid "IDS_BR_OPT_COPY_LINK"
+msgstr "Copier le lien"
+
+msgid "IDS_BR_OPT_COPY_IMAGE"
+msgstr "Copier l'image"
+
+msgid "IDS_BR_SK_OK"
+msgstr "OK"
+
+msgid "IDS_BR_OPT_CALL"
+msgstr "Appel"
+
+msgid "IDS_BR_BUTTON_FAILED"
+msgstr "Échec"
+
+msgid "IDS_BR_TPOP_WEBPAGE_ADDED_TO_QUICK_ACCESS"
+msgstr "Page Web ajoutée à Accès rapide."
+
+msgid "IDS_BR_TPOP_WEBPAGE_ADDED_TO_BOOKMARKS"
+msgstr "Page Web ajoutée aux Favoris."
+
+msgid "IDS_BR_TPOP_QUICK_ACCESS_SHORTCUT_DELETED"
+msgstr "Raccourci Accès rapide supprimé."
+
+msgid "IDS_BR_TPOP_PD_ITEMS_DELETED_FROM_BROWSING_HISTORY"
+msgstr "%d éléments supprimés de l'historique de navigation."
+
+msgid "IDS_BR_TPOP_OPENING_SAMSUNG_ACCOUNT_ING"
+msgstr "Ouverture du compte Samsung..."
+
+msgid "IDS_BR_TPOP_LOW_DATA_USAGE_ENABLED"
+msgstr "L'option Faible utilisation des données a été activée."
+
+msgid "IDS_BR_TPOP_LOW_DATA_USAGE_DISABLED_PDP_OF_BANDWIDTH_SAVED"
+msgstr "L'option Faible utilisation des données a été désactivée. %d % de bande passante enregistrée."
+
+msgid "IDS_BR_TPOP_IMAGE_COPIED_TO_CLIPBOARD"
+msgstr "Image copiée dans le Presse-papiers."
+
+msgid "IDS_BR_TPOP_FAILED_TO_ADD_TO_HOME_SCREEN_ABB"
+msgstr "L'ajout à l'écran d'accueil a échoué."
+
+msgid "IDS_BR_TPOP_DOWNLOADING_IMAGE_ING"
+msgstr "Téléchargement de l'image..."
+
+msgid "IDS_BR_TPOP_DATA_SAVING_STATISTICS_RESET"
+msgstr "Réinitialisation des statistiques d'enregistrement des données."
+
+msgid "IDS_BR_TPOP_BOOKMARK_DELETED"
+msgstr "Favori supprimé."
+
+msgid "IDS_BR_TPOP_ADDED_TO_QUICK_ACCESS_LIST"
+msgstr "Ajouté à la liste d'accès rapide."
+
+msgid "IDS_BR_TPOP_ADDED_TO_HOME_SCREEN"
+msgstr "L'élément a été ajouté à l'écran d'accueil."
+
+msgid "IDS_BR_TPOP_1_POP_UP_BLOCKED"
+msgstr "1 pop-up a été bloquée."
+
+msgid "IDS_BR_TPOP_1_ITEM_DELETED_FROM_BROWSING_HISTORY"
+msgstr "1 élément supprimé de l'historique de navigation."
+
+msgid "IDS_BR_TMBODY_NOTIFICATIONS"
+msgstr "Notifications"
+
+msgid "IDS_BR_TAB_MOST_VISITED"
+msgstr "Les plus visités"
+
+msgid "IDS_BR_TAB_HISTORY"
+msgstr "Historique"
+
+msgid "IDS_BR_SK_UNTICK_ABB"
+msgstr "Décoch."
+
+msgid "IDS_BR_SK_TABS"
+msgstr "Onglets"
+
+msgid "IDS_BR_SK_MENU"
+msgstr "Menu"
+
+msgid "IDS_BR_SK_DELETE_ABB"
+msgstr "Suppr."
+
+msgid "IDS_BR_SK3_CREATE_FOLDER"
+msgstr "Créer dossier"
+
+msgid "IDS_BR_SK3_CLEAR"
+msgstr "Effacer"
+
+msgid "IDS_BR_SBODY_VIEW_PC_WEBSITES_EASILY_ON_YOUR_MOBILE_DEVICE_THIS_FEATURE_BOOSTS_THE_TEXT_SIZE_TO_MAKE_IT_EASIER_TO_READ_NOTE_C_THE_TEXT_LAYOUT_MAY_CHANGE"
+msgstr "Affichez facilement les sites web pour PC sur votre appareil mobile. Cette fonction augmente la taille du texte pour faciliter la lecture. Remarque : La mise en forme du texte peut changer."
+
+msgid "IDS_BR_SBODY_SET_THE_DEVICE_TO_SUGGEST_QUERIES_AND_SITES_IN_THE_WEB_ADDRESS_BAR_AS_YOU_TYPE"
+msgstr "Configurez l'appareil de façon à suggérer les recherches et les sites dans la barre d'adresse Web lors de la saisie de texte."
+
+msgid "IDS_BR_SBODY_SET_TEXT_USED_TO_FILL_IN_ONLINE_FORMS_ABB"
+msgstr "Déf. texte pour formulaires en ligne."
+
+msgid "IDS_BR_SBODY_SET_ADVANCED_SETTINGS_FOR_INDIVIDUAL_WEBSITES"
+msgstr "Définissez les paramètres avancés pour les sites Web individuels."
+
+msgid "IDS_BR_SBODY_REMEMBER_DATA_TYPED_IN_FORMS_FOR_LATER_USE"
+msgstr "Se rappeler des données saisies dans les formulaires pour une utilisation ultérieure."
+
+msgid "IDS_BR_SBODY_PREDICT_RELATED_QUERIES_AND_POPULAR_SITES_IN_THE_NAVIGATION_BAR_AS_YOU_TYPE"
+msgstr "Prédit les recherches associées et les sites Web populaires dans la barre d'adresse lors de la saisie de texte."
+
+msgid "IDS_BR_SBODY_OVERRIDE_WEBSITE_REQUESTS_TO_CONTROL_ZOOM_LEVEL"
+msgstr "Ignorer les demandes du site Web concernant le contrôle de la fonction de zoom."
+
+msgid "IDS_BR_SBODY_DISPLAY_IMAGES_ON_WEBPAGES"
+msgstr "Afficher des images sur les pages Web."
+
+msgid "IDS_BR_SBODY_COMPRESS_CONTENT_FROM_WEBSITES_TO_USE_LESS_DATA"
+msgstr "Compressez le contenu issu des sites Web pour utiliser moins de données."
+
+msgid "IDS_BR_SBODY_CLEAR_NOTIFICATION_ACCESS_INFORMATION_FOR_ALL_WEBSITES"
+msgstr "Supprimez les informations d'accès aux notifications pour tous les sites Web."
+
+msgid "IDS_BR_SBODY_CHANGE_THE_TEXT_SIZE_FOR_EASIER_READING_ESPECIALLY_WHEN_VIEWING_DESKTOP_VERSIONS_OF_WEBSITES_ON_YOUR_PHONE_NOTE_THAT_THE_TEXT_MSG_US"
+msgstr "Modifiez la taille du texte pour un meilleur confort de lecture, notamment lors de l'affichage des versions bureau des sites Web sur votre téléphone. La disposition du texte peut être affectée par ce changement."
+
+msgid "IDS_BR_SBODY_CHANGE_THE_TEXT_SIZE_FOR_EASIER_READING_ESPECIALLY_WHEN_VIEWING_DESKTOP_VERSIONS_OF_WEBSITES_NOTE_THAT_THE_TEXT_LAYOUT_MAY_CHANGE_AS_A_RESULT"
+msgstr "Modifiez la taille du texte pour un meilleur confort de lecture, notamment lors de l'affichage des versions bureau des sites Web. La disposition du texte peut être affectée par ce changement."
+
+msgid "IDS_BR_SBODY_ALL_WEBSITE_NOTIFICATION_ACCESS_INFORMATION_WILL_BE_CLEARED"
+msgstr "Toutes les informations d'accès aux notifications de site Web seront supprimées."
+
+msgid "IDS_BR_SBODY_ALLOW_SITES_TO_SAVE_AND_READ_COOKIES"
+msgstr "Autoriser les sites à enregistrer et lire les cookies."
+
+msgid "IDS_BR_SBODY_ALLOW_SITES_TO_ACCESS_YOUR_LOCATION_DATA"
+msgstr "Autorisez les sites à accéder à vos données de localisation."
+
+msgid "IDS_BR_POP_YOU_MAY_NOT_BE_ABLE_TO_CLIP_SOME_WEBPAGES_ACCURATELY"
+msgstr "Vous risquez de ne pas pouvoir ajouter correctement certaines pages Web"
+
+msgid "IDS_BR_POP_YOUR_HISTORY_WILL_BE_CLEARED"
+msgstr "Votre historique sera effacé."
+
+msgid "IDS_BR_POP_UNABLE_TO_VIEW_THE_CERTIFICATE_THE_PAGE_INFORMATION_HAS_BEEN_CHANGED"
+msgstr "Impossible d'afficher le certificat. Les informations de la page ont été modifiées."
+
+msgid "IDS_BR_POP_TO_SIGN_IN_TO_THIS_WEBSITE_USING_YOUR_FINGERPRINTS_GO_TO_SETTINGS_AND_ENABLE_WEB_SIGN_IN"
+msgstr "Pour vous connecter à ce site Web à l'aide de vos empreintes, accédez à Paramètres et activez Connexion Web."
+
+msgid "IDS_BR_POP_THIS_CERTIFICATE_IS_NOT_FROM_A_TRUSTED_AUTHORITY"
+msgstr "Ce certificat ne provient pas d'une autorité fiable."
+
+msgid "IDS_BR_POP_THIS_CERTIFICATE_IS_FROM_A_TRUSTED_AUTHORITY"
+msgstr "Ce certificat provient d'une autorité fiable."
+
+msgid "IDS_BR_POP_THE_LOCATION_PERMISSION_DATA_FOR_THIS_WEBSITE_WILL_BE_CLEARED"
+msgstr "Les données d'autorisation de localisation vont être effacées pour ce site Web."
+
+msgid "IDS_BR_POP_THE_DESTINATION_FOLDER_IS_THE_SAME_AS_THE_SOURCE_FOLDER"
+msgstr "Les dossiers source et cible sont identiques."
+
+msgid "IDS_BR_POP_THE_DESTINATION_FOLDER_IS_A_SUBFOLDER_OF_THE_SOURCE_FOLDER"
+msgstr "Le dossier de destination est un sous-dossier du dossier source."
+
+msgid "IDS_BR_POP_THERE_ARE_PROBLEMS_WITH_THE_SECURITY_CERTIFICATE_FOR_THIS_WEBSITE"
+msgstr "Des problèmes ont été rencontrés avec le certificat de sécurité de ce site Web."
+
+msgid "IDS_BR_POP_STARTING_DOWNLOAD_ING"
+msgstr "Début du téléchargement..."
+
+msgid "IDS_BR_POP_SOME_OLD_HTML_WEBSITES_MAY_NOT_SUPPORT_THIS_FEATURE"
+msgstr "Certains anciens sites web HTML peuvent ne pas prendre en charge cette fonction."
+
+msgid "IDS_BR_POP_SET_AS_HOMEPAGE"
+msgstr "Définir comme page d'accueil"
+
+msgid "IDS_BR_POP_SETTINGS_WILL_BE_RESET_TO_DEFAULTS"
+msgstr "Les paramètres vont être réinitialisés à leurs valeurs par défaut."
+
+msgid "IDS_BR_POP_SETTIGS_SAVED"
+msgstr "Paramètres enregistrés"
+
+msgid "IDS_BR_POP_SECURITY_POLICY_RESTRICTS_USE_OF_INTERNET_BROWSER"
+msgstr "La politique de sécurité limite l'utilisation du navigateur Internet."
+
+msgid "IDS_BR_POP_SAVED_TO_BOOKMARKS"
+msgstr "Enregistré dans les favoris"
+
+msgid "IDS_BR_POP_RENAME_TAG"
+msgstr "Renommer le libellé"
+
+msgid "IDS_BR_POP_PD_PROFILES_WILL_BE_DELETED"
+msgstr "%d profils seront supprimés."
+
+msgid "IDS_BR_POP_PAGES_THAT_YOU_VIEW_WILL_NOT_APPEAR_IN_YOUR_BROWSER_HISTORY_OR_SEARCH_HISTORY_AND_THEY_WILL_NOT_LEAVE_OTHER_TRACES_LIKE_COOKIES"
+msgstr "Les pages consultées n'apparaîtront ni dans l'historique du navigateur, ni dans l'historique de recherche. Elles ne laisseront par ailleurs aucune autre trace (cookies, par exemple)."
+
+msgid "IDS_BR_POP_P1SS_HP2SS_IS_REQUESTING_PERMISSION_TO_USE_YOUR_CAMERA"
+msgstr "%1$s (%2$s) demande l'autorisation d'utiliser votre appareil photo."
+
+msgid "IDS_BR_POP_P1SS_HP2SS_IS_REQUESTING_PERMISSION_TO_STORE_DATA_ON_YOUR_DEVICE_FOR_OFFLINE_USE"
+msgstr "%1$s (%2$s) demande l'autorisation d'enregistrer des données sur votre appareil pour une utilisation hors-ligne."
+
+msgid "IDS_BR_POP_P1SS_HP2SS_IS_REQUESTING_PERMISSION_TO_SHOW_NOTIFICATIONS"
+msgstr "%1$s (%2$s) demande l'autorisation de consulter les notifications."
+
+msgid "IDS_BR_POP_P1SS_HP2SS_IS_REQUESTING_PERMISSION_TO_CHANGE_HOW_YOUR_BROWSER_WORKS_ON_MSG"
+msgstr "%1$s (%2$s) demande l'autorisation de modifier le comportement de votre navigateur sur ce site. Cela peut être une tentative d'attaque de votre système. Si vous ne faites pas confiance à ce site Web ou si vous ne savez pas d'où vient cette demande, appuyez sur Annuler."
+
+msgid "IDS_BR_POP_P1SS_HP2SS_IS_REQUESTING_PERMISSION_TO_ACCESS_YOUR_LOCATION"
+msgstr "%1$s (%2$s) demande l'autorisation de se connecter pour connaître votre position."
+
+msgid "IDS_BR_POP_P1SS_HP2SS_IS_ATTEMPTING_TO_STORE_A_LARGE_AMOUNT_OF_DATA_ON_YOUR_DEVICE_FOR_OFFLINE_USE"
+msgstr "%1$s (%2$s) tente d'enregistrer une grande quantité de données sur votre appareil pour une utilisation hors-ligne."
+
+msgid "IDS_BR_POP_P1SS_HAS_BEEN_DETECTED_DETECTED_IN_C_P2SS_SOME_CONTENT_HAS_BEEN_BLOCKED_TO_PROTECT_YOUR_DEVICE"
+msgstr "“%1$s” a été détecté.\nDétecté dans : “%2$s”\n\nUne partie du contenu a été bloquée pour protéger votre appareil."
+
+msgid "IDS_BR_POP_P1SS_HAS_BEEN_DETECTED_DETECTED_IN_C_P2SS_OPEN_WEBPAGE_ANYWAY_Q"
+msgstr "“%1$s” a été détecté.\nDétecté dans : “%2$s”\n\nOuvrir la page Web quand même ?"
+
+msgid "IDS_BR_POP_NOT_ENOUGH_MEMORY_DELETE_SOME_ITEMS_AND_TRY_AGAIN"
+msgstr "Mémoire insuffisante. Supprimez des éléments, puis réessayez."
+
+msgid "IDS_BR_POP_NOT_ALLOWED"
+msgstr "Non autorisé"
+
+msgid "IDS_BR_POP_MOVED"
+msgstr "Déplacé"
+
+msgid "IDS_BR_POP_ENTER_URL"
+msgstr "Saisir une URL."
+
+msgid "IDS_BR_POP_ENTER_BOOKMARK_NAME"
+msgstr "Entrez le nom d'un favori."
+
+msgid "IDS_BR_POP_DIALING_ING_VZW"
+msgstr "Numérotation..."
+
+msgid "IDS_BR_POP_DELETE_WEBSITE_LOCATION_ACCESS_INFORMATION_Q"
+msgstr "Supprimer les informations d'accès à la position des sites Web ?"
+
+msgid "IDS_BR_POP_DELETE_THIS_QUICK_ACCESS_SHORTCUT_Q"
+msgstr "Supprimer ce raccourci Accès rapide ?"
+
+msgid "IDS_BR_POP_DELETE_THIS_PAGE_Q"
+msgstr "Supprimer cette page ?"
+
+msgid "IDS_BR_POP_DELETE_THIS_BOOKMARK_Q"
+msgstr "Supprimer ce favori ?"
+
+msgid "IDS_BR_POP_DELETE_STORED_WEBSITE_DATA_Q"
+msgstr "Supprimer les données du site Web stockées ?"
+
+msgid "IDS_BR_POP_DELETE_SIGN_IN_DATA_FOR_THIS_WEBSITE_Q"
+msgstr "Supprimer les données de connexion de ce site Web ?"
+
+msgid "IDS_BR_POP_DELETE_SIGN_IN_DATA_FOR_PD_WEBSITES_Q"
+msgstr "Supprimer les données de connexion des %d sites Web ?"
+
+msgid "IDS_BR_POP_DELETE_PD_SAVED_WEB_PAGES_Q"
+msgstr "Supprimer %d pages Web enregistrées ?"
+
+msgid "IDS_BR_POP_DELETE_PD_QUICK_ACCESS_SHORTCUTS_Q"
+msgstr "Supprimer %d raccourcis Accès rapide ?"
+
+msgid "IDS_BR_POP_DELETE_PD_BOOKMARKS_Q"
+msgstr "Supprimer %d favoris ?"
+
+msgid "IDS_BR_POP_DELETE_ALL_WEBSITE_DATA_AND_LOCATION_PERMISSIONS_Q"
+msgstr "Supprimer toutes les données du site Web et les autorisations de localisation ?"
+
+msgid "IDS_BR_POP_DELETEHISTORYQUESTION"
+msgstr "Supprimer l'historique ?"
+
+msgid "IDS_BR_POP_CONTINUE"
+msgstr "Continuer"
+
+msgid "IDS_BR_POP_CLOSE_APPLICATION"
+msgstr "Fermer l'application"
+
+msgid "IDS_BR_POP_CLEAR_Q"
+msgstr "Effacer ?"
+
+msgid "IDS_BR_POP_CLEAR_HISTORY_Q"
+msgstr "Effacer l'historique ?"
+
+msgid "IDS_BR_POP_BOOKMARK_REMOVED"
+msgstr "Favori supprimé"
+
+msgid "IDS_BR_POP_ALREADY_EXISTS"
+msgstr "Existe déjà"
+
+msgid "IDS_BR_POP_ALL_STORED_DATA_FOR_THIS_WEBSITE_WILL_BE_CLEARED"
+msgstr "Toutes les données stockées pour ce site Web vont être effacées."
+
+msgid "IDS_BR_POP_ALL_STORED_AND_LOCATION_PERMISSION_DATA_FOR_THIS_WEBSITE_WILL_BE_CLEARED"
+msgstr "Toutes les données stockées et données d'autorisations de localisation vont être effacées."
+
+msgid "IDS_BR_POP_ALL_STORED_AND_LOCATION_PERMISSION_DATA_FOR_THESE_WEBSITES_WILL_BE_CLEARED"
+msgstr "Toutes les données stockées et d'autorisation de localisation vont être effacées pour ces sites Web."
+
+msgid "IDS_BR_POP_ALL_SETTINGS_WILL_BE_RESET_TO_THEIR_DEFAULTS"
+msgstr "Tous les paramètres par défaut vont être rétablis."
+
+msgid "IDS_BR_POP_ALL_ITEMS_WILL_BE_DELETED_FROM_BROWSING_HISTORY"
+msgstr "Tous les éléments seront supprimés de votre historique de navigation."
+
+msgid "IDS_BR_POP_ALLOW_SITES_TO_SAVE_AND_READ_COOKIES"
+msgstr "Autoriser les sites à enregistrer et lire les cookies."
+
+msgid "IDS_BR_POP_ADDED_TO_BOOKMARKS"
+msgstr "Ajouté aux favoris."
+
+msgid "IDS_BR_OPT_WINDOWS"
+msgstr "Onglets"
+
+msgid "IDS_BR_OPT_VIEW_CERTIFICATE"
+msgstr "Afficher certificat"
+
+msgid "IDS_BR_OPT_UNICODE_HUTF_8"
+msgstr "Unicode (UTF-8)"
+
+msgid "IDS_BR_OPT_THUMBNAIL_VIEW"
+msgstr "Affichage miniature"
+
+msgid "IDS_BR_OPT_TEXT_ENCODING"
+msgstr "Codage du texte"
+
+msgid "IDS_BR_OPT_SHRINK_TEXT"
+msgstr "Réduire le texte"
+
+msgid "IDS_BR_OPT_SETTINGS_ABB"
+msgstr "Paramètres"
+
+msgid "IDS_BR_OPT_SEND_MESSAGE_VODA"
+msgstr "Envoyer un message"
+
+msgid "IDS_BR_OPT_SENDURLVIA_EMAIL"
+msgstr "E-mail"
+
+msgid "IDS_BR_OPT_SELECT_TEXT"
+msgstr "Sélectionner texte"
+
+msgid "IDS_BR_OPT_SELECT_ALL_ABB"
+msgstr "Sélectionner tout"
+
+msgid "IDS_BR_OPT_SELECT_ALL"
+msgstr "Sélectionner tout"
+
+msgid "IDS_BR_OPT_SELECTION_MODE"
+msgstr "Mode de sélection"
+
+msgid "IDS_BR_OPT_SELECTED"
+msgstr "Sélectionné"
+
+msgid "IDS_BR_OPT_SAVE_TO_KEEPIT_ABB"
+msgstr "Enregistrer sur KeepIt"
+
+msgid "IDS_BR_OPT_SAVE_PAGE_FOR_OFFLINE_VIEWING_ABB"
+msgstr "Enreg. page pr aff. hors conn."
+
+msgid "IDS_BR_OPT_SAVE_LINKED_ITEM_IN_KEEPIT_ABB"
+msgstr "Enreg. élém. lié sur KeepIt"
+
+msgid "IDS_BR_OPT_SAVE_FOR_OFFLINE_VIEWING_ABB"
+msgstr "Enreg. pr affich. hors connex."
+
+msgid "IDS_BR_OPT_SAVEWEBPAGE"
+msgstr "Page Web"
+
+msgid "IDS_BR_OPT_SAVEDPAGES"
+msgstr "Pages enregistrées"
+
+msgid "IDS_BR_OPT_RSS_VIEW"
+msgstr "Afficher"
+
+msgid "IDS_BR_OPT_REORDER_ABB"
+msgstr "Réorganiser"
+
+msgid "IDS_BR_OPT_RENAME_FOLDER"
+msgstr "Renommer dossier"
+
+msgid "IDS_BR_OPT_REMOVE"
+msgstr "Supprimer"
+
+msgid "IDS_BR_OPT_READER_MODE_TTS"
+msgstr "Mode Lecteur"
+
+msgid "IDS_BR_OPT_PASSWORDS"
+msgstr "Mots de passe"
+
+msgid "IDS_BR_OPT_OPEN_IN_NEW_WINDOW_ABB"
+msgstr "Ouvrir dans nouv. fenêtre"
+
+msgid "IDS_BR_OPT_OPEN"
+msgstr "Ouvrir"
+
+msgid "IDS_BR_OPT_OFFLINE_PAGES_ABB"
+msgstr "Pages hors ligne"
+
+msgid "IDS_BR_OPT_NEW_WINDOW"
+msgstr "Nouvel onglet"
+
+msgid "IDS_BR_OPT_MINIMISE"
+msgstr "Réduire"
+
+msgid "IDS_BR_OPT_MEDIUM_M_QUALITY"
+msgstr "Moyen"
+
+msgid "IDS_BR_OPT_LOW_M_QUALITY"
+msgstr "Basse"
+
+msgid "IDS_BR_OPT_LOCATION_ACCESS_PRIVILEGES"
+msgstr "Droits d'accès à la position"
+
+msgid "IDS_BR_OPT_LOAD_IMAGES"
+msgstr "Charger les images"
+
+msgid "IDS_BR_OPT_LATIN_1_HISO_8859_1"
+msgstr "Latin-1 (ISO-8859-1)"
+
+msgid "IDS_BR_OPT_KOREAN_HEUC_KR"
+msgstr "Coréen (EUC-KR)"
+
+msgid "IDS_BR_OPT_JAPANESE_HSHIFT_JIS"
+msgstr "Japonais (SHIFT JIS)"
+
+msgid "IDS_BR_OPT_JAPANESE_HISO_2022_JP"
+msgstr "Japonais (ISO-2022-JP)"
+
+msgid "IDS_BR_OPT_JAPANESE_HEUC_JP"
+msgstr "Japonais (EUC-JP)"
+
+msgid "IDS_BR_OPT_INCOGNITO_MODE_ABB"
+msgstr "Mode incognito"
+
+msgid "IDS_BR_OPT_HUGE"
+msgstr "Immense"
+
+msgid "IDS_BR_OPT_HOME_SCREEN_AS_WEB_CLIP_ABB"
+msgstr "Écr. accueil comme clip Web"
+
+msgid "IDS_BR_OPT_HOME_SCREEN_AS_SHORTCUT_ABB"
+msgstr "Ecran d'acc. comme racc."
+
+msgid "IDS_BR_OPT_HIGH_M_QUALITY"
+msgstr "Elevée"
+
+msgid "IDS_BR_OPT_GOFORWARD"
+msgstr "Page suivante"
+
+msgid "IDS_BR_OPT_GOBACKWARD"
+msgstr "Page précédente"
+
+msgid "IDS_BR_OPT_GIANT_M_TEXTSIZE"
+msgstr "Géante"
+
+msgid "IDS_BR_OPT_FIND_ON_PAGE_ABB"
+msgstr "Rech. sur page"
+
+msgid "IDS_BR_OPT_FIND_ON_PAGE"
+msgstr "Rechercher sur la page"
+
+msgid "IDS_BR_OPT_FEEDS_SUBSCRIBED_TO_ABB"
+msgstr "Flux souscrits"
+
+msgid "IDS_BR_OPT_ENLARGE_TEXT"
+msgstr "Agrandir le texte"
+
+msgid "IDS_BR_OPT_ENABLE_SECRET_MODE_ABB"
+msgstr "Activer mode Secret"
+
+msgid "IDS_BR_OPT_ENABLE_NIGHT_MODE_ABB"
+msgstr "Activer le mode Nuit"
+
+msgid "IDS_BR_OPT_ENABLE_LOW_DATA_USAGE_ABB"
+msgstr "Activer Faible utilis. données"
+
+msgid "IDS_BR_OPT_DRAG_AND_DROP"
+msgstr "Glisser et déposer"
+
+msgid "IDS_BR_OPT_DISABLE_SECRET_MODE_ABB"
+msgstr "Désact. mode Secret"
+
+msgid "IDS_BR_OPT_DISABLE_NIGHT_MODE_ABB"
+msgstr "Désact. le mode Nuit"
+
+msgid "IDS_BR_OPT_DISABLE_LOW_DATA_USAGE_ABB"
+msgstr "Désact. Faible utilis. données"
+
+msgid "IDS_BR_OPT_DISABLED"
+msgstr "Désactivé"
+
+msgid "IDS_BR_OPT_DELETE_SAVED_PAGE_ABB"
+msgstr "Supprimer la page enregistrée"
+
+msgid "IDS_BR_OPT_DELETE_HISTORY"
+msgstr "Supprimer l'historique"
+
+msgid "IDS_BR_OPT_DATA_NETWORK"
+msgstr "Réseau de données"
+
+msgid "IDS_BR_OPT_COPY_TO_CLIPBOARD"
+msgstr "Copier dans le presse-papier"
+
+msgid "IDS_BR_OPT_COPY_LINK_URL"
+msgstr "Copier l'URL du lien"
+
+msgid "IDS_BR_OPT_COPY"
+msgstr "Copier"
+
+msgid "IDS_BR_OPT_CLOSE_ALL"
+msgstr "Tout fermer"
+
+msgid "IDS_BR_OPT_CLEAR_ALL"
+msgstr "Effacer tout"
+
+msgid "IDS_BR_OPT_CHINESE_HGBK"
+msgstr "Chinois (GBK)"
+
+msgid "IDS_BR_OPT_CHINESE_HBIG5"
+msgstr "Chinois (Big5)"
+
+msgid "IDS_BR_OPT_CACHE"
+msgstr "Cache"
+
+msgid "IDS_BR_OPT_ADD_TO_WEB_CLIP"
+msgstr "Ajouter au clip Web"
+
+msgid "IDS_BR_OPT_ADD_TO_QUICK_ACCESS"
+msgstr "Ajouter à l'accès rapide"
+
+msgid "IDS_BR_OPT_ADD_TO_HOME_SCREEN_ABB"
+msgstr "Ajouter à l'écran d'accueil"
+
+msgid "IDS_BR_OPT_ADD_TO_HOME"
+msgstr "Ajouter à l'accueil"
+
+msgid "IDS_BR_OPT_ADD_OR_REMOVE_BOOKMARK"
+msgstr "Ajouter ou supprimer des favoris"
+
+msgid "IDS_BR_OPT_ADD_BOOKMARK_ABB"
+msgstr "Ajouter un favori"
+
+msgid "IDS_BR_OPT_ADD_BOOKMARK"
+msgstr "Ajouter un favori"
+
+msgid "IDS_BR_OPT1_EXTENSION"
+msgstr "Extension"
+
+msgid "IDS_BR_NPBODY_SEARCH_OR_ENTER_URL_ABB"
+msgstr "Rech. ou entrer une URL"
+
+msgid "IDS_BR_NPBODY_NO_WEBSITE_HISTORY"
+msgstr "Aucun historique de navigation"
+
+msgid "IDS_BR_NPBODY_NO_WEBSITES"
+msgstr "Aucun site Web"
+
+msgid "IDS_BR_NPBODY_NO_WEBPAGES"
+msgstr "Aucune page Web"
+
+msgid "IDS_BR_NPBODY_NO_SHORTCUTS"
+msgstr "Aucun raccourci"
+
+msgid "IDS_BR_MBODY_WEB_ADDRESS_SUGGESTIONS"
+msgstr "Suggestions adresses Web"
+
+msgid "IDS_BR_MBODY_WEBSITES"
+msgstr "Sites Web"
+
+msgid "IDS_BR_MBODY_VIEW_MORE"
+msgstr "Afficher plus"
+
+msgid "IDS_BR_MBODY_URL_SUGGESTIONS"
+msgstr "Suggestions d'URL"
+
+msgid "IDS_BR_MBODY_TEXT_BOOSTER"
+msgstr "Agrandisseur texte"
+
+msgid "IDS_BR_MBODY_SET_HOMEPAGE"
+msgstr "Définir page d'accueil"
+
+msgid "IDS_BR_MBODY_RUN_JAVASCRIPT"
+msgstr "Lancer JavaScript"
+
+msgid "IDS_BR_MBODY_RESET_SETTINGS"
+msgstr "Réinitialiser paramètres"
+
+msgid "IDS_BR_MBODY_PRELOAD_WEBPAGES"
+msgstr "Précharger les pages Web"
+
+msgid "IDS_BR_MBODY_PRELOAD_LINKED_WEBPAGES"
+msgstr "Préch. pages Web assoc."
+
+msgid "IDS_BR_MBODY_PRELOAD_AVAILABLE_LINKS"
+msgstr "Précharger liens dispo"
+
+msgid "IDS_BR_MBODY_LOW_DATA_USAGE"
+msgstr "Faible utilis. données"
+
+msgid "IDS_BR_MBODY_LOCATION_ACCESS"
+msgstr "Accès à la position"
+
+msgid "IDS_BR_MBODY_IMAGE_QUALITY"
+msgstr "Qualité d'image"
+
+msgid "IDS_BR_MBODY_HIDE_ADDRESS_BAR"
+msgstr "Masquer barre d'adresse"
+
+msgid "IDS_BR_MBODY_DOWNLOAD_FEED_CONTENT"
+msgstr "Télécharger contenu flux"
+
+msgid "IDS_BR_MBODY_DELETE_SIGN_IN_DATA"
+msgstr "Suppr. données connexion"
+
+msgid "IDS_BR_MBODY_DATA_SAVING_STATISTICS"
+msgstr "Stats enregistr. données"
+
+msgid "IDS_BR_MBODY_CONTENT"
+msgstr "Contenu"
+
+msgid "IDS_BR_MBODY_CLEAR_NOTIFICATION_DATA"
+msgstr "Suppr. données de notif."
+
+msgid "IDS_BR_MBODY_AUTO_FILL_FORMS"
+msgstr "Remplir autom. formul."
+
+msgid "IDS_BR_MBODY_ADD_PROFILE"
+msgstr "Ajouter un profil"
+
+msgid "IDS_BR_MBODY_ACCESS_LOCATION"
+msgstr "Données d'accès"
+
+msgid "IDS_BR_HEADER_WINDOW_LIMIT_REACHED"
+msgstr "Nombre maximum de fenêtres ouvertes atteint"
+
+msgid "IDS_BR_HEADER_WEB_NOTIFICATIONS_ABB"
+msgstr "Notifications Web"
+
+msgid "IDS_BR_HEADER_WEB_NOTIFICATION"
+msgstr "Notification Web"
+
+msgid "IDS_BR_HEADER_VALIDITY"
+msgstr "Validité"
+
+msgid "IDS_BR_HEADER_UNABLE_TO_OPEN_WINDOW_ABB"
+msgstr "Impossible d'ouvrir la fenêtre"
+
+msgid "IDS_BR_HEADER_UNABLE_TO_OPEN_FILE"
+msgstr "Impossible d'ouvrir le fichier"
+
+msgid "IDS_BR_HEADER_UNABLE_TO_MOVE_BOOKMARKS_ABB"
+msgstr "Impossible de déplacer favoris"
+
+msgid "IDS_BR_HEADER_SITE_NOT_TRUSTED_ABB"
+msgstr "Site non sécurisé"
+
+msgid "IDS_BR_HEADER_SET_HOMEPAGE_ABB"
+msgstr "Définir une page d'accueil"
+
+msgid "IDS_BR_HEADER_SERIAL_NUMBER_C_ABB"
+msgstr "Numéro de série :"
+
+msgid "IDS_BR_HEADER_SELECT_SIGN_IN_DATA_FOR_ABB"
+msgstr "Sélect. données connex. de"
+
+msgid "IDS_BR_HEADER_SELECT_SHORTCUTS_ABB"
+msgstr "Sélectionner des raccourcis"
+
+msgid "IDS_BR_HEADER_SELECT_BOOKMARKS"
+msgstr "Sélectionner des favoris"
+
+msgid "IDS_BR_HEADER_SELECT_BOOKMARK"
+msgstr "Sélectionner le favori"
+
+msgid "IDS_BR_HEADER_SECURITY_CERTIFICATE"
+msgstr "Certificat de sécurité"
+
+msgid "IDS_BR_HEADER_REORDER_QUICK_ACCESS_SHORTCUTS_ABB"
+msgstr "Réorg. raccourcis Accès rapide"
+
+msgid "IDS_BR_HEADER_QUICK_ACCESS_ABB"
+msgstr "Accès rapide"
+
+msgid "IDS_BR_HEADER_PROFILES"
+msgstr "Profils"
+
+msgid "IDS_BR_HEADER_POP_UP_BLOCKED_ABB"
+msgstr "Fenêtre pop-up bloquée"
+
+msgid "IDS_BR_HEADER_POPULAR_WEBSITES_ABB"
+msgstr "Sites Web populaires"
+
+msgid "IDS_BR_HEADER_ORGANISATION_C_ABB"
+msgstr "Organisation :"
+
+msgid "IDS_BR_HEADER_ORGANISATIONAL_UNIT_C"
+msgstr "Unité organisation :"
+
+msgid "IDS_BR_HEADER_NEWER_M_INTERNET_HISTORY_ABB"
+msgstr "Newer"
+
+msgid "IDS_BR_HEADER_ISSUED_ON_C"
+msgstr "Émis le :"
+
+msgid "IDS_BR_HEADER_ISSUED_BY"
+msgstr "Émis par"
+
+msgid "IDS_BR_HEADER_HTML5_EXTENSION"
+msgstr "Extension HTML5"
+
+msgid "IDS_BR_HEADER_FORM_DATA"
+msgstr "Données formulaire"
+
+msgid "IDS_BR_HEADER_EXPIRES_ON_C"
+msgstr "Expire le :"
+
+msgid "IDS_BR_HEADER_ENABLE_WEB_SIGN_IN"
+msgstr "Activer la connexion Web"
+
+msgid "IDS_BR_HEADER_EDIT_BOOKMARK"
+msgstr "Modifier le favori"
+
+msgid "IDS_BR_HEADER_DELETE_WEBSITE_DATA_ABB"
+msgstr "Supprimer données du site Web"
+
+msgid "IDS_BR_HEADER_DELETE_SIGN_IN_DATA_ABB"
+msgstr "Suppr. données de connexion"
+
+msgid "IDS_BR_HEADER_DELETE_PROFILE"
+msgstr "Supprimer le profil"
+
+msgid "IDS_BR_HEADER_DELETE_BOOKMARKS_ABB"
+msgstr "Supprimer les favoris"
+
+msgid "IDS_BR_HEADER_DATA_CONNECTIVITY_PROBLEM"
+msgstr "Problème de connectivité des données"
+
+msgid "IDS_BR_HEADER_COMMON_NAME_C_ABB"
+msgstr "Nom commun :"
+
+msgid "IDS_BR_HEADER_CLOSE_APPLICATION"
+msgstr "Fermer l'application"
+
+msgid "IDS_BR_HEADER_CLEAR_PERSONALISED_DATA"
+msgstr "Effacer les données personnalisées"
+
+msgid "IDS_BR_HEADER_CLEAR_LOCATION_ACCESS"
+msgstr "Effacer l'accès à la position"
+
+msgid "IDS_BR_HEADER_BANDWIDTH_MANAGEMENT_ABB"
+msgstr "Gestion bande passante"
+
+msgid "IDS_BR_HEADER_ADVANCEDCERTIFICATES"
+msgstr "Certificats"
+
+msgid "IDS_BR_BUTTON_RESET_ABB"
+msgstr "Réinitialiser"
+
+msgid "IDS_BR_BUTTON_HOMEPAGE_ABB"
+msgstr "Accueil"
+
+msgid "IDS_BR_BUTTON_FIND_ABB"
+msgstr "Rech."
+
+msgid "IDS_BR_BUTTON_BACK_ABB"
+msgstr "Retour"
+
+msgid "IDS_BR_BUTTON_ALWAYS_SHOW_ABB"
+msgstr "Tjrs aff."
+
+msgid "IDS_BR_BUTTON2_WEB_PORTAL"
+msgstr "Portail Web"
+
+msgid "IDS_BR_BUTTON2_SPORT"
+msgstr "Sport"
+
+msgid "IDS_BR_BUTTON2_SOCIAL"
+msgstr "Social"
+
+msgid "IDS_BR_BUTTON2_SHOPPING"
+msgstr "Courses"
+
+msgid "IDS_BR_BUTTON2_PAYMENT"
+msgstr "Paiement"
+
+msgid "IDS_BR_BUTTON2_HOBBIES"
+msgstr "Passe-tps"
+
+msgid "IDS_BR_BUTTON2_GO_TO_HISTORY"
+msgstr "Accéder à l'historique"
+
+msgid "IDS_BR_BUTTON2_ENTERTAINMENT"
+msgstr "Diverti-/nssement"
+
+msgid "IDS_BR_BODY_WINDOW_MANAGER"
+msgstr "Gestionnaire de fenêtres"
+
+msgid "IDS_BR_BODY_WEB_ADDRESS"
+msgstr "Adresse Web"
+
+msgid "IDS_BR_BODY_VOICE_INPUT_TTS"
+msgstr "Saisie vocale"
+
+msgid "IDS_BR_BODY_VIEW_IMAGE"
+msgstr "Afficher image"
+
+msgid "IDS_BR_BODY_VIEW_HISTORY_T_TALKBACK"
+msgstr "Afficher l'historique."
+
+msgid "IDS_BR_BODY_VIEW_BOOKMARKS_T_TALKBACK"
+msgstr "Afficher les favoris."
+
+msgid "IDS_BR_BODY_VALID_CERTIFICATE"
+msgstr "Certificat valide"
+
+msgid "IDS_BR_BODY_USE_FULL_SCREEN_MODE_TO_HIDE_THE_STATUS_BAR"
+msgstr "Utiliser le mode Plein écran pour masquer la barre d'état."
+
+msgid "IDS_BR_BODY_USE_A_PREDICTION_SERVICE_TO_DISPLAY_RELATED_QUERIES_AND_POPULAR_WEBSITES_IN_THE_ADDRESS_BAR_AS_YOU_TYPE"
+msgstr "Utilisez un service de prédiction pour afficher les recherches associées et les sites Web populaires dans la barre d'adresse lors de la saisie de texte."
+
+msgid "IDS_BR_BODY_UPPER_FOLDER_T_TALKBACK"
+msgstr "Dossier supérieur"
+
+msgid "IDS_BR_BODY_UNTAGGED"
+msgstr "Non tagué"
+
+msgid "IDS_BR_BODY_UNABLE_TO_OPEN_THE_FILE_AT_PS_IT_MAY_HAVE_BEEN_REMOVED_OR_RENAMED_OR_FILE_PERMISSIONS_MAY_BE_PREVENTING_ACCESS"
+msgstr "Impossible d'ouvrir le fichier enregistré dans %s. Il a peut-être été supprimé ou renommé, ou les autorisations de fichier empêchent d'y accéder."
+
+msgid "IDS_BR_BODY_UNABLE_TO_DISPLAY_THE_WEBPAGE_NO_RESPONSE_FROM_THE_SERVER"
+msgstr "Affichage de la page Web impossible. Aucune réponse du serveur."
+
+msgid "IDS_BR_BODY_TOWN_CITY_COUNTY_ABB"
+msgstr "Village/ville/département"
+
+msgid "IDS_BR_BODY_THIS_SITE_IS_USING_PS"
+msgstr "Ce site utilise %s."
+
+msgid "IDS_BR_BODY_THIS_SITE_CAN_ACCESS_YOUR_LOCATION"
+msgstr "Ce site peut accéder à votre position."
+
+msgid "IDS_BR_BODY_THIS_SITE_CANNOT_ACCESS_YOUR_LOCATION"
+msgstr "Ce site ne peut pas accéder à votre position."
+
+msgid "IDS_BR_BODY_THIS_BOOKMARK_WILL_BE_DELETED"
+msgstr "Ce favori sera supprimé."
+
+msgid "IDS_BR_BODY_THE_SELECTED_PERSONAL_DATA_WILL_BE_DELETED"
+msgstr "Les données personnelles sélectionnées vont être supprimées."
+
+msgid "IDS_BR_BODY_TEXT_FIELD_T_TTS"
+msgstr "Champ de texte"
+
+msgid "IDS_BR_BODY_TARGET_FOLDER"
+msgstr "Dossier cible"
+
+msgid "IDS_BR_BODY_TAP_THE_WINDOW_MANAGER_ICON_AND_CLOSE_SOME_WINDOWS_THEN_TRY_AGAIN"
+msgstr "Appuyez sur l'icône du gestionnaire de fenêtres, fermez des fenêtres, puis réessayez."
+
+msgid "IDS_BR_BODY_TAP_ONCE_MORE_TO_CLOSE_INTERNET"
+msgstr "Appuyez une nouvelle fois pour fermer Internet."
+
+msgid "IDS_BR_BODY_SYNC_OPEN_PAGES"
+msgstr "Synchroniser les pages ouvertes"
+
+msgid "IDS_BR_BODY_SYNC_INTERNET_DATA"
+msgstr "Synchroniser les données Internet"
+
+msgid "IDS_BR_BODY_SYNC_BOOKMARKS_ABB"
+msgstr "Synchroniser les favoris"
+
+msgid "IDS_BR_BODY_STREET_ADDRESS_PO_BOX_C_O_ETC_ABB"
+msgstr "Numéro de rue, boîte postale, chez, etc."
+
+msgid "IDS_BR_BODY_STORED_DATA"
+msgstr "Données stockées"
+
+msgid "IDS_BR_BODY_SPLIT_BAR_HANDLE"
+msgstr "Poignée de la barre de fractionnement"
+
+msgid "IDS_BR_BODY_SIGN_IN_TO_YOUR_SAMSUNG_ACCOUNT_TO_ACCESS_THE_BOOKMARKS_AND_TABS_ON_YOUR_OTHER_DEVICES"
+msgstr "Pour accéder aux onglets et aux favoris de vos autres appareils, connectez-vous à votre compte Samsung."
+
+msgid "IDS_BR_BODY_SHOW_OVERVIEW_OF_NEWLY_OPENED_PAGES"
+msgstr "Afficher une vue d'ensemble des pages récemment ouvertes."
+
+msgid "IDS_BR_BODY_SHA_256_FINGERPRINT_C"
+msgstr "Empreinte SHA-256 :"
+
+msgid "IDS_BR_BODY_SHA_1_FINGERPRINT_C"
+msgstr "Empreinte SHA-1 :"
+
+msgid "IDS_BR_BODY_SET_TEXT_FOR_WEB_FORM_AUTO_FILL"
+msgstr "Définir texte pour remplissage automatique formulaire Web."
+
+msgid "IDS_BR_BODY_SET_CURRENT_PAGE_AS_HOMEPAGE"
+msgstr "Définir la page actuelle comme page d'accueil"
+
+msgid "IDS_BR_BODY_SELECT_FOLDER"
+msgstr "Sélectionner un dossier"
+
+msgid "IDS_BR_BODY_SEARCH_OR_ENTER_URL"
+msgstr "Rechercher ou entrer une URL."
+
+msgid "IDS_BR_BODY_SEARCH_FIELD_T_TTS"
+msgstr "Champ de recherche"
+
+msgid "IDS_BR_BODY_SEARCH_AND_URL_SUGGESTIONS"
+msgstr "Suggestions d'URL et de recherche"
+
+msgid "IDS_BR_BODY_SCREEN_AND_TEXT"
+msgstr "Ecran et texte"
+
+msgid "IDS_BR_BODY_SAVE_USER_NAMES_AND_PASSWORDS_FOR_WEBSITES"
+msgstr "Enregistrer les noms d'utilisateur et les mots de passe pour les sites Web."
+
+msgid "IDS_BR_BODY_SAVE_LINK"
+msgstr "Enregistrer le lien"
+
+msgid "IDS_BR_BODY_RESTORE_DEFAULT_SETTINGS_Q"
+msgstr "Restaurer les paramètres par défaut ?"
+
+msgid "IDS_BR_BODY_RESTORE_DEFAULT_SETTINGS"
+msgstr "Rétablir paramètres par défaut"
+
+msgid "IDS_BR_BODY_RESET_TO_DEFAULT"
+msgstr "Restaurer valeurs par défaut"
+
+msgid "IDS_BR_BODY_RESET_SETTINGS"
+msgstr "Réinitialiser les paramètres"
+
+msgid "IDS_BR_BODY_RESET_ALL_SETTINGS_TO_THEIR_DEFAULTS"
+msgstr "Réinitialisez tous les paramètres par défaut."
+
+msgid "IDS_BR_BODY_REMOVE_WEB_NOTIFICATION_ACCESS_INFORMATION_Q"
+msgstr "Supprimer les informations d'accès aux notifications Web ?"
+
+msgid "IDS_BR_BODY_REMEMBER_PASSWORDS"
+msgstr "Retenir les mots de passe"
+
+msgid "IDS_BR_BODY_REMEMBER_FORM_DATA"
+msgstr "Se rappeler des données de formulaire"
+
+msgid "IDS_BR_BODY_REMEMBER_DATA_I_TYPE_IN_FORMS_FOR_LATER_USE"
+msgstr "Se rappeler des données que j'ai saisies dans les formulaires pour une utilisation ultérieure."
+
+msgid "IDS_BR_BODY_RADIO_BUTTON_T_TTS"
+msgstr "Touche radio"
+
+msgid "IDS_BR_BODY_PS_BOOKMARK_WILL_BE_DELETED"
+msgstr "Le favori %s sera supprimé."
+
+msgid "IDS_BR_BODY_PRIVACY"
+msgstr "Confidentialité"
+
+msgid "IDS_BR_BODY_PRINT"
+msgstr "Imprimer"
+
+msgid "IDS_BR_BODY_PRESS_THE_MENU_KEY"
+msgstr "Appuyez sur la touche Menu."
+
+msgid "IDS_BR_BODY_POSTCODE_ABB"
+msgstr "Code postal"
+
+msgid "IDS_BR_BODY_PD_POP_UPS_BLOCKED_ABB"
+msgstr "%d pop-ups bloquées"
+
+msgid "IDS_BR_BODY_PAGE_LOADED_T_TTS"
+msgstr "Page chargée"
+
+msgid "IDS_BR_BODY_PAGES_THAT_YOU_VIEW_IN_THIS_TAB_WILL_NOT_APPEAR_IN_YOUR_BROWSER_HISTORY_OR_SEARCH_HISTORY_MSG"
+msgstr "Les pages consultées dans cet onglet n'apparaîtront ni dans l'historique du navigateur ni dans l'historique de recherche. Elles ne laisseront par ailleurs aucune autre trace (cookies, par exemple)."
+
+msgid "IDS_BR_BODY_OVERRIDE_WEBSITES_REQUEST_TO_CONTROL_ZOOM"
+msgstr "Ignorer la demande du site Web concernant le contrôle de la fonction de zoom."
+
+msgid "IDS_BR_BODY_OTHER_ABB"
+msgstr "Autre"
+
+msgid "IDS_BR_BODY_OPEN_WINDOWS_T_TALKBACK"
+msgstr "Ouvrir des fenêtres."
+
+msgid "IDS_BR_BODY_OPEN_PAGES_IN_OVERVIEW_ABB"
+msgstr "Ouv. pages ds vue ens."
+
+msgid "IDS_BR_BODY_ON_DEMAND"
+msgstr "A la demande"
+
+msgid "IDS_BR_BODY_ONLY_VIA_WI_FI_ABB"
+msgstr "Uniquement via Wi-Fi"
+
+msgid "IDS_BR_BODY_OLDER"
+msgstr "Ancien"
+
+msgid "IDS_BR_BODY_NO_WINDOWS"
+msgstr "Aucune fenêtre"
+
+msgid "IDS_BR_BODY_NO_VISITED_SITES"
+msgstr "Aucun site consulté"
+
+msgid "IDS_BR_BODY_NO_TITLE"
+msgstr "Sans titre"
+
+msgid "IDS_BR_BODY_NO_SAVED_PAGES"
+msgstr "Aucune page enregistrée"
+
+msgid "IDS_BR_BODY_NO_BOOKMARKS"
+msgstr "Aucun favori"
+
+msgid "IDS_BR_BODY_NORMAL"
+msgstr "Normal"
+
+msgid "IDS_BR_BODY_NEWS"
+msgstr "Actualités"
+
+msgid "IDS_BR_BODY_MOVE_THE_SELECTED_BOOKMARKS_Q"
+msgstr "Déplacer les favoris sélectionnés ?"
+
+msgid "IDS_BR_BODY_MOST_VISITED_SITES"
+msgstr "Sites les plus visités"
+
+msgid "IDS_BR_BODY_MOBILE_VIEW"
+msgstr "Vue Mobile"
+
+msgid "IDS_BR_BODY_LOCATION_M_INFORMATION"
+msgstr "Emplacement"
+
+msgid "IDS_BR_BODY_LAST_WEEK"
+msgstr "Dernière semaine"
+
+msgid "IDS_BR_BODY_LAST_MONTH"
+msgstr "Mois précédent"
+
+msgid "IDS_BR_BODY_LAST_7_DAYS"
+msgstr "7 derniers jours"
+
+msgid "IDS_BR_BODY_LARGE"
+msgstr "Grande"
+
+msgid "IDS_BR_BODY_INTERNET_HISTORY_IS_NOT_STORED_ABB"
+msgstr "L'histor. Internet n'est pas conservé."
+
+msgid "IDS_BR_BODY_INTERNET"
+msgstr "Internet"
+
+msgid "IDS_BR_BODY_IMPROVE_PERFORMANCE_WHEN_LOADING_PAGES"
+msgstr "Améliorer les performances lors du chargement des pages."
+
+msgid "IDS_BR_BODY_HOMEPAGE"
+msgstr "Page d'accueil"
+
+msgid "IDS_BR_BODY_HIDE_THE_ADDRESS_BAR_WHEN_SCROLLING_DOWN_THE_PAGE"
+msgstr "Masquez la barre d'adresse lorsque vous faites défiler la page vers le bas."
+
+msgid "IDS_BR_BODY_GENERAL_M_SETTINGS"
+msgstr "Général"
+
+msgid "IDS_BR_BODY_FULL_NAME_ABB"
+msgstr "Nom complet"
+
+msgid "IDS_BR_BODY_FORCE_ZOOM_ABB"
+msgstr "Forcer le zoom"
+
+msgid "IDS_BR_BODY_FLAT_SUITE_UNIT_BUILDING_FLOOR_ETC_ABB"
+msgstr "Appartement, suite, bâtiment, étage, etc."
+
+msgid "IDS_BR_BODY_FINGERPRINTS_C"
+msgstr "Empreintes :"
+
+msgid "IDS_BR_BODY_FAILED_TO_ADD_TO_HOME_SCREEN_ABB"
+msgstr "Echec de l'ajout à l'écran d'accueil."
+
+msgid "IDS_BR_BODY_ENTER_YOUR_NAME_ABB"
+msgstr "Entrez votre nom."
+
+msgid "IDS_BR_BODY_ENTER_TOWN_CITY_COUNTY_ABB"
+msgstr "Entrez village/ville/départ."
+
+msgid "IDS_BR_BODY_ENTER_COUNTRY_REGION_ABB"
+msgstr "Saisissez un pays/une région."
+
+msgid "IDS_BR_BODY_ENTER_COMPANY_NAME_ABB"
+msgstr "Entrez le nom de l'entreprise."
+
+msgid "IDS_BR_BODY_ENABLE_LOCATION"
+msgstr "Activer la localisation"
+
+msgid "IDS_BR_BODY_ENABLE_JAVASCRIPT"
+msgstr "Activer JavaScript"
+
+msgid "IDS_BR_BODY_DOUBLE_TAP_TO_VIEW_CERTIFICATE_TTS"
+msgstr "Appuyez deux fois pour afficher le certificat."
+
+msgid "IDS_BR_BODY_DOUBLE_TAP_TO_SELECT_A_SEARCH_ENGINE_T_TALKBACK"
+msgstr "Appuyez deux fois pour sélectionner un moteur de recherche."
+
+msgid "IDS_BR_BODY_DOUBLE_TAP_TO_OPEN_THE_WEBPAGE_T_TALKBACK"
+msgstr "Appuyez deux fois pour ouvrir la page Web."
+
+msgid "IDS_BR_BODY_DOUBLE_TAP_TO_OPEN_THE_LIST_T_TTS"
+msgstr "Appuyez deux fois pour ouvrir la liste."
+
+msgid "IDS_BR_BODY_DOUBLE_TAP_TO_OPEN_THE_FOLDER_T_TTS"
+msgstr "Appuyez deux fois pour ouvrir le dossier."
+
+msgid "IDS_BR_BODY_DOUBLE_TAP_TO_OPEN_KEYBOARD_T_TTS"
+msgstr "Appuyez deux fois pour ouvrir le clavier."
+
+msgid "IDS_BR_BODY_DOUBLE_TAP_TO_MOVE_TO_CONTENT_T_TTS"
+msgstr "Appuyez deux fois pour accéder au contenu."
+
+msgid "IDS_BR_BODY_DOUBLE_TAP_TO_CLOSE_THE_TRAY_T_TALKBACK"
+msgstr "Appuyez deux fois pour fermer la barre d'état."
+
+msgid "IDS_BR_BODY_DOUBLE_TAP_TO_CANCEL_THE_SEARCH_T_TALKBACK"
+msgstr "Appuyez deux fois pour annuler la recherche."
+
+msgid "IDS_BR_BODY_DOUBLE_TAP_AND_HOLD_TO_RESIZE_SPLIT_AREA_T_TTS"
+msgstr "App. deux fois, puis maintenez doigt appuyé pour redimensionner zone fractionnée."
+
+msgid "IDS_BR_BODY_DOUBLE_TAP_AND_DRAG_TO_REORDER_TTS"
+msgstr "Appuyez deux fois et faites glisser votre doigt pour réorganiser."
+
+msgid "IDS_BR_BODY_DISPLAY_SECURITY_WARNING_POP_UPS"
+msgstr "Afficher les fenêtres d'avertissement de sécurité."
+
+msgid "IDS_BR_BODY_DISPLAY_IMAGES_ON_WEB_PAGES"
+msgstr "Afficher des images sur les pages Web."
+
+msgid "IDS_BR_BODY_DESKTOP_VIEW"
+msgstr "Vue du bureau"
+
+msgid "IDS_BR_BODY_DELETE_THE_SELECTED_BOOKMARKS_Q"
+msgstr "Supprimer les favoris sélectionnés ?"
+
+msgid "IDS_BR_BODY_DELETE_PERSONAL_DATA"
+msgstr "Supprimer des données personnelles"
+
+msgid "IDS_BR_BODY_DEFAULT_STORAGE"
+msgstr "Stockage par défaut"
+
+msgid "IDS_BR_BODY_DEFAULT_PAGE_ABB"
+msgstr "Page par défaut"
+
+msgid "IDS_BR_BODY_DATA_USAGE_REDUCED_BY_P1SDP_HP2SD_KB_OF_P3SD_KB_RECEIVED_TAP_HERE_TO_RESET_STATISTICS"
+msgstr "Utilisation des données réduite de %1$d % (%2$d Ko sur %3$d Ko reçus). Appuyez ici pour réinitialiser les statistiques."
+
+msgid "IDS_BR_BODY_CUSTOM_USER_AGENT"
+msgstr "Personnaliser l'utilisateur téléphone"
+
+msgid "IDS_BR_BODY_CURRENT_PAGE"
+msgstr "Page en cours"
+
+msgid "IDS_BR_BODY_CREATED"
+msgstr "Créé"
+
+msgid "IDS_BR_BODY_COUNTY_ABB"
+msgstr "Département"
+
+msgid "IDS_BR_BODY_COUNTRY_REGION_ABB2"
+msgstr "Pays/région"
+
+msgid "IDS_BR_BODY_COOKIES_AND_SITE_DATA_ABB"
+msgstr "Cookies et donn. site"
+
+msgid "IDS_BR_BODY_COOKIES"
+msgstr "Cookies"
+
+msgid "IDS_BR_BODY_CONTENT_SETTINGS"
+msgstr "Paramètres des contenus"
+
+msgid "IDS_BR_BODY_COMPANY_NAME_ABB"
+msgstr "Nom de l'entreprise"
+
+msgid "IDS_BR_BODY_CLOSE_TAB"
+msgstr "Fermer l'onglet."
+
+msgid "IDS_BR_BODY_CLEAR_WEB_NOTIFICATION_PERMISSION_SETTINGS"
+msgstr "Effacer les paramètres d'autorisation de notification Web."
+
+msgid "IDS_BR_BODY_CLEAR_WEB_NOTIFICATION_PERMISSIONS_Q"
+msgstr "Effacer les autorisations de notification Web ?"
+
+msgid "IDS_BR_BODY_CLEAR_NOTIFICATION_ACCESS_FOR_WEBSITES"
+msgstr "Effacer l'accès aux notification pour tous les sites Web."
+
+msgid "IDS_BR_BODY_CLEAR_NOTIFICATIONS"
+msgstr "Supprimer les notifications"
+
+msgid "IDS_BR_BODY_CLEAR_LOCATION_ACCESS"
+msgstr "Effacer l'accès à la position"
+
+msgid "IDS_BR_BODY_CLEAR_HISTORY"
+msgstr "Effacer l'historique"
+
+msgid "IDS_BR_BODY_CLEAR_ALL_BROWSER_DATA_AND_RESET_ALL_SETTINGS_TO_DEFAULT"
+msgstr "Supprimer toutes les données de navigateur et réinitialiser tous les paramètres sur les valeurs par défaut."
+
+msgid "IDS_BR_BODY_CITY_TOWN_ABB"
+msgstr "Ville"
+
+msgid "IDS_BR_BODY_CHANGE_THE_TEXT_SIZE_FOR_EASIER_READING_ESPECIALLY_WHEN_VIEWING_DESKTOP_VERSIONS_OF_WEBSITES_ON_YOUR_DEVICE_MSG"
+msgstr "Modifiez la taille du texte pour un meilleur confort de lecture, notamment lors de l'affichage des versions bureau des sites Web sur votre appareil. La disposition du texte peut être affectée par ce changement."
+
+msgid "IDS_BR_BODY_BOOKMARK_REMINDER_ABB"
+msgstr "Rappel de favoris"
+
+msgid "IDS_BR_BODY_BLOCK_POP_UPS_ON_WEB_PAGES"
+msgstr "Bloquer les fenêtres pop-up sur les pages Web."
+
+msgid "IDS_BR_BODY_BLOCK_POP_UPS_ON_WEBPAGES"
+msgstr "Bloquer les fenêtres pop-up sur les pages Web."
+
+msgid "IDS_BR_BODY_BLOCK_POP_UPS"
+msgstr "Bloquer les fenêtres pop-up"
+
+msgid "IDS_BR_BODY_BASIC"
+msgstr "Standard"
+
+msgid "IDS_BR_BODY_AUTO_FILL_FORMS_T_TTS"
+msgstr "Remplir automatiquement les formulaires"
+
+msgid "IDS_BR_BODY_AUTO_DETECT"
+msgstr "Détection automatique"
+
+msgid "IDS_BR_BODY_AUTOMATIC"
+msgstr "Automatique"
+
+msgid "IDS_BR_BODY_ASK_WHETHER_TO_ADD_A_BOOKMARK_FOR_A_WEBSITE_WHEN_YOU_HAVE_VISITED_IT_PD_TIMES"
+msgstr "Demander l'ajout aux favoris d'un site Web que vous avez consulté à %d reprises"
+
+msgid "IDS_BR_BODY_ALWAYS_ON"
+msgstr "Toujours"
+
+msgid "IDS_BR_BODY_ALWAYS"
+msgstr "Toujours"
+
+msgid "IDS_BR_BODY_ALL_OPEN_WINDOWS_WILL_BE_CLOSED_AND_YOU_WILL_MOVE_TO_YOUR_HOMEPAGE"
+msgstr "Toutes les fenêtres ouvertes seront fermées et vous serez redirigé vers la page d'accueil."
+
+msgid "IDS_BR_BODY_ALLOW_SITES_TO_RUN_JAVASCRIPT"
+msgstr "Autoriser les sites à exécuter JavaScript."
+
+msgid "IDS_BR_BODY_ALLOW_SITES_TO_REQUEST_ACCESS_TO_YOUR_LOCATION"
+msgstr "Autoriser les sites à demander l'accès à votre position."
+
+msgid "IDS_BR_BODY_ALLOW_SITES_TO_ACCESS_YOUR_LOCATION_DATA"
+msgstr "Autoriser les sites à accéder à vos données de localisation."
+
+msgid "IDS_BR_BODY_ALLOW_PS_TO_SHOW_NOTIFICATIONS"
+msgstr "Autoriser %s à afficher les notifications"
+
+msgid "IDS_BR_BODY_ALLOWS_SITES_TO_SAVE_AND_READ_COOKIE_DATA"
+msgstr "Autorise les sites à enregistrer et à lire des données de cookie."
+
+msgid "IDS_BR_BODY_AFTER_YOU_VISIT_WEBPAGES_THE_PAGES_YOU_HAVE_VISITED_THE_MOST_WILL_BE_SHOWN_HERE"
+msgstr "Les pages Web les plus consultées seront affichées ici."
+
+msgid "IDS_BR_BODY_AFTER_YOU_VIEW_WEBSITES_THE_SIZE_OF_THEIR_STORED_DATA_AND_WHETHER_THEY_CAN_ACCESS_YOUR_LOCATION_WILL_BE_SHOWN_HERE"
+msgstr "La taille des données stockées et les autorisations d'accès à votre position des sites Web que vous consultez seront affichées ici."
+
+msgid "IDS_BR_BODY_AFTER_YOU_VIEW_WEBPAGES_THEY_WILL_BE_SHOWN_HERE"
+msgstr "Les pages Web consultées seront affichées ici."
+
+msgid "IDS_BR_BODY_AFTER_YOU_SAVE_WEBPAGES_TO_VIEW_OFFLINE_THEY_WILL_BE_SHOWN_HERE"
+msgstr "Les pages Web enregistrées pour être consultées hors ligne seront affichées ici."
+
+msgid "IDS_BR_BODY_AFTER_YOU_LOAD_PAGES_THE_PAGE_HISTORY_WILL_BE_SHOWN"
+msgstr "Lorsque vous chargez des pages, l'historique apparaît."
+
+msgid "IDS_BR_BODY_AFTER_YOU_ADD_WEBPAGES_TO_QUICK_ACCESS_THEY_WILL_BE_SHOWN_HERE"
+msgstr "Les pages Web ajoutées à la fonction Accès rapide seront affichées ici."
+
+msgid "IDS_BR_BODY_ADVANCED_SETTINGS_FOR_INDIVIDUAL_WEBSITES"
+msgstr "Paramètres avancés pour les sites Web individuels"
+
+msgid "IDS_BR_BODY_ADVANCED"
+msgstr "Paramètres avancés"
+
+msgid "IDS_BR_BODY_ADD_TO_CONTACT"
+msgstr "Ajouter aux contacts"
+
+msgid "IDS_BR_BODY_ADD_THIS_WEBSITE_TO_BOOKMARKS_TO_OPEN_IT_FASTER_ABB"
+msgstr "Aj. site Web aux favoris pour ouvrir plus rapid."
+
+msgid "IDS_BR_BODY_ADDRESS_LINE_2_ABB"
+msgstr "Adresse - ligne 2"
+
+msgid "IDS_BR_BODY_ADDRESS_LINE_1_ABB"
+msgstr "Adresse - ligne 1"
+
+msgid "IDS_BR_BODY_ACCEPT_COOKIES"
+msgstr "Accepter les cookies"
+
+msgid "IDS_BR_BODY_1_PROFILE_WILL_BE_DELETED"
+msgstr "1 profil sera supprimé."
+
+msgid "IDS_BR_ACBUTTON_TABS_ABB"
+msgstr "ONGL."
+
+msgid "IDS_BR_TPOP_STARTING_DOWNLOAD_ING"
+msgstr "Début du téléchargement..."
+
+msgid "IDS_BR_TPOP_FOLDER_RENAMED"
+msgstr "Le dossier a été renommé."
+
+msgid "IDS_BR_TMBODY_SUGGEST_SEARCH_TERMS_AND_URLS"
+msgstr "Suggérer termes/URL à chercher"
+
+msgid "IDS_BR_TMBODY_DATA_USAGE_MANAGEMENT"
+msgstr "Gestion utilisation des données"
+
+msgid "IDS_BR_SK_CANCEL_ABB"
+msgstr "Annul."
+
+msgid "IDS_BR_SBODY_SET_THE_DEVICE_TO_SHOW_THE_FULL_WEBPAGE_ON_THE_SCREEN_WHEN_IT_IS_LOADED_WITHOUT_NEEDING_TO_SCROLL"
+msgstr "Réglez l'appareil pour afficher la totalité de la page Web sur l'écran lorsqu'elle est chargée, sans avoir besoin de faire défiler."
+
+msgid "IDS_BR_POP_UNABLE_TO_RUN_INTERNET_LOW_BATTERY"
+msgstr "Impossible de lancer Internet. Batterie faible"
+
+msgid "IDS_BR_POP_THE_DOWNLOAD_HAS_BEEN_STOPPED_AND_THE_DOWNLOADED_DATA_WILL_BE_DELETED"
+msgstr "Le téléchargement a été interrompu et les données téléchargées vont être supprimées."
+
+msgid "IDS_BR_POP_SEARCH_COMPLETED_JPN_SBM"
+msgstr "Search completed"
+
+msgid "IDS_BR_POP_READY"
+msgstr "Prêt"
+
+msgid "IDS_BR_POP_INFORM_MEMORY_ERROR"
+msgstr "Erreur de mémoire"
+
+msgid "IDS_BR_POP_DATA_ROAMING_IS_DISABLED_CONNECT_TO_A_WI_FI_NETWORK_OR_ENABLE_DATA_ROAMING_AND_TRY_AGAIN"
+msgstr "Itinérance des données désactivée. Connectez-vous à un réseau Wi-Fi ou activez l'itinérance des données, puis réessayez."
+
+msgid "IDS_BR_POP_BROWSERERRORREQUESTTIMEOUT"
+msgstr "Délai de requête expiré"
+
+msgid "IDS_BR_POP_A_WI_FI_CONNECTION_IS_REQUIRED_TAP_OK_TO_GO_TO_YOUR_WI_FI_SETTINGS"
+msgstr "Une connexion Wi-Fi est requise. Appuyez sur OK pour accéder aux paramètres Wi-Fi."
+
+msgid "IDS_BR_OPT_WEB_APPS_ABB"
+msgstr "Applis Web"
+
+msgid "IDS_BR_OPT_VIEW_ONLINE"
+msgstr "Afficher en ligne"
+
+msgid "IDS_BR_OPT_READ_ON_OFFLINE_PAGES_LATER_ABB"
+msgstr "Lire plus tard en hors ligne"
+
+msgid "IDS_BR_OPT_QUICK_ACCESS_ABB2"
+msgstr "Accès rapide"
+
+msgid "IDS_BR_OPT_ALWAYS_ENABLED_ABB"
+msgstr "Toujours activé"
+
+msgid "IDS_BR_NPBODY_TAP_HERE_TO_ADD_A_QUICK_ACCESS_SHORTCUT"
+msgstr "Appuyer ici pour ajouter un raccourci Accès rapide"
+
+msgid "IDS_BR_NPBODY_NO_HISTORY"
+msgstr "Aucun historique"
+
+msgid "IDS_BR_MBODY_USER_MANUAL_ABB"
+msgstr "Manuel utilisateur"
+
+msgid "IDS_BR_MBODY_TOWN_CITY_COUNTY"
+msgstr "Village/Ville/Département"
+
+msgid "IDS_BR_MBODY_STORED_DATA"
+msgstr "Données stockées"
+
+msgid "IDS_BR_MBODY_SEARCH_AND_URL_SUGGESTIONS_ABB"
+msgstr "Suggest. URL et recherches"
+
+msgid "IDS_BR_MBODY_HISTORY"
+msgstr "Historique"
+
+msgid "IDS_BR_MBODY_FIT_PAGE_TO_SCREEN"
+msgstr "Ajuster la page à l'écran"
+
+msgid "IDS_BR_MBODY_DOWNLOADS"
+msgstr "Téléchargements"
+
+msgid "IDS_BR_MBODY_CUSTOM"
+msgstr "Personnaliser"
+
+msgid "IDS_BR_MBODY_COUNTRY_REGION"
+msgstr "Pays/Région"
+
+msgid "IDS_BR_HEADER_RENAME_FOLDER_ABB"
+msgstr "Renommer le dossier"
+
+msgid "IDS_BR_HEADER_PERSONAL_DATA_ABB"
+msgstr "Données perso"
+
+msgid "IDS_BR_HEADER_NEWER_M_INTERNET_HISTORY"
+msgstr "Récent"
+
+msgid "IDS_BR_HEADER_ISSUED_TO"
+msgstr "Émis vers"
+
+msgid "IDS_BR_HEADER_ENCODING"
+msgstr "Codage"
+
+msgid "IDS_BR_HEADER_EDIT_INFO_ABB"
+msgstr "Modifier"
+
+msgid "IDS_BR_HEADER_DOWNLOAD_STOPPED_ABB"
+msgstr "Téléchargement arrêté"
+
+msgid "IDS_BR_HEADER_DEPARTMENT_C_ABB"
+msgstr "Service :"
+
+msgid "IDS_BR_HEADER_ADD_INFO_ABB"
+msgstr "Ajouter"
+
+msgid "IDS_BR_BUTTON_WI_FI_ABB"
+msgstr "Wi-Fi"
+
+msgid "IDS_BR_BUTTON_SETTINGS_ABB"
+msgstr "Param."
+
+msgid "IDS_BR_BUTTON2_OK"
+msgstr "OK"
+
+msgid "IDS_BR_BUTTON2_NEW"
+msgstr "Nouveau"
+
+msgid "IDS_BR_BODY_WEB_SEARCH"
+msgstr "Recherche Web"
+
+msgid "IDS_BR_BODY_UNABLE_TO_OPEN_FILE"
+msgstr "Impossible d'ouvrir le fichier."
+
+msgid "IDS_BR_BODY_UNABLE_TO_FIND_AN_APPLICATION_TO_OPEN_THIS_FILE"
+msgstr "Impossible de trouver une application permettant d'ouvrir ce fichier."
+
+msgid "IDS_BR_BODY_UNABLE_TO_CONNECT_TO_MOBILE_NETWORKS_WHILE_FLIGHT_MODE_IS_ENABLED_MSG"
+msgstr "Impossible de se connecter aux réseaux mobiles lorsque le mode Hors ligne est activé. Connectez-vous plutôt à un réseau Wi-Fi ou appuyez sur Paramètres pour désactiver le mode Hors ligne, puis réessayez."
+
+msgid "IDS_BR_BODY_THIS_CERTIFICATE_IS_FROM_A_TRUSTED_AUTHORITY"
+msgstr "Ce certificat provient d'une autorité fiable."
+
+msgid "IDS_BR_BODY_TAP_HERE_TO_ADD_A_QUICK_ACCESS_SHORTCUT"
+msgstr "Appuyez ici pour ajouter un raccourci Accès rapide."
+
+msgid "IDS_BR_BODY_PREFERENCES"
+msgstr "Préférences"
+
+msgid "IDS_BR_BODY_PERCENTAGE_M_SYMBOL"
+msgstr "% "
+
+msgid "IDS_BR_BODY_NO_MOBILE_NETWORKS_HAVE_BEEN_FOUND"
+msgstr "Aucun réseau mobile n'a été trouvé."
+
+msgid "IDS_BR_BODY_NO_MATCHES"
+msgstr "Aucune correspondance"
+
+msgid "IDS_BR_BODY_MOBILE_DATA_IS_TURNED_OFF_CONNECT_TO_A_WI_FI_NETWORK_INSTEAD_OR_TAP_SETTINGS_TO_TURN_ON_MOBILE_DATA_AND_THEN_TRY_AGAIN"
+msgstr "Les données mobiles sont désactivées. Connectez-vous à un réseau Wi-Fi ou appuyez sur Paramètres pour les activer, puis réessayez."
+
+msgid "IDS_BR_BODY_FIT_TO_WIDTH"
+msgstr "Ajuster selon largeur"
+
+msgid "IDS_BR_ACBUTTON_QUICK_ACCESS"
+msgstr "ACCÈS RAPIDE"
+
+msgid "IDS_BR_OPT_OPEN_IN_NEW_TAB"
+msgstr "Ouvrir dans un nouvel onglet"
+
+msgid "IDS_BR_BODY_SHARE_LINK"
+msgstr "Partager le lien"
+
+msgid "IDS_BR_SK_SAVE_LITE"
+msgstr "Enreg."
+
+msgid "IDS_BR_SK_SAVE_ABB"
+msgstr "Enreg."
+
+msgid "IDS_BR_SK_SAVE"
+msgstr "Sauveg."
+
+msgid "IDS_BR_SK_PREVIOUS"
+msgstr "Précédent"
+
+msgid "IDS_BR_SK_NEXT"
+msgstr "Suivant"
+
+msgid "IDS_BR_SK_DELETE"
+msgstr "Supprimer"
+
+msgid "IDS_BR_SK_CLEAR"
+msgstr "Effacer"
+
+msgid "IDS_BR_SK_BACK"
+msgstr "Retour"
+
+msgid "IDS_BR_POP_WI_FI_CONNECTION_REQUIRED_CONNECT_TO_WI_FI_NETWORK_AND_TRY_AGAIN"
+msgstr "Connexion Wi-Fi requise. Connectez-vous au réseau Wi-Fi et réessayez."
+
+msgid "IDS_BR_POP_URL_NOT_FOUND"
+msgstr "URL introuvable"
+
+msgid "IDS_BR_POP_URL"
+msgstr "URL"
+
+msgid "IDS_BR_POP_SAVED"
+msgstr "Enregistré"
+
+msgid "IDS_BR_POP_REMOVED"
+msgstr "Supprimé"
+
+msgid "IDS_BR_POP_PD_ITEMS_WILL_BE_DELETED"
+msgstr "%d éléments vont être supprimés."
+
+msgid "IDS_BR_POP_PD_ITEMS_SELECTED"
+msgstr "%d éléments sélectionnés"
+
+msgid "IDS_BR_POP_NO_ITEMS_SELECTED"
+msgstr "Aucun élément sélectionné."
+
+msgid "IDS_BR_POP_NOT_ENOUGH_MEMORY"
+msgstr "Mémoire insuffisante"
+
+msgid "IDS_BR_POP_NEVER"
+msgstr "Jamais"
+
+msgid "IDS_BR_POP_MOBILE_DATA_IS_DISABLED_CONNECT_TO_WI_FI_NETWORK_INSTEAD_OR_ENABLE_MOBILE_DATA_AND_TRY_AGAIN"
+msgstr "Les données mobiles sont désactivées. Connectez-vous au réseau Wi-Fi à la place ou activez les données mobiles et réessayez."
+
+msgid "IDS_BR_POP_LOADING_PLEASE_WAIT_ING"
+msgstr "Chargement. Veuillez patienter..."
+
+msgid "IDS_BR_POP_INVALID_URL"
+msgstr "URL non valide"
+
+msgid "IDS_BR_POP_FAIL"
+msgstr "Échec"
+
+msgid "IDS_BR_POP_ENTER_TITLE_ABB"
+msgstr "Saisir un titre"
+
+msgid "IDS_BR_POP_DO_NOT_SHOW_AGAIN"
+msgstr "Ne plus afficher"
+
+msgid "IDS_BR_POP_DOWNLOADCOMPLETE"
+msgstr "Téléchargement terminé"
+
+msgid "IDS_BR_POP_DISABLED"
+msgstr "Désactivé"
+
+msgid "IDS_BR_POP_DELETE_Q"
+msgstr "Supprimer ?"
+
+msgid "IDS_BR_POP_DELETED"
+msgstr "Supprimé"
+
+msgid "IDS_BR_POP_CLOSE_APPLICATION_Q"
+msgstr "Fermer l'application ?"
+
+msgid "IDS_BR_POP_BOOKMARK_ADDED"
+msgstr "Favori ajouté"
+
+msgid "IDS_BR_POP_AUTOMATIC_BRIGHTNESS"
+msgstr "Luminosité automatique"
+
+msgid "IDS_BR_POP_ACCOUNT"
+msgstr "Compte"
+
+msgid "IDS_BR_POP_1_ITEM_WILL_BE_DELETED"
+msgstr "1 élément va être supprimé."
+
+msgid "IDS_BR_POP_1_ITEM_SELECTED"
+msgstr "1 élément sélectionné"
+
+msgid "IDS_BR_OPT_TRANSLATE"
+msgstr "Traduire"
+
+msgid "IDS_BR_OPT_STOP"
+msgstr "Arrêter"
+
+msgid "IDS_BR_OPT_SHOW"
+msgstr "Afficher"
+
+msgid "IDS_BR_OPT_SHARE"
+msgstr "Partager"
+
+msgid "IDS_BR_OPT_SETTINGS"
+msgstr "Paramètres"
+
+msgid "IDS_BR_OPT_SEND_EMAIL"
+msgstr "Envoyer un e-mail"
+
+msgid "IDS_BR_OPT_SELECT"
+msgstr "Sélectionner"
+
+msgid "IDS_BR_OPT_SD_CARD"
+msgstr "Carte SD"
+
+msgid "IDS_BR_OPT_RENAME"
+msgstr "Renommer"
+
+msgid "IDS_BR_OPT_REFRESH"
+msgstr "Actualiser"
+
+msgid "IDS_BR_OPT_MOVE"
+msgstr "Déplacer"
+
+msgid "IDS_BR_OPT_MESSAGES"
+msgstr "Messages"
+
+msgid "IDS_BR_OPT_LIST_VIEW"
+msgstr "Affichage Liste"
+
+msgid "IDS_BR_OPT_I_AGREE"
+msgstr "J'accepte."
+
+msgid "IDS_BR_OPT_HELP"
+msgstr "Aide"
+
+msgid "IDS_BR_OPT_DEVICE"
+msgstr "Appareil"
+
+msgid "IDS_BR_OPT_BOOKMARK"
+msgstr "Favori"
+
+msgid "IDS_BR_OPT_ADDED"
+msgstr "Ajouté"
+
+msgid "IDS_BR_OPT_ADD"
+msgstr "Ajouter"
+
+msgid "IDS_BR_MBODY_DEFAULT_DOWNLOAD_STORAGE"
+msgstr "Stockage téléch. par déf."
+
+msgid "IDS_BR_HEADER_SIGN_IN_TO_SAMSUNG_ACCOUNT"
+msgstr "Se connecter au compte Samsung"
+
+msgid "IDS_BR_HEADER_PD_SELECTED_ABB"
+msgstr "%d sélectionné(s)"
+
+msgid "IDS_BR_HEADER_NO_NETWORK_CONNECTION"
+msgstr "Aucune connexion réseau"
+
+msgid "IDS_BR_HEADER_FOLDER"
+msgstr "Dossier"
+
+msgid "IDS_BR_HEADER_EDIT_PROFILE"
+msgstr "Modifier profil"
+
+msgid "IDS_BR_BUTTON_SET"
+msgstr "Appliquer"
+
+msgid "IDS_BR_BUTTON_NOT_NOW"
+msgstr "Pas maintenant"
+
+msgid "IDS_BR_BUTTON_ENABLE_ABB"
+msgstr "Activer"
+
+msgid "IDS_BR_BUTTON_EDIT"
+msgstr "Modifier"
+
+msgid "IDS_BR_BUTTON_CONTINUE_ABB"
+msgstr "Cont."
+
+msgid "IDS_BR_BUTTON_CONTINUE"
+msgstr "Continuer"
+
+msgid "IDS_BR_BUTTON_CLOSE"
+msgstr "Fermer"
+
+msgid "IDS_BR_BUTTON_CANCEL_ABB"
+msgstr "Annuler"
+
+msgid "IDS_BR_BUTTON_CANCEL"
+msgstr "Annuler"
+
+msgid "IDS_BR_BUTTON_ALLOW"
+msgstr "Autoriser"
+
+msgid "IDS_BR_BODY_YESTERDAY"
+msgstr "Hier"
+
+msgid "IDS_BR_BODY_URL"
+msgstr "URL"
+
+msgid "IDS_BR_BODY_TODAY"
+msgstr "Aujourd'hui"
+
+msgid "IDS_BR_BODY_TITLE"
+msgstr "Titre"
+
+msgid "IDS_BR_BODY_THE_MAXIMUM_NUMBER_OF_CHARACTERS_HPD_HAS_BEEN_EXCEEDED"
+msgstr "Le nombre maximal de caractères (%d) a été dépassé."
+
+msgid "IDS_BR_BODY_STREAMING"
+msgstr "Streaming"
+
+msgid "IDS_BR_BODY_SMALL"
+msgstr "Petite"
+
+msgid "IDS_BR_BODY_SETTINGS"
+msgstr "Paramètres"
+
+msgid "IDS_BR_BODY_SEARCH"
+msgstr "Rechercher"
+
+msgid "IDS_BR_BODY_RSS_SEARCH_RESULTS"
+msgstr "Résultat de la recherche"
+
+msgid "IDS_BR_BODY_PROFILE"
+msgstr "Profil"
+
+msgid "IDS_BR_BODY_PROCESSING_ING"
+msgstr "En cours..."
+
+msgid "IDS_BR_BODY_PHONE_NUMBER_ABB"
+msgstr "N° téléphone"
+
+msgid "IDS_BR_BODY_PHONE"
+msgstr "Téléphone"
+
+msgid "IDS_BR_BODY_PD_ITEMS_WILL_BE_DELETED"
+msgstr "%d éléments vont être supprimés."
+
+msgid "IDS_BR_BODY_PASSWORD"
+msgstr "Mot de passe"
+
+msgid "IDS_BR_BODY_ON"
+msgstr "Activé"
+
+msgid "IDS_BR_BODY_OFF"
+msgstr "Désactivé"
+
+msgid "IDS_BR_BODY_NO_RESULTS_FOUND"
+msgstr "Aucun résultat trouvé"
+
+msgid "IDS_BR_BODY_NO_HISTORIES"
+msgstr "Pas d'historique"
+
+msgid "IDS_BR_BODY_NOTIFICATIONS"
+msgstr "Notifications"
+
+msgid "IDS_BR_BODY_MEDIUM"
+msgstr "Moyenne"
+
+msgid "IDS_BR_BODY_IMAGES"
+msgstr "Images"
+
+msgid "IDS_BR_BODY_FULL_SCREEN"
+msgstr "Plein écran"
+
+msgid "IDS_BR_BODY_FONT_SIZE"
+msgstr "Taille de police"
+
+msgid "IDS_BR_BODY_FOLDER_NAME"
+msgstr "Nom de dossier"
+
+msgid "IDS_BR_BODY_ENTER_POSTCODE_ABB"
+msgstr "Entrez un code postal."
+
+msgid "IDS_BR_BODY_ENTER_POSTCODE"
+msgstr "Merci d'entrer votre code postal."
+
+msgid "IDS_BR_BODY_ENTER_PHONE_NUMBER"
+msgstr "Saisissez le numéro de téléphone."
+
+msgid "IDS_BR_BODY_ENTER_NAME"
+msgstr "Saisissez un nom."
+
+msgid "IDS_BR_BODY_ENTER_FOLDER_NAME"
+msgstr "Entrer nom du dossier"
+
+msgid "IDS_BR_BODY_ENTER_EMAIL_ADDRESS"
+msgstr "Entrer l'adresse e-mail."
+
+msgid "IDS_BR_BODY_EMAIL_ADDRESS"
+msgstr "Adresse e-mail"
+
+msgid "IDS_BR_BODY_DOWNLOADING_ING"
+msgstr "Téléchargement en cours."
+
+msgid "IDS_BR_BODY_DEVELOPER_MODE"
+msgstr "Mode développeur"
+
+msgid "IDS_BR_BODY_DEFAULT"
+msgstr "Par défaut"
+
+msgid "IDS_BR_BODY_BOOKMARKS"
+msgstr "Favoris"
+
+msgid "IDS_BR_BODY_ALL"
+msgstr "Tout"
+
+msgid "IDS_BR_BODY_ADD_TO"
+msgstr "Ajouter à"
+
+msgid "IDS_BR_BODY_ADDDETAILSVIEW_TAGS"
+msgstr "Libellés"
+
+msgid "IDS_BR_BODY_ADDBOOKMARKURL"
+msgstr "URL"
+
+msgid "IDS_BR_BODY_1_ITEM_WILL_BE_DELETED"
+msgstr "1 élément va être supprimé."
+
+msgid "IDS_BR_TPOP_MAXIMUM_NUMBER_OF_CHARACTERS_HPD_REACHED"
+msgstr "Le nombre maximal de caractères (%d) est atteint."
+
+msgid "IDS_BR_POP_UNSUPPORTMEDIATYPE"
+msgstr "Type de support non pris en charge"
+
+msgid "IDS_BR_POP_UNABLE_TO_CONNECT_TO_MOBILE_NETWORKS_WHILE_FLIGHT_MODE_IS_ENABLED_CONNECT_TO_WI_FI_NETWORK_INSTEAD_OR_DISABLE_FLIGHT_MODE_AND_TRY_AGAIN"
+msgstr "Impossible de se connecter aux réseaux mobiles lorsque le mode Hors-ligne est activé. Connectez-vous au réseau Wi-Fi à la place ou désactivez le mode Hors-ligne et réessayez."
+
+msgid "IDS_BR_POP_INSTALL_SUCCESS"
+msgstr "Installation terminée"
+
+msgid "IDS_BR_POP_INSTALLATION_FAILED"
+msgstr "Échec de l'installation."
+
+msgid "IDS_BR_POP_DELETING_ING"
+msgstr "Suppression..."
+
+msgid "IDS_BR_POP_DATA_ROAMING_IS_DISABLED_CONNECT_TO_WI_FI_NETWORK_INSTEAD_OR_ENABLE_DATA_ROAMING_AND_TRY_AGAIN"
+msgstr "L'itinérance des données est désactivée. Connectez-vous au réseau Wi-Fi à la place ou activez l'itinérance des données et réessayez."
+
+msgid "IDS_BR_OPT_SHARE_VIA"
+msgstr "Partager via"
+
+msgid "IDS_BR_OPT_PASTE"
+msgstr "Coller"
+
+msgid "IDS_BR_MBODY_FONT_SIZE"
+msgstr "Taille de police"
+
+msgid "IDS_BR_HEADER_UNABLE_TO_DOWNLOAD_ABB"
+msgstr "Téléchargement impossible"
+
+msgid "IDS_BR_BUTTON_UPDATE"
+msgstr "Mise à jour"
+
+msgid "IDS_BR_BUTTON_RETRY"
+msgstr "Réessayer"
+
+msgid "IDS_BR_BODY_REQUEST_FAILED"
+msgstr "Échec de la demande."
+
+msgid "IDS_BR_BODY_LOGIN"
+msgstr "Connexion"
+
+msgid "IDS_BR_BODY_LOADING_ING"
+msgstr "Chargement en cours."
+
+msgid "IDS_BR_BODY_FIT_TO_SCREEN"
+msgstr "Ajuster à l'écran"
+
+msgid "IDS_BR_BODY_DOWNLOADS_VODA"
+msgstr "Téléchargements"
+
+msgid "IDS_BR_BODY_DATA_ROAMING_IS_DISABLED_CONNECT_TO_A_WI_FI_NETWORK_INSTEAD_OR_ENABLE_DATA_ROAMING_AND_TRY_AGAIN"
+msgstr "Itinérance des données désactivée. Connectez-vous à un réseau Wi-Fi, ou activez l'itinérance des données, puis réessayez."
+
+msgid "IDS_BR_POP_DOWNLOAD_CANCELLED"
+msgstr "Téléchargement annulé"
+
+msgid "IDS_BR_BUTTON_SECRET_ON_ABB"
+msgstr "Secret activé"
+
+msgid "IDS_BR_MBODY_PRIVACY"
+msgstr "Confidentialité"
+
+msgid "IDS_BR_MBODY_DEFAULT_STORAGE"
+msgstr "Stockage par défaut"
+
+msgid "IDS_BR_MBODY_MANUAL_ZOOM"
+msgstr "Zoom manuel"
+
+msgid "IDS_BR_TMBODY_DEFAULT_SEARCH_ENGINE"
+msgstr "Moteur de recherche par défaut"
+
+msgid "IDS_BR_MBODY_SAVE_SIGN_IN_INFO"
+msgstr "Enreg. infos de connexion"
+
+msgid "IDS_BR_OPT_TURN_OFF_SECRET_MODE_ABB"
+msgstr "Désactiver le mode Secret"
+
+msgid "IDS_BR_OPT_TURN_ON_SECRET_MODE_ABB"
+msgstr "Activer le mode Secret"
+
+msgid "IDS_BR_OPT_SHOW_PASSWORD_ABB2"
+msgstr "Afficher le mot de passe"
+
+msgid "IDS_BR_BODY_ENTER_YOUR_CURRENT_SECRET_MODE_PASSWORD"
+msgstr "Entrez votre mot de passe actuel du mode Secret."
+
+msgid "IDS_BR_OPT_SECRET_MODE_SECURITY_ABB"
+msgstr "Sécurité du mode Secret"
+
+msgid "IDS_BR_BUTTON_USE_PASSWORD_ABB"
+msgstr "Utiliser mot de passe"
+
+msgid "IDS_BR_HEADER_DONT_USE_PASSWORD_ABB"
+msgstr "Ne pas utiliser mot de passe"
+
+msgid "IDS_BR_MBODY_MOST_VISITED_WEBSITES"
+msgstr "Sites Web les + visités"
+
+msgid "IDS_BR_MBODY_SET_MY_PROFILE"
+msgstr "Définir mon profil"
+
+msgid "IDS_BR_MBODY_MY_AUTO_FILL_PROFILE"
+msgstr "Mon profil d'entrées auto"
+
+msgid "IDS_BR_SBODY_MANAGE_DATA_USED_TO_FILL_IN_FORMS_ONLINE"
+msgstr "Gérez les données utilisées pour remplir les formulaires en ligne."
+
+msgid "IDS_BR_MBODY_SAVE_SIGN_IN_INFO_ABB"
+msgstr "Enr. info connex."
+
+msgid "IDS_BR_OPT_LOCATION_ACCESS_DATA"
+msgstr "Données d'accès à la position"
+
+msgid "IDS_BR_OPT_AUTO_FILL_DATA"
+msgstr "Saisir automatiquement les données"
+
+msgid "IDS_BR_BODY_ANY_WEBPAGES_YOU_VIEW_WHILE_SECRET_MODE_IS_TURNED_ON_WONT_APPEAR_IN_YOUR_BROWSER_OR_SEARCH_HISTORY_MSG"
+msgstr "Les pages Web que vous consultez pendant que le mode Secret est activé ne s'afficheront pas dans votre navigateur ou votre historique de recherche lorsque ce mode est désactivé.\n\nLes favoris et les pages Web que vous enregistrez pendant que le mode Secret est activé ne s'afficheront pas lorsque ce mode est désactivé.\n\nVous pouvez également protéger vos données en mode Secret avec un mot de passe."
+
+msgid "IDS_BR_BODY_ANY_WEBPAGES_YOU_VIEW_WHILE_SECRET_MODE_IS_TURNED_ON_WONT_APPEAR_IN_YOUR_BROWSER_OR_SEARCH_MSG"
+msgstr "Les pages Web que vous consultez pendant que le mode Secret est activé ne s'afficheront pas dans votre navigateur ou votre historique de recherche lorsque ce mode est désactivé.\n\nLes favoris et les pages Web que vous enregistrez pendant que le mode Secret est activé ne s'afficheront pas lorsque ce mode est désactivé."
+
+msgid "IDS_BR_BUTTON_SECRET_OFF_ABB"
+msgstr "Secret désac."
+
+msgid "IDS_BR_BUTTON_DONT_USE_PASSWORD_ABB"
+msgstr "Ne pas utiliser MDP"
+
+msgid "IDS_BR_BUTTON_NEW_TAB_ABB2"
+msgstr "Nv. ongl."
+
+msgid "IDS_BR_NPBODY_WEB_ADDRESS_ABB"
+msgstr "Adresse Web"
+
+msgid "IDS_BR_HEADER_ADD_WEBPAGE_TO_QUICK_ACCESS_ABB"
+msgstr "Ajout page Web à Accès rapide"
+
+msgid "IDS_BR_TMBODY_TURN_ON_JAVASCRIPT"
+msgstr "Activation de JavaScript"
+
+msgid "IDS_BR_HEADER_COULDNT_OPEN_NEW_TAB_ABB"
+msgstr "Imposs. ouvrir nouvel onglet"
+
+msgid "IDS_BR_OPT_OPEN_IN_NEW_TAB_ABB"
+msgstr "Ouvrir dans un nouvel onglet"
+
+msgid "IDS_BR_TPOP_FOLDER_NAME_ALREADY_IN_USE"
+msgstr "Nom de dossier déjà utilisé."
+
+msgid "IDS_BR_NPBODY_NEW_FOLDER_PD"
+msgstr "Nouveau dossier %d"
+
+msgid "IDS_BR_NPBODY_NEW_FOLDER"
+msgstr "Nouveau dossier"
+
+msgid "IDS_BR_OPT_ENABLE_JAVASCRIPT"
+msgstr "Activer JavaScript"
+
+msgid "IDS_BR_TMBODY_MANAGE_WEBSITE_DATA"
+msgstr "Gérer les données du site Web"
+
+msgid "IDS_BR_HEADER_SET_HOME_PAGE_ABB"
+msgstr "Définition page d'accueil"
+
+msgid "IDS_BR_TPOP_WEBPAGE_ADDED_TO_QUICK_ACCESS_LIST"
+msgstr "La page Web a été ajoutée à la liste d'accès rapide."
+
+msgid "IDS_BR_OPT_EDIT_QUICK_ACCESS_ABB"
+msgstr "Modifier Accès rapide"
+
+msgid "IDS_BR_OPT_REMOVE_FROM_BOOKMARKS_ABB"
+msgstr "Supprimer des favoris"
+
+msgid "IDS_BR_HEADER_ADD_BOOKMARK_ABB"
+msgstr "Ajouter un favori"
+
+msgid "IDS_BR_BODY_BROWSING_HISTORY"
+msgstr "Historique de navigation"
+
+msgid "IDS_BR_HEADER_TABS_ABB2"
+msgstr "Onglets"
+
+msgid "IDS_BR_OPT_NEW_TAB"
+msgstr "Nouvel onglet"
+
+msgid "IDS_BR_BUTTON_FORWARD_ABB2"
+msgstr "Transférer"
+
+msgid "IDS_BR_BUTTON_BACK_ABB3"
+msgstr "Retour"
+
+msgid "IDS_BR_BUTTON_BOOKMARKS_ABB"
+msgstr "Favoris"
+
+msgid "IDS_BR_NPBODY_NO_PROFILES_ABB"
+msgstr "Aucun profil"
+
+msgid "IDS_BR_TAB2_HISTORY"
+msgstr "Historique"
+
+msgid "IDS_BR_TAB2_BOOKMARKS"
+msgstr "Favoris"
+
+msgid "IDS_BR_HEADER_SAVE_CONTENT_TO_ABB"
+msgstr "Enregistrement contenu dans"
+
+msgid "IDS_BR_HEADER_SELECT_ITEMS_ABB2"
+msgstr "Sélectionner des éléments"
+
+msgid "IDS_BR_BODY_YOUR_PASSWORD_MUST_CONTAIN_AT_LEAST_PD_CHARACTERS_INCLUDING_AT_LEAST_1_LETTER"
+msgstr "Votre mot de passe doit contenir au moins %d caractères, parmi lesquels au moins 1 lettre."
+
+msgid "IDS_BR_BODY_AN_INCORRECT_PASSWORD_HAS_BEEN_ENTERED_TRY_AGAIN"
+msgstr "Un mot de passe erroné a été saisi. Réessayez."
+
+msgid "IDS_BR_BODY_NO_TABS"
+msgstr "Aucun onglet"
+
+msgid "IDS_BR_TMBODY_CHANGE_PASSWORD"
+msgstr "Modification du mot de passe"
+
+msgid "IDS_BR_BODY_ANY_WEBPAGES_VIEWED_WHILE_SECRET_MODE_IS_ENABLED_WILL_NOT_APPEAR_IN_YOUR_BROWSER_OR_SEARCH_HISTORY_WHILE_SECRET_MSG"
+msgstr "Les pages Web affichées pendant que le mode Secret est activé ne s'afficheront pas dans votre navigateur ou votre historique de recherche lorsque ce mode sera désactivé.\n\nLes favoris et les pages Web enregistrés pendant que le mode Secret est activé ne s'afficheront pas lorsque ce mode sera désactivé.\n\nVous pouvez également protéger vos données en mode Secret avec un mot de passe."
+
+msgid "IDS_BR_BODY_ANY_WEBPAGES_VIEWED_WHILE_SECRET_MODE_IS_ENABLED_WILL_NOT_APPEAR_IN_YOUR_MSG"
+msgstr "Les pages Web affichées pendant que le mode Secret est activé ne s'afficheront pas dans votre navigateur ou votre historique de recherche lorsque ce mode sera désactivé.\n\nLes favoris et les pages Web enregistrés pendant que le mode Secret est activé ne s'afficheront pas lorsque ce mode sera désactivé."
+
+msgid "IDS_BR_BUTTON2_DONE"
+msgstr "Terminé"
+
+msgid "IDS_BR_BODY_ENTER_YOUR_PASSWORD_AGAIN_TO_CONFIRM_IT"
+msgstr "Entrez de nouveau votre mot de passe pour le confirmer."
+
+msgid "IDS_BR_HEADER_CREATE_PASSWORD_M_SET_ABB"
+msgstr "Créer un mot de passe"
+
+msgid "IDS_BR_BUTTON_DO_NOT_USE_PASSWORD_ABB"
+msgstr "Ne pas utiliser MDP"
+
+msgid "IDS_BR_POP_TO_PROTECT_YOUR_SECRET_MODE_DATA_CREATE_A_PASSWORD_IF_YOU_USE_SECRET_MODE_WITHOUT_CREATING_A_PASSWORD_MSG"
+msgstr "Pour protéger vos données du mode Secret, créez un mot de passe. Si vous utilisez le mode Secret sans créer de mot de passe, vous ne pourrez empêcher personne d'afficher votre historique de navigation et de recherche, vos favoris et vos pages enregistrées."
+
+msgid "IDS_BR_BODY_AFTER_YOU_ADD_BOOKMARKS_THEY_WILL_BE_SHOWN_HERE"
+msgstr "Les favoris ajoutés seront affichés ici."
+

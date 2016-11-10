@@ -1,0 +1,32 @@
+#include "ImageButton.edc"
+#include "../../../core/Tools/edc/Spacer.edc"
+#include "../../../core/Tools/edc/ToolbarButton.edc"
+
+#define BUTTON_WIDTH 100
+#define BUTTON_HEIGHT 106
+#define BUTTON_TOP_PADDING 16
+
+collections { base_scale: 2.6;
+
+    TOOLBAR_BUTTON("add_tab" ,"internet_ic_add.png", BUTTON_WIDTH, BUTTON_HEIGHT, BUTTON_TOP_PADDING)
+
+    group {
+        name: "right_button_bar";
+        parts {
+            part {
+                name: "tab_button";
+                type : SWALLOW;
+                scale: 1;
+                description {
+                    state: "default" 0.0;
+                    visible: 1;
+                    fixed: 1 1;
+                    align: 0.0 0.0;
+                    min: BUTTON_WIDTH BUTTON_HEIGHT;
+                    max: BUTTON_WIDTH BUTTON_HEIGHT;
+                    rel1 { relative: 0.0 0.0; }
+                }
+            }
+        }
+    }
+}

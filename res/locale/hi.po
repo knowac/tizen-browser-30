@@ -1,0 +1,2193 @@
+msgid "IDS_BR_POP_NETWORK_ERROR"
+msgstr "नेटवर्क त्रुटी।"
+
+msgid "IDS_BR_BODY_DESTINATIONS_AUTHENTICATION_REQUIRED"
+msgstr "प्रमाणीकरण आवश्यक है"
+
+msgid "IDS_BR_HEADER_SECURITY_WARNING"
+msgstr "सुरक्षा चेतावनी"
+
+msgid "IDS_BR_BODY_CERTIFICATES"
+msgstr "प्रमाणपत्र"
+
+msgid "IDS_BR_HEADER_ISSUED_TO_C"
+msgstr "को जारी:"
+
+msgid "IDS_BR_HEADER_COMMON_NAME_C"
+msgstr "सामान्य नाम:"
+
+msgid "IDS_BR_HEADER_ORGANIZATION_C"
+msgstr "संगठन:"
+
+msgid "IDS_BR_HEADER_ORGANIZATIONAL_UNIT_C"
+msgstr "संगठनात्मक इकाई:"
+
+msgid "IDS_BR_BODY_SECURITY_CERTIFICATE_PROBLEM_MSG"
+msgstr "इस साइट के सुरक्षा प्रमाणपत्र के साथ समस्‍याएँ है।"
+
+msgid "IDS_BR_OPT_ALLOW"
+msgstr "अनुमति दें"
+
+msgid "IDS_BR_BODY_PS_REQUESTS_YOUR_LOCATION"
+msgstr "%s आपके स्थान का अनुरोध करता है"
+
+msgid "IDS_BR_BODY_REMEMBER_PREFERENCE"
+msgstr "प्राथमिकता याद रखें"
+
+msgid "IDS_BR_BODY_CERTIFICATE_SERIAL_NUMBER"
+msgstr "सीरियल नंबर"
+
+msgid "IDS_BR_HEADER_ISSUED_BY_C"
+msgstr "इसके द्वारा जारी:"
+
+msgid "IDS_BR_HEADER_VALIDITY_C"
+msgstr "वैधता:"
+
+msgid "IDS_BR_POP_CERTI_VALID_FROM_C"
+msgstr "से मान्य:"
+
+msgid "IDS_BR_BODY_CERTIFICATE_VALID_TILL"
+msgstr "मान्‍यता अवधि"
+
+msgid "IDS_BR_BODY_ROOTCERTIFICATES_FINGER_PRINT"
+msgstr "फिंगर प्रिंट"
+
+msgid "IDS_BR_BODY_SIGNATURE_ALGORITHM_VODA"
+msgstr "सिग्‍नेचर एल्गोरिदम"
+
+msgid "IDS_BR_BODY_DOWNLOAD"
+msgstr "डाउनलोड करें"
+
+msgid "IDS_BR_BODY_THIS_WEBPAGE"
+msgstr "यह वेबपेज"
+
+msgid "IDS_BR_BODY_AUTHUSERNAME"
+msgstr "उपयोगकर्ता नाम"
+
+msgid "IDS_BR_BODY_AUTHPASSWORD"
+msgstr "पासवर्ड"
+
+msgid "IDS_BR_OPT_VIEW"
+msgstr "देखें"
+
+msgid "IDS_BR_OPT_CANCEL"
+msgstr "रद्द करें"
+
+msgid "IDS_BR_OPT_SCREEN"
+msgstr "स्‍क्रीन"
+
+msgid "IDS_BR_OPT_LTE_GSM_WCDMA_HAUTO_CONNECT"
+msgstr "LTE/GSM/WCDMA (स्वतः कनेक्ट)"
+
+msgid "IDS_BR_HEADER_MULTI_WINDOW"
+msgstr "मल्टी विंडो"
+
+msgid "IDS_BR_HEADER_CERTIFICATE_INFO"
+msgstr "प्रमाणपत्र जानकारी"
+
+msgid "IDS_BR_BODY_WEBSITE_SETTINGS"
+msgstr "वेबसाइट सेटिंग्स"
+
+msgid "IDS_BR_POP_INVALID_CERTIFICATE"
+msgstr "अमान्य प्रमाणपत्र।"
+
+msgid "IDS_BR_BODY_BUTTON_T_TTS"
+msgstr "बटन"
+
+msgid "IDS_BR_SK_YES"
+msgstr "हाँ"
+
+msgid "IDS_BR_SK_NO"
+msgstr "नहीं"
+
+msgid "IDS_BR_SK_DONE"
+msgstr "पूर्ण"
+
+msgid "IDS_BR_SK_CANCEL"
+msgstr "रद्द"
+
+msgid "IDS_BR_BUTTON_MORE"
+msgstr "अधिक"
+
+msgid "IDS_BR_BODY_NO_ITEMS"
+msgstr "कोई मदें नहीं"
+
+msgid "IDS_BR_MBODY_CONNECT_TO_MOBILE_NETWORK"
+msgstr "मोबाइल नेटवर्क से कनेक्ट करें"
+
+msgid "IDS_BR_OPT_DO_NOT_SHOW_AGAIN"
+msgstr "दोबारा न दिखाएँ"
+
+msgid "IDS_BR_POP_ONLY_HTTP_OR_HTTPS_URLS_CAN_BE_DOWNLOADED"
+msgstr "केवल http या https URL डाउनलोड किए जा सकते हैं।"
+
+msgid "IDS_BR_OPT_WEB_SEARCH"
+msgstr "वेब खोज"
+
+msgid "IDS_BR_OPT_VIEW_IMAGE"
+msgstr "छवि देखें"
+
+msgid "IDS_BR_OPT_SAVE_LINK"
+msgstr "लिंक सुरक्षित करें"
+
+msgid "IDS_BR_OPT_SAVE_IMAGE"
+msgstr "छवि सुरक्षित करें"
+
+msgid "IDS_BR_OPT_COPY_LINK"
+msgstr "लिंक कॉपी करें"
+
+msgid "IDS_BR_OPT_COPY_IMAGE"
+msgstr "छवि कॉपी करें"
+
+msgid "IDS_BR_SK_OK"
+msgstr "ओके"
+
+msgid "IDS_BR_OPT_CALL"
+msgstr "कॉल"
+
+msgid "IDS_BR_BUTTON_FAILED"
+msgstr "विफल"
+
+msgid "IDS_BR_TPOP_WEBPAGE_ADDED_TO_QUICK_ACCESS"
+msgstr "वेबपेज को शीघ्र ऐक्सेस में जोड़ दिया गया।"
+
+msgid "IDS_BR_TPOP_WEBPAGE_ADDED_TO_BOOKMARKS"
+msgstr "वेबपेज बुकमार्क्स में जोड़ा गया।"
+
+msgid "IDS_BR_TPOP_QUICK_ACCESS_SHORTCUT_DELETED"
+msgstr "शीघ्र एक्सेस शॉर्टकट हटाया गया।"
+
+msgid "IDS_BR_TPOP_PD_ITEMS_DELETED_FROM_BROWSING_HISTORY"
+msgstr "ब्राउजिंग इतिहास से %d मदें हटाई गयी।"
+
+msgid "IDS_BR_TPOP_OPENING_SAMSUNG_ACCOUNT_ING"
+msgstr "Samsung account खोला जा रहा है..."
+
+msgid "IDS_BR_TPOP_LOW_DATA_USAGE_ENABLED"
+msgstr "कम डाटा उपयोग सक्षम है।"
+
+msgid "IDS_BR_TPOP_LOW_DATA_USAGE_DISABLED_PDP_OF_BANDWIDTH_SAVED"
+msgstr "कम डाटा उपयोग अक्षम है। बैंडविड्थ का %d% सुरक्षित किया गया।"
+
+msgid "IDS_BR_TPOP_IMAGE_COPIED_TO_CLIPBOARD"
+msgstr "छवि क्लिपबोर्ड में कॉपी की गई।"
+
+msgid "IDS_BR_TPOP_FAILED_TO_ADD_TO_HOME_SCREEN_ABB"
+msgstr "होम स्क्रीन पर जोड़ने में विफल"
+
+msgid "IDS_BR_TPOP_DOWNLOADING_IMAGE_ING"
+msgstr "छवि डाउनलोड हो रही है..."
+
+msgid "IDS_BR_TPOP_DATA_SAVING_STATISTICS_RESET"
+msgstr "डाटा सुरक्षा सांख्यिकी रीसेट।"
+
+msgid "IDS_BR_TPOP_BOOKMARK_DELETED"
+msgstr "बुकमार्क हटा दिया गया।"
+
+msgid "IDS_BR_TPOP_ADDED_TO_QUICK_ACCESS_LIST"
+msgstr "शीघ्र एक्सेस सूची में जोड़ा गया।"
+
+msgid "IDS_BR_TPOP_ADDED_TO_HOME_SCREEN"
+msgstr "होम स्क्रीन में जोड़ा गया"
+
+msgid "IDS_BR_TPOP_1_POP_UP_BLOCKED"
+msgstr "1 पॉप-अप ब्लॉक है।"
+
+msgid "IDS_BR_TPOP_1_ITEM_DELETED_FROM_BROWSING_HISTORY"
+msgstr "ब्राउजिंग इतिहास से 1 मद हटाई गयी।"
+
+msgid "IDS_BR_TMBODY_NOTIFICATIONS"
+msgstr "अधिसूचनाएँ"
+
+msgid "IDS_BR_TAB_MOST_VISITED"
+msgstr "अधिकतम दौरा किया"
+
+msgid "IDS_BR_TAB_HISTORY"
+msgstr "इतिहास"
+
+msgid "IDS_BR_SK_UNTICK_ABB"
+msgstr "अनटिक"
+
+msgid "IDS_BR_SK_TABS"
+msgstr "टैब्स"
+
+msgid "IDS_BR_SK_MENU"
+msgstr "मेन्यू"
+
+msgid "IDS_BR_SK_DELETE_ABB"
+msgstr "हटाएँ"
+
+msgid "IDS_BR_SK3_CREATE_FOLDER"
+msgstr "फोल्‍डर बनाएँ"
+
+msgid "IDS_BR_SK3_CLEAR"
+msgstr "साफ करें"
+
+msgid "IDS_BR_SBODY_VIEW_PC_WEBSITES_EASILY_ON_YOUR_MOBILE_DEVICE_THIS_FEATURE_BOOSTS_THE_TEXT_SIZE_TO_MAKE_IT_EASIER_TO_READ_NOTE_C_THE_TEXT_LAYOUT_MAY_CHANGE"
+msgstr "अपने मोबाइल डिवाइस पर PC वेबसाइट्स आसानी से देखें। यह सुविधा टेक्स्ट पढ़ने में अधिक आसान करने हेतु उसका आकार बड़ा करती है। नोट: टेक्स्ट लेआउट बदल सकता है।"
+
+msgid "IDS_BR_SBODY_SET_THE_DEVICE_TO_SUGGEST_QUERIES_AND_SITES_IN_THE_WEB_ADDRESS_BAR_AS_YOU_TYPE"
+msgstr "आपके द्वारा लिखते ही वेब पता पट्टी में प्रश्न और साइट्स का सुझाव देने हेतु डिवाइस सेट करें।"
+
+msgid "IDS_BR_SBODY_SET_TEXT_USED_TO_FILL_IN_ONLINE_FORMS_ABB"
+msgstr "ऑनलाइन फॉर्म भरने के लिए उपयोग किए गए टेक्स्ट सेट करें।"
+
+msgid "IDS_BR_SBODY_SET_ADVANCED_SETTINGS_FOR_INDIVIDUAL_WEBSITES"
+msgstr "व्यक्तिगत वेबसाइट्स के लिए उन्नत सेटिंग्स सेट करें।"
+
+msgid "IDS_BR_SBODY_REMEMBER_DATA_TYPED_IN_FORMS_FOR_LATER_USE"
+msgstr "बाद में उपयोग करने के लिए, फॉर्म्स में लिखा गया डाटा याद रखें।"
+
+msgid "IDS_BR_SBODY_PREDICT_RELATED_QUERIES_AND_POPULAR_SITES_IN_THE_NAVIGATION_BAR_AS_YOU_TYPE"
+msgstr "आपके द्वारा लिखते समय नेविगेशन बार में संबंधित प्रश्न और लोकप्रिय साइट्स का पूर्वानुमान लगाएँ।"
+
+msgid "IDS_BR_SBODY_OVERRIDE_WEBSITE_REQUESTS_TO_CONTROL_ZOOM_LEVEL"
+msgstr "जूम स्तर नियं‍त्रित करने के लिए वेबसाइट अनुरोध ओवरराइड करें।"
+
+msgid "IDS_BR_SBODY_DISPLAY_IMAGES_ON_WEBPAGES"
+msgstr "वेबपेजेस की छवियाँ दिखाएँ।"
+
+msgid "IDS_BR_SBODY_COMPRESS_CONTENT_FROM_WEBSITES_TO_USE_LESS_DATA"
+msgstr "कम डाटा उपयोग करने के लिए वेबसाइट से सामग्री संपीड़ित करें।"
+
+msgid "IDS_BR_SBODY_CLEAR_NOTIFICATION_ACCESS_INFORMATION_FOR_ALL_WEBSITES"
+msgstr "सभी वेबसाइट्स के लिए सूचना एक्सेस जानकारी साफ करें।"
+
+msgid "IDS_BR_SBODY_CHANGE_THE_TEXT_SIZE_FOR_EASIER_READING_ESPECIALLY_WHEN_VIEWING_DESKTOP_VERSIONS_OF_WEBSITES_ON_YOUR_PHONE_NOTE_THAT_THE_TEXT_MSG_US"
+msgstr "Change the text size for easier reading, especially when viewing desktop versions of websites on your phone. Note that the text layout may change as a result."
+
+msgid "IDS_BR_SBODY_CHANGE_THE_TEXT_SIZE_FOR_EASIER_READING_ESPECIALLY_WHEN_VIEWING_DESKTOP_VERSIONS_OF_WEBSITES_NOTE_THAT_THE_TEXT_LAYOUT_MAY_CHANGE_AS_A_RESULT"
+msgstr "आसानी से पढ़ने के लिए टेक्स्ट का आकार बदलें, विशेष रूप से वेबसाइट्स के डेस्कटॉप संस्करण देखते समय। ध्यान रहे कि इसके परिणामस्वरूप टेक्स्ट लेआउट बदल सकता है।"
+
+msgid "IDS_BR_SBODY_ALL_WEBSITE_NOTIFICATION_ACCESS_INFORMATION_WILL_BE_CLEARED"
+msgstr "सभी वेबसाइट सूचना एक्सेस जानकारी साफ हो जाएगी।"
+
+msgid "IDS_BR_SBODY_ALLOW_SITES_TO_SAVE_AND_READ_COOKIES"
+msgstr "साइट्स को कुकीज सुरक्षित करने और पढ़ने की अनुमति दें।"
+
+msgid "IDS_BR_SBODY_ALLOW_SITES_TO_ACCESS_YOUR_LOCATION_DATA"
+msgstr "साइट्स को आपका स्थान डाटा एक्सेस करने की अनुमति दें।"
+
+msgid "IDS_BR_POP_YOU_MAY_NOT_BE_ABLE_TO_CLIP_SOME_WEBPAGES_ACCURATELY"
+msgstr "हो सकता है कि आप कुछ वेबपेजों को सही ढंग से क्लिप करने में समर्थ नहीं हों"
+
+msgid "IDS_BR_POP_YOUR_HISTORY_WILL_BE_CLEARED"
+msgstr "आपका इतिहास साफ किया जाएगा।"
+
+msgid "IDS_BR_POP_UNABLE_TO_VIEW_THE_CERTIFICATE_THE_PAGE_INFORMATION_HAS_BEEN_CHANGED"
+msgstr "प्रमाणपत्र देखने में असमर्थ। पेज जानकारी बदली गई है।"
+
+msgid "IDS_BR_POP_TO_SIGN_IN_TO_THIS_WEBSITE_USING_YOUR_FINGERPRINTS_GO_TO_SETTINGS_AND_ENABLE_WEB_SIGN_IN"
+msgstr "आपके फिंगरप्रिंट्स के साथ इस वेबसाइट में साइन इन करने के लिए सेटिंग्स में जाएँ और वेब साइन-इन सक्षम करें।"
+
+msgid "IDS_BR_POP_THIS_CERTIFICATE_IS_NOT_FROM_A_TRUSTED_AUTHORITY"
+msgstr "यह प्रमाणपत्र किसी विश्वसनीय प्राधिकार का नहीं है।"
+
+msgid "IDS_BR_POP_THIS_CERTIFICATE_IS_FROM_A_TRUSTED_AUTHORITY"
+msgstr "यह प्रमाणपत्र किसी विश्वसनीय प्राधिकार से है।"
+
+msgid "IDS_BR_POP_THE_LOCATION_PERMISSION_DATA_FOR_THIS_WEBSITE_WILL_BE_CLEARED"
+msgstr "इस वेबसाइट का स्थान अनुमति डाटा साफ किया जाएगा।"
+
+msgid "IDS_BR_POP_THE_DESTINATION_FOLDER_IS_THE_SAME_AS_THE_SOURCE_FOLDER"
+msgstr "गंतव्य फोल्डर स्रोत फोल्डर के समान ही है।"
+
+msgid "IDS_BR_POP_THE_DESTINATION_FOLDER_IS_A_SUBFOLDER_OF_THE_SOURCE_FOLDER"
+msgstr "गंतव्य फ़ोल्डर, स्रोत फ़ोल्डर का एक उपफ़ोल्‍डर है"
+
+msgid "IDS_BR_POP_THERE_ARE_PROBLEMS_WITH_THE_SECURITY_CERTIFICATE_FOR_THIS_WEBSITE"
+msgstr "इस वेबसाइट के सुरक्षा प्रमाणपत्र में समस्‍याएँ हैं।"
+
+msgid "IDS_BR_POP_STARTING_DOWNLOAD_ING"
+msgstr "डाउनलोड शुरू कर रहे है..."
+
+msgid "IDS_BR_POP_SOME_OLD_HTML_WEBSITES_MAY_NOT_SUPPORT_THIS_FEATURE"
+msgstr "कुछ पुराने HTML वेबसाइट इस सुविधा का समर्थन नहीं कर सकते"
+
+msgid "IDS_BR_POP_SET_AS_HOMEPAGE"
+msgstr "होमपेज जैसे सेट करें"
+
+msgid "IDS_BR_POP_SETTINGS_WILL_BE_RESET_TO_DEFAULTS"
+msgstr "सेटिंग्स को डिफॉल्ट पर रीसेट किया जाएगा।"
+
+msgid "IDS_BR_POP_SETTIGS_SAVED"
+msgstr "सेटिंग्स सुरक्षित की गई।"
+
+msgid "IDS_BR_POP_SECURITY_POLICY_RESTRICTS_USE_OF_INTERNET_BROWSER"
+msgstr "सुरक्षा नीति इंटरनेट ब्राउजर के उपयोग को प्रतिबंधित करती है।"
+
+msgid "IDS_BR_POP_SAVED_TO_BOOKMARKS"
+msgstr "बुकमार्क्स मे सुरक्षित किया।"
+
+msgid "IDS_BR_POP_RENAME_TAG"
+msgstr "टैग का नाम बदलें"
+
+msgid "IDS_BR_POP_PD_PROFILES_WILL_BE_DELETED"
+msgstr "%d प्रोफाइल्स हटाई जाएँगी।"
+
+msgid "IDS_BR_POP_PAGES_THAT_YOU_VIEW_WILL_NOT_APPEAR_IN_YOUR_BROWSER_HISTORY_OR_SEARCH_HISTORY_AND_THEY_WILL_NOT_LEAVE_OTHER_TRACES_LIKE_COOKIES"
+msgstr "आपके द्वारा देखे जाने वाले पेज आपके ब्राउजर इतिहास या खोज इतिहास में नहीं दिखाई देंगे और वे कुकीज जैसे अन्य ट्रेसेज नहीं छोड़ेंगे।"
+
+msgid "IDS_BR_POP_P1SS_HP2SS_IS_REQUESTING_PERMISSION_TO_USE_YOUR_CAMERA"
+msgstr "%1$s (%2$s) आपके कैमरा उपयोग करने की अनुमति का अनुरोध कर रहा है"
+
+msgid "IDS_BR_POP_P1SS_HP2SS_IS_REQUESTING_PERMISSION_TO_STORE_DATA_ON_YOUR_DEVICE_FOR_OFFLINE_USE"
+msgstr "%1$s (%2$s) आपके डिवाइस पर ऑफ़लाइन उपयोग करने के लिए डाटा स्टोर करने हेतु अनुरोध कर रहा है"
+
+msgid "IDS_BR_POP_P1SS_HP2SS_IS_REQUESTING_PERMISSION_TO_SHOW_NOTIFICATIONS"
+msgstr "%1$s (%2$s) सूचना दिखाने की अनुमति का अनुरोध कर रहा है।"
+
+msgid "IDS_BR_POP_P1SS_HP2SS_IS_REQUESTING_PERMISSION_TO_CHANGE_HOW_YOUR_BROWSER_WORKS_ON_MSG"
+msgstr "%1$s (%2$s) इस साइट पर आपके ब्राउज़र के कार्य के तरीके को बदलने की अनुमति का अनुरोध कर रहा है। यह आपके सिस्टम पर आक्रमण का प्रयास हो सकता है। यदि आपको इस वेबसाइट पर विश्वास नहीं है या नहीं जानते हैं कि यह अनुरोध क्यों प्रकट हुआ है, तो “रद्द करें” पर टैप करें।"
+
+msgid "IDS_BR_POP_P1SS_HP2SS_IS_REQUESTING_PERMISSION_TO_ACCESS_YOUR_LOCATION"
+msgstr "%1$s (%2$s) आपके स्थान को ऐक्सेस करने की अनुमति का अनुरोध कर रहा है"
+
+msgid "IDS_BR_POP_P1SS_HP2SS_IS_ATTEMPTING_TO_STORE_A_LARGE_AMOUNT_OF_DATA_ON_YOUR_DEVICE_FOR_OFFLINE_USE"
+msgstr "%1$s (%2$s) आपके डिवाइस पर ऑफ़लाइन उपयोग करने के लिए बड़ी मात्रा में डाटा स्टोर करने का प्रयास कर रहा है"
+
+msgid "IDS_BR_POP_P1SS_HAS_BEEN_DETECTED_DETECTED_IN_C_P2SS_SOME_CONTENT_HAS_BEEN_BLOCKED_TO_PROTECT_YOUR_DEVICE"
+msgstr "“%1$s” का पता लगाया गया।\nइसमें पता लगाया गया: “%2$s”\n\nआपके डिवाइस की सुरक्षा के लिए कुछ सामग्री ब्लॉक कर दी गई है।"
+
+msgid "IDS_BR_POP_P1SS_HAS_BEEN_DETECTED_DETECTED_IN_C_P2SS_OPEN_WEBPAGE_ANYWAY_Q"
+msgstr "“%1$s” का पता लगाया गया।\nइसमें पता लगाया गया: “%2$s”\n\nफिर भी वेबपेज खोलें?"
+
+msgid "IDS_BR_POP_NOT_ENOUGH_MEMORY_DELETE_SOME_ITEMS_AND_TRY_AGAIN"
+msgstr "पर्याप्त मेमोरी नहीं। कुछ मदें हटाएँ और फिर से प्रयास करें।"
+
+msgid "IDS_BR_POP_NOT_ALLOWED"
+msgstr "अनुमति नहीं।"
+
+msgid "IDS_BR_POP_MOVED"
+msgstr "ले जाया गया।"
+
+msgid "IDS_BR_POP_ENTER_URL"
+msgstr "URL प्रविष्ट करें"
+
+msgid "IDS_BR_POP_ENTER_BOOKMARK_NAME"
+msgstr "बुकमार्क का नाम प्रविष्ट करें।"
+
+msgid "IDS_BR_POP_DIALING_ING_VZW"
+msgstr "Dialing..."
+
+msgid "IDS_BR_POP_DELETE_WEBSITE_LOCATION_ACCESS_INFORMATION_Q"
+msgstr "वेबसाइट स्थान ऍक्सेस जानकारी हटायें?"
+
+msgid "IDS_BR_POP_DELETE_THIS_QUICK_ACCESS_SHORTCUT_Q"
+msgstr "यह शीघ्र ऐक्सेस शॉर्टकट हटाएँ?"
+
+msgid "IDS_BR_POP_DELETE_THIS_PAGE_Q"
+msgstr "यह पेज हटाएँ?"
+
+msgid "IDS_BR_POP_DELETE_THIS_BOOKMARK_Q"
+msgstr "यह बुकमार्क हटाएँ?"
+
+msgid "IDS_BR_POP_DELETE_STORED_WEBSITE_DATA_Q"
+msgstr "संग्रहीत वेबसाइट डाटा हटाएँ?"
+
+msgid "IDS_BR_POP_DELETE_SIGN_IN_DATA_FOR_THIS_WEBSITE_Q"
+msgstr "इस वेबसाइट के लिए साइन-इन डाटा हटाएँ?"
+
+msgid "IDS_BR_POP_DELETE_SIGN_IN_DATA_FOR_PD_WEBSITES_Q"
+msgstr "%d वेबसाइट्स के लिए साइन-इन डाटा हटाएँ?"
+
+msgid "IDS_BR_POP_DELETE_PD_SAVED_WEB_PAGES_Q"
+msgstr "%d सुरक्षित किए वेब पृष्ठ हटाएँ?"
+
+msgid "IDS_BR_POP_DELETE_PD_QUICK_ACCESS_SHORTCUTS_Q"
+msgstr "%d शीघ्र उपयोग शॉर्टकट्स हटाएँ?"
+
+msgid "IDS_BR_POP_DELETE_PD_BOOKMARKS_Q"
+msgstr "%d बुकमार्क्स हटाएँ?"
+
+msgid "IDS_BR_POP_DELETE_ALL_WEBSITE_DATA_AND_LOCATION_PERMISSIONS_Q"
+msgstr "सभी वेबसाइट डाटा और स्थान अनुमतियाँ हटाएँ?"
+
+msgid "IDS_BR_POP_DELETEHISTORYQUESTION"
+msgstr "इतिहास हटाएँ?"
+
+msgid "IDS_BR_POP_CONTINUE"
+msgstr "जारी रखें"
+
+msgid "IDS_BR_POP_CLOSE_APPLICATION"
+msgstr "एप्लीकेशन बंद करें"
+
+msgid "IDS_BR_POP_CLEAR_Q"
+msgstr "साफ़ करें?"
+
+msgid "IDS_BR_POP_CLEAR_HISTORY_Q"
+msgstr "इतिहास साफ़ करें?"
+
+msgid "IDS_BR_POP_BOOKMARK_REMOVED"
+msgstr "बुकमार्क निकाला गया।"
+
+msgid "IDS_BR_POP_ALREADY_EXISTS"
+msgstr "पहले से ही मौजूद।"
+
+msgid "IDS_BR_POP_ALL_STORED_DATA_FOR_THIS_WEBSITE_WILL_BE_CLEARED"
+msgstr "इस वेबसाइट का संपूर्ण संग्रहीत डाटा साफ किया जाएगा।"
+
+msgid "IDS_BR_POP_ALL_STORED_AND_LOCATION_PERMISSION_DATA_FOR_THIS_WEBSITE_WILL_BE_CLEARED"
+msgstr "इस वेबसाइट का संपूर्ण संग्रहीत और स्थान अनुमति डाटा साफ किया जाएगा।"
+
+msgid "IDS_BR_POP_ALL_STORED_AND_LOCATION_PERMISSION_DATA_FOR_THESE_WEBSITES_WILL_BE_CLEARED"
+msgstr "इन वेबसाइट्स का सभी स्टोर किया और स्थान अनुमति डाटा साफ किया जाएगा।"
+
+msgid "IDS_BR_POP_ALL_SETTINGS_WILL_BE_RESET_TO_THEIR_DEFAULTS"
+msgstr "सभी सेटिंग्स को उनके डिफॉल्ट्स पर रीसेट किया जाएगा।"
+
+msgid "IDS_BR_POP_ALL_ITEMS_WILL_BE_DELETED_FROM_BROWSING_HISTORY"
+msgstr "ब्राउजिंग इतिहास से सभी मदें हटाई जाएँगी।"
+
+msgid "IDS_BR_POP_ALLOW_SITES_TO_SAVE_AND_READ_COOKIES"
+msgstr "साइट को कुकीज़़ सुरक्षित करने और पढ़ने की अनुमति दें"
+
+msgid "IDS_BR_POP_ADDED_TO_BOOKMARKS"
+msgstr "बुकमार्क मे जोड़ा गया।"
+
+msgid "IDS_BR_OPT_WINDOWS"
+msgstr "विंडोज"
+
+msgid "IDS_BR_OPT_VIEW_CERTIFICATE"
+msgstr "प्रमाणपत्र देखें"
+
+msgid "IDS_BR_OPT_UNICODE_HUTF_8"
+msgstr "यूनिकोड (UTF-8)"
+
+msgid "IDS_BR_OPT_THUMBNAIL_VIEW"
+msgstr "थम्बनेल दृश्य"
+
+msgid "IDS_BR_OPT_TEXT_ENCODING"
+msgstr "टेक्स्ट एन्कोडिंग"
+
+msgid "IDS_BR_OPT_SHRINK_TEXT"
+msgstr "टेक्स्ट छोटा करें"
+
+msgid "IDS_BR_OPT_SETTINGS_ABB"
+msgstr "सेटिंग्स"
+
+msgid "IDS_BR_OPT_SEND_MESSAGE_VODA"
+msgstr "सन्देश भेजें"
+
+msgid "IDS_BR_OPT_SENDURLVIA_EMAIL"
+msgstr "ईमेल"
+
+msgid "IDS_BR_OPT_SELECT_TEXT"
+msgstr "टेक्‍स्‍ट चुनें"
+
+msgid "IDS_BR_OPT_SELECT_ALL_ABB"
+msgstr "सभी चुनें"
+
+msgid "IDS_BR_OPT_SELECT_ALL"
+msgstr "सभी चुनें"
+
+msgid "IDS_BR_OPT_SELECTION_MODE"
+msgstr "चयन मोड"
+
+msgid "IDS_BR_OPT_SELECTED"
+msgstr "चयनित"
+
+msgid "IDS_BR_OPT_SAVE_TO_KEEPIT_ABB"
+msgstr "कीपइट में सुरक्षित करें"
+
+msgid "IDS_BR_OPT_SAVE_PAGE_FOR_OFFLINE_VIEWING_ABB"
+msgstr "ऑफलाइन देखने हेतु पेज सुरक्षित करें"
+
+msgid "IDS_BR_OPT_SAVE_LINKED_ITEM_IN_KEEPIT_ABB"
+msgstr "लिंक की गई मद KeepIt में सुरक्षित करें"
+
+msgid "IDS_BR_OPT_SAVE_FOR_OFFLINE_VIEWING_ABB"
+msgstr "ऑफलाइन देखने हेतु सुरक्षित करें"
+
+msgid "IDS_BR_OPT_SAVEWEBPAGE"
+msgstr "वेबपेज"
+
+msgid "IDS_BR_OPT_SAVEDPAGES"
+msgstr "सुरक्षित किए हुए पेजेस"
+
+msgid "IDS_BR_OPT_RSS_VIEW"
+msgstr "देखें"
+
+msgid "IDS_BR_OPT_REORDER_ABB"
+msgstr "पुनः क्रम"
+
+msgid "IDS_BR_OPT_RENAME_FOLDER"
+msgstr "फोल्डर का नाम बदलें"
+
+msgid "IDS_BR_OPT_REMOVE"
+msgstr "निकालें"
+
+msgid "IDS_BR_OPT_READER_MODE_TTS"
+msgstr "रीडर मोड"
+
+msgid "IDS_BR_OPT_PASSWORDS"
+msgstr "पासवर्ड्स"
+
+msgid "IDS_BR_OPT_OPEN_IN_NEW_WINDOW_ABB"
+msgstr "नई विंडो में खोलें"
+
+msgid "IDS_BR_OPT_OPEN"
+msgstr "खोलें"
+
+msgid "IDS_BR_OPT_OFFLINE_PAGES_ABB"
+msgstr "ऑफलाइन पेजेस"
+
+msgid "IDS_BR_OPT_NEW_WINDOW"
+msgstr "नई विंडो"
+
+msgid "IDS_BR_OPT_MINIMISE"
+msgstr "छोटा करें"
+
+msgid "IDS_BR_OPT_MEDIUM_M_QUALITY"
+msgstr "मध्यम"
+
+msgid "IDS_BR_OPT_LOW_M_QUALITY"
+msgstr "निम्न"
+
+msgid "IDS_BR_OPT_LOCATION_ACCESS_PRIVILEGES"
+msgstr "स्थान एक्सेस विशेषाधिकार"
+
+msgid "IDS_BR_OPT_LOAD_IMAGES"
+msgstr "छवियाँ लोड करें"
+
+msgid "IDS_BR_OPT_LATIN_1_HISO_8859_1"
+msgstr "लैटिन-1 (ISO-8859-1)"
+
+msgid "IDS_BR_OPT_KOREAN_HEUC_KR"
+msgstr "कोरियाई (EUC-KR)"
+
+msgid "IDS_BR_OPT_JAPANESE_HSHIFT_JIS"
+msgstr "जापानी (SHIFT JIS)"
+
+msgid "IDS_BR_OPT_JAPANESE_HISO_2022_JP"
+msgstr "जापानी (ISO-2022-JP)"
+
+msgid "IDS_BR_OPT_JAPANESE_HEUC_JP"
+msgstr "जापानी (EUC-JP)"
+
+msgid "IDS_BR_OPT_INCOGNITO_MODE_ABB"
+msgstr "गुप्त मोड"
+
+msgid "IDS_BR_OPT_HUGE"
+msgstr "बहुत बड़ा"
+
+msgid "IDS_BR_OPT_HOME_SCREEN_AS_WEB_CLIP_ABB"
+msgstr "वेब क्लिप के रूप में होम स्क्रीन"
+
+msgid "IDS_BR_OPT_HOME_SCREEN_AS_SHORTCUT_ABB"
+msgstr "शॉर्टकट के रूप में होम स्क्रीन"
+
+msgid "IDS_BR_OPT_HIGH_M_QUALITY"
+msgstr "उच्च"
+
+msgid "IDS_BR_OPT_GOFORWARD"
+msgstr "आगे भेजें"
+
+msgid "IDS_BR_OPT_GOBACKWARD"
+msgstr "पीछे करें"
+
+msgid "IDS_BR_OPT_GIANT_M_TEXTSIZE"
+msgstr "ज्यायंट"
+
+msgid "IDS_BR_OPT_FIND_ON_PAGE_ABB"
+msgstr "पेज पर ढूँढें"
+
+msgid "IDS_BR_OPT_FIND_ON_PAGE"
+msgstr "पेज पर ढूँढें"
+
+msgid "IDS_BR_OPT_FEEDS_SUBSCRIBED_TO_ABB"
+msgstr "सदस्यता लिए गए फीड्स"
+
+msgid "IDS_BR_OPT_ENLARGE_TEXT"
+msgstr "टेक्स्ट बड़ा करें"
+
+msgid "IDS_BR_OPT_ENABLE_SECRET_MODE_ABB"
+msgstr "गुप्त मोड सक्षम करें"
+
+msgid "IDS_BR_OPT_ENABLE_NIGHT_MODE_ABB"
+msgstr "नाइट मोड सक्षम करें"
+
+msgid "IDS_BR_OPT_ENABLE_LOW_DATA_USAGE_ABB"
+msgstr "कम डाटा उपयोग सक्षम करें"
+
+msgid "IDS_BR_OPT_DRAG_AND_DROP"
+msgstr "ड्रैग और ड्रॉप करें"
+
+msgid "IDS_BR_OPT_DISABLE_SECRET_MODE_ABB"
+msgstr "गुप्त मोड अक्षम करें"
+
+msgid "IDS_BR_OPT_DISABLE_NIGHT_MODE_ABB"
+msgstr "नाइट मोड अक्षम करें"
+
+msgid "IDS_BR_OPT_DISABLE_LOW_DATA_USAGE_ABB"
+msgstr "कम डाटा उपयोग अक्षम करें"
+
+msgid "IDS_BR_OPT_DISABLED"
+msgstr "अक्षम किया गया"
+
+msgid "IDS_BR_OPT_DELETE_SAVED_PAGE_ABB"
+msgstr "सुरक्षित हुआ पेज हटाएँ"
+
+msgid "IDS_BR_OPT_DELETE_HISTORY"
+msgstr "इतिहास हटाएँ"
+
+msgid "IDS_BR_OPT_DATA_NETWORK"
+msgstr "डाटा नेटवर्क"
+
+msgid "IDS_BR_OPT_COPY_TO_CLIPBOARD"
+msgstr "क्लिपबोर्ड में कॉपी करें"
+
+msgid "IDS_BR_OPT_COPY_LINK_URL"
+msgstr "लिंक URL कॉपी करें"
+
+msgid "IDS_BR_OPT_COPY"
+msgstr "कॉपी करें"
+
+msgid "IDS_BR_OPT_CLOSE_ALL"
+msgstr "सभी बंद करें"
+
+msgid "IDS_BR_OPT_CLEAR_ALL"
+msgstr "सभी साफ करें"
+
+msgid "IDS_BR_OPT_CHINESE_HGBK"
+msgstr "चीनी (GBK)"
+
+msgid "IDS_BR_OPT_CHINESE_HBIG5"
+msgstr "चीनी (बड़ा5)"
+
+msgid "IDS_BR_OPT_CACHE"
+msgstr "कैश"
+
+msgid "IDS_BR_OPT_ADD_TO_WEB_CLIP"
+msgstr "वेब क्लिप में जोड़ें"
+
+msgid "IDS_BR_OPT_ADD_TO_QUICK_ACCESS"
+msgstr "शीघ्र एक्सेस में जोड़ें"
+
+msgid "IDS_BR_OPT_ADD_TO_HOME_SCREEN_ABB"
+msgstr "होम स्क्रीन पर जोड़े"
+
+msgid "IDS_BR_OPT_ADD_TO_HOME"
+msgstr "होम में जोड़े"
+
+msgid "IDS_BR_OPT_ADD_OR_REMOVE_BOOKMARK"
+msgstr "बुकमार्क जोड़ें और निकालें"
+
+msgid "IDS_BR_OPT_ADD_BOOKMARK_ABB"
+msgstr "बुकमार्क जोड़ें"
+
+msgid "IDS_BR_OPT_ADD_BOOKMARK"
+msgstr "बुकमार्क जोड़ें"
+
+msgid "IDS_BR_OPT1_EXTENSION"
+msgstr "एक्सटेंशन"
+
+msgid "IDS_BR_NPBODY_SEARCH_OR_ENTER_URL_ABB"
+msgstr "खोजें या URL डालें"
+
+msgid "IDS_BR_NPBODY_NO_WEBSITE_HISTORY"
+msgstr "कोई वेबसाइट इतिहास नहीं"
+
+msgid "IDS_BR_NPBODY_NO_WEBSITES"
+msgstr "कोई वेबसाइट नहीं"
+
+msgid "IDS_BR_NPBODY_NO_WEBPAGES"
+msgstr "कोई वेबपेज नहीं"
+
+msgid "IDS_BR_NPBODY_NO_SHORTCUTS"
+msgstr "कोई शॉर्टकट्स नहीं हैं"
+
+msgid "IDS_BR_MBODY_WEB_ADDRESS_SUGGESTIONS"
+msgstr "वेब पता सुझाव"
+
+msgid "IDS_BR_MBODY_WEBSITES"
+msgstr "वेबसाइट्स"
+
+msgid "IDS_BR_MBODY_VIEW_MORE"
+msgstr "अधिक देखें"
+
+msgid "IDS_BR_MBODY_URL_SUGGESTIONS"
+msgstr "URL सुझाव"
+
+msgid "IDS_BR_MBODY_TEXT_BOOSTER"
+msgstr "टेक्स्ट बूस्टर"
+
+msgid "IDS_BR_MBODY_SET_HOMEPAGE"
+msgstr "होमपेज सेट करें"
+
+msgid "IDS_BR_MBODY_RUN_JAVASCRIPT"
+msgstr "जावास्क्रिप्ट चलाएँ"
+
+msgid "IDS_BR_MBODY_RESET_SETTINGS"
+msgstr "रीसेट सेटिंग्‍स"
+
+msgid "IDS_BR_MBODY_PRELOAD_WEBPAGES"
+msgstr "वेबपेजो को प्रीलोड करें"
+
+msgid "IDS_BR_MBODY_PRELOAD_LINKED_WEBPAGES"
+msgstr "लिंक किए वेबपेजों को प्रीलोड करें"
+
+msgid "IDS_BR_MBODY_PRELOAD_AVAILABLE_LINKS"
+msgstr "उपलब्ध लिंक्स प्रीलोड करें"
+
+msgid "IDS_BR_MBODY_LOW_DATA_USAGE"
+msgstr "कम डाटा उपयोग"
+
+msgid "IDS_BR_MBODY_LOCATION_ACCESS"
+msgstr "स्थान एक्सेस"
+
+msgid "IDS_BR_MBODY_IMAGE_QUALITY"
+msgstr "छवि की गुणवत्ता"
+
+msgid "IDS_BR_MBODY_HIDE_ADDRESS_BAR"
+msgstr "पता पट्टी छिपाएँ"
+
+msgid "IDS_BR_MBODY_DOWNLOAD_FEED_CONTENT"
+msgstr "फीड सामग्री डाउनलोड करें"
+
+msgid "IDS_BR_MBODY_DELETE_SIGN_IN_DATA"
+msgstr "साइन-इन डाटा हटाएँ"
+
+msgid "IDS_BR_MBODY_DATA_SAVING_STATISTICS"
+msgstr "डाटा सुरक्षा सांख्यिकी"
+
+msgid "IDS_BR_MBODY_CONTENT"
+msgstr "सामग्री"
+
+msgid "IDS_BR_MBODY_CLEAR_NOTIFICATION_DATA"
+msgstr "अधिसूचना डाटा साफ करें"
+
+msgid "IDS_BR_MBODY_AUTO_FILL_FORMS"
+msgstr "फॉर्म स्वत: भरण"
+
+msgid "IDS_BR_MBODY_ADD_PROFILE"
+msgstr "प्रोफाइल जोड़ें"
+
+msgid "IDS_BR_MBODY_ACCESS_LOCATION"
+msgstr "स्थान एक्सेस करें"
+
+msgid "IDS_BR_HEADER_WINDOW_LIMIT_REACHED"
+msgstr "विंडो की अधिकतम सीमा तक पहुँचा"
+
+msgid "IDS_BR_HEADER_WEB_NOTIFICATIONS_ABB"
+msgstr "वेब सूचनाएँ"
+
+msgid "IDS_BR_HEADER_WEB_NOTIFICATION"
+msgstr "वेब सूचना"
+
+msgid "IDS_BR_HEADER_VALIDITY"
+msgstr "वैधता"
+
+msgid "IDS_BR_HEADER_UNABLE_TO_OPEN_WINDOW_ABB"
+msgstr "विंडो खोलने में असमर्थ"
+
+msgid "IDS_BR_HEADER_UNABLE_TO_OPEN_FILE"
+msgstr "फाइल खोलने में असमर्थ"
+
+msgid "IDS_BR_HEADER_UNABLE_TO_MOVE_BOOKMARKS_ABB"
+msgstr "बुकमॉर्क्स ले जाने में असमर्थ"
+
+msgid "IDS_BR_HEADER_SITE_NOT_TRUSTED_ABB"
+msgstr "साइट विश्‍वसनीय नहीं है"
+
+msgid "IDS_BR_HEADER_SET_HOMEPAGE_ABB"
+msgstr "होमपेज सेट करें"
+
+msgid "IDS_BR_HEADER_SERIAL_NUMBER_C_ABB"
+msgstr "क्रमांक:"
+
+msgid "IDS_BR_HEADER_SELECT_SIGN_IN_DATA_FOR_ABB"
+msgstr "इसके लिए साइन-इन डाटा चुनें"
+
+msgid "IDS_BR_HEADER_SELECT_SHORTCUTS_ABB"
+msgstr "शॉर्टकट्स चुनें"
+
+msgid "IDS_BR_HEADER_SELECT_BOOKMARKS"
+msgstr "बुकमार्क्स चुनें"
+
+msgid "IDS_BR_HEADER_SELECT_BOOKMARK"
+msgstr "बुकमार्क चुनें"
+
+msgid "IDS_BR_HEADER_SECURITY_CERTIFICATE"
+msgstr "सुरक्षा प्रमाणपत्र"
+
+msgid "IDS_BR_HEADER_REORDER_QUICK_ACCESS_SHORTCUTS_ABB"
+msgstr "शीघ्र उपयोग शॉर्टकट क्रम बदलें"
+
+msgid "IDS_BR_HEADER_QUICK_ACCESS_ABB"
+msgstr "शीघ्र एक्सेस"
+
+msgid "IDS_BR_HEADER_PROFILES"
+msgstr "प्रोफाइल्स"
+
+msgid "IDS_BR_HEADER_POP_UP_BLOCKED_ABB"
+msgstr "पॉप-अप अवरुद्ध किया गया"
+
+msgid "IDS_BR_HEADER_POPULAR_WEBSITES_ABB"
+msgstr "लोकप्रिय वेबसाइट्स"
+
+msgid "IDS_BR_HEADER_ORGANISATION_C_ABB"
+msgstr "संगठनः"
+
+msgid "IDS_BR_HEADER_ORGANISATIONAL_UNIT_C"
+msgstr "संगठनात्मक इकाई:"
+
+msgid "IDS_BR_HEADER_NEWER_M_INTERNET_HISTORY_ABB"
+msgstr "Newer"
+
+msgid "IDS_BR_HEADER_ISSUED_ON_C"
+msgstr "पर जारी:"
+
+msgid "IDS_BR_HEADER_ISSUED_BY"
+msgstr "इसके द्वारा जारी"
+
+msgid "IDS_BR_HEADER_HTML5_EXTENSION"
+msgstr "HTML5 एक्स्टेंशन"
+
+msgid "IDS_BR_HEADER_FORM_DATA"
+msgstr "फॉर्म डाटा"
+
+msgid "IDS_BR_HEADER_EXPIRES_ON_C"
+msgstr "पर समाप्ति:"
+
+msgid "IDS_BR_HEADER_ENABLE_WEB_SIGN_IN"
+msgstr "वेब साइन-इन सक्षम करें"
+
+msgid "IDS_BR_HEADER_EDIT_BOOKMARK"
+msgstr "बुकमार्क संपादित करें"
+
+msgid "IDS_BR_HEADER_DELETE_WEBSITE_DATA_ABB"
+msgstr "वेबसाइट डाटा हटाएँ"
+
+msgid "IDS_BR_HEADER_DELETE_SIGN_IN_DATA_ABB"
+msgstr "साइन-इन डाटा हटाएँ"
+
+msgid "IDS_BR_HEADER_DELETE_PROFILE"
+msgstr "प्रोफाइल हटाएँ"
+
+msgid "IDS_BR_HEADER_DELETE_BOOKMARKS_ABB"
+msgstr "बुकमार्क्स हटाएँ"
+
+msgid "IDS_BR_HEADER_DATA_CONNECTIVITY_PROBLEM"
+msgstr "डाटा कनेक्टिविटी समस्‍या"
+
+msgid "IDS_BR_HEADER_COMMON_NAME_C_ABB"
+msgstr "सामान्य नाम:"
+
+msgid "IDS_BR_HEADER_CLOSE_APPLICATION"
+msgstr "एप्लीकेशन बंद करें"
+
+msgid "IDS_BR_HEADER_CLEAR_PERSONALISED_DATA"
+msgstr "वैयक्तिकृत डाटा साफ करें"
+
+msgid "IDS_BR_HEADER_CLEAR_LOCATION_ACCESS"
+msgstr "स्थान एक्सेस साफ करें"
+
+msgid "IDS_BR_HEADER_BANDWIDTH_MANAGEMENT_ABB"
+msgstr "बैंडविड्थ प्रबंधन"
+
+msgid "IDS_BR_HEADER_ADVANCEDCERTIFICATES"
+msgstr "प्रमाणपत्र"
+
+msgid "IDS_BR_BUTTON_RESET_ABB"
+msgstr "रीसेट करें"
+
+msgid "IDS_BR_BUTTON_HOMEPAGE_ABB"
+msgstr "होमपेज"
+
+msgid "IDS_BR_BUTTON_FIND_ABB"
+msgstr "ढूँढे"
+
+msgid "IDS_BR_BUTTON_BACK_ABB"
+msgstr "पीछे"
+
+msgid "IDS_BR_BUTTON_ALWAYS_SHOW_ABB"
+msgstr "हमेशा दिखाए"
+
+msgid "IDS_BR_BUTTON2_WEB_PORTAL"
+msgstr "वेब पोर्टल"
+
+msgid "IDS_BR_BUTTON2_SPORT"
+msgstr "खेल"
+
+msgid "IDS_BR_BUTTON2_SOCIAL"
+msgstr "सामाजिक"
+
+msgid "IDS_BR_BUTTON2_SHOPPING"
+msgstr "खरीदारी"
+
+msgid "IDS_BR_BUTTON2_PAYMENT"
+msgstr "भुगतान"
+
+msgid "IDS_BR_BUTTON2_HOBBIES"
+msgstr "रुचियाँ"
+
+msgid "IDS_BR_BUTTON2_GO_TO_HISTORY"
+msgstr "इतिहास पर जाएँ"
+
+msgid "IDS_BR_BUTTON2_ENTERTAINMENT"
+msgstr "मनोरंजन"
+
+msgid "IDS_BR_BODY_WINDOW_MANAGER"
+msgstr "विंडो प्रबंधक"
+
+msgid "IDS_BR_BODY_WEB_ADDRESS"
+msgstr "वेब पता"
+
+msgid "IDS_BR_BODY_VOICE_INPUT_TTS"
+msgstr "वॉइस इनपुट"
+
+msgid "IDS_BR_BODY_VIEW_IMAGE"
+msgstr "छवि देखें"
+
+msgid "IDS_BR_BODY_VIEW_HISTORY_T_TALKBACK"
+msgstr "इतिहास देखें।"
+
+msgid "IDS_BR_BODY_VIEW_BOOKMARKS_T_TALKBACK"
+msgstr "बुकमार्क्स देखें।"
+
+msgid "IDS_BR_BODY_VALID_CERTIFICATE"
+msgstr "मान्य प्रमाणपत्र"
+
+msgid "IDS_BR_BODY_USE_FULL_SCREEN_MODE_TO_HIDE_THE_STATUS_BAR"
+msgstr "स्टेटस बार छिपाने के लिए पूर्ण स्क्रीन मोड का उपयोग करें।"
+
+msgid "IDS_BR_BODY_USE_A_PREDICTION_SERVICE_TO_DISPLAY_RELATED_QUERIES_AND_POPULAR_WEBSITES_IN_THE_ADDRESS_BAR_AS_YOU_TYPE"
+msgstr "जैसे ही आप एड्रेस बार में टाइप करते है तो संबंधित पता बार में संबंधित क्वेरीज़ और लोकप्रिय वेबसाइटों को प्रदर्शित करने के लिए किसी पूर्वानुमान सेवा का उपयोग करें।"
+
+msgid "IDS_BR_BODY_UPPER_FOLDER_T_TALKBACK"
+msgstr "ऊपरी फ़ोल्डर"
+
+msgid "IDS_BR_BODY_UNTAGGED"
+msgstr "टैग नहीं किया गया"
+
+msgid "IDS_BR_BODY_UNABLE_TO_OPEN_THE_FILE_AT_PS_IT_MAY_HAVE_BEEN_REMOVED_OR_RENAMED_OR_FILE_PERMISSIONS_MAY_BE_PREVENTING_ACCESS"
+msgstr "%s पर फाइल खोलने में असमर्थ। हो सकता है इसे निकाल दिया गया हो या इसका नाम बदल दिया गया हो अथवा हो सकता है कि फाइल अनुमतियाँ एक्सेस को प्रतिबंधित करती हों।"
+
+msgid "IDS_BR_BODY_UNABLE_TO_DISPLAY_THE_WEBPAGE_NO_RESPONSE_FROM_THE_SERVER"
+msgstr "वेबपेज प्र‍दर्शित करने में अक्षम। सर्वर से कोई प्रतिक्रिया नहीं।"
+
+msgid "IDS_BR_BODY_TOWN_CITY_COUNTY_ABB"
+msgstr "नगर/शहर/प्रांत"
+
+msgid "IDS_BR_BODY_THIS_SITE_IS_USING_PS"
+msgstr "यह साइट %s का उपयोग कर रही है।"
+
+msgid "IDS_BR_BODY_THIS_SITE_CAN_ACCESS_YOUR_LOCATION"
+msgstr "यह साइट आपके वर्तमान स्थान को एक्सेस कर सकती है।"
+
+msgid "IDS_BR_BODY_THIS_SITE_CANNOT_ACCESS_YOUR_LOCATION"
+msgstr "यह साइट आपके स्थान को एक्सेस नहीं कर सकती है।"
+
+msgid "IDS_BR_BODY_THIS_BOOKMARK_WILL_BE_DELETED"
+msgstr "यह बुकमार्क हटाया जाएगा।"
+
+msgid "IDS_BR_BODY_THE_SELECTED_PERSONAL_DATA_WILL_BE_DELETED"
+msgstr "चयनित व्यक्तिगत डाटा हटाया जाएगा।"
+
+msgid "IDS_BR_BODY_TEXT_FIELD_T_TTS"
+msgstr "टेक्‍स्‍ट फ़ील्‍ड"
+
+msgid "IDS_BR_BODY_TARGET_FOLDER"
+msgstr "लक्ष्‍य फ़ोल्‍डर"
+
+msgid "IDS_BR_BODY_TAP_THE_WINDOW_MANAGER_ICON_AND_CLOSE_SOME_WINDOWS_THEN_TRY_AGAIN"
+msgstr "विंडो प्रबंधक प्रतीक टैप करें और कुछ विंडों को बंद करें, फिर दोबारा प्रयास करें।"
+
+msgid "IDS_BR_BODY_TAP_ONCE_MORE_TO_CLOSE_INTERNET"
+msgstr "इंटरनेट बंद करने के लिए एक बार और टैप करें"
+
+msgid "IDS_BR_BODY_SYNC_OPEN_PAGES"
+msgstr "खुले हुए पेजेस सिंक करें"
+
+msgid "IDS_BR_BODY_SYNC_INTERNET_DATA"
+msgstr "इंटरनेट डाटा सिंक करें"
+
+msgid "IDS_BR_BODY_SYNC_BOOKMARKS_ABB"
+msgstr "बुकमार्क्स सिंक करें"
+
+msgid "IDS_BR_BODY_STREET_ADDRESS_PO_BOX_C_O_ETC_ABB"
+msgstr "गली पता, पी.ओ. बॉक्स, सी/ओ, आदि।"
+
+msgid "IDS_BR_BODY_STORED_DATA"
+msgstr "संग्रहीत डाटा"
+
+msgid "IDS_BR_BODY_SPLIT_BAR_HANDLE"
+msgstr "स्प्लिट बार हैंडल"
+
+msgid "IDS_BR_BODY_SIGN_IN_TO_YOUR_SAMSUNG_ACCOUNT_TO_ACCESS_THE_BOOKMARKS_AND_TABS_ON_YOUR_OTHER_DEVICES"
+msgstr "आपके अन्य डिवाइस पर बुकमार्क्स और टैब्स को ऐक्सेस करने के लिए अपने Samsung account में साइन इन करें"
+
+msgid "IDS_BR_BODY_SHOW_OVERVIEW_OF_NEWLY_OPENED_PAGES"
+msgstr "नए खुले हुए पेजों का अवलोकन दिखाएँ।"
+
+msgid "IDS_BR_BODY_SHA_256_FINGERPRINT_C"
+msgstr "SHA-256 फिंगरप्रिंट:"
+
+msgid "IDS_BR_BODY_SHA_1_FINGERPRINT_C"
+msgstr "SHA-1 फिंगरप्रिंट:"
+
+msgid "IDS_BR_BODY_SET_TEXT_FOR_WEB_FORM_AUTO_FILL"
+msgstr "वेब फॉर्म स्वतः-भरण के लिए टेक्‍स्‍ट सेट करें।"
+
+msgid "IDS_BR_BODY_SET_CURRENT_PAGE_AS_HOMEPAGE"
+msgstr "वर्तमान पेज को होमपेज के रूप में सेट करें"
+
+msgid "IDS_BR_BODY_SELECT_FOLDER"
+msgstr "फोल्डर चुनें"
+
+msgid "IDS_BR_BODY_SEARCH_OR_ENTER_URL"
+msgstr "खोजें या URL प्रविष्ट करें।"
+
+msgid "IDS_BR_BODY_SEARCH_FIELD_T_TTS"
+msgstr "खोज फ़ील्‍ड"
+
+msgid "IDS_BR_BODY_SEARCH_AND_URL_SUGGESTIONS"
+msgstr "खोज और URL सुझाव"
+
+msgid "IDS_BR_BODY_SCREEN_AND_TEXT"
+msgstr "स्क्रीन और टेक्स्ट"
+
+msgid "IDS_BR_BODY_SAVE_USER_NAMES_AND_PASSWORDS_FOR_WEBSITES"
+msgstr "वेबसाइट्स के लिए उपभोक्ता नाम और पासवर्ड्स सुरक्षित करें।"
+
+msgid "IDS_BR_BODY_SAVE_LINK"
+msgstr "लिंक सुरक्षित करें"
+
+msgid "IDS_BR_BODY_RESTORE_DEFAULT_SETTINGS_Q"
+msgstr "डिफॉल्ट सेटिंग्स रीस्टोर करें?"
+
+msgid "IDS_BR_BODY_RESTORE_DEFAULT_SETTINGS"
+msgstr "डिफॉल्ट सेटिंग्स रीस्टोर करें"
+
+msgid "IDS_BR_BODY_RESET_TO_DEFAULT"
+msgstr "डिफॉल्‍ट में रीसेट करें"
+
+msgid "IDS_BR_BODY_RESET_SETTINGS"
+msgstr "रीसेट सेटिंग्स"
+
+msgid "IDS_BR_BODY_RESET_ALL_SETTINGS_TO_THEIR_DEFAULTS"
+msgstr "सभी सेटिंग्स को उनके डिफॉल्ट पर रीसेट करें।"
+
+msgid "IDS_BR_BODY_REMOVE_WEB_NOTIFICATION_ACCESS_INFORMATION_Q"
+msgstr "वेब सूचना एक्सेस जानकारी निकालें?"
+
+msgid "IDS_BR_BODY_REMEMBER_PASSWORDS"
+msgstr "पासवर्ड्स याद रखें"
+
+msgid "IDS_BR_BODY_REMEMBER_FORM_DATA"
+msgstr "फॉर्म डाटा याद रखें"
+
+msgid "IDS_BR_BODY_REMEMBER_DATA_I_TYPE_IN_FORMS_FOR_LATER_USE"
+msgstr "बाद में उपयोग करने हेतु मेरे द्वारा फॉर्म मे टाइप किया डाटा याद रखें।"
+
+msgid "IDS_BR_BODY_RADIO_BUTTON_T_TTS"
+msgstr "रेडियो बटन"
+
+msgid "IDS_BR_BODY_PS_BOOKMARK_WILL_BE_DELETED"
+msgstr "%s बुकमार्क हटाया जाएगा"
+
+msgid "IDS_BR_BODY_PRIVACY"
+msgstr "गोपनीयता"
+
+msgid "IDS_BR_BODY_PRINT"
+msgstr "प्रिंट करें"
+
+msgid "IDS_BR_BODY_PRESS_THE_MENU_KEY"
+msgstr "मेन्यू कुंजी दबाएँ"
+
+msgid "IDS_BR_BODY_POSTCODE_ABB"
+msgstr "पोस्टकोड"
+
+msgid "IDS_BR_BODY_PD_POP_UPS_BLOCKED_ABB"
+msgstr "%d पॉप-अप्स अवरुद्ध।"
+
+msgid "IDS_BR_BODY_PAGE_LOADED_T_TTS"
+msgstr "पेज लोड किया गया"
+
+msgid "IDS_BR_BODY_PAGES_THAT_YOU_VIEW_IN_THIS_TAB_WILL_NOT_APPEAR_IN_YOUR_BROWSER_HISTORY_OR_SEARCH_HISTORY_MSG"
+msgstr "इस टैब में आपको दिखाई देने वाले पेज आपके ब्राउजर इतिहास या खोज इतिहास में नहीं दिखाई देंगे और वे कुकीज जैसे अन्य ट्रेस नहीं छोड़ेंगे।"
+
+msgid "IDS_BR_BODY_OVERRIDE_WEBSITES_REQUEST_TO_CONTROL_ZOOM"
+msgstr "ज़ूम नियंत्रित करने के लिए वेबसाइट का अनुरोध ओवरराइड करें।"
+
+msgid "IDS_BR_BODY_OTHER_ABB"
+msgstr "अन्य"
+
+msgid "IDS_BR_BODY_OPEN_WINDOWS_T_TALKBACK"
+msgstr "विंडोज़ खोलें।"
+
+msgid "IDS_BR_BODY_OPEN_PAGES_IN_OVERVIEW_ABB"
+msgstr "अवलोकन में पेज खोलें"
+
+msgid "IDS_BR_BODY_ON_DEMAND"
+msgstr "मांग पर"
+
+msgid "IDS_BR_BODY_ONLY_VIA_WI_FI_ABB"
+msgstr "केवल Wi-Fi द्वारा"
+
+msgid "IDS_BR_BODY_OLDER"
+msgstr "पुराना"
+
+msgid "IDS_BR_BODY_NO_WINDOWS"
+msgstr "कोई विंडो नहीं"
+
+msgid "IDS_BR_BODY_NO_VISITED_SITES"
+msgstr "दौरा किये गए साइट्स नहीं"
+
+msgid "IDS_BR_BODY_NO_TITLE"
+msgstr "कोई शीर्षक नहीं"
+
+msgid "IDS_BR_BODY_NO_SAVED_PAGES"
+msgstr "सुरक्षित किए पेज नहीं"
+
+msgid "IDS_BR_BODY_NO_BOOKMARKS"
+msgstr "कोई बुकमार्क नहीं"
+
+msgid "IDS_BR_BODY_NORMAL"
+msgstr "सामान्य"
+
+msgid "IDS_BR_BODY_NEWS"
+msgstr "समाचार"
+
+msgid "IDS_BR_BODY_MOVE_THE_SELECTED_BOOKMARKS_Q"
+msgstr "चयनित बुकमार्क्स ले जाएँ?"
+
+msgid "IDS_BR_BODY_MOST_VISITED_SITES"
+msgstr "अधिकतम दौरा किये गए साइट्स"
+
+msgid "IDS_BR_BODY_MOBILE_VIEW"
+msgstr "मोबाइल दृश्य"
+
+msgid "IDS_BR_BODY_LOCATION_M_INFORMATION"
+msgstr "स्थान"
+
+msgid "IDS_BR_BODY_LAST_WEEK"
+msgstr "पिछला सप्ताह"
+
+msgid "IDS_BR_BODY_LAST_MONTH"
+msgstr "अंतिम महीना"
+
+msgid "IDS_BR_BODY_LAST_7_DAYS"
+msgstr "अंतिम 7 दिन"
+
+msgid "IDS_BR_BODY_LARGE"
+msgstr "बड़ा"
+
+msgid "IDS_BR_BODY_INTERNET_HISTORY_IS_NOT_STORED_ABB"
+msgstr "इंटरनेट इतिहास संग्रहीत नहीं है।"
+
+msgid "IDS_BR_BODY_INTERNET"
+msgstr "इंटरनेट"
+
+msgid "IDS_BR_BODY_IMPROVE_PERFORMANCE_WHEN_LOADING_PAGES"
+msgstr "पेजेस लोड करते समय गुणवत्ता सुधारें।"
+
+msgid "IDS_BR_BODY_HOMEPAGE"
+msgstr "होमपेज"
+
+msgid "IDS_BR_BODY_HIDE_THE_ADDRESS_BAR_WHEN_SCROLLING_DOWN_THE_PAGE"
+msgstr "पेज नीचे की ओर स्क्रॉल करते समय पता पट्टी छिपाएँ।"
+
+msgid "IDS_BR_BODY_GENERAL_M_SETTINGS"
+msgstr "सामान्य"
+
+msgid "IDS_BR_BODY_FULL_NAME_ABB"
+msgstr "पूरा नाम"
+
+msgid "IDS_BR_BODY_FORCE_ZOOM_ABB"
+msgstr "बलपूर्वक जूम करें"
+
+msgid "IDS_BR_BODY_FLAT_SUITE_UNIT_BUILDING_FLOOR_ETC_ABB"
+msgstr "फ्लैट, सूट, यूनिट, बिल्डिंग, फ्लोर, आदि।"
+
+msgid "IDS_BR_BODY_FINGERPRINTS_C"
+msgstr "फिंगरप्रिंट्स:"
+
+msgid "IDS_BR_BODY_FAILED_TO_ADD_TO_HOME_SCREEN_ABB"
+msgstr "होम स्क्रीन पर जोड़ने में विफल।"
+
+msgid "IDS_BR_BODY_ENTER_YOUR_NAME_ABB"
+msgstr "अपना नाम दर्ज करें"
+
+msgid "IDS_BR_BODY_ENTER_TOWN_CITY_COUNTY_ABB"
+msgstr "नगर/शहर/प्रांत प्रविष्ट करें"
+
+msgid "IDS_BR_BODY_ENTER_COUNTRY_REGION_ABB"
+msgstr "देश/प्रांत प्रविष्ट करें"
+
+msgid "IDS_BR_BODY_ENTER_COMPANY_NAME_ABB"
+msgstr "कंपनी का नाम दर्ज करें"
+
+msgid "IDS_BR_BODY_ENABLE_LOCATION"
+msgstr "स्थान सक्षम करें"
+
+msgid "IDS_BR_BODY_ENABLE_JAVASCRIPT"
+msgstr "जावास्क्रिप्ट सक्षम करें"
+
+msgid "IDS_BR_BODY_DOUBLE_TAP_TO_VIEW_CERTIFICATE_TTS"
+msgstr "प्रमाणपत्र देखने के लिए दो बार टैप करें।"
+
+msgid "IDS_BR_BODY_DOUBLE_TAP_TO_SELECT_A_SEARCH_ENGINE_T_TALKBACK"
+msgstr "खोज इंजिन को चुनने के लिए डबल टैप करें।"
+
+msgid "IDS_BR_BODY_DOUBLE_TAP_TO_OPEN_THE_WEBPAGE_T_TALKBACK"
+msgstr "वेबपेज खोलने के लिए डबल टैप करें।"
+
+msgid "IDS_BR_BODY_DOUBLE_TAP_TO_OPEN_THE_LIST_T_TTS"
+msgstr "सूची खोलने के लिए दो बार टैप करें।"
+
+msgid "IDS_BR_BODY_DOUBLE_TAP_TO_OPEN_THE_FOLDER_T_TTS"
+msgstr "फोल्डर खोलने के लिए दोहरा टैप करें।"
+
+msgid "IDS_BR_BODY_DOUBLE_TAP_TO_OPEN_KEYBOARD_T_TTS"
+msgstr "कीबोर्ड खोलने के लिए दोहरा टैप करें।"
+
+msgid "IDS_BR_BODY_DOUBLE_TAP_TO_MOVE_TO_CONTENT_T_TTS"
+msgstr "सामग्री में ले जाने के लिए दोहरा टैप करें।"
+
+msgid "IDS_BR_BODY_DOUBLE_TAP_TO_CLOSE_THE_TRAY_T_TALKBACK"
+msgstr "ट्रे बंद करने के लिए डबल टैप करें।"
+
+msgid "IDS_BR_BODY_DOUBLE_TAP_TO_CANCEL_THE_SEARCH_T_TALKBACK"
+msgstr "खोज रद्द करने के लिए डबल टैप करें।"
+
+msgid "IDS_BR_BODY_DOUBLE_TAP_AND_HOLD_TO_RESIZE_SPLIT_AREA_T_TTS"
+msgstr "विभाजित क्षेत्र का आकार बदलने के लिए डबल टैप और होल्‍ड करें।"
+
+msgid "IDS_BR_BODY_DOUBLE_TAP_AND_DRAG_TO_REORDER_TTS"
+msgstr "पुनः क्रमित करने के लिए दो बार टैप करें और ड्रैग करें।"
+
+msgid "IDS_BR_BODY_DISPLAY_SECURITY_WARNING_POP_UPS"
+msgstr "सुरक्षा चेतावनी पॉप-अप्स प्रदर्शित करें"
+
+msgid "IDS_BR_BODY_DISPLAY_IMAGES_ON_WEB_PAGES"
+msgstr "वेब पेजों पर छवियाँ दिखाएँ"
+
+msgid "IDS_BR_BODY_DESKTOP_VIEW"
+msgstr "डेस्कटॉप दृश्य"
+
+msgid "IDS_BR_BODY_DELETE_THE_SELECTED_BOOKMARKS_Q"
+msgstr "चयनित बुकमार्क्स हटाएँ?"
+
+msgid "IDS_BR_BODY_DELETE_PERSONAL_DATA"
+msgstr "व्यक्तिगत डाटा हटाएँ"
+
+msgid "IDS_BR_BODY_DEFAULT_STORAGE"
+msgstr "डिफॉल्ट स्टोरेज"
+
+msgid "IDS_BR_BODY_DEFAULT_PAGE_ABB"
+msgstr "डिफॉल्ट पेज"
+
+msgid "IDS_BR_BODY_DATA_USAGE_REDUCED_BY_P1SDP_HP2SD_KB_OF_P3SD_KB_RECEIVED_TAP_HERE_TO_RESET_STATISTICS"
+msgstr "डाटा उपयोग %1$d% घटाया गया (%3$d KB में से %2$d KB प्राप्त हुआ)। सांख्यि‍की रीसेट करने के लिए यहां टैप करें।"
+
+msgid "IDS_BR_BODY_CUSTOM_USER_AGENT"
+msgstr "कस्टम उपयोगकर्ता एजेंट"
+
+msgid "IDS_BR_BODY_CURRENT_PAGE"
+msgstr "वर्तमान पेज"
+
+msgid "IDS_BR_BODY_CREATED"
+msgstr "बनाया गया।"
+
+msgid "IDS_BR_BODY_COUNTY_ABB"
+msgstr "प्रांत"
+
+msgid "IDS_BR_BODY_COUNTRY_REGION_ABB2"
+msgstr "देश/क्षेत्र"
+
+msgid "IDS_BR_BODY_COOKIES_AND_SITE_DATA_ABB"
+msgstr "कुकीज और साइट डाटा"
+
+msgid "IDS_BR_BODY_COOKIES"
+msgstr "कुकीज"
+
+msgid "IDS_BR_BODY_CONTENT_SETTINGS"
+msgstr "सामग्री सेटिंग्स"
+
+msgid "IDS_BR_BODY_COMPANY_NAME_ABB"
+msgstr "कंपनी का नाम"
+
+msgid "IDS_BR_BODY_CLOSE_TAB"
+msgstr "टैब बंद करें।"
+
+msgid "IDS_BR_BODY_CLEAR_WEB_NOTIFICATION_PERMISSION_SETTINGS"
+msgstr "वेब सूचना अनुमति सेटिंग्स साफ करें।"
+
+msgid "IDS_BR_BODY_CLEAR_WEB_NOTIFICATION_PERMISSIONS_Q"
+msgstr "वेब सूचना अनुमतियाँ साफ करें?"
+
+msgid "IDS_BR_BODY_CLEAR_NOTIFICATION_ACCESS_FOR_WEBSITES"
+msgstr "वेबसाइटों के लिए सूचना एक्सेस साफ करें।"
+
+msgid "IDS_BR_BODY_CLEAR_NOTIFICATIONS"
+msgstr "अधिसूचनाएँ साफ करें"
+
+msgid "IDS_BR_BODY_CLEAR_LOCATION_ACCESS"
+msgstr "स्थान एक्सेस साफ करें"
+
+msgid "IDS_BR_BODY_CLEAR_HISTORY"
+msgstr "इतिहास साफ करें"
+
+msgid "IDS_BR_BODY_CLEAR_ALL_BROWSER_DATA_AND_RESET_ALL_SETTINGS_TO_DEFAULT"
+msgstr "सभी ब्राउजर डाटा साफ करें और सभी सेटिंग्‍स डिफॉल्ट पर रीसेट करे।"
+
+msgid "IDS_BR_BODY_CITY_TOWN_ABB"
+msgstr "शहर/नगर"
+
+msgid "IDS_BR_BODY_CHANGE_THE_TEXT_SIZE_FOR_EASIER_READING_ESPECIALLY_WHEN_VIEWING_DESKTOP_VERSIONS_OF_WEBSITES_ON_YOUR_DEVICE_MSG"
+msgstr "आसानी से पढ़ने के लिए टेक्स्ट का आकार बदलें, विशेष रूप से जब अपने डिवाइस पर वेबसाइट का डेस्कटॉप संस्करण देख रहे हों। ध्यान रखें इसके परिणामस्वरूप टेक्स्ट लेआउट बदल सकता है।"
+
+msgid "IDS_BR_BODY_BOOKMARK_REMINDER_ABB"
+msgstr "बुकमार्क रिमाइंडर"
+
+msgid "IDS_BR_BODY_BLOCK_POP_UPS_ON_WEB_PAGES"
+msgstr "वेब पेजेस पर पॉप-अप्स अवरुद्ध करें।"
+
+msgid "IDS_BR_BODY_BLOCK_POP_UPS_ON_WEBPAGES"
+msgstr "वेब पेजेस पर पॉप-अप्स अवरुद्ध करें।"
+
+msgid "IDS_BR_BODY_BLOCK_POP_UPS"
+msgstr "पॉप-अप्स अवरूद्ध करें"
+
+msgid "IDS_BR_BODY_BASIC"
+msgstr "मूल"
+
+msgid "IDS_BR_BODY_AUTO_FILL_FORMS_T_TTS"
+msgstr "फॉर्म स्वत: भरण"
+
+msgid "IDS_BR_BODY_AUTO_DETECT"
+msgstr "स्वतः ढूँढना"
+
+msgid "IDS_BR_BODY_AUTOMATIC"
+msgstr "स्वचालित"
+
+msgid "IDS_BR_BODY_ASK_WHETHER_TO_ADD_A_BOOKMARK_FOR_A_WEBSITE_WHEN_YOU_HAVE_VISITED_IT_PD_TIMES"
+msgstr "आपके %d बार वेबसाइट पर जाने पर पूछें कि आप इसके लिए कोई बुकमार्क जोड़ना चाहते हैं"
+
+msgid "IDS_BR_BODY_ALWAYS_ON"
+msgstr "हमेशा चालू"
+
+msgid "IDS_BR_BODY_ALWAYS"
+msgstr "हमेशा"
+
+msgid "IDS_BR_BODY_ALL_OPEN_WINDOWS_WILL_BE_CLOSED_AND_YOU_WILL_MOVE_TO_YOUR_HOMEPAGE"
+msgstr "सभी खुले विंडोज़ बंद हो जाएँगे और आप अपने होमपेज पर चले जाएँगे"
+
+msgid "IDS_BR_BODY_ALLOW_SITES_TO_RUN_JAVASCRIPT"
+msgstr "जावास्क्रिप्ट चलाने के लिए साइट्स को अनुमति प्रदान करें।"
+
+msgid "IDS_BR_BODY_ALLOW_SITES_TO_REQUEST_ACCESS_TO_YOUR_LOCATION"
+msgstr "आप का स्थान ऐक्सेस करने के लिए साइट्स को अनुमति दें।"
+
+msgid "IDS_BR_BODY_ALLOW_SITES_TO_ACCESS_YOUR_LOCATION_DATA"
+msgstr "साइटों को अपने स्थान डेटा का उपयोग करने की अनुमति दें"
+
+msgid "IDS_BR_BODY_ALLOW_PS_TO_SHOW_NOTIFICATIONS"
+msgstr "%s को सूचनाएँ दिखाने की अनुमति दें"
+
+msgid "IDS_BR_BODY_ALLOWS_SITES_TO_SAVE_AND_READ_COOKIE_DATA"
+msgstr "साइट्स को कुकी डाटा सुरक्षित करने और पढ़ने की अनुमति देता है।"
+
+msgid "IDS_BR_BODY_AFTER_YOU_VISIT_WEBPAGES_THE_PAGES_YOU_HAVE_VISITED_THE_MOST_WILL_BE_SHOWN_HERE"
+msgstr "आपके द्वारा वेबपेजेस पर जाने के बाद, आप जिन पेजेस पर अधिक बार गए हैं वे यहाँ दिखाई देंगे।"
+
+msgid "IDS_BR_BODY_AFTER_YOU_VIEW_WEBSITES_THE_SIZE_OF_THEIR_STORED_DATA_AND_WHETHER_THEY_CAN_ACCESS_YOUR_LOCATION_WILL_BE_SHOWN_HERE"
+msgstr "आपके द्वारा वेबसाइट्स देखने के बाद उनके संग्रहीत डाटा का आकार और चाहे वे आपके स्थान को एक्सेस कर सकें या नहीं यहाँ दिखाए जाएँगे।"
+
+msgid "IDS_BR_BODY_AFTER_YOU_VIEW_WEBPAGES_THEY_WILL_BE_SHOWN_HERE"
+msgstr "आपके द्वारा वेबपेजेस देखने के बाद वे यहाँ दिखाए जाएँगे।"
+
+msgid "IDS_BR_BODY_AFTER_YOU_SAVE_WEBPAGES_TO_VIEW_OFFLINE_THEY_WILL_BE_SHOWN_HERE"
+msgstr "ऑफलाइन देखने के लिए आपके द्वारा वेबपेजेस सुरक्षित करने के बाद वे यहाँ दिखाए जाएँगे।"
+
+msgid "IDS_BR_BODY_AFTER_YOU_LOAD_PAGES_THE_PAGE_HISTORY_WILL_BE_SHOWN"
+msgstr "पेजों को लोड करने के बाद पेज इतिहास दिखाया जाएगा।"
+
+msgid "IDS_BR_BODY_AFTER_YOU_ADD_WEBPAGES_TO_QUICK_ACCESS_THEY_WILL_BE_SHOWN_HERE"
+msgstr "शीघ्र एक्सेस के लिए वेबपेजेस जोड़ने के बाद, वे यहाँ दिखाई देंगे।"
+
+msgid "IDS_BR_BODY_ADVANCED_SETTINGS_FOR_INDIVIDUAL_WEBSITES"
+msgstr "व्यैक्तिक वेबसाइटों के लिए उन्‍नत सेटिंग्स"
+
+msgid "IDS_BR_BODY_ADVANCED"
+msgstr "उन्नत"
+
+msgid "IDS_BR_BODY_ADD_TO_CONTACT"
+msgstr "संपर्क में जोड़ें"
+
+msgid "IDS_BR_BODY_ADD_THIS_WEBSITE_TO_BOOKMARKS_TO_OPEN_IT_FASTER_ABB"
+msgstr "तेज़ी से खोलने के लिए इस वेबसाइट को बुकमार्क्स में जोड़ें"
+
+msgid "IDS_BR_BODY_ADDRESS_LINE_2_ABB"
+msgstr "पता पंक्ति 2"
+
+msgid "IDS_BR_BODY_ADDRESS_LINE_1_ABB"
+msgstr "पता पंक्ति 1"
+
+msgid "IDS_BR_BODY_ACCEPT_COOKIES"
+msgstr "कुकीज स्‍वीकार करें"
+
+msgid "IDS_BR_BODY_1_PROFILE_WILL_BE_DELETED"
+msgstr "1 प्रोफाइल हटा दी जाएगी।"
+
+msgid "IDS_BR_ACBUTTON_TABS_ABB"
+msgstr "टैब्स"
+
+msgid "IDS_BR_TPOP_STARTING_DOWNLOAD_ING"
+msgstr "डाउनलोड प्रारंभ हो रहा है..."
+
+msgid "IDS_BR_TPOP_FOLDER_RENAMED"
+msgstr "फोल्डर का नाम बदला गया।"
+
+msgid "IDS_BR_TMBODY_SUGGEST_SEARCH_TERMS_AND_URLS"
+msgstr "खोज शब्दावली और URL का सुझाव दें"
+
+msgid "IDS_BR_TMBODY_DATA_USAGE_MANAGEMENT"
+msgstr "डाटा उपयोग प्रबंधन"
+
+msgid "IDS_BR_SK_CANCEL_ABB"
+msgstr "रद्द"
+
+msgid "IDS_BR_SBODY_SET_THE_DEVICE_TO_SHOW_THE_FULL_WEBPAGE_ON_THE_SCREEN_WHEN_IT_IS_LOADED_WITHOUT_NEEDING_TO_SCROLL"
+msgstr "डिवाइस में लोड होने पर स्क्रॉल करने की आवश्यकता के बिना उसे स्क्रीन पर पूर्ण वेबपेज दिखाने पर सेट करें।"
+
+msgid "IDS_BR_POP_UNABLE_TO_RUN_INTERNET_LOW_BATTERY"
+msgstr "इंटरनेट चलाने में अक्षम। बैटरी कम।"
+
+msgid "IDS_BR_POP_THE_DOWNLOAD_HAS_BEEN_STOPPED_AND_THE_DOWNLOADED_DATA_WILL_BE_DELETED"
+msgstr "डाउनलोड रोक दिया गया है और डाउनलोड किया गया डाटा हटा दिया जाएगा।"
+
+msgid "IDS_BR_POP_SEARCH_COMPLETED_JPN_SBM"
+msgstr "Search completed"
+
+msgid "IDS_BR_POP_READY"
+msgstr "तैयार।"
+
+msgid "IDS_BR_POP_INFORM_MEMORY_ERROR"
+msgstr "मेमोरी त्रुटि।"
+
+msgid "IDS_BR_POP_DATA_ROAMING_IS_DISABLED_CONNECT_TO_A_WI_FI_NETWORK_OR_ENABLE_DATA_ROAMING_AND_TRY_AGAIN"
+msgstr "डाटा रोमिंग अक्षम की गई है। किसी Wi-Fi नेटवर्क से कनेक्ट करें या डाटा रोमिंग सक्षम करें और फिर से प्रयास करें।"
+
+msgid "IDS_BR_POP_BROWSERERRORREQUESTTIMEOUT"
+msgstr "अनुरोध समय समाप्त।"
+
+msgid "IDS_BR_POP_A_WI_FI_CONNECTION_IS_REQUIRED_TAP_OK_TO_GO_TO_YOUR_WI_FI_SETTINGS"
+msgstr "एक Wi-Fi कनेक्शन की आवश्यकता है। अपनी Wi-Fi सेटिंग्स पर जाने के लिए “ओके” टैप करें।"
+
+msgid "IDS_BR_OPT_WEB_APPS_ABB"
+msgstr "वेब एप्स"
+
+msgid "IDS_BR_OPT_VIEW_ONLINE"
+msgstr "ऑनलाइन देखें"
+
+msgid "IDS_BR_OPT_READ_ON_OFFLINE_PAGES_LATER_ABB"
+msgstr "ऑफलाइन पेजों को बाद में पढ़ें"
+
+msgid "IDS_BR_OPT_QUICK_ACCESS_ABB2"
+msgstr "शीघ्र एक्सेस"
+
+msgid "IDS_BR_OPT_ALWAYS_ENABLED_ABB"
+msgstr "हमेशा सक्षम"
+
+msgid "IDS_BR_NPBODY_TAP_HERE_TO_ADD_A_QUICK_ACCESS_SHORTCUT"
+msgstr "शीघ्र एक्सेस शॉर्टकट जोड़ने के लिए यहां पर टैप करें"
+
+msgid "IDS_BR_NPBODY_NO_HISTORY"
+msgstr "कोई इतिहास नहीं"
+
+msgid "IDS_BR_MBODY_USER_MANUAL_ABB"
+msgstr "उपयोगकर्ता मैनुअल"
+
+msgid "IDS_BR_MBODY_TOWN_CITY_COUNTY"
+msgstr "नगर/शहर/देश"
+
+msgid "IDS_BR_MBODY_STORED_DATA"
+msgstr "संग्रहीत डाटा"
+
+msgid "IDS_BR_MBODY_SEARCH_AND_URL_SUGGESTIONS_ABB"
+msgstr "खोज और URL सुझाव"
+
+msgid "IDS_BR_MBODY_HISTORY"
+msgstr "इतिहास"
+
+msgid "IDS_BR_MBODY_FIT_PAGE_TO_SCREEN"
+msgstr "पेज, स्‍क्रीन पर फिट करें"
+
+msgid "IDS_BR_MBODY_DOWNLOADS"
+msgstr "डाउनलोड्स"
+
+msgid "IDS_BR_MBODY_CUSTOM"
+msgstr "कस्टम"
+
+msgid "IDS_BR_MBODY_COUNTRY_REGION"
+msgstr "देश/क्षेत्र"
+
+msgid "IDS_BR_HEADER_RENAME_FOLDER_ABB"
+msgstr "फोल्डर का नाम बदलें"
+
+msgid "IDS_BR_HEADER_PERSONAL_DATA_ABB"
+msgstr "व्यक्तिगत डाटा"
+
+msgid "IDS_BR_HEADER_NEWER_M_INTERNET_HISTORY"
+msgstr "नया"
+
+msgid "IDS_BR_HEADER_ISSUED_TO"
+msgstr "इसे जारी"
+
+msgid "IDS_BR_HEADER_ENCODING"
+msgstr "एन्कोडिंग"
+
+msgid "IDS_BR_HEADER_EDIT_INFO_ABB"
+msgstr "जानकारी संपादन"
+
+msgid "IDS_BR_HEADER_DOWNLOAD_STOPPED_ABB"
+msgstr "डाउनलोड रुका"
+
+msgid "IDS_BR_HEADER_DEPARTMENT_C_ABB"
+msgstr "विभाग:"
+
+msgid "IDS_BR_HEADER_ADD_INFO_ABB"
+msgstr "जानकारी जोड़ें"
+
+msgid "IDS_BR_BUTTON_WI_FI_ABB"
+msgstr "Wi-Fi"
+
+msgid "IDS_BR_BUTTON_SETTINGS_ABB"
+msgstr "सेटिंग्स"
+
+msgid "IDS_BR_BUTTON2_OK"
+msgstr "ओके"
+
+msgid "IDS_BR_BUTTON2_NEW"
+msgstr "नया"
+
+msgid "IDS_BR_BODY_WEB_SEARCH"
+msgstr "वेब खोज"
+
+msgid "IDS_BR_BODY_UNABLE_TO_OPEN_FILE"
+msgstr "फाईल खोलने में असमर्थ।"
+
+msgid "IDS_BR_BODY_UNABLE_TO_FIND_AN_APPLICATION_TO_OPEN_THIS_FILE"
+msgstr "यह फाइल खोलने के लिए एक एप्लीकेशन ढूँढने में असमर्थ।"
+
+msgid "IDS_BR_BODY_UNABLE_TO_CONNECT_TO_MOBILE_NETWORKS_WHILE_FLIGHT_MODE_IS_ENABLED_MSG"
+msgstr "फ्लाइट मोड सक्षम होने पर मोबाइल नेटवर्क्स से कनेक्ट करने में असमर्थ। इसके बजाय किसी Wi-Fi नेटवर्क से कनेक्ट करें या फ्लाइट मोड अक्षम करने के लिए “सेटिंग्स” टैप करें और तब फिर से प्रयास करें।"
+
+msgid "IDS_BR_BODY_THIS_CERTIFICATE_IS_FROM_A_TRUSTED_AUTHORITY"
+msgstr "यह प्रमाणपत्र किसी विश्वसनीय प्राधिकार से है।"
+
+msgid "IDS_BR_BODY_TAP_HERE_TO_ADD_A_QUICK_ACCESS_SHORTCUT"
+msgstr "शीघ्र एक्सेस शॉर्टकट जोड़ने के लिए यहाँ टैप करें।"
+
+msgid "IDS_BR_BODY_PREFERENCES"
+msgstr "प्राथमिकताएँ"
+
+msgid "IDS_BR_BODY_PERCENTAGE_M_SYMBOL"
+msgstr "% "
+
+msgid "IDS_BR_BODY_NO_MOBILE_NETWORKS_HAVE_BEEN_FOUND"
+msgstr "कोई मोबाइल नेटवर्क नहीं मिले।"
+
+msgid "IDS_BR_BODY_NO_MATCHES"
+msgstr "कोई मिलाप नहीं मिला"
+
+msgid "IDS_BR_BODY_MOBILE_DATA_IS_TURNED_OFF_CONNECT_TO_A_WI_FI_NETWORK_INSTEAD_OR_TAP_SETTINGS_TO_TURN_ON_MOBILE_DATA_AND_THEN_TRY_AGAIN"
+msgstr "मोबाइल डाटा बंद किया गया है। इसके बजाय किसी Wi-Fi नेटवर्क से कनेक्ट करें या मोबाइल डाटा चालू करने के लिए “सेटिंग्स” पर टैप करें और तब फिर से प्रयास करें।"
+
+msgid "IDS_BR_BODY_FIT_TO_WIDTH"
+msgstr "चौड़ाई में फिट करें"
+
+msgid "IDS_BR_ACBUTTON_QUICK_ACCESS"
+msgstr "शीघ्र एक्सेस"
+
+msgid "IDS_BR_OPT_OPEN_IN_NEW_TAB"
+msgstr "नए टैब्स में खोलें"
+
+msgid "IDS_BR_BODY_SHARE_LINK"
+msgstr "लिंक साझा करें"
+
+msgid "IDS_BR_SK_SAVE_LITE"
+msgstr "सुरक्षित"
+
+msgid "IDS_BR_SK_SAVE_ABB"
+msgstr "सेव"
+
+msgid "IDS_BR_SK_SAVE"
+msgstr "सुरक्षित"
+
+msgid "IDS_BR_SK_PREVIOUS"
+msgstr "पिछला"
+
+msgid "IDS_BR_SK_NEXT"
+msgstr "अगला"
+
+msgid "IDS_BR_SK_DELETE"
+msgstr "हटाएँ"
+
+msgid "IDS_BR_SK_CLEAR"
+msgstr "साफ"
+
+msgid "IDS_BR_SK_BACK"
+msgstr "पीछे"
+
+msgid "IDS_BR_POP_WI_FI_CONNECTION_REQUIRED_CONNECT_TO_WI_FI_NETWORK_AND_TRY_AGAIN"
+msgstr "Wi-Fi कनेक्‍शन आवश्‍यक है। Wi-Fi नेटवर्क से कनेक्ट करें और फिर से प्रयास करें।"
+
+msgid "IDS_BR_POP_URL_NOT_FOUND"
+msgstr "URL नहीं मिला।"
+
+msgid "IDS_BR_POP_URL"
+msgstr "URL"
+
+msgid "IDS_BR_POP_SAVED"
+msgstr "सुरक्षित किया।"
+
+msgid "IDS_BR_POP_REMOVED"
+msgstr "निकाला।"
+
+msgid "IDS_BR_POP_PD_ITEMS_WILL_BE_DELETED"
+msgstr "%d मदें हटाई जाएँगी।"
+
+msgid "IDS_BR_POP_PD_ITEMS_SELECTED"
+msgstr "%d मदें चयनित।"
+
+msgid "IDS_BR_POP_NO_ITEMS_SELECTED"
+msgstr "कोई मद चयनित नहीं।"
+
+msgid "IDS_BR_POP_NOT_ENOUGH_MEMORY"
+msgstr "पर्याप्‍त मेमोरी नहीं।"
+
+msgid "IDS_BR_POP_NEVER"
+msgstr "कभी नहीं"
+
+msgid "IDS_BR_POP_MOBILE_DATA_IS_DISABLED_CONNECT_TO_WI_FI_NETWORK_INSTEAD_OR_ENABLE_MOBILE_DATA_AND_TRY_AGAIN"
+msgstr "मोबाइल डाटा अक्षम है। इसके बजाय Wi-Fi नेटवर्क से कनेक्ट करें, या मोबाइल डाटा सक्षम करें और फिर से प्रयास करें।"
+
+msgid "IDS_BR_POP_LOADING_PLEASE_WAIT_ING"
+msgstr "लोड हो रहा है। कृपया प्रतीक्षा करें..."
+
+msgid "IDS_BR_POP_INVALID_URL"
+msgstr "अमान्य वेब पता।"
+
+msgid "IDS_BR_POP_FAIL"
+msgstr "विफल।"
+
+msgid "IDS_BR_POP_ENTER_TITLE_ABB"
+msgstr "शीर्षक प्रविष्ट करें"
+
+msgid "IDS_BR_POP_DO_NOT_SHOW_AGAIN"
+msgstr "दोबारा न दिखाएँ।"
+
+msgid "IDS_BR_POP_DOWNLOADCOMPLETE"
+msgstr "डाउनलोड पूर्ण।"
+
+msgid "IDS_BR_POP_DISABLED"
+msgstr "अक्षमित।"
+
+msgid "IDS_BR_POP_DELETE_Q"
+msgstr "हटाएँ?"
+
+msgid "IDS_BR_POP_DELETED"
+msgstr "हटाया।"
+
+msgid "IDS_BR_POP_CLOSE_APPLICATION_Q"
+msgstr "एप्लीकेशन बंद करें?"
+
+msgid "IDS_BR_POP_BOOKMARK_ADDED"
+msgstr "बुकमार्क जोड़ा गया।"
+
+msgid "IDS_BR_POP_AUTOMATIC_BRIGHTNESS"
+msgstr "स्वचालित चमक"
+
+msgid "IDS_BR_POP_ACCOUNT"
+msgstr "खाता"
+
+msgid "IDS_BR_POP_1_ITEM_WILL_BE_DELETED"
+msgstr "1 मद हटाया जाएगा।"
+
+msgid "IDS_BR_POP_1_ITEM_SELECTED"
+msgstr "1 मद चयनित।"
+
+msgid "IDS_BR_OPT_TRANSLATE"
+msgstr "अनुवाद करें"
+
+msgid "IDS_BR_OPT_STOP"
+msgstr "रोकें"
+
+msgid "IDS_BR_OPT_SHOW"
+msgstr "दिखाएँ"
+
+msgid "IDS_BR_OPT_SHARE"
+msgstr "साझा करें"
+
+msgid "IDS_BR_OPT_SETTINGS"
+msgstr "सेटिंग्स"
+
+msgid "IDS_BR_OPT_SEND_EMAIL"
+msgstr "ईमेल भेजें"
+
+msgid "IDS_BR_OPT_SELECT"
+msgstr "चुनें"
+
+msgid "IDS_BR_OPT_SD_CARD"
+msgstr "SD कार्ड"
+
+msgid "IDS_BR_OPT_RENAME"
+msgstr "नाम बदलें"
+
+msgid "IDS_BR_OPT_REFRESH"
+msgstr "रीफ्रेश"
+
+msgid "IDS_BR_OPT_MOVE"
+msgstr "ले जाएँ"
+
+msgid "IDS_BR_OPT_MESSAGES"
+msgstr "सन्देश"
+
+msgid "IDS_BR_OPT_LIST_VIEW"
+msgstr "सूची दृश्य"
+
+msgid "IDS_BR_OPT_I_AGREE"
+msgstr "मैं सहमत हूँ।"
+
+msgid "IDS_BR_OPT_HELP"
+msgstr "सहायता"
+
+msgid "IDS_BR_OPT_DEVICE"
+msgstr "डिवाइस"
+
+msgid "IDS_BR_OPT_BOOKMARK"
+msgstr "बुकमार्क"
+
+msgid "IDS_BR_OPT_ADDED"
+msgstr "जोड़ा गया।"
+
+msgid "IDS_BR_OPT_ADD"
+msgstr "जोड़ें"
+
+msgid "IDS_BR_MBODY_DEFAULT_DOWNLOAD_STORAGE"
+msgstr "डिफ़ॉल्ट डाउनलोड स्टोरेज"
+
+msgid "IDS_BR_HEADER_SIGN_IN_TO_SAMSUNG_ACCOUNT"
+msgstr "Samsung account में साइन इन करें"
+
+msgid "IDS_BR_HEADER_PD_SELECTED_ABB"
+msgstr "%d चयनित"
+
+msgid "IDS_BR_HEADER_NO_NETWORK_CONNECTION"
+msgstr "कोई नेटवर्क कनेक्शन नहीं"
+
+msgid "IDS_BR_HEADER_FOLDER"
+msgstr "फोल्डर"
+
+msgid "IDS_BR_HEADER_EDIT_PROFILE"
+msgstr "प्रोफाइल संपादित करें"
+
+msgid "IDS_BR_BUTTON_SET"
+msgstr "सेट करें"
+
+msgid "IDS_BR_BUTTON_NOT_NOW"
+msgstr "अभी नहीं"
+
+msgid "IDS_BR_BUTTON_ENABLE_ABB"
+msgstr "सक्षम करें"
+
+msgid "IDS_BR_BUTTON_EDIT"
+msgstr "संपादित करें"
+
+msgid "IDS_BR_BUTTON_CONTINUE_ABB"
+msgstr "जारी"
+
+msgid "IDS_BR_BUTTON_CONTINUE"
+msgstr "जारी रखें"
+
+msgid "IDS_BR_BUTTON_CLOSE"
+msgstr "बंद"
+
+msgid "IDS_BR_BUTTON_CANCEL_ABB"
+msgstr "रद्द"
+
+msgid "IDS_BR_BUTTON_CANCEL"
+msgstr "रद्द"
+
+msgid "IDS_BR_BUTTON_ALLOW"
+msgstr "अनुमति दें"
+
+msgid "IDS_BR_BODY_YESTERDAY"
+msgstr "बीता हुआ कल"
+
+msgid "IDS_BR_BODY_URL"
+msgstr "URL"
+
+msgid "IDS_BR_BODY_TODAY"
+msgstr "आज"
+
+msgid "IDS_BR_BODY_TITLE"
+msgstr "शीर्षक"
+
+msgid "IDS_BR_BODY_THE_MAXIMUM_NUMBER_OF_CHARACTERS_HPD_HAS_BEEN_EXCEEDED"
+msgstr "अनुमत वर्णों (%d) की अधिकतम संख्या पार हो गई है।"
+
+msgid "IDS_BR_BODY_STREAMING"
+msgstr "स्‍ट्रीमिंग"
+
+msgid "IDS_BR_BODY_SMALL"
+msgstr "छोटा"
+
+msgid "IDS_BR_BODY_SETTINGS"
+msgstr "सेटिंग्स"
+
+msgid "IDS_BR_BODY_SEARCH"
+msgstr "खोजें"
+
+msgid "IDS_BR_BODY_RSS_SEARCH_RESULTS"
+msgstr "खोज परिणाम"
+
+msgid "IDS_BR_BODY_PROFILE"
+msgstr "प्रोफाइल"
+
+msgid "IDS_BR_BODY_PROCESSING_ING"
+msgstr "प्रक्रिया हो रही है..."
+
+msgid "IDS_BR_BODY_PHONE_NUMBER_ABB"
+msgstr "फोन नंबर"
+
+msgid "IDS_BR_BODY_PHONE"
+msgstr "फोन"
+
+msgid "IDS_BR_BODY_PD_ITEMS_WILL_BE_DELETED"
+msgstr "%d मदें हटाई जाएँगी।"
+
+msgid "IDS_BR_BODY_PASSWORD"
+msgstr "पासवर्ड"
+
+msgid "IDS_BR_BODY_ON"
+msgstr "चालू"
+
+msgid "IDS_BR_BODY_OFF"
+msgstr "बंद"
+
+msgid "IDS_BR_BODY_NO_RESULTS_FOUND"
+msgstr "कोई परिणाम नहीं मिले।"
+
+msgid "IDS_BR_BODY_NO_HISTORIES"
+msgstr "कोई इतिहास नहीं"
+
+msgid "IDS_BR_BODY_NOTIFICATIONS"
+msgstr "सूचनाएँ"
+
+msgid "IDS_BR_BODY_MEDIUM"
+msgstr "मध्यम"
+
+msgid "IDS_BR_BODY_IMAGES"
+msgstr "छवियाँ"
+
+msgid "IDS_BR_BODY_FULL_SCREEN"
+msgstr "पूर्ण स्क्रीन"
+
+msgid "IDS_BR_BODY_FONT_SIZE"
+msgstr "फॉन्ट आकार"
+
+msgid "IDS_BR_BODY_FOLDER_NAME"
+msgstr "फोल्डर का नाम"
+
+msgid "IDS_BR_BODY_ENTER_POSTCODE_ABB"
+msgstr "पोस्टकोड प्रविष्ट करें।"
+
+msgid "IDS_BR_BODY_ENTER_POSTCODE"
+msgstr "पोस्टकोड प्रविष्ट करें।"
+
+msgid "IDS_BR_BODY_ENTER_PHONE_NUMBER"
+msgstr "फोन नंबर प्रविष्ट करें।"
+
+msgid "IDS_BR_BODY_ENTER_NAME"
+msgstr "नाम प्रविष्ट करें"
+
+msgid "IDS_BR_BODY_ENTER_FOLDER_NAME"
+msgstr "फोल्डर नाम प्रविष्ट करें।"
+
+msgid "IDS_BR_BODY_ENTER_EMAIL_ADDRESS"
+msgstr "इमेल पता प्रविष्ट करें।"
+
+msgid "IDS_BR_BODY_EMAIL_ADDRESS"
+msgstr "ईमेल पता"
+
+msgid "IDS_BR_BODY_DOWNLOADING_ING"
+msgstr "डाउनलोड हो रहा है..."
+
+msgid "IDS_BR_BODY_DEVELOPER_MODE"
+msgstr "डेवलपर मोड"
+
+msgid "IDS_BR_BODY_DEFAULT"
+msgstr "डिफॉल्ट"
+
+msgid "IDS_BR_BODY_BOOKMARKS"
+msgstr "बुकमार्क्स"
+
+msgid "IDS_BR_BODY_ALL"
+msgstr "सभी"
+
+msgid "IDS_BR_BODY_ADD_TO"
+msgstr "में जोड़ें"
+
+msgid "IDS_BR_BODY_ADDDETAILSVIEW_TAGS"
+msgstr "टैग्‍स"
+
+msgid "IDS_BR_BODY_ADDBOOKMARKURL"
+msgstr "URL"
+
+msgid "IDS_BR_BODY_1_ITEM_WILL_BE_DELETED"
+msgstr "1 मद हटाया जाएगा।"
+
+msgid "IDS_BR_TPOP_MAXIMUM_NUMBER_OF_CHARACTERS_HPD_REACHED"
+msgstr "वर्णों की अधिकतम संख्या (%d) पहुँच गई है।"
+
+msgid "IDS_BR_POP_UNSUPPORTMEDIATYPE"
+msgstr "असमर्थित मीडिया प्रकार।"
+
+msgid "IDS_BR_POP_UNABLE_TO_CONNECT_TO_MOBILE_NETWORKS_WHILE_FLIGHT_MODE_IS_ENABLED_CONNECT_TO_WI_FI_NETWORK_INSTEAD_OR_DISABLE_FLIGHT_MODE_AND_TRY_AGAIN"
+msgstr "फ्लाइट मोड सक्षम होने के दौरान मोबाइल नेटवर्क से कनेक्ट करने में असमर्थ। इसके बजाय Wi-Fi नेटवर्क से कनेक्ट करें, या फ्लाइट मोड अक्षम करें और फिर से प्रयास करें।"
+
+msgid "IDS_BR_POP_INSTALL_SUCCESS"
+msgstr "स्थापना पूर्ण।"
+
+msgid "IDS_BR_POP_INSTALLATION_FAILED"
+msgstr "स्थापना असफल।"
+
+msgid "IDS_BR_POP_DELETING_ING"
+msgstr "हटाया जा रहा है..."
+
+msgid "IDS_BR_POP_DATA_ROAMING_IS_DISABLED_CONNECT_TO_WI_FI_NETWORK_INSTEAD_OR_ENABLE_DATA_ROAMING_AND_TRY_AGAIN"
+msgstr "डाटा रोमिंग अक्षम है। इसके बजाय Wi-Fi नेटवर्क से कनेक्ट करें या डाटा रोमिंग सक्षम करें और पुनः प्रयास करें।"
+
+msgid "IDS_BR_OPT_SHARE_VIA"
+msgstr "इसके द्वारा साझा करें"
+
+msgid "IDS_BR_OPT_PASTE"
+msgstr "पेस्ट करें"
+
+msgid "IDS_BR_MBODY_FONT_SIZE"
+msgstr "फॉन्ट आकार"
+
+msgid "IDS_BR_HEADER_UNABLE_TO_DOWNLOAD_ABB"
+msgstr "डाउनलोड करने में अक्षम"
+
+msgid "IDS_BR_BUTTON_UPDATE"
+msgstr "अपडेट करें"
+
+msgid "IDS_BR_BUTTON_RETRY"
+msgstr "रीट्राई"
+
+msgid "IDS_BR_BODY_REQUEST_FAILED"
+msgstr "अनुरोध असफल हुआ।"
+
+msgid "IDS_BR_BODY_LOGIN"
+msgstr "लॉगिन"
+
+msgid "IDS_BR_BODY_LOADING_ING"
+msgstr "लोड हो रहा है..."
+
+msgid "IDS_BR_BODY_FIT_TO_SCREEN"
+msgstr "स्क्रीन में फिट"
+
+msgid "IDS_BR_BODY_DOWNLOADS_VODA"
+msgstr "डाउनलोड्स"
+
+msgid "IDS_BR_BODY_DATA_ROAMING_IS_DISABLED_CONNECT_TO_A_WI_FI_NETWORK_INSTEAD_OR_ENABLE_DATA_ROAMING_AND_TRY_AGAIN"
+msgstr "डाटा रोमिंग अक्षम है। इसके बजाय किसी Wi-Fi नेटवर्क से कनेक्ट करें या डाटा रोमिंग सक्षम करें और फिर से प्रयास करें।"
+
+msgid "IDS_BR_POP_DOWNLOAD_CANCELLED"
+msgstr "डाउनलोड रद्द।"
+
+msgid "IDS_BR_BUTTON_SECRET_ON_ABB"
+msgstr "गुप्त चालू"
+
+msgid "IDS_BR_MBODY_PRIVACY"
+msgstr "गोपनीयता"
+
+msgid "IDS_BR_MBODY_DEFAULT_STORAGE"
+msgstr "डिफॉल्ट स्टोरेज"
+
+msgid "IDS_BR_MBODY_MANUAL_ZOOM"
+msgstr "मैनुअल जूम"
+
+msgid "IDS_BR_TMBODY_DEFAULT_SEARCH_ENGINE"
+msgstr "डिफॉल्ट खोज इंजन"
+
+msgid "IDS_BR_MBODY_SAVE_SIGN_IN_INFO"
+msgstr "साइन-इन जानकारी सेव करें"
+
+msgid "IDS_BR_OPT_TURN_OFF_SECRET_MODE_ABB"
+msgstr "गुप्त मोड बंद करें"
+
+msgid "IDS_BR_OPT_TURN_ON_SECRET_MODE_ABB"
+msgstr "गुप्त मोड चालू करें"
+
+msgid "IDS_BR_OPT_SHOW_PASSWORD_ABB2"
+msgstr "पासवर्ड दिखाएँ"
+
+msgid "IDS_BR_BODY_ENTER_YOUR_CURRENT_SECRET_MODE_PASSWORD"
+msgstr "अपना वर्तमान गुप्त मोड पासवर्ड प्रविष्ट करें।"
+
+msgid "IDS_BR_OPT_SECRET_MODE_SECURITY_ABB"
+msgstr "गुप्त मोड सुरक्षा"
+
+msgid "IDS_BR_BUTTON_USE_PASSWORD_ABB"
+msgstr "पासवर्ड उपयोग करें"
+
+msgid "IDS_BR_HEADER_DONT_USE_PASSWORD_ABB"
+msgstr "पासवर्ड उपयोग न करें"
+
+msgid "IDS_BR_MBODY_MOST_VISITED_WEBSITES"
+msgstr "अधिक देखी गई वेबसाइट्स"
+
+msgid "IDS_BR_MBODY_SET_MY_PROFILE"
+msgstr "मेरी प्रोफाइल सेट करें"
+
+msgid "IDS_BR_MBODY_MY_AUTO_FILL_PROFILE"
+msgstr "मेरी स्वतः भरण प्रोफाइल"
+
+msgid "IDS_BR_SBODY_MANAGE_DATA_USED_TO_FILL_IN_FORMS_ONLINE"
+msgstr "ऑनलाइन फॉर्म्स भरने के लिए उपयोग किया गया डाटा प्रबंधित करें।"
+
+msgid "IDS_BR_MBODY_SAVE_SIGN_IN_INFO_ABB"
+msgstr "साइन-इन जानकारी सुरक्षित करें"
+
+msgid "IDS_BR_OPT_LOCATION_ACCESS_DATA"
+msgstr "स्थान एक्सेस डाटा"
+
+msgid "IDS_BR_OPT_AUTO_FILL_DATA"
+msgstr "स्वतः भरण डाटा"
+
+msgid "IDS_BR_BODY_ANY_WEBPAGES_YOU_VIEW_WHILE_SECRET_MODE_IS_TURNED_ON_WONT_APPEAR_IN_YOUR_BROWSER_OR_SEARCH_HISTORY_MSG"
+msgstr "गुप्त मोड चालू होने पर आपके द्वारा देखे जानेवाले कोई भी वेबपेजेस इसके बंद होने के दौरान आपके ब्राउजर या खोज इतिहास में प्रकट नहीं होंगे।\n\nगुप्त मोड चालू होने पर आपके द्वारा सुरक्षित किए जानेवाले कोई भी बुकमार्क्स और वेबपेजेस इसके बंद होने पर दिखाई नहीं देंगे।\n\nआप किसी पासवर्ड से अपना गुप्त मोड डाटा सुरक्षित भी कर सकते हैं।"
+
+msgid "IDS_BR_BODY_ANY_WEBPAGES_YOU_VIEW_WHILE_SECRET_MODE_IS_TURNED_ON_WONT_APPEAR_IN_YOUR_BROWSER_OR_SEARCH_MSG"
+msgstr "गुप्त मोड चालू होने पर आपके द्वारा देखे जानेवाले कोई भी वेबपेजेस इसके बंद होने के दौरान आपके ब्राउजर या खोज इतिहास में प्रकट नहीं होंगे।\n\nगुप्त मोड चालू होने पर आपके द्वारा सुरक्षित किए जानेवाले कोई भी बुकमार्क्स और वेबपेजेस इसके बंद होने पर दिखाई नहीं देंगे।"
+
+msgid "IDS_BR_BUTTON_SECRET_OFF_ABB"
+msgstr "गुप्त बंद"
+
+msgid "IDS_BR_BUTTON_DONT_USE_PASSWORD_ABB"
+msgstr "पासवर्ड उपयोग न करें"
+
+msgid "IDS_BR_BUTTON_NEW_TAB_ABB2"
+msgstr "नया टैब"
+
+msgid "IDS_BR_NPBODY_WEB_ADDRESS_ABB"
+msgstr "वेब पता"
+
+msgid "IDS_BR_HEADER_ADD_WEBPAGE_TO_QUICK_ACCESS_ABB"
+msgstr "शीघ्र एक्सेस में वेबपेज जोड़ें"
+
+msgid "IDS_BR_TMBODY_TURN_ON_JAVASCRIPT"
+msgstr "जावास्क्रिप्ट चालू करें"
+
+msgid "IDS_BR_HEADER_COULDNT_OPEN_NEW_TAB_ABB"
+msgstr "नया टैब खोला नहीं जा सका"
+
+msgid "IDS_BR_OPT_OPEN_IN_NEW_TAB_ABB"
+msgstr "नए टैब में खोलें"
+
+msgid "IDS_BR_TPOP_FOLDER_NAME_ALREADY_IN_USE"
+msgstr "फोल्डर नाम पहले से उपयोग में है।"
+
+msgid "IDS_BR_NPBODY_NEW_FOLDER_PD"
+msgstr "नया फोल्डर %d"
+
+msgid "IDS_BR_NPBODY_NEW_FOLDER"
+msgstr "नया फोल्डर"
+
+msgid "IDS_BR_OPT_ENABLE_JAVASCRIPT"
+msgstr "जावास्क्रिप्ट सक्षम करें"
+
+msgid "IDS_BR_TMBODY_MANAGE_WEBSITE_DATA"
+msgstr "वेबसाइट डाटा प्रबंधित करें"
+
+msgid "IDS_BR_HEADER_SET_HOME_PAGE_ABB"
+msgstr "होम पेज सेट करें"
+
+msgid "IDS_BR_TPOP_WEBPAGE_ADDED_TO_QUICK_ACCESS_LIST"
+msgstr "शीघ्र एक्सेस सूची में वेबपेज जोड़ा गया।"
+
+msgid "IDS_BR_OPT_EDIT_QUICK_ACCESS_ABB"
+msgstr "शीघ्र एक्सेस संपादित करें"
+
+msgid "IDS_BR_OPT_REMOVE_FROM_BOOKMARKS_ABB"
+msgstr "बुकमार्क्स से निकालें"
+
+msgid "IDS_BR_HEADER_ADD_BOOKMARK_ABB"
+msgstr "बुकमार्क जोड़ें"
+
+msgid "IDS_BR_BODY_BROWSING_HISTORY"
+msgstr "ब्राउजिंग इतिहास"
+
+msgid "IDS_BR_HEADER_TABS_ABB2"
+msgstr "टैब्स"
+
+msgid "IDS_BR_OPT_NEW_TAB"
+msgstr "नया टैब"
+
+msgid "IDS_BR_BUTTON_FORWARD_ABB2"
+msgstr "आगे जाएँ"
+
+msgid "IDS_BR_BUTTON_BACK_ABB3"
+msgstr "वापस जाएँ"
+
+msgid "IDS_BR_BUTTON_BOOKMARKS_ABB"
+msgstr "बुकमार्क्स"
+
+msgid "IDS_BR_NPBODY_NO_PROFILES_ABB"
+msgstr "कोई प्रोफाइल्स नहीं हैं"
+
+msgid "IDS_BR_TAB2_HISTORY"
+msgstr "इतिहास"
+
+msgid "IDS_BR_TAB2_BOOKMARKS"
+msgstr "बुकमार्क्स"
+
+msgid "IDS_BR_HEADER_SAVE_CONTENT_TO_ABB"
+msgstr "इसमें सामग्री सुरक्षित करें"
+
+msgid "IDS_BR_HEADER_SELECT_ITEMS_ABB2"
+msgstr "मदें चुनें"
+
+msgid "IDS_BR_BODY_YOUR_PASSWORD_MUST_CONTAIN_AT_LEAST_PD_CHARACTERS_INCLUDING_AT_LEAST_1_LETTER"
+msgstr "आपके पासवर्ड में कम से कम एक 1 अक्षर सहित कम से कम %d वर्ण होने चाहिए।"
+
+msgid "IDS_BR_BODY_AN_INCORRECT_PASSWORD_HAS_BEEN_ENTERED_TRY_AGAIN"
+msgstr "एक गलत पासवर्ड प्रविष्ट किया गया है। फिर से प्रयास करें।"
+
+msgid "IDS_BR_BODY_NO_TABS"
+msgstr "कोई टैब नहीं"
+
+msgid "IDS_BR_TMBODY_CHANGE_PASSWORD"
+msgstr "पासवर्ड बदलें"
+
+msgid "IDS_BR_BODY_ANY_WEBPAGES_VIEWED_WHILE_SECRET_MODE_IS_ENABLED_WILL_NOT_APPEAR_IN_YOUR_BROWSER_OR_SEARCH_HISTORY_WHILE_SECRET_MSG"
+msgstr "गुप्त मोड सक्षम होने पर देखे गए कोई भी वेबपेजेस गुप्त मोड अक्षम होने के दौरान आपके ब्राउजर या खोज इतिहास में प्रकट नहीं होंगे।\n\nगुप्त मोड सक्षम होने पर सुरक्षित किए गए कोई भी बुकमार्क्स और वेबपेजेस इसके अक्षम होने पर दिखाई नहीं देंगे।\n\nआप किसी पासवर्ड से अपना गुप्त मोड डाटा सुरक्षित भी कर सकते हैं।"
+
+msgid "IDS_BR_BODY_ANY_WEBPAGES_VIEWED_WHILE_SECRET_MODE_IS_ENABLED_WILL_NOT_APPEAR_IN_YOUR_MSG"
+msgstr "गुप्त मोड सक्षम होने पर देखे गए कोई भी वेबपेजेस गुप्त मोड अक्षम होने के दौरान आपके ब्राउजर या खोज इतिहास में प्रकट नहीं होंगे।\n\nगुप्त मोड सक्षम होने पर सुरक्षित किए गए कोई भी बुकमार्क्स और वेबपेजेस इसके अक्षम होने पर दिखाई नहीं देंगे।"
+
+msgid "IDS_BR_BUTTON2_DONE"
+msgstr "पूर्ण"
+
+msgid "IDS_BR_BODY_ENTER_YOUR_PASSWORD_AGAIN_TO_CONFIRM_IT"
+msgstr "अपने पासवर्ड की पुष्टि करने के लिए इसे फिर से प्रविष्ट करें।"
+
+msgid "IDS_BR_HEADER_CREATE_PASSWORD_M_SET_ABB"
+msgstr "पासवर्ड बनाएँ"
+
+msgid "IDS_BR_BUTTON_DO_NOT_USE_PASSWORD_ABB"
+msgstr "पासवर्ड उपयोग न करे"
+
+msgid "IDS_BR_POP_TO_PROTECT_YOUR_SECRET_MODE_DATA_CREATE_A_PASSWORD_IF_YOU_USE_SECRET_MODE_WITHOUT_CREATING_A_PASSWORD_MSG"
+msgstr "अपना गुप्त मोड डाटा सुरक्षित करने के लिए, एक पासवर्ड बनाएँ। यदि आप पासवर्ड बनाए बिना गुप्त मोड का उपयोग करते हैं, तो आप अन्य लोगों को अपना ब्राउजर और खोज इतिहास, बुकमार्क्स और सुरक्षित किए गए पेजेस देखने से रोकने में समर्थ नहीं होंगे।"
+
+msgid "IDS_BR_BODY_AFTER_YOU_ADD_BOOKMARKS_THEY_WILL_BE_SHOWN_HERE"
+msgstr "आपके द्वारा बुकमार्क्स जोड़ने के बाद, वे यहां दिखाई देंगे।"
+

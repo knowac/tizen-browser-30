@@ -1,0 +1,58 @@
+collections
+{
+base_scale: 2.6;
+group {
+    name: "delete_browsing_data_mobile";
+    parts {
+        part {
+                scale: 1;
+                name: "bg";
+                type: RECT;
+                mouse_events: 0;
+                description {
+                    state: "default" 0.0;
+                    fixed: 0 0;
+                    align: 0 0;
+                    min: 0 0;
+                    max: -1 -1;
+                    color: 244 244 244 255;
+                    visible: 1;
+                }
+            }
+
+        TEXT_WITH_CHBOX_FIRST("cache", "Cache");
+        TEXT_WITH_CHBOX("cookies",  "cache_spacer", "Cookies");
+        TEXT_WITH_CHBOX("history",  "cookies_spacer", "History");
+        TEXT_WITH_CHBOX("password",  "history_spacer", "Password");
+        TEXT_WITH_CHBOX("formdata",  "password_spacer", "Form data");
+
+        SETTINGS_LINE_BEFORE("before_cache", cache_spacer);
+        SETTINGS_LINE_BEFORE("before_cookies", cookies_spacer);
+        SETTINGS_LINE_BEFORE("before_history", history_spacer);
+        SETTINGS_LINE_BEFORE("before_password", password_spacer);
+        SETTINGS_LINE_BEFORE("before_formdata", formdata_spacer);
+        SETTINGS_LINE_AFTER("after_formdata", formdata_spacer);
+    }
+}
+group {
+    name: "delete_browsing_data_button";
+    parts {
+        part {
+            name: "del_selected_data_click";
+            scale:1;
+            type: SWALLOW;
+            description {
+                state: "default" 0.0;
+                visible: 1;
+                align: 0 0;
+                fixed: 0 0;
+                min: 720 320;
+                max: -1 320;
+                rel1 { relative: 0.0 0.0;}
+                rel2 { relative: 1.0 1.0;}
+                color_class: transparent;
+            }
+        }
+    }
+}
+}

@@ -1,0 +1,244 @@
+#define SETTINGS_LINE_BEFORE(line_name, relative_to)                \
+    part {                                                          \
+        name: line_name;                                            \
+        scale:1;                                                    \
+        type: RECT;                                                 \
+        description {                                               \
+            state: "default" 0.0;                                   \
+            visible: 1;                                             \
+            fixed: 0 1;                                             \
+            min: 1 2;                                             \
+            max: -1 2;                                             \
+            align: 0 0;                                             \
+            rel1 { relative: 0.0 0.0; to: relative_to;}             \
+            rel2 { relative: 1.0 1.0;}                              \
+            color: 0 0 0 13;                                        \
+        }                                                           \
+    }
+
+#define SETTINGS_LINE_AFTER(line_name, relative_to)                 \
+    part {                                                          \
+        name: line_name;                                            \
+        scale:1;                                                    \
+        type: RECT;                                                 \
+        description {                                               \
+            state: "default" 0.0;                                   \
+            visible: 1;                                             \
+            fixed: 0 1;                                             \
+            min: 1 2;                                             \
+            max: -1 2;                                             \
+            align: 0 0;                                             \
+            rel1 { relative: 0.0 1.0; to: relative_to;}             \
+            rel2 { relative: 1.0 1.0;}                              \
+            color: 0 0 0 13;                                        \
+        }                                                           \
+    }
+
+collections { base_scale: 2.6;
+    group { name: "elm/check/base/custom_check";
+            images {
+                image: "check_box_off.png" COMP;
+                image: "check_box_on.png" COMP;
+            }
+            min: 48 48;
+            max: 48 48;
+            parts {
+                    part {
+                            name: "base";
+                            mouse_events: 0;
+                            scale: 1;
+                            description {
+                                    state: "default" 0.0;
+                                    align: 0 0.0;
+                                    image.normal: "check_box_on.png";
+                                    fill.smooth : 1;
+                            }
+                    }
+                    part {
+                            name: "unchecked";
+                            mouse_events: 0;
+                            scale: 1;
+                            description {
+                                    state: "default" 0.0;
+                                    align: 0 0;
+                                    rel1 { to:"base"; relative: 0 0;}
+                                    rel2 { to:"base"; relative: 1 1;}
+                                    image.normal: "check_box_off.png";
+                            }
+                            description {
+                                    state: "disabled" 0.0;
+                                    inherit: "default" 0.0;
+                                    color: 255 255 255 128;
+                            }
+                    }
+                    part {
+                            name: "check";
+                            mouse_events: 0;
+                            scale: 1;
+                            description {
+                                    state: "default" 0.0;
+                                    align: 0.5 0;
+                                    visible: 0;
+                                    rel1 { relative: 0 0; to: "base";}
+                                    rel2 { relative: 1 1; to: "base";}
+                                    image.normal: "check_box_on.png";
+                            }
+                            description {
+                                    state: "visible" 0.0;
+                                    inherit: "default" 0.0;
+                                    visible: 1;
+                            }
+                    }
+                    part {
+                            name: "elm.swallow.content";
+                            type: SWALLOW;
+                            scale: 1;
+                            description {
+                                    state: "default" 0.0;
+                                    fixed: 1 1;
+                                    visible: 0;
+                                    align: 0.5 0.5;
+                            }
+                            description {
+                                    state: "visible" 0.0;
+                                    inherit: "default" 0.0;
+                                    visible: 1;
+                            }
+                            description {
+                                    state: "disabled" 0.0;
+                                    inherit: "default" 0.0;
+                                    color: 128 128 128 128;
+                            }
+                            description {
+                                    state: "disabled_visible" 0.0;
+                                    inherit: "default" 0.0;
+                                    color: 128 128 128 128;
+                                    visible: 1;
+                            }
+                    }
+            }
+            programs {
+                    program {
+                            name: "click";
+                            signal: "mouse,clicked,*";
+                            source: "events";
+                            action: SIGNAL_EMIT "elm,action,check,toggle" "";
+                    }
+                    program {
+                            name: "check_on";
+                            signal: "elm,state,check,on";
+                            source: "elm";
+                            action:  STATE_SET "visible" 0.0;
+                            target: "check";
+                    }
+                    program {
+                            name: "check_off";
+                            signal: "elm,state,check,off";
+                            source: "elm";
+                            action:  STATE_SET "default" 0.0;
+                            target: "check";
+                    }
+
+                    program {
+                            name: "disable";
+                            signal: "elm,state,disabled";
+                            source: "elm";
+                            action: STATE_SET "disabled" 0.0;
+                            target: "unchecked";
+                    }
+                    program {
+                            name: "enable";
+                            signal: "elm,state,enabled";
+                            source: "elm";
+                            action: STATE_SET "default" 0.0;
+                            target: "unchecked";
+                    }
+            }
+    }
+    group {
+        name: "elm/gengrid/item/check_with_text/default";
+        alias: "elm/genlist/item/check_with_text/default";
+        data.item: "texts" "cb_text";
+        data.item: "contents" "cb";
+        images {
+            image: "check_box_off.png" COMP;
+            image: "check_box_on.png" COMP;
+        }
+        styles {
+            style {
+                name: "check_box_text2";
+                base: "font=Sans:style=Regular font_size="38" color=#333333 color_class=T024D text_class=T024D wrap=word align=0.0";
+                STYLE_TAGS
+            }
+        }
+        parts{
+            part{
+                name: "cb_spacer";
+                type: SPACER;
+                scale: 1;
+                description {
+                    state: "default" 0.0;
+                    min: 32 120;
+                    max: 32 120;
+                    align: 0 0;
+                    rel1 { relative: 0.0 0.0;}
+                    rel2 { relative: 1.0 1.0; }
+                }
+            }
+            part{
+                name: "cb_text_bg";
+                type: RECT;
+                scale: 1;
+                mouse_events: 1;
+                description {
+                    state: "default" 0.0;
+                    visible: 1;
+                    fixed: 1 1;
+                    min: 1 120;
+                    max: -1 120;
+                    align: 0 0.0;
+                    rel1 { relative: 0.0 0.0;}
+                    rel2 { relative: 1.0 1.0;}
+                    color: 0 0 0 0;
+                }
+            }
+            part{
+                name: "cb_text";
+                type: TEXTBLOCK;
+                scale: 1;
+                repeat_events: 1;
+                description {
+                    state: "default" 0.0;
+                    visible: 1;
+                    min: 608 120;
+                    max: 608 120;
+                    align: 0 0.5;
+                    rel1 { relative: 1.0 0.0; to: "cb_spacer";}
+                    rel2 { relative: 1.0 1.0; to: "cb_spacer";}
+                    text {
+                        min: 0 1;
+                        max: 1 1;
+                        style: "check_box_text2";
+                    }
+                }
+            }
+            part {
+                name: "cb";
+                type: SWALLOW;
+                scale: 1;
+                description {
+                    state: "default" 0.0;
+                    visible: 1;
+                    align: 0.5 0.5;
+                    min: 48 48;
+                    max: 48 48;
+                    rel1 { relative: 1.0 0.0; to: "cb_text";}
+                    rel2 { relative: 1.0 1.0; to: "cb_text";}
+                    color_class: transparent;
+                }
+            }
+            SETTINGS_LINE_BEFORE("before", cb_spacer)
+            SETTINGS_LINE_AFTER("after", cb_spacer)
+        }
+    }
+}

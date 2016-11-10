@@ -1,0 +1,149 @@
+#include "ImageButton.edc"
+#include "../../../core/Tools/edc/Spacer.edc"
+#include "../../../core/Tools/edc/ToolbarButton.edc"
+
+#define BUTTON_WIDTH 120
+#define BUTTON_HEIGHT 94
+#define BUTTON_TOP_PADDING 10
+#define TOOLBAR_HEIGHT 96
+#define SPACER_SIZE 20
+#define SPACER_LANDSCAPE 160
+
+#define ADD_BUTTON(NAME, RELATIVE_TO)                               \
+        part {                                                      \
+            name: NAME;                                             \
+            type : SWALLOW;                                         \
+            scale: 1;                                               \
+            description {                                           \
+                state: "default" 0.0;                               \
+                visible: 1;                                         \
+                align: 0.0 0.0;                                     \
+                fixed: 1 1;                                         \
+                min: BUTTON_WIDTH BUTTON_HEIGHT;                    \
+                max: BUTTON_WIDTH BUTTON_HEIGHT;                    \
+                rel1 { relative: 1.0 0.0; to: RELATIVE_TO; }        \
+                rel2 { relative: 0.0 0.0; }                         \
+            }                                                       \
+            description {                                           \
+                state: "hidden" 0.0;                                \
+                inherit: "default" 0.0;                             \
+                visible: 0;                                         \
+            }                                                       \
+            description {                                           \
+                state: "visible" 0.0;                               \
+                inherit: "default" 0.0;                             \
+                visible: 1;                                         \
+            }                                                       \
+        }
+
+collections { base_scale: 2.6;
+
+    TOOLBAR_BUTTON("toolbar_prev" ,"toolbar_ic_back.png", BUTTON_WIDTH, BUTTON_HEIGHT, BUTTON_TOP_PADDING)
+    TOOLBAR_BUTTON("toolbar_next" ,"toolbar_ic_forward.png", BUTTON_WIDTH, BUTTON_HEIGHT, BUTTON_TOP_PADDING)
+    TOOLBAR_BUTTON("toolbar_home" ,"toolbar_ic_home.png", BUTTON_WIDTH, BUTTON_HEIGHT, BUTTON_TOP_PADDING)
+    TOOLBAR_BUTTON("toolbar_bookmark" ,"toolbar_ic_bookmark.png", BUTTON_WIDTH, BUTTON_HEIGHT, BUTTON_TOP_PADDING)
+    TOOLBAR_BUTTON("toolbar_tabs" ,"toolbar_ic_tabs.png", BUTTON_WIDTH, BUTTON_HEIGHT, BUTTON_TOP_PADDING)
+
+    group {
+        name: "bottom_button_bar";
+
+        parts {
+            part {
+                name: "spacer_0";
+                type: SPACER;
+                scale: 1;
+                description {
+                    state: "default" 0.0;
+                    fixed: 1 1;
+                    align: 0.0 0.0;
+                    min: SPACER_SIZE BUTTON_HEIGHT;
+                    max: SPACER_SIZE BUTTON_HEIGHT;
+                }
+            }
+
+            ADD_BUTTON("prev_button", "spacer_0")
+
+            ADD_SPACER_NEXT_TO("spacer_1", "prev_button", SPACER_SIZE, BUTTON_HEIGHT, SPACER_LANDSCAPE)
+
+            ADD_BUTTON("next_button", "spacer_1")
+
+            ADD_SPACER_NEXT_TO("spacer_2", "next_button", SPACER_SIZE, BUTTON_HEIGHT, SPACER_LANDSCAPE)
+
+            ADD_BUTTON("home_button", "spacer_2")
+
+            ADD_SPACER_NEXT_TO("spacer_3", "home_button", SPACER_SIZE, BUTTON_HEIGHT, SPACER_LANDSCAPE)
+
+            ADD_BUTTON("bookmarks_button", "spacer_3")
+
+            ADD_SPACER_NEXT_TO("spacer_4", "bookmarks_button", SPACER_SIZE, BUTTON_HEIGHT, SPACER_LANDSCAPE)
+
+            ADD_BUTTON("tabs_button", "spacer_4")
+
+            part {
+                name: "tabs_number";
+                type: TEXT;
+                scale: 1;
+                repeat_events: 1;
+                description{
+                    state: "default" 0.0;
+                    visible: 1;
+                    fixed: 1 1;
+                    align: 0.0 0.0;
+                    color_class: "button_secret";
+                    min: BUTTON_WIDTH BUTTON_HEIGHT*3/4;
+                    max: BUTTON_WIDTH BUTTON_HEIGHT*3/4;
+                    rel1 { relative: 0.0 0.0; to: "tabs_button"; }
+                    rel2 { relative: 1.0 1.0; to: "tabs_button"; }
+                    text {
+                        text: "";
+                        font: "Tizen:style=Bold";
+                        size: 19;
+                        align: 0.5 0.5;
+                    }
+                }
+                description {
+                    state: "secret" 0.0;
+                    inherit: "default" 0.0;
+                    color_class: "button_normal";
+                }
+            }
+
+        }
+        programs {
+            program {
+                name: "portrait";
+                signal: "portrait,mode";
+                source: "";
+                action: STATE_SET "default" 0.0;
+                target: "spacer_1";
+                target: "spacer_2";
+                target: "spacer_3";
+                target: "spacer_4";
+            }
+            program {
+                name: "landscape";
+                signal: "landscape,mode";
+                source: "";
+                action: STATE_SET "landscape" 0.0;
+                target: "spacer_1";
+                target: "spacer_2";
+                target: "spacer_3";
+                target: "spacer_4";
+            }
+            program {
+                name: "set_normal_mode";
+                signal: "set_normal_mode";
+                source: "ui";
+                action: STATE_SET "default" 0.0;
+                target: "tabs_number";
+            }
+            program {
+                name: "set_secret_mode";
+                signal: "set_secret_mode";
+                source: "ui";
+                action: STATE_SET "secret" 0.0;
+                target: "tabs_number";
+            }
+        }
+    }
+}

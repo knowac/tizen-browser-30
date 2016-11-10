@@ -1,0 +1,2 @@
+#include "../../../core/Tools/edc/FolderImage.edc"
+#include "../../../core/Tools/edc/EntryCustomLayout.edc"

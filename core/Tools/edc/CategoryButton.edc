@@ -1,0 +1,180 @@
+collections {
+
+#if PROFILE_MOBILE
+    base_scale: 2.6;
+#else
+    base_scale: 2.0;
+#endif
+
+    group {
+        name: "elm/button/base/category_button";
+        data.item: "text" "btn_txt";
+        parts {
+            part {
+                name: "border";
+                scale: 1;
+                type: RECT;
+                mouse_events: 1;
+                description {
+                    state: "default" 0.0;
+                    visible: 1;
+                    color: 163 163 163 255;
+                }
+                description {
+                    state: "focused" 0.0;
+                    inherit: "default" 0.0;
+                }
+                description {
+                    state: "selected" 0.0;
+                    inherit: "default" 0.0;
+                    color: 64 136 211 255;
+                }
+                description {
+                    state: "disabled" 0.0;
+                    inherit: "default" 0.0;
+                    color: 163 163 163 128;
+                }
+            }
+            part {
+                name: "bg_spacer";
+                scale: 1;
+                type: SPACER;
+                description {
+                    state: "default" 0.0;
+                    min: 2 2;
+                    max: 2 2;
+                    fixed: 1 1;
+                    align: 0.0 0.0;
+                    rel1.to: "border";
+                }
+            }
+            part {
+                name: "bg_spacer2";
+                scale: 1;
+                type: SPACER;
+                description {
+                    state: "default" 0.0;
+                    min: 2 2;
+                    max: 2 2;
+                    fixed: 1 1;
+                    align: 1.0 1.0;
+                    rel2 {
+                        relative: 1.0 1.0;
+                        to: "border";
+                    }
+                }
+            }
+            part {
+                name: "bg";
+                scale: 1;
+                type: RECT;
+                mouse_events: 1;
+                repeat_events: 1;
+                description {
+                    state: "default" 0.0;
+                    visible: 1;
+                    color: 244 244 244 255;
+                    rel1 {
+                        relative: 1.0 1.0;
+                        to: "bg_spacer";
+                    }
+                    rel2 {
+                        relative: 0.0 0.0;
+                        to: "bg_spacer2";
+                    }
+                }
+                description {
+                    state: "focused" 0.0;
+                    inherit: "default" 0.0;
+                    color: 0 119 246 255;
+                }
+                description {
+                    state: "selected" 0.0;
+                    inherit: "default" 0.0;
+                }
+                description {
+                    state: "disabled" 0.0;
+                    inherit: "default" 0.0;
+                }
+            }
+            part {
+                name: "btn_txt";
+                scale: 1;
+                type: TEXT;
+                mouse_events: 1;
+                repeat_events: 1;
+                description {
+                    align: 0.5 0.5;
+                    rel1.to: "bg";
+                    rel2.to: "bg";
+                    color: 116 116 116 255;
+                    text {
+                        text: "btn_txt";
+                        size: 32;
+                        font: "BreezeSans Light";
+                        align: 0.5 0.5;
+                    }
+                }
+                description {
+                    state: "focused" 0.0;
+                    inherit: "default" 0.0;
+                    color: 255 255 255 255;
+                }
+                description {
+                    state: "selected" 0.0;
+                    inherit: "default" 0.0;
+                    color: 64 136 211 255;
+                }
+                description {
+                    state: "disabled" 0.0;
+                    inherit: "default" 0.0;
+                    color: 116 116 116 128;
+                }
+            }
+        }
+        programs {
+            program {
+                name: "mouse,clicked";
+                signal: "mouse,clicked,1";
+                source: "border";
+                action: SIGNAL_EMIT "elm,action,click" "";
+            }
+            program {
+                name: "btn_focused";
+                signal: "btn,focused";
+                source: "border";
+                action: STATE_SET "focused" 0.0;
+                target: "bg";
+                target: "btn_txt";
+                target: "border";
+            }
+            program {
+                name: "btn_selected";
+                signal: "btn,selected";
+                source: "border";
+                action: STATE_SET "selected" 0.0;
+                target: "bg";
+                target: "btn_txt";
+                target: "border";
+            }
+            program {
+                name: "btn_normal";
+                signal: "btn,normal";
+                source: "border";
+                action: STATE_SET "default" 0.0;
+                target: "bg";
+                target: "btn_txt";
+                target: "border";
+            }
+            program {
+                name: "btn_disabled";
+                signal: "btn,disabled";
+                source: "border";
+                action: STATE_SET "disabled" 0.0;
+                target: "bg";
+                target: "btn_txt";
+                target: "border";
+            }
+        }
+    }
+}

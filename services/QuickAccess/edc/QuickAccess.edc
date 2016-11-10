@@ -1,0 +1,986 @@
+#include "../../../core/Tools/edc/InvisibleButton.edc"
+#include "CategoryMenu.edc"
+#include "BrowserButton.edc"
+
+collections {
+    base_scale: 2.0;
+#define WIDTH 1920
+#define HEIGHT 181
+#define ITEM_WIDTH 374
+#define PARENT_ITEM_HEIGHT 36
+#define URI_INPUTBOX_LENGTH 1720
+#define URL_HISTORY_ITEM_H 82
+#define URL_HISTORY_ITEMS_VISIBLE_MAX 5
+#define URL_HISTORY_LIST_MAX_H HISTORY_ITEM_H*HISTORY_ITEMS_VISIBLE_MAX
+
+group {
+    name: "elm/button/base/thumbButton";
+    images {
+        image: "ico_delete.png" COMP;
+    }
+    parts {
+        part {
+            name: "elm.swallow.content";
+            type: RECT;
+            mouse_events: 1;
+            repeat_events: 1;
+            description {
+                state: "default" 0.0;
+                color: 0 0 0 0;
+                visible: 1;
+                rel1.relative: 0.0 0.0;
+                rel2.relative: 1.0 1.0;
+                align: 0.0 0.0;
+            }
+        }
+    }
+    programs {
+        program {
+            name: "mouse,clicked";
+            signal: "mouse,down,1";
+            source: "elm.swallow.content";
+            action: SIGNAL_EMIT "elm,action,click" "";
+        }
+    }
+}
+
+group {
+    name: "main_layout";
+    parts {
+        part {
+            name: "bg";
+            type: RECT;
+            scale: 1;
+            description {
+                state: "default" 0.0;
+                color: 244 244 244 255;
+            }
+        }
+        part {
+            name: "buttons";
+            type: SWALLOW;
+            scale: 1;
+            mouse_events: 1;
+            description {
+                state: "default" 0.0;
+                align: 0.0 0.0;
+                min: 1920 182;
+                max: 1920 182;
+                rel1 {
+                    to: "bg";
+                    relative: 0 0;
+                }
+            }
+        }
+        part {
+            name: "view";
+            type: SWALLOW;
+            scale: 1;
+            mouse_events: 1;
+            description {
+                state: "default" 0.0;
+                align: 0.0 0.0;
+                min: 1920 614;
+                max: 1920 614;
+                rel1 {
+                    to: "buttons";
+                    relative: 0 1;
+                }
+            }
+        }
+        part {
+            name: "bottom_layout";
+            type: SWALLOW;
+            scale: 1;
+            mouse_events: 1;
+            description {
+                state: "default" 0.0;
+                align: 0.0 0.0;
+                min: 1920 180;
+                max: 1920 180;
+                rel1 {
+                    to: "view";
+                    relative: 0 1;
+                }
+            }
+        }
+    }
+}
+
+group { name: "page_layout";
+    data {
+        item: "focus_highlight" "off";
+    }
+    color_classes{
+        color_class{
+            name: "focusBgColor";
+            color: 0 119 246 255;
+        }
+        color_class{
+            name: "transparent";
+            color: 0 0 0 0;
+        }
+    }
+
+    parts {
+        part { name: "bg";
+            type: RECT;
+            mouse_events: 0;
+            description { state: "default" 0.0;
+                color_class: transparent;
+                min: 1920 614;
+                max: 1920 614;
+            }
+        }
+
+        part { name: "elm.swallow.grid";
+            type: SWALLOW;
+            description { state: "default" 0.0;
+                min: 1920 614;
+                max: 1920 614;
+                align: 0.0 0.0;
+                fixed: 1 1;
+                rel1 {
+                    relative: 0 0;
+                    to: "bg";
+                }
+                rel2 {
+                    relative: 1 1;
+                    to: "bg";
+                }
+            }
+        }
+
+        part { name: "center_rect";
+            type: RECT;
+            description { state: "default" 0.0;
+                color: 0 0 0 0;
+                min: 1592 614;
+                max: 1592 614;
+                visible: 0;
+                align: 0.5 0.5;
+                rel1 {
+                    relative: 0 0;
+                    to: "bg";
+                }
+                rel2 {
+                    relative: 1 1;
+                    to: "bg";
+                }
+            }
+            description { state: "empty" 0.0;
+                inherit: "default" 0.0;
+                visible: 1;
+                color: 229 229 229 255;
+            }
+        }
+
+        part { name: "elm.swallow.big";
+            type: SWALLOW;
+            description { state: "default" 0.0;
+                min: 784 614;
+                max: 784 614;
+                align: 0.0 0.0;
+                fixed: 1 1;
+                visible: 1;
+                rel1 {
+                    relative: 0 0; to: "center_rect";
+                }
+            }
+            description { state: "empty" 0.0;
+                inherit: "default" 0.0;
+                visible: 0;
+            }
+        }
+
+        part { name: "elm.swallow.small_third";
+            type: SWALLOW;
+            description { state: "default" 0.0;
+                min: 378 294;
+                max: 378 294;
+                align: 1.0 0.0;
+                fixed: 1 1;
+                visible: 1;
+                rel1 {
+                    to: "center_rect";
+                    relative: 0 0;
+                }
+                rel2 {
+                    to: "center_rect";
+                    relative: 1 1;
+                }
+            }
+            description { state: "empty" 0.0;
+                inherit: "default" 0.0;
+                visible: 0;
+            }
+        }
+
+        part { name: "elm.swallow.small_first";
+            type: SWALLOW;
+            description { state: "default" 0.0;
+                min: 378 294;
+                max: 378 294;
+                align: 0.5 0.0;
+                fixed: 1 1;
+                visible: 1;
+                rel1 {
+                    to: "elm.swallow.big";
+                    relative: 1 0;
+                }
+                rel2 {
+                    to: "center_rect";
+                    relative: 0 1;
+                    to: "elm.swallow.small_third";
+                }
+            }
+            description { state: "empty" 0.0;
+                inherit: "default" 0.0;
+                visible: 0;
+            }
+        }
+
+        part { name: "elm.swallow.small_fourth";
+            type: SWALLOW;
+            description { state: "default" 0.0;
+                min: 378 294;
+                max: 378 294;
+                align: 1.0 1.0;
+                fixed: 1 1;
+                visible: 1;
+                rel2 {
+                    to: "center_rect";
+                    relative: 1.0 1.0;
+                }
+            }
+            description { state: "empty" 0.0;
+                inherit: "default" 0.0;
+                visible: 0;
+            }
+        }
+
+        part { name: "elm.swallow.small_second";
+            type: SWALLOW;
+            description { state: "default" 0.0;
+                min: 378 294;
+                max: 378 294;
+                align: 0.5 1.0;
+                fixed: 1 1;
+                visible: 1;
+                rel1 {
+                    relative: 1 0.5;
+                    to: "elm.swallow.big";
+                }
+                rel2 {
+                    relative: 0 1;
+                    to: "elm.swallow.small_fourth";
+                }
+            }
+            description { state: "empty" 0.0;
+                inherit: "default" 0.0;
+                visible: 0;
+            }
+        }
+
+        part { name: "elm.text.empty";
+            type: TEXT;
+            description { state: "default" 0.0;
+                visible: 0;
+                align: 0.5 0.5;
+                color: 0 0 0 179;
+                text {
+                    text: "empty";
+                    font: "Sans";
+                    size: 32;
+                    align: 0.5 0.5;
+                }
+                rel1 {
+                    to: "bg";
+                    relative: 0.0 0.0;
+                }
+                rel2 {
+                    to: "bg";
+                    relative: 1 1;
+                }
+            }
+            description { state: "empty" 0.0;
+                inherit: "default" 0.0;
+                visible: 1;
+            }
+        }
+    }
+
+    programs {
+        program { name: "empty";
+            signal: "empty,view";
+            source: "quickaccess";
+            action:  STATE_SET "empty" 0.0;
+            target: "elm.swallow.big";
+            target: "elm.swallow.small_first";
+            target: "elm.swallow.small_second";
+            target: "elm.swallow.small_third";
+            target: "elm.swallow.small_fourth";
+            target: "elm.text.empty";
+            target: "center_rect";
+        }
+        program { name: "not_empty";
+            signal: "not,empty,view";
+            source: "quickaccess";
+            action:  STATE_SET "default" 0.0;
+            target: "elm.text.empty";
+            target: "center_rect";
+            target: "elm.swallow.big";
+            target: "elm.swallow.small_first";
+            target: "elm.swallow.small_second";
+            target: "elm.swallow.small_third";
+            target: "elm.swallow.small_fourth";
+        }
+    }
+}
+
+group { name: "elm/button/base/big_tile";
+    data.item: "texts" "page_title page_url";
+    data.item: "contents" "elm.thumbnail";
+    min: 600 614;
+    max: 600 614;
+    images {
+        image: "web_frame_selected.png" COMP;
+        image: "ico_bg_round_shape_37x37.png" COMP;
+    }
+    parts {
+        part { name: "bg";
+            type: RECT;
+            mouse_events: 0;
+            description { state: "default" 0.0;
+                min: 784 614;
+                max: 784 614;
+                visible: 1;
+                color: 231 231 231 255;
+            }
+        }
+
+        part { name: "elm.thumbnail";
+            type: SWALLOW;
+            description { state: "default" 0.0;
+                fixed: 1 0;
+                align: 0.0 0.0;
+                color : 231 231 231 255;
+                min: 784 577;   // size adjusted to max thubnail with and height
+                max: 784 577;
+                rel1 {
+                    relative: 0.0  0.0; to: "bg";
+                }
+                rel2 {
+                    relative: 1.0  1.0; to: "bg";
+                }
+            }
+            description { state: "selected";
+                inherit: "default" 0.0;
+            }
+        }
+
+        part { name: "border_top";
+            type: RECT;
+            description { state: "default" 0.0;
+                color_class: focusBgColor;
+                min: 0 6;
+                max: -1 6;
+                align: 0 0;
+                rel1 {
+                    to: "elm.thumbnail";
+                    relative: 0.0 0.0;
+                }
+                rel2 {
+                    to: "elm.thumbnail";
+                    relative: 1.0  1.0;
+                }
+                visible: 0;
+            }
+            description { state: "selected";
+                inherit: "default" 0.0;
+                visible: 1;
+            }
+        }
+
+        part { name: "border_left";
+            type: RECT;
+            description { state: "default" 0.0;
+                color_class: focusBgColor;
+                min: 6 0;
+                max: 6 -1;
+                align: 0 0;
+                rel1 {
+                    to: "elm.thumbnail";
+                    relative: 0.0 0.0;
+                }
+                rel2 {
+                    to: "elm.thumbnail";
+                    relative: 1.0  1.0;
+                }
+                visible: 0;
+            }
+            description { state: "selected";
+                inherit: "default" 0.0;
+                visible: 1;
+            }
+        }
+
+        part { name: "border_right";
+            type: RECT;
+            description { state: "default" 0.0;
+                color_class: focusBgColor;
+                min: 6 0;
+                max: 6 -1;
+                align: 1 0;
+                rel1 {
+                    to: "elm.thumbnail";
+                    relative: 0.0 0.0;
+                }
+                rel2 {
+                    to: "elm.thumbnail";
+                    relative: 1.0  1.0;
+                }
+                visible: 0;
+            }
+            description { state: "selected";
+                inherit: "default" 0.0;
+                visible: 1;
+            }
+        }
+
+        part { name: "background";
+            type: RECT;
+            description { state: "default" 0.0;
+                min: 784 116;
+                max: 784 116;
+                align: 0.0 0.0;
+                color: 113 128 147 255;
+                visible: 1;
+                rel1 {
+                    to: "bg";
+                    relative: 0.0  0.0;
+                    offset: 0 498;    // thumbnail height
+                }
+                rel2 {
+                    relative: 1.0  1.0;
+                }
+            }
+            description { state: "selected" 0.0;
+                inherit: "default" 0.0;
+                color: 0 119 246 255;
+            }
+        }
+
+        part { name: "page_title";
+            type: TEXT;
+            description { state: "default" 0.0;
+                min: 700 36;
+                max: 700 36;
+                align: 0.0 0.0;
+                color: 255 255 255 255;
+                rel1 {
+                    to: "background";
+                    relative: 0.0 0.0;
+                    offset: 32 22;
+                }
+                rel2 {
+                    to: "background";
+                    relative: 1.0  1.0;
+                }
+                text {
+                    text: "Web page title";
+                    font: "Sans";
+                    size: 36;
+                    align: 0 0.5;
+                }
+            }
+        }
+
+        part { name: "page_url";
+            type: TEXT;
+            description { state: "default" 0.0;
+                min: 700 28;
+                max: 700 28;
+                align: 0 0.0;
+                color: 255 255 255 255;
+                rel1 {
+                        to: "page_title";
+                        relative: 0.0 1.0;
+                        offset: 0 10;
+                }
+                rel2 {
+                        to: "background";
+                        relative: 1.0  1.0;
+                }
+                text {
+                    text: "Web page url";
+                    font: "Sans";
+                    size: 28;
+                    align: 0 0.5;
+                }
+            }
+        }
+
+        part { name: "over";
+            type: RECT;
+            mouse_events: 1;
+            repeat_events: 1;
+            description { state: "default" 0.0;
+                color: 0 0 0 0;
+                rel1.to: "bg";
+                rel2.to: "background";
+            }
+        }
+    }
+
+    programs{
+        program { name: "mouse_in";
+            signal: "mouse,in";
+            source: "over";
+            action:  STATE_SET "selected" 0.0;
+            target:  "background";
+            target: "border_top";
+            target: "border_left";
+            target: "border_right";
+        }
+        program { name: "mouse_out";
+            signal: "mouse,out";
+            source: "over";
+            action:  STATE_SET "default" 0.0;
+            target:  "background";
+            target: "border_top";
+            target: "border_left";
+            target: "border_right";
+        }
+        program {
+            name: "mouse_click";
+            signal: "mouse,clicked,1";
+            source: "over";
+            script {
+                emit("elm,action,click", "");
+            }
+        }
+    }
+}
+
+group { name: "elm/button/base/small_tile";
+    data.item: "texts" "page_title page_url";
+    data.item: "contents" "elm.thumbnail";
+    images {
+        image: "web_frame_selected.png" COMP;
+        image: "ico_bg_round_shape_37x37.png" COMP;
+    }
+    parts {
+        part { name: "bg";
+            type: RECT;
+            mouse_events: 0;
+            description { state: "default" 0.0;
+                min: 378 294;
+                max: 378 294;
+                visible: 1;
+                color: 231 231 231 255;
+                align: 0.0 0.0;
+            }
+        }
+
+        part { name: "elm.thumbnail";
+            type: SWALLOW;
+            description { state: "default" 0.0;
+                fixed: 1 0;
+                align: 0.0 0.0;
+                color : 231 231 231 255;
+                min: 378 292;   // size adjusted to max thubnail with and height
+                max: 378 292;
+                rel1 {
+                    relative: 0.0  0.0; to: "bg";
+                }
+                rel2 {
+                    relative: 1.0  1.0; to: "bg";
+                }
+            }
+            description { state: "selected";
+                inherit: "default" 0.0;
+            }
+        }
+        part { name: "border_top";
+            type: RECT;
+            description { state: "default" 0.0;
+                color_class: focusBgColor;
+                min: 0 6;
+                max: -1 6;
+                align: 0 0;
+                rel1 {
+                    to: "elm.thumbnail";
+                    relative: 0.0 0.0;
+                }
+                rel2 {
+                    to: "elm.thumbnail";
+                    relative: 1.0  1.0;
+                }
+                visible: 0;
+            }
+            description { state: "selected";
+                inherit: "default" 0.0;
+                visible: 1;
+            }
+        }
+
+        part { name: "border_left";
+            type: RECT;
+            description { state: "default" 0.0;
+                color_class: focusBgColor;
+                min: 6 0;
+                max: 6 -1;
+                align: 0 0;
+                rel1 {
+                    to: "elm.thumbnail";
+                    relative: 0.0 0.0;
+                }
+                rel2 {
+                    to: "elm.thumbnail";
+                    relative: 1.0  1.0;
+                }
+                visible: 0;
+            }
+            description { state: "selected";
+                inherit: "default" 0.0;
+                visible: 1;
+            }
+        }
+
+        part { name: "border_right";
+            type: RECT;
+            description { state: "default" 0.0;
+                color_class: focusBgColor;
+                min: 6 0;
+                max: 6 -1;
+                align: 1 0;
+                rel1 {
+                    to: "elm.thumbnail";
+                    relative: 0.0 0.0;
+                }
+                rel2 {
+                    to: "elm.thumbnail";
+                    relative: 1.0  1.0;
+                }
+                visible: 0;
+            }
+            description { state: "selected";
+                inherit: "default" 0.0;
+                visible: 1;
+            }
+        }
+
+        part { name: "background";
+            type: RECT;
+            description { state: "default" 0.0;
+                min: 378 96;
+                max: 378 96;
+                align: 0.0 0.0;
+                color: 113 128 147 255;
+                visible: 1;
+                rel1 {
+                    to: "bg";
+                    relative: 0.0  0.0;
+                    offset: 0 198;  // thumbnail height
+                }
+                rel2 {
+                    relative: 1.0  1.0;
+                }
+            }
+            description { state: "selected" 0.0;
+                inherit: "default" 0.0;
+                color: 0 119 246 255;
+            }
+        }
+
+        part { name: "page_title";
+            type: TEXT;
+            description { state: "default" 0.0;
+                min: 314 28;
+                max: 314 28;
+                align: 0.0 0.0;
+                color: 255 255 255 255;
+                rel1 {
+                    to: "background";
+                    relative: 0.0 0.0;
+                    offset: 32 18;
+                }
+                rel2 {
+                    to: "background";
+                    relative: 1.0  1.0;
+                }
+                text {
+                    text: "Web page title";
+                    font: "Sans";
+                    size: 28;
+                    align: 0 0.0;
+                }
+            }
+        }
+
+        part { name: "page_url";
+            type: TEXT;
+            description { state: "default" 0.0;
+                min: 314 24;
+                max: 314 24;
+                align: 0 0.0;
+                color: 255 255 255 255;
+                rel1 {
+                    to: "page_title";
+                    relative: 0.0 1.0;
+                    offset: 0 8;
+                }
+                rel2 {
+                    to: "background";
+                    relative: 1.0  1.0;
+                }
+                text {
+                    text: "Web page url";
+                    font: "Sans";
+                    size: 24;
+                    align: 0 0.5;
+                }
+            }
+        }
+
+        part { name: "over";
+            type: RECT;
+            mouse_events: 1;
+            repeat_events: 1;
+            description { state: "default" 0.0;
+                color: 0 0 0 0;
+                rel1.to: "bg";
+                rel2.to: "background";
+            }
+        }
+    }
+
+    programs {
+        program { name: "mouse_in";
+            signal: "mouse,in";
+            source: "over";
+            action: STATE_SET "selected" 0.0;
+            target: "background";
+            target: "border_top";
+            target: "border_left";
+            target: "border_right";
+        }
+        program { name: "mouse_out";
+            signal: "mouse,out";
+            source: "over";
+            action: STATE_SET "default" 0.0;
+            target: "background";
+            target: "border_top";
+            target: "border_left";
+            target: "border_right";
+        }
+        program {
+            name: "mouse_click";
+            signal: "mouse,clicked,1";
+            source: "over";
+            script {
+                emit("elm,action,click", "");
+            }
+        }
+    }
+}
+
+group { name: "elm/gengrid/item/grid_item/default";
+	data.item: "texts" "page_title page_url";
+	data.item: "contents" "elm.thumbnail elm.thumbButton";
+	images {
+		image: "web_frame_selected.png" COMP;
+		image: "ico_bg_round_shape_37x37.png" COMP;
+                image: "ic_thumbnail_favorite_01.png" COMP;
+	}
+	parts {
+		part { name: "bg";
+			type: RECT;
+			mouse_events: 0;
+			description { state: "default" 0.0;
+				min: 338 294;
+                        	max: 338 294;
+				visible: 1;
+				color: 231 231 231 255;
+				rel1.offset: -26 -26;
+			}
+			description { state: "selected";
+				inherit: "default" 0.0;
+				color: 70 143 254 255;
+			}
+		}
+
+		part { name: "elm.thumbnail";
+			type: SWALLOW;
+			description { state: "default" 0.0;
+				fixed: 1 0;
+				align: 0.0 0.0;
+				color : 231 231 231 255;
+				min: 338 198;
+				max: 338 198;
+				rel1 {
+					relative: 0.0  0.0; to: "bg";
+				}
+				rel2 {
+					relative: 1.0  1.0; to: "bg";
+				}
+			}
+			description { state: "selected";
+				inherit: "default" 0.0;
+			}
+		}
+
+                part {
+                    name: "bookmark_thumbButton";
+                    type: IMAGE;
+                    mouse_events: 1;
+                    repeat_events: 1;
+                    description {
+                        state: "default" 0.0;
+                        visible: 1;
+                        rel1.to: "elm.thumbnail";
+                        rel1.offset: 284 18;
+                        rel1.relative: 0.0 0.0;
+                        rel2.to: "elm.thumbnail";
+                        rel2.offset: 324 58;
+                        rel2.relative: 0.0 0.0;
+                        align: 0.0 0.0;
+                        image.normal: "ic_thumbnail_favorite_01.png";
+                    }
+                }
+
+		part { name: "focus_highlight";
+			type: IMAGE;
+			description { state: "default" 0.0;
+				rel1 {
+					to: "elm.thumbnail";
+					relative: 0.0  0.0;
+				}
+				rel2 {
+					to: "elm.thumbnail";
+					relative: 1.0  1.0;
+				}
+				image.normal: "web_frame_selected.png";
+				image.border: 8 8 8 0;
+				image.border_scale: 1;
+				image.middle: NONE;
+				visible: 0;
+			}
+			description { state: "selected";
+				inherit: "default" 0.0;
+				visible: 1;
+			}
+		}
+
+		part { name: "background";
+			type: RECT;
+			description { state: "default" 0.0;
+				min: 338 87;
+				max: 338 87;
+				align: 0.0 0.0;
+				color: 231 231 231 255;
+				rel1 {
+					to: "elm.thumbnail";
+					relative: 0.0  1.0;
+				}
+				rel2 {
+					relative: 1.0  1.0;
+				}
+			}
+			description { state: "selected" 0.0;
+				inherit: "default" 0.0;
+				color: 70 143 254 255;
+			}
+		}
+
+		part { name: "page_title";
+			type: TEXT;
+			description { state: "default" 0.0;
+				min: 300 48;
+				max: 300 48;
+				align: 0.0 0.5;
+				rel1 {
+					to: "background";
+					relative: 0.0 0.0;
+					offset: 17 0;
+				}
+				rel2 {
+					to: "background";
+					relative: 1.0  1.0;
+				}
+		color: 51 51 51 255;
+                    text {
+                        text: "Web page title";
+                        font: "Sans";
+                        size: 27;
+                        align: 0 0.5;
+                    }
+                }
+		}
+
+		part { name: "page_url";
+                        type: TEXT;
+                        description { state: "default" 0.0;
+                                min: 300 48;
+                                max: 300 48;
+                                align: 0 0.5;
+                                rel1 {
+                                        to: "page_title";
+                                        relative: 0.0 1.0;
+                                }
+                                rel2 {
+                                        to: "page_title";
+                                        relative: 1.0  1.0;
+                                }
+				color: 153 153 153 255;
+                    text {
+                        text: "Web page url";
+                        font: "Sans";
+                        size: 24;
+                        align: 0 0.5;
+                    }
+                }
+                }
+
+		part { name: "elm.thumbButton";
+			type: SWALLOW;
+			description { state: "default" 0.0;
+				rel1.to: "elm.thumbnail";
+				rel2.to: "elm.thumbnail";
+			}
+		}
+
+		part { name: "over";
+			type: RECT;
+			mouse_events: 1;
+			repeat_events: 1;
+			description { state: "default" 0.0;
+				color: 0 0 0 0;
+				rel1.to: "bg";
+				rel2.to: "background";
+			}
+		}
+	}
+
+	programs{
+		program { name: "mouse_in";
+			signal: "mouse,in";
+			source: "over";
+			action:  STATE_SET "selected" 0.0;
+			target:  "background";
+			target: "focus_highlight";
+			target: "bg";
+		}
+		program { name: "mouse_out";
+			signal: "mouse,out";
+			source: "over";
+			action:  STATE_SET "default" 0.0;
+			target:  "background";
+			target: "focus_highlight";
+			target: "bg";
+		}
+	}
+}
+
+}

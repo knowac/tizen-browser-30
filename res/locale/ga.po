@@ -1,0 +1,2193 @@
+msgid "IDS_BR_POP_NETWORK_ERROR"
+msgstr "Earráid líonra."
+
+msgid "IDS_BR_BODY_DESTINATIONS_AUTHENTICATION_REQUIRED"
+msgstr "Fíordheimhniú de dhíth."
+
+msgid "IDS_BR_HEADER_SECURITY_WARNING"
+msgstr "Rabhadh slándála"
+
+msgid "IDS_BR_BODY_CERTIFICATES"
+msgstr "Deimhnithe"
+
+msgid "IDS_BR_HEADER_ISSUED_TO_C"
+msgstr "Eisithe chuig:"
+
+msgid "IDS_BR_HEADER_COMMON_NAME_C"
+msgstr "Ainm coitianta:"
+
+msgid "IDS_BR_HEADER_ORGANIZATION_C"
+msgstr "Eagraíocht:"
+
+msgid "IDS_BR_HEADER_ORGANIZATIONAL_UNIT_C"
+msgstr "Aonad eagrúcháin:"
+
+msgid "IDS_BR_BODY_SECURITY_CERTIFICATE_PROBLEM_MSG"
+msgstr "Tá fadhbanna leis an deimhniú slándála don láithreán seo"
+
+msgid "IDS_BR_OPT_ALLOW"
+msgstr "Ceadaigh"
+
+msgid "IDS_BR_BODY_PS_REQUESTS_YOUR_LOCATION"
+msgstr "Iarrann %s do shuíomh"
+
+msgid "IDS_BR_BODY_REMEMBER_PREFERENCE"
+msgstr "Cuimhnigh ar mo shainrogha"
+
+msgid "IDS_BR_BODY_CERTIFICATE_SERIAL_NUMBER"
+msgstr "Sraithuimhir"
+
+msgid "IDS_BR_HEADER_ISSUED_BY_C"
+msgstr "Eisithe ag:"
+
+msgid "IDS_BR_HEADER_VALIDITY_C"
+msgstr "Bailíocht:"
+
+msgid "IDS_BR_POP_CERTI_VALID_FROM_C"
+msgstr "Bailí ó:"
+
+msgid "IDS_BR_BODY_CERTIFICATE_VALID_TILL"
+msgstr "Bailí go dtí"
+
+msgid "IDS_BR_BODY_ROOTCERTIFICATES_FINGER_PRINT"
+msgstr "Méarlorg"
+
+msgid "IDS_BR_BODY_SIGNATURE_ALGORITHM_VODA"
+msgstr "Algartam sínithe"
+
+msgid "IDS_BR_BODY_DOWNLOAD"
+msgstr "Íoslódáil"
+
+msgid "IDS_BR_BODY_THIS_WEBPAGE"
+msgstr "An leathanach gréasáin seo"
+
+msgid "IDS_BR_BODY_AUTHUSERNAME"
+msgstr "Ainm úsáideora"
+
+msgid "IDS_BR_BODY_AUTHPASSWORD"
+msgstr "Pasfhocal"
+
+msgid "IDS_BR_OPT_VIEW"
+msgstr "Amharc air"
+
+msgid "IDS_BR_OPT_CANCEL"
+msgstr "Cuir ar ceal"
+
+msgid "IDS_BR_OPT_SCREEN"
+msgstr "Scáileán"
+
+msgid "IDS_BR_OPT_LTE_GSM_WCDMA_HAUTO_CONNECT"
+msgstr "LTE/GSM/WCDMA (uathnascadh)"
+
+msgid "IDS_BR_HEADER_MULTI_WINDOW"
+msgstr "Multi window"
+
+msgid "IDS_BR_HEADER_CERTIFICATE_INFO"
+msgstr "Faisnéis faoin deimhniú"
+
+msgid "IDS_BR_BODY_WEBSITE_SETTINGS"
+msgstr "Socruithe láithreán Gréasáin"
+
+msgid "IDS_BR_POP_INVALID_CERTIFICATE"
+msgstr "Deimhniú neamhbhailí."
+
+msgid "IDS_BR_BODY_BUTTON_T_TTS"
+msgstr "Cnaipe"
+
+msgid "IDS_BR_SK_YES"
+msgstr "Déan é"
+
+msgid "IDS_BR_SK_NO"
+msgstr "Ná déan é"
+
+msgid "IDS_BR_SK_DONE"
+msgstr "Déanta"
+
+msgid "IDS_BR_SK_CANCEL"
+msgstr "Cuir ar ceal"
+
+msgid "IDS_BR_BUTTON_MORE"
+msgstr "Tuilleadh"
+
+msgid "IDS_BR_BODY_NO_ITEMS"
+msgstr "Níl míreanna ann"
+
+msgid "IDS_BR_MBODY_CONNECT_TO_MOBILE_NETWORK"
+msgstr "Nasc le líonra móibíleach"
+
+msgid "IDS_BR_OPT_DO_NOT_SHOW_AGAIN"
+msgstr "Ná taispeáin arís"
+
+msgid "IDS_BR_POP_ONLY_HTTP_OR_HTTPS_URLS_CAN_BE_DOWNLOADED"
+msgstr "Ní féidir ach URL http nó https a íoslódáil"
+
+msgid "IDS_BR_OPT_WEB_SEARCH"
+msgstr "Cuardach Gréasáin"
+
+msgid "IDS_BR_OPT_VIEW_IMAGE"
+msgstr "Amharc ar íomhá"
+
+msgid "IDS_BR_OPT_SAVE_LINK"
+msgstr "Sábháil nasc"
+
+msgid "IDS_BR_OPT_SAVE_IMAGE"
+msgstr "Sábháil íomhá"
+
+msgid "IDS_BR_OPT_COPY_LINK"
+msgstr "Cóipeáil nasc"
+
+msgid "IDS_BR_OPT_COPY_IMAGE"
+msgstr "Cóipeáil íomhá"
+
+msgid "IDS_BR_SK_OK"
+msgstr "OK"
+
+msgid "IDS_BR_OPT_CALL"
+msgstr "Glaoigh"
+
+msgid "IDS_BR_BUTTON_FAILED"
+msgstr "Theip air"
+
+msgid "IDS_BR_TPOP_WEBPAGE_ADDED_TO_QUICK_ACCESS"
+msgstr "Leathanach gréasáin curtha le Mear-rochtain."
+
+msgid "IDS_BR_TPOP_WEBPAGE_ADDED_TO_BOOKMARKS"
+msgstr "Leathanach gréasáin curtha le Leabharmharcanna."
+
+msgid "IDS_BR_TPOP_QUICK_ACCESS_SHORTCUT_DELETED"
+msgstr "Aicearraí Mear-rochtana scriosta."
+
+msgid "IDS_BR_TPOP_PD_ITEMS_DELETED_FROM_BROWSING_HISTORY"
+msgstr "Scriosfar %d mír ón stair bhrabhsála."
+
+msgid "IDS_BR_TPOP_OPENING_SAMSUNG_ACCOUNT_ING"
+msgstr "Cuntas Samsung á oscailt..."
+
+msgid "IDS_BR_TPOP_LOW_DATA_USAGE_ENABLED"
+msgstr "Úsáid íseal sonraí cumasaithe."
+
+msgid "IDS_BR_TPOP_LOW_DATA_USAGE_DISABLED_PDP_OF_BANDWIDTH_SAVED"
+msgstr "Úsáid íseal sonraí díchumasaithe. %d% de bhandaleithead coigilte."
+
+msgid "IDS_BR_TPOP_IMAGE_COPIED_TO_CLIPBOARD"
+msgstr "Íomhá cóipeáilte chuig gearrthaisce."
+
+msgid "IDS_BR_TPOP_FAILED_TO_ADD_TO_HOME_SCREEN_ABB"
+msgstr "Theip ar chur leis an scáileán baile."
+
+msgid "IDS_BR_TPOP_DOWNLOADING_IMAGE_ING"
+msgstr "Íomhá á híoslódáil..."
+
+msgid "IDS_BR_TPOP_DATA_SAVING_STATISTICS_RESET"
+msgstr "Staitisticí coigilte sonraí athshocraithe."
+
+msgid "IDS_BR_TPOP_BOOKMARK_DELETED"
+msgstr "Leabharmharc scriosta."
+
+msgid "IDS_BR_TPOP_ADDED_TO_QUICK_ACCESS_LIST"
+msgstr "Curtha leis an Liosta mear-rochtana."
+
+msgid "IDS_BR_TPOP_ADDED_TO_HOME_SCREEN"
+msgstr "Curtha leis an scáileán baile."
+
+msgid "IDS_BR_TPOP_1_POP_UP_BLOCKED"
+msgstr "Bac curtha ar 1 mhír aníos."
+
+msgid "IDS_BR_TPOP_1_ITEM_DELETED_FROM_BROWSING_HISTORY"
+msgstr "Scriosfar 1 mhír ón stair bhrabhsála."
+
+msgid "IDS_BR_TMBODY_NOTIFICATIONS"
+msgstr "Fógraí"
+
+msgid "IDS_BR_TAB_MOST_VISITED"
+msgstr "Is mó cuairt"
+
+msgid "IDS_BR_TAB_HISTORY"
+msgstr "Stair"
+
+msgid "IDS_BR_SK_UNTICK_ABB"
+msgstr "Bain tic"
+
+msgid "IDS_BR_SK_TABS"
+msgstr "Táib"
+
+msgid "IDS_BR_SK_MENU"
+msgstr "Roghchlár"
+
+msgid "IDS_BR_SK_DELETE_ABB"
+msgstr "Scrs"
+
+msgid "IDS_BR_SK3_CREATE_FOLDER"
+msgstr "Déan fillteán"
+
+msgid "IDS_BR_SK3_CLEAR"
+msgstr "Glan"
+
+msgid "IDS_BR_SBODY_VIEW_PC_WEBSITES_EASILY_ON_YOUR_MOBILE_DEVICE_THIS_FEATURE_BOOSTS_THE_TEXT_SIZE_TO_MAKE_IT_EASIER_TO_READ_NOTE_C_THE_TEXT_LAYOUT_MAY_CHANGE"
+msgstr "Amharc ar láithreáin Ghréasáin PC ar do ghléas móibíleach. Treisíonn an ghné seo méid an téacs le go mbeidh sé soléite. Nóta: Is féidir go n-athrófar leagan amach an téacs."
+
+msgid "IDS_BR_SBODY_SET_THE_DEVICE_TO_SUGGEST_QUERIES_AND_SITES_IN_THE_WEB_ADDRESS_BAR_AS_YOU_TYPE"
+msgstr "Socraigh an gléas le fiosruithe agus le láithreáin a mholadh duit sa bharra seolta ghréasáin de réir mar a chlóscríobhann tú."
+
+msgid "IDS_BR_SBODY_SET_TEXT_USED_TO_FILL_IN_ONLINE_FORMS_ABB"
+msgstr "Socraigh an téacs d'fhoirmeacha ar líne."
+
+msgid "IDS_BR_SBODY_SET_ADVANCED_SETTINGS_FOR_INDIVIDUAL_WEBSITES"
+msgstr "Socraigh ardsocruithe do láithreáin Ghréasáin aonair."
+
+msgid "IDS_BR_SBODY_REMEMBER_DATA_TYPED_IN_FORMS_FOR_LATER_USE"
+msgstr "Cuimhnigh na sonraí a chlóscríobhtar i bhfoirmeacha le húsáid arís."
+
+msgid "IDS_BR_SBODY_PREDICT_RELATED_QUERIES_AND_POPULAR_SITES_IN_THE_NAVIGATION_BAR_AS_YOU_TYPE"
+msgstr "Tuar fiosruithe gaolmhara agus láithreáin is mó éileamh sa bharra Nascleanúna de réir mar a chlóscríobhann tú."
+
+msgid "IDS_BR_SBODY_OVERRIDE_WEBSITE_REQUESTS_TO_CONTROL_ZOOM_LEVEL"
+msgstr "Sáraigh iarratais an tsuímh ghréasáin le leibhéal zúmála a rialú."
+
+msgid "IDS_BR_SBODY_DISPLAY_IMAGES_ON_WEBPAGES"
+msgstr "Taispeáin íomhánna ar leathanaigh Ghréasáin."
+
+msgid "IDS_BR_SBODY_COMPRESS_CONTENT_FROM_WEBSITES_TO_USE_LESS_DATA"
+msgstr "Comhbhrúigh inneachar ó láithreáin ghréasáin le níos lú sonraí a úsáid."
+
+msgid "IDS_BR_SBODY_CLEAR_NOTIFICATION_ACCESS_INFORMATION_FOR_ALL_WEBSITES"
+msgstr "Glan faisnéis rochtana faoi fhógraí gréasáin do gach láithreán gréasáin."
+
+msgid "IDS_BR_SBODY_CHANGE_THE_TEXT_SIZE_FOR_EASIER_READING_ESPECIALLY_WHEN_VIEWING_DESKTOP_VERSIONS_OF_WEBSITES_ON_YOUR_PHONE_NOTE_THAT_THE_TEXT_MSG_US"
+msgstr "Change the text size for easier reading, especially when viewing desktop versions of websites on your phone. Note that the text layout may change as a result."
+
+msgid "IDS_BR_SBODY_CHANGE_THE_TEXT_SIZE_FOR_EASIER_READING_ESPECIALLY_WHEN_VIEWING_DESKTOP_VERSIONS_OF_WEBSITES_NOTE_THAT_THE_TEXT_LAYOUT_MAY_CHANGE_AS_A_RESULT"
+msgstr "Athraigh méid an téacs le haghaidh léitheoireacht níos éasca, go háirithe agus tú ag amharc ar leaganacha deisce de láithreáin ghréasáin. Tabhair faoi deara gur féidir go n-athrófar leagan amach an téacs dá réir sin."
+
+msgid "IDS_BR_SBODY_ALL_WEBSITE_NOTIFICATION_ACCESS_INFORMATION_WILL_BE_CLEARED"
+msgstr "Glanfar gach faisnéis rochtana faoi fhógraí gréasáin."
+
+msgid "IDS_BR_SBODY_ALLOW_SITES_TO_SAVE_AND_READ_COOKIES"
+msgstr "Ceadaigh do shuíomhanna fianáin a shábháil agus a léamh."
+
+msgid "IDS_BR_SBODY_ALLOW_SITES_TO_ACCESS_YOUR_LOCATION_DATA"
+msgstr "Ceadaigh do shuíomhanna do shonraí suímh a rochtain."
+
+msgid "IDS_BR_POP_YOU_MAY_NOT_BE_ABLE_TO_CLIP_SOME_WEBPAGES_ACCURATELY"
+msgstr "Is féidir nach mbeidh tú ábalta roinnt leathanach gréasáin a ghearradh go cruinn"
+
+msgid "IDS_BR_POP_YOUR_HISTORY_WILL_BE_CLEARED"
+msgstr "Glanfar do stair."
+
+msgid "IDS_BR_POP_UNABLE_TO_VIEW_THE_CERTIFICATE_THE_PAGE_INFORMATION_HAS_BEEN_CHANGED"
+msgstr "Ní féidir an deimhniú a fheiceáil. Athraíodh faisnéis an leathanaigh."
+
+msgid "IDS_BR_POP_TO_SIGN_IN_TO_THIS_WEBSITE_USING_YOUR_FINGERPRINTS_GO_TO_SETTINGS_AND_ENABLE_WEB_SIGN_IN"
+msgstr "Le síniú isteach ar an láithreán gréasáin seo le do mhéarloirg, téigh chuig Socruithe agus cumasaigh Síniú isteach gréasáin."
+
+msgid "IDS_BR_POP_THIS_CERTIFICATE_IS_NOT_FROM_A_TRUSTED_AUTHORITY"
+msgstr "Ní ó údarás iontaofa an deimhniú seo."
+
+msgid "IDS_BR_POP_THIS_CERTIFICATE_IS_FROM_A_TRUSTED_AUTHORITY"
+msgstr "Is ó údarás iontaofa an deimhniú seo."
+
+msgid "IDS_BR_POP_THE_LOCATION_PERMISSION_DATA_FOR_THIS_WEBSITE_WILL_BE_CLEARED"
+msgstr "Glanfar sonraí cead suímh don láithreán gréasáin seo."
+
+msgid "IDS_BR_POP_THE_DESTINATION_FOLDER_IS_THE_SAME_AS_THE_SOURCE_FOLDER"
+msgstr "Is ionann an fillteán sprice agus an fillteán foinseach"
+
+msgid "IDS_BR_POP_THE_DESTINATION_FOLDER_IS_A_SUBFOLDER_OF_THE_SOURCE_FOLDER"
+msgstr "Is fo-fhillteán de chuid an fhillteáin fhoinsigh é an fillteán sprice"
+
+msgid "IDS_BR_POP_THERE_ARE_PROBLEMS_WITH_THE_SECURITY_CERTIFICATE_FOR_THIS_WEBSITE"
+msgstr "Tá fadhbanna ann leis an deimhniú slándála don láithreán gréasáin seo."
+
+msgid "IDS_BR_POP_STARTING_DOWNLOAD_ING"
+msgstr "Ag tosú ar íoslódáil..."
+
+msgid "IDS_BR_POP_SOME_OLD_HTML_WEBSITES_MAY_NOT_SUPPORT_THIS_FEATURE"
+msgstr "Is féidir nach mbeidh an ghné seo ar fáil ar roinnt sean-láithreán gréasáin HTML"
+
+msgid "IDS_BR_POP_SET_AS_HOMEPAGE"
+msgstr "Socraigh mar leathanach baile"
+
+msgid "IDS_BR_POP_SETTINGS_WILL_BE_RESET_TO_DEFAULTS"
+msgstr "Fillfear socruithe chuig na réamhshocruithe."
+
+msgid "IDS_BR_POP_SETTIGS_SAVED"
+msgstr "Socruithe sábháilte."
+
+msgid "IDS_BR_POP_SECURITY_POLICY_RESTRICTS_USE_OF_INTERNET_BROWSER"
+msgstr "Cuireann an beartas slándála srian ar úsáid an bhrabhsálaí Idirlín"
+
+msgid "IDS_BR_POP_SAVED_TO_BOOKMARKS"
+msgstr "Sábháilte chuig leabharmharcanna."
+
+msgid "IDS_BR_POP_RENAME_TAG"
+msgstr "Athainmnigh clib"
+
+msgid "IDS_BR_POP_PD_PROFILES_WILL_BE_DELETED"
+msgstr "Scriosfar %d próifíl."
+
+msgid "IDS_BR_POP_PAGES_THAT_YOU_VIEW_WILL_NOT_APPEAR_IN_YOUR_BROWSER_HISTORY_OR_SEARCH_HISTORY_AND_THEY_WILL_NOT_LEAVE_OTHER_TRACES_LIKE_COOKIES"
+msgstr "Ní thaispeánfar leathanaigh a n-amharcann tú orthu i stair do bhrabhsálaí ná i do Stair cuardaigh, agus ní fhágfar rianta eile, amhail fianáin, ina ndiaidh."
+
+msgid "IDS_BR_POP_P1SS_HP2SS_IS_REQUESTING_PERMISSION_TO_USE_YOUR_CAMERA"
+msgstr "Tá %1$s (%2$s) ag iarraidh ceada le do cheamara a úsáid"
+
+msgid "IDS_BR_POP_P1SS_HP2SS_IS_REQUESTING_PERMISSION_TO_STORE_DATA_ON_YOUR_DEVICE_FOR_OFFLINE_USE"
+msgstr "Tá %1$s (%2$s) ag iarraidh ceada le sonraí a stóráil ar do ghléas le húsáid as líne"
+
+msgid "IDS_BR_POP_P1SS_HP2SS_IS_REQUESTING_PERMISSION_TO_SHOW_NOTIFICATIONS"
+msgstr "Tá %1$s (%2$s) ag iarraidh ceada le fógraí a thaispeáint"
+
+msgid "IDS_BR_POP_P1SS_HP2SS_IS_REQUESTING_PERMISSION_TO_CHANGE_HOW_YOUR_BROWSER_WORKS_ON_MSG"
+msgstr "Tá %1$s (%2$s) ag iarraidh ceada leis an gcaoi ina n-oibríonn do bhrabhsálaí ar an láithreán seo a athrú. Is féidir gur ionsaí iarrtha ar do chóras é seo. Mura bhfuil iontaoibh agat as an láithreán gréasáin seo nó mura bhfuil an fáth a bhfuil an t-iarratas seo ar eolas agat, tapáil Cuir ar Ceal."
+
+msgid "IDS_BR_POP_P1SS_HP2SS_IS_REQUESTING_PERMISSION_TO_ACCESS_YOUR_LOCATION"
+msgstr "Tá %1$s (%2$s) ag iarraidh ceada le do shuíomh a rochtain"
+
+msgid "IDS_BR_POP_P1SS_HP2SS_IS_ATTEMPTING_TO_STORE_A_LARGE_AMOUNT_OF_DATA_ON_YOUR_DEVICE_FOR_OFFLINE_USE"
+msgstr "Tá %1$s (%2$s) ag iarraidh líon mór sonraí a stóráil ar do ghléas le húsáid as líne"
+
+msgid "IDS_BR_POP_P1SS_HAS_BEEN_DETECTED_DETECTED_IN_C_P2SS_SOME_CONTENT_HAS_BEEN_BLOCKED_TO_PROTECT_YOUR_DEVICE"
+msgstr "Tá “%1$s” braite.\nBraite in: “%2$s”\n\nCuireadh bac ar roinnt inneachar le do ghléas a chosaint."
+
+msgid "IDS_BR_POP_P1SS_HAS_BEEN_DETECTED_DETECTED_IN_C_P2SS_OPEN_WEBPAGE_ANYWAY_Q"
+msgstr "Tá “%1$s” braite.\nBraite in: “%2$s”\n\nOscail an leathanach gréasáin ar aon nós?"
+
+msgid "IDS_BR_POP_NOT_ENOUGH_MEMORY_DELETE_SOME_ITEMS_AND_TRY_AGAIN"
+msgstr "Easpa cuimhne. Scrios roinnt míreanna agus triail arís."
+
+msgid "IDS_BR_POP_NOT_ALLOWED"
+msgstr "Neamhcheadaithe."
+
+msgid "IDS_BR_POP_MOVED"
+msgstr "Bogtha."
+
+msgid "IDS_BR_POP_ENTER_URL"
+msgstr "Iontráil URL"
+
+msgid "IDS_BR_POP_ENTER_BOOKMARK_NAME"
+msgstr "Iontráil ainm an leabharmhairc"
+
+msgid "IDS_BR_POP_DIALING_ING_VZW"
+msgstr "Dialing..."
+
+msgid "IDS_BR_POP_DELETE_WEBSITE_LOCATION_ACCESS_INFORMATION_Q"
+msgstr "Scrios faisnéis rochtana suímh don láithreán gréasáin?"
+
+msgid "IDS_BR_POP_DELETE_THIS_QUICK_ACCESS_SHORTCUT_Q"
+msgstr "Scrios an t-aicearra Mear-rochtana seo?"
+
+msgid "IDS_BR_POP_DELETE_THIS_PAGE_Q"
+msgstr "Scrios an leathanach seo?"
+
+msgid "IDS_BR_POP_DELETE_THIS_BOOKMARK_Q"
+msgstr "Scrios an leabharmharc seo?"
+
+msgid "IDS_BR_POP_DELETE_STORED_WEBSITE_DATA_Q"
+msgstr "Scrios sonraí na láithreán gréasáin stóráilte?"
+
+msgid "IDS_BR_POP_DELETE_SIGN_IN_DATA_FOR_THIS_WEBSITE_Q"
+msgstr "Scrios sonraí sínithe isteach don láithreán gréasáin seo?"
+
+msgid "IDS_BR_POP_DELETE_SIGN_IN_DATA_FOR_PD_WEBSITES_Q"
+msgstr "Scrios sonraí sínithe isteach i gcás %d láithreán gréasáin?"
+
+msgid "IDS_BR_POP_DELETE_PD_SAVED_WEB_PAGES_Q"
+msgstr "Scrios %d leathanach gréasáin sábháilte?"
+
+msgid "IDS_BR_POP_DELETE_PD_QUICK_ACCESS_SHORTCUTS_Q"
+msgstr "Scrios %d aicearra Mear-rochtana?"
+
+msgid "IDS_BR_POP_DELETE_PD_BOOKMARKS_Q"
+msgstr "Scrios %d leabharmharc?"
+
+msgid "IDS_BR_POP_DELETE_ALL_WEBSITE_DATA_AND_LOCATION_PERMISSIONS_Q"
+msgstr "Scrios gach cead do shonraí agus do shuímh ag an láithreán gréasáin?"
+
+msgid "IDS_BR_POP_DELETEHISTORYQUESTION"
+msgstr "Scrios stair?"
+
+msgid "IDS_BR_POP_CONTINUE"
+msgstr "Ar aghaidh"
+
+msgid "IDS_BR_POP_CLOSE_APPLICATION"
+msgstr "Dún ríomhchlár"
+
+msgid "IDS_BR_POP_CLEAR_Q"
+msgstr "Glan?"
+
+msgid "IDS_BR_POP_CLEAR_HISTORY_Q"
+msgstr "Glan stair?"
+
+msgid "IDS_BR_POP_BOOKMARK_REMOVED"
+msgstr "Leabharmharc bainte."
+
+msgid "IDS_BR_POP_ALREADY_EXISTS"
+msgstr "Ann cheana."
+
+msgid "IDS_BR_POP_ALL_STORED_DATA_FOR_THIS_WEBSITE_WILL_BE_CLEARED"
+msgstr "Glanfar gach sonra atá stóráilte don láithreán gréasáin seo."
+
+msgid "IDS_BR_POP_ALL_STORED_AND_LOCATION_PERMISSION_DATA_FOR_THIS_WEBSITE_WILL_BE_CLEARED"
+msgstr "Glanfar gach sonra stóráilte agus gach sonra cead suímh don láithreán gréasáin seo."
+
+msgid "IDS_BR_POP_ALL_STORED_AND_LOCATION_PERMISSION_DATA_FOR_THESE_WEBSITES_WILL_BE_CLEARED"
+msgstr "Glanfar gach sonra stóráilte agus gach sonra cead suímh do na láithreáin ghréasáin seo."
+
+msgid "IDS_BR_POP_ALL_SETTINGS_WILL_BE_RESET_TO_THEIR_DEFAULTS"
+msgstr "Fillfear gach socrú ar an réamhshocrú."
+
+msgid "IDS_BR_POP_ALL_ITEMS_WILL_BE_DELETED_FROM_BROWSING_HISTORY"
+msgstr "Scriosfar gach mír ón stair bhrabhsála."
+
+msgid "IDS_BR_POP_ALLOW_SITES_TO_SAVE_AND_READ_COOKIES"
+msgstr "Lig do láithreáin fianáin a shábháil agus a léamh"
+
+msgid "IDS_BR_POP_ADDED_TO_BOOKMARKS"
+msgstr "Curtha le leabharmharcanna."
+
+msgid "IDS_BR_OPT_WINDOWS"
+msgstr "Fuinneoga"
+
+msgid "IDS_BR_OPT_VIEW_CERTIFICATE"
+msgstr "Amharc ar dheimhniú"
+
+msgid "IDS_BR_OPT_UNICODE_HUTF_8"
+msgstr "Unicode (UTF-8)"
+
+msgid "IDS_BR_OPT_THUMBNAIL_VIEW"
+msgstr "Radharc mionsamhla"
+
+msgid "IDS_BR_OPT_TEXT_ENCODING"
+msgstr "Ionchódú téacs"
+
+msgid "IDS_BR_OPT_SHRINK_TEXT"
+msgstr "Crap an téacs"
+
+msgid "IDS_BR_OPT_SETTINGS_ABB"
+msgstr "Socruithe"
+
+msgid "IDS_BR_OPT_SEND_MESSAGE_VODA"
+msgstr "Seol teachtaireacht"
+
+msgid "IDS_BR_OPT_SENDURLVIA_EMAIL"
+msgstr "R-phost"
+
+msgid "IDS_BR_OPT_SELECT_TEXT"
+msgstr "Roghnaigh téacs"
+
+msgid "IDS_BR_OPT_SELECT_ALL_ABB"
+msgstr "Roghnaigh gach"
+
+msgid "IDS_BR_OPT_SELECT_ALL"
+msgstr "Roghnaigh gach"
+
+msgid "IDS_BR_OPT_SELECTION_MODE"
+msgstr "Mód roghnaithe"
+
+msgid "IDS_BR_OPT_SELECTED"
+msgstr "Roghnaithe"
+
+msgid "IDS_BR_OPT_SAVE_TO_KEEPIT_ABB"
+msgstr "Sábháil chuig KeepIt"
+
+msgid "IDS_BR_OPT_SAVE_PAGE_FOR_OFFLINE_VIEWING_ABB"
+msgstr "Sábh. lch le hamh. air as líne"
+
+msgid "IDS_BR_OPT_SAVE_LINKED_ITEM_IN_KEEPIT_ABB"
+msgstr "Sábh. mír nasctha in KeepIt"
+
+msgid "IDS_BR_OPT_SAVE_FOR_OFFLINE_VIEWING_ABB"
+msgstr "Sábháil le hamharc air as líne"
+
+msgid "IDS_BR_OPT_SAVEWEBPAGE"
+msgstr "Leathanach gréasáin"
+
+msgid "IDS_BR_OPT_SAVEDPAGES"
+msgstr "Leathanaigh shabháilte"
+
+msgid "IDS_BR_OPT_RSS_VIEW"
+msgstr "Amharc"
+
+msgid "IDS_BR_OPT_REORDER_ABB"
+msgstr "Athordaigh"
+
+msgid "IDS_BR_OPT_RENAME_FOLDER"
+msgstr "Athainmnigh fillteán"
+
+msgid "IDS_BR_OPT_REMOVE"
+msgstr "Bain"
+
+msgid "IDS_BR_OPT_READER_MODE_TTS"
+msgstr "Mód léitheoireachta"
+
+msgid "IDS_BR_OPT_PASSWORDS"
+msgstr "Pasfhocail"
+
+msgid "IDS_BR_OPT_OPEN_IN_NEW_WINDOW_ABB"
+msgstr "Oscail i bhfuinneog nua"
+
+msgid "IDS_BR_OPT_OPEN"
+msgstr "Oscail"
+
+msgid "IDS_BR_OPT_OFFLINE_PAGES_ABB"
+msgstr "Leathanaigh as líne"
+
+msgid "IDS_BR_OPT_NEW_WINDOW"
+msgstr "Fuinneog nua"
+
+msgid "IDS_BR_OPT_MINIMISE"
+msgstr "Íoslaghdaigh"
+
+msgid "IDS_BR_OPT_MEDIUM_M_QUALITY"
+msgstr "Meánach"
+
+msgid "IDS_BR_OPT_LOW_M_QUALITY"
+msgstr "Íseal"
+
+msgid "IDS_BR_OPT_LOCATION_ACCESS_PRIVILEGES"
+msgstr "Pribhléidí rochtana suímh"
+
+msgid "IDS_BR_OPT_LOAD_IMAGES"
+msgstr "Lódáil íomhánna"
+
+msgid "IDS_BR_OPT_LATIN_1_HISO_8859_1"
+msgstr "Laidin-1 (ISO-8859-1)"
+
+msgid "IDS_BR_OPT_KOREAN_HEUC_KR"
+msgstr "Cóiréis (EUC-KR)"
+
+msgid "IDS_BR_OPT_JAPANESE_HSHIFT_JIS"
+msgstr "Seapáinis (SHIFT JIS)"
+
+msgid "IDS_BR_OPT_JAPANESE_HISO_2022_JP"
+msgstr "Seapáinis (ISO-2022-JP)"
+
+msgid "IDS_BR_OPT_JAPANESE_HEUC_JP"
+msgstr "Seapáinis (EUC-JP)"
+
+msgid "IDS_BR_OPT_INCOGNITO_MODE_ABB"
+msgstr "Mód incognito"
+
+msgid "IDS_BR_OPT_HUGE"
+msgstr "Ollmhór"
+
+msgid "IDS_BR_OPT_HOME_SCREEN_AS_WEB_CLIP_ABB"
+msgstr "Scáil. baile mar ghearrthóg gréasáin"
+
+msgid "IDS_BR_OPT_HOME_SCREEN_AS_SHORTCUT_ABB"
+msgstr "Scáileán baile mar aicearra"
+
+msgid "IDS_BR_OPT_HIGH_M_QUALITY"
+msgstr "Ard"
+
+msgid "IDS_BR_OPT_GOFORWARD"
+msgstr "Seol ar aghaidh"
+
+msgid "IDS_BR_OPT_GOBACKWARD"
+msgstr "Siar"
+
+msgid "IDS_BR_OPT_GIANT_M_TEXTSIZE"
+msgstr "Ollmhór"
+
+msgid "IDS_BR_OPT_FIND_ON_PAGE_ABB"
+msgstr "Aimsigh ar lch."
+
+msgid "IDS_BR_OPT_FIND_ON_PAGE"
+msgstr "Aimsigh ar leathanach"
+
+msgid "IDS_BR_OPT_FEEDS_SUBSCRIBED_TO_ABB"
+msgstr "Na fothaí liostáilte"
+
+msgid "IDS_BR_OPT_ENLARGE_TEXT"
+msgstr "Méadaigh an téacs"
+
+msgid "IDS_BR_OPT_ENABLE_SECRET_MODE_ABB"
+msgstr "Cumasaigh Mód rúnda"
+
+msgid "IDS_BR_OPT_ENABLE_NIGHT_MODE_ABB"
+msgstr "Cumasaigh Mód oíche"
+
+msgid "IDS_BR_OPT_ENABLE_LOW_DATA_USAGE_ABB"
+msgstr "Cumasaigh Úsáid íseal sonraí"
+
+msgid "IDS_BR_OPT_DRAG_AND_DROP"
+msgstr "Tarraing agus scaoil"
+
+msgid "IDS_BR_OPT_DISABLE_SECRET_MODE_ABB"
+msgstr "Díchumas. Mód rúnda"
+
+msgid "IDS_BR_OPT_DISABLE_NIGHT_MODE_ABB"
+msgstr "Díchumas. Mód oíche"
+
+msgid "IDS_BR_OPT_DISABLE_LOW_DATA_USAGE_ABB"
+msgstr "Díchum. Úsáid íseal sonraí"
+
+msgid "IDS_BR_OPT_DISABLED"
+msgstr "Díchumasaithe"
+
+msgid "IDS_BR_OPT_DELETE_SAVED_PAGE_ABB"
+msgstr "Scrios leathanach sábháilte"
+
+msgid "IDS_BR_OPT_DELETE_HISTORY"
+msgstr "Scrios stair"
+
+msgid "IDS_BR_OPT_DATA_NETWORK"
+msgstr "Líonra sonraí"
+
+msgid "IDS_BR_OPT_COPY_TO_CLIPBOARD"
+msgstr "Cóipeáil chuig an ngearrthaisce"
+
+msgid "IDS_BR_OPT_COPY_LINK_URL"
+msgstr "Cóipeáil nasc URL"
+
+msgid "IDS_BR_OPT_COPY"
+msgstr "Cóipeáil"
+
+msgid "IDS_BR_OPT_CLOSE_ALL"
+msgstr "Dún gach"
+
+msgid "IDS_BR_OPT_CLEAR_ALL"
+msgstr "Glan gach"
+
+msgid "IDS_BR_OPT_CHINESE_HGBK"
+msgstr "Sínis (GBK)"
+
+msgid "IDS_BR_OPT_CHINESE_HBIG5"
+msgstr "Sínis (Big5)"
+
+msgid "IDS_BR_OPT_CACHE"
+msgstr "Taisce"
+
+msgid "IDS_BR_OPT_ADD_TO_WEB_CLIP"
+msgstr "Cuir leis an ngearrthóg Gréasáin"
+
+msgid "IDS_BR_OPT_ADD_TO_QUICK_ACCESS"
+msgstr "Cuir le mear-rochtain"
+
+msgid "IDS_BR_OPT_ADD_TO_HOME_SCREEN_ABB"
+msgstr "Cuir leis an scáileán baile"
+
+msgid "IDS_BR_OPT_ADD_TO_HOME"
+msgstr "Cuir le baile"
+
+msgid "IDS_BR_OPT_ADD_OR_REMOVE_BOOKMARK"
+msgstr "Cuir leabharmharc leis nó bain ceann"
+
+msgid "IDS_BR_OPT_ADD_BOOKMARK_ABB"
+msgstr "Cuir l.mharc leis"
+
+msgid "IDS_BR_OPT_ADD_BOOKMARK"
+msgstr "Cuir leabharmharc leis"
+
+msgid "IDS_BR_OPT1_EXTENSION"
+msgstr "Breiseán"
+
+msgid "IDS_BR_NPBODY_SEARCH_OR_ENTER_URL_ABB"
+msgstr "Cuard., nó iontráil URL"
+
+msgid "IDS_BR_NPBODY_NO_WEBSITE_HISTORY"
+msgstr "Níl stair leathanach gréasáin ann"
+
+msgid "IDS_BR_NPBODY_NO_WEBSITES"
+msgstr "Níl láithreáin ghréasáin ann"
+
+msgid "IDS_BR_NPBODY_NO_WEBPAGES"
+msgstr "Níl leathanaigh ghréasáin ann"
+
+msgid "IDS_BR_NPBODY_NO_SHORTCUTS"
+msgstr "Níl aicearraí ann"
+
+msgid "IDS_BR_MBODY_WEB_ADDRESS_SUGGESTIONS"
+msgstr "Moltaí seolta ghréasáin"
+
+msgid "IDS_BR_MBODY_WEBSITES"
+msgstr "Láithreáin ghréasáin"
+
+msgid "IDS_BR_MBODY_VIEW_MORE"
+msgstr "Amharc ar thuilleadh"
+
+msgid "IDS_BR_MBODY_URL_SUGGESTIONS"
+msgstr "Moltaí URL"
+
+msgid "IDS_BR_MBODY_TEXT_BOOSTER"
+msgstr "Treiseoir téacs"
+
+msgid "IDS_BR_MBODY_SET_HOMEPAGE"
+msgstr "Socraigh lch baile"
+
+msgid "IDS_BR_MBODY_RUN_JAVASCRIPT"
+msgstr "Rith JavaScript"
+
+msgid "IDS_BR_MBODY_RESET_SETTINGS"
+msgstr "Athshocraigh socruithe"
+
+msgid "IDS_BR_MBODY_PRELOAD_WEBPAGES"
+msgstr "Réamhlódáil lgh Ghréasáin"
+
+msgid "IDS_BR_MBODY_PRELOAD_LINKED_WEBPAGES"
+msgstr "R.lódáil lgh ghréas. nasctha"
+
+msgid "IDS_BR_MBODY_PRELOAD_AVAILABLE_LINKS"
+msgstr "Réamhlódail naisc atá ar fáil"
+
+msgid "IDS_BR_MBODY_LOW_DATA_USAGE"
+msgstr "Úsáid íseal sonraí"
+
+msgid "IDS_BR_MBODY_LOCATION_ACCESS"
+msgstr "Rochtain suímh"
+
+msgid "IDS_BR_MBODY_IMAGE_QUALITY"
+msgstr "Cáilíocht íomhá"
+
+msgid "IDS_BR_MBODY_HIDE_ADDRESS_BAR"
+msgstr "Folaigh barra seoltaí"
+
+msgid "IDS_BR_MBODY_DOWNLOAD_FEED_CONTENT"
+msgstr "Íoslódáil inneachar fotha"
+
+msgid "IDS_BR_MBODY_DELETE_SIGN_IN_DATA"
+msgstr "Scrios sonraí sínithe ist"
+
+msgid "IDS_BR_MBODY_DATA_SAVING_STATISTICS"
+msgstr "Staitisticí coig. sonraí"
+
+msgid "IDS_BR_MBODY_CONTENT"
+msgstr "Inneachar"
+
+msgid "IDS_BR_MBODY_CLEAR_NOTIFICATION_DATA"
+msgstr "Glan sonraí fógraí"
+
+msgid "IDS_BR_MBODY_AUTO_FILL_FORMS"
+msgstr "Uath-líon foirmeacha"
+
+msgid "IDS_BR_MBODY_ADD_PROFILE"
+msgstr "Cuir próifíl leis"
+
+msgid "IDS_BR_MBODY_ACCESS_LOCATION"
+msgstr "Faigh rochtain ar shuíomh"
+
+msgid "IDS_BR_HEADER_WINDOW_LIMIT_REACHED"
+msgstr "Teorainn na bhfuinneog bainte amach"
+
+msgid "IDS_BR_HEADER_WEB_NOTIFICATIONS_ABB"
+msgstr "Fógraí gréasáin"
+
+msgid "IDS_BR_HEADER_WEB_NOTIFICATION"
+msgstr "Fógra Gréasáin"
+
+msgid "IDS_BR_HEADER_VALIDITY"
+msgstr "Bailíocht"
+
+msgid "IDS_BR_HEADER_UNABLE_TO_OPEN_WINDOW_ABB"
+msgstr "Ní féidir fuinneog a oscailt"
+
+msgid "IDS_BR_HEADER_UNABLE_TO_OPEN_FILE"
+msgstr "Ní féidir an comhad a oscailt"
+
+msgid "IDS_BR_HEADER_UNABLE_TO_MOVE_BOOKMARKS_ABB"
+msgstr "Bogadh leabharmharc. dodhéanta"
+
+msgid "IDS_BR_HEADER_SITE_NOT_TRUSTED_ABB"
+msgstr "Níl an láithreán iontaofa"
+
+msgid "IDS_BR_HEADER_SET_HOMEPAGE_ABB"
+msgstr "Socraigh leathanach baile"
+
+msgid "IDS_BR_HEADER_SERIAL_NUMBER_C_ABB"
+msgstr "Sraithuimhir:"
+
+msgid "IDS_BR_HEADER_SELECT_SIGN_IN_DATA_FOR_ABB"
+msgstr "Rogh. sonraí sín. isteach do"
+
+msgid "IDS_BR_HEADER_SELECT_SHORTCUTS_ABB"
+msgstr "Roghnaigh aicearraí"
+
+msgid "IDS_BR_HEADER_SELECT_BOOKMARKS"
+msgstr "Roghnaigh leabharmharcanna"
+
+msgid "IDS_BR_HEADER_SELECT_BOOKMARK"
+msgstr "Roghnaigh leabharmharc"
+
+msgid "IDS_BR_HEADER_SECURITY_CERTIFICATE"
+msgstr "Deimhniú slándála"
+
+msgid "IDS_BR_HEADER_REORDER_QUICK_ACCESS_SHORTCUTS_ABB"
+msgstr "Athord. Aicearraí mear-rochtana"
+
+msgid "IDS_BR_HEADER_QUICK_ACCESS_ABB"
+msgstr "Mear-rochtain"
+
+msgid "IDS_BR_HEADER_PROFILES"
+msgstr "Próifílí"
+
+msgid "IDS_BR_HEADER_POP_UP_BLOCKED_ABB"
+msgstr "Bac curtha ar mhír aníos"
+
+msgid "IDS_BR_HEADER_POPULAR_WEBSITES_ABB"
+msgstr "Láithreáin Gréasáin is mó éileamh"
+
+msgid "IDS_BR_HEADER_ORGANISATION_C_ABB"
+msgstr "Eagraíocht:"
+
+msgid "IDS_BR_HEADER_ORGANISATIONAL_UNIT_C"
+msgstr "Aonad eagrúcháin:"
+
+msgid "IDS_BR_HEADER_NEWER_M_INTERNET_HISTORY_ABB"
+msgstr "Newer"
+
+msgid "IDS_BR_HEADER_ISSUED_ON_C"
+msgstr "Eisithe:"
+
+msgid "IDS_BR_HEADER_ISSUED_BY"
+msgstr "Arna eisiúint ag"
+
+msgid "IDS_BR_HEADER_HTML5_EXTENSION"
+msgstr "Iarmhír HTML5"
+
+msgid "IDS_BR_HEADER_FORM_DATA"
+msgstr "Sonraí ar fhoirm"
+
+msgid "IDS_BR_HEADER_EXPIRES_ON_C"
+msgstr "As feidhm:"
+
+msgid "IDS_BR_HEADER_ENABLE_WEB_SIGN_IN"
+msgstr "Cumasaigh Síniú isteach gréasáin"
+
+msgid "IDS_BR_HEADER_EDIT_BOOKMARK"
+msgstr "Cuir leabharmharc in eagar"
+
+msgid "IDS_BR_HEADER_DELETE_WEBSITE_DATA_ABB"
+msgstr "Scrios sonraí láith. ghréasáin"
+
+msgid "IDS_BR_HEADER_DELETE_SIGN_IN_DATA_ABB"
+msgstr "Scrios sonraí sínithe isteach"
+
+msgid "IDS_BR_HEADER_DELETE_PROFILE"
+msgstr "Scrios próifíl"
+
+msgid "IDS_BR_HEADER_DELETE_BOOKMARKS_ABB"
+msgstr "Scrios leabharmharcanna"
+
+msgid "IDS_BR_HEADER_DATA_CONNECTIVITY_PROBLEM"
+msgstr "Fadhb nascachta sonraí"
+
+msgid "IDS_BR_HEADER_COMMON_NAME_C_ABB"
+msgstr "Ainm coitianta:"
+
+msgid "IDS_BR_HEADER_CLOSE_APPLICATION"
+msgstr "Dún an feidhmchlár"
+
+msgid "IDS_BR_HEADER_CLEAR_PERSONALISED_DATA"
+msgstr "Glan sonraí pearsantaithe"
+
+msgid "IDS_BR_HEADER_CLEAR_LOCATION_ACCESS"
+msgstr "Glan rochtain an tsuímh"
+
+msgid "IDS_BR_HEADER_BANDWIDTH_MANAGEMENT_ABB"
+msgstr "Bainistiú leithead banda"
+
+msgid "IDS_BR_HEADER_ADVANCEDCERTIFICATES"
+msgstr "Deimhnithe"
+
+msgid "IDS_BR_BUTTON_RESET_ABB"
+msgstr "Athshoc."
+
+msgid "IDS_BR_BUTTON_HOMEPAGE_ABB"
+msgstr "Lch baile"
+
+msgid "IDS_BR_BUTTON_FIND_ABB"
+msgstr "Aim."
+
+msgid "IDS_BR_BUTTON_BACK_ABB"
+msgstr "Siar"
+
+msgid "IDS_BR_BUTTON_ALWAYS_SHOW_ABB"
+msgstr "Taisp. i gcónaí"
+
+msgid "IDS_BR_BUTTON2_WEB_PORTAL"
+msgstr "Tairseach Gréasáin"
+
+msgid "IDS_BR_BUTTON2_SPORT"
+msgstr "Spórt"
+
+msgid "IDS_BR_BUTTON2_SOCIAL"
+msgstr "Sóisialta"
+
+msgid "IDS_BR_BUTTON2_SHOPPING"
+msgstr "Siopa\ndóireacht"
+
+msgid "IDS_BR_BUTTON2_PAYMENT"
+msgstr "Íocaíocht"
+
+msgid "IDS_BR_BUTTON2_HOBBIES"
+msgstr "Caitheamh aimsire"
+
+msgid "IDS_BR_BUTTON2_GO_TO_HISTORY"
+msgstr "Gabh chuig stair"
+
+msgid "IDS_BR_BUTTON2_ENTERTAINMENT"
+msgstr "Siam\nsaíocht"
+
+msgid "IDS_BR_BODY_WINDOW_MANAGER"
+msgstr "Bainisteoir fuinneog"
+
+msgid "IDS_BR_BODY_WEB_ADDRESS"
+msgstr "Seoladh Gréasáin"
+
+msgid "IDS_BR_BODY_VOICE_INPUT_TTS"
+msgstr "Ionchur gutha"
+
+msgid "IDS_BR_BODY_VIEW_IMAGE"
+msgstr "Amharc ar íomhá"
+
+msgid "IDS_BR_BODY_VIEW_HISTORY_T_TALKBACK"
+msgstr "Amharc ar stair."
+
+msgid "IDS_BR_BODY_VIEW_BOOKMARKS_T_TALKBACK"
+msgstr "Amharc ar leabharmharcanna."
+
+msgid "IDS_BR_BODY_VALID_CERTIFICATE"
+msgstr "Deimhniú bailí"
+
+msgid "IDS_BR_BODY_USE_FULL_SCREEN_MODE_TO_HIDE_THE_STATUS_BAR"
+msgstr "Úsáid Mód lánscáileáin leis an mbarra stádais a fholú"
+
+msgid "IDS_BR_BODY_USE_A_PREDICTION_SERVICE_TO_DISPLAY_RELATED_QUERIES_AND_POPULAR_WEBSITES_IN_THE_ADDRESS_BAR_AS_YOU_TYPE"
+msgstr "Úsáid seirbhís tuartha le fiosruithe gaolmhara agus láithreáin Ghréasáin is mó éileamh a thaispeáint sa bharra seoltaí de réir mar a chlóscríobhann tú"
+
+msgid "IDS_BR_BODY_UPPER_FOLDER_T_TALKBACK"
+msgstr "Fillteán uachtarach"
+
+msgid "IDS_BR_BODY_UNTAGGED"
+msgstr "Neamhchlibeáilte"
+
+msgid "IDS_BR_BODY_UNABLE_TO_OPEN_THE_FILE_AT_PS_IT_MAY_HAVE_BEEN_REMOVED_OR_RENAMED_OR_FILE_PERMISSIONS_MAY_BE_PREVENTING_ACCESS"
+msgstr "Ní féidir an comhad ag %s a oscailt. Is féidir gur baineadh nó athainmníodh é, nó is féidir go bhfuil bac ar rochtain ag ceadanna comhaid."
+
+msgid "IDS_BR_BODY_UNABLE_TO_DISPLAY_THE_WEBPAGE_NO_RESPONSE_FROM_THE_SERVER"
+msgstr "Ní féidir an leathanach Gréasáin a thaispeáint. Ní bhfuarthas freagairt ón bhfreastalaí."
+
+msgid "IDS_BR_BODY_TOWN_CITY_COUNTY_ABB"
+msgstr "Baile/cathair/contae"
+
+msgid "IDS_BR_BODY_THIS_SITE_IS_USING_PS"
+msgstr "Tá %s á úsáid ag an suíomh seo."
+
+msgid "IDS_BR_BODY_THIS_SITE_CAN_ACCESS_YOUR_LOCATION"
+msgstr "Is féidir leis an láithreán seo do shuíomh reatha a rochtain."
+
+msgid "IDS_BR_BODY_THIS_SITE_CANNOT_ACCESS_YOUR_LOCATION"
+msgstr "Ní féidir leis an láithreán seo do shuíomh a rochtain."
+
+msgid "IDS_BR_BODY_THIS_BOOKMARK_WILL_BE_DELETED"
+msgstr "Scriosfar an leabharmharc seo"
+
+msgid "IDS_BR_BODY_THE_SELECTED_PERSONAL_DATA_WILL_BE_DELETED"
+msgstr "Scriosfar na sonraí pearsanta roghnaithe."
+
+msgid "IDS_BR_BODY_TEXT_FIELD_T_TTS"
+msgstr "Réimse téacs"
+
+msgid "IDS_BR_BODY_TARGET_FOLDER"
+msgstr "Sprioc-fhillteán"
+
+msgid "IDS_BR_BODY_TAP_THE_WINDOW_MANAGER_ICON_AND_CLOSE_SOME_WINDOWS_THEN_TRY_AGAIN"
+msgstr "Tapáil íocón Bainisteoir fuinneog agus dún roinnt fuinneoga, ansin triail arís."
+
+msgid "IDS_BR_BODY_TAP_ONCE_MORE_TO_CLOSE_INTERNET"
+msgstr "Tapáil uair amháin eile leis an Idirlíon a dhúnadh"
+
+msgid "IDS_BR_BODY_SYNC_OPEN_PAGES"
+msgstr "Sioncronaigh leathanaigh atá ar oscailt"
+
+msgid "IDS_BR_BODY_SYNC_INTERNET_DATA"
+msgstr "Sioncronaigh sonraí Idirlín"
+
+msgid "IDS_BR_BODY_SYNC_BOOKMARKS_ABB"
+msgstr "Sioncronaigh leabharmharcanna"
+
+msgid "IDS_BR_BODY_STREET_ADDRESS_PO_BOX_C_O_ETC_ABB"
+msgstr "Seoladh sráide, Bosca poist, f/ch, srl"
+
+msgid "IDS_BR_BODY_STORED_DATA"
+msgstr "Sonraí stóráilte"
+
+msgid "IDS_BR_BODY_SPLIT_BAR_HANDLE"
+msgstr "Hanla an roinnbharra"
+
+msgid "IDS_BR_BODY_SIGN_IN_TO_YOUR_SAMSUNG_ACCOUNT_TO_ACCESS_THE_BOOKMARKS_AND_TABS_ON_YOUR_OTHER_DEVICES"
+msgstr "Sínigh isteach i do chuntas Samsung chun na leabharmharcanna agus na táib ar do ghléasanna eile a rochtain"
+
+msgid "IDS_BR_BODY_SHOW_OVERVIEW_OF_NEWLY_OPENED_PAGES"
+msgstr "Taispeáin forbhreathnú ar leathanaigh nua-oscailte"
+
+msgid "IDS_BR_BODY_SHA_256_FINGERPRINT_C"
+msgstr "Méarlorg SHA-256:"
+
+msgid "IDS_BR_BODY_SHA_1_FINGERPRINT_C"
+msgstr "Méarlorg SHA-1:"
+
+msgid "IDS_BR_BODY_SET_TEXT_FOR_WEB_FORM_AUTO_FILL"
+msgstr "Socraigh téacs le foirmeacha Gréasáin a uath-líonadh"
+
+msgid "IDS_BR_BODY_SET_CURRENT_PAGE_AS_HOMEPAGE"
+msgstr "Socraigh an leathanach reatha mar leathanach baile"
+
+msgid "IDS_BR_BODY_SELECT_FOLDER"
+msgstr "Roghnaigh fillteán"
+
+msgid "IDS_BR_BODY_SEARCH_OR_ENTER_URL"
+msgstr "Cuardaigh nó iontráil URL"
+
+msgid "IDS_BR_BODY_SEARCH_FIELD_T_TTS"
+msgstr "Réimse cuardaigh"
+
+msgid "IDS_BR_BODY_SEARCH_AND_URL_SUGGESTIONS"
+msgstr "Moltaí ar chuardach agus URL"
+
+msgid "IDS_BR_BODY_SCREEN_AND_TEXT"
+msgstr "Scáileán agus téacs"
+
+msgid "IDS_BR_BODY_SAVE_USER_NAMES_AND_PASSWORDS_FOR_WEBSITES"
+msgstr "Sábháil ainmneacha úsáideora agus pasfhocail do láithreáin Ghréasáin"
+
+msgid "IDS_BR_BODY_SAVE_LINK"
+msgstr "Sábháil nasc"
+
+msgid "IDS_BR_BODY_RESTORE_DEFAULT_SETTINGS_Q"
+msgstr "Fill ar réamhshocruithe?"
+
+msgid "IDS_BR_BODY_RESTORE_DEFAULT_SETTINGS"
+msgstr "Fill ar réamhshocruithe"
+
+msgid "IDS_BR_BODY_RESET_TO_DEFAULT"
+msgstr "Athshocraigh go réamhshocraithe"
+
+msgid "IDS_BR_BODY_RESET_SETTINGS"
+msgstr "Athshocraigh socruithe"
+
+msgid "IDS_BR_BODY_RESET_ALL_SETTINGS_TO_THEIR_DEFAULTS"
+msgstr "Fill gach socrú ar an réamhshocrú."
+
+msgid "IDS_BR_BODY_REMOVE_WEB_NOTIFICATION_ACCESS_INFORMATION_Q"
+msgstr "Bain faisnéis rochtana faoi fhógraí Gréasáin?"
+
+msgid "IDS_BR_BODY_REMEMBER_PASSWORDS"
+msgstr "Cuimhnigh ar phasfhocail"
+
+msgid "IDS_BR_BODY_REMEMBER_FORM_DATA"
+msgstr "Cuimhnigh sonraí foirme"
+
+msgid "IDS_BR_BODY_REMEMBER_DATA_I_TYPE_IN_FORMS_FOR_LATER_USE"
+msgstr "Cuimhnigh na sonraí a scríobhaim i bhfoirmeacha le húsáid arís"
+
+msgid "IDS_BR_BODY_RADIO_BUTTON_T_TTS"
+msgstr "Cnaipe Raidió"
+
+msgid "IDS_BR_BODY_PS_BOOKMARK_WILL_BE_DELETED"
+msgstr "Scriosfar %s leabharmharc"
+
+msgid "IDS_BR_BODY_PRIVACY"
+msgstr "Príobháideacht"
+
+msgid "IDS_BR_BODY_PRINT"
+msgstr "Priontáil"
+
+msgid "IDS_BR_BODY_PRESS_THE_MENU_KEY"
+msgstr "Brúigh an eochair Roghchlár"
+
+msgid "IDS_BR_BODY_POSTCODE_ABB"
+msgstr "Postchód"
+
+msgid "IDS_BR_BODY_PD_POP_UPS_BLOCKED_ABB"
+msgstr "Bac ar mhír aníos %d."
+
+msgid "IDS_BR_BODY_PAGE_LOADED_T_TTS"
+msgstr "Leathanach lódáilte"
+
+msgid "IDS_BR_BODY_PAGES_THAT_YOU_VIEW_IN_THIS_TAB_WILL_NOT_APPEAR_IN_YOUR_BROWSER_HISTORY_OR_SEARCH_HISTORY_MSG"
+msgstr "Ní thaispeánfar leathanaigh ar a bhféachann tú sa táb seo i stair do bhrabhsálaí ná i stair do chuardaigh, agus ní fhágfar nithe eile, amhail fianáin, ina ndiaidh"
+
+msgid "IDS_BR_BODY_OVERRIDE_WEBSITES_REQUEST_TO_CONTROL_ZOOM"
+msgstr "Sáraigh iarratas an láithreáin ghréasáin le zúmáil a rialú"
+
+msgid "IDS_BR_BODY_OTHER_ABB"
+msgstr "Eile"
+
+msgid "IDS_BR_BODY_OPEN_WINDOWS_T_TALKBACK"
+msgstr "Oscail fuinneoga."
+
+msgid "IDS_BR_BODY_OPEN_PAGES_IN_OVERVIEW_ABB"
+msgstr "Oscail i bhforbhreathnú"
+
+msgid "IDS_BR_BODY_ON_DEMAND"
+msgstr "Ar éileamh"
+
+msgid "IDS_BR_BODY_ONLY_VIA_WI_FI_ABB"
+msgstr "Trí Wi-Fi amháin"
+
+msgid "IDS_BR_BODY_OLDER"
+msgstr "Níos sine"
+
+msgid "IDS_BR_BODY_NO_WINDOWS"
+msgstr "Níl fuinneoga ann"
+
+msgid "IDS_BR_BODY_NO_VISITED_SITES"
+msgstr "Níl láithreáin ann ar tugadh cuairt orthu"
+
+msgid "IDS_BR_BODY_NO_TITLE"
+msgstr "Níl teideal ann"
+
+msgid "IDS_BR_BODY_NO_SAVED_PAGES"
+msgstr "Níl leathanaigh sábháilte ann"
+
+msgid "IDS_BR_BODY_NO_BOOKMARKS"
+msgstr "Níl leabharmharcanna ann"
+
+msgid "IDS_BR_BODY_NORMAL"
+msgstr "Normálta"
+
+msgid "IDS_BR_BODY_NEWS"
+msgstr "Nuacht"
+
+msgid "IDS_BR_BODY_MOVE_THE_SELECTED_BOOKMARKS_Q"
+msgstr "Bog na leabharmharcanna roghnaithe?"
+
+msgid "IDS_BR_BODY_MOST_VISITED_SITES"
+msgstr "Láithreáin is mó cuairt orthu"
+
+msgid "IDS_BR_BODY_MOBILE_VIEW"
+msgstr "Amharc móibíleach"
+
+msgid "IDS_BR_BODY_LOCATION_M_INFORMATION"
+msgstr "Suíomh"
+
+msgid "IDS_BR_BODY_LAST_WEEK"
+msgstr "An tseachtain seo caite"
+
+msgid "IDS_BR_BODY_LAST_MONTH"
+msgstr "An mhí seo caite"
+
+msgid "IDS_BR_BODY_LAST_7_DAYS"
+msgstr "Le 7 lá anuas"
+
+msgid "IDS_BR_BODY_LARGE"
+msgstr "Mór"
+
+msgid "IDS_BR_BODY_INTERNET_HISTORY_IS_NOT_STORED_ABB"
+msgstr "Níor stóráladh stair idirlín."
+
+msgid "IDS_BR_BODY_INTERNET"
+msgstr "An tIdirlíon"
+
+msgid "IDS_BR_BODY_IMPROVE_PERFORMANCE_WHEN_LOADING_PAGES"
+msgstr "Feabhsaigh feidhmíocht agus leathanaigh á lódáil"
+
+msgid "IDS_BR_BODY_HOMEPAGE"
+msgstr "Leathanach baile"
+
+msgid "IDS_BR_BODY_HIDE_THE_ADDRESS_BAR_WHEN_SCROLLING_DOWN_THE_PAGE"
+msgstr "Folaigh an barra seoltaí le linn scrollú síos an leathanaigh."
+
+msgid "IDS_BR_BODY_GENERAL_M_SETTINGS"
+msgstr "Ginearálta"
+
+msgid "IDS_BR_BODY_FULL_NAME_ABB"
+msgstr "Ainm iomlán"
+
+msgid "IDS_BR_BODY_FORCE_ZOOM_ABB"
+msgstr "Fórsáil zúmáil"
+
+msgid "IDS_BR_BODY_FLAT_SUITE_UNIT_BUILDING_FLOOR_ETC_ABB"
+msgstr "Árasán, svuít, aonad, foirgneamh, urlár, srl"
+
+msgid "IDS_BR_BODY_FINGERPRINTS_C"
+msgstr "Méarloirg:"
+
+msgid "IDS_BR_BODY_FAILED_TO_ADD_TO_HOME_SCREEN_ABB"
+msgstr "Theip ar é a chur leis an scáileán baile."
+
+msgid "IDS_BR_BODY_ENTER_YOUR_NAME_ABB"
+msgstr "Iontráil d'ainm"
+
+msgid "IDS_BR_BODY_ENTER_TOWN_CITY_COUNTY_ABB"
+msgstr "Iontráil baile/cathair/contae"
+
+msgid "IDS_BR_BODY_ENTER_COUNTRY_REGION_ABB"
+msgstr "Iontráil tír/réigiún"
+
+msgid "IDS_BR_BODY_ENTER_COMPANY_NAME_ABB"
+msgstr "Iontráil ainm na cuideachta"
+
+msgid "IDS_BR_BODY_ENABLE_LOCATION"
+msgstr "Cumasaigh suíomh"
+
+msgid "IDS_BR_BODY_ENABLE_JAVASCRIPT"
+msgstr "Cumasaigh JavaScript"
+
+msgid "IDS_BR_BODY_DOUBLE_TAP_TO_VIEW_CERTIFICATE_TTS"
+msgstr "Déthapáil le hamharc ar dheimhniú."
+
+msgid "IDS_BR_BODY_DOUBLE_TAP_TO_SELECT_A_SEARCH_ENGINE_T_TALKBACK"
+msgstr "Déthapáil le hinneall cuardaigh a roghnú."
+
+msgid "IDS_BR_BODY_DOUBLE_TAP_TO_OPEN_THE_WEBPAGE_T_TALKBACK"
+msgstr "Déthapáil leis an leathanach gréasáin a oscailt."
+
+msgid "IDS_BR_BODY_DOUBLE_TAP_TO_OPEN_THE_LIST_T_TTS"
+msgstr "Déthapáil leis an liosta a oscailt."
+
+msgid "IDS_BR_BODY_DOUBLE_TAP_TO_OPEN_THE_FOLDER_T_TTS"
+msgstr "Déthapáil leis an bhfillteán a oscailt."
+
+msgid "IDS_BR_BODY_DOUBLE_TAP_TO_OPEN_KEYBOARD_T_TTS"
+msgstr "Déthapáil leis an eochairchlár a oscailt."
+
+msgid "IDS_BR_BODY_DOUBLE_TAP_TO_MOVE_TO_CONTENT_T_TTS"
+msgstr "Déthapáil le bogadh chuig inneachar."
+
+msgid "IDS_BR_BODY_DOUBLE_TAP_TO_CLOSE_THE_TRAY_T_TALKBACK"
+msgstr "Déthapáil leis an tráidire a dhúnadh."
+
+msgid "IDS_BR_BODY_DOUBLE_TAP_TO_CANCEL_THE_SEARCH_T_TALKBACK"
+msgstr "Déthapáil leis an gcuardach a chur ar ceal."
+
+msgid "IDS_BR_BODY_DOUBLE_TAP_AND_HOLD_TO_RESIZE_SPLIT_AREA_T_TTS"
+msgstr "Déthapáil agus coinnigh leis an réimse scoilte a athmheidniú."
+
+msgid "IDS_BR_BODY_DOUBLE_TAP_AND_DRAG_TO_REORDER_TTS"
+msgstr "Déthapáil agus tarraing lena gcur in ord nua."
+
+msgid "IDS_BR_BODY_DISPLAY_SECURITY_WARNING_POP_UPS"
+msgstr "Taispeáin míreanna aníos rabhaidh slándála"
+
+msgid "IDS_BR_BODY_DISPLAY_IMAGES_ON_WEB_PAGES"
+msgstr "Taispeáin íomhánna ar leathanaigh Ghréasáin"
+
+msgid "IDS_BR_BODY_DESKTOP_VIEW"
+msgstr "Amharc deisce"
+
+msgid "IDS_BR_BODY_DELETE_THE_SELECTED_BOOKMARKS_Q"
+msgstr "Scrios na leabharmharcanna roghnaithe?"
+
+msgid "IDS_BR_BODY_DELETE_PERSONAL_DATA"
+msgstr "Scrios sonraí pearsanta"
+
+msgid "IDS_BR_BODY_DEFAULT_STORAGE"
+msgstr "Stóras réamhshocraithe"
+
+msgid "IDS_BR_BODY_DEFAULT_PAGE_ABB"
+msgstr "Leathanach réamhshocraithe"
+
+msgid "IDS_BR_BODY_DATA_USAGE_REDUCED_BY_P1SDP_HP2SD_KB_OF_P3SD_KB_RECEIVED_TAP_HERE_TO_RESET_STATISTICS"
+msgstr "Úsáid sonraí laghdaithe faoi %1$d% (%2$d KB as %3$d KB faighte). Tapáil anseo leis na staitisticí a athshocrú."
+
+msgid "IDS_BR_BODY_CUSTOM_USER_AGENT"
+msgstr "Saincheap gníomhaire úsáideora"
+
+msgid "IDS_BR_BODY_CURRENT_PAGE"
+msgstr "Leathanach reatha"
+
+msgid "IDS_BR_BODY_CREATED"
+msgstr "Cruthaithe."
+
+msgid "IDS_BR_BODY_COUNTY_ABB"
+msgstr "Contae"
+
+msgid "IDS_BR_BODY_COUNTRY_REGION_ABB2"
+msgstr "Tír/réigiún"
+
+msgid "IDS_BR_BODY_COOKIES_AND_SITE_DATA_ABB"
+msgstr "Fianáin & sonraí láithreáin"
+
+msgid "IDS_BR_BODY_COOKIES"
+msgstr "Fianáin"
+
+msgid "IDS_BR_BODY_CONTENT_SETTINGS"
+msgstr "Socruithe inneachair"
+
+msgid "IDS_BR_BODY_COMPANY_NAME_ABB"
+msgstr "Ainm na cuideachta"
+
+msgid "IDS_BR_BODY_CLOSE_TAB"
+msgstr "Dún an táb"
+
+msgid "IDS_BR_BODY_CLEAR_WEB_NOTIFICATION_PERMISSION_SETTINGS"
+msgstr "Glan socruithe ceada d'fhógraí Gréasáin"
+
+msgid "IDS_BR_BODY_CLEAR_WEB_NOTIFICATION_PERMISSIONS_Q"
+msgstr "Glan ceadanna d'fhógraí gréasáin?"
+
+msgid "IDS_BR_BODY_CLEAR_NOTIFICATION_ACCESS_FOR_WEBSITES"
+msgstr "Glan rochtain ar fhógraí do láithreáin Ghréasáin"
+
+msgid "IDS_BR_BODY_CLEAR_NOTIFICATIONS"
+msgstr "Glan fógraí"
+
+msgid "IDS_BR_BODY_CLEAR_LOCATION_ACCESS"
+msgstr "Glan rochtain an tsuímh"
+
+msgid "IDS_BR_BODY_CLEAR_HISTORY"
+msgstr "Glan stair"
+
+msgid "IDS_BR_BODY_CLEAR_ALL_BROWSER_DATA_AND_RESET_ALL_SETTINGS_TO_DEFAULT"
+msgstr "Glan gach sonra brabhsálaí agus athshocraigh gach socrú chuig an réamhshocrú"
+
+msgid "IDS_BR_BODY_CITY_TOWN_ABB"
+msgstr "Cathair/Baile"
+
+msgid "IDS_BR_BODY_CHANGE_THE_TEXT_SIZE_FOR_EASIER_READING_ESPECIALLY_WHEN_VIEWING_DESKTOP_VERSIONS_OF_WEBSITES_ON_YOUR_DEVICE_MSG"
+msgstr "Athraigh méid an téacs le haghaidh léitheoireachta níos éasca, go háirithe le linn amharc ar leaganacha deisce de láithreáin ghréasáin ar do ghléas. Tabhair faoi deara gur féidir go n-athrófar leagan amach an téacs dá réir."
+
+msgid "IDS_BR_BODY_BOOKMARK_REMINDER_ABB"
+msgstr "Meabhrán leabharmhairc"
+
+msgid "IDS_BR_BODY_BLOCK_POP_UPS_ON_WEB_PAGES"
+msgstr "Cuir bac ar mhíreanna aníos ar leathanaigh Ghréasáin"
+
+msgid "IDS_BR_BODY_BLOCK_POP_UPS_ON_WEBPAGES"
+msgstr "Cuir bac ar mhíreanna aníos ar leathanaigh ghréasáin."
+
+msgid "IDS_BR_BODY_BLOCK_POP_UPS"
+msgstr "Cuir bac ar mhíreanna aníos"
+
+msgid "IDS_BR_BODY_BASIC"
+msgstr "Bunúsach"
+
+msgid "IDS_BR_BODY_AUTO_FILL_FORMS_T_TTS"
+msgstr "Uath-líon foirmeacha"
+
+msgid "IDS_BR_BODY_AUTO_DETECT"
+msgstr "Uathbhraith"
+
+msgid "IDS_BR_BODY_AUTOMATIC"
+msgstr "Uathoibríoch"
+
+msgid "IDS_BR_BODY_ASK_WHETHER_TO_ADD_A_BOOKMARK_FOR_A_WEBSITE_WHEN_YOU_HAVE_VISITED_IT_PD_TIMES"
+msgstr "Fiafraigh an gcuirfear leabharmharc ar láithreán gréasáin tar éis duit féachaint air %d uair"
+
+msgid "IDS_BR_BODY_ALWAYS_ON"
+msgstr "Ar siúl i gcónaí"
+
+msgid "IDS_BR_BODY_ALWAYS"
+msgstr "I gcónaí"
+
+msgid "IDS_BR_BODY_ALL_OPEN_WINDOWS_WILL_BE_CLOSED_AND_YOU_WILL_MOVE_TO_YOUR_HOMEPAGE"
+msgstr "Dúnfar gach fuinneog atá ar oscailt agus bogfar chuig do leathanach baile thú"
+
+msgid "IDS_BR_BODY_ALLOW_SITES_TO_RUN_JAVASCRIPT"
+msgstr "Ceadaigh do láithreáin JavaScript a rith"
+
+msgid "IDS_BR_BODY_ALLOW_SITES_TO_REQUEST_ACCESS_TO_YOUR_LOCATION"
+msgstr "Ceadaigh do láithreáin rochtain ar do shuíomh a iarraidh"
+
+msgid "IDS_BR_BODY_ALLOW_SITES_TO_ACCESS_YOUR_LOCATION_DATA"
+msgstr "Ceadaigh do láithreáin do shonraí suímh a rochtain"
+
+msgid "IDS_BR_BODY_ALLOW_PS_TO_SHOW_NOTIFICATIONS"
+msgstr "Ceadaigh do %s fógraí a thaispeáint"
+
+msgid "IDS_BR_BODY_ALLOWS_SITES_TO_SAVE_AND_READ_COOKIE_DATA"
+msgstr "Ceadaítear do láithreáin sonraí fianán a shábháil agus a léamh."
+
+msgid "IDS_BR_BODY_AFTER_YOU_VISIT_WEBPAGES_THE_PAGES_YOU_HAVE_VISITED_THE_MOST_WILL_BE_SHOWN_HERE"
+msgstr "Tar éis duit cuairt a thabhairt ar leathanaigh ghréasáin, taispeánfar na leathanaigh is mó cuairt anseo."
+
+msgid "IDS_BR_BODY_AFTER_YOU_VIEW_WEBSITES_THE_SIZE_OF_THEIR_STORED_DATA_AND_WHETHER_THEY_CAN_ACCESS_YOUR_LOCATION_WILL_BE_SHOWN_HERE"
+msgstr "Tar éis duit amharc ar láithreáin ghréasáin, taispeánfar anseo an méid sonraí atá stóráilte acu agus cibé acu is féidir nó nach féidir leo do shuíomh a rochtain."
+
+msgid "IDS_BR_BODY_AFTER_YOU_VIEW_WEBPAGES_THEY_WILL_BE_SHOWN_HERE"
+msgstr "Tar éis duit amharc ar leathanaigh ghréasáin, taispeánfar anseo iad."
+
+msgid "IDS_BR_BODY_AFTER_YOU_SAVE_WEBPAGES_TO_VIEW_OFFLINE_THEY_WILL_BE_SHOWN_HERE"
+msgstr "Tar éis duit leathanaigh ghréasáin a shábháil le hamharc orthu as líne, taispeánfar anseo iad."
+
+msgid "IDS_BR_BODY_AFTER_YOU_LOAD_PAGES_THE_PAGE_HISTORY_WILL_BE_SHOWN"
+msgstr "Nuair a bheidh leathanaigh lódáilte agat, taispeánfar stair na leathanach"
+
+msgid "IDS_BR_BODY_AFTER_YOU_ADD_WEBPAGES_TO_QUICK_ACCESS_THEY_WILL_BE_SHOWN_HERE"
+msgstr "Tar éis duit leathanaigh ghréasáin a chur le Mear-rochtain, taispeánfar anseo iad."
+
+msgid "IDS_BR_BODY_ADVANCED_SETTINGS_FOR_INDIVIDUAL_WEBSITES"
+msgstr "Ardsocruithe do láithreáin Ghréasáin aonair"
+
+msgid "IDS_BR_BODY_ADVANCED"
+msgstr "Ardleibhéal"
+
+msgid "IDS_BR_BODY_ADD_TO_CONTACT"
+msgstr "Cuir le teagmhálaí"
+
+msgid "IDS_BR_BODY_ADD_THIS_WEBSITE_TO_BOOKMARKS_TO_OPEN_IT_FASTER_ABB"
+msgstr "Cuir an láithreán gréas. seo le leabharmharc. lena oscailt níos tapa"
+
+msgid "IDS_BR_BODY_ADDRESS_LINE_2_ABB"
+msgstr "Líne seolta 2"
+
+msgid "IDS_BR_BODY_ADDRESS_LINE_1_ABB"
+msgstr "Líne seolta 1"
+
+msgid "IDS_BR_BODY_ACCEPT_COOKIES"
+msgstr "Glac le fianáin"
+
+msgid "IDS_BR_BODY_1_PROFILE_WILL_BE_DELETED"
+msgstr "Scriosfar 1 phróifíl."
+
+msgid "IDS_BR_ACBUTTON_TABS_ABB"
+msgstr "TÁIB"
+
+msgid "IDS_BR_TPOP_STARTING_DOWNLOAD_ING"
+msgstr "Tosú ar íoslódáil..."
+
+msgid "IDS_BR_TPOP_FOLDER_RENAMED"
+msgstr "Fillteán athainmnithe."
+
+msgid "IDS_BR_TMBODY_SUGGEST_SEARCH_TERMS_AND_URLS"
+msgstr "Mol téarmaí cuardaigh & URLanna"
+
+msgid "IDS_BR_TMBODY_DATA_USAGE_MANAGEMENT"
+msgstr "Bainistíocht úsáide sonraí"
+
+msgid "IDS_BR_SK_CANCEL_ABB"
+msgstr "Cealú"
+
+msgid "IDS_BR_SBODY_SET_THE_DEVICE_TO_SHOW_THE_FULL_WEBPAGE_ON_THE_SCREEN_WHEN_IT_IS_LOADED_WITHOUT_NEEDING_TO_SCROLL"
+msgstr "Socraigh an gléas leis an leathanach gréasáin ina iomláine a thaispeáint ar an scáileán nuair a lódáiltear é, gan gá le scrollú."
+
+msgid "IDS_BR_POP_UNABLE_TO_RUN_INTERNET_LOW_BATTERY"
+msgstr "Ní féidir an tIdirlíon a rith. Ceallra lag."
+
+msgid "IDS_BR_POP_THE_DOWNLOAD_HAS_BEEN_STOPPED_AND_THE_DOWNLOADED_DATA_WILL_BE_DELETED"
+msgstr "Tá an íoslódáil scortha agus scriosfar sonraí na híoslódála."
+
+msgid "IDS_BR_POP_SEARCH_COMPLETED_JPN_SBM"
+msgstr "Search completed"
+
+msgid "IDS_BR_POP_READY"
+msgstr "Réidh."
+
+msgid "IDS_BR_POP_INFORM_MEMORY_ERROR"
+msgstr "Earráid chuimhne."
+
+msgid "IDS_BR_POP_DATA_ROAMING_IS_DISABLED_CONNECT_TO_A_WI_FI_NETWORK_OR_ENABLE_DATA_ROAMING_AND_TRY_AGAIN"
+msgstr "Tá fánaíocht sonraí díchumasaithe. Nasc le líonra Wi-Fi, nó cumasaigh fánaíocht sonraí agus triail arís é."
+
+msgid "IDS_BR_POP_BROWSERERRORREQUESTTIMEOUT"
+msgstr "Am iarratais istigh."
+
+msgid "IDS_BR_POP_A_WI_FI_CONNECTION_IS_REQUIRED_TAP_OK_TO_GO_TO_YOUR_WI_FI_SETTINGS"
+msgstr "Tá líonra Wi-Fi de dhíth. Tapáil OK le gabháil chuig do shocruithe Wi-Fi."
+
+msgid "IDS_BR_OPT_WEB_APPS_ABB"
+msgstr "F.chláir ghréas."
+
+msgid "IDS_BR_OPT_VIEW_ONLINE"
+msgstr "Amharc air ar líne"
+
+msgid "IDS_BR_OPT_READ_ON_OFFLINE_PAGES_LATER_ABB"
+msgstr "Léigh ar Lgh as líne ar ball"
+
+msgid "IDS_BR_OPT_QUICK_ACCESS_ABB2"
+msgstr "Mear-rochtain"
+
+msgid "IDS_BR_OPT_ALWAYS_ENABLED_ABB"
+msgstr "Cumasaithe i gcónaí"
+
+msgid "IDS_BR_NPBODY_TAP_HERE_TO_ADD_A_QUICK_ACCESS_SHORTCUT"
+msgstr "Tapáil anseo le hAicearra mearochtana a chur leis"
+
+msgid "IDS_BR_NPBODY_NO_HISTORY"
+msgstr "Níl stair ann"
+
+msgid "IDS_BR_MBODY_USER_MANUAL_ABB"
+msgstr "L.leabhar úsáideora"
+
+msgid "IDS_BR_MBODY_TOWN_CITY_COUNTY"
+msgstr "Baile/Cathair/Contae"
+
+msgid "IDS_BR_MBODY_STORED_DATA"
+msgstr "Sonraí stóráilte"
+
+msgid "IDS_BR_MBODY_SEARCH_AND_URL_SUGGESTIONS_ABB"
+msgstr "Moltaí cuardaigh agus URL"
+
+msgid "IDS_BR_MBODY_HISTORY"
+msgstr "Stair"
+
+msgid "IDS_BR_MBODY_FIT_PAGE_TO_SCREEN"
+msgstr "Oir lch. don scáileán"
+
+msgid "IDS_BR_MBODY_DOWNLOADS"
+msgstr "Íoslódálacha"
+
+msgid "IDS_BR_MBODY_CUSTOM"
+msgstr "Saincheaptha"
+
+msgid "IDS_BR_MBODY_COUNTRY_REGION"
+msgstr "Tír/Réigiún"
+
+msgid "IDS_BR_HEADER_RENAME_FOLDER_ABB"
+msgstr "Athainmnigh fillteán"
+
+msgid "IDS_BR_HEADER_PERSONAL_DATA_ABB"
+msgstr "Sonraí pears."
+
+msgid "IDS_BR_HEADER_NEWER_M_INTERNET_HISTORY"
+msgstr "Níos nuaí"
+
+msgid "IDS_BR_HEADER_ISSUED_TO"
+msgstr "Arna eisiúint chuig"
+
+msgid "IDS_BR_HEADER_ENCODING"
+msgstr "Ionchódú"
+
+msgid "IDS_BR_HEADER_EDIT_INFO_ABB"
+msgstr "C. in eagar"
+
+msgid "IDS_BR_HEADER_DOWNLOAD_STOPPED_ABB"
+msgstr "Íoslódáil scortha"
+
+msgid "IDS_BR_HEADER_DEPARTMENT_C_ABB"
+msgstr "Roinn:"
+
+msgid "IDS_BR_HEADER_ADD_INFO_ABB"
+msgstr "Cuir leis"
+
+msgid "IDS_BR_BUTTON_WI_FI_ABB"
+msgstr "Wi-Fi"
+
+msgid "IDS_BR_BUTTON_SETTINGS_ABB"
+msgstr "Socruith."
+
+msgid "IDS_BR_BUTTON2_OK"
+msgstr "OK"
+
+msgid "IDS_BR_BUTTON2_NEW"
+msgstr "Nua"
+
+msgid "IDS_BR_BODY_WEB_SEARCH"
+msgstr "Cuardach Gréasáin"
+
+msgid "IDS_BR_BODY_UNABLE_TO_OPEN_FILE"
+msgstr "Ní féidir an comhad a oscailt."
+
+msgid "IDS_BR_BODY_UNABLE_TO_FIND_AN_APPLICATION_TO_OPEN_THIS_FILE"
+msgstr "Ní féidir feidhmchlár a aimsiú leis an gcomhad seo a oscailt."
+
+msgid "IDS_BR_BODY_UNABLE_TO_CONNECT_TO_MOBILE_NETWORKS_WHILE_FLIGHT_MODE_IS_ENABLED_MSG"
+msgstr "Ní féidir nascadh le líonraí móibíleacha agus Mód eitilte cumasaithe. Nasc le líonra Wi-Fi ina n-ionad, nó tapáil Socruithe le Mód eitilte a dhíchumasú agus ansin triail arís."
+
+msgid "IDS_BR_BODY_THIS_CERTIFICATE_IS_FROM_A_TRUSTED_AUTHORITY"
+msgstr "Is ó údarás iontaofa an deimhniú seo."
+
+msgid "IDS_BR_BODY_TAP_HERE_TO_ADD_A_QUICK_ACCESS_SHORTCUT"
+msgstr "Tapáil anseo le hAicearra mear-rochtana a chur leis."
+
+msgid "IDS_BR_BODY_PREFERENCES"
+msgstr "Sainroghanna"
+
+msgid "IDS_BR_BODY_PERCENTAGE_M_SYMBOL"
+msgstr "% "
+
+msgid "IDS_BR_BODY_NO_MOBILE_NETWORKS_HAVE_BEEN_FOUND"
+msgstr "Níor aimsíodh aon líonraí móibíleacha."
+
+msgid "IDS_BR_BODY_NO_MATCHES"
+msgstr "Níl meaitseanna ann"
+
+msgid "IDS_BR_BODY_MOBILE_DATA_IS_TURNED_OFF_CONNECT_TO_A_WI_FI_NETWORK_INSTEAD_OR_TAP_SETTINGS_TO_TURN_ON_MOBILE_DATA_AND_THEN_TRY_AGAIN"
+msgstr "Tá Sonraí móibíleacha casta as. Nasc le líonra Wi-Fi ina n-ionad, nó tapáil Socruithe le Sonraí móibíleacha a chasadh air agus ansin triail arís."
+
+msgid "IDS_BR_BODY_FIT_TO_WIDTH"
+msgstr "Oir don leithead"
+
+msgid "IDS_BR_ACBUTTON_QUICK_ACCESS"
+msgstr "MEAR-ROCH."
+
+msgid "IDS_BR_OPT_OPEN_IN_NEW_TAB"
+msgstr "Oscail i dtáb nua"
+
+msgid "IDS_BR_BODY_SHARE_LINK"
+msgstr "Comhroinn nasc"
+
+msgid "IDS_BR_SK_SAVE_LITE"
+msgstr "Sábháil"
+
+msgid "IDS_BR_SK_SAVE_ABB"
+msgstr "Sábhl"
+
+msgid "IDS_BR_SK_SAVE"
+msgstr "Sábháil"
+
+msgid "IDS_BR_SK_PREVIOUS"
+msgstr "Roimhe"
+
+msgid "IDS_BR_SK_NEXT"
+msgstr "Ar aghaidh"
+
+msgid "IDS_BR_SK_DELETE"
+msgstr "Scrios"
+
+msgid "IDS_BR_SK_CLEAR"
+msgstr "Glan"
+
+msgid "IDS_BR_SK_BACK"
+msgstr "Siar"
+
+msgid "IDS_BR_POP_WI_FI_CONNECTION_REQUIRED_CONNECT_TO_WI_FI_NETWORK_AND_TRY_AGAIN"
+msgstr "Nasc Wi-Fi de dhíth. Nasc le líonra Wi-Fi agus triail arís."
+
+msgid "IDS_BR_POP_URL_NOT_FOUND"
+msgstr "Níor aimsíodh URL."
+
+msgid "IDS_BR_POP_URL"
+msgstr "URL"
+
+msgid "IDS_BR_POP_SAVED"
+msgstr "Sábháilte."
+
+msgid "IDS_BR_POP_REMOVED"
+msgstr "Bainte."
+
+msgid "IDS_BR_POP_PD_ITEMS_WILL_BE_DELETED"
+msgstr "Scriosfar %d mír"
+
+msgid "IDS_BR_POP_PD_ITEMS_SELECTED"
+msgstr "%d mír roghnaithe."
+
+msgid "IDS_BR_POP_NO_ITEMS_SELECTED"
+msgstr "Níl mír roghnaithe."
+
+msgid "IDS_BR_POP_NOT_ENOUGH_MEMORY"
+msgstr "Easpa cuimhne."
+
+msgid "IDS_BR_POP_NEVER"
+msgstr "Choíche"
+
+msgid "IDS_BR_POP_MOBILE_DATA_IS_DISABLED_CONNECT_TO_WI_FI_NETWORK_INSTEAD_OR_ENABLE_MOBILE_DATA_AND_TRY_AGAIN"
+msgstr "Tá sonraí móibíleacha díchumasaithe. Nasc le líonra Wi-Fi, nó cumasaigh sonraí móibíleacha agus triail arís é."
+
+msgid "IDS_BR_POP_LOADING_PLEASE_WAIT_ING"
+msgstr "Ag lódáil. Fan go fóill..."
+
+msgid "IDS_BR_POP_INVALID_URL"
+msgstr "URL neamhbhailí."
+
+msgid "IDS_BR_POP_FAIL"
+msgstr "Theip air."
+
+msgid "IDS_BR_POP_ENTER_TITLE_ABB"
+msgstr "Iontráil teideal"
+
+msgid "IDS_BR_POP_DO_NOT_SHOW_AGAIN"
+msgstr "Ná taispeáin arís"
+
+msgid "IDS_BR_POP_DOWNLOADCOMPLETE"
+msgstr "Íoslódáilte."
+
+msgid "IDS_BR_POP_DISABLED"
+msgstr "Díchumasaithe."
+
+msgid "IDS_BR_POP_DELETE_Q"
+msgstr "Scrios?"
+
+msgid "IDS_BR_POP_DELETED"
+msgstr "Scriosta."
+
+msgid "IDS_BR_POP_CLOSE_APPLICATION_Q"
+msgstr "Dún ríomhchlár?"
+
+msgid "IDS_BR_POP_BOOKMARK_ADDED"
+msgstr "Leabharmharc curtha leis."
+
+msgid "IDS_BR_POP_AUTOMATIC_BRIGHTNESS"
+msgstr "Uathghile"
+
+msgid "IDS_BR_POP_ACCOUNT"
+msgstr "Cuntas"
+
+msgid "IDS_BR_POP_1_ITEM_WILL_BE_DELETED"
+msgstr "Scriosfar 1 mhír"
+
+msgid "IDS_BR_POP_1_ITEM_SELECTED"
+msgstr "1 mhír roghnaithe."
+
+msgid "IDS_BR_OPT_TRANSLATE"
+msgstr "Cuir aistriúchán air"
+
+msgid "IDS_BR_OPT_STOP"
+msgstr "Stop"
+
+msgid "IDS_BR_OPT_SHOW"
+msgstr "Taispeáin"
+
+msgid "IDS_BR_OPT_SHARE"
+msgstr "Comhroinn"
+
+msgid "IDS_BR_OPT_SETTINGS"
+msgstr "Socruithe"
+
+msgid "IDS_BR_OPT_SEND_EMAIL"
+msgstr "Seol r-phost"
+
+msgid "IDS_BR_OPT_SELECT"
+msgstr "Roghnaigh"
+
+msgid "IDS_BR_OPT_SD_CARD"
+msgstr "Cárta SD"
+
+msgid "IDS_BR_OPT_RENAME"
+msgstr "Athainmnigh"
+
+msgid "IDS_BR_OPT_REFRESH"
+msgstr "Athnuaigh"
+
+msgid "IDS_BR_OPT_MOVE"
+msgstr "Bog"
+
+msgid "IDS_BR_OPT_MESSAGES"
+msgstr "Teachtaireachtaí"
+
+msgid "IDS_BR_OPT_LIST_VIEW"
+msgstr "Amharc liosta"
+
+msgid "IDS_BR_OPT_I_AGREE"
+msgstr "Aontaím."
+
+msgid "IDS_BR_OPT_HELP"
+msgstr "Cuidiú"
+
+msgid "IDS_BR_OPT_DEVICE"
+msgstr "Gléas"
+
+msgid "IDS_BR_OPT_BOOKMARK"
+msgstr "Leabharmharc"
+
+msgid "IDS_BR_OPT_ADDED"
+msgstr "Curtha leis."
+
+msgid "IDS_BR_OPT_ADD"
+msgstr "Cuir leis"
+
+msgid "IDS_BR_MBODY_DEFAULT_DOWNLOAD_STORAGE"
+msgstr "Stóras íoslód. r'shocraithe"
+
+msgid "IDS_BR_HEADER_SIGN_IN_TO_SAMSUNG_ACCOUNT"
+msgstr "Sínigh isteach ar chuntas Samsung"
+
+msgid "IDS_BR_HEADER_PD_SELECTED_ABB"
+msgstr "%d roghnaithe"
+
+msgid "IDS_BR_HEADER_NO_NETWORK_CONNECTION"
+msgstr "Níl nasc líonra ann"
+
+msgid "IDS_BR_HEADER_FOLDER"
+msgstr "Fillteán"
+
+msgid "IDS_BR_HEADER_EDIT_PROFILE"
+msgstr "Cuir próifíl in eagar"
+
+msgid "IDS_BR_BUTTON_SET"
+msgstr "Socraigh"
+
+msgid "IDS_BR_BUTTON_NOT_NOW"
+msgstr "Ní anois"
+
+msgid "IDS_BR_BUTTON_ENABLE_ABB"
+msgstr "Cumasaigh"
+
+msgid "IDS_BR_BUTTON_EDIT"
+msgstr "Cuir in eagar"
+
+msgid "IDS_BR_BUTTON_CONTINUE_ABB"
+msgstr "Ar agh"
+
+msgid "IDS_BR_BUTTON_CONTINUE"
+msgstr "Ar aghaidh"
+
+msgid "IDS_BR_BUTTON_CLOSE"
+msgstr "Dún"
+
+msgid "IDS_BR_BUTTON_CANCEL_ABB"
+msgstr "Cealaigh"
+
+msgid "IDS_BR_BUTTON_CANCEL"
+msgstr "Cealaigh"
+
+msgid "IDS_BR_BUTTON_ALLOW"
+msgstr "Ceadaigh"
+
+msgid "IDS_BR_BODY_YESTERDAY"
+msgstr "Inné"
+
+msgid "IDS_BR_BODY_URL"
+msgstr "URL"
+
+msgid "IDS_BR_BODY_TODAY"
+msgstr "Inniu"
+
+msgid "IDS_BR_BODY_TITLE"
+msgstr "Teideal"
+
+msgid "IDS_BR_BODY_THE_MAXIMUM_NUMBER_OF_CHARACTERS_HPD_HAS_BEEN_EXCEEDED"
+msgstr "Uaslíon na gcarachtar (%d) bainte amach"
+
+msgid "IDS_BR_BODY_STREAMING"
+msgstr "Sruthú"
+
+msgid "IDS_BR_BODY_SMALL"
+msgstr "Beag"
+
+msgid "IDS_BR_BODY_SETTINGS"
+msgstr "Socruithe"
+
+msgid "IDS_BR_BODY_SEARCH"
+msgstr "Cuardaigh"
+
+msgid "IDS_BR_BODY_RSS_SEARCH_RESULTS"
+msgstr "Torthaí an chuardaigh"
+
+msgid "IDS_BR_BODY_PROFILE"
+msgstr "Próifíl"
+
+msgid "IDS_BR_BODY_PROCESSING_ING"
+msgstr "Ag próiseáil..."
+
+msgid "IDS_BR_BODY_PHONE_NUMBER_ABB"
+msgstr "Uimhir fóin"
+
+msgid "IDS_BR_BODY_PHONE"
+msgstr "Fón"
+
+msgid "IDS_BR_BODY_PD_ITEMS_WILL_BE_DELETED"
+msgstr "Scriosfar %d mír"
+
+msgid "IDS_BR_BODY_PASSWORD"
+msgstr "Pasfhocal"
+
+msgid "IDS_BR_BODY_ON"
+msgstr "Air"
+
+msgid "IDS_BR_BODY_OFF"
+msgstr "As"
+
+msgid "IDS_BR_BODY_NO_RESULTS_FOUND"
+msgstr "Níor aimsíodh torthaí."
+
+msgid "IDS_BR_BODY_NO_HISTORIES"
+msgstr "Níl stair ann"
+
+msgid "IDS_BR_BODY_NOTIFICATIONS"
+msgstr "Fógraí"
+
+msgid "IDS_BR_BODY_MEDIUM"
+msgstr "Meánach"
+
+msgid "IDS_BR_BODY_IMAGES"
+msgstr "Íomhánna"
+
+msgid "IDS_BR_BODY_FULL_SCREEN"
+msgstr "Lánscáileán"
+
+msgid "IDS_BR_BODY_FONT_SIZE"
+msgstr "Méid an chló"
+
+msgid "IDS_BR_BODY_FOLDER_NAME"
+msgstr "Ainm an fhillteáin"
+
+msgid "IDS_BR_BODY_ENTER_POSTCODE_ABB"
+msgstr "Iontráil postchód"
+
+msgid "IDS_BR_BODY_ENTER_POSTCODE"
+msgstr "Iontráil cód poist"
+
+msgid "IDS_BR_BODY_ENTER_PHONE_NUMBER"
+msgstr "Iontráil uimhir fóin."
+
+msgid "IDS_BR_BODY_ENTER_NAME"
+msgstr "Iontráil ainm"
+
+msgid "IDS_BR_BODY_ENTER_FOLDER_NAME"
+msgstr "Iontráil ainm an fhillteáin"
+
+msgid "IDS_BR_BODY_ENTER_EMAIL_ADDRESS"
+msgstr "Iontráil seoladh r-phoist"
+
+msgid "IDS_BR_BODY_EMAIL_ADDRESS"
+msgstr "Seoladh r-phoist"
+
+msgid "IDS_BR_BODY_DOWNLOADING_ING"
+msgstr "Ag íoslódáil..."
+
+msgid "IDS_BR_BODY_DEVELOPER_MODE"
+msgstr "Mód forbróra"
+
+msgid "IDS_BR_BODY_DEFAULT"
+msgstr "Réamhshocrú"
+
+msgid "IDS_BR_BODY_BOOKMARKS"
+msgstr "Leabharmharcanna"
+
+msgid "IDS_BR_BODY_ALL"
+msgstr "Gach"
+
+msgid "IDS_BR_BODY_ADD_TO"
+msgstr "Cuir le"
+
+msgid "IDS_BR_BODY_ADDDETAILSVIEW_TAGS"
+msgstr "Clibeanna"
+
+msgid "IDS_BR_BODY_ADDBOOKMARKURL"
+msgstr "URL"
+
+msgid "IDS_BR_BODY_1_ITEM_WILL_BE_DELETED"
+msgstr "Scriosfar 1 mhír"
+
+msgid "IDS_BR_TPOP_MAXIMUM_NUMBER_OF_CHARACTERS_HPD_REACHED"
+msgstr "Uaslíon na gcarachtar (%d) bainte amach."
+
+msgid "IDS_BR_POP_UNSUPPORTMEDIATYPE"
+msgstr "Cineál meán gan tacú."
+
+msgid "IDS_BR_POP_UNABLE_TO_CONNECT_TO_MOBILE_NETWORKS_WHILE_FLIGHT_MODE_IS_ENABLED_CONNECT_TO_WI_FI_NETWORK_INSTEAD_OR_DISABLE_FLIGHT_MODE_AND_TRY_AGAIN"
+msgstr "Ní féidir nascadh le líonraí móibíleacha agus mód Eitilte cumasaithe. Nasc le líonra Wi-Fi, nó díchumasaigh mód Eitilte agus triail arís é."
+
+msgid "IDS_BR_POP_INSTALL_SUCCESS"
+msgstr "Suiteáilte."
+
+msgid "IDS_BR_POP_INSTALLATION_FAILED"
+msgstr "Theip ar shuiteáil."
+
+msgid "IDS_BR_POP_DELETING_ING"
+msgstr "Ag scriosadh..."
+
+msgid "IDS_BR_POP_DATA_ROAMING_IS_DISABLED_CONNECT_TO_WI_FI_NETWORK_INSTEAD_OR_ENABLE_DATA_ROAMING_AND_TRY_AGAIN"
+msgstr "Tá fánaíocht sonraí díchumasaithe. Nasc le líonra Wi-Fi, nó cumasaigh fánaíocht sonraí agus triail arís é."
+
+msgid "IDS_BR_OPT_SHARE_VIA"
+msgstr "Comhroinn le"
+
+msgid "IDS_BR_OPT_PASTE"
+msgstr "Greamaigh"
+
+msgid "IDS_BR_MBODY_FONT_SIZE"
+msgstr "Méid cló"
+
+msgid "IDS_BR_HEADER_UNABLE_TO_DOWNLOAD_ABB"
+msgstr "Íoslódáil dodhéanta"
+
+msgid "IDS_BR_BUTTON_UPDATE"
+msgstr "Nuashonraigh"
+
+msgid "IDS_BR_BUTTON_RETRY"
+msgstr "Atriail"
+
+msgid "IDS_BR_BODY_REQUEST_FAILED"
+msgstr "Theip ar iarratas."
+
+msgid "IDS_BR_BODY_LOGIN"
+msgstr "Logáil isteach"
+
+msgid "IDS_BR_BODY_LOADING_ING"
+msgstr "Ag lódáil..."
+
+msgid "IDS_BR_BODY_FIT_TO_SCREEN"
+msgstr "Oir don scáileán"
+
+msgid "IDS_BR_BODY_DOWNLOADS_VODA"
+msgstr "Ioslódálacha"
+
+msgid "IDS_BR_BODY_DATA_ROAMING_IS_DISABLED_CONNECT_TO_A_WI_FI_NETWORK_INSTEAD_OR_ENABLE_DATA_ROAMING_AND_TRY_AGAIN"
+msgstr "Tá fánaíocht sonraí díchumasaithe. Nasc le líonra Wi-Fi ina ionad, nó cumasaigh fánaíocht sonraí agus triail arís é."
+
+msgid "IDS_BR_POP_DOWNLOAD_CANCELLED"
+msgstr "Íoslódáil curtha ar ceal."
+
+msgid "IDS_BR_BUTTON_SECRET_ON_ABB"
+msgstr "Rúnda air"
+
+msgid "IDS_BR_MBODY_PRIVACY"
+msgstr "Príobháideacht"
+
+msgid "IDS_BR_MBODY_DEFAULT_STORAGE"
+msgstr "Stóras réamhshocraithe"
+
+msgid "IDS_BR_MBODY_MANUAL_ZOOM"
+msgstr "Zúmáil de láimh"
+
+msgid "IDS_BR_TMBODY_DEFAULT_SEARCH_ENGINE"
+msgstr "Inneall cuardaigh r.shocraithe"
+
+msgid "IDS_BR_MBODY_SAVE_SIGN_IN_INFO"
+msgstr "Sábh. fais. sínithe ist."
+
+msgid "IDS_BR_OPT_TURN_OFF_SECRET_MODE_ABB"
+msgstr "Cas as Mód rúnda"
+
+msgid "IDS_BR_OPT_TURN_ON_SECRET_MODE_ABB"
+msgstr "Cas air Mód rúnda"
+
+msgid "IDS_BR_OPT_SHOW_PASSWORD_ABB2"
+msgstr "Taispeáin pasfhocal"
+
+msgid "IDS_BR_BODY_ENTER_YOUR_CURRENT_SECRET_MODE_PASSWORD"
+msgstr "Iontráil do phasfhocal reatha do Mhód rúnda."
+
+msgid "IDS_BR_OPT_SECRET_MODE_SECURITY_ABB"
+msgstr "Slándáil Mhód rúnda"
+
+msgid "IDS_BR_BUTTON_USE_PASSWORD_ABB"
+msgstr "Úsáid pasfhocal"
+
+msgid "IDS_BR_HEADER_DONT_USE_PASSWORD_ABB"
+msgstr "Ná húsáid pasfhocal"
+
+msgid "IDS_BR_MBODY_MOST_VISITED_WEBSITES"
+msgstr "Láithreáin is mó cuairt"
+
+msgid "IDS_BR_MBODY_SET_MY_PROFILE"
+msgstr "Socraigh mo phróifíl"
+
+msgid "IDS_BR_MBODY_MY_AUTO_FILL_PROFILE"
+msgstr "Mo phróifíl uathlíonta"
+
+msgid "IDS_BR_SBODY_MANAGE_DATA_USED_TO_FILL_IN_FORMS_ONLINE"
+msgstr "Bainistigh na sonraí a úsáidtear le foirmeacha ar líne a chomhlánú."
+
+msgid "IDS_BR_MBODY_SAVE_SIGN_IN_INFO_ABB"
+msgstr "Sábh. síniú ist."
+
+msgid "IDS_BR_OPT_LOCATION_ACCESS_DATA"
+msgstr "Sonraí rochtana suímh"
+
+msgid "IDS_BR_OPT_AUTO_FILL_DATA"
+msgstr "Uathlíon sonraí"
+
+msgid "IDS_BR_BODY_ANY_WEBPAGES_YOU_VIEW_WHILE_SECRET_MODE_IS_TURNED_ON_WONT_APPEAR_IN_YOUR_BROWSER_OR_SEARCH_HISTORY_MSG"
+msgstr "Aon leathanaigh ghréasáin a n-amharcann tú orthu agus Mód rúnda casta air, ní thaispeánfar i do stair bhrabhsálaí ná chuardaigh iad agus é casta as.\n\nAon leabharmharcanna nó leathanaigh ghréasáin a shábhálann tú agus Mód rúnda casta air, ní thaispeánfar iad agus é casta as.\n\nIs féidir leat do sonraí i Mód rúnda a chosaint le pasfhocal freisin."
+
+msgid "IDS_BR_BODY_ANY_WEBPAGES_YOU_VIEW_WHILE_SECRET_MODE_IS_TURNED_ON_WONT_APPEAR_IN_YOUR_BROWSER_OR_SEARCH_MSG"
+msgstr "Aon leathanaigh ghréasáin a n-amharcann tú orthu agus Mód rúnda casta air, ní thaispeánfar i do stair bhrabhsálaí ná chuardaigh iad agus é casta as.\n\nAon leabharmharcanna nó leathanaigh ghréasáin a shábhálann tú agus Mód rúnda casta air, ní thaispeánfar iad agus é casta as."
+
+msgid "IDS_BR_BUTTON_SECRET_OFF_ABB"
+msgstr "Rúnda as"
+
+msgid "IDS_BR_BUTTON_DONT_USE_PASSWORD_ABB"
+msgstr "Ná húsáid pasfhocal"
+
+msgid "IDS_BR_BUTTON_NEW_TAB_ABB2"
+msgstr "Táb nua"
+
+msgid "IDS_BR_NPBODY_WEB_ADDRESS_ABB"
+msgstr "Seoladh gréasáin"
+
+msgid "IDS_BR_HEADER_ADD_WEBPAGE_TO_QUICK_ACCESS_ABB"
+msgstr "Cuir lch. le Mear-rochtain"
+
+msgid "IDS_BR_TMBODY_TURN_ON_JAVASCRIPT"
+msgstr "Cas air JavaScript"
+
+msgid "IDS_BR_HEADER_COULDNT_OPEN_NEW_TAB_ABB"
+msgstr "Ní féidir táb nua a oscailt"
+
+msgid "IDS_BR_OPT_OPEN_IN_NEW_TAB_ABB"
+msgstr "Oscail i dtáb nua"
+
+msgid "IDS_BR_TPOP_FOLDER_NAME_ALREADY_IN_USE"
+msgstr "Ainm an fhillteáin in úsáid cheana."
+
+msgid "IDS_BR_NPBODY_NEW_FOLDER_PD"
+msgstr "Fillteán nua %d"
+
+msgid "IDS_BR_NPBODY_NEW_FOLDER"
+msgstr "Fillteán nua"
+
+msgid "IDS_BR_OPT_ENABLE_JAVASCRIPT"
+msgstr "Cumasaigh JavaScript"
+
+msgid "IDS_BR_TMBODY_MANAGE_WEBSITE_DATA"
+msgstr "Bainistigh sonraí láith."
+
+msgid "IDS_BR_HEADER_SET_HOME_PAGE_ABB"
+msgstr "Socraigh an leathanach baile"
+
+msgid "IDS_BR_TPOP_WEBPAGE_ADDED_TO_QUICK_ACCESS_LIST"
+msgstr "Leathanach gréasáin curtha le Liosta mear-rochtana."
+
+msgid "IDS_BR_OPT_EDIT_QUICK_ACCESS_ABB"
+msgstr "Cuir Mear-rochtain in eagar"
+
+msgid "IDS_BR_OPT_REMOVE_FROM_BOOKMARKS_ABB"
+msgstr "Bain ó Leabharmharcanna"
+
+msgid "IDS_BR_HEADER_ADD_BOOKMARK_ABB"
+msgstr "Cuir l.mharc leis"
+
+msgid "IDS_BR_BODY_BROWSING_HISTORY"
+msgstr "Stair bhrabhsála"
+
+msgid "IDS_BR_HEADER_TABS_ABB2"
+msgstr "Táib"
+
+msgid "IDS_BR_OPT_NEW_TAB"
+msgstr "Táb nua"
+
+msgid "IDS_BR_BUTTON_FORWARD_ABB2"
+msgstr "Ar agh."
+
+msgid "IDS_BR_BUTTON_BACK_ABB3"
+msgstr "Siar"
+
+msgid "IDS_BR_BUTTON_BOOKMARKS_ABB"
+msgstr "L.mharcanna"
+
+msgid "IDS_BR_NPBODY_NO_PROFILES_ABB"
+msgstr "Níl próifílí ann"
+
+msgid "IDS_BR_TAB2_HISTORY"
+msgstr "Stair"
+
+msgid "IDS_BR_TAB2_BOOKMARKS"
+msgstr "Leabharmharcanna"
+
+msgid "IDS_BR_HEADER_SAVE_CONTENT_TO_ABB"
+msgstr "Sábháil an t-inneachar chuig"
+
+msgid "IDS_BR_HEADER_SELECT_ITEMS_ABB2"
+msgstr "Roghnaigh míreanna"
+
+msgid "IDS_BR_BODY_YOUR_PASSWORD_MUST_CONTAIN_AT_LEAST_PD_CHARACTERS_INCLUDING_AT_LEAST_1_LETTER"
+msgstr "Ní mór %d carachtar ar a laghad a bheith i do phasfhocal, lena n-áirítear 1 litir ar a laghad."
+
+msgid "IDS_BR_BODY_AN_INCORRECT_PASSWORD_HAS_BEEN_ENTERED_TRY_AGAIN"
+msgstr "Pasfhocal mícheart iontráilte. Triail arís."
+
+msgid "IDS_BR_BODY_NO_TABS"
+msgstr "Níl táib ann"
+
+msgid "IDS_BR_TMBODY_CHANGE_PASSWORD"
+msgstr "Athraigh pasfhocal"
+
+msgid "IDS_BR_BODY_ANY_WEBPAGES_VIEWED_WHILE_SECRET_MODE_IS_ENABLED_WILL_NOT_APPEAR_IN_YOUR_BROWSER_OR_SEARCH_HISTORY_WHILE_SECRET_MSG"
+msgstr "Aon leathanaigh ghréasáin ar amharcadh orthu agus Mód rúnda cumasaithe, ní thaispeánfar i do stair bhrabhsálaí ná chuardaigh iad agus Mód rúnda díchumasaithe.\n\nAon leabharmharcanna nó leathanaigh ghréasáin a shábháiltear agus Mód rúnda cumasaithe, ní thaispeánfar i do stair bhrabhsálaí ná chuardaigh iad agus é díchumasaithe.\n\nIs féidir leat na sonraí atá agat i Mód rúnda a chosaint le pasfhocal freisin."
+
+msgid "IDS_BR_BODY_ANY_WEBPAGES_VIEWED_WHILE_SECRET_MODE_IS_ENABLED_WILL_NOT_APPEAR_IN_YOUR_MSG"
+msgstr "Aon leathanaigh ghréasáin ar amharcadh orthu agus Mód rúnda cumasaithe, ní thaispeánfar i do stair bhrabhsálaí ná chuardaigh iad agus Mód rúnda díchumasaithe.\n\nAon leabharmharcanna nó leathanaigh ghréasáin a shábháiltear agus Mód rúnda cumasaithe, ní thaispeánfar i do stair bhrabhsálaí ná chuardaigh iad agus é díchumasaithe."
+
+msgid "IDS_BR_BUTTON2_DONE"
+msgstr "Déanta"
+
+msgid "IDS_BR_BODY_ENTER_YOUR_PASSWORD_AGAIN_TO_CONFIRM_IT"
+msgstr "Iontráil do phasfhocal arís lena dheimhniú."
+
+msgid "IDS_BR_HEADER_CREATE_PASSWORD_M_SET_ABB"
+msgstr "Cruthaigh pasfhocal"
+
+msgid "IDS_BR_BUTTON_DO_NOT_USE_PASSWORD_ABB"
+msgstr "Ná húsáid pasfhocal"
+
+msgid "IDS_BR_POP_TO_PROTECT_YOUR_SECRET_MODE_DATA_CREATE_A_PASSWORD_IF_YOU_USE_SECRET_MODE_WITHOUT_CREATING_A_PASSWORD_MSG"
+msgstr "Le do chuid sonraí i Mód rúnda a chosaint, cruthaigh pasfhocal. Má úsáideann tú Mód rúnda gan pasfhocal a chruthú, ní bheidh tú in ann cosc a chur ar dhaoine eile amharc ar do stair bhrabhsálaí agus chuardaigh, leabharmharcanna ná leathanaigh shábháilte."
+
+msgid "IDS_BR_BODY_AFTER_YOU_ADD_BOOKMARKS_THEY_WILL_BE_SHOWN_HERE"
+msgstr "Tar éis duit leabharmharcanna a chur leis, taispeánfar anseo iad."
+

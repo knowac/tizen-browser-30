@@ -1,0 +1,2193 @@
+msgid "IDS_BR_POP_NETWORK_ERROR"
+msgstr "Hálózati hiba"
+
+msgid "IDS_BR_BODY_DESTINATIONS_AUTHENTICATION_REQUIRED"
+msgstr "Hitelesítés szükséges."
+
+msgid "IDS_BR_HEADER_SECURITY_WARNING"
+msgstr "Biztonsági figyelmeztetés"
+
+msgid "IDS_BR_BODY_CERTIFICATES"
+msgstr "Tanúsítványok"
+
+msgid "IDS_BR_HEADER_ISSUED_TO_C"
+msgstr "Tulajdonos:"
+
+msgid "IDS_BR_HEADER_COMMON_NAME_C"
+msgstr "Köznapi név:"
+
+msgid "IDS_BR_HEADER_ORGANIZATION_C"
+msgstr "Szervezet:"
+
+msgid "IDS_BR_HEADER_ORGANIZATIONAL_UNIT_C"
+msgstr "Szervezeti egység:"
+
+msgid "IDS_BR_BODY_SECURITY_CERTIFICATE_PROBLEM_MSG"
+msgstr "Probléma merült fel a webhely biztonsági tanúsítványával kapcsolatban."
+
+msgid "IDS_BR_OPT_ALLOW"
+msgstr "Engedélyezés"
+
+msgid "IDS_BR_BODY_PS_REQUESTS_YOUR_LOCATION"
+msgstr "A(z) %s az Ön helyadatait kéri."
+
+msgid "IDS_BR_BODY_REMEMBER_PREFERENCE"
+msgstr "Beállítások megjegyzése"
+
+msgid "IDS_BR_BODY_CERTIFICATE_SERIAL_NUMBER"
+msgstr "Sorozatszám"
+
+msgid "IDS_BR_HEADER_ISSUED_BY_C"
+msgstr "Kibocsátó:"
+
+msgid "IDS_BR_HEADER_VALIDITY_C"
+msgstr "Érvényesség:"
+
+msgid "IDS_BR_POP_CERTI_VALID_FROM_C"
+msgstr "Érvényesség kezdete:"
+
+msgid "IDS_BR_BODY_CERTIFICATE_VALID_TILL"
+msgstr "Érvényesség vége:"
+
+msgid "IDS_BR_BODY_ROOTCERTIFICATES_FINGER_PRINT"
+msgstr "Ujjlenyomat"
+
+msgid "IDS_BR_BODY_SIGNATURE_ALGORITHM_VODA"
+msgstr "Aláírási algoritmus"
+
+msgid "IDS_BR_BODY_DOWNLOAD"
+msgstr "Letöltés"
+
+msgid "IDS_BR_BODY_THIS_WEBPAGE"
+msgstr "Ez a weboldal"
+
+msgid "IDS_BR_BODY_AUTHUSERNAME"
+msgstr "Felhasználónév"
+
+msgid "IDS_BR_BODY_AUTHPASSWORD"
+msgstr "Jelszó"
+
+msgid "IDS_BR_OPT_VIEW"
+msgstr "Megtekint"
+
+msgid "IDS_BR_OPT_CANCEL"
+msgstr "Mégse"
+
+msgid "IDS_BR_OPT_SCREEN"
+msgstr "Kijelző"
+
+msgid "IDS_BR_OPT_LTE_GSM_WCDMA_HAUTO_CONNECT"
+msgstr "LTE/GSM/WCDMA (automatikus kapcsolódás)"
+
+msgid "IDS_BR_HEADER_MULTI_WINDOW"
+msgstr "Több ablak"
+
+msgid "IDS_BR_HEADER_CERTIFICATE_INFO"
+msgstr "Tanúsítvány infó"
+
+msgid "IDS_BR_BODY_WEBSITE_SETTINGS"
+msgstr "Webhelybeállítások"
+
+msgid "IDS_BR_POP_INVALID_CERTIFICATE"
+msgstr "Érvénytelen tanúsítvány"
+
+msgid "IDS_BR_BODY_BUTTON_T_TTS"
+msgstr "Gomb"
+
+msgid "IDS_BR_SK_YES"
+msgstr "Igen"
+
+msgid "IDS_BR_SK_NO"
+msgstr "Nem"
+
+msgid "IDS_BR_SK_DONE"
+msgstr "Kész"
+
+msgid "IDS_BR_SK_CANCEL"
+msgstr "Mégse"
+
+msgid "IDS_BR_BUTTON_MORE"
+msgstr "Egyebek"
+
+msgid "IDS_BR_BODY_NO_ITEMS"
+msgstr "Nincs tétel"
+
+msgid "IDS_BR_MBODY_CONNECT_TO_MOBILE_NETWORK"
+msgstr "Kapcsolódás mobilhál.hoz"
+
+msgid "IDS_BR_OPT_DO_NOT_SHOW_AGAIN"
+msgstr "Ne jelenjen meg újra"
+
+msgid "IDS_BR_POP_ONLY_HTTP_OR_HTTPS_URLS_CAN_BE_DOWNLOADED"
+msgstr "Csak http vagy https webcímek tölthetők le."
+
+msgid "IDS_BR_OPT_WEB_SEARCH"
+msgstr "Webes keresés"
+
+msgid "IDS_BR_OPT_VIEW_IMAGE"
+msgstr "Képet megtekint"
+
+msgid "IDS_BR_OPT_SAVE_LINK"
+msgstr "Hivatkozás mentése"
+
+msgid "IDS_BR_OPT_SAVE_IMAGE"
+msgstr "Kép mentése"
+
+msgid "IDS_BR_OPT_COPY_LINK"
+msgstr "Hivatkozás másolása"
+
+msgid "IDS_BR_OPT_COPY_IMAGE"
+msgstr "Kép másolása"
+
+msgid "IDS_BR_SK_OK"
+msgstr "OK"
+
+msgid "IDS_BR_OPT_CALL"
+msgstr "Hívás"
+
+msgid "IDS_BR_BUTTON_FAILED"
+msgstr "Hiba"
+
+msgid "IDS_BR_TPOP_WEBPAGE_ADDED_TO_QUICK_ACCESS"
+msgstr "A weboldal felvéve a Gyors elérés listára."
+
+msgid "IDS_BR_TPOP_WEBPAGE_ADDED_TO_BOOKMARKS"
+msgstr "Hozzáadta a weboldalt a Könyvjelzőkhöz."
+
+msgid "IDS_BR_TPOP_QUICK_ACCESS_SHORTCUT_DELETED"
+msgstr "Törölte a gyorselérési parancsikont."
+
+msgid "IDS_BR_TPOP_PD_ITEMS_DELETED_FROM_BROWSING_HISTORY"
+msgstr "%d elemet törölt a böngészési előzményekből."
+
+msgid "IDS_BR_TPOP_OPENING_SAMSUNG_ACCOUNT_ING"
+msgstr "Samsung account megnyitása..."
+
+msgid "IDS_BR_TPOP_LOW_DATA_USAGE_ENABLED"
+msgstr "Bekapcsolta a Kis adathasználat funkciót."
+
+msgid "IDS_BR_TPOP_LOW_DATA_USAGE_DISABLED_PDP_OF_BANDWIDTH_SAVED"
+msgstr "Kikapcsolta a Kis adathasználat funkciót. A sávszélesség %d%-át takarította meg."
+
+msgid "IDS_BR_TPOP_IMAGE_COPIED_TO_CLIPBOARD"
+msgstr "A képet a vágólapra másolta."
+
+msgid "IDS_BR_TPOP_FAILED_TO_ADD_TO_HOME_SCREEN_ABB"
+msgstr "Nem sikerült felvenni a kezdőképernyőre."
+
+msgid "IDS_BR_TPOP_DOWNLOADING_IMAGE_ING"
+msgstr "Kép letöltése..."
+
+msgid "IDS_BR_TPOP_DATA_SAVING_STATISTICS_RESET"
+msgstr "Törölte az adatmentési statisztikát."
+
+msgid "IDS_BR_TPOP_BOOKMARK_DELETED"
+msgstr "Könyvjelző törölve."
+
+msgid "IDS_BR_TPOP_ADDED_TO_QUICK_ACCESS_LIST"
+msgstr "Felvéve a Gyors elérés listára."
+
+msgid "IDS_BR_TPOP_ADDED_TO_HOME_SCREEN"
+msgstr "Kezdőképernyőhöz adva."
+
+msgid "IDS_BR_TPOP_1_POP_UP_BLOCKED"
+msgstr "1 előugró ablak blokkolva."
+
+msgid "IDS_BR_TPOP_1_ITEM_DELETED_FROM_BROWSING_HISTORY"
+msgstr "1 elemet törölt a böngészési előzményekből."
+
+msgid "IDS_BR_TMBODY_NOTIFICATIONS"
+msgstr "Értesítések"
+
+msgid "IDS_BR_TAB_MOST_VISITED"
+msgstr "Leggyakr. látogatott"
+
+msgid "IDS_BR_TAB_HISTORY"
+msgstr "Előzmények"
+
+msgid "IDS_BR_SK_UNTICK_ABB"
+msgstr "Jel tö."
+
+msgid "IDS_BR_SK_TABS"
+msgstr "Lapok"
+
+msgid "IDS_BR_SK_MENU"
+msgstr "Menü"
+
+msgid "IDS_BR_SK_DELETE_ABB"
+msgstr "Töröl"
+
+msgid "IDS_BR_SK3_CREATE_FOLDER"
+msgstr "Mappát létrehoz"
+
+msgid "IDS_BR_SK3_CLEAR"
+msgstr "Törlés"
+
+msgid "IDS_BR_SBODY_VIEW_PC_WEBSITES_EASILY_ON_YOUR_MOBILE_DEVICE_THIS_FEATURE_BOOSTS_THE_TEXT_SIZE_TO_MAKE_IT_EASIER_TO_READ_NOTE_C_THE_TEXT_LAYOUT_MAY_CHANGE"
+msgstr "Nem jelent problémát a számítógépes webhelyek megtekintése a mobileszközön. A funkció megnöveli a szöveg méretét, így az olvashatóbbá válik. Megjegyzés: megváltozhat a szöveg elrendezése."
+
+msgid "IDS_BR_SBODY_SET_THE_DEVICE_TO_SUGGEST_QUERIES_AND_SITES_IN_THE_WEB_ADDRESS_BAR_AS_YOU_TYPE"
+msgstr "Beállíthatja, hogy az eszköz kérdéseket és webhelyeket ajánljon fel, amikor a webes címsorba ír."
+
+msgid "IDS_BR_SBODY_SET_TEXT_USED_TO_FILL_IN_ONLINE_FORMS_ABB"
+msgstr "Online űrlapokra való szöveget adh. meg."
+
+msgid "IDS_BR_SBODY_SET_ADVANCED_SETTINGS_FOR_INDIVIDUAL_WEBSITES"
+msgstr "Az egyes webhelyek speciális beállításainak megadása."
+
+msgid "IDS_BR_SBODY_REMEMBER_DATA_TYPED_IN_FORMS_FOR_LATER_USE"
+msgstr "Űrlapokba beírt adatok megjegyzése a későbbiekre."
+
+msgid "IDS_BR_SBODY_PREDICT_RELATED_QUERIES_AND_POPULAR_SITES_IN_THE_NAVIGATION_BAR_AS_YOU_TYPE"
+msgstr "Kapcsolódó keresőkifejezések és népszerű webhelyek megjóslása, amikor a navigációs sávba ír."
+
+msgid "IDS_BR_SBODY_OVERRIDE_WEBSITE_REQUESTS_TO_CONTROL_ZOOM_LEVEL"
+msgstr "Webhelyek nagyításiszint-vezérlési kéréseinek felülbírálása."
+
+msgid "IDS_BR_SBODY_DISPLAY_IMAGES_ON_WEBPAGES"
+msgstr "Képek megjelenítése weboldalakon."
+
+msgid "IDS_BR_SBODY_COMPRESS_CONTENT_FROM_WEBSITES_TO_USE_LESS_DATA"
+msgstr "Az adatforgalom csökkentése érdekében tömöríti a webhelyek tartalmát."
+
+msgid "IDS_BR_SBODY_CLEAR_NOTIFICATION_ACCESS_INFORMATION_FOR_ALL_WEBSITES"
+msgstr "Törli valamennyi webhely értesítés-hozzáférési adatait."
+
+msgid "IDS_BR_SBODY_CHANGE_THE_TEXT_SIZE_FOR_EASIER_READING_ESPECIALLY_WHEN_VIEWING_DESKTOP_VERSIONS_OF_WEBSITES_ON_YOUR_PHONE_NOTE_THAT_THE_TEXT_MSG_US"
+msgstr "Change the text size for easier reading, especially when viewing desktop versions of websites on your phone. Note that the text layout may change as a result."
+
+msgid "IDS_BR_SBODY_CHANGE_THE_TEXT_SIZE_FOR_EASIER_READING_ESPECIALLY_WHEN_VIEWING_DESKTOP_VERSIONS_OF_WEBSITES_NOTE_THAT_THE_TEXT_LAYOUT_MAY_CHANGE_AS_A_RESULT"
+msgstr "Módosíthatja a szöveg méretét az olvasás megkönnyítésére, különösen ha webhelyek asztali gépekhez készült verzióit tekinti meg. A szöveg elrendezése megváltozhat."
+
+msgid "IDS_BR_SBODY_ALL_WEBSITE_NOTIFICATION_ACCESS_INFORMATION_WILL_BE_CLEARED"
+msgstr "Törli valamennyi webhely értesítés-hozzáférési adatait."
+
+msgid "IDS_BR_SBODY_ALLOW_SITES_TO_SAVE_AND_READ_COOKIES"
+msgstr "Cookie-k mentésének és olvasásának engedélyezése a webhelyek számára."
+
+msgid "IDS_BR_SBODY_ALLOW_SITES_TO_ACCESS_YOUR_LOCATION_DATA"
+msgstr "Helyadatok hozzáférésének engedélyezése webhelyek számára."
+
+msgid "IDS_BR_POP_YOU_MAY_NOT_BE_ABLE_TO_CLIP_SOME_WEBPAGES_ACCURATELY"
+msgstr "Bizonyos webhelyek kivágása pontatlan lehet."
+
+msgid "IDS_BR_POP_YOUR_HISTORY_WILL_BE_CLEARED"
+msgstr "Törli az előzményeit."
+
+msgid "IDS_BR_POP_UNABLE_TO_VIEW_THE_CERTIFICATE_THE_PAGE_INFORMATION_HAS_BEEN_CHANGED"
+msgstr "Nem jeleníthető meg tanúsítvány. Az oldal adatai megváltoztak."
+
+msgid "IDS_BR_POP_TO_SIGN_IN_TO_THIS_WEBSITE_USING_YOUR_FINGERPRINTS_GO_TO_SETTINGS_AND_ENABLE_WEB_SIGN_IN"
+msgstr "Az ujjlenyomatos bejelentkezéshez a webhelyre engedélyezze a Webes bejelentkezés lehetőséget a Beállításokban."
+
+msgid "IDS_BR_POP_THIS_CERTIFICATE_IS_NOT_FROM_A_TRUSTED_AUTHORITY"
+msgstr "A tanúsítvány nem megbízható hitelesítésszolgáltatótól származik."
+
+msgid "IDS_BR_POP_THIS_CERTIFICATE_IS_FROM_A_TRUSTED_AUTHORITY"
+msgstr "A tanúsítvány megbízható hitelesítésszolgáltatótól származik."
+
+msgid "IDS_BR_POP_THE_LOCATION_PERMISSION_DATA_FOR_THIS_WEBSITE_WILL_BE_CLEARED"
+msgstr "Törli a webhely helyinformációs engedélyadatait."
+
+msgid "IDS_BR_POP_THE_DESTINATION_FOLDER_IS_THE_SAME_AS_THE_SOURCE_FOLDER"
+msgstr "A célmappa azonos a forrásmappával."
+
+msgid "IDS_BR_POP_THE_DESTINATION_FOLDER_IS_A_SUBFOLDER_OF_THE_SOURCE_FOLDER"
+msgstr "A célmappa a forrásmappa almappája."
+
+msgid "IDS_BR_POP_THERE_ARE_PROBLEMS_WITH_THE_SECURITY_CERTIFICATE_FOR_THIS_WEBSITE"
+msgstr "Probléma merült fel a webhely biztonsági tanúsítványával kapcsolatban."
+
+msgid "IDS_BR_POP_STARTING_DOWNLOAD_ING"
+msgstr "Letöltés indítása..."
+
+msgid "IDS_BR_POP_SOME_OLD_HTML_WEBSITES_MAY_NOT_SUPPORT_THIS_FEATURE"
+msgstr "A régi HTML-webhelyek nem feltétlenül támogatják ezt a funkciót."
+
+msgid "IDS_BR_POP_SET_AS_HOMEPAGE"
+msgstr "Beállítás kezdőlapként"
+
+msgid "IDS_BR_POP_SETTINGS_WILL_BE_RESET_TO_DEFAULTS"
+msgstr "Visszaállnak az alapértelmezett beállítások."
+
+msgid "IDS_BR_POP_SETTIGS_SAVED"
+msgstr "Beállítások mentve."
+
+msgid "IDS_BR_POP_SECURITY_POLICY_RESTRICTS_USE_OF_INTERNET_BROWSER"
+msgstr "A biztonsági irányelv korlátozza az internetböngésző használatát."
+
+msgid "IDS_BR_POP_SAVED_TO_BOOKMARKS"
+msgstr "Mentve a könyvjelzők közé."
+
+msgid "IDS_BR_POP_RENAME_TAG"
+msgstr "Címke átnevezése"
+
+msgid "IDS_BR_POP_PD_PROFILES_WILL_BE_DELETED"
+msgstr "Törölni fog %d profilt."
+
+msgid "IDS_BR_POP_PAGES_THAT_YOU_VIEW_WILL_NOT_APPEAR_IN_YOUR_BROWSER_HISTORY_OR_SEARCH_HISTORY_AND_THEY_WILL_NOT_LEAVE_OTHER_TRACES_LIKE_COOKIES"
+msgstr "A megnyitott oldalak nem jelennek meg a böngésző- és keresési előzményekben, és nem maradnak utánuk egyéb nyomok, például cookie-k sem."
+
+msgid "IDS_BR_POP_P1SS_HP2SS_IS_REQUESTING_PERMISSION_TO_USE_YOUR_CAMERA"
+msgstr "%1$s (%2$s) engedélyt kér a fényképező használatára."
+
+msgid "IDS_BR_POP_P1SS_HP2SS_IS_REQUESTING_PERMISSION_TO_STORE_DATA_ON_YOUR_DEVICE_FOR_OFFLINE_USE"
+msgstr "%1$s (%2$s) engedélyt kér nagymennyiségű adat tárolására az eszközön offline használatra."
+
+msgid "IDS_BR_POP_P1SS_HP2SS_IS_REQUESTING_PERMISSION_TO_SHOW_NOTIFICATIONS"
+msgstr "%1$s (%2$s) engedélyt kér értesítések megjelenítésére."
+
+msgid "IDS_BR_POP_P1SS_HP2SS_IS_REQUESTING_PERMISSION_TO_CHANGE_HOW_YOUR_BROWSER_WORKS_ON_MSG"
+msgstr "%1$s (%2$s) engedélyt kér a böngésző működési módjának megváltoztatására ezen a helyen. Ez támadási kísérlet is lehet a rendszer ellen. Ha nem bízik meg a webhelyben, vagy nem tudja, miért jelent meg ez a kérés, érintse meg a Mégse gombot"
+
+msgid "IDS_BR_POP_P1SS_HP2SS_IS_REQUESTING_PERMISSION_TO_ACCESS_YOUR_LOCATION"
+msgstr "%1$s (%2$s) engedélyt kér az Ön helyadataihoz való hozzáféréshez."
+
+msgid "IDS_BR_POP_P1SS_HP2SS_IS_ATTEMPTING_TO_STORE_A_LARGE_AMOUNT_OF_DATA_ON_YOUR_DEVICE_FOR_OFFLINE_USE"
+msgstr "%1$s (%2$s) nagymennyiségű adatot próbál az eszközön tárolni offline használatra."
+
+msgid "IDS_BR_POP_P1SS_HAS_BEEN_DETECTED_DETECTED_IN_C_P2SS_SOME_CONTENT_HAS_BEEN_BLOCKED_TO_PROTECT_YOUR_DEVICE"
+msgstr "„%1$s” észlelve.\nÉszlelés helye: „%2$s”\n\nBizonyos tartalom blokkolva az eszköz védelme érdekében."
+
+msgid "IDS_BR_POP_P1SS_HAS_BEEN_DETECTED_DETECTED_IN_C_P2SS_OPEN_WEBPAGE_ANYWAY_Q"
+msgstr "„%1$s” észlelve.\nÉszlelés helye: „%2$s”\n\nÍgy is megnyitja a webhelyet?"
+
+msgid "IDS_BR_POP_NOT_ENOUGH_MEMORY_DELETE_SOME_ITEMS_AND_TRY_AGAIN"
+msgstr "Kevés a memória. Töröljön tételeket, és próbálja újra."
+
+msgid "IDS_BR_POP_NOT_ALLOWED"
+msgstr "Nem engedélyezett."
+
+msgid "IDS_BR_POP_MOVED"
+msgstr "Áthelyezve."
+
+msgid "IDS_BR_POP_ENTER_URL"
+msgstr "Írja be az URL-t."
+
+msgid "IDS_BR_POP_ENTER_BOOKMARK_NAME"
+msgstr "Adja meg a könyvjelző nevét."
+
+msgid "IDS_BR_POP_DIALING_ING_VZW"
+msgstr "Dialing..."
+
+msgid "IDS_BR_POP_DELETE_WEBSITE_LOCATION_ACCESS_INFORMATION_Q"
+msgstr "Törli a webhely helyadat-hozzáférési információit?"
+
+msgid "IDS_BR_POP_DELETE_THIS_QUICK_ACCESS_SHORTCUT_Q"
+msgstr "Törli a gyorselérési parancsikont?"
+
+msgid "IDS_BR_POP_DELETE_THIS_PAGE_Q"
+msgstr "Törli az oldalt?"
+
+msgid "IDS_BR_POP_DELETE_THIS_BOOKMARK_Q"
+msgstr "Törli a könyvjelzőt?"
+
+msgid "IDS_BR_POP_DELETE_STORED_WEBSITE_DATA_Q"
+msgstr "Törli a webhely mentett adatait?"
+
+msgid "IDS_BR_POP_DELETE_SIGN_IN_DATA_FOR_THIS_WEBSITE_Q"
+msgstr "Törli a webhely bejelentkezési adatait?"
+
+msgid "IDS_BR_POP_DELETE_SIGN_IN_DATA_FOR_PD_WEBSITES_Q"
+msgstr "Törli %d webhely bejelentkezési adatait?"
+
+msgid "IDS_BR_POP_DELETE_PD_SAVED_WEB_PAGES_Q"
+msgstr "Töröl %d mentett weboldalt?"
+
+msgid "IDS_BR_POP_DELETE_PD_QUICK_ACCESS_SHORTCUTS_Q"
+msgstr "Biztosan töröl %d gyorselérési parancsikont?"
+
+msgid "IDS_BR_POP_DELETE_PD_BOOKMARKS_Q"
+msgstr "Biztosan töröl %d könyvjelzőt?"
+
+msgid "IDS_BR_POP_DELETE_ALL_WEBSITE_DATA_AND_LOCATION_PERMISSIONS_Q"
+msgstr "Töröl minden webhelyadatot és geolokációs engedélyt?"
+
+msgid "IDS_BR_POP_DELETEHISTORYQUESTION"
+msgstr "Törli az előzményeket?"
+
+msgid "IDS_BR_POP_CONTINUE"
+msgstr "Tovább"
+
+msgid "IDS_BR_POP_CLOSE_APPLICATION"
+msgstr "Alkalmazás bezárása"
+
+msgid "IDS_BR_POP_CLEAR_Q"
+msgstr "Biztosan üríti?"
+
+msgid "IDS_BR_POP_CLEAR_HISTORY_Q"
+msgstr "Törli az előzményeket?"
+
+msgid "IDS_BR_POP_BOOKMARK_REMOVED"
+msgstr "Könyvjelző eltávolítva."
+
+msgid "IDS_BR_POP_ALREADY_EXISTS"
+msgstr "Már létezik."
+
+msgid "IDS_BR_POP_ALL_STORED_DATA_FOR_THIS_WEBSITE_WILL_BE_CLEARED"
+msgstr "Törli a webhely mentett adatait."
+
+msgid "IDS_BR_POP_ALL_STORED_AND_LOCATION_PERMISSION_DATA_FOR_THIS_WEBSITE_WILL_BE_CLEARED"
+msgstr "Törli a webhely mentett adatait és helyinformációs engedélyadatait."
+
+msgid "IDS_BR_POP_ALL_STORED_AND_LOCATION_PERMISSION_DATA_FOR_THESE_WEBSITES_WILL_BE_CLEARED"
+msgstr "Törli a webhelyek mentett adatait és helyinformációs engedélyadatait."
+
+msgid "IDS_BR_POP_ALL_SETTINGS_WILL_BE_RESET_TO_THEIR_DEFAULTS"
+msgstr "Visszaállnak az alapértelmezett beállítások."
+
+msgid "IDS_BR_POP_ALL_ITEMS_WILL_BE_DELETED_FROM_BROWSING_HISTORY"
+msgstr "Törli a böngészési előzmények összes elemét."
+
+msgid "IDS_BR_POP_ALLOW_SITES_TO_SAVE_AND_READ_COOKIES"
+msgstr "Cookie-k mentésének és olvasásának engedélyezése a webhelyek számára"
+
+msgid "IDS_BR_POP_ADDED_TO_BOOKMARKS"
+msgstr "Könyvjelzőkhöz adva."
+
+msgid "IDS_BR_OPT_WINDOWS"
+msgstr "Ablakok"
+
+msgid "IDS_BR_OPT_VIEW_CERTIFICATE"
+msgstr "Tanúsítvány megtek."
+
+msgid "IDS_BR_OPT_UNICODE_HUTF_8"
+msgstr "Unicode (UTF-8)"
+
+msgid "IDS_BR_OPT_THUMBNAIL_VIEW"
+msgstr "Miniatűrnézet"
+
+msgid "IDS_BR_OPT_TEXT_ENCODING"
+msgstr "Szöveg kódolása"
+
+msgid "IDS_BR_OPT_SHRINK_TEXT"
+msgstr "Kisebb szöveg"
+
+msgid "IDS_BR_OPT_SETTINGS_ABB"
+msgstr "Beállítás"
+
+msgid "IDS_BR_OPT_SEND_MESSAGE_VODA"
+msgstr "Üzenet küldése"
+
+msgid "IDS_BR_OPT_SENDURLVIA_EMAIL"
+msgstr "E-mail"
+
+msgid "IDS_BR_OPT_SELECT_TEXT"
+msgstr "Szöveg kijelölése"
+
+msgid "IDS_BR_OPT_SELECT_ALL_ABB"
+msgstr "Összes kijelölése"
+
+msgid "IDS_BR_OPT_SELECT_ALL"
+msgstr "Összes kijelölése"
+
+msgid "IDS_BR_OPT_SELECTION_MODE"
+msgstr "Kijelölési mód"
+
+msgid "IDS_BR_OPT_SELECTED"
+msgstr "Kiválasztott"
+
+msgid "IDS_BR_OPT_SAVE_TO_KEEPIT_ABB"
+msgstr "Mentés a KeepIt alkalmazásba"
+
+msgid "IDS_BR_OPT_SAVE_PAGE_FOR_OFFLINE_VIEWING_ABB"
+msgstr "Oldal mentése offline megt.hez"
+
+msgid "IDS_BR_OPT_SAVE_LINKED_ITEM_IN_KEEPIT_ABB"
+msgstr "Kapcs. tét. KeepIt-be ment."
+
+msgid "IDS_BR_OPT_SAVE_FOR_OFFLINE_VIEWING_ABB"
+msgstr "Mentés offline megtekintéshez"
+
+msgid "IDS_BR_OPT_SAVEWEBPAGE"
+msgstr "Weboldal"
+
+msgid "IDS_BR_OPT_SAVEDPAGES"
+msgstr "Mentett oldalak"
+
+msgid "IDS_BR_OPT_RSS_VIEW"
+msgstr "Megtekint"
+
+msgid "IDS_BR_OPT_REORDER_ABB"
+msgstr "Átrendezés"
+
+msgid "IDS_BR_OPT_RENAME_FOLDER"
+msgstr "Mappa átnevezése"
+
+msgid "IDS_BR_OPT_REMOVE"
+msgstr "Eltávolítás"
+
+msgid "IDS_BR_OPT_READER_MODE_TTS"
+msgstr "Olvasási mód"
+
+msgid "IDS_BR_OPT_PASSWORDS"
+msgstr "Jelszavak"
+
+msgid "IDS_BR_OPT_OPEN_IN_NEW_WINDOW_ABB"
+msgstr "Megnyitás új ablakban"
+
+msgid "IDS_BR_OPT_OPEN"
+msgstr "Megnyitás"
+
+msgid "IDS_BR_OPT_OFFLINE_PAGES_ABB"
+msgstr "Offline oldalak"
+
+msgid "IDS_BR_OPT_NEW_WINDOW"
+msgstr "Új ablak"
+
+msgid "IDS_BR_OPT_MINIMISE"
+msgstr "Kis méret"
+
+msgid "IDS_BR_OPT_MEDIUM_M_QUALITY"
+msgstr "Közepes"
+
+msgid "IDS_BR_OPT_LOW_M_QUALITY"
+msgstr "Alacsony"
+
+msgid "IDS_BR_OPT_LOCATION_ACCESS_PRIVILEGES"
+msgstr "Helyadat-hozzáférési jogok"
+
+msgid "IDS_BR_OPT_LOAD_IMAGES"
+msgstr "Képek betöltése"
+
+msgid "IDS_BR_OPT_LATIN_1_HISO_8859_1"
+msgstr "Latin-1 (ISO-8859-1)"
+
+msgid "IDS_BR_OPT_KOREAN_HEUC_KR"
+msgstr "Koreai (EUC-KR)"
+
+msgid "IDS_BR_OPT_JAPANESE_HSHIFT_JIS"
+msgstr "Japán (SHIFT JIS)"
+
+msgid "IDS_BR_OPT_JAPANESE_HISO_2022_JP"
+msgstr "Japán (ISO-2022-JP)"
+
+msgid "IDS_BR_OPT_JAPANESE_HEUC_JP"
+msgstr "Japán (EUC-JP)"
+
+msgid "IDS_BR_OPT_INCOGNITO_MODE_ABB"
+msgstr "Inkognitó üzemmód"
+
+msgid "IDS_BR_OPT_HUGE"
+msgstr "Nagyon nagy"
+
+msgid "IDS_BR_OPT_HOME_SCREEN_AS_WEB_CLIP_ABB"
+msgstr "Kezdőképernyő webklipként"
+
+msgid "IDS_BR_OPT_HOME_SCREEN_AS_SHORTCUT_ABB"
+msgstr "Kez.képernyőre par.ikonként"
+
+msgid "IDS_BR_OPT_HIGH_M_QUALITY"
+msgstr "Kiváló"
+
+msgid "IDS_BR_OPT_GOFORWARD"
+msgstr "Következő"
+
+msgid "IDS_BR_OPT_GOBACKWARD"
+msgstr "Vissza"
+
+msgid "IDS_BR_OPT_GIANT_M_TEXTSIZE"
+msgstr "Nagyon nagy"
+
+msgid "IDS_BR_OPT_FIND_ON_PAGE_ABB"
+msgstr "Keresés az oldalon"
+
+msgid "IDS_BR_OPT_FIND_ON_PAGE"
+msgstr "Keresés az oldalon"
+
+msgid "IDS_BR_OPT_FEEDS_SUBSCRIBED_TO_ABB"
+msgstr "Előfizetett feedek"
+
+msgid "IDS_BR_OPT_ENLARGE_TEXT"
+msgstr "Nagyobb szöveg"
+
+msgid "IDS_BR_OPT_ENABLE_SECRET_MODE_ABB"
+msgstr "Titkos mód eng."
+
+msgid "IDS_BR_OPT_ENABLE_NIGHT_MODE_ABB"
+msgstr "Éjszakai mód eng."
+
+msgid "IDS_BR_OPT_ENABLE_LOW_DATA_USAGE_ABB"
+msgstr "Kis adathasználat bekapcsolása"
+
+msgid "IDS_BR_OPT_DRAG_AND_DROP"
+msgstr "Húzás"
+
+msgid "IDS_BR_OPT_DISABLE_SECRET_MODE_ABB"
+msgstr "Titkos mód letiltása"
+
+msgid "IDS_BR_OPT_DISABLE_NIGHT_MODE_ABB"
+msgstr "Éjszakai mód letilt."
+
+msgid "IDS_BR_OPT_DISABLE_LOW_DATA_USAGE_ABB"
+msgstr "Kis adathasználat kikapcsolása"
+
+msgid "IDS_BR_OPT_DISABLED"
+msgstr "Letiltva"
+
+msgid "IDS_BR_OPT_DELETE_SAVED_PAGE_ABB"
+msgstr "Mentett oldal törlése"
+
+msgid "IDS_BR_OPT_DELETE_HISTORY"
+msgstr "Előzmények törlése"
+
+msgid "IDS_BR_OPT_DATA_NETWORK"
+msgstr "Adathálózat"
+
+msgid "IDS_BR_OPT_COPY_TO_CLIPBOARD"
+msgstr "Másolás a vágólapra"
+
+msgid "IDS_BR_OPT_COPY_LINK_URL"
+msgstr "URL másolása"
+
+msgid "IDS_BR_OPT_COPY"
+msgstr "Másolás"
+
+msgid "IDS_BR_OPT_CLOSE_ALL"
+msgstr "Összes bezárása"
+
+msgid "IDS_BR_OPT_CLEAR_ALL"
+msgstr "Összes törlése"
+
+msgid "IDS_BR_OPT_CHINESE_HGBK"
+msgstr "Kínai (GBK)"
+
+msgid "IDS_BR_OPT_CHINESE_HBIG5"
+msgstr "Kínai (Big5)"
+
+msgid "IDS_BR_OPT_CACHE"
+msgstr "Gyorsítótár"
+
+msgid "IDS_BR_OPT_ADD_TO_WEB_CLIP"
+msgstr "Webklip hozzáadása"
+
+msgid "IDS_BR_OPT_ADD_TO_QUICK_ACCESS"
+msgstr "Hozzáadás a gyors eléréshez"
+
+msgid "IDS_BR_OPT_ADD_TO_HOME_SCREEN_ABB"
+msgstr "Kezdőképernyőhöz adás"
+
+msgid "IDS_BR_OPT_ADD_TO_HOME"
+msgstr "Kezdőképernyőhöz adás"
+
+msgid "IDS_BR_OPT_ADD_OR_REMOVE_BOOKMARK"
+msgstr "Könyvjelző hozzáadása vagy eltávolítása"
+
+msgid "IDS_BR_OPT_ADD_BOOKMARK_ABB"
+msgstr "Könyvj. ho.adása"
+
+msgid "IDS_BR_OPT_ADD_BOOKMARK"
+msgstr "Könyvjelző hozzáadása"
+
+msgid "IDS_BR_OPT1_EXTENSION"
+msgstr "Bővítmény"
+
+msgid "IDS_BR_NPBODY_SEARCH_OR_ENTER_URL_ABB"
+msgstr "Keresés v. URL beírása"
+
+msgid "IDS_BR_NPBODY_NO_WEBSITE_HISTORY"
+msgstr "Nincsenek webhelyelőzmények"
+
+msgid "IDS_BR_NPBODY_NO_WEBSITES"
+msgstr "Nincsenek webhelyek"
+
+msgid "IDS_BR_NPBODY_NO_WEBPAGES"
+msgstr "Nincsenek weboldalak"
+
+msgid "IDS_BR_NPBODY_NO_SHORTCUTS"
+msgstr "Nincs parancsikon"
+
+msgid "IDS_BR_MBODY_WEB_ADDRESS_SUGGESTIONS"
+msgstr "Webcím javaslatok"
+
+msgid "IDS_BR_MBODY_WEBSITES"
+msgstr "Webhelyek"
+
+msgid "IDS_BR_MBODY_VIEW_MORE"
+msgstr "Továbbiak megtekintése"
+
+msgid "IDS_BR_MBODY_URL_SUGGESTIONS"
+msgstr "URL-javaslatok"
+
+msgid "IDS_BR_MBODY_TEXT_BOOSTER"
+msgstr "Szövegnagyító"
+
+msgid "IDS_BR_MBODY_SET_HOMEPAGE"
+msgstr "Kezdőlap beállítása"
+
+msgid "IDS_BR_MBODY_RUN_JAVASCRIPT"
+msgstr "JavaScript indítása"
+
+msgid "IDS_BR_MBODY_RESET_SETTINGS"
+msgstr "Beállítás visszaállítása"
+
+msgid "IDS_BR_MBODY_PRELOAD_WEBPAGES"
+msgstr "Előtöltött weboldalak"
+
+msgid "IDS_BR_MBODY_PRELOAD_LINKED_WEBPAGES"
+msgstr "Hivatkozott old. előtölt."
+
+msgid "IDS_BR_MBODY_PRELOAD_AVAILABLE_LINKS"
+msgstr "Elérh. hivatk. előtöltése"
+
+msgid "IDS_BR_MBODY_LOW_DATA_USAGE"
+msgstr "Kis adathasználat"
+
+msgid "IDS_BR_MBODY_LOCATION_ACCESS"
+msgstr "Helyadatok hozzáférése"
+
+msgid "IDS_BR_MBODY_IMAGE_QUALITY"
+msgstr "Képminőség"
+
+msgid "IDS_BR_MBODY_HIDE_ADDRESS_BAR"
+msgstr "Címsor elrejtése"
+
+msgid "IDS_BR_MBODY_DOWNLOAD_FEED_CONTENT"
+msgstr "Feedtartalom letöltése"
+
+msgid "IDS_BR_MBODY_DELETE_SIGN_IN_DATA"
+msgstr "Bejelentk. adatok törlése"
+
+msgid "IDS_BR_MBODY_DATA_SAVING_STATISTICS"
+msgstr "Adatmentési statisztika"
+
+msgid "IDS_BR_MBODY_CONTENT"
+msgstr "Tartalom"
+
+msgid "IDS_BR_MBODY_CLEAR_NOTIFICATION_DATA"
+msgstr "Értesítési adatok törlése"
+
+msgid "IDS_BR_MBODY_AUTO_FILL_FORMS"
+msgstr "Automatikus űrlapkitöltés"
+
+msgid "IDS_BR_MBODY_ADD_PROFILE"
+msgstr "Profil hozzáadása"
+
+msgid "IDS_BR_MBODY_ACCESS_LOCATION"
+msgstr "Helyadatok hozzáférése"
+
+msgid "IDS_BR_HEADER_WINDOW_LIMIT_REACHED"
+msgstr "Maximális számú ablak megnyitva"
+
+msgid "IDS_BR_HEADER_WEB_NOTIFICATIONS_ABB"
+msgstr "Webes értesítések"
+
+msgid "IDS_BR_HEADER_WEB_NOTIFICATION"
+msgstr "Webes értesítés"
+
+msgid "IDS_BR_HEADER_VALIDITY"
+msgstr "Érvényesség"
+
+msgid "IDS_BR_HEADER_UNABLE_TO_OPEN_WINDOW_ABB"
+msgstr "Nem lehet megnyitni az ablakot"
+
+msgid "IDS_BR_HEADER_UNABLE_TO_OPEN_FILE"
+msgstr "Nem lehet megnyitni a fájlt"
+
+msgid "IDS_BR_HEADER_UNABLE_TO_MOVE_BOOKMARKS_ABB"
+msgstr "A könyvjel. nem helyezhetők át"
+
+msgid "IDS_BR_HEADER_SITE_NOT_TRUSTED_ABB"
+msgstr "A hely nem megbízható"
+
+msgid "IDS_BR_HEADER_SET_HOMEPAGE_ABB"
+msgstr "Kezdőlap beállítása"
+
+msgid "IDS_BR_HEADER_SERIAL_NUMBER_C_ABB"
+msgstr "Sorozatszám:"
+
+msgid "IDS_BR_HEADER_SELECT_SIGN_IN_DATA_FOR_ABB"
+msgstr "Bejelentk. adatok kiválasztása"
+
+msgid "IDS_BR_HEADER_SELECT_SHORTCUTS_ABB"
+msgstr "Parancsikonok kiválasztása"
+
+msgid "IDS_BR_HEADER_SELECT_BOOKMARKS"
+msgstr "Könyvjelzők kijelölése"
+
+msgid "IDS_BR_HEADER_SELECT_BOOKMARK"
+msgstr "Könyvjelzők kiválasztása"
+
+msgid "IDS_BR_HEADER_SECURITY_CERTIFICATE"
+msgstr "Biztonsági tanúsítvány"
+
+msgid "IDS_BR_HEADER_REORDER_QUICK_ACCESS_SHORTCUTS_ABB"
+msgstr "Gyorselér. par.ikonok átrend."
+
+msgid "IDS_BR_HEADER_QUICK_ACCESS_ABB"
+msgstr "Gyors elérés"
+
+msgid "IDS_BR_HEADER_PROFILES"
+msgstr "Profilok"
+
+msgid "IDS_BR_HEADER_POP_UP_BLOCKED_ABB"
+msgstr "Előugró ablak blokkolva"
+
+msgid "IDS_BR_HEADER_POPULAR_WEBSITES_ABB"
+msgstr "Népszerű webhelyek"
+
+msgid "IDS_BR_HEADER_ORGANISATION_C_ABB"
+msgstr "Szervezet:"
+
+msgid "IDS_BR_HEADER_ORGANISATIONAL_UNIT_C"
+msgstr "Szervezeti egység:"
+
+msgid "IDS_BR_HEADER_NEWER_M_INTERNET_HISTORY_ABB"
+msgstr "Newer"
+
+msgid "IDS_BR_HEADER_ISSUED_ON_C"
+msgstr "Kiállítás dátuma:"
+
+msgid "IDS_BR_HEADER_ISSUED_BY"
+msgstr "Kibocsátó"
+
+msgid "IDS_BR_HEADER_HTML5_EXTENSION"
+msgstr "HTML5-bővítmény"
+
+msgid "IDS_BR_HEADER_FORM_DATA"
+msgstr "Űrlap adatok"
+
+msgid "IDS_BR_HEADER_EXPIRES_ON_C"
+msgstr "Lejárat dátuma:"
+
+msgid "IDS_BR_HEADER_ENABLE_WEB_SIGN_IN"
+msgstr "Webes bejelentkezés engedélyezése"
+
+msgid "IDS_BR_HEADER_EDIT_BOOKMARK"
+msgstr "Könyvjelző szerkesztése"
+
+msgid "IDS_BR_HEADER_DELETE_WEBSITE_DATA_ABB"
+msgstr "Webhelyadatok törlése"
+
+msgid "IDS_BR_HEADER_DELETE_SIGN_IN_DATA_ABB"
+msgstr "Bejelentkezési adatok törlése"
+
+msgid "IDS_BR_HEADER_DELETE_PROFILE"
+msgstr "Profil törlése"
+
+msgid "IDS_BR_HEADER_DELETE_BOOKMARKS_ABB"
+msgstr "Könyvjelzők törlése"
+
+msgid "IDS_BR_HEADER_DATA_CONNECTIVITY_PROBLEM"
+msgstr "Adatkapcsolati probléma"
+
+msgid "IDS_BR_HEADER_COMMON_NAME_C_ABB"
+msgstr "Köznapi név:"
+
+msgid "IDS_BR_HEADER_CLOSE_APPLICATION"
+msgstr "Alkalmazás bezárása"
+
+msgid "IDS_BR_HEADER_CLEAR_PERSONALISED_DATA"
+msgstr "Személyre szabott adatok törlése"
+
+msgid "IDS_BR_HEADER_CLEAR_LOCATION_ACCESS"
+msgstr "Helyadatok törlése"
+
+msgid "IDS_BR_HEADER_BANDWIDTH_MANAGEMENT_ABB"
+msgstr "Sávszélesség kezelés"
+
+msgid "IDS_BR_HEADER_ADVANCEDCERTIFICATES"
+msgstr "Tanúsítványok"
+
+msgid "IDS_BR_BUTTON_RESET_ABB"
+msgstr "Visszaállítás"
+
+msgid "IDS_BR_BUTTON_HOMEPAGE_ABB"
+msgstr "Kezdőlap"
+
+msgid "IDS_BR_BUTTON_FIND_ABB"
+msgstr "Keres"
+
+msgid "IDS_BR_BUTTON_BACK_ABB"
+msgstr "Vissza"
+
+msgid "IDS_BR_BUTTON_ALWAYS_SHOW_ABB"
+msgstr "Mindig láth."
+
+msgid "IDS_BR_BUTTON2_WEB_PORTAL"
+msgstr "Webportál"
+
+msgid "IDS_BR_BUTTON2_SPORT"
+msgstr "Sport"
+
+msgid "IDS_BR_BUTTON2_SOCIAL"
+msgstr "Közösségi"
+
+msgid "IDS_BR_BUTTON2_SHOPPING"
+msgstr "Vásárlás"
+
+msgid "IDS_BR_BUTTON2_PAYMENT"
+msgstr "Fizetés"
+
+msgid "IDS_BR_BUTTON2_HOBBIES"
+msgstr "Kedvte-\nlések"
+
+msgid "IDS_BR_BUTTON2_GO_TO_HISTORY"
+msgstr "Előzmények megnyitása"
+
+msgid "IDS_BR_BUTTON2_ENTERTAINMENT"
+msgstr "Szórakozás"
+
+msgid "IDS_BR_BODY_WINDOW_MANAGER"
+msgstr "Ablakkezelő"
+
+msgid "IDS_BR_BODY_WEB_ADDRESS"
+msgstr "Webcím"
+
+msgid "IDS_BR_BODY_VOICE_INPUT_TTS"
+msgstr "Hangbemenet"
+
+msgid "IDS_BR_BODY_VIEW_IMAGE"
+msgstr "Képet megtekint"
+
+msgid "IDS_BR_BODY_VIEW_HISTORY_T_TALKBACK"
+msgstr "Előzmények megjelenítése"
+
+msgid "IDS_BR_BODY_VIEW_BOOKMARKS_T_TALKBACK"
+msgstr "Könyvjelzők megjelenítése"
+
+msgid "IDS_BR_BODY_VALID_CERTIFICATE"
+msgstr "Érvényes tanúsítvány"
+
+msgid "IDS_BR_BODY_USE_FULL_SCREEN_MODE_TO_HIDE_THE_STATUS_BAR"
+msgstr "Teljes képernyő a státusz sáv elrejtésével"
+
+msgid "IDS_BR_BODY_USE_A_PREDICTION_SERVICE_TO_DISPLAY_RELATED_QUERIES_AND_POPULAR_WEBSITES_IN_THE_ADDRESS_BAR_AS_YOU_TYPE"
+msgstr "Javaslószolgáltatás használata a kapcsolódó keresőkifejezések és népszerű webhelyek megjelenítéséhez, amikor a címsorba ír"
+
+msgid "IDS_BR_BODY_UPPER_FOLDER_T_TALKBACK"
+msgstr "Feljebb"
+
+msgid "IDS_BR_BODY_UNTAGGED"
+msgstr "Címkézetlen"
+
+msgid "IDS_BR_BODY_UNABLE_TO_OPEN_THE_FILE_AT_PS_IT_MAY_HAVE_BEEN_REMOVED_OR_RENAMED_OR_FILE_PERMISSIONS_MAY_BE_PREVENTING_ACCESS"
+msgstr "Nem lehet megnyitni a fájlt itt: %s. Lehet, hogy a fájlt áthelyezték vagy átnevezték, illetve az engedélyei akadályozhatják a hozzáférést."
+
+msgid "IDS_BR_BODY_UNABLE_TO_DISPLAY_THE_WEBPAGE_NO_RESPONSE_FROM_THE_SERVER"
+msgstr "Nem lehet megjeleníteni a webhelyet. A szerver nem válaszol."
+
+msgid "IDS_BR_BODY_TOWN_CITY_COUNTY_ABB"
+msgstr "Település vagy megye"
+
+msgid "IDS_BR_BODY_THIS_SITE_IS_USING_PS"
+msgstr "A webhely a következőt használja: %s."
+
+msgid "IDS_BR_BODY_THIS_SITE_CAN_ACCESS_YOUR_LOCATION"
+msgstr "A webhely hozzáférhet a helyadataihoz."
+
+msgid "IDS_BR_BODY_THIS_SITE_CANNOT_ACCESS_YOUR_LOCATION"
+msgstr "A webhely nem fér hozzá az ön helyadataihoz."
+
+msgid "IDS_BR_BODY_THIS_BOOKMARK_WILL_BE_DELETED"
+msgstr "Törli ezt a könyvjelzőt?"
+
+msgid "IDS_BR_BODY_THE_SELECTED_PERSONAL_DATA_WILL_BE_DELETED"
+msgstr "Törli a kijelölt személyes adatokat."
+
+msgid "IDS_BR_BODY_TEXT_FIELD_T_TTS"
+msgstr "Szövegmező"
+
+msgid "IDS_BR_BODY_TARGET_FOLDER"
+msgstr "Célmappa"
+
+msgid "IDS_BR_BODY_TAP_THE_WINDOW_MANAGER_ICON_AND_CLOSE_SOME_WINDOWS_THEN_TRY_AGAIN"
+msgstr "Érintse meg az Ablakkezelő ikont, és zárjon be ablakokat, majd próbálja újra."
+
+msgid "IDS_BR_BODY_TAP_ONCE_MORE_TO_CLOSE_INTERNET"
+msgstr "Érintse meg újból az Internet bezárásához."
+
+msgid "IDS_BR_BODY_SYNC_OPEN_PAGES"
+msgstr "Megnyitott oldalak szinkronizálása"
+
+msgid "IDS_BR_BODY_SYNC_INTERNET_DATA"
+msgstr "Internet adatainak szinkronizálása"
+
+msgid "IDS_BR_BODY_SYNC_BOOKMARKS_ABB"
+msgstr "Könyvjelzők szinkronizálása"
+
+msgid "IDS_BR_BODY_STREET_ADDRESS_PO_BOX_C_O_ETC_ABB"
+msgstr "Cím, postafiók, c/o stb."
+
+msgid "IDS_BR_BODY_STORED_DATA"
+msgstr "Tárolt adatok"
+
+msgid "IDS_BR_BODY_SPLIT_BAR_HANDLE"
+msgstr "Osztóvonal fogópontja"
+
+msgid "IDS_BR_BODY_SIGN_IN_TO_YOUR_SAMSUNG_ACCOUNT_TO_ACCESS_THE_BOOKMARKS_AND_TABS_ON_YOUR_OTHER_DEVICES"
+msgstr "Samsung-fiókjába bejelentkezve hozzáférhet egyéb eszközeiről a könyvjelzőkhöz és lapokhoz."
+
+msgid "IDS_BR_BODY_SHOW_OVERVIEW_OF_NEWLY_OPENED_PAGES"
+msgstr "Újonnan megnyitott oldalak áttekintésének megjelenítése"
+
+msgid "IDS_BR_BODY_SHA_256_FINGERPRINT_C"
+msgstr "SHA-256 ujjlenyomat:"
+
+msgid "IDS_BR_BODY_SHA_1_FINGERPRINT_C"
+msgstr "SHA-1 ujjlenyomat:"
+
+msgid "IDS_BR_BODY_SET_TEXT_FOR_WEB_FORM_AUTO_FILL"
+msgstr "Automatikus webűrlapkitöltés adatainak megadása"
+
+msgid "IDS_BR_BODY_SET_CURRENT_PAGE_AS_HOMEPAGE"
+msgstr "Aktuális oldal beállítása kezdőlapként"
+
+msgid "IDS_BR_BODY_SELECT_FOLDER"
+msgstr "Válasszon mappát."
+
+msgid "IDS_BR_BODY_SEARCH_OR_ENTER_URL"
+msgstr "Keressen vagy írjon be URL-t."
+
+msgid "IDS_BR_BODY_SEARCH_FIELD_T_TTS"
+msgstr "Keresőmező"
+
+msgid "IDS_BR_BODY_SEARCH_AND_URL_SUGGESTIONS"
+msgstr "Keresési és URL-javaslatok"
+
+msgid "IDS_BR_BODY_SCREEN_AND_TEXT"
+msgstr "Képernyő és szöveg"
+
+msgid "IDS_BR_BODY_SAVE_USER_NAMES_AND_PASSWORDS_FOR_WEBSITES"
+msgstr "Webhelyeken használt felhasználónevek és jelszavak mentése"
+
+msgid "IDS_BR_BODY_SAVE_LINK"
+msgstr "Hivatkozás mentése"
+
+msgid "IDS_BR_BODY_RESTORE_DEFAULT_SETTINGS_Q"
+msgstr "Visszaállítja az alapértelmezéseket?"
+
+msgid "IDS_BR_BODY_RESTORE_DEFAULT_SETTINGS"
+msgstr "Alapértelmezések visszaállítása"
+
+msgid "IDS_BR_BODY_RESET_TO_DEFAULT"
+msgstr "Alapbeállítás visszaállítása"
+
+msgid "IDS_BR_BODY_RESET_SETTINGS"
+msgstr "Alapbeállítás visszaállítása"
+
+msgid "IDS_BR_BODY_RESET_ALL_SETTINGS_TO_THEIR_DEFAULTS"
+msgstr "Visszaállít minden alapértelmezett beállítást."
+
+msgid "IDS_BR_BODY_REMOVE_WEB_NOTIFICATION_ACCESS_INFORMATION_Q"
+msgstr "Eltávolítja a webes értesítés hozzáférési információit?"
+
+msgid "IDS_BR_BODY_REMEMBER_PASSWORDS"
+msgstr "Jelszót megjegyez"
+
+msgid "IDS_BR_BODY_REMEMBER_FORM_DATA"
+msgstr "Űrlapadatok megjegyzése"
+
+msgid "IDS_BR_BODY_REMEMBER_DATA_I_TYPE_IN_FORMS_FOR_LATER_USE"
+msgstr "Űrlapokba beírt adatok megjegyzése a későbbiekre"
+
+msgid "IDS_BR_BODY_RADIO_BUTTON_T_TTS"
+msgstr "Választógomb"
+
+msgid "IDS_BR_BODY_PS_BOOKMARK_WILL_BE_DELETED"
+msgstr "Törölni fog %s könyvjelzőt."
+
+msgid "IDS_BR_BODY_PRIVACY"
+msgstr "Védett adataim"
+
+msgid "IDS_BR_BODY_PRINT"
+msgstr "Nyomtatás"
+
+msgid "IDS_BR_BODY_PRESS_THE_MENU_KEY"
+msgstr "Nyomja meg a Menü gombot."
+
+msgid "IDS_BR_BODY_POSTCODE_ABB"
+msgstr "Irányítószám"
+
+msgid "IDS_BR_BODY_PD_POP_UPS_BLOCKED_ABB"
+msgstr "%d előugró blokkolva."
+
+msgid "IDS_BR_BODY_PAGE_LOADED_T_TTS"
+msgstr "Oldal betöltve"
+
+msgid "IDS_BR_BODY_PAGES_THAT_YOU_VIEW_IN_THIS_TAB_WILL_NOT_APPEAR_IN_YOUR_BROWSER_HISTORY_OR_SEARCH_HISTORY_MSG"
+msgstr "Az ezen az oldalon megnyitott oldalak nem jelennek meg a böngésző- és keresési előzményekben, és nem maradnak utánuk egyéb nyomok, például cookie-k sem."
+
+msgid "IDS_BR_BODY_OVERRIDE_WEBSITES_REQUEST_TO_CONTROL_ZOOM"
+msgstr "Webhely nagyításvezérlési kérésének felülbírálása"
+
+msgid "IDS_BR_BODY_OTHER_ABB"
+msgstr "Egyéb"
+
+msgid "IDS_BR_BODY_OPEN_WINDOWS_T_TALKBACK"
+msgstr "Ablakok nyitása"
+
+msgid "IDS_BR_BODY_OPEN_PAGES_IN_OVERVIEW_ABB"
+msgstr "Új oldalak áttekintése"
+
+msgid "IDS_BR_BODY_ON_DEMAND"
+msgstr "Igény szerint"
+
+msgid "IDS_BR_BODY_ONLY_VIA_WI_FI_ABB"
+msgstr "Csak Wi-Fi-n"
+
+msgid "IDS_BR_BODY_OLDER"
+msgstr "Régebbi"
+
+msgid "IDS_BR_BODY_NO_WINDOWS"
+msgstr "Nincsenek ablakok"
+
+msgid "IDS_BR_BODY_NO_VISITED_SITES"
+msgstr "Nincs meglátogatott hely"
+
+msgid "IDS_BR_BODY_NO_TITLE"
+msgstr "Nincs cím"
+
+msgid "IDS_BR_BODY_NO_SAVED_PAGES"
+msgstr "Nincs mentett oldal"
+
+msgid "IDS_BR_BODY_NO_BOOKMARKS"
+msgstr "Nincs könyvjelző"
+
+msgid "IDS_BR_BODY_NORMAL"
+msgstr "Normál"
+
+msgid "IDS_BR_BODY_NEWS"
+msgstr "Hírek"
+
+msgid "IDS_BR_BODY_MOVE_THE_SELECTED_BOOKMARKS_Q"
+msgstr "Áthelyezi a kijelölt könyvjelzőket?"
+
+msgid "IDS_BR_BODY_MOST_VISITED_SITES"
+msgstr "Leggyakrabban látogatott helyek"
+
+msgid "IDS_BR_BODY_MOBILE_VIEW"
+msgstr "Mobilnézet"
+
+msgid "IDS_BR_BODY_LOCATION_M_INFORMATION"
+msgstr "Hely"
+
+msgid "IDS_BR_BODY_LAST_WEEK"
+msgstr "Utolsó hét"
+
+msgid "IDS_BR_BODY_LAST_MONTH"
+msgstr "Elmúlt hónap"
+
+msgid "IDS_BR_BODY_LAST_7_DAYS"
+msgstr "Az elmúlt 7 napban"
+
+msgid "IDS_BR_BODY_LARGE"
+msgstr "Nagy"
+
+msgid "IDS_BR_BODY_INTERNET_HISTORY_IS_NOT_STORED_ABB"
+msgstr "Internetes előzmények mentése nélkül."
+
+msgid "IDS_BR_BODY_INTERNET"
+msgstr "Internet"
+
+msgid "IDS_BR_BODY_IMPROVE_PERFORMANCE_WHEN_LOADING_PAGES"
+msgstr "Teljesítmény javítása az oldalak betöltésekor."
+
+msgid "IDS_BR_BODY_HOMEPAGE"
+msgstr "Kezdőlap"
+
+msgid "IDS_BR_BODY_HIDE_THE_ADDRESS_BAR_WHEN_SCROLLING_DOWN_THE_PAGE"
+msgstr "Címsor elrejtése görgetéskor az oldalon."
+
+msgid "IDS_BR_BODY_GENERAL_M_SETTINGS"
+msgstr "Általános"
+
+msgid "IDS_BR_BODY_FULL_NAME_ABB"
+msgstr "Teljes név"
+
+msgid "IDS_BR_BODY_FORCE_ZOOM_ABB"
+msgstr "Kényszernagyítás"
+
+msgid "IDS_BR_BODY_FLAT_SUITE_UNIT_BUILDING_FLOOR_ETC_ABB"
+msgstr "Lakás, egység, épület, emelet stb."
+
+msgid "IDS_BR_BODY_FINGERPRINTS_C"
+msgstr "Ujjlenyomatok:"
+
+msgid "IDS_BR_BODY_FAILED_TO_ADD_TO_HOME_SCREEN_ABB"
+msgstr "Nem sikerült felvenni a kezdőképernyőre."
+
+msgid "IDS_BR_BODY_ENTER_YOUR_NAME_ABB"
+msgstr "Adja meg a nevét."
+
+msgid "IDS_BR_BODY_ENTER_TOWN_CITY_COUNTY_ABB"
+msgstr "Település vagy megye megadása"
+
+msgid "IDS_BR_BODY_ENTER_COUNTRY_REGION_ABB"
+msgstr "Adja meg az országot/régiót."
+
+msgid "IDS_BR_BODY_ENTER_COMPANY_NAME_ABB"
+msgstr "Adja meg a cég nevét."
+
+msgid "IDS_BR_BODY_ENABLE_LOCATION"
+msgstr "Hely engedélyezése"
+
+msgid "IDS_BR_BODY_ENABLE_JAVASCRIPT"
+msgstr "JavaScript engedélyezése"
+
+msgid "IDS_BR_BODY_DOUBLE_TAP_TO_VIEW_CERTIFICATE_TTS"
+msgstr "Érintse meg kétszer a tanúsítvány megtekintéséhez."
+
+msgid "IDS_BR_BODY_DOUBLE_TAP_TO_SELECT_A_SEARCH_ENGINE_T_TALKBACK"
+msgstr "Érintse meg kétszer kereső kiválasztásához."
+
+msgid "IDS_BR_BODY_DOUBLE_TAP_TO_OPEN_THE_WEBPAGE_T_TALKBACK"
+msgstr "Érintse meg kétszer a weboldal megnyitásához."
+
+msgid "IDS_BR_BODY_DOUBLE_TAP_TO_OPEN_THE_LIST_T_TTS"
+msgstr "Érintse meg kétszer a lista megnyitásához."
+
+msgid "IDS_BR_BODY_DOUBLE_TAP_TO_OPEN_THE_FOLDER_T_TTS"
+msgstr "Érintse meg kétszer a mappa megnyitásához."
+
+msgid "IDS_BR_BODY_DOUBLE_TAP_TO_OPEN_KEYBOARD_T_TTS"
+msgstr "Kétszeri érintéssel megnyithatja a billentyűzetet."
+
+msgid "IDS_BR_BODY_DOUBLE_TAP_TO_MOVE_TO_CONTENT_T_TTS"
+msgstr "Kétszeri érintéssel áthelyezheti a tartalmat."
+
+msgid "IDS_BR_BODY_DOUBLE_TAP_TO_CLOSE_THE_TRAY_T_TALKBACK"
+msgstr "Érintse meg kétszer a tálca bezárásához."
+
+msgid "IDS_BR_BODY_DOUBLE_TAP_TO_CANCEL_THE_SEARCH_T_TALKBACK"
+msgstr "Érintse meg kétszer a keresés megszakításához."
+
+msgid "IDS_BR_BODY_DOUBLE_TAP_AND_HOLD_TO_RESIZE_SPLIT_AREA_T_TTS"
+msgstr "Érintse meg kétszer, és tartsa rajta az ujját az osztott terület átméretezéséhez."
+
+msgid "IDS_BR_BODY_DOUBLE_TAP_AND_DRAG_TO_REORDER_TTS"
+msgstr "Érintse meg kétszer és húzza az átrendezéshez."
+
+msgid "IDS_BR_BODY_DISPLAY_SECURITY_WARNING_POP_UPS"
+msgstr "Előugró biztonsági figyelmeztetések megjelenítése"
+
+msgid "IDS_BR_BODY_DISPLAY_IMAGES_ON_WEB_PAGES"
+msgstr "Képek megjelenítése weboldalakon"
+
+msgid "IDS_BR_BODY_DESKTOP_VIEW"
+msgstr "Asztali nézet"
+
+msgid "IDS_BR_BODY_DELETE_THE_SELECTED_BOOKMARKS_Q"
+msgstr "Törli a kijelölt könyvjelzőket?"
+
+msgid "IDS_BR_BODY_DELETE_PERSONAL_DATA"
+msgstr "Személyes adatok törlése"
+
+msgid "IDS_BR_BODY_DEFAULT_STORAGE"
+msgstr "Alapértelmezett tárhely"
+
+msgid "IDS_BR_BODY_DEFAULT_PAGE_ABB"
+msgstr "Alapértelmezett oldal"
+
+msgid "IDS_BR_BODY_DATA_USAGE_REDUCED_BY_P1SDP_HP2SD_KB_OF_P3SD_KB_RECEIVED_TAP_HERE_TO_RESET_STATISTICS"
+msgstr "%1$d%-kal csökkent az adathasználat (%3$d KB-ból %2$d KB-ot töltött le). Érintse meg a statisztika nullázásához."
+
+msgid "IDS_BR_BODY_CUSTOM_USER_AGENT"
+msgstr "User agent testreszabása"
+
+msgid "IDS_BR_BODY_CURRENT_PAGE"
+msgstr "Jelenlegi oldal"
+
+msgid "IDS_BR_BODY_CREATED"
+msgstr "Létrehozva."
+
+msgid "IDS_BR_BODY_COUNTY_ABB"
+msgstr "Megye"
+
+msgid "IDS_BR_BODY_COUNTRY_REGION_ABB2"
+msgstr "Ország/régió"
+
+msgid "IDS_BR_BODY_COOKIES_AND_SITE_DATA_ABB"
+msgstr "Sütik és helyadatok"
+
+msgid "IDS_BR_BODY_COOKIES"
+msgstr "Cookie-k"
+
+msgid "IDS_BR_BODY_CONTENT_SETTINGS"
+msgstr "Tartalom beállításai"
+
+msgid "IDS_BR_BODY_COMPANY_NAME_ABB"
+msgstr "Cég neve"
+
+msgid "IDS_BR_BODY_CLOSE_TAB"
+msgstr "Lap bezárása"
+
+msgid "IDS_BR_BODY_CLEAR_WEB_NOTIFICATION_PERMISSION_SETTINGS"
+msgstr "Webes értesítések engedélyeinek törlése"
+
+msgid "IDS_BR_BODY_CLEAR_WEB_NOTIFICATION_PERMISSIONS_Q"
+msgstr "Törli a webes értesítések engedélyeit?"
+
+msgid "IDS_BR_BODY_CLEAR_NOTIFICATION_ACCESS_FOR_WEBSITES"
+msgstr "Értesítések hozzáférésnek törlése a webhelyek számára"
+
+msgid "IDS_BR_BODY_CLEAR_NOTIFICATIONS"
+msgstr "Értesítések törlése"
+
+msgid "IDS_BR_BODY_CLEAR_LOCATION_ACCESS"
+msgstr "Helyadatok törlése"
+
+msgid "IDS_BR_BODY_CLEAR_HISTORY"
+msgstr "Előzmények törlése"
+
+msgid "IDS_BR_BODY_CLEAR_ALL_BROWSER_DATA_AND_RESET_ALL_SETTINGS_TO_DEFAULT"
+msgstr "Minden böngészőadat törlése és az alapértelmezett beállítások visszaállítása"
+
+msgid "IDS_BR_BODY_CITY_TOWN_ABB"
+msgstr "Település"
+
+msgid "IDS_BR_BODY_CHANGE_THE_TEXT_SIZE_FOR_EASIER_READING_ESPECIALLY_WHEN_VIEWING_DESKTOP_VERSIONS_OF_WEBSITES_ON_YOUR_DEVICE_MSG"
+msgstr "Módosíthatja a szöveg méretét az olvasás megkönnyítésére, különösen ha webhelyek asztali gépekhez készült verzióit tekinti meg az eszközön. A szöveg elrendezése megváltozhat."
+
+msgid "IDS_BR_BODY_BOOKMARK_REMINDER_ABB"
+msgstr "Könyvjelző-emlékeztető"
+
+msgid "IDS_BR_BODY_BLOCK_POP_UPS_ON_WEB_PAGES"
+msgstr "Előugró ablakok blokkolása a weboldalakon."
+
+msgid "IDS_BR_BODY_BLOCK_POP_UPS_ON_WEBPAGES"
+msgstr "Blokkolja az előugró ablakokat a weboldalakon."
+
+msgid "IDS_BR_BODY_BLOCK_POP_UPS"
+msgstr "Előugró ablakok blokkolása"
+
+msgid "IDS_BR_BODY_BASIC"
+msgstr "Egyszerű"
+
+msgid "IDS_BR_BODY_AUTO_FILL_FORMS_T_TTS"
+msgstr "Automatikus űrlapkitöltés"
+
+msgid "IDS_BR_BODY_AUTO_DETECT"
+msgstr "Automatikus észlelés"
+
+msgid "IDS_BR_BODY_AUTOMATIC"
+msgstr "Automatikus"
+
+msgid "IDS_BR_BODY_ASK_WHETHER_TO_ADD_A_BOOKMARK_FOR_A_WEBSITE_WHEN_YOU_HAVE_VISITED_IT_PD_TIMES"
+msgstr "Egyazon webhely %d. meglátogatásakor kérdezzen rá a könyvjelzőzésre"
+
+msgid "IDS_BR_BODY_ALWAYS_ON"
+msgstr "Mindig bekapcsolva"
+
+msgid "IDS_BR_BODY_ALWAYS"
+msgstr "Mindig"
+
+msgid "IDS_BR_BODY_ALL_OPEN_WINDOWS_WILL_BE_CLOSED_AND_YOU_WILL_MOVE_TO_YOUR_HOMEPAGE"
+msgstr "Minden nyitott ablak bezáródik, és a kezdőlap nyílik meg."
+
+msgid "IDS_BR_BODY_ALLOW_SITES_TO_RUN_JAVASCRIPT"
+msgstr "JavaScript futtatásának engedélyezése a webhelyek számára."
+
+msgid "IDS_BR_BODY_ALLOW_SITES_TO_REQUEST_ACCESS_TO_YOUR_LOCATION"
+msgstr "Helyadatok lekérésének engedélyezése webhelyek számára"
+
+msgid "IDS_BR_BODY_ALLOW_SITES_TO_ACCESS_YOUR_LOCATION_DATA"
+msgstr "Helyadatok hozzáférésének engedélyezése webhelyek számára."
+
+msgid "IDS_BR_BODY_ALLOW_PS_TO_SHOW_NOTIFICATIONS"
+msgstr "Értesítések megjelenítésének engedélyezése a(z) %s számára"
+
+msgid "IDS_BR_BODY_ALLOWS_SITES_TO_SAVE_AND_READ_COOKIE_DATA"
+msgstr "Cookie-adatok mentésének és olvasásának engedélyezése a webhelyek számára."
+
+msgid "IDS_BR_BODY_AFTER_YOU_VISIT_WEBPAGES_THE_PAGES_YOU_HAVE_VISITED_THE_MOST_WILL_BE_SHOWN_HERE"
+msgstr "Itt jelennek majd meg azok a weboldalak, amelyeket a leggyakrabban látogat."
+
+msgid "IDS_BR_BODY_AFTER_YOU_VIEW_WEBSITES_THE_SIZE_OF_THEIR_STORED_DATA_AND_WHETHER_THEY_CAN_ACCESS_YOUR_LOCATION_WILL_BE_SHOWN_HERE"
+msgstr "Itt jelenik majd meg a meglátogatott webhelyek mentett adatainak mérete és az az információ, hogy ezek a webhelyek hozzáférhetnek-e az ön helyadataihoz."
+
+msgid "IDS_BR_BODY_AFTER_YOU_VIEW_WEBPAGES_THEY_WILL_BE_SHOWN_HERE"
+msgstr "Ha weblapokat tekint meg, azok itt jelennek meg."
+
+msgid "IDS_BR_BODY_AFTER_YOU_SAVE_WEBPAGES_TO_VIEW_OFFLINE_THEY_WILL_BE_SHOWN_HERE"
+msgstr "Itt jelennek majd meg a kapcsolat nélküli megtekintés céljából mentett weboldalak."
+
+msgid "IDS_BR_BODY_AFTER_YOU_LOAD_PAGES_THE_PAGE_HISTORY_WILL_BE_SHOWN"
+msgstr "A megnyitott oldalak itt fognak megjelenni."
+
+msgid "IDS_BR_BODY_AFTER_YOU_ADD_WEBPAGES_TO_QUICK_ACCESS_THEY_WILL_BE_SHOWN_HERE"
+msgstr "Itt jelennek majd meg a Gyors elérés funkcióhoz hozzáadott weboldalak."
+
+msgid "IDS_BR_BODY_ADVANCED_SETTINGS_FOR_INDIVIDUAL_WEBSITES"
+msgstr "Az egyes webhelyek speciális beállításai"
+
+msgid "IDS_BR_BODY_ADVANCED"
+msgstr "Speciális"
+
+msgid "IDS_BR_BODY_ADD_TO_CONTACT"
+msgstr "Hozzáadás névjegyhez"
+
+msgid "IDS_BR_BODY_ADD_THIS_WEBSITE_TO_BOOKMARKS_TO_OPEN_IT_FASTER_ABB"
+msgstr "Könyvjelzőzze a webhelyet a gyorsabb megnyitáshoz."
+
+msgid "IDS_BR_BODY_ADDRESS_LINE_2_ABB"
+msgstr "Cím 2. sora"
+
+msgid "IDS_BR_BODY_ADDRESS_LINE_1_ABB"
+msgstr "Cím 1. sora"
+
+msgid "IDS_BR_BODY_ACCEPT_COOKIES"
+msgstr "Cookie-k elfogadása"
+
+msgid "IDS_BR_BODY_1_PROFILE_WILL_BE_DELETED"
+msgstr "Törölni fog 1 profilt."
+
+msgid "IDS_BR_ACBUTTON_TABS_ABB"
+msgstr "LAPOK"
+
+msgid "IDS_BR_TPOP_STARTING_DOWNLOAD_ING"
+msgstr "Letöltés indítása..."
+
+msgid "IDS_BR_TPOP_FOLDER_RENAMED"
+msgstr "Átnevezte a mappát."
+
+msgid "IDS_BR_TMBODY_SUGGEST_SEARCH_TERMS_AND_URLS"
+msgstr "Ker.kifej. és URL-ek javaslása"
+
+msgid "IDS_BR_TMBODY_DATA_USAGE_MANAGEMENT"
+msgstr "Adatkapcsolat kezelése"
+
+msgid "IDS_BR_SK_CANCEL_ABB"
+msgstr "Mégse"
+
+msgid "IDS_BR_SBODY_SET_THE_DEVICE_TO_SHOW_THE_FULL_WEBPAGE_ON_THE_SCREEN_WHEN_IT_IS_LOADED_WITHOUT_NEEDING_TO_SCROLL"
+msgstr "Az eszköz az egész betöltött weboldalt megjeleníti a képernyőn, így nincs szükség görgetésre."
+
+msgid "IDS_BR_POP_UNABLE_TO_RUN_INTERNET_LOW_BATTERY"
+msgstr "Az Internet nem futtatható. Gyenge az akkumulátor töltöttsége."
+
+msgid "IDS_BR_POP_THE_DOWNLOAD_HAS_BEEN_STOPPED_AND_THE_DOWNLOADED_DATA_WILL_BE_DELETED"
+msgstr "A letöltés leállt, a letöltött adatok törlődnek."
+
+msgid "IDS_BR_POP_SEARCH_COMPLETED_JPN_SBM"
+msgstr "Search completed"
+
+msgid "IDS_BR_POP_READY"
+msgstr "Kész"
+
+msgid "IDS_BR_POP_INFORM_MEMORY_ERROR"
+msgstr "Memóriahiba"
+
+msgid "IDS_BR_POP_DATA_ROAMING_IS_DISABLED_CONNECT_TO_A_WI_FI_NETWORK_OR_ENABLE_DATA_ROAMING_AND_TRY_AGAIN"
+msgstr "Az adatroaming le van tiltva. Kapcsolódjon Wi-Fi hálózathoz, vagy engedélyezze az adatroamingot, és próbálja újra."
+
+msgid "IDS_BR_POP_BROWSERERRORREQUESTTIMEOUT"
+msgstr "Kérés időtúllépése."
+
+msgid "IDS_BR_POP_A_WI_FI_CONNECTION_IS_REQUIRED_TAP_OK_TO_GO_TO_YOUR_WI_FI_SETTINGS"
+msgstr "Wi-Fi-kapcsolat szükséges. Érintse meg az OK gombot a Wi-Fi-beállítások megnyitásához."
+
+msgid "IDS_BR_OPT_WEB_APPS_ABB"
+msgstr "Webalkalm."
+
+msgid "IDS_BR_OPT_VIEW_ONLINE"
+msgstr "Online megjelenítés"
+
+msgid "IDS_BR_OPT_READ_ON_OFFLINE_PAGES_LATER_ABB"
+msgstr "Olv. később offline oldalakon"
+
+msgid "IDS_BR_OPT_QUICK_ACCESS_ABB2"
+msgstr "Gyors elérés"
+
+msgid "IDS_BR_OPT_ALWAYS_ENABLED_ABB"
+msgstr "Mindig bekapcsolva"
+
+msgid "IDS_BR_NPBODY_TAP_HERE_TO_ADD_A_QUICK_ACCESS_SHORTCUT"
+msgstr "Érintse meg gyorselérési parancsikon hozzáadásához"
+
+msgid "IDS_BR_NPBODY_NO_HISTORY"
+msgstr "Nincsenek előzmények"
+
+msgid "IDS_BR_MBODY_USER_MANUAL_ABB"
+msgstr "Felhaszn. útmutató"
+
+msgid "IDS_BR_MBODY_TOWN_CITY_COUNTY"
+msgstr "Település/Város/Megye"
+
+msgid "IDS_BR_MBODY_STORED_DATA"
+msgstr "Mentett adatok"
+
+msgid "IDS_BR_MBODY_SEARCH_AND_URL_SUGGESTIONS_ABB"
+msgstr "Keresési és URL-javaslatok"
+
+msgid "IDS_BR_MBODY_HISTORY"
+msgstr "Előzmények"
+
+msgid "IDS_BR_MBODY_FIT_PAGE_TO_SCREEN"
+msgstr "Oldal képernyőre illeszt."
+
+msgid "IDS_BR_MBODY_DOWNLOADS"
+msgstr "Letöltések"
+
+msgid "IDS_BR_MBODY_CUSTOM"
+msgstr "Egyedi"
+
+msgid "IDS_BR_MBODY_COUNTRY_REGION"
+msgstr "Ország/régió"
+
+msgid "IDS_BR_HEADER_RENAME_FOLDER_ABB"
+msgstr "Mappa átnevezése"
+
+msgid "IDS_BR_HEADER_PERSONAL_DATA_ABB"
+msgstr "Szem. adatok"
+
+msgid "IDS_BR_HEADER_NEWER_M_INTERNET_HISTORY"
+msgstr "Újabb"
+
+msgid "IDS_BR_HEADER_ISSUED_TO"
+msgstr "Tulajdonos"
+
+msgid "IDS_BR_HEADER_ENCODING"
+msgstr "Kódolás"
+
+msgid "IDS_BR_HEADER_EDIT_INFO_ABB"
+msgstr "Adatszerk."
+
+msgid "IDS_BR_HEADER_DOWNLOAD_STOPPED_ABB"
+msgstr "Leállt a letöltés"
+
+msgid "IDS_BR_HEADER_DEPARTMENT_C_ABB"
+msgstr "Osztály:"
+
+msgid "IDS_BR_HEADER_ADD_INFO_ABB"
+msgstr "Új adatok"
+
+msgid "IDS_BR_BUTTON_WI_FI_ABB"
+msgstr "Wi-Fi"
+
+msgid "IDS_BR_BUTTON_SETTINGS_ABB"
+msgstr "Beállít."
+
+msgid "IDS_BR_BUTTON2_OK"
+msgstr "OK"
+
+msgid "IDS_BR_BUTTON2_NEW"
+msgstr "Új"
+
+msgid "IDS_BR_BODY_WEB_SEARCH"
+msgstr "Webes keresés"
+
+msgid "IDS_BR_BODY_UNABLE_TO_OPEN_FILE"
+msgstr "A fájl nem nyitható meg."
+
+msgid "IDS_BR_BODY_UNABLE_TO_FIND_AN_APPLICATION_TO_OPEN_THIS_FILE"
+msgstr "Nem található alkalmazás a fájl megnyitásához."
+
+msgid "IDS_BR_BODY_UNABLE_TO_CONNECT_TO_MOBILE_NETWORKS_WHILE_FLIGHT_MODE_IS_ENABLED_MSG"
+msgstr "Repülő üzemmódban nem lehet a mobilhálózathoz kapcsolódni. Kapcsolódjon Wi-Fi hálózathoz, vagy a Beállítások pont megérintése után kapcsolja ki a Repülő üzemmódot, majd próbálja újra."
+
+msgid "IDS_BR_BODY_THIS_CERTIFICATE_IS_FROM_A_TRUSTED_AUTHORITY"
+msgstr "A tanúsítvány megbízható hitelesítésszolgáltatótól származik."
+
+msgid "IDS_BR_BODY_TAP_HERE_TO_ADD_A_QUICK_ACCESS_SHORTCUT"
+msgstr "Érintse meg gyorselérési parancsikon hozzáadásához."
+
+msgid "IDS_BR_BODY_PREFERENCES"
+msgstr "Beállítások"
+
+msgid "IDS_BR_BODY_PERCENTAGE_M_SYMBOL"
+msgstr "% "
+
+msgid "IDS_BR_BODY_NO_MOBILE_NETWORKS_HAVE_BEEN_FOUND"
+msgstr "Nem található mobileszköz."
+
+msgid "IDS_BR_BODY_NO_MATCHES"
+msgstr "Nincs találat"
+
+msgid "IDS_BR_BODY_MOBILE_DATA_IS_TURNED_OFF_CONNECT_TO_A_WI_FI_NETWORK_INSTEAD_OR_TAP_SETTINGS_TO_TURN_ON_MOBILE_DATA_AND_THEN_TRY_AGAIN"
+msgstr "A mobil internetkapcsolat ki van kapcsolva. Kapcsolódjon Wi-Fi hálózathoz, vagy a Beállítások pont megérintése után kapcsolja be a mobil internetkapcsolatot, és próbálja újra."
+
+msgid "IDS_BR_BODY_FIT_TO_WIDTH"
+msgstr "Szélességhez"
+
+msgid "IDS_BR_ACBUTTON_QUICK_ACCESS"
+msgstr "GYORS ELÉRÉS"
+
+msgid "IDS_BR_OPT_OPEN_IN_NEW_TAB"
+msgstr "Megnyitás új lapon"
+
+msgid "IDS_BR_BODY_SHARE_LINK"
+msgstr "Link megosztása"
+
+msgid "IDS_BR_SK_SAVE_LITE"
+msgstr "Ment"
+
+msgid "IDS_BR_SK_SAVE_ABB"
+msgstr "Ment"
+
+msgid "IDS_BR_SK_SAVE"
+msgstr "Ment"
+
+msgid "IDS_BR_SK_PREVIOUS"
+msgstr "Előző"
+
+msgid "IDS_BR_SK_NEXT"
+msgstr "Tovább"
+
+msgid "IDS_BR_SK_DELETE"
+msgstr "Töröl"
+
+msgid "IDS_BR_SK_CLEAR"
+msgstr "Törlés"
+
+msgid "IDS_BR_SK_BACK"
+msgstr "Vissza"
+
+msgid "IDS_BR_POP_WI_FI_CONNECTION_REQUIRED_CONNECT_TO_WI_FI_NETWORK_AND_TRY_AGAIN"
+msgstr "Wi-Fi kapcsolat szükséges. Kapcsolódjon a Wi-Fi hálózathoz, és próbálja újra"
+
+msgid "IDS_BR_POP_URL_NOT_FOUND"
+msgstr "URL nem található."
+
+msgid "IDS_BR_POP_URL"
+msgstr "URL"
+
+msgid "IDS_BR_POP_SAVED"
+msgstr "Mentve."
+
+msgid "IDS_BR_POP_REMOVED"
+msgstr "Törölve."
+
+msgid "IDS_BR_POP_PD_ITEMS_WILL_BE_DELETED"
+msgstr "%d tételt törölni fog."
+
+msgid "IDS_BR_POP_PD_ITEMS_SELECTED"
+msgstr "%d tétel kijelölve."
+
+msgid "IDS_BR_POP_NO_ITEMS_SELECTED"
+msgstr "Nincs kiválasztott tétel."
+
+msgid "IDS_BR_POP_NOT_ENOUGH_MEMORY"
+msgstr "Kevés a memória."
+
+msgid "IDS_BR_POP_NEVER"
+msgstr "Soha"
+
+msgid "IDS_BR_POP_MOBILE_DATA_IS_DISABLED_CONNECT_TO_WI_FI_NETWORK_INSTEAD_OR_ENABLE_MOBILE_DATA_AND_TRY_AGAIN"
+msgstr "A mobil internetkapcsolat le van tiltva. Kapcsolódjon Wi-Fi hálózathoz, vagy engedélyezze a mobil internetkapcsolatot, és próbálja újra"
+
+msgid "IDS_BR_POP_LOADING_PLEASE_WAIT_ING"
+msgstr "Betöltés. Kis türelmet..."
+
+msgid "IDS_BR_POP_INVALID_URL"
+msgstr "Érvénytelen URL"
+
+msgid "IDS_BR_POP_FAIL"
+msgstr "Sikertelen"
+
+msgid "IDS_BR_POP_ENTER_TITLE_ABB"
+msgstr "Cím megadása"
+
+msgid "IDS_BR_POP_DO_NOT_SHOW_AGAIN"
+msgstr "Ne jelenjen meg ismét"
+
+msgid "IDS_BR_POP_DOWNLOADCOMPLETE"
+msgstr "Letöltés befejezve."
+
+msgid "IDS_BR_POP_DISABLED"
+msgstr "Kikapcsolva."
+
+msgid "IDS_BR_POP_DELETE_Q"
+msgstr "Törli?"
+
+msgid "IDS_BR_POP_DELETED"
+msgstr "Törölve."
+
+msgid "IDS_BR_POP_CLOSE_APPLICATION_Q"
+msgstr "Bezárja az alkalmazást?"
+
+msgid "IDS_BR_POP_BOOKMARK_ADDED"
+msgstr "Könyvjelző hozzáadva."
+
+msgid "IDS_BR_POP_AUTOMATIC_BRIGHTNESS"
+msgstr "Automatikus fényerő"
+
+msgid "IDS_BR_POP_ACCOUNT"
+msgstr "Fiók"
+
+msgid "IDS_BR_POP_1_ITEM_WILL_BE_DELETED"
+msgstr "Törölni fog 1 tételt."
+
+msgid "IDS_BR_POP_1_ITEM_SELECTED"
+msgstr "1 tétel kijelölve."
+
+msgid "IDS_BR_OPT_TRANSLATE"
+msgstr "Fordítás"
+
+msgid "IDS_BR_OPT_STOP"
+msgstr "Leállít"
+
+msgid "IDS_BR_OPT_SHOW"
+msgstr "Megjelenít"
+
+msgid "IDS_BR_OPT_SHARE"
+msgstr "Megosztás"
+
+msgid "IDS_BR_OPT_SETTINGS"
+msgstr "Beállítások"
+
+msgid "IDS_BR_OPT_SEND_EMAIL"
+msgstr "E-mail küldése"
+
+msgid "IDS_BR_OPT_SELECT"
+msgstr "Kiválasztás"
+
+msgid "IDS_BR_OPT_SD_CARD"
+msgstr "SD-kártya"
+
+msgid "IDS_BR_OPT_RENAME"
+msgstr "Átnevez"
+
+msgid "IDS_BR_OPT_REFRESH"
+msgstr "Frissítés"
+
+msgid "IDS_BR_OPT_MOVE"
+msgstr "Áthelyez"
+
+msgid "IDS_BR_OPT_MESSAGES"
+msgstr "Üzenetek"
+
+msgid "IDS_BR_OPT_LIST_VIEW"
+msgstr "Listanézet"
+
+msgid "IDS_BR_OPT_I_AGREE"
+msgstr "Elfogadom."
+
+msgid "IDS_BR_OPT_HELP"
+msgstr "Súgó"
+
+msgid "IDS_BR_OPT_DEVICE"
+msgstr "Eszköz"
+
+msgid "IDS_BR_OPT_BOOKMARK"
+msgstr "Könyvjelző"
+
+msgid "IDS_BR_OPT_ADDED"
+msgstr "Hozzáadva."
+
+msgid "IDS_BR_OPT_ADD"
+msgstr "Hozzáad"
+
+msgid "IDS_BR_MBODY_DEFAULT_DOWNLOAD_STORAGE"
+msgstr "Alapért. letöltési tárhely"
+
+msgid "IDS_BR_HEADER_SIGN_IN_TO_SAMSUNG_ACCOUNT"
+msgstr "Bejelentkezés a Samsung accountba"
+
+msgid "IDS_BR_HEADER_PD_SELECTED_ABB"
+msgstr "%d kijelölve"
+
+msgid "IDS_BR_HEADER_NO_NETWORK_CONNECTION"
+msgstr "Nincs hálózati kapcsolat"
+
+msgid "IDS_BR_HEADER_FOLDER"
+msgstr "Mappa"
+
+msgid "IDS_BR_HEADER_EDIT_PROFILE"
+msgstr "Profil módosítása"
+
+msgid "IDS_BR_BUTTON_SET"
+msgstr "Beállít"
+
+msgid "IDS_BR_BUTTON_NOT_NOW"
+msgstr "Nem most"
+
+msgid "IDS_BR_BUTTON_ENABLE_ABB"
+msgstr "Engedélyez"
+
+msgid "IDS_BR_BUTTON_EDIT"
+msgstr "Szerkeszt"
+
+msgid "IDS_BR_BUTTON_CONTINUE_ABB"
+msgstr "Folytat"
+
+msgid "IDS_BR_BUTTON_CONTINUE"
+msgstr "Folytatás"
+
+msgid "IDS_BR_BUTTON_CLOSE"
+msgstr "Bezárás"
+
+msgid "IDS_BR_BUTTON_CANCEL_ABB"
+msgstr "Mégse"
+
+msgid "IDS_BR_BUTTON_CANCEL"
+msgstr "Mégse"
+
+msgid "IDS_BR_BUTTON_ALLOW"
+msgstr "Megenged"
+
+msgid "IDS_BR_BODY_YESTERDAY"
+msgstr "Tegnap"
+
+msgid "IDS_BR_BODY_URL"
+msgstr "URL"
+
+msgid "IDS_BR_BODY_TODAY"
+msgstr "Ma"
+
+msgid "IDS_BR_BODY_TITLE"
+msgstr "Cím"
+
+msgid "IDS_BR_BODY_THE_MAXIMUM_NUMBER_OF_CHARACTERS_HPD_HAS_BEEN_EXCEEDED"
+msgstr "Túllépte a karakterek maximális számát (%d)."
+
+msgid "IDS_BR_BODY_STREAMING"
+msgstr "Streaming"
+
+msgid "IDS_BR_BODY_SMALL"
+msgstr "Kicsi"
+
+msgid "IDS_BR_BODY_SETTINGS"
+msgstr "Beállítások"
+
+msgid "IDS_BR_BODY_SEARCH"
+msgstr "Keresés"
+
+msgid "IDS_BR_BODY_RSS_SEARCH_RESULTS"
+msgstr "Keresés eredménye"
+
+msgid "IDS_BR_BODY_PROFILE"
+msgstr "Profil"
+
+msgid "IDS_BR_BODY_PROCESSING_ING"
+msgstr "Feldolgozás folyamatban"
+
+msgid "IDS_BR_BODY_PHONE_NUMBER_ABB"
+msgstr "Telefonszám"
+
+msgid "IDS_BR_BODY_PHONE"
+msgstr "Telefon"
+
+msgid "IDS_BR_BODY_PD_ITEMS_WILL_BE_DELETED"
+msgstr "%d tételt törölni fog."
+
+msgid "IDS_BR_BODY_PASSWORD"
+msgstr "Jelszó"
+
+msgid "IDS_BR_BODY_ON"
+msgstr "Be"
+
+msgid "IDS_BR_BODY_OFF"
+msgstr "Ki"
+
+msgid "IDS_BR_BODY_NO_RESULTS_FOUND"
+msgstr "Nincs találat."
+
+msgid "IDS_BR_BODY_NO_HISTORIES"
+msgstr "Nincs előző oldal"
+
+msgid "IDS_BR_BODY_NOTIFICATIONS"
+msgstr "Értesítések"
+
+msgid "IDS_BR_BODY_MEDIUM"
+msgstr "Közepes"
+
+msgid "IDS_BR_BODY_IMAGES"
+msgstr "Képek"
+
+msgid "IDS_BR_BODY_FULL_SCREEN"
+msgstr "Teljes képernyő"
+
+msgid "IDS_BR_BODY_FONT_SIZE"
+msgstr "Betűméret"
+
+msgid "IDS_BR_BODY_FOLDER_NAME"
+msgstr "Mappa neve"
+
+msgid "IDS_BR_BODY_ENTER_POSTCODE_ABB"
+msgstr "Adja meg az irányítószámot."
+
+msgid "IDS_BR_BODY_ENTER_POSTCODE"
+msgstr "Adja meg az irányítószámot."
+
+msgid "IDS_BR_BODY_ENTER_PHONE_NUMBER"
+msgstr "Kérjük, adja meg a telefonszámot."
+
+msgid "IDS_BR_BODY_ENTER_NAME"
+msgstr "Írja be a nevet."
+
+msgid "IDS_BR_BODY_ENTER_FOLDER_NAME"
+msgstr "Adja meg a mappa nevét."
+
+msgid "IDS_BR_BODY_ENTER_EMAIL_ADDRESS"
+msgstr "Adja meg az e-mail címet."
+
+msgid "IDS_BR_BODY_EMAIL_ADDRESS"
+msgstr "E-mail cím"
+
+msgid "IDS_BR_BODY_DOWNLOADING_ING"
+msgstr "Letöltés..."
+
+msgid "IDS_BR_BODY_DEVELOPER_MODE"
+msgstr "Fejlesztői üzemmód"
+
+msgid "IDS_BR_BODY_DEFAULT"
+msgstr "Alapértelmezett"
+
+msgid "IDS_BR_BODY_BOOKMARKS"
+msgstr "Könyvjelzők"
+
+msgid "IDS_BR_BODY_ALL"
+msgstr "Mind"
+
+msgid "IDS_BR_BODY_ADD_TO"
+msgstr "Hozzáad"
+
+msgid "IDS_BR_BODY_ADDDETAILSVIEW_TAGS"
+msgstr "Címkék"
+
+msgid "IDS_BR_BODY_ADDBOOKMARKURL"
+msgstr "URL"
+
+msgid "IDS_BR_BODY_1_ITEM_WILL_BE_DELETED"
+msgstr "Törölni fog 1 tételt."
+
+msgid "IDS_BR_TPOP_MAXIMUM_NUMBER_OF_CHARACTERS_HPD_REACHED"
+msgstr "Elérte a karakterek maximális számát (%d)."
+
+msgid "IDS_BR_POP_UNSUPPORTMEDIATYPE"
+msgstr "Nem támogatott médiatípus"
+
+msgid "IDS_BR_POP_UNABLE_TO_CONNECT_TO_MOBILE_NETWORKS_WHILE_FLIGHT_MODE_IS_ENABLED_CONNECT_TO_WI_FI_NETWORK_INSTEAD_OR_DISABLE_FLIGHT_MODE_AND_TRY_AGAIN"
+msgstr "Amíg a Repülő üzemmód be van kapcsolva, nem lehet a mobilhálózathoz kapcsolódni. Kapcsolódjon Wi-Fi hálózathoz, vagy tiltsa le a Repülő üzemmódot, és próbálja újra"
+
+msgid "IDS_BR_POP_INSTALL_SUCCESS"
+msgstr "A telepítés befejeződött."
+
+msgid "IDS_BR_POP_INSTALLATION_FAILED"
+msgstr "Telepítés sikertelen."
+
+msgid "IDS_BR_POP_DELETING_ING"
+msgstr "Törlés..."
+
+msgid "IDS_BR_POP_DATA_ROAMING_IS_DISABLED_CONNECT_TO_WI_FI_NETWORK_INSTEAD_OR_ENABLE_DATA_ROAMING_AND_TRY_AGAIN"
+msgstr "Az adatroaming le van tiltva. Kapcsolódjon Wi-Fi hálózathoz, vagy engedélyezze az adatroamingot, és próbálja újra"
+
+msgid "IDS_BR_OPT_SHARE_VIA"
+msgstr "Megosztás"
+
+msgid "IDS_BR_OPT_PASTE"
+msgstr "Beilleszt"
+
+msgid "IDS_BR_MBODY_FONT_SIZE"
+msgstr "Betűméret"
+
+msgid "IDS_BR_HEADER_UNABLE_TO_DOWNLOAD_ABB"
+msgstr "Nem lehet letölteni"
+
+msgid "IDS_BR_BUTTON_UPDATE"
+msgstr "Frissítés"
+
+msgid "IDS_BR_BUTTON_RETRY"
+msgstr "Újra"
+
+msgid "IDS_BR_BODY_REQUEST_FAILED"
+msgstr "Sikertelen kérés"
+
+msgid "IDS_BR_BODY_LOGIN"
+msgstr "Bejelentkezés"
+
+msgid "IDS_BR_BODY_LOADING_ING"
+msgstr "Betöltés..."
+
+msgid "IDS_BR_BODY_FIT_TO_SCREEN"
+msgstr "Kijelzőhöz igazít"
+
+msgid "IDS_BR_BODY_DOWNLOADS_VODA"
+msgstr "Letöltések"
+
+msgid "IDS_BR_BODY_DATA_ROAMING_IS_DISABLED_CONNECT_TO_A_WI_FI_NETWORK_INSTEAD_OR_ENABLE_DATA_ROAMING_AND_TRY_AGAIN"
+msgstr "Az adatroaming le van tiltva. Kapcsolódjon Wi-Fi hálózathoz, vagy engedélyezze az adatroamingot, és próbálja újra."
+
+msgid "IDS_BR_POP_DOWNLOAD_CANCELLED"
+msgstr "Letöltés megszakítva."
+
+msgid "IDS_BR_BUTTON_SECRET_ON_ABB"
+msgstr "Titkos be"
+
+msgid "IDS_BR_MBODY_PRIVACY"
+msgstr "Védett adataim"
+
+msgid "IDS_BR_MBODY_DEFAULT_STORAGE"
+msgstr "Alapértelmezett tárhely"
+
+msgid "IDS_BR_MBODY_MANUAL_ZOOM"
+msgstr "Manuális nagyítás"
+
+msgid "IDS_BR_TMBODY_DEFAULT_SEARCH_ENGINE"
+msgstr "Alapértelmezett kereső"
+
+msgid "IDS_BR_MBODY_SAVE_SIGN_IN_INFO"
+msgstr "Bejelentk. adatok mentése"
+
+msgid "IDS_BR_OPT_TURN_OFF_SECRET_MODE_ABB"
+msgstr "Titkos mód kikapcsolása"
+
+msgid "IDS_BR_OPT_TURN_ON_SECRET_MODE_ABB"
+msgstr "Titkos mód bekapcsolása"
+
+msgid "IDS_BR_OPT_SHOW_PASSWORD_ABB2"
+msgstr "Jelszó megjelenítése"
+
+msgid "IDS_BR_BODY_ENTER_YOUR_CURRENT_SECRET_MODE_PASSWORD"
+msgstr "Adja meg a Titkos mód jelenlegi jelszavát."
+
+msgid "IDS_BR_OPT_SECRET_MODE_SECURITY_ABB"
+msgstr "Titkos mód védelme"
+
+msgid "IDS_BR_BUTTON_USE_PASSWORD_ABB"
+msgstr "Jelszó használata"
+
+msgid "IDS_BR_HEADER_DONT_USE_PASSWORD_ABB"
+msgstr "Nem használok jelszót"
+
+msgid "IDS_BR_MBODY_MOST_VISITED_WEBSITES"
+msgstr "Leglátogatottabb webh."
+
+msgid "IDS_BR_MBODY_SET_MY_PROFILE"
+msgstr "Saját profil beállítása"
+
+msgid "IDS_BR_MBODY_MY_AUTO_FILL_PROFILE"
+msgstr "Saját aut. kitölt. profil"
+
+msgid "IDS_BR_SBODY_MANAGE_DATA_USED_TO_FILL_IN_FORMS_ONLINE"
+msgstr "Kezelheti az online űrlapkitöltésre szolgáló adatokat."
+
+msgid "IDS_BR_MBODY_SAVE_SIGN_IN_INFO_ABB"
+msgstr "Bej. adatok ment."
+
+msgid "IDS_BR_OPT_LOCATION_ACCESS_DATA"
+msgstr "Helyadat-hozzáférési adatok"
+
+msgid "IDS_BR_OPT_AUTO_FILL_DATA"
+msgstr "Automatikusan kitöltendő adatok"
+
+msgid "IDS_BR_BODY_ANY_WEBPAGES_YOU_VIEW_WHILE_SECRET_MODE_IS_TURNED_ON_WONT_APPEAR_IN_YOUR_BROWSER_OR_SEARCH_HISTORY_MSG"
+msgstr "A Titkos módban megtekintett weboldalak a Titkos mód kikapcsolása után nem jelennek meg a böngészési és keresési előzményekben.\n\nA Titkos módban mentett könyvjelzők és weboldalak a mód kikapcsolása után nem lesznek láthatók.\n\nA Titkos mód adatait jelszóval is védheti."
+
+msgid "IDS_BR_BODY_ANY_WEBPAGES_YOU_VIEW_WHILE_SECRET_MODE_IS_TURNED_ON_WONT_APPEAR_IN_YOUR_BROWSER_OR_SEARCH_MSG"
+msgstr "A Titkos módban megtekintett weboldalak a Titkos mód kikapcsolása után nem jelennek meg a böngészési és keresési előzményekben.\n\nA Titkos módban mentett könyvjelzők és weboldalak a mód kikapcsolása után nem lesznek láthatók."
+
+msgid "IDS_BR_BUTTON_SECRET_OFF_ABB"
+msgstr "Titkos ki"
+
+msgid "IDS_BR_BUTTON_DONT_USE_PASSWORD_ABB"
+msgstr "Nem használok jelszót"
+
+msgid "IDS_BR_BUTTON_NEW_TAB_ABB2"
+msgstr "Új lap"
+
+msgid "IDS_BR_NPBODY_WEB_ADDRESS_ABB"
+msgstr "Webcím"
+
+msgid "IDS_BR_HEADER_ADD_WEBPAGE_TO_QUICK_ACCESS_ABB"
+msgstr "Webold. h.ad. a gy. elér.hez"
+
+msgid "IDS_BR_TMBODY_TURN_ON_JAVASCRIPT"
+msgstr "JavaScript bekapcsolása"
+
+msgid "IDS_BR_HEADER_COULDNT_OPEN_NEW_TAB_ABB"
+msgstr "Nem lehet új lapot nyitni"
+
+msgid "IDS_BR_OPT_OPEN_IN_NEW_TAB_ABB"
+msgstr "Megnyitás új lapon"
+
+msgid "IDS_BR_TPOP_FOLDER_NAME_ALREADY_IN_USE"
+msgstr "Ilyen nevű mappa már van."
+
+msgid "IDS_BR_NPBODY_NEW_FOLDER_PD"
+msgstr "%d. új mappa"
+
+msgid "IDS_BR_NPBODY_NEW_FOLDER"
+msgstr "Új mappa"
+
+msgid "IDS_BR_OPT_ENABLE_JAVASCRIPT"
+msgstr "JavaScript engedélyezése"
+
+msgid "IDS_BR_TMBODY_MANAGE_WEBSITE_DATA"
+msgstr "Webhelyadatok kezelése"
+
+msgid "IDS_BR_HEADER_SET_HOME_PAGE_ABB"
+msgstr "Kezdőlap beállítása"
+
+msgid "IDS_BR_TPOP_WEBPAGE_ADDED_TO_QUICK_ACCESS_LIST"
+msgstr "Felvette a webhelyet a Gyors elérés listára."
+
+msgid "IDS_BR_OPT_EDIT_QUICK_ACCESS_ABB"
+msgstr "Gyors elérés szerkesztése"
+
+msgid "IDS_BR_OPT_REMOVE_FROM_BOOKMARKS_ABB"
+msgstr "Eltávolítás a Kedvencek közül"
+
+msgid "IDS_BR_HEADER_ADD_BOOKMARK_ABB"
+msgstr "Könyvjel. hozzáad."
+
+msgid "IDS_BR_BODY_BROWSING_HISTORY"
+msgstr "Böngészési előzmények"
+
+msgid "IDS_BR_HEADER_TABS_ABB2"
+msgstr "Lapok"
+
+msgid "IDS_BR_OPT_NEW_TAB"
+msgstr "Új lap"
+
+msgid "IDS_BR_BUTTON_FORWARD_ABB2"
+msgstr "Tovább"
+
+msgid "IDS_BR_BUTTON_BACK_ABB3"
+msgstr "Vissza"
+
+msgid "IDS_BR_BUTTON_BOOKMARKS_ABB"
+msgstr "Könyvjelz."
+
+msgid "IDS_BR_NPBODY_NO_PROFILES_ABB"
+msgstr "Nincs profil"
+
+msgid "IDS_BR_TAB2_HISTORY"
+msgstr "Előzmények"
+
+msgid "IDS_BR_TAB2_BOOKMARKS"
+msgstr "Könyvjelzők"
+
+msgid "IDS_BR_HEADER_SAVE_CONTENT_TO_ABB"
+msgstr "Tartalmak mentési helye"
+
+msgid "IDS_BR_HEADER_SELECT_ITEMS_ABB2"
+msgstr "Elemek kiválasztása"
+
+msgid "IDS_BR_BODY_YOUR_PASSWORD_MUST_CONTAIN_AT_LEAST_PD_CHARACTERS_INCLUDING_AT_LEAST_1_LETTER"
+msgstr "A jelszónak legalább %d karakterből kell állnia, amelyek közül legalább 1 betű."
+
+msgid "IDS_BR_BODY_AN_INCORRECT_PASSWORD_HAS_BEEN_ENTERED_TRY_AGAIN"
+msgstr "Helytelen jelszó volt megadva. Próbálja újra"
+
+msgid "IDS_BR_BODY_NO_TABS"
+msgstr "Nincsenek lapok"
+
+msgid "IDS_BR_TMBODY_CHANGE_PASSWORD"
+msgstr "Jelszó módosítása"
+
+msgid "IDS_BR_BODY_ANY_WEBPAGES_VIEWED_WHILE_SECRET_MODE_IS_ENABLED_WILL_NOT_APPEAR_IN_YOUR_BROWSER_OR_SEARCH_HISTORY_WHILE_SECRET_MSG"
+msgstr "A Titkos módban megtekintett weboldalak a Titkos mód kikapcsolása után nem jelennek meg a böngészési és a keresési előzményekben.\n\nA Titkos módban mentett könyvjelzők és weboldalak a mód kikapcsolása után nem láthatók.\n\nA Titkos mód adatait jelszóval is védheti."
+
+msgid "IDS_BR_BODY_ANY_WEBPAGES_VIEWED_WHILE_SECRET_MODE_IS_ENABLED_WILL_NOT_APPEAR_IN_YOUR_MSG"
+msgstr "A Titkos módban megtekintett weboldalak a Titkos mód kikapcsolása után nem jelennek meg a böngészési és a keresési előzményekben.\n\nA Titkos módban mentett könyvjelzők és weboldalak a mód kikapcsolása után nem láthatók."
+
+msgid "IDS_BR_BUTTON2_DONE"
+msgstr "Kész"
+
+msgid "IDS_BR_BODY_ENTER_YOUR_PASSWORD_AGAIN_TO_CONFIRM_IT"
+msgstr "Adja meg még egyszer a jelszót."
+
+msgid "IDS_BR_HEADER_CREATE_PASSWORD_M_SET_ABB"
+msgstr "Jelszó létrehozása"
+
+msgid "IDS_BR_BUTTON_DO_NOT_USE_PASSWORD_ABB"
+msgstr "Nem használ jelszót"
+
+msgid "IDS_BR_POP_TO_PROTECT_YOUR_SECRET_MODE_DATA_CREATE_A_PASSWORD_IF_YOU_USE_SECRET_MODE_WITHOUT_CREATING_A_PASSWORD_MSG"
+msgstr "Hozzon létre jelszót a Titkos mód védelméhez. A Titkos mód jelszó nélkül használatával nem tudja megakadályozni, hogy mások megtekintsék a böngészési és a keresési előzményeket, a könyvjelzőket és a mentett oldalakat."
+
+msgid "IDS_BR_BODY_AFTER_YOU_ADD_BOOKMARKS_THEY_WILL_BE_SHOWN_HERE"
+msgstr "Itt jelennek majd meg a hozzáadott könyvjelzők."
+
