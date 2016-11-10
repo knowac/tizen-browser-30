@@ -65,6 +65,7 @@ Config::Config()
     m_keysValues[CONFIG_KEY::WEB_ENGINE_LOAD_IMAGES] = true;
     m_keysValues[CONFIG_KEY::WEB_ENGINE_ENABLE_JAVASCRIPT] = true;
     m_keysValues[CONFIG_KEY::WEB_ENGINE_REMEMBER_FROM_DATA] = true;
+    m_keysValues[CONFIG_KEY::WEB_ENGINE_ENABLE_COOKIES] = true;
     m_keysValues[CONFIG_KEY::WEB_ENGINE_REMEMBER_PASSWORDS] = true;
     m_keysValues[CONFIG_KEY::WEB_ENGINE_AUTOFILL_PROFILE_DATA] = true;
     m_keysValues[CONFIG_KEY::WEB_ENGINE_SCRIPTS_CAN_OPEN_PAGES] = true;

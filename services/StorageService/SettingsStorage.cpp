@@ -105,6 +105,8 @@ void SettingsStorage::resetSettings()
             tizen_browser::config::Config::getInstance().get(CONFIG_KEY::WEB_ENGINE_ENABLE_JAVASCRIPT)));
     setParam(basic_webengine::WebEngineSettings::REMEMBER_FROM_DATA, boost::any_cast<bool>(
             tizen_browser::config::Config::getInstance().get(CONFIG_KEY::WEB_ENGINE_REMEMBER_FROM_DATA)));
+    setParam(basic_webengine::WebEngineSettings::ENABLE_COOKIES, boost::any_cast<bool>(
+            tizen_browser::config::Config::getInstance().get(CONFIG_KEY::WEB_ENGINE_ENABLE_COOKIES)));
     setParam(basic_webengine::WebEngineSettings::REMEMBER_PASSWORDS, boost::any_cast<bool>(
             tizen_browser::config::Config::getInstance().get(CONFIG_KEY::WEB_ENGINE_REMEMBER_PASSWORDS)));
     setParam(basic_webengine::WebEngineSettings::AUTOFILL_PROFILE_DATA, boost::any_cast<bool>(

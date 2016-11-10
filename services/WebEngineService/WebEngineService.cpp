@@ -59,6 +59,7 @@ WebEngineService::WebEngineService()
     m_settings[WebEngineSettings::LOAD_IMAGES] = boost::any_cast<bool>(tizen_browser::config::Config::getInstance().get(CONFIG_KEY::WEB_ENGINE_LOAD_IMAGES));
     m_settings[WebEngineSettings::ENABLE_JAVASCRIPT] = boost::any_cast<bool>(tizen_browser::config::Config::getInstance().get(CONFIG_KEY::WEB_ENGINE_ENABLE_JAVASCRIPT));
     m_settings[WebEngineSettings::REMEMBER_FROM_DATA] = boost::any_cast<bool>(tizen_browser::config::Config::getInstance().get(CONFIG_KEY::WEB_ENGINE_REMEMBER_FROM_DATA));
+    m_settings[WebEngineSettings::ENABLE_COOKIES] = boost::any_cast<bool>(tizen_browser::config::Config::getInstance().get(CONFIG_KEY::WEB_ENGINE_ENABLE_COOKIES));
     m_settings[WebEngineSettings::REMEMBER_PASSWORDS] = boost::any_cast<bool>(tizen_browser::config::Config::getInstance().get(CONFIG_KEY::WEB_ENGINE_REMEMBER_PASSWORDS));
     m_settings[WebEngineSettings::AUTOFILL_PROFILE_DATA] = boost::any_cast<bool>(tizen_browser::config::Config::getInstance().get(CONFIG_KEY::WEB_ENGINE_AUTOFILL_PROFILE_DATA));
     m_settings[WebEngineSettings::SCRIPTS_CAN_OPEN_PAGES] = boost::any_cast<bool>(tizen_browser::config::Config::getInstance().get(CONFIG_KEY::WEB_ENGINE_SCRIPTS_CAN_OPEN_PAGES));
@@ -708,6 +709,7 @@ void WebEngineService::setWebViewSettings(std::shared_ptr<WebView> webView) {
     webView->ewkSettingsLoadsImagesSet(m_settings[WebEngineSettings::LOAD_IMAGES]);
     webView->ewkSettingsJavascriptEnabledSet(m_settings[WebEngineSettings::ENABLE_JAVASCRIPT]);
     webView->ewkSettingsFormCandidateDataEnabledSet(m_settings[WebEngineSettings::REMEMBER_FROM_DATA]);
+    webView->ewkSettingsCookiesEnabledSet(m_settings[WebEngineSettings::ENABLE_COOKIES]);
     webView->ewkSettingsAutofillPasswordFormEnabledSet(m_settings[WebEngineSettings::REMEMBER_PASSWORDS]);
     webView->ewkSettingsFormProfileDataEnabledSet(m_settings[WebEngineSettings::AUTOFILL_PROFILE_DATA]);
     webView->ewkSettingsScriptsCanOpenNewPagesEnabledSet(m_settings[WebEngineSettings::SCRIPTS_CAN_OPEN_PAGES]);
@@ -975,6 +977,9 @@ void WebEngineService::setSettingsParam(WebEngineSettings param, bool value) {
         case WebEngineSettings::REMEMBER_FROM_DATA:
             it->second->ewkSettingsFormCandidateDataEnabledSet(value);
             break;
+        case WebEngineSettings::ENABLE_COOKIES:
+            it->second->ewkSettingsCookiesEnabledSet(value);
+            break;
         case WebEngineSettings::REMEMBER_PASSWORDS:
             it->second->ewkSettingsAutofillPasswordFormEnabledSet(value);
             break;
@@ -1000,6 +1005,8 @@ void WebEngineService::resetSettingsParam()
             tizen_browser::config::Config::getInstance().get(CONFIG_KEY::WEB_ENGINE_ENABLE_JAVASCRIPT)));
     setSettingsParam(WebEngineSettings::REMEMBER_FROM_DATA, boost::any_cast<bool>(
             tizen_browser::config::Config::getInstance().get(CONFIG_KEY::WEB_ENGINE_REMEMBER_FROM_DATA)));
+    setSettingsParam(WebEngineSettings::ENABLE_COOKIES, boost::any_cast<bool>(
+            tizen_browser::config::Config::getInstance().get(CONFIG_KEY::WEB_ENGINE_ENABLE_COOKIES)));
     setSettingsParam(WebEngineSettings::REMEMBER_PASSWORDS, boost::any_cast<bool>(
             tizen_browser::config::Config::getInstance().get(CONFIG_KEY::WEB_ENGINE_REMEMBER_PASSWORDS)));
     setSettingsParam(WebEngineSettings::AUTOFILL_PROFILE_DATA, boost::any_cast<bool>(

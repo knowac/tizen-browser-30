@@ -243,6 +243,11 @@ public:
     void ewkSettingsFormCandidateDataEnabledSet(bool value);
 
     /**
+     * @brief Set form Cookies data enabled settings flag.
+     */
+    void ewkSettingsCookiesEnabledSet(bool value);
+
+    /**
      * @brief Set autofill password form enabled settings flag.
      */
     void ewkSettingsAutofillPasswordFormEnabledSet(bool value);

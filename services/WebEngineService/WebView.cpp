@@ -1644,6 +1644,17 @@ void WebView::ewkSettingsFormCandidateDataEnabledSet(bool value)
     ewk_settings_form_candidate_data_enabled_set(settings, value);
 }
 
+void WebView::ewkSettingsCookiesEnabledSet(bool value)
+{
+    BROWSER_LOGD("[%s:%d:%d] ", __PRETTY_FUNCTION__, __LINE__, value);
+    if (value)
+        ewk_cookie_manager_accept_policy_set(
+            ewk_context_cookie_manager_get(ewk_context_default_get()), EWK_COOKIE_ACCEPT_POLICY_ALWAYS);
+    else
+        ewk_cookie_manager_accept_policy_set(
+            ewk_context_cookie_manager_get(ewk_context_default_get()), EWK_COOKIE_ACCEPT_POLICY_NEVER);
+}
+
 void WebView::ewkSettingsAutofillPasswordFormEnabledSet(bool value)
 {
     BROWSER_LOGD("[%s:%d:%d] ", __PRETTY_FUNCTION__, __LINE__, value);

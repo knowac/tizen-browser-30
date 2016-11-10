@@ -47,6 +47,8 @@ public:
     virtual ~SettingsPrivacy();
     bool populateList(Evas_Object* genlist) override;
     void updateButtonMap() override;
+    Evas_Object* createOnOffCheckBox(Evas_Object* obj, ItemData* itd) override;
+    Eina_Bool getCheckState(int id);
     static void _cookies_cb(void *data, Evas_Object*obj , void* event_info);
     static void _signin_cb(void *data, Evas_Object*obj , void* event_info);
     static void _del_per_data_cb(void *data, Evas_Object*obj , void* event_info);

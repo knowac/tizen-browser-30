@@ -113,12 +113,10 @@ void SettingsPrivacy::_cookies_cb(void*, Evas_Object* obj, void*)
 {
     BROWSER_LOGD("[%s:%d] ", __PRETTY_FUNCTION__, __LINE__);
     auto value = elm_check_state_get(obj);
-    if (value == EINA_TRUE)
-        ewk_cookie_manager_accept_policy_set(
-            ewk_context_cookie_manager_get(ewk_context_default_get()), EWK_COOKIE_ACCEPT_POLICY_ALWAYS);
-    else
-        ewk_cookie_manager_accept_policy_set(
-            ewk_context_cookie_manager_get(ewk_context_default_get()), EWK_COOKIE_ACCEPT_POLICY_NEVER);
+
+    SPSC.setWebEngineSettingsParam(
+        basic_webengine::WebEngineSettings::ENABLE_COOKIES,
+        static_cast<bool>(value));
 }
 
 void SettingsPrivacy::_signin_cb(void*, Evas_Object* obj, void*)
@@ -134,6 +132,37 @@ void SettingsPrivacy::_del_per_data_cb(void*, Evas_Object*, void*)
 {
     BROWSER_LOGD("[%s:%d] ", __PRETTY_FUNCTION__, __LINE__);
     SPSC.settingsDelPersDataClicked();
+}
+
+Evas_Object* SettingsPrivacy::createOnOffCheckBox(Evas_Object* obj, ItemData* itd)
+{
+    BROWSER_LOGD("[%s:%d] ", __PRETTY_FUNCTION__, __LINE__);
+    Evas_Object* check { elm_check_add(obj) };
+    elm_object_style_set(check, "on&off");
+    elm_check_state_set(check,  getCheckState(itd->id));
+    evas_object_propagate_events_set(check, EINA_FALSE);
+    return check;
+}
+
+Eina_Bool SettingsPrivacy::getCheckState(int id)
+{
+    BROWSER_LOGD("[%s:%d] ", __PRETTY_FUNCTION__, __LINE__);
+    boost::optional<bool> sig;
+
+    switch (id) {
+        case COOKIES:
+            sig = SPSC.getWebEngineSettingsParam(
+                basic_webengine::WebEngineSettings::ENABLE_COOKIES);
+            break;
+        case SIGNIN_INFO:
+            sig = SPSC.getWebEngineSettingsParam(
+                basic_webengine::WebEngineSettings::REMEMBER_PASSWORDS);
+            break;
+        default:
+            sig = false;
+            break;
+    }
+    return (sig && *sig) ? EINA_TRUE : EINA_FALSE;
 }
 
 }
