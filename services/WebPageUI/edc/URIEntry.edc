@@ -269,7 +269,7 @@ collections { base_scale: 2.6;
                     state: "default" 0.0;
                     min: 16 URI_INPUTBOX_HEIGHT;
                     max: 16 URI_INPUTBOX_HEIGHT;
-                    rel1.to: "left_spacer";
+                    rel1.to: "uri_entry_space";
                     rel1.relative: 0.0 0.0;
                     rel2.to: "uri_entry_space";
                     rel2.relative: 1.0 1.0;
