@@ -382,15 +382,15 @@ void WebPageUI::orientationChanged()
             if (m_uriBarHidden)
                 elm_object_signal_emit(m_mainLayout, "hide_uri_bar_vertical", "ui");
         }
+
+        if (m_statesMgr->equals(WPUState::QUICK_ACCESS)) {
+            qaOrientationChanged();
+        } else if (m_statesMgr->equals(WPUState::EDIT_MODE)) {
+            m_editQuickAccessUI->orientationChanged(*landscape);
+        }
     }
     else
         BROWSER_LOGE("[%s:%d] Signal not found", __PRETTY_FUNCTION__, __LINE__);
-
-    if (m_statesMgr->equals(WPUState::QUICK_ACCESS)) {
-        qaOrientationChanged();
-    } else if (m_statesMgr->equals(WPUState::EDIT_MODE)) {
-        m_editQuickAccessUI->orientationChanged(*landscape);
-    }
 }
 
 void WebPageUI::showContextMenu()
