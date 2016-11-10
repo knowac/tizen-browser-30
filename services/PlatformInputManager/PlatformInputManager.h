@@ -69,7 +69,7 @@ public:
     /**
      * @brief Returns current service's name.
      */
-    virtual std::string getName();
+     inline virtual std::string getName();
 
 #if PROFILE_MOBILE
     void unregisterHWKeyCallback(Evas_Object* view);

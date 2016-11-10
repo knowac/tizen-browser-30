@@ -163,6 +163,6 @@ private:
 
 #define REGISTER_WITH_LINE(logger_type, line) _REGISTER_WITH_LINE(logger_type, line)
 
-#define _REGISTER_WITH_LINE(logger_type, line) static int reg##line = tizen_browser::logger::Logger::getInstance().registerLogger(new logger_type)
+#define _REGISTER_WITH_LINE(logger_type, line) __attribute__((used))  static int reg##line = tizen_browser::logger::Logger::getInstance().registerLogger(new logger_type)
 
 #endif
